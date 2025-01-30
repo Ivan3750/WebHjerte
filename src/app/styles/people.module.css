@@ -1,0 +1,54 @@
+.feedbackbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.peoplesection{
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: #1C1E1F;
+}
+
+.feedback{
+    box-sizing: border-box;
+    border: 1px solid rgb(64, 66, 66);
+    border-radius: 43px;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.feedbackName{
+    color: rgb(255, 254, 253);
+font-family: Syne;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.feedbackInfo{
+    color: rgba(255, 254, 253, 0.7);
+font-family: Syne;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.2px;
+letter-spacing: 0.18px;
+text-align: left;
+}
+
+.peopletitle{
+    color: rgb(82, 169, 255);
+font-family: Unbounded;
+font-size: 80px;
+font-weight: 400;
+line-height: 70px;
+letter-spacing: 2px;
+text-align: left;
+margin: 50px 0
+}

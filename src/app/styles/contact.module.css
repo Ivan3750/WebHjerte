@@ -1,0 +1,274 @@
+.contactbox{
+    background-color: #1C1E1F;
+    padding: 15px 50px;
+}
+
+
+/* *{
+    outline: 2px solid #f00;
+} */
+
+
+.subtitle{
+    padding-top: 50px;
+    color: rgb(255, 254, 253);
+font-family: Syne;
+font-size: 22px;
+font-weight: 500;
+line-height: 30.8px;
+letter-spacing: 0%;
+text-align: left;
+}
+.title{
+    color: rgb(255, 209, 0);
+font-family: Syne;
+font-size: 80px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0%;
+text-align: left;
+margin: 0;   
+}
+
+.contactForm{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+}
+
+.contactForm button{
+    border-radius: 20px;
+    background: rgb(255, 254, 253);
+    width: 108.25px;
+    height: 40px;
+    transition: .3s;
+}
+
+
+.contactHead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactHead input{
+    border: 2px solid #717171;
+}
+.contactForm button{
+  border: 0;
+}
+.contactForm button:hover{
+    cursor: pointer;
+    scale: 1.07;
+}
+
+.contactForm input{
+    background-color: transparent;
+    color: rgb(255, 254, 253)!important;
+font-family: Syne;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: left;
+border: 0;
+}
+
+
+.contactName, .contactEmail{
+  border: 2px solid #717171!important;
+  border-radius: 20px;
+  padding: 5px;
+  width: 45%;
+}
+
+
+.contactForm input:focus{
+    border: 0;
+    outline: 0;
+}
+.contactForm input:active{
+    outline: 0;
+    border: 0;
+}
+
+.contactHead{
+    display: flex;
+}
+
+
+.aboutProject{
+    color: rgb(255, 254, 253);
+font-family: Syne;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: left;
+background-color: transparent;
+}
+
+
+
+.inputFile::file-selector-button {
+    color: #717171;
+
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: 0.2s;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 254, 253, 0.15);
+
+
+
+}
+  
+  .inputFile::file-selector-button:hover {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 254, 253, 0.15);
+    border-radius: 30px;
+      }
+  
+  .inputFile::file-selector-button:active {
+    background-color: #717171;
+  }
+
+  .aboutProject {
+    resize: none;
+    height: 225px;
+    overflow: hidden;
+    border: 0;
+    border: 2px solid #717171;
+    border-radius:20px ;
+    padding: 10px;
+
+  }
+  
+  .aboutProject:focus{
+    outline: 0;
+  }
+
+  .money{
+    font-family: Syne;
+font-size: 20px;
+    color: #717171;
+  }
+
+
+  .moneyAmount{
+    color: rgb(255, 254, 253);
+  }
+
+  .labelBudget{
+    color: rgb(255, 254, 253);
+    font-size: 20px;
+    color: rgb(255, 254, 253);
+font-family: Syne;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: left;
+
+
+  }
+
+
+
+
+
+
+ .inputRange {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+.inputRange:focus {
+  outline: none;
+}
+.inputRange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #52a9ff;
+  border-radius: 10px;
+  border: 0px solid #000000;
+}
+.inputRange::-webkit-slider-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+.inputRange:focus::-webkit-slider-runnable-track {
+  background: #52a9ff;
+}
+.inputRange::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #52a9ff;
+  border-radius: 10px;
+  border: 0px solid #000000;
+}
+.inputRange::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.inputRange::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.inputRange::-ms-fill-lower {
+  background: #52a9ff;
+  border: 0px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px #000000;
+}
+.inputRange::-ms-fill-upper {
+  background: #52a9ff;
+  border: 0px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px #000000;
+}
+.inputRange::-ms-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.inputRange:focus::-ms-fill-lower {
+  background: #52a9ff;
+}
+.inputRange:focus::-ms-fill-upper {
+  background: #52a9ff;
+}

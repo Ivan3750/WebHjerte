@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #F8F7F6;
+}
+
+/* *{
+  outline: 2px solid #f0f;
+} */
