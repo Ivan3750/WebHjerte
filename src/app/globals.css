@@ -74,9 +74,9 @@ body {
   line-height: 24px;
 }
 
-/* *{
+*{
   user-select: none;
-} */
+}
 details summary {
   list-style: none;
 }
@@ -144,9 +144,9 @@ button:hover {
   scale: 0.96;
 }
 
-* {
+/* * {
   outline: 2px solid #f0f;
-}
+} */
 
 
 @media (max-width: 1224px){
