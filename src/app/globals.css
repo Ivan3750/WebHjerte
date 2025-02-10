@@ -2,10 +2,147 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #F8F7F6;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: #1c1e1e;
+  font-family: Unbounded;
+}
+
+.btn {
+  background-color: #00aaff;
+  color: rgb(255, 255, 255);
+  font-family: Unbounded;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  scale: 0.96;
+  transition: 0.2s;
+}
+
+.maintitle {
+  color: rgb(0, 170, 255);
+  font-family: Unbounded;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 80px;
+  letter-spacing: 0px;
+}
+
+.subtitle {
+  color: rgb(247, 246, 246);
+  font-family: Unbounded;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.title {
+  color: #5e5f5f;
+  font-family: Unbounded;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 93px;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+}
+
+.text {
+  color: rgb(122, 106, 106);
+  font-family: Unbounded;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 /* *{
-  outline: 2px solid #f0f;
+  user-select: none;
 } */
+details summary {
+  list-style: none;
+}
+
+.input {
+  color: rgb(101, 101, 101);
+  font-family: Unbounded;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+  border-radius: 15px;
+  padding: 15px;
+  background: rgb(48, 48, 48);
+
+  outline: none;
+}
+
+.input:focus .input:active {
+  outline: none;
+}
+
+.title-price {
+  color: rgb(101, 101, 101);
+  font-family: Unbounded;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.price {
+  color: rgb(28, 30, 30);
+  font-family: Unbounded;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.buy {
+  box-sizing: border-box;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 36px;
+  opacity: 0.7;
+  padding: 5px 20px;
+  background: rgb(247, 246, 246);
+  color: rgb(28, 30, 30);
+  font-family: Unbounded;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+section {
+  padding: 56px;
+}
+
+button:hover {
+  scale: 0.96;
+}
+
+* {
+  outline: 2px solid #f0f;
+}
