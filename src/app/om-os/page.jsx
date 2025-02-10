@@ -40,8 +40,8 @@ const OmOs = () => {
       </section>
       <section className="bg-[#F7F6F6]">
         <h3 className="title text-center">Vores værdier</h3>
-        <div className="flex flex-col gap-[75px]">
-          <div className="flex justify-between items-center">
+        <div className="flex flex-col gap-[75px] md:justify-center">
+          <div className="flex justify-between items-center flex-wrap">
             <div>
               <Image
                 src={Kvalitet}
@@ -68,7 +68,7 @@ const OmOs = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center flex-wrap-reverse">
             <div>
               <h3 className="title !text-[#1C1E1E]">Transparens</h3>
               <h4 className="text-[30px] font-bold !text-[#5E5F5F]">
@@ -94,7 +94,7 @@ const OmOs = () => {
               ></Image>
             </div>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center flex-wrap">
             <div>
               <Image
                 src={Eko}

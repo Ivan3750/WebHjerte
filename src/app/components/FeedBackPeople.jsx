@@ -6,7 +6,7 @@ const FeedBackPeople = () => {
         <div className="flex flex-wrap justify-center gap-10 ">
           <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]">
             <h4>Frederik J.</h4>
-            <p className="my-5">
+            <p className="my-5 text !text-white !font-medium">
               Hej, alt er virkelig godt. WebHjerte Studio har lavet et
               fantastisk "Pizzeria", hjulpet med hjemmesiden og skrevet
               instruktioner. Jeg kan varmt anbefale dem.
@@ -14,7 +14,7 @@ const FeedBackPeople = () => {
           </div>
           <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]">
             <h4>Egor T.</h4>
-            <p className="my-5">
+            <p className="my-5 text !text-white !font-medium">
               Jeg vil gerne udtrykke min oprigtige taknemmelighed til WebHjerte
               Studio for deres professionelle hjælp i udviklingen af vores
               hjemmeside. De har ikke kun udført alle tekniske opgaver som
@@ -27,7 +27,7 @@ const FeedBackPeople = () => {
           </div>
           <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]">
             <h4>Oleksandr M.</h4>
-            <p className="my-5">
+            <p className="my-5 text !text-white !font-medium">
               Jeg vil gerne fremhæve det høje niveau af arbejde udført af
               WebHjerte Studio, som skabte en kommerciel hjemmeside for os.
               Deres indsats og omhyggelighed kom til udtryk i alle aspekter af
@@ -41,7 +41,7 @@ const FeedBackPeople = () => {
           </div>
           <div className="border-2 border-[#404242] p-5 rounded-xl max-w-[600px]">
             <h4>Mikkel S.</h4>
-            <p className="my-5">
+            <p className="my-5 text !text-white !font-medium">
               Jeg er meget tilfreds med WebHjerte Studio's arbejde på vores
               hjemmeside. De leverede et stilfuldt og funktionelt design, der
               fuldt ud imødekommede vores behov. Kommunikation og support gennem

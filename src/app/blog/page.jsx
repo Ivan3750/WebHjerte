@@ -10,12 +10,12 @@ const Blog = () => {
     </section>
     <section className="bg-[#F7F6F6]">
         <h3 className="title mb-5">Nyheder</h3>
-        <div className="flex justify-between gap-10">
-            <div key="1" className="bg-[#E9E9E9] p-5 rounded-3xl gap-4 flex flex-col">
+        <div className="flex  gap-5 xl:flex-nowrap flex-wrap justify-center md:justify-between">
+            <div key="1" className="bg-[#E9E9E9] p-4 rounded-3xl gap-3 flex flex-col md:w-[380px] sm:w-[300px] min-[800]:[280px] xl:w-[350px] box-border">
                 <div className="w-full h-[200px] bg-white rounded-2xl"></div>
                 <div className="gap-4 flex flex-col">
-                    <h4 className="font-bold text-[20px] text-[#1C1E1E]">5 fejl, der ødelægger din hjemmesides SEO</h4>
-                    <p className="text-[#1C1E1E] font-light text-[16px]">Lær, hvordan du undgår de mest almindelige SEO-fejl."Lær, hvordan du undgår de mest almindelige SEO-fejl.</p>
+                    <h4 className="font-bold text-[14px] text-[#1C1E1E] sm:text-[16px] md:text-[18px] xl:text-[20px]">5 fejl, der ødelægger din hjemmesides SEO</h4>
+                    <p className="text-[#1C1E1E] font-light text-[12px] sm:text-[13px] md:text-[14px] xl:text-[14px]">Lær, hvordan du undgår de mest almindelige SEO-fejl."Lær, hvordan du undgår de mest almindelige SEO-fejl.</p>
                     <div className="flex justify-between">
                         <button className="buy !text-[16px]">Læse mere</button>
                         <div className="flex items-center gap-2">
@@ -25,11 +25,11 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <div key="2" className="bg-[#E9E9E9] p-5 rounded-3xl gap-4 flex flex-col">
+            <div key="2" className="bg-[#E9E9E9] p-4 rounded-3xl gap-3 flex flex-col md:w-[380px] sm:w-[300px] min-[800]:[280px] xl:w-[350px] box-border">
                 <div className="w-full h-[200px] bg-white rounded-2xl"></div>
                 <div className="gap-4 flex flex-col">
-                    <h4 className="font-bold text-[20px] text-[#1C1E1E]">5 fejl, der ødelægger din hjemmesides SEO</h4>
-                    <p className="text-[#1C1E1E] font-light text-[16px]">Lær, hvordan du undgår de mest almindelige SEO-fejl."Lær, hvordan du undgår de mest almindelige SEO-fejl.</p>
+                    <h4 className="font-bold text-[14px] text-[#1C1E1E] sm:text-[16px] md:text-[18px] xl:text-[20px]">5 fejl, der ødelægger din hjemmesides SEO</h4>
+                    <p className="text-[#1C1E1E] font-light text-[12px] sm:text-[13px] md:text-[14px] xl:text-[14px]">Lær, hvordan du undgår de mest almindelige SEO-fejl."Lær, hvordan du undgår de mest almindelige SEO-fejl.</p>
                     <div className="flex justify-between">
                         <button className="buy !text-[16px]">Læse mere</button>
                         <div className="flex items-center gap-2">
@@ -39,11 +39,11 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <div key="3" className="bg-[#E9E9E9] p-5 rounded-3xl gap-4 flex flex-col">
+            <div key="3" className="bg-[#E9E9E9] p-4 rounded-3xl gap-3 flex flex-col md:w-[380px] sm:w-[300px] min-[800]:[280px] xl:w-[350px] box-border">
                 <div className="w-full h-[200px] bg-white rounded-2xl"></div>
                 <div className="gap-4 flex flex-col">
-                    <h4 className="font-bold text-[20px] text-[#1C1E1E]">5 fejl, der ødelægger din hjemmesides SEO</h4>
-                    <p className="text-[#1C1E1E] font-light text-[16px]">Lær, hvordan du undgår de mest almindelige SEO-fejl."Lær, hvordan du undgår de mest almindelige SEO-fejl.</p>
+                    <h4 className="font-bold text-[14xpx] text-[#1C1E1E] sm:text-[16px] md:text-[18px] xl:text-[20px]">5 fejl, der ødelægger din hjemmesides SEO</h4>
+                    <p className="text-[#1C1E1E] font-light text-[12px] sm:text-[13px] md:text-[14px] xl:text-[14px]">Lær, hvordan du undgår de mest almindelige SEO-fejl."Lær, hvordan du undgår de mest almindelige SEO-fejl.</p>
                     <div className="flex justify-between">
                         <button className="buy !text-[16px]">Læse mere</button>
                         <div className="flex items-center gap-2">

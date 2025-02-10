@@ -14,9 +14,9 @@ const Services = () => {
       </section>
       <section className="bg-[#F7F6F6]">
         <h3 className="title !my-3">Web Udvikling</h3>
-        <div className="flex justify-between">
+        <div className="flex justify-between md:flex-row flex-col gap-5 ">
           {/* Start Package */}
-          <div className="bg-[#E9E9E9] p-5 rounded-2xl flex flex-col gap-3">
+          <div className="bg-[#E9E9E9] p-4 rounded-2xl flex flex-col gap-3">
             <h3 className="title-price">Start</h3>
             <div className="rounded-2xl flex flex-col gap-3">
               <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
@@ -64,7 +64,7 @@ const Services = () => {
           </div>
 
           {/* Business Package */}
-          <div className="bg-[#E9E9E9] p-5 rounded-2xl flex flex-col gap-3">
+          <div className="bg-[#E9E9E9] p-4 rounded-2xl flex flex-col gap-4">
             <h3 className="title-price">Business</h3>
             <div className="rounded-2xl flex flex-col gap-3">
               <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">

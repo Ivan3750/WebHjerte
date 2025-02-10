@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 const unbounded = Unbounded({
   variable: "--font-unbounded",
   subsets: ["latin"],
-  display: "swap", // Додає стабільне завантаження шрифту
+  display: "swap",
 });
 
 export const metadata = {

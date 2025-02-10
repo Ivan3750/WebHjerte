@@ -6,35 +6,42 @@ import FeedBackPeople from "@/app/components/FeedBackPeople";
 export default function Home() {
   return (
     <div>
-      <div className="flex justify-between py-[70px] px-[90px]">
-        <div>
-          <h1 className="maintitle w-[700px]">
+      <div className="flex justify-between 
+      py-[30px] px-[40px] 
+      sm:py-[40px] sm:px-[50px] 
+      md:py-[60px] md:px-[70px] 
+      lg:py-[75px] lg:px-[85px] 
+      xl:py-[70px] xl:px-[90px] 
+      
+      gap-[25px]">
+        <div className="flex gap-4 flex-col items-start">
+          <h1 className="maintitle">
             Din hjemmeside — vores hjerte!
           </h1>
-          <h3 className="subtitle w-[700px]">
+          <h3 className="subtitle">
             Vi skaber moderne og brugervenlige hjemmesider til danske
             småvirksomheder.
           </h3>
           <Button />
         </div>
-        <div>
+        <div className="hidden md:block">
           <div>
             <Image
               src={HeroImg}
-              className="w-[500px] rounded-3xl"
+              className="max-[500px]:w-[250px] md:w-[500px] rounded-3xl"
               width={500}
               height={500}
               alt="webhjerte"
             ></Image>
           </div>
           <div className="flex gap-5 my-5 justify-between">
-            <div className="bg-[#101213] rounded-2xl w-[250px] h-[150px]">
-              <p className="text-[70px] text-center font-bold">26+</p>
-              <p className="text-[15px] text-center">digitalt produkt</p>
+            <div className="bg-[#101213] rounded-2xl w-1/2">
+              <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-center font-bold">26+</p>
+              <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]   text-center">digitalt produkt</p>
             </div>
-            <div className="bg-[#101213] rounded-2xl w-[250px] h-[150px]">
-              <p className="text-[70px] text-center font-bold">4.7</p>
-              <p className="text-[15px] text-center">Feedback</p>
+            <div className="bg-[#101213] rounded-2xl w-1/2">
+              <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-center font-bold">4.7</p>
+              <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] text-center">Feedback</p>
             </div>
           </div>
         </div>
@@ -73,27 +80,27 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="w-[700px] h-[700px] bg-black"></div>
+          <div className=""></div>
         </div>
       </section>
       <section className="bg-[#F7F6F6]">
         <h3 className="title text-center ">Vores fordele</h3>
-        <div className="flex gap-10 p-10">
-          <div className="flex justify-center items-center flex-col">
+        <div className="flex gap-10 p-10 flex-wrap">
+          <div className="flex justify-center items-center flex-col max-w-[400px]">
             <p className="text-[40px] font-bold text-[#000] ">1</p>
             <p className="text-[25px] text-[#000]">Rådgivning og analyse</p>
             <p className="text text-[5px]">
             Vi håndterer hver enkelt del af projektet, der bliver betroet vores team, og giver dig detaljerede rapporter om, hvad vi arbejder på – sammen med opdateringer fra projektlederen.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col">
+          <div className="flex justify-center items-center flex-col max-w-[400px]">
             <p className="text-[40px] font-bold text-[#000] ">2</p>
             <p className="text-[25px] text-[#000]">Skræddersyede løsninger</p>
             <p className="text text-[5px]">
             Vi tilbyder tilpassede webdesignløsninger, der er skræddersyet til din virksomheds behov og mål, og sikrer, at dit websted skiller sig ud med både funktionalitet og æstetik.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col">
+          <div className="flex justify-center items-center flex-col max-w-[400px]">
             <p className="text-[40px] font-bold text-[#000] ">3</p>
             <p className="text-[25px] text-[#000]">Effektivitet og hastighed</p>
             <p className="text text-[5px]">

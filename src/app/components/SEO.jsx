@@ -39,10 +39,10 @@ const SEO = () => {
       <h2 className="title">SEO tjek</h2>
       <p>Professionelt SEO-tjek gratis af din hjemmeside</p>
 
-      <div className="mt-5">
+      <div className="mt-5 gap-2 flex flex-wrap">
         <input
           type="text"
-          className="input p-2  rounded mr-2 w-[500px]"
+          className="input p-2  rounded mr-2 md:w-[500px] min-w-[200px] w-full"
           placeholder="URL"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
@@ -59,25 +59,11 @@ const SEO = () => {
       {
         /* score !== null */ true && (
           <div className="mt-10 ">
-            <div className="flex justify-between items-center">
-              <div className="border-[10px] border-yellow-500 text-yellow-500 w-[150px] h-[150px] rounded-full text-center text-[40px] font-bold flex items-center justify-center">
+            <div className="flex justify-between items-center gap-4 md:flex-row flex-col">
+              <div className="border-[10px] border-yellow-500 text-yellow-500 w-[150px] h-[150px] rounded-full text-center text-[40px] font-bold flex items-center justify-center md:mx-0 mx-auto">
                 {score}
               </div>
-              <div className="bg-[#252727] text-white w-[450px] p-5 rounded-2xl h-[210px] ">
-                <p className="text-sm">
-                  <span className="font-bold">Navn:</span> {score}
-                </p>
-                <p className="text-sm">
-                  <span className="font-bold">Største synlige indhold:</span>{" "}
-                  {lcp}
-                </p>
-                <p className="text-sm">
-                  <span className="font-bold">Første inputforsinkelse:</span>{" "}
-                  {fid}
-                </p>
-              </div>
-
-              <div className="bg-[#252727] text-white  p-5 rounded-2xl flex gap-5">
+              <div className="bg-[#252727] text-white  p-5 rounded-2xl flex gap-5 flex-wrap md:flex-nowrap items-center justify-center">
                 <div className="border-[10px] border-yellow-500 text-yellow-500 w-[170px] h-[170px] rounded-full text-center text-[35px] font-bold flex items-center justify-center flex-col">
                   <p>{score}</p>
                   <p className="text-[11px]">Effektivitet</p>
@@ -96,10 +82,24 @@ const SEO = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-[#252727] text-white  p-5 rounded-2xl my-5 flex justify-between">
+            <div className="bg-[#252727] text-white my-5 p-5 rounded-2xl h-[210px] ">
+                <p className="text-sm">
+                  <span className="font-bold">Navn:</span> {score}
+                </p>
+                <p className="text-sm">
+                  <span className="font-bold">Største synlige indhold:</span>{" "}
+                  {lcp}
+                </p>
+                <p className="text-sm">
+                  <span className="font-bold">Første inputforsinkelse:</span>{" "}
+                  {fid}
+                </p>
+                <div className=" flex justify-between">
               <p>Vi kan forbedre din hjemmeside til 100 for kun 299 kr. </p>
               <button className="buy">Bestil </button>
             </div>
+              </div>
+           
           </div>
         )
       }
