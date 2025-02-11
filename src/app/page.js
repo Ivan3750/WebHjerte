@@ -1,9 +1,25 @@
+"use client";
 import Image from "next/image";
 import HeroImg from "../../public/Hero.png";
 import Button from "@/app/components/Button";
 import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+ 
+
+
+
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: true, 
+    });
+  }, []);
   return (
     <div>
       <div className="flex justify-between 
@@ -47,7 +63,7 @@ export default function Home() {
         </div>
       </div>
       <section className="flex bg-[#F7F6F6] justify-between gap-[40px]">
-        <div className="">
+        <div className="" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <h3 className="title">Hvem er vi?</h3>
           <div className="text flex flex-col gap-4">
             <span>
@@ -86,21 +102,21 @@ export default function Home() {
       <section className="bg-[#F7F6F6]">
         <h3 className="title text-center ">Vores fordele</h3>
         <div className="flex gap-10 p-10 flex-wrap">
-          <div className="flex justify-center items-center flex-col max-w-[400px]">
+          <div className="flex justify-center items-center flex-col max-w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <p className="text-[40px] font-bold text-[#000] ">1</p>
             <p className="text-[25px] text-[#000]">Rådgivning og analyse</p>
             <p className="text text-[5px]">
             Vi håndterer hver enkelt del af projektet, der bliver betroet vores team, og giver dig detaljerede rapporter om, hvad vi arbejder på – sammen med opdateringer fra projektlederen.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col max-w-[400px]">
+          <div className="flex justify-center items-center flex-col max-w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <p className="text-[40px] font-bold text-[#000] ">2</p>
             <p className="text-[25px] text-[#000]">Skræddersyede løsninger</p>
             <p className="text text-[5px]">
             Vi tilbyder tilpassede webdesignløsninger, der er skræddersyet til din virksomheds behov og mål, og sikrer, at dit websted skiller sig ud med både funktionalitet og æstetik.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col max-w-[400px]">
+          <div className="flex justify-center items-center flex-col max-w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <p className="text-[40px] font-bold text-[#000] ">3</p>
             <p className="text-[25px] text-[#000]">Effektivitet og hastighed</p>
             <p className="text text-[5px]">

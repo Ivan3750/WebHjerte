@@ -1,10 +1,26 @@
+"use client"
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const FeedBackPeople = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 3500, 
+      once: false, 
+    });
+  }, []);
+
   return (
     <>
       <section>
         <h3 className="maintitle mb-10">Hvad siger folk om os?</h3>
         <div className="flex flex-wrap justify-center gap-10 ">
-          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]">
+          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]" data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
             <h4>Frederik J.</h4>
             <p className="my-5 text !text-white !font-medium">
               Hej, alt er virkelig godt. WebHjerte Studio har lavet et
@@ -12,7 +28,10 @@ const FeedBackPeople = () => {
               instruktioner. Jeg kan varmt anbefale dem.
             </p>
           </div>
-          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]">
+          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
             <h4>Egor T.</h4>
             <p className="my-5 text !text-white !font-medium">
               Jeg vil gerne udtrykke min oprigtige taknemmelighed til WebHjerte
@@ -25,7 +44,10 @@ const FeedBackPeople = () => {
               WebHjerte Studio!
             </p>
           </div>
-          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]">
+          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]" data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
             <h4>Oleksandr M.</h4>
             <p className="my-5 text !text-white !font-medium">
               Jeg vil gerne fremhæve det høje niveau af arbejde udført af
@@ -39,7 +61,10 @@ const FeedBackPeople = () => {
               produkt.
             </p>
           </div>
-          <div className="border-2 border-[#404242] p-5 rounded-xl max-w-[600px]">
+          <div className="border-2 border-[#404242] p-5 rounded-xl max-w-[600px]" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
             <h4>Mikkel S.</h4>
             <p className="my-5 text !text-white !font-medium">
               Jeg er meget tilfreds med WebHjerte Studio's arbejde på vores
