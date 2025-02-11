@@ -18,10 +18,10 @@ export default function Home() {
           <h1 className="maintitle">
             Din hjemmeside — vores hjerte!
           </h1>
-          <h3 className="subtitle">
+          <h2 className="subtitle">
             Vi skaber moderne og brugervenlige hjemmesider til danske
             småvirksomheder.
-          </h3>
+          </h2>
           <Button />
         </div>
         <div className="hidden md:block">

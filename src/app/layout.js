@@ -10,20 +10,24 @@ const unbounded = Unbounded({
 });
 
 export const metadata = {
-  title: "WebHjerte - Your Trusted Web Studio in Denmark",
-  description: "We specialize in modern web development, SEO optimization, and responsive design for small businesses in Denmark.",
-  keywords: "web studio, web development, responsive design, SEO, Denmark, small business websites, modern web design",
+  title: "WebHjerte - Din Pålidelige Webstudio i Danmark",
+  description: "Vi specialiserer os i moderne webudvikling, SEO-optimering og responsivt design til små virksomheder i Danmark.",
+  keywords: "webstudio, webudvikling, responsivt design, SEO, Danmark, hjemmesider til små virksomheder, moderne webdesign, Horsens,bestil hjemmeside, gratis hjemmeside, SEO check",
   openGraph: {
-    title: "WebHjerte - Your Trusted Web Studio in Denmark",
-    description: "Create a powerful online presence for your business with WebHjerte.",
+    title: "WebHjerte - Din Pålidelige Webstudio i Danmark",
+    description: "Skab en stærk online tilstedeværelse for din virksomhed med WebHjerte.",
     url: "https://webhjerte.dk",
     image: "/W.png",
   },
 };
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-<body className={`${unbounded.variable} antialiased`} suppressHydrationWarning> <Header/>{children}<Footer/>
+    <html lang="da">
+      <body className={`${unbounded.variable} antialiased`} suppressHydrationWarning>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
