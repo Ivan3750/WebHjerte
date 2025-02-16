@@ -3,6 +3,21 @@ import SEO from "../components/SEO";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 
+
+export const metadata = {
+  title: "Vores Services | WebHjerte",
+  description: "Vi tilbyder skræddersyede webudviklingsløsninger, SEO-optimering, responsivt design og e-handelsplatforme.",
+  keywords: "webudvikling, SEO, responsivt design, e-handel, UX/UI design, digital marketing",
+  openGraph: {
+    title: "Vores Services | WebHjerte",
+    description: "Se vores professionelle webudviklings- og SEO-tjenester.",
+    url: "https://webhjerte.dk/services",
+    image: "/og-services.jpg",
+  },
+};
+
+
+
 const Services = () => {
   return (
     <>

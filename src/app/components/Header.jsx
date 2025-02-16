@@ -40,7 +40,7 @@ const Header = () => {
           <Link className="block text-white text-xl font-normal text-center rounded-2xl p-1 w-fit hover:border hover:border-white" href="/portefolje">Portefølje</Link>
           <Link className="block text-white text-xl font-normal text-center rounded-2xl p-1 w-fit hover:border hover:border-white" href="/blog">Blog</Link>
           <Link className="block text-white text-xl font-normal text-center rounded-2xl p-1 w-fit hover:border hover:border-white" href="/kontakt">Kontakt</Link>
-          <Link href={"/track"} className="block text-white text-xl font-normal  p-1 w-fit hover:border hover:border-white text-center px-5 py-3 rounded-2xl bg-[#0af]">Følg projektet</Link>
+          <Link href={"/track"} className="block text-white text-xl font-normal  p-1 w-fit hover:border hover:border-white text-center px-5 py-3 rounded-2xl bg-[#0af]">Spor projektet</Link>
 
         </div>
       )}

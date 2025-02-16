@@ -7,6 +7,22 @@ import SmartBank from "../../../public/SmartBank.png";
 import Pizzle from "../../../public/Pizzle.png";
 import Hireon from "../../../public/Hireon.png";
 
+
+export const metadata = {
+  title: "Vores Portefølje | WebHjerte",
+  description: "Se vores tidligere webudviklingsprojekter og bliv inspireret til din næste hjemmeside.",
+  keywords: "webdesign portefølje, tidligere projekter, hjemmesidedesign, case studies",
+  openGraph: {
+    title: "Vores Portefølje | WebHjerte",
+    description: "Se vores arbejde og tidligere succesfulde projekter.",
+    url: "https://webhjerte.dk/portefolje",
+    image: "/og-portfolio.jpg",
+  },
+};
+
+
+
+
 const Portefojle = () => {
   return (
     <>

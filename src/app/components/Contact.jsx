@@ -1,18 +1,50 @@
-"use client";
+"use client"
 
 import { useState } from "react";
 
 const Contact = () => {
   const [value, setValue] = useState(0);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [packageSelected, setPackageSelected] = useState("");
+  const [project, setProject] = useState("");
 
   const handleChange = (e) => {
     setValue(e.target.value);
   };
 
-  const sendForm = (event) => {
-    event.preventDefault(); 
+  const sendForm = async (event) => {
+    event.preventDefault();
     console.log("Form submitted");
     console.log("Budget:", value);
+
+    const formData = {
+      name,
+      email,
+      packages: packageSelected,
+      project,
+      budget: value,
+    };
+
+    try {
+      const response = await fetch("/api/sendTelegram", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        alert("Form submitted successfully!");
+      } else {
+        alert("Failed to submit the form.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error sending the form.");
+    }
   };
 
   return (
@@ -25,7 +57,7 @@ const Contact = () => {
       </h3>
 
       <form
-        className="mx-auto flex flex-col gap-5 w-full max-w-lg" 
+        className="mx-auto flex flex-col gap-5 w-full max-w-lg"
         onSubmit={sendForm}
       >
         <div className="flex flex-col md:flex-row md:justify-between gap-4">
@@ -33,12 +65,16 @@ const Contact = () => {
             type="text"
             placeholder="Navn"
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="border-2 border-[#717171] rounded-[20px] p-2 w-full md:w-[48%] bg-transparent text-[#FFFEFD] font-syne text-sm md:text-lg"
           />
           <input
             type="email"
             placeholder="Email"
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="border-2 border-[#717171] rounded-[20px] p-2 w-full md:w-[48%] bg-transparent text-[#FFFEFD] font-syne text-sm md:text-lg"
           />
         </div>
@@ -49,11 +85,11 @@ const Contact = () => {
           <select
             id="packageSelect"
             name="package"
+            value={packageSelected}
+            onChange={(e) => setPackageSelected(e.target.value)}
             className="bg-transparent text-white border-2 border-gray-600 rounded-xl p-2 w-full focus:outline-none focus:border-yellow-500"
           >
-            <option value="" selected>
-              ikke valgt endnu
-            </option>
+            <option value="">ikke valgt endnu</option>
             <option value="start">Start pakke</option>
             <option value="business">Business pakke</option>
             <option value="premium">Premium pakke</option>
@@ -61,9 +97,11 @@ const Contact = () => {
           </select>
         </div>
         <textarea
-          placeholder="Fortæl os om dit projekt "
+          placeholder="Fortæl os om dit projekt"
           className="resize-none h-40 md:h-[225px] overflow-hidden border-2 border-[#717171] rounded-[20px] p-2 bg-transparent text-[#FFFEFD] font-syne text-sm md:text-lg"
           rows="6"
+          value={project}
+          onChange={(e) => setProject(e.target.value)}
           required
         ></textarea>
         <input

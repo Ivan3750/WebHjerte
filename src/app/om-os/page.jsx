@@ -1,8 +1,15 @@
+
+
 import Image from "next/image";
 import Questions from "../components/Questions";
 import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Trasparens from "../../../public/transparens.png";
+ 
+
+
+
+
 
 const OmOs = () => {
   return (

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import HeroImg from "../../public/Hero.png";
 import Button from "@/app/components/Button";
@@ -8,7 +8,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
- 
 
 
 
@@ -21,6 +20,7 @@ export default function Home() {
     });
   }, []);
   return (
+    <>
     <div>
       <div className="flex justify-between 
       py-[30px] px-[40px] 
@@ -130,5 +130,6 @@ export default function Home() {
       <FeedBackPeople />
       <Questions />
     </div>
+    </>
   );
 }
