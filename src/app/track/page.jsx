@@ -1,4 +1,5 @@
 import { FaCheck } from "react-icons/fa6";
+import Button from "../components/Button";
 
 const Track = () => {
     return (
@@ -8,10 +9,10 @@ const Track = () => {
             </h2>
             <div className="p-3 md:p-5 flex flex-col md:flex-row gap-4">
                 <input type="number" className="input w-full md:w-auto" placeholder="Indtast projektnummer" />
-                <button className="p-3 md:p-4 px-6 md:px-9 rounded-xl bg-[#0082D1] text-white font-unbounded text-sm md:text-base font-medium leading-5">
-                    Få detaljer
-                </button>
+       
+                <Button name="Få detaljer"></Button>
             </div>
+            <div className="bg-[#101213] rounded-2xl px-6 p-5 pt-10 border border-[#424242]">
             <div className="flex flex-col md:flex-row justify-between mb-5 gap-6 md:gap-0">
                 <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-0">
                     {["Få idéer", "Design", "Udvikling", "Færdig"].map((step, index) => (
@@ -54,15 +55,8 @@ const Track = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center md:items-start gap-4 w-full md:w-auto">
-                    <h3 className="text-white font-unbounded text-lg md:text-2xl font-normal leading-6 text-center md:text-left">
-                        Vil du ændre noget?
-                    </h3>
-                    <textarea className="resize-none h-32 md:h-44 w-full md:w-80 rounded-xl bg-[#303030] p-3 md:p-4 text-white text-xs" placeholder="Indtast detaljer"></textarea>
-                    <button className="py-2 px-6 md:px-7 rounded-2xl bg-[#FFFEFD] text-[#1F2122] font-syne text-sm md:text-base font-semibold text-center">
-                        Indsend
-                    </button>
-                </div>
+
+            </div>
             </div>
         </div>
     );

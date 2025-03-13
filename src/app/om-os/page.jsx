@@ -47,12 +47,12 @@ const OmOs = () => {
       </section>
       <section className="bg-[#F7F6F6]">
         <h3 className="title text-center">Vores værdier</h3>
-        <div className="flex flex-col gap-[75px] md:justify-center">
-          <div className="flex justify-between items-center flex-wrap">
+        <div className="flex flex-col gap-[75px] md:justify-center items-center">
+          <div className="flex justify-between items-center flex-wrap w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-4 m-auto">
             <div>
               <Image
                 src={Kvalitet}
-                width={600}
+                width={500}
                 height={400}
                 alt="kvalitet"
                 className="rounded-3xl"
@@ -75,7 +75,7 @@ const OmOs = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between items-center flex-wrap-reverse">
+          <div className="flex justify-between items-center flex-wrap w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-4 m-auto">
             <div>
               <h3 className="title !text-[#1C1E1E]">Transparens</h3>
               <h4 className="text-[30px] font-bold !text-[#5E5F5F]">
@@ -94,18 +94,18 @@ const OmOs = () => {
             <div>
               <Image
                 src={Trasparens}
-                width={600}
+                width={500}
                 height={400}
                 alt="kvalitet"
                 className="rounded-3xl"
               ></Image>
             </div>
           </div>
-          <div className="flex justify-between items-center flex-wrap">
+          <div className="flex justify-between items-center flex-wrap w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-4 m-auto">
             <div>
               <Image
                 src={Eko}
-                width={600}
+                width={500}
                 height={400}
                 alt="kvalitet"
                 className="rounded-3xl"

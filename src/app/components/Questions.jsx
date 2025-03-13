@@ -1,10 +1,10 @@
 const Questions = () => {
   return (
     <section className="bg-[#F7F6F6]">
-      <h2 className="title">Sprøgsmål og svar</h2>
+      <h3 className="title">Sprøgsmål og svar</h3>
       <div className=" flex gap-5 flex-col">
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[18px] xl:text-[24px]">
+          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
             Hvilken type virksomheder arbejder WebHjerte Studio med?
           </summary>
           <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text-[10px] md:text-[14px]">
@@ -15,7 +15,7 @@ const Questions = () => {
           </p>
         </details>
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[18px] xl:text-[24px]">
+          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
             Hvordan kan jeg få et tilbud på et webdesignprojekt?
           </summary>
           <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text-[10px] md:text-[14px]">
@@ -26,7 +26,7 @@ const Questions = () => {
           </p>
         </details>
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[18px] xl:text-[24px]">
+          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
             Er mine data sikre hos WebHjerte Studio?
           </summary>
           <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text-[10px] md:text-[14px]">
@@ -36,7 +36,7 @@ const Questions = () => {
           </p>
         </details>
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[18px] xl:text-[24px]">
+          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
             Kan jeg få support efter mit websted er lanceret?
           </summary>
           <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text-[10px] md:text-[14px]">
@@ -46,7 +46,7 @@ const Questions = () => {
           </p>
         </details>
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[18px] xl:text-[24px]">
+          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
             Hvordan kan jeg holde styr på fremdriften af mit projekt?
           </summary>
           <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text-[10px] md:text-[14px]">

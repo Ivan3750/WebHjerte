@@ -2,6 +2,8 @@
 "use client"
 import { useEffect, useState } from "react";
 import { IoCalendarNumber } from "react-icons/io5";
+import Link from "next/link";
+import Image from "next/image";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -26,7 +28,17 @@ const Blog = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
-
+  function formatDate(isoDate) {
+    const date = new Date(isoDate);
+  
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Місяці з 0
+    const year = date.getFullYear();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+  
+    return `${day}.${month}.${year}`;
+  }
   return (
     <>
       <section>
@@ -42,6 +54,7 @@ const Blog = () => {
               className="bg-[#E9E9E9] p-4 rounded-3xl gap-3 flex flex-col md:w-[380px] sm:w-[300px] min-[800]:[280px] xl:w-[350px] box-border"
             >
               <div className="w-full h-[200px] bg-white rounded-2xl"></div>
+              <Image src={post.image} width={500} height={500}/>
               <div className="gap-4 flex flex-col">
                 <h4 className="font-bold text-[14px] text-[#1C1E1E] sm:text-[16px] md:text-[18px] xl:text-[20px]">
                   {post.title}
@@ -50,10 +63,12 @@ const Blog = () => {
                   {post.description}
                 </p>
                 <div className="flex justify-between">
+                  <Link href={`/blog/${post.id}`}>
                   <button className="buy !text-[16px]">Læse mere</button>
+                  </Link>
                   <div className="flex items-center gap-2">
                     <IoCalendarNumber className="text-[#5E5F5F] text-[18px]" />
-                    <p className="text-[#5E5F5F] text-[12px]">{post.date}</p>
+                    <p className="text-[#5E5F5F] text-[12px]">{formatDate(post.date)}</p>
                   </div>
                 </div>
               </div>

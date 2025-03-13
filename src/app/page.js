@@ -4,66 +4,59 @@ import HeroImg from "../../public/Hero.png";
 import Button from "@/app/components/Button";
 import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 
 
 
 export default function Home() {
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, 
-      once: true, 
-    });
-  }, []);
+
   return (
     <>
-    <div>
-      <div className="flex justify-between 
+    <div className="">
+      <div className=" justify-between bg-sq- 
       py-[30px] px-[40px] 
       sm:py-[40px] sm:px-[50px] 
       md:py-[60px] md:px-[70px] 
       lg:py-[75px] lg:px-[85px] 
       xl:py-[70px] xl:px-[90px] 
       
-      gap-[25px]">
-        <div className="flex gap-4 flex-col items-start">
-          <h1 className="maintitle">
-            Din hjemmeside — vores hjerte!
+      gap-[25px] "> {/* absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)] */}
+        <div className=" flex gap-4 flex-col items-center">
+          <h1 className="maintitle !text-center">
+            Din hjemmeside - vores hjerte!
           </h1>
-          <h2 className="subtitle">
+          <h2 className="subtitle !text-center">
             Vi skaber moderne og brugervenlige hjemmesider til danske
             småvirksomheder.
           </h2>
-          <Button />
+          <Button name="Kontakt" />
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           <div>
             <Image
               src={HeroImg}
-              className="max-[500px]:w-[250px] md:w-[500px] rounded-3xl"
-              width={500}
-              height={500}
+              className="max-[1000px]:w-[750px] md:w-[800px] rounded-3xl my-[20px] m-auto"
+              width={1000}
+              height={1000}
               alt="webhjerte"
             ></Image>
           </div>
-          <div className="flex gap-5 my-5 justify-between">
-            <div className="bg-[#101213] rounded-2xl w-1/2">
-              <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-center font-bold">26+</p>
-              <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]   text-center">digitalt produkt</p>
+         {/*  <div className="flex gap-5 my-5 justify-between">
+            <div className="bg-[#101213] rounded-3xl w-1/2 p-4 box-border">
+              <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[55px] xl:text-[60px] text-center font-bold">26+</p>
+              <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]   text-center">Produkter</p>
             </div>
-            <div className="bg-[#101213] rounded-2xl w-1/2">
-              <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-center font-bold">4.7</p>
+            <div className="bg-[#101213] rounded-3xl w-1/2 p-4 box-border">
+              <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[55px] xl:text-[60px] text-center font-bold">4.7</p>
               <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] text-center">Feedback</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <section className="flex bg-[#F7F6F6] justify-between gap-[40px]">
-        <div className="" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div className="">
           <h3 className="title">Hvem er vi?</h3>
           <div className="text flex flex-col gap-4">
             <span>
@@ -101,22 +94,22 @@ export default function Home() {
       </section>
       <section className="bg-[#F7F6F6]">
         <h3 className="title text-center ">Vores fordele</h3>
-        <div className="flex gap-10 p-10 flex-wrap">
-          <div className="flex justify-center items-center flex-col max-w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div className="flex gap-10 p-10 flex-wrap justify-center">
+          <div className="flex justify-center items-center flex-col max-w-[400px]" >
             <p className="text-[40px] font-bold text-[#000] ">1</p>
             <p className="text-[25px] text-[#000]">Rådgivning og analyse</p>
             <p className="text text-[5px]">
             Vi håndterer hver enkelt del af projektet, der bliver betroet vores team, og giver dig detaljerede rapporter om, hvad vi arbejder på – sammen med opdateringer fra projektlederen.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col max-w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div className="flex justify-center items-center flex-col max-w-[400px]" >
             <p className="text-[40px] font-bold text-[#000] ">2</p>
             <p className="text-[25px] text-[#000]">Skræddersyede løsninger</p>
             <p className="text text-[5px]">
             Vi tilbyder tilpassede webdesignløsninger, der er skræddersyet til din virksomheds behov og mål, og sikrer, at dit websted skiller sig ud med både funktionalitet og æstetik.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-col max-w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div className="flex justify-center items-center flex-col max-w-[400px]" >
             <p className="text-[40px] font-bold text-[#000] ">3</p>
             <p className="text-[25px] text-[#000]">Effektivitet og hastighed</p>
             <p className="text text-[5px]">
@@ -130,6 +123,7 @@ export default function Home() {
       <FeedBackPeople />
       <Questions />
     </div>
+  
     </>
   );
 }

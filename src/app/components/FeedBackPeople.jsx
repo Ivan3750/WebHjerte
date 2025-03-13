@@ -1,77 +1,54 @@
-"use client"
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+"use client";
+import Image from "next/image";
+import People from "../../../public/people.jpg";
 const FeedBackPeople = () => {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 3500, 
-      once: false, 
-    });
-  }, []);
-
   return (
     <>
       <section>
         <h3 className="maintitle mb-10">Hvad siger folk om os?</h3>
-        <div className="flex flex-wrap justify-center gap-10 ">
-          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]" data-aos="fade-right"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500">
-            <h4>Frederik J.</h4>
-            <p className="my-5 text !text-white !font-medium">
-              Hej, alt er virkelig godt. WebHjerte Studio har lavet et
-              fantastisk "Pizzeria", hjulpet med hjemmesiden og skrevet
-              instruktioner. Jeg kan varmt anbefale dem.
+        <div class="flex flex-wrap justify-center gap-10">
+        <div class="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+            <div className="flex items-center gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
+                <p className="">A</p>
+              </div>
+              <p className="font-light">Anders Kristensen</p>
+            </div>
+            <p class="my-5 text !text-white !font-normal">
+            Fantastisk service og moderne design! Min hjemmeside blev udviklet hurtigt, og den ser professionel ud på alle enheder. Kan varmt anbefales!
             </p>
           </div>
-          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]" data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500">
-            <h4>Egor T.</h4>
-            <p className="my-5 text !text-white !font-medium">
-              Jeg vil gerne udtrykke min oprigtige taknemmelighed til WebHjerte
-              Studio for deres professionelle hjælp i udviklingen af vores
-              hjemmeside. De har ikke kun udført alle tekniske opgaver som
-              opsætning af DNS-servere og tilslutning af domænet, men har også
-              leveret hurtig support på hvert trin af processen. Takket være
-              deres erfaring og opmærksomhed på detaljer, er vores hjemmeside
-              blevet stabil og klar til at blive brugt. Jeg kan varmt anbefale
-              WebHjerte Studio!
+          <div class="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+            <div className="flex items-center gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
+                <p className="">M</p>
+              </div>
+              <p className="font-light">Mette Larsen</p>
+            </div>
+            <p class="my-5 text !text-white !font-normal">
+            Meget tilfreds med samarbejdet. De forstod vores behov og leverede en brugervenlig og SEO-optimeret løsning. Super dygtigt team!
             </p>
           </div>
-          <div className="border-2 border-[#404242] p-7 rounded-xl max-w-[600px]" data-aos="fade-right"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500">
-            <h4>Oleksandr M.</h4>
-            <p className="my-5 text !text-white !font-medium">
-              Jeg vil gerne fremhæve det høje niveau af arbejde udført af
-              WebHjerte Studio, som skabte en kommerciel hjemmeside for os.
-              Deres indsats og omhyggelighed kom til udtryk i alle aspekter af
-              projektet, især musikspillerens funktionalitet, som fungerer
-              perfekt og har et brugervenligt interface. WebHjerte Studio har
-              demonstreret både teknisk viden og evnen til at arbejde effektivt
-              i et team og tilpasse sig kundens ønsker. Hjemmesiden er stilfuld,
-              moderne og brugervenlig, hvilket øger dens værdi som kommercielt
-              produkt.
+          <div class="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+            <div className="flex items-center gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
+                <p className="">J</p>
+              </div>
+              <p className="font-light">Jesper Hansen</p>
+            </div>
+            <p class="my-5 text !text-white !font-normal">
+            Hurtig respons, flot design og god support. Jeg fik præcis det, jeg ønskede, og min hjemmeside kører perfekt. Tak for et godt samarbejde!
             </p>
           </div>
-          <div className="border-2 border-[#404242] p-5 rounded-xl max-w-[600px]" data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500">
-            <h4>Mikkel S.</h4>
-            <p className="my-5 text !text-white !font-medium">
-              Jeg er meget tilfreds med WebHjerte Studio's arbejde på vores
-              hjemmeside. De leverede et stilfuldt og funktionelt design, der
-              fuldt ud imødekommede vores behov. Kommunikation og support gennem
-              hele processen var fremragende. Jeg kan varmt anbefale WebHjerte
-              Studio til alle, der søger professionelle webudviklingstjenester.
+          <div class="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+            <div className="flex items-center gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
+                <p className="">S</p>
+              </div>
+              <p className="font-light">Sofie Nielsen</p>
+            </div>
+            <p class="my-5 text !text-white !font-normal">
+            Vi fik en skræddersyet løsning, der passer perfekt til vores virksomhed. Kommunikationen var klar, og alt blev leveret til tiden. Stor ros til teamet!
             </p>
           </div>
         </div>

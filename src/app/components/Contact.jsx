@@ -49,12 +49,13 @@ const Contact = () => {
 
   return (
     <section className="bg-[#1C1E1F] p-6 md:p-8">
-      <p className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
+      <h2 className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
         Kontakt os
-      </p>
-      <h3 className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
+      </h2>
+      <h2 className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
         Er du klar til at føre din ide ud i livet?
-      </h3>
+      </h2>
+
 
       <form
         className="mx-auto flex flex-col gap-5 w-full max-w-lg"
@@ -87,7 +88,7 @@ const Contact = () => {
             name="package"
             value={packageSelected}
             onChange={(e) => setPackageSelected(e.target.value)}
-            className="bg-transparent text-white border-2 border-gray-600 rounded-xl p-2 w-full focus:outline-none focus:border-yellow-500"
+            className="bg-transparent text-white border-2 border-gray-600 rounded-xl p-2 w-full focus:outline-none  !bg-[#1C1E1F]"
           >
             <option value="">ikke valgt endnu</option>
             <option value="start">Start pakke</option>
@@ -128,6 +129,7 @@ const Contact = () => {
         <button className="border-0 bg-[#FFFEFD] text-[#7A6A6A] w-full md:w-[108.25px] h-[40px] rounded-[20px] transition-all hover:scale-105 cursor-pointer">
           Send
         </button>
+        <p>! Vi garanterer et svar inden for 24 timer, ellers får du 10% rabat.</p>
       </form>
     </section>
   );

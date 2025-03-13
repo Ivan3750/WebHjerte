@@ -180,12 +180,15 @@ const Services = () => {
               </button>
             </div>
           </div>
+--
+
+--
         </div>
-        <div>
+
+       <div>
           <p className="text my-5">!Vores virksomhed tilbyder ikke domæner og hosting, men vi er eksperter i at hjælpe med opsætningen. Vi sikrer, at alt fungerer perfekt, så du kan fokusere på din forretning uden bekymringer.</p>
         </div>
       </section>
-      <SEO></SEO>
       <FeedBackPeople />
     </>
   );

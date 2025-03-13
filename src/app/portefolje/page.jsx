@@ -41,7 +41,7 @@ const Portefojle = () => {
               width={600}
               height={600}
               alt="workout"
-              className="rounded-2xl"
+              className="rounded-2xl shadow-lg"
             />
           </div>
           <div>
@@ -66,7 +66,7 @@ const Portefojle = () => {
               width={600}
               height={600}
               alt="workout"
-              className="rounded-2xl"
+              className="rounded-2xl shadow-lg"
             />
           </div>
           <div>
@@ -92,7 +92,7 @@ const Portefojle = () => {
               width={600}
               height={600}
               alt="workout"
-              className="rounded-2xl"
+              className="rounded-2xl shadow-lg"
             />
           </div>
           <div>
@@ -119,7 +119,7 @@ const Portefojle = () => {
               width={600}
               height={600}
               alt="workout"
-              className="rounded-2xl"
+              className="rounded-2xl shadow-lg"
             />
           </div>
           <div>
@@ -144,7 +144,7 @@ const Portefojle = () => {
               width={600}
               height={600}
               alt="workout"
-              className="rounded-2xl"
+              className="rounded-2xl shadow-lg"
             />
           </div>
           <div>
