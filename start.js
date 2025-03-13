@@ -19,7 +19,49 @@ const limiter = rateLimit({
 app.prepare().then(() => {
   const server = express();
 
-  server.use(helmet());
+  server.use(
+    helmet({
+      contentSecurityPolicy: {
+        directives: {
+          defaultSrc: ["'self'"],
+          scriptSrc: [
+            "'self'",
+            "'unsafe-inline'", // Needed for Next.js hydration
+            "'unsafe-eval'",  // Needed for Next.js dynamic scripts
+            "https://cdn.jsdelivr.net", // For external CDNs
+          ],
+          connectSrc: [
+            "'self'",
+            "https://webhjerte.dk",       // Your main domain
+            "https://your-service.onrender.com", // Render service domain
+            "https://webhjerte.onrender.com", // Render service domain
+            "wss:", // Allow WebSockets
+          ],
+          imgSrc: [
+            "'self'",
+            "data:", // Allow inline images (e.g., Base64)
+            "https://webhjerte.dk",
+            "https://your-service.onrender.com",
+            "https://webhjerte.onrender.com", // Render service domain
+
+          ],
+          styleSrc: [
+            "'self'",
+            "'unsafe-inline'", // Allow inline styles (for Next.js)
+            "https://webhjerte.dk",
+            "https://fonts.googleapis.com", // For Google Fonts if needed
+          ],
+          fontSrc: [
+            "'self'",
+            "https://webhjerte.dk",
+            "https://fonts.gstatic.com",
+          ],
+        },
+      },
+    })
+  );
+  
+  
   server.use(cors());
   server.use(morgan('dev'));
   server.use(express.json());
