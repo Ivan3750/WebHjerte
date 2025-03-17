@@ -1,55 +1,51 @@
-// server.js
 const express = require("express");
 const next = require("next");
 const helmet = require("helmet");
-const crypto = require("crypto");
+const cors = require("cors");
+const rateLimit = require("express-rate-limit");
+const morgan = require("morgan");
 
-const port = process.env.PORT || 3000;
+// 📌 Підключаємо маршрути
+const blogsRoute = require("./server/routes/blogs/route");
+const projectsRoute = require("./server/routes/projects/route");
+
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
+const PORT = process.env.PORT || 5000;
 
-app.prepare().then(() => {
-  const server = express();
-
-  // Middleware to generate a nonce for each request
-  server.use((req, res, next) => {
-    res.locals.nonce = crypto.randomBytes(16).toString("base64");
-    next();
-  });
-
-  // Secure Content Security Policy
-  server.use(
-    helmet({
-      contentSecurityPolicy: {
-        directives: {
-          defaultSrc: ["'self'"],
-          scriptSrc: [
-            "'self'",
-            (req, res) => `'nonce-${res.locals.nonce}'`,
-            "'unsafe-eval'", // Needed for Next.js
-            "https://cdn.jsdelivr.net",
-            "https://www.webhjerte.dk",
-          ],
-          connectSrc: ["'self'", "https://webhjerte.dk", "wss:"],
-          imgSrc: ["'self'", "data:", "https://webhjerte.dk"],
-          styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-          fontSrc: ["'self'", "https://fonts.gstatic.com"],
-          objectSrc: ["'none'"],
-          frameAncestors: ["'self'"],
-          upgradeInsecureRequests: [],
-        },
-      },
-    })
-  );
-
-  // Handle Next.js pages
-  server.all("*", (req, res) => {
-    return handle(req, res);
-  });
-
-  server.listen(port, (err) => {
-    if (err) throw err;
-    console.log(`> Ready on http://localhost:${port}`);
-  });
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
 });
+
+app.prepare()
+  .then(() => {
+    const server = express();
+
+    // 🛡️ Middleware
+    server.use(helmet());
+    server.use(cors());
+    server.use(morgan("dev"));
+    server.use(express.json());
+    server.use(express.urlencoded({ extended: true }));
+    server.use("/uploads", express.static("uploads")); // Статичний доступ до фото
+
+    // 📌 Маршрути
+    server.use("/api/blogs", blogsRoute);
+    server.use("/api/projects", projectsRoute);
+
+    server.all("*", (req, res) => handle(req, res));
+
+    // 🛠️ Error handling
+    server.use((err, req, res, next) => {
+      console.error("Server Error:", err.stack);
+      res.status(500).json({ error: "Internal Server Error", message: err.message });
+    });
+
+    server.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}`));
+  })
+  .catch((err) => {
+    console.error("Error starting server:", err);
+    process.exit(1);
+  });

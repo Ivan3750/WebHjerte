@@ -8,8 +8,8 @@ const nextConfig = {
       },
     ],
   },
-  crossOrigin: "anonymous",
   reactStrictMode: true,
+  crossOrigin: "anonymous",
   async rewrites() {
     return [
       {
@@ -25,14 +25,22 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value:
-              process.env.NODE_ENV === "development"
-                ? "script-src 'self' 'unsafe-eval' 'unsafe-inline';"
-                : "script-src 'self';",
+            value: `
+              default-src 'self';
+              script-src 'self' 'nonce-randomValue' 'strict-dynamic';
+              style-src 'self' 'unsafe-inline';
+              img-src 'self' data: https:;
+              font-src 'self' data:;
+              connect-src 'self' https:;
+              base-uri 'self';
+              form-action 'self';
+              frame-ancestors 'none';
+            `.replace(/\s{2,}/g, " ").trim(),
           },
         ],
       },
     ];
   },
 };
+
 module.exports = nextConfig;

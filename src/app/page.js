@@ -120,7 +120,73 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <FeedBackPeople />
+      
+      <section className="bg-[#F7F6F6]">
+    <div className="rounded-[50px] shadow-lg bg-[#F7F6F6] p-6 w-full max-[1200px] m-auto block">
+        
+        <table className=" min-w-full border-collapse rounded-3xl">
+            <thead className="text-left ">
+                <tr className="rounded-3xl bg-transperant">
+                    <th className="py-3 px-4 text-gray-500 font-medium"> </th>
+                    <th className="py-3 px-4 text-gray-900 font-bold">WebHjerte</th>
+                    <th className="py-3 px-4 text-gray-900 font-bold">Fuldtids Udvikler</th>
+                    <th className="py-3 px-4 text-gray-900 font-bold">Andre Bureauer</th>
+                </tr>
+            </thead>
+            <tbody className="bg-white">
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium text-gray-500">Pris</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> $</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> $$$$ (Høje Omkostninger)</td>
+                    <td className="py-3 font-light px-4 text-yellow-500"><i className="fas fa-check"></i> $$</td>
+                </tr>
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium text-gray-500">Erfaring med Udvikling</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> Erfaring i både Frontend og Backend</td>
+                    <td className="py-3 font-light px-4 text-yellow-500"><i className="fas fa-times"></i> Begrænset ekspertise afhængig af udvikler</td>
+                    <td className="py-3 font-light px-4 text-yellow-500"><i className="fas fa-times"></i> Varierer mellem udviklere</td>
+                </tr>
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium text-gray-500">Udviklingstid</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> Hurtig levering, fleksibel tidsplan</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Kan tage uger afhængigt af projektets kompleksitet</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Langsomt på grund af flere projekter samtidigt</td>
+                </tr>
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium text-gray-500">Starttidspunkt</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> Start med det samme</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Uger for onboarding og planlægning</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Dage for at afslutte aftaler</td>
+                </tr>
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium text-gray-500">Ubegrænsede Revisioner</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> Ja, vi arbejder, indtil du er tilfreds</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Begrænsede, med ekstra gebyrer</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Begrænset og tidskrævende</td>
+                </tr>
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium text-gray-500">Kundeportal</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> Ja, nem adgang til status og opdateringer</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Varierende systemer, ikke altid gennemsigtige</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Ingen standardiseret portal</td>
+                </tr>
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium text-gray-500">Skalérbarhed</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> Let at skalere efter behov</td>
+                    <td className="py-3 font-light px-4 text-yellow-500"><i className="fas fa-check"></i> Muligt at udvide med ekstra udviklere</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Begrænset af enkeltudviklerkapacitet</td>
+                </tr>
+                <tr className="border-t">
+                    <td className="py-3 px-4 font-medium  text-gray-500">Fleksibilitet</td>
+                    <td className="py-3 font-light px-4 text-green-500"><i className="fas fa-check"></i> Fleksible løsninger tilpasset dine behov</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Låst til fast løn og arbejdstider</td>
+                    <td className="py-3 font-light px-4 text-red-500"><i className="fas fa-times"></i> Ufleksibel, afhængig af projektets struktur</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<FeedBackPeople />
       <Questions />
     </div>
   

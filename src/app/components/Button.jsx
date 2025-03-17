@@ -16,10 +16,10 @@ import { FaArrowRight } from "react-icons/fa6";
     </button>
   );
 }; */
-const Button = ({ name }) => {
+const Button = ({ name, color, onClick }) => {
   return (
     <>
-      <button className="button">
+      <button className={`button bg-[${color}]`} onClick={onClick}>
         {name}
         <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
           <path

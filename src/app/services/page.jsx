@@ -38,18 +38,10 @@ const Services = () => {
                 <FaCircleCheck className="text-[20px]" /> Onepage hjemmeside
               </div>
               <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
-                <FaCircleCheck className="text-[20px]" /> Moderne design
+                <FaCircleCheck className="text-[20px]" /> Responsivt design
               </div>
               <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
-                <FaCircleCheck className="text-[20px]" /> Optimeret til mobil og
-                tablet
-              </div>
-              <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
-                <FaCircleCheck className="text-[20px]" /> Grundlæggende
-                SEO-optimering
-              </div>
-              <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
-                <FaCircleCheck className="text-[20px]" /> SSL-certifikat
+                <FaCircleCheck className="text-[20px]" /> SEO-optimering
               </div>
               <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
                 <FaCircleCheck className="text-[20px]" /> Kontaktformular
@@ -59,19 +51,15 @@ const Services = () => {
                 Maps-integration
               </div>
               <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
-                <FaCircleCheck className="text-[20px]" /> Galleri + videomodul
-              </div>
-              <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
                 <FaCircleCheck className="text-[20px]" /> Links til sociale
                 medier
               </div>
               <div className="text flex items-center gap-3 bg-white rounded-2xl p-2">
-                <FaCircleCheck className="text-[20px]" /> 100% ejerskab af
-                hjemmesiden
+                <FaCircleCheck className="text-[20px]" /> 1 måneds support
               </div>
             </div>
             <div className="flex justify-between mt-10">
-              <p className="price">2.495 DKK</p>
+              <p className="price">1.500 DKK</p>
               <button className="buy flex items-center justify-between gap-5">
                 bestil <FaArrowRightLong />{" "}
               </button>
