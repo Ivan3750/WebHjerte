@@ -58,7 +58,7 @@ const Contact = () => {
 
 
       <form
-        className="mx-auto flex flex-col gap-5 w-full max-w-lg"
+        className="mx-auto flex flex-col gap-5 w-full max-w-[800px]"
         onSubmit={sendForm}
       >
         <div className="flex flex-col md:flex-row md:justify-between gap-4">
@@ -92,9 +92,11 @@ const Contact = () => {
           >
             <option value="">ikke valgt endnu</option>
             <option value="start">Start pakke</option>
-            <option value="business">Business pakke</option>
+            <option value="standart">Standart pakke</option>
+            <option value="professionel">Professionel pakke</option>
+            <option value="avanceret">Avanceret pakke</option>
             <option value="premium">Premium pakke</option>
-            <option value="seo">SEO</option>
+            <option value="support">Support pakke</option>
           </select>
         </div>
         <textarea

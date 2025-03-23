@@ -24,12 +24,12 @@ app.prepare()
     const server = express();
 
     // 🛡️ Middleware
-    server.use(helmet());
-    server.use(cors());
+    /* server.use(helmet());
+    server.use(cors()); */
     server.use(morgan("dev"));
     server.use(express.json());
     server.use(express.urlencoded({ extended: true }));
-    server.use("/uploads", express.static("uploads")); // Статичний доступ до фото
+    server.use("/uploads", express.static("uploads")); // 📌 Доступ до фото
 
     // 📌 Маршрути
     server.use("/api/blogs", blogsRoute);

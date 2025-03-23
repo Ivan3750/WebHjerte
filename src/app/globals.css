@@ -74,6 +74,8 @@ body {
   line-height: 24px;
 }
 
+
+
 *{
   user-select: none;
 }
@@ -102,9 +104,9 @@ details summary {
 .title-price {
   color: rgb(101, 101, 101);
   font-family: Unbounded;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 52px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
 }
@@ -112,7 +114,8 @@ details summary {
 .price {
   color: rgb(28, 30, 30);
   font-family: Unbounded;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 700;
   letter-spacing: 0px;
   text-align: left;
@@ -368,7 +371,6 @@ footer{
 .button {
   position: relative;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 0.5rem;
   padding-inline: 1.25rem;
   background-color: #00AAFF;
