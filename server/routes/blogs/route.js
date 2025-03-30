@@ -7,17 +7,47 @@ const router = express.Router();
 
 // 📌 Налаштування multer для завантаження фото
 const storage = multer.diskStorage({
-  destination: "./uploads/",
+  destination: (req, file, cb) => {
+    cb(null, "./uploads/"); // Вказуємо папку для збереження файлів
+  },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + path.extname(file.originalname)); // Унікальне ім'я
+    cb(null, file.originalname); // Використовуємо оригінальне ім'я файлу
   },
 });
-const upload = multer({ storage });
+
+const upload = multer({ 
+  storage, 
+  limits: { fileSize: 10 * 1024 * 1024 }, // Обмеження 10MB
+  fileFilter: (req, file, cb) => {
+    const allowedTypes = ["image/jpeg", "image/png", "image/gif"];
+    if (!allowedTypes.includes(file.mimetype)) {
+      return cb(new Error("Only images are allowed"));
+    }
+    cb(null, true);
+  }
+});
+
+
+// 📌 Отримання одного блогу за ID
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const [rows] = await db.query("SELECT * FROM blog_posts WHERE id = ?", [id]);
+    if (rows.length === 0) {
+      return res.status(404).json({ message: "Blog post not found" });
+    }
+    res.json(rows[0]);
+  } catch (error) {
+    console.error("Error fetching blog post:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
 
 // 📌 Отримання всіх блогів
 router.get("/", async (req, res) => {
   try {
-    const [rows] = await db.query("SELECT id, title, description, image_url FROM blog_posts ORDER BY date DESC");
+    const [rows] = await db.query("SELECT id, title, cover_image, description, created_at	 FROM blog_posts ORDER BY created_at DESC");
     res.json(rows);
   } catch (error) {
     console.error("Error fetching blog posts:", error);
@@ -25,40 +55,22 @@ router.get("/", async (req, res) => {
   }
 });
 
-// 📌 Отримання окремого поста
-router.get("/:id", async (req, res) => {
-  const { id } = req.params;
+// 📌 **Створення блогу (POST /api/blogPosts)**
+router.post("/", upload.fields([{ name: "image" }, { name: "video" }]), async (req, res) => {
 
-  if (isNaN(id)) {
-    return res.status(400).json({ message: "Invalid blog post ID" });
-  }
+  const { title, content, description, seo_title, seo_description, seo_keywords, cover_image } = req.body;
 
-  try {
-    const [results] = await db.query("SELECT * FROM blog_posts WHERE id = ?", [id]);
-
-    if (results.length === 0) {
-      return res.status(404).json({ message: "Blog post not found" });
-    }
-
-    res.status(200).json(results[0]);
-  } catch (err) {
-    console.error("Error fetching blog post:", err);
-    res.status(500).json({ message: "Internal Server Error" });
-  }
-});
-
-// 📌 Додавання нового поста (з фото)
-router.post("/", upload.single("image"), async (req, res) => {
-  const { title, description, content } = req.body;
-  const imageUrl = req.file ? `/uploads/${req.file.filename}` : null;
-
-  if (!title || !description || !content) {
+  if (!title || !content || !description) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
+
+
   try {
-    await db.query("INSERT INTO blog_posts (title, description, content, image_url) VALUES (?, ?, ?, ?)", 
-      [title, description, content, imageUrl]);
+    await db.query(
+      "INSERT INTO blog_posts (title, content, description, seo_title, seo_description, seo_keywords, cover_image) VALUES (?, ?, ?, ?, ?, ?, ?)",
+      [title, content, description, seo_title, seo_description, seo_keywords, cover_image]
+    );
 
     res.status(201).json({ message: "Blog post created successfully" });
   } catch (error) {
@@ -67,22 +79,10 @@ router.post("/", upload.single("image"), async (req, res) => {
   }
 });
 
-// 📌 Видалення поста
-router.delete("/:id", async (req, res) => {
-  const { id } = req.params;
 
-  try {
-    const [result] = await db.query("DELETE FROM blog_posts WHERE id = ?", [id]);
 
-    if (result.affectedRows === 0) {
-      return res.status(404).json({ message: "Blog post not found" });
-    }
 
-    res.status(200).json({ message: "Blog post deleted successfully" });
-  } catch (error) {
-    console.error("Error deleting blog post:", error);
-    res.status(500).json({ message: "Internal Server Error" });
-  }
-});
+
+
 
 module.exports = router;

@@ -1,45 +1,63 @@
-/* import { useRouter } from "next/router";
 import Image from "next/image";
-import Head from "next/head";
+import { notFound } from 'next/navigation';
 
-export async function getStaticPaths() {
-  const res = await fetch("/api/blogPosts");
-  const blogs = await res.json();
-
-  const paths = blogs.map((blog) => ({ params: { id: blog.id.toString() } }));
-
-  return { paths, fallback: "blocking" }; // ISR для нових статей
+async function getBlogPost(id) {
+  const res = await fetch(`http://localhost:10000/api/blogPosts/${id}`);
+  if (!res.ok) throw new Error("Помилка завантаження");
+  return res.json();
 }
 
-export async function getStaticProps({ params }) {
-  const res = await fetch(`/blogPosts/${params.id}`);
-  const blog = await res.json();
+function RenderContent({ content }) {
+  if (!Array.isArray(content)) return <p>{content}</p>;
 
-  return { props: { blog }, revalidate: 60 };
+  return content.map((block, index) => {
+    switch (block.type) {
+      case "text":
+        return <p key={index} className="mb-4 text">{block.value}</p>;
+      case "heading":
+        return <h2 key={index} className="text-xl font-bold">{block.value}</h2>;
+      case "image":
+        return <Image key={index} className="rounded-2xl" src={`http://localhost:10000/${block.url}`} alt={block.alt} width={800} height={400} />;
+      case "video":
+        return <video key={index} controls className="w-full"><source src={block.url} type="video/mp4" /></video>;
+      default:
+        return null;
+    }
+  });
 }
 
-export default function BlogPost({ blog }) {
-  const router = useRouter();
-  if (router.isFallback) return <p>Завантаження...</p>;
+// Функція для генерації метаданих
+export async function generateMetadata({ params }) {
+  const blog = await getBlogPost(params.blogID);
+
+  return {
+    title: blog.metaTitle || blog.seo_title,
+    description: blog.seo_description || "Опис відсутній",
+    keywords: blog.seo_keywords || "",
+    openGraph: {
+      title: blog.seo_title,
+      description: blog.seo_description || "Опис відсутній",
+      image: blog.cover_image || "",
+      type: 'article',
+      url: `http://localhost:10000/blog/${params.blogID}`
+    }
+  };
+}
+
+export default async function BlogPost({ params }) {
+  const blog = await getBlogPost(params.blogID);
+
+  if (!blog) {
+    notFound(); // Якщо блогу не знайдено, показати сторінку 404
+  }
 
   return (
-    <>
-      <Head>
-        <title>{blog.title}</title>
-        <meta name="description" content={blog.description} />
-      </Head>
-
-      <article>
-        <h1>{blog.title}</h1>
-        <p><strong>Опубліковано:</strong> {blog.date}</p>
-
-        {blog.image_url && (
-          <Image src={blog.image_url} alt={blog.title} width={800} height={400} layout="responsive" />
-        )}
-
-        <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+    <section className="bg-white rounded-t-3xl">
+      <article className="max-w-3xl mx-auto p-4">
+        <h1 className="blogtitle">{blog.title}</h1>
+        {blog.coverImage && <Image src={blog.coverImage} alt={blog.title} width={800} height={400} />}
+        <RenderContent content={blog.content} />
       </article>
-    </>
+    </section>
   );
 }
- */

@@ -2,20 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
+  color: #ededed;
   background: #1c1e1e;
   font-family: Unbounded;
 }
@@ -62,6 +52,15 @@ body {
   font-size: 50px;
   font-weight: 700;
   line-height: 93px;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+}
+.blogtitle {
+  color: #5e5f5f;
+  font-family: Unbounded;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: normal;
   letter-spacing: 0px;
   margin-bottom: 5px;
 }
@@ -156,6 +155,7 @@ button:hover {
 
 footer{
   border-radius: 30px 30px 0 0;
+  margin-top: -25px;
 }
 
 @media (max-width: 1224px){

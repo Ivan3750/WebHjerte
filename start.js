@@ -8,6 +8,7 @@ const morgan = require("morgan");
 // 📌 Підключаємо маршрути
 const blogsRoute = require("./server/routes/blogs/route");
 const projectsRoute = require("./server/routes/projects/route");
+const telegramRoute = require("./server/routes/telegram/route");
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
@@ -32,8 +33,9 @@ app.prepare()
     server.use("/uploads", express.static("uploads")); // 📌 Доступ до фото
 
     // 📌 Маршрути
-    server.use("/api/blogs", blogsRoute);
-    server.use("/api/projects", projectsRoute);
+    server.use("/api/blogPosts/", blogsRoute);
+    server.use("/api/project/", projectsRoute);
+    server.use("/api/telegramRoute", telegramRoute);
 
     server.all("*", (req, res) => handle(req, res));
 

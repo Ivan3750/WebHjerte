@@ -8,6 +8,8 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [packageSelected, setPackageSelected] = useState("");
   const [project, setProject] = useState("");
+  const [statusMessage, setStatusMessage] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setValue(e.target.value);
@@ -15,8 +17,8 @@ const Contact = () => {
 
   const sendForm = async (event) => {
     event.preventDefault();
-    console.log("Form submitted");
-    console.log("Budget:", value);
+    setIsLoading(true);
+    setStatusMessage(null);
 
     const formData = {
       name,
@@ -27,7 +29,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("/api/sendTelegram", {
+      const response = await fetch("/api/telegramRoute/submit-contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,13 +39,15 @@ const Contact = () => {
 
       const data = await response.json();
       if (data.success) {
-        alert("Form submitted successfully!");
+        setStatusMessage({ type: "success", text: "Formular sendt succesfuldt!" });
       } else {
-        alert("Failed to submit the form.");
+        setStatusMessage({ type: "error", text: "Kunne ikke sende formularen." });
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("There was an error sending the form.");
+      setStatusMessage({ type: "error", text: "Der opstod en fejl under afsendelsen." });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -55,7 +59,6 @@ const Contact = () => {
       <h2 className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
         Er du klar til at føre din ide ud i livet?
       </h2>
-
 
       <form
         className="mx-auto flex flex-col gap-5 w-full max-w-[800px]"
@@ -88,7 +91,7 @@ const Contact = () => {
             name="package"
             value={packageSelected}
             onChange={(e) => setPackageSelected(e.target.value)}
-            className="bg-transparent text-white border-2 border-gray-600 rounded-xl p-2 w-full focus:outline-none  !bg-[#1C1E1F]"
+            className="bg-transparent text-white border-2 border-gray-600 rounded-xl p-2 w-full focus:outline-none !bg-[#1C1E1F]"
           >
             <option value="">ikke valgt endnu</option>
             <option value="start">Start pakke</option>
@@ -101,37 +104,44 @@ const Contact = () => {
         </div>
         <textarea
           placeholder="Fortæl os om dit projekt"
-          className="resize-none h-40 md:h-[225px] overflow-hidden border-2 border-[#717171] rounded-[20px] p-2 bg-transparent text-[#FFFEFD] font-syne text-sm md:text-lg"
+          className="resize-none h-40 md:h-[225px] border-2 border-[#717171] rounded-[20px] p-2 bg-transparent text-[#FFFEFD] font-syne text-sm md:text-lg"
           rows="6"
           value={project}
           onChange={(e) => setProject(e.target.value)}
           required
         ></textarea>
-        <input
-          className="file:border file:border-[#FFFEFD] file:bg-transparent file:text-[#717171] file:rounded-full file:px-4 file:py-2 file:cursor-pointer file:hover:bg-[#717171] file:transition-all"
-          type="file"
-          title="Attach a file related to your project"
-        />
         <label htmlFor="budgetRange" className="text-[#FFFEFD] text-lg font-syne">
           Hvad er dit budget for dette projekt?
         </label>
         <p className="text-[#717171] text-lg">
-          Op til <span className="text-[#FFFEFD]">{value} DKK</span>
+          Op til <span className="text-[#FFFEFD]">{value >= 20000 ? "20000+" : value} DKK</span>
         </p>
         <input
           className="w-full h-[10px] rounded-lg bg-[#52A9FF] cursor-pointer appearance-none focus:outline-none"
           id="budgetRange"
           type="range"
-          min={1000}
-          max={20000}
-          step={1000}
+          min={500}
+          max={20500}
+          step={500}
           value={value}
           onChange={handleChange}
         />
-        <button className="border-0 bg-[#FFFEFD] text-[#7A6A6A] w-full md:w-[108.25px] h-[40px] rounded-[20px] transition-all hover:scale-105 cursor-pointer">
-          Send
+        <button
+          className="border-0 bg-[#FFFEFD] text-[#7A6A6A] w-full md:w-[108.25px] h-[40px] rounded-[20px] transition-all hover:scale-105 cursor-pointer"
+          disabled={isLoading}
+        >
+          {isLoading ? "Sender..." : "Send"}
         </button>
-        <p>! Vi garanterer et svar inden for 24 timer, ellers får du 10% rabat.</p>
+
+        {statusMessage && (
+          <p
+            className={`mt-4 text-center p-3 rounded-3xl ${
+              statusMessage.type === "success" ? "bg-[#20C85E] text-white" : "bg-[#F2352A] text-white"
+            }`}
+          >
+            {statusMessage.text}
+          </p>
+        )}
       </form>
     </section>
   );
