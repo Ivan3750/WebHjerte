@@ -2,7 +2,7 @@ import Image from "next/image";
 import { notFound } from 'next/navigation';
 
 async function getBlogPost(id) {
-  const res = await fetch(`http://localhost:10000/api/blogPosts/${id}`);
+  const res = await fetch(`https://www.webhjerte.dk/api/blogPosts/${id}`);
   if (!res.ok) throw new Error("Помилка завантаження");
   return res.json();
 }
@@ -17,7 +17,7 @@ function RenderContent({ content }) {
       case "heading":
         return <h2 key={index} className="text-xl font-bold">{block.value}</h2>;
       case "image":
-        return <Image key={index} className="rounded-2xl" src={`http://localhost:10000/${block.url}`} alt={block.alt} width={800} height={400} />;
+        return <Image key={index} className="rounded-2xl" src={`https://www.webhjerte.dk/${block.url}`} alt={block.alt} width={800} height={400} />;
       case "video":
         return <video key={index} controls className="w-full"><source src={block.url} type="video/mp4" /></video>;
       default:
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
       description: blog.seo_description || "Опис відсутній",
       image: blog.cover_image || "",
       type: 'article',
-      url: `http://localhost:10000/blog/${params.blogID}`
+      url: `https://www.webhjerte.dk/blog/${params.blogID}`
     }
   };
 }
