@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "webhjerte.dk", // або інший конкретний домен для зображень
+        hostname: "webhjerte.dk", // ваш домен для зображень
       },
     ],
   },
@@ -31,7 +31,7 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: `
               default-src 'self';
-              script-src 'self' 'nonce-randomValue' 'strict-dynamic';
+              script-src 'self' 'nonce-randomValue' 'strict-dynamic' https://www.webhjerte.dk;
               style-src 'self' 'unsafe-inline';
               img-src 'self' data: https:;
               font-src 'self' data:;
@@ -43,7 +43,7 @@ const nextConfig = {
           },
           {
             key: "Access-Control-Allow-Origin", 
-            value: "*" // Або визначте конкретні домени, наприклад, https://example.com
+            value: "*" // Або визначте конкретні домени
           },
           {
             key: "Access-Control-Allow-Methods",
