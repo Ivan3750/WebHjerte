@@ -4,14 +4,13 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "webhjerte.dk", // ваш домен для зображень
+        hostname: "webhjerte.dk",
       },
     ],
   },
   reactStrictMode: true,
   crossOrigin: "anonymous",
 
-  // Переписування URL
   async rewrites() {
     return [
       {
@@ -21,7 +20,6 @@ const nextConfig = {
     ];
   },
 
-  // Налаштування заголовків безпеки та CORS
   async headers() {
     return [
       {
@@ -31,7 +29,7 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: `
               default-src 'self';
-              script-src 'self' 'nonce-randomValue' 'strict-dynamic' https://www.webhjerte.dk;
+              script-src 'self' https://www.webhjerte.dk;
               style-src 'self' 'unsafe-inline';
               img-src 'self' data: https:;
               font-src 'self' data:;
@@ -42,8 +40,8 @@ const nextConfig = {
             `.replace(/\s{2,}/g, " ").trim(),
           },
           {
-            key: "Access-Control-Allow-Origin", 
-            value: "*" // Або визначте конкретні домени
+            key: "Access-Control-Allow-Origin",
+            value: "*" // або твій фронтенд, якщо хочеш більш строго
           },
           {
             key: "Access-Control-Allow-Methods",
