@@ -123,9 +123,7 @@ const Services = () => {
           </div>
           <div className="flex justify-between mt-6 items-center flex-col">
             <p className="price pb-4">{pkg.price}</p>
-            <div className="flex justify-end w-full">
-              <Button name="Bestil"></Button>
-            </div>
+          
           </div>
         </div>
       ))}

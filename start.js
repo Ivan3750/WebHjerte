@@ -24,10 +24,11 @@ app.prepare()
   .then(() => {
     const server = express();
 
-    // 🛡️ Middleware
-    /* server.use(helmet());
-    server.use(cors()); */
-    server.use(morgan("dev"));
+/*     server.use(helmet());
+ */   server.use(cors({
+      origin: 'https://www.webhjerte.dk/'
+    })); 
+        server.use(morgan("dev"));
     server.use(express.json());
     server.use(express.urlencoded({ extended: true }));
     server.use("/uploads", express.static("uploads")); // 📌 Доступ до фото

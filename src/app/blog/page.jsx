@@ -14,7 +14,7 @@ const Blog = () => {
       try {
         const response = await fetch("/api/blogPosts");
         const data = await response.json();
-        console.log(data)
+        console.log(data);
         setPosts(data);
       } catch (error) {
         console.error("Error fetching blog posts:", error);
@@ -26,14 +26,12 @@ const Blog = () => {
     fetchBlogPosts();
   }, []);
 
-
   function formatDate(isoDate) {
     const date = new Date(isoDate);
 
     const day = String(date.getDate()).padStart(2, "0");
     const month = String(date.getMonth() + 1).padStart(2, "0"); // Місяці з 0
     const year = date.getFullYear();
-
 
     return `${day}.${month}.${year}`;
   }
@@ -50,10 +48,7 @@ const Blog = () => {
       <section className="bg-[#F7F6F6]">
         <h3 className="title mb-5">Nyheder</h3>
         <div className="flex gap-5  flex-wrap justify-center  ">
-     {loading &&
-           <Loader></Loader>
-    
-  }
+          {loading && <Loader></Loader>}
           {posts.map((post) => (
             <div
               key={post.id}
@@ -81,7 +76,7 @@ const Blog = () => {
                   <div className="flex items-center gap-2">
                     <IoCalendarNumber className="text-[#5E5F5F] text-[18px]" />
                     <p className="text-[#5E5F5F] text-[12px]">
-                      {formatDate(post.created_at	)}
+                      {formatDate(post.created_at)}
                     </p>
                   </div>
                 </div>
