@@ -1,64 +1,47 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "webhjerte.dk",
-      },
-    ],
+// next.config.js
+
+const ContentSecurityPolicy = `
+  default-src 'self';
+  script-src 'self' https://www.webhjerte.dk;
+  style-src 'self' 'unsafe-inline';
+  img-src * blob: data:;
+  media-src 'none';
+  connect-src *;
+  font-src 'self';
+`;
+
+const securityHeaders = [
+  {
+    key: 'Content-Security-Policy',
+    value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
   },
+  {
+    key: 'Referrer-Policy',
+    value: 'origin-when-cross-origin',
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+  {
+    key: 'X-Frame-Options',
+    value: 'DENY',
+  },
+  {
+    key: 'X-XSS-Protection',
+    value: '1; mode=block',
+  },
+];
+
+module.exports = {
   reactStrictMode: true,
-  crossOrigin: "anonymous",
-
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "https://api.adzuna.com/v1/api/jobs/us/search/1/:path*",
-      },
-    ];
-  },
-
   async headers() {
     return [
       {
-        source: "/:path*",
-        headers: [
-          {
-            key: "Content-Security-Policy",
-            value: `
-              default-src 'self';
-              script-src 'self' https://www.webhjerte.dk;
-              style-src 'self' 'unsafe-inline';
-              img-src 'self' data: https:;
-              font-src 'self' data:;
-              connect-src 'self' https:;
-              base-uri 'self';
-              form-action 'self';
-              frame-ancestors 'none';
-            `.replace(/\s{2,}/g, " ").trim(),
-          },
-          {
-            key: "Access-Control-Allow-Origin",
-            value: "*" // або твій фронтенд, якщо хочеш більш строго
-          },
-          {
-            key: "Access-Control-Allow-Methods",
-            value: "GET, POST, PUT, DELETE, OPTIONS"
-          },
-          {
-            key: "Access-Control-Allow-Headers",
-            value: "Content-Type, Authorization"
-          },
-          {
-            key: "Access-Control-Allow-Credentials",
-            value: "true"
-          },
-        ],
+        // Apply to all routes
+        source: '/(.*)',
+        headers: securityHeaders,
       },
     ];
   },
 };
-
-module.exports = nextConfig;
