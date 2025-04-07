@@ -1,29 +1,23 @@
-
-
 import Image from "next/image";
 import Questions from "../components/Questions";
 import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Trasparens from "../../../public/transparens.png";
- 
-
-
-
-
 
 const OmOs = () => {
   return (
     <>
-      <section>
+      <section className="px-4">
         <h2 className="maintitle text-center mt-[75px]">
           Hvem er WebHjerte Studio?
         </h2>
-        <p className="text-center">
+        <p className="text-center text-lg">
           Vi er en passioneret webdesign-studio fra København.
         </p>
       </section>
-      <section className="bg-[#F7F6F6] flex">
-        <div>
+
+      <section className="bg-[#F7F6F6] flex flex-col md:flex-row px-4 py-10 gap-10 items-center">
+        <div className="max-full m-auto p-[56px]">
           <h2 className="title">Vores historie</h2>
           <p className="text">
             WebHjerte blev grundlagt i 2024 i Horsens, Danmark, med en vision om
@@ -40,30 +34,29 @@ const OmOs = () => {
             bidrager til en bedre fremtid for både vores kunder og vores planet.
             WebHjerte er ikke bare en virksomhed – det er en passion for at
             skabe noget meningsfuldt, som hjælper både lokale og globale samfund
-            med at vokse og trives i en digital verden
+            med at vokse og trives i en digital verden.
           </p>
         </div>
-        <div className="w-[500px]"></div>
       </section>
-      <section className="bg-[#F7F6F6]">
-        <h3 className="title text-center">Vores værdier</h3>
-        <div className="flex flex-col gap-[75px] md:justify-center items-center">
-          <div className="flex justify-between items-center flex-wrap w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-4 m-auto">
-            <div>
-              <Image
-                src={Kvalitet}
-                width={500}
-                height={400}
-                alt="kvalitet"
-                className="rounded-3xl"
-              ></Image>
-            </div>
-            <div>
+
+      <section className="bg-[#F7F6F6] px-4 py-16">
+        <h3 className="title text-center mb-16">Vores værdier</h3>
+        <div className="flex flex-col gap-[75px] items-center">
+          {/* Kvalitet */}
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-6 gap-6">
+            <Image
+              src={Kvalitet}
+              width={500}
+              height={400}
+              alt="kvalitet"
+              className="rounded-3xl w-full max-w-[500px] h-auto"
+            />
+            <div className="text-center lg:text-left">
               <h3 className="title !text-[#1C1E1E]">Kvalitet</h3>
-              <h4 className="text-[30px] font-bold !text-[#5E5F5F]">
+              <h4 className="text-[24px] md:text-[30px] font-bold !text-[#5E5F5F]">
                 vi leverer kun det bedste
               </h4>
-              <p className="text max-w-[500px]">
+              <p className="text max-w-[500px] mx-auto lg:mx-0">
                 Hos WebHjerte Studio er vi dedikerede til at levere kun det
                 bedste. Vi stræber efter at skabe skræddersyede løsninger, der
                 ikke kun opfylder, men overgår dine forventninger. Vores fokus
@@ -75,13 +68,15 @@ const OmOs = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between items-center flex-wrap w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-4 m-auto">
-            <div>
+
+          {/* Transparens */}
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-6 gap-6">
+            <div className="text-center lg:text-left">
               <h3 className="title !text-[#1C1E1E]">Transparens</h3>
-              <h4 className="text-[30px] font-bold !text-[#5E5F5F]">
+              <h4 className="text-[24px] md:text-[30px] font-bold !text-[#5E5F5F]">
                 ingen skjulte gebyrer.
               </h4>
-              <p className="text max-w-[500px]">
+              <p className="text max-w-[500px] mx-auto lg:mx-0">
                 Hos WebHjerte Studio tror vi på ærlig og åben kommunikation. Der
                 er ingen skjulte gebyrer eller uforudsete omkostninger, når du
                 arbejder med os. Vi giver dig en klar og gennemskuelig
@@ -91,33 +86,30 @@ const OmOs = () => {
                 transparente omkring vores processer og priser.
               </p>
             </div>
-            <div>
-              <Image
-                src={Trasparens}
-                width={500}
-                height={400}
-                alt="kvalitet"
-                className="rounded-3xl"
-              ></Image>
-            </div>
+            <Image
+              src={Trasparens}
+              width={500}
+              height={400}
+              alt="transparens"
+              className="rounded-3xl w-full max-w-[500px] h-auto"
+            />
           </div>
-          <div className="flex justify-between items-center flex-wrap w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-4 m-auto">
-            <div>
-              <Image
-                src={Eko}
-                width={500}
-                height={400}
-                alt="kvalitet"
-                className="rounded-3xl"
-              ></Image>
-            </div>
-            <div>
-              <h3 className="title !text-[#1C1E1E]">Bæredygtighed </h3>
-              <h4 className="text-[30px] font-bold !text-[#5E5F5F]">
-                {" "}
+
+          {/* Bæredygtighed */}
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-6 gap-6">
+            <Image
+              src={Eko}
+              width={500}
+              height={400}
+              alt="bæredygtighed"
+              className="rounded-3xl w-full max-w-[500px] h-auto"
+            />
+            <div className="text-center lg:text-left">
+              <h3 className="title !text-[#1C1E1E]">Bæredygtighed</h3>
+              <h4 className="text-[24px] md:text-[30px] font-bold !text-[#5E5F5F]">
                 5% går til miljøprojekter.
               </h4>
-              <p className="text max-w-[500px]">
+              <p className="text max-w-[500px] mx-auto lg:mx-0">
                 Hos WebHjerte Studio er vi stolte af at bidrage til en mere
                 bæredygtig fremtid. Derfor afsætter vi 5% af vores indtjening
                 til miljøprojekter, der arbejder for at beskytte vores planet.
@@ -131,7 +123,8 @@ const OmOs = () => {
           </div>
         </div>
       </section>
-      <Questions></Questions>
+
+      <Questions />
     </>
   );
 };

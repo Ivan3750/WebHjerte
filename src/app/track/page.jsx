@@ -48,7 +48,7 @@ const Track = () => {
     const timeDifference = targetDate - now; // Difference in milliseconds
     
     if (timeDifference <= 0) {
-      return "Deadline has passed"; // If the deadline has already passed
+      return "Færdig"; // If the deadline has already passed
     }
   
     // Calculate time components

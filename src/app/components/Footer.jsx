@@ -8,27 +8,27 @@ const Footer = () => {
           WebHjerte 2025
         </p>
         <div>
-          <h3 className="text-[#1D1F20] font-semibold text-[20px] md:text-[30px]">
+          <h3 className="text-[#1D1F20] ml-5 font-semibold text-[20px] md:text-[30px]">
             Din hjemmeside — vores hjerte!
           </h3>
         </div>
-        <div className="flex gap-2 py-3 md:gap-5 md:py-5 max-[600px]:flex-col">
-          <Link className="text-black text-[12px] md:text-sm  ml-5 font-normal" href="/">
+        <div className="flex gap-2 py-3 md:gap-5 md:py-5  flex-row flex-wrap">
+          <Link className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal" href="/">
             Forside
           </Link>
-          <Link className="text-black text-[12px] md:text-sm  ml-5 font-normal" href="/services">
+          <Link className="text-black w-fit  text-[12px] md:text-sm  ml-5 font-normal" href="/services">
             Services
           </Link>
-          <Link className="text-black text-[12px] md:text-sm  ml-5 font-normal" href="/om-os">
+          <Link className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal" href="/om-os">
             Om os
           </Link>
-          <Link className="text-black text-[12px] md:text-sm ml-5  font-normal" href="/portefolje">
+          <Link className="text-black w-fit text-[12px] md:text-sm ml-5  font-normal" href="/portefolje">
             Portefølje
           </Link>
-          <Link className="text-black text-[12px] md:text-sm  ml-5 font-normal" href="/blog">
+          <Link className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal" href="/blog">
             Blog
           </Link>
-          <Link className="text-black text-[12px] md:text-sm  ml-5 font-normal" href="/kontakt">
+          <Link className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal" href="/kontakt">
             Kontakt
           </Link>
         </div>

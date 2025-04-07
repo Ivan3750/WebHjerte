@@ -35,7 +35,7 @@ app.prepare()
 
     // 📌 Маршрути
     server.use("/api/blogPosts/", blogsRoute);
-    server.use("/api/project/", projectsRoute);
+    server.use("/api/", projectsRoute);
     server.use("/api/telegramRoute", telegramRoute);
 
     server.all("*", (req, res) => handle(req, res));

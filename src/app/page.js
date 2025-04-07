@@ -1,12 +1,3 @@
-"use client";
-import {
-  Table,
-  TableHeader,
-  TableRow,
-  TableHead,
-  TableBody,
-  TableCell,
-} from "@/components/ui/table";
 import { Check, X } from "lucide-react";
 import Image from "next/image";
 import HeroImg from "../../public/Hero.png";
@@ -174,62 +165,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-
-        <section className="bg-[#F7F6F6] py-10 px-4 md:px-10 lg:px-20 md:block hidden">
-          <Table className="min-w-full text-left">
-            <TableHeader>
-              <TableRow className="border-b">
-                <TableHead className="text-gray-500"></TableHead>
-                <TableHead className="subtitle !text-[#5e5f5f]">
-                  WebHjerte
-                </TableHead>
-                <TableHead className="subtitle !text-[#5e5f5f]">
-                  Fuldtids Udvikler
-                </TableHead>
-                <TableHead className="subtitle !text-[#5e5f5f]">
-                  Andre Bureauer
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {data.map((item, index) => (
-                <TableRow key={index} className="border-t">
-                  <TableCell className="text-gray-600 font-medium py-3">
-                    {item.category}
-                  </TableCell>
-                  <TableCell className="py-3 text-green-500 ">
-                    <div className="flex">
-                      <Check className="mr-2" />
-                      <p>{item.webHjerte}</p>
-                    </div>
-                  </TableCell>
-                  <TableCell className="py-3 text-[#393939] ">
-                    {" "}
-                    {/* text-red-500 */}
-                    <div className="flex">
-                      <X className="mr-2" />
-                      <p>{item.fullDev}</p>
-                    </div>
-                  </TableCell>
-                  <TableCell className="py-3 text-[#393939] ">
-                    {" "}
-                    {/* text-yellow-500 */}
-                    <div className="flex">
-                      <Check className="mr-2" />
-                      <p>{item.agencies}</p>
-                    </div>
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-            {/* Add footer if needed */}
-            {/* <TableFooter>
-        <TableRow>
-          <TableCell colSpan={4}>Footer Content</TableCell>
-        </TableRow>
-      </TableFooter> */}
-          </Table>
         </section>
 
         <FeedBackPeople />

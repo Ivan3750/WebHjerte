@@ -17,7 +17,7 @@ function RenderContent({ content }) {
       case "heading":
         return <h2 key={index} className="text-xl font-bold">{block.value}</h2>;
       case "image":
-        return <Image key={index} className="rounded-2xl" src={`https://www.webhjerte.dk/${block.url}`} alt={block.alt} width={800} height={400} />;
+        return <Image key={index} className="rounded-2xl" src={`https://www.webhjerte.dk${block.url}`} alt={block.alt} width={800} height={400} />;
       case "video":
         return <video key={index} controls className="w-full"><source src={block.url} type="video/mp4" /></video>;
       default:

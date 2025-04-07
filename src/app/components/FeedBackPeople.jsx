@@ -6,8 +6,8 @@ const FeedBackPeople = () => {
     <>
       <section>
         <h3 className="maintitle mb-10">Hvad siger folk om os?</h3>
-        <div className="flex flex-wrap justify-center gap-10">
-        <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+        <div className="flex flex-wrap justify-between gap-10">
+        <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[625px] shadow-xl">
             <div className="flex items-center gap-5">
               <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
                 <p className="">A</p>
@@ -18,7 +18,7 @@ const FeedBackPeople = () => {
             Fantastisk service og moderne design! Min hjemmeside blev udviklet hurtigt, og den ser professionel ud på alle enheder. Kan varmt anbefales!
             </p>
           </div>
-          <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+          <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[625px] shadow-xl">
             <div className="flex items-center gap-5">
               <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
                 <p className="">M</p>
@@ -29,7 +29,7 @@ const FeedBackPeople = () => {
             Meget tilfreds med samarbejdet. De forstod vores behov og leverede en brugervenlig og SEO-optimeret løsning. Super dygtigt team!
             </p>
           </div>
-          <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+          <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[625px] shadow-xl">
             <div className="flex items-center gap-5">
               <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
                 <p className="">J</p>
@@ -40,7 +40,7 @@ const FeedBackPeople = () => {
             Hurtig respons, flot design og god support. Jeg fik præcis det, jeg ønskede, og min hjemmeside kører perfekt. Tak for et godt samarbejde!
             </p>
           </div>
-          <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[600px] shadow-xl">
+          <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[625px] shadow-xl">
             <div className="flex items-center gap-5">
               <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border-[1px]">
                 <p className="">S</p>
