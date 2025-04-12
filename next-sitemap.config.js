@@ -1,7 +1,6 @@
-/** @type {import('next-sitemap').IConfig} */
+// next-sitemap.config.js
 module.exports = {
-    siteUrl: 'https://webhjerte.dk', 
-    generateRobotsTxt: true, 
-    sitemapSize: 5000, 
-  };
+    siteUrl: 'https://webhjerte.dk', // або твій домен
+    generateRobotsTxt: true,
+  }
   
