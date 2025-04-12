@@ -4,6 +4,20 @@ import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Trasparens from "../../../public/transparens.png";
 
+export const metadata = {
+  title: "Om WebHjerte – Lokalt Webstudio i Horsens",
+  description: "Vi er et ungt webstudio i Horsens, der bygger moderne hjemmesider til små virksomheder – hurtigt og til fair pris.",
+  keywords: "webstudio, webudvikling, Horsens, små virksomheder, moderne hjemmesider, digital løsning, Danmark",
+  openGraph: {
+    title: "Om WebHjerte – Lokalt Webstudio i Horsens",
+    description: "Lær mere om vores team og vores mission om at hjælpe små virksomheder i Danmark.",
+    url: "https://webhjerte.dk/om-os",
+    image: "/og-omos.jpg",
+  },
+};
+
+
+
 const OmOs = () => {
   return (
     <>

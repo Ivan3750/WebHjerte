@@ -52,7 +52,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-[#1C1E1F] p-6 md:p-8">
+    <section className="bg-[#1C1E1F] p-6 py-10 md:p-10">
       <h2 className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
         Kontakt os
       </h2>
@@ -64,6 +64,7 @@ const Contact = () => {
         className="mx-auto flex flex-col gap-5 w-full max-w-[800px]"
         onSubmit={sendForm}
       >
+          <p>Vi lover at svare inden for 24 timer - ellers får du 25% rabat.</p>
         <div className="flex flex-col md:flex-row md:justify-between gap-4">
           <input
             type="text"

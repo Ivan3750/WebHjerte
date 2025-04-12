@@ -62,7 +62,7 @@ const Track = () => {
   
   
   return (
-    <div className="bg-[#1D1E1F] min-h-screen p-6 md:p-10">
+    <div className="bg-[#1D1E1F] min-h-screen p-6 py-12 md:p-10">
       <h2 className="text-[#4FA0F1] font-unbounded text-4xl md:text-7xl font-bold leading-tight tracking-normal text-left p-2 md:p-4">
         Spor projektet
       </h2>
@@ -78,7 +78,7 @@ const Track = () => {
         <Button name="Få detaljer" onClick={handleFetchProject} />
       </div>
 
-      <div className="bg-[#101213] rounded-2xl px-6 p-5 pt-10 border border-[#424242] h-[500px]">
+      <div className="bg-[#101213] rounded-2xl px-6 p-5 pt-10 border border-[#424242] min-h-[500px]">
         {loading && (
           <p className="text-white text-center">Loading...</p>
         )}

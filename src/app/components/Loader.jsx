@@ -24,6 +24,7 @@ const Loader = () => {
 
 const StyledWrapper = styled.div`
   .loader {
+  margin-top: 5px;
     position: relative;
     width: 54px;
     height: 54px;

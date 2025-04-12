@@ -4,7 +4,7 @@ import HeroImg from "../../public/Hero.png";
 import Button from "@/app/components/Button";
 import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
-
+import Wfront from "../../public/WFront.jpg"
 const data = [
   {
     category: "Pris",
@@ -74,19 +74,18 @@ export default function Home() {
           {/* absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)] */}
           <div className=" flex gap-4 flex-col items-center">
             <h1 className="maintitle !text-center">
-              Din hjemmeside - vores hjerte!
-            </h1>
+            Professionelle hjemmesider til små virksomheder i Danmark
+              </h1>
             <h2 className="subtitle !text-center">
-              Vi skaber moderne og brugervenlige hjemmesider til danske
-              småvirksomheder.
+            Få en mobilvenlig, SEO-optimeret hjemmeside klar på 3 dage – uden forudbetaling!
             </h2>
             <Button name="Kontakt" />
           </div>
           <div className="hidden md:block ">
             <div>
               <Image
-                src={HeroImg}
-                className="max-[1000px]:w-[750px] md:w-[800px] rounded-3xl my-[20px] m-auto"
+                src={Wfront}
+                className="max-[1000px]:w-[750px] md:w-[800px] rounded-3xl my-[20px] m-auto shadow-xl"
                 width={1000}
                 height={1000}
                 alt="webhjerte"

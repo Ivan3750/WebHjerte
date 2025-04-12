@@ -2,17 +2,17 @@ import Contact from "../components/Contact";
 
 
 export const metadata = {
-    title: "Kontakt Os | WebHjerte",
-    description: "Kontakt os i dag for at få en skræddersyet hjemmeside til din virksomhed. Vi er klar til at hjælpe dig!",
-    keywords: "kontakt WebHjerte, hjemmeside bestilling, webudvikling kontakt, Horsens webstudio",
-    openGraph: {
-      title: "Kontakt Os | WebHjerte",
-      description: "Har du spørgsmål? Kontakt os for en uforpligtende samtale om din hjemmeside.",
-      url: "https://webhjerte.dk/kontakt",
-      image: "/og-contact.jpg",
-    },
-  };
-  
+  title: "Kontakt WebHjerte – Få Din Hjemmeside i Gang i Dag!",
+  description: "Skriv til os i dag og få en gratis vurdering af din nye hjemmeside. Vi hjælper små virksomheder i hele Danmark.",
+  keywords: "kontakt WebHjerte, hjemmeside bestilling, webudvikling kontakt, Horsens webstudio",
+  openGraph: {
+    title: "Kontakt WebHjerte – Gratis Vurdering",
+    description: "Kontakt os og få et uforpligtende tilbud på en ny hjemmeside til din virksomhed.",
+    url: "https://webhjerte.dk/kontakt",
+    image: "/og-kontakt.jpg",
+  },
+};
+
 
 const Kontakt = () => {
     return ( <>

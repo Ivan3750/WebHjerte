@@ -5,16 +5,17 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Button from "../components/Button";
 
 export const metadata = {
-  title: "Vores Services | WebHjerte",
-  description: "Vi tilbyder skræddersyede webudviklingsløsninger, SEO-optimering, responsivt design og e-handelsplatforme.",
+  title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
+  description: "Vi skaber professionelle hjemmesider, e-handelsløsninger og SEO-optimering for små virksomheder i Danmark.",
   keywords: "webudvikling, SEO, responsivt design, e-handel, UX/UI design, digital marketing",
   openGraph: {
-    title: "Vores Services | WebHjerte",
+    title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
     description: "Se vores professionelle webudviklings- og SEO-tjenester.",
     url: "https://webhjerte.dk/services",
     image: "/og-services.jpg",
   },
 };
+
 
 
 
@@ -111,7 +112,7 @@ const Services = () => {
         <div className="flex justify-between md:flex-row flex-col gap-5 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {packages.map((pkg, index) => (
-        <div key={index} className="bg-[#E9E9E9] p-6 rounded-2xl flex flex-col gap-3 justify-between">
+        <div key={index} className="bg-[#E9E9E9] p-6 rounded-2xl flex flex-col gap-3 justify-between max-[750px]:mx-20 max-[600px]:mx-5 max-[400px]:mx-0">
           <h3 className="title-price">{pkg.name}</h3>
           <p className="text !min-h-[90px]">{pkg.description}</p>
           <div className="flex flex-col gap-2 mt-4">
