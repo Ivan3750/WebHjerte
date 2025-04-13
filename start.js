@@ -13,7 +13,7 @@ const telegramRoute = require("./server/routes/telegram/route");
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
