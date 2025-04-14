@@ -62,7 +62,7 @@ export default function Blog() {
               className="bg-[#E9E9E9] p-4 rounded-3xl flex flex-col gap-3 md:w-[380px] sm:w-[300px] xl:w-[350px] box-border"
             >
               <Image
-                src={post.cover_image || "/default-image.jpg"}
+                src={`https://web-cbe1.onrender.com${post.cover_image}` || "/default-image.jpg"}
                 width={500}
                 height={300}
                 alt={post.title || "Blog image"}
