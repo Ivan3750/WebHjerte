@@ -5,29 +5,25 @@ import { FaCheck } from "react-icons/fa6";
 import Button from "../components/Button";
 
 const Track = () => {
-  // Стани для введеного номера проекту та даних про проект
   const [projectNumber, setProjectNumber] = useState("");
   const [projectData, setProjectData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
-  // Обробник для введення номера проекту
   const handleInputChange = (e) => {
     setProjectNumber(e.target.value)
   };
 
-  // Обробник для запиту даних про проект
   const handleFetchProject = async () => {
     console.log(projectNumber)
     if (!projectNumber) {
-      return; // Якщо номер проекту не введений, не відправляти запит
+      return; 
     }
 
     setLoading(true);
-    setError(null); // Скидаємо помилку перед новим запитом
+    setError(null); 
 
     try {
-      const response = await fetch(`/api/project/${projectNumber}`);
+      const response = await fetch(`https://web-cbe1.onrender.com/project/${projectNumber}`);
       if (!response.ok) {
         throw new Error("Project not found");
       }
@@ -45,18 +41,16 @@ const Track = () => {
     const now = new Date();
     const targetDate = new Date(deadline);
     
-    const timeDifference = targetDate - now; // Difference in milliseconds
+    const timeDifference = targetDate - now;
     
     if (timeDifference <= 0) {
-      return "Færdig"; // If the deadline has already passed
+      return "Færdig"; 
     }
   
-    // Calculate time components
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
   
-    // Return the formatted time
     return `${days}d ${hours}t ${minutes}m`;
   }
   

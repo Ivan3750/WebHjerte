@@ -29,7 +29,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("/api/telegramRoute/submit-contact", {
+      const response = await fetch("https://web-cbe1.onrender.com/telegram/submit-contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

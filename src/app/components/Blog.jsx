@@ -15,7 +15,7 @@ export default function Blog() {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await fetch("/api/blogPosts");
+        const response = await fetch("https://web-cbe1.onrender.com/blog");
         const data = await response.json();
         setPosts(data);
       } catch (error) {
