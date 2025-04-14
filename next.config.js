@@ -1,6 +1,15 @@
-module.exports = {
-    images: {
-      domains: ['www.webhjerte.dk'],  // Додаємо домен, з якого будуть завантажуватись зображення
-    },
-  };
-  
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'web-cbe1.onrender.com',
+        port: '',
+        pathname: '/uploads/**',
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;
