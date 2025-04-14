@@ -24,10 +24,11 @@ app.prepare()
   .then(() => {
     const server = express();
 
-/*     server.use(helmet());
- */   /* server.use(cors({
-      origin: 'https://www.webhjerte.dk/'
-    }));  */
+    server.use(cors({
+      origin: 'https://web-hjerte-ivans-projects-b42b0b81.vercel.app', // або "*" для всіх доменів
+      methods: ['GET', 'POST']
+    }));
+    
         server.use(morgan("dev"));
     server.use(express.json());
     server.use(express.urlencoded({ extended: true }));

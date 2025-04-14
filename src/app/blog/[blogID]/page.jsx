@@ -2,7 +2,7 @@ import Image from "next/image";
 import { notFound } from 'next/navigation';
 
 async function getBlogPost(id) {
-  const res = await fetch(`https://www.webhjerte.dk/api/blogPosts/${id}`);
+  const res = await fetch(`https://web-cbe1.onrender.com/blog/${id}`);
   if (!res.ok) throw new Error("Помилка завантаження");
   return res.json();
 }
@@ -17,9 +17,9 @@ function RenderContent({ content }) {
       case "heading":
         return <h2 key={index} className="text-xl font-bold">{block.value}</h2>;
       case "image":
-        return <Image key={index} className="rounded-2xl" src={`https://www.webhjerte.dk${block.url}`} alt={block.alt} width={800} height={400} />;
+        return <Image key={index} className="rounded-2xl" src={`https://web-cbe1.onrender.com${block.url}`} alt={block.alt} width={800} height={400} />;
       case "video":
-        return <video key={index} controls className="w-full"><source src={block.url} type="video/mp4" /></video>;
+        return <video key={index} controls className="w-full"><source src={`https://web-cbe1.onrender.com${block.url}`} type="video/mp4" /></video>;
       default:
         return null;
     }
