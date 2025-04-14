@@ -1,12 +1,20 @@
 import Image from "next/image";
 import { notFound } from 'next/navigation';
 
+// Функція для отримання даних блогу
 async function getBlogPost(id) {
-  const res = await fetch(`https://web-cbe1.onrender.com/blog/${id}`);
-  if (!res.ok) throw new Error("Помилка завантаження");
-  return res.json();
+  try {
+    const res = await fetch(`https://web-cbe1.onrender.com/blog/${id}`);
+    if (!res.ok) throw new Error("Помилка завантаження");
+
+    return await res.json();
+  } catch (error) {
+    console.error("Error fetching blog post:", error);
+    return null;
+  }
 }
 
+// Функція для рендерингу контенту
 function RenderContent({ content }) {
   if (!Array.isArray(content)) return <p>{content}</p>;
 
@@ -17,9 +25,19 @@ function RenderContent({ content }) {
       case "heading":
         return <h2 key={index} className="text-xl font-bold">{block.value}</h2>;
       case "image":
-        return <Image key={index} className="rounded-2xl" src={`https://web-cbe1.onrender.com${block.url}`} alt={block.alt} width={800} height={400} />;
+        return <Image 
+                key={index} 
+                className="rounded-2xl" 
+                src={`https://web-cbe1.onrender.com${block.url}`} 
+                alt={block.alt} 
+                width={800} 
+                height={400} 
+                priority
+              />;
       case "video":
-        return <video key={index} controls className="w-full"><source src={`https://web-cbe1.onrender.com${block.url}`} type="video/mp4" /></video>;
+        return <video key={index} controls className="w-full">
+                 <source src={`https://web-cbe1.onrender.com${block.url}`} type="video/mp4" />
+               </video>;
       default:
         return null;
     }
@@ -29,6 +47,13 @@ function RenderContent({ content }) {
 // Функція для генерації метаданих
 export async function generateMetadata({ params }) {
   const blog = await getBlogPost(params.blogID);
+
+  if (!blog) {
+    return {
+      title: "Blog not found",
+      description: "The blog you are looking for does not exist.",
+    };
+  }
 
   return {
     title: blog.metaTitle || blog.seo_title,
@@ -55,7 +80,13 @@ export default async function BlogPost({ params }) {
     <section className="bg-white rounded-t-3xl">
       <article className="max-w-3xl mx-auto p-4">
         <h1 className="blogtitle">{blog.title}</h1>
-        {blog.coverImage && <Image src={blog.coverImage} alt={blog.title} width={800} height={400} />}
+        {blog.coverImage && <Image 
+                              src={blog.coverImage} 
+                              alt={blog.title} 
+                              width={800} 
+                              height={400} 
+                              priority 
+                            />}
         <RenderContent content={blog.content} />
       </article>
     </section>
