@@ -24,7 +24,6 @@ const Loader = () => {
 
 const StyledWrapper = styled.div`
   .loader {
-  margin-top: 5px;
     position: relative;
     width: 54px;
     height: 54px;
@@ -36,8 +35,8 @@ const StyledWrapper = styled.div`
     height: 24%;
     background: rgb(128, 128, 128);
     position: absolute;
-    left: 50%;
-    top: 30%;
+    left: 46%;
+    top: 38%;
     opacity: 0;
     border-radius: 50px;
     box-shadow: 0 0 3px rgba(0,0,0,0.2);

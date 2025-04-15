@@ -51,6 +51,9 @@ const NavigationLinks = ({ closeMenu }) => (
     >
       Kontakt
     </Link>
+    <Link href="/track" className="md:hidden block" onClick={closeMenu}>
+        <Button name="Spor projektet" />
+      </Link>
   </>
 );
 
@@ -96,7 +99,7 @@ const Header = () => {
         <NavigationLinks closeMenu={closeMobileMenu} />
       </nav>
 
-      <Link href="/track" className="md:block hidden">
+      <Link href="/track" className="md:block hidden" >
         <Button name="Spor projektet" />
       </Link>
 
@@ -125,7 +128,7 @@ const Header = () => {
 
         <NavigationLinks closeMenu={closeMobileMenu} />
 
-        <Link href="/track">
+        <Link href="/track"  className="md:block hidden">
           <Button name="Spor projektet" />
         </Link>
       </div>

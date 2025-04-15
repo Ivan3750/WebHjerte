@@ -5,6 +5,10 @@ import Button from "@/app/components/Button";
 import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
 import Wfront from "../../public/WFront.jpg"
+import Link from "next/link";
+
+
+
 const data = [
   {
     category: "Pris",
@@ -79,7 +83,9 @@ export default function Home() {
             <h2 className="subtitle !text-center">
             Få en mobilvenlig, SEO-optimeret hjemmeside klar på 3 dage – uden forudbetaling!
             </h2>
+            <Link href="/kontakt">
             <Button name="Kontakt" />
+            </Link>
           </div>
           <div className="hidden md:block ">
             <div>
