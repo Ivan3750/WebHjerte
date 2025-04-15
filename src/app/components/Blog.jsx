@@ -81,7 +81,7 @@ export default function Blog() {
                 <h4 className="font-medium text-[#1C1E1E] text-[12px] sm:text-[14px] xl:text-[16px] h-[40px] md:h-[60px]">
                   {post.title}
                 </h4>
-                <p className="text-[#1C1E1E] font-light text-[12px] sm:text-[14px] xl:text-[16px] h-[80px] md:h-[100px]">
+                <p className="text-[#1C1E1E] font-light text-[12px] sm:text-[12px] xl:text-[14px] h-[80px] md:h-[100px]">
                   {post.description}
                 </p>
                 <div className="flex justify-between items-center">

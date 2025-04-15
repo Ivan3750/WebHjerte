@@ -2,6 +2,7 @@ import { Unbounded } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Script from "next/script";
 import Logo from "../../public/W.png";
 
 const unbounded = Unbounded({
@@ -29,9 +30,28 @@ export default function RootLayout({ children }) {
   return (
     <html lang="da">
       <head>
+        {/* Favicon */}
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QFGJWT1F24');
+            `,
+          }}
+        />
       </head>
       <body
         className={`${unbounded.variable} antialiased`}
