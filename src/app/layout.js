@@ -52,6 +52,15 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
+        {/* Cookiebot */}
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="ddb514ae-c2c6-4fdb-9105-c3b1cb6bc9ec"
+          type="text/javascript"
+          async
+        />
       </head>
       <body
         className={`${unbounded.variable} antialiased`}
