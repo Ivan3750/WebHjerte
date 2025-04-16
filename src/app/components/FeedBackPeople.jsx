@@ -4,7 +4,7 @@ import People from "../../../public/people.jpg";
 const FeedBackPeople = () => {
   return (
     <>
-      <section>
+      <section className="mb-[10px]">
         <h3 className="maintitle mb-10">Hvad siger folk om os?</h3>
         <div className="flex flex-wrap justify-between gap-10 sm:justify-center ">
         <div className="border-[1px] border-[#404242] p-[24px] rounded-3xl max-w-[625px] shadow-xl">

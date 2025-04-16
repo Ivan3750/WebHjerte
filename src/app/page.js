@@ -4,61 +4,10 @@ import HeroImg from "../../public/Hero.png";
 import Button from "@/app/components/Button";
 import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
-import Wfront from "../../public/WFront.jpg"
+import Wfront from "../../public/WFront.jpg";
 import Link from "next/link";
-
-
-
-const data = [
-  {
-    category: "Pris",
-    webHjerte: "$",
-    fullDev: "$$$$ (Høje Omkostninger)",
-    agencies: "$$",
-  },
-  {
-    category: "Erfaring",
-    webHjerte: "Erfaring i både Frontend og Backend",
-    fullDev: "Begrænset ekspertise",
-    agencies: "Varierende kvalitet",
-  },
-  {
-    category: "Udviklingstid",
-    webHjerte: "Hurtig levering",
-    fullDev: "Kan tage uger",
-    agencies: "Langsomt",
-  },
-  {
-    category: "Starttidspunkt",
-    webHjerte: "Start med det samme",
-    fullDev: "Uger for onboarding",
-    agencies: "Dage for godkendelse",
-  },
-  {
-    category: "Revisioner",
-    webHjerte: "Ubegrænsede",
-    fullDev: "Begrænsede, ekstra gebyrer",
-    agencies: "Begrænset og tidskrævende",
-  },
-  {
-    category: "Kundeportal",
-    webHjerte: "Ja, nem adgang",
-    fullDev: "Varierende systemer",
-    agencies: "Ingen portal",
-  },
-  {
-    category: "Skalérbarhed",
-    webHjerte: "Let at skalere",
-    fullDev: "Muligt med flere udviklere",
-    agencies: "Begrænset kapacitet",
-  },
-  {
-    category: "Fleksibilitet",
-    webHjerte: "Tilpassede løsninger",
-    fullDev: "Låst til fast løn",
-    agencies: "Afhængig af struktur",
-  },
-];
+import Team from "../../public/team.png";
+import DiscountPage from "./components/DiscountPage";
 
 export default function Home() {
   return (
@@ -66,28 +15,26 @@ export default function Home() {
       <div className="">
         <div
           className=" justify-between bg-sq- 
-      py-[30px] px-[40px] 
+      py-[30px] px-[20px] 
       sm:py-[40px] sm:px-[50px] 
       md:py-[60px] md:px-[70px] 
       lg:py-[75px] lg:px-[85px] 
       xl:py-[70px] xl:px-[90px] 
       
-      gap-[25px] "
+      gap-[25px] min-h-[calc(100dvh - 100px)]"
         >
-          {" "}
-          {/* absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)] */}
           <div className=" flex gap-4 flex-col items-center">
             <h1 className="maintitle !text-center">
-            Professionelle hjemmesider til små virksomheder i Danmark
-              </h1>
+              Professionel hjemmeside på 3 dage
+            </h1>
             <h2 className="subtitle !text-center">
-            Få en mobilvenlig, SEO-optimeret hjemmeside klar på 3 dage – uden forudbetaling!
+              Tilpasset små virksomheder – uden forudbetaling!
             </h2>
             <Link href="/kontakt">
-            <Button name="Kontakt" />
+              <Button name="Kontakt" />
             </Link>
           </div>
-          <div className="hidden md:block ">
+          <div className="block ">
             <div>
               <Image
                 src={Wfront}
@@ -102,35 +49,41 @@ export default function Home() {
         <section className="flex bg-[#F7F6F6] justify-between gap-[40px]">
           <div className="">
             <h3 className="title">Hvem er vi?</h3>
-            <div className="text flex flex-col gap-4">
-              <span>
-                Historien om WebHjerte Studio begyndte med en simpel idé: at
-                gøre moderne webdesign tilgængeligt for alle danske
-                virksomheder, uanset størrelse. Vores studie blev grundlagt i
-                2024 i Horsens som et svar på de voksende behov hos små og
-                mellemstore virksomheder, der krævede hurtige, effektive og
-                GDPR-kompatible løsninger af høj kvalitet, men som ofte fandt
-                markedets tilbud enten alt for komplekse, dyre eller
-                uigennemskuelige. Vi så et behov for en tilgang, der kunne gøre
-                webdesign både tilgængeligt og økonomisk forsvarligt, samtidig
-                med at vi ikke gik på kompromis med funktionalitet eller design.
-              </span>
+            <div className="flex flex-col md:flex-row  items-center justify-between gap-8">
+              {/* Text Section */}
+              <div className="text w-full space-y-4">
+                <p>
+                  <strong>WebHjerte Studio</strong> blev skabt for at gøre
+                  moderne, brugervenligt webdesign tilgængeligt for alle danske
+                  virksomheder – uanset størrelse eller budget.
+                </p>
+                <p>
+                  Vi startede i 2024 i Horsens med fokus på små og mellemstore
+                  virksomheder, som ofte mangler tilpassede og prisvenlige
+                  webløsninger.
+                </p>
+                <p>
+                  Vi leverer æstetiske, funktionelle og GDPR-venlige hjemmesider
+                  med høj ydeevne og nem vedligeholdelse.
+                </p>
+                <p>
+                  Hos WebHjerte får du ikke kun et professionelt websted, men en
+                  digital partner, der hjælper din virksomhed med at vokse
+                  online.
+                </p>
+              </div>
 
-              <span>
-                Hos WebHjerte Studio er vi passionerede omkring at skabe
-                løsninger, der hjælper virksomheder med at nå deres mål på
-                nettet – fra små startups til etablerede virksomheder, der
-                ønsker at optimere deres online tilstedeværelse. Vores vision er
-                at tilbyde skræddersyede webdesigns, der kombinerer moderne
-                æstetik med brugervenlighed og effektivitet, samtidig med at vi
-                holder os til de strengeste GDPR-standarder. Vi ønsker at gøre
-                det muligt for danske virksomheder at blomstre i den digitale
-                verden uden at blive overvældet af komplekse eller dyre tekniske
-                løsninger. Vores tilgang er enkel, men kraftfuld: Vi gør det
-                muligt for din virksomhed at få et professionelt og moderne
-                webdesign, der er både funktionelt, æstetisk og økonomisk
-                overkommeligt.
-              </span>
+              {/* Image Section */}
+              <div className="w-full ">
+                <div className="aspect-w-16 aspect-h-9">
+                  <Image
+                    src={Team}
+                    alt="team"
+                    objectFit="cover"
+                    className="rounded-2xl shadow-md"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div>
@@ -139,10 +92,10 @@ export default function Home() {
         </section>
         <section className="bg-[#F7F6F6]">
           <h3 className="title text-center ">Vores fordele</h3>
-          <div className="flex gap-10 p-10 flex-wrap justify-center">
+          <div className="flex gap-6 flex-wrap justify-center">
             <div className="flex justify-center items-center flex-col max-w-[400px]">
               <p className="text-[40px] font-bold text-[#000] ">1</p>
-              <p className="text-[25px] text-[#000]">Rådgivning og analyse</p>
+              <p className="text-[20px] text-[#000]">Rådgivning og analyse</p>
               <p className="text text-[5px]">
                 Vi håndterer hver enkelt del af projektet, der bliver betroet
                 vores team, og giver dig detaljerede rapporter om, hvad vi
@@ -151,7 +104,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center flex-col max-w-[400px]">
               <p className="text-[40px] font-bold text-[#000] ">2</p>
-              <p className="text-[25px] text-[#000]">Skræddersyede løsninger</p>
+              <p className="text-[20px] text-[#000]">Skræddersyede løsninger</p>
               <p className="text text-[5px]">
                 Vi tilbyder tilpassede webdesignløsninger, der er skræddersyet
                 til din virksomheds behov og mål, og sikrer, at dit websted
@@ -160,7 +113,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center flex-col max-w-[400px]">
               <p className="text-[40px] font-bold text-[#000] ">3</p>
-              <p className="text-[25px] text-[#000]">
+              <p className="text-[20px] text-[#000]">
                 Effektivitet og hastighed
               </p>
               <p className="text text-[5px]">
@@ -171,6 +124,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <DiscountPage/>
 
         <FeedBackPeople />
         <Questions />

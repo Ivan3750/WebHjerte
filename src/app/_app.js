@@ -1,5 +1,5 @@
 import '../styles/globals.css'; // якщо є
-import RouteLoader from '../components/RouteLoader';
+import RouteLoader from "@/app/components/RouteLoader"
 
 function MyApp({ Component, pageProps }) {
   return (
