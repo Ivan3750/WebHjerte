@@ -3,17 +3,11 @@
 import { useState } from "react";
 
 const Contact = () => {
-  const [value, setValue] = useState(0);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [packageSelected, setPackageSelected] = useState("");
   const [project, setProject] = useState("");
   const [statusMessage, setStatusMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  };
 
   const sendForm = async (event) => {
     event.preventDefault();
@@ -23,9 +17,7 @@ const Contact = () => {
     const formData = {
       name,
       email,
-      packages: packageSelected,
       project,
-      budget: value,
     };
 
     try {
@@ -64,7 +56,9 @@ const Contact = () => {
         className="mx-auto flex flex-col gap-5 w-full max-w-[800px]"
         onSubmit={sendForm}
       >
-          <p>Vi lover at svare inden for 24 timer - ellers får du 25% rabat.</p>
+        <p>Vi lover at svare inden for 24 timer - ellers får du 25% rabat.</p>
+        <p className="text-white text-sm">Eller send os en e-mail på <a href="mailto:hej@webhjerte.dk" className="text-[#FFD100]">hej@webhjerte.dk</a></p>
+
         <div className="flex flex-col md:flex-row md:justify-between gap-4">
           <input
             type="text"
@@ -83,26 +77,7 @@ const Contact = () => {
             className="border-2 border-[#717171] rounded-[20px] p-2 w-full md:w-[48%] bg-transparent text-[#FFFEFD] font-syne text-sm md:text-lg"
           />
         </div>
-        <div>
-          <label htmlFor="packageSelect" className="block text-white mb-2">
-            Vælg en pakke
-          </label>
-          <select
-            id="packageSelect"
-            name="package"
-            value={packageSelected}
-            onChange={(e) => setPackageSelected(e.target.value)}
-            className="bg-transparent text-white border-2 border-gray-600 rounded-xl p-2 w-full focus:outline-none !bg-[#1C1E1F]"
-          >
-            <option value="">ikke valgt endnu</option>
-            <option value="start">Start pakke</option>
-            <option value="standart">Standart pakke</option>
-            <option value="professionel">Professionel pakke</option>
-            <option value="avanceret">Avanceret pakke</option>
-            <option value="premium">Premium pakke</option>
-            <option value="support">Support pakke</option>
-          </select>
-        </div>
+
         <textarea
           placeholder="Fortæl os om dit projekt"
           className="resize-none h-40 md:h-[225px] border-2 border-[#717171] rounded-[20px] p-2 bg-transparent text-[#FFFEFD] font-syne text-sm md:text-lg"
@@ -111,22 +86,7 @@ const Contact = () => {
           onChange={(e) => setProject(e.target.value)}
           required
         ></textarea>
-        <label htmlFor="budgetRange" className="text-[#FFFEFD] text-lg font-syne">
-          Hvad er dit budget for dette projekt?
-        </label>
-        <p className="text-[#717171] text-lg">
-          Op til <span className="text-[#FFFEFD]">{value >= 20000 ? "20000+" : value} DKK</span>
-        </p>
-        <input
-          className="w-full h-[10px] rounded-lg bg-[#52A9FF] cursor-pointer appearance-none focus:outline-none"
-          id="budgetRange"
-          type="range"
-          min={500}
-          max={20500}
-          step={500}
-          value={value}
-          onChange={handleChange}
-        />
+
         <button
           className="border-0 bg-[#FFFEFD] text-[#7A6A6A] w-full md:w-[108.25px] h-[40px] rounded-[20px] transition-all hover:scale-105 cursor-pointer"
           disabled={isLoading}
@@ -136,9 +96,7 @@ const Contact = () => {
 
         {statusMessage && (
           <p
-            className={`mt-4 text-center p-3 rounded-3xl ${
-              statusMessage.type === "success" ? "bg-[#20C85E] text-white" : "bg-[#F2352A] text-white"
-            }`}
+            className={`mt-4 text-center p-3 rounded-3xl ${statusMessage.type === "success" ? "bg-[#20C85E] text-white" : "bg-[#F2352A] text-white"}`}
           >
             {statusMessage.text}
           </p>

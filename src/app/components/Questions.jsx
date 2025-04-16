@@ -46,6 +46,29 @@ const Questions = () => {
           </p>
         </details>
         <details>
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
+            Hvad gør WebHjerte Studio for at sikre høj kvalitet på deres
+            tjenester?
+          </summary>
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text-[10px] md:text-[14px]">
+            Vi sikrer høj kvalitet ved at bruge den nyeste teknologi og følger
+            branchens bedste praksis. Vores team består af erfarne udviklere,
+            der arbejder tæt sammen med kunderne for at forstå deres behov og
+            levere skræddersyede løsninger.
+          </p>
+        </details>
+        <details>
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
+            Hvordan kan WebHjerte Studio hjælpe med SEO?
+          </summary>
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text-[10px] md:text-[14px]">
+            Vi tilbyder professionelle SEO-tjenester, der hjælper med at
+            forbedre din synlighed i søgemaskiner. Dette inkluderer
+            søgeordsanalyse, on-page optimering og linkbuilding for at sikre, at
+            din hjemmeside rangerer højere i søgeresultaterne.
+          </p>
+        </details>
+        <details>
           <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] font-medium text-[12px] rounded-t-3xl sm:text-[14px] md:text-[16px] xl:text-[20px] cursor-pointer">
             Hvordan kan jeg holde styr på fremdriften af mit projekt?
           </summary>
@@ -54,7 +77,7 @@ const Questions = () => {
             følge alle faser af dit projekt i realtid. Du vil få adgang til
             detaljerede opdateringer, rapporter og fremdriftsstatusser direkte
             på denne side. Derudover får du regelmæssige opdateringer fra din
-            projektleder, så du altid er informeret om, hvad der sker.
+            projektleder, så du altid er informeret om, hvad der sker. -
             <a href="/track" className="text-[#0af]">
               Følg mit projekt
             </a>

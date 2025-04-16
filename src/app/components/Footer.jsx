@@ -1,9 +1,13 @@
 import Link from "next/link";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#F6D55C] px-1 py-2 md:px-10 md:py-5">
+      <footer className="bg-[#F6D55C] px-4 py-2 md:px-10 md:py-5">
         <p className="text-[#1F2122] text-center font-normal text-[15px] p-4">
           WebHjerte 2025
         </p>
@@ -12,6 +16,7 @@ const Footer = () => {
             Din hjemmeside — vores hjerte!
           </h3>
         </div>
+        <div className="flex items-center justify-between  flex-wrap ">
         <div className="flex gap-2 py-3 md:gap-5 md:py-5  flex-row flex-wrap">
           <Link className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal" href="/">
             Forside
@@ -31,6 +36,19 @@ const Footer = () => {
           <Link className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal" href="/kontakt">
             Kontakt
           </Link>
+        </div>
+          <div className="flex">
+    <Link href="https://www.instagram.com/webhjerte/" target="_blank">
+        <FaInstagram className="text-black w-fit text-[20px] md:text-[25px] ml-5  font-normal"/>
+    </Link>
+    <Link href="https://www.facebook.com/WebHjerte/" target="_blank">
+        <FaFacebook className="text-black w-fit text-[20px] md:text-[25px] ml-5  font-normal"/>
+    </Link>
+    <Link href="mailto:hej@webhjerte.dk" target="_blank">
+        <MdEmail className="text-black w-fit text-[20px] md:text-[25px] ml-5  font-normal"/>
+    </Link>
+
+          </div>
         </div>
       </footer>
     </>
