@@ -41,15 +41,16 @@ const DiscountPage = () => {
         </h2>
 
         <p className="text !text-white">
-          🌟 Er du ny hos os? Så har vi en gave til dig!  
-          Få <span className="font-bold">15% rabat</span> på din første hjemmeside – kun i april måned.
+          🌟 Er du ny hos os? Så har vi en gave til dig! Få{" "}
+          <span className="font-bold">15% rabat</span> på din første hjemmeside
+          – kun i april måned.
         </p>
 
-        {!expired ? (
-          <div className="bg-[#00aaff] !text-white py-6 px-8 rounded-3xl text-xl font-bold shadow-md border-2 border-white-90 ">
-            ⏳ Tilbuddet udløber om:{" "}
-            {`${timeLeft.days}d ${timeLeft.hours}t ${timeLeft.minutes}m ${timeLeft.seconds}s`}
-          </div>
+        {!expired && timeLeft? (
+         <div className="bg-[#00aaff] !text-white py-4 px-6 rounded-2xl text-lg font-semibold shadow-md border border-white/80">
+         ⏳ Slutter om {`${timeLeft.days}d ${timeLeft.hours}t ${timeLeft.minutes}m ${timeLeft.seconds}s`}
+       </div>
+       
         ) : (
           <div className="bg-red-500 text-white py-6 px-8 rounded-xl text-xl font-bold shadow-md">
             ❌ Tilbuddet er udløbet.
@@ -57,17 +58,17 @@ const DiscountPage = () => {
         )}
 
         <p className="text !text-white">
-          Vi designer moderne, hurtige og SEO-optimerede hjemmesider – skræddersyet til dig som ny kunde.
+          Vi designer moderne, hurtige og SEO-optimerede hjemmesider –
+          skræddersyet til dig som ny kunde.
         </p>
 
         {!expired && (
-          <Link href="/kontakt" className="flex items-center justify-center w-full">
-          <Button
-            name=" Kontakt os nu"
-            >
-           
-          </Button>
-            </Link>
+          <Link
+            href="/kontakt"
+            className="flex items-center justify-center w-full"
+          >
+            <Button name=" Kontakt os nu"></Button>
+          </Link>
         )}
 
         <p className="text-sm text-gray-500">

@@ -124,8 +124,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <DiscountPage/>
-
+        <DiscountPage />
         <FeedBackPeople />
         <Questions />
       </div>

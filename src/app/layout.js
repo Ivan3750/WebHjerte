@@ -12,15 +12,15 @@ const unbounded = Unbounded({
 });
 
 export const metadata = {
-  title: "WebHjerte - Din Pålidelige Webstudio i Danmark",
+  title: "Webbureau i Danmark – Professionel Hjemmeside & SEO | WebHjerte",
   description:
-    "Vi specialiserer os i moderne webudvikling, SEO-optimering og responsivt design til små virksomheder i Danmark.",
+    "WebHjerte er et professionelt webbureau i Danmark. Vi laver moderne og responsive hjemmesider, SEO og webdesign til små virksomheder.",
   keywords:
-    "webstudio, webudvikling, responsivt design, SEO, Danmark, hjemmesider til små virksomheder, moderne webdesign, Horsens,bestil hjemmeside, gratis hjemmeside, SEO check",
+    "webbureau, webdesign firma, hjemmeside til små virksomheder, SEO Danmark, moderne webdesign, responsivt design, Horsens, bestil hjemmeside, gratis hjemmeside, SEO check, rabat",
   openGraph: {
-    title: "WebHjerte - Din Pålidelige Webstudio i Danmark",
+    title: "Webbureau i Danmark – WebHjerte",
     description:
-      "Skab en stærk online tilstedeværelse for din virksomhed med WebHjerte.",
+      "Få en professionel hjemmeside med WebHjerte – dit lokale webbureau i Danmark, specialiseret i webdesign og SEO for små virksomheder.",
     url: "https://webhjerte.dk",
     image: Logo,
   },
@@ -30,25 +30,51 @@ export default function RootLayout({ children }) {
   return (
     <html lang="da">
       <head>
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-TJH4S29Q');
+            `,
+          }}
+        />
+
         {/* Favicon */}
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
 
-        {/* Google Analytics */}
+        {/* Conditional Google Analytics */}
         <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
-        />
-        <Script
-          id="google-analytics"
+          id="conditional-ga-loader"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-QFGJWT1F24');
+              (function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const noTrack = urlParams.get("no_track") === "true" || document.cookie.includes("no_track=true");
+
+                if (!noTrack) {
+                  const gtagScript = document.createElement("script");
+                  gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24";
+                  gtagScript.async = true;
+                  document.head.appendChild(gtagScript);
+
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  window.gtag = gtag;
+                  gtag("js", new Date());
+                  gtag("config", "G-QFGJWT1F24");
+                } else {
+                  console.log("🛑 Google Analytics не активовано — no_track=true");
+                }
+              })();
             `,
           }}
         />
@@ -66,6 +92,16 @@ export default function RootLayout({ children }) {
         className={`${unbounded.variable} antialiased`}
         suppressHydrationWarning
       >
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4S29Q"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
         <Header />
         {children}
         <Footer />
