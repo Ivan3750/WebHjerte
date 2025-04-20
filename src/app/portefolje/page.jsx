@@ -30,11 +30,11 @@ const Portefojle = () => {
  
 
       <section>
-        <h2 className="maintitle text-center mt-[75px]">Se vores arbejde</h2>
-        <p className="text-center">
+        <h1 className="maintitle text-center mt-[75px]">Se vores arbejde</h1>
+        <h2 className="text-center">
           Vi har hjulpet danske virksomheder med at skabe en stærk online
           tilstedeværelse.
-        </p>
+        </h2>
       </section>
       <section className="bg-[#F7F6F6] flex flex-col gap-14">
         <div className="flex justify-between items-center  gap-7 flex-wrap md:flex-nowrap">

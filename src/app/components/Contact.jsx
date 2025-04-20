@@ -45,9 +45,9 @@ const Contact = () => {
 
   return (
     <section className="bg-[#1C1E1F] p-6 py-10 md:p-10">
-      <h2 className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
+      <h1 className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
         Kontakt os
-      </h2>
+      </h1>
       <h2 className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
         Er du klar til at føre din ide ud i livet?
       </h2>

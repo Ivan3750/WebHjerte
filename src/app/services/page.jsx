@@ -104,13 +104,13 @@ const Services = () => {
   return (
     <>
       <section>
-        <h2 className="maintitle text-center mt-[75px]">Hvad tilbyder vi?</h2>
-        <p className="text-center">
+        <h1 className="maintitle text-center mt-[75px]">Hvad tilbyder vi?</h1>
+        <h2 className="text-center">
           Professionel webdesign til danske småvirksomheder.
-        </p>
+        </h2>
       </section>
       <section className="bg-[#F7F6F6]">
-        <h3 className="title !my-3">Web Udvikling</h3>
+        <h2 className="title !my-3">Web Udvikling</h2>
         <div className="flex justify-between md:flex-row flex-col gap-5 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {packages.map((pkg, index) => (

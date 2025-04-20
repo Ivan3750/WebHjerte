@@ -91,39 +91,49 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-[#F7F6F6] py-12">
-  <h3 className="title text-center mb-10">Hvorfor vælge os?</h3>
-  <div className="flex gap-10 flex-wrap justify-center">
-    <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
-      <div className="bg-white p-4 rounded-full shadow-lg mb-4">
-        <Brain className="text-pink-500" size={40} />
-      </div>
-      <p className="text-[20px] font-semibold text-[#000] mb-2">Strategisk rådgivning</p>
-      <p className="text text-[16px] text-[#444]">
-        Vi analyserer dine forretningsmål og udvikler en skræddersyet digital strategi – med fuld gennemsigtighed og løbende kommunikation.
-      </p>
-    </div>
+          <h3 className="title text-center mb-10">Hvorfor vælge os?</h3>
+          <div className="flex gap-10 flex-wrap justify-center">
+            <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
+              <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+                <Brain className="text-pink-500" size={40} />
+              </div>
+              <p className="text-[20px] font-semibold text-[#000] mb-2">
+                Strategisk rådgivning
+              </p>
+              <p className="text text-[16px] text-[#444]">
+                Vi analyserer dine forretningsmål og udvikler en skræddersyet
+                digital strategi – med fuld gennemsigtighed og løbende
+                kommunikation.
+              </p>
+            </div>
 
-    <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
-      <div className="bg-white p-4 rounded-full shadow-lg mb-4">
-        <Puzzle className="text-purple-600" size={40} />
-      </div>
-      <p className="text-[20px] font-semibold text-[#000] mb-2">Skræddersyede løsninger</p>
-      <p className="text text-[16px] text-[#444]">
-        Hvert design og hver funktion er nøje udformet for at matche netop din virksomhed – både visuelt og teknisk.
-      </p>
-    </div>
+            <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
+              <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+                <Puzzle className="text-purple-600" size={40} />
+              </div>
+              <p className="text-[20px] font-semibold text-[#000] mb-2">
+                Skræddersyede løsninger
+              </p>
+              <p className="text text-[16px] text-[#444]">
+                Hvert design og hver funktion er nøje udformet for at matche
+                netop din virksomhed – både visuelt og teknisk.
+              </p>
+            </div>
 
-    <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
-      <div className="bg-white p-4 rounded-full shadow-lg mb-4">
-        <Rocket className="text-yellow-500" size={40} />
-      </div>
-      <p className="text-[20px] font-semibold text-[#000] mb-2">Hurtig og pålidelig levering</p>
-      <p className="text text-[16px] text-[#444]">
-        Vi prioriterer effektivitet og kvalitet – med klare deadlines og hurtige resultater uden stress.
-      </p>
-    </div>
-  </div>
-</section>
+            <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
+              <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+                <Rocket className="text-yellow-500" size={40} />
+              </div>
+              <p className="text-[20px] font-semibold text-[#000] mb-2">
+                Hurtig og pålidelig levering
+              </p>
+              <p className="text text-[16px] text-[#444]">
+                Vi prioriterer effektivitet og kvalitet – med klare deadlines og
+                hurtige resultater uden stress.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <DiscountPage />
         <FeedBackPeople />

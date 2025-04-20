@@ -24,16 +24,16 @@ const OmOs = () => {
   return (
     <>
       <section className="px-4">
-        <h2 className="maintitle text-center mt-[75px]">
+        <h1 className="maintitle text-center mt-[75px]">
           Hvem er WebHjerte Studio?
+        </h1>
+        <h2 className="text-center text-lg">
+          Vi er en passioneret web-studio fra Horsens.
         </h2>
-        <p className="text-center text-lg">
-          Vi er en passioneret webdesign-studio fra København.
-        </p>
       </section>
 
-      <section className="bg-[#F7F6F6] flex flex-col md:flex-row px-4 py-10 gap-10 items-center">
-        <div className="max-full m-auto p-[56px]">
+      <section className="bg-[#F7F6F6] flex flex-col md:flex-row  gap-10 items-center">
+        <div className="max-full m-auto ">
           <h2 className="title">Vores historie</h2>
           <p className="text">
             WebHjerte blev grundlagt i 2024 i Horsens, Danmark, med en vision om
@@ -56,17 +56,17 @@ const OmOs = () => {
       </section>
       <WorkProcess />
 
-      <section className="bg-[#F7F6F6] px-4 py-16">
-        <h3 className="title text-center mb-16">Vores værdier</h3>
+      <section className="bg-[#F7F6F6]">
+        <h2 className="title mb-16">Vores værdier</h2>
         <div className="flex flex-col gap-[75px] items-center">
           {/* Kvalitet */}
-          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-6 gap-6">
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
             <Image
               src={Kvalitet}
               width={500}
               height={400}
               alt="kvalitet"
-              className="rounded-3xl w-full max-w-[500px] h-auto"
+              className="rounded-2xl w-full max-w-[500px] h-auto"
             />
             <div className="text-center lg:text-left">
               <h3 className="title !text-[#1C1E1E]">Kvalitet</h3>
@@ -87,7 +87,7 @@ const OmOs = () => {
           </div>
 
           {/* Transparens */}
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-6 gap-6">
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
             <div className="text-center lg:text-left">
               <h3 className="title !text-[#1C1E1E]">Transparens</h3>
               <h4 className="text-[24px] md:text-[30px] font-bold !text-[#5E5F5F]">
@@ -108,18 +108,18 @@ const OmOs = () => {
               width={500}
               height={400}
               alt="transparens"
-              className="rounded-3xl w-full max-w-[500px] h-auto"
+              className="rounded-2xl w-full max-w-[500px] h-auto"
             />
           </div>
 
           {/* Bæredygtighed */}
-          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1200px] border rounded-3xl border-[#ededed] bg-[#ededed] p-6 gap-6">
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
             <Image
               src={Eko}
               width={500}
               height={400}
               alt="bæredygtighed"
-              className="rounded-3xl w-full max-w-[500px] h-auto"
+              className="rounded-2xl w-full max-w-[500px] h-auto"
             />
             <div className="text-center lg:text-left">
               <h3 className="title !text-[#1C1E1E]">Bæredygtighed</h3>

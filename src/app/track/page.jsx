@@ -57,9 +57,9 @@ const Track = () => {
   
   return (
     <div className="bg-[#1D1E1F] min-h-screen p-6 py-12 md:p-10">
-      <h2 className="text-[#4FA0F1] font-unbounded text-4xl md:text-7xl font-bold leading-tight tracking-normal text-left p-2 md:p-4">
+      <h1 className="text-[#4FA0F1] font-unbounded text-4xl md:text-7xl font-bold leading-tight tracking-normal text-left p-2 md:p-4">
         Spor projektet
-      </h2>
+      </h1>
       <div className="p-3 md:p-5 flex flex-col md:flex-row gap-4">
         <input
           type="number"

@@ -67,13 +67,13 @@ export default function Blog() {
         <h1 className="maintitle text-center mt-[75px]">
           Tips og nyheder om web
         </h1>
-        <p className="text-center">
+        <h2 className="text-center">
           Få indsigt i de seneste trends og bedste praksis inden for web.
-        </p>
+        </h2>
       </section>
 
       <section className="bg-[#F7F6F6] py-10">
-        <h3 className="title mb-5">Nyheder</h3>
+        <h2 className="title mb-5">Nyheder</h2>
         <div className="p-4 md:p-6 flex flex-col md:flex-row items-center gap-4  rounded-2xl ">
           <input
             type="text"
@@ -121,9 +121,9 @@ export default function Blog() {
                 className="rounded-2xl object-cover"
               />
               <div className="flex flex-col gap-4">
-                <h4 className="font-medium text-[#1C1E1E] text-[12px] sm:text-[14px] xl:text-[16px] h-[40px] md:h-[60px]">
+                <h3 className="font-medium text-[#1C1E1E] text-[12px] sm:text-[14px] xl:text-[16px] h-[40px] md:h-[60px]">
                   {post.title}
-                </h4>
+                </h3>
                 <p className="text-[#1C1E1E] font-light text-[12px] sm:text-[12px] xl:text-[14px] h-[80px] md:h-[100px]">
                   {post.description}
                 </p>
