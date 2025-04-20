@@ -1,4 +1,4 @@
-import { Check, X } from "lucide-react";
+import { Brain, Check, Puzzle, Rocket, X } from "lucide-react";
 import Image from "next/image";
 import HeroImg from "../../public/Hero.png";
 import Button from "@/app/components/Button";
@@ -90,40 +90,41 @@ export default function Home() {
             <div className=""></div>
           </div>
         </section>
-        <section className="bg-[#F7F6F6]">
-          <h3 className="title text-center ">Vores fordele</h3>
-          <div className="flex gap-6 flex-wrap justify-center">
-            <div className="flex justify-center items-center flex-col max-w-[400px]">
-              <p className="text-[40px] font-bold text-[#000] ">1</p>
-              <p className="text-[20px] text-[#000]">Rådgivning og analyse</p>
-              <p className="text text-[5px]">
-                Vi håndterer hver enkelt del af projektet, der bliver betroet
-                vores team, og giver dig detaljerede rapporter om, hvad vi
-                arbejder på – sammen med opdateringer fra projektlederen.
-              </p>
-            </div>
-            <div className="flex justify-center items-center flex-col max-w-[400px]">
-              <p className="text-[40px] font-bold text-[#000] ">2</p>
-              <p className="text-[20px] text-[#000]">Skræddersyede løsninger</p>
-              <p className="text text-[5px]">
-                Vi tilbyder tilpassede webdesignløsninger, der er skræddersyet
-                til din virksomheds behov og mål, og sikrer, at dit websted
-                skiller sig ud med både funktionalitet og æstetik.
-              </p>
-            </div>
-            <div className="flex justify-center items-center flex-col max-w-[400px]">
-              <p className="text-[40px] font-bold text-[#000] ">3</p>
-              <p className="text-[20px] text-[#000]">
-                Effektivitet og hastighed
-              </p>
-              <p className="text text-[5px]">
-                Vi arbejder hurtigt og effektivt, uden at gå på kompromis med
-                kvaliteten, og leverer løsninger til tiden, så du kan få din
-                virksomhed op at køre online hurtigt og problemfrit.
-              </p>
-            </div>
-          </div>
-        </section>
+        <section className="bg-[#F7F6F6] py-12">
+  <h3 className="title text-center mb-10">Hvorfor vælge os?</h3>
+  <div className="flex gap-10 flex-wrap justify-center">
+    <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
+      <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+        <Brain className="text-pink-500" size={40} />
+      </div>
+      <p className="text-[20px] font-semibold text-[#000] mb-2">Strategisk rådgivning</p>
+      <p className="text text-[16px] text-[#444]">
+        Vi analyserer dine forretningsmål og udvikler en skræddersyet digital strategi – med fuld gennemsigtighed og løbende kommunikation.
+      </p>
+    </div>
+
+    <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
+      <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+        <Puzzle className="text-purple-600" size={40} />
+      </div>
+      <p className="text-[20px] font-semibold text-[#000] mb-2">Skræddersyede løsninger</p>
+      <p className="text text-[16px] text-[#444]">
+        Hvert design og hver funktion er nøje udformet for at matche netop din virksomhed – både visuelt og teknisk.
+      </p>
+    </div>
+
+    <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
+      <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+        <Rocket className="text-yellow-500" size={40} />
+      </div>
+      <p className="text-[20px] font-semibold text-[#000] mb-2">Hurtig og pålidelig levering</p>
+      <p className="text text-[16px] text-[#444]">
+        Vi prioriterer effektivitet og kvalitet – med klare deadlines og hurtige resultater uden stress.
+      </p>
+    </div>
+  </div>
+</section>
+
         <DiscountPage />
         <FeedBackPeople />
         <Questions />

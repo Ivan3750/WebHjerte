@@ -4,13 +4,17 @@ import { IoCalendarNumber } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import Loader from "./Loader";
-import { useRouter } from "next/navigation"; // Додано для перенаправлення
+import { useRouter } from "next/navigation";
+import Button from "./Button";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [loadingPost, setLoadingPost] = useState(null); // Стан для завантаження окремих постів
-  const router = useRouter(); // Ініціалізація useRouter
+  const [loadingPost, setLoadingPost] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const router = useRouter();
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
@@ -18,6 +22,12 @@ export default function Blog() {
         const response = await fetch("https://web-cbe1.onrender.com/blog");
         const data = await response.json();
         setPosts(data);
+
+        // Extract unique categories from posts
+        const uniqueCategories = Array.from(
+          new Set(data.map((post) => post.category))
+        ).filter(Boolean);
+        setCategories(uniqueCategories);
       } catch (error) {
         console.error("Error fetching blog posts:", error);
       } finally {
@@ -31,7 +41,7 @@ export default function Blog() {
   const formatDate = (isoDate) => {
     const date = new Date(isoDate);
     const day = String(date.getDate()).padStart(2, "0");
-    const month = String(date.getMonth() + 1).padStart(2, "0"); // Місяці з 0
+    const month = String(date.getMonth() + 1).padStart(2, "0");
     const year = date.getFullYear();
     return `${day}.${month}.${year}`;
   };
@@ -40,6 +50,16 @@ export default function Blog() {
     setLoadingPost(postId);
     router.push(`/blog/${postId}`);
   };
+
+  const filteredPosts = posts.filter((post) => {
+    const matchesSearch = post.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesCategory = selectedCategory
+      ? post.category === selectedCategory
+      : true;
+    return matchesSearch && matchesCategory;
+  });
 
   return (
     <>
@@ -54,14 +74,37 @@ export default function Blog() {
 
       <section className="bg-[#F7F6F6] py-10">
         <h3 className="title mb-5">Nyheder</h3>
+        <div className="p-4 md:p-6 flex flex-col md:flex-row items-center gap-4  rounded-2xl ">
+          <input
+            type="text"
+            placeholder="Søg efter titel"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full md:w-64 px-4 py-2 border text border-gray-300 rounded-lg shadow-sm focus:outline-none   transition-all duration-300 text-sm"
+          />
+
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            className="text w-full md:w-52 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none   transition-all duration-300 text-sm bg-white"
+          >
+            <option value="">Alle kategorier</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-5">
           {loading && <Loader />}
-          {!loading && posts.length === 0 && (
-            <p className="text-center font-bold text-[#1C1E1E] text-[16px] sm:text-[18px] xl:text-[20px]">
+          {!loading && filteredPosts.length === 0 && (
+            <p className="text-center  text text-[16px] sm:text-[18px] xl:text-[20px]">
               Ingen blogindlæg fundet.
             </p>
           )}
-          {posts.map((post) => (
+          {filteredPosts.map((post) => (
             <div
               key={post.id}
               className="bg-[#E9E9E9] p-4 rounded-3xl flex flex-col gap-3 md:w-[380px] sm:w-[300px] xl:w-[350px] box-border"
@@ -84,10 +127,11 @@ export default function Blog() {
                 <p className="text-[#1C1E1E] font-light text-[12px] sm:text-[12px] xl:text-[14px] h-[80px] md:h-[100px]">
                   {post.description}
                 </p>
+                <p className="text-[#00aaff]">#{post.category}</p>
                 <div className="flex justify-between items-center">
                   <button
                     className="buy !p-2 md:!p-1 !text-[12px] sm:!text-[14px] xl:!text-[16px] flex juctify-between items-center"
-                    onClick={() => handleReadClick(post.id)} 
+                    onClick={() => handleReadClick(post.id)}
                     disabled={loadingPost === post.id}
                   >
                     {loadingPost === post.id ? <Loader /> : "Læse"}

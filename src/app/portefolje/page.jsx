@@ -6,6 +6,7 @@ import Horses from "../../../public/Horses.png";
 import SmartBank from "../../../public/SmartBank.png";
 import Pizzle from "../../../public/Pizzle.png";
 import Hireon from "../../../public/Hireon.png";
+import Link from "next/link";
 
 
 export const metadata = {
@@ -26,6 +27,8 @@ export const metadata = {
 const Portefojle = () => {
   return (
     <>
+ 
+
       <section>
         <h2 className="maintitle text-center mt-[75px]">Se vores arbejde</h2>
         <p className="text-center">

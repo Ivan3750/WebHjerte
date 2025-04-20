@@ -3,6 +3,7 @@ import Questions from "../components/Questions";
 import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Trasparens from "../../../public/transparens.png";
+import WorkProcess from "@/app/components/WorkProcess";
 
 export const metadata = {
   title: "Om WebHjerte – Lokalt Webstudio i Horsens",
@@ -53,6 +54,7 @@ const OmOs = () => {
           </p>
         </div>
       </section>
+      <WorkProcess />
 
       <section className="bg-[#F7F6F6] px-4 py-16">
         <h3 className="title text-center mb-16">Vores værdier</h3>

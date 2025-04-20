@@ -85,7 +85,7 @@
     }, [isMobileMenuOpen]);
 
     return (
-      <header className="flex items-center justify-between px-4 py-3 bg-transparent md:px-6 lg:px-10 relative">
+      <header className="flex items-center justify-between px-4 py-3  md:px-6 lg:px-10 sticky top-0 left-0 border-b-2 border-[#404242] bg-[#1c1e1e] z-50">
         <Link href="/" aria-label="Go to homepage">
           <div className="flex items-center gap-4">
             <Image src={W} width={50} height={50} alt="Logo" priority />
