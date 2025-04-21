@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import AnimatedInView from "./AnimatedInView";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -45,12 +46,13 @@ const Contact = () => {
 
   return (
     <section className="bg-[#1C1E1F] p-6 py-10 md:p-10">
-      <h1 className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
-        Kontakt os
-      </h1>
-      <h2 className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
+
+      <AnimatedInView as="h1" className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
+      Kontakt os
+      </AnimatedInView>
+        <AnimatedInView as="h2" className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
         Er du klar til at føre din ide ud i livet?
-      </h2>
+        </AnimatedInView>
 
       <form
         className="mx-auto flex flex-col gap-5 w-full max-w-[800px]"

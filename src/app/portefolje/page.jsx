@@ -7,7 +7,8 @@ import SmartBank from "../../../public/SmartBank.png";
 import Pizzle from "../../../public/Pizzle.png";
 import Hireon from "../../../public/Hireon.png";
 import Link from "next/link";
-
+import AnimatedInView from "../components/AnimatedInView";
+AnimatedInView
 
 export const metadata = {
   title: "Vores Portefølje | WebHjerte",
@@ -30,11 +31,12 @@ const Portefojle = () => {
  
 
       <section>
-        <h1 className="maintitle text-center mt-[75px]">Se vores arbejde</h1>
-        <h2 className="text-center">
-          Vi har hjulpet danske virksomheder med at skabe en stærk online
-          tilstedeværelse.
-        </h2>
+    
+        <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
+        Se vores arbejde        </AnimatedInView>
+        <AnimatedInView as="h2" className="text-center text-lg">
+        Vi har hjulpet danske virksomheder med at skabe en stærk online
+        tilstedeværelse.        </AnimatedInView>
       </section>
       <section className="bg-[#F7F6F6] flex flex-col gap-14">
         <div className="flex justify-between items-center  gap-7 flex-wrap md:flex-nowrap">

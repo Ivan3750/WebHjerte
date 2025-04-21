@@ -6,6 +6,7 @@ import Image from "next/image";
 import Loader from "./Loader";
 import { useRouter } from "next/navigation";
 import Button from "./Button";
+import AnimatedInView from "./AnimatedInView";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -14,6 +15,7 @@ export default function Blog() {
   const [searchTerm, setSearchTerm] = useState("");
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
+  
   const router = useRouter();
 
   useEffect(() => {
@@ -64,12 +66,12 @@ export default function Blog() {
   return (
     <>
       <section>
-        <h1 className="maintitle text-center mt-[75px]">
-          Tips og nyheder om web
-        </h1>
-        <h2 className="text-center">
-          Få indsigt i de seneste trends og bedste praksis inden for web.
-        </h2>
+        <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
+        Tips og nyheder om web
+        </AnimatedInView>
+        <AnimatedInView as="h2" className="text-center text-lg">
+        Få indsigt i de seneste trends og bedste praksis inden for web.
+        </AnimatedInView>
       </section>
 
       <section className="bg-[#F7F6F6] py-10">
