@@ -70,7 +70,7 @@ a:hover{
 .text {
   color: rgb(122, 106, 106);
   font-family: Unbounded;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 24px;
 }
@@ -183,7 +183,7 @@ footer {
   }
 
   .text {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
   }
   .btn {
@@ -220,7 +220,7 @@ footer {
 
 @media (max-width: 1024px) {
   .text {
-    font-size: 14.5px;
+    font-size: 15px;
     font-weight: 300;
   }
   .input {
@@ -297,7 +297,7 @@ footer {
   }
 
   .text {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
   }
   .title-price {
@@ -329,7 +329,7 @@ footer {
   }
 
   .text {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
   }
   .title-price {

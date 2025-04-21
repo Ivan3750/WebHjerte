@@ -4,6 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Button from "../components/Button";
 import Questions from "../components/Questions";
+import AnimatedInView from "../components/AnimatedInView";
 
 export const metadata = {
   title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
@@ -104,10 +105,12 @@ const Services = () => {
   return (
     <>
       <section>
-        <h1 className="maintitle text-center mt-[75px]">Hvad tilbyder vi?</h1>
-        <h2 className="text-center">
-          Professionel webdesign til danske småvirksomheder.
-        </h2>
+  
+        <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
+        Hvad tilbyder vi?        </AnimatedInView>
+        <AnimatedInView as="h2" className="text-center text-lg">
+        Professionel webdesign til danske småvirksomheder.
+        </AnimatedInView>
       </section>
       <section className="bg-[#F7F6F6]">
         <h2 className="title !my-3">Web Udvikling</h2>

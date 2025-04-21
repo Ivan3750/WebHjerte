@@ -4,6 +4,8 @@ import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Trasparens from "../../../public/transparens.png";
 import WorkProcess from "@/app/components/WorkProcess";
+import { motion } from 'framer-motion';
+import AnimatedInView from "../components/AnimatedInView";
 
 export const metadata = {
   title: "Om WebHjerte – Lokalt Webstudio i Horsens",
@@ -24,12 +26,13 @@ const OmOs = () => {
   return (
     <>
       <section className="px-4">
-        <h1 className="maintitle text-center mt-[75px]">
-          Hvem er WebHjerte Studio?
-        </h1>
-        <h2 className="text-center text-lg">
+    
+        <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
+        Hvem er WebHjerte Studio?
+        </AnimatedInView>
+        <AnimatedInView as="h2" className="text-center text-lg">
           Vi er en passioneret web-studio fra Horsens.
-        </h2>
+        </AnimatedInView>
       </section>
 
       <section className="bg-[#F7F6F6] flex flex-col md:flex-row  gap-10 items-center">
@@ -60,7 +63,7 @@ const OmOs = () => {
         <h2 className="title mb-16">Vores værdier</h2>
         <div className="flex flex-col gap-[75px] items-center">
           {/* Kvalitet */}
-          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
+          <AnimatedInView as="div" className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
             <Image
               src={Kvalitet}
               width={500}
@@ -84,10 +87,10 @@ const OmOs = () => {
                 kvalitet og professionalisme.
               </p>
             </div>
-          </div>
+          </AnimatedInView>
 
           {/* Transparens */}
-          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
+          <AnimatedInView as="div" className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
             <div className="text-center lg:text-left">
               <h3 className="title !text-[#1C1E1E]">Transparens</h3>
               <h4 className="text-[24px] md:text-[30px] font-bold !text-[#5E5F5F]">
@@ -110,10 +113,10 @@ const OmOs = () => {
               alt="transparens"
               className="rounded-2xl w-full max-w-[500px] h-auto"
             />
-          </div>
+          </AnimatedInView>
 
           {/* Bæredygtighed */}
-          <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
+          <AnimatedInView as="div" className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[1300px]  rounded-3xl border-[1px] border-[#b8b9b9] p-6 gap-6">
             <Image
               src={Eko}
               width={500}
@@ -137,7 +140,7 @@ const OmOs = () => {
                 vores miljø.
               </p>
             </div>
-          </div>
+          </AnimatedInView>
         </div>
       </section>
 

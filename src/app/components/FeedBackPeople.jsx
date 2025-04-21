@@ -56,7 +56,7 @@ const FeedBackPeople = () => {
         {testimonials.map((t, index) => (
           <div
             key={index}
-            className="border border-[#404242] p-6 rounded-3xl max-w-[625px] shadow-xl text-white"
+            className="border border-[#404242] p-6 rounded-3xl max-w-[525px] shadow-xl text-white"
           >
             <div className="flex items-center gap-5">
               <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border">
@@ -64,7 +64,7 @@ const FeedBackPeople = () => {
               </div>
               <p className="font-light">{t.name}</p>
             </div>
-            <div className="flex gap-1 mt-2">
+            <div className="flex gap-1 my-3">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
@@ -74,7 +74,7 @@ const FeedBackPeople = () => {
                 />
               ))}
             </div>
-            <p className="my-5 font-normal">{t.feedback}</p>
+            <p className="text !text-white  ">{t.feedback}</p>
           </div>
         ))}
       </div>

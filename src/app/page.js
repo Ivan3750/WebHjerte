@@ -8,6 +8,7 @@ import Wfront from "../../public/WFront.jpg";
 import Link from "next/link";
 import Team from "../../public/team.png";
 import DiscountPage from "./components/DiscountPage";
+import AnimatedInView from "./components/AnimatedInView";
 
 export default function Home() {
   return (
@@ -24,12 +25,12 @@ export default function Home() {
       gap-[25px] min-h-[calc(100dvh - 100px)]"
         >
           <div className=" flex gap-4 flex-col items-center">
-            <h1 className="maintitle !text-center">
+            <AnimatedInView as="h1" className="maintitle !text-center">
               Professionel hjemmeside på 3 dage
-            </h1>
-            <h2 className="subtitle !text-center">
+            </AnimatedInView>
+            <AnimatedInView as="h2" className="subtitle !text-center">
               Tilpasset små virksomheder – uden forudbetaling!
-            </h2>
+            </AnimatedInView>
             <Link href="/kontakt">
               <Button name="Kontakt" />
             </Link>
@@ -46,7 +47,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section className="flex bg-[#F7F6F6] justify-between gap-[40px]">
+        <section className="flex bg-[#F7F6F6] justify-between md:gap-[40px]">
           <div className="">
             <h3 className="title">Hvem er vi?</h3>
             <div className="flex flex-col md:flex-row  items-center justify-between gap-8">
@@ -90,8 +91,8 @@ export default function Home() {
             <div className=""></div>
           </div>
         </section>
-        <section className="bg-[#F7F6F6] py-12">
-          <h3 className="title text-center mb-10">Hvorfor vælge os?</h3>
+        <section className="bg-[#F7F6F6] !py-[100px]">
+          <h3 className="title text-center mb-[25px]">Hvorfor vælge os?</h3>
           <div className="flex gap-10 flex-wrap justify-center">
             <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
               <div className="bg-white p-4 rounded-full shadow-lg mb-4">
