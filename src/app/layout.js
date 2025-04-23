@@ -11,20 +11,7 @@ const unbounded = Unbounded({
   display: "swap",
 });
 
-export const metadata = {
-  title: "Webbureau i Danmark – Professionel Hjemmeside & SEO | WebHjerte",
-  description:
-    "WebHjerte er et professionelt webbureau i Danmark. Vi laver moderne og responsive hjemmesider, SEO og webdesign til små virksomheder.",
-  keywords:
-    "webbureau, webdesign firma, hjemmeside til små virksomheder, SEO Danmark, moderne webdesign, responsivt design, Horsens, bestil hjemmeside, gratis hjemmeside, SEO check, rabat",
-  openGraph: {
-    title: "Webbureau i Danmark – WebHjerte",
-    description:
-      "Få en professionel hjemmeside med WebHjerte – dit lokale webbureau i Danmark, specialiseret i webdesign og SEO for små virksomheder.",
-    url: "https://webhjerte.dk",
-    image: Logo,
-  },
-};
+
 
 export default function RootLayout({ children }) {
   return (
