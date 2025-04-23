@@ -56,16 +56,23 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: blog.metaTitle || blog.seo_title,
-    description: blog.seo_description || "Опис відсутній",
-    keywords: blog.seo_keywords || "",
+    title: blog.metaTitle || blog.seo_title || "Blogindlæg – WebHjerte",
+    description: blog.seo_description || blog.excerpt || "Læs vores seneste blogindlæg.",
+    keywords: blog.seo_keywords || "blog, SEO, webdesign, WebHjerte",
     openGraph: {
-      title: blog.seo_title,
-      description: blog.seo_description || "Опис відсутній",
-      image: blog.cover_image || "",
+      title: blog.seo_title || blog.metaTitle || "WebHjerte Blogindlæg",
+      description: blog.seo_description || blog.excerpt || "Læs vores seneste artikel på bloggen.",
+      image: blog.cover_image || "https://webhjerte.dk/og-blog.jpg",
       type: 'article',
       url: `https://www.webhjerte.dk/blog/${params.blogID}`
-    }
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog.seo_title || blog.metaTitle || "WebHjerte Blogindlæg",
+      description: blog.seo_description || blog.excerpt || "Læs vores seneste blogindlæg.",
+      image: blog.cover_image || "https://webhjerte.dk/og-blog.jpg",
+    },
+    robots: "index, follow"
   };
 }
 

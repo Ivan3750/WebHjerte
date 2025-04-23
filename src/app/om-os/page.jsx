@@ -6,21 +6,32 @@ import Trasparens from "../../../public/transparens.png";
 import WorkProcess from "@/app/components/WorkProcess";
 import { motion } from 'framer-motion';
 import AnimatedInView from "../components/AnimatedInView";
+import Logo from "../../public/W.png";
 
 export const metadata = {
-  title: "Om WebHjerte – Lokalt Webstudio i Horsens",
+  title: "Om WebHjerte – Lokalt Webstudio i Horsens med Hjerte for Web",
   description:
-    "Vi er et ungt webstudio i Horsens, der bygger moderne hjemmesider til små virksomheder – hurtigt og til fair pris.",
+    "Vi er et passioneret webstudio i Horsens, der hjælper små virksomheder i Danmark med moderne, brugervenlige og mobile hjemmesider – hurtigt og til en fair pris.",
   keywords:
-    "webstudio, webudvikling, Horsens, små virksomheder, moderne hjemmesider, digital løsning, Danmark",
+    "webstudio, webudvikling, Horsens, små virksomheder, moderne hjemmesider, digitale løsninger, lokal webbureau, Danmark",
+  robots: "index, follow",
   openGraph: {
-    title: "Om WebHjerte – Lokalt Webstudio i Horsens",
+    title: "Om WebHjerte – Lokalt Webstudio i Horsens med Hjerte for Web",
     description:
-      "Lær mere om vores team og vores mission om at hjælpe små virksomheder i Danmark.",
+      "Mød holdet bag WebHjerte – vi brænder for at styrke små virksomheder med professionelle webløsninger.",
     url: "https://webhjerte.dk/om-os",
-    image: "/og-omos.jpg",
+    image: Logo,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Om WebHjerte – Lokalt Webstudio i Horsens med Hjerte for Web",
+    description:
+      "Mød holdet bag WebHjerte – vi brænder for at styrke små virksomheder med professionelle webløsninger.",
+    image: Logo,
   },
 };
+
 
 const OmOs = () => {
   return (

@@ -9,6 +9,35 @@ import Link from "next/link";
 import Team from "../../public/team.png";
 import DiscountPage from "./components/DiscountPage";
 import AnimatedInView from "./components/AnimatedInView";
+import Logo from "../../public/W.png";
+
+
+
+
+export const metadata = {
+  title: "Webbureau i Danmark – Professionel Hjemmeside & SEO | WebHjerte",
+  description:
+    "WebHjerte er et professionelt webbureau i Danmark. Vi laver moderne og responsive hjemmesider, SEO og webdesign til små virksomheder.",
+  keywords:
+    "webbureau, webdesign firma, hjemmeside til små virksomheder, SEO Danmark, moderne webdesign, responsivt design, Horsens, bestil hjemmeside, gratis hjemmeside, SEO check, rabat",
+  openGraph: {
+    title: "Webbureau i Danmark – WebHjerte",
+    description:
+      "Få en professionel hjemmeside med WebHjerte – dit lokale webbureau i Danmark, specialiseret i webdesign og SEO for små virksomheder.",
+    url: "https://webhjerte.dk",
+    image: Logo,
+    type: "website",
+  },
+  robots: "index, follow",
+  twitter: {
+    card: "summary_large_image",
+    title: "Webbureau i Danmark – WebHjerte",
+    description:
+      "Få en professionel hjemmeside med WebHjerte – dit lokale webbureau i Danmark, specialiseret i webdesign og SEO for små virksomheder.",
+    image: Logo,
+  },
+};
+
 
 export default function Home() {
   return (

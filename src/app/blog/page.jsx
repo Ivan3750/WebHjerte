@@ -1,16 +1,28 @@
-// ❌ НЕ додавай "use client" сюди!
+import Logo from "../../../public/W.png";
+
+
+
 
 export const metadata = {
-  title: "WebHjerte Blog – Tips til Hjemmesider og SEO i Danmark",
-  description: "Læs om moderne webdesign, SEO, og hvordan små virksomheder i Danmark kan få mere ud af deres hjemmeside.",
-  keywords: "blog, SEO tips, webdesign, hjemmesider, markedsføring, små virksomheder, Danmark",
+  title: "WebHjerte Blog – Tips til SEO og Webdesign for Små Virksomheder",
+  description: "Få indsigt i moderne webudvikling, SEO-strategier og online markedsføring, der hjælper danske virksomheder med at vokse.",
+  keywords: "blog, SEO Danmark, webdesign tips, hjemmesideoptimering, digital markedsføring, små virksomheder, webbureau blog",
   openGraph: {
-    title: "WebHjerte Blog – Tips og Tricks til Webudvikling",
-    description: "Følg med i vores blog og lær hvordan du forbedrer din online tilstedeværelse.",
+    title: "WebHjerte Blog – Tips og Tricks til SEO og Webdesign",
+    description: "Følg med i vores blog og bliv klogere på alt fra SEO til konverterende webdesign.",
     url: "https://webhjerte.dk/blog",
-    image: "/og-blog.jpg",
+    image: Logo,
+    type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "WebHjerte Blog – Tips og Tricks til SEO og Webdesign",
+    description: "Følg med i vores blog og bliv klogere på alt fra SEO til konverterende webdesign.",
+    image: Logo,
+  },
+  robots: "index, follow"
 };
+
 
 import Blog from "../components/Blog"; // Імпортуємо клієнтський компонент
 

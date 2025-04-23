@@ -5,6 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Button from "../components/Button";
 import Questions from "../components/Questions";
 import AnimatedInView from "../components/AnimatedInView";
+import Logo from "../../../public/W.png";
 
 export const metadata = {
   title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
@@ -12,14 +13,21 @@ export const metadata = {
     "Vi skaber professionelle hjemmesider, e-handelsløsninger og SEO-optimering for små virksomheder i Danmark.",
   keywords:
     "webudvikling, SEO, responsivt design, e-handel, UX/UI design, digital marketing",
+  robots: "index, follow",
   openGraph: {
     title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
     description: "Se vores professionelle webudviklings- og SEO-tjenester.",
     url: "https://webhjerte.dk/services",
-    image: "/og-services.jpg",
+    image: Logo,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
+    description: "Se vores professionelle webudviklings- og SEO-tjenester.",
+    image: Logo,
   },
 };
-
 const packages = [
   {
     name: "Start",

@@ -9,19 +9,31 @@ import Hireon from "../../../public/Hireon.png";
 import Link from "next/link";
 import AnimatedInView from "../components/AnimatedInView";
 AnimatedInView
+import Logo from "../../../public/W.png";
 
 export const metadata = {
-  title: "Vores Portefølje | WebHjerte",
-  description: "Se vores tidligere webudviklingsprojekter og bliv inspireret til din næste hjemmeside.",
-  keywords: "webdesign portefølje, tidligere projekter, hjemmesidedesign, case studies",
+  title: "Portefølje: Succesfulde Hjemmesider & Cases | WebHjerte",
+  description:
+    "Bliv inspireret af vores skræddersyede webløsninger. Se tidligere projekter indenfor webdesign, e-handel og SEO for små virksomheder i Danmark.",
+  keywords:
+    "webdesign portefølje, tidligere projekter, hjemmesidedesign, case studies, webbureau eksempler, hjemmeside inspiration, e-handel cases",
+  robots: "index, follow",
   openGraph: {
-    title: "Vores Portefølje | WebHjerte",
-    description: "Se vores arbejde og tidligere succesfulde projekter.",
+    title: "Portefølje: Succesfulde Hjemmesider & Cases | WebHjerte",
+    description:
+      "Oplev vores tidligere projekter – skræddersyede hjemmesider og succesfulde webløsninger for danske virksomheder.",
     url: "https://webhjerte.dk/portefolje",
-    image: "/og-portfolio.jpg",
+    image: Logo,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portefølje: Succesfulde Hjemmesider & Cases | WebHjerte",
+    description:
+      "Oplev vores tidligere projekter – skræddersyede hjemmesider og succesfulde webløsninger for danske virksomheder.",
+    image: Logo,
   },
 };
-
 
 
 
