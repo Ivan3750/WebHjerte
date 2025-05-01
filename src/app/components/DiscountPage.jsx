@@ -15,7 +15,7 @@ const DiscountPage = () => {
   const [expired, setExpired] = useState(false);
 
   useEffect(() => {
-    const end = new Date("2025-04-30T23:59:59");
+    const end = new Date("2025-05-31T23:59:59");
 
     const updateTimer = () => {
       const now = new Date();
@@ -50,13 +50,13 @@ const DiscountPage = () => {
     <section className="min-h-screen flex items-center justify-center px-4 py-10">
       <div className="max-w-4xl bg-[#0e0e0e] rounded-3xl shadow-2xl p-5 md:p-10 text-center space-y-8 border-4 border-white/10 w-full">
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#00aaff] uppercase tracking-wide">
-          15% rabat til nye kunder!
+          20% rabat til nye kunder!
         </h2>
 
         <p className="!text-white text">
            Er du ny hos os? Så har vi en gave til dig! <br /> Få {" "}
-          <span className="font-bold text-[#F6D55C]">15% rabat</span> på din første hjemmeside
-          – kun i april måned.
+          <span className="font-bold text-[#F6D55C]">20% rabat</span> på din første hjemmeside
+          – kun i maj måned.
         </p>
 
         {!expired ? (
@@ -92,7 +92,7 @@ const DiscountPage = () => {
         )}
 
         <p className="text-sm text-gray-400">
-          *Tilbuddet gælder kun for nye kunder frem til 30. april 2025.
+          *Tilbuddet gælder kun for nye kunder frem til 31. maj 2025.
         </p>
       </div>
     </section>

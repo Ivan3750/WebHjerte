@@ -1,4 +1,4 @@
-import { Brain, Check, Puzzle, Rocket, X } from "lucide-react";
+import { Brain, Puzzle, Rocket } from "lucide-react";
 import Image from "next/image";
 import HeroImg from "../../public/Hero.png";
 import Button from "@/app/components/Button";
@@ -10,9 +10,7 @@ import Team from "../../public/team.png";
 import DiscountPage from "./components/DiscountPage";
 import AnimatedInView from "./components/AnimatedInView";
 import Logo from "../../public/W.png";
-
-
-
+import Head from "next/head";
 
 export const metadata = {
   title: "Webbureau i Danmark – Professionel Hjemmeside & SEO | WebHjerte",
@@ -38,22 +36,40 @@ export const metadata = {
   },
 };
 
-
 export default function Home() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "WebHjerte",
+              "url": "https://webhjerte.dk",
+              "logo": "https://webhjerte.dk/W.png",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "17"
+              }
+            })
+          }}
+        />
+      </Head>
+
       <div className="">
         <div
-          className=" justify-between bg-sq- 
-      py-[30px] px-[20px] 
-      sm:py-[40px] sm:px-[50px] 
-      md:py-[60px] md:px-[70px] 
-      lg:py-[75px] lg:px-[85px] 
-      xl:py-[70px] xl:px-[90px] 
-      
-      gap-[25px] min-h-[calc(100dvh - 100px)]"
+          className="justify-between bg-sq- 
+            py-[30px] px-[20px] 
+            sm:py-[40px] sm:px-[50px] 
+            md:py-[60px] md:px-[70px] 
+            lg:py-[75px] lg:px-[85px] 
+            xl:py-[70px] xl:px-[90px] 
+            gap-[25px] min-h-[calc(100dvh - 100px)]"
         >
-          <div className=" flex gap-4 flex-col items-center">
+          <div className="flex gap-4 flex-col items-center">
             <AnimatedInView as="h1" className="maintitle !text-center">
               Professionel hjemmeside på 3 dage
             </AnimatedInView>
@@ -64,23 +80,21 @@ export default function Home() {
               <Button name="Kontakt" />
             </Link>
           </div>
-          <div className="block ">
-            <div>
-              <Image
-                src={Wfront}
-                className="max-[1000px]:w-[750px] md:w-[800px] rounded-3xl my-[20px] m-auto shadow-xl"
-                width={1000}
-                height={1000}
-                alt="webhjerte"
-              ></Image>
-            </div>
+          <div className="block">
+            <Image
+              src={Wfront}
+              className="max-[1000px]:w-[750px] md:w-[800px] rounded-3xl my-[20px] m-auto shadow-xl"
+              width={1000}
+              height={1000}
+              alt="webhjerte"
+            />
           </div>
         </div>
+
         <section className="flex bg-[#F7F6F6] justify-between md:gap-[40px]">
           <div className="">
             <h3 className="title">Hvem er vi?</h3>
-            <div className="flex flex-col md:flex-row  items-center justify-between gap-8">
-              {/* Text Section */}
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="text w-full space-y-4">
                 <p>
                   <strong>WebHjerte Studio</strong> blev skabt for at gøre
@@ -102,9 +116,7 @@ export default function Home() {
                   online.
                 </p>
               </div>
-
-              {/* Image Section */}
-              <div className="w-full ">
+              <div className="w-full">
                 <div className="aspect-w-16 aspect-h-9">
                   <Image
                     src={Team}
@@ -116,10 +128,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>
-            <div className=""></div>
-          </div>
         </section>
+
         <section className="bg-[#F7F6F6] !py-[100px]">
           <h3 className="title text-center mb-[25px]">Hvorfor vælge os?</h3>
           <div className="flex gap-10 flex-wrap justify-center">
@@ -136,7 +146,6 @@ export default function Home() {
                 kommunikation.
               </p>
             </div>
-
             <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
               <div className="bg-white p-4 rounded-full shadow-lg mb-4">
                 <Puzzle className="text-purple-600" size={40} />
@@ -149,7 +158,6 @@ export default function Home() {
                 netop din virksomhed – både visuelt og teknisk.
               </p>
             </div>
-
             <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
               <div className="bg-white p-4 rounded-full shadow-lg mb-4">
                 <Rocket className="text-yellow-500" size={40} />

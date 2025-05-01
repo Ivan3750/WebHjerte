@@ -6,7 +6,7 @@ import Trasparens from "../../../public/transparens.png";
 import WorkProcess from "@/app/components/WorkProcess";
 import { motion } from 'framer-motion';
 import AnimatedInView from "../components/AnimatedInView";
-import Logo from "../../public/W.png";
+import Logo from "../../../public/W.png";
 
 export const metadata = {
   title: "Om WebHjerte – Lokalt Webstudio i Horsens med Hjerte for Web",

@@ -50,6 +50,60 @@ const Portefojle = () => {
         Vi har hjulpet danske virksomheder med at skabe en stærk online
         tilstedeværelse.        </AnimatedInView>
       </section>
+      <section class="flex flex-col md:flex-row justify-between items-start gap-10 py-10 border-b border-gray-200">
+  <div class="flex-1">
+    <img 
+      src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHorses.4501a05e.png&amp;w=1200&amp;q=75" 
+      srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHorses.4501a05e.png&amp;w=640&amp;q=75 1x, 
+              /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHorses.4501a05e.png&amp;w=1200&amp;q=75 2x" 
+      width="600" height="600" alt="Privat rideskole website" 
+      loading="lazy" decoding="async" 
+      class="rounded-2xl shadow-xl"
+    />
+  </div>
+
+  <div class="flex-1 max-w-xl">
+    <h3 class="text-3xl font-semibold mb-4">Privat Rideskole – Digital galop fremad</h3>
+    
+    <div class="mb-4">
+      <h4 class="text-xl font-semibold mb-2 text-gray-800">🎯 Udfordringen</h4>
+      <p class="text-gray-600">
+        Kunden ønskede en digital platform, der kunne afspejle rideskolens eksklusive atmosfære og samtidig være praktisk for besøgende. Den tidligere side var langsom og ikke mobilvenlig.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-xl font-semibold mb-2 text-gray-800">🛠️ Vores løsning</h4>
+      <ul class="list-disc pl-5 text-gray-600 space-y-1">
+        <li>Responsivt webdesign med fokus på æstetik og performance.</li>
+        <li>Intuitiv navigation og interaktive elementer for bedre brugerflow.</li>
+        <li>SEO-optimering for bedre synlighed i Google.</li>
+        <li>Hurtig indlæsning via Next.js og optimeret billedhåndtering.</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-xl font-semibold mb-2 text-gray-800">🚀 Resultater</h4>
+      <ul class="list-disc pl-5 text-gray-600 space-y-1">
+        <li>+65% stigning i besøg på mobilenheder.</li>
+        <li>+40% længere sessionsvarighed.</li>
+        <li>Ny tilmelding til rideundervisning steg med 25% i første måned.</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-xl font-semibold mb-2 text-gray-800">⚙️ Teknologier brugt</h4>
+      <p class="text-gray-600">Next.js, React, Tailwind CSS, Vercel, SEO best practices</p>
+    </div>
+
+    <div>
+      <a href="/kontakt" class="inline-block bg-black text-white px-6 py-3 rounded-xl shadow hover:bg-gray-800 transition">
+        Skal vi galoppere sammen? Kontakt os →
+      </a>
+    </div>
+  </div>
+</section>
+
       <section className="bg-[#F7F6F6] flex flex-col gap-14">
         <div className="flex justify-between items-center  gap-7 flex-wrap md:flex-nowrap">
           <div>
