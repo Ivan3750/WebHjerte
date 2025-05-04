@@ -59,7 +59,7 @@ const packages = [
     name: "Professionel",
     description:
       "En skræddersyet hjemmeside med avanceret design og ekstra funktioner for professionelt udseende",
-    price: "9.000 - 12.000 DKK",
+    price: "8.000 - 12.000 DKK",
     features: [
       "Flersidet hjemmeside (op til 7 sider)",
       "Komplet SEO-optimering",
@@ -72,7 +72,7 @@ const packages = [
     name: "Avanceret",
     description:
       "En avanceret hjemmeside med tilpasset design og funktionalitet, inklusive branding",
-    price: "12.000 - 22.500 DKK",
+    price: "10.000 - 19.500 DKK",
     features: [
       "Flersidet hjemmeside (op til 15 sider)",
       "Branding og tilpasset design",
@@ -97,7 +97,7 @@ const packages = [
   {
     name: "Support",
     description: "Løbende vedligeholdelse og support til din hjemmeside.",
-    price: "200 - 1.000 DKK / måned",
+    price: "200 - 700 DKK / måned",
     features: [
       "Regelmæssige opdateringer",
       "Sikkerhedstjek",
@@ -158,7 +158,6 @@ const Services = () => {
         </div>
       </section>
       <SEO></SEO>
-      <Questions></Questions>
       <FeedBackPeople />
     </>
   );

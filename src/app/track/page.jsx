@@ -30,7 +30,8 @@ export const metadata = {
 
 
 const TrackPage = () => {
-  return ( <></> );
+  return ( <>
+  <Track></Track></> );
 }
  
 export default TrackPage;

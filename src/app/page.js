@@ -11,7 +11,7 @@ import DiscountPage from "./components/DiscountPage";
 import AnimatedInView from "./components/AnimatedInView";
 import Logo from "../../public/W.png";
 import Head from "next/head";
-
+import TechStackSection from "@/app/components/TechStackSection";
 export const metadata = {
   title: "Webbureau i Danmark – Professionel Hjemmeside & SEO | WebHjerte",
   description:
@@ -46,15 +46,15 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "WebHjerte",
-              "url": "https://webhjerte.dk",
-              "logo": "https://webhjerte.dk/W.png",
-              "aggregateRating": {
+              name: "WebHjerte",
+              url: "https://webhjerte.dk",
+              logo: "https://webhjerte.dk/W.png",
+              aggregateRating: {
                 "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "17"
-              }
-            })
+                ratingValue: "4.9",
+                reviewCount: "17",
+              },
+            }),
           }}
         />
       </Head>
@@ -95,7 +95,7 @@ export default function Home() {
           <div className="">
             <h3 className="title">Hvem er vi?</h3>
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-              <div className="text w-full space-y-4">
+              <div className="text w-full space-y-2">
                 <p>
                   <strong>WebHjerte Studio</strong> blev skabt for at gøre
                   moderne, brugervenligt webdesign tilgængeligt for alle danske
@@ -130,49 +130,56 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-[#F7F6F6] !py-[100px]">
-          <h3 className="title text-center mb-[25px]">Hvorfor vælge os?</h3>
-          <div className="flex gap-10 flex-wrap justify-center">
-            <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
-              <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+        <section className="bg-[#F7F6F6] py-24 px-4">
+          <h3 className="text-3xl sm:text-4xl font-bold text-center text-[#111] mb-12 tracking-tight">
+            Hvorfor vælge os?
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            {/* CARD */}
+            <div className="group bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+              <div className="bg-pink-100 p-4 rounded-full shadow-md mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Brain className="text-pink-500" size={40} />
               </div>
-              <p className="text-[20px] font-semibold text-[#000] mb-2">
+              <p className="text-xl font-semibold text-[#111] mb-3">
                 Strategisk rådgivning
               </p>
-              <p className="text text-[16px] text-[#444]">
+              <p className="text-base text-[#555]">
                 Vi analyserer dine forretningsmål og udvikler en skræddersyet
                 digital strategi – med fuld gennemsigtighed og løbende
                 kommunikation.
               </p>
             </div>
-            <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
-              <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+
+            {/* CARD */}
+            <div className="group bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+              <div className="bg-purple-100 p-4 rounded-full shadow-md mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Puzzle className="text-purple-600" size={40} />
               </div>
-              <p className="text-[20px] font-semibold text-[#000] mb-2">
+              <p className="text-xl font-semibold text-[#111] mb-3">
                 Skræddersyede løsninger
               </p>
-              <p className="text text-[16px] text-[#444]">
+              <p className="text-base text-[#555]">
                 Hvert design og hver funktion er nøje udformet for at matche
                 netop din virksomhed – både visuelt og teknisk.
               </p>
             </div>
-            <div className="flex justify-center items-center flex-col max-w-[300px] text-center">
-              <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+
+            {/* CARD */}
+            <div className="group bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+              <div className="bg-yellow-100 p-4 rounded-full shadow-md mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Rocket className="text-yellow-500" size={40} />
               </div>
-              <p className="text-[20px] font-semibold text-[#000] mb-2">
+              <p className="text-xl font-semibold text-[#111] mb-3">
                 Hurtig og pålidelig levering
               </p>
-              <p className="text text-[16px] text-[#444]">
+              <p className="text-base text-[#555]">
                 Vi prioriterer effektivitet og kvalitet – med klare deadlines og
                 hurtige resultater uden stress.
               </p>
             </div>
           </div>
         </section>
-
+        <TechStackSection />
         <DiscountPage />
         <FeedBackPeople />
         <Questions />

@@ -4,7 +4,6 @@ import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Trasparens from "../../../public/transparens.png";
 import WorkProcess from "@/app/components/WorkProcess";
-import { motion } from 'framer-motion';
 import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
 
@@ -155,7 +154,6 @@ const OmOs = () => {
         </div>
       </section>
 
-      <Questions />
     </>
   );
 };

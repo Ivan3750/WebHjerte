@@ -125,6 +125,13 @@ const Track = () => {
                     </span>{" "}
                     {projectData.details}
                   </p>
+                  <p className="text-white font-unbounded text-xs font-light mt-5 md:mt-7 w-full md:w-[600px]">
+                    <span className="text-white font-unbounded text-xs font-medium">
+                      Pris:
+                    </span>{" "}
+                    {projectData.pris ?? "0.00 DKK"}
+                  </p>
+
                 </div>
                 <div>
                   <p className="text-white font-unbounded text-xs md:text-sm font-medium text-left mt-4 md:mt-6">

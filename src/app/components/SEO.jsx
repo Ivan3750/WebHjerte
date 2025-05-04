@@ -8,7 +8,7 @@ const SEO = () => {
   const [loading, setLoading] = useState(false);
   const [metrics, setMetrics] = useState(null);
 
-  const API_KEY = "AIzaSyC5P33iO7gB-4Dt5eKfUsOSxG1j8k6hCZE"; // <-- Замінити на реальний ключ
+  const API_KEY = "AIzaSyC5P33iO7gB-4Dt5eKfUsOSxG1j8k6hCZE";
 
   const getColor = (score) => {
     if (score >= 90) return "border-green-500 text-green-500";
@@ -56,9 +56,9 @@ const SEO = () => {
   return (
     <section className="min-h-screen  px-5 py-10">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-2">Gratis SEO tjek</h2>
+        <h2 className="text-3xl font-bold text-center mb-2">Gratis Web tjek</h2>
         <p className="text-center text-gray-600 mb-6">
-          Professionelt SEO-tjek gratis af din hjemmeside
+          Professionelt Web-tjek gratis af din hjemmeside
         </p>
 
         <div className="flex flex-wrap gap-2 justify-center">
@@ -88,9 +88,9 @@ const SEO = () => {
           <div className="mt-12">
             <div className="flex flex-wrap gap-5 justify-center">
               {[
-                { label: "Performance", value: metrics.performance },
-                { label: "Accessibility", value: metrics.accessibility },
-                { label: "Best Practices", value: metrics.bestPractices },
+                { label: "Ydeevne", value: metrics.performance },
+                { label: "Tilgængelighed", value: metrics.accessibility },
+                { label: "Bedste Praksis", value: metrics.bestPractices },
                 { label: "SEO", value: metrics.seo },
               ].map((item, idx) => (
                 <div
@@ -127,8 +127,8 @@ const SEO = () => {
   if (avgScore < 90) {
     return (
       <div className="bg-yellow-400 text-black px-6 py-4 rounded-xl text-center font-semibold text-lg shadow-lg">
-        🚀 Vi kan forbedre din hjemmeside til <span className="font-bold">100</span> –{" "}
-        <span className="underline">299 kr</span>!
+        Vi kan forbedre din hjemmeside til <span className="font-bold">100</span> –{" "}
+        <span className="underline">389 kr</span>!
         <div className="mt-2">
           <Link href="/kontakt">
           <button className="mt-2 bg-black text-yellow-400 px-4 py-2 rounded-full hover:scale-105 transition">
@@ -141,7 +141,7 @@ const SEO = () => {
   } else {
     return (
       <div className="bg-green-500 text-white px-6 py-4 rounded-xl text-center font-semibold text-lg shadow-lg">
-        🎉 Din hjemmeside klarer sig fantastisk! Fortsæt det gode arbejde 💪
+        Din hjemmeside klarer sig fantastisk! 
       </div>
     );
   }

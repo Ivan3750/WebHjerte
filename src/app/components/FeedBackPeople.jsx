@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 import { Star } from "lucide-react";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -47,35 +47,40 @@ const testimonials = [
   },
 ];
 
-
 const FeedBackPeople = () => {
   return (
-    <section className="mb-10">
-      <h3 className="maintitle mb-10">Hvad siger folk om os?</h3>
-      <div className="flex flex-wrap justify-between gap-10 sm:justify-center">
+    <section className="mb-20 px-4">
+      <h3 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
+        Hvad siger folk om os?
+      </h3>
+      <div className="flex flex-wrap justify-center gap-8">
         {testimonials.map((t, index) => (
-          <div
+          <motion.div
             key={index}
-            className="border border-[#404242] p-6 rounded-3xl max-w-[525px] shadow-xl text-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1, duration: 0.5, type: "spring" }}
+            className="bg-[#1e1e1e] border border-[#2c2c2c] rounded-2xl p-6 max-w-sm w-full shadow-lg backdrop-blur-sm hover:scale-[1.02] transition-transform duration-300"
           >
-            <div className="flex items-center gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#252727] flex items-center justify-center border-[#404242] border">
-                <p className="text-white font-medium">{t.initial}</p>
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 rounded-full bg-[#2f2f2f] flex items-center justify-center border border-[#3a3a3a] text-white font-bold text-lg">
+                {t.initial}
               </div>
-              <p className="font-light">{t.name}</p>
+              <p className="text-white text-sm">{t.name}</p>
             </div>
-            <div className="flex gap-1 my-3">
+            <div className="flex gap-1 mb-3">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  size={16}
+                  size={18}
                   fill={i < t.rating ? "#facc15" : "none"}
-                  stroke={i < t.rating ? "#facc15" : "#d1d5db"}
+                  stroke={i < t.rating ? "#facc15" : "#6b7280"}
                 />
               ))}
             </div>
-            <p className="text !text-white  ">{t.feedback}</p>
-          </div>
+            <p className="text-gray-300 text-sm leading-relaxed">{t.feedback}</p>
+          </motion.div>
         ))}
       </div>
     </section>
