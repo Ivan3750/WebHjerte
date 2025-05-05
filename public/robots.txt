@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://webhjerte.dk
+
+# Sitemaps
+Sitemap: https://webhjerte.dk/sitemap.xml

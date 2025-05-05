@@ -132,7 +132,7 @@ const Portefojle = () => {
   </section>
       <section className="bg-white">
         {projects.map((project, index) => (
-          <div className="flex flex-row gap-[40px]">
+          <div className="flex flex-col  md:flex-row gap-[40px]">
             <div className="w-full mt-10 overflow-hidden rounded-xl">
               <Image
                 src={project.image}
@@ -142,9 +142,9 @@ const Portefojle = () => {
                 className="rounded-2xl shadow-xl transition-transform duration-500 ease-in-out hover:scale-105 w-full h-auto object-cover"
               />
             </div>
-            <div className="flex w-full flex-col items-start justify-center gap-4 max-w-5xl mx-auto"
+            <div className="flex w-full flex-col items-start justify-center gap-2 xl:gap-4 max-w-5xl mx-auto"
               key={index} >
-              <div className="uppercase text-sm text-[#5e5f5f] font-semibold tracking-widest">
+              <div className="uppercase text-[14px] lg:text-[16px] text-[#5e5f5f] font-semibold tracking-widest">
                 <p>
                   {project.categories.map((cat, i) => (
                     <span key={i} className="mr-4">
@@ -154,7 +154,7 @@ const Portefojle = () => {
                 </p>
               </div>
 
-              <div className="text-3xl md:text-4xl font-semibold leading-tight text-primary text-[#5e5f5f]">
+              <div className="text-3xl text-[20px] lg:text-[30px] font-semibold leading-tight text-primary text-[#5e5f5f]">
                 <div className="overflow-hidden">
                   <div className="a-line">
                     <div>{project.titleLine1}</div>
