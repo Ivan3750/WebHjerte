@@ -6,12 +6,15 @@ import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
 import Wfront from "../../public/WFront.jpg";
 import Link from "next/link";
-import Team from "../../public/team.png";
+import Team from "@/app/assets/Spor.png";
 import DiscountPage from "./components/DiscountPage";
 import AnimatedInView from "./components/AnimatedInView";
 import Logo from "../../public/W.png";
 import Head from "next/head";
 import TechStackSection from "@/app/components/TechStackSection";
+import Test from "./components/Test";
+
+
 export const metadata = {
   title: "Webbureau i Danmark – Professionel Hjemmeside & SEO | WebHjerte",
   description:
@@ -183,6 +186,7 @@ export default function Home() {
         <DiscountPage />
         <FeedBackPeople />
         <Questions />
+        <Test/>
       </div>
     </>
   );

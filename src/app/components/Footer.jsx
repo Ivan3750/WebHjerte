@@ -15,54 +15,43 @@ const Footer = () => {
             Din hjemmeside — vores hjerte!
           </h3>
         </div>
-        <div className="flex items-center justify-between  flex-wrap ">
-          <div className="flex gap-2 py-3 md:gap-5 md:py-5  flex-row flex-wrap">
-            <Link
-              className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal"
-              href="/"
-            >
+        <div className="flex items-center justify-between flex-wrap">
+          <div className="flex gap-2 py-3 md:gap-5 md:py-5 flex-row flex-wrap">
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/">
               Forside
             </Link>
-            <Link
-              className="text-black w-fit  text-[12px] md:text-sm  ml-5 font-normal"
-              href="/services"
-            >
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/services">
               Services
             </Link>
-            <Link
-              className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal"
-              href="/om-os"
-            >
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/om-os">
               Om os
             </Link>
-            <Link
-              className="text-black w-fit text-[12px] md:text-sm ml-5  font-normal"
-              href="/portefolje"
-            >
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/portefolje">
               Portefølje
             </Link>
-            <Link
-              className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal"
-              href="/blog"
-            >
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/blog">
               Blog
             </Link>
-            <Link
-              className="text-black w-fit text-[12px] md:text-sm  ml-5 font-normal"
-              href="/kontakt"
-            >
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/kontakt">
               Kontakt
             </Link>
+            {/* Нові посилання на політики */}
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/privacy">
+              Privatlivspolitik
+            </Link>
+            <Link className="text-black w-fit text-[12px] md:text-sm ml-5 font-normal" href="/terms">
+              Handelsbetingelser
+            </Link>
           </div>
-          <div className="flex ">
+          <div className="flex">
             <Link href="https://www.instagram.com/webhjerte/" target="_blank">
-              <FaInstagram className="text-black w-fit text-[25px] md:text-[30px] ml-5  font-normal" />
+              <FaInstagram className="text-black w-fit text-[25px] md:text-[30px] ml-5 font-normal" />
             </Link>
             <Link href="https://www.facebook.com/WebHjerte/" target="_blank">
-              <FaFacebook className="text-black w-fit text-[25px] md:text-[30px] ml-5  font-normal" />
+              <FaFacebook className="text-black w-fit text-[25px] md:text-[30px] ml-5 font-normal" />
             </Link>
             <Link href="mailto:hej@webhjerte.dk" target="_blank">
-              <MdEmail className="text-black w-fit text-[25px] md:text-[30px] ml-5  font-normal" />
+              <MdEmail className="text-black w-fit text-[25px] md:text-[30px] ml-5 font-normal" />
             </Link>
           </div>
         </div>

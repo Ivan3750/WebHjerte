@@ -6,14 +6,14 @@ const testimonials = [
   {
     name: "Anders Kristensen",
     initial: "A",
-    rating: 5,
+    rating: 4,
     feedback:
       "Fantastisk service og moderne design! Min hjemmeside blev udviklet hurtigt, og den ser professionel ud på alle enheder. Kan varmt anbefales!",
   },
   {
     name: "Mette Larsen",
     initial: "M",
-    rating: 4,
+    rating: 5,
     feedback:
       "Meget tilfreds med samarbejdet. De forstod vores behov og leverede en brugervenlig og SEO-optimeret løsning. Super dygtigt team!",
   },
