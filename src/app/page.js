@@ -16,15 +16,15 @@ import Test from "./components/Test";
 
 
 export const metadata = {
-  title: "Webbureau i Danmark – Professionel Hjemmeside & SEO | WebHjerte",
+  title: "Webbureau i Horsens & Jylland – Professionel Hjemmeside & SEO | WebHjerte",
   description:
-    "WebHjerte er et professionelt webbureau i Danmark. Vi laver moderne og responsive hjemmesider, SEO og webdesign til små virksomheder.",
+    "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi laver moderne og responsive hjemmesider, SEO-tjek og webdesign for små virksomheder i hele Danmark.",
   keywords:
-    "webbureau, webdesign firma, hjemmeside til små virksomheder, SEO Danmark, moderne webdesign, responsivt design, Horsens, bestil hjemmeside, gratis hjemmeside, SEO check, rabat",
+    "webbureau horsens, webbureau i jylland, webdesign firma, hjemmeside til små virksomheder, SEO Danmark, SEO tjek af hjemmeside, moderne webdesign, responsivt design, bestil hjemmeside, gratis hjemmeside, rabat på hjemmeside",
   openGraph: {
-    title: "Webbureau i Danmark – WebHjerte",
+    title: "Webbureau i Horsens & Jylland – WebHjerte",
     description:
-      "Få en professionel hjemmeside med WebHjerte – dit lokale webbureau i Danmark, specialiseret i webdesign og SEO for små virksomheder.",
+      "Få en moderne og professionel hjemmeside med WebHjerte – dit webbureau i Horsens og Jylland, specialiseret i SEO og webdesign til små virksomheder.",
     url: "https://webhjerte.dk",
     image: Logo,
     type: "website",
@@ -32,35 +32,48 @@ export const metadata = {
   robots: "index, follow",
   twitter: {
     card: "summary_large_image",
-    title: "Webbureau i Danmark – WebHjerte",
+    title: "Webbureau i Horsens & Jylland – WebHjerte",
     description:
-      "Få en professionel hjemmeside med WebHjerte – dit lokale webbureau i Danmark, specialiseret i webdesign og SEO for små virksomheder.",
+      "Få en professionel hjemmeside med WebHjerte – lokalt webbureau i Horsens, Jylland. Eksperter i webdesign og SEO for små virksomheder.",
     image: Logo,
   },
 };
 
+
 export default function Home() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "WebHjerte",
-              url: "https://webhjerte.dk",
-              logo: "https://webhjerte.dk/W.png",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "17",
-              },
-            }),
-          }}
-        />
-      </Head>
+        <Head>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "WebHjerte",
+        url: "https://webhjerte.dk",
+        logo: "https://webhjerte.dk/W.png",
+        image: "https://webhjerte.dk/W.png",
+        description:
+          "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
+       
+        areaServed: ["Horsens", "Jylland", "Danmark"],
+        telephone: "+45 12 34 56 78",
+        priceRange: "$$",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "17",
+        },
+        sameAs: [
+          "https://www.facebook.com/webhjerte",
+          "https://www.instagram.com/webhjerte",
+        ],
+      }),
+    }}
+  />
+</Head>
+
 
       <div className="">
         <div
@@ -77,7 +90,7 @@ export default function Home() {
               Professionel hjemmeside på 3 dage
             </AnimatedInView>
             <AnimatedInView as="h2" className="subtitle !text-center">
-              Tilpasset små virksomheder – uden forudbetaling!
+            Lokalt webbureau i Horsens – Professionelt webdesign i Jylland
             </AnimatedInView>
             <Link href="/kontakt">
               <Button name="Kontakt" />
