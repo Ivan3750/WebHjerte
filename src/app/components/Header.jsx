@@ -6,7 +6,6 @@
   import W from "../../../public/W.png";
   import Button from "./Button";
 
-  // Remove the TypeScript annotations here
   const NavigationLinks = ({ closeMenu }) => (
     <>
      { <Link
@@ -22,6 +21,13 @@
         onClick={closeMenu}
       >
         Services
+      </Link>
+      <Link
+        className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
+        href="/skabeloner"
+        onClick={closeMenu}
+      >
+        Skabeloner
       </Link>
       <Link
         className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
@@ -51,6 +57,7 @@
       >
         Kontakt
       </Link>
+      
      
       <Link href="/track" className="md:hidden block" onClick={closeMenu}>
           <Button name="Spor projektet" />

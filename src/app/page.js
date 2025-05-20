@@ -6,13 +6,13 @@ import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
 import Wfront from "../../public/WFront.jpg";
 import Link from "next/link";
-import Team from "@/app/assets/Spor.png";
+import Team from "../../public/team.png";
 import DiscountPage from "./components/DiscountPage";
 import AnimatedInView from "./components/AnimatedInView";
 import Logo from "../../public/W.png";
 import Head from "next/head";
 import TechStackSection from "@/app/components/TechStackSection";
-import Test from "./components/Test";
+import SkabelonerSection from "@/app/components/SkabelonerSection"
 
 
 export const metadata = {
@@ -198,8 +198,8 @@ export default function Home() {
         <TechStackSection />
         <DiscountPage />
         <FeedBackPeople />
-        <Questions />
-        <Test/>
+{/*         <SkabelonerSection/>
+ */}        <Questions />
       </div>
     </>
   );
