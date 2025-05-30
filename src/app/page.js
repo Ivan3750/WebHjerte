@@ -16,9 +16,9 @@ import SkabelonerSection from "@/app/components/SkabelonerSection"
 
 
 export const metadata = {
-  title: "Webbureau i Horsens & Jylland – Professionel Hjemmeside & SEO | WebHjerte",
+  title: "Webbureau i Horsens – Få Hjemmeside fra 1.499 kr | WebHjerte",
   description:
-    "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi laver moderne og responsive hjemmesider, SEO-tjek og webdesign for små virksomheder i hele Danmark.",
+    "Moderne hjemmeside med SEO fra et lokalt webbureau i Horsens – få mere synlighed og flere kunder online i dag.",
   keywords:
     "webbureau horsens, webbureau i jylland, webdesign firma, hjemmeside til små virksomheder, SEO Danmark, SEO tjek af hjemmeside, moderne webdesign, responsivt design, bestil hjemmeside, gratis hjemmeside, rabat på hjemmeside",
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Webbureau i Horsens & Jylland – WebHjerte",
     description:
-      "Få en professionel hjemmeside med WebHjerte – lokalt webbureau i Horsens, Jylland. Eksperter i webdesign og SEO for små virksomheder.",
+      "Moderne hjemmeside med SEO fra et lokalt webbureau i Horsens – få mere synlighed og flere kunder online i dag.",
     image: Logo,
   },
 };
