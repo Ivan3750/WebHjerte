@@ -14,7 +14,7 @@ const DiscountPage = () => {
   const [expired, setExpired] = useState(false);
 
   useEffect(() => {
-    const end = new Date("2025-05-31T23:59:59");
+    const end = new Date("2025-06-30T23:59:59");
 
     const updateTimer = () => {
       const now = new Date();
@@ -55,7 +55,7 @@ const DiscountPage = () => {
         <p className="text-gray-300 text-lg sm:text-xl mb-8">
           Er du ny hos os? Så har vi en gave til dig! <br />
           Få <span className="text-yellow-400 font-bold">20% rabat</span> på din
-          første hjemmeside – kun i maj måned.
+          første hjemmeside – kun i juni måned.
         </p>
 
         {!expired ? (

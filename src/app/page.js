@@ -12,8 +12,8 @@ import AnimatedInView from "./components/AnimatedInView";
 import Logo from "../../public/W.png";
 import Head from "next/head";
 import TechStackSection from "@/app/components/TechStackSection";
-import SkabelonerSection from "@/app/components/SkabelonerSection"
-
+import SkabelonerSection from "@/app/components/SkabelonerSection";
+import EmailForm from "./components/EmailForm";
 
 export const metadata = {
   title: "Webbureau i Horsens – Få Hjemmeside fra 1.499 kr | WebHjerte",
@@ -39,41 +39,39 @@ export const metadata = {
   },
 };
 
-
 export default function Home() {
   return (
     <>
-        <Head>
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        name: "WebHjerte",
-        url: "https://webhjerte.dk",
-        logo: "https://webhjerte.dk/W.png",
-        image: "https://webhjerte.dk/W.png",
-        description:
-          "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
-       
-        areaServed: ["Horsens", "Jylland", "Danmark"],
-        telephone: "+45 12 34 56 78",
-        priceRange: "$$",
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "17",
-        },
-        sameAs: [
-          "https://www.facebook.com/webhjerte",
-          "https://www.instagram.com/webhjerte",
-        ],
-      }),
-    }}
-  />
-</Head>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "WebHjerte",
+              url: "https://webhjerte.dk",
+              logo: "https://webhjerte.dk/W.png",
+              image: "https://webhjerte.dk/W.png",
+              description:
+                "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
 
+              areaServed: ["Horsens", "Jylland", "Danmark"],
+              telephone: "+45 42 76 05 77",
+              priceRange: "$$",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                reviewCount: "17",
+              },
+              sameAs: [
+                "https://www.facebook.com/profile.php?id=61575549052729",
+                "https://www.instagram.com/webhjerte",
+              ],
+            }),
+          }}
+        />
+      </Head>
 
       <div className="">
         <div
@@ -87,11 +85,12 @@ export default function Home() {
         >
           <div className="flex gap-4 flex-col items-center">
             <AnimatedInView as="h1" className="maintitle !text-center">
-              Professionel hjemmeside på 3 dage
+              Professionel hjemmeside, der løfter din virksomhed
             </AnimatedInView>
             <AnimatedInView as="h2" className="subtitle !text-center">
-            Lokalt webbureau i Horsens – Professionelt webdesign i Jylland
+              Lokalt webbureau i Horsens – Skræddersyet webdesign til Jylland
             </AnimatedInView>
+
             <Link href="/kontakt">
               <Button name="Kontakt" />
             </Link>
@@ -104,9 +103,8 @@ export default function Home() {
               height={1000}
               alt="webhjerte"
             />
-          </div>
+          </div> 
         </div>
-
         <section className="flex bg-[#F7F6F6] justify-between md:gap-[40px]">
           <div className="">
             <h3 className="title">Hvem er vi?</h3>
@@ -132,7 +130,7 @@ export default function Home() {
                   online.
                 </p>
               </div>
-              <div className="w-full">
+             {/*  <div className="w-full">
                 <div className="aspect-w-16 aspect-h-9">
                   <Image
                     src={Team}
@@ -141,19 +139,18 @@ export default function Home() {
                     className="rounded-2xl shadow-md"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
-
         <section className="bg-[#F7F6F6] py-24 px-4">
           <h3 className="text-3xl sm:text-4xl font-bold text-center text-[#111] mb-12 tracking-tight">
             Hvorfor vælge os?
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {/* CARD */}
-            <div className="group bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
-              <div className="bg-pink-100 p-4 rounded-full shadow-md mb-5 group-hover:rotate-6 transition-transform duration-300">
+            <div className="group bg-white rounded-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+              <div className="bg-pink-100 p-4 rounded-full  mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Brain className="text-pink-500" size={40} />
               </div>
               <p className="text-xl font-semibold text-[#111] mb-3">
@@ -167,8 +164,8 @@ export default function Home() {
             </div>
 
             {/* CARD */}
-            <div className="group bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
-              <div className="bg-purple-100 p-4 rounded-full shadow-md mb-5 group-hover:rotate-6 transition-transform duration-300">
+            <div className="group bg-white rounded-xl  p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+              <div className="bg-purple-100 p-4 rounded-full  mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Puzzle className="text-purple-600" size={40} />
               </div>
               <p className="text-xl font-semibold text-[#111] mb-3">
@@ -181,8 +178,8 @@ export default function Home() {
             </div>
 
             {/* CARD */}
-            <div className="group bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
-              <div className="bg-yellow-100 p-4 rounded-full shadow-md mb-5 group-hover:rotate-6 transition-transform duration-300">
+            <div className="group bg-white rounded-xl  p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+              <div className="bg-yellow-100 p-4 rounded-full  mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Rocket className="text-yellow-500" size={40} />
               </div>
               <p className="text-xl font-semibold text-[#111] mb-3">
@@ -198,8 +195,9 @@ export default function Home() {
         <TechStackSection />
         <DiscountPage />
         <FeedBackPeople />
-{/*         <SkabelonerSection/>
- */}        <Questions />
+        {/*         <SkabelonerSection/>
+         */}{" "}
+        <Questions />
       </div>
     </>
   );
