@@ -16,9 +16,9 @@ import SkabelonerSection from "@/app/components/SkabelonerSection";
 import EmailForm from "./components/EmailForm";
 
 export const metadata = {
-  title: "Webbureau i Horsens – Få Hjemmeside fra 1.499 kr | WebHjerte",
+  title: "🌐 Webbureau i Horsens – Professionel Hjemmeside fra 1.499 kr | WebHjerte",
   description:
-    "Moderne hjemmeside med SEO fra et lokalt webbureau i Horsens – få mere synlighed og flere kunder online i dag.",
+    "Få en skræddersyet og mobilvenlig hjemmeside fra et lokalt webbureau i Horsens. SEO-optimeret webdesign – fra kun 1.499 kr.",
   keywords:
     "webbureau horsens, webbureau i jylland, webdesign firma, hjemmeside til små virksomheder, SEO Danmark, SEO tjek af hjemmeside, moderne webdesign, responsivt design, bestil hjemmeside, gratis hjemmeside, rabat på hjemmeside",
   openGraph: {
@@ -55,7 +55,12 @@ export default function Home() {
               image: "https://webhjerte.dk/W.png",
               description:
                 "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
-
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Horsens",
+                addressRegion: "Midtjylland",
+                addressCountry: "DK",
+              },
               areaServed: ["Horsens", "Jylland", "Danmark"],
               telephone: "+45 42 76 05 77",
               priceRange: "$$",
@@ -85,10 +90,10 @@ export default function Home() {
         >
           <div className="flex gap-4 flex-col items-center">
             <AnimatedInView as="h1" className="maintitle !text-center">
-              Professionel hjemmeside, der løfter din virksomhed
+          Webbureau i Horsens – Professionelle Hjemmesider til Små Virksomheder
             </AnimatedInView>
             <AnimatedInView as="h2" className="subtitle !text-center">
-              Lokalt webbureau i Horsens – Skræddersyet webdesign til Jylland
+          Få moderne og SEO-optimeret webdesign fra WebHjerte i Jylland
             </AnimatedInView>
 
             <Link href="/kontakt">
