@@ -42,41 +42,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "WebHjerte",
-              url: "https://webhjerte.dk",
-              logo: "https://webhjerte.dk/W.png",
-              image: "https://webhjerte.dk/W.png",
-              description:
-                "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Horsens",
-                addressRegion: "Midtjylland",
-                addressCountry: "DK",
-              },
-              areaServed: ["Horsens", "Jylland", "Danmark"],
-              telephone: "+45 42 76 05 77",
-              priceRange: "$$",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.8",
-                reviewCount: "17",
-              },
-              sameAs: [
-                "https://www.facebook.com/profile.php?id=61575549052729",
-                "https://www.instagram.com/webhjerte",
-              ],
-            }),
-          }}
-        />
-      </Head>
+     
 
       <div className="">
         <div
