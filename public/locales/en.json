@@ -1,0 +1,109 @@
+{
+  "home": {
+    "title": "Web Agency in Horsens – Get a Website from 1,499 kr | WebHjerte",
+    "description": "Modern website with SEO from a local web agency in Horsens – get more visibility and more customers online today.",
+    "keywords": "web agency horsens, web agency in jylland, web design company, website for small businesses, SEO Denmark, SEO website check, modern web design, responsive design, order website, free website, website discount",
+    "heroTitle": "Professional Website in 3 Days",
+    "heroSubtitle": "Local Web Agency in Horsens – Professional Web Design in Jylland",
+    "contactButton": "Contact",
+    "whoAreWeTitle": "Who are we?",
+    "whoAreWeText1": "WebHjerte Studio was created to make modern, user-friendly web design accessible to all Danish businesses – regardless of size or budget.",
+    "whoAreWeText2": "We started in 2024 in Horsens focusing on small and medium businesses that often lack customized and affordable web solutions.",
+    "whoAreWeText3": "We deliver aesthetic, functional, and GDPR-compliant websites with high performance and easy maintenance.",
+    "whoAreWeText4": "At WebHjerte, you get not only a professional website but a digital partner who helps your business grow online.",
+    "whyChooseUsTitle": "Why choose us?",
+    "card1Title": "Strategic Consulting",
+    "card1Text": "We analyze your business goals and develop a tailored digital strategy – with full transparency and ongoing communication.",
+    "card2Title": "Tailored Solutions",
+    "card2Text": "Each design and feature is carefully crafted to match your business – both visually and technically.",
+    "card3Title": "Fast and Reliable Delivery",
+    "card3Text": "We prioritize efficiency and quality – with clear deadlines and fast results without stress."
+  },
+
+  "services": {
+    "pageTitle": "Custom Websites and SEO | WebHjerte",
+    "pageDescription": "We create professional websites, e-commerce solutions, and SEO optimization for small businesses in Denmark.",
+    "pageKeywords": "web development, SEO, responsive design, e-commerce, UX/UI design, digital marketing",
+    "heroTitle": "What Do We Offer?",
+    "heroSubtitle": "Professional web design for Danish small businesses.",
+    "sectionTitle": "Web Development",
+    "disclaimer": "Our company does not provide domain registration or hosting, but we are experts in assisting with the setup. We ensure everything runs smoothly so you can focus on your business without worries.",
+    "packages": [
+      {
+        "name": "Start",
+        "description": "A simple and affordable website covering the basic needs of your business",
+        "price": "500 - 3,000 DKK",
+        "features": [
+          "Basic design",
+          "1-3 pages",
+          "Responsive design",
+          "SEO optimization",
+          "Contact form"
+        ]
+      },
+      {
+        "name": "Standard",
+        "description": "A modern website with basic SEO and a professional look",
+        "price": "4,000 - 7,000 DKK",
+        "features": [
+          "3-5 pages",
+          "Mobile-friendly adaptation",
+          "SEO optimization",
+          "Contact form",
+          "Google Analytics"
+        ]
+      },
+      {
+        "name": "Professional",
+        "description": "A tailored website with advanced design and extra features for a professional appearance",
+        "price": "8,000 - 12,000 DKK",
+        "features": [
+          "Multi-page website (up to 7 pages)",
+          "Complete SEO optimization",
+          "CRM/payment system integration",
+          "Admin panel",
+          "Google Analytics"
+        ]
+      },
+      {
+        "name": "Advanced",
+        "description": "An advanced website with custom design and functionality, including branding",
+        "price": "10,000 - 19,500 DKK",
+        "features": [
+          "Multi-page website (up to 15 pages)",
+          "Branding and custom design",
+          "CRM and payment system integration",
+          "Automation and special features",
+          "Google Analytics"
+        ]
+      },
+      {
+        "name": "Premium",
+        "description": "A premium solution with full customization, advanced features, and high conversion rates",
+        "price": "20,000 - 35,000 DKK",
+        "features": [
+          "Multi-page website (up to 20 pages)",
+          "Custom design and UX optimization",
+          "Scalable features and integrations",
+          "Advanced SEO and marketing tools",
+          "Automation and special features"
+        ]
+      },
+      {
+        "name": "Support",
+        "description": "Ongoing maintenance and support for your website.",
+        "price": "200 - 700 DKK / month",
+        "features": [
+          "Regular updates",
+          "Security checks",
+          "Website backups",
+          "Technical support",
+          "Content updates as needed",
+          "SEO monitoring and optimization"
+        ]
+      }
+    ]
+  }
+
+
+}
