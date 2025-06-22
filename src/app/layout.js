@@ -50,6 +50,12 @@ export default function RootLayout({ children }) {
     }),
   }}
 />
+{/* Ahrefs Webmaster Tools Script */}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="dQ/aslmLQa//XoyDENgNAQ"
+          strategy="beforeInteractive"
+        />
 
         {/* Google Tag Manager */}
         <Script
