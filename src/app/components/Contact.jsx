@@ -22,20 +22,25 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("https://web-cbe1.onrender.com/telegram/submit-contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+body: JSON.stringify(formData),
       });
 
       const data = await response.json();
       if (data.success) {
         setStatusMessage({ type: "success", text: "Formular sendt succesfuldt!" });
+        if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "conversion_event_submit_lead_form", {
+      send_to: "G-QFGJWT1F24",
+    });
       } else {
         setStatusMessage({ type: "error", text: "Kunne ikke sende formularen." });
       }
+}
     } catch (error) {
       console.error("Error submitting form:", error);
       setStatusMessage({ type: "error", text: "Der opstod en fejl under afsendelsen." });
@@ -47,12 +52,12 @@ const Contact = () => {
   return (
     <section className="bg-[#1C1E1F] p-6 py-10 md:p-10">
 
-      <AnimatedInView as="h1" className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
+      <h1 className="pt-6 md:pt-12 text-[#FFFEFD] font-syne text-lg md:text-xl font-medium leading-[30.8px] text-left">
       Kontakt os
-      </AnimatedInView>
-        <AnimatedInView as="h2" className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
+      </h1>
+        <h2 className="text-[#FFD100] font-syne text-3xl md:text-5xl font-bold leading-tight md:leading-[72px] text-left my-3">
         Er du klar til at føre din ide ud i livet?
-        </AnimatedInView>
+        </h2>
 
       <form
         className="mx-auto flex flex-col gap-5 w-full max-w-[800px]"

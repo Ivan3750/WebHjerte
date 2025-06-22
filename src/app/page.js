@@ -120,11 +120,11 @@ export default function Home() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {/* CARD */}
-            <div className="group bg-white rounded-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+            <div className="group bg-transparent rounded-2xl border-[1px] border-[#b8b9b9] p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
               <div className="bg-pink-100 p-4 rounded-full  mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Brain className="text-pink-500" size={40} />
               </div>
-              <p className="text-xl font-semibold text-[#111] mb-3">
+              <p className="blogtitle !text-[20px]">
                 Strategisk rådgivning
               </p>
               <p className="text-base text-[#555]">
@@ -135,11 +135,11 @@ export default function Home() {
             </div>
 
             {/* CARD */}
-            <div className="group bg-white rounded-xl  p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+            <div className="group bg-transparent rounded-2xl border-[1px] border-[#b8b9b9]  p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
               <div className="bg-purple-100 p-4 rounded-full  mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Puzzle className="text-purple-600" size={40} />
               </div>
-              <p className="text-xl font-semibold text-[#111] mb-3">
+              <p className="blogtitle !text-[20px]">
                 Skræddersyede løsninger
               </p>
               <p className="text-base text-[#555]">
@@ -149,11 +149,11 @@ export default function Home() {
             </div>
 
             {/* CARD */}
-            <div className="group bg-white rounded-xl  p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
+            <div className="group bg-transparent rounded-2xl border-[1px] border-[#b8b9b9]  p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]">
               <div className="bg-yellow-100 p-4 rounded-full  mb-5 group-hover:rotate-6 transition-transform duration-300">
                 <Rocket className="text-yellow-500" size={40} />
               </div>
-              <p className="text-xl font-semibold text-[#111] mb-3">
+              <p className="blogtitle !text-[20px]">
                 Hurtig og pålidelig levering
               </p>
               <p className="text-base text-[#555]">

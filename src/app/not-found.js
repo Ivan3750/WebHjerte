@@ -11,7 +11,7 @@ export default function Custom404() {
         Måske er linket gammelt, eller siden er blevet flyttet. Lad os finde tilbage til det vigtige 💙
       </p>
       <Link href="/"
-        >'
+        >
         <Button name="Til forsiden">
           
         </Button>

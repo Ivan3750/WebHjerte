@@ -5,7 +5,7 @@ const Vikar = () => {
         <div className="container">
           <div
             className="tab-content translations-content-item en visible text w-full "
-            id="en"
+            
           >
             <h1>Handelsbetingelser for WebHjerte</h1>
             <p>
@@ -18,8 +18,7 @@ const Vikar = () => {
             <p>
               1.1. Disse handelsbetingelser gælder for alle aftaler om levering
               af produkter og ydelser (herefter samlet kaldet “Ydelser”) indgået
-              mellem WebHjerte ApS (CVR-nr. 12345678), Hjertevej 1, 1000
-              København K (herefter “WebHjerte”) og dig som kunde (herefter
+              mellem WebHjerte (herefter “WebHjerte”) og dig som kunde (herefter
               “Kunden”).
             </p>
             <p>

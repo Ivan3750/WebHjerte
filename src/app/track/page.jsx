@@ -14,7 +14,7 @@ export const metadata = {
     description:
       "Hold øje med dit webprojekt hos WebHjerte. Se status, milepæle og næste skridt – vi arbejder transparent og effektivt.",
     url: "https://webhjerte.dk/track",
-    image: Logo, // 👈 створити відповідний OG image!
+    image: Logo, 
     type: "website",
   },
   twitter: {

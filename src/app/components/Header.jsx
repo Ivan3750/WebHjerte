@@ -22,13 +22,13 @@
       >
         Services
       </Link>
-  {/*     <Link
+     <Link
         className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
         href="/skabeloner"
         onClick={closeMenu}
       >
         Skabeloner
-      </Link> */}
+      </Link>
       <Link
         className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
         href="/om-os"
@@ -36,13 +36,13 @@
       >
         Om os
       </Link>
-      <Link
+     {/*  <Link
         className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
         href="/blog"
         onClick={closeMenu}
       >
         Blog
-      </Link>
+      </Link> */}
       <Link
         className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
         href="/portefolje"
