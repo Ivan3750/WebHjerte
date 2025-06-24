@@ -113,8 +113,8 @@ export default function Blog() {
             >
               <Image
                 src={
-                  `https://web-cbe1.onrender.com${post.cover_image}` ||
-                  "/default-image.jpg"
+                  `${post.cover_image}` ||
+                  "https://sjqyignjqcvlifrnsaoi.supabase.co/storage/v1/object/public/blog-images/default-image.jpg"
                 }
                 width={500}
                 height={300}
