@@ -4,20 +4,16 @@ import { notFound } from "next/navigation";
 import db from "@/app/lib/db";
 import Button from "@/app/components/Button";
 
-// Окрема функція для отримання поста
+// Утиліта для отримання поста
 async function getBlogPost(id) {
   const [rows] = await db.execute("SELECT * FROM posts WHERE id = ? LIMIT 1", [id]);
   return rows[0];
 }
 
-// Для генерації статичних сторінок (SSG)
-export async function generateStaticParams() {
-  const [posts] = await db.execute("SELECT id FROM posts");
-  return posts.map((post) => ({ id: String(post.id) }));
-}
-
-export async function generateMetadata({ params }) {
-  const blog = await getBlogPost(params.id);
+// Генерація SEO метаданих
+export const generateMetadata = async ({ params }) => {
+  const { id } = params;
+  const blog = await getBlogPost(id);
 
   if (!blog) {
     return {
@@ -27,30 +23,35 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title:  blog.seo_title ,
-    description: blog.seo_description,
-    keywords: blog.seo_keywords,
+    title: blog.metaTitle || blog.seo_title || "Blogindlæg – WebHjerte",
+    description: blog.seo_description || blog.excerpt || "Læs vores seneste blogindlæg.",
+    keywords: blog.seo_keywords || "blog, SEO, webdesign, WebHjerte",
     openGraph: {
-      title: blog.seo_title,
-      description: blog.seo_description,
-      image: blog.cover_image,
+      title: blog.seo_title || blog.metaTitle || "WebHjerte Blogindlæg",
+      description: blog.seo_description || blog.excerpt,
+      image: blog.cover_image || "https://webhjerte.dk/og-blog.jpg",
       type: "article",
-      url: `https://www.webhjerte.dk/blog/${params.id}`,
+      url: `https://www.webhjerte.dk/blog/${id}`,
     },
     twitter: {
       card: "summary_large_image",
-      title: blog.seo_title,
-      description: blog.seo_description,
-      image: blog.cover_image,
+      title: blog.seo_title || blog.metaTitle || "WebHjerte Blogindlæg",
+      description: blog.seo_description || blog.excerpt,
+      image: blog.cover_image || "https://webhjerte.dk/og-blog.jpg",
     },
     robots: "index, follow",
   };
-}
+};
 
-// Сторінка поста
+// Статичні маршрути
+export const generateStaticParams = async () => {
+  const [posts] = await db.execute("SELECT id FROM posts");
+  return posts.map((post) => ({ id: post.id.toString() }));
+};
+
+// Основна сторінка
 export default async function PostPage({ params }) {
-  const id = Number(params.id); // перевіряємо, що це число
-
+  const { id } = params;
   const post = await getBlogPost(id);
   if (!post) return notFound();
 
@@ -62,16 +63,18 @@ export default async function PostPage({ params }) {
     <div className="p-6 bg-white">
       <div className="max-w-5xl mx-auto">
         {post.image_url && (
-          <img src={post.image_url} alt={post.title} className="mb-6 rounded w-full max-h-[500px] object-cover" />
+          <img
+            src={post.image_url}
+            alt={post.title}
+            className="mb-6 rounded w-full max-h-[500px] object-cover"
+          />
         )}
 
-        <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
 
         <div className="content prose max-w-none">
           <ReactMarkdown>{markdownFixed}</ReactMarkdown>
         </div>
 
-        {/* Допоміжний блок */}
         <div className="mt-12 p-6 bg-blue-50 border-l-4 border-blue-400 rounded shadow-sm my-5">
           <h3 className="text-xl font-semibold text-[#444] mb-2">
             Har du brug for hjælp?
