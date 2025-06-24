@@ -21,12 +21,12 @@ export default function Blog() {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await fetch("https://web-cbe1.onrender.com/blog");
+        const response = await fetch("/api/blog");
         const data = await response.json();
+        console.log(data)
         setPosts(data);
 
-        // Extract unique categories from posts
-        const uniqueCategories = Array.from(
+         const uniqueCategories = Array.from(
           new Set(data.map((post) => post.category))
         ).filter(Boolean);
         setCategories(uniqueCategories);
