@@ -49,7 +49,7 @@ export default function Skabeloner() {
         <h2 className="title !my-3">Vælg en skabelon</h2>
         <div className="flex justify-between md:flex-row flex-col gap-5 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {templates.map((template, index) => (
+           {/*  {templates.map((template, index) => (
               <div
                 key={index}
                 className="bg-[#E9E9E9] p-6 rounded-2xl flex flex-col gap-3 justify-between max-[750px]:mx-20 max-[600px]:mx-5 max-[400px]:mx-0"
@@ -67,7 +67,8 @@ export default function Skabeloner() {
                   <Button name="Læs mere"></Button>
                 </Link>
               </div>
-            ))}
+            ))} */}
+            <p className="text !min-h-[90px]">Vi har ikke nu</p>
           </div>
         </div>
       </section>

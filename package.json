@@ -4,7 +4,6 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "devb": "nodemon start.js",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "node start.js",

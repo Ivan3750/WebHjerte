@@ -74,7 +74,7 @@ const projects = [
   },
   {
     titleLine1: "Hesteklub",
-    titleLine2: "rideundervisning og klubinformation",
+    titleLine2: "hjemmeside og klubinformation",
     client: "Hesteklub",
     categories: ["Website design", "Webudvikling"],
     description: "Elegant hjemmeside for en rideklub",

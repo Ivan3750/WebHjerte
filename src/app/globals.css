@@ -533,6 +533,20 @@ footer {
   color: #222;
 }
 
+/* Адаптив для планшетів */
+@media (max-width: 992px) {
+  .content h1 {
+    font-size: 34px;
+  }
+}
+
+/* Адаптив для мобільних */
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 28px;
+  }
+}
+
 .content h2 {
   color: #444;
   font-size: 32px;
