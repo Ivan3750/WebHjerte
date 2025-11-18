@@ -1,86 +1,69 @@
 const Questions = () => {
   return (
-    <section className="bg-[#F7F6F6]">
-      <h3 className="title">Sprøgsmål og svar</h3>
-      <div className=" mb-5 flex gap-5 flex-col">
+    <section className="bg-[#F7F6F6] py-12 px-4">
+      <h3 className="title text-center mb-8">Spørgsmål og svar</h3>
+      <div className="mb-5 flex gap-5 flex-col max-w-4xl mx-auto">
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] text rounded-t-3xl cursor-pointer !font-medium">
-            Hvilken type virksomheder arbejder WebHjerte Studio med?
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
+            Hvilken type virksomheder arbejder WebHjerte med?
           </summary>
-          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text">
-            Vi arbejder primært med små og mellemstore virksomheder, der ønsker
-            moderne, funktionelle og økonomisk overkommelige webdesignløsninger.
-            Uanset om du er en startup eller en etableret virksomhed, kan vi
-            hjælpe dig med at skabe en stærk online tilstedeværelse.
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl">
+            WebHjerte arbejder primært med små og mellemstore virksomheder, som ønsker moderne, funktionelle og prisvenlige webdesignløsninger. Uanset om du er en startup eller etableret virksomhed, hjælper WebHjerte med at skabe en stærk online tilstedeværelse.
           </p>
         </details>
+
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] text rounded-t-3xl cursor-pointer !font-medium">
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
             Hvordan kan jeg få et tilbud på et webdesignprojekt?
           </summary>
-          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text">
-            Du kan kontakte os via vores hjemmeside eller sende os en e-mail, og
-            vi vil aftale et møde for at forstå dine behov og mål. Baseret på
-            dette vil vi give dig et skræddersyet tilbud, der passer til dit
-            budget og dine ønsker.
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl">
+            Du kan kontakte WebHjerte via hjemmesiden eller e-mail. Herefter aftales et møde for at forstå dine behov og mål, og du modtager et skræddersyet tilbud, der passer til dit budget og dine ønsker.
           </p>
         </details>
+
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] text rounded-t-3xl cursor-pointer !font-medium">
-            Er mine data sikre hos WebHjerte Studio?
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
+            Er mine data sikre hos WebHjerte?
           </summary>
-          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text">
-            Ja, vi tager datasikkerhed meget alvorligt. Alle vores løsninger er
-            GDPR-kompatible, og vi arbejder med de nyeste teknologier og best
-            practices for at sikre, at dine data er beskyttede.
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl">
+            Ja, datasikkerhed er en høj prioritet hos WebHjerte. Alle løsninger er GDPR-kompatible, og nyeste teknologier og best practices anvendes for at beskytte dine data.
           </p>
         </details>
+
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] text rounded-t-3xl cursor-pointer !font-medium">
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
             Kan jeg få support efter mit websted er lanceret?
           </summary>
-          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text">
-            Ja, vi tilbyder løbende support og vedligeholdelse for at sikre, at
-            dit websted fortsat fungerer optimalt. Vi tilbyder både opdateringer
-            og teknisk support, så du kan fokusere på at drive din virksomhed.
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl">
+            Ja, WebHjerte tilbyder løbende support og vedligeholdelse, så dit websted fortsat fungerer optimalt. Opdateringer og teknisk support sikrer, at du kan fokusere på at drive din virksomhed.
           </p>
         </details>
+
         <details>
-          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] text rounded-t-3xl cursor-pointer !font-medium">
-            Hvad gør WebHjerte Studio for at sikre høj kvalitet på deres
-            tjenester?
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
+            Hvordan sikrer WebHjerte høj kvalitet på tjenesterne?
           </summary>
-          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text">
-            Vi sikrer høj kvalitet ved at bruge den nyeste teknologi og følger
-            branchens bedste praksis. Vores team består af erfarne udviklere,
-            der arbejder tæt sammen med kunderne for at forstå deres behov og
-            levere skræddersyede løsninger.
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl">
+            Høj kvalitet sikres gennem brug af nyeste teknologi og branchens bedste praksis. WebHjerte fokuserer på skræddersyede løsninger tilpasset kundens behov.
           </p>
         </details>
+
         <details>
-          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] text rounded-t-3xl cursor-pointer !font-medium">
-            Hvordan kan WebHjerte Studio hjælpe med SEO?
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
+            Hvordan kan WebHjerte hjælpe med SEO?
           </summary>
-          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text">
-            Vi tilbyder professionelle SEO-tjenester, der hjælper med at
-            forbedre din synlighed i søgemaskiner. Dette inkluderer
-            søgeordsanalyse, on-page optimering og linkbuilding for at sikre, at
-            din hjemmeside rangerer højere i søgeresultaterne.
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl">
+            WebHjerte tilbyder professionelle SEO-tjenester, inklusiv søgeordsanalyse, on-page optimering og linkbuilding, for at sikre, at din hjemmeside rangerer højere i søgeresultater.
           </p>
         </details>
+
         <details>
-          <summary className="bg-[#E9E9E9] p-5  text-[#5E5F5F] text rounded-t-3xl cursor-pointer !font-medium">
-            Hvordan kan jeg holde styr på fremdriften af mit projekt?
+          <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
+            Hvordan kan jeg følge fremdriften af mit projekt?
           </summary>
-          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl text">
-            Vi tilbyder en dedikeret side til projektopfølgning, hvor du kan
-            følge alle faser af dit projekt i realtid. Du vil få adgang til
-            detaljerede opdateringer, rapporter og fremdriftsstatusser direkte
-            på denne side. Derudover får du regelmæssige opdateringer fra din
-            projektleder, så du altid er informeret om, hvad der sker. -
-            <a href="/track" className="text-[#0af]">
-              Følg mit projekt
-            </a>
+          <p className="bg-[#E9E9E9] text-[#5E5F5F] p-5 rounded-b-3xl">
+            WebHjerte tilbyder en dedikeret side til projektopfølgning, hvor du kan følge alle faser af projektet i realtid. Du får detaljerede opdateringer, rapporter og statusser. Derudover modtager du regelmæssige opdateringer fra WebHjerte.
+            - <a href="/track" className="text-[#0af]">Følg mit projekt</a>
           </p>
         </details>
       </div>

@@ -32,8 +32,8 @@ const packages = [
   {
     name: "Start",
     description:
-      "En simpel og billig hjemmeside, der dækker de grundlæggende behov for din virksomhed",
-    price: "500 - 3.000 DKK",
+      "En enkel og prisvenlig hjemmeside, der dækker de grundlæggende behov for din virksomhed",
+    price: "500 - 2.000 DKK",
     features: [
       "Grundlæggende design",
       "1-3 sider",
@@ -46,7 +46,7 @@ const packages = [
     name: "Standard",
     description:
       "En moderne hjemmeside med grundlæggende SEO og et professionelt udseende",
-    price: "4.000 - 7.000 DKK",
+    price: "3.500 - 6.500 DKK",
     features: [
       "3-5 sider",
       "Mobilvenlig tilpasning",
@@ -59,7 +59,7 @@ const packages = [
     name: "Professionel",
     description:
       "En skræddersyet hjemmeside med avanceret design og ekstra funktioner for professionelt udseende",
-    price: "8.000 - 12.000 DKK",
+    price: "7.500 - 11.500 DKK",
     features: [
       "Flersidet hjemmeside (op til 7 sider)",
       "Komplet SEO-optimering",
@@ -72,7 +72,7 @@ const packages = [
     name: "Avanceret",
     description:
       "En avanceret hjemmeside med tilpasset design og funktionalitet, inklusive branding",
-    price: "10.000 - 19.500 DKK",
+    price: "10.000 - 17.500 DKK",
     features: [
       "Flersidet hjemmeside (op til 15 sider)",
       "Branding og tilpasset design",
@@ -84,8 +84,8 @@ const packages = [
   {
     name: "Premium",
     description:
-      "En premium løsning med fuld tilpasning, avancerede funktioner og høj konverteringsrate",
-    price: "20.000 - 35.000 DKK",
+      "En premium løsning med fuld tilpasning, avancerede funktioner og høj konverteringsrate – skræddersyet til din virksomhed",
+    price: "18.000 - 28.000 DKK",
     features: [
       "Flersidet hjemmeside (op til 20 sider)",
       "Tilpasset design og UX-optimering",
@@ -97,7 +97,7 @@ const packages = [
   {
     name: "Support",
     description: "Løbende vedligeholdelse og support til din hjemmeside.",
-    price: "200 - 700 DKK / måned",
+    price: "250 - 750 DKK / måned",
     features: [
       "Regelmæssige opdateringer",
       "Sikkerhedstjek",
@@ -108,6 +108,7 @@ const packages = [
     ],
   },
 ];
+
 
 const Services = () => {
   return (

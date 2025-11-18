@@ -520,130 +520,123 @@ footer {
 }
 
 .content {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  line-height: 1.6;
+  color: #1c1c1c;
+  line-height: 1.8;
+  font-size: 18px;
+  margin: 0 auto;
 }
 
 /* Заголовки */
 .content h1 {
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  color: #222;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 2rem 0 1rem;
 }
 
-/* Адаптив для планшетів */
 @media (max-width: 992px) {
   .content h1 {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 
-/* Адаптив для мобільних */
 @media (max-width: 576px) {
   .content h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
 .content h2 {
-  color: #444;
   font-size: 32px;
-  font-weight: 700;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
 }
 
 .content h3 {
-  color: #5e5f5f;
   font-size: 26px;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  font-weight: 600;
+  margin: 1.75rem 0 1rem;
 }
 
 .content h4 {
-  color: #5e5f5f;
   font-size: 22px;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
 }
 
-/* Текст */
+/* Параграфи */
 .content p {
-  font-size: 17px;
-  margin-bottom: 1rem;
-  color: #555;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
 /* Списки */
-.content ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-  color: #444;
-}
-
+.content ul,
 .content ol {
-  padding-left: 1.25rem;
-  margin-bottom: 1rem;
-  color: #444;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  padding-left: 1rem;
+  list-style: circle;
 }
 
 .content li {
-  margin-bottom: 0.5rem;
-  font-size: 16px;
-  list-style-type: decimal;
+  margin-bottom: 0.75rem;
+  font-size: 17px;
 }
 
 /* Посилання */
 .content a {
-  color: #3182ce;
-  text-decoration: none;
+  color: #00a8e8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .content a:hover {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
-/* Блоки коду */
+/* Inline code */
 .content code {
-  background-color: #f7fafc49;
-  padding: 2px 6px;
+  background-color: #f2f2f2;
+  padding: 2px 4px;
   border-radius: 4px;
-  font-family: monospace;
+  font-family: 'Courier New', monospace;
   font-size: 0.95em;
 }
 
+/* Code block */
 .content pre {
-  background-color: #2d3748;
-  color: #f7fafc;
+  background-color: #f6f8fa;
+  color: #24292e;
   padding: 1rem;
   border-radius: 6px;
   overflow-x: auto;
-  font-family: monospace;
-  font-size: 0.9em;
-  margin-bottom: 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  margin: 2rem 0;
 }
 
 /* Блок цитати */
 .content blockquote {
-  border-left: 4px solid #3182ce;
+  border-left: 3px solid #00a8e8;
   padding-left: 1rem;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   color: #555;
   font-style: italic;
-  background-color: #f0f4f8;
+  background-color: #00a8e80f;
 }
 
 /* Зображення */
 .content img {
   max-width: 100%;
-  border-radius: 8px;
-  margin: 1rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  display: block;
+  object-fit: cover;
+}
+
+/* Відступи між елементами */
+.content > *:last-child {
+  margin-bottom: 0;
 }

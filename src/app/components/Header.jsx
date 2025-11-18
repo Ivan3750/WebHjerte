@@ -22,13 +22,13 @@
       >
         Services
       </Link>
-     <Link
+  {/*    <Link
         className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
         href="/skabeloner"
         onClick={closeMenu}
       >
         Skabeloner
-      </Link>
+      </Link> */}
       <Link
         className="text-white text-sm font-normal px-3 py-1 rounded-2xl transition hover:border hover:border-white"
         href="/om-os"
@@ -68,26 +68,23 @@
   const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    // Function to toggle mobile menu visibility
-    const toggleMobileMenu = () => {
+     const toggleMobileMenu = () => {
       setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    // Function to close mobile menu
-    const closeMobileMenu = () => {
+     const closeMobileMenu = () => {
       setIsMobileMenuOpen(false);
     };
 
-    // Disable scroll when mobile menu is open
-    useEffect(() => {
+     useEffect(() => {
       if (isMobileMenuOpen) {
-        document.body.style.overflow = "hidden"; // Disable scrolling
+        document.body.style.overflow = "hidden";  
       } else {
-        document.body.style.overflow = "auto"; // Enable scrolling
+        document.body.style.overflow = "auto"; 
       }
 
       return () => {
-        document.body.style.overflow = "auto"; // Reset on cleanup
+        document.body.style.overflow = "auto";  
       };
     }, [isMobileMenuOpen]);
 

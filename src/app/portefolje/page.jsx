@@ -87,7 +87,7 @@ const projects = [
     titleLine1: "Monolit",
     titleLine2: "salg af døre og pengeskabe",
     client: "Monolit",
-    categories: ["Produktkatalog", "Webudvikling"],
+    categories: ["Produktkatalog"],
     description: "Robust og stilfuld hjemmeside til sikkerhedsprodukter",
     location: "Aarhus",
     locationIcon: "https://flagcdn.com/w40/dk.webp",
@@ -121,77 +121,59 @@ const projects = [
 const Portefojle = () => {
   return (
     <>
-       <section className="px-4">
-    
-    <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
-    Se vores arbejde
-    </AnimatedInView>
-    <AnimatedInView as="h2" className="text-center text-lg">
-    Vi hjælper virksomheder med at blive set, engageret og husket – med
-    design der både er smukt og strategisk.    </AnimatedInView>
-  </section>
-      <section className="bg-white">
+      <section className="px-4 sm:px-6 md:px-10 lg:px-16">
+        <AnimatedInView as="h1" className="maintitle text-center mt-16 sm:mt-20 text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Se vores arbejde
+        </AnimatedInView>
+        <AnimatedInView as="h2" className="text-center text-sm sm:text-base lg:text-lg mt-4 sm:mt-6 text-white-600 max-w-2xl mx-auto">
+          Vi hjælper virksomheder med at blive set, engageret og husket – med design der både er smukt og strategisk.
+        </AnimatedInView>
+      </section>
+
+      <section className="bg-white py-10 sm:py-16">
         {projects.map((project, index) => (
-          <div className="flex flex-col  md:flex-row gap-[40px]">
-            <div className="w-full mt-10 overflow-hidden rounded-xl">
+          <div key={index} className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 mb-16 md:mb-20">
+            <div className="w-full md:w-1/2 overflow-hidden rounded-xl">
               <Image
                 src={project.image}
                 alt={project.titleLine1}
                 width={700}
                 height={500}
-                className="rounded-2xl shadow-xl transition-transform duration-500 ease-in-out hover:scale-105 w-full h-auto object-cover"
+                className="rounded-2xl shadow-xl w-full h-auto object-cover transition-transform duration-500 ease-in-out hover:scale-105"
               />
             </div>
-            <div className="flex w-full flex-col items-start justify-center gap-2 xl:gap-4 max-w-5xl mx-auto"
-              key={index} >
-              <div className="uppercase text-[14px] lg:text-[16px] text-[#5e5f5f] font-semibold tracking-widest">
-                <p>
-                  {project.categories.map((cat, i) => (
-                    <span key={i} className="mr-4">
-                      #{cat}
-                    </span>
-                  ))}
-                </p>
+
+            <div className="flex flex-col w-full md:w-1/2 gap-3 md:gap-5 max-w-2xl">
+              <div className="uppercase text-xs sm:text-sm lg:text-base text-gray-500 font-semibold tracking-widest">
+                {project.categories.map((cat, i) => (
+                  <span key={i} className="mr-3 md:mr-4">
+                    #{cat}
+                  </span>
+                ))}
               </div>
 
-              <div className="text-3xl text-[20px] lg:text-[30px] font-semibold leading-tight text-primary text-[#5e5f5f]">
+              <div className="text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug text-gray-700">
                 <div className="overflow-hidden">
-                  <div className="a-line">
-                    <div>{project.titleLine1}</div>
-                  </div>
-                  {project.titleLine2 && (
-                    <div className="a-line">
-                      <div>{project.titleLine2}</div>
-                    </div>
-                  )}
+                  <div className="a-line">{project.titleLine1}</div>
+                  {project.titleLine2 && <div className="a-line">{project.titleLine2}</div>}
                 </div>
               </div>
 
-              <div className="flex gap-4 flex-wrap text-sm mt-2 ">
-                <span className="bg-[#272727] p-3 rounded-lg text-white">
-                  {project.client}
-                </span>
+              <div className="flex flex-wrap gap-3 md:gap-4 mt-2">
+                <span className="bg-gray-900 text-white px-3 py-1 rounded-lg text-sm sm:text-base">{project.client}</span>
                 {project.location && (
-                  <span className="bg-[#272727] p-3  rounded-lg text-white flex items-center gap-2">
-                    <img
-                      src={project.locationIcon}
-                      alt="Location"
-                      className="w-5 h-5 rounded-2xl"
-                    />
+                  <span className="bg-gray-900 text-white px-3 py-1 rounded-lg flex items-center gap-2 text-sm sm:text-base">
+                    <img src={project.locationIcon} alt="Location" className="w-4 h-4 sm:w-5 sm:h-5 rounded-full" />
                     {project.location}
                   </span>
                 )}
               </div>
 
-              <div className="text-base  text-[#5e5f5f] text-muted max-w-2xl mt-4">
-                <p>{project.description}</p>
-              </div>
+              <p className="text-gray-600 text-sm sm:text-base mt-3">{project.description}</p>
 
-              {/* <div className="mt-6">
-                <Link href={project.link}>
-                  <Button name="Læs mere"></Button>
-                </Link>
-              </div> */}
+              {/* <Link href={project.link}>
+                <Button name="Læs mere" />
+              </Link> */}
             </div>
           </div>
         ))}
@@ -201,3 +183,4 @@ const Portefojle = () => {
 };
 
 export default Portefojle;
+

@@ -10,8 +10,7 @@ export async function POST(req) {
       return NextResponse.json({ error: 'Заповни всі поля' }, { status: 400 });
     }
 
-    const id = uuidv4(); // генеруємо UUID
-
+    const id = uuidv4();
     const query = 'INSERT INTO posts (id, title, content, image_url) VALUES (?, ?, ?, ?)';
     const values = [id, title, markdown, image || null];
 

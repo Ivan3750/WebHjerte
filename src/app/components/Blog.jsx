@@ -109,7 +109,8 @@ export default function Blog() {
           {filteredPosts.map((post) => (
             <div
               key={post.id}
-              className="bg-[#E9E9E9] p-4 rounded-3xl flex flex-col gap-3 md:w-[380px] sm:w-[300px] xl:w-[350px] box-border"
+              className="bg-[#E9E9E9] p-4 rounded-3xl flex flex-col gap-3 md:w-[380px] sm:w-[300px] xl:w-[350px] box-border hover:scale-[0.95] transition-transform cursor-pointer"
+              onClick={() => handleReadClick(post.id)}
             >
               <Image
                 src={
@@ -131,13 +132,6 @@ export default function Blog() {
                 </p>
                 <p className="text-[#00aaff]">#{post.category}</p>
                 <div className="flex justify-between items-center">
-                  <button
-                    className="buy !p-2 md:!p-1 !text-[12px] sm:!text-[14px] xl:!text-[16px] flex juctify-between items-center"
-                    onClick={() => handleReadClick(post.id)}
-                    disabled={loadingPost === post.id}
-                  >
-                    {loadingPost === post.id ? <Loader /> : "Læse"}
-                  </button>
                   <div className="flex items-center gap-2">
                     <IoCalendarNumber className="text-[#5E5F5F] text-[14px] sm:text-[16px] xl:text-[18px]" />
                     <p className="text-[#5E5F5F] text-[12px] sm:text-[14px] xl:text-[16px]">

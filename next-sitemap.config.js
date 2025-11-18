@@ -1,6 +1,5 @@
 // next-sitemap.config.js
-module.exports = {
-    siteUrl: 'https://webhjerte.dk', // або твій домен
-    generateRobotsTxt: true,
-  }
-  
+export default {
+  siteUrl: 'https://webhjerte.dk',
+  generateRobotsTxt: true,
+};

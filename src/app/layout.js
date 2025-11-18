@@ -11,50 +11,50 @@ const unbounded = Unbounded({
   display: "swap",
 });
 
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="da">
       <head>
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "WebHjerte",
-      url: "https://webhjerte.dk",
-      logo: "https://webhjerte.dk/W.png",
-      image: "https://webhjerte.dk/W.png",
-      description:
-        "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
-      telephone: "+45 42 76 05 77",
-      priceRange: "$$",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Horsens",
-        postalCode: "8700",
-        addressCountry: "DK"
-      },
-      areaServed: ["Horsens", "Jylland", "Danmark"],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.8",
-        reviewCount: "17"
-      },
-      sameAs: [
-        "https://www.facebook.com/profile.php?id=61575549052729",
-        "https://www.instagram.com/webhjerte"
-      ]
-    }),
-  }}
-/>
-{/* Ahrefs Webmaster Tools Script */}
-        <script src="https://analytics.ahrefs.com/analytics.js" data-key="dQ/aslmLQa//XoyDENgNAQ" async></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "WebHjerte",
+              url: "https://webhjerte.dk",
+              logo: "https://webhjerte.dk/W.png",
+              image: "https://webhjerte.dk/W.png",
+              description:
+                "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
+              telephone: "+45 42 76 05 77",
+              priceRange: "$$",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Horsens",
+                postalCode: "8700",
+                addressCountry: "DK",
+              },
+              areaServed: ["Horsens", "Jylland", "Danmark"],
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                reviewCount: "17",
+              },
+              sameAs: [
+                "https://www.facebook.com/profile.php?id=61575549052729",
+                "https://www.instagram.com/webhjerte",
+              ],
+            }),
+          }}
+        />
+         <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="dQ/aslmLQa//XoyDENgNAQ"
+          async
+        ></script>
 
-        {/* Google Tag Manager */}
-        <Script
+         <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -68,13 +68,11 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Favicon */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
 
-        {/* Conditional Google Analytics */}
-        <Script
+         <Script
           id="conditional-ga-loader"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
