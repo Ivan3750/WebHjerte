@@ -14,7 +14,7 @@ const DiscountPage = () => {
   const [expired, setExpired] = useState(false);
 
   useEffect(() => {
-    const end = new Date("2025-11-30T23:59:59");
+    const end = new Date("2025-12-31T23:59:59");
 
     const updateTimer = () => {
       const now = new Date();
@@ -95,7 +95,7 @@ const DiscountPage = () => {
         )}
 
         <p className="text-xs text-gray-500 mt-6">
-          *Tilbuddet gælder kun for nye kunder frem til 30. november 2025.
+          *Tilbuddet gælder kun for nye kunder frem til 31. december 2025.
         </p>
       </div>
 
