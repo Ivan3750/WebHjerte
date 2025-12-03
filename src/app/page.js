@@ -68,7 +68,7 @@ export default function Home() {
                 WebHjerte sikrer, at hvert projekt leveres med høj kvalitet og fokus på resultater.
               </p>
               <p>
-                Alt WebHjerte skaber, gøres med passion og præcision – for kunderne og de projekter, der inspirerer os hver dag 💛
+                Alt WebHjerte skaber, gøres med passion og præcision – for kunderne og de projekter, der inspirerer os hver dag 
               </p>
             </div>
           </div>
