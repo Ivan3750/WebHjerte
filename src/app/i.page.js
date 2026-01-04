@@ -5,7 +5,7 @@ import Questions from "@/app/components/Questions";
 import FeedBackPeople from "@/app/components/FeedBackPeople";
 import Wfront from "../../public/WFront.jpg";
 import Link from "next/link";
-import DiscountPage from "./components/DiscountPage";
+import DiscountPage from "./components/home/NewYearCampaign";
 import AnimatedInView from "./components/AnimatedInView";
 import Logo from "../../public/W.png";
 import TechStackSection from "@/app/components/TechStackSection";

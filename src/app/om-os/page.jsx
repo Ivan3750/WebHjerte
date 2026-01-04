@@ -3,7 +3,7 @@ import Questions from "../components/Questions";
 import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Transparens from "../../../public/transparens.png";
-import WorkProcess from "@/app/components/WorkProcess";
+import WorkProcess from "../components/WorkProcess";
 import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
 

@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
                 postalCode: "8700",
                 addressCountry: "DK",
               },
-              areaServed: ["Horsens", "Jylland", "Danmark"],
+              areaServed: ["Horsens", "Jylland", "Danmark", "Midtjylland","Europe"],
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.8",
@@ -100,7 +100,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Cookiebot */}
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
@@ -113,7 +112,6 @@ export default function RootLayout({ children }) {
         className={`${unbounded.variable} antialiased`}
         suppressHydrationWarning
       >
-        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TJH4S29Q"

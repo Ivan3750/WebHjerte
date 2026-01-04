@@ -2,7 +2,7 @@ const Questions = () => {
   return (
     <section className="bg-[#F7F6F6] py-12 px-4">
       <h3 className="title text-center mb-8">Spørgsmål og svar</h3>
-      <div className="mb-5 flex gap-5 flex-col max-w-4xl mx-auto">
+      <div className="mb-5 flex gap-5 flex-col max-w-6xl mx-auto">
         <details>
           <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
             Hvilken type virksomheder arbejder WebHjerte med?
