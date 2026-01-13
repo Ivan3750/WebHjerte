@@ -17,7 +17,7 @@ import Wfront from "../../public/WFront.jpg";
 import InfoBlock from "./components/home/InfoBlock";
 import CasesCarousel from "./components/home/CasesCarousel";
 import ProcessBlock from "./components/home/ProcessBlock";
-import CTASection from "./components/home/CTASection";
+import FeedBackPeople from "./components/FeedBackPeople";
 import Questions from "./components/Questions";
 export const metadata = {
   title:
@@ -110,6 +110,7 @@ export default function Home() {
       <TilbydeSection />
       <ProcessBlock />
       <CasesCarousel />
+      <FeedBackPeople></FeedBackPeople>
       <Questions />
     </>
   );
