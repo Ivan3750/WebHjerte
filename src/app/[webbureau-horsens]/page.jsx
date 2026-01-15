@@ -12,7 +12,6 @@ export default function WebbureauHorsens() {
   return (
     <div>
 
-      {/* HERO */}
       <section className="py-24 px-5">
         <div className="max-w-5xl mx-auto text-center">
           <AnimatedInView as="h1" className="maintitle mb-6">
@@ -30,7 +29,6 @@ export default function WebbureauHorsens() {
         </div>
       </section>
 
-      {/* LOKAL INTRO */}
       <section className="bg-[#F7F6F6] py-24 px-5">
         <div className="max-w-5xl mx-auto space-y-6 text-[#444]">
           <h2 className="title">Lokalt webbureau i Horsens</h2>

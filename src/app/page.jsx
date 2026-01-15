@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       <section className="relative min-h-[calc(100dvh-100px)] flex items-center px-5 sm:px-10 lg:px-20 overflow-hidden">
-        <video
+        {/* <video
           className="absolute inset-0 w-full h-full object-cover hidden md:block"
           autoPlay
           muted
@@ -65,26 +65,26 @@ export default function Home() {
           aria-hidden="true"
         >
           <source src="/web-design-background.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
         <div className="relative z-10 w-full">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col gap-6">
-              <AnimatedInView as="h1" className="maintitle text-white">
-                Webbureau i Horsens
+              <AnimatedInView as="h1" className="maintitle !text-[40px] text-white">
+                Vi skaffer flere kunder til små virksomheder
               </AnimatedInView>
 
               <AnimatedInView
                 as="p"
-                className="subtitle max-w-xl text-gray-200"
+                className="subtitle !text-[16px] max-w-xl text-gray-200"
               >
                 Vi designer hurtige, enkle og mobilvenlige hjemmesider, der
                 hjælper små virksomheder med at få flere kunder online.
               </AnimatedInView>
 
               <div className="flex items-center gap-4">
-                <Link href="/kontakt">
-                  <Button name="Få gratis website-gennemgang" />
+                <Link href="/services">
+                  <Button name="Se priser" />
                 </Link>
 
                 <div className="flex items-center gap-2 text-sm text-gray-300">
