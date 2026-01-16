@@ -123,11 +123,10 @@ const Portefojle = () => {
     <>
       <section className="px-4 sm:px-6 md:px-10 lg:px-16">
         <AnimatedInView as="h1" className="maintitle text-center mt-16 sm:mt-20 text-3xl sm:text-4xl lg:text-5xl font-bold">
-          Se vores arbejde
+          Portefølje
         </AnimatedInView>
-        <AnimatedInView as="h2" className="text-center text-sm sm:text-base lg:text-lg mt-4 sm:mt-6 text-white-600 max-w-2xl mx-auto">
-          Vi hjælper virksomheder med at blive set, engageret og husket – med design der både er smukt og strategisk.
-        </AnimatedInView>
+        <AnimatedInView as="h2" className="subtitle  text-center text-sm sm:text-base lg:text-lg mt-4 sm:mt-6 text-white-600 max-w-2xl mx-auto">
+Se vores webdesignprojekter for små virksomheder i Horsens og resten af Danmark. Vi skaber strategisk og visuelt smukt design, der får din virksomhed til at blive set, engageret og husket online.        </AnimatedInView>
       </section>
 
       <section className="bg-white py-10 sm:py-16">

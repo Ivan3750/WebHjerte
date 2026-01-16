@@ -37,11 +37,11 @@ const OmOs = () => {
  
       <section className="px-4">
         <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
-          Hvem er WebHjerte Studio?
+          Om WebHjerte Studio
         </AnimatedInView>
 
-        <AnimatedInView as="h2" className="text-center text-lg">
-          Et moderne webstudio fra Horsens med fokus på kvalitet, design og innovation.
+        <AnimatedInView as="h2" className="text-center text-lg subtitle">
+          Vi er et moderne webstudio fra Horsens, der specialiserer sig i professionelt webdesign for små virksomheder. Vi kombinerer kvalitet, kreativt design og innovative løsninger, der hjælper vores kunder med at vokse online.
         </AnimatedInView>
       </section>
 

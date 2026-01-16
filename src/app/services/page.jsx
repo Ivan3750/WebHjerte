@@ -116,13 +116,12 @@ const Services = () => {
       <section>
   
         <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
-        Hvad tilbyder vi?        </AnimatedInView>
-        <AnimatedInView as="h2" className="text-center text-lg">
-        Professionel webdesign til danske småvirksomheder.
-        </AnimatedInView>
+        Vores services       </AnimatedInView>
+        <AnimatedInView as="h2" className="text-center text-lg subtitle">
+Vi tilbyder professionelt webdesign og hjemmesideudvikling til danske små virksomheder – inklusive responsive og mobilvenlige løsninger, SEO-optimering og brugervenligt design.        </AnimatedInView>
       </section>
       <section className="bg-[#F7F6F6]">
-        <h2 className="title !my-3">Web Udvikling</h2>
+        <h2 className="title !my-3">Priser</h2>
         <div className="flex justify-between md:flex-row flex-col gap-5 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {packages.map((pkg, index) => (
