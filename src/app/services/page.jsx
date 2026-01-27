@@ -1,5 +1,5 @@
 import FeedBackPeople from "../components/FeedBackPeople";
-import SEO from "../components/SEO";
+import SEO from "../components/seo/SEO";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Button from "../components/Button";
