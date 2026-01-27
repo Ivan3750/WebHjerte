@@ -30,7 +30,12 @@ export default function SEO() {
     setError("");
 
     try {
-      const res = await axios.get(`/api/pagespeed?url=${formattedUrl}`);
+      const res = await axios.get(
+    `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
+      formattedUrl
+    )}&key=AIzaSyC5P33iO7gB-4Dt5eKfUsOSxG1j8k6hCZE&category=PERFORMANCE&category=ACCESSIBILITY&category=BEST_PRACTICES&category=SEO`
+  );  
+
       const data = res.data.lighthouseResult;
 
       const score = (key) =>
@@ -44,7 +49,8 @@ export default function SEO() {
         lcp: data.audits["largest-contentful-paint"]?.displayValue,
         inp: data.audits["interaction-to-next-paint"]?.displayValue,
       });
-    } catch {
+    } catch (err) {
+      console.error(err);
       setError("Noget gik galt – prøv igen");
     } finally {
       setLoading(false);
@@ -60,18 +66,17 @@ export default function SEO() {
   return (
     <section className="min-h-screen px-5 py-10">
       <div className="max-w-5xl mx-auto text-center">
-
         <div className="flex flex-wrap gap-2 justify-center">
           <input
-            className="input w-[700px] "
+            className="input w-[700px]"
             placeholder="Skriv din hjemmesides URL her (f.eks. webhjerte.dk)"
             value={url}
             disabled={loading}
             onChange={(e) => setUrl(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && checkSEO()}
           />
-         
-          <Button onClick={checkSEO} name={loading ? "Analyserer..." : "Start tjek"}> </Button>
+
+          <Button onClick={checkSEO} name={loading ? "Analyserer..." : "Start tjek"} />
         </div>
 
         {error && <p className="text-red-500 mt-4">{error}</p>}
@@ -118,7 +123,7 @@ export default function SEO() {
                 </div>
               ) : (
                 <div className="bg-green-500 p-5 rounded-xl">
-                  Flot resultat! 
+                  Flot resultat!
                 </div>
               )}
             </div>
