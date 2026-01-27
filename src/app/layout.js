@@ -53,6 +53,23 @@ export default function RootLayout({ children }) {
           data-key="dQ/aslmLQa//XoyDENgNAQ"
           async
         ></script>
+<Script
+      id="plerdy-script"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          var _protocol="https:"==location.protocol?"https://":"http://";
+          _site_hash_code="e54642b7017f6579741beb660c932b9d";
+          _suid=72309;
+          var plerdyScript=document.createElement("script");
+          plerdyScript.defer=true;
+          plerdyScript.dataset.plerdymainscript="plerdymainscript";
+          plerdyScript.src="https://a.plerdy.com/public/js/click/main.js?v="+Math.random();
+          document.head.appendChild(plerdyScript);
+        `,
+      }}
+    />
+
 
          <Script
           id="gtm-script"
