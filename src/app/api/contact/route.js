@@ -28,7 +28,7 @@ Projekt: ${project}
     });
 
     const data = await response.json();
-console.log("Telegram API response:", data); // <-- add this
+console.log("Telegram API response:", data);
 
     if (!data.ok) {
       throw new Error("Telegram API error");
