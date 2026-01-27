@@ -1,10 +1,10 @@
 import FeedBackPeople from "../components/FeedBackPeople";
-import SEO from "../components/SEO";
-import { FaCircleCheck, FaArrowRightLong } from "react-icons/fa6";
+import SEO from "../components/seo/SEO";
+import SEOTextHorsens from "../components/seo/SEOTextHorsens";
+import LocalTrust from "../components/seo/LocalTrust";
 import Button from "../components/Button";
 import Questions from "../components/Questions";
-import AnimatedInView from "../components/AnimatedInView";
-import Logo from "../../../public/W.png";
+import AnimatedInView from "../components/AnimatedInView.jsx";
 
 export const metadata = {
   title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
@@ -41,9 +41,12 @@ const GratisSeoTjekHorsens = () => {
         </AnimatedInView>
       </section>
 
+    
 
       <SEO />
+    <LocalTrust></LocalTrust>
       <FeedBackPeople />
+      <SEOTextHorsens></SEOTextHorsens>
       <Questions />
     </>
   );

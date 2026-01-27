@@ -121,9 +121,14 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        <Header />
-        {children}
-        <Footer />
+       <Header />
+
+<main id="main-content">
+  {children}
+</main>
+
+<Footer />
+
       </body>
     </html>
   );

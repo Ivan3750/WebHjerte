@@ -8,7 +8,7 @@ export default function Custom404() {
         Ups... Denne side findes ikke
       </h2>
       <p className="text-gray-500 mb-6 max-w-md">
-        Måske er linket gammelt, eller siden er blevet flyttet. Lad os finde tilbage til det vigtige 💙
+        Måske er linket gammelt, eller siden er blevet flyttet. Lad os finde tilbage til det vigtige 
       </p>
       <Link href="/"
         >
