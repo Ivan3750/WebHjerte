@@ -13,7 +13,7 @@ const Footer = () => {
       
         <div>
           <h3 className="text-[#1D1F20] ml-5 font-semibold text-[20px] md:text-[30px]">
-            Din hjemmeside — vores hjerte!
+            Din hjemmeside - vores hjerte!
           </h3>
             {/* <h2 className="text-[#1F2122]  font-medium  text-[18px] p-4 hover:text-[#0af] transition-all cursor-pointer">
           hej@webhjerte.dk

@@ -74,7 +74,7 @@ const TilbydeSection = () => {
               Content & tekster
             </h3>
             <p className="text-[#3a3200] text-sm">
-              Tekster der formidler dit budskab klart og professionelt — både
+              Tekster der formidler dit budskab klart og professionelt - både
               for mennesker og søgemaskiner.
             </p>
           </div>

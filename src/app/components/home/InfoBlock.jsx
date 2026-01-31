@@ -26,7 +26,7 @@ const InfoBlock = () => {
           </p>
 
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl">
-            Vi arbejder jordnært og gennemsigtigt — uden buzzwords og lange
+            Vi arbejder jordnært og gennemsigtigt - uden buzzwords og lange
             bindinger. Vores løsninger er skabt til at holde og understøtte din
             forretning, både lokalt og på landsplan.
           </p>
@@ -49,7 +49,7 @@ const InfoBlock = () => {
             },
             {
               title: "Langsigtet samarbejde",
-              text: "Et webbureau du kan regne med — også efter lancering.",
+              text: "Et webbureau du kan regne med - også efter lancering.",
             },
           ].map((item, i) => (
             <div

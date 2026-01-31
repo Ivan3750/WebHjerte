@@ -110,7 +110,7 @@ export default function RootLayout({ children }) {
                   gtag("js", new Date());
                   gtag("config", "G-QFGJWT1F24");
                 } else {
-                  console.log("🛑 Google Analytics не активовано — no_track=true");
+                  console.log("🛑 Google Analytics не активовано - no_track=true");
                 }
               })();
             `,
