@@ -8,25 +8,92 @@ import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
 
 export const metadata = {
-  title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
+  title: "Priser på Webdesign i Horsens – WebHjerte Webbureau | Fra 500 DKK",
   description:
-    "Vi skaber professionelle hjemmesider, e-handelsløsninger og SEO-optimering for små virksomheder i Danmark.",
-  keywords:
-    "webudvikling, SEO, responsivt design, e-handel, UX/UI design, digital marketing",
-  robots: "index, follow",
-  openGraph: {
-    title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
-    description: "Se vores professionelle webudviklings- og SEO-tjenester.",
-    url: "https://webhjerte.dk/services",
-    image: Logo,
-    type: "website",
+    "Se vores priser på webdesign og hjemmesider i Horsens. Transparent prissætning fra 500 DKK. Webbureau i Horsens med SEO, responsivt design og support.",
+  
+  alternates: {
+    canonical: "https://www.webhjerte.dk/services",
   },
+
+  openGraph: {
+    title: "Priser på Webdesign i Horsens – WebHjerte Webbureau",
+    description:
+      "Transparent prissætning på webdesign, hjemmesider og SEO fra webbureau i Horsens. Fra 500 DKK. Ingen skjulte gebyrer.",
+    url: "https://www.webhjerte.dk/services",
+    type: "website",
+    locale: "da_DK",
+    siteName: "WebHjerte",
+  },
+
   twitter: {
     card: "summary_large_image",
-    title: "Skræddersyede Hjemmesider og SEO | WebHjerte",
-    description: "Se vores professionelle webudviklings- og SEO-tjenester.",
-    image: Logo,
+    title: "Priser på Webdesign i Horsens – Fra 500 DKK",
+    description:
+      "Se vores transparente priser på webdesign og hjemmesider. Webbureau i Horsens.",
+    creator: "@webhjerte",
   },
+
+  // Structured Data for pricing
+  other: {
+    'application/ld+json': JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "WebHjerte - Webbureau i Horsens",
+      "description": "Webdesign og hjemmesider til små virksomheder i Horsens og Midtjylland",
+      "url": "https://www.webhjerte.dk/services",
+      "priceRange": "500-28000 DKK",
+      "areaServed": {
+        "@type": "City",
+        "name": "Horsens"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Webdesign Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Start Webdesign Pakke",
+              "description": "Grundlæggende hjemmeside til små virksomheder"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "500-2000",
+              "priceCurrency": "DKK"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Standard Webdesign Pakke",
+              "description": "Moderne hjemmeside med SEO"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "3500-6500",
+              "priceCurrency": "DKK"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Premium Webdesign Pakke",
+              "description": "Avanceret hjemmeside med fuld tilpasning"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "18000-28000",
+              "priceCurrency": "DKK"
+            }
+          }
+        ]
+      }
+    })
+  }
 };
 const packages = [
   {
