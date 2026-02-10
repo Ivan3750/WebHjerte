@@ -113,7 +113,7 @@ const packages = [
     name: "Standard",
     description:
       "En moderne hjemmeside med grundlæggende SEO og et professionelt udseende",
-    price: "3.500 - 6.500 DKK",
+    price: "3.500 - 4.500 DKK",
     features: [
       "3-5 sider",
       "Mobilvenlig tilpasning",
@@ -126,7 +126,7 @@ const packages = [
     name: "Professionel",
     description:
       "En skræddersyet hjemmeside med avanceret design og ekstra funktioner for professionelt udseende",
-    price: "7.500 - 11.500 DKK",
+    price: "5.000 - 7.500 DKK",
     features: [
       "Flersidet hjemmeside (op til 7 sider)",
       "Komplet SEO-optimering",
@@ -139,7 +139,7 @@ const packages = [
     name: "Avanceret",
     description:
       "En avanceret hjemmeside med tilpasset design og funktionalitet, inklusive branding",
-    price: "10.000 - 17.500 DKK",
+    price: "10.000 - 15.000 DKK",
     features: [
       "Flersidet hjemmeside (op til 15 sider)",
       "Branding og tilpasset design",
@@ -152,7 +152,7 @@ const packages = [
     name: "Premium",
     description:
       "En premium løsning med fuld tilpasning, avancerede funktioner og høj konverteringsrate – skræddersyet til din virksomhed",
-    price: "18.000 - 28.000 DKK",
+    price: "16.000 - 25.000 DKK",
     features: [
       "Flersidet hjemmeside (op til 20 sider)",
       "Tilpasset design og UX-optimering",
