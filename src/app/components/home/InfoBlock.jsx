@@ -7,28 +7,28 @@ const InfoBlock = () => {
         {/* Left */}
         <div className="flex flex-col gap-7">
           <span className="inline-flex w-fit items-center rounded-full bg-[#0af]/15 px-4 py-1 text-sm font-semibold tracking-wide text-[#0af]">
-            Webbureau i Horsens
+            Webbureau Horsens
           </span>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-[#1c1e1e]">
-            Et lokalt webbureau
+            Webbureau i Horsens
             <br />
             <span className="text-gray-500 font-normal">
-              med fokus på kvalitet og tillid
+              – professionelt webdesign til lokale virksomheder
             </span>
           </h2>
 
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl">
-            WebHjerte er et webbureau i Horsens, der hjælper små og mellemstore
-            virksomheder i Midtjylland med at opbygge en professionel digital
-            tilstedeværelse. Vi udvikler moderne hjemmesider, der er nemme at
-            bruge og tilpasset din forretning.
+            Som <strong>webbureau i Horsens</strong> hjælper WebHjerte små, mellemstore
+            virksomheder i Midtjylland med at få flere kunder gennem moderne,
+            SEO-optimerede hjemmesider. Vi forstår de lokale virksomheders behov
+            og leverer webdesign, der konverterer besøgende til kunder.
           </p>
 
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl">
-            Vi arbejder jordnært og gennemsigtigt - uden buzzwords og lange
-            bindinger. Vores løsninger er skabt til at holde og understøtte din
-            forretning, både lokalt og på landsplan.
+            Vores <strong>webbureau i Horsens</strong> arbejder jordnært og gennemsigtigt – 
+            uden buzzwords eller lange bindinger. Vi tilbyder alt fra webdesign, SEO 
+            til løbende support, så din virksomhed kan vokse online.
           </p>
         </div>
 
@@ -36,20 +36,20 @@ const InfoBlock = () => {
         <div className="grid gap-6 sm:grid-cols-2">
           {[
             {
-              title: "Forståelse før løsning",
-              text: "Vi sætter os ind i din forretning og dine kunder, før vi designer dit website.",
+              title: "Lokal viden om Horsens",
+              text: "Vi kender det lokale marked i Horsens Midtjylland og ved, hvordan din virksomhed skiller sig ud.",
             },
             {
-              title: "Design med omtanke",
-              text: "Brugervenligt webdesign, der gør det nemt for besøgende at tage kontakt.",
+              title: "Webdesign der konverterer",
+              text: "Brugervenlige hjemmesider designet til at få flere henvendelser og salg til din virksomhed.",
             },
             {
-              title: "Teknisk kvalitet",
-              text: "Stabile og sikre websites bygget med moderne teknologier.",
+              title: "SEO fra dag ét",
+              text: "Alle vores websites er optimeret til Google, så du bliver fundet af kunder i Horsens",
             },
             {
-              title: "Langsigtet samarbejde",
-              text: "Et webbureau du kan regne med - også efter lancering.",
+              title: "Lokal support når du har brug",
+              text: "Hurtig support fra et webbureau i Horsens – vi er her også efter lancering.",
             },
           ].map((item, i) => (
             <div

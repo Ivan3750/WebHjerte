@@ -16,14 +16,15 @@ import TilbydeSection from "./components/home/TilbydeSection";
 import Wfront from "../../public/WFront.jpg";
 import InfoBlock from "./components/home/InfoBlock";
 import CasesCarousel from "./components/home/CasesCarousel";
+import HorsensSection from "./components/home/HorsensSection";
 import ProcessBlock from "./components/home/ProcessBlock";
 import FeedBackPeople from "./components/FeedBackPeople";
 import Questions from "./components/Questions";
 export const metadata = {
   title:
-    "Webbureau i Horsens – Professionelt webdesign og SEO-optimerede hjemmesider | WebHjerte",
+    "Webbureau Horsens → Flere Kunder på 90 Dage | Lokal Support | WebHjerte",
   description:
-    "WebHjerte er et lokalt webbureau i Horsens og Midtjylland. Vi skaber moderne, hurtige og SEO-optimerede hjemmesider for små og mellemstore virksomheder, der ønsker flere kunder online.",
+    "Lokalt webbureau i Horsens siden 2025. Specialiseret i leadgenerering for små virksomheder. Ingen bindinger. Ring til os - få gratis audit.",
   keywords:
     "webbureau horsens, webdesign horsens, SEO horsens, webbureau midtjylland, responsive hjemmesider, webhjerte",
   openGraph: {
@@ -48,6 +49,24 @@ export const metadata = {
   alternates: {
     canonical: "https://www.webhjerte.dk",
   },
+   other: {
+    'application/ld+json': JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "WebHjerte",
+      "description": "Webbureau i Horsens - specialiseret i hjemmesider og SEO for små virksomheder",
+      "url": "https://www.webhjerte.dk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Horsens",
+        "postalCode": "8700",
+        "addressCountry": "DK"
+      },
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "priceRange": "$$",
+      "areaServed": ["Horsens", "Midtjylland"]
+    })
+  }
 };
 
 export default function Home() {
@@ -71,7 +90,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col gap-6">
               <AnimatedInView as="h1" className="maintitle !text-[40px] text-white">
-                Vi skaffer flere kunder til små virksomheder
+                Webbureau i Horsens – Flere Kunder Gennem Din Hjemmeside
               </AnimatedInView>
 
               <AnimatedInView
@@ -108,6 +127,7 @@ export default function Home() {
       </section>
       <InfoBlock />
       <TilbydeSection />
+      <HorsensSection/>
       <ProcessBlock />
       <CasesCarousel />
       <FeedBackPeople></FeedBackPeople>

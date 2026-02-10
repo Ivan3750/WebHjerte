@@ -8,42 +8,42 @@ const testimonials = [
     initial: "A",
     rating: 4,
     feedback:
-      "Fantastisk service og moderne design! Min hjemmeside blev udviklet hurtigt, og den ser professionel ud på alle enheder. Kan varmt anbefales!",
+      "Fantastisk service! Min hjemmeside blev udviklet hurtigt, den ser professionel ud.",
   },
   {
     name: "Mette Larsen",
     initial: "M",
     rating: 5,
     feedback:
-      "Meget tilfreds med samarbejdet. De forstod vores behov og leverede en brugervenlig og SEO-optimeret løsning. Super dygtigt team!",
+      "Meget tilfreds med samarbejdet. De forstod vores behov og SEO-optimeret løsning.",
   },
   {
     name: "Jesper Hansen",
     initial: "J",
     rating: 5,
     feedback:
-      "Hurtig respons, flot design og god support. Jeg fik præcis det, jeg ønskede, og min hjemmeside kører perfekt. Tak for et godt samarbejde!",
+      "Hurtig respons, flot design, god support. Jeg fik præcis det, jeg ønskede. Tak for et godt samarbejde!",
   },
   {
     name: "Sofie Nielsen",
     initial: "S",
     rating: 5,
     feedback:
-      "Vi fik en skræddersyet løsning, der passer perfekt til vores virksomhed. Kommunikationen var klar, og alt blev leveret til tiden. Stor ros til teamet!",
+      "Vi fik en skræddersyet løsning, der passer perfekt til vores virksomhed. Kommunikationen var klar, og alt blev leveret til tiden.",
   },
   {
     name: "Lars Mortensen",
     initial: "L",
     rating: 4,
     feedback:
-      "De leverede hurtigere end forventet og med høj kvalitet. Meget professionelt team med god kundeservice.",
+      "De leverede hurtigere end forventet med høj kvalitet. Meget professionelt team med god kundeservice.",
   },
   {
     name: "Camilla Jensen",
     initial: "C",
-    rating: 5,
+    rating: 4,
     feedback:
-      "Virkelig imponerende arbejde! Designet er moderne og responsivt, og supporten var hurtig og hjælpsom. Jeg vil helt sikkert bruge dem igen.",
+      "Virkelig imponerende arbejde! Jeg vil helt sikkert bruge dem igen.",
   },
 ];
 

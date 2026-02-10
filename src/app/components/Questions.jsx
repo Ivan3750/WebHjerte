@@ -1,7 +1,8 @@
 const Questions = () => {
   return (
     <section className="bg-[#F7F6F6] py-12 px-4">
-      <h3 className="title text-center mb-8">Spørgsmål og svar</h3>
+      <h3 className="title text-center mb-8">Ofte stillede spørgsmål</h3> 
+      <p className="text-center text-gray-600 mb-8">Hurtige svar på de mest almindelige spørgsmål.</p>
       <div className="mb-5 flex gap-5 flex-col max-w-6xl mx-auto">
         <details>
           <summary className="bg-[#E9E9E9] p-5 text-[#5E5F5F] rounded-t-3xl cursor-pointer !font-medium">
