@@ -6,67 +6,84 @@ import Transparens from "../../../public/transparens.png";
 import WorkProcess from "../components/WorkProcess";
 import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
-
 export const metadata = {
-  title: "Om WebHjerte – Lokalt Webstudio i Horsens med Fokus på Kvalitet",
+  title: "Om WebHjerte – Webbureau i Horsens | Webdesign & SEO Eksperter",
   description:
-    "WebHjerte er et moderne webstudio i Horsens, der hjælper små og mellemstore virksomheder i Danmark med moderne, brugervenlige og mobile hjemmesider – hurtigt og til en fair pris.",
-  keywords:
-    "webstudio Horsens, webdesign Danmark, webudvikling, moderne hjemmesider, lokale virksomheder, webbureau",
+    "WebHjerte er et lokalt webbureau i Horsens siden 2025. Vi specialiserer os i webdesign, SEO og hjemmesider til små virksomheder i Midtjylland. Læs vores historie.",
   robots: "index, follow",
+  
+  alternates: {
+    canonical: "https://www.webhjerte.dk/om-os",
+  },
+  
   openGraph: {
-    title: "Om WebHjerte – Lokalt Webstudio i Horsens med Fokus på Kvalitet",
+    title: "Om WebHjerte – Webbureau i Horsens | Webdesign & SEO",
     description:
-      "Lær WebHjerte at kende – et digitalt studio dedikeret til kvalitet, gennemsigtighed og bæredygtige webløsninger.",
-    url: "https://webhjerte.dk/om-os",
+      "Lær WebHjerte at kende – et lokalt webbureau i Horsens dedikeret til kvalitet, gennemsigtighed og resultater for små virksomheder.",
+    url: "https://www.webhjerte.dk/om-os",
     image: Logo.src,
     type: "website",
+    locale: "da_DK",
+    siteName: "WebHjerte",
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "Om WebHjerte – Lokalt Webstudio i Horsens",
+    title: "Om WebHjerte – Webbureau i Horsens",
     description:
-      "Et webstudio med fokus på kvalitet, innovation og gennemsigtighed. Lær WebHjerte at kende.",
+      "Et webbureau i Horsens med fokus på webdesign, SEO og resultater for lokale virksomheder.",
     image: Logo.src,
+    creator: "@webhjerte",
   },
 };
 
 const OmOs = () => {
   return (
     <>
- 
       <section className="px-4">
         <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
-          Om WebHjerte Studio
+          Om WebHjerte – Webbureau i Horsens
         </AnimatedInView>
 
         <AnimatedInView as="h2" className="text-center text-lg subtitle">
-          Vi er et moderne webstudio fra Horsens, der specialiserer sig i professionelt webdesign for små virksomheder. Vi kombinerer kvalitet, kreativt design og innovative løsninger, der hjælper vores kunder med at vokse online.
+          Vi er et moderne webbureau fra Horsens, der specialiserer sig i 
+          professionelt webdesign og SEO for små virksomheder i Midtjylland. 
+          Vi kombinerer kvalitet, kreativt design og innovative løsninger, 
+          der hjælper vores kunder med at få flere kunder online.
         </AnimatedInView>
       </section>
 
-       <section className="bg-[#F7F6F6] flex flex-col md:flex-row gap-10 items-center px-4 py-12">
+      <section className="bg-[#F7F6F6] flex flex-col md:flex-row gap-10 items-center px-4 py-12">
         <div className="max-w-[1200px] m-auto">
-          <h2 className="title">Vores historie</h2>
+          <h2 className="title">Vores historie som webbureau i Horsens</h2>
           <p className="text">
-            WebHjerte blev etableret i 2025 i Horsens med målet om at skabe moderne,
-            funktionelle og brugervenlige hjemmesider til små og mellemstore virksomheder.
-            Studiet bygger på en kombination af kreativitet, teknisk ekspertise og et
-            stærkt fokus på kvalitet.
+            WebHjerte blev etableret i 2025 i Horsens med målet om at hjælpe 
+            små og mellemstore virksomheder i Midtjylland med moderne, 
+            SEO-optimerede hjemmesider. Som lokalt <strong>webbureau i Horsens</strong> 
+            forstår vi de udfordringer, lokale virksomheder står overfor, når 
+            de skal konkurrere online.
             <br /><br />
-            Visionen bag WebHjerte er enkel: at levere digitale løsninger, der ikke blot
-            ser professionelle ud, men også har reel værdi for virksomheder i hverdagen.
-            Hvert projekt bliver udviklet med omtanke, struktur og passion – uanset om det
-            er en mindre virksomhed eller et større brand.
+            Vores <strong>webbureau</strong> bygger på en kombination af kreativitet, 
+            teknisk ekspertise inden for <strong>webdesign</strong> og et stærkt fokus på 
+            resultater. Vi tror ikke på flotte hjemmesider, der ikke konverterer – 
+            vi tror på <strong>webdesign i Horsens</strong>, der skaffer flere kunder 
+            til vores klienter.
             <br /><br />
-            WebHjerte er mere end et webstudio. Det er digitalt håndværk skabt med hjerte,
-            ansvarlighed og et stærkt ønske om at bidrage positivt til både lokale
-            virksomheder og fremtidens digitale landskab.
+            Visionen bag WebHjerte er enkel: at levere digitale løsninger med 
+            både professionelt webdesign og effektiv SEO, der har reel værdi for 
+            virksomheder i hverdagen. Hvert projekt bliver udviklet med omtanke, 
+            struktur og passion – uanset om det er en mindre lokal virksomhed 
+            eller et større brand i Horsens og omegn.
+            <br /><br />
+            WebHjerte er mere end et webbureau i Horsens. Det er digitalt håndværk 
+            skabt med hjerte, ansvarlighed og et stærkt ønske om at bidrage 
+            positivt til både lokale virksomheder og fremtidens digitale landskab 
+            i Midtjylland.
           </p>
         </div>
       </section>
 
-       <WorkProcess />
+      <WorkProcess />
 
        <section className="bg-[#F7F6F6] py-12">
         <h2 className="title mb-16">Vores værdier</h2>
