@@ -38,8 +38,8 @@ export default function RootLayout({ children }) {
               areaServed: ["Horsens", "Jylland", "Danmark", "Midtjylland","Europe"],
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
-                reviewCount: "17",
+                ratingValue: "4.9",
+                reviewCount: "18",
               },
               sameAs: [
                 "https://www.facebook.com/profile.php?id=61575549052729",
