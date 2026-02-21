@@ -15,6 +15,7 @@ export async function generateStaticParams() {
   }));
 }
 
+
 export default function ProjectDetail({ params }: Props) {
   const project = projects.find((p) => p.slug === params.slug);
 
@@ -23,7 +24,7 @@ export default function ProjectDetail({ params }: Props) {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       {/* Breadcrumb */}
-      <section className="pt-28 pb-6 px-6 max-w-6xl mx-auto">
+      <section className="pt-28 pb-6 px-4 max-w-7xl mx-auto">
         <nav className="flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500">
           <Link href="/">Forside</Link>
           <span>/</span>
@@ -34,7 +35,7 @@ export default function ProjectDetail({ params }: Props) {
       </section>
 
       {/* Tags */}
-      <section className="px-6 max-w-6xl mx-auto pb-6">
+      <section className="px-4 max-w-7xl mx-auto py-1">
         <div className="flex flex-wrap gap-3">
           {project.tags.map((tag) => (
             <span
@@ -48,7 +49,7 @@ export default function ProjectDetail({ params }: Props) {
       </section>
 
       {/* Title */}
-      <section className="px-6 max-w-6xl mx-auto pb-12">
+      <section className="px-4 max-w-7xl mx-auto py-4">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
           {project.title}
           <br />
@@ -59,7 +60,7 @@ export default function ProjectDetail({ params }: Props) {
       </section>
 
       {/* Hero Image */}
-      <section className="px-6 max-w-6xl mx-auto pb-16">
+      <section className="px-4 max-w-7xl mx-auto pb-16">
         <div className="rounded-2xl overflow-hidden">
           <Image
                 src={project.heroImage}
@@ -71,9 +72,39 @@ export default function ProjectDetail({ params }: Props) {
           />
         </div>
       </section>
-
+<section className="px-4 max-w-7xl mx-auto pb-24">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {project.gallery.map((image, index) => (
+      <div
+        key={index}
+        className="rounded-2xl overflow-hidden"
+      >
+        <Image
+          src={image}
+          alt={`${project.title} screenshot ${index + 1}`}
+          width={1200}
+          height={900}
+          className="w-full h-full object-cover hover:scale-105 transition duration-500"
+        />
+      </div>
+    ))}
+  </div>
+</section>
+      <section className="px-4 max-w-7xl mx-auto pb-20">
+        <p className="text-xs uppercase tracking-widest text-neutral-500 mb-6">
+          Resultater
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {project.results.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <p className="text-3xl font-bold">{stat.value}</p>
+              <p className="text-sm text-neutral-500 mt-2">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* Overview */}
-      <section className="px-6 max-w-6xl mx-auto pb-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <section className="px-4 max-w-7xl mx-auto pb-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-2 space-y-6">
           <p className="text-xs uppercase tracking-widest text-neutral-500">
             Overblik
@@ -135,7 +166,7 @@ export default function ProjectDetail({ params }: Props) {
       </section>
 
       {/* UX/UI */}
-      <section className="px-6 max-w-6xl mx-auto pb-20">
+      <section className="px-4 max-w-7xl mx-auto pb-20">
         <p className="text-xs uppercase tracking-widest text-neutral-500 mb-4">
           UX/UI Design
         </p>
@@ -148,12 +179,12 @@ export default function ProjectDetail({ params }: Props) {
       </section>
 
       {/* Development */}
-      <section className="px-6 max-w-6xl mx-auto pb-20">
+      <section className="px-4 max-w-7xl mx-auto pb-20">
         <p className="text-xs uppercase tracking-widest text-neutral-500 mb-4">
           Udvikling
         </p>
         <h2 className="text-3xl font-bold mb-6">
-          Fra idé til færdigt produkt
+          Fra ide til færdigt produkt
         </h2>
         <p className="text-neutral-600 max-w-3xl leading-relaxed mb-8">
           {project.developmentDescription}
@@ -172,7 +203,7 @@ export default function ProjectDetail({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="px-6 max-w-6xl mx-auto pb-24">
+      <section className="px-4 max-w-7xl mx-auto pb-24">
         <div className="bg-neutral-100 rounded-2xl p-12 text-center">
           <h2 className="text-2xl font-bold mb-4">
             Har du et lignende projekt i tankerne?

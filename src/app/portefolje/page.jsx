@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { projects } from "../../app/data/projects"; // Importer projektdatan fra en separat fil
 import Pizzle from "../assets/cases/PizzleM.png"; // Сайт піцерії
 import Hireon from "../assets/cases/HireonM.png"; // Сайт з пошуку роботи
 import Workout from "../assets/cases/WorkOutM.png"; // Сайт для спортзалу
@@ -38,7 +38,7 @@ export const metadata = {
 };
 
 
-const projects = [
+/* const projects = [
   {
     titleLine1: "Pizzaria website",
     titleLine2: "til lokal takeaway forretning",
@@ -104,7 +104,7 @@ const projects = [
     locationIcon: "https://flagcdn.com/w40/dk.webp",
     link: "#",
     image: WordSee,
-  }, */
+  }, 
   {
     titleLine1: "Ukraine Hjælpeprojekt",
     titleLine2: "gratis website under krigen",
@@ -116,7 +116,7 @@ const projects = [
     link: "#",
     image: Ukraine,
   },
-];
+]; */
 
 const Portefojle = () => {
   return (
@@ -133,18 +133,20 @@ Se vores webdesignprojekter for små virksomheder i Horsens og resten af Danmark
         {projects.map((project, index) => (
           <div key={index} className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 mb-16 md:mb-20">
             <div className="w-full md:w-1/2 overflow-hidden rounded-xl">
+            <Link href={`/portefolje/${project.slug}`}>
               <Image
-                src={project.image}
-                alt={project.titleLine1}
+                src={project.heroImage}
+                alt={project.title}
                 width={700}
                 height={500}
                 className="rounded-2xl shadow-xl w-full h-auto object-cover transition-transform duration-500 ease-in-out hover:scale-105"
               />
+              </Link>
             </div>
 
             <div className="flex flex-col w-full md:w-1/2 gap-3 md:gap-5 max-w-2xl">
               <div className="uppercase text-xs sm:text-sm lg:text-base text-gray-500 font-semibold tracking-widest">
-                {project.categories.map((cat, i) => (
+                {project.services.map((cat, i) => (
                   <span key={i} className="mr-3 md:mr-4">
                     #{cat}
                   </span>
@@ -153,8 +155,8 @@ Se vores webdesignprojekter for små virksomheder i Horsens og resten af Danmark
 
               <div className="text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug text-gray-700">
                 <div className="overflow-hidden">
-                  <div className="a-line">{project.titleLine1}</div>
-                  {project.titleLine2 && <div className="a-line">{project.titleLine2}</div>}
+                  <div className="a-line">{project.title}</div>
+                  {project.subtitle && <div className="a-line">{project.subtitle}</div>}
                 </div>
               </div>
 
@@ -162,19 +164,20 @@ Se vores webdesignprojekter for små virksomheder i Horsens og resten af Danmark
                 <span className="bg-gray-900 text-white px-3 py-1 rounded-lg text-sm sm:text-base">{project.client}</span>
                 {project.location && (
                   <span className="bg-gray-900 text-white px-3 py-1 rounded-lg flex items-center gap-2 text-sm sm:text-base">
-                    <img src={project.locationIcon} alt="Location" className="w-4 h-4 sm:w-5 sm:h-5 rounded-full" />
-                    {project.location}
+{/*                     <img src={project.locationIcon} alt="Location" className="w-4 h-4 sm:w-5 sm:h-5 rounded-full" />
+ */}                    {project.location}
                   </span>
                 )}
               </div>
 
               <p className="text-gray-600 text-sm sm:text-base mt-3">{project.description}</p>
 
-              {/* <Link href={project.link}>
+            <Link href={`/portefolje/${project.slug}`}>
                 <Button name="Læs mere" />
-              </Link> */}
+              </Link> 
             </div>
           </div>
+          
         ))}
       </section>
     </>
