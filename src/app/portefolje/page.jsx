@@ -14,26 +14,37 @@ import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
 
 export const metadata = {
-  title: "Om WebHjerte – Lokalt Webstudio i Horsens med Hjerte for Web",
-  description:
-    "Vi er et passioneret webstudio i Horsens, der hjælper små virksomheder i Danmark med moderne, brugervenlige og mobile hjemmesider – hurtigt og til en fair pris.",
-  keywords:
-    "webstudio, webudvikling, Horsens, små virksomheder, moderne hjemmesider, digitale løsninger, lokal webbureau, Danmark",
-  robots: "index, follow",
+  title: "Portefølje – Webdesign Cases fra Horsens og Danmark | WebHjerte",
+  description: "Se vores webdesignprojekter – køreskole, platforme og lokale virksomheder. Enkelt design, hurtig levering, mobilvenlige løsninger til danske virksomheder.",
+  keywords: "webdesign cases horsens, portefølje webbureau horsens, hjemmeside eksempler, webdesign referencer midtjylland",
   openGraph: {
-    title: "Om WebHjerte – Lokalt Webstudio i Horsens med Hjerte for Web",
-    description:
-      "Mød holdet bag WebHjerte – vi brænder for at styrke små virksomheder med professionelle webløsninger.",
-    url: "https://webhjerte.dk/om-os",
-    image: Logo,
+    title: "Portefølje – Webdesign til lokale virksomheder | WebHjerte",
+    description: "Se eksempler på vores arbejde – hjemmesider til køreskole, fitnesscenter, rideklub og mere. Alle projekter leveret til aftalt tid og pris.",
+    url: "https://www.webhjerte.dk/portefolje",
+    siteName: "WebHjerte",
+    locale: "da_DK",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Om WebHjerte – Lokalt Webstudio i Horsens med Hjerte for Web",
-    description:
-      "Mød holdet bag WebHjerte – vi brænder for at styrke små virksomheder med professionelle webløsninger.",
-    image: Logo,
+    title: "Portefølje – Webdesign cases | WebHjerte Horsens",
+    description: "Se eksempler på hjemmesider bygget til lokale virksomheder i Danmark.",
+  },
+  alternates: {
+    canonical: "https://www.webhjerte.dk/portefolje",
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "WebHjerte Portefølje",
+      description: "Webdesignprojekter til lokale virksomheder i Danmark",
+      url: "https://www.webhjerte.dk/portefolje",
+      provider: {
+        "@type": "LocalBusiness",
+        name: "WebHjerte",
+      },
+    }),
   },
 };
 
