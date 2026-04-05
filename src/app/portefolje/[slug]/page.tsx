@@ -4,9 +4,9 @@ import Image from "next/image";
 import { projects } from "../../data/projects";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export async function generateStaticParams() {
@@ -16,11 +16,12 @@ export async function generateStaticParams() {
 }
 
 
-export default function ProjectDetail({ params }: Props) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default async function ProjectDetail({ params }: Props) {
+  const { slug } = await params;
+
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) return notFound();
-
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       {/* Breadcrumb */}
