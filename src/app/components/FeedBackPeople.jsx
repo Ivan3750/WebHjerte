@@ -46,10 +46,7 @@ const testimonials = [
       "Virkelig imponerende arbejde! Jeg vil helt sikkert bruge dem igen.",
   },
 ];
-
-const FeedBackPeople = () => {
-  return (
-    <section className="mb-20 px-4">
+ {/* <section className="mb-20 px-4">
       <h3 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
         Hvad siger folk om os?
       </h3>
@@ -83,7 +80,13 @@ const FeedBackPeople = () => {
           </motion.div>
         ))}
       </div>
-    </section>
+    </section> */}
+const FeedBackPeople = () => {
+  return (
+   
+    <div>
+{/*       <p>Vi samler anmeldelser fra vores kunder</p>
+ */}    </div>
   );
 };
 

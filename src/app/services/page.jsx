@@ -97,83 +97,47 @@ export const metadata = {
 };
 const packages = [
   {
-    name: "Start",
+    name: "Basis",
     description:
-      "En enkel og prisvenlig hjemmeside, der dækker de grundlæggende behov for din virksomhed",
-    price: "500 - 2.000 DKK",
+      "En moderne hjemmeside med grundlæggende SEO og et professionelt udseende",
+    price: "4.500 DKK",
+    isPopular: false,
     features: [
-      "Grundlæggende design",
-      "1-3 sider",
-      "Responsivt design",
-      "SEO-optimering",
+      "3-5 sider",
+      "Mobilvenlig tilpasning",
+      "Basic SEO",
       "Kontaktformular",
+      "Levering: 10 dage",
     ],
   },
   {
     name: "Standard",
     description:
-      "En moderne hjemmeside med grundlæggende SEO og et professionelt udseende",
-    price: "3.500 - 4.500 DKK",
-    features: [
-      "3-5 sider",
-      "Mobilvenlig tilpasning",
-      "SEO-optimering",
-      "Kontaktformular",
-      "Google Analytics",
-    ],
-  },
-  {
-    name: "Professionel",
-    description:
       "En skræddersyet hjemmeside med avanceret design og ekstra funktioner for professionelt udseende",
-    price: "5.000 - 7.500 DKK",
+    price: "7.500 DKK",
+    isPopular: true,
     features: [
-      "Flersidet hjemmeside (op til 7 sider)",
-      "Komplet SEO-optimering",
+      "Flersidet hjemmeside (Op til 8 sider)",
+      "SEO + Analytics",
       "Integration af CRM/betalingssystemer",
-      "Admin-panel",
-      "Google Analytics",
+      "Booking / formularer",
+      "Levering: 18 dage",
     ],
   },
   {
-    name: "Avanceret",
+    name: "Skræddersyet",
     description:
       "En avanceret hjemmeside med tilpasset design og funktionalitet, inklusive branding",
-    price: "10.000 - 15.000 DKK",
+    price: "Fra 14.000 DKK",
+    isPopular: false,
     features: [
-      "Flersidet hjemmeside (op til 15 sider)",
-      "Branding og tilpasset design",
-      "Integration af CRM og betalingssystem",
-      "Automatisering og specialfunktioner",
-      "Google Analytics",
+      "Fuld tilpasning",
+      "Integrationer / AI",
+      "E-commerce",
+      "Platform / dashboard",
+      "Aftales individuelt",
     ],
-  },
-  {
-    name: "Premium",
-    description:
-      "En premium løsning med fuld tilpasning, avancerede funktioner og høj konverteringsrate – skræddersyet til din virksomhed",
-    price: "16.000 - 25.000 DKK",
-    features: [
-      "Flersidet hjemmeside (op til 20 sider)",
-      "Tilpasset design og UX-optimering",
-      "Skalerbare funktioner og integrationer",
-      "Avanceret SEO og marketingværktøjer",
-      "Automatisering og specialfunktioner",
-    ],
-  },
-  {
-    name: "Support",
-    description: "Løbende vedligeholdelse og support til din hjemmeside.",
-    price: "250 - 750 DKK / måned",
-    features: [
-      "Regelmæssige opdateringer",
-      "Sikkerhedstjek",
-      "Backup af hjemmeside",
-      "Teknisk support",
-      "Indholdsopdateringer efter behov",
-      "SEO-overvågning og optimering",
-    ],
-  },
+  }
 ];
 
 
@@ -194,8 +158,9 @@ Vi tilbyder professionelt webdesign og hjemmesideudvikling til danske små virks
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className="bg-[#E9E9E9] p-6 rounded-2xl flex flex-col gap-3 justify-between max-[750px]:mx-20 max-[600px]:mx-5 max-[400px]:mx-0"
+                className={`${pkg.isPopular ? 'bg-[#0af]/[50%]' : 'bg-[#E9E9E9]'} p-6 rounded-2xl flex flex-col gap-3 justify-between max-[750px]:mx-20 max-[600px]:mx-5 max-[400px]:mx-0`}
               >
+                
                 <h3 className="title-price">{pkg.name}</h3>
                 <p className="text !min-h-[90px]">{pkg.description}</p>
                 <div className="flex flex-col gap-2 mt-4">
