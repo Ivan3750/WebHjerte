@@ -44,7 +44,7 @@ const InfoBlock = () => {
               text: "Brugervenlige hjemmesider designet til at få flere henvendelser og salg til din virksomhed.",
             },
             {
-              title: "SEO fra dag ét",
+              title: "SEO fra dag et",
               text: "Alle vores websites er optimeret til Google, så du bliver fundet af kunder i Horsens",
             },
             {

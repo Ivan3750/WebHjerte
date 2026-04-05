@@ -33,7 +33,7 @@ const HorsensSection = () => {
           <p>
             Som <strong>SEO-bureau i Horsens</strong> ved vi, at en flot hjemmeside 
             er værdiløs, hvis ingen kan finde den. Derfor inkluderer alle vores 
-            webdesign-projekter professionel <strong>SEO fra dag ét</strong>. Vi 
+            webdesign-projekter professionel <strong>SEO fra dag et</strong>. Vi 
             optimerer din hjemmeside til de søgeord, dine kunder bruger, når de 
             søger efter virksomheder som din i Horsens.
           </p>

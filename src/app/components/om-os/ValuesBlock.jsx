@@ -4,7 +4,7 @@ const values = [
   {
     num: "01",
     name: "Ærlighed",
-    desc: "Jeg siger hvad tingene koster, hvad der er realistisk og hvornår noget ikke er en god idé — også selvom det ikke er det du vil høre.",
+    desc: "Jeg siger hvad tingene koster, hvad der er realistisk og hvornår noget ikke er en god ide - også selvom det ikke er det du vil høre.",
   },
   {
     num: "02",
@@ -14,7 +14,7 @@ const values = [
   {
     num: "03",
     name: "Enkelhed",
-    desc: "Jeg bygger det du har brug for — ikke det der ser imponerende ud i en præsentation. En enkel løsning der virker er altid bedre end en kompliceret der ikke gør.",
+    desc: "Jeg bygger det du har brug for - ikke det der ser imponerende ud i en præsentation. En enkel løsning der virker er altid bedre end en kompliceret der ikke gør.",
   },
 ];
 
@@ -25,8 +25,8 @@ const ValuesBlock = () => {
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-3">
           Sådan arbejder jeg
         </AnimatedInView>
-        <AnimatedInView as="h2" className="maintitle text-[#1c1e1e] !leading-tight mb-12">
-          Tre principper —<br />ikke mere, ikke mindre
+        -<AnimatedInView as="h2" className="title text-[#1c1e1e] !leading-tight mb-12">
+          Tre principper -<br />ikke mere, ikke mindre
         </AnimatedInView>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#ebebeb] rounded-2xl overflow-hidden">

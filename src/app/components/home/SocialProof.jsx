@@ -1,7 +1,7 @@
 import AnimatedInView from "../AnimatedInView";
 
 const quote = {
-  text: "De leverede præcis det vi bad om — til tiden og uden overraskelser på fakturaen",
+  text: "De leverede præcis det vi bad om - til tiden og uden overraskelser på fakturaen",
   name: "Mads K.",
   company: "Køreskole Vejle",
   city: "Vejle",
@@ -10,13 +10,13 @@ const quote = {
 const clients = [
   "Køreskole Vejle",
   "Tømrer Hansen",
-  "Café Midt",
+  "Cafe Midt",
   "Rens & Stil",
 ];
 
 const SocialProof = () => {
   return (
-    <section className="bg-[#f7f6f6] py-[150px]">
+    <section className="bg-[#f7f6f6] py-[10px]">
       <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
         <AnimatedInView
           as="p"

@@ -13,15 +13,15 @@ const chips = [
 ];
 
 const paragraphs = [
-  "Jeg startede WebHjerte i 2025 fordi jeg så for mange lokale virksomheder med dårlige eller slet ingen hjemmesider — og vidste at jeg kunne hjælpe.",
+  "Jeg startede WebHjerte i 2025 fordi jeg så for mange lokale virksomheder med dårlige eller slet ingen hjemmesider - og vidste at jeg kunne hjælpe.",
   "Jeg arbejder direkte med dig fra første samtale til lancering. Ingen projektledere, ingen mellemled. Du ved altid hvem du taler med og hvad der sker.",
-  "Jeg er ikke et stort bureau. Det er meningen. Små virksomheder fortjener den samme opmærksomhed som store kunder — og det er præcis hvad du får her.",
+  "Jeg er ikke et stort bureau. Det er meningen. Små virksomheder fortjener den samme opmærksomhed som store kunder - og det er præcis hvad du får her.",
 ];
 
 export default function IntroOmOs() {
   return (
     <>
-      <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 py-20">
+      <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[320px_1fr] gap-16 items-start">
 
           <AnimatedInView as="div" className="relative">
@@ -52,8 +52,7 @@ export default function IntroOmOs() {
             </AnimatedInView>
 
             <AnimatedInView as="h1" className="maintitle text-white !leading-tight mb-2">
-              Jeg hedder{" "}
-              <span className="text-[#00a8e8]">Ivan</span>
+              Jeg hedder Ivan
             </AnimatedInView>
 
             <AnimatedInView as="p" className="text-[13px] text-[#5a5a5a] mb-8">

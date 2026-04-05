@@ -12,7 +12,7 @@ const AboutBlock = () => {
         <AnimatedInView as="div" className="w-full">
           <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-[#e0e0e0]">
             {/* Erstat med dit rigtige billede: */}
-            {/* <Image src="/ivan.jpg" alt="Ivan — WebHjerte" fill className="object-cover object-top" /> */}
+            {/* <Image src="/ivan.jpg" alt="Ivan - WebHjerte" fill className="object-cover object-top" /> */}
 
             <div className="absolute inset-0 flex items-center justify-center bg-[#d8dcdc]">
               <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
@@ -28,14 +28,13 @@ const AboutBlock = () => {
             Personen bag
           </AnimatedInView>
 
-          <AnimatedInView as="h2" className="maintitle text-[#1c1e1e] !leading-tight mb-5">
-            Jeg hedder Ivan —{" "}
-            <span className="text-[#00a8e8]">webudvikleren</span>{" "}
+          <AnimatedInView as="h2" className="title text-[#1c1e1e] !leading-tight mb-5">
+            Jeg hedder Ivan - webudvikleren
             bag WebHjerte
           </AnimatedInView>
 
           <AnimatedInView as="p" className="text-[14px] text-[#666] leading-[1.8] mb-7 max-w-lg">
-            Jeg arbejder direkte med dig fra første samtale til lancering —
+            Jeg arbejder direkte med dig fra første samtale til lancering -
             ingen mellemled, ingen overraskelser. Jeg bygger enkle, hurtige
             hjemmesider til lokale virksomheder i Horsens og Midtjylland, der
             rent faktisk skaffer kunder.

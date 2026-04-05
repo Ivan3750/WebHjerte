@@ -9,13 +9,13 @@ import CasesCarousel from "./components/home/CasesCarousel";
 import HorsensSection from "./components/home/HorsensSection";
 import ProcessBlock from "./components/home/ProcessBlock";
 import FeedBackPeople from "./components/FeedBackPeople";
-import Questions from "./components/home/Questions";
+import Questions from "./components/Questions";
 import SocialProof from "./components/home/SocialProof";
 import Wfront from "../../public/WFront.jpg";
 import CasesSection from "./components/home/CasesSection";
 import AboutBlock from "./components/home/AboutBlock";
 import CTABlock from "./components/home/CTABlock";
-
+ 
 
 export const metadata = {
   title: "Webbureau Horsens – Flere Kunder på 90 Dage | WebHjerte",
@@ -44,8 +44,7 @@ export const metadata = {
       name: "WebHjerte",
       description: "Lokal webudvikler i Horsens – hjemmesider til små virksomheder i Midtjylland",
       url: "https://www.webhjerte.dk",
-      // Ingen fysisk adresse – service area business
-      areaServed: ["Horsens", "Midtjylland", "Danmark"],
+       areaServed: ["Horsens", "Midtjylland", "Danmark"],
       serviceType: "Webdesign og webudvikling",
       priceRange: "$$",
       openingHoursSpecification: {
@@ -91,7 +90,7 @@ export default function Home() {
 
             <AnimatedInView as="p" className="subtitle text-[#8a8a8a] !text-[15px] max-w-md mb-8">
               Enkle, hurtige hjemmesider til lokale virksomheder i Horsens og
-              Midtjylland. Direkte kontakt — ingen mellemled.
+              Midtjylland. Direkte kontakt - ingen mellemled.
             </AnimatedInView>
 
             <AnimatedInView as="div" className="flex items-center gap-3 flex-wrap">
@@ -122,7 +121,7 @@ export default function Home() {
               <div className="bg-[#242828] rounded-xl p-4">
                 <p className="text-[10px] text-[#5a5a5a] mb-1">Din hjemmeside</p>
                 <p className="text-sm font-medium text-[#e0e0e0]">
-                  WebHjerte — Webbureau i Horsens
+                  WebHjerte - Webbureau i Horsens
                 </p>
                 <p className="text-xs text-[#6a6a6a] mt-1">
                   Moderne · Mobil · SEO-optimeret

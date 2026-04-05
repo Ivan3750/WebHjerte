@@ -49,8 +49,8 @@ const RetainerBlock = () => {
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Vedligeholdelse
         </AnimatedInView>
-        <AnimatedInView as="h2" className="maintitle text-white !leading-tight mb-2">
-          Ro i maven — hver måned
+        <AnimatedInView as="h2" className="title text-white !leading-tight mb-2">
+          Ro i maven - hver måned
         </AnimatedInView>
         <AnimatedInView as="p" className="text-[14px] text-[#5a5a5a] mb-10">
           Din side er altid opdateret, sikker og klar. Du behøver ikke tænke over det.

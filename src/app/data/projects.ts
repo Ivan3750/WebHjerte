@@ -12,6 +12,7 @@ export type Stat = {
 };
 
 export type Project = {
+  id: number,
   slug: string;
   title: string;
   subtitle: string;
@@ -30,6 +31,7 @@ export type Project = {
 };
 export const projects: Project[] = [
   {
+    id:1,
     slug: "pizzaria",
     title: "Pizzaria website",
     subtitle: "Til lokal takeaway forretning",
@@ -56,6 +58,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 2,
     slug: "hireon",
     title: "Hireon",
     subtitle: "Platform til jobopslag og søgning",
@@ -82,6 +85,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 3,
     slug: "workout",
     title: "WorkOut",
     subtitle: "Fitness og træningsplaner",
@@ -108,6 +112,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 4,
     slug: "hesteklub",
     title: "Hesteklub",
     subtitle: "Hjemmeside og klubinformation",
@@ -134,6 +139,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 5,
     slug: "monolit",
     title: "Monolit",
     subtitle: "Salg af døre og pengeskabe",
@@ -160,6 +166,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 6,
     slug: "ukraine-hjaelpeprojekt",
     title: "Ukraine Hjælpeprojekt",
     subtitle: "Gratis website under krigen",

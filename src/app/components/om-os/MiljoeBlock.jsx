@@ -8,7 +8,7 @@ const orgs = [
 
 const MiljoeBlock = () => {
   return (
-    <section className="bg-[#f7f6f6] border-t border-[#e8e8e8] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#f7f6f6]  px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
         <div>
@@ -21,7 +21,7 @@ const MiljoeBlock = () => {
             <span className="text-[12px] text-[#2d7a36] font-medium">5% til miljøet</span>
           </AnimatedInView>
 
-          <AnimatedInView as="h2" className="maintitle text-[#1c1e1e] !leading-tight mb-6">
+          -<AnimatedInView as="h2" className="title text-[#1c1e1e] !leading-tight mb-6">
             5% af omsætningen går til{" "}
             <span className="text-[#3a9e4a]">grønne projekter</span>
           </AnimatedInView>
@@ -30,7 +30,7 @@ const MiljoeBlock = () => {
             <p>
               For hvert projekt jeg leverer, går 5% af beløbet til
               miljøorganisationer i Danmark. Ikke fordi det er et smart
-              marketingtrick — men fordi jeg mener det giver mening.
+              marketingtrick - men fordi jeg mener det giver mening.
             </p>
             <p>
               Du betaler det samme. Der er ingen ekstra gebyrer. Det er

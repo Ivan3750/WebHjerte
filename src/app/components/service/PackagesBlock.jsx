@@ -15,11 +15,7 @@ const CheckIcon = ({ light }) => (
 
 const Tick = ({ popular }) => (
   <span
-    className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${
-      popular
-        ? "bg-[#e8f5ff] border border-[#b0d8f5]"
-        : "bg-[#1a2a30] border border-[#0a4a60]"
-    }`}
+    className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 bg-[#1a2a30] border border-[#0a4a60]`}
   >
     <CheckIcon />
   </span>
@@ -80,8 +76,8 @@ const PackagesBlock = () => {
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Priser
         </AnimatedInView>
-        <AnimatedInView as="h2" className="maintitle text-white !leading-tight mb-12">
-          Faste priser — ingen overraskelser
+        <AnimatedInView as="h2" className="title text-white !leading-tight !mb-[20px]">
+          Faste priser - ingen overraskelser
         </AnimatedInView>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-start">
@@ -89,55 +85,47 @@ const PackagesBlock = () => {
             <AnimatedInView
               key={name}
               as="div"
-              className={`rounded-2xl p-7 flex flex-col gap-5 ${
-                popular
-                  ? "bg-white border-transparent border"
-                  : "bg-[#1c1e1e] border border-[#2a2d2d]"
-              }`}
+              className={`rounded-2xl p-7 flex flex-col gap-5 bg-[#1c1e1e] border border-[#2a2d2d]`}
             >
               <div>
+                <div className="flex flex-row justify-between">
+                <p className={`text-[15px] font-medium "text-[#e0e0e0]" `}>
+                  {name}
+                </p>
                 {popular && (
-                  <span className="inline-block text-[10px] font-medium px-2.5 py-1 rounded-full bg-[#e8f5e9] text-[#2d7a36] mb-2">
+                  <span className="inline-block text-[10px] font-medium px-2.5 py-1 rounded-full bg-[#0af]/10 text-[#0af] mb-2">
                     Mest valgt
                   </span>
                 )}
-                <p className={`text-[15px] font-medium ${popular ? "text-[#1c1e1e]" : "text-[#e0e0e0]"}`}>
-                  {name}
-                </p>
+                </div>
                 <div className="flex items-baseline gap-1.5 mt-3">
-                  <span className={`text-[32px] font-medium leading-none ${popular ? "text-[#1c1e1e]" : "text-white"}`}>
+                  <span className={`text-[32px] font-medium leading-none text-white `}>
                     {price}
                   </span>
-                  <span className={`text-[13px] ${popular ? "text-[#777]" : "text-[#5a5a5a]"}`}>DKK</span>
+                  <span className={`text-[13px] text-[#5a5a5a] `}>DKK</span>
                 </div>
               </div>
 
-              <hr className={popular ? "border-[#e8e8e8]" : "border-[#2a2d2d]"} />
+              <hr className="border-[#2a2d2d]" />
 
               <div className="flex flex-col gap-2.5">
                 {features.map((f) => (
                   <div key={f} className="flex items-center gap-2.5">
-                    <Tick popular={popular} />
-                    <span className={`text-[12px] ${popular ? "text-[#555]" : "text-[#777]"}`}>{f}</span>
+                    <Tick />
+                    <span className={"text-[12px] text-[#777] "}>{f}</span>
                   </div>
                 ))}
               </div>
 
               <span
-                className={`text-[11px] px-2.5 py-1 rounded-md inline-block w-fit ${
-                  popular ? "bg-[#f0f0f0] text-[#888]" : "bg-[#1a1d1d] text-[#5a5a5a]"
-                }`}
+                className={`text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#5a5a5a]`}
               >
                 {timing}
               </span>
 
               <Link
                 href={href}
-                className={`w-full py-2.5 rounded-xl text-[13px] font-medium text-center transition-opacity ${
-                  popular
-                    ? "bg-[#00a8e8] text-white hover:opacity-85"
-                    : "border border-[#2a2d2d] text-[#9a9a9a] hover:border-[#404040] hover:text-white"
-                }`}
+                className={`w-full py-2.5 rounded-xl text-[13px] font-medium text-center transition-opacity border border-[#2a2d2d] hover:bg-[#00a8e8] text-white hover:opacity-85  `}
               >
                 {cta}
               </Link>

@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedInView from "../AnimatedInView";
+import { projects } from "../../data/projects.ts";  
 
-const cases = [
+/* const cases = [
   {
     name: "Køreskole Vejle",
     type: "Hjemmeside med booking",
@@ -12,7 +13,7 @@ const cases = [
     image: null,
   },
   {
-    name: "Lokal Café",
+    name: "Lokal Cafe",
     type: "Webshop + menukort",
     tag: "Konceptprojekt",
     concept: true,
@@ -28,7 +29,7 @@ const cases = [
     image: null,
     wide: true,
   },
-];
+]; */
 
 const PlaceholderImage = ({ wide }) => (
   <div
@@ -57,7 +58,7 @@ const CasesSection = () => {
             <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
               Udvalgte projekter
             </AnimatedInView>
-            <AnimatedInView as="h2" className="maintitle text-white">
+            <AnimatedInView as="h2" className="title text-white">
               Nyligt leveret
             </AnimatedInView>
           </div>
@@ -70,27 +71,25 @@ const CasesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {cases.map(({ name, type, tag, concept, href, image, wide }) => (
+          {projects.slice(0, 3).map(({ id, title, subtitle, tags, concept, slug, heroImage, }) => (
             <AnimatedInView
-              key={name}
+              key={title}
               as="div"
-              className={`group bg-[#1c1e1e] border border-[#2a2d2d] hover:border-[#00a8e8] rounded-2xl overflow-hidden transition-colors ${
-                wide ? "sm:col-span-2" : ""
-              }`}
+              className={`group bg-[#1c1e1e] border border-[#2a2d2d] hover:border-[#00a8e8] rounded-2xl overflow-hidden transition-colors`}
             >
               <div className="overflow-hidden">
-                {image ? (
+                {heroImage ? (
                   <Image
-                    src={image}
-                    alt={name}
+                    src={heroImage}
+                    alt={title}
                     width={1200}
-                    height={wide ? 400 : 360}
+                    height={id === 3 ? 400 : 360}
                     className={`w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02] ${
-                      wide ? "h-[200px]" : "h-[180px]"
+                      id === 3 ? "h-[200px]" : "h-[180px]"
                     }`}
                   />
                 ) : (
-                  <PlaceholderImage wide={wide} />
+                  <PlaceholderImage wide={id===3} />
                 )}
               </div>
 
@@ -103,14 +102,14 @@ const CasesSection = () => {
                         : "text-[#5a5a5a] border-[#2a2d2d]"
                     }`}
                   >
-                    {tag}
+                    {tags.join(" · ")}
                   </span>
-                  <p className="text-[14px] font-medium text-[#e0e0e0]">{name}</p>
-                  <p className="text-[12px] text-[#5a5a5a] mt-0.5">{type}</p>
+                  <p className="text-[14px] font-medium text-[#e0e0e0]">{title}</p>
+                  <p className="text-[12px] text-[#5a5a5a] mt-0.5">{subtitle}</p>
                 </div>
 
                 <Link
-                  href={href}
+                  href={`/portfolje/${slug}`}
                   className="text-[12px] text-[#00a8e8] hover:opacity-70 transition-opacity whitespace-nowrap mt-[18px]"
                   target={concept ? undefined : "_blank"}
                   rel={concept ? undefined : "noopener noreferrer"}

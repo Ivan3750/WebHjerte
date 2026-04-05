@@ -29,7 +29,7 @@ const CTABlock = () => {
           Kom i gang
         </AnimatedInView>
 
-        <AnimatedInView as="h2" className="maintitle text-white text-center !leading-tight mb-4">
+        <AnimatedInView as="h2" className="title text-white text-center !leading-tight mb-4">
           Klar til en hjemmeside{" "}
           <span className="text-[#00a8e8]">der virker?</span>
         </AnimatedInView>
@@ -81,7 +81,7 @@ const CTABlock = () => {
             >
               {status === "loading"
                 ? "Sender..."
-                : "Send besked — det er gratis →"}
+                : "Send besked - det er gratis →"}
             </button>
 
             {status === "error" && (

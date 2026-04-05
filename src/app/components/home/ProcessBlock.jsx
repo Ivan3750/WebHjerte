@@ -9,7 +9,7 @@ const steps = [
   {
     timing: "Dag 3–5",
     name: "Design & godkendelse",
-    desc: "Du ser et første udkast og godkender retningen — inden vi begynder at bygge.",
+    desc: "Du ser et første udkast og godkender retningen - inden vi begynder at bygge.",
   },
   {
     timing: "Dag 6–14",
@@ -19,7 +19,7 @@ const steps = [
   {
     timing: "Efter lancering",
     name: "Lancering & support",
-    desc: "Din side går live — og vi er stadig tilgængelige hvis du har spørgsmål eller ændringer.",
+    desc: "Din side går live - og vi er stadig tilgængelige hvis du har spørgsmål eller ændringer.",
   },
 ];
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Questions from "../components/home/Questions";
+import Questions from "../components/Questions";
 import Eko from "../../../public/eko.png";
 import Kvalitet from "../../../public/kvalitet.png";
 import Transparens from "../../../public/transparens.png";

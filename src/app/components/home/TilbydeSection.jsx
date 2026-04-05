@@ -47,7 +47,7 @@ const services = [
   {
     icon: <ShopIcon />,
     name: "Webshop",
-    desc: "Sælg dine produkter online med en simpel og overskuelig webshop — klar til at tage imod ordrer.",
+    desc: "Sælg dine produkter online med en simpel og overskuelig webshop - klar til at tage imod ordrer.",
   },
   {
     icon: <AIIcon />,
@@ -89,12 +89,7 @@ const TilbydeSection = () => {
                 <p className="text-[13px] text-[#6a6a6a] leading-relaxed">{desc}</p>
               </div>
 
-              <Link
-                href="/services"
-                className="text-xs text-[#00a8e8]  "
-              >
-                Se priser →
-              </Link>
+             
             </AnimatedInView>
           ))}
         </div>

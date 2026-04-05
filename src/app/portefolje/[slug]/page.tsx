@@ -128,7 +128,7 @@ export default async function ProjectDetail({ params }: Props) {
               Kunde
             </p>
             <p className="font-medium">
-              {project.client} — {project.location}
+              {project.client} - {project.location}
             </p>
           </div>
 
