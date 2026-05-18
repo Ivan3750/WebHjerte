@@ -130,7 +130,7 @@ const Vikar = () => {
             <h2>8. Force Majeure</h2>
             <p>
               8.1. WebHjerte fritages for ansvar, hvis opfyldelse af Aftalen
-              hindres eller forsinkes af omstændigheder uden for WebHjerte's
+              hindres eller forsinkes af omstændigheder uden for WebHjerte&apos;s
               kontrol.
             </p>
             <p>

@@ -41,7 +41,7 @@ const TermsOfUse = () => {
                 <p>
                   <strong>Tilknyttet selskab</strong> betyder en enhed, der
                   kontrollerer, kontrolleres af eller er under fælles kontrol
-                  med en part, hvor "kontrol" betyder ejerskab af 50 % eller
+                  med en part, hvor &quot;kontrol&quot; betyder ejerskab af 50 % eller
                   mere af aktierne, kapitalandele eller andre værdipapirer, der
                   giver ret til at stemme ved valg af bestyrelsesmedlemmer eller
                   anden ledelsesmyndighed.
@@ -50,7 +50,7 @@ const TermsOfUse = () => {
               <li>
                 <p>
                   <strong>Virksomhed</strong> (i denne aftale benævnt enten
-                  "Virksomheden", "Vi", "Os" eller "Vores") henviser til
+                  &quot;Virksomheden&quot;, &quot;Vi&quot;, &quot;Os&quot; eller &quot;Vores&quot;) henviser til
                   WebHjerte.
                 </p>
               </li>
@@ -160,7 +160,7 @@ const TermsOfUse = () => {
               oplysninger automatisk, herunder, men ikke begrænset til, den type
               mobilenhed, du bruger, dit unikke ID for din mobilenhed,
               IP-adressen på din mobilenhed, dit mobile operativsystem, den type
-              mobil internetbrowser, du bruger, unikke enheds-id'er og andre
+              mobil internetbrowser, du bruger, unikke enheds-id&apos;er og andre
               diagnostiske data.
             </p>
             <p>
@@ -198,7 +198,7 @@ const TermsOfUse = () => {
               </li>
             </ul>
             <p>
-              Cookies kan være "Persistente" eller "Sessionscookies". Permanente
+              Cookies kan være &quot;Persistente&quot; eller &quot;Sessionscookies&quot;. Permanente
               cookies forbliver på din personlige computer eller mobilenhed, når
               du går offline, mens sessionscookies slettes, så snart du lukker
               din webbrowser. Få mere at vide om cookies i den{" "}
@@ -527,7 +527,7 @@ const TermsOfUse = () => {
             <p>
               Vi giver dig besked via e-mail og/eller en tydelig meddelelse på
               vores tjeneste, inden ændringen træder i kraft, og opdaterer
-              datoen "Sidst opdateret" øverst i denne privatlivspolitik.
+              datoen &quot;Sidst opdateret&quot; øverst i denne privatlivspolitik.
             </p>
             <p>
               Du rådes til at gennemgå denne privatlivspolitik regelmæssigt for

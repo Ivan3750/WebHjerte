@@ -18,7 +18,7 @@ export default function RouteLoader() {
       router.events.off('routeChangeComplete', handleEnd);
       router.events.off('routeChangeError', handleEnd);
     };
-  }, []);
+  }, [router.events]);
 
   if (!loading) return null;
 
@@ -52,14 +52,15 @@ const styles = {
   },
 };
 
-// Додаємо анімацію через глобальні стилі
 if (typeof window !== 'undefined') {
   const style = document.createElement('style');
+
   style.innerHTML = `
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
   `;
+
   document.head.appendChild(style);
 }
