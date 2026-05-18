@@ -42,19 +42,23 @@ const Footer = () => {
     <footer className="bg-[#111313] border-t border-[#1e2020] px-5 sm:px-10 lg:px-20 pt-14 pb-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 mb-12">
+          {/* Brand */}
           <div>
             <p className="text-[18px] font-medium text-white mb-3">
               Web<span className="text-[#00a8e8]">Hjerte</span>
             </p>
-            <p className="text-[13px] text-[#5a5a5a] leading-[1.65] max-w-[200px]">
+
+            <p className="text-[13px] text-[#5a5a5a] leading-[1.65] max-w-[220px]">
               Enkle, hurtige hjemmesider til lokale virksomheder i Danmark.
             </p>
           </div>
 
+          {/* Navigation */}
           <div>
             <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4">
               Navigation
             </p>
+
             <div className="flex flex-col gap-2.5">
               {navLinks.map(({ href, label }) => (
                 <Link
@@ -68,10 +72,12 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Contact */}
           <div>
             <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4">
               Kontakt
             </p>
+
             <div className="flex flex-col gap-2.5 mb-7">
               <a
                 href="mailto:hej@webhjerte.dk"
@@ -79,6 +85,7 @@ const Footer = () => {
               >
                 hej@webhjerte.dk
               </a>
+
               <span className="text-[13px] text-[#5a5a5a]">
                 Horsens, Midtjylland
               </span>
@@ -87,6 +94,7 @@ const Footer = () => {
             <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
               Følg os
             </p>
+
             <div className="flex gap-2">
               {socials.map(({ href, icon: Icon, label }) => (
                 <Link
@@ -104,10 +112,11 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-[#1e2020]">
-          <p className="text-[12px] text-[#3a3d3d]">
-            © 2026 WebHjerte
-            {legalLinks.map(({ href, label }, i) => (
+          <p className="text-[12px] text-[#3a3d3d] leading-relaxed">
+            © 2026 WebHjerte · CVR: 46485823
+            {legalLinks.map(({ href, label }) => (
               <span key={href}>
                 {" · "}
                 <Link
@@ -122,6 +131,7 @@ const Footer = () => {
 
           <div className="inline-flex items-center gap-2 bg-[#1a2e1a] border border-[#2a5a2a] rounded-full px-3 py-1">
             <span className="w-1.5 h-1.5 rounded-full bg-[#3a9e4a] flex-shrink-0" />
+
             <span className="text-[11px] text-[#5abf6a] font-medium">
               5% til miljøet
             </span>
