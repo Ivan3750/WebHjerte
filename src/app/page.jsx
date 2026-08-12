@@ -4,6 +4,7 @@ import Link from "next/link";
 import Button from "./components/Button";
 import AnimatedInView from "./components/AnimatedInView";
 import TilbydeSection from "./components/home/TilbydeSection";
+import PriceTeaserBlock from "./components/home/PriceTeaserBlock";
 import InfoBlock from "./components/home/InfoBlock";
 import CasesCarousel from "./components/home/CasesCarousel";
 import HorsensSection from "./components/home/HorsensSection";
@@ -63,9 +64,9 @@ export const metadata = {
 };
 
 const stats = [
-  { num: "48t", label: "Første udkast" },
+  { num: "48 timer", label: "Første udkast" },
   { num: "10+", label: "Projekter" },
-  { num: "100%", label: "Lokal support" },
+  { num: "100%", label: "Direkte kontakt" },
 ];
 
 export default function Home() {
@@ -89,8 +90,7 @@ export default function Home() {
             </AnimatedInView>
 
             <AnimatedInView as="p" className="subtitle text-[#8a8a8a] !text-[15px] max-w-md mb-8">
-              Enkle, hurtige hjemmesider til lokale virksomheder i Horsens og
-              Midtjylland. Direkte kontakt - ingen mellemled.
+              Enkle, hurtige hjemmesider til virksomheder i Danmark. Direkte kontakt - ingen mellemled.
             </AnimatedInView>
 
             <AnimatedInView as="div" className="flex items-center gap-3 flex-wrap">
@@ -128,20 +128,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
-                <div className="bg-[#242828] rounded-xl p-3">
-                  <p className="text-lg font-medium text-white">
-                    <span className="text-[#00a8e8]">↑</span> 3.2x
-                  </p>
-                  <p className="text-[10px] text-[#5a5a5a] mt-1">Flere besøgende</p>
-                </div>
-                <div className="bg-[#242828] rounded-xl p-3">
-                  <p className="text-lg font-medium text-white">
-                    4.9<span className="text-[#00a8e8]">★</span>
-                  </p>
-                  <p className="text-[10px] text-[#5a5a5a] mt-1">Kundetilfredshed</p>
-                </div>
-              </div>
+               
 
               <hr className="border-[#1e2020]" />
 
@@ -167,7 +154,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-<SocialProof />
+{/* <SocialProof /> */}
+<PriceTeaserBlock/>
 <TilbydeSection />
 <CasesSection />
 <AboutBlock />

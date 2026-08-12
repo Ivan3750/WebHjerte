@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "Arbejder du i hele Danmark?",
-    a: "Ja. Selvom jeg er baseret i Horsens, arbejder jeg med kunder i hele Danmark. Alt foregår online - video, email og chat.",
+    a: "Ja. Selvom jeg er baseret i Horsens, arbejder jeg med kunder i hele Danmark. Alt foregår online – via video, e-mail og chat. I særlige tilfælde kan jeg også komme ud og mødes fysisk, hvis det giver bedst mening at tage en snak ansigt til ansigt.",
   },
   {
     q: "Hvad sker der efter lancering?",

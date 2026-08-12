@@ -56,8 +56,7 @@ const OmOs = () => {
       <IntroOmOs />
       <DirekteBlock/>
       <MiljoeBlock />
-      <Questions/>
-    </>
+     </>
   );
 };
 

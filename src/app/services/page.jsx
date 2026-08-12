@@ -6,7 +6,14 @@ import Button from "../components/Button";
 import Questions from "../components/Questions";
 import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
+import ProcessBlock from "../components/service/ProcessBlock";
+import Whatsincludedblock from "../components/service/WhatsIncludedBlock";
+import HeroService from "../components/service/HeroService";
+import AfterLaunchBlock  from "../components/service/AfterLaunchBlock";
+import WhatWeOfferBlock from "../components/service/WhatWeOfferBlock";
+import Whyusblock from "../components/service/Whyusblock";
 import PackagesBlock from "../components/service/PackagesBlock";
+
 export const metadata = {
   title: "Priser på Webdesign i Horsens – Pakker fra 4.500 DKK | WebHjerte",
   description: "Se vores priser på hjemmesider i Horsens. 3 klare pakker – Basis fra 4.500 DKK, Standard 8.500 DKK, Skræddersyet fra 14.000 DKK. Ingen skjulte gebyrer.",
@@ -158,8 +165,16 @@ Vi tilbyder professionelt webdesign og hjemmesideudvikling til danske små virks
           </p>
         </div>
       </section> */}
+
+      <HeroService/>
+      <WhatWeOfferBlock/>
       <PackagesBlock/>
+      <Whatsincludedblock/> 
+            <ProcessBlock></ProcessBlock>
+      <Whyusblock/>
+      <AfterLaunchBlock/>
       <SEO></SEO>
+      <Questions/>
     </>
   );
 };

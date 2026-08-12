@@ -9,11 +9,11 @@ const chips = [
   "Tailwind CSS",
   "SEO",
   "Horsens-baseret",
-  "Siden 2025",
+  "Siden 2026",
 ];
 
 const paragraphs = [
-  "Jeg startede WebHjerte i 2025 fordi jeg så for mange lokale virksomheder med dårlige eller slet ingen hjemmesider - og vidste at jeg kunne hjælpe.",
+  "Jeg startede WebHjerte i 2026 fordi jeg så for mange lokale virksomheder med dårlige eller slet ingen hjemmesider - og vidste at jeg kunne hjælpe.",
   "Jeg arbejder direkte med dig fra første samtale til lancering. Ingen projektledere, ingen mellemled. Du ved altid hvem du taler med og hvad der sker.",
   "Jeg er ikke et stort bureau. Det er meningen. Små virksomheder fortjener den samme opmærksomhed som store kunder - og det er præcis hvad du får her.",
 ];
