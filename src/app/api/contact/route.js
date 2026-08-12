@@ -2,19 +2,19 @@ export async function POST(req) {
   try {
     const { name, email, project } = await req.json();
 
-    if (!name || !email || !project) {
+    if (!name || !email) {
       return new Response(
         JSON.stringify({ success: false, message: "All fields are required" }),
-        { status: 400, headers: { "Content-Type": "application/json" } }
+        { status: 400, headers: { "Content-Type": "application/json" } },
       );
     }
 
     const telegramMessage = `
-📩 Ny kontaktformular!
-Navn: ${name}
-Email: ${email}
-Projekt: ${project}
-`;
+      📩 Ny kontaktformular!
+      Navn: ${name}
+      Email: ${email}
+      Pakke: ${pakke}
+      Message: ${message}`;
 
     const TELEGRAM_API_URL = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`;
 
@@ -28,7 +28,7 @@ Projekt: ${project}
     });
 
     const data = await response.json();
-console.log("Telegram API response:", data);
+    console.log("Telegram API response:", data);
 
     if (!data.ok) {
       throw new Error("Telegram API error");
@@ -36,13 +36,13 @@ console.log("Telegram API response:", data);
 
     return new Response(
       JSON.stringify({ success: true, message: "Form sent successfully!" }),
-      { status: 200, headers: { "Content-Type": "application/json" } }
+      { status: 200, headers: { "Content-Type": "application/json" } },
     );
   } catch (error) {
     console.error("Telegram send error:", error);
     return new Response(
       JSON.stringify({ success: false, message: "Error sending form" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
+      { status: 500, headers: { "Content-Type": "application/json" } },
     );
   }
 }
