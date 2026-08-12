@@ -1,6 +1,6 @@
 export async function POST(req) {
   try {
-    const { name, email, project } = await req.json();
+    const { name, email, pakke, message } = await req.json();
 
     if (!name || !email) {
       return new Response(
