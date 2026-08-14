@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const packages = [
   { value: "", label: "Vælg pakke (valgfrit)" },
-  { value: "basis", label: "Basis — 4.500 DKK" },
-  { value: "standard", label: "Standard — 7.500 DKK" },
-  { value: "skraeddersyet", label: "Skræddersyet — 14.000 DKK" },
-  { value: "retainer", label: "Vedligeholdelse — 1.500 DKK/md" },
-  { value: "andet", label: "Andet" },
+  { value: "Ved ikke endnu", label: "Ved ikke endnu" },
+  { value: "basis", label: "Basis - 4.500 DKK" },
+  { value: "standard", label: "Standard - 7.500 DKK" },
+  { value: "skraeddersyet", label: "Skræddersyet - 14.000 DKK" },
+  { value: "retainer", label: "Vedligeholdelse - 1.500 DKK/md" },
 ];
 
 const fieldClass =
@@ -28,20 +28,31 @@ const ContactForm = () => {
 
   const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("loading");
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("loading");
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    if (res.ok) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "contact_form_success",
       });
-      setStatus(res.ok ? "success" : "error");
-    } catch {
+
+      setStatus("success");
+    } else {
       setStatus("error");
     }
-  };
+  } catch {
+    setStatus("error");
+  }
+};
 
   if (status === "success") {
     return (
@@ -109,7 +120,7 @@ const ContactForm = () => {
         disabled={status === "loading"}
         className="bg-[#00a8e8] hover:opacity-85 disabled:opacity-50 transition-opacity text-white text-[13px] font-medium px-5 py-3 rounded-xl w-full"
       >
-        {status === "loading" ? "Sender..." : "Send besked →"}
+        {status === "loading" ? "Sender..." : "Send besked "}
       </button>
 
       {status === "error" && (
