@@ -25,7 +25,7 @@ export default function KontaktClient() {
           </AnimatedInView>
 
           <AnimatedInView as="p" className="text-[14px] text-[#5a5a5a] leading-[1.75] max-w-sm mb-10">
-            Fortæl mig hvad du har brug for — jeg vender tilbage inden for 24 timer med et konkret svar.
+            Fortæl mig hvad du har brug for - jeg vender tilbage inden for 24 timer med et konkret svar.
           </AnimatedInView>
 
           <AnimatedInView

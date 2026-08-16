@@ -54,6 +54,21 @@ const services = [
     name: "AI-integration",
     desc: "Automatiser svar, booking eller support med en AI-løsning bygget ind direkte på din side.",
   },
+  {
+    icon: <MonitorIcon />,
+    name: "Hjemmeside",
+    desc: "En hurtig, mobilvenlig hjemmeside der gør det nemt for kunder at finde og kontakte dig.",
+  },
+  {
+    icon: <ShopIcon />,
+    name: "Webshop",
+    desc: "Sælg dine produkter online med en simpel og overskuelig webshop - klar til at tage imod ordrer.",
+  },
+  {
+    icon: <AIIcon />,
+    name: "AI-integration",
+    desc: "Automatiser svar, booking eller support med en AI-løsning bygget ind direkte på din side.",
+  },
 ];
 
 const TilbydeSection = () => {
@@ -69,7 +84,7 @@ const TilbydeSection = () => {
             href="/services"
             className="hidden sm:block text-xs text-[#5a5a5a] border-b border-[#2a2a2a] pb-0.5 hover:text-[#9a9a9a] hover:border-[#404040] transition-colors"
           >
-            Se alle priser →
+            Se alle priser 
           </Link>
         </div>
 
@@ -98,7 +113,7 @@ const TilbydeSection = () => {
           href="/services"
           className="sm:hidden mt-6 block text-center text-xs text-[#5a5a5a] border-b border-[#2a2a2a] pb-0.5 w-fit mx-auto"
         >
-          Se alle priser →
+          Se alle priser 
         </Link>
       </div>
     </section>

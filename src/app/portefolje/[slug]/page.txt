@@ -27,7 +27,7 @@ const cases = {
       { value: "+38 %", label: "Online orders", note: "first 30 days", icon: TrendingUp },
       { value: "92 %", label: "Mobile traffic", note: "primary user flow", icon: Smartphone },
       { value: "1.1 s", label: "Page load", note: "Lighthouse avg.", icon: Zap },
-      { value: "14 days", label: "Time to launch", note: "brief → live", icon: Clock },
+      { value: "14 days", label: "Time to launch", note: "brief  live", icon: Clock },
     ],
   },
 };

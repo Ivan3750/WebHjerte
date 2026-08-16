@@ -2,75 +2,75 @@ import Link from "next/link";
 import AnimatedInView from "../AnimatedInView";
 import Button from "../Button";
 
-const services = [
-  { label: "Hjemmesider", note: "Nye sider fra bunden" },
-  { label: "Webshops", note: "Klar til at sælge" },
-  { label: "SEO", note: "Findes på Google" },
-  { label: "Vedligeholdelse", note: "Opdateret & sikker" },
-];
-
-const trust = [
-  { value: "4.500 kr.", label: "Fra pris" },
-  { value: "2 uger", label: "Til lancering" },
-  { value: "100%", label: "Fast pris" },
+const nodes = [
+  { label: "Hjemmesider", pos: "top-[4%] left-[10%]", color: "#00a8e8" },
+  { label: "Webshops", pos: "top-[10%] right-[2%]", color: "#3ddc97" },
+  { label: "SEO", pos: "bottom-[16%] left-[0%]", color: "#f0a63a" },
+  { label: "Vedligeholdelse", pos: "bottom-[2%] right-[10%]", color: "#8a8ff0" },
 ];
 
 export default function HeroServices() {
   return (
-    <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 pt-24 pb-16">
-      <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-5">
-          Vores services
-        </AnimatedInView>
+    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-24 pb-24">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-16 items-center">
+        {/* Left: text, left-aligned */}
+        <div className="flex flex-col items-start text-left">
+          <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-5">
+            Vores services
+          </AnimatedInView>
 
-        <AnimatedInView as="h1" className="maintitle text-white !leading-tight mb-6 max-w-[18ch]">
-          En hjemmeside, der gør din virksomhed lettere at vælge
-        </AnimatedInView>
+          <AnimatedInView as="h1" className="maintitle text-white !leading-tight mb-6">
+            Hjemmesider bygget til din virksomhed
+          </AnimatedInView>
 
-        <AnimatedInView as="p" className="text-[14px] text-[#7a7a7a] leading-[1.85] max-w-[46ch] mb-10">
-          Professionelle, hurtige hjemmesider til danske virksomheder — bygget med
-          fokus på kunder, mobiloplevelse og synlighed på Google.
-        </AnimatedInView>
+          <AnimatedInView as="p" className="text-[14px] text-[#7a7a7a] leading-[1.85] max-w-[46ch] mb-10">
+            Fra professionelt webdesign til SEO, webshops og integrationer —
+            vi bygger digitale løsninger, der gør det nemmere for dine kunder
+            at finde, forstå og vælge din virksomhed.
+          </AnimatedInView>
+ 
+        </div>
 
-        <AnimatedInView as="div" className="flex items-center gap-5 flex-wrap justify-center mb-14">
-          <Link href="/kontakt">
-            <Button name="Book gratis samtale" />
-          </Link>
-          <Link
-            href="#pakker"
-            className="text-[13px] text-[#5a5a5a] border-b border-[#2a2d2d] pb-px hover:text-[#9a9a9a] hover:border-[#404040] transition-colors"
-          >
-            Se priser →
-          </Link>
-        </AnimatedInView>
+        {/* Right: simplified visual */}
+        <AnimatedInView as="div" className="relative aspect-square w-full max-w-[400px] mx-auto">
+          {/* single soft ring */}
+          <div className="absolute inset-[16%] rounded-full border border-[#2a2d2d]" />
 
-        {/* Trust bar */}
-        <AnimatedInView
-          as="div"
-          className="flex items-center gap-8 sm:gap-14 mb-16 pb-16 border-b border-[#2a2d2d] w-full justify-center flex-wrap"
-        >
-          {trust.map((t) => (
-            <div key={t.label} className="flex flex-col items-center gap-1">
-              <span className="text-[20px] text-[#e0e0e0] font-medium">{t.value}</span>
-              <span className="text-[10px] uppercase tracking-[0.08em] text-[#5a5a5a]">
-                {t.label}
+          {/* center core */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[104px] h-[104px] rounded-full bg-[#1c1e1e] border border-[#2a2d2d]">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#00a8e8] shadow-[0_0_14px_3px_rgba(0,168,232,0.4)] mb-2" />
+            <span className="text-[10px] text-[#7a7a7a] text-center leading-tight px-3">
+              Din
+              <br />
+              virksomhed
+            </span>
+          </div>
+
+          {/* floating service nodes, each with its own soft accent color */}
+          {nodes.map((n) => (
+            <div
+              key={n.label}
+              className={`absolute ${n.pos} flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#1c1e1e] border border-[#2a2d2d] shadow-[0_6px_18px_rgba(0,0,0,0.18)] animate-float`}
+            >
+              <span
+                className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                style={{ backgroundColor: n.color }}
+              />
+              <span className="text-[11.5px] text-[#e0e0e0] font-medium whitespace-nowrap">
+                {n.label}
               </span>
             </div>
           ))}
-        </AnimatedInView>
 
-        {/* Service categories - bridges into pakker section below */}
-        <AnimatedInView as="div" className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
-          {services.map((s) => (
-            <div
-              key={s.label}
-              className="flex flex-col items-start gap-1 text-left border border-[#2a2d2d] rounded-xl px-4 py-4 bg-[#1c1e1e]/40 hover:bg-[#1c1e1e] hover:border-[#3a3d3d] transition-colors"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00a8e8] mb-1.5" />
-              <span className="text-[13px] text-[#e0e0e0] font-medium">{s.label}</span>
-              <span className="text-[11px] text-[#5a5a5a]">{s.note}</span>
-            </div>
-          ))}
+          <style>{`
+            @keyframes float {
+              0%, 100% { transform: translateY(0px); }
+              50% { transform: translateY(-6px); }
+            }
+            .animate-float {
+              animation: float 6s ease-in-out infinite;
+            }
+          `}</style>
         </AnimatedInView>
       </div>
     </section>

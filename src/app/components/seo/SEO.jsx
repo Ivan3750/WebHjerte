@@ -142,7 +142,7 @@ export default function SEO() {
             disabled={loading}
             className="bg-[#00a8e8] hover:opacity-85 disabled:opacity-50 transition-opacity text-white text-[13px] font-medium px-6 py-3 rounded-xl whitespace-nowrap"
           >
-            {loading ? "Analyserer..." : "Start tjek →"}
+            {loading ? "Analyserer..." : "Start tjek "}
           </button>
         </div>
 
@@ -214,7 +214,7 @@ export default function SEO() {
                     href="/kontakt"
                     className="mt-6 bg-[#00a8e8] hover:opacity-85 transition-opacity text-white text-[13px] font-medium px-5 py-2.5 rounded-xl text-center"
                   >
-                    Book gratis gennemgang →
+                    Book gratis gennemgang 
                   </Link>
                 )}
               </div>

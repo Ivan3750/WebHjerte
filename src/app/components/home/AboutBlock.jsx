@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedInView from "../AnimatedInView";
-
+import Ivan from "../../assets/Ivan.jpg"
 const chips = ["Horsens-baseret", "Direkte kontakt", "Levering inden 14 dage"];
 
 const AboutBlock = () => {
@@ -12,14 +12,14 @@ const AboutBlock = () => {
         <AnimatedInView as="div" className="w-full">
           <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-[#e0e0e0]">
             {/* Erstat med dit rigtige billede: */}
-            {/* <Image src="/ivan.jpg" alt="Ivan - WebHjerte" fill className="object-cover object-top" /> */}
+            <Image src={Ivan} alt="Ivan - WebHjerte" fill className="object-cover object-center" />
 
-            <div className="absolute inset-0 flex items-center justify-center bg-[#d8dcdc]">
+          {/*   <div className="absolute inset-0 flex items-center justify-center bg-[#d8dcdc]">
               <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
                 <circle cx="40" cy="32" r="18" fill="#c0c4c4" />
                 <ellipse cx="40" cy="72" rx="28" ry="18" fill="#c0c4c4" />
               </svg>
-            </div>
+            </div> */}
           </div>
         </AnimatedInView>
 
@@ -56,7 +56,7 @@ const AboutBlock = () => {
               href="/om-os"
               className="text-[13px] text-[#1c1e1e] border-b border-[#1c1e1e] pb-px hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors inline-block"
             >
-              Læs mere om mig →
+              Læs mere om mig 
             </Link>
           </AnimatedInView>
         </div>

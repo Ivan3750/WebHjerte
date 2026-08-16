@@ -11,13 +11,13 @@ const points = [
   },
   {
     title: "Fremtidige ændringer",
-    text: "Din virksomhed udvikler sig — det skal din hjemmeside også kunne. Nye sider, tekster eller funktioner tilføjes løbende, når du har brug for det.",
+    text: "Din virksomhed udvikler sig - det skal din hjemmeside også kunne. Nye sider, tekster eller funktioner tilføjes løbende, når du har brug for det.",
   },
 ];
 
 export default function AfterLaunchBlock() {
   return (
-    <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Efter lancering
@@ -34,10 +34,10 @@ export default function AfterLaunchBlock() {
             <AnimatedInView
               key={p.title}
               as="div"
-              className="rounded-2xl p-7 flex flex-col gap-3 bg-[#1c1e1e] border border-[#2a2d2d]"
+              className="rounded-2xl p-7 flex flex-col gap-3 bg-[#f7f6f6] border-2 border-[#f7f6f6]/10"
             >
               <span className="w-2 h-2 rounded-full bg-[#00a8e8] flex-shrink-0" />
-              <p className="text-[15px] font-medium text-[#e0e0e0]">{p.title}</p>
+              <p className="text-[15px] font-medium text-[#5a5a5a]">{p.title}</p>
               <p className="text-[13px] text-[#7a7a7a] leading-[1.75]">{p.text}</p>
             </AnimatedInView>
           ))}

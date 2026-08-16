@@ -4,7 +4,7 @@ import AnimatedInView from "../components/AnimatedInView";
 import { projects } from "../../app/data/projects";
 
 export const metadata = {
-  title: "Portefølje – Webdesign Cases fra Horsens og Danmark | WebHjerte",
+  title: "Portefølje – Webdesign Cases | WebHjerte",
   description:
     "Se vores webdesignprojekter – køreskole, platforme og lokale virksomheder. Enkelt design, hurtig levering, mobilvenlige løsninger til danske virksomheder.",
   keywords:
@@ -67,7 +67,7 @@ const Portefolje = () => {
           </AnimatedInView>
           <AnimatedInView as="p" className="text-[14px] text-[#5a5a5a] max-w-lg leading-[1.75]">
             Hjemmesider leveret til lokale virksomheder i Horsens og resten af
-            Danmark — til aftalt tid og pris.
+            Danmark - til aftalt tid og pris.
           </AnimatedInView>
         </div>
       </section>
@@ -160,7 +160,7 @@ const Portefolje = () => {
             href="/kontakt"
             className="bg-[#00a8e8] hover:opacity-85 transition-opacity text-white text-[13px] font-medium px-6 py-3 rounded-xl whitespace-nowrap"
           >
-            Book gratis samtale →
+            Book gratis samtale 
           </Link>
         </div>
       </section>

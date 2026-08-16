@@ -88,7 +88,7 @@ export default function IntroOmOs() {
                 href="/portefolje"
                 className="text-[13px] text-[#5a5a5a] border-b border-[#2a2d2d] pb-px hover:text-[#9a9a9a] hover:border-[#404040] transition-colors"
               >
-                Se mine projekter →
+                Se mine projekter 
               </Link>
             </AnimatedInView>
           </div>

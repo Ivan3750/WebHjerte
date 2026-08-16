@@ -1,23 +1,31 @@
 import AnimatedInView from "../AnimatedInView";
+
 const reasons = [
   {
+    n: "01",
+    color: "#00a8e8",
     title: "Du taler direkte med udvikleren",
     text: "Du arbejder direkte sammen med Ivan gennem hele projektet. Det gør kommunikationen enkel, hurtig og personlig.",
   },
   {
+    n: "02",
+    color: "#3ddc97",
     title: "Fast pris fra start",
     text: "Du får en klar pris, før arbejdet begynder. Ingen skjulte gebyrer og ingen uventede timer på fakturaen.",
   },
   {
+    n: "03",
+    color: "#f0a63a",
     title: "Se resultatet hurtigt",
     text: "Du får et første udkast tidligt i processen, så du hurtigt kan se retningen og give feedback.",
   },
   {
+    n: "04",
+    color: "#8a8ff0",
     title: "Lavet til din virksomhed",
     text: "Din hjemmeside bliver bygget ud fra din virksomhed, dine kunder og dine mål — ikke ud fra en standardløsning.",
   },
 ];
-
 
 const paragraphs = [
   {
@@ -49,33 +57,45 @@ export default function WhyUsBlock() {
           Fordi din virksomhed fortjener mere end et skabelon-website
         </AnimatedInView>
 
-        {/* 4 core reasons */}
+        {/* 4 core reasons — uniform cards, color as a soft icon tint */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-20">
           {reasons.map((r) => (
             <AnimatedInView
               key={r.title}
               as="div"
-              className="rounded-2xl p-7 flex flex-col gap-3 bg-[#1c1e1e] border border-[#2a2d2d]"
+              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#1c1e1e] border border-[#2a2d2d] transition-colors hover:border-[#3a3d3d]"
             >
-              <span className="w-2 h-2 rounded-full bg-[#00a8e8] flex-shrink-0" />
-              <p className="text-[15px] font-medium text-[#e0e0e0]">{r.title}</p>
+              <div className="flex items-center gap-3">
+                <span
+                  className="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-medium flex-shrink-0"
+                  style={{
+                    backgroundColor: `${r.color}1a`,
+                    color: r.color,
+                  }}
+                >
+                  {r.n}
+                </span>
+                <p className="text-[14.5px] font-medium text-[#e0e0e0]">{r.title}</p>
+              </div>
               <p className="text-[13px] text-[#7a7a7a] leading-[1.75]">{r.text}</p>
             </AnimatedInView>
           ))}
         </div>
 
-        {/* SEO-rich supporting copy */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8 max-w-5xl">
-          {paragraphs.map((p) => (
-            <AnimatedInView key={p.lead} as="div" className="flex flex-col gap-2">
-              <p className="text-[13px] text-[#e0e0e0] font-medium leading-[1.6]">
-                {p.lead}
-              </p>
-              <p className="text-[13px] text-[#7a7a7a] leading-[1.85]">
-                {p.text}
-              </p>
-            </AnimatedInView>
-          ))}
+        {/* SEO-rich supporting copy — clean, aligned grid, easy to scan */}
+        <div className="rounded-2xl border border-[#2a2d2d] bg-[#1c1e1e] p-8 sm:p-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-9">
+            {paragraphs.map((p) => (
+              <AnimatedInView key={p.lead} as="div" className="flex flex-col gap-2">
+                <p className="text-[13.5px] text-[#e0e0e0] font-medium leading-[1.6]">
+                  {p.lead}
+                </p>
+                <p className="text-[13px] text-[#7a7a7a] leading-[1.85]">
+                  {p.text}
+                </p>
+              </AnimatedInView>
+            ))}
+          </div>
         </div>
       </div>
     </section>

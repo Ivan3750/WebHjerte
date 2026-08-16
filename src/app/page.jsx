@@ -4,27 +4,26 @@ import Link from "next/link";
 import Button from "./components/Button";
 import AnimatedInView from "./components/AnimatedInView";
 import TilbydeSection from "./components/home/TilbydeSection";
-import PriceTeaserBlock from "./components/home/PriceTeaserBlock";
-import InfoBlock from "./components/home/InfoBlock";
-import CasesCarousel from "./components/home/CasesCarousel";
-import HorsensSection from "./components/home/HorsensSection";
-import ProcessBlock from "./components/home/ProcessBlock";
-import FeedBackPeople from "./components/FeedBackPeople";
-import Questions from "./components/Questions";
-import SocialProof from "./components/home/SocialProof";
-import Wfront from "../../public/WFront.jpg";
-import CasesSection from "./components/home/CasesSection";
 import AboutBlock from "./components/home/AboutBlock";
-import CTABlock from "./components/home/CTABlock";
+import ProcessBlock from "./components/ProcessBlock";
+import CtaSearchBlock from "./components/CTA";
+import PriceTeaserBlock from "./components/home/PriceTeaserBlock";
+import Questions from "./components/Questions";
+import Wfront from "../../public/WFront.jpg";
+
  
 
 export const metadata = {
   title: "Webbureau Horsens – Flere Kunder på 90 Dage | WebHjerte",
-  description: "Jeg bygger enkle, hurtige hjemmesider til lokale virksomheder i Horsens og Midtjylland. Direkte kontakt – ingen mellemled. Gratis første samtale.",
-  keywords: "webbureau horsens, webdesign horsens, hjemmeside horsens, webudvikler horsens, webbureau midtjylland, billig hjemmeside horsens",
+  description:
+    "Jeg bygger enkle, hurtige hjemmesider til lokale virksomheder i Horsens og Midtjylland. Direkte kontakt – ingen mellemled. Gratis første samtale.",
+  keywords:
+    "webbureau horsens, webdesign horsens, hjemmeside horsens, webudvikler horsens, webbureau midtjylland, billig hjemmeside horsens, få lavet din hjemmeside",
   openGraph: {
-    title: "Webbureau i Horsens – Hjemmesider der skaffer flere kunder | WebHjerte",
-    description: "Lokal webudvikler i Horsens. Enkle, hurtige hjemmesider til små virksomheder i Midtjylland. Levering på 14 dage. Start med en gratis samtale.",
+    title:
+      "Webbureau i Horsens – Hjemmesider der skaffer flere kunder | WebHjerte",
+    description:
+      "Lokal webudvikler i Horsens. Enkle, hurtige hjemmesider til små virksomheder i Midtjylland. Levering på 14 dage. Start med en gratis samtale.",
     url: "https://www.webhjerte.dk",
     siteName: "WebHjerte",
     locale: "da_DK",
@@ -33,7 +32,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Webbureau i Horsens – Hjemmesider der virker | WebHjerte",
-    description: "Lokal webudvikler i Horsens. Enkle hjemmesider til små virksomheder i Midtjylland. Direkte kontakt, levering på 14 dage.",
+    description:
+      "Lokal webudvikler i Horsens. Enkle hjemmesider til små virksomheder i Midtjylland. Direkte kontakt, levering på 14 dage.",
   },
   alternates: {
     canonical: "https://www.webhjerte.dk",
@@ -43,16 +43,17 @@ export const metadata = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       name: "WebHjerte",
-      description: "Lokal webudvikler i Horsens – hjemmesider til små virksomheder i Midtjylland",
+      description:
+        "Lokal webudvikler i Horsens – hjemmesider til små virksomheder i Midtjylland",
       url: "https://www.webhjerte.dk",
-       areaServed: ["Horsens", "Midtjylland", "Danmark"],
+      areaServed: ["Horsens", "Midtjylland", "Danmark"],
       serviceType: "Webdesign og webudvikling",
       priceRange: "$$",
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         opens: "09:00",
-        closes: "17:00",
+        closes: "18:00",
       },
       founder: {
         "@type": "Person",
@@ -73,7 +74,6 @@ export default function Home() {
   return (
     <>
       <section className="relative min-h-[calc(100dvh-68px)] flex items-center px-5 sm:px-10 lg:px-20 overflow-hidden bg-[#111313]">
- 
         <div className="relative z-10 w-full max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center py-20">
           <div className="flex flex-col">
             <AnimatedInView
@@ -84,20 +84,29 @@ export default function Home() {
               Horsens & Midtjylland
             </AnimatedInView>
 
-            <AnimatedInView as="h1" className="maintitle text-md text-white !leading-tight mb-4">
+            <AnimatedInView
+              as="h1"
+              className="maintitle text-md text-white !leading-tight mb-4"
+            >
               Hjemmesider der skaffer{" "}
               <span className="text-[#00a8e8]">flere kunder</span>
             </AnimatedInView>
 
-            <AnimatedInView as="p" className="subtitle text-[#8a8a8a] !text-[15px] max-w-md mb-8">
-              Enkle, hurtige hjemmesider til virksomheder i Danmark. Direkte kontakt - ingen mellemled.
+            <AnimatedInView
+              as="p"
+              className="subtitle text-[#8a8a8a] !text-[15px] max-w-md mb-8"
+            >
+              Enkle, hurtige hjemmesider til virksomheder i Danmark. Direkte
+              kontakt - ingen mellemled.
             </AnimatedInView>
 
-            <AnimatedInView as="div" className="flex items-center gap-3 flex-wrap">
+            <AnimatedInView
+              as="div"
+              className="flex items-center gap-3 flex-wrap"
+            >
               <Link href="/services">
                 <Button name="Se priser" />
               </Link>
-            
             </AnimatedInView>
 
             <div className="flex gap-8 mt-10 pt-8 border-t border-[#1e2020]">
@@ -119,7 +128,9 @@ export default function Home() {
               </div>
 
               <div className="bg-[#242828] rounded-xl p-4">
-                <p className="text-[10px] text-[#5a5a5a] mb-1">Din hjemmeside</p>
+                <p className="text-[10px] text-[#5a5a5a] mb-1">
+                  Din hjemmeside
+                </p>
                 <p className="text-sm font-medium text-[#e0e0e0]">
                   WebHjerte - Webbureau i Horsens
                 </p>
@@ -127,8 +138,6 @@ export default function Home() {
                   Moderne · Mobil · SEO-optimeret
                 </p>
               </div>
-
-               
 
               <hr className="border-[#1e2020]" />
 
@@ -138,7 +147,10 @@ export default function Home() {
                   { label: "Hastighed", val: 95 },
                   { label: "Mobil", val: 100 },
                 ].map(({ label, val }) => (
-                  <div key={label} className="flex items-center gap-3 text-[11px] text-[#6a6a6a]">
+                  <div
+                    key={label}
+                    className="flex items-center gap-3 text-[11px] text-[#6a6a6a]"
+                  >
                     <span className="w-16 shrink-0">{label}</span>
                     <div className="flex-1 h-1 bg-[#1a1d1d] rounded-full overflow-hidden">
                       <div
@@ -154,14 +166,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* <SocialProof /> */}
-<PriceTeaserBlock/>
-<TilbydeSection />
-<CasesSection />
-<AboutBlock />
-       <ProcessBlock />
-       <CTABlock></CTABlock>
-        <Questions />
+
+      <TilbydeSection />
+      <CasesSection />
+      <AboutBlock />
+      <ProcessBlock />
+      <CtaSearchBlock></CtaSearchBlock>
+      <Questions />
     </>
   );
 }

@@ -10,7 +10,7 @@ import Button from "./Button";
 const links = [
   { href: "/", label: "Forside" },
   { href: "/services", label: "Services" },
-  { href: "/om-os", label: "Om os" },
+  { href: "/om-os", label: "Om mig" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/kontakt", label: "Kontakt" },
 ];

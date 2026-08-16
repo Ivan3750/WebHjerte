@@ -81,7 +81,7 @@ const CTABlock = () => {
             >
               {status === "loading"
                 ? "Sender..."
-                : "Send besked - det er gratis →"}
+                : "Send besked - det er gratis "}
             </button>
 
             {status === "error" && (

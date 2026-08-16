@@ -88,7 +88,7 @@ export default function WhatsIncludedBlock() {
               ))}
             </div>
             <p className="text-[11px] text-[#4a4a4a] leading-[1.7] mt-1">
-              Dette aftales altid tydeligt, før noget bliver bestilt — ingen skjulte tillæg.
+              Dette aftales altid tydeligt, før noget bliver bestilt - ingen skjulte tillæg.
             </p>
           </div>
         </AnimatedInView>

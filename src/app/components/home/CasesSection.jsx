@@ -66,7 +66,7 @@ const CasesSection = () => {
             href="/portefolje"
             className="hidden sm:block text-xs text-[#5a5a5a] border-b border-[#2a2a2a] pb-0.5 hover:text-[#9a9a9a] hover:border-[#404040] transition-colors"
           >
-            Se alle projekter →
+            Se alle projekter 
           </Link>
         </div>
 
@@ -114,7 +114,7 @@ const CasesSection = () => {
                   target={concept ? undefined : "_blank"}
                   rel={concept ? undefined : "noopener noreferrer"}
                 >
-                  {concept ? "Se case →" : "Se live →"}
+                  {concept ? "Se case " : "Se live "}
                 </Link>
               </div>
             </AnimatedInView>
@@ -125,7 +125,7 @@ const CasesSection = () => {
           href="/portefolje"
           className="sm:hidden mt-6 block text-center text-xs text-[#5a5a5a] border-b border-[#2a2a2a] pb-0.5 w-fit mx-auto hover:text-[#9a9a9a] transition-colors"
         >
-          Se alle projekter →
+          Se alle projekter 
         </Link>
       </div>
     </section>

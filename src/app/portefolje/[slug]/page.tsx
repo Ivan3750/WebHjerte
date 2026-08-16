@@ -216,7 +216,7 @@ export default async function ProjectDetail({ params }: Props) {
             href="/kontakt"
             className="inline-block rounded-full bg-black text-white px-8 py-3 text-sm font-medium hover:opacity-90 transition"
           >
-            Kontakt os →
+            Kontakt os 
           </Link>
         </div>
       </section>

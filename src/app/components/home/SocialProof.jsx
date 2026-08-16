@@ -50,7 +50,7 @@ const SocialProof = () => {
         >
           {clients.map((name) => (
             <span key={name} className="text-[13px] text-[#bbb]">
-              <span className="text-[#00a8e8] mr-1">→</span>
+              <span className="text-[#00a8e8] mr-1"></span>
               {name}
             </span>
           ))}

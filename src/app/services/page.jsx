@@ -1,26 +1,32 @@
-import FeedBackPeople from "../components/FeedBackPeople";
-import SEO from "../components/seo/SEO";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Button from "../components/Button";
-import Questions from "../components/Questions";
 import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
-import ProcessBlock from "../components/service/ProcessBlock";
-import Whatsincludedblock from "../components/service/WhatsIncludedBlock";
 import HeroService from "../components/service/HeroService";
-import AfterLaunchBlock  from "../components/service/AfterLaunchBlock";
 import WhatWeOfferBlock from "../components/service/WhatWeOfferBlock";
 import Whyusblock from "../components/service/Whyusblock";
 import PackagesBlock from "../components/service/PackagesBlock";
+import Whatsincludedblock from "../components/service/WhatsIncludedBlock";
+import ProcessBlock from "../components/ProcessBlock";
+import AfterLaunchBlock from "../components/service/AfterLaunchBlock";
+import SEO from "../components/seo/SEO";
+import Questions from "../components/Questions";
+import CtaSearchBlock from "../components/CTA";
+
+ 
 
 export const metadata = {
-  title: "Priser på Webdesign i Horsens – Pakker fra 4.500 DKK | WebHjerte",
-  description: "Se vores priser på hjemmesider i Horsens. 3 klare pakker – Basis fra 4.500 DKK, Standard 8.500 DKK, Skræddersyet fra 14.000 DKK. Ingen skjulte gebyrer.",
-  keywords: "webdesign priser horsens, hjemmeside pris horsens, billig webdesign midtjylland, hjemmeside pakker horsens, webudvikler pris",
+  title: "Priser på hjemmesider i Horsens – Pakker fra 4.500 DKK | WebHjerte",
+  description:
+    "Se vores priser på hjemmesider i Horsens. 3 klare pakker – Basis fra 4.500 DKK, Standard 7.500 DKK, Skræddersyet fra 14.000 DKK. Ingen skjulte gebyrer.",
+  keywords:
+    "webdesign priser horsens, hjemmeside pris horsens, billig webdesign midtjylland, hjemmeside pakker horsens, webudvikler pris",
   openGraph: {
-    title: "Priser på Webdesign – Klare pakker uden skjulte gebyrer | WebHjerte",
-    description: "3 klare pakker til lokale virksomheder i Horsens og Midtjylland. Basis 4.500 DKK · Standard 8.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 14 dage.",
+    title:
+      "Priser på Webdesign – Klare pakker uden skjulte gebyrer | WebHjerte",
+    description:
+      "3 klare pakker til lokale virksomheder i Horsens og Midtjylland. Basis 4.500 DKK · Standard 7.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 14 dage.",
     url: "https://www.webhjerte.dk/services",
     siteName: "WebHjerte",
     locale: "da_DK",
@@ -29,7 +35,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Webdesign priser i Horsens – fra 4.500 DKK | WebHjerte",
-    description: "Klare pakker uden skjulte gebyrer. Basis 4.500 · Standard 8.500 · Skræddersyet fra 14.000 DKK.",
+    description:
+      "Klare pakker uden skjulte gebyrer. Basis 4.500 · Standard 7.500 · Skræddersyet fra 14.000 DKK.",
   },
   alternates: {
     canonical: "https://www.webhjerte.dk/services",
@@ -56,7 +63,7 @@ export const metadata = {
         {
           "@type": "Offer",
           name: "Standard hjemmeside",
-          price: "8500",
+          price: "7500",
           priceCurrency: "DKK",
           description: "Op til 8 sider, CMS, SEO, Google Analytics, booking",
         },
@@ -65,7 +72,8 @@ export const metadata = {
           name: "Skræddersyet løsning",
           price: "14000",
           priceCurrency: "DKK",
-          description: "Fuld tilpasning, integrationer, e-commerce, AI-funktioner",
+          description:
+            "Fuld tilpasning, integrationer, e-commerce, AI-funktioner",
         },
       ],
     }),
@@ -113,14 +121,13 @@ const packages = [
       "Platform / dashboard",
       "Aftales individuelt",
     ],
-  }
+  },
 ];
-
 
 const Services = () => {
   return (
     <>
-{/*       <section>
+      {/*       <section>
   
         <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
         Vores services       </AnimatedInView>
@@ -166,15 +173,16 @@ Vi tilbyder professionelt webdesign og hjemmesideudvikling til danske små virks
         </div>
       </section> */}
 
-      <HeroService/>
-      <WhatWeOfferBlock/>
-      <PackagesBlock/>
-      <Whatsincludedblock/> 
-            <ProcessBlock></ProcessBlock>
-      <Whyusblock/>
-      <AfterLaunchBlock/>
+      <HeroService />
+      <WhatWeOfferBlock />
+      <Whyusblock />
+      <PackagesBlock />
+      <Whatsincludedblock />
+      <ProcessBlock></ProcessBlock>
+      <AfterLaunchBlock />
       <SEO></SEO>
-      <Questions/>
+      <Questions />
+      <CtaSearchBlock />
     </>
   );
 };

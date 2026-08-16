@@ -1,15 +1,13 @@
 import Image from "next/image";
-import Questions from "../components/Questions";
-import Eko from "../../../public/eko.png";
-import Kvalitet from "../../../public/kvalitet.png";
-import Transparens from "../../../public/transparens.png";
-import WorkProcess from "../components/WorkProcess";
 import AnimatedInView from "../components/AnimatedInView";
 import Logo from "../../../public/W.png";
-import DirekteBlock from "../components/om-os/DirekteBlock";
-import IntroOmOs from "../components/om-os/IntroOmOs";
-import MiljoeBlock from "../components/om-os/MiljoeBlock";
-import ValuesBlock from "../components/om-os/ValuesBlock";
+import ConvenienceBlock from "../components/om-mig/ConvenienceBlock";
+import DirekteBlock from "../components/om-mig/DirekteBlock";
+import IntroOmOs from "../components/om-mig/IntroOmOs";
+import HistorieBlock from "../components/om-mig/HistorieBlock";
+import WhyEasyToWorkWithMe from "../components/om-mig/WhyEasyToWorkWithMe";
+import CtaSearchBlock from "../components/CTA";
+ 
 
 export const metadata = {
   title: "Om Ivan – Webudvikleren bag WebHjerte i Horsens",
@@ -43,7 +41,6 @@ export const metadata = {
         url: "https://www.webhjerte.dk",
       },
       url: "https://www.webhjerte.dk/om-mig",
-      sameAs: ["https://www.linkedin.com/in/ivankohan"],
     }),
   },
 };
@@ -54,8 +51,10 @@ const OmOs = () => {
 
 
       <IntroOmOs />
-      <DirekteBlock/>
-      <MiljoeBlock />
+       <HistorieBlock/>
+       <WhyEasyToWorkWithMe/>
+       <CtaSearchBlock/>
+
      </>
   );
 };

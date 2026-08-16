@@ -22,7 +22,7 @@ export default function PriceTeaserBlock() {
               Fast pris. Ingen overraskelser.
             </AnimatedInView>
             <AnimatedInView as="p" className="text-[13px] text-[#7a7a7a] leading-[1.85] max-w-[48ch] mb-8">
-              Du ved præcis, hvad projektet koster, før vi går i gang — ingen
+              Du ved præcis, hvad projektet koster, før vi går i gang - ingen
               timeregning og ingen skjulte tillæg. Priserne starter ved 4.500 kr.
             </AnimatedInView>
             <AnimatedInView as="div">
