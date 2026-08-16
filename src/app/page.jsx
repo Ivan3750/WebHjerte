@@ -7,7 +7,7 @@ import TilbydeSection from "./components/home/TilbydeSection";
 import AboutBlock from "./components/home/AboutBlock";
 import ProcessBlock from "./components/ProcessBlock";
 import CtaSearchBlock from "./components/CTA";
-import PriceTeaserBlock from "./components/home/PriceTeaserBlock";
+import CasesSection from "./components/home/CasesSection";
 import Questions from "./components/Questions";
 import Wfront from "../../public/WFront.jpg";
 
