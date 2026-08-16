@@ -11,8 +11,7 @@ const included = [
 ];
 
 const extra = [
-  "Domæne",
-  "Betalte tredjepartstjenester",
+ "Betalte tredjepartstjenester",
   "Betalingsløsninger",
   "Specifikke premium-værktøjer",
   "Funktioner uden for projektets aftalte omfang",

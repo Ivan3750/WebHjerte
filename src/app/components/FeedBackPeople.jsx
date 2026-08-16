@@ -48,7 +48,7 @@ const testimonials = [
 ];
  {/* <section className="mb-20 px-4">
       <h3 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
-        Hvad siger folk om os?
+        Hvad siger folk Om mig?
       </h3>
       <div className="flex flex-wrap justify-center gap-8">
         {testimonials.map((t, index) => (

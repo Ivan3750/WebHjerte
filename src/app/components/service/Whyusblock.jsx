@@ -5,44 +5,44 @@ const reasons = [
     n: "01",
     color: "#00a8e8",
     title: "Du taler direkte med udvikleren",
-    text: "Du arbejder direkte sammen med Ivan gennem hele projektet. Det gør kommunikationen enkel, hurtig og personlig.",
+    text: "Ingen sælgere, projektledere eller juniorer mellem dig og arbejdet. Du taler med mig, Ivan, gennem hele projektet — så intet går tabt i oversættelsen, og beslutninger tages med det samme.",
   },
   {
     n: "02",
     color: "#3ddc97",
     title: "Fast pris fra start",
-    text: "Du får en klar pris, før arbejdet begynder. Ingen skjulte gebyrer og ingen uventede timer på fakturaen.",
+    text: "Store bureauer har dyre kontorer, sælgere og administration, som du ender med at betale for. Hos mig går pengene til dit projekt — du får en fair, fast pris uden skjulte gebyrer.",
   },
   {
     n: "03",
     color: "#f0a63a",
     title: "Se resultatet hurtigt",
-    text: "Du får et første udkast tidligt i processen, så du hurtigt kan se retningen og give feedback.",
+    text: "Uden lange interne godkendelsesprocesser kan jeg gå i gang med det samme. Du får et konkret udkast tidligt, i stedet for at vente uger på det første møde med et bureau.",
   },
   {
     n: "04",
     color: "#8a8ff0",
-    title: "Lavet til din virksomhed",
-    text: "Din hjemmeside bliver bygget ud fra din virksomhed, dine kunder og dine mål — ikke ud fra en standardløsning.",
+    title: "Dit projekt er ikke bare et nummer",
+    text: "Hos et stort bureau er du én ud af mange kunder. Hos mig er hvert projekt personligt — mit navn og mit ry står på det, så jeg går op i, at det bliver gjort ordentligt.",
   },
 ];
 
 const paragraphs = [
   {
-    lead: "En god hjemmeside skal gøre en forskel.",
-    text: "Din hjemmeside er ofte det første sted, en potentiel kunde møder din virksomhed. Derfor skal den ikke bare se godt ud — den skal skabe tillid, være nem at bruge og gøre det enkelt for kunden at tage kontakt.",
+    lead: "Hvorfor ikke bare vælge et stort bureau?",
+    text: "Et stort bureau kan lyde tryggere på papiret — men i praksis betyder det ofte flere led, længere svartider og en pris, der også dækker deres overhead. Hos WebHjerte betaler du for arbejdet, ikke for administration.",
   },
   {
-    lead: "Personlig kontakt gør processen enklere.",
-    text: "Hos WebHjerte taler du direkte med udvikleren. Du slipper for at forklare dine ønsker videre gennem flere personer og får én fast kontakt gennem hele projektet.",
+    lead: "Lille betyder ikke uerfaren.",
+    text: "Jeg har bevidst valgt at arbejde alene, fordi det giver mig fuld kontrol over kvaliteten. Hvert projekt får min fulde opmærksomhed fra start til slut — ikke delt mellem ti andre kunder på samme tid.",
   },
   {
-    lead: "Moderne teknologi er en del af standarden.",
-    text: "Hjemmesiderne bygges med moderne teknologier med fokus på hastighed, stabilitet, mobilvenlighed og gode tekniske forudsætninger for synlighed på Google.",
+    lead: "Din succes er min bedste markedsføring.",
+    text: "Jeg har ikke et stort marketingbudget til at tiltrække kunder — jeg er afhængig af, at du bliver tilfreds og anbefaler mig videre. Det betyder, at jeg lægger endnu mere i hvert eneste projekt.",
   },
   {
-    lead: "Din hjemmeside er din.",
-    text: "Du får en løsning, du selv ejer. Ingen unødvendig binding til WebHjerte og ingen platform, der låser dig fast. Du kan altid vælge at fortsætte med WebHjerte eller gå videre på egen hånd.",
+    lead: "Du får fleksibilitet, du ikke får andre steder.",
+    text: "Ingen lange kontrakter, ingen bureaukrati. Har du brug for en hurtig ændring eller et akut spørgsmål, får du et svar direkte fra mig — ikke en supportkø, du skal vente på.",
   },
 ];
 
@@ -53,8 +53,8 @@ export default function WhyUsBlock() {
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Hvorfor WebHjerte?
         </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-white !leading-tight !mb-14 max-w-[20ch]">
-          Fordi din virksomhed fortjener mere end et skabelon-website
+        <AnimatedInView as="h2" className="title text-[#1a1a1a] !leading-tight !mb-14 max-w-[26ch]">
+          Ikke det største bureau — men det bedste valg for din virksomhed
         </AnimatedInView>
 
         {/* 4 core reasons — uniform cards, color as a soft icon tint */}

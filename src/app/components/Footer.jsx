@@ -5,7 +5,7 @@ const navLinks = [
   { href: "/", label: "Forside" },
   { href: "/services", label: "Services" },
   { href: "/portefolje", label: "Portefølje" },
-  { href: "/om-os", label: "Om os" },
+  { href: "/om-mig", label: "Om mig" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 

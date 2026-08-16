@@ -11,15 +11,7 @@ const AboutBlock = () => {
 
         <AnimatedInView as="div" className="w-full">
           <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-[#e0e0e0]">
-            {/* Erstat med dit rigtige billede: */}
             <Image src={Ivan} alt="Ivan - WebHjerte" fill className="object-cover object-center" />
-
-          {/*   <div className="absolute inset-0 flex items-center justify-center bg-[#d8dcdc]">
-              <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                <circle cx="40" cy="32" r="18" fill="#c0c4c4" />
-                <ellipse cx="40" cy="72" rx="28" ry="18" fill="#c0c4c4" />
-              </svg>
-            </div> */}
           </div>
         </AnimatedInView>
 
@@ -29,15 +21,16 @@ const AboutBlock = () => {
           </AnimatedInView>
 
           <AnimatedInView as="h2" className="title text-[#1c1e1e] !leading-tight mb-5">
-            Jeg hedder Ivan - webudvikleren
-            bag WebHjerte
+            Jeg hedder Ivan - manden bag WebHjerte
           </AnimatedInView>
 
           <AnimatedInView as="p" className="text-[14px] text-[#666] leading-[1.8] mb-7 max-w-lg">
-            Jeg arbejder direkte med dig fra første samtale til lancering -
-            ingen mellemled, ingen overraskelser. Jeg bygger enkle, hurtige
-            hjemmesider til lokale virksomheder i Horsens og Midtjylland, der
-            rent faktisk skaffer kunder.
+            Ingen bureauer, ingen mellemled, ingen kedelige skabeloner. Bare
+            mig, direkte dialog og en hjemmeside der rent faktisk virker for
+            din forretning. Jeg har hjulpet lokale virksomheder i Horsens og
+            Midtjylland med at gå fra usynlige til synlige online - og jeg
+            tager mig personligt af hvert eneste projekt, fra første idé til
+            lancering.
           </AnimatedInView>
 
           <AnimatedInView as="div" className="flex flex-wrap gap-2 mb-8">
@@ -53,10 +46,10 @@ const AboutBlock = () => {
 
           <AnimatedInView as="div">
             <Link
-              href="/om-os"
+              href="/om-mig"
               className="text-[13px] text-[#1c1e1e] border-b border-[#1c1e1e] pb-px hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors inline-block"
             >
-              Læs mere om mig 
+              Vil du vide mere om mig og min historie? →
             </Link>
           </AnimatedInView>
         </div>

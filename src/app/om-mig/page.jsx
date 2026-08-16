@@ -51,7 +51,7 @@ const OmOs = () => {
       <IntroOmOs />
        <HistorieBlock/>
        <WhyEasyToWorkWithMe/>
-       <CtaSearchBlock/>
+  
 
      </>
   );

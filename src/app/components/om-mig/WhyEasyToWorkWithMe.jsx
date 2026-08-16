@@ -5,33 +5,33 @@ import Button from "../Button";
 const reasons = [
   {
     number: "01",
-    title: "Du taler kun med mig",
-    text: "Ingen projektledere, ingen account managers, ingen mellemled. Fra første besked til lancering er det mig, du skriver med.",
+    title: "Svar samme dag",
+    text: "Skriver du en besked, får du svar samme dag - ikke om tre dage. Du skal aldrig sidde og vente på at høre, om dit projekt overhovedet rykker sig.",
   },
   {
     number: "02",
-    title: "Fast pris, ingen overraskelser",
-    text: "Du ved præcis hvad projektet koster, før vi går i gang. Ingen timeregning, ingen skjulte tillæg på fakturaen.",
+    title: "Du ved altid, hvor projektet står",
+    text: "Ingen lange stilheder frem til deadline. Du får løbende status undervejs, så du altid kan følge med i, hvad der sker, og hvad der er næste skridt.",
   },
   {
     number: "03",
     title: "Udkast inden for 48 timer",
-    text: "Du behøver ikke vente uger på at se noget konkret. Du godkender retningen tidligt - så bygger jeg ikke noget du ikke er glad for.",
+    text: "Du behøver ikke vente uger på at se noget konkret. Du godkender retningen tidligt - så bygger jeg ikke noget, du ikke er glad for.",
   },
   {
     number: "04",
     title: "Live på 14 dage",
-    text: "Fra samtale til lanceret hjemmeside - ikke måneder. Du får løbende opdateringer undervejs, ikke stilhed indtil deadline.",
+    text: "Fra samtale til lanceret hjemmeside - ikke måneder. En klar tidsplan sat fra start, som holdes.",
   },
   {
     number: "05",
-    title: "Justeringer er inkluderet",
-    text: "Er du ikke tilfreds med et udkast, retter vi det til - indtil du er. Det er en del af prisen, ikke en ekstraregning.",
+    title: "Ret til, det er rigtigt",
+    text: "Er du ikke tilfreds med et udkast, justerer vi det - så mange gange, det tager. Det er en del af prisen, ikke en ekstraregning per ændring.",
   },
   {
     number: "06",
-    title: "30 dages support efter lancering",
-    text: "Jeg forsvinder ikke når siden går live. Du har en måned gratis support, og herefter en fast aftale hvis du ønsker det.",
+    title: "Jeg er der stadig bagefter",
+    text: "30 dages support er inkluderet, når siden går live. Opstår der spørgsmål eller småfejl, retter jeg dem - uden at du skal betale for hver besked.",
   },
 ];
 
@@ -41,14 +41,14 @@ export default function WhyEasyToWorkWithMe() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-xl mb-16">
           <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4">
-            Derfor er det nemt
+            Sådan foregår samarbejdet
           </AnimatedInView>
           <AnimatedInView as="h2" className="maintitle text-white !leading-tight mb-4">
-            Ingen bureau-bøvl. Bare en direkte proces.
+            Simpelt, hurtigt og til at forstå
           </AnimatedInView>
           <AnimatedInView as="p" className="text-[14px] text-[#7a7a7a] leading-[1.85]">
-            Du har nok prøvet at bestille noget hos et bureau og aldrig helt vide,
-            hvem der sad med din sag. Sådan er det ikke her.
+            Du har nok prøvet at vente ugevis på svar eller miste overblikket over,
+            hvor et projekt egentlig står. Sådan foregår det ikke her.
           </AnimatedInView>
         </div>
 
@@ -78,7 +78,7 @@ export default function WhyEasyToWorkWithMe() {
         >
           <div>
             <p className="text-[14px] text-[#e0e0e0] mb-1">
-              Klar til at slippe for bureau-bøvlet?
+              Klar til at se, hvor let det kan være?
             </p>
             <p className="text-[13px] text-[#5a5a5a]">
               Første samtale er gratis og uforpligtende.

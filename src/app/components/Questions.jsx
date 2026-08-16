@@ -4,7 +4,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Hvor lang tid tager det?",
-    a: "De fleste projekter er klar inden for 10–18 dage. Du ser et første udkast allerede inden for 3–5 dage efter vores samtale.",
+    a: "De fleste projekter er klar inden for 10–18 dage. Du ser et første udkast allerede inden for 48 timer efter vores samtale.",
   },
   {
     q: "Hvad hvis jeg ikke er tilfreds?",

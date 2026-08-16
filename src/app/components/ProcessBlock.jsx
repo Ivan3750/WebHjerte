@@ -5,34 +5,33 @@ const steps = [
     n: "01",
     color: "#00a8e8",
     title: "Kontakt",
-    text: "Du booker en gratis, uforpligtende samtale — vi finder ud af om det giver mening at arbejde sammen.",
+    text: "Vi tager en uforpligtende snak — helt gratis. Du skal ikke beslutte dig for noget endnu, bare fortælle mig om din idé.",
   },
   {
     n: "02",
     color: "#3ddc97",
     title: "Afklaring",
-    text: "Vi lægger rammerne sammen: hvilke sider du har brug for, tidsplan og en fast pris — inden vi går i gang.",
+    text: "Sammen lægger vi en plan: hvad du får, hvornår og til hvilken pris. Alt aftales skriftligt, så du ved præcis hvad du betaler for.",
   },
   {
     n: "03",
     color: "#f0a63a",
     title: "Design",
-    text: "Jeg bygger det første udkast, tilpasset dit brand og din målgruppe — du ser noget konkret hurtigt.",
+    text: "Jeg går i gang, og du får noget konkret at se hurtigt — ikke bare løfter. Du er med hele vejen, ikke kun til sidst.",
   },
   {
     n: "04",
     color: "#8a8ff0",
     title: "Feedback",
-    text: "Vi justerer sammen indtil det føles rigtigt. Ændringer undervejs er inkluderet, ikke en ekstraregning.",
+    text: "Ikke tilfreds med noget? Bare sig til. Vi justerer sammen, indtil det er helt rigtigt — uden ekstra regninger undervejs.",
   },
   {
     n: "05",
     color: "#e0678a",
     title: "Launch",
-    text: "Siden går live, og jeg er stadig tilgængelig bagefter — hvis der er spørgsmål eller justeringer.",
+    text: "Din side går live — men samarbejdet stopper ikke der. Jeg er stadig kun en besked væk, hvis du får brug for hjælp.",
   },
 ];
-
 export default function ProcessBlock() {
   return (
     <section className="bg-[#f7f6f6]">
