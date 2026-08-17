@@ -73,7 +73,7 @@ export default async function ProjectDetail({ params }: Props) {
           />
         </div>
       </section>
-<section className="px-4 max-w-7xl mx-auto pb-24">
+{/* <section className="px-4 max-w-7xl mx-auto pb-24">
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
     {project.gallery.map((image, index) => (
       <div
@@ -90,8 +90,8 @@ export default async function ProjectDetail({ params }: Props) {
       </div>
     ))}
   </div>
-</section>
-      <section className="px-4 max-w-7xl mx-auto pb-20">
+</section> */}
+  {/*     <section className="px-4 max-w-7xl mx-auto pb-20">
         <p className="text-xs uppercase tracking-widest text-neutral-500 mb-6">
           Resultater
         </p>
@@ -103,10 +103,10 @@ export default async function ProjectDetail({ params }: Props) {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
       {/* Overview */}
       <section className="px-4 max-w-7xl mx-auto pb-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <div className="lg:col-span-2 space-y-6">
+       {/*  <div className="lg:col-span-2 space-y-6">
           <p className="text-xs uppercase tracking-widest text-neutral-500">
             Overblik
           </p>
@@ -119,7 +119,7 @@ export default async function ProjectDetail({ params }: Props) {
           <p className="text-neutral-600 leading-relaxed">
             {project.overviewExtra}
           </p>
-        </div>
+        </div> */}
 
         {/* Sidebar */}
         <div className="space-y-8">

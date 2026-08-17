@@ -65,8 +65,8 @@ export default function IntroOmOs() {
               className="border-l-2 border-[#00a8e8] pl-4 mb-8"
             >
               <p className="text-[14px] text-[#5a5a5a] italic leading-[1.7]">
-                "Jeg tager ikke ti projekter ind på én gang. Jeg tager de projekter,
-                jeg reelt kan give min fulde opmærksomhed."
+                &quot;Jeg tager ikke ti projekter ind på én gang. Jeg tager de projekter,
+                jeg reelt kan give min fulde opmærksomhed.&quot;
               </p>
             </AnimatedInView>
 

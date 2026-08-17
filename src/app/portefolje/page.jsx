@@ -117,7 +117,7 @@ const Portefolje = () => {
                     </p>
                   )}
                 </div>
-
+{/* 
                 <div className="flex flex-wrap gap-2 mt-1">
                   <span className="text-[12px] text-[#5a5a5a] border border-[#e0e0e0] bg-white rounded-lg px-3 py-1">
                     {project.client}
@@ -132,7 +132,7 @@ const Portefolje = () => {
                       Konceptprojekt
                     </span>
                   )}
-                </div>
+                </div> */}
 
                 <p className="text-[13px] text-[#777] leading-[1.7]">
                   {project.description}

@@ -20,7 +20,7 @@ export default function HistorieBlock() {
           </p>
 
           <p className="text-[14.5px] text-[#7a7a7a] leading-[1.9]">
-            Navnet er ikke tilfældigt. "Hjerte" står for den tilgang, jeg
+            Navnet er ikke tilfældigt. &quot;Hjerte&quot; står for den tilgang, jeg
             insisterer på: hver hjemmeside bygges med samme omtanke, uanset om
             kunden er en lille håndværkervirksomhed eller en webshop med
             hundredvis af produkter. Ingen kunder er for små til at fortjene
