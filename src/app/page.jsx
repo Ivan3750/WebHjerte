@@ -9,6 +9,7 @@ import ProcessBlock from "./components/ProcessBlock";
 import CtaSearchBlock from "./components/CTA";
 import CasesSection from "./components/home/CasesSection";
 import Questions from "./components/Questions";
+import SocialProof from "./components/home/SocialProof";
 import Wfront from "../../public/WFront.jpg";
 
  
@@ -168,6 +169,7 @@ export default function Home() {
       </section>
 
       <TilbydeSection />
+      <SocialProof></SocialProof>
       <CasesSection />
       <AboutBlock />
       <ProcessBlock />
