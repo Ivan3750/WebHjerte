@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
                 postalCode: "8700",
                 addressCountry: "DK",
               },
-              areaServed: ["Horsens", "Jylland", "Danmark", "Midtjylland","Europe"],
+              areaServed: ["Horsens", "Jylland", "Danmark", "Midtjylland"],
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.9",
@@ -89,34 +89,18 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
 
-         <Script
-          id="conditional-ga-loader"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const urlParams = new URLSearchParams(window.location.search);
-                const noTrack = urlParams.get("no_track") === "true" || document.cookie.includes("no_track=true");
-
-                if (!noTrack) {
-                  const gtagScript = document.createElement("script");
-                  gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24";
-                  gtagScript.async = true;
-                  document.head.appendChild(gtagScript);
-
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  window.gtag = gtag;
-                  gtag("js", new Date());
-                  gtag("config", "G-QFGJWT1F24");
-                } else {
-                  console.log("🛑 Google Analytics не активовано - no_track=true");
-                }
-              })();
-            `,
-          }}
-        />
-
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QFGJWT1F24');
+        `}
+      </Script>
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
