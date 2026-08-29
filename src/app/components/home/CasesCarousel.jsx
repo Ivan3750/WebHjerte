@@ -11,7 +11,7 @@ import Workout from "../../assets/cases/WorkOutM.png";
 import ClubHorse from "../../assets/cases/ClubHorseM.png";
 import Monolit from "../../assets/cases/Vzlom.png";
 import Ukraine from "../../assets/cases/UkraineW.png";
-
+ 
 const projects = [
   {
     titleLine1: "Pizzaria website",

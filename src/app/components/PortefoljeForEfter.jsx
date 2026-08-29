@@ -3,8 +3,8 @@
 import { useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import AnimatedInView from "./AnimatedInView";
-import Button from "./Button";
+import AnimatedInView from "../utils/AnimatedInView";
+import Button from "../utils/Button";
 
 // Skift til jeres rigtige case-billeder:
 /*  import CaseFoer from "../assets/old.png";

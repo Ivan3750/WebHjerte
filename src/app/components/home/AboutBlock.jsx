@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import AnimatedInView from "../AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 import Ivan from "../../assets/Ivan.jpg"
 const chips = ["Horsens-baseret", "Direkte kontakt", "Levering inden 14 dage"];
 

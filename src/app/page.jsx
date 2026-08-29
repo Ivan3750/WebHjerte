@@ -1,25 +1,22 @@
-import { MapPin } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
-import Button from "./components/Button";
-import AnimatedInView from "./components/AnimatedInView";
+import Button from "./utils/Button";
+import AnimatedInView from "./utils/AnimatedInView";
 import TilbydeSection from "./components/home/TilbydeSection";
 import AboutBlock from "./components/home/AboutBlock";
-import ProcessBlock from "./components/ProcessBlock";
+import ProcessBlock from "./components/home/ProcessBlock";
 import CtaSearchBlock from "./components/CTA";
-import CasesSection from "./components/home/CasesSection";
-import Questions from "./components/Questions";
+ import Questions from "./components/Questions";
 import SocialProof from "./components/home/SocialProof";
-import Wfront from "../../public/WFront.jpg";
+import CasesCarousel from "./components/home/CasesCarousel";
+  
 
- 
 
 export const metadata = {
   title: "Webbureau Horsens – Flere Kunder på 90 Dage | WebHjerte",
   description:
     "Jeg bygger enkle, hurtige hjemmesider til lokale virksomheder i Horsens og Midtjylland. Direkte kontakt – ingen mellemled. Gratis første samtale.",
   keywords:
-    "webbureau horsens, webdesign horsens, hjemmeside horsens, webudvikler horsens, webbureau midtjylland, billig hjemmeside horsens, få lavet din hjemmeside",
+    "webbureau horsens, webdesign horsens, hjemmeside horsens, webudvikler horsens, webbureau midtjylland, billig hjemmeside horsens, få lavet hjemmeside",
   openGraph: {
     title:
       "Webbureau i Horsens – Hjemmesider der skaffer flere kunder | WebHjerte",
@@ -170,11 +167,12 @@ export default function Home() {
 
       <TilbydeSection />
       <SocialProof></SocialProof>
-      <CasesSection />
+       <CasesCarousel />
       <AboutBlock />
       <ProcessBlock />
       <CtaSearchBlock></CtaSearchBlock>
       <Questions />
+ 
     </>
   );
 }

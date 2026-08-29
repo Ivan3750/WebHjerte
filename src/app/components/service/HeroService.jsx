@@ -1,6 +1,6 @@
 import Link from "next/link";
-import AnimatedInView from "../AnimatedInView";
-import Button from "../Button";
+import AnimatedInView from "../../utils/AnimatedInView";
+import Button from "../../utils/Button";
 
 const nodes = [
   { label: "Hjemmesider", pos: "top-[4%] left-[10%]", color: "#00a8e8" },

@@ -1,34 +1,28 @@
-import FeedBackPeople from "../components/FeedBackPeople";
-import SEO from "../components/seo/SEO";
-import SEOTextHorsens from "../components/seo/SEOTextHorsens";
-import LocalTrust from "../components/seo/LocalTrust";
-import Button from "../components/Button";
-import Questions from "../components/Questions";
-import AnimatedInView from "../components/AnimatedInView.jsx";
+import AnimatedInView from "../utils/AnimatedInView.jsx";
 import PortefoljeForEfter from "../components/PortefoljeForEfter";
-import HvadGoerProfessionel from "../components/HvadGoerProfessionel";
+import HvadGoerProfessionel from "../components/wordpress/HvadGoerProfessionel";
 import CtaProfessionel from "../components/CtaProfessionel";
 import SocialProof from "../components/home/SocialProof";
 
 export const metadata = {
-  title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
+  title: "Ny Professionel Hjemmeside | WebHjerte",
   description:
-    "Få et gratis SEO- og web-tjek i Horsens. Vi analyserer din hjemmeside for synlighed, hastighed og konvertering – uden binding.",
+    "Få en ny, professionel hjemmeside, der ser godt ud og virker. Hurtig levering, fast pris og fuld hjælp fra start til slut – uden binding.",
   keywords:
-    "gratis seo tjek horsens, web tjek horsens, seo analyse horsens, hjemmeside analyse horsens, seo horsens, seo midtjylland",
+    "professionel hjemmeside, ny hjemmeside, ny hjemmeside pris, professionel hjemmeside design, webbureau horsens",
   robots: "index, follow",
   openGraph: {
-    title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
+    title: "Ny Professionel Hjemmeside | WebHjerte",
     description:
-      "Professionelt og gratis SEO- og web-tjek for virksomheder i Horsens.",
-    url: "https://webhjerte.dk/gratis-seo-tjek-horsens",
+      "Få en ny, professionel hjemmeside, der ser godt ud og virker. Hurtig levering, fast pris.",
+    url: "https://webhjerte.dk/ny-professionel-hjemmeside",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gratis SEO- og web-tjek i Horsens",
+    title: "Ny Professionel Hjemmeside – WebHjerte",
     description:
-      "Få et gratis SEO- og web-tjek af din hjemmeside i Horsens.",
+      "Få en ny, professionel hjemmeside, der ser godt ud og virker. Hurtig levering, fast pris.",
   },
 };
 

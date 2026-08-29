@@ -1,4 +1,4 @@
-import AnimatedInView from "../AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 
 export default function HistorieBlock() {
   return (

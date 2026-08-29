@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AnimatedInView from "../components/AnimatedInView";
+import AnimatedInView from "../utils/AnimatedInView";
 import Logo from "../../../public/W.png";
 import IntroOmOs from "../components/om-mig/IntroOmOs";
 import HistorieBlock from "../components/om-mig/HistorieBlock";

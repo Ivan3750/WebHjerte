@@ -1,4 +1,4 @@
-import AnimatedInView from "../../components/AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const LocalTrust = () => {

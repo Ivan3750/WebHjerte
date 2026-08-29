@@ -1,7 +1,7 @@
 import { Unbounded } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./utils/Header";
+import Footer from "./utils/Footer";
 import Script from "next/script";
 import Logo from "../../public/W.png";
 
@@ -48,16 +48,16 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-         <script
+        <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="dQ/aslmLQa//XoyDENgNAQ"
           async
         ></script>
-<Script
-      id="plerdy-script"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: `
+        <Script
+          id="plerdy-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
           var _protocol="https:"==location.protocol?"https://":"http://";
           _site_hash_code="e54642b7017f6579741beb660c932b9d";
           _suid=72309;
@@ -67,11 +67,11 @@ export default function RootLayout({ children }) {
           plerdyScript.src="https://a.plerdy.com/public/js/click/main.js?v="+Math.random();
           document.head.appendChild(plerdyScript);
         `,
-      }}
-    />
+          }}
+        />
 
 
-         <Script
+        <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -85,22 +85,22 @@ export default function RootLayout({ children }) {
           }}
         />
 
-         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
 
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
-      />
-      <Script id="gtag-init" strategy="afterInteractive">
-        {`
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QFGJWT1F24');
         `}
-      </Script>
+        </Script>
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
@@ -122,13 +122,13 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-       <Header />
+        <Header />
 
-<main id="main-content">
-  {children}
-</main>
+        <main id="main-content">
+          {children}
+        </main>
 
-<Footer />
+        <Footer />
 
       </body>
     </html>

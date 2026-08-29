@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import AnimatedInView from "../AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 const services = [
   {
     name: "Hjemmeside",

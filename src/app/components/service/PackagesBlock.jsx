@@ -1,5 +1,5 @@
 import Link from "next/link";
-import AnimatedInView from "../AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 
 const CheckIcon = ({ light }) => (
   <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
@@ -12,7 +12,6 @@ const CheckIcon = ({ light }) => (
     />
   </svg>
 );
-
 const Tick = ({ popular }) => (
   <span
     className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 bg-[#1a2a30] border border-[#0a4a60]`}
@@ -89,25 +88,19 @@ const PackagesBlock = () => {
             >
               <div>
                 <div className="flex flex-row justify-between">
-                <p className={`text-[15px] font-medium "text-[#e0e0e0]" `}>
-                  {name}
-                </p>
-                {popular && (
-                  <span className="inline-block text-[10px] font-medium px-2.5 py-1 rounded-full bg-[#0af]/10 text-[#0af] mb-2">
-                    Mest valgt
-                  </span>
-                )}
+                  <p className={`text-[15px] font-medium "text-[#e0e0e0]" `}>{name}</p>
+                  {popular && (
+                    <span className="inline-block text-[10px] font-medium px-2.5 py-1 rounded-full bg-[#0af]/10 text-[#0af] mb-2">
+                      Mest valgt
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-baseline gap-1.5 mt-3">
-                  <span className={`text-[32px] font-medium leading-none text-white `}>
-                    {price}
-                  </span>
+                  <span className={`text-[32px] font-medium leading-none text-white `}>{price}</span>
                   <span className={`text-[13px] text-[#5a5a5a] `}>DKK</span>
                 </div>
               </div>
-
               <hr className="border-[#2a2d2d]" />
-
               <div className="flex flex-col gap-2.5">
                 {features.map((f) => (
                   <div key={f} className="flex items-center gap-2.5">
@@ -116,13 +109,9 @@ const PackagesBlock = () => {
                   </div>
                 ))}
               </div>
-
-              <span
-                className={`text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#5a5a5a]`}
-              >
+              <span className={`text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#5a5a5a]`}>
                 {timing}
               </span>
-
               <Link
                 href={href}
                 className={`w-full py-2.5 rounded-xl text-[13px] font-medium text-center transition-opacity border border-[#2a2d2d] hover:bg-[#00a8e8] text-white hover:opacity-85  `}
@@ -132,6 +121,49 @@ const PackagesBlock = () => {
             </AnimatedInView>
           ))}
         </div>
+
+        {/* WordPress — окрема категорія, не тир у тому ж списку */}
+        <AnimatedInView
+          as="div"
+          className="mt-6 rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8 bg-[#161818] border border-dashed border-[#2a2d2d]"
+        >
+          <div className="flex-1">
+            <div className="flex items-center gap-2.5 mb-1.5">
+              <p className="text-[14px] font-medium text-[#e0e0e0]">WordPress-løsning</p>
+              <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-[#1a1d1d] text-[#5a5a5a]">
+                Alternativ
+              </span>
+            </div>
+            <p className="text-[12px] text-[#777] max-w-md">
+              Vil du selv kunne redigere tekst og billeder efter levering? Så er WordPress
+              måske et bedre valg end en skræddersyet løsning.
+            </p>
+            <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-3">
+              {["Selv-redigerbar CMS", "Færdigt tema", "Basic SEO", "Kontaktformular"].map((f) => (
+                <div key={f} className="flex items-center gap-2">
+                  <Tick />
+                  <span className="text-[12px] text-[#777]">{f}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col items-start sm:items-end gap-3 sm:flex-shrink-0">
+            <div className="flex items-baseline gap-1.5">
+              <span className="text-[26px] font-medium leading-none text-white">3.500</span>
+              <span className="text-[13px] text-[#5a5a5a]">DKK</span>
+            </div>
+            <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#5a5a5a]">
+              Levering: 7 dage
+            </span>
+            <Link
+              href="/kontakt?pakke=wordpress"
+              className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-[13px] font-medium text-center transition-opacity border border-[#2a2d2d] hover:bg-[#00a8e8] text-white hover:opacity-85"
+            >
+              Kom i gang
+            </Link>
+          </div>
+        </AnimatedInView>
       </div>
     </section>
   );

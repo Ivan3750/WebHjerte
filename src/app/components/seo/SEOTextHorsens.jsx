@@ -1,4 +1,4 @@
-import AnimatedInView from "../../components/AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 
 const SEOTextHorsens = () => {
   return (

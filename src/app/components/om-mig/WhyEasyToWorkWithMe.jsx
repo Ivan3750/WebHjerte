@@ -1,6 +1,6 @@
-import AnimatedInView from "../AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 import Link from "next/link";
-import Button from "../Button";
+import Button from "../../utils/Button";
 
 const reasons = [
   {

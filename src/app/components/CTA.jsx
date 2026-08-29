@@ -1,6 +1,6 @@
 "use client";
-import AnimatedInView from "./AnimatedInView";
-import Button from "./Button";
+import AnimatedInView from "../utils/AnimatedInView";
+import Button from "../utils/Button";
 export default function CtaSearchBlock() {
   return (
     <section className="bg-[#0af] px-5 sm:px-10 lg:px-20 py-20">

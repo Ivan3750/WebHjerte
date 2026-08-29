@@ -1,14 +1,9 @@
-import { FaCircleCheck } from "react-icons/fa6";
-import { FaArrowRightLong } from "react-icons/fa6";
-import Button from "../components/Button";
-import AnimatedInView from "../components/AnimatedInView";
-import Logo from "../../../public/W.png";
 import HeroService from "../components/service/HeroService";
 import WhatWeOfferBlock from "../components/service/WhatWeOfferBlock";
 import Whyusblock from "../components/service/Whyusblock";
 import PackagesBlock from "../components/service/PackagesBlock";
 import Whatsincludedblock from "../components/service/WhatsIncludedBlock";
-import ProcessBlock from "../components/ProcessBlock";
+import ProcessBlock from "../components/home/ProcessBlock";
 import AfterLaunchBlock from "../components/service/AfterLaunchBlock";
 import SEO from "../components/seo/SEO";
 import Questions from "../components/Questions";

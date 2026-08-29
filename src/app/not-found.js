@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Button from './components/Button';
+import Button from './utils/Button';
 export default function Custom404() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 text-center">

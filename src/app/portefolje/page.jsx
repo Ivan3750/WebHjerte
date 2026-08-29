@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import AnimatedInView from "../components/AnimatedInView";
+import AnimatedInView from "../utils/AnimatedInView";
 import { projects } from "../../app/data/projects";
 
 export const metadata = {

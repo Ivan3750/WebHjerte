@@ -1,5 +1,5 @@
 import Link from "next/link";
-import AnimatedInView from "../AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 
 const MonitorIcon = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">

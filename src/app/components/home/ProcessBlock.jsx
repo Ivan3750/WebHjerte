@@ -1,66 +1,76 @@
-import AnimatedInView from "../AnimatedInView";
+import AnimatedInView from "../../utils/AnimatedInView";
 
 const steps = [
   {
-    timing: "Dag 1",
-    name: "Gratis samtale",
-    desc: "Vi snakker om din virksomhed, dine mål og hvad du har brug for. Ingen forpligtelse.",
+    n: "01",
+    color: "#00a8e8",
+    title: "Kontakt",
+    text: "Vi tager en uforpligtende snak — helt gratis. Du skal ikke beslutte dig for noget endnu, bare fortælle mig om din idé.",
   },
   {
-    timing: "Dag 3–5",
-    name: "Design & godkendelse",
-    desc: "Du ser et første udkast og godkender retningen - inden vi begynder at bygge.",
+    n: "02",
+    color: "#3ddc97",
+    title: "Afklaring",
+    text: "Sammen lægger vi en plan: hvad du får, hvornår og til hvilken pris. Alt aftales skriftligt, så du ved præcis hvad du betaler for.",
   },
   {
-    timing: "Dag 6–14",
-    name: "Udvikling",
-    desc: "Vi bygger din side hurtigt og effektivt. Du får løbende opdateringer undervejs.",
+    n: "03",
+    color: "#f0a63a",
+    title: "Design",
+    text: "Jeg går i gang, og du får noget konkret at se hurtigt — ikke bare løfter. Du er med hele vejen, ikke kun til sidst.",
   },
   {
-    timing: "Efter lancering",
-    name: "Lancering & support",
-    desc: "Din side går live - og vi er stadig tilgængelige hvis du har spørgsmål eller ændringer.",
+    n: "04",
+    color: "#8a8ff0",
+    title: "Feedback",
+    text: "Ikke tilfreds med noget? Bare sig til. Vi justerer sammen, indtil det er helt rigtigt — uden ekstra regninger undervejs.",
+  },
+  {
+    n: "05",
+    color: "#e0678a",
+    title: "Launch",
+    text: "Din side går live — men samarbejdet stopper ikke der. Jeg er stadig kun en besked væk, hvis du får brug for hjælp.",
   },
 ];
-
-const ProcessBlock = () => {
+export default function ProcessBlock() {
   return (
-    <section className="py-24 px-6 sm:px-12 lg:px-20 bg-white">
+    <section className="bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-3">
-          Sådan arbejder vi
+        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">
+          Sådan foregår det
         </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-[#1c1e1e] !leading-tight mb-12">
-          Fra ide til livesite inden for 14 dage
+        <AnimatedInView as="h2" className="title text-[#111313] !leading-tight !mb-16 max-w-[24ch]">
+          Fra første besked til live hjemmeside
         </AnimatedInView>
 
-        <div className="relative">
-          <div className="hidden sm:block absolute top-[9px] left-[calc(12.5%+10px)] right-[calc(12.5%+10px)] h-px bg-[#e0e0e0]" />
+        <div className="border-t border-[#e0dede]">
+          {steps.map((s) => (
+            <AnimatedInView key={s.n} as="div" className="group">
+              <div className="flex items-start sm:items-center gap-6 sm:gap-12 py-9 sm:py-11 border-b border-[#e0dede] transition-colors duration-300">
+                <span
+                  className="text-[44px] sm:text-[64px] font-light leading-none tabular-nums flex-shrink-0 w-[70px] sm:w-[96px] transition-colors duration-300"
+                  style={{ color: "#d8d6d6" }}
+                >
+                  {s.n}
+                </span>
 
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-10 sm:gap-0">
-            {steps.map(({ timing, name, desc }, i) => (
-              <AnimatedInView
-                key={i}
-                as="div"
-                className="flex flex-col sm:pr-8 relative"
-              >
-                <div className="flex items-center gap-3 mb-4 sm:mb-5">
-                  <div className="w-[18px] h-[18px] rounded-full bg-white border-[1.5px] border-[#00a8e8] flex items-center justify-center shrink-0 z-10">
-                    <span className="w-[6px] h-[6px] rounded-full bg-[#00a8e8] block" />
-                  </div>
-                  <span className="sm:hidden text-[13px] font-medium text-[#1c1e1e]">{name}</span>
+                <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-10">
+                  <p className="text-[17px] sm:text-[19px] font-medium text-[#111313] sm:w-[180px] flex-shrink-0 flex items-center gap-3">
+                    <span
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: s.color }}
+                    />
+                    {s.title}
+                  </p>
+                  <p className="text-[14px] sm:text-[15px] text-[#6a6a6a] leading-[1.7] max-w-lg">
+                    {s.text}
+                  </p>
                 </div>
-
-                <p className="text-[11px] text-[#00a8e8] font-medium mb-1">{timing}</p>
-                <p className="hidden sm:block text-[15px] font-medium text-[#1c1e1e] mb-2">{name}</p>
-                <p className="text-[12px] text-[#888] leading-relaxed">{desc}</p>
-              </AnimatedInView>
-            ))}
-          </div>
+              </div>
+            </AnimatedInView>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default ProcessBlock;
+}

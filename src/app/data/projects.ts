@@ -4,6 +4,7 @@ import Ukraine from "../assets/cases/UkraineW.png";
 import Hireon from "../assets/cases/HireonM.png";
 import Monolit from "../assets/cases/Vzlom.png";
 import WorkOut from "../assets/cases/WorkOutM.png";
+import Lønbæks from "../assets/cases/lønbæks.jpg";
 import { StaticImageData } from "next/image";
 
 export type Stat = {
@@ -170,7 +171,7 @@ export const projects: Project[] = [
     slug: "ukraine-hjaelpeprojekt",
     title: "Ukraine Hjælpeprojekt",
     subtitle: "Gratis website under krigen",
-    heroImage: Ukraine,
+    heroImage: Lønbæks,
     gallery: [Ukraine, Ukraine, Ukraine, Ukraine],
     tags: ["Velgørenhed", "Webdesign"],
     client: "Ukraine Hjælpeprojekt",

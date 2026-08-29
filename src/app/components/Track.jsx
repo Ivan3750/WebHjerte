@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
-import Button from "../components/Button";
-import AnimatedInView from "./AnimatedInView";
+import Button from "../utils/Button";
+import AnimatedInView from "../utils/AnimatedInView";
 
 
 

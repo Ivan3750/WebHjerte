@@ -1,6 +1,6 @@
 "use client";
 
-import AnimatedInView from "../components/AnimatedInView";
+import AnimatedInView from "../utils/AnimatedInView";
 import ContactForm from "../components/ContactForm";
 
 const facts = [
