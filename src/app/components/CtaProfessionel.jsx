@@ -1,5 +1,5 @@
 "use client";
-
+import { Suspense } from "react";
 import AnimatedInView from "../components/AnimatedInView";
 import ContactForm from "../components/ContactForm";
 
@@ -53,7 +53,11 @@ export default function CtaProfessionel() {
             ))}
           </AnimatedInView>
         </div>
+                <Suspense fallback={null}>
+
           <ContactForm />
+                  </Suspense>
+
       </div>
     </section>
   );
