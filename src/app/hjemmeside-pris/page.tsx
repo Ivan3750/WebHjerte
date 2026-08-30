@@ -3,6 +3,7 @@ import FormToLead from "../components/FormToLead";
 import PackagesBlock from "../components/service/PackagesBlock";
 import Whatsincludedblock from "../components/service/WhatsIncludedBlock";
 import SocialProof from "../components/home/SocialProof";
+import CasesCarousel from "../components/home/CasesCarousel.jsx";
 
 export const metadata = {
   title: "Hjemmeside Pris – Se Priser hos WebHjerte",
@@ -46,7 +47,10 @@ const HjemmesidePris = () => {
         </AnimatedInView>
       </section>
       <PackagesBlock />
+      
       <Whatsincludedblock />
+            <CasesCarousel />
+      
       <SocialProof />
       <FormToLead  titleLine="Vil du gerne ville om pris på din hjemmeside?"/>
     </>

@@ -1,8 +1,10 @@
 import AnimatedInView from "../utils/AnimatedInView.jsx";
-import PortefoljeForEfter from "../components/PortefoljeForEfter";
+import PackagesBlock from "../components/service/PackagesBlock";
 import HvadGoerProfessionel from "../components/wordpress/HvadGoerProfessionel";
 import FormToLead from "../components/FormToLead";
 import SocialProof from "../components/home/SocialProof";
+import ProblemLoesning from "../components/ProblemLoesning.jsx";
+import CasesCarousel from "../components/home/CasesCarousel.jsx";
 
 export const metadata = {
   title: "Ny Professionel Hjemmeside | WebHjerte",
@@ -37,8 +39,11 @@ Få en ny, professionel hjemmeside        </AnimatedInView>
           få flere kunder fra Google – helt gratis og uden binding.
         </AnimatedInView>
       </section>
-<PortefoljeForEfter/>
+<ProblemLoesning/>
 <SocialProof/>
+<PackagesBlock/>
+      <CasesCarousel />
+
 <HvadGoerProfessionel/>
 <FormToLead/>
     

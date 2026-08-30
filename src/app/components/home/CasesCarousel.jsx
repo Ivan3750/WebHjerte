@@ -41,7 +41,7 @@ export default function CasesCarousel() {
   useEffect(() => {
     const timer = setInterval(
       () => setCurrent((p) => (p + 1) % projects.length),
-      6000
+      12000
     );
     return () => clearInterval(timer);
   }, []);

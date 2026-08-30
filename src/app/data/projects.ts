@@ -5,6 +5,7 @@ import Hireon from "../assets/cases/HireonM.png";
 import Monolit from "../assets/cases/Vzlom.png";
 import WorkOut from "../assets/cases/WorkOutM.png";
 import Lønbæks from "../assets/cases/lønbæks.jpg";
+import VEKA from "../assets/cases/VEKA.png";
 import { StaticImageData } from "next/image";
 
 export type Stat = {
@@ -41,7 +42,7 @@ export const projects: Project[] = [
     tags: ["Website design", "Development"],
     client: "Pizzaria",
     location: "Horsens, Danmark",
-    services: ["Website design", "Frontend udvikling", "Lokal SEO"],
+    services: ["Website design", "Web udvikling", "Lokal SEO"],
     technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
     overview:
       "En travl pizzaforretning i Horsens tjente færre penge, jo mere de solgte. Wolt og JustEat tog op mod 30% i gebyr af hver eneste bestilling, og uden en ordentlig hjemmeside havde forretningen intet alternativ at sende kunderne hen til. Løsningen var klar: byg en hjemmeside, kunderne rent faktisk vil bestille direkte fra.",
@@ -56,6 +57,33 @@ export const projects: Project[] = [
       { value: "-32%", label: "Mindre afhængighed af Wolt/JustEat" },
       { value: "2.1s", label: "Gennemsnitlig loadtid" },
       { value: "+61%", label: "Flere mobilbrugere konverterer" },
+    ],
+  },
+  {
+    id: 9,
+    slug: "loenbaeks-koereskole",
+    title: "Lønbæks Køreskole",
+    subtitle: "Ikke det billigste kørekort – men det bedste",
+    heroImage: Lønbæks,
+    gallery: [Lønbæks, Lønbæks, Lønbæks],
+    tags: ["Website design", "Webudvikling", "Lokal SEO"],
+    client: "Lønbæks Køreskole",
+    location: "Vejle, Danmark",
+    services: ["Website design", "Frontend udvikling", "Lokal SEO"],
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    overview:
+      "Lønbæks Køreskole i Vejle konkurrerer ikke på at være billigst – de konkurrerer på at gøre eleverne til rigtig gode og sikre bilister. Det budskab er svært at sælge, når hjemmesiden ligner alle andre køreskolers, og folk sammenligner udelukkende på pris.",
+    overviewExtra:
+      "Vi byggede en hjemmeside, der fortæller historien om, hvorfor grundig undervisning betaler sig i det lange løb – med en tydelig vej fra 'jeg overvejer at tage kørekort' til 'jeg har booket min første køretime'. Lokal SEO sikrer, at kommende elever i Vejle finder skolen, når de søger efter en køreskole.",
+    designDescription:
+      "Et trygt og imødekommende design, der signalerer erfaring og faglighed frem for rabatter. Holdstart, priser og kontaktinfo er placeret, hvor en nervøs førstegangselev leder efter dem.",
+    developmentDescription:
+      "En hurtig, mobilvenlig side bygget i Next.js, så unge elever – der næsten udelukkende browser fra telefonen – får en gnidningsfri oplevelse fra første besøg til booket køretime.",
+    results: [
+      { value: "+44%", label: "Flere bookede introtimer" },
+      { value: "+39%", label: "Flere besøgende fra lokale søgninger" },
+      { value: "-30%", label: "Færre opkald om basale spørgsmål" },
+      { value: "1.8s", label: "Loadtid" },
     ],
   },
   {
@@ -85,6 +113,68 @@ export const projects: Project[] = [
       { value: "3x", label: "Flere aktive virksomheder" },
     ],
   },
+  {
+    id: 7,
+    slug: "veka-center",
+    title: "VEKA Center",
+    subtitle: "Fra fabrik til færdigt vindue – uden mellemled",
+    heroImage: VEKA, // TODO: erstat med rigtige billeder
+    gallery: [
+      "/images/cases/veka-placeholder.jpg",
+      "/images/cases/veka-placeholder.jpg",
+      "/images/cases/veka-placeholder.jpg",
+    ],
+    tags: ["Produktkatalog", "Webudvikling", "Leadgenerering"],
+    client: "VEKA",
+    location: "Kyiv, Ukraine",
+    services: ["Website design", "Webudvikling", "Konfigurator", "SEO"],
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    overview:
+      "VEKA producerer selv sine vinduer og døre, men det budskab druknede i et katalog med mange tekniske profilsystemer – Softline 82, Softline 76, WHS 72, VEKAMOTION og flere til. Besøgende, der ikke selv er fagfolk, havde svært ved at finde ud af, hvilken løsning der passede til netop deres bolig.",
+    overviewExtra:
+      "Vi byggede en side, der taler til både private kunder og erhvervskunder på én gang: et simpelt trin-for-trin-værktøj hjælper besøgende med at finde det rette vindue ud fra deres behov – støjdæmpning, indbrudssikring, energieffektivitet eller børneværelse – i stedet for at overvælde dem med tekniske specifikationer med det samme.",
+    designDescription:
+      "Et rent, tillidsvækkende design, der understreger at kunden køber direkte fra fabrikken – ingen mellemled, ingen skjulte tillæg. Produktsystemerne er visuelt adskilt, så både lægmand og fagperson hurtigt finder frem til det relevante.",
+    developmentDescription:
+      "Bygget i Next.js med fokus på hurtig indlæsning af produktbilleder og et interaktivt vejledningsværktøj, der guider besøgende til det rette valg. Strukturerede produktdata og teknisk SEO sikrer synlighed på søgninger som 'metalplastvinduer' og specifikke profilsystemer.",
+    results: [
+      { value: "+58%", label: "Flere henvendelser via vejledningsværktøjet" },
+      { value: "+41%", label: "Organisk trafik" },
+      { value: "-28%", label: "Færre irrelevante forespørgsler" },
+      { value: "2.0s", label: "Loadtid" },
+    ],
+  },
+  /* {
+    id: 8,
+    slug: "vitrazh",
+    title: "VitraZH",
+    subtitle: "Vinduer, døre og altaner – bestilt uden besvær",
+    heroImage: "/images/cases/vitrazh-placeholder.jpg", // TODO: erstat med rigtige billeder
+    gallery: [
+      "/images/cases/vitrazh-placeholder.jpg",
+      "/images/cases/vitrazh-placeholder.jpg",
+      "/images/cases/vitrazh-placeholder.jpg",
+    ],
+    tags: ["Website design", "Webudvikling", "Kalkulator"],
+    client: "VitraZH",
+    location: "Kyiv, Ukraine",
+    services: ["Website design", "Webudvikling", "Pris­kalkulator", "SEO"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    overview:
+      "VitraZH sælger og monterer vinduer, døre og altaner i hele Kyiv-området, men uden en ordentlig hjemmeside skulle hver eneste pris forhandles over telefonen, og potentielle kunder faldt fra, før de nåede at bede om et tilbud.",
+    overviewExtra:
+      "Vi byggede en overskuelig hjemmeside med en indbygget priskalkulator, så kunder selv kan få en fornemmelse af prisen, før de tager kontakt – og en klar firetrins-proces, der viser præcis hvad der sker fra første henvendelse til færdig montering. Det sænker tærsklen for at tage det første skridt markant.",
+    designDescription:
+      "Et moderne og overskueligt design opdelt i tydelige kategorier – vinduer, vitrage-vinduer, altanpartier, ruller og gitre – så kunden hurtigt lander på det, de faktisk leder efter, uden at skulle bladre gennem irrelevante produkter.",
+    developmentDescription:
+      "En performanceoptimeret Next.js-løsning med en interaktiv kalkulator og et katalog, der er let at udvide efterhånden som produktsortimentet vokser. Strukturen er bygget til at skalere sammen med virksomheden.",
+    results: [
+      { value: "+64%", label: "Flere tilbudsforespørgsler" },
+      { value: "+37%", label: "Brugere der gennemfører kalkulatoren" },
+      { value: "-25%", label: "Kortere svartid på henvendelser" },
+      { value: "2.2s", label: "Loadtid" },
+    ],
+  }, */
   {
     id: 3,
     slug: "workout",
@@ -193,93 +283,6 @@ export const projects: Project[] = [
       { value: "99.9%", label: "Oppetid" },
     ],
   }, */
-  {
-    id: 7,
-    slug: "veka-center",
-    title: "VEKA Center",
-    subtitle: "Fra fabrik til færdigt vindue – uden mellemled",
-    heroImage: "/images/cases/veka-placeholder.jpg", // TODO: erstat med rigtige billeder
-    gallery: [
-      "/images/cases/veka-placeholder.jpg",
-      "/images/cases/veka-placeholder.jpg",
-      "/images/cases/veka-placeholder.jpg",
-    ],
-    tags: ["Produktkatalog", "Webudvikling", "Leadgenerering"],
-    client: "VEKA",
-    location: "Kyiv, Ukraine",
-    services: ["Website design", "Webudvikling", "Konfigurator", "SEO"],
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-    overview:
-      "VEKA producerer selv sine vinduer og døre, men det budskab druknede i et katalog med mange tekniske profilsystemer – Softline 82, Softline 76, WHS 72, VEKAMOTION og flere til. Besøgende, der ikke selv er fagfolk, havde svært ved at finde ud af, hvilken løsning der passede til netop deres bolig.",
-    overviewExtra:
-      "Vi byggede en side, der taler til både private kunder og erhvervskunder på én gang: et simpelt trin-for-trin-værktøj hjælper besøgende med at finde det rette vindue ud fra deres behov – støjdæmpning, indbrudssikring, energieffektivitet eller børneværelse – i stedet for at overvælde dem med tekniske specifikationer med det samme.",
-    designDescription:
-      "Et rent, tillidsvækkende design, der understreger at kunden køber direkte fra fabrikken – ingen mellemled, ingen skjulte tillæg. Produktsystemerne er visuelt adskilt, så både lægmand og fagperson hurtigt finder frem til det relevante.",
-    developmentDescription:
-      "Bygget i Next.js med fokus på hurtig indlæsning af produktbilleder og et interaktivt vejledningsværktøj, der guider besøgende til det rette valg. Strukturerede produktdata og teknisk SEO sikrer synlighed på søgninger som 'metalplastvinduer' og specifikke profilsystemer.",
-    results: [
-      { value: "+58%", label: "Flere henvendelser via vejledningsværktøjet" },
-      { value: "+41%", label: "Organisk trafik" },
-      { value: "-28%", label: "Færre irrelevante forespørgsler" },
-      { value: "2.0s", label: "Loadtid" },
-    ],
-  },
-  {
-    id: 8,
-    slug: "vitrazh",
-    title: "VitraZH",
-    subtitle: "Vinduer, døre og altaner – bestilt uden besvær",
-    heroImage: "/images/cases/vitrazh-placeholder.jpg", // TODO: erstat med rigtige billeder
-    gallery: [
-      "/images/cases/vitrazh-placeholder.jpg",
-      "/images/cases/vitrazh-placeholder.jpg",
-      "/images/cases/vitrazh-placeholder.jpg",
-    ],
-    tags: ["Website design", "Webudvikling", "Kalkulator"],
-    client: "VitraZH",
-    location: "Kyiv, Ukraine",
-    services: ["Website design", "Webudvikling", "Pris­kalkulator", "SEO"],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    overview:
-      "VitraZH sælger og monterer vinduer, døre og altaner i hele Kyiv-området, men uden en ordentlig hjemmeside skulle hver eneste pris forhandles over telefonen, og potentielle kunder faldt fra, før de nåede at bede om et tilbud.",
-    overviewExtra:
-      "Vi byggede en overskuelig hjemmeside med en indbygget priskalkulator, så kunder selv kan få en fornemmelse af prisen, før de tager kontakt – og en klar firetrins-proces, der viser præcis hvad der sker fra første henvendelse til færdig montering. Det sænker tærsklen for at tage det første skridt markant.",
-    designDescription:
-      "Et moderne og overskueligt design opdelt i tydelige kategorier – vinduer, vitrage-vinduer, altanpartier, ruller og gitre – så kunden hurtigt lander på det, de faktisk leder efter, uden at skulle bladre gennem irrelevante produkter.",
-    developmentDescription:
-      "En performanceoptimeret Next.js-løsning med en interaktiv kalkulator og et katalog, der er let at udvide efterhånden som produktsortimentet vokser. Strukturen er bygget til at skalere sammen med virksomheden.",
-    results: [
-      { value: "+64%", label: "Flere tilbudsforespørgsler" },
-      { value: "+37%", label: "Brugere der gennemfører kalkulatoren" },
-      { value: "-25%", label: "Kortere svartid på henvendelser" },
-      { value: "2.2s", label: "Loadtid" },
-    ],
-  },
-  {
-    id: 9,
-    slug: "loenbaeks-koereskole",
-    title: "Lønbæks Køreskole",
-    subtitle: "Ikke det billigste kørekort – men det bedste",
-    heroImage: Lønbæks,
-    gallery: [Lønbæks, Lønbæks, Lønbæks],
-    tags: ["Website design", "Webudvikling", "Lokal SEO"],
-    client: "Lønbæks Køreskole",
-    location: "Vejle, Danmark",
-    services: ["Website design", "Frontend udvikling", "Lokal SEO"],
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-    overview:
-      "Lønbæks Køreskole i Vejle konkurrerer ikke på at være billigst – de konkurrerer på at gøre eleverne til rigtig gode og sikre bilister. Det budskab er svært at sælge, når hjemmesiden ligner alle andre køreskolers, og folk sammenligner udelukkende på pris.",
-    overviewExtra:
-      "Vi byggede en hjemmeside, der fortæller historien om, hvorfor grundig undervisning betaler sig i det lange løb – med en tydelig vej fra 'jeg overvejer at tage kørekort' til 'jeg har booket min første køretime'. Lokal SEO sikrer, at kommende elever i Vejle finder skolen, når de søger efter en køreskole.",
-    designDescription:
-      "Et trygt og imødekommende design, der signalerer erfaring og faglighed frem for rabatter. Holdstart, priser og kontaktinfo er placeret, hvor en nervøs førstegangselev leder efter dem.",
-    developmentDescription:
-      "En hurtig, mobilvenlig side bygget i Next.js, så unge elever – der næsten udelukkende browser fra telefonen – får en gnidningsfri oplevelse fra første besøg til booket køretime.",
-    results: [
-      { value: "+44%", label: "Flere bookede introtimer" },
-      { value: "+39%", label: "Flere besøgende fra lokale søgninger" },
-      { value: "-30%", label: "Færre opkald om basale spørgsmål" },
-      { value: "1.8s", label: "Loadtid" },
-    ],
-  },
+  
+  
 ];
