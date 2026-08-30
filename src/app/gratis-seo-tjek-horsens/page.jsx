@@ -1,10 +1,9 @@
-import FeedBackPeople from "../components/FeedBackPeople";
-import SEO from "../components/seo/SEO";
+ import SEO from "../components/seo/SEO";
 import SEOTextHorsens from "../components/seo/SEOTextHorsens";
 import LocalTrust from "../components/seo/LocalTrust";
 import Button from "../utils/Button";
 import Questions from "../components/Questions";
-import AnimatedInView from "../utils/AnimatedInView.jsx/index.js";
+import AnimatedInView from "../utils/AnimatedInView.jsx";
 
 export const metadata = {
   title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
@@ -45,8 +44,7 @@ const GratisSeoTjekHorsens = () => {
 
       <SEO />
     <LocalTrust></LocalTrust>
-      <FeedBackPeople />
-      <SEOTextHorsens></SEOTextHorsens>
+       <SEOTextHorsens></SEOTextHorsens>
       <Questions />
     </>
   );

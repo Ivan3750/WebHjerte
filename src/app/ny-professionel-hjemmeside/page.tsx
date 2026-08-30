@@ -1,7 +1,7 @@
 import AnimatedInView from "../utils/AnimatedInView.jsx";
 import PortefoljeForEfter from "../components/PortefoljeForEfter";
 import HvadGoerProfessionel from "../components/wordpress/HvadGoerProfessionel";
-import CtaProfessionel from "../components/CtaProfessionel";
+import FormToLead from "../components/FormToLead";
 import SocialProof from "../components/home/SocialProof";
 
 export const metadata = {
@@ -40,7 +40,7 @@ Få en ny, professionel hjemmeside        </AnimatedInView>
 <PortefoljeForEfter/>
 <SocialProof/>
 <HvadGoerProfessionel/>
-<CtaProfessionel/>
+<FormToLead/>
     
 
     

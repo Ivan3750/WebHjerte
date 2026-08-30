@@ -31,7 +31,7 @@ export default function WordpressPrisKvittering() {
             Se prisen, før du beslutter dig
           </AnimatedInView>
           <AnimatedInView as="p" className="text-[14px] text-[#7a7a7a] leading-[1.85] mb-8">
-            Ingen tilbudsformular, ingen "ring for pris". Det, der står på
+            Ingen tilbudsformular, ingen &quot;ring for pris&quot;. Det, der står på
             prissiden, er det, du betaler – lige til at regne på, før du
             skriver til os.
           </AnimatedInView>

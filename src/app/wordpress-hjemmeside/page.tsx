@@ -1,7 +1,7 @@
 import AnimatedInView from "../utils/AnimatedInView.jsx";
 import WordpressSelvredigering from "../components/wordpress/WordpressSelvredigering.jsx";
 import WordpressPrisTeaser from "../components/wordpress/WordpressPrisTeaser.jsx";
-import CtaProfessionel from "../components/CtaProfessionel";
+import FormToLead from "../components/FormToLead";
  
 
 export const metadata = {
@@ -43,7 +43,7 @@ const GratisSeoTjekHorsens = () => {
       </section>
       <WordpressSelvredigering />
       <WordpressPrisTeaser />
-      <CtaProfessionel />
+      <FormToLead />
     </>
   );
 };

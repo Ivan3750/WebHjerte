@@ -1,8 +1,6 @@
 import AnimatedInView from "../utils/AnimatedInView";
-import PortefoljeForEfter from "../components/PortefoljeForEfter";
-import HvadGoerProfessionel from "../components/wordpress/HvadGoerProfessionel";
-import CtaProfessionel from "../components/CtaProfessionel";
- import PackagesBlock from "../components/service/PackagesBlock";
+import FormToLead from "../components/FormToLead";
+import PackagesBlock from "../components/service/PackagesBlock";
 import Whatsincludedblock from "../components/service/WhatsIncludedBlock";
 import SocialProof from "../components/home/SocialProof";
 
@@ -32,7 +30,7 @@ export const metadata = {
     canonical: "https://www.webhjerte.dk/services",
   },
 };
-const GratisSeoTjekHorsens = () => {
+const HjemmesidePris = () => {
   return (
     <>
       <section className="mt-[75px]">
@@ -50,8 +48,9 @@ const GratisSeoTjekHorsens = () => {
       <PackagesBlock />
       <Whatsincludedblock />
       <SocialProof />
+      <FormToLead  titleLine="Vil du gerne ville om pris på din hjemmeside?"/>
     </>
   );
 };
 
-export default GratisSeoTjekHorsens;
+export default HjemmesidePris;

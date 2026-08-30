@@ -3,16 +3,19 @@ import { Suspense } from "react";
 import AnimatedInView from "../utils/AnimatedInView";
 import ContactForm from "../components/ContactForm";
 
-const facts = [
+const defaultFacts = [
   { label: "Svartid", value: "Inden for 24 timer" },
   { label: "Vurdering af siden", value: "Gratis & uforpligtende" },
   { label: "Arbejdsområde", value: "Hele Danmark" },
   { label: "Baseret i", value: "Horsens, Midtjylland" },
 ];
 
- 
-
-export default function CtaProfessionel() {
+export default function FormToLead({
+  eyebrow = "Kom i gang",
+  titleLine = "Klar til en side, der ser proffesional ud?",
+  description = "Har du allerede en hjemmeside, der trænger til et løft, eller starter du helt forfra? Skriv det i formularen - jeg svarer inden for 24 timer.",
+  facts = defaultFacts,
+}) {
   return (
     <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-20 pb-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
@@ -21,19 +24,20 @@ export default function CtaProfessionel() {
             as="p"
             className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3"
           >
-            Kom i gang
+            {eyebrow}
           </AnimatedInView>
-          <AnimatedInView as="h2" className="maintitle text-white !leading-tight mb-4">
-            Klar til en side, der<br />
-            ser <span className="text-[#00a8e8]">professionel</span> ud?
+          <AnimatedInView
+            as="h2"
+            className="maintitle text-white !leading-tight mb-4"
+          >
+            {titleLine}
+      
           </AnimatedInView>
           <AnimatedInView
             as="p"
-            className="text-[14px] text-[#5a5a5a] leading-[1.75] max-w-sm mb-10"
+            className="text-[14px] text-[#5a5a5a] leading-[1.75] max-w-md mb-10"
           >
-            Har du allerede en hjemmeside, der trænger til et løft, eller
-            starter du helt forfra? Skriv det i formularen - jeg svarer
-            inden for 24 timer.
+            {description}
           </AnimatedInView>
 
           <AnimatedInView
@@ -53,11 +57,9 @@ export default function CtaProfessionel() {
             ))}
           </AnimatedInView>
         </div>
-                <Suspense fallback={null}>
-
+        <Suspense fallback={null}>
           <ContactForm />
-                  </Suspense>
-
+        </Suspense>
       </div>
     </section>
   );

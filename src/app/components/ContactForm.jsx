@@ -10,7 +10,7 @@ const packages = [
   { value: "basis", label: "Basis - 4.500 DKK" },
   { value: "standard", label: "Standard - 7.500 DKK" },
   { value: "skraeddersyet", label: "Skræddersyet - 14.000 DKK" },
-  { value: "retainer", label: "Vedligeholdelse - 1.500 DKK/md" },
+  { value: "wordpress", label: "Wordpress- 3.500 DKK" },
 ];
 
 const fieldClass =
