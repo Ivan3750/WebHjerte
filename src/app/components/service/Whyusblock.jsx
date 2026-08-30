@@ -23,7 +23,7 @@ const reasons = [
     n: "04",
     color: "#8a8ff0",
     title: "Dit projekt er ikke bare et nummer",
-    text: "Hos et stort bureau er du én ud af mange kunder. Hos mig er hvert projekt personligt — mit navn og mit ry står på det, så jeg går op i, at det bliver gjort ordentligt.",
+    text: "Hos et stort bureau er du en ud af mange kunder. Hos mig er hvert projekt personligt — mit navn og mit ry står på det, så jeg går op i, at det bliver gjort ordentligt.",
   },
 ];
 

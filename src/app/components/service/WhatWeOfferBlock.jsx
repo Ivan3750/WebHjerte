@@ -52,7 +52,7 @@ export default function WhatWeOfferBlock() {
           Hvad tilbyder jeg?
         </p>
         <h2 className="title text-[#1a1a1a] !leading-tight !mb-14 max-w-[24ch]">
-          Alt din virksomhed behøver — samlet ét sted
+          Alt din virksomhed behøver — samlet et sted
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-4">

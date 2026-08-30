@@ -5,7 +5,7 @@ const steps = [
     n: "01",
     color: "#00a8e8",
     title: "Kontakt",
-    text: "Vi tager en uforpligtende snak — helt gratis. Du skal ikke beslutte dig for noget endnu, bare fortælle mig om din idé.",
+    text: "Vi tager en uforpligtende snak — helt gratis. Du skal ikke beslutte dig for noget endnu, bare fortælle mig om din ide.",
   },
   {
     n: "02",

@@ -1,7 +1,12 @@
 import AnimatedInView from "../utils/AnimatedInView.jsx";
-import WordpressSelvredigering from "../components/wordpress/WordpressSelvredigering.jsx";
-import WordpressPrisTeaser from "../components/wordpress/WordpressPrisTeaser.jsx";
+ 
+import ProblemLoesning from "../components/wordpress/ProblemLoesning.jsx";
 import FormToLead from "../components/FormToLead";
+import CasesCarousel from "../components/home/CasesCarousel.jsx";
+import HvadFaarDu from "../components/wordpress/HvadFaarDu.jsx";
+import WordpressFordele from "../components/wordpress/WordpressFordele";
+import Questions from "../components/Questions";
+import PackagesBlock from "../components/service/PackagesBlock.jsx";
  
 
 export const metadata = {
@@ -41,9 +46,12 @@ const GratisSeoTjekHorsens = () => {
          Få en WordPress-hjemmeside, du selv kan opdatere. Professionelt setup fra WebHjerte.
         </AnimatedInView>
       </section>
-      <WordpressSelvredigering />
-      <WordpressPrisTeaser />
+      <ProblemLoesning />
+      <WordpressFordele/>
+      <CasesCarousel />
+      <PackagesBlock/>
       <FormToLead />
+      <Questions/>
     </>
   );
 };

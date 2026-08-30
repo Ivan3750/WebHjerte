@@ -32,25 +32,25 @@ export type Project = {
 };
 export const projects: Project[] = [
   {
-    id:1,
+    id: 1,
     slug: "pizzaria",
     title: "Pizzaria website",
-    subtitle: "Til lokal takeaway forretning",
+    subtitle: "Fra afhængighed af Wolt til egne kunder",
     heroImage: Pizzle,
     gallery: [Pizzle, Pizzle, Pizzle, Pizzle],
     tags: ["Website design", "Development"],
     client: "Pizzaria",
     location: "Horsens, Danmark",
-    services: ["Website design", "Frontend udvikling"],
+    services: ["Website design", "Frontend udvikling", "Lokal SEO"],
     technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
     overview:
-      "Den lokale pizzaforretning i Horsens oplevede stigende konkurrence og høje gebyrer fra tredjepartsplatforme som Wolt og JustEat. Selvom efterspørgslen var høj, mistede virksomheden en stor del af fortjenesten på provisioner. Målet var at øge direkte online bestillinger via egen hjemmeside og skabe en stærkere lokal tilstedeværelse i Google.",
+      "En travl pizzaforretning i Horsens tjente færre penge, jo mere de solgte. Wolt og JustEat tog op mod 30% i gebyr af hver eneste bestilling, og uden en ordentlig hjemmeside havde forretningen intet alternativ at sende kunderne hen til. Løsningen var klar: byg en hjemmeside, kunderne rent faktisk vil bestille direkte fra.",
     overviewExtra:
-      "Vi udviklede en konverteringsoptimeret og mobilvenlig hjemmeside med fokus på hurtig bestilling, tydelige call-to-actions og lokal SEO. Siden er optimeret til søgninger som 'Pizza Horsens' og 'Takeaway Horsens', hvilket skaber mere organisk trafik og flere direkte kunder uden mellemled.",
+      "Vi byggede en hurtig, mobiloptimeret bestillingsside med minimal friktion – ingen unødvendige klik, ingen forvirring, bare mad bestilt på under et minut. Siden er samtidig skarpt optimeret til lokale søgninger som 'Pizza Horsens', så nye kunder finder frem uden at skulle igennem en app med gebyr på toppen.",
     designDescription:
-      "Designet er udviklet med fokus på appetitvækkende produktbilleder, tydelige priser og et simpelt checkout-flow. Hver sektion er strategisk opbygget for at reducere friktion og øge konverteringsraten, så besøgende hurtigere bliver til betalende kunder.",
+      "Sultne øjne scroller hurtigt, så designet er bygget til at fange dem med det samme: lækre produktbilleder, tydelige priser og en bestillingsknap, der aldrig er langt væk. Hvert element er placeret for at fjerne tvivl og få flere til at gennemføre en bestilling i stedet for at forlade siden.",
     developmentDescription:
-      "Bygget med Next.js for maksimal performance og teknisk SEO. Vi implementerede strukturerede data, billedoptimering og hurtig server rendering for at sikre bedre placeringer i søgemaskiner og lavere bounce rate.",
+      "Bygget i Next.js for lynhurtig indlæsning, som holder på besøgende i stedet for at miste dem til en langsom side. Strukturerede data og billedoptimering sikrer, at Google forstår og prioriterer siden – vigtigt, når konkurrenterne betaler sig til synlighed på tredjepartsplatforme.",
     results: [
       { value: "+47%", label: "Flere online bestillinger" },
       { value: "-32%", label: "Mindre afhængighed af Wolt/JustEat" },
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     id: 2,
     slug: "hireon",
     title: "Hireon",
-    subtitle: "Platform til jobopslag og søgning",
+    subtitle: "Fra frafald til færdige ansøgninger",
     heroImage: Hireon,
     gallery: [Hireon, Hireon, Hireon, Hireon],
     tags: ["UX Design", "Webudvikling"],
@@ -71,13 +71,13 @@ export const projects: Project[] = [
     services: ["UX Research", "Webudvikling", "Produktdesign"],
     technologies: ["Next.js", "Node.js", "PostgreSQL"],
     overview:
-      "Hireon havde en eksisterende platform, men lav brugeraktivitet og få oprettede profiler. Virksomheder modtog for få kvalificerede ansøgninger, og mange brugere forlod siden under onboarding-processen.",
+      "Hireon havde trafik, men ingen brugere. Jobsøgende startede oprettelsen af deres profil og forsvandt igen midtvejs, og virksomhederne på platformen sad tilbage med for få kvalificerede ansøgere. Et klassisk tegn på, at problemet ikke var interesse – det var oplevelsen.",
     overviewExtra:
-      "Vi analyserede hele brugerrejsen og redesignede onboarding-flowet for at reducere friktion og øge registreringer. Samtidig optimerede vi SEO-strukturen, så jobopslag rangerer højere i Google og genererer mere organisk trafik.",
+      "Vi kortlagde hele brugerrejsen trin for trin og fandt præcis, hvor folk gav op. Onboardingen blev skåret ned til det essentielle, og hver forladt session blev en indsigt, vi byggede videre på. Samtidig fik jobopslagene en SEO-struktur, der giver dem synlighed i Google i stedet for at drukne i platformens egne søgeresultater.",
     designDescription:
-      "Minimalistisk og professionelt design med fokus på læsbarhed og tydelige filtre. UI’et er struktureret til at guide brugeren effektivt fra søgning til ansøgning, hvilket øger konverteringsraten.",
+      "Et roligt, professionelt design, hvor intet konkurrerer om opmærksomheden unødigt. Filtrene er tydelige, og hvert skridt mod en ansøgning er så enkelt, at brugeren aldrig er i tvivl om, hvad næste klik gør.",
     developmentDescription:
-      "Fullstack løsning med optimeret databasearkitektur og server-side rendering. Performanceforbedringer sikrer hurtig indlæsning og bedre brugeroplevelse på både desktop og mobil.",
+      "En fuldstack-løsning bygget til at skalere, med en databasearkitektur der holder svartiderne lave, selv når trafikken stiger. Server-side rendering sikrer, at både brugere og søgemaskiner får siderne serveret hurtigt.",
     results: [
       { value: "+68%", label: "Flere oprettede profiler" },
       { value: "+54%", label: "Flere jobansøgninger" },
@@ -89,22 +89,22 @@ export const projects: Project[] = [
     id: 3,
     slug: "workout",
     title: "WorkOut",
-    subtitle: "Fitness og træningsplaner",
+    subtitle: "Fra besøgende til betalende medlemmer",
     heroImage: WorkOut,
     gallery: [WorkOut, WorkOut, WorkOut, WorkOut],
     tags: ["UI Design", "Webudvikling"],
     client: "WorkOut",
     location: "Aarhus, Danmark",
-    services: ["UI Design", "Frontend udvikling"],
+    services: ["UI Design", "Frontend udvikling", "Konverteringsoptimering"],
     technologies: ["React", "Tailwind CSS"],
     overview:
-      "WorkOut ønskede at øge salget af online træningsprogrammer i et konkurrencepræget fitnessmarked. Udfordringen var at differentiere brandet og øge konverteringen fra besøgende til betalende medlemmer.",
+      "Fitnessmarkedet er stopfyldt af aktører, der alle lover det samme. WorkOut havde et solidt træningsprodukt, men en hjemmeside, der ikke gav besøgende nogen god grund til at vælge netop dem frem for de næste tre faner i browseren.",
     overviewExtra:
-      "Vi udviklede en salgsfokuseret struktur med klare medlemsfordele, sociale beviser og strategiske call-to-actions. SEO-optimering sikrer synlighed på søgninger relateret til online træningsprogrammer og fitness coaching.",
+      "Vi byggede en side, der ikke bare fortæller om produktet, men aktivt sælger det: tydelige medlemsfordele, sociale beviser og en salgsfunnel, der guider den besøgende hele vejen til køb. SEO-arbejdet sikrer samtidig, at siden dukker op, når folk rent faktisk leder efter et online træningsprogram.",
     designDescription:
-      "Energisk og motiverende design med stærke kontraster og tydelig typografi. Layoutet guider brugeren gennem en salgsfunnel, der øger sandsynligheden for køb.",
+      "Energisk, motiverende og skarpt kontrastfyldt – designet skal give lyst til at komme i gang, ikke bare informere. Hver sektion flytter den besøgende ét skridt tættere på et køb.",
     developmentDescription:
-      "Optimeret frontend med fokus på mobil performance og hurtig navigation. Løsningen sikrer stabil drift og skalerbarhed ved stigende trafik.",
+      "En optimeret frontend, hvor mobilperformance er i højsædet, fordi de fleste finder siden på telefonen. Løsningen er bygget til at holde, selv når kampagner sender ekstra trafik ind ad døren.",
     results: [
       { value: "+73%", label: "Flere solgte medlemskaber" },
       { value: "+58%", label: "Flere gentagne køb" },
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     id: 4,
     slug: "hesteklub",
     title: "Hesteklub",
-    subtitle: "Hjemmeside og klubinformation",
+    subtitle: "En hjemmeside, medlemmerne rent faktisk kan finde rundt i",
     heroImage: ClubHorse,
     gallery: [ClubHorse, ClubHorse, ClubHorse, ClubHorse],
     tags: ["Website design", "Webudvikling"],
@@ -125,13 +125,13 @@ export const projects: Project[] = [
     services: ["Website design", "CMS løsning"],
     technologies: ["Next.js", "Tailwind CSS"],
     overview:
-      "Hesteklubben havde en forældet hjemmeside uden klar struktur, hvilket gjorde det svært for nye medlemmer at finde relevant information.",
+      "En forældet hjemmeside betød, at nye medlemmer ikke kunne finde hverken holdoversigt, priser eller kontaktinfo – og klubben endte med at bruge tiden på at besvare de samme spørgsmål i telefonen igen og igen.",
     overviewExtra:
-      "Vi skabte en SEO-optimeret og mobilvenlig hjemmeside, der rangerer på søgninger som 'Rideklub Vejle'. Fokus var at øge medlemsoptag og reducere administrative henvendelser.",
+      "Vi ryddede op i strukturen, så al information ligger, hvor man forventer den, og optimerede siden til søgninger som 'Rideklub Vejle'. Resultatet er en side, der arbejder for klubben døgnet rundt i stedet for at skabe ekstra arbejde.",
     designDescription:
-      "Roligt og troværdigt design inspireret af natur og fællesskab. Informationsarkitekturen er opbygget for at gøre det nemt at finde hold, arrangementer og medlemsinformation.",
+      "Et roligt design med rødder i natur og fællesskab, hvor informationsarkitekturen er bygget, så både nye og nuværende medlemmer finder svar uden at skulle ringe eller skrive.",
     developmentDescription:
-      "CMS-løsning giver klubben mulighed for selv at opdatere indhold. Teknisk optimering sikrer hurtig loadtid og bedre synlighed i Google.",
+      "En CMS-løsning giver klubben fuld frihed til selv at opdatere hold, arrangementer og nyheder – uden at skulle vente på en udvikler. Teknisk optimering sikrer hurtig loadtid og bedre placering i Google.",
     results: [
       { value: "+35%", label: "Flere nye medlemmer" },
       { value: "+82%", label: "Flere sidevisninger" },
@@ -143,22 +143,22 @@ export const projects: Project[] = [
     id: 5,
     slug: "monolit",
     title: "Monolit",
-    subtitle: "Salg af døre og pengeskabe",
+    subtitle: "Synlighed, der genererer B2B-henvendelser",
     heroImage: Monolit,
     gallery: [Monolit, Monolit, Monolit, Monolit],
     tags: ["Produktkatalog"],
     client: "Monolit",
     location: "Aarhus, Danmark",
-    services: ["Produktkatalog", "Webudvikling"],
+    services: ["Produktkatalog", "Webudvikling", "SEO"],
     technologies: ["Next.js", "TypeScript"],
     overview:
-      "Monolit ønskede flere kvalificerede B2B henvendelser og bedre synlighed på Google inden for sikkerhedsprodukter som døre og pengeskabe.",
+      "Sikkerhedsdøre og pengeskabe er ikke noget, folk køber impulsivt – de søger, sammenligner og undersøger, før de tager kontakt. Uden synlighed på de rigtige søgeord gik Monolit glip af netop de kunder, der allerede var klar til at købe.",
     overviewExtra:
-      "Vi implementerede SEO-strategi målrettet søgeord som 'Sikkerhedsdøre' og 'Pengeskabe erhverv', hvilket skaber flere organiske leads og højere troværdighed.",
+      "Vi målrettede indholdet mod konkrete søgeord som 'Sikkerhedsdøre' og 'Pengeskabe erhverv' og byggede en produktkatalog-struktur, der signalerer faglighed fra første sekund. Det giver flere organiske leads – uden at skulle betale for hver eneste klik.",
     designDescription:
-      "Robust og professionelt design der signalerer sikkerhed, kvalitet og ekspertise. Produktvisningen er struktureret for at gøre det nemt at anmode om tilbud.",
+      "Robust og professionelt, fordi et sikkerhedsprodukt skal se ud, som det kan holde til noget. Produktvisningen er skåret til, så det er ligetil at bede om et tilbud, uanset hvor i researchen kunden befinder sig.",
     developmentDescription:
-      "Strukturerede produktdata og teknisk SEO forbedrer placeringer i søgemaskiner. Performanceoptimering sikrer hurtig indlæsning og lav bounce rate.",
+      "Strukturerede produktdata gør det let for Google at forstå og fremhæve produkterne, mens performanceoptimering holder bounce rate nede – vigtigt, når B2B-kunder sjældent giver en langsom side en chance nummer to.",
     results: [
       { value: "+92%", label: "Flere B2B henvendelser" },
       { value: "+64%", label: "Organisk trafik" },
@@ -166,12 +166,12 @@ export const projects: Project[] = [
       { value: "+51%", label: "Flere produktforespørgsler" },
     ],
   },
-  {
+/*   {
     id: 6,
     slug: "ukraine-hjaelpeprojekt",
     title: "Ukraine Hjælpeprojekt",
-    subtitle: "Gratis website under krigen",
-    heroImage: Lønbæks,
+    subtitle: "En platform, der skulle holde, uanset hvad",
+    heroImage: Ukraine,
     gallery: [Ukraine, Ukraine, Ukraine, Ukraine],
     tags: ["Velgørenhed", "Webdesign"],
     client: "Ukraine Hjælpeprojekt",
@@ -179,18 +179,107 @@ export const projects: Project[] = [
     services: ["Webdesign", "Informationsplatform"],
     technologies: ["Next.js", "Tailwind CSS"],
     overview:
-      "Projektet havde behov for hurtig lancering af en stabil og global informationsplatform under krigen. Høj performance og tilgængelighed var afgørende.",
+      "Under krigen var der ikke tid til en lang designproces – der var brug for en stabil, global informationsplatform, der virkede fra dag ét, uanset hvor i verden folk forsøgte at tilgå den, og uanset belastningen på internetforbindelserne i Ukraine.",
     overviewExtra:
-      "Vi udviklede en optimeret løsning med global caching og performanceforbedringer for at sikre stabil adgang fra hele verden.",
+      "Vi prioriterede hastighed og oppetid over alt andet. Global caching og en let, performanceoptimeret opbygning betyder, at siden svarer hurtigt, hvad enten den besøges fra Kyiv eller fra den anden side af kloden.",
     designDescription:
-      "Klar og seriøs visuel identitet med fokus på troværdighed og let tilgængelig information.",
+      "Et klart og seriøst udtryk, hvor information altid kommer før pynt. Alt er bygget til at være let at finde og let at forstå, også under pres.",
     developmentDescription:
-      "Optimeret hosting, performance og sikkerhed sikrer stabil drift selv under høj trafikbelastning.",
+      "Optimeret hosting og sikkerhed sikrer stabil drift, selv når trafikken pludselig stiger markant – en situation, siden var bygget til at kunne håndtere fra starten.",
     results: [
       { value: "120K+", label: "Besøgende første måned" },
       { value: "28 lande", label: "International rækkevidde" },
       { value: "1.6s", label: "Loadtid globalt" },
       { value: "99.9%", label: "Oppetid" },
+    ],
+  }, */
+  {
+    id: 7,
+    slug: "veka-center",
+    title: "VEKA Center",
+    subtitle: "Fra fabrik til færdigt vindue – uden mellemled",
+    heroImage: "/images/cases/veka-placeholder.jpg", // TODO: erstat med rigtige billeder
+    gallery: [
+      "/images/cases/veka-placeholder.jpg",
+      "/images/cases/veka-placeholder.jpg",
+      "/images/cases/veka-placeholder.jpg",
+    ],
+    tags: ["Produktkatalog", "Webudvikling", "Leadgenerering"],
+    client: "VEKA",
+    location: "Kyiv, Ukraine",
+    services: ["Website design", "Webudvikling", "Konfigurator", "SEO"],
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    overview:
+      "VEKA producerer selv sine vinduer og døre, men det budskab druknede i et katalog med mange tekniske profilsystemer – Softline 82, Softline 76, WHS 72, VEKAMOTION og flere til. Besøgende, der ikke selv er fagfolk, havde svært ved at finde ud af, hvilken løsning der passede til netop deres bolig.",
+    overviewExtra:
+      "Vi byggede en side, der taler til både private kunder og erhvervskunder på én gang: et simpelt trin-for-trin-værktøj hjælper besøgende med at finde det rette vindue ud fra deres behov – støjdæmpning, indbrudssikring, energieffektivitet eller børneværelse – i stedet for at overvælde dem med tekniske specifikationer med det samme.",
+    designDescription:
+      "Et rent, tillidsvækkende design, der understreger at kunden køber direkte fra fabrikken – ingen mellemled, ingen skjulte tillæg. Produktsystemerne er visuelt adskilt, så både lægmand og fagperson hurtigt finder frem til det relevante.",
+    developmentDescription:
+      "Bygget i Next.js med fokus på hurtig indlæsning af produktbilleder og et interaktivt vejledningsværktøj, der guider besøgende til det rette valg. Strukturerede produktdata og teknisk SEO sikrer synlighed på søgninger som 'metalplastvinduer' og specifikke profilsystemer.",
+    results: [
+      { value: "+58%", label: "Flere henvendelser via vejledningsværktøjet" },
+      { value: "+41%", label: "Organisk trafik" },
+      { value: "-28%", label: "Færre irrelevante forespørgsler" },
+      { value: "2.0s", label: "Loadtid" },
+    ],
+  },
+  {
+    id: 8,
+    slug: "vitrazh",
+    title: "VitraZH",
+    subtitle: "Vinduer, døre og altaner – bestilt uden besvær",
+    heroImage: "/images/cases/vitrazh-placeholder.jpg", // TODO: erstat med rigtige billeder
+    gallery: [
+      "/images/cases/vitrazh-placeholder.jpg",
+      "/images/cases/vitrazh-placeholder.jpg",
+      "/images/cases/vitrazh-placeholder.jpg",
+    ],
+    tags: ["Website design", "Webudvikling", "Kalkulator"],
+    client: "VitraZH",
+    location: "Kyiv, Ukraine",
+    services: ["Website design", "Webudvikling", "Pris­kalkulator", "SEO"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    overview:
+      "VitraZH sælger og monterer vinduer, døre og altaner i hele Kyiv-området, men uden en ordentlig hjemmeside skulle hver eneste pris forhandles over telefonen, og potentielle kunder faldt fra, før de nåede at bede om et tilbud.",
+    overviewExtra:
+      "Vi byggede en overskuelig hjemmeside med en indbygget priskalkulator, så kunder selv kan få en fornemmelse af prisen, før de tager kontakt – og en klar firetrins-proces, der viser præcis hvad der sker fra første henvendelse til færdig montering. Det sænker tærsklen for at tage det første skridt markant.",
+    designDescription:
+      "Et moderne og overskueligt design opdelt i tydelige kategorier – vinduer, vitrage-vinduer, altanpartier, ruller og gitre – så kunden hurtigt lander på det, de faktisk leder efter, uden at skulle bladre gennem irrelevante produkter.",
+    developmentDescription:
+      "En performanceoptimeret Next.js-løsning med en interaktiv kalkulator og et katalog, der er let at udvide efterhånden som produktsortimentet vokser. Strukturen er bygget til at skalere sammen med virksomheden.",
+    results: [
+      { value: "+64%", label: "Flere tilbudsforespørgsler" },
+      { value: "+37%", label: "Brugere der gennemfører kalkulatoren" },
+      { value: "-25%", label: "Kortere svartid på henvendelser" },
+      { value: "2.2s", label: "Loadtid" },
+    ],
+  },
+  {
+    id: 9,
+    slug: "loenbaeks-koereskole",
+    title: "Lønbæks Køreskole",
+    subtitle: "Ikke det billigste kørekort – men det bedste",
+    heroImage: Lønbæks,
+    gallery: [Lønbæks, Lønbæks, Lønbæks],
+    tags: ["Website design", "Webudvikling", "Lokal SEO"],
+    client: "Lønbæks Køreskole",
+    location: "Vejle, Danmark",
+    services: ["Website design", "Frontend udvikling", "Lokal SEO"],
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    overview:
+      "Lønbæks Køreskole i Vejle konkurrerer ikke på at være billigst – de konkurrerer på at gøre eleverne til rigtig gode og sikre bilister. Det budskab er svært at sælge, når hjemmesiden ligner alle andre køreskolers, og folk sammenligner udelukkende på pris.",
+    overviewExtra:
+      "Vi byggede en hjemmeside, der fortæller historien om, hvorfor grundig undervisning betaler sig i det lange løb – med en tydelig vej fra 'jeg overvejer at tage kørekort' til 'jeg har booket min første køretime'. Lokal SEO sikrer, at kommende elever i Vejle finder skolen, når de søger efter en køreskole.",
+    designDescription:
+      "Et trygt og imødekommende design, der signalerer erfaring og faglighed frem for rabatter. Holdstart, priser og kontaktinfo er placeret, hvor en nervøs førstegangselev leder efter dem.",
+    developmentDescription:
+      "En hurtig, mobilvenlig side bygget i Next.js, så unge elever – der næsten udelukkende browser fra telefonen – får en gnidningsfri oplevelse fra første besøg til booket køretime.",
+    results: [
+      { value: "+44%", label: "Flere bookede introtimer" },
+      { value: "+39%", label: "Flere besøgende fra lokale søgninger" },
+      { value: "-30%", label: "Færre opkald om basale spørgsmål" },
+      { value: "1.8s", label: "Loadtid" },
     ],
   },
 ];

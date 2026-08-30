@@ -13,7 +13,7 @@ const chips = [
 ];
 
 const paragraphs = [
-  "Jeg har altid været den, der skulle skille tingene ad for at forstå, hvordan de virker - og web har fanget mig, fordi det er en blanding af logik og kreativitet. Jeg kan lide, at et projekt starter som en idé på et stykke papir og ender som noget, rigtige mennesker bruger hver dag.",
+  "Jeg har altid været den, der skulle skille tingene ad for at forstå, hvordan de virker - og web har fanget mig, fordi det er en blanding af logik og kreativitet. Jeg kan lide, at et projekt starter som en ide på et stykke papir og ender som noget, rigtige mennesker bruger hver dag.",
   "Min baggrund er i webudvikling, hvor jeg har arbejdet med alt fra design til den tekniske opbygning bag kulisserne. Det betyder, at jeg ikke bare kan lave en flot forside - jeg forstår også, hvad der skal til, for at siden er hurtig, sikker og fungerer i mange år fremover.",
   "Det, jeg går allermest op i, er at forstå det menneske eller den virksomhed, jeg bygger for. Derfor starter jeg altid med spørgsmål, ikke skabeloner: Hvem er dine kunder? Hvad skal siden få dem til at gøre? Hvad kendetegner netop din virksomhed? Svarene former hele projektet.",
   "Jeg er ikke typen, der lover mere, end jeg kan holde. Siger jeg, at noget er klar tirsdag, er det klar tirsdag. Den slags pålidelighed betyder mere for mig end at imponere med buzzwords - det er det, kunder faktisk husker og anbefaler videre.",
@@ -65,7 +65,7 @@ export default function IntroOmOs() {
               className="border-l-2 border-[#00a8e8] pl-4 mb-8"
             >
               <p className="text-[14px] text-[#5a5a5a] italic leading-[1.7]">
-                &quot;Jeg tager ikke ti projekter ind på én gang. Jeg tager de projekter,
+                &quot;Jeg tager ikke ti projekter ind på en gang. Jeg tager de projekter,
                 jeg reelt kan give min fulde opmærksomhed.&quot;
               </p>
             </AnimatedInView>

@@ -30,8 +30,8 @@ export default function HistorieBlock() {
           <p className="text-[14.5px] text-[#7a7a7a] leading-[1.9]">
             WebHjerte er bevidst bygget anderledes end et traditionelt
             bureau. Der er ingen lag af projektledere, account managers eller
-            sælgere mellem dig og arbejdet — kun én person, der tager ansvar
-            for hele processen, fra den første idé til siden er live og
+            sælgere mellem dig og arbejdet — kun en person, der tager ansvar
+            for hele processen, fra den første ide til siden er live og
             fungerer.
           </p>
 

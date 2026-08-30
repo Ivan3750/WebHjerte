@@ -29,7 +29,7 @@ const AboutBlock = () => {
             mig, direkte dialog og en hjemmeside der rent faktisk virker for
             din forretning. Jeg har hjulpet lokale virksomheder i Horsens og
             Midtjylland med at gå fra usynlige til synlige online - og jeg
-            tager mig personligt af hvert eneste projekt, fra første idé til
+            tager mig personligt af hvert eneste projekt, fra første ide til
             lancering.
           </AnimatedInView>
 

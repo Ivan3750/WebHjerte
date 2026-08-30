@@ -4,52 +4,36 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import {projects} from "../../data/projects"
 
-import Pizzle from "../../assets/cases/PizzleM.png";
-import Hireon from "../../assets/cases/HireonM.png";
-import Workout from "../../assets/cases/WorkOutM.png";
-import ClubHorse from "../../assets/cases/ClubHorseM.png";
-import Monolit from "../../assets/cases/Vzlom.png";
-import Ukraine from "../../assets/cases/UkraineW.png";
- 
-const projects = [
-  {
-    titleLine1: "Pizzaria website",
-    titleLine2: "til lokal takeaway forretning",
-    description: "Lækker hjemmeside til en moderne pizzaforretning",
-    image: Pizzle,
-  },
-  {
-    titleLine1: "Hireon",
-    titleLine2: "platform til jobopslag og søgning",
-    description: "Forbinder jobsøgere og virksomheder hurtigt og nemt",
-    image: Hireon,
-  },
-  {
-    titleLine1: "WorkOut",
-    titleLine2: "fitness og træningsplaner",
-    description: "Et rent og responsivt design til fitnessentusiaster",
-    image: Workout,
-  },
-  {
-    titleLine1: "Hesteklub",
-    titleLine2: "hjemmeside og klubinformation",
-    description: "Elegant hjemmeside for en rideklub",
-    image: ClubHorse,
-  },
-  {
-    titleLine1: "Monolit",
-    titleLine2: "salg af døre og pengeskabe",
-    description: "Robust og stilfuld hjemmeside til sikkerhedsprodukter",
-    image: Monolit,
-  },
-  {
-    titleLine1: "Ukraine Hjælpeprojekt",
-    titleLine2: "gratis website under krigen",
-    description: "Projekt skabt for at støtte Ukraine med information og fakta",
-    image: Ukraine,
-  },
-];
+
+/*  {
+    id:1,
+    slug: "pizzaria",
+    title: "Pizzaria website",
+    subtitle: "Til lokal takeaway forretning",
+    heroImage: Pizzle,
+    gallery: [Pizzle, Pizzle, Pizzle, Pizzle],
+    tags: ["Website design", "Development"],
+    client: "Pizzaria",
+    location: "Horsens, Danmark",
+    services: ["Website design", "Frontend udvikling"],
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    overview:
+      "Den lokale pizzaforretning i Horsens oplevede stigende konkurrence og høje gebyrer fra tredjepartsplatforme som Wolt og JustEat. Selvom efterspørgslen var høj, mistede virksomheden en stor del af fortjenesten på provisioner. Målet var at øge direkte online bestillinger via egen hjemmeside og skabe en stærkere lokal tilstedeværelse i Google.",
+    overviewExtra:
+      "Vi udviklede en konverteringsoptimeret og mobilvenlig hjemmeside med fokus på hurtig bestilling, tydelige call-to-actions og lokal SEO. Siden er optimeret til søgninger som 'Pizza Horsens' og 'Takeaway Horsens', hvilket skaber mere organisk trafik og flere direkte kunder uden mellemled.",
+    designDescription:
+      "Designet er udviklet med fokus på appetitvækkende produktbilleder, tydelige priser og et simpelt checkout-flow. Hver sektion er strategisk opbygget for at reducere friktion og øge konverteringsraten, så besøgende hurtigere bliver til betalende kunder.",
+    developmentDescription:
+      "Bygget med Next.js for maksimal performance og teknisk SEO. Vi implementerede strukturerede data, billedoptimering og hurtig server rendering for at sikre bedre placeringer i søgemaskiner og lavere bounce rate.",
+    results: [
+      { value: "+47%", label: "Flere online bestillinger" },
+      { value: "-32%", label: "Mindre afhængighed af Wolt/JustEat" },
+      { value: "2.1s", label: "Gennemsnitlig loadtid" },
+      { value: "+61%", label: "Flere mobilbrugere konverterer" },
+    ],
+  }, */
 
 export default function CasesCarousel() {
   const [current, setCurrent] = useState(0);
@@ -67,79 +51,97 @@ export default function CasesCarousel() {
   const next = () => setCurrent((p) => (p + 1) % projects.length);
 
   return (
-    <section className="relative py-24 px-6 sm:px-12 lg:px-20">
-      <h2 className="text-4xl sm:text-5xl font-semibold text-center mb-16 tracking-tight">
-        Udvalgte cases
-      </h2>
-
-      <div className="relative max-w-6xl mx-auto">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={current}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="grid md:grid-cols-2 gap-10 items-center"
+    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
+      <div className="max-w-6xl mx-auto">
+        <div className="max-w-2xl mb-14">
+          <p
+            className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4"
           >
-            {/* Image */}
-            <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
-              <Image
-                src={projects[current].image}
-                alt={projects[current].titleLine1}
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.04]"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
-            </div>
-
-            {/* Content */}
-            <div className="flex flex-col gap-6 max-w-xl">
-              <span className="inline-flex w-fit items-center rounded-full bg-[rgba(246,213,92,0.15)] px-4 py-1 text-sm font-semibold tracking-wide text-[rgb(246_213_92)]">
-                Premium projekt
-              </span>
-
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                {projects[current].titleLine1}
-                <br />
-                <span className="text-gray-500 font-normal">
-                  {projects[current].titleLine2}
-                </span>
-              </h3>
-
-              <p className="text-gray-600 text-base leading-relaxed">
-                {projects[current].description}
-              </p>
-            </div>
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Navigation */}
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-between">
-          <button
-            onClick={prev}
-            className="pointer-events-auto ml-2 rounded-full bg-[#0af] p-3 text-white shadow-xl transition hover:scale-110 hover:bg-[#0099dd]"
+            Portefølje
+          </p>
+          <h2
+            
+            className="maintitle text-[#1a1a1a] !leading-tight mb-4"
           >
-            <ChevronLeft size={20} />
-          </button>
-          <button
-            onClick={next}
-            className="pointer-events-auto mr-2 rounded-full bg-[#0af] p-3 text-white shadow-xl transition hover:scale-110 hover:bg-[#0099dd]"
-          >
-            <ChevronRight size={20} />
-          </button>
+            Udvalgte cases
+          </h2>
+          <p   className="text-[14px] text-[#7a7a7a] leading-[1.85]">
+            Fra lokale forretninger til større platforme – her er et udpluk af
+            hjemmesider, vi har bygget fra bunden.
+          </p>
         </div>
 
-        {/* Dots */}
+        <div className="relative">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="grid md:grid-cols-2 gap-10 items-center"
+            >
+              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[#2a2d2d] bg-[#1c1e1e]">
+                <Image
+                  src={projects[current].heroImage}
+                  alt={projects[current].title}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <span className="absolute top-4 left-4 text-[11px] uppercase tracking-[0.1em] text-[#e0e0e0] bg-[#111313]/80 border border-[#2a2d2d] rounded-full px-3 py-1">
+                  Case {String(current + 1).padStart(2, "0")}
+                </span>
+              </div>
+
+              <div className="flex flex-col gap-5 max-w-xl">
+                <span className="inline-flex w-fit items-center rounded-full border border-[#00a8e8]/30 px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-[#00a8e8]">
+                  Live projekt
+                </span>
+
+                <h3 className="text-[26px] sm:text-[30px] text-[#1a1a1a] leading-tight">
+                  {projects[current].title}
+                  <br />
+                  <span className="text-[#7a7a7a] text-[18px] sm:text-[20px]">
+                    {projects[current].subtitle}
+                  </span>
+                </h3>
+
+                <p className="text-[14px] text-[#5a5a5a] leading-[1.85]">
+                  {projects[current].overview}
+                </p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          <div className="pointer-events-none absolute inset-y-0 -inset-x-2 sm:-inset-x-6 flex items-center justify-between">
+            <button
+              onClick={prev}
+              aria-label="Forrige case"
+              className="pointer-events-auto w-10 h-10 rounded-full bg-white border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] shadow-sm transition hover:bg-[#00a8e8] hover:border-[#00a8e8] hover:text-white"
+            >
+              <ChevronLeft size={18} />
+            </button>
+            <button
+              onClick={next}
+              aria-label="Næste case"
+              className="pointer-events-auto w-10 h-10 rounded-full bg-white border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] shadow-sm transition hover:bg-[#00a8e8] hover:border-[#00a8e8] hover:text-white"
+            >
+              <ChevronRight size={18} />
+            </button>
+          </div>
+        </div>
+
         <div className="mt-10 flex justify-center gap-3">
           {projects.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`h-2.5 rounded-full transition-all duration-300 ${
+              aria-label={`Vis case ${i + 1}`}
+              className={`h-2 rounded-full transition-all duration-300 ${
                 current === i
-                  ? "w-8 bg-[#0af]"
-                  : "w-2.5 bg-gray-300 hover:bg-gray-400"
+                  ? "w-8 bg-[#00a8e8]"
+                  : "w-2 bg-[#d8d7d5] hover:bg-[#b8b7b5]"
               }`}
             />
           ))}

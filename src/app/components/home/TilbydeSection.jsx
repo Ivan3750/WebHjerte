@@ -74,7 +74,7 @@ const services = [
   {
     icon: <MonitorIcon />,
     name: "Hjemmeside",
-    desc: "Taber du kunder, fordi din hjemmeside ser gammeldags ud eller slet ikke findes? Jeg bygger en hjemmeside, der får dig til at se professionel ud fra sekund ét - og konverterer besøgende til kunder.",
+    desc: "Taber du kunder, fordi din hjemmeside ser gammeldags ud eller slet ikke findes? Jeg bygger en hjemmeside, der får dig til at se professionel ud fra sekund et - og konverterer besøgende til kunder.",
   },
   {
     icon: <ShopIcon />,
