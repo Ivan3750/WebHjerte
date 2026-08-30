@@ -28,29 +28,32 @@ export const metadata = {
   },
 };
 
-const GratisSeoTjekHorsens = () => {
+const NyProfessionelHjemmeside = () => {
   return (
     <>
       <section className="mt-[75px]">
         <AnimatedInView as="h1" className="maintitle text-center">
-Få en ny, professionel hjemmeside        </AnimatedInView>
-        <AnimatedInView as="h2" className="text-center text-lg max-w-2xl mx-auto mt-4">
-          Få en professionel gennemgang af din hjemmeside og se, hvordan du kan
-          få flere kunder fra Google – helt gratis og uden binding.
+          Få en ny, professionel hjemmeside{" "}
+        </AnimatedInView>
+        <AnimatedInView
+          as="h2"
+          className="subtitle text-center mt-5 text-balance"
+        >
+          En hurtig, moderne og mobilvenlig hjemmeside, der er klar til at
+          tage imod nye kunder – til en fast pris og uden binding.
         </AnimatedInView>
       </section>
-<ProblemLoesning/>
-<SocialProof/>
-<PackagesBlock/>
+      <ProblemLoesning />
+      <SocialProof />
+      <PackagesBlock />
       <CasesCarousel />
-
-<HvadGoerProfessionel/>
-<FormToLead/>
-    
-
-    
+      <HvadGoerProfessionel />
+      <FormToLead
+        titleLine="Klar til din nye hjemmeside?"
+        description="Fortæl os lidt om dit projekt, så vender vi tilbage med et konkret tilbud inden for 24 timer – helt uforpligtende."
+      />
     </>
   );
 };
 
-export default GratisSeoTjekHorsens;
+export default NyProfessionelHjemmeside;

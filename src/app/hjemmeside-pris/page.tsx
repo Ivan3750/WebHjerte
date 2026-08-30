@@ -31,6 +31,7 @@ export const metadata = {
     canonical: "https://www.webhjerte.dk/services",
   },
 };
+
 const HjemmesidePris = () => {
   return (
     <>
@@ -40,19 +41,21 @@ const HjemmesidePris = () => {
         </AnimatedInView>
         <AnimatedInView
           as="h2"
-          className="text-center text-lg max-w-2xl mx-auto mt-4"
+          className="subtitle text-center mt-5 text-balance"
         >
-          Få en professionel gennemgang af din hjemmeside og se, hvordan du kan
-          få flere kunder fra Google – helt gratis og uden binding.
+          Se gennemsigtige priser fra 4.500 DKK, og find den pakke, der
+          passer til din virksomhed – ingen skjulte gebyrer, ingen
+          overraskelser.
         </AnimatedInView>
       </section>
       <PackagesBlock />
-      
       <Whatsincludedblock />
-            <CasesCarousel />
-      
+      <CasesCarousel />
       <SocialProof />
-      <FormToLead  titleLine="Vil du gerne ville om pris på din hjemmeside?"/>
+      <FormToLead
+        titleLine="Få et konkret tilbud på din hjemmeside"
+        description="Fortæl os kort om dit projekt, og få en fast pris inden for 24 timer – helt uforpligtende."
+      />
     </>
   );
 };

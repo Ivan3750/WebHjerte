@@ -28,7 +28,6 @@ const NavLink = ({ href, label, pathname, onClick }) => {
       }`}
     >
       {label}
-       
     </Link>
   );
 };
@@ -41,9 +40,24 @@ const Header = () => {
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
   useEffect(() => {
-    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "auto";
+    if (typeof window === "undefined" || typeof document === "undefined") return;
+    if (!isMobileMenuOpen) return;
+
+    const scrollY = window.scrollY;
+    const { style } = document.body;
+    style.position = "fixed";
+    style.top = `-${scrollY}px`;
+    style.left = "0";
+    style.right = "0";
+    style.width = "100%";
+
     return () => {
-      document.body.style.overflow = "auto";
+      style.position = "";
+      style.top = "";
+      style.left = "";
+      style.right = "";
+      style.width = "";
+      window.scrollTo(0, scrollY);
     };
   }, [isMobileMenuOpen]);
 
@@ -51,8 +65,17 @@ const Header = () => {
     closeMobileMenu();
   }, [pathname]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") closeMobileMenu();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
+
   return (
-    <header className="flex items-center justify-between px-4 py-3 md:px-6 lg:px-10 sticky top-0 left-0 border-b-2 border-[#404242] bg-[#1c1e1e] z-50">
+    <header className="relative flex items-center justify-between px-4 py-3 md:px-6 lg:px-10 sticky top-0 left-0 border-b-2 border-[#404242] bg-[#1c1e1e] z-50">
       <Link href="/" aria-label="Gå til forsiden">
         <div className="flex items-center gap-3">
           <Image src={W} width={44} height={44} alt="WebHjerte logo" priority />
@@ -73,20 +96,28 @@ const Header = () => {
       </Link>
 
       <button
-        className="block md:hidden text-white text-2xl"
+        type="button"
+        className="block md:hidden text-white text-2xl touch-manipulation"
         onClick={toggleMobileMenu}
         aria-label={isMobileMenuOpen ? "Luk menu" : "Åbn menu"}
+        aria-expanded={isMobileMenuOpen}
+        aria-controls="mobile-menu"
       >
         {isMobileMenuOpen ? <IoClose /> : <IoMenu />}
       </button>
 
       <div
-        className={`absolute top-0 left-0 z-[500] w-full h-screen bg-[#101213] flex flex-col items-center justify-center gap-5 transition-transform duration-300 md:hidden ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        id="mobile-menu"
+        role="dialog"
+        aria-modal="true"
+        className={`fixed inset-0 h-[100dvh] w-screen z-[999] bg-[#101213] flex flex-col items-center justify-center gap-5 overscroll-contain transition-transform duration-300 md:hidden ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
         }`}
+        style={{ paddingTop: "env(safe-area-inset-top)", paddingBottom: "env(safe-area-inset-bottom)" }}
       >
         <button
-          className="absolute top-4 right-4 text-white text-2xl"
+          type="button"
+          className="absolute top-4 right-4 text-white text-2xl touch-manipulation"
           onClick={closeMobileMenu}
           aria-label="Luk menu"
         >
