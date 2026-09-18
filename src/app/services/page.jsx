@@ -12,20 +12,18 @@ import CtaSearchBlock from "../components/CTA";
  
 
 export const metadata = {
-  title: "Priser på hjemmesider i Horsens – Pakker fra 4.500 DKK | WebHjerte",
+  title: "Hjemmeside pris i Horsens – fra 4.500 DKK | WebHjerte",
   description:
-    "Se vores priser på hjemmesider i Horsens. 3 klare pakker – Basis fra 4.500 DKK, Standard 7.500 DKK, Skræddersyet fra 14.000 DKK. Ingen skjulte gebyrer.",
-  keywords:
-    "webdesign priser horsens, hjemmeside pris horsens, billig webdesign midtjylland, hjemmeside pakker horsens, webudvikler pris",
+    "Se mine priser på hjemmesider i Horsens. 3 klare pakker – Basis fra 4.500 DKK, Standard 7.500 DKK, Skræddersyet fra 14.000 DKK. Ingen skjulte gebyrer.",
   openGraph: {
-    title:
-      "Priser på Webdesign – Klare pakker uden skjulte gebyrer | WebHjerte",
+    title: "Priser på webdesign – klare pakker uden skjulte gebyrer | WebHjerte",
     description:
       "3 klare pakker til lokale virksomheder i Horsens og Midtjylland. Basis 4.500 DKK · Standard 7.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 14 dage.",
     url: "https://www.webhjerte.dk/services",
     siteName: "WebHjerte",
     locale: "da_DK",
     type: "website",
+    // images: [{ url: "https://www.webhjerte.dk/og-services.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
@@ -36,44 +34,63 @@ export const metadata = {
   alternates: {
     canonical: "https://www.webhjerte.dk/services",
   },
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Webdesign og hjemmesideudvikling",
-      provider: {
-        "@type": "LocalBusiness",
-        name: "WebHjerte",
-        url: "https://www.webhjerte.dk",
-      },
-      areaServed: ["Horsens", "Midtjylland", "Danmark"],
-      offers: [
-        {
-          "@type": "Offer",
+};
+ 
+ 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "WebHjerte",
+  url: "https://www.webhjerte.dk",
+   telephone: "+45 42 76 05 77",
+   email: "hej@webhjerte.dk",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Horsens",
+    addressCountry: "DK",
+  },
+  areaServed: [
+    { "@type": "City", name: "Horsens" },
+    { "@type": "AdministrativeArea", name: "Midtjylland" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Hjemmesidepakker",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        price: "4500",
+        priceCurrency: "DKK",
+        itemOffered: {
+          "@type": "Service",
           name: "Basis hjemmeside",
-          price: "4500",
-          priceCurrency: "DKK",
           description: "3–5 sider, mobilvenlig, kontaktformular, basic SEO",
         },
-        {
-          "@type": "Offer",
+      },
+      {
+        "@type": "Offer",
+        price: "7500",
+        priceCurrency: "DKK",
+        itemOffered: {
+          "@type": "Service",
           name: "Standard hjemmeside",
-          price: "7500",
-          priceCurrency: "DKK",
           description: "Op til 8 sider, CMS, SEO, Google Analytics, booking",
         },
-        {
-          "@type": "Offer",
+      },
+      {
+        "@type": "Offer",
+        price: "14000",
+        priceCurrency: "DKK",
+        itemOffered: {
+          "@type": "Service",
           name: "Skræddersyet løsning",
-          price: "14000",
-          priceCurrency: "DKK",
-          description:
-            "Fuld tilpasning, integrationer, e-commerce, AI-funktioner",
+          description: "Fuld tilpasning, integrationer, e-commerce, AI-funktioner",
         },
-      ],
-    }),
+      },
+    ],
   },
 };
+ 
 const packages = [
   {
     name: "Basis",
@@ -122,57 +139,18 @@ const packages = [
 const Services = () => {
   return (
     <>
-      {/*       <section>
   
-        <AnimatedInView as="h1" className="maintitle text-center mt-[75px]">
-        Vores services       </AnimatedInView>
-        <AnimatedInView as="h2" className="text-center text-lg subtitle">
-Vi tilbyder professionelt webdesign og hjemmesideudvikling til danske små virksomheder – inklusive responsive og mobilvenlige løsninger, SEO-optimering og brugervenligt design.        </AnimatedInView>
-      </section>
-      <section className="bg-[#F7F6F6]">
-        <h2 className="title !my-3">Priser</h2>
-        <div className="flex justify-between md:flex-row flex-col gap-5 ">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {packages.map((pkg, index) => (
-              <div
-                key={index}
-                className={`${pkg.isPopular ? 'bg-[#0af]/[50%]' : 'bg-[#E9E9E9]'} p-6 rounded-2xl flex flex-col gap-3 justify-between max-[750px]:mx-20 max-[600px]:mx-5 max-[400px]:mx-0`}
-              >
-                
-                <h3 className="title-price">{pkg.name}</h3>
-                <p className="text !min-h-[90px]">{pkg.description}</p>
-                <div className="flex flex-col gap-2 mt-4">
-                  {pkg.features.map((feature, i) => (
-                    <div
-                      key={i}
-                      className="text flex items-center gap-2 bg-white p-2 rounded-2xl"
-                    >
-                      <FaCircleCheck className="text-[20px]" /> {feature}
-                    </div>
-                  ))}
-                </div>
-                <div className="flex justify-between mt-6 items-center flex-col">
-                  <p className="price pb-4">{pkg.price}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <p className="text my-5">
-            !Vores virksomhed tilbyder ikke domæner og hosting, men vi er
-            eksperter i at hjælpe med opsætningen. Vi sikrer, at alt fungerer
-            perfekt, så du kan fokusere på din forretning uden bekymringer.
-          </p>
-        </div>
-      </section> */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       <HeroService />
       <WhatWeOfferBlock />
       <Whyusblock />
-      <PackagesBlock />
-      <Whatsincludedblock />
+ <div id="priser" className="scroll-mt-20">
+        <PackagesBlock />
+      </div>      <Whatsincludedblock />
       <ProcessBlock></ProcessBlock>
       <AfterLaunchBlock />
       <SEO></SEO>
