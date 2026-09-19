@@ -85,6 +85,12 @@ const Footer = () => {
               >
                 hej@webhjerte.dk
               </a>
+              <a
+                href="tel:+4542760577"
+                className="text-[13px] text-[#7a7a7a] hover:text-[#e0e0e0] transition-colors w-fit"
+              >
+                +45 42 76 05 77
+              </a>
 
               <span className="text-[13px] text-[#5a5a5a]">
                 Horsens, Midtjylland
@@ -129,13 +135,7 @@ const Footer = () => {
             ))}
           </p>
 
-          <div className="inline-flex items-center gap-2 bg-[#1a2e1a] border border-[#2a5a2a] rounded-full px-3 py-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#3a9e4a] flex-shrink-0" />
-
-            <span className="text-[11px] text-[#5abf6a] font-medium">
-              5% til miljøet
-            </span>
-          </div>
+         
         </div>
       </div>
     </footer>

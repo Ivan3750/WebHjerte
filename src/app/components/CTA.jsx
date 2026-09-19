@@ -26,12 +26,12 @@ export default function CtaSearchBlock() {
         </AnimatedInView>
 
         <AnimatedInView>
-          <button className="group bg-white text-[#0af] text-[13px] font-medium uppercase tracking-[0.05em] rounded-full pl-6 pr-2 py-2 inline-flex items-center gap-3 hover:bg-[#f7f6f6] transition-colors">
+          <a href="/kontakt" className="group bg-white text-[#0af] text-[13px] font-medium uppercase tracking-[0.05em] rounded-full pl-6 pr-2 py-2 inline-flex items-center gap-3 hover:bg-[#f7f6f6] transition-colors">
             Lad os komme i gang
             <span className="w-8 h-8 rounded-full bg-[#0af] text-white flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
               →
             </span>
-          </button>
+          </a>
          </AnimatedInView>
       </div>
     </section>
