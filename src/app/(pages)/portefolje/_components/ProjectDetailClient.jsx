@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import AnimatedInView from "../utils/AnimatedInView";
+import AnimatedInView from "../../../components/ui/AnimatedInView";
 
 const Check = () => (
   <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
