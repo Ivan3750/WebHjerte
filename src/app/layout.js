@@ -1,9 +1,8 @@
 import { Unbounded } from "next/font/google";
 import "./globals.css";
-import Header from "./utils/Header";
-import Footer from "./utils/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Script from "next/script";
-import Logo from "../../public/W.png";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -69,8 +68,6 @@ export default function RootLayout({ children }) {
         `,
           }}
         />
-
-
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -84,11 +81,9 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
@@ -121,15 +116,9 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-
         <Header />
-
-        <main id="main-content">
-          {children}
-        </main>
-
+        <main id="main-content">{children}</main>
         <Footer />
-
       </body>
     </html>
   );

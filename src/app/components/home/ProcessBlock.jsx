@@ -1,4 +1,4 @@
-import AnimatedInView from "../../utils/AnimatedInView";
+import AnimatedInView from "../ui/AnimatedInView";
 
 const steps = [
   {

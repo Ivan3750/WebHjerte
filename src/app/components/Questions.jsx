@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
  
-const faqs = [
+const  faqs_default = [
   {
     q: "Hvor lang tid tager det?",
     a: "De fleste projekter er klar inden for 10–18 dage. Du ser et første udkast allerede inden for 48 timer efter vores samtale.",
@@ -55,7 +55,7 @@ const PlusIcon = ({ open }) => (
   </span>
 );
 
-const Questions = () => {
+const Questions = ({faqs = faqs_default}) => {
   const [open, setOpen] = useState(null);
 
   const toggle = (i) => setOpen(open === i ? null : i);

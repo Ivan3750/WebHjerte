@@ -1,17 +1,14 @@
 import Link from "next/link";
-import Button from "./utils/Button";
-import AnimatedInView from "./utils/AnimatedInView";
+import Button from "./components/ui/Button";
+import AnimatedInView from "./components/ui/AnimatedInView";
 import TilbydeSection from "./components/home/TilbydeSection";
 import AboutBlock from "./components/home/AboutBlock";
 import ProcessBlock from "./components/home/ProcessBlock";
-import CtaSearchBlock from "./components/CTA";
+import CtaSearchBlock from "./components/ui/CTA";
  import Questions from "./components/Questions";
 import SocialProof from "./components/home/SocialProof";
 import CasesCarousel from "./components/home/CasesCarousel";
   
-
-
- 
 
 export const metadata  = {
   title: "Webbureau Horsens | Webdesign til lokale virksomheder | WebHjerte",
@@ -193,7 +190,7 @@ export default function Home() {
 
       <TilbydeSection />
       <SocialProof></SocialProof>
-       <CasesCarousel />
+      <CasesCarousel />
       <AboutBlock />
       <ProcessBlock />
       <CtaSearchBlock></CtaSearchBlock>

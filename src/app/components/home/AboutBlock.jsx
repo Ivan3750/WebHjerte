@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import AnimatedInView from "../../utils/AnimatedInView";
+import AnimatedInView from "../ui/AnimatedInView";
 import Ivan from "../../assets/Ivan.jpg"
 const chips = ["Horsens-baseret", "Direkte kontakt", "Levering inden 14 dage"];
 
@@ -49,7 +49,7 @@ const AboutBlock = () => {
               href="/om-mig"
               className="text-[13px] text-[#1c1e1e] border-b border-[#1c1e1e] pb-px hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors inline-block"
             >
-              Vil du vide mere om mig og min historie? →
+              Vil du vide mere om mig og min historie? 
             </Link>
           </AnimatedInView>
         </div>
