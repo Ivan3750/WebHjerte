@@ -12,7 +12,7 @@ const facts = [
 
 export default function KontaktClient() {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-20 pb-10">
+    <section className="bg-white px-5 sm:px-10 lg:px-20 pt-20 pb-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div>
           <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
@@ -30,15 +30,15 @@ export default function KontaktClient() {
 
           <AnimatedInView
             as="div"
-            className="flex flex-col gap-px border border-[#2a2d2d] rounded-2xl overflow-hidden"
+            className="flex flex-col gap-px border border-[#e8e8e8] rounded-2xl overflow-hidden"
           >
             {facts.map(({ label, value }) => (
               <div
                 key={label}
-                className="flex items-center justify-between bg-[#1c1e1e] px-5 py-4"
+                className="flex items-center justify-between bg-[#f7f6f6] px-5 py-4"
               >
                 <span className="text-[12px] text-[#5a5a5a]">{label}</span>
-                <span className="text-[12px] font-medium text-[#e0e0e0]">{value}</span>
+                <span className="text-[12px] font-medium text-[#5a5a5a]">{value}</span>
               </div>
             ))}
           </AnimatedInView>
@@ -46,7 +46,7 @@ export default function KontaktClient() {
 
         <AnimatedInView
           as="div"
-          className="bg-[#1c1e1e] border border-[#2a2d2d] rounded-2xl p-7"
+          className="bg-[#f7f6f6] border border-[#e8e8e8] rounded-2xl p-7"
         >
           <ContactForm />
         </AnimatedInView>

@@ -1,7 +1,7 @@
 import AnimatedInView from "../../components/ui/AnimatedInView";
 import FormToLead from "../../components/ui/FormToLead";
-import PackagesBlock from "../../(pages)/services/_components/PackagesBlock";
-import Whatsincludedblock from "../../(pages)/services/_components/WhatsIncludedBlock";
+import PackagesBlock from "../services/_components/PackagesBlock";
+import Whatsincludedblock from "../services/_components/WhatsIncludedBlock";
 import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
@@ -31,10 +31,68 @@ export const metadata = {
     canonical: "https://www.webhjerte.dk/services",
   },
 };
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.webhjerte.dk/hjemmeside-pris/#service",
+  name: "Hjemmeside – pris og pakker",
+  serviceType: "Webdesign og webudvikling",
+  description:
+    "Gennemsigtige priser på hjemmesider fra 4.500 DKK. Få et konkret tilbud inden for 24 timer – ingen skjulte gebyrer.",
+  provider: {
+    "@type": "ProfessionalService",
+    "@id": "https://www.webhjerte.dk/#organization",
+    name: "WebHjerte",
+    url: "https://www.webhjerte.dk/",
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Horsens",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Midtjylland",
+    },
+    {
+      "@type": "Country",
+      name: "Danmark",
+    },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Hjemmeside pakker",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        name: "Basis hjemmeside",
+        priceCurrency: "DKK",
+        price: "4500",
+        availability: "https://schema.org/InStock",
+        url: "https://www.webhjerte.dk/hjemmeside-pris",
+      },
+
+    ],
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "DKK",
+    lowPrice: "4500",
+    offerCount: "1", 
+    url: "https://www.webhjerte.dk/hjemmeside-pris",
+  },
+};
+
 
 const HjemmesidePris = () => {
   return (
     <>
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
       <section className="mt-[75px]">
         <AnimatedInView as="h1" className="maintitle text-center">
           Hvad koster en hjemmeside?

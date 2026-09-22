@@ -14,7 +14,7 @@ const packages = [
 ];
 
 const fieldClass =
-  "w-full bg-[#111313] border border-[#2a2d2d] focus:border-[#00a8e8] rounded-xl px-4 py-3 text-[13px] text-[#e0e0e0] placeholder-[#444] outline-none transition-colors";
+  "w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#444] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors";
 
 const ContactForm = () => {
   const searchParams = useSearchParams();
@@ -70,7 +70,7 @@ const handleSubmit = async (e) => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-      <p className="text-[13px] font-medium text-[#e0e0e0] mb-1">Send en besked</p>
+      <p className="text-[13px] font-medium text-[#5a5a5a] mb-1">Send en besked</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <input
@@ -126,8 +126,8 @@ const handleSubmit = async (e) => {
       {status === "error" && (
         <p className="text-[12px] text-red-400 text-center">
           Noget gik galt. Prøv igen eller skriv til{" "}
-          <a href="mailto:ivan@webhjerte.dk" className="underline">
-            ivan@webhjerte.dk
+          <a href="mailto:hej@webhjerte.dk" className="underline">
+            hej@webhjerte.dk
           </a>
         </p>
       )}

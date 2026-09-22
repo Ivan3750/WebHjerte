@@ -26,9 +26,63 @@ export const metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.webhjerte.dk/gratis-seo-tjek-horsens/#service",
+  name: "Gratis SEO- og web-tjek i Horsens",
+  serviceType: "SEO-analyse og webtjek",
+  description:
+    "Gratis SEO- og web-tjek for virksomheder i Horsens. Vi analyserer din hjemmeside for synlighed, hastighed og konvertering – uden binding.",
+  provider: {
+    "@type": "ProfessionalService",
+    "@id": "https://www.webhjerte.dk/#organization",
+    name: "WebHjerte",
+    url: "https://www.webhjerte.dk/",
+    founder: {
+      "@type": "Person",
+      name: "Ivan Kohan",
+    },
+    sameAs: ["https://www.linkedin.com/company/webhjerte"],
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Horsens",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Midtjylland",
+    },
+    {
+      "@type": "Country",
+      name: "Danmark",
+    },
+  ],
+  audience: {
+    "@type": "BusinessAudience",
+    audienceType: "Virksomheder i Horsens og omegn",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "DKK",
+    availability: "https://schema.org/InStock",
+    url: "https://www.webhjerte.dk/gratis-seo-tjek-horsens",
+    description: "Gratis og uforpligtende SEO- og webtjek",
+  },
+  url: "https://www.webhjerte.dk/gratis-seo-tjek-horsens",
+};
+
 const GratisSeoTjekHorsens = () => {
   return (
     <>
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
       <section className="mt-[75px]">
         <AnimatedInView as="h1" className="maintitle text-center">
           Gratis SEO- og web-tjek i Horsens

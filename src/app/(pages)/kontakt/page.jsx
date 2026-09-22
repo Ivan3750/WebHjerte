@@ -41,7 +41,7 @@ const jsonLd = {
   },
   about: {
     "@type": "Organization",
-    "@id": "https://webhjerte.dk/#organization",
+    "@id": "https://webhjerte.dk/",
     name: "WebHjerte",
     url: "https://webhjerte.dk/",
   },

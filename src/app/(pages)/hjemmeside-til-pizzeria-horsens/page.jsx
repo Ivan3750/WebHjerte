@@ -1,13 +1,10 @@
 import AnimatedInView from "../../components/ui/AnimatedInView";
- 
+
 import Calc from "./_components/Calc";
 import SolutionBlock from "./_components/SolutionBlock";
 import HowItWorksBlock from "./_components/HowItWorksBlock";
 import PricingBlock from "./_components/PricingBlock";
- import CtaSearchBlock from "../../components/ui/CTA";
-
-
- 
+import CtaSearchBlock from "../../components/ui/CTA";
 
 export const metadata = {
   title: "Hjemmeside til Pizzeria i Horsens – Flere Direkte Bestillinger",
@@ -16,8 +13,7 @@ export const metadata = {
     "Få en professionel hjemmeside til dit pizzeria i Horsens med online bestilling, mobilvenligt design og fokus på flere direkte kunder. Se mulighederne.",
 
   alternates: {
-    canonical:
-      "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens",
+    canonical: "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens",
   },
 
   openGraph: {
@@ -55,8 +51,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id":
-        "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens#webpage",
+      "@id": "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens#webpage",
 
       url: "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens",
 
@@ -83,8 +78,7 @@ const jsonLd = {
     {
       "@type": "Service",
 
-      "@id":
-        "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens#service",
+      "@id": "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens#service",
 
       name: "Hjemmeside til pizzeria",
 
@@ -144,62 +138,61 @@ const jsonLd = {
 
           name: "Hjemmeside til pizzeria",
 
-          item:
-            "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens",
+          item: "https://www.webhjerte.dk/hjemmeside-til-pizzeria-horsens",
         },
       ],
     },
   ],
 };
- 
+
 const TilPizzeriaHorsens = () => {
   return (
     <>
-     <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd),
         }}
       />
-     <section className="mt-[75px] flex flex-col items-center">
-  <AnimatedInView as="h1" className="maintitle text-center text-balance">
-    Din egen bestillingsside –{" "}
-    <span className="text-white">uden 30% i gebyr til Wolt</span>
-  </AnimatedInView>
+      <section className="mt-[75px] flex flex-col items-center">
+        <AnimatedInView as="h1" className="maintitle text-center text-balance">
+          Din egen bestillingsside –{" "}
+          <span className="text-white">uden 30% i gebyr til Wolt</span>
+        </AnimatedInView>
 
-  <AnimatedInView
-    as="h2"
-    className="subtitle text-center mt-5 text-balance max-w-[720px]"
-  >
-    En hurtig, mobilvenlig hjemmeside til din pizzeria i Horsens – med online
-    bestilling og betaling direkte til dig. Ingen kommission pr. ordre.
-  </AnimatedInView>
+        <AnimatedInView
+          as="h2"
+          className="subtitle text-center mt-5 text-balance max-w-[720px]"
+        >
+          En hurtig, mobilvenlig hjemmeside til din pizzeria i Horsens – med
+          online bestilling og betaling direkte til dig. Ingen kommission pr.
+          ordre.
+        </AnimatedInView>
 
-  <AnimatedInView className="flex flex-col items-center mt-8 gap-3">
-    <button className="button">
-      Få et gratis tilbud
-      <svg
-        className="icon"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path d="M5 12h14M13 6l6 6-6 6" />
-      </svg>
-    </button>
-    <p className="text opacity-80">
-      Svar inden 24 timer · Ingen binding · Fast pris
-    </p>
-  </AnimatedInView>
-</section>
-       
+        <AnimatedInView className="flex flex-col items-center mt-8 gap-3">
+          <button className="button">
+            Få et gratis tilbud
+            <svg
+              className="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <p className="text opacity-80">
+            Svar inden 24 timer · Ingen binding · Fast pris
+          </p>
+        </AnimatedInView>
+      </section>
+
       <Calc />
-      <SolutionBlock/>
-      <HowItWorksBlock/>
-      <PricingBlock/>
-            <CtaSearchBlock></CtaSearchBlock>
-
+      <SolutionBlock />
+      <HowItWorksBlock />
+      <PricingBlock />
+      <CtaSearchBlock></CtaSearchBlock>
     </>
   );
 };

@@ -49,7 +49,7 @@ const paragraphs = [
 
 export default function WhyUsBlock() {
   return (
-    <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Hvorfor WebHjerte?
@@ -64,7 +64,7 @@ export default function WhyUsBlock() {
             <AnimatedInView
               key={r.title}
               as="div"
-              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#1c1e1e] border border-[#2a2d2d] transition-colors hover:border-[#3a3d3d]"
+              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#f7f6f6] border border-[#e8e8e8] transition-colors  "
             >
               <div className="flex items-center gap-3">
                 <span
@@ -76,23 +76,23 @@ export default function WhyUsBlock() {
                 >
                   {r.n}
                 </span>
-                <h3 className="text-[14.5px] font-medium text-[#e0e0e0]">{r.title}</h3>
+                <h3 className="text-[14.5px] font-medium text-[#5a5a5a]">{r.title}</h3>
               </div>
               {/* lysere tekst = bedre kontrast på mørk baggrund */}
-              <p className="text-[13px] text-[#a0a0a0] leading-[1.75]">{r.text}</p>
+              <p className="text-[13px] text-[#5a5a5a] leading-[1.75]">{r.text}</p>
             </AnimatedInView>
           ))}
         </div>
 
         {/* SEO-rich supporting copy */}
-        <div className="rounded-2xl border border-[#2a2d2d] bg-[#1c1e1e] p-8 sm:p-10">
+        <div className="rounded-2xl border bg-[#f7f6f6] border border-[#e8e8e8] p-8 sm:p-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-9">
             {paragraphs.map((p) => (
               <AnimatedInView key={p.lead} as="div" className="flex flex-col gap-2">
-                <h3 className="text-[13.5px] text-[#e0e0e0] font-medium leading-[1.6]">
+                <h3 className="text-[13.5px] text-[#5a5a5a] font-medium leading-[1.6]">
                   {p.lead}
                 </h3>
-                <p className="text-[13px] text-[#a0a0a0] leading-[1.85]">
+                <p className="text-[13px] text-[#5a5a5a] leading-[1.85]">
                   {p.text}
                 </p>
               </AnimatedInView>
