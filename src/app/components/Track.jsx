@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
-import Button from "../utils/Button";
-import AnimatedInView from "../utils/AnimatedInView";
+import Button from "../../components/ui/Button";
+import AnimatedInView from "../../components/ui/AnimatedInView";
 
 
 
@@ -75,7 +75,11 @@ const Track = () => {
       </AnimatedInView>
 
       <div className="p-3 md:p-5 flex flex-col md:flex-row gap-4">
+        <label htmlFor="project-number" className="sr-only">
+          Indtast projektnummer
+        </label>
         <input
+          id="project-number"
           type="number"
           className="input w-full md:w-auto"
           placeholder="Indtast projektnummer"
@@ -96,7 +100,7 @@ const Track = () => {
             <div className="flex flex-col md:flex-row justify-between mb-5 gap-6 md:gap-0">
               <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-0">
                 {projectData.steps.map((step, index) => (
-                  <div key={index} className="flex items-center">
+                  <div key={step} className="flex items-center">
                     <div className="w-[80px] md:w-[100px] flex flex-col items-center gap-3 md:gap-5">
                       <div className="flex items-center justify-center w-8 md:w-10 h-8 md:h-10 bg-[#E1DECB] rounded-full">
                         <FaCheck className="text-white text-xl md:text-2xl" />
@@ -138,9 +142,9 @@ const Track = () => {
                     Teknologi
                   </p>
                   <div className="flex gap-2 mt-3 md:mt-4">
-                    {projectData.technology.split(",").map((tech, index) => (
+                    {projectData.technology.split(",").map((tech) => (
                       <div
-                        key={index}
+                        key={tech}
                         className="w-7 md:w-8 h-7 md:h-8 bg-gray-600 rounded-full"
                       />
                     ))}

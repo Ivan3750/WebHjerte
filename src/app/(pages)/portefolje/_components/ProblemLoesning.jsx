@@ -1,5 +1,5 @@
 "use client";
-import AnimatedInView from "../utils/AnimatedInView";
+import AnimatedInView from "../../../components/ui/AnimatedInView";
 
 const par = [
  {

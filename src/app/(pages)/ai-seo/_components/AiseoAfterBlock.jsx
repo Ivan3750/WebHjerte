@@ -4,31 +4,32 @@ import AnimatedInView from "../../../components/ui/AnimatedInView";
 
 const points = [
   {
-    title: "Support",
-    text: "Du er ikke alene, når siden går live. Du har direkte adgang til mig, hvis noget skal rettes eller ændres.",
+    title: "Løbende optimering",
+    text: "SEO er ikke en engangsopgave. Jeg følger løbende med i dine resultater og justerer strategien, når søgemønstre ændrer sig eller konkurrenterne bevæger sig.",
   },
   {
-    title: "Ejerskab",
-    text: "Hjemmesiden er din. Ingen bindende abonnementer og ingen lock-in til en platform, du ikke kan forlade.",
+    title: "Månedlige rapporter",
+    text: "Du får tydelige rapporter med konkrete tal — ikke grafer du ikke kan forstå. Du ved altid, hvor du står, og om det investerede giver afkast.",
   },
   {
-    title: "Fremtidige ændringer",
-    text: "Din virksomhed udvikler sig - det skal din hjemmeside også kunne. Nye sider, tekster eller funktioner tilføjes løbende, når du har brug for det.",
+    title: "Direkte kontakt",
+    text: "Ingen supportkø, ingen mellemled. Har du et spørgsmål om dine resultater eller vil du justere strategien, taler du direkte med mig.",
   },
 ];
 
-export default function AfterLaunchBlock() {
+export default function AiseoAfterBlock() {
   return (
     <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Efter lancering
         </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-white !leading-tight !mb-4 max-w-[22ch]">
-          Vores samarbejde stopper ikke, når siden går live
+        <AnimatedInView as="h2" className="title text-[#1a1a1a] !leading-tight !mb-4 max-w-[22ch]">
+          Vi stopper ikke, når siden er optimeret
         </AnimatedInView>
         <AnimatedInView as="p" className="text-[13px] text-[#7a7a7a] leading-[1.85] max-w-[60ch] mb-14">
-          Når siden er live, kan du stadig få hjælp til ændringer, opdateringer og nye funktioner, når din virksomhed vokser.
+          SEO er en løbende proces. Jeg følger med, rapporterer og justerer — så
+          du ved, at din investering fortsat giver resultater.
         </AnimatedInView>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">

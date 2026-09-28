@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Smile, MousePointer2, Rocket } from "lucide-react";
-import AnimatedInView from "../../utils/AnimatedInView";
+import AnimatedInView from "../../../components/ui/AnimatedInView";
 
 // Skift til jeres rigtige billeder:
 // import FotoSkaerm from "../assets/wp/skaerm.jpg";

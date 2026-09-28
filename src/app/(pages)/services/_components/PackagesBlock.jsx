@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 

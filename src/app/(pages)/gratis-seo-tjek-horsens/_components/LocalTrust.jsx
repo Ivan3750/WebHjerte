@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 import { FaCircleCheck } from "react-icons/fa6";
 
