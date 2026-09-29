@@ -77,8 +77,7 @@ const Portefolje = () => {
 
       <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16">
         <div className="max-w-6xl mx-auto flex flex-col gap-20">
-          {projects.map((project) => (
-            <AnimatedInView
+{projects.map((project, index) => (            <AnimatedInView
               key={project.slug}
               as="div"
               className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center ${

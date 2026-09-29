@@ -1,7 +1,6 @@
 import AnimatedInView from "../../components/ui/AnimatedInView";
 import PackagesBlock from "../services/_components/PackagesBlock";
-import HvadGoerProfessionel from "../wordpress-hjemmeside/_components/HvadGoerProfessionel";
-import FormToLead from "../../components/ui/FormToLead";
+ import FormToLead from "../../components/ui/FormToLead";
 import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
@@ -48,8 +47,7 @@ const NyProfessionelHjemmeside = () => {
       <SocialProof />
       <PackagesBlock />
       <CasesCarousel />
-      <HvadGoerProfessionel />
-      <FormToLead
+       <FormToLead
         titleLine="Klar til din nye hjemmeside?"
         description="Fortæl os lidt om dit projekt, så vender vi tilbage med et konkret tilbud inden for 24 timer – helt uforpligtende."
       />
