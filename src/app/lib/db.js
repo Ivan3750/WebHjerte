@@ -1,13 +1,4 @@
-import dotenv from 'dotenv';
-dotenv.config({ path: './.env.local' });
 import mysql from 'mysql2/promise';
-
-console.log('🔍 DB config:', {
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  user: process.env.DB_USER,
-  db: process.env.DB_NAME,
-});
 
 const db = mysql.createPool({
   host: process.env.DB_HOST,
@@ -16,7 +7,7 @@ const db = mysql.createPool({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   ssl: {
-    rejectUnauthorized: false, 
+    rejectUnauthorized: false,
   },
   waitForConnections: true,
   connectionLimit: 10,
@@ -24,7 +15,3 @@ const db = mysql.createPool({
 });
 
 export default db;
-
-
-
-
