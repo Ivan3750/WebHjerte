@@ -165,6 +165,16 @@ export default function ProjectDetailClient({ project }) {
             <p className="text-[14px] font-medium text-[#1a1a1a]">
               {project.client} — {project.location}
             </p>
+            {project.site && (
+              <a
+                href={project.site}
+                target="_blank"
+                rel="noopener"
+                className="inline-block mt-2 text-[13px] text-[#00a8e8] hover:underline"
+              >
+                {project.site.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")} ↗
+              </a>
+            )}
           </div>
 
           <div className="p-6 sm:p-7">
@@ -219,6 +229,28 @@ export default function ProjectDetailClient({ project }) {
             {project.overviewExtra}
           </AnimatedInView>
         </div>
+
+        {project.site && (
+          <AnimatedInView as="div" className="mt-8">
+            <a
+              href={project.site}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#00a8e8] text-white px-6 py-3 text-[13px] font-medium hover:opacity-85 transition-opacity"
+            >
+              Se hjemmesiden
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M3 9l6-6M4 3h5v5"
+                  stroke="currentColor"
+                  strokeWidth="1.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </AnimatedInView>
+        )}
       </section>
 
       <section className="px-5 sm:px-10 lg:px-20 max-w-6xl mx-auto pb-16">

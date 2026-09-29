@@ -4,6 +4,7 @@ import Ukraine from "../assets/cases/UkraineW.png";
 import Hireon from "../assets/cases/HireonM.png";
 import Monolit from "../assets/cases/Vzlom.png";
 import WorkOut from "../assets/cases/WorkOutM.png";
+import RenServ from "../assets/cases/renserv.jpg";
 import Lønbæks from "../assets/cases/lønbæks.jpg";
 import VEKA from "../assets/cases/VEKA.png";
 import { StaticImageData } from "next/image";
@@ -30,6 +31,7 @@ export type Project = {
   designDescription: string;
   developmentDescription: string;
   results: Stat[];
+  site?: string;
 };
 export const projects: Project[] = [
   {
@@ -256,6 +258,43 @@ export const projects: Project[] = [
       { value: "+51%", label: "Flere produktforespørgsler" },
     ],
   },
+  {
+  id: 10,
+  slug: "renserv",
+  title: "RenServ",
+  subtitle: "En moderne hjemmeside for en familieejet rengøringsvirksomhed",
+  heroImage: RenServ,
+  gallery: [
+    RenServ,
+    RenServ,
+    RenServ,
+  ],
+  tags: ["Website design", "Webudvikling", "Lokal SEO"],
+  client: "RenServ",
+  location: "Danmark",
+  services: [
+    "Website design",
+    "Webudvikling",
+    "Lokal SEO",
+    "Performanceoptimering",
+  ],
+  site: "https://www.renserv.dk",
+  technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+  overview:
+    "RenServ er en familieejet rengøringsvirksomhed, der havde brug for en moderne hjemmeside, som skaber tillid og gør det nemt for både private og virksomheder at finde den rette rengøringsløsning.",
+  overviewExtra:
+    "Vi udviklede en hurtig og mobiloptimeret hjemmeside med en tydelig struktur, klare ydelser og nem adgang til kontakt. Siden er samtidig bygget med fokus på lokal synlighed, så potentielle kunder lettere kan finde RenServ, når de søger efter rengøring.",
+  designDescription:
+    "Designet er rent, professionelt og roligt med fokus på tillid. Tydelige budskaber, enkel navigation og klare call-to-actions gør det nemt for besøgende at forstå RenServs ydelser og tage kontakt.",
+  developmentDescription:
+    "Hjemmesiden er udviklet i Next.js med Tailwind CSS og optimeret til hurtig indlæsning på både mobil og desktop. Den tekniske struktur er bygget med fokus på performance, SEO og en god brugeroplevelse.",
+  results: [
+    { value: "100%", label: "Responsivt design" },
+    { value: "Next.js", label: "Moderne webteknologi" },
+    { value: "SEO", label: "Optimeret til lokal synlighed" },
+    { value: "24/7", label: "Online tilstedeværelse" },
+  ],
+}
 /*   {
     id: 6,
     slug: "ukraine-hjaelpeprojekt",
