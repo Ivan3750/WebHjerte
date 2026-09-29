@@ -170,7 +170,7 @@ const TilPizzeriaHorsens = () => {
         </AnimatedInView>
 
         <AnimatedInView className="flex flex-col items-center mt-8 gap-3">
-          <button className="button">
+          <a href="/kontakt" className="button">
             Få et gratis tilbud
             <svg
               className="icon"
@@ -181,7 +181,7 @@ const TilPizzeriaHorsens = () => {
             >
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
-          </button>
+          </a>
           <p className="text opacity-80">
             Svar inden 24 timer · Ingen binding · Fast pris
           </p>

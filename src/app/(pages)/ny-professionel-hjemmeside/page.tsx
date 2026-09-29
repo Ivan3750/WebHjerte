@@ -25,6 +25,9 @@ export const metadata = {
     description:
       "Få en ny, professionel hjemmeside, der ser godt ud og virker. Hurtig levering, fast pris.",
   },
+  alternates: {
+    canonical: "https://www.webhjerte.dk/ny-professionel-hjemmeside",
+  },
 };
 
 const NyProfessionelHjemmeside = () => {

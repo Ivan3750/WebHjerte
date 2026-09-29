@@ -1,39 +1,34 @@
-"use client";
-
 import Link from "next/link";
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 
-
 const nodes = [
-  { label: "Hjemmesider", pos: "top-[4%] left-[10%]", color: "#00a8e8" },
-  { label: "Webshops", pos: "top-[10%] right-[2%]", color: "#3ddc97" },
-  { label: "SEO", pos: "bottom-[16%] left-[0%]", color: "#f0a63a" },
-  { label: "Vedligeholdelse", pos: "bottom-[2%] right-[10%]", color: "#8a8ff0" },
+  { label: "AI-analyse", pos: "top-[4%] left-[10%]", color: "#00a8e8" },
+  { label: "Indholdsoptimering", pos: "top-[10%] right-[2%]", color: "#f0a63a" },
+  { label: "Nøgleord", pos: "bottom-[16%] left-[0%]", color: "#8a8ff0" },
+  { label: "Rapportering", pos: "bottom-[2%] right-[10%]", color: "#3ddc97" },
 ];
 
-export default function HeroServices() {
+export default function HeroAiseo() {
   return (
     <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-24 pb-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-16 items-center">
         {/* Left: text, left-aligned */}
         <div className="flex flex-col items-start text-left">
           <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">
-            Mine services
+            AI SEO
           </AnimatedInView>
 
-          {/* H1 nu med "Horsens" — matcher title og søgeord */}
           <AnimatedInView as="h1" className="maintitle text-white !leading-tight mb-6">
-            Hjemmesider til små virksomheder i Horsens
+            Få din virksomhed fundet med AI SEO
           </AnimatedInView>
 
           <AnimatedInView as="p" className="text-[14px] text-[#a0a0a0] leading-[1.85] max-w-[46ch] mb-8">
-            Som webudvikler i Horsens bygger jeg professionelt webdesign, SEO,
-            webshops og integrationer — digitale løsninger, der gør det nemmere
-            for dine kunder at finde, forstå og vælge din virksomhed. Faste
-            priser fra 4.500 DKK.
+            Jeg bruger kunstig intelligens til at finde ud af, hvad dine kunder
+            søger efter — og sørger for, at din hjemmeside dukker op, når de
+            gør. Faste priser fra 3.500 DKK.
           </AnimatedInView>
 
-          {/* CTA-knapper (før var der ingen) */}
+          {/* CTA-knapper */}
           <AnimatedInView as="div" className="flex flex-wrap gap-3">
             <Link
               href="#priser"
@@ -50,7 +45,7 @@ export default function HeroServices() {
           </AnimatedInView>
         </div>
 
-        {/* Right: simplified visual (uændret) */}
+        {/* Right: visual */}
         <AnimatedInView as="div" className="relative aspect-square w-full max-w-[400px] mx-auto">
           <div className="absolute inset-[16%] rounded-full border border-[#2a2d2d]" />
 

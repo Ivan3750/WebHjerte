@@ -28,7 +28,7 @@ export const metadata = {
       "Gennemsigtige priser fra 4.500 DKK. Få et tilbud på 24 timer. Ingen skjulte gebyrer.",
   },
   alternates: {
-    canonical: "https://www.webhjerte.dk/services",
+    canonical: "https://www.webhjerte.dk/hjemmeside-pris",
   },
 };
 const jsonLd = {

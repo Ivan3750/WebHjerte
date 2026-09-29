@@ -116,7 +116,7 @@ export default function ProjectDetailClient({ project }) {
             Forside
           </Link>
           <span>/</span>
-          <Link href="/projects" className="hover:text-[#00a8e8] transition-colors">
+          <Link href="/portefolje" className="hover:text-[#00a8e8] transition-colors">
             Portefølje
           </Link>
           <span>/</span>

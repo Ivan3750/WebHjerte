@@ -25,6 +25,9 @@ export const metadata = {
     description:
       "Få en WordPress-hjemmeside, du selv kan opdatere. Professionelt setup fra WebHjerte.",
   },
+  alternates: {
+    canonical: "https://www.webhjerte.dk/wordpress-hjemmeside",
+  },
 };
 
 const WordpressHjemmeside = () => {

@@ -1,4 +1,6 @@
 import Link from "next/link";
+"use client";
+
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 import Button from "../../../components/ui/Button";
 

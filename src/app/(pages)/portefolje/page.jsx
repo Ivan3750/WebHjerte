@@ -27,18 +27,17 @@ export const metadata = {
   alternates: {
     canonical: "https://www.webhjerte.dk/portefolje",
   },
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: "WebHjerte Portefølje",
-      description: "Webdesignprojekter til lokale virksomheder i Danmark",
-      url: "https://www.webhjerte.dk/portefolje",
-      provider: {
-        "@type": "LocalBusiness",
-        name: "WebHjerte",
-      },
-    }),
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "WebHjerte Portefølje",
+  description: "Webdesignprojekter til lokale virksomheder i Danmark",
+  url: "https://www.webhjerte.dk/portefolje",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "WebHjerte",
   },
 };
 
@@ -57,6 +56,10 @@ const ArrowIcon = () => (
 const Portefolje = () => {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 py-20">
         <div className="max-w-6xl mx-auto">
           <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
@@ -74,9 +77,9 @@ const Portefolje = () => {
 
       <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16">
         <div className="max-w-6xl mx-auto flex flex-col gap-20">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <AnimatedInView
-              key={index}
+              key={project.slug}
               as="div"
               className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center ${
                 index % 2 !== 0 ? "md:[direction:rtl]" : ""
@@ -91,15 +94,16 @@ const Portefolje = () => {
                   alt={project.title}
                   width={700}
                   height={500}
+                  loading="lazy"
                   className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </Link>
 
               <div className="flex flex-col gap-4 [direction:ltr]">
                 <div className="flex flex-wrap gap-2">
-                  {project.services.map((cat, i) => (
+                  {project.services.map((cat) => (
                     <span
-                      key={i}
+                      key={cat}
                       className="text-[10px] uppercase tracking-[0.08em] text-[#5a5a5a] border border-[#e0e0e0] rounded-full px-2.5 py-1 bg-white"
                     >
                       {cat}

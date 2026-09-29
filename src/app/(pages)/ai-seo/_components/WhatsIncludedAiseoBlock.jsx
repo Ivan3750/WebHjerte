@@ -3,17 +3,16 @@
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 
 const included = [
-  "Design og udvikling",
-  "Responsivt design",
-  "Teknisk SEO-grundlag",
-  "SSL",
-  "Test på mobil og desktop",
-  "Lancering",
+  "Nøgleordsanalyse og strategi",
+  "Teknisk SEO-optimering",
+  "Indholdsoptimering med AI",
+  "Google Business Profile",
+  "Månedlig rapportering",
   "Direkte kontakt med udvikleren",
 ];
 
 const extra = [
- "Betalte tredjepartstjenester",
+  "Betale tredjepartstjenester",
   "Betalingsløsninger",
   "Specifikke premium-værktøjer",
   "Funktioner uden for projektets aftalte omfang",
@@ -42,7 +41,7 @@ const ExtraIcon = () => (
   </svg>
 );
 
-export default function WhatsIncludedBlock() {
+export default function WhatsIncludedAiseoBlock() {
   return (
     <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pb-20 -mt-4">
       <div className="max-w-6xl mx-auto">
@@ -89,7 +88,7 @@ export default function WhatsIncludedBlock() {
               ))}
             </div>
             <p className="text-[11px] text-[#4a4a4a] leading-[1.7] mt-1">
-              Dette aftales altid tydeligt, før noget bliver bestilt - ingen skjulte tillæg.
+              Dette aftales altid tydeligt, før noget bliver bestilt — ingen skjulte tillæg.
             </p>
           </div>
         </AnimatedInView>

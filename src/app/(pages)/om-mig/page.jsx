@@ -23,33 +23,32 @@ export const metadata = {
   alternates: {
     canonical: "https://www.webhjerte.dk/om-mig",
   },
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Ivan Kohan",
-      jobTitle: "Webudvikler",
-      worksFor: {
-        "@type": "Organization",
-        name: "WebHjerte",
-        url: "https://www.webhjerte.dk",
-      },
-      url: "https://www.webhjerte.dk/om-mig",
-    }),
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ivan Kohan",
+  jobTitle: "Webudvikler",
+  worksFor: {
+    "@type": "Organization",
+    name: "WebHjerte",
+    url: "https://www.webhjerte.dk",
   },
+  url: "https://www.webhjerte.dk/om-mig",
 };
 
 const OmOs = () => {
   return (
     <>
-
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <IntroOmOs />
-       <HistorieBlock/>
-       <WhyEasyToWorkWithMe/>
-  
-
-     </>
+      <HistorieBlock />
+      <WhyEasyToWorkWithMe />
+    </>
   );
 };
 

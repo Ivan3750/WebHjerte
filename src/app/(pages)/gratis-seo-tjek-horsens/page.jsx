@@ -24,6 +24,9 @@ export const metadata = {
     description:
       "Få et gratis SEO- og web-tjek af din hjemmeside i Horsens.",
   },
+  alternates: {
+    canonical: "https://www.webhjerte.dk/gratis-seo-tjek-horsens",
+  },
 };
 
 const jsonLd = {

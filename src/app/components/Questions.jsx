@@ -75,9 +75,11 @@ const Questions = ({faqs = faqs_default}) => {
 
         <div  className="border-t border-[#e8e8e8]">
           {faqs.map(({ q, a }, i) => (
-            <div key={i} className="border-b border-[#e8e8e8]">
+            <div key={q} className="border-b border-[#e8e8e8]">
               <button
                 onClick={() => toggle(i)}
+                aria-expanded={open === i}
+                aria-controls={`faq-answer-${i}`}
                 className="w-full flex items-center justify-between gap-4 py-5 text-left"
               >
                 <span className="text-[15px] font-medium text-[#1c1e1e]">{q}</span>
@@ -85,6 +87,7 @@ const Questions = ({faqs = faqs_default}) => {
               </button>
 
               <div
+                id={`faq-answer-${i}`}
                 className={`text-[13px] text-[#777] leading-[1.75] overflow-hidden transition-all duration-300 ${
                   open === i ? "max-h-48 pb-5" : "max-h-0"
                 }`}
