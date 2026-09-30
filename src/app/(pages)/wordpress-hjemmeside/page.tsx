@@ -51,7 +51,7 @@ const WordpressHjemmeside = () => {
       <PackagesBlock />
       <FormToLead
         titleLine="Klar til din WordPress-hjemmeside?"
-        description="Skriv til os, og få et uforpligtende tilbud på din nye WordPress-side inden for 24 timer."
+        description="Skriv til mig, og få et uforpligtende tilbud på din nye WordPress-side inden for 24 timer."
       />
       <Questions />
     </>

@@ -30,7 +30,7 @@ export default function HeroServices() {
             Som webudvikler i Horsens bygger jeg professionelt webdesign, SEO,
             webshops og integrationer — digitale løsninger, der gør det nemmere
             for dine kunder at finde, forstå og vælge din virksomhed. Faste
-            priser fra 4.500 DKK.
+            priser fra 2.500 DKK.
           </AnimatedInView>
 
           {/* CTA-knapper (før var der ingen) */}

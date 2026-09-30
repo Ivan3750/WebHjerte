@@ -158,9 +158,14 @@ export default function SEO() {
         )}
 
         {!metrics && !loading && !error && (
-          <p className="text-[13px] text-[#3a3d3d] mt-10">
-            Ingen data endnu - dit gratis SEO-tjek starter her.
-          </p>
+          <div className="mt-10 rounded-2xl border border-dashed border-[#2a2d2d] bg-[#161818] p-8 text-center">
+            <p className="text-[13px] text-[#5a5a5a] mb-2">
+              Indtast din URL ovenfor for at se din SEO-score
+            </p>
+            <p className="text-[12px] text-[#3a3d3d]">
+              Gratis analyse af ydeevne, tilgængelighed og SEO — på under 30 sekunder
+            </p>
+          </div>
         )}
 
         {metrics && (

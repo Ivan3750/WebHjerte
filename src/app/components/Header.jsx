@@ -1,18 +1,24 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { IoMenu, IoClose } from "react-icons/io5";
-import { useState, useEffect } from "react";
+import { IoMenu, IoClose, IoChevronDown } from "react-icons/io5";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import W from "../../../public/W.png";
 import Button from "../components/ui/Button";
 
-const links = [
+const mainLinks = [
   { href: "/", label: "Forside" },
   { href: "/services", label: "Services" },
   { href: "/om-mig", label: "Om mig" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/kontakt", label: "Kontakt" },
+];
+
+const nicheLinks = [
+  { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
+  { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
+  { href: "/hjemmeside-til-saloner", label: "Saloner" },
 ];
 
 const NavLink = ({ href, label, pathname, onClick }) => {
@@ -34,7 +40,9 @@ const NavLink = ({ href, label, pathname, onClick }) => {
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isNicheOpen, setIsNicheOpen] = useState(false);
   const pathname = usePathname();
+  const nicheRef = useRef(null);
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
@@ -63,16 +71,32 @@ const Header = () => {
 
   useEffect(() => {
     closeMobileMenu();
+    setIsNicheOpen(false);
   }, [pathname]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     const onKeyDown = (e) => {
-      if (e.key === "Escape") closeMobileMenu();
+      if (e.key === "Escape") {
+        closeMobileMenu();
+        setIsNicheOpen(false);
+      }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (nicheRef.current && !nicheRef.current.contains(e.target)) {
+        setIsNicheOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const isNicheActive = nicheLinks.some((l) => l.href === pathname);
 
   return (
     <header className="relative flex items-center justify-between px-4 py-3 md:px-6 lg:px-10 sticky top-0 left-0 border-b-2 border-[#404242] bg-[#1c1e1e] z-50">
@@ -86,7 +110,50 @@ const Header = () => {
       </Link>
 
       <nav className="hidden md:flex items-center gap-1 bg-[#101213] rounded-2xl px-2 py-2 border border-[#424242]">
-        {links.map((link) => (
+        {mainLinks.slice(0, 2).map((link) => (
+          <NavLink key={link.href} {...link} pathname={pathname} />
+        ))}
+
+        {/* Dropdown for niche pages */}
+        <div ref={nicheRef} className="relative">
+          <button
+            onClick={() => setIsNicheOpen(!isNicheOpen)}
+            className={`relative text-sm px-3 py-1.5 rounded-xl transition-colors flex items-center gap-1 ${
+              isNicheActive
+                ? "text-white bg-[#2a2d2d]"
+                : "text-[#9a9a9a] hover:text-white"
+            }`}
+            aria-expanded={isNicheOpen}
+            aria-haspopup="true"
+          >
+            Brancher
+            <IoChevronDown
+              size={14}
+              className={`transition-transform ${isNicheOpen ? "rotate-180" : ""}`}
+            />
+          </button>
+
+          {isNicheOpen && (
+            <div className="absolute top-full left-0 mt-1 w-48 bg-[#101213] border border-[#424242] rounded-xl overflow-hidden shadow-xl z-50">
+              {nicheLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsNicheOpen(false)}
+                  className={`block px-4 py-2.5 text-sm transition-colors ${
+                    pathname === link.href
+                      ? "text-white bg-[#2a2d2d]"
+                      : "text-[#9a9a9a] hover:text-white hover:bg-[#1c1e1e]"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {mainLinks.slice(2).map((link) => (
           <NavLink key={link.href} {...link} pathname={pathname} />
         ))}
       </nav>
@@ -124,7 +191,7 @@ const Header = () => {
           <IoClose />
         </button>
 
-        {links.map((link) => (
+        {mainLinks.map((link) => (
           <NavLink
             key={link.href}
             {...link}
@@ -132,6 +199,21 @@ const Header = () => {
             onClick={closeMobileMenu}
           />
         ))}
+
+        {/* Mobile niche links */}
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-[10px] uppercase tracking-[0.15em] text-[#5a5a5a]">
+            Brancher
+          </p>
+          {nicheLinks.map((link) => (
+            <NavLink
+              key={link.href}
+              {...link}
+              pathname={pathname}
+              onClick={closeMobileMenu}
+            />
+          ))}
+        </div>
 
         <Link href="/kontakt" onClick={closeMobileMenu} className="mt-2">
           <Button name="Få et gratis tilbud" />

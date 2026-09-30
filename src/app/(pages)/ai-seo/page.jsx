@@ -89,7 +89,7 @@ const jsonLd = {
 const faqs = [
   {
     q: "Hvad er AI SEO egentlig?",
-    a: "AI SEO betyder, at vi bruger kunstig intelligens til at analysere søgemønstrer, forstå hvad dine kunder søger efter, og optimere din hjemmeside derefter. Det er stadig mennesker, der bestemmer strategien — men AI hjælper os med at arbejde hurtigere og mere præcist.",
+    a: "AI SEO betyder, at jeg bruger kunstig intelligens til at analysere søgemønstrer, forstå hvad dine kunder søger efter, og optimere din hjemmeside derefter. Det er stadig mennesker, der bestemmer strategien — men AI hjælper mig med at arbejde hurtigere og mere præcist.",
   },
   {
     q: "Får jeg resultater med AI SEO?",
@@ -101,7 +101,7 @@ const faqs = [
   },
   {
     q: "Hvor meget koster AI SEO?",
-    a: "Vi tilbyder tre pakker: Basis fra 3.500 DKK, Standard fra 6.500 DKK og Skræddersyet fra 12.000 DKK. Prisen afhænger af din branche, konkurrence og hvor meget indhold der skal produceres.",
+    a: "Jeg tilbyder tre pakker: Basis fra 3.500 DKK, Standard fra 6.500 DKK og Skræddersyet fra 12.000 DKK. Prisen afhænger af din branche, konkurrence og hvor meget indhold der skal produceres.",
   },
   {
     q: "Hvordan ved jeg om det virker?",

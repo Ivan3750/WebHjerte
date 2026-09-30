@@ -9,11 +9,11 @@ const points = [
   },
   {
     title: "Hvorfor virker det?",
-    text: "Google bliver smartere for hver dag. AI hjælper os med at forstå og følge med i disse ændringer i stedet for at jage efter dem. Vi kan analysere konkurrenter, finde huller i deres strategi og bygge indhold, der overgår dem — alt baseret på data, ikke på mavefornemmelser.",
+    text: "Google bliver smartere for hver dag. AI hjælper mig med at forstå og følge med i disse ændringer i stedet for at jage efter dem. Jeg kan analysere konkurrenter, finde huller i deres strategi og bygge indhold, der overgår dem — alt baseret på data, ikke på mavefornemmelser.",
   },
   {
     title: "Hvordan er det anderledes end almindelig SEO?",
-    text: "Traditionel SEO er ofte baseret på generelle råd og trial-and-error. AI SEO gør os i stand til at træffe beslutninger baseret på konkrete mønstre i søgedata. Det betyder hurtigere resultater, færre fejl og en strategi, der tilpasses din specifikke virksomhed og kunder.",
+    text: "Traditionel SEO er ofte baseret på generelle råd and trial-and-error. AI SEO gør mig i stand til at træffe beslutninger baseret på konkrete mønstre i søgedata. Det betyder hurtigere resultater, færre fejl og en strategi, der tilpasses din specifikke virksomhed og kunder.",
   },
 ];
 

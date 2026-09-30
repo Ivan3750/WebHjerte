@@ -534,6 +534,39 @@ const TermsOfUse = () => {
               eventuelle ændringer. Ændringer i denne privatlivspolitik træder i
               kraft, når de offentliggøres på denne side.
             </p>
+            <h2>Behandling af data via AI-tjenester</h2>
+            <p>
+              WebHjerte bruger AI-assistenter (chatbots) på hjemmesiden til at
+              besvare almindelige spørgsmål om priser, leveringstider og
+              processer. Når du skriver til chatbotten, behandles din besked
+              af en AI-tjeneste for at generere et svar.
+            </p>
+            <p>
+              <strong>Hvad indsamles:</strong> Din besked og eventuelle
+              personoplysninger, du selv oplyser (navn, telefonnummer, e-mail).
+            </p>
+            <p>
+              <strong>Formål:</strong> At give dig et hurtigt svar på almindelige
+              spørgsmål og videreformidle komplekse henvendelser til Ivan.
+            </p>
+            <p>
+              <strong>Retgrundlag:</strong> Dit samtykke (artikel 6, stk. 1,
+              litra a i GDPR) ved at skrive i chatten.
+            </p>
+            <p>
+              <strong>Opbevaring:</strong> Chatbeskeder opbevares ikke længere
+              end nødvendigt for at besvare dit spørgsmål. Ingen data deles med
+              tredjeparter til markedsføring.
+            </p>
+            <p>
+              <strong>Dine rettigheder:</strong> Du kan til enhver tid anmode om
+              at få slettet dine data ved at kontakte hej@webhjerte.dk.
+            </p>
+            <p>
+              <strong>Bemærk:</strong> Chatbotten er en AI og ikke en person.
+              Hvis du ønsker at tale med en person, skriv det i chatten, så
+              videreformidler jeg din besked til Ivan.
+            </p>
             <h2>Kontakt os</h2>
             <p>
               Hvis du har spørgsmål til denne privatlivspolitik, kan du kontakte

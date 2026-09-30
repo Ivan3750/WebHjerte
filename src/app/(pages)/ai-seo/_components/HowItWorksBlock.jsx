@@ -7,7 +7,7 @@ const steps = [
     n: "01",
     color: "#00a8e8",
     title: "Analyse",
-    text: "Jeg bruger AI til at analysere din branche, konkurrenter og de søgeord, dine kunder faktisk bruger. Vi finder ud af, hvor du står lige nu, og hvor der er potentiale.",
+    text: "Jeg bruger AI til at analysere din branche, konkurrenter og de søgeord, dine kunder faktisk bruger. Jeg finder ud af, hvor du står lige nu, og hvor der er potentiale.",
   },
   {
     n: "02",
@@ -19,7 +19,7 @@ const steps = [
     n: "03",
     color: "#8a8ff0",
     title: "Optimering",
-    text: "Vi optimerer din eksisterende indhold og producerer nyt, der er skrevet til både Google og dine kunder. AI hjælper os med at finde de rigtige ord og formuleringer.",
+    text: "Jeg optimerer dit eksisterende indhold og producerer nyt, der er skrevet til både Google og dine kunder. AI hjælper mig med at finde de rigtige ord og formuleringer.",
   },
   {
     n: "04",

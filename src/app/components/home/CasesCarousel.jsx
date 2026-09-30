@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 import { projects } from "../../data/projects";
 
 export default function CasesCarousel() {
@@ -132,6 +133,28 @@ export default function CasesCarousel() {
               }`}
             />
           ))}
+        </div>
+
+        {/* Niche links */}
+        <div className="mt-8 pt-6 border-t border-[#e8e8e8]">
+          <p className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-3 text-center">
+            Hjemmesider til din branche
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {[
+              { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
+              { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
+              { href: "/hjemmeside-til-saloner", label: "Saloner" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-[12px] text-[#5a5a5a] border border-[#e0e0e0] rounded-full px-3.5 py-1.5 bg-white hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

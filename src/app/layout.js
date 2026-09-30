@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
               logo: "https://webhjerte.dk/W.png",
               image: "https://webhjerte.dk/W.png",
               description:
-                "WebHjerte er et lokalt webbureau i Horsens, Jylland. Vi tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
+                "WebHjerte er et lokalt webbureau i Horsens, Jylland. Jeg tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
               telephone: "+45 42 76 05 77",
               priceRange: "$$",
               address: {

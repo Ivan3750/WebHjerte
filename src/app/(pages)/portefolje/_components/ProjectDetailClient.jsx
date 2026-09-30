@@ -367,14 +367,14 @@ export default function ProjectDetailClient({ project }) {
               Har du et lignende projekt i tankerne?
             </h2>
             <p className="text-[14px] text-[#9a9a9a] max-w-md mx-auto mb-8">
-              Vi hjælper dig med at skabe en hjemmeside, der konverterer
+              Jeg hjælper dig med at skabe en hjemmeside, der konverterer
               besøgende til kunder.
             </p>
             <Link
               href="/kontakt"
               className="inline-block rounded-xl bg-[#00a8e8] text-white px-7 py-3 text-[13px] font-medium hover:opacity-85 transition-opacity"
             >
-              Kontakt os
+              Kontakt mig
             </Link>
           </div>
         </AnimatedInView>

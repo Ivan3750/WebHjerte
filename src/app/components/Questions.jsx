@@ -1,14 +1,15 @@
 "use client";
 import { useState } from "react";
+import Script from "next/script";
  
 const  faqs_default = [
   {
     q: "Hvor lang tid tager det?",
-    a: "De fleste projekter er klar inden for 10–18 dage. Du ser et første udkast allerede inden for 48 timer efter vores samtale.",
+    a: "De fleste projekter er klar inden for 10–18 dage. Du ser et første udkast allerede inden for 48 timer efter vores første samtale.",
   },
   {
     q: "Hvad hvis jeg ikke er tilfreds?",
-    a: "Vi arbejder med godkendelse undervejs - du ser og godkender designet inden vi bygger. Justeringer er inkluderet indtil du er tilfreds.",
+    a: "Jeg arbejder med godkendelse undervejs - du ser og godkender designet inden jeg bygger. Justeringer er inkluderet indtil du er tilfreds.",
   },
   {
     q: "Arbejder du i hele Danmark?",
@@ -60,8 +61,27 @@ const Questions = ({faqs = faqs_default}) => {
 
   const toggle = (i) => setOpen(open === i ? null : i);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: a,
+      },
+    })),
+  };
+
   return (
-    <section className="bg-[#f7f6f6] border-t border-[#e8e8e8] px-5 sm:px-10 lg:px-20 py-20">
+    <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <section className="bg-[#f7f6f6] border-t border-[#e8e8e8] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_640px] gap-14 md:gap-20 items-start">
         <div>
           <p  className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-3">
@@ -98,7 +118,8 @@ const Questions = ({faqs = faqs_default}) => {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 

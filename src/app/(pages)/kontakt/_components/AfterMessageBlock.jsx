@@ -19,7 +19,7 @@ const thread = [
     from: "ivan",
     n: "03",
     title: "Vi tager en kort snak",
-    text: "Vi taler om dine mål, ønsker og muligheder.",
+    text: "Jeg taler med dig om dine mål, ønsker og muligheder.",
     meta: "Gratis opkald",
   },
   {
@@ -32,7 +32,7 @@ const thread = [
   {
     from: "ivan",
     n: "05",
-    title: "Vi starter - hvis det giver mening",
+    title: "Jeg starter - hvis det giver mening",
     text: "Ingen pres, ingen binding.",
     meta: "Din beslutning",
   },

@@ -25,7 +25,7 @@ export default function AiseoAfterBlock() {
           Efter lancering
         </AnimatedInView>
         <AnimatedInView as="h2" className="title text-[#1a1a1a] !leading-tight !mb-4 max-w-[22ch]">
-          Vi stopper ikke, når siden er optimeret
+          Jeg stopper ikke, når siden er optimeret
         </AnimatedInView>
         <AnimatedInView as="p" className="text-[13px] text-[#7a7a7a] leading-[1.85] max-w-[60ch] mb-14">
           SEO er en løbende proces. Jeg følger med, rapporterer og justerer — så

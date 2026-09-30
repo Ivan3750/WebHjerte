@@ -6,13 +6,13 @@ import { projects } from "../../../app/data/projects";
 export const metadata = {
   title: "Portefølje – Webdesign Cases | WebHjerte",
   description:
-    "Se vores webdesignprojekter – køreskole, platforme og lokale virksomheder. Enkelt design, hurtig levering, mobilvenlige løsninger til danske virksomheder.",
+    "Se mine webdesignprojekter – køreskole, platforme og lokale virksomheder. Enkelt design, hurtig levering, mobilvenlige løsninger til danske virksomheder.",
   keywords:
     "webdesign cases horsens, portefølje webbureau horsens, hjemmeside eksempler, webdesign referencer midtjylland",
   openGraph: {
     title: "Portefølje – Webdesign til lokale virksomheder | WebHjerte",
     description:
-      "Se eksempler på vores arbejde – hjemmesider til køreskole, fitnesscenter, rideklub og mere. Alle projekter leveret til aftalt tid og pris.",
+      "Se eksempler på mit arbejde – hjemmesider til køreskole, fitnesscenter, rideklub og mere. Alle projekter leveret til aftalt tid og pris.",
     url: "https://www.webhjerte.dk/portefolje",
     siteName: "WebHjerte",
     locale: "da_DK",

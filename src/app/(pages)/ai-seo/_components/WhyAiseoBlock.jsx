@@ -25,7 +25,7 @@ const reasons = [
     n: "04",
     color: "#3ddc97",
     title: "Skalerbar indholdsproduktion",
-    text: "AI hjælper os med at producere relevant indhold i et tempo, der ikke ville være muligt manuelt. Det betyder flere sider, flere søgeord og flere muligheder for at blive fundet.",
+    text: "AI hjælper mig med at producere relevant indhold i et tempo, der ikke ville være muligt manuelt. Det betyder flere sider, flere søgeord og flere muligheder for at blive fundet.",
   },
 ];
 
