@@ -15,13 +15,15 @@ import StickyCallButton from "./components/ui/StickyCallButton";
 export const metadata = {
   title: "Webbureau Horsens | Webdesign til lokale virksomheder | WebHjerte",
   description:
-    "WebHjerte bygger hurtige og professionelle hjemmesider til virksomheder i Horsens og Midtjylland. Direkte kontakt, ingen mellemled og fokus på synlighed i Google.",
+    "Lokalt webbureau i Horsens: professionelle hjemmesider fra 2.500 kr, live på 14 dage. Direkte kontakt med udvikleren og fokus på Google. Få et gratis tilbud inden for 24 timer.",
   keywords: [
     "webbureau Horsens",
     "webdesign Horsens",
     "hjemmeside Horsens",
     "webudvikler Horsens",
     "webbureau Midtjylland",
+    "webdesigner Horsens",
+    "SEO Horsens",
     "hjemmeside til virksomhed",
     "webdesign til virksomheder",
   ],
@@ -51,7 +53,7 @@ export const metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["ProfessionalService", "LocalBusiness"],
   "@id": "https://www.webhjerte.dk/#organization",
   name: "WebHjerte",
   url: "https://www.webhjerte.dk/",
@@ -80,37 +82,6 @@ const jsonLd = {
   ],
 };
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Hvor lang tid tager det?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "De fleste projekter er klar inden for 10–18 dage. Du ser et første udkast allerede inden for 48 timer efter vores samtale.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Hvad hvis jeg ikke er tilfreds?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Vi arbejder med godkendelse undervejs - du ser og godkender designet inden vi bygger. Justeringer er inkluderet indtil du er tilfreds.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Hvad koster en hjemmeside i Horsens?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Mine pakker starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3-5 sider) og 7.500 kr for Standard (op til 8 sider).",
-      },
-    },
-  ],
-};
-
 const facts = [
   { num: "Fra 2.500 kr", label: "Fast pris" },
   { num: "Ca. 14 dage", label: "Leveringstid" },
@@ -124,45 +95,29 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
 
       {/* Hero */}
       <section className="relative min-h-[calc(100dvh-68px)] flex items-center px-5 sm:px-10 lg:px-20 overflow-hidden bg-[#111313]">
         <div className="relative z-10 w-full mx-auto grid md:grid-cols-2 gap-16 items-center py-20">
           <div className="flex flex-col">
-            <AnimatedInView
-              as="div"
-              className="inline-flex items-center gap-2 border border-[#2a3a3a] rounded-full px-3 py-1 text-xs text-[#9a9a9a] w-fit mb-6"
-            >
+            <div className="inline-flex items-center gap-2 border border-[#2a3a3a] rounded-full px-3 py-1 text-xs text-[#9a9a9a] w-fit mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00a8e8]" />
               Horsens & Midtjylland
-            </AnimatedInView>
+            </div>
 
-            <AnimatedInView
-              as="h1"
-              className="maintitle text-md text-white text-balance !leading-tight mb-4"
-            >
-              Hjemmeside til virksomheder i Horsens – fast pris, live på 14 dage
-            </AnimatedInView>
+            <h1 className="maintitle text-md text-white text-balance !leading-tight mb-4">
+              Webbureau i Horsens – hjemmesider med fast pris, live på 14 dage
+            </h1>
 
-            <AnimatedInView
-              as="p"
-              className="subtitle text-[#8a8a8a] !text-[15px] max-w-md mb-8"
-            >
-              Jeg bygger enkle, hurtige hjemmesider til virksomheder i
-              Danmark. Du taler direkte med mig, ikke med et mellemled. Jeg
+            <p className="subtitle text-[#8a8a8a] !text-[15px] max-w-md mb-8">
+              WebHjerte er dit lokale webbureau i Horsens. Jeg bygger enkle, hurtige hjemmesider
+              til virksomheder i Horsens, Midtjylland og resten af Danmark. Du taler direkte med mig, ikke med et mellemled. Jeg
               bruger AI til at gå hurtigere, så du betaler for resultatet, ikke
               for timer.
-            </AnimatedInView>
+            </p>
 
             {/* Guarantee badge */}
-            <AnimatedInView
-              as="div"
-              className="inline-flex items-center gap-2 border border-[#00a8e8]/30 bg-[#00a8e8]/5 rounded-xl px-4 py-2.5 mb-8 w-fit"
-            >
+            <div className="inline-flex items-center gap-2 border border-[#00a8e8]/30 bg-[#00a8e8]/5 rounded-xl px-4 py-2.5 mb-8 w-fit">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="flex-shrink-0">
                 <path d="M8 1l2 2 3 .5-.5 3L14 8l-1.5 1.5.5 3-3 .5-2 2-2-2-3-.5.5-3L2 8l1.5-1.5-.5-3 3-.5 2-2z" stroke="#00a8e8" strokeWidth="1.2" strokeLinejoin="round" />
                 <path d="M5.5 8l1.5 1.5 3.5-3.5" stroke="#00a8e8" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -171,12 +126,9 @@ export default function Home() {
                 <span className="text-[#00a8e8] font-medium">Første design i 48 timer.</span>{" "}
                 Ikke tilfreds? Du betaler 0 kr for designet.
               </span>
-            </AnimatedInView>
+            </div>
 
-            <AnimatedInView
-              as="div"
-              className="flex items-center gap-3 flex-wrap"
-            >
+            <div className="flex items-center gap-3 flex-wrap">
               <Link href="/services">
                 <Button name="Se priser" />
               </Link>
@@ -186,7 +138,7 @@ export default function Home() {
               >
                 Skriv til mig
               </Link>
-            </AnimatedInView>
+            </div>
 
             <div className="flex gap-8 mt-10 pt-8 border-t border-[#1e2020] flex-wrap">
               {facts.map(({ num, label }) => (
@@ -330,6 +282,68 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="text-[13px] text-[#6a6a6a] leading-relaxed">
+                  {item.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lokalt webbureau – indhold til søgninger som "webbureau Horsens" */}
+      <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
+              Dit lokale webbureau
+            </p>
+            <h2 className="title text-[#1a1a1a] !leading-tight !mb-4">
+              Webbureau i Horsens, der leverer kunder – ikke bare et design
+            </h2>
+            <p className="text-[14px] text-[#5a5a5a] leading-[1.85] mb-4">
+              Som webbureau i Horsens hjælper jeg lokale virksomheder med at blive
+              fundet på Google og omsætte besøgende til henvendelser. Du får en
+              hurtig, mobilvenlig hjemmeside med SEO bygget ind fra første dag –
+              til en fast pris, så du ved præcis, hvad det koster.
+            </p>
+            <p className="text-[14px] text-[#5a5a5a] leading-[1.85]">
+              Jeg er baseret i Horsens og arbejder med virksomheder i hele
+              Midtjylland og Danmark. Du har én kontaktperson fra første samtale
+              til lancering – ingen mellemled, ingen overraskelser.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 content-start">
+            {[
+              {
+                href: "/webdesign-horsens",
+                title: "Webdesign Horsens",
+                desc: "Skræddersyet design, der bygger tillid og får besøgende til at handle.",
+              },
+              {
+                href: "/seo-horsens",
+                title: "SEO Horsens",
+                desc: "Bliv fundet af kunder, der søger efter dig lokalt på Google.",
+              },
+              {
+                href: "/webbureau-midtjylland",
+                title: "Webbureau Midtjylland",
+                desc: "Hjemmesider til virksomheder i Aarhus, Silkeborg, Vejle og hele regionen.",
+              },
+              {
+                href: "/hjemmeside-pris",
+                title: "Hvad koster en hjemmeside?",
+                desc: "Se faste priser fra 2.500 kr – ingen skjulte gebyrer.",
+              },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group rounded-2xl p-5 flex flex-col gap-2 bg-white border border-[#e8e8e8] hover:border-[#00a8e8]/30 transition-colors"
+              >
+                <p className="text-[14px] font-medium text-[#3a3a3a] group-hover:text-[#00a8e8] transition-colors">
+                  {item.title}
+                </p>
+                <p className="text-[12px] text-[#6a6a6a] leading-relaxed">
                   {item.desc}
                 </p>
               </Link>

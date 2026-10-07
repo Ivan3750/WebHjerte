@@ -93,6 +93,7 @@ const Portefolje = () => {
                   alt={project.title}
                   width={700}
                   height={500}
+                  sizes="(min-width: 1024px) 560px, 100vw"
                   loading="lazy"
                   className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />

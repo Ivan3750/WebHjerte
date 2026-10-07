@@ -1,12 +1,13 @@
 /** @type {import('next-sitemap').IConfig} */
 export default {
-  siteUrl: 'https://webhjerte.dk',
+  // Samme host som canonical-tags (www)
+  siteUrl: 'https://www.webhjerte.dk',
   generateRobotsTxt: true,
 
   sitemapSize: 5000,
 
-  changefreq: 'weekly',
-  priority: 0.7,
+  changefreq: 'monthly',
+  priority: 0.6,
 
   exclude: [
     '/404',
@@ -19,19 +20,20 @@ export default {
       {
         userAgent: '*',
         allow: '/',
-        disallow: [
-          '/api/',
-          '/_next/',
-        ],
+        // /_next/ må IKKE blokeres: Google skal kunne hente CSS/JS for at rendere siden
+        disallow: ['/api/'],
       },
     ],
-    additionalSitemaps: [],
   },
 
   transform: async (config, path) => {
     const priorities = {
       '/': 1.0,
+      '/webdesign-horsens': 0.9,
+      '/seo-horsens': 0.9,
+      '/webbureau-midtjylland': 0.9,
       '/services': 0.9,
+      '/hjemmeside-pris': 0.8,
       '/om-mig': 0.8,
       '/portefolje': 0.8,
       '/kontakt': 0.8,
@@ -41,6 +43,7 @@ export default {
       loc: path,
       changefreq: path === '/' ? 'weekly' : 'monthly',
       priority: priorities[path] ?? 0.6,
+      lastmod: new Date().toISOString(),
     };
   },
 };

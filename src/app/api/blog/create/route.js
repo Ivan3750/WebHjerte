@@ -1,13 +1,20 @@
 import { v4 as uuidv4 } from 'uuid';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import db from '../../../../app/lib/db';
 
 export async function POST(req) {
+  // Endpointet skriver til databasen — kræver et hemmeligt token (BLOG_ADMIN_TOKEN)
+  const token = process.env.BLOG_ADMIN_TOKEN;
+  const auth = req.headers.get('authorization');
+  if (!token || auth !== `Bearer ${token}`) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const { title, markdown, image } = await req.json();
 
     if (!title || !markdown) {
-      return NextResponse.json({ error: 'Заповни всі поля' }, { status: 400 });
+      return NextResponse.json({ error: 'Title og markdown er påkrævet' }, { status: 400 });
     }
 
     const id = uuidv4();

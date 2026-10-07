@@ -18,7 +18,7 @@ const fieldClass =
 
 const ContactForm = () => {
   const searchParams = useSearchParams();
-  const [form, setForm] = useState({ name: "", email: "", pakke: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", pakke: "", message: "", website: "" });
   const [status, setStatus] = useState("idle");
 
   useEffect(() => {
@@ -76,6 +76,8 @@ const handleSubmit = async (e) => {
         <input
           name="name"
           type="text"
+          autoComplete="name"
+          aria-label="Dit navn"
           required
           placeholder="Dit navn"
           value={form.name}
@@ -85,6 +87,8 @@ const handleSubmit = async (e) => {
         <input
           name="email"
           type="email"
+          autoComplete="email"
+          aria-label="Din email"
           required
           placeholder="Din email"
           value={form.email}
@@ -95,6 +99,7 @@ const handleSubmit = async (e) => {
 
       <select
         name="pakke"
+        aria-label="Vælg pakke"
         value={form.pakke}
         onChange={set("pakke")}
         className={fieldClass}
@@ -108,11 +113,23 @@ const handleSubmit = async (e) => {
 
       <textarea
         name="message"
+        aria-label="Din besked"
         placeholder="Hvad handler det om?"
         rows={5}
         value={form.message}
         onChange={set("message")}
         className={`${fieldClass} resize-none`}
+      />
+
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        value={form.website}
+        onChange={set("website")}
+        className="hidden"
       />
 
       <button

@@ -16,7 +16,7 @@ export const metadata = {
     title: "WordPress Hjemmeside til Din Virksomhed | WebHjerte",
     description:
       "Professionel WordPress-hjemmeside, du selv kan redigere. Hurtig og billig løsning fra WebHjerte.",
-    url: "https://webhjerte.dk/wordpress-hjemmeside",
+    url: "https://www.webhjerte.dk/wordpress-hjemmeside",
     type: "website",
   },
   twitter: {

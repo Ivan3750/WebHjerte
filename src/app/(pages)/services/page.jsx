@@ -10,9 +10,9 @@ import Questions from "../../components/Questions";
 import CtaSearchBlock from "../../components/ui/CTA";
 
 export const metadata = {
-  title: "Hjemmeside pris i Horsens – fra 2.500 DKK | WebHjerte",
+  title: "Webdesign & hjemmesider i Horsens – services og pakker | WebHjerte",
   description:
-    "Se mine priser på hjemmesider i Horsens. 4 klare pakker – Landingside fra 2.500 DKK, Basis 4.500 DKK, Standard 7.500 DKK, Skræddersyet fra 14.000 DKK. Ingen skjulte gebyrer.",
+    "Webdesign, hjemmesider og SEO til virksomheder i Horsens. Se mine services og 4 klare pakker. 4 klare pakker – Landingside fra 2.500 DKK, Basis 4.500 DKK, Standard 7.500 DKK, Skræddersyet fra 14.000 DKK. Ingen skjulte gebyrer.",
   openGraph: {
     title: "Priser på webdesign – klare pakker uden skjulte gebyrer | WebHjerte",
     description:

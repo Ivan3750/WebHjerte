@@ -10,6 +10,34 @@ const unbounded = Unbounded({
   display: "swap",
 });
 
+const SITE_URL = "https://www.webhjerte.dk";
+
+export const metadata = {
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "./" },
+  applicationName: "WebHjerte",
+  authors: [{ name: "Ivan Kohan", url: `${SITE_URL}/om-mig` }],
+  creator: "Ivan Kohan",
+  icons: {
+    icon: [{ url: "/favicon.ico" }, { url: "/W.png", type: "image/png" }],
+    apple: [{ url: "/W.png" }],
+  },
+  openGraph: {
+    siteName: "WebHjerte",
+    locale: "da_DK",
+    type: "website",
+    images: [{ url: "/W.png", width: 512, height: 512, alt: "WebHjerte" }],
+  },
+  twitter: { card: "summary", images: ["/W.png"] },
+  formatDetection: { telephone: true },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#1c1e1e",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="da">
@@ -19,30 +47,44 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "WebHjerte",
-              url: "https://webhjerte.dk",
-              logo: "https://webhjerte.dk/W.png",
-              image: "https://webhjerte.dk/W.png",
-              description:
-                "WebHjerte er et lokalt webbureau i Horsens, Jylland. Jeg tilbyder moderne webdesign, hjemmesider og SEO tjek til små virksomheder i Danmark.",
-              telephone: "+45 42 76 05 77",
-              priceRange: "$$",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Horsens",
-                postalCode: "8700",
-                addressCountry: "DK",
-              },
-              areaServed: ["Horsens", "Jylland", "Danmark", "Midtjylland"],
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "18",
-              },
-              sameAs: [
-                "https://www.facebook.com/profile.php?id=61575549052729",
-                "https://www.instagram.com/webhjerte",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": `${SITE_URL}/#website`,
+                  url: `${SITE_URL}/`,
+                  name: "WebHjerte",
+                  inLanguage: "da-DK",
+                  publisher: { "@id": `${SITE_URL}/#organization` },
+                },
+                {
+                  "@type": ["ProfessionalService", "LocalBusiness"],
+                  "@id": `${SITE_URL}/#organization`,
+                  name: "WebHjerte",
+                  url: `${SITE_URL}/`,
+                  logo: `${SITE_URL}/W.png`,
+                  image: `${SITE_URL}/W.png`,
+                  description:
+                    "WebHjerte er et lokalt webbureau i Horsens. Webdesign, hjemmesider og SEO til små og mellemstore virksomheder i Horsens, Midtjylland og resten af Danmark.",
+                  telephone: "+45 42 76 05 77",
+                  email: "hej@webhjerte.dk",
+                  priceRange: "2.500 - 14.000 DKK",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Horsens",
+                    postalCode: "8700",
+                    addressCountry: "DK",
+                  },
+                  areaServed: [
+                    { "@type": "City", name: "Horsens" },
+                    { "@type": "AdministrativeArea", name: "Midtjylland" },
+                    { "@type": "Country", name: "Danmark" },
+                  ],
+                  sameAs: [
+                    "https://www.facebook.com/profile.php?id=61575549052729",
+                    "https://www.instagram.com/webhjerte",
+                    "https://www.linkedin.com/company/webhjerte",
+                  ],
+                },
               ],
             }),
           }}
@@ -54,7 +96,7 @@ export default function RootLayout({ children }) {
         ></script>
         <Script
           id="plerdy-script"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
           var _protocol="https:"==location.protocol?"https://":"http://";
@@ -81,13 +123,8 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
@@ -120,6 +157,12 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded"
+        >
+          Spring til indhold
+        </a>
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
