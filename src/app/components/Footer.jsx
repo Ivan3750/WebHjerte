@@ -4,6 +4,10 @@ import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
 const navLinks = [
   { href: "/", label: "Forside" },
   { href: "/services", label: "Services" },
+  { href: "/webdesign-horsens", label: "Webdesign Horsens" },
+  { href: "/seo-horsens", label: "SEO Horsens" },
+  { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
+  { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
   { href: "/hjemmeside-til-saloner", label: "Saloner" },

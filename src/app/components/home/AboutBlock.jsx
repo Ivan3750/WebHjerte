@@ -11,7 +11,7 @@ const AboutBlock = () => {
 
         <AnimatedInView as="div" className="w-full">
           <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-[#e0e0e0]">
-            <Image src={Ivan} alt="Ivan - WebHjerte" fill className="object-cover object-center" />
+            <Image src={Ivan} alt="Ivan - WebHjerte" fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover object-center" />
           </div>
         </AnimatedInView>
 

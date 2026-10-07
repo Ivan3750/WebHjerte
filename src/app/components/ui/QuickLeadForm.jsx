@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function QuickLeadForm() {
-  const [form, setForm] = useState({ name: "", phone: "", url: "" });
+  const [form, setForm] = useState({ name: "", phone: "", url: "", website: "" });
   const [status, setStatus] = useState("idle");
 
   const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
@@ -18,9 +18,10 @@ export default function QuickLeadForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
-          email: "",
+          phone: form.phone,
+          website: form.website,
           pakke: "Quick lead",
-          message: `Navn: ${form.name}\nTelefon: ${form.phone}\nURL: ${form.url}`,
+          message: form.url ? `Nuværende hjemmeside: ${form.url}` : "",
         }),
       });
 
@@ -51,12 +52,14 @@ export default function QuickLeadForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3" aria-live="polite">
       <p className="text-[13px] font-medium text-[#5a5a5a] mb-1">Få et gratis tilbud</p>
 
       <input
         name="name"
         type="text"
+        autoComplete="name"
+        aria-label="Dit navn"
         required
         placeholder="Dit navn"
         value={form.name}
@@ -66,6 +69,8 @@ export default function QuickLeadForm() {
       <input
         name="phone"
         type="tel"
+        autoComplete="tel"
+        aria-label="Dit telefonnummer"
         required
         placeholder="Dit telefonnummer"
         value={form.phone}
@@ -75,10 +80,22 @@ export default function QuickLeadForm() {
       <input
         name="url"
         type="url"
+        aria-label="Din nuværende hjemmeside"
         placeholder="Din hjemmeside (valgfrit)"
         value={form.url}
         onChange={set("url")}
         className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#444] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
+      />
+
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        value={form.website}
+        onChange={set("website")}
+        className="hidden"
       />
 
       <button

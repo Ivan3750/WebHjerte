@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Script from "next/script";
  
 const  faqs_default = [
   {
@@ -76,8 +75,7 @@ const Questions = ({faqs = faqs_default}) => {
 
   return (
     <>
-      <Script
-        id="faq-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
@@ -109,7 +107,7 @@ const Questions = ({faqs = faqs_default}) => {
               <div
                 id={`faq-answer-${i}`}
                 className={`text-[13px] text-[#777] leading-[1.75] overflow-hidden transition-all duration-300 ${
-                  open === i ? "max-h-48 pb-5" : "max-h-0"
+                  open === i ? "max-h-[32rem] pb-5" : "max-h-0"
                 }`}
               >
                 {a}

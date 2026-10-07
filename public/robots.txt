@@ -2,10 +2,9 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 
 # Host
-Host: https://webhjerte.dk
+Host: https://www.webhjerte.dk
 
 # Sitemaps
-Sitemap: https://webhjerte.dk/sitemap.xml
+Sitemap: https://www.webhjerte.dk/sitemap.xml

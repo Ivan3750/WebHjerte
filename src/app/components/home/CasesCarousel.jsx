@@ -55,7 +55,7 @@ export default function CasesCarousel() {
                   alt={projects[current].title}
                   fill
                   className="object-cover"
-                  priority
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
                 <span className="absolute top-3 left-3 sm:top-4 sm:left-4 text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#e0e0e0] bg-[#111313]/80 border border-[#2a2d2d] rounded-full px-2.5 sm:px-3 py-1">
                   Case {String(current + 1).padStart(2, "0")}

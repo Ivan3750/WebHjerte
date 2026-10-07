@@ -15,7 +15,7 @@ export const metadata = {
     title: "Ny Professionel Hjemmeside | WebHjerte",
     description:
       "Få en ny, professionel hjemmeside, der ser godt ud og virker. Hurtig levering, fast pris.",
-    url: "https://webhjerte.dk/ny-professionel-hjemmeside",
+    url: "https://www.webhjerte.dk/ny-professionel-hjemmeside",
     type: "website",
   },
   twitter: {
