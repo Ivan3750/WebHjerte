@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 import ContactForm from "../../../components/ui/ContactForm";
 
@@ -48,7 +49,9 @@ export default function KontaktClient() {
           as="div"
           className="bg-[#f7f6f6] border border-[#e8e8e8] rounded-2xl p-7"
         >
-          <ContactForm />
+          <Suspense fallback={null}>
+            <ContactForm />
+          </Suspense>
         </AnimatedInView>
       </div>
     </section>

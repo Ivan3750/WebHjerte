@@ -3,7 +3,7 @@ import LocalLandingPage from "../../components/seo/LocalLandingPage";
 const path = "/webdesign-horsens";
 
 export const metadata = {
-  title: "Webdesign Horsens – professionelt webdesign fra 2.500 kr | WebHjerte",
+  title: "Webdesign Horsens – fra 2.500 kr | WebHjerte",
   description:
     "Webdesigner i Horsens: moderne, hurtigt webdesign der får besøgende til at kontakte dig. Fast pris fra 2.500 kr, første udkast på 48 timer. Få et gratis tilbud.",
   keywords: [

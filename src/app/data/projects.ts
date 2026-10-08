@@ -9,11 +9,6 @@ import Lønbæks from "../assets/cases/lønbæks.jpg";
 import VEKA from "../assets/cases/VEKA.png";
 import { StaticImageData } from "next/image";
 
-export type Stat = {
-  value: string;
-  label: string;
-};
-
 export type Project = {
   id: number,
   slug: string;
@@ -30,7 +25,6 @@ export type Project = {
   overviewExtra: string;
   designDescription: string;
   developmentDescription: string;
-  results: Stat[];
   site?: string;
 };
 export const projects: Project[] = [
@@ -54,12 +48,6 @@ export const projects: Project[] = [
       "Sultne øjne scroller hurtigt, så designet er bygget til at fange dem med det samme: lækre produktbilleder, tydelige priser og en bestillingsknap, der aldrig er langt væk. Hvert element er placeret for at fjerne tvivl og få flere til at gennemføre en bestilling i stedet for at forlade siden.",
     developmentDescription:
       "Bygget i Next.js for lynhurtig indlæsning, som holder på besøgende i stedet for at miste dem til en langsom side. Strukturerede data og billedoptimering sikrer, at Google forstår og prioriterer siden – vigtigt, når konkurrenterne betaler sig til synlighed på tredjepartsplatforme.",
-    results: [
-      { value: "+47%", label: "Flere online bestillinger" },
-      { value: "-32%", label: "Mindre afhængighed af Wolt/JustEat" },
-      { value: "2.1s", label: "Gennemsnitlig loadtid" },
-      { value: "+61%", label: "Flere mobilbrugere konverterer" },
-    ],
   },
   {
     id: 9,
@@ -81,12 +69,6 @@ export const projects: Project[] = [
       "Et trygt og imødekommende design, der signalerer erfaring og faglighed frem for rabatter. Holdstart, priser og kontaktinfo er placeret, hvor en nervøs førstegangselev leder efter dem.",
     developmentDescription:
       "En hurtig, mobilvenlig side bygget i Next.js, så unge elever – der næsten udelukkende browser fra telefonen – får en gnidningsfri oplevelse fra første besøg til booket køretime.",
-    results: [
-      { value: "+44%", label: "Flere bookede introtimer" },
-      { value: "+39%", label: "Flere besøgende fra lokale søgninger" },
-      { value: "-30%", label: "Færre opkald om basale spørgsmål" },
-      { value: "1.8s", label: "Loadtid" },
-    ],
   },
   {
     id: 2,
@@ -108,12 +90,6 @@ export const projects: Project[] = [
       "Et roligt, professionelt design, hvor intet konkurrerer om opmærksomheden unødigt. Filtrene er tydelige, og hvert skridt mod en ansøgning er så enkelt, at brugeren aldrig er i tvivl om, hvad næste klik gør.",
     developmentDescription:
       "En fuldstack-løsning bygget til at skalere, med en databasearkitektur der holder svartiderne lave, selv når trafikken stiger. Server-side rendering sikrer, at både brugere og søgemaskiner får siderne serveret hurtigt.",
-    results: [
-      { value: "+68%", label: "Flere oprettede profiler" },
-      { value: "+54%", label: "Flere jobansøgninger" },
-      { value: "-40%", label: "Reduceret bounce rate" },
-      { value: "3x", label: "Flere aktive virksomheder" },
-    ],
   },
   {
     id: 7,
@@ -139,12 +115,6 @@ export const projects: Project[] = [
       "Et rent, tillidsvækkende design, der understreger at kunden køber direkte fra fabrikken – ingen mellemled, ingen skjulte tillæg. Produktsystemerne er visuelt adskilt, så både lægmand og fagperson hurtigt finder frem til det relevante.",
     developmentDescription:
       "Bygget i Next.js med fokus på hurtig indlæsning af produktbilleder og et interaktivt vejledningsværktøj, der guider besøgende til det rette valg. Strukturerede produktdata og teknisk SEO sikrer synlighed på søgninger som 'metalplastvinduer' og specifikke profilsystemer.",
-    results: [
-      { value: "+58%", label: "Flere henvendelser via vejledningsværktøjet" },
-      { value: "+41%", label: "Organisk trafik" },
-      { value: "-28%", label: "Færre irrelevante forespørgsler" },
-      { value: "2.0s", label: "Loadtid" },
-    ],
   },
   /* {
     id: 8,
@@ -170,12 +140,6 @@ export const projects: Project[] = [
       "Et moderne og overskueligt design opdelt i tydelige kategorier – vinduer, vitrage-vinduer, altanpartier, ruller og gitre – så kunden hurtigt lander på det, de faktisk leder efter, uden at skulle bladre gennem irrelevante produkter.",
     developmentDescription:
       "En performanceoptimeret Next.js-løsning med en interaktiv kalkulator og et katalog, der er let at udvide efterhånden som produktsortimentet vokser. Strukturen er bygget til at skalere sammen med virksomheden.",
-    results: [
-      { value: "+64%", label: "Flere tilbudsforespørgsler" },
-      { value: "+37%", label: "Brugere der gennemfører kalkulatoren" },
-      { value: "-25%", label: "Kortere svartid på henvendelser" },
-      { value: "2.2s", label: "Loadtid" },
-    ],
   }, */
   {
     id: 3,
@@ -197,12 +161,6 @@ export const projects: Project[] = [
       "Energisk, motiverende og skarpt kontrastfyldt – designet skal give lyst til at komme i gang, ikke bare informere. Hver sektion flytter den besøgende ét skridt tættere på et køb.",
     developmentDescription:
       "En optimeret frontend, hvor mobilperformance er i højsædet, fordi de fleste finder siden på telefonen. Løsningen er bygget til at holde, selv når kampagner sender ekstra trafik ind ad døren.",
-    results: [
-      { value: "+73%", label: "Flere solgte medlemskaber" },
-      { value: "+58%", label: "Flere gentagne køb" },
-      { value: "2.4x", label: "Forbedret konverteringsrate" },
-      { value: "+49%", label: "Mere organisk trafik" },
-    ],
   },
   {
     id: 4,
@@ -224,12 +182,6 @@ export const projects: Project[] = [
       "Et roligt design med rødder i natur og fællesskab, hvor informationsarkitekturen er bygget, så både nye og nuværende medlemmer finder svar uden at skulle ringe eller skrive.",
     developmentDescription:
       "En CMS-løsning giver klubben fuld frihed til selv at opdatere hold, arrangementer og nyheder – uden at skulle vente på en udvikler. Teknisk optimering sikrer hurtig loadtid og bedre placering i Google.",
-    results: [
-      { value: "+35%", label: "Flere nye medlemmer" },
-      { value: "+82%", label: "Flere sidevisninger" },
-      { value: "-45%", label: "Færre supporthenvendelser" },
-      { value: "1.9s", label: "Loadtid" },
-    ],
   },
   {
     id: 5,
@@ -251,12 +203,6 @@ export const projects: Project[] = [
       "Robust og professionelt, fordi et sikkerhedsprodukt skal se ud, som det kan holde til noget. Produktvisningen er skåret til, så det er ligetil at bede om et tilbud, uanset hvor i researchen kunden befinder sig.",
     developmentDescription:
       "Strukturerede produktdata gør det let for Google at forstå og fremhæve produkterne, mens performanceoptimering holder bounce rate nede – vigtigt, når B2B-kunder sjældent giver en langsom side en chance nummer to.",
-    results: [
-      { value: "+92%", label: "Flere B2B henvendelser" },
-      { value: "+64%", label: "Organisk trafik" },
-      { value: "Top 3", label: "Placering på vigtige søgeord" },
-      { value: "+51%", label: "Flere produktforespørgsler" },
-    ],
   },
   {
   id: 10,
@@ -288,12 +234,6 @@ export const projects: Project[] = [
     "Designet er rent, professionelt og roligt med fokus på tillid. Tydelige budskaber, enkel navigation og klare call-to-actions gør det nemt for besøgende at forstå RenServs ydelser og tage kontakt.",
   developmentDescription:
     "Hjemmesiden er udviklet i Next.js med Tailwind CSS og optimeret til hurtig indlæsning på både mobil og desktop. Den tekniske struktur er bygget med fokus på performance, SEO og en god brugeroplevelse.",
-  results: [
-    { value: "100%", label: "Responsivt design" },
-    { value: "Next.js", label: "Moderne webteknologi" },
-    { value: "SEO", label: "Optimeret til lokal synlighed" },
-    { value: "24/7", label: "Online tilstedeværelse" },
-  ],
 }
 /*   {
     id: 6,
@@ -315,12 +255,6 @@ export const projects: Project[] = [
       "Et klart og seriøst udtryk, hvor information altid kommer før pynt. Alt er bygget til at være let at finde og let at forstå, også under pres.",
     developmentDescription:
       "Optimeret hosting og sikkerhed sikrer stabil drift, selv når trafikken pludselig stiger markant – en situation, siden var bygget til at kunne håndtere fra starten.",
-    results: [
-      { value: "120K+", label: "Besøgende første måned" },
-      { value: "28 lande", label: "International rækkevidde" },
-      { value: "1.6s", label: "Loadtid globalt" },
-      { value: "99.9%", label: "Oppetid" },
-    ],
   }, */
   
   

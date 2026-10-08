@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import KontaktClient from "./_components/KontaktClient";
 import AfterMessageBlock from "./_components/AfterMessageBlock";
 import Questions from "../../components/Questions";
@@ -57,9 +56,7 @@ export default function Page() {
         }}
       />
 
-      <Suspense fallback={null}>
-        <KontaktClient />
-      </Suspense>
+      <KontaktClient />
       <AfterMessageBlock />
       <Questions />
     </>

@@ -13,6 +13,9 @@ export default {
     '/404',
     '/500',
     '/api/*',
+    '/ny-professionel-hjemmeside',
+    '/privacy',
+    '/terms',
   ],
 
   robotsTxtOptions: {

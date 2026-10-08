@@ -4,18 +4,16 @@ import AnimatedInView from "./components/ui/AnimatedInView";
 import TilbydeSection from "./components/home/TilbydeSection";
 import AboutBlock from "./components/home/AboutBlock";
 import ProcessBlock from "./components/home/ProcessBlock";
-import CtaSearchBlock from "./components/ui/CTA";
 import Questions from "./components/Questions";
 import SocialProof from "./components/home/SocialProof";
 import CasesCarousel from "./components/home/CasesCarousel";
 import QuickLeadForm from "./components/ui/QuickLeadForm";
-import ChatWidget from "./components/ui/ChatWidget";
 import StickyCallButton from "./components/ui/StickyCallButton";
 
 export const metadata = {
   title: "Webbureau Horsens | Webdesign til lokale virksomheder | WebHjerte",
   description:
-    "Lokalt webbureau i Horsens: professionelle hjemmesider fra 2.500 kr, live på 14 dage. Direkte kontakt med udvikleren og fokus på Google. Få et gratis tilbud inden for 24 timer.",
+    "Lokalt webbureau i Horsens: hjemmesider fra 2.500 kr, live på 14 dage. Direkte kontakt med udvikleren. Få et gratis tilbud inden for 24 timer.",
   keywords: [
     "webbureau Horsens",
     "webdesign Horsens",
@@ -172,120 +170,10 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center gap-2 mt-4">
-                  <span className="text-xs text-[#7a7a7a]">Live på 2 uger</span>
+                  <span className="text-xs text-[#7a7a7a]">Live på 14 dage</span>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Wolt argument */}
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl border border-[#e8e8e8] bg-[#f7f6f6] p-8 sm:p-10">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-[#00a8e8]/10 flex items-center justify-center flex-shrink-0">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M10 2L2 8v10h6v-6h4v6h6V8l-8-6z" stroke="#00a8e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-1">
-                  Undgå Wolt-omkostninger
-                </p>
-                <h2 className="title text-[#1a1a1a] !leading-tight !mb-0">
-                  Wolt tager op til 30% af hver bestilling
-                </h2>
-              </div>
-            </div>
-            <p className="text-[14px] text-[#5a5a5a] leading-[1.85] max-w-[60ch] mb-6">
-              Hvis du sælger 10.000 kr om måneden gennem Wolt, betaler du op til
-              3.000 kr i gebyr. Med din egen hjemmeside med online bestilling
-              beholder du hele beløbet — og kunderne finder dig direkte på Google.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="rounded-xl bg-white border border-[#e8e8e8] p-5">
-                <p className="text-[28px] font-medium text-[#1a1a1a]">30%</p>
-                <p className="text-[12px] text-[#5a5a5a]">Wolt-omkostning pr. bestilling</p>
-              </div>
-              <div className="rounded-xl bg-white border border-[#e8e8e8] p-5">
-                <p className="text-[28px] font-medium text-[#1a1a1a]">3.000 kr</p>
-                <p className="text-[12px] text-[#5a5a5a]">Tabt pr. måned ved 10.000 kr i salg</p>
-              </div>
-              <div className="rounded-xl bg-white border border-[#e8e8e8] p-5">
-                <p className="text-[28px] font-medium text-[#1a1a1a]">0 kr</p>
-                <p className="text-[12px] text-[#5a5a5a]">Gebyr på din egen hjemmeside</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Niche landing pages */}
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedInView
-            as="p"
-            className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3"
-          >
-            Hjemmesider til din branche
-          </AnimatedInView>
-          <AnimatedInView
-            as="h2"
-            className="title text-[#1a1a1a] !leading-tight !mb-8"
-          >
-            Se hvad jeg kan lave for din virksomhed
-          </AnimatedInView>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {[
-              {
-                href: "/hjemmeside-til-haandvaerkere",
-                title: "Håndværkere",
-                desc: "VVS, elektrikere, tømrere, malere og flere. Få en hjemmeside, der får kunder til at ringe.",
-              },
-              {
-                href: "/hjemmeside-til-restauranter",
-                title: "Restauranter",
-                desc: "Menu, booking og online bestilling. Undgå Wolt-omkostninger på op til 30%.",
-              },
-              {
-                href: "/hjemmeside-til-saloner",
-                title: "Saloner",
-                desc: "Frisørsaloner, skønhedssaloner, barber og flere. Få kunder til at booke direkte.",
-              },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="group rounded-2xl p-6 flex flex-col gap-3 bg-[#f7f6f6] border border-[#e8e8e8] hover:border-[#00a8e8]/30 transition-colors"
-              >
-                <div className="flex items-center justify-between">
-                  <p className="text-[15px] font-medium text-[#5a5a5a] group-hover:text-[#00a8e8] transition-colors">
-                    {item.title}
-                  </p>
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    className="text-[#5a5a5a] group-hover:text-[#00a8e8] group-hover:translate-x-0.5 transition-all"
-                  >
-                    <path
-                      d="M3 8h10M9 4l4 4-4 4"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p className="text-[13px] text-[#6a6a6a] leading-relaxed">
-                  {item.desc}
-                </p>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
@@ -350,6 +238,22 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <div className="max-w-6xl mx-auto mt-10 pt-8 border-t border-[#e8e8e8] flex flex-wrap items-center gap-3">
+          <span className="text-[12px] text-[#5a5a5a]">Hjemmesider til din branche:</span>
+          {[
+            { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
+            { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
+            { href: "/hjemmeside-til-saloner", label: "Saloner" },
+          ].map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="text-[12px] text-[#3a3a3a] bg-white border border-[#e8e8e8] rounded-full px-3.5 py-1.5 hover:border-[#00a8e8]/40 hover:text-[#00a8e8] transition-colors"
+            >
+              {l.label}
+            </Link>
+          ))}
+        </div>
       </section>
 
       <TilbydeSection />
@@ -412,10 +316,8 @@ export default function Home() {
         </div>
       </section>
 
-      <CtaSearchBlock />
       <Questions />
 
-      <ChatWidget />
       <StickyCallButton />
     </>
   );

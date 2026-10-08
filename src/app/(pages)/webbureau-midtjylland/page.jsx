@@ -3,7 +3,7 @@ import LocalLandingPage from "../../components/seo/LocalLandingPage";
 const path = "/webbureau-midtjylland";
 
 export const metadata = {
-  title: "Webbureau Midtjylland – hjemmesider og SEO til fast pris | WebHjerte",
+  title: "Webbureau Midtjylland – hjemmesider til fast pris | WebHjerte",
   description:
     "Webbureau til virksomheder i Midtjylland: Aarhus, Silkeborg, Vejle, Skanderborg og resten af regionen. Hjemmesider fra 2.500 kr, direkte kontakt og levering på 14 dage.",
   keywords: [

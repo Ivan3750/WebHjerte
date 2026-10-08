@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Privatlivspolitik | WebHjerte",
+  description:
+    "Læs hvordan WebHjerte indsamler og behandler dine personoplysninger i overensstemmelse med GDPR.",
+  alternates: { canonical: "https://www.webhjerte.dk/privacy" },
+  robots: { index: false, follow: true },
+};
+
 const TermsOfUse = () => {
   return (
     <>

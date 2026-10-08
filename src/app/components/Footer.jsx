@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/seo-horsens", label: "SEO Horsens" },
   { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
   { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
+  { href: "/wordpress-hjemmeside", label: "WordPress hjemmeside" },
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
   { href: "/hjemmeside-til-saloner", label: "Saloner" },
