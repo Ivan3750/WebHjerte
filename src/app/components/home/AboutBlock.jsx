@@ -51,21 +51,6 @@ const AboutBlock = () => {
             >
               Vil du vide mere om mig og min historie?
             </Link>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-                { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-                { href: "/hjemmeside-til-saloner", label: "Saloner" },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-[11px] text-[#888] border border-[#e0e0e0] rounded-full px-3 py-1 bg-white hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
           </AnimatedInView>
         </div>
 

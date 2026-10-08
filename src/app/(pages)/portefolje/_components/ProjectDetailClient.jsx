@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -17,58 +16,6 @@ const Check = () => (
     />
   </svg>
 );
-
-function parseStat(value) {
-  const match = value.match(/^([^0-9+-]*)([+-]?)(\d+(?:[.,]\d+)?)(.*)$/);
-  if (!match) return { prefix: "", sign: "", number: null, suffix: value, decimals: 0 };
-  const [, prefix, sign, numberStr, suffix] = match;
-  return {
-    prefix,
-    sign,
-    number: parseFloat(numberStr.replace(",", ".")),
-    suffix,
-    decimals: numberStr.includes(".") || numberStr.includes(",") ? 1 : 0,
-  };
-}
-
-function StatCard({ stat, index }) {
-  const [display, setDisplay] = useState(0);
-  const [started, setStarted] = useState(false);
-  const { prefix, sign, number, suffix, decimals } = parseStat(stat.value);
-
-  const startCount = () => {
-    if (started || number === null) return;
-    setStarted(true);
-    const duration = 1100;
-    const from = performance.now();
-    const tick = (now) => {
-      const progress = Math.min((now - from) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setDisplay(number * eased);
-      if (progress < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  };
-
-  return (
-    <motion.div
-      onViewportEnter={startCount}
-      viewport={{ once: true, margin: "-40px" }}
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.08 }}
-      className="rounded-2xl border border-[#ececea] bg-white p-6 text-center"
-    >
-      <p className="text-[28px] sm:text-[32px] font-medium text-[#1a1a1a] leading-none">
-        {prefix}
-        {sign}
-        {number !== null ? display.toFixed(decimals) : stat.value}
-        {number !== null ? suffix : ""}
-      </p>
-      <p className="text-[12px] text-[#7a7a7a] mt-3 leading-snug">{stat.label}</p>
-    </motion.div>
-  );
-}
 
 function PhotoFrame({
   src,
@@ -301,28 +248,6 @@ export default function ProjectDetailClient({ project }) {
                 </span>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-5 sm:px-10 lg:px-20 max-w-6xl mx-auto pb-20">
-        <div className="relative pl-14 sm:pl-16">
-          <div className="absolute -left-14 sm:-left-16 top-0">
-            <ProcessMarker number="03" />
-          </div>
-          <AnimatedInView
-            as="p"
-            className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3"
-          >
-            Resultater
-          </AnimatedInView>
-          <AnimatedInView as="h3" className="text-[22px] sm:text-[26px] text-[#1a1a1a] leading-tight mb-8">
-            Tallene bag projektet
-          </AnimatedInView>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {project.results.map((stat, i) => (
-              <StatCard key={stat.label} stat={stat} index={i} />
-            ))}
           </div>
         </div>
       </section>

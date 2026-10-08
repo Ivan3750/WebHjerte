@@ -10,7 +10,8 @@ export const metadata = {
     "Få en ny, professionel hjemmeside, der ser godt ud og virker. Hurtig levering, fast pris og fuld hjælp fra start til slut – uden binding.",
   keywords:
     "professionel hjemmeside, ny hjemmeside, ny hjemmeside pris, professionel hjemmeside design, webbureau horsens",
-  robots: "index, follow",
+  // Reklame-landingsside: duplikerer forsiden/services, så den holdes ude af Google
+  robots: { index: false, follow: true },
   openGraph: {
     title: "Ny Professionel Hjemmeside | WebHjerte",
     description:
