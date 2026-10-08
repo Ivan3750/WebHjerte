@@ -15,7 +15,7 @@ import StickyCallButton from "./components/ui/StickyCallButton";
 export const metadata = {
   title: "Webbureau Horsens | Webdesign til lokale virksomheder | WebHjerte",
   description:
-    "Lokalt webbureau i Horsens: professionelle hjemmesider fra 2.500 kr, live på 14 dage. Direkte kontakt med udvikleren og fokus på Google. Få et gratis tilbud inden for 24 timer.",
+    "Lokalt webbureau i Horsens: hjemmesider fra 2.500 kr, live på 14 dage. Direkte kontakt med udvikleren. Få et gratis tilbud inden for 24 timer.",
   keywords: [
     "webbureau Horsens",
     "webdesign Horsens",

@@ -11,7 +11,7 @@ import CtaSearchBlock from "../../components/ui/CTA";
 export const metadata = {
   title: "AI SEO i Horsens – få mere synlighed med AI | WebHjerte",
   description:
-    "AI SEO hjælper din virksomhed med at dukke op, når kunder søger efter det, du tilbyder. Jeg optimerer din hjemmeside og indhold med AI-værktøjer — så du får flere kunder uden at betale for annoncer.",
+    "Bliv fundet, når kunder søger efter det, du tilbyder – på Google og i AI-søgning. Jeg optimerer din hjemmeside og indhold, så du får flere kunder uden annoncer.",
   openGraph: {
     title: "AI SEO – få din virksomhed fundet på Google | WebHjerte",
     description:

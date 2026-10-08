@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Handelsbetingelser | WebHjerte",
+  description:
+    "Handelsbetingelser for køb af hjemmeside, webdesign og SEO hos WebHjerte.",
+  alternates: { canonical: "https://www.webhjerte.dk/terms" },
+  robots: { index: false, follow: true },
+};
+
 const Vikar = () => {
   return (
     <>

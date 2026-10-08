@@ -120,9 +120,9 @@ export default function SEO() {
         <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Gratis værktøj
         </p>
-        <h1 className="title text-white !leading-tight mb-2">
+        <h2 className="title text-white !leading-tight mb-2">
           Tjek din hjemmesides SEO-score
-        </h1>
+        </h2>
         <p className="text-[14px] text-[#5a5a5a] mb-10 max-w-lg">
           Indtast din URL og få en analyse af ydeevne, tilgængelighed og SEO -
           på under 30 sekunder.
