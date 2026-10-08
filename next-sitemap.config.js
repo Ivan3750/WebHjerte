@@ -14,6 +14,7 @@ export default {
     '/500',
     '/api/*',
     '/ny-professionel-hjemmeside',
+    '/gratis-analyse',
     '/privacy',
     '/terms',
   ],

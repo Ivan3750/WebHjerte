@@ -47,9 +47,9 @@ export async function POST(req) {
     const pakke = clean(body?.pakke, 80) || "Ikke angivet";
     const message = clean(body?.message, 3000);
 
-    // Et navn og mindst én måde at kontakte kunden på (e-mail eller telefon)
-    if (!name || (!email && !phone)) {
-      return json({ success: false, message: "Navn samt e-mail eller telefon er påkrævet" }, 400);
+    // Mindst én måde at kontakte kunden på (e-mail eller telefon); navn er valgfrit
+    if (!email && !phone) {
+      return json({ success: false, message: "E-mail eller telefon er påkrævet" }, 400);
     }
     if (email && !EMAIL_RE.test(email)) {
       return json({ success: false, message: "Ugyldig e-mailadresse" }, 400);
@@ -57,7 +57,7 @@ export async function POST(req) {
 
     const telegramMessage = [
       "📩 Ny henvendelse fra webhjerte.dk",
-      `Navn: ${name}`,
+      name && `Navn: ${name}`,
       email && `Email: ${email}`,
       phone && `Telefon: ${phone}`,
       `Pakke: ${pakke}`,
