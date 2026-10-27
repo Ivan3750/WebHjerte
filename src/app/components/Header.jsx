@@ -19,6 +19,8 @@ const nicheLinks = [
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
   { href: "/hjemmeside-til-saloner", label: "Saloner" },
+  { href: "/hjemmeside-til-klinikker", label: "Klinikker" },
+  { href: "/hjemmeside-til-bilforhandlere", label: "Bilforhandlere" },
 ];
 
 const NavLink = ({ href, label, pathname, onClick }) => {

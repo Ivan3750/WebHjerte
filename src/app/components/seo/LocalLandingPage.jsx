@@ -27,6 +27,8 @@ export default function LocalLandingPage({
   faqs,
   related,
   area = "Horsens",
+  highlights,
+  visual,
 }) {
   const url = `${SITE_URL}${path}`;
 
@@ -121,6 +123,36 @@ export default function LocalLandingPage({
           </div>
         </div>
       </section>
+
+      {visual && (
+        <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pb-20">
+          <div className="max-w-6xl mx-auto">{visual}</div>
+        </section>
+      )}
+
+      {highlights && (
+        <section className="bg-white px-5 sm:px-10 lg:px-20 py-16">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="title text-[#1a1a1a] !leading-tight !mb-8 text-center">
+              {highlights.title}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {highlights.items.map((it) => (
+                <div
+                  key={it.title}
+                  className="group rounded-2xl border border-[#e8e8e8] bg-[#f7f6f6] p-6 transition hover:-translate-y-1 hover:border-[#00a8e8]/40 hover:shadow-lg"
+                >
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#00a8e8]/10 text-xl transition group-hover:scale-110">
+                    <span aria-hidden="true">{it.icon}</span>
+                  </div>
+                  <p className="mb-2 text-[15px] font-medium text-[#1a1a1a]">{it.title}</p>
+                  <p className="text-[13px] leading-relaxed text-[#6a6a6a]">{it.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Indhold */}
       <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16">

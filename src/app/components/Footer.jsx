@@ -16,6 +16,7 @@ const navLinks = [
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
   { href: "/hjemmeside-til-saloner", label: "Saloner" },
   { href: "/hjemmeside-til-klinikker", label: "Klinikker" },
+  { href: "/hjemmeside-til-bilforhandlere", label: "Bilforhandlere" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/om-mig", label: "Om mig" },
   { href: "/kontakt", label: "Kontakt" },

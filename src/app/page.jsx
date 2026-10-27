@@ -209,6 +209,7 @@ export default function Home() {
             { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
             { href: "/hjemmeside-til-saloner", label: "Saloner" },
             { href: "/hjemmeside-til-klinikker", label: "Klinikker" },
+            { href: "/hjemmeside-til-bilforhandlere", label: "Bilforhandlere" },
           ].map((l) => (
             <Link
               key={l.href}
