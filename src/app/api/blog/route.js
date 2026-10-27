@@ -1,6 +1,7 @@
 import db from '../../../app/lib/db';
 
-export async function GET(req) {
+export async function GET() {
+  try {
   const [rows] = await db.execute(
     `SELECT 
       id, 
@@ -24,4 +25,11 @@ export async function GET(req) {
     headers: { 'Content-Type': 'application/json' },
     status: 200,
   });
+  } catch (error) {
+    console.error('Blog fetch error:', error);
+    return new Response(JSON.stringify({ error: 'Server error' }), {
+      headers: { 'Content-Type': 'application/json' },
+      status: 500,
+    });
+  }
 }

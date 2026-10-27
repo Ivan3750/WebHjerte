@@ -19,6 +19,8 @@ const nicheLinks = [
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
   { href: "/hjemmeside-til-saloner", label: "Saloner" },
+  { href: "/hjemmeside-til-klinikker", label: "Klinikker" },
+  { href: "/hjemmeside-til-bilforhandlere", label: "Bilforhandlere" },
 ];
 
 const NavLink = ({ href, label, pathname, onClick }) => {
@@ -99,7 +101,7 @@ const Header = () => {
   const isNicheActive = nicheLinks.some((l) => l.href === pathname);
 
   return (
-    <header className="relative flex items-center justify-between px-4 py-3 md:px-6 lg:px-10 sticky top-0 left-0 border-b-2 border-[#404242] bg-[#1c1e1e] z-50">
+    <header className="flex items-center justify-between px-4 py-3 md:px-6 lg:px-10 sticky top-0 left-0 border-b-2 border-[#404242] bg-[#1c1e1e] z-50">
       <Link href="/" aria-label="Gå til forsiden">
         <div className="flex items-center gap-3">
           <Image src={W} width={44} height={44} alt="WebHjerte logo" priority />

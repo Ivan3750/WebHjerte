@@ -79,11 +79,57 @@ export default function RootLayout({ children }) {
                     { "@type": "AdministrativeArea", name: "Midtjylland" },
                     { "@type": "Country", name: "Danmark" },
                   ],
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    latitude: 55.8607,
+                    longitude: 9.8503,
+                  },
+                  openingHoursSpecification: {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    opens: "09:00",
+                    closes: "17:00",
+                  },
+                  founder: { "@id": `${SITE_URL}/#ivan` },
+                  knowsAbout: [
+                    "Webdesign",
+                    "Webudvikling",
+                    "SEO",
+                    "Lokal SEO",
+                    "AI-søgeoptimering (GEO)",
+                    "WordPress",
+                    "Next.js",
+                    "Webshops",
+                  ],
+                  hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "Hjemmesidepakker",
+                    itemListElement: [
+                      ["Landingside", "2500"],
+                      ["Basis-hjemmeside (3-5 sider)", "4500"],
+                      ["Standard-hjemmeside (op til 8 sider)", "7500"],
+                      ["Skræddersyet løsning", "14000"],
+                    ].map(([name, price]) => ({
+                      "@type": "Offer",
+                      price,
+                      priceCurrency: "DKK",
+                      itemOffered: { "@type": "Service", name },
+                    })),
+                  },
                   sameAs: [
                     "https://www.facebook.com/profile.php?id=61575549052729",
                     "https://www.instagram.com/webhjerte",
                     "https://www.linkedin.com/company/webhjerte",
                   ],
+                },
+                {
+                  "@type": "Person",
+                  "@id": `${SITE_URL}/#ivan`,
+                  name: "Ivan Kohan",
+                  jobTitle: "Webudvikler og grundlægger af WebHjerte",
+                  url: `${SITE_URL}/om-mig`,
+                  worksFor: { "@id": `${SITE_URL}/#organization` },
+                  homeLocation: { "@type": "City", name: "Horsens" },
                 },
               ],
             }),
@@ -94,6 +140,28 @@ export default function RootLayout({ children }) {
           data-key="dQ/aslmLQa//XoyDENgNAQ"
           async
         ></script>
+        {/* Consent Mode: alt er afvist som standard, indtil Cookiebot opdaterer samtykket.
+            Skal ligge før Cookiebot, GTM og gtag, så ingen tags fyrer uden samtykke. */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            wait_for_update: 500
+          });
+          gtag('set', 'ads_data_redaction', true);
+        `}
+        </Script>
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="ddb514ae-c2c6-4fdb-9105-c3b1cb6bc9ec"
+          strategy="beforeInteractive"
+        />
         <Script
           id="plerdy-script"
           strategy="lazyOnload"
@@ -131,19 +199,10 @@ export default function RootLayout({ children }) {
         />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QFGJWT1F24');
         `}
         </Script>
-        <Script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="ddb514ae-c2c6-4fdb-9105-c3b1cb6bc9ec"
-          type="text/javascript"
-          async
-        />
       </head>
       <body
         className={`${unbounded.variable} antialiased`}

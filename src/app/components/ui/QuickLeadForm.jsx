@@ -46,14 +46,14 @@ export default function QuickLeadForm() {
           </svg>
         </div>
         <p className="text-[15px] font-medium text-white">Tak for din besked!</p>
-        <p className="text-[13px] text-[#5a5a5a]">Jeg ringer til dig inden for 24 timer.</p>
+        <p className="text-[13px] text-[#9a9a9a]">Jeg ringer til dig inden for 24 timer.</p>
       </div>
     );
   }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3" aria-live="polite">
-      <p className="text-[13px] font-medium text-[#5a5a5a] mb-1">Få et gratis tilbud</p>
+      <p className="text-[13px] font-medium text-[#c0c0c0] mb-1">Få et gratis tilbud</p>
 
       <input
         name="name"
@@ -112,7 +112,7 @@ export default function QuickLeadForm() {
         </p>
       )}
 
-      <p className="text-[11px] text-[#3a3d3d] text-center mt-1">
+      <p className="text-[11px] text-[#8a8a8a] text-center mt-1">
         Ingen spam. Ingen binding.{" "}
         <span className="text-[#00a8e8]">Svar inden for 24 timer.</span>
       </p>
