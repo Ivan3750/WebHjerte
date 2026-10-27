@@ -36,6 +36,8 @@ export default {
       '/webdesign-horsens': 0.9,
       '/seo-horsens': 0.9,
       '/webbureau-midtjylland': 0.9,
+      '/webdesign-aarhus': 0.8,
+      '/webshop-horsens': 0.8,
       '/services': 0.9,
       '/hjemmeside-pris': 0.8,
       '/om-mig': 0.8,

@@ -26,6 +26,7 @@ export default function LocalLandingPage({
   sections,
   faqs,
   related,
+  area = "Horsens",
 }) {
   const url = `${SITE_URL}${path}`;
 
@@ -40,7 +41,7 @@ export default function LocalLandingPage({
         url,
         provider: { "@id": `${SITE_URL}/#organization` },
         areaServed: [
-          { "@type": "City", name: "Horsens" },
+          { "@type": "City", name: area },
           { "@type": "AdministrativeArea", name: "Midtjylland" },
           { "@type": "Country", name: "Danmark" },
         ],
@@ -69,10 +70,20 @@ export default function LocalLandingPage({
       />
 
       {/* Hero */}
-      <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-20 pb-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-14 items-start">
+      <section className="relative overflow-hidden bg-[#111313] px-5 sm:px-10 lg:px-20 pt-16 pb-20">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-40 -right-40 h-[480px] w-[480px] rounded-full bg-[#00a8e8]/10 blur-3xl"
+        />
+        <nav aria-label="Brødkrumme" className="relative max-w-6xl mx-auto mb-10 text-[12px] text-[#7a7a7a]">
+          <Link href="/" className="hover:text-white transition-colors">Forside</Link>
+          <span className="mx-2">/</span>
+          <span className="text-[#c0c0c0]">{name}</span>
+        </nav>
+        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-14 items-start">
           <div>
-            <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">
+            <p className="inline-flex items-center gap-2 rounded-full border border-[#2a3a3a] px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-[#9a9a9a] mb-5">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#00a8e8]" />
               {eyebrow}
             </p>
             <h1 className="maintitle text-white !leading-tight mb-6 text-balance">
@@ -84,7 +95,7 @@ export default function LocalLandingPage({
             <div className="flex flex-wrap gap-3 mb-10">
               <Link
                 href="/kontakt"
-                className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#111313] transition-opacity hover:opacity-90"
+                className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#111313] shadow-lg shadow-[#00a8e8]/20 transition hover:opacity-90 hover:-translate-y-0.5"
               >
                 Få et gratis tilbud
               </Link>
@@ -105,17 +116,23 @@ export default function LocalLandingPage({
             </div>
           </div>
 
-          <div className="bg-[#1c1e1e] border border-[#2a2d2d] rounded-2xl p-7">
+          <div className="bg-[#1c1e1e] border border-[#2a2d2d] rounded-2xl p-7 shadow-2xl shadow-black/30">
             <QuickLeadForm />
           </div>
         </div>
       </section>
 
       {/* Indhold */}
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16">
-        <div className="max-w-3xl mx-auto flex flex-col gap-12">
-          {sections.map((section) => (
-            <article key={section.h2}>
+      <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16">
+        <div className="max-w-3xl mx-auto flex flex-col gap-6">
+          {sections.map((section, i) => (
+            <article
+              key={section.h2}
+              className="rounded-2xl border border-[#e8e8e8] bg-white p-7 sm:p-9 shadow-sm"
+            >
+              <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#00a8e8]/10 text-[12px] font-medium text-[#0086b8]">
+                {String(i + 1).padStart(2, "0")}
+              </span>
               <h2 className="title text-[#1a1a1a] !leading-tight !mb-4">
                 {section.h2}
               </h2>
@@ -134,7 +151,10 @@ export default function LocalLandingPage({
                       key={item}
                       className="flex gap-3 text-[14px] text-[#5a5a5a] leading-[1.7]"
                     >
-                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#00a8e8] flex-shrink-0" />
+                      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" className="mt-1 flex-shrink-0">
+                        <circle cx="8" cy="8" r="8" fill="#00a8e8" fillOpacity=".12" />
+                        <path d="M4.8 8.2l2 2 4.2-4.4" stroke="#00a8e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -161,7 +181,7 @@ export default function LocalLandingPage({
               <Link
                 key={item.href}
                 href={item.href}
-                className="group rounded-2xl p-6 flex flex-col gap-3 bg-[#f7f6f6] border border-[#e8e8e8] hover:border-[#00a8e8]/30 transition-colors"
+                className="group rounded-2xl p-6 flex flex-col gap-3 bg-[#f7f6f6] border border-[#e8e8e8] hover:border-[#00a8e8]/40 hover:-translate-y-0.5 hover:shadow-md transition"
               >
                 <p className="text-[15px] font-medium text-[#5a5a5a] group-hover:text-[#00a8e8] transition-colors">
                   {item.title}
