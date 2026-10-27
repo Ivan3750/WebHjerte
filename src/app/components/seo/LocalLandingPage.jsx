@@ -6,6 +6,9 @@ import QuickLeadForm from "../ui/QuickLeadForm";
 
 const SITE_URL = "https://www.webhjerte.dk";
 
+// Opdateres når indholdet på landingssiderne revideres
+const UPDATED = "2026-10-27";
+
 const facts = [
   { num: "Fra 2.500 kr", label: "Fast pris" },
   { num: "14 dage", label: "Typisk leveringstid" },
@@ -29,8 +32,17 @@ export default function LocalLandingPage({
   area = "Horsens",
   highlights,
   visual,
+  summary,
 }) {
   const url = `${SITE_URL}${path}`;
+
+  const summaryItems = summary ?? [
+    ["Hvad", `${name} fra WebHjerte – et webbureau i Horsens drevet af Ivan Kohan.`],
+    ["Pris", "Fast pris fra 2.500 kr for en landingside, 4.500 kr for en Basis-hjemmeside og 7.500 kr for Standard."],
+    ["Tid", "Første designudkast på 48 timer, og en hjemmeside er typisk live på 10-18 dage."],
+    ["Område", area === "Danmark" ? "Hele Danmark." : `${area}, Midtjylland og resten af Danmark.`],
+    ["Garanti", "Er du ikke tilfreds med det første design, betaler du 0 kr for det."],
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -43,7 +55,7 @@ export default function LocalLandingPage({
         url,
         provider: { "@id": `${SITE_URL}/#organization` },
         areaServed: [
-          { "@type": "City", name: area },
+          ...(area === "Danmark" ? [] : [{ "@type": "City", name: area }]),
           { "@type": "AdministrativeArea", name: "Midtjylland" },
           { "@type": "Country", name: "Danmark" },
         ],
@@ -55,7 +67,21 @@ export default function LocalLandingPage({
         },
       },
       {
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: h1,
+        description: intro,
+        inLanguage: "da-DK",
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+        about: { "@id": `${url}#service` },
+        author: { "@id": `${SITE_URL}/#ivan` },
+        dateModified: UPDATED,
+        breadcrumb: { "@id": `${url}#breadcrumb` },
+      },
+      {
         "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Forside", item: `${SITE_URL}/` },
           { "@type": "ListItem", position: 2, name, item: url },
@@ -154,8 +180,28 @@ export default function LocalLandingPage({
         </section>
       )}
 
+      {/* Kort fortalt – et direkte, citerbart svar til læsere og AI-søgemaskiner */}
+      <section className="bg-white px-5 sm:px-10 lg:px-20 pt-16">
+        <div className="max-w-3xl mx-auto rounded-2xl border-l-4 border-[#00a8e8] bg-[#f0f9fd] p-6 sm:p-8">
+          <h2 className="mb-3 text-[13px] font-medium uppercase tracking-[0.1em] text-[#0086b8]">
+            Kort fortalt
+          </h2>
+          <ul className="flex flex-col gap-2 text-[14px] leading-[1.7] text-[#2a2a2a]">
+            {summaryItems.map(([label, text]) => (
+              <li key={label}>
+                <strong>{label}:</strong> {text}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-[12px] text-[#6a6a6a]">
+            Skrevet af <Link href="/om-mig" className="underline underline-offset-2 hover:text-[#00a8e8]">Ivan Kohan</Link> · Opdateret{" "}
+            <time dateTime={UPDATED}>27. oktober 2026</time>
+          </p>
+        </div>
+      </section>
+
       {/* Indhold */}
-      <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16">
+      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16">
         <div className="max-w-3xl mx-auto flex flex-col gap-6">
           {sections.map((section, i) => (
             <article

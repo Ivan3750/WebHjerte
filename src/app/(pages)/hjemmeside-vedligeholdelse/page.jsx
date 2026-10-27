@@ -93,6 +93,7 @@ export default function HjemmesideVedligeholdelsePage() {
       eyebrow="Vedligeholdelse og support"
       h1="Hjemmeside vedligeholdelse – hold dit site sikkert og hurtigt"
       intro="En hjemmeside er ikke færdig ved lancering. Med en fast månedlig aftale sørger jeg for opdateringer, backup, sikkerhed og rettelser, så du kan koncentrere dig om din forretning."
+      summary={[["Hvad", "Fast månedlig vedligeholdelse af hjemmesider fra WebHjerte i Horsens."], ["Indhold", "Opdateringer, backup, sikkerhedsovervågning, små rettelser og hastighedstjek."], ["Pris", "Fast månedlig pris, aftalt på forhånd."], ["Binding", "Ingen lang binding – aftalen kan opsiges med kort varsel."], ["Område", "Hele Danmark."]]}
       sections={sections}
       faqs={faqs}
       related={related}

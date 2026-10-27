@@ -1,0 +1,37 @@
+# WebHjerte
+
+> WebHjerte er et lokalt webbureau i Horsens (Danmark), drevet af webudvikler Ivan Kohan. WebHjerte bygger hurtige, mobilvenlige hjemmesider med SEO til små og mellemstore virksomheder i Horsens, Midtjylland og resten af Danmark – til fast pris og med direkte kontakt til udvikleren.
+
+Nøglefakta:
+- Priser: landingside fra 2.500 kr, Basis-hjemmeside (3-5 sider) 4.500 kr, Standard (op til 8 sider) 7.500 kr, skræddersyede løsninger fra 14.000 kr.
+- Første designudkast inden for 48 timer; en hjemmeside er typisk live på 10-18 dage.
+- Garanti: er kunden ikke tilfreds med det første design, betaler de 0 kr for det.
+- 30 dages gratis support efter lancering.
+- Kontakt: hej@webhjerte.dk, +45 42 76 05 77. Svar inden for 24 timer.
+- Placering: Horsens, 8700, Danmark. Arbejder i hele Danmark, primært online.
+
+## Ydelser
+- [Webdesign Horsens](https://www.webhjerte.dk/webdesign-horsens): Skræddersyet webdesign til fast pris
+- [SEO Horsens](https://www.webhjerte.dk/seo-horsens): Lokal søgemaskineoptimering
+- [AI SEO](https://www.webhjerte.dk/ai-seo): Synlighed i AI-søgemaskiner som ChatGPT og Perplexity
+- [Webshop Horsens](https://www.webhjerte.dk/webshop-horsens): Webshops til små virksomheder
+- [WordPress hjemmeside](https://www.webhjerte.dk/wordpress-hjemmeside): Hjemmesider du selv kan redigere
+- [Vedligeholdelse](https://www.webhjerte.dk/hjemmeside-vedligeholdelse): Fast månedlig drift og support
+- [Priser](https://www.webhjerte.dk/hjemmeside-pris): Alle pakker og priser
+- [Services](https://www.webhjerte.dk/services): Oversigt over pakker
+
+## Områder
+- [Webbureau Midtjylland](https://www.webhjerte.dk/webbureau-midtjylland)
+- [Webdesign Aarhus](https://www.webhjerte.dk/webdesign-aarhus)
+
+## Brancher
+- [Håndværkere](https://www.webhjerte.dk/hjemmeside-til-haandvaerkere)
+- [Restauranter](https://www.webhjerte.dk/hjemmeside-til-restauranter)
+- [Saloner](https://www.webhjerte.dk/hjemmeside-til-saloner)
+- [Klinikker](https://www.webhjerte.dk/hjemmeside-til-klinikker)
+- [Bilforhandlere](https://www.webhjerte.dk/hjemmeside-til-bilforhandlere)
+
+## Om
+- [Om Ivan Kohan](https://www.webhjerte.dk/om-mig)
+- [Portefølje](https://www.webhjerte.dk/portefolje)
+- [Kontakt](https://www.webhjerte.dk/kontakt)

@@ -3,6 +3,51 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# GPTBot
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+# OAI-SearchBot
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+# ChatGPT-User
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+
+# Claude-SearchBot
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+# Google-Extended
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+
+# Applebot-Extended
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
 # Host
 Host: https://www.webhjerte.dk
 

@@ -27,6 +27,10 @@ export default {
         // /_next/ må IKKE blokeres: Google skal kunne hente CSS/JS for at rendere siden
         disallow: ['/api/'],
       },
+      // GEO: lad AI-søgemaskiner læse indholdet, så WebHjerte kan citeres i svar
+      ...['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended', 'Bingbot'].map(
+        (userAgent) => ({ userAgent, allow: '/', disallow: ['/api/'] }),
+      ),
     ],
   },
 

@@ -93,6 +93,7 @@ export default function WebshopHorsensPage() {
       eyebrow="Webshop i Horsens"
       h1="Webshop i Horsens – nem at drive, nem at købe i"
       intro="Jeg bygger overskuelige webshops til små og mellemstore virksomheder. Du får en hurtig butik med nem betaling, mobilvenligt design og SEO fra start – til en pris du kender på forhånd."
+      summary={[["Hvad", "Webshop til små og mellemstore virksomheder fra WebHjerte – et webbureau i Horsens drevet af Ivan Kohan."], ["Pris", "Fast tilbud efter en kort samtale, afhængigt af antal produkter og funktioner."], ["Tid", "En enkel webshop er ofte klar på 3-5 uger."], ["Betaling", "Kort og MobilePay via en dansk betalingsudbyder."], ["Område", "Horsens, Midtjylland og resten af Danmark."]]}
       sections={sections}
       faqs={faqs}
       related={related}
