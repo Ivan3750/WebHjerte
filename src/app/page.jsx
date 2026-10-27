@@ -49,37 +49,6 @@ export const metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "LocalBusiness"],
-  "@id": "https://www.webhjerte.dk/#organization",
-  name: "WebHjerte",
-  url: "https://www.webhjerte.dk/",
-  description:
-    "Webbureau i Horsens, der bygger professionelle hjemmesider til virksomheder i Horsens og Midtjylland.",
-  areaServed: [
-    { "@type": "City", name: "Horsens" },
-    { "@type": "AdministrativeArea", name: "Midtjylland" },
-    { "@type": "Country", name: "Danmark" },
-  ],
-  serviceType: ["Webdesign", "Webudvikling", "Hjemmesider", "SEO"],
-  founder: { "@type": "Person", name: "Ivan Kohan" },
-  telephone: "+45 42 76 05 77",
-  email: "hej@webhjerte.dk",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Horsens",
-    postalCode: "8700",
-    addressCountry: "DK",
-  },
-  priceRange: "$$",
-  sameAs: [
-    "https://www.linkedin.com/company/webhjerte",
-    "https://www.facebook.com/profile.php?id=61575549052729",
-    "https://www.instagram.com/webhjerte",
-  ],
-};
-
 const facts = [
   { num: "Fra 2.500 kr", label: "Fast pris" },
   { num: "Ca. 14 dage", label: "Leveringstid" },
@@ -89,11 +58,6 @@ const facts = [
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       {/* Hero */}
       <section className="relative min-h-[calc(100dvh-68px)] flex items-center px-5 sm:px-10 lg:px-20 overflow-hidden bg-[#111313]">
         <div className="relative z-10 w-full mx-auto grid md:grid-cols-2 gap-16 items-center py-20">
@@ -268,7 +232,7 @@ export default function Home() {
           <div>
             <AnimatedInView
               as="p"
-              className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3"
+              className="text-[11px] uppercase tracking-[0.1em] text-[#9a9a9a] mb-3"
             >
               Kom i gang
             </AnimatedInView>
@@ -280,7 +244,7 @@ export default function Home() {
             </AnimatedInView>
             <AnimatedInView
               as="p"
-              className="text-[14px] text-[#5a5a5a] leading-[1.75] max-w-md mb-10"
+              className="text-[14px] text-[#9a9a9a] leading-[1.75] max-w-md mb-10"
             >
               Har du allerede en hjemmeside, der trænger til et løft, eller
               starter du helt forfra? Skriv det i formularen — jeg svarer inden
@@ -301,7 +265,7 @@ export default function Home() {
                   key={label}
                   className="flex items-center justify-between bg-[#1c1e1e] px-5 py-4"
                 >
-                  <span className="text-[12px] text-[#5a5a5a]">{label}</span>
+                  <span className="text-[12px] text-[#9a9a9a]">{label}</span>
                   <span className="text-[12px] font-medium text-[#e0e0e0]">{value}</span>
                 </div>
               ))}

@@ -1,7 +1,7 @@
-const Button = ({ name, color, onClick }) => {
+const Button = ({ name, onClick }) => {
   return (
     <>
-      <button className={`button bg-[${color}] shadow-lg !text-[12px]`} onClick={onClick}>
+      <button type="button" className="button shadow-lg !text-[12px]" onClick={onClick}>
         {name}
         <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
           <path

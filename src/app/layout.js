@@ -94,6 +94,28 @@ export default function RootLayout({ children }) {
           data-key="dQ/aslmLQa//XoyDENgNAQ"
           async
         ></script>
+        {/* Consent Mode: alt er afvist som standard, indtil Cookiebot opdaterer samtykket.
+            Skal ligge før Cookiebot, GTM og gtag, så ingen tags fyrer uden samtykke. */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            wait_for_update: 500
+          });
+          gtag('set', 'ads_data_redaction', true);
+        `}
+        </Script>
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="ddb514ae-c2c6-4fdb-9105-c3b1cb6bc9ec"
+          strategy="beforeInteractive"
+        />
         <Script
           id="plerdy-script"
           strategy="lazyOnload"
@@ -131,19 +153,10 @@ export default function RootLayout({ children }) {
         />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QFGJWT1F24');
         `}
         </Script>
-        <Script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="ddb514ae-c2c6-4fdb-9105-c3b1cb6bc9ec"
-          type="text/javascript"
-          async
-        />
       </head>
       <body
         className={`${unbounded.variable} antialiased`}

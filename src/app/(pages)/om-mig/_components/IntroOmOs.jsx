@@ -27,7 +27,7 @@ export default function IntroOmOs() {
           <AnimatedInView as="div" className="relative">
             <div className="relative w-full aspect-[3/4] bg-[#1c1e1e] border border-[#2a2d2d] rounded-2xl overflow-hidden">
               {/* Skift til dit rigtige billede: */}
-              <Image src={Ivan} alt="Ivan – WebHjerte" fill className="object-cover object-су" />
+              <Image src={Ivan} alt="Ivan – WebHjerte" fill className="object-cover object-center" />
                
             </div>
             <div className="absolute bottom-0 left-0 right-0 flex items-center gap-2.5 px-4 py-3 bg-[#111313] border-t border-[#2a2d2d] rounded-b-2xl">
