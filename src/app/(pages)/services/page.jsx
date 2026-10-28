@@ -6,6 +6,7 @@ import PackagesBlock from "./_components/PackagesBlock";
 import Whatsincludedblock from "./_components/WhatsIncludedBlock";
 import ProcessBlock from "../../components/home/ProcessBlock";
 import AfterLaunchBlock from "./_components/AfterLaunchBlock";
+import SupportTariffsBlock from "./_components/SupportTariffsBlock";
 import Questions from "../../components/Questions";
 import CtaSearchBlock from "../../components/ui/CTA";
 
@@ -114,6 +115,7 @@ const Services = () => {
       <Whatsincludedblock />
       <ProcessBlock />
       <AfterLaunchBlock />
+      <SupportTariffsBlock />
 
       {/* Niche landing pages */}
       <section className="bg-white px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">

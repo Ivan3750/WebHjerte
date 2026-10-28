@@ -16,7 +16,7 @@ const  faqs_default = [
   },
   {
     q: "Hvad sker der efter lancering?",
-    a: "Du får 30 dages gratis support efter lancering. Herefter tilbyder vi løbende vedligeholdelse og opdateringer - aftales individuelt.",
+    a: "Du får 30 dages gratis support efter lancering. Herefter kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned (ekskl. moms).",
   },
   {
     q: "Er mine data sikre hos WebHjerte?",

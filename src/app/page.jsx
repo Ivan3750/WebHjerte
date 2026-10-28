@@ -9,6 +9,8 @@ import SocialProof from "./components/home/SocialProof";
 import CasesCarousel from "./components/home/CasesCarousel";
 import QuickLeadForm from "./components/ui/QuickLeadForm";
 import StickyCallButton from "./components/ui/StickyCallButton";
+import TrustStrip from "./components/home/TrustStrip";
+import GuaranteesBlock from "./components/home/GuaranteesBlock";
 
 export const metadata = {
   title: "Webbureau Horsens | Webdesign til lokale virksomheder | WebHjerte",
@@ -178,6 +180,8 @@ export default function Home() {
         </div>
       </section>
 
+      <TrustStrip />
+
       {/* Lokalt webbureau – indhold til søgninger som "webbureau Horsens" */}
       <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -256,6 +260,7 @@ export default function Home() {
         </div>
       </section>
 
+      <GuaranteesBlock />
       <TilbydeSection />
       <SocialProof />
       <CasesCarousel />

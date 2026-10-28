@@ -100,9 +100,9 @@ const PackagesBlock = () => {
           Fast projektpris - ingen overraskelser
         </AnimatedInView>
         <AnimatedInView as="p" className="text-[13px] text-[#777] max-w-xl !mb-10">
-          Priserne er baseret på omfang — antal sider og funktioner. Hvilken teknologi vi
-          bygger i (fx WordPress, hvis du selv vil redigere bagefter), afklarer vi ud fra dit
-          behov, se noten nedenfor.
+          Priserne er baseret på omfang — antal sider og funktioner. Alle priser er ekskl. moms.
+          Hvilken teknologi vi bygger i (fx WordPress, hvis du selv vil redigere bagefter),
+          afklarer vi ud fra dit behov, se noten nedenfor.
         </AnimatedInView>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-start">
