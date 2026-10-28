@@ -39,6 +39,15 @@
 - Håndværkere (VVS, elektrikere, tømrere, malere): https://www.webhjerte.dk/hjemmeside-til-haandvaerkere
 - Restauranter: https://www.webhjerte.dk/hjemmeside-til-restauranter
 - Saloner: https://www.webhjerte.dk/hjemmeside-til-saloner
+- VVS: https://www.webhjerte.dk/hjemmeside-til-vvs
+- Elektrikere: https://www.webhjerte.dk/hjemmeside-til-elektriker
+- Tømrere: https://www.webhjerte.dk/hjemmeside-til-tomrer
+
+## Guides
+
+- Freelancer eller webbureau: https://www.webhjerte.dk/freelancer-vs-bureau
+- Blog: https://www.webhjerte.dk/blog
+- Hvad koster en hjemmeside i 2026: https://www.webhjerte.dk/blog/hvad-koster-en-hjemmeside-2026
 
 ## Portefølje
 
