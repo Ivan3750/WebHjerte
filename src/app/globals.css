@@ -652,3 +652,102 @@ footer {
 .content > *:last-child {
   margin-bottom: 0;
 }
+
+/* ───────────────────────── Forside: motion-system ───────────────────────── */
+
+.aurora-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.55;
+  will-change: transform;
+  animation: aurora-drift 18s ease-in-out infinite alternate;
+}
+.aurora-blob.b2 { animation-duration: 24s; animation-direction: alternate-reverse; }
+.aurora-blob.b3 { animation-duration: 30s; }
+
+@keyframes aurora-drift {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(6%, -8%, 0) scale(1.15); }
+  100% { transform: translate3d(-8%, 6%, 0) scale(0.95); }
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+          mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.12);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+          backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: 0 24px 60px -20px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(100deg, #7fd8ff 0%, #00a8e8 45%, #3b82f6 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.float-y   { animation: float-y 7s ease-in-out infinite; }
+.float-y-2 { animation: float-y 9s ease-in-out -3s infinite; }
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+.marquee-track { animation: marquee 38s linear infinite; width: max-content; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.pulse-ring { position: relative; }
+.pulse-ring::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0.5;
+  animation: pulse-ring 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(3.2); opacity: 0; }
+}
+
+.shimmer {
+  background: linear-gradient(100deg, transparent 20%, rgba(255,255,255,0.14) 50%, transparent 80%);
+  background-size: 200% 100%;
+  animation: shimmer 2.4s linear infinite;
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* De globale `section`-paddings må ikke ødelægge pinned scroll-scener */
+section.scene { padding: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-blob, .float-y, .float-y-2, .marquee-track, .pulse-ring::after, .shimmer {
+    animation: none !important;
+  }
+}
+
+.glass-solid {
+  background: linear-gradient(135deg, rgba(22,28,29,0.92), rgba(14,18,18,0.82));
+}
