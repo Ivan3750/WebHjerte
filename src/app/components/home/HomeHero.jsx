@@ -12,12 +12,6 @@ import {
 } from "framer-motion";
 import Button from "../ui/Button";
 
-const facts = [
-  { num: "Fra 2.500 kr", label: "Fast pris" },
-  { num: "Ca. 14 dage", label: "Leveringstid" },
-  { num: "1 person", label: "Du taler direkte med mig" },
-];
-
 const ease = [0.16, 1, 0.3, 1];
 
 const item = {
@@ -48,11 +42,8 @@ function MiniSite() {
 
       <motion.div
         {...pop(1)}
-        className="relative rounded-xl overflow-hidden border border-white/10 p-4 sm:p-5"
-        style={{
-          background:
-            "radial-gradient(120% 120% at 100% 0%, rgba(0,168,232,0.45), transparent 55%), linear-gradient(180deg,#14191a,#101313)",
-        }}
+        className="relative rounded-xl overflow-hidden border border-white/10 p-4 sm:p-5 border-l-2 border-l-[#00a8e8]"
+        style={{ background: "#12181a" }}
       >
         <div className="h-3 w-3/4 rounded bg-white/85 mb-2" />
         <div className="h-3 w-1/2 rounded bg-white/85 mb-4" />
@@ -62,7 +53,6 @@ function MiniSite() {
           <span className="h-6 w-20 rounded-full bg-[#00a8e8]" />
           <span className="h-6 w-16 rounded-full border border-white/20" />
         </div>
-        <div className="absolute inset-0 shimmer opacity-60 pointer-events-none" />
       </motion.div>
 
       <div className="grid grid-cols-3 gap-2.5">
@@ -97,15 +87,9 @@ function CheckIcon() {
 function Sparkline() {
   return (
     <svg viewBox="0 0 160 56" className="w-full h-14" fill="none" aria-hidden>
-      <defs>
-        <linearGradient id="spark-fill" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#00a8e8" stopOpacity="0.35" />
-          <stop offset="100%" stopColor="#00a8e8" stopOpacity="0" />
-        </linearGradient>
-      </defs>
       <motion.path
         d="M0 48 C 20 46, 28 40, 44 38 S 72 30, 88 24 S 120 14, 160 6 L160 56 L0 56 Z"
-        fill="url(#spark-fill)"
+        fill="#00a8e8" fillOpacity="0.12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.2, duration: 1 }}
@@ -169,13 +153,11 @@ export default function HomeHero() {
   // Widgets bevæger sig med forskellig hastighed → dybde
   const yA = useTransform(scrollYProgress, [0, 1], [0, -170]);
   const yB = useTransform(scrollYProgress, [0, 1], [0, -40]);
-  const yC = useTransform(scrollYProgress, [0, 1], [0, -240]);
   const yD = useTransform(scrollYProgress, [0, 1], [0, -110]);
 
   // Tekst glider op og toner ud
   const textY = useTransform(scrollYProgress, [0, 1], [0, 90]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0.15]);
-  const glowScale = useTransform(scrollYProgress, [0, 1], [1, 1.6]);
 
   const rm = (v) => (reduce ? 0 : v);
 
@@ -186,19 +168,9 @@ export default function HomeHero() {
       onPointerLeave={onLeave}
       className="scene relative isolate overflow-hidden bg-[#0b0d0d] min-h-[calc(100dvh-68px)] flex items-center"
     >
-      {/* Aurora + grid */}
-      <motion.div aria-hidden style={{ scale: glowScale }} className="absolute inset-0 -z-10">
-        <div className="aurora-blob w-[520px] h-[520px] bg-[#00a8e8] -top-40 right-[-8%]" />
-        <div className="aurora-blob b2 w-[420px] h-[420px] bg-[#2563eb] bottom-[-18%] left-[-6%] opacity-40" />
-        <div className="aurora-blob b3 w-[320px] h-[320px] bg-[#3ddc97] top-[30%] left-[38%] opacity-[0.14]" />
-      </motion.div>
-      <div aria-hidden className="grid-fade absolute inset-0 -z-10" />
-      <div
-        aria-hidden
-        className="absolute inset-x-0 bottom-0 h-40 -z-10 bg-gradient-to-t from-[#0b0d0d] to-transparent"
-      />
+      <div aria-hidden className="grid-fade absolute inset-0 -z-10 opacity-70" />
 
-      <div className="relative w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-12 md:py-14 grid md:grid-cols-[1.05fr_1fr] gap-12 lg:gap-16 items-center">
+      <div className="relative w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-12 md:py-16 grid md:grid-cols-[1.05fr_1fr] gap-12 lg:gap-20 items-center">
         {/* ─────────── Tekst ─────────── */}
         <motion.div
           style={reduce ? undefined : { y: textY, opacity: textOpacity }}
@@ -220,38 +192,23 @@ export default function HomeHero() {
 
           <motion.h1
             variants={item}
-            className="text-white font-semibold tracking-tight text-balance leading-[1.08] text-[clamp(26px,3.1vw,44px)] mb-5"
+            className="text-white font-semibold tracking-tight leading-[1.1] mb-5"
           >
-            Webbureau i Horsens
-            <span className="text-gradient-blue block mt-1">
+            <span className="block text-[clamp(30px,4.2vw,58px)]">Webbureau i Horsens</span>
+            <span className="block mt-3 text-[clamp(15px,1.7vw,22px)] font-medium text-[#00a8e8] leading-snug text-balance">
               – hjemmesider med fast pris, live på 14 dage
             </span>
           </motion.h1>
 
           <motion.p
             variants={item}
-            className="text-[#93a0a0] text-[14px] sm:text-[15px] leading-[1.8] max-w-lg mb-6"
+            className="text-[#93a0a0] text-[14px] sm:text-[15px] leading-[1.75] max-w-md mb-8"
           >
-            WebHjerte er dit lokale webbureau i Horsens. Jeg bygger enkle, hurtige hjemmesider
-            til virksomheder i Horsens, Midtjylland og resten af Danmark. Du taler direkte med mig,
-            ikke med et mellemled. Jeg bruger AI til at gå hurtigere, så du betaler for resultatet,
-            ikke for timer.
+            Enkle, hurtige hjemmesider til virksomheder i Horsens og hele Danmark. Du taler direkte
+            med mig – ikke med et mellemled.
           </motion.p>
 
-          <motion.div
-            variants={item}
-            className="glass inline-flex items-center gap-3 rounded-2xl px-4 py-3 mb-6 w-fit max-w-full"
-          >
-            <span className="w-8 h-8 rounded-xl bg-[#00a8e8]/15 border border-[#00a8e8]/30 flex items-center justify-center shrink-0">
-              <CheckIcon />
-            </span>
-            <span className="text-[12px] text-[#c0c8c8] leading-snug">
-              <span className="text-[#00a8e8] font-medium">Første design i 48 timer.</span>{" "}
-              Ikke tilfreds? Du betaler 0 kr for designet.
-            </span>
-          </motion.div>
-
-          <motion.div variants={item} className="flex items-center gap-5 flex-wrap">
+          <motion.div variants={item} className="flex items-center gap-5 flex-wrap mb-6">
             <Link href="/services">
               <Button name="Se priser" />
             </Link>
@@ -264,17 +221,10 @@ export default function HomeHero() {
             </Link>
           </motion.div>
 
-          <motion.div
-            variants={item}
-            className="grid grid-cols-3 gap-4 sm:gap-8 mt-8 pt-6 border-t border-white/10"
-          >
-            {facts.map(({ num, label }) => (
-              <div key={label} className="flex flex-col gap-1">
-                <span className="text-[13px] sm:text-xl font-medium text-white whitespace-nowrap">{num}</span>
-                <span className="text-[11px] sm:text-xs text-[#6f7c7c] leading-snug">{label}</span>
-              </div>
-            ))}
-          </motion.div>
+          <motion.p variants={item} className="flex items-start gap-2 text-[12px] text-[#7f8c8c] leading-snug">
+            <span className="mt-0.5 shrink-0"><CheckIcon /></span>
+            Første design i 48 timer – ikke tilfreds, betaler du 0 kr for det.
+          </motion.p>
         </motion.div>
 
         {/* ─────────── Mockup + glas-widgets ─────────── */}
@@ -286,8 +236,7 @@ export default function HomeHero() {
             transition={{ duration: 1.2, delay: 0.35, ease }}
             className="relative mx-auto w-full max-w-[480px] [transform-style:preserve-3d]"
           >
-            <div className="absolute -inset-6 rounded-[2rem] bg-[#00a8e8]/20 blur-3xl" />
-            <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#0e1111] shadow-[0_40px_100px_-30px_rgba(0,168,232,0.45)]">
+            <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#0e1111] shadow-[0_40px_80px_-40px_rgba(0,0,0,0.8)]">
               <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#121616]">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]/80" />
                 <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]/80" />
@@ -303,73 +252,44 @@ export default function HomeHero() {
               <MiniSite />
             </div>
 
-            {/* A – Første udkast */}
+            {/* Widgets – kun på store skærme, uden for browser-indholdet */}
             <motion.div
               style={reduce ? undefined : { y: yA, translateZ: 70 }}
-              className="absolute -left-3 sm:-left-12 top-[30%] z-10"
+              className="absolute -left-10 top-[22%] z-10 hidden lg:block"
             >
-              <div className="float-y glass glass-solid rounded-2xl px-4 py-3 flex items-center gap-3 w-[190px]">
+              <div className="float-y glass glass-solid rounded-2xl px-4 py-3 flex items-center gap-3">
                 <span className="w-9 h-9 rounded-xl bg-[#00a8e8]/15 border border-[#00a8e8]/30 flex items-center justify-center shrink-0">
                   <CheckIcon />
                 </span>
-                <div>
+                <div className="whitespace-nowrap">
                   <p className="text-[10px] text-[#8a9696] leading-none mb-1.5">Første udkast</p>
                   <p className="text-[15px] font-medium text-white leading-none">48 timer</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* B – SEO */}
             <motion.div
               style={reduce ? undefined : { y: yB, translateZ: 100 }}
-              className="absolute -right-3 sm:-right-10 top-[-9%] z-10 hidden sm:block"
+              className="absolute -right-8 -top-10 z-10 hidden lg:block"
             >
-              <div className="float-y-2 glass glass-solid rounded-2xl p-3.5 w-[220px]">
+              <div className="float-y-2 glass glass-solid rounded-2xl p-3.5 w-[190px]">
                 <div className="flex items-center justify-between gap-3 mb-1 whitespace-nowrap">
                   <p className="text-[10px] text-[#8a9696]">SEO bygget ind</p>
-                  <span className="text-[10px] text-[#3ddc97]">↗ fra dag ét</span>
+                  <span className="text-[10px] text-[#3ddc97]">↗</span>
                 </div>
                 <Sparkline />
               </div>
             </motion.div>
 
-            {/* C – Progress */}
-            <motion.div
-              style={reduce ? undefined : { y: yC, translateZ: 90 }}
-              className="absolute -left-2 sm:-left-12 bottom-[-12%] z-10"
-            >
-              <div className="float-y-2 glass glass-solid rounded-2xl p-3.5 w-[210px]">
-                <div className="flex items-center justify-between mb-2.5">
-                  <p className="text-[10px] text-[#8a9696]">Dit projekt</p>
-                  <p className="text-[10px] text-[#00a8e8]">Dag 14 · Live</p>
-                </div>
-                <div className="h-1.5 rounded-full bg-white/10 overflow-hidden">
-                  <motion.div
-                    className="h-full rounded-full bg-gradient-to-r from-[#00a8e8] to-[#3ddc97]"
-                    initial={{ width: "0%" }}
-                    animate={{ width: "100%" }}
-                    transition={{ delay: 1.2, duration: 2.6, ease }}
-                  />
-                </div>
-                <div className="flex justify-between mt-2 text-[9px] text-[#6f7c7c]">
-                  <span>Design</span>
-                  <span>Byg</span>
-                  <span>Launch</span>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* D – Pris */}
             <motion.div
               style={reduce ? undefined : { y: yD, translateZ: 60 }}
-              className="absolute -right-2 sm:-right-8 bottom-[-4%] z-10"
+              className="absolute -right-10 -bottom-8 z-10 hidden lg:block"
             >
-              <div className="float-y glass glass-solid rounded-2xl px-4 py-3 w-[150px]">
+              <div className="float-y glass glass-solid rounded-2xl px-4 py-3 whitespace-nowrap">
                 <p className="text-[10px] text-[#8a9696] mb-1.5">Fast pris</p>
                 <p className="text-[17px] font-semibold text-white leading-none">
-                  2.500 <span className="text-[11px] font-normal text-[#8a9696]">kr</span>
+                  Fra 2.500 <span className="text-[11px] font-normal text-[#8a9696]">kr</span>
                 </p>
-                <p className="text-[9px] text-[#6f7c7c] mt-1.5">ingen skjulte gebyrer</p>
               </div>
             </motion.div>
           </motion.div>

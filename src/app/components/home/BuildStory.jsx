@@ -89,7 +89,7 @@ function Design() {
         className="relative flex-1 min-h-0 rounded-lg border border-white/10 p-4 overflow-hidden"
         style={{
           background:
-            "radial-gradient(120% 140% at 100% 0%, rgba(0,168,232,0.55), transparent 55%), linear-gradient(180deg,#14191a,#0f1212)",
+            "#12181a",
         }}
       >
         <div className="h-3 w-2/3 rounded bg-white/90 mb-2" />
@@ -133,7 +133,7 @@ function Content() {
         className="relative flex-1 min-h-0 rounded-lg border border-white/10 p-4 overflow-hidden flex flex-col justify-center"
         style={{
           background:
-            "radial-gradient(120% 140% at 100% 0%, rgba(0,168,232,0.6), transparent 55%), linear-gradient(180deg,#151b1c,#0f1212)",
+            "#12181a",
         }}
       >
         <p className="text-[clamp(11px,1.4vw,15px)] font-semibold text-white leading-tight mb-1.5">
@@ -176,7 +176,6 @@ function Mockup({ progress, reduce }) {
   // Launch
   const liveO = useTransform(progress, [0.84, 0.92], [0, 1]);
   const liveS = useTransform(progress, [0.84, 0.92], [0.7, 1]);
-  const glow = useTransform(progress, [0.8, 1], [0.15, 0.6]);
   const urlLive = useTransform(progress, [0.84, 0.92], [0, 1]);
 
   // Mockuppen drejer sig svagt gennem hele historien
@@ -189,11 +188,6 @@ function Mockup({ progress, reduce }) {
         style={reduce ? undefined : { rotateY: rotY, rotateX: rotX }}
         className="relative mx-auto w-full max-w-[560px]"
       >
-        <motion.div
-          aria-hidden
-          style={{ opacity: glow }}
-          className="absolute -inset-8 rounded-[2.5rem] bg-[#00a8e8]/30 blur-3xl"
-        />
         <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#0e1111] shadow-[0_50px_120px_-40px_rgba(0,168,232,0.5)]">
           <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#121616]">
             <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]/80" />
@@ -224,7 +218,7 @@ function Mockup({ progress, reduce }) {
             {/* Feedback */}
             <motion.div
               style={{ opacity: bubbleO, y: bubbleY }}
-              className="absolute left-[8%] top-[58%] glass rounded-xl rounded-tl-sm px-3 py-2 flex items-center gap-2 z-10"
+              className="absolute right-[5%] top-[48%] glass glass-solid rounded-xl rounded-tr-sm px-3 py-2 flex items-center gap-2 z-10"
             >
               <span className="w-5 h-5 rounded-full bg-[#8a8ff0] text-[9px] font-semibold text-white flex items-center justify-center">
                 K
@@ -233,7 +227,7 @@ function Mockup({ progress, reduce }) {
             </motion.div>
             <motion.div
               style={{ opacity: fixedO }}
-              className="absolute left-[8%] top-[58%] glass rounded-xl rounded-tl-sm px-3 py-2 flex items-center gap-2 z-10"
+              className="absolute right-[5%] top-[48%] glass glass-solid rounded-xl rounded-tr-sm px-3 py-2 flex items-center gap-2 z-10"
             >
               <span className="w-5 h-5 rounded-full bg-[#3ddc97]/20 border border-[#3ddc97]/40 flex items-center justify-center">
                 <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
@@ -281,20 +275,8 @@ export default function BuildStory() {
   const lineScale = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section ref={ref} className="scene relative bg-[#0b0d0d] h-[440vh]">
+    <section ref={ref} className="scene relative bg-[#0b0d0d] h-[380vh] md:h-[440vh]">
       <div className="sticky top-[68px] h-[calc(100dvh-68px)] overflow-hidden">
-        {/* baggrund */}
-        <div aria-hidden className="absolute inset-0 pointer-events-none">
-          <div
-            className="absolute inset-0"
-            style={{
-              background: `radial-gradient(700px circle at 75% 45%, ${steps[active].color}22, transparent 60%)`,
-              transition: "background 0.8s",
-            }}
-          />
-          <div className="grid-fade absolute inset-0 opacity-60" />
-        </div>
-
         <div className="relative h-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 grid md:grid-cols-[1fr_1.1fr] gap-4 md:gap-14 items-center content-center md:content-stretch py-4 md:py-10">
           {/* Mockup (øverst på mobil) */}
           <div className="md:order-2 flex items-center justify-center">
@@ -313,12 +295,12 @@ export default function BuildStory() {
               Fra første besked til live hjemmeside
             </h2>
 
-            <div className="relative pl-6">
+            <div className="relative pl-6 hidden md:block">
               {/* lodret progress */}
               <div className="absolute left-0 top-1 bottom-1 w-px bg-white/10" />
               <motion.div
                 style={{ scaleY: lineScale }}
-                className="absolute left-0 top-1 bottom-1 w-px origin-top bg-gradient-to-b from-[#00a8e8] to-[#3ddc97]"
+                className="absolute left-0 top-1 bottom-1 w-px origin-top bg-[#00a8e8]"
               />
 
               <ol className="flex flex-col">
@@ -363,6 +345,24 @@ export default function BuildStory() {
                   );
                 })}
               </ol>
+            </div>
+
+            {/* Mobil: kompakt trin-visning */}
+            <div className="md:hidden">
+              <div className="flex gap-1.5 mb-4" aria-hidden>
+                {steps.map((s, i) => (
+                  <span
+                    key={s.n}
+                    className="h-1 flex-1 rounded-full transition-colors duration-500"
+                    style={{ background: i <= active ? s.color : "#222828" }}
+                  />
+                ))}
+              </div>
+              <p className="text-[11px] tabular-nums mb-1" style={{ color: steps[active].color }}>
+                {steps[active].n} / 05
+              </p>
+              <p className="text-[22px] font-semibold text-white leading-tight mb-2">{steps[active].title}</p>
+              <p className="text-[13px] text-[#93a0a0] leading-[1.7]">{steps[active].text}</p>
             </div>
           </div>
         </div>

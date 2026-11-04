@@ -34,7 +34,7 @@ function VisualSite() {
             <div className="h-1.5 w-4/5 rounded bg-[#e8e6e6] mb-3" />
             <div className="h-5 w-16 rounded-full bg-[#00a8e8]" />
           </div>
-          <div className="rounded-lg bg-gradient-to-br from-[#00a8e8] to-[#3b82f6] h-full min-h-[70px]" />
+          <div className="rounded-lg bg-[#00a8e8] h-full min-h-[70px]" />
         </div>
       </motion.div>
     </div>
@@ -51,7 +51,7 @@ function VisualShop() {
         transition={{ duration: 0.8, ease }}
         className="w-[150px] rounded-xl bg-white border border-[#e3e1e1] p-2.5 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.25)] transition-transform duration-500 group-hover:rotate-0 group-hover:-translate-y-1"
       >
-        <div className="h-16 rounded-lg bg-gradient-to-br from-[#e9f7fd] to-[#cdeefb] mb-2" />
+        <div className="h-16 rounded-lg bg-[#d9f1fb] mb-2" />
         <div className="h-1.5 w-3/4 rounded bg-[#d9d7d7] mb-1.5" />
         <div className="flex items-center justify-between">
           <span className="text-[11px] font-semibold text-[#1c1e1e]">349 kr</span>

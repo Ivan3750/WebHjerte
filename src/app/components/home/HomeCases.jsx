@@ -21,7 +21,6 @@ function Card({ p, i }) {
           sizes="(min-width: 1024px) 34vw, (min-width: 768px) 40vw, 78vw"
           className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0d0d]/80 via-transparent to-transparent opacity-80" />
         <span className="absolute top-4 left-4 glass text-[10px] uppercase tracking-[0.14em] text-white rounded-full px-3 py-1">
           Case {String(i + 1).padStart(2, "0")}
         </span>

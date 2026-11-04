@@ -5,7 +5,6 @@ import { IoMenu, IoClose, IoChevronDown } from "react-icons/io5";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import W from "../../../public/W.png";
-import Button from "../components/ui/Button";
 
 const mainLinks = [
   { href: "/", label: "Forside" },
@@ -19,6 +18,9 @@ const nicheLinks = [
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
   { href: "/hjemmeside-til-saloner", label: "Saloner" },
+  { href: "/hjemmeside-til-vvs", label: "VVS" },
+  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
+  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
 ];
 
 const NavLink = ({ href, label, pathname, onClick }) => {
@@ -27,13 +29,17 @@ const NavLink = ({ href, label, pathname, onClick }) => {
     <Link
       href={href}
       onClick={onClick}
-      className={`relative text-sm px-3 py-1.5 rounded-xl transition-colors ${
-        isActive
-          ? "text-white bg-[#2a2d2d]"
-          : "text-[#9a9a9a] hover:text-white"
+      aria-current={isActive ? "page" : undefined}
+      className={`relative text-[13px] px-3.5 py-2 transition-colors ${
+        isActive ? "text-white" : "text-[#8b9797] hover:text-white"
       }`}
     >
       {label}
+      <span
+        className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] rounded-full bg-[#00a8e8] transition-all duration-300 ${
+          isActive ? "w-4" : "w-0"
+        }`}
+      />
     </Link>
   );
 };
@@ -98,59 +104,57 @@ const Header = () => {
 
   const isNicheActive = nicheLinks.some((l) => l.href === pathname);
 
+  const nicheOpenClass = isNicheOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none";
+
   return (
-    <header className="relative flex items-center justify-between px-4 py-3 md:px-6 lg:px-10 sticky top-0 left-0 border-b-2 border-[#404242] bg-[#1c1e1e] z-50">
-      <Link href="/" aria-label="Gå til forsiden">
-        <div className="flex items-center gap-3">
-          <Image src={W} width={44} height={44} alt="WebHjerte logo" priority />
-          <p className="text-white text-lg font-bold logo-web">
-            Web<span className="text-[#00a8e8]">Hjerte</span>
-          </p>
-        </div>
+    <header className="sticky top-0 left-0 z-50 h-[68px] flex items-center justify-between px-4 md:px-6 lg:px-10 bg-[#0b0d0d] border-b border-white/10">
+      <Link href="/" aria-label="Gå til forsiden" className="flex items-center gap-2.5">
+        <Image src={W} width={36} height={36} alt="WebHjerte logo" priority />
+        <p className="text-white text-[17px] font-semibold tracking-tight logo-web">
+          Web<span className="text-[#00a8e8]">Hjerte</span>
+        </p>
       </Link>
 
-      <nav className="hidden md:flex items-center gap-1 bg-[#101213] rounded-2xl px-2 py-2 border border-[#424242]">
+      <nav className="hidden md:flex items-center" aria-label="Hovedmenu">
         {mainLinks.slice(0, 2).map((link) => (
           <NavLink key={link.href} {...link} pathname={pathname} />
         ))}
 
-        {/* Dropdown for niche pages */}
         <div ref={nicheRef} className="relative">
           <button
             onClick={() => setIsNicheOpen(!isNicheOpen)}
-            className={`relative text-sm px-3 py-1.5 rounded-xl transition-colors flex items-center gap-1 ${
-              isNicheActive
-                ? "text-white bg-[#2a2d2d]"
-                : "text-[#9a9a9a] hover:text-white"
+            className={`relative text-[13px] px-3.5 py-2 transition-colors flex items-center gap-1 ${
+              isNicheActive || isNicheOpen ? "text-white" : "text-[#8b9797] hover:text-white"
             }`}
             aria-expanded={isNicheOpen}
             aria-haspopup="true"
           >
             Brancher
-            <IoChevronDown
-              size={14}
-              className={`transition-transform ${isNicheOpen ? "rotate-180" : ""}`}
+            <IoChevronDown size={13} className={`transition-transform duration-300 ${isNicheOpen ? "rotate-180" : ""}`} />
+            <span
+              className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] rounded-full bg-[#00a8e8] transition-all duration-300 ${
+                isNicheActive ? "w-4" : "w-0"
+              }`}
             />
           </button>
 
-          {isNicheOpen && (
-            <div className="absolute top-full left-0 mt-1 w-48 bg-[#101213] border border-[#424242] rounded-xl overflow-hidden shadow-xl z-50">
-              {nicheLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsNicheOpen(false)}
-                  className={`block px-4 py-2.5 text-sm transition-colors ${
-                    pathname === link.href
-                      ? "text-white bg-[#2a2d2d]"
-                      : "text-[#9a9a9a] hover:text-white hover:bg-[#1c1e1e]"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          )}
+          <div
+            className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[300px] p-2 grid grid-cols-2 gap-1 bg-[#111414] border border-white/10 rounded-2xl shadow-2xl transition-all duration-200 z-50 ${nicheOpenClass}`}
+          >
+            {nicheLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsNicheOpen(false)}
+                tabIndex={isNicheOpen ? 0 : -1}
+                className={`px-3.5 py-2.5 rounded-xl text-[13px] transition-colors ${
+                  pathname === link.href ? "text-white bg-white/10" : "text-[#9aa5a5] hover:text-white hover:bg-white/5"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         {mainLinks.slice(2).map((link) => (
@@ -158,13 +162,21 @@ const Header = () => {
         ))}
       </nav>
 
-      <Link href="/kontakt" className="hidden md:block">
-        <Button name="Få et gratis tilbud" />
-      </Link>
+      <div className="hidden md:flex items-center gap-4">
+        <a href="tel:+4542760577" className="hidden xl:block text-[13px] text-[#8b9797] hover:text-white transition-colors">
+          +45 42 76 05 77
+        </a>
+        <Link
+          href="/kontakt"
+          className="text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-5 py-2.5 transition-colors"
+        >
+          Få et gratis tilbud
+        </Link>
+      </div>
 
       <button
         type="button"
-        className="block md:hidden text-white text-2xl touch-manipulation"
+        className="md:hidden w-11 h-11 -mr-2 flex items-center justify-center text-white text-[26px] touch-manipulation"
         onClick={toggleMobileMenu}
         aria-label={isMobileMenuOpen ? "Luk menu" : "Åbn menu"}
         aria-expanded={isMobileMenuOpen}
@@ -173,51 +185,80 @@ const Header = () => {
         {isMobileMenuOpen ? <IoClose /> : <IoMenu />}
       </button>
 
+      {/* Mobilmenu */}
       <div
         id="mobile-menu"
         role="dialog"
         aria-modal="true"
-        className={`fixed inset-0 h-[100dvh] w-screen z-[999] bg-[#101213] flex flex-col items-center justify-center gap-5 overscroll-contain transition-transform duration-300 md:hidden ${
+        aria-hidden={!isMobileMenuOpen}
+        className={`fixed inset-0 h-[100dvh] w-screen z-[999] bg-[#0b0d0d] flex flex-col overscroll-contain transition-transform duration-300 md:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
         }`}
         style={{ paddingTop: "env(safe-area-inset-top)", paddingBottom: "env(safe-area-inset-bottom)" }}
       >
-        <button
-          type="button"
-          className="absolute top-4 right-4 text-white text-2xl touch-manipulation"
-          onClick={closeMobileMenu}
-          aria-label="Luk menu"
-        >
-          <IoClose />
-        </button>
-
-        {mainLinks.map((link) => (
-          <NavLink
-            key={link.href}
-            {...link}
-            pathname={pathname}
+        <div className="h-[68px] shrink-0 flex items-center justify-between px-4 border-b border-white/10">
+          <span className="text-white text-[17px] font-semibold tracking-tight">
+            Web<span className="text-[#00a8e8]">Hjerte</span>
+          </span>
+          <button
+            type="button"
+            className="w-11 h-11 -mr-2 flex items-center justify-center text-white text-[26px] touch-manipulation"
             onClick={closeMobileMenu}
-          />
-        ))}
-
-        {/* Mobile niche links */}
-        <div className="flex flex-col items-center gap-2">
-          <p className="text-[10px] uppercase tracking-[0.15em] text-[#5a5a5a]">
-            Brancher
-          </p>
-          {nicheLinks.map((link) => (
-            <NavLink
-              key={link.href}
-              {...link}
-              pathname={pathname}
-              onClick={closeMobileMenu}
-            />
-          ))}
+            aria-label="Luk menu"
+          >
+            <IoClose />
+          </button>
         </div>
 
-        <Link href="/kontakt" onClick={closeMobileMenu} className="mt-2">
-          <Button name="Få et gratis tilbud" />
-        </Link>
+        <div className="flex-1 overflow-y-auto px-5 py-6">
+          <nav className="flex flex-col" aria-label="Mobilmenu">
+            {mainLinks.map((link, i) => {
+              const active = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={closeMobileMenu}
+                  className="flex items-baseline gap-4 py-3.5 border-b border-white/[0.07]"
+                >
+                  <span className="text-[11px] tabular-nums text-[#4b5757]">0{i + 1}</span>
+                  <span className={`text-[24px] font-semibold tracking-tight ${active ? "text-[#00a8e8]" : "text-white"}`}>
+                    {link.label}
+                  </span>
+                </Link>
+              );
+            })}
+          </nav>
+
+          <p className="text-[11px] uppercase tracking-[0.16em] text-[#5b6868] mt-8 mb-3">Brancher</p>
+          <div className="flex flex-wrap gap-2">
+            {nicheLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={closeMobileMenu}
+                className={`text-[13px] rounded-full px-4 py-2.5 border ${
+                  pathname === link.href ? "border-[#00a8e8] text-[#00a8e8]" : "border-white/10 text-[#b4bebe]"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="shrink-0 px-5 pt-4 pb-5 border-t border-white/10 flex flex-col gap-3">
+          <Link
+            href="/kontakt"
+            onClick={closeMobileMenu}
+            className="text-center text-[15px] font-semibold text-white bg-[#00a8e8] rounded-full py-3.5"
+          >
+            Få et gratis tilbud
+          </Link>
+          <a href="tel:+4542760577" className="text-center text-[13px] text-[#8b9797] py-1">
+            Eller ring: +45 42 76 05 77
+          </a>
+        </div>
       </div>
     </header>
   );

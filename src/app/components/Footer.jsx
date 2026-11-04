@@ -1,25 +1,40 @@
 import Link from "next/link";
 import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
 
-const navLinks = [
-  { href: "/", label: "Forside" },
-  { href: "/services", label: "Services" },
-  { href: "/webdesign-horsens", label: "Webdesign Horsens" },
-  { href: "/seo-horsens", label: "SEO Horsens" },
-  { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
-  { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
-  { href: "/wordpress-hjemmeside", label: "WordPress hjemmeside" },
-  { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-  { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-  { href: "/hjemmeside-til-saloner", label: "Saloner" },
-  { href: "/hjemmeside-til-vvs", label: "VVS" },
-  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
-  { href: "/freelancer-vs-bureau", label: "Freelancer vs bureau" },
-  { href: "/blog", label: "Blog" },
-  { href: "/portefolje", label: "Portefølje" },
-  { href: "/om-mig", label: "Om mig" },
-  { href: "/kontakt", label: "Kontakt" },
+const groups = [
+  {
+    title: "Virksomhed",
+    links: [
+      { href: "/", label: "Forside" },
+      { href: "/services", label: "Services" },
+      { href: "/portefolje", label: "Portefølje" },
+      { href: "/om-mig", label: "Om mig" },
+      { href: "/blog", label: "Blog" },
+      { href: "/kontakt", label: "Kontakt" },
+    ],
+  },
+  {
+    title: "Ydelser",
+    links: [
+      { href: "/webdesign-horsens", label: "Webdesign Horsens" },
+      { href: "/seo-horsens", label: "SEO Horsens" },
+      { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
+      { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
+      { href: "/wordpress-hjemmeside", label: "WordPress hjemmeside" },
+      { href: "/freelancer-vs-bureau", label: "Freelancer vs bureau" },
+    ],
+  },
+  {
+    title: "Brancher",
+    links: [
+      { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
+      { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
+      { href: "/hjemmeside-til-saloner", label: "Saloner" },
+      { href: "/hjemmeside-til-vvs", label: "VVS" },
+      { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
+      { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
+    ],
+  },
 ];
 
 const legalLinks = [
@@ -52,68 +67,44 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111313] border-t border-[#1e2020] px-5 sm:px-10 lg:px-20 pt-14 pb-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 mb-12">
-          {/* Brand */}
+    <footer className="relative overflow-hidden bg-[#0b0d0d] border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16">
+        {/* CTA */}
+        <div className="py-14 sm:py-20 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/10">
           <div>
-            <p className="text-[18px] font-medium text-white mb-3">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-[#5b6868] mb-4 flex items-center gap-3">
+              <span className="w-8 h-px bg-[#00a8e8]" />
+              Klar når du er
+            </p>
+            <p className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.4vw,44px)] max-w-[18ch]">
+              Lad os bygge din næste hjemmeside
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/kontakt"
+              className="text-center whitespace-nowrap text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-7 py-3.5 transition-colors"
+            >
+              Få et gratis tilbud
+            </Link>
+            <a
+              href="tel:+4542760577"
+              className="text-center whitespace-nowrap text-[14px] text-white border border-white/15 hover:border-white/40 rounded-full px-7 py-3.5 transition-colors"
+            >
+              +45 42 76 05 77
+            </a>
+          </div>
+        </div>
+
+        {/* Links */}
+        <div className="grid grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.1fr] gap-x-6 gap-y-10 py-12 sm:py-14">
+          <div className="col-span-2 lg:col-span-1">
+            <p className="text-[18px] font-semibold text-white mb-3 tracking-tight">
               Web<span className="text-[#00a8e8]">Hjerte</span>
             </p>
-
-            <p className="text-[13px] text-[#5a5a5a] leading-[1.65] max-w-[220px]">
+            <p className="text-[13px] text-[#6f7c7c] leading-[1.7] max-w-[260px] mb-5">
               Enkle, hurtige hjemmesider til lokale virksomheder i Danmark.
             </p>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4">
-              Navigation
-            </p>
-
-            <div className="flex flex-col gap-2.5">
-              {navLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-[13px] text-[#7a7a7a] hover:text-[#e0e0e0] transition-colors w-fit"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4">
-              Kontakt
-            </p>
-
-            <div className="flex flex-col gap-2.5 mb-7">
-              <a
-                href="mailto:hej@webhjerte.dk"
-                className="text-[13px] text-[#7a7a7a] hover:text-[#e0e0e0] transition-colors w-fit"
-              >
-                hej@webhjerte.dk
-              </a>
-              <a
-                href="tel:+4542760577"
-                className="text-[13px] text-[#7a7a7a] hover:text-[#e0e0e0] transition-colors w-fit"
-              >
-                +45 42 76 05 77
-              </a>
-
-              <span className="text-[13px] text-[#5a5a5a]">
-                Horsens, Midtjylland
-              </span>
-            </div>
-
-            <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-              Følg os
-            </p>
-
             <div className="flex gap-2">
               {socials.map(({ href, icon: Icon, label }) => (
                 <Link
@@ -122,35 +113,64 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-8 h-8 border border-[#2a2d2d] hover:border-[#404040] rounded-lg flex items-center justify-center transition-colors"
+                  className="w-10 h-10 border border-white/10 hover:border-[#00a8e8] hover:bg-[#00a8e8]/10 rounded-full flex items-center justify-center transition-colors"
                 >
-                  <Icon size={14} className="text-[#7a7a7a]" />
+                  <Icon size={15} className="text-[#9aa5a5]" />
                 </Link>
               ))}
             </div>
           </div>
+
+          {groups.map((g) => (
+            <nav key={g.title} aria-label={g.title}>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-[#5b6868] mb-4">{g.title}</p>
+              <div className="flex flex-col gap-1">
+                {g.links.map(({ href, label }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    className="text-[13px] text-[#9aa5a5] hover:text-white transition-colors w-fit py-1.5"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </nav>
+          ))}
+
+          <div className="col-span-2 lg:col-span-1">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[#5b6868] mb-4">Kontakt</p>
+            <div className="flex flex-col gap-1">
+              <a href="mailto:hej@webhjerte.dk" className="text-[13px] text-[#9aa5a5] hover:text-white transition-colors w-fit py-1.5">
+                hej@webhjerte.dk
+              </a>
+              <a href="tel:+4542760577" className="text-[13px] text-[#9aa5a5] hover:text-white transition-colors w-fit py-1.5">
+                +45 42 76 05 77
+              </a>
+              <span className="text-[13px] text-[#5b6868] py-1.5">Horsens, Midtjylland</span>
+            </div>
+          </div>
         </div>
 
-        {/* Bottom */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-[#1e2020]">
-          <p className="text-[12px] text-[#3a3d3d] leading-relaxed">
-            © 2026 WebHjerte · CVR: 46485823
+        {/* Bund */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-6 border-t border-white/10">
+          <p className="text-[12px] text-[#5b6868] leading-relaxed">© 2026 WebHjerte · CVR: 46485823</p>
+          <p className="text-[12px] text-[#5b6868] flex gap-5">
             {legalLinks.map(({ href, label }) => (
-              <span key={href}>
-                {" · "}
-                <Link
-                  href={href}
-                  className="hover:text-[#5a5a5a] transition-colors"
-                >
-                  {label}
-                </Link>
-              </span>
+              <Link key={href} href={href} className="hover:text-white transition-colors">
+                {label}
+              </Link>
             ))}
           </p>
-
-         
         </div>
       </div>
+
+      <p
+        aria-hidden
+        className="select-none text-center font-semibold tracking-tight leading-none text-[#111414] text-[13.5vw] -mb-[2.2vw] whitespace-nowrap"
+      >
+        WebHjerte
+      </p>
     </footer>
   );
 };

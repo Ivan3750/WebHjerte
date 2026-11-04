@@ -28,11 +28,6 @@ const guarantees = [
 const GuaranteesBlock = () => {
   return (
     <section className="scene relative overflow-hidden bg-[#0b0d0d]">
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <div className="aurora-blob w-[480px] h-[480px] bg-[#00a8e8] top-[-20%] left-[-8%] opacity-[0.22]" />
-        <div className="grid-fade absolute inset-0 opacity-50" />
-      </div>
-
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-24 sm:py-32">
         <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#5b6868] mb-4 flex items-center gap-3">
           <span className="w-8 h-px bg-[#00a8e8]" />
@@ -51,7 +46,7 @@ const GuaranteesBlock = () => {
                   <p className="text-[clamp(28px,3vw,40px)] whitespace-nowrap font-semibold tracking-tight text-gradient-blue leading-none">
                     <CountUp to={g.stat.to} suffix={g.stat.suffix} />
                   </p>
-                  <div className="h-px w-full bg-gradient-to-r from-[#00a8e8]/50 to-transparent" />
+                  <div className="h-px w-full bg-white/10" />
                   <p className="text-[15px] font-medium text-[#eef2f2]">{g.title}</p>
                   <p className="text-[13px] text-[#8795a0] leading-[1.75]">{g.text}</p>
                 </div>

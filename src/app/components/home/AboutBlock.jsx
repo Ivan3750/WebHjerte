@@ -63,7 +63,6 @@ const AboutBlock = () => {
           {/* Kundecitat */}
           <FadeUp delay={0.2}>
             <figure className="relative rounded-3xl bg-[#111313] p-6 sm:p-8 mb-8 overflow-hidden">
-              <div aria-hidden className="aurora-blob w-56 h-56 bg-[#00a8e8] -top-20 -right-10 opacity-30" />
               <span className="relative text-[#00a8e8] text-5xl leading-none font-serif block mb-1">&ldquo;</span>
               <blockquote className="relative text-[14px] sm:text-[16px] text-white/90 leading-relaxed">
                 {quote.text}

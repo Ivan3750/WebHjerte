@@ -26,7 +26,7 @@ export default function SpotlightCard({ children, className = "", color = "0,168
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
-          background: `radial-gradient(420px circle at var(--mx,50%) var(--my,50%), rgba(${color},${dark ? 0.16 : 0.12}), transparent 60%)`,
+          background: `rgba(${color},${dark ? 0.05 : 0.04})`,
         }}
       />
       <div className="relative h-full">{children}</div>

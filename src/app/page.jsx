@@ -194,11 +194,6 @@ export default function Home() {
 
       {/* Quick lead form */}
       <section className="scene relative overflow-hidden bg-[#0b0d0d]">
-        <div aria-hidden className="absolute inset-0 pointer-events-none">
-          <div className="aurora-blob w-[520px] h-[520px] bg-[#00a8e8] -bottom-48 -right-24 opacity-30" />
-          <div className="aurora-blob b2 w-[380px] h-[380px] bg-[#2563eb] top-[-10%] left-[-6%] opacity-20" />
-          <div className="grid-fade absolute inset-0 opacity-50" />
-        </div>
         <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-24 sm:py-32 grid grid-cols-1 md:grid-cols-2 gap-14 lg:gap-20 items-start">
           <div>
             <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#5b6868] mb-4 flex items-center gap-3">
@@ -230,7 +225,7 @@ export default function Home() {
           </div>
 
           <FadeUp delay={0.1}>
-            <div className="relative rounded-3xl p-[1px] bg-gradient-to-br from-[#00a8e8]/60 via-white/10 to-transparent">
+            <div className="relative rounded-3xl p-[1px] bg-[#00a8e8]/40">
               <div className="rounded-[calc(1.5rem-1px)] bg-[#131616] p-6 sm:p-8">
                 <QuickLeadForm />
               </div>
