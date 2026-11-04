@@ -19,7 +19,7 @@ const points = [
 
 export default function AfterLaunchBlock() {
   return (
-    <section className="scene bg-[#0b0d0d]">
+    <section className="scene bg-[#1c1e1e]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-20 sm:pt-28 pb-10">
         <SectionHead
           dark

@@ -2,7 +2,7 @@ import { FadeUp } from "../../../components/home/fx/Reveal";
 
 const SupportTariffsBlock = () => {
   return (
-    <section className="scene bg-[#0b0d0d]">
+    <section className="scene bg-[#1c1e1e]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pb-20 sm:pb-28">
         <FadeUp className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 sm:p-12 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>

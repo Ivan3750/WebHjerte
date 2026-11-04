@@ -16,7 +16,7 @@ const guarantees = [
   {
     stat: { to: 14, suffix: " dage" },
     title: "Live på ca. 14 dage",
-    text: "Typisk klar på 10–18 dage, afhængigt af pakke og hvor hurtigt du leverer tekster og billeder.",
+    text: "Pakkerne leveres typisk på 2–10 dage. Den samlede tid afhænger af, hvor hurtigt du leverer tekster og billeder.",
   },
   {
     stat: { to: 100, suffix: " %" },
@@ -27,9 +27,9 @@ const guarantees = [
 
 const GuaranteesBlock = () => {
   return (
-    <section className="scene relative overflow-hidden bg-[#0b0d0d]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-24 sm:py-32">
-        <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#5b6868] mb-4 flex items-center gap-3">
+        <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-4 flex items-center gap-3">
           <span className="w-8 h-px bg-[#00a8e8]" />
           Dine garantier
         </FadeUp>

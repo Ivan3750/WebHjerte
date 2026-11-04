@@ -25,7 +25,7 @@ const stack = [
 
 const TrustStrip = () => {
   return (
-    <section className="scene bg-[#0b0d0d] border-t border-white/[0.06] relative">
+    <section className="scene bg-[#1c1e1e] border-t border-white/[0.06] relative">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-8">
         <div className="glass rounded-2xl px-5 sm:px-7 py-5 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10">
           <div className="flex items-center gap-4 flex-shrink-0">
@@ -78,7 +78,7 @@ const TrustStrip = () => {
             <span
               key={i}
               aria-hidden={i >= stack.length}
-              className="flex items-center gap-10 text-[13px] uppercase tracking-[0.16em] text-[#5b6868] whitespace-nowrap"
+              className="flex items-center gap-10 text-[13px] uppercase tracking-[0.16em] text-[#7a8787] whitespace-nowrap"
             >
               {s}
               <span className="w-1 h-1 rounded-full bg-[#00a8e8]/60" />

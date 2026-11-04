@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: "Hvor lang tid tager det?",
-    a: "En landingside er klar på 5 dage, Basis på 10 dage og Standard på 18 dage. Du ser altid et første udkast inden for 48 timer.",
+    a: "En landingside er klar på 2 dage, Basis på 5 dage og Standard på 10 dage. Du ser altid et første udkast inden for 48 timer.",
   },
   {
     q: "Kan jeg få et galleri med mine opgaver?",

@@ -17,7 +17,7 @@ const points = [
 
 export default function GratisAnalysePage() {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 py-16 sm:py-24 min-h-[calc(100dvh-68px)] flex items-center">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-16 sm:py-24 min-h-[calc(100dvh-68px)] flex items-center">
       <div className="max-w-xl w-full mx-auto">
         <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-4">
           Gratis og uforpligtende
@@ -42,7 +42,7 @@ export default function GratisAnalysePage() {
           ))}
         </ul>
 
-        <div className="bg-[#1c1e1e] border border-[#2a2d2d] rounded-2xl p-6 sm:p-7">
+        <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl p-6 sm:p-7">
           <AnalyseForm />
         </div>
       </div>

@@ -107,7 +107,7 @@ const Header = () => {
   const nicheOpenClass = isNicheOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none";
 
   return (
-    <header className="sticky top-0 left-0 z-50 h-[68px] flex items-center justify-between px-4 md:px-6 lg:px-10 bg-[#0b0d0d] border-b border-white/10">
+    <header className="sticky top-0 left-0 z-50 h-[68px] flex items-center justify-between px-4 md:px-6 lg:px-10 bg-[#1c1e1e] border-b border-white/10">
       <Link href="/" aria-label="Gå til forsiden" className="flex items-center gap-2.5">
         <Image src={W} width={36} height={36} alt="WebHjerte logo" priority />
         <p className="text-white text-[17px] font-semibold tracking-tight logo-web">
@@ -162,13 +162,10 @@ const Header = () => {
         ))}
       </nav>
 
-      <div className="hidden md:flex items-center gap-4">
-        <a href="tel:+4542760577" className="hidden xl:block text-[13px] text-[#8b9797] hover:text-white transition-colors">
-          +45 42 76 05 77
-        </a>
+      <div className="hidden md:flex items-center">
         <Link
           href="/kontakt"
-          className="text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-5 py-2.5 transition-colors"
+          className="text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-5 py-2.5 transition-colors"
         >
           Få et gratis tilbud
         </Link>
@@ -191,7 +188,7 @@ const Header = () => {
         role="dialog"
         aria-modal="true"
         aria-hidden={!isMobileMenuOpen}
-        className={`fixed inset-0 h-[100dvh] w-screen z-[999] bg-[#0b0d0d] flex flex-col overscroll-contain transition-transform duration-300 md:hidden ${
+        className={`fixed inset-0 h-[100dvh] w-screen z-[999] bg-[#1c1e1e] flex flex-col overscroll-contain transition-transform duration-300 md:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
         }`}
         style={{ paddingTop: "env(safe-area-inset-top)", paddingBottom: "env(safe-area-inset-bottom)" }}
@@ -230,7 +227,7 @@ const Header = () => {
             })}
           </nav>
 
-          <p className="text-[11px] uppercase tracking-[0.16em] text-[#5b6868] mt-8 mb-3">Brancher</p>
+          <p className="text-[11px] uppercase tracking-[0.16em] text-[#7a8787] mt-8 mb-3">Brancher</p>
           <div className="flex flex-wrap gap-2">
             {nicheLinks.map((link) => (
               <Link
@@ -255,9 +252,6 @@ const Header = () => {
           >
             Få et gratis tilbud
           </Link>
-          <a href="tel:+4542760577" className="text-center text-[13px] text-[#8b9797] py-1">
-            Eller ring: +45 42 76 05 77
-          </a>
         </div>
       </div>
     </header>

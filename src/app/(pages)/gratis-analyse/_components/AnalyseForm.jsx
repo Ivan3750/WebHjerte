@@ -94,7 +94,7 @@ export default function AnalyseForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-[#00a8e8] hover:opacity-85 disabled:opacity-50 transition-opacity text-[#111313] text-[14px] font-medium px-5 py-3.5 rounded-xl w-full"
+        className="bg-[#00a8e8] hover:opacity-85 disabled:opacity-50 transition-opacity text-[#1c1e1e] text-[14px] font-medium px-5 py-3.5 rounded-xl w-full"
       >
         {status === "loading" ? "Sender..." : "Få min gratis analyse"}
       </button>

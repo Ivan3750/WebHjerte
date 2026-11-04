@@ -13,7 +13,7 @@ const packages = [
 ];
 
 const fieldClass =
-  "w-full bg-[#0b0d0d] text-[14px] text-white placeholder:text-[#5b6868] border border-white/10 rounded-xl px-4 py-3.5 outline-none transition-colors focus:border-[#00a8e8] focus-visible:ring-2 focus-visible:ring-[#00a8e8]/30";
+  "w-full bg-[#1c1e1e] text-[14px] text-white placeholder:text-[#7a8787] border border-white/10 rounded-xl px-4 py-3.5 outline-none transition-colors focus:border-[#00a8e8] focus-visible:ring-2 focus-visible:ring-[#00a8e8]/30";
 
 const Label = ({ htmlFor, children }) => (
   <label htmlFor={htmlFor} className="block text-[12px] text-[#8795a0] mb-1.5">
@@ -97,7 +97,7 @@ const ContactForm = () => {
           <Label htmlFor="cf-pakke">Pakke</Label>
           <select id="cf-pakke" name="pakke" value={form.pakke} onChange={set("pakke")} className={fieldClass}>
             {packages.map(({ value, label }) => (
-              <option key={value} value={value} className="bg-[#0b0d0d]">
+              <option key={value} value={value} className="bg-[#1c1e1e]">
                 {label}
               </option>
             ))}
@@ -116,7 +116,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] disabled:opacity-50 transition-colors text-white text-[14px] font-semibold px-5 py-4 rounded-full w-full"
+        className="bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] disabled:opacity-50 transition-colors text-white text-[14px] font-semibold px-5 py-4 rounded-full w-full"
       >
         {status === "loading" ? "Sender..." : "Send besked"}
       </button>

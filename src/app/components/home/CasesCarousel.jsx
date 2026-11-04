@@ -23,7 +23,7 @@ export default function CasesCarousel() {
   const next = () => setCurrent((p) => (p + 1) % projects.length);
 
   return (
-    <section className="bg-white px-4 sm:px-10 lg:px-20 py-12 sm:py-20">
+    <section className="bg-[#eceeee] px-4 sm:px-10 lg:px-20 py-12 sm:py-20">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-8 sm:mb-14">
           <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3 sm:mb-4">
@@ -49,7 +49,7 @@ export default function CasesCarousel() {
               className="grid md:grid-cols-2 gap-6 sm:gap-10 items-center"
             >
               {/* Image */}
-              <div className="relative aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden border border-[#2a2d2d] bg-[#1c1e1e]">
+              <div className="relative aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden border border-[#2a2d2d] bg-[#262a2a]">
                 <Image
                   src={projects[current].heroImage}
                   alt={projects[current].title}
@@ -57,7 +57,7 @@ export default function CasesCarousel() {
                   className="object-cover"
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
-                <span className="absolute top-3 left-3 sm:top-4 sm:left-4 text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#e0e0e0] bg-[#111313]/80 border border-[#2a2d2d] rounded-full px-2.5 sm:px-3 py-1">
+                <span className="absolute top-3 left-3 sm:top-4 sm:left-4 text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#e0e0e0] bg-[#1c1e1e]/80 border border-[#2a2d2d] rounded-full px-2.5 sm:px-3 py-1">
                   Case {String(current + 1).padStart(2, "0")}
                 </span>
 

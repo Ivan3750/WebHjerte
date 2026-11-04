@@ -36,7 +36,7 @@ const steps = [
 
 export default function ProcessBlock() {
   return (
-    <section className="scene bg-white">
+    <section className="scene bg-[#eceeee]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
         <SectionHead eyebrow="Sådan foregår det" lines={["Fra første besked", "til live hjemmeside"]} />
 
@@ -48,7 +48,7 @@ export default function ProcessBlock() {
                   <span className="text-[34px] sm:text-[54px] font-light leading-none tabular-nums text-[#d6d4d4] transition-colors duration-300 group-hover:text-[#00a8e8]">
                     {s.n}
                   </span>
-                  <p className="text-[17px] sm:text-[19px] font-semibold text-[#111313] flex items-center gap-3">
+                  <p className="text-[17px] sm:text-[19px] font-semibold text-[#1c1e1e] flex items-center gap-3">
                     <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: s.color }} />
                     {s.title}
                   </p>

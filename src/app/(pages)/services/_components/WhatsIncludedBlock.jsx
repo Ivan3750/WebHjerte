@@ -19,11 +19,11 @@ const extra = [
 
 export default function WhatsIncludedBlock() {
   return (
-    <section className="scene bg-[#f7f6f6]">
+    <section className="scene bg-[#e4f0f7]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pb-20 sm:pb-28">
         <FadeUp className="rounded-3xl bg-white border border-[#e8e6e6] overflow-hidden grid grid-cols-1 md:grid-cols-2">
           <div className="p-7 sm:p-10 flex flex-col gap-6 md:border-r border-b md:border-b-0 border-[#eeecec]">
-            <p className="flex items-center gap-2.5 text-[14px] font-semibold text-[#111313]">
+            <p className="flex items-center gap-2.5 text-[14px] font-semibold text-[#1c1e1e]">
               <span className="w-2 h-2 rounded-full bg-[#00a8e8]" />
               Alle projekter inkluderer
             </p>
@@ -42,7 +42,7 @@ export default function WhatsIncludedBlock() {
           </div>
 
           <div className="p-7 sm:p-10 flex flex-col gap-6 bg-[#fbfaf9]">
-            <p className="flex items-center gap-2.5 text-[14px] font-semibold text-[#111313]">
+            <p className="flex items-center gap-2.5 text-[14px] font-semibold text-[#1c1e1e]">
               <span className="w-2 h-2 rounded-full bg-[#c9a227]" />
               Kan medføre ekstra omkostninger
             </p>

@@ -17,12 +17,12 @@ export default function PageHero({
   const titleSize =
     size === "lg" ? "text-[clamp(28px,4.4vw,60px)]" : "text-[clamp(26px,3.6vw,48px)]";
   return (
-    <section className="scene relative overflow-hidden bg-[#0b0d0d] border-b border-white/[0.06]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e] border-b border-white/[0.06]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-6 sm:pt-8 pb-16 sm:pb-24">
         {breadcrumbs.length > 0 && (
           <nav aria-label="Brødkrummer" className="mb-10 sm:mb-14">
-            <ol className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.12em] text-[#5b6868]">
+            <ol className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.12em] text-[#7a8787]">
               {breadcrumbs.map((b, i) => (
                 <li key={b.label} className="flex items-center gap-2">
                   {b.href ? (
@@ -76,7 +76,7 @@ export function PrimaryLink({ href, children, className = "" }) {
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-6 py-3 transition-colors ${className}`}
+      className={`inline-flex items-center justify-center text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-6 py-3 transition-colors ${className}`}
     >
       {children}
     </Link>
@@ -89,7 +89,7 @@ export function GhostLink({ href, children, className = "", light = false }) {
       href={href}
       className={`inline-flex items-center justify-center text-[13px] font-medium rounded-full px-6 py-3 border transition-colors ${
         light
-          ? "text-[#111313] border-[#dcdada] hover:border-[#00a8e8] hover:text-[#00a8e8]"
+          ? "text-[#1c1e1e] border-[#dcdada] hover:border-[#00a8e8] hover:text-[#00a8e8]"
           : "text-white border-white/15 hover:border-white/40"
       } ${className}`}
     >

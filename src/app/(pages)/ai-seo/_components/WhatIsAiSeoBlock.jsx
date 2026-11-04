@@ -19,7 +19,7 @@ const points = [
 
 export default function WhatIsAiSeoBlock() {
   return (
-    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Hvad er AI SEO?

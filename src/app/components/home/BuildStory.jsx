@@ -275,7 +275,7 @@ export default function BuildStory() {
   const lineScale = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section ref={ref} className="scene relative bg-[#0b0d0d] h-[380vh] md:h-[440vh]">
+    <section ref={ref} className="scene relative bg-[#1c1e1e] h-[380vh] md:h-[440vh]">
       <div className="sticky top-[68px] h-[calc(100dvh-68px)] overflow-hidden">
         <div className="relative h-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 grid md:grid-cols-[1fr_1.1fr] gap-4 md:gap-14 items-center content-center md:content-stretch py-4 md:py-10">
           {/* Mockup (øverst på mobil) */}
@@ -287,7 +287,7 @@ export default function BuildStory() {
 
           {/* Tekst */}
           <div className="md:order-1 flex flex-col justify-center min-h-0">
-            <p className="hidden md:flex text-[11px] uppercase tracking-[0.18em] text-[#5b6868] mb-3 items-center gap-3">
+            <p className="hidden md:flex text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-3 items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />
               Sådan foregår det
             </p>

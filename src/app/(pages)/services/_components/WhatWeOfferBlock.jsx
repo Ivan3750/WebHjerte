@@ -47,7 +47,7 @@ export default function WhatWeOfferBlock() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="scene bg-white">
+    <section className="scene bg-[#eceeee]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
         <SectionHead
           eyebrow="Hvad tilbyder jeg?"
@@ -76,7 +76,7 @@ export default function WhatWeOfferBlock() {
                   onClick={() => setActive(i)}
                   className={`snap-start shrink-0 lg:shrink lg:w-full flex items-center gap-3 rounded-2xl px-5 py-4 text-left border transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00a8e8] ${
                     on
-                      ? "bg-[#111313] border-[#111313] text-white"
+                      ? "bg-[#1c1e1e] border-[#1c1e1e] text-white"
                       : "bg-[#f7f6f6] border-[#eeecec] text-[#4a4a4a] hover:border-[#d4d2d2]"
                   }`}
                 >
@@ -103,7 +103,7 @@ export default function WhatWeOfferBlock() {
               >
                 <div className="flex items-center gap-3">
                   <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: s.color }} />
-                  <h3 className="text-[20px] font-semibold text-[#111313] tracking-tight">{s.name}</h3>
+                  <h3 className="text-[20px] font-semibold text-[#1c1e1e] tracking-tight">{s.name}</h3>
                 </div>
 
                 <p className="text-[14px] text-[#5a5a5a] leading-[1.85] max-w-[62ch]">{s.desc}</p>
@@ -118,7 +118,7 @@ export default function WhatWeOfferBlock() {
 
                 <Link
                   href="#priser"
-                  className="group inline-flex items-center gap-2 text-[13px] font-medium text-[#111313] hover:text-[#00a8e8] w-fit"
+                  className="group inline-flex items-center gap-2 text-[13px] font-medium text-[#1c1e1e] hover:text-[#00a8e8] w-fit"
                 >
                   Se priser
                   <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>

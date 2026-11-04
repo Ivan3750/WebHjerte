@@ -12,7 +12,7 @@ const niches = [
 
 export default function CtaSearchBlock() {
   return (
-    <section className="scene relative overflow-hidden bg-[#0b0d0d] border-t border-white/[0.06]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e] border-t border-white/[0.06]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-50" />
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
         <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-6 sm:px-14 py-14 sm:py-20 text-center">
@@ -32,7 +32,7 @@ export default function CtaSearchBlock() {
           <FadeUp delay={0.18} className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/kontakt"
-              className="inline-flex items-center gap-2 text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-8 py-3.5 transition-colors group"
+              className="inline-flex items-center gap-2 text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-8 py-3.5 transition-colors group"
             >
               Lad os komme i gang
               <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>

@@ -27,16 +27,16 @@ export default function AfterMessageBlock() {
               <span className="relative w-2.5 h-2.5 rounded-full bg-[#3ddc97]" />
             </span>
             <span className="text-[13px] text-[#5a5a5a]">
-              <span className="text-[#111313] font-medium">Ivan</span> svarer selv - altid
+              <span className="text-[#1c1e1e] font-medium">Ivan</span> svarer selv - altid
             </span>
           </FadeUp>
         </div>
 
         <FadeUp className="rounded-3xl border border-[#e8e6e6] bg-white overflow-hidden">
           <div className="flex items-center gap-3 px-5 py-4 border-b border-[#eeecec]">
-            <span className="w-9 h-9 rounded-full bg-[#111313] flex items-center justify-center text-[11px] text-[#00a8e8] font-semibold shrink-0">IV</span>
+            <span className="w-9 h-9 rounded-full bg-[#1c1e1e] flex items-center justify-center text-[11px] text-[#00a8e8] font-semibold shrink-0">IV</span>
             <div className="flex flex-col">
-              <span className="text-[13px] text-[#111313] font-medium">Ivan · WebHjerte</span>
+              <span className="text-[13px] text-[#1c1e1e] font-medium">Ivan · WebHjerte</span>
               <span className="text-[11px] text-[#8a8a8a]">Svarer normalt inden for 24 timer</span>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function AfterMessageBlock() {
                       m.from === "you" ? "bg-[#00a8e8] rounded-br-sm" : "bg-white border border-[#e8e6e6] rounded-bl-sm"
                     }`}
                   >
-                    <p className={`text-[13px] font-semibold mb-0.5 ${m.from === "you" ? "text-white" : "text-[#111313]"}`}>
+                    <p className={`text-[13px] font-semibold mb-0.5 ${m.from === "you" ? "text-white" : "text-[#1c1e1e]"}`}>
                       {m.n} · {m.title}
                     </p>
                     <p className={`text-[13px] leading-[1.6] ${m.from === "you" ? "text-white/90" : "text-[#5a5a5a]"}`}>{m.text}</p>

@@ -42,7 +42,7 @@ const kodePakker = [
 
 const HvadFaarDu = () => {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
           as="p"
@@ -66,7 +66,7 @@ const HvadFaarDu = () => {
 
         <AnimatedInView
           as="div"
-          className="rounded-2xl p-7 sm:p-8 bg-[#1c1e1e] border border-[#2a2d2d] mb-10 flex flex-col lg:flex-row gap-8 lg:gap-10"
+          className="rounded-2xl p-7 sm:p-8 bg-[#262a2a] border border-[#2a2d2d] mb-10 flex flex-col lg:flex-row gap-8 lg:gap-10"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 flex-1">
             {inkluderet.map((f) => (

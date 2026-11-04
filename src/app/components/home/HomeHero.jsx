@@ -166,7 +166,7 @@ export default function HomeHero() {
       ref={ref}
       onPointerMove={onMove}
       onPointerLeave={onLeave}
-      className="scene relative isolate overflow-hidden bg-[#0b0d0d] min-h-[calc(100dvh-68px)] flex items-center"
+      className="scene relative isolate overflow-hidden bg-[#1c1e1e] min-h-[calc(100dvh-68px)] flex items-center"
     >
       <div aria-hidden className="grid-fade absolute inset-0 -z-10 opacity-70" />
 

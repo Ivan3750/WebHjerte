@@ -13,7 +13,7 @@ const quote = {
 
 const AboutBlock = () => {
   return (
-    <section className="scene bg-white relative border-t border-[#eeecec]">
+    <section className="scene bg-[#eceeee] relative border-t border-[#eeecec]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-24 sm:py-32 grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-12 lg:gap-20 items-center">
         <FadeUp>
           <div className="relative w-full max-w-sm mx-auto lg:max-w-none aspect-[3/4] rounded-3xl overflow-hidden bg-[#e0e0e0] group">
@@ -42,7 +42,7 @@ const AboutBlock = () => {
 
           <RevealLines
             lines={["Jeg hedder Ivan –", "manden bag WebHjerte"]}
-            className="text-[#111313] font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3.6vw,46px)] mb-6"
+            className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3.6vw,46px)] mb-6"
           />
 
           <FadeUp as="p" delay={0.1} className="text-[14px] sm:text-[15px] text-[#5f5f5f] leading-[1.85] mb-7 max-w-xl">
@@ -62,7 +62,7 @@ const AboutBlock = () => {
 
           {/* Kundecitat */}
           <FadeUp delay={0.2}>
-            <figure className="relative rounded-3xl bg-[#111313] p-6 sm:p-8 mb-8 overflow-hidden">
+            <figure className="relative rounded-3xl bg-[#1c1e1e] p-6 sm:p-8 mb-8 overflow-hidden">
               <span className="relative text-[#00a8e8] text-5xl leading-none font-serif block mb-1">&ldquo;</span>
               <blockquote className="relative text-[14px] sm:text-[16px] text-white/90 leading-relaxed">
                 {quote.text}

@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: "Hvornår er siden klar?",
-    a: "En landingside er klar på 5 dage, Basis på 10 dage og Standard på 18 dage. Du ser et første udkast inden for 48 timer.",
+    a: "En landingside er klar på 2 dage, Basis på 5 dage og Standard på 10 dage. Du ser et første udkast inden for 48 timer.",
   },
   {
     q: "Kan jeg selv opdatere siden?",

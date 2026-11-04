@@ -64,7 +64,7 @@ const MiljoeBlock = () => {
             ))}
           </div>
 
-          <div className="bg-[#1c1e1e] border border-[#2a2d2d] rounded-2xl px-5 py-3.5 flex items-center justify-between">
+          <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl px-5 py-3.5 flex items-center justify-between">
             <p className="text-[14px] font-medium text-white">
               Web<span className="text-[#00a8e8]">Hjerte</span>
             </p>

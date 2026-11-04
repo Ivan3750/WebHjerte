@@ -56,7 +56,7 @@ export default function ProblemLoesning() {
           {par.map((p, i) => (
             <AnimatedInView key={i} as="div" className="group [perspective:1400px]">
               <div className="relative h-[340px] w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <div className="absolute inset-0 rounded-2xl border border-[#2a2d2d] bg-[#1c1e1e] p-8 flex flex-col justify-between [backface-visibility:hidden]">
+                <div className="absolute inset-0 rounded-2xl border border-[#2a2d2d] bg-[#262a2a] p-8 flex flex-col justify-between [backface-visibility:hidden]">
                   <div className="flex items-center justify-between">
                     <span className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a]">
                       Problemet

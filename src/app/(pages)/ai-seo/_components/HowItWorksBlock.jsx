@@ -31,7 +31,7 @@ const steps = [
 
 export default function HowItWorksBlock() {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Sådan fungerer det
@@ -45,7 +45,7 @@ export default function HowItWorksBlock() {
             <AnimatedInView
               key={s.n}
               as="div"
-              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#1c1e1e] border border-[#2a2d2d]"
+              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#262a2a] border border-[#2a2d2d]"
             >
               <div className="flex items-center gap-3">
                 <span

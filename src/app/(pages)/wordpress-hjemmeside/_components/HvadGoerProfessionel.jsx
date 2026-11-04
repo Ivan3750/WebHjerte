@@ -72,7 +72,7 @@ const punkter = [
 
 export default function HvadGoerProfessionel() {
   return (
-    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-14">
           <AnimatedInView

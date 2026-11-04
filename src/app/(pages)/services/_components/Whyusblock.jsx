@@ -50,7 +50,7 @@ const paragraphs = [
 
 export default function WhyUsBlock() {
   return (
-    <section className="scene bg-[#0b0d0d] relative">
+    <section className="scene bg-[#1c1e1e] relative">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
         <SectionHead
           dark

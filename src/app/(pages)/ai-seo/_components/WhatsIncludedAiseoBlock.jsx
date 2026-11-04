@@ -43,11 +43,11 @@ const ExtraIcon = () => (
 
 export default function WhatsIncludedAiseoBlock() {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pb-20 -mt-4">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pb-20 -mt-4">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
           as="div"
-          className="rounded-2xl border border-[#2a2d2d] bg-[#1c1e1e] overflow-hidden grid grid-cols-1 sm:grid-cols-2"
+          className="rounded-2xl border border-[#2a2d2d] bg-[#262a2a] overflow-hidden grid grid-cols-1 sm:grid-cols-2"
         >
           {/* Included */}
           <div className="p-8 sm:p-9 flex flex-col gap-5 sm:border-r border-[#2a2d2d]">

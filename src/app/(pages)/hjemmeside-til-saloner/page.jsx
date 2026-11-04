@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Hvornår er hjemmesiden klar?",
-    a: "En landingside er klar på 5 dage, Basis på 10 dage og Standard på 18 dage. Du ser altid et første udkast inden for 48 timer.",
+    a: "En landingside er klar på 2 dage, Basis på 5 dage og Standard på 10 dage. Du ser altid et første udkast inden for 48 timer.",
   },
   {
     q: "Kan jeg selv opdatere galleriet?",
@@ -56,7 +56,7 @@ export default function SalonerPage() {
       />
 
       {/* Hero */}
-      <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-24 pb-24">
+      <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-24 pb-24">
         <div className="max-w-6xl mx-auto">
           <AnimatedInView
             as="p"
@@ -81,7 +81,7 @@ export default function SalonerPage() {
           <AnimatedInView as="div" className="flex flex-wrap gap-3">
             <Link
               href="/kontakt"
-              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#111313] transition-opacity hover:opacity-90"
+              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#1c1e1e] transition-opacity hover:opacity-90"
             >
               Få et gratis tilbud
             </Link>
@@ -98,7 +98,7 @@ export default function SalonerPage() {
       <ProcessBlock />
 
       {/* Other industries */}
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
+      <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
             Også for din branche

@@ -10,7 +10,7 @@ const nodes = [
 
 export default function HeroAiseo() {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-24 pb-24">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-24 pb-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-16 items-center">
         {/* Left: text, left-aligned */}
         <div className="flex flex-col items-start text-left">
@@ -32,7 +32,7 @@ export default function HeroAiseo() {
           <AnimatedInView as="div" className="flex flex-wrap gap-3">
             <Link
               href="#priser"
-              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#111313] transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#1c1e1e] transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Se priser
             </Link>
@@ -49,7 +49,7 @@ export default function HeroAiseo() {
         <AnimatedInView as="div" className="relative aspect-square w-full max-w-[400px] mx-auto">
           <div className="absolute inset-[16%] rounded-full border border-[#2a2d2d]" />
 
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[104px] h-[104px] rounded-full bg-[#1c1e1e] border border-[#2a2d2d]">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[104px] h-[104px] rounded-full bg-[#262a2a] border border-[#2a2d2d]">
             <span className="w-2.5 h-2.5 rounded-full bg-[#00a8e8] shadow-[0_0_14px_3px_rgba(0,168,232,0.4)] mb-2" />
             <span className="text-[10px] text-[#a0a0a0] text-center leading-tight px-3">
               Din
@@ -61,7 +61,7 @@ export default function HeroAiseo() {
           {nodes.map((n) => (
             <div
               key={n.label}
-              className={`absolute ${n.pos} flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#1c1e1e] border border-[#2a2d2d] shadow-[0_6px_18px_rgba(0,0,0,0.18)] animate-float`}
+              className={`absolute ${n.pos} flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#262a2a] border border-[#2a2d2d] shadow-[0_6px_18px_rgba(0,0,0,0.18)] animate-float`}
             >
               <span
                 className="w-1.5 h-1.5 rounded-full flex-shrink-0"

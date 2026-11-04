@@ -18,7 +18,7 @@ export default function HistorieBlock() {
           maxW="max-w-[24ch]"
         />
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
-          <FadeUp as="p" className="text-[clamp(18px,2vw,24px)] text-[#111313] leading-[1.6] font-medium">
+          <FadeUp as="p" className="text-[clamp(18px,2vw,24px)] text-[#1c1e1e] leading-[1.6] font-medium">
             WebHjerte blev grundlagt i 2026 med en enkel tanke: lokale virksomheder skal ikke vælge mellem en billig, ubrugelig
             hjemmeside og en dyr regning fra et bureau, de knap kan tale med. Der skal findes en mellemvej — og den mellemvej er
             WebHjerte.

@@ -16,7 +16,7 @@ const FloatBadge = ({ children, className, delay = 0 }) => (
   <motion.span
     animate={{ y: [0, -6, 0] }}
     transition={{ duration: 3.4, repeat: Infinity, ease: "easeInOut", delay }}
-    className={`absolute w-11 h-11 rounded-full bg-[#111313] border border-[#2a2d2d] flex items-center justify-center text-[#00a8e8] shadow-lg ${className}`}
+    className={`absolute w-11 h-11 rounded-full bg-[#1c1e1e] border border-[#2a2d2d] flex items-center justify-center text-[#00a8e8] shadow-lg ${className}`}
   >
     {children}
   </motion.span>
@@ -50,7 +50,7 @@ export default function WordpressFordele() {
   const yDown2 = useTransform(scrollYProgress2, [0, 1], [-40, 40]);
 
   return (
-    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20 overflow-hidden">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
           as="p"

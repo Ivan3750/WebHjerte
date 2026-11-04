@@ -22,7 +22,7 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-20 pb-20">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-20 pb-20">
       <div className="max-w-6xl mx-auto">
         <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">Blog</p>
         <h1 className="maintitle text-white !leading-tight mb-4 max-w-[22ch]">
@@ -38,7 +38,7 @@ export default function BlogPage() {
             <Link
               key={post.href}
               href={post.href}
-              className="group rounded-2xl p-6 flex flex-col gap-3 bg-[#1c1e1e] border border-[#2a2d2d] hover:border-[#00a8e8]/40 transition-colors"
+              className="group rounded-2xl p-6 flex flex-col gap-3 bg-[#262a2a] border border-[#2a2d2d] hover:border-[#00a8e8]/40 transition-colors"
             >
               <p className="text-[15px] font-medium text-[#e0e0e0] group-hover:text-[#00a8e8] transition-colors">
                 {post.title}

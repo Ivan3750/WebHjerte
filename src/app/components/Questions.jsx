@@ -4,7 +4,7 @@ import { useState } from "react";
 const  faqs_default = [
   {
     q: "Hvor lang tid tager det?",
-    a: "De fleste projekter er klar inden for 10–18 dage. Du ser et første udkast allerede inden for 48 timer efter vores første samtale.",
+    a: "De fleste projekter er klar inden for 2–10 dage. Du ser et første udkast allerede inden for 48 timer efter vores første samtale.",
   },
   {
     q: "Hvad hvis jeg ikke er tilfreds?",
@@ -79,7 +79,7 @@ const Questions = ({faqs = faqs_default}) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <section className="bg-[#f7f6f6] border-t border-[#e8e8e8] px-5 sm:px-10 lg:px-20 py-20">
+      <section className="sheet bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 pt-24 pb-28">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_640px] gap-14 md:gap-20 items-start">
         <div>
           <p  className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-3">

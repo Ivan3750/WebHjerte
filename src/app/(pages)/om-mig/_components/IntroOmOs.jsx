@@ -56,14 +56,14 @@ export default function IntroOmOs() {
         size="md"
       />
 
-      <section className="scene bg-white">
+      <section className="scene bg-[#eceeee]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
           <div className="lg:sticky lg:top-28 self-start">
             <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />
               Min tilgang
             </FadeUp>
-            <FadeUp as="h2" delay={0.05} className="text-[#111313] font-semibold tracking-tight leading-[1.15] text-[clamp(24px,3.2vw,40px)] mb-7 max-w-[16ch]">
+            <FadeUp as="h2" delay={0.05} className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.15] text-[clamp(24px,3.2vw,40px)] mb-7 max-w-[16ch]">
               Spørgsmål først – skabeloner bagefter
             </FadeUp>
             <FadeUp delay={0.1} className="flex flex-wrap gap-2">
@@ -81,7 +81,7 @@ export default function IntroOmOs() {
                 {p}
               </FadeUp>
             ))}
-            <FadeUp className="rounded-3xl bg-[#111313] p-7 sm:p-9 mt-4">
+            <FadeUp className="rounded-3xl bg-[#1c1e1e] p-7 sm:p-9 mt-4">
               <span className="text-[#00a8e8] text-5xl leading-none font-serif block mb-1" aria-hidden>
                 &ldquo;
               </span>

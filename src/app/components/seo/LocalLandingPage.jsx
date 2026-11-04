@@ -69,7 +69,7 @@ export default function LocalLandingPage({
       />
 
       {/* Hero */}
-      <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-20 pb-20">
+      <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-20 pb-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-14 items-start">
           <div>
             <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">
@@ -84,7 +84,7 @@ export default function LocalLandingPage({
             <div className="flex flex-wrap gap-3 mb-10">
               <Link
                 href="/kontakt"
-                className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#111313] transition-opacity hover:opacity-90"
+                className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#1c1e1e] transition-opacity hover:opacity-90"
               >
                 Få et gratis tilbud
               </Link>
@@ -105,14 +105,14 @@ export default function LocalLandingPage({
             </div>
           </div>
 
-          <div className="bg-[#1c1e1e] border border-[#2a2d2d] rounded-2xl p-7">
+          <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl p-7">
             <QuickLeadForm />
           </div>
         </div>
       </section>
 
       {/* Indhold */}
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16">
+      <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-16">
         <div className="max-w-3xl mx-auto flex flex-col gap-12">
           {sections.map((section) => (
             <article key={section.h2}>
@@ -148,7 +148,7 @@ export default function LocalLandingPage({
       <ProcessBlock />
 
       {/* Relaterede sider */}
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
+      <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
             Læs også

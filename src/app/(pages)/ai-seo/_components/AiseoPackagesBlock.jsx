@@ -71,7 +71,7 @@ const packages = [
 
 const AiseoPackagesBlock = () => {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Priser
@@ -89,7 +89,7 @@ const AiseoPackagesBlock = () => {
             <AnimatedInView
               key={name}
               as="div"
-              className={`rounded-2xl p-6 flex flex-col gap-5 bg-[#1c1e1e] border ${
+              className={`rounded-2xl p-6 flex flex-col gap-5 bg-[#262a2a] border ${
                 popular ? "border-[#0af]/40" : "border-[#2a2d2d]"
               }`}
             >

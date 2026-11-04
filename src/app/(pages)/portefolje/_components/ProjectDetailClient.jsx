@@ -32,7 +32,7 @@ export default function ProjectDetailClient({ project, next }) {
       <section className="scene relative bg-[#f7f6f6]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 -mt-10 sm:-mt-16 relative z-10">
           <FadeUp>
-            <div className="relative rounded-3xl overflow-hidden border border-[#e8e6e6] bg-[#111313] shadow-[0_40px_80px_-40px_rgba(0,0,0,0.5)]">
+            <div className="relative rounded-3xl overflow-hidden border border-[#e8e6e6] bg-[#1c1e1e] shadow-[0_40px_80px_-40px_rgba(0,0,0,0.5)]">
               <Image
                 src={project.heroImage}
                 alt={`${project.title} – ${project.subtitle}`}
@@ -54,7 +54,7 @@ export default function ProjectDetailClient({ project, next }) {
           <FadeUp className="rounded-3xl bg-white border border-[#e8e6e6] grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#eeecec]">
             <div className="p-6 sm:p-8">
               <p className="text-[11px] uppercase tracking-[0.14em] text-[#8a8a8a] mb-3">Kunde</p>
-              <p className="text-[15px] font-semibold text-[#111313]">{project.client}</p>
+              <p className="text-[15px] font-semibold text-[#1c1e1e]">{project.client}</p>
               <p className="text-[13px] text-[#6a6a6a] mt-1">{project.location}</p>
               {project.site && (
                 <a
@@ -97,14 +97,14 @@ export default function ProjectDetailClient({ project, next }) {
       </section>
 
       {/* Om projektet */}
-      <section className="scene bg-white">
+      <section className="scene bg-[#eceeee]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
           <div className="lg:sticky lg:top-28 self-start">
             <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />
               Om projektet
             </FadeUp>
-            <FadeUp as="h2" delay={0.05} className="text-[#111313] font-semibold tracking-tight leading-[1.15] text-[clamp(24px,3.2vw,40px)]">
+            <FadeUp as="h2" delay={0.05} className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.15] text-[clamp(24px,3.2vw,40px)]">
               {project.client}: udfordringen bag projektet
             </FadeUp>
           </div>
@@ -121,7 +121,7 @@ export default function ProjectDetailClient({ project, next }) {
                   href={project.site}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#00a8e8] hover:bg-[#111313] text-white px-7 py-3.5 text-[13px] font-semibold transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#00a8e8] hover:bg-[#1c1e1e] text-white px-7 py-3.5 text-[13px] font-semibold transition-colors"
                 >
                   Se hjemmesiden <span aria-hidden>↗</span>
                 </a>
@@ -132,7 +132,7 @@ export default function ProjectDetailClient({ project, next }) {
       </section>
 
       {/* Proces */}
-      <section className="scene bg-[#0b0d0d]">
+      <section className="scene bg-[#1c1e1e]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28 grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { n: "01", kicker: "UX/UI Design", title: "Design & brugeroplevelse", text: project.designDescription },
@@ -172,7 +172,7 @@ export default function ProjectDetailClient({ project, next }) {
                 href={`/portefolje/${next.slug}`}
                 className="group grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 items-center rounded-3xl bg-white border border-[#e8e6e6] p-3 sm:p-4 hover:border-[#00a8e8]/40 transition-colors"
               >
-                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#111313]">
+                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#1c1e1e]">
                   <Image
                     src={next.heroImage}
                     alt={`${next.title} – ${next.subtitle}`}
@@ -182,11 +182,11 @@ export default function ProjectDetailClient({ project, next }) {
                   />
                 </div>
                 <div className="px-3 pb-4 md:pb-0 md:pr-8 flex flex-col gap-3">
-                  <p className="text-[22px] sm:text-[26px] font-semibold text-[#111313] leading-tight tracking-tight">
+                  <p className="text-[22px] sm:text-[26px] font-semibold text-[#1c1e1e] leading-tight tracking-tight">
                     {next.title}
                     <span className="block text-[15px] font-normal text-[#8a8a8a] mt-1.5">{next.subtitle}</span>
                   </p>
-                  <span className="inline-flex items-center gap-2 text-[13px] font-medium text-[#111313] group-hover:text-[#00a8e8] transition-colors">
+                  <span className="inline-flex items-center gap-2 text-[13px] font-medium text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">
                     Se projektet <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
                   </span>
                 </div>

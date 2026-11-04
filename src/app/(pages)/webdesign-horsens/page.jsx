@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Hvor hurtigt kan I levere et webdesign?",
-    a: "Du får et første designudkast inden for 48 timer efter vores samtale. En komplet hjemmeside er typisk klar på 10-18 dage, afhængigt af pakke og hvor hurtigt du leverer tekster og billeder.",
+    a: "Du får et første designudkast inden for 48 timer efter vores samtale. En komplet hjemmeside er typisk klar på 2–10 dage, afhængigt af pakke og hvor hurtigt du leverer tekster og billeder.",
   },
   {
     q: "Skal jeg møde op fysisk i Horsens?",

@@ -37,9 +37,9 @@ const jsonLd = {
 };
 
 const packages = [
-  { name: "Landingside", price: "2.500", text: "1 side til kampagner, annoncer eller én ydelse. Klar på ca. 5 dage." },
-  { name: "Basis", price: "4.500", text: "3–5 sider med kontaktformular, Google Maps og basis-SEO. Klar på ca. 10 dage." },
-  { name: "Standard", price: "7.500", text: "Op til 8 sider med SEO, analytics, booking og 30 dages support. Klar på ca. 18 dage." },
+  { name: "Landingside", price: "2.500", text: "1 side til kampagner, annoncer eller én ydelse. Klar på ca. 2 dage." },
+  { name: "Basis", price: "4.500", text: "3–5 sider med kontaktformular, Google Maps og basis-SEO. Klar på ca. 5 dage." },
+  { name: "Standard", price: "7.500", text: "Op til 8 sider med SEO, analytics, booking og 30 dages support. Klar på ca. 10 dage." },
   { name: "Skræddersyet", price: "Fra 14.000", text: "Til større løsninger som webshop, kundeportal eller specialfunktioner. Aftales individuelt." },
 ];
 
@@ -51,7 +51,7 @@ export default function HvadKosterEnHjemmesidePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <article className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-20 pb-16">
+      <article className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-20 pb-16">
         <div className="max-w-3xl mx-auto">
           <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">
             Guide · Priser
@@ -74,7 +74,7 @@ export default function HvadKosterEnHjemmesidePage() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {packages.map((p) => (
-                  <div key={p.name} className="rounded-2xl p-5 bg-[#1c1e1e] border border-[#2a2d2d]">
+                  <div key={p.name} className="rounded-2xl p-5 bg-[#262a2a] border border-[#2a2d2d]">
                     <p className="text-[14px] font-medium text-[#e0e0e0]">{p.name}</p>
                     <p className="text-[22px] font-medium text-white mt-2">
                       {p.price} <span className="text-[12px] text-[#5a5a5a]">DKK</span>
@@ -116,7 +116,7 @@ export default function HvadKosterEnHjemmesidePage() {
           <div className="mt-14 pt-8 border-t border-[#1e2020] flex flex-wrap gap-3">
             <Link
               href="/kontakt"
-              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#111313] transition-opacity hover:opacity-90"
+              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#1c1e1e] transition-opacity hover:opacity-90"
             >
               Få et gratis tilbud
             </Link>

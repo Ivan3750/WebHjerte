@@ -28,8 +28,8 @@ function VisualSite() {
         </div>
         <div className="p-3 grid grid-cols-[1.4fr_1fr] gap-3">
           <div>
-            <div className="h-2.5 w-4/5 rounded bg-[#1c1e1e] mb-1.5" />
-            <div className="h-2.5 w-3/5 rounded bg-[#1c1e1e] mb-3" />
+            <div className="h-2.5 w-4/5 rounded bg-[#262a2a] mb-1.5" />
+            <div className="h-2.5 w-3/5 rounded bg-[#262a2a] mb-3" />
             <div className="h-1.5 w-full rounded bg-[#e8e6e6] mb-1" />
             <div className="h-1.5 w-4/5 rounded bg-[#e8e6e6] mb-3" />
             <div className="h-5 w-16 rounded-full bg-[#00a8e8]" />
@@ -248,7 +248,7 @@ const TilbydeSection = () => {
             </FadeUp>
             <RevealLines
               lines={["Hvad kan jeg", "hjælpe med?"]}
-              className="text-[#111313] font-semibold tracking-tight leading-[1.08] text-[clamp(28px,4.2vw,56px)]"
+              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.08] text-[clamp(28px,4.2vw,56px)]"
             />
           </div>
           <FadeUp delay={0.2}>
@@ -278,7 +278,7 @@ const TilbydeSection = () => {
                     {visual}
                   </div>
                   <div className="p-5 sm:p-6 flex flex-col gap-2">
-                    <p className="text-[16px] font-semibold text-[#111313]">{name}</p>
+                    <p className="text-[16px] font-semibold text-[#1c1e1e]">{name}</p>
                     <p className="text-[13px] text-[#6a6a6a] leading-[1.75]">{desc}</p>
                   </div>
                 </div>

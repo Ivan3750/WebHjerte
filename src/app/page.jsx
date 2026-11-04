@@ -11,6 +11,7 @@ import StickyCallButton from "./components/ui/StickyCallButton";
 import ScrollProgress from "./components/ui/ScrollProgress";
 import TrustStrip from "./components/home/TrustStrip";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
+import TimelineChart from "./components/home/TimelineChart";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
 import SpotlightCard from "./components/home/fx/SpotlightCard";
 
@@ -131,6 +132,7 @@ export default function Home() {
       <BuildStory />
       <TilbydeSection />
       <GuaranteesBlock />
+      <TimelineChart />
       <HomeCases />
       <AboutBlock />
 
@@ -145,7 +147,7 @@ export default function Home() {
               </FadeUp>
               <RevealLines
                 lines={["Webbureau i Horsens, der", "leverer kunder – ikke", "bare et design"]}
-                className="text-[#111313] font-semibold tracking-tight leading-[1.12] text-[clamp(24px,3.2vw,40px)] mb-6"
+                className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.12] text-[clamp(24px,3.2vw,40px)] mb-6"
               />
               <FadeUp as="p" delay={0.1} className="text-[14px] text-[#5f5f5f] leading-[1.85] mb-4">
                 Som webbureau i Horsens hjælper jeg lokale virksomheder med at blive fundet på Google og omsætte
@@ -193,10 +195,10 @@ export default function Home() {
       </section>
 
       {/* Quick lead form */}
-      <section className="scene relative overflow-hidden bg-[#0b0d0d]">
+      <section className="scene relative overflow-hidden bg-[#1c1e1e]">
         <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-24 sm:py-32 grid grid-cols-1 md:grid-cols-2 gap-14 lg:gap-20 items-start">
           <div>
-            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#5b6868] mb-4 flex items-center gap-3">
+            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-4 flex items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />
               Kom i gang
             </FadeUp>
@@ -226,7 +228,7 @@ export default function Home() {
 
           <FadeUp delay={0.1}>
             <div className="relative rounded-3xl p-[1px] bg-[#00a8e8]/40">
-              <div className="rounded-[calc(1.5rem-1px)] bg-[#131616] p-6 sm:p-8">
+              <div className="rounded-[calc(1.5rem-1px)] bg-[#242828] p-6 sm:p-8">
                 <QuickLeadForm />
               </div>
             </div>

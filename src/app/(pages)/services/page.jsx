@@ -4,6 +4,7 @@ import WhatWeOfferBlock from "./_components/WhatWeOfferBlock";
 import Whyusblock from "./_components/Whyusblock";
 import PackagesBlock from "./_components/PackagesBlock";
 import Whatsincludedblock from "./_components/WhatsIncludedBlock";
+import PriceTimeCharts from "./_components/PriceTimeCharts";
 import ProcessBlock from "../../components/home/ProcessBlock";
 import AfterLaunchBlock from "./_components/AfterLaunchBlock";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
@@ -41,9 +42,9 @@ export const metadata = {
 };
 
 const packageLd = [
-  { name: "Landingside", price: "2500", url: "/kontakt?pakke=landingside", description: "1 side, mobilvenlig, kontaktformular, basic SEO. Levering: 5 dage." },
-  { name: "Basis hjemmeside", price: "4500", url: "/kontakt?pakke=basis", description: "3–5 sider, mobilvenlig, kontaktformular, basic SEO. Levering: 10 dage." },
-  { name: "Standard hjemmeside", price: "7500", url: "/kontakt?pakke=standard", description: "Op til 8 sider, SEO, Google Analytics, booking og formularer. Levering: 18 dage." },
+  { name: "Landingside", price: "2500", url: "/kontakt?pakke=landingside", description: "1 side, mobilvenlig, kontaktformular, basic SEO. Levering: 2 dage. Ændringer på sitet inkluderet i 14 dage." },
+  { name: "Basis hjemmeside", price: "4500", url: "/kontakt?pakke=basis", description: "3–5 sider, mobilvenlig, kontaktformular, basic SEO. Levering: 5 dage. Ændringer på sitet inkluderet i 14 dage." },
+  { name: "Standard hjemmeside", price: "7500", url: "/kontakt?pakke=standard", description: "Op til 8 sider, SEO, Google Analytics, booking og formularer. Levering: 10 dage. Ændringer på sitet inkluderet i 30 dage." },
   { name: "Skræddersyet løsning", price: "14000", url: "/kontakt?pakke=skraeddersyet", description: "Fuld tilpasning, integrationer, e-commerce og AI-funktioner. Fra 14.000 kr." },
 ];
 
@@ -117,12 +118,13 @@ const Services = () => {
         <PackagesBlock />
       </div>
       <Whatsincludedblock />
+      <PriceTimeCharts />
       <ProcessBlock />
       <AfterLaunchBlock />
       <SupportTariffsBlock />
 
       {/* Niche landing pages */}
-      <section className="scene bg-white border-t border-[#eeecec]">
+      <section className="scene bg-[#eceeee] border-t border-[#eeecec]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
           <SectionHead eyebrow="Hjemmesider til din branche" lines={["Se hvad jeg kan lave", "for din virksomhed"]} className="mb-10 sm:mb-14" />
 
@@ -133,7 +135,7 @@ const Services = () => {
                   <SpotlightCard dark={false} className="h-full rounded-3xl bg-[#f7f6f6] border border-[#eeecec] hover:border-[#00a8e8]/40 transition-colors">
                     <div className="p-6 sm:p-7 flex flex-col gap-3 h-full">
                       <div className="flex items-center justify-between">
-                        <p className="text-[16px] font-semibold text-[#111313] group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
+                        <p className="text-[16px] font-semibold text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
                         <span className="text-[#b0aeae] group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" aria-hidden>→</span>
                       </div>
                       <p className="text-[13px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>

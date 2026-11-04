@@ -17,7 +17,7 @@ export default function FormToLead({
   facts = defaultFacts,
 }) {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pt-20 pb-10">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-20 pb-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div>
           <AnimatedInView
@@ -47,7 +47,7 @@ export default function FormToLead({
             {facts.map(({ label, value }) => (
               <div
                 key={label}
-                className="flex items-center justify-between bg-[#1c1e1e] px-5 py-4"
+                className="flex items-center justify-between bg-[#262a2a] px-5 py-4"
               >
                 <span className="text-[12px] text-[#5a5a5a]">{label}</span>
                 <span className="text-[12px] font-medium text-[#e0e0e0]">
@@ -57,7 +57,7 @@ export default function FormToLead({
             ))}
           </AnimatedInView>
         </div>
-        <div className="rounded-3xl bg-[#131616] border border-white/10 p-6 sm:p-9">
+        <div className="rounded-3xl bg-[#242828] border border-white/10 p-6 sm:p-9">
           <Suspense fallback={null}>
             <ContactForm />
           </Suspense>

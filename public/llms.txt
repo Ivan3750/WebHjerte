@@ -10,9 +10,9 @@
 
 ## Priser (DKK, ekskl. moms)
 
-- Landingside: fra 2.500 kr. Levering på ca. 5 dage. 1 side til kampagner og annoncer.
-- Basis: fra 4.500 kr. Levering på ca. 10 dage. 3–5 sider.
-- Standard: fra 7.500 kr. Levering på ca. 18 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Landingside: fra 2.500 kr. Levering på ca. 2 dage. 1 side til kampagner og annoncer.
+- Basis: fra 4.500 kr. Levering på ca. 5 dage. 3–5 sider.
+- Standard: fra 7.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
 - Skræddersyet: fra 14.000 kr. Aftales individuelt. Webshop, kundeportal og andre specialløsninger.
 - Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned.
 
@@ -20,7 +20,7 @@
 
 - Første designudkast inden for 48 timer efter den første samtale. Intet bygges, før designet er godkendt.
 - Er kunden ikke tilfreds med designet, betales 0 kr for designet.
-- Typisk live på 10–18 dage, afhængigt af pakke.
+- Typisk live på 2–10 dage, afhængigt af pakke.
 - Domæne og kode tilhører kunden.
 
 ## Ydelser

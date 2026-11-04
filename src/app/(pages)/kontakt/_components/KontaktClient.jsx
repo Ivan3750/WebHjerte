@@ -19,11 +19,11 @@ const facts = [
 
 export default function KontaktClient() {
   return (
-    <section className="scene relative overflow-hidden bg-[#0b0d0d]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-6 sm:pt-8 pb-16 sm:pb-24">
         <nav aria-label="Brødkrummer" className="mb-10 sm:mb-14">
-          <ol className="flex items-center gap-2 text-[11px] uppercase tracking-[0.12em] text-[#5b6868]">
+          <ol className="flex items-center gap-2 text-[11px] uppercase tracking-[0.12em] text-[#7a8787]">
             <li className="flex items-center gap-2">
               <Link href="/" className="hover:text-[#00a8e8] transition-colors py-1">Forside</Link>
               <span aria-hidden>/</span>
@@ -56,7 +56,7 @@ export default function KontaktClient() {
                 >
                   <span className="text-[11px] uppercase tracking-[0.14em] text-[#7f8c8c]">{c.label}</span>
                   <span className="text-[15px] font-medium text-white group-hover:text-[#00a8e8] transition-colors break-all">{c.value}</span>
-                  <span className="text-[11px] text-[#5b6868]">{c.hint}</span>
+                  <span className="text-[11px] text-[#7a8787]">{c.hint}</span>
                 </a>
               ))}
             </FadeUp>
@@ -72,7 +72,7 @@ export default function KontaktClient() {
           </div>
 
           <FadeUp delay={0.12}>
-            <div className="rounded-3xl bg-[#131616] border border-white/10 p-6 sm:p-9">
+            <div className="rounded-3xl bg-[#242828] border border-white/10 p-6 sm:p-9">
               <Suspense fallback={null}>
                 <ContactForm />
               </Suspense>

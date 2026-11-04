@@ -67,7 +67,7 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-[#0b0d0d] border-t border-white/10">
+    <footer className="relative overflow-hidden bg-[#1c1e1e] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16">
         {/* Links */}
         <div className="grid grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.1fr] gap-x-6 gap-y-10 pt-14 pb-12 sm:pt-16 sm:pb-14">
@@ -96,7 +96,7 @@ const Footer = () => {
 
           {groups.map((g) => (
             <nav key={g.title} aria-label={g.title}>
-              <p className="text-[11px] uppercase tracking-[0.16em] text-[#5b6868] mb-4">{g.title}</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-[#7a8787] mb-4">{g.title}</p>
               <div className="flex flex-col gap-1">
                 {g.links.map(({ href, label }) => (
                   <Link
@@ -112,7 +112,7 @@ const Footer = () => {
           ))}
 
           <div className="col-span-2 lg:col-span-1">
-            <p className="text-[11px] uppercase tracking-[0.16em] text-[#5b6868] mb-4">Kontakt</p>
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[#7a8787] mb-4">Kontakt</p>
             <div className="flex flex-col gap-1">
               <a href="mailto:hej@webhjerte.dk" className="text-[13px] text-[#9aa5a5] hover:text-white transition-colors w-fit py-1.5">
                 hej@webhjerte.dk
@@ -120,15 +120,15 @@ const Footer = () => {
               <a href="tel:+4542760577" className="text-[13px] text-[#9aa5a5] hover:text-white transition-colors w-fit py-1.5">
                 +45 42 76 05 77
               </a>
-              <span className="text-[13px] text-[#5b6868] py-1.5">Horsens, Midtjylland</span>
+              <span className="text-[13px] text-[#7a8787] py-1.5">Horsens, Midtjylland</span>
             </div>
           </div>
         </div>
 
         {/* Bund */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-6 border-t border-white/10">
-          <p className="text-[12px] text-[#5b6868] leading-relaxed">© 2026 WebHjerte · CVR: 46485823</p>
-          <p className="text-[12px] text-[#5b6868] flex gap-5">
+          <p className="text-[12px] text-[#7a8787] leading-relaxed">© 2026 WebHjerte · CVR: 46485823</p>
+          <p className="text-[12px] text-[#7a8787] flex gap-5">
             {legalLinks.map(({ href, label }) => (
               <Link key={href} href={href} className="hover:text-white transition-colors">
                 {label}
@@ -140,7 +140,7 @@ const Footer = () => {
 
       <p
         aria-hidden
-        className="select-none text-center font-semibold tracking-tight leading-none text-[#111414] text-[13.5vw] -mb-[2.2vw] whitespace-nowrap"
+        className="select-none text-center font-semibold tracking-tight leading-none text-[#252828] text-[13.5vw] -mb-[2.2vw] whitespace-nowrap"
       >
         WebHjerte
       </p>

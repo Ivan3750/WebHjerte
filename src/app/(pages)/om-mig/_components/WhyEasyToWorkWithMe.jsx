@@ -14,7 +14,7 @@ const reasons = [
 
 export default function WhyEasyToWorkWithMe() {
   return (
-    <section className="scene bg-[#0b0d0d]">
+    <section className="scene bg-[#1c1e1e]">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
         <SectionHead
           dark
@@ -44,7 +44,7 @@ export default function WhyEasyToWorkWithMe() {
           </div>
           <Link
             href="/kontakt"
-            className="inline-flex justify-center text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-8 py-3.5 transition-colors"
+            className="inline-flex justify-center text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-8 py-3.5 transition-colors"
           >
             Book gratis samtale
           </Link>

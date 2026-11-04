@@ -742,7 +742,7 @@ section.scene { padding: 0; }
 }
 
 .glass-solid {
-  background: rgba(17,21,22,0.94);
+  background: rgba(36,40,40,0.95);
 }
 
 /* ───────────── Indre sider ───────────── */
@@ -758,4 +758,22 @@ section.scene { padding: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   .orbit-spin, .orbit-counter, .panel-in { animation: none !important; }
+}
+
+/* ───────────── Overgange mellem sektioner: bløde "ark" i stedet for hård kant ───────────── */
+.scene + .scene,
+.sheet {
+  position: relative;
+  border-radius: 32px 32px 0 0;
+  margin-top: -32px;
+}
+footer {
+  position: relative;
+  border-radius: 32px 32px 0 0;
+  margin-top: -32px;
+}
+@media (max-width: 640px) {
+  .scene + .scene,
+  .sheet,
+  footer { border-radius: 24px 24px 0 0; margin-top: -24px; }
 }
