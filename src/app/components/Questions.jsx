@@ -80,7 +80,7 @@ const Questions = ({faqs = faqs_default}) => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <section className="sheet bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 pt-24 pb-28">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_640px] gap-14 md:gap-20 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,640px)] gap-10 lg:gap-20 items-start">
         <div>
           <p  className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-3">
             Ofte stillede spørgsmål
