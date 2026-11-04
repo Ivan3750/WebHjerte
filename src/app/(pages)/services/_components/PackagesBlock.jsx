@@ -81,7 +81,7 @@ const packages = [
 const PackagesBlock = () => {
   return (
     <section className="scene bg-[#e4f0f7]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-20 sm:pt-28 pb-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-16 sm:pt-24 pb-10">
         <SectionHead
           eyebrow="Priser"
           lines={["Fast projektpris -", "ingen overraskelser"]}

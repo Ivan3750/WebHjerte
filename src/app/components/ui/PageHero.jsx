@@ -15,7 +15,7 @@ export default function PageHero({
   size = "lg",
 }) {
   const titleSize =
-    size === "lg" ? "text-[clamp(28px,4.4vw,60px)]" : "text-[clamp(26px,3.6vw,48px)]";
+    size === "lg" ? "text-[clamp(26px,3.8vw,50px)]" : "text-[clamp(24px,3.2vw,42px)]";
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e] border-b border-white/[0.06]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />

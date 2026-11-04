@@ -4,7 +4,6 @@ import WhatWeOfferBlock from "./_components/WhatWeOfferBlock";
 import Whyusblock from "./_components/Whyusblock";
 import PackagesBlock from "./_components/PackagesBlock";
 import Whatsincludedblock from "./_components/WhatsIncludedBlock";
-import PriceTimeCharts from "./_components/PriceTimeCharts";
 import ProcessBlock from "../../components/home/ProcessBlock";
 import AfterLaunchBlock from "./_components/AfterLaunchBlock";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
@@ -23,7 +22,7 @@ export const metadata = {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Priser på webdesign – klare pakker uden skjulte gebyrer | WebHjerte",
     description:
-      "4 klare pakker til lokale virksomheder i Horsens og Midtjylland. Landingside 2.500 DKK · Basis 4.500 DKK · Standard 7.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 14 dage.",
+      "4 klare pakker til lokale virksomheder i Horsens og Midtjylland. Landingside 2.500 DKK · Basis 4.500 DKK · Standard 7.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 2–10 dage.",
     url: "https://www.webhjerte.dk/services",
     siteName: "WebHjerte",
     locale: "da_DK",
@@ -118,14 +117,13 @@ const Services = () => {
         <PackagesBlock />
       </div>
       <Whatsincludedblock />
-      <PriceTimeCharts />
       <ProcessBlock />
       <AfterLaunchBlock />
       <SupportTariffsBlock />
 
       {/* Niche landing pages */}
       <section className="scene bg-[#eceeee] border-t border-[#eeecec]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
           <SectionHead eyebrow="Hjemmesider til din branche" lines={["Se hvad jeg kan lave", "for din virksomhed"]} className="mb-10 sm:mb-14" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

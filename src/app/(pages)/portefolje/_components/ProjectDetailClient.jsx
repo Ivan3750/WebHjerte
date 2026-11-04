@@ -98,7 +98,7 @@ export default function ProjectDetailClient({ project, next }) {
 
       {/* Om projektet */}
       <section className="scene bg-[#eceeee]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
           <div className="lg:sticky lg:top-28 self-start">
             <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />
@@ -133,7 +133,7 @@ export default function ProjectDetailClient({ project, next }) {
 
       {/* Proces */}
       <section className="scene bg-[#1c1e1e]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { n: "01", kicker: "UX/UI Design", title: "Design & brugeroplevelse", text: project.designDescription },
             { n: "02", kicker: "Udvikling", title: "Fra idé til færdigt produkt", text: project.developmentDescription, tech: true },

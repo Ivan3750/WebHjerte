@@ -11,14 +11,13 @@ import StickyCallButton from "./components/ui/StickyCallButton";
 import ScrollProgress from "./components/ui/ScrollProgress";
 import TrustStrip from "./components/home/TrustStrip";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
-import TimelineChart from "./components/home/TimelineChart";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
 import SpotlightCard from "./components/home/fx/SpotlightCard";
 
 export const metadata = {
   title: "Webbureau Horsens | Webdesign til lokale virksomheder | WebHjerte",
   description:
-    "Lokalt webbureau i Horsens: hjemmesider fra 2.500 kr, live på 14 dage. Direkte kontakt med udvikleren. Få et gratis tilbud inden for 24 timer.",
+    "Lokalt webbureau i Horsens: hjemmesider fra 2.500 kr, live på 2–10 dage. Direkte kontakt med udvikleren. Få et gratis tilbud inden for 24 timer.",
   keywords: [
     "webbureau Horsens",
     "webdesign Horsens",
@@ -132,13 +131,12 @@ export default function Home() {
       <BuildStory />
       <TilbydeSection />
       <GuaranteesBlock />
-      <TimelineChart />
       <HomeCases />
       <AboutBlock />
 
       {/* Lokalt webbureau – indhold til søgninger som "webbureau Horsens" */}
       <section className="scene bg-[#f7f6f6] border-t border-[#e8e6e6]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
               <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
@@ -196,7 +194,7 @@ export default function Home() {
 
       {/* Quick lead form */}
       <section className="scene relative overflow-hidden bg-[#1c1e1e]">
-        <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-24 sm:py-32 grid grid-cols-1 md:grid-cols-2 gap-14 lg:gap-20 items-start">
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-14 lg:gap-20 items-start">
           <div>
             <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-4 flex items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />
@@ -204,7 +202,7 @@ export default function Home() {
             </FadeUp>
             <RevealLines
               lines={["Få et gratis", "tilbud"]}
-              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(30px,4.4vw,58px)] mb-5"
+              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(28px,3.6vw,48px)] mb-5"
             />
             <FadeUp as="p" delay={0.1} className="text-[14px] text-[#8795a0] leading-[1.8] max-w-md mb-10">
               Har du allerede en hjemmeside, der trænger til et løft, eller starter du helt forfra? Skriv det i

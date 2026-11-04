@@ -57,7 +57,7 @@ export default function IntroOmOs() {
       />
 
       <section className="scene bg-[#eceeee]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
           <div className="lg:sticky lg:top-28 self-start">
             <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />

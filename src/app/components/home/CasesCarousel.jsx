@@ -29,7 +29,7 @@ export default function CasesCarousel() {
           <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3 sm:mb-4">
             Portefølje
           </p>
-          <h2 className="maintitle text-[#1a1a1a] !leading-tight mb-3 sm:mb-4 text-[26px] sm:text-[34px]">
+          <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] mb-3 sm:mb-4 text-[clamp(24px,3.3vw,40px)]">
             Udvalgte cases
           </h2>
           <p className="text-[13px] sm:text-[14px] text-[#7a7a7a] leading-[1.7] sm:leading-[1.85]">
@@ -49,7 +49,7 @@ export default function CasesCarousel() {
               className="grid md:grid-cols-2 gap-6 sm:gap-10 items-center"
             >
               {/* Image */}
-              <div className="relative aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden border border-[#2a2d2d] bg-[#262a2a]">
+              <div className="relative aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden border border-[#d6d8d9] bg-[#1c1e1e]">
                 <Image
                   src={projects[current].heroImage}
                   alt={projects[current].title}

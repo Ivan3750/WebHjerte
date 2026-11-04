@@ -14,7 +14,7 @@ export default function CtaSearchBlock() {
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e] border-t border-white/[0.06]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-50" />
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-6 sm:px-14 py-14 sm:py-20 text-center">
           <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-5 inline-flex items-center gap-3">
             <span className="w-8 h-px bg-[#00a8e8]" />
@@ -23,7 +23,7 @@ export default function CtaSearchBlock() {
           </FadeUp>
           <RevealLines
             lines={["Klar til at få en hjemmeside,", "der rent faktisk virker?"]}
-            className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.8vw,48px)] mb-6"
+            className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(22px,3.2vw,40px)] mb-6"
           />
           <FadeUp as="p" delay={0.1} className="text-[14px] text-[#93a0a0] leading-[1.8] max-w-[54ch] mx-auto mb-9">
             Uanset om du mangler en ny hjemmeside, en webshop eller bare vil have flere kunder online – så lad os tage en snak.

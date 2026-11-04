@@ -28,7 +28,7 @@ export default function OpenGraphImage() {
             Webbureau i Horsens
           </div>
           <div style={{ fontSize: 36, color: "#00a8e8", marginTop: 20 }}>
-            Hjemmesider med fast pris – live på 14 dage
+            Hjemmesider med fast pris – live på 2–10 dage
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 26, color: "#8a9696" }}>

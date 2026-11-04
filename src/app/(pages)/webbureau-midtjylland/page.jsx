@@ -5,7 +5,7 @@ const path = "/webbureau-midtjylland";
 export const metadata = {
   title: "Webbureau Midtjylland – hjemmesider til fast pris | WebHjerte",
   description:
-    "Webbureau til virksomheder i Midtjylland: Aarhus, Silkeborg, Vejle, Skanderborg og resten af regionen. Hjemmesider fra 2.500 kr, direkte kontakt og levering på 14 dage.",
+    "Webbureau til virksomheder i Midtjylland: Aarhus, Silkeborg, Vejle, Skanderborg og resten af regionen. Hjemmesider fra 2.500 kr, direkte kontakt og levering på 2–10 dage.",
   keywords: [
     "webbureau Midtjylland",
     "webbureau Jylland",
@@ -67,7 +67,7 @@ const sections = [
     bullets: [
       "Professionel hjemmeside til fast pris fra 2.500 kr",
       "Første designudkast inden for 48 timer",
-      "Levering typisk inden for 14 dage",
+      "Levering typisk på 2–10 dage",
       "SEO og mobiloptimering bygget ind fra start",
       "Direkte kontakt med udvikleren – ingen mellemled",
       "30 dages gratis support efter lancering",
@@ -107,7 +107,7 @@ export default function WebbureauMidtjyllandPage() {
       serviceType="Webbureau"
       eyebrow="Webbureau i Midtjylland"
       h1="Webbureau i Midtjylland – hjemmesider til fast pris"
-      intro="WebHjerte er et lokalt webbureau fra Horsens, der bygger hurtige og professionelle hjemmesider til virksomheder i hele Midtjylland. Direkte kontakt med udvikleren og levering på omkring 14 dage."
+      intro="WebHjerte er et lokalt webbureau fra Horsens, der bygger hurtige og professionelle hjemmesider til virksomheder i hele Midtjylland. Direkte kontakt med udvikleren og levering på 2–10 dage."
       sections={sections}
       faqs={faqs}
       related={related}

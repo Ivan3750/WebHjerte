@@ -7,7 +7,7 @@ import ProcessBlock from "../../components/home/ProcessBlock";
 export const metadata = {
   title: "Hjemmeside til saloner i Horsens | WebHjerte",
   description:
-    "Få en hjemmeside til din salon i Horsens. Booking, priser, galleri. Fast pris fra 2.500 kr, levering på 14 dage.",
+    "Få en hjemmeside til din salon i Horsens. Booking, priser, galleri. Fast pris fra 2.500 kr, levering på 2–10 dage.",
   alternates: {
     canonical: "https://www.webhjerte.dk/hjemmeside-til-saloner",
   },
@@ -76,7 +76,7 @@ export default function SalonerPage() {
           >
             Frisørsaloner, skønhedssaloner, barber og andre — få en
             hjemmeside, der får kunder til at booke direkte. Fast pris, levering
-            på 14 dage.
+            på 2–10 dage.
           </AnimatedInView>
           <AnimatedInView as="div" className="flex flex-wrap gap-3">
             <Link

@@ -7,7 +7,7 @@ import ProcessBlock from "../../components/home/ProcessBlock";
 export const metadata = {
   title: "Hjemmeside til håndværkere i Horsens | WebHjerte",
   description:
-    "Få en professionel hjemmeside til dit håndværkerfirma i Horsens. Fast pris fra 2.500 kr, levering på 14 dage. VVS, elektrikere, tømrere og flere.",
+    "Få en professionel hjemmeside til dit håndværkerfirma i Horsens. Fast pris fra 2.500 kr, levering på 2–10 dage. VVS, elektrikere, tømrere og flere.",
   alternates: {
     canonical: "https://www.webhjerte.dk/hjemmeside-til-haandvaerkere",
   },
@@ -116,7 +116,7 @@ export default function HaandvaerkerePage() {
           >
             VVS, elektrikere, tømrere, malere og andre håndværkere — få en
             hjemmeside, der får kunder til at ringe til dig. Fast pris, levering
-            på 14 dage.
+            på 2–10 dage.
           </AnimatedInView>
           <AnimatedInView as="div" className="flex flex-wrap gap-3">
             <Link

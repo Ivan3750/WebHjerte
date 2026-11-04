@@ -1,7 +1,6 @@
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import CtaSearchBlock from "../../components/ui/CTA";
-import PortfolioShowcase from "./_components/PortfolioShowcase";
-import PortfolioStats from "./_components/PortfolioStats";
+import PortfolioRows from "./_components/PortfolioRows";
 import { projects } from "../../data/projects";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 
@@ -79,8 +78,7 @@ export default function Portefolje() {
         size="md"
       />
 
-      <PortfolioShowcase projects={projects} />
-      <PortfolioStats projects={projects} />
+      <PortfolioRows projects={projects} />
       <CtaSearchBlock />
     </>
   );

@@ -22,7 +22,7 @@ export const metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Om Ivan – Webudvikler bag WebHjerte i Horsens",
-    description: "Lokal webudvikler i Horsens. Direkte kontakt, ingen mellemled, levering på 14 dage.",
+    description: "Lokal webudvikler i Horsens. Direkte kontakt, ingen mellemled, levering på 2–10 dage.",
   },
   alternates: {
     canonical: "https://www.webhjerte.dk/om-mig",

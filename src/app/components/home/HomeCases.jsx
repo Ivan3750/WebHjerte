@@ -74,7 +74,7 @@ export default function HomeCases() {
       style={pinned ? { height: `calc(100dvh - 68px + ${dist}px)` } : undefined}
     >
       <div
-        className={pinned ? "sticky top-[68px] h-[calc(100dvh-68px)] flex flex-col justify-center overflow-hidden" : "py-20 sm:py-28"}
+        className={pinned ? "sticky top-[68px] h-[calc(100dvh-68px)] flex flex-col justify-center overflow-hidden" : "py-16 sm:py-24"}
       >
         <div className="w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 mb-8 sm:mb-12 flex flex-col md:flex-row md:items-end justify-between gap-5">
           <div>
@@ -84,7 +84,7 @@ export default function HomeCases() {
             </FadeUp>
             <RevealLines
               lines={["Udvalgte cases"]}
-              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(28px,4.2vw,56px)] mb-3"
+              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(26px,3.6vw,46px)] mb-3"
             />
             <FadeUp as="p" delay={0.15} className="text-[14px] text-[#93a0a0] leading-[1.8] max-w-xl">
               Fra lokale forretninger til større platforme – her er et udpluk af hjemmesider, vi har bygget fra bunden.

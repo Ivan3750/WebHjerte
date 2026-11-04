@@ -8,7 +8,7 @@ const SITE_URL = "https://www.webhjerte.dk";
 
 const facts = [
   { num: "Fra 2.500 kr", label: "Fast pris" },
-  { num: "14 dage", label: "Typisk leveringstid" },
+  { num: "2–10 dage", label: "Typisk leveringstid" },
   { num: "48 timer", label: "Til første designudkast" },
 ];
 

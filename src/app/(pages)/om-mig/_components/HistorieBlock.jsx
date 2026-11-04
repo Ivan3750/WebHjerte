@@ -11,7 +11,7 @@ const paragraphs = [
 export default function HistorieBlock() {
   return (
     <section className="scene bg-[#f7f6f6] border-t border-[#eeecec]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead
           eyebrow="Historien om WebHjerte"
           lines={["WebHjerte er stadig ungt —", "og det er en fordel for dig"]}

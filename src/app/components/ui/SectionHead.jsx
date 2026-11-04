@@ -17,7 +17,7 @@ export default function SectionHead({ eyebrow, lines, lead, dark = false, as = "
       <RevealLines
         as={as}
         lines={lines}
-        className={`font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3.8vw,48px)] ${maxW} ${
+        className={`font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.3vw,40px)] ${maxW} ${
           dark ? "text-white" : "text-[#1c1e1e]"
         }`}
       />

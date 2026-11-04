@@ -12,7 +12,7 @@ const thread = [
 export default function AfterMessageBlock() {
   return (
     <section className="scene bg-[#f7f6f6] border-t border-[#eeecec]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28 grid grid-cols-1 lg:grid-cols-[0.8fr_1fr] gap-12 lg:gap-20 items-start">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[0.8fr_1fr] gap-12 lg:gap-20 items-start">
         <div className="lg:sticky lg:top-28">
           <SectionHead
             eyebrow="Hvad sker der bagefter?"

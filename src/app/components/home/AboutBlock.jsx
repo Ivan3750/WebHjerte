@@ -3,7 +3,7 @@ import Link from "next/link";
 import Ivan from "../../assets/Ivan.jpg";
 import { FadeUp, RevealLines } from "./fx/Reveal";
 
-const chips = ["Horsens-baseret", "Direkte kontakt", "Levering inden 14 dage"];
+const chips = ["Horsens-baseret", "Direkte kontakt", "Levering på 2–10 dage"];
 
 const quote = {
   text: "Vi kan varmt anbefale Ivan! Han arbejder professionelt og hurtigt, kommer med nyttige anbefalinger og har tålmodighed med vores kaotiske ideer. Nem og behagelig kommunikation.",
@@ -14,7 +14,7 @@ const quote = {
 const AboutBlock = () => {
   return (
     <section className="scene bg-[#eceeee] relative border-t border-[#eeecec]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-24 sm:py-32 grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-12 lg:gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-12 lg:gap-20 items-center">
         <FadeUp>
           <div className="relative w-full max-w-sm mx-auto lg:max-w-none aspect-[3/4] rounded-3xl overflow-hidden bg-[#e0e0e0] group">
             <Image

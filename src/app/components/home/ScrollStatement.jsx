@@ -41,7 +41,7 @@ export default function ScrollStatement() {
           <span className="w-8 h-px bg-[#00a8e8]" />
           Sådan tænker jeg
         </p>
-        <p className="text-[clamp(22px,3.6vw,46px)] font-medium leading-[1.3] tracking-tight">
+        <p className="text-[clamp(20px,3.1vw,38px)] font-medium leading-[1.3] tracking-tight">
           {words.map((w, i) => (
             <Word key={i} w={w} i={i} total={words.length} progress={scrollYProgress} reduce={reduce} />
           ))}

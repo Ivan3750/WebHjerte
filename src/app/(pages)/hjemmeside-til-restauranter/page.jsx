@@ -7,7 +7,7 @@ import ProcessBlock from "../../components/home/ProcessBlock";
 export const metadata = {
   title: "Hjemmeside til restauranter i Horsens | WebHjerte",
   description:
-    "Få en hjemmeside til din restaurant i Horsens. Menu, booking, online bestilling. Fast pris fra 2.500 kr, levering på 14 dage.",
+    "Få en hjemmeside til din restaurant i Horsens. Menu, booking, online bestilling. Fast pris fra 2.500 kr, levering på 2–10 dage.",
   alternates: {
     canonical: "https://www.webhjerte.dk/hjemmeside-til-restauranter",
   },
@@ -76,7 +76,7 @@ export default function RestauranterPage() {
           >
             Menu, booking og online bestilling — få kunder til at bestille
             direkte fra din side i stedet for gennem Wolt med 30% i gebyr.
-            Fast pris, levering på 14 dage.
+            Fast pris, levering på 2–10 dage.
           </AnimatedInView>
           <AnimatedInView as="div" className="flex flex-wrap gap-3">
             <Link

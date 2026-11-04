@@ -7,7 +7,7 @@ const reasons = [
   { number: "01", title: "Svar samme dag", text: "Skriver du en besked, får du svar samme dag - ikke om tre dage. Du skal aldrig sidde og vente på at høre, om dit projekt overhovedet rykker sig." },
   { number: "02", title: "Du ved altid, hvor projektet står", text: "Ingen lange stilheder frem til deadline. Du får løbende status undervejs, så du altid kan følge med i, hvad der sker, og hvad der er næste skridt." },
   { number: "03", title: "Udkast inden for 48 timer", text: "Du behøver ikke vente uger på at se noget konkret. Du godkender retningen tidligt - så bygger jeg ikke noget, du ikke er glad for." },
-  { number: "04", title: "Live på 14 dage", text: "Fra samtale til lanceret hjemmeside - ikke måneder. En klar tidsplan sat fra start, som holdes." },
+  { number: "04", title: "Live på 2–10 dage", text: "Fra samtale til lanceret hjemmeside - ikke måneder. En klar tidsplan sat fra start, som holdes." },
   { number: "05", title: "Ret til, det er rigtigt", text: "Er du ikke tilfreds med et udkast, justerer vi det - så mange gange, det tager. Det er en del af prisen, ikke en ekstraregning per ændring." },
   { number: "06", title: "Jeg er der stadig bagefter", text: "30 dages support er inkluderet, når siden går live. Opstår der spørgsmål eller småfejl, retter jeg dem - uden at du skal betale for hver besked." },
 ];
@@ -15,7 +15,7 @@ const reasons = [
 export default function WhyEasyToWorkWithMe() {
   return (
     <section className="scene bg-[#1c1e1e]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead
           dark
           eyebrow="Sådan foregår samarbejdet"

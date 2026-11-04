@@ -37,7 +37,7 @@ const steps = [
 export default function ProcessBlock() {
   return (
     <section className="scene bg-[#eceeee]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Sådan foregår det" lines={["Fra første besked", "til live hjemmeside"]} />
 
         <ol className="border-t border-[#e8e6e6]">

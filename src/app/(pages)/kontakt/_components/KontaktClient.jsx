@@ -41,7 +41,7 @@ export default function KontaktClient() {
             <RevealLines
               as="h1"
               lines={["Lad os tage en", <span key="s" className="text-[#00a8e8]">snak</span>]}
-              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(30px,4.2vw,56px)] mb-6"
+              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(28px,3.6vw,48px)] mb-6"
             />
             <FadeUp as="p" delay={0.12} className="text-[14px] sm:text-[15px] text-[#93a0a0] leading-[1.8] max-w-[44ch] mb-10">
               Fortæl mig hvad du har brug for - jeg vender tilbage inden for 24 timer med et konkret svar.

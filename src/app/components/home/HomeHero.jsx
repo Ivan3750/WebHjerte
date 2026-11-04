@@ -194,9 +194,9 @@ export default function HomeHero() {
             variants={item}
             className="text-white font-semibold tracking-tight leading-[1.1] mb-5"
           >
-            <span className="block text-[clamp(30px,4.2vw,58px)]">Webbureau i Horsens</span>
+            <span className="block text-[clamp(28px,3.6vw,50px)]">Webbureau i Horsens</span>
             <span className="block mt-3 text-[clamp(15px,1.7vw,22px)] font-medium text-[#00a8e8] leading-snug text-balance">
-              – hjemmesider med fast pris, live på 14 dage
+              – hjemmesider med fast pris, live på 2–10 dage
             </span>
           </motion.h1>
 
