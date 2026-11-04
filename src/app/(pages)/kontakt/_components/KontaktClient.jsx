@@ -1,8 +1,14 @@
 "use client";
 
 import { Suspense } from "react";
-import AnimatedInView from "../../../components/ui/AnimatedInView";
+import Link from "next/link";
 import ContactForm from "../../../components/ui/ContactForm";
+import { FadeUp, RevealLines } from "../../../components/home/fx/Reveal";
+
+const channels = [
+  { label: "Ring til mig", value: "+45 42 76 05 77", href: "tel:+4542760577", hint: "Direkte til mig" },
+  { label: "Skriv en e-mail", value: "hej@webhjerte.dk", href: "mailto:hej@webhjerte.dk", hint: "Svar inden for 24 timer" },
+];
 
 const facts = [
   { label: "Svartid", value: "Inden for 24 timer" },
@@ -13,46 +19,66 @@ const facts = [
 
 export default function KontaktClient() {
   return (
-    <section className="bg-white px-5 sm:px-10 lg:px-20 pt-20 pb-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-        <div>
-          <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-            Kontakt
-          </AnimatedInView>
+    <section className="scene relative overflow-hidden bg-[#0b0d0d]">
+      <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-6 sm:pt-8 pb-16 sm:pb-24">
+        <nav aria-label="Brødkrummer" className="mb-10 sm:mb-14">
+          <ol className="flex items-center gap-2 text-[11px] uppercase tracking-[0.12em] text-[#5b6868]">
+            <li className="flex items-center gap-2">
+              <Link href="/" className="hover:text-[#00a8e8] transition-colors py-1">Forside</Link>
+              <span aria-hidden>/</span>
+            </li>
+            <li aria-current="page" className="text-[#aeb9b9]">Kontakt</li>
+          </ol>
+        </nav>
 
-          <AnimatedInView as="h1" className="maintitle text-white !leading-tight mb-4">
-            Lad os tage en<br />
-            <span className="text-[#00a8e8]">snak</span>
-          </AnimatedInView>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.05fr] gap-12 lg:gap-20 items-start">
+          <div>
+            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-[#00a8e8]" />
+              Kontakt
+            </FadeUp>
+            <RevealLines
+              as="h1"
+              lines={["Lad os tage en", <span key="s" className="text-[#00a8e8]">snak</span>]}
+              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(30px,4.2vw,56px)] mb-6"
+            />
+            <FadeUp as="p" delay={0.12} className="text-[14px] sm:text-[15px] text-[#93a0a0] leading-[1.8] max-w-[44ch] mb-10">
+              Fortæl mig hvad du har brug for - jeg vender tilbage inden for 24 timer med et konkret svar.
+            </FadeUp>
 
-          <AnimatedInView as="p" className="text-[14px] text-[#5a5a5a] leading-[1.75] max-w-sm mb-10">
-            Fortæl mig hvad du har brug for - jeg vender tilbage inden for 24 timer med et konkret svar.
-          </AnimatedInView>
+            <FadeUp delay={0.18} className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+              {channels.map((c) => (
+                <a
+                  key={c.label}
+                  href={c.href}
+                  className="group rounded-2xl glass p-5 flex flex-col gap-1.5 hover:border-[#00a8e8]/50 transition-colors"
+                >
+                  <span className="text-[11px] uppercase tracking-[0.14em] text-[#7f8c8c]">{c.label}</span>
+                  <span className="text-[15px] font-medium text-white group-hover:text-[#00a8e8] transition-colors break-all">{c.value}</span>
+                  <span className="text-[11px] text-[#5b6868]">{c.hint}</span>
+                </a>
+              ))}
+            </FadeUp>
 
-          <AnimatedInView
-            as="div"
-            className="flex flex-col gap-px border border-[#e8e8e8] rounded-2xl overflow-hidden"
-          >
-            {facts.map(({ label, value }) => (
-              <div
-                key={label}
-                className="flex items-center justify-between bg-[#f7f6f6] px-5 py-4"
-              >
-                <span className="text-[12px] text-[#5a5a5a]">{label}</span>
-                <span className="text-[12px] font-medium text-[#5a5a5a]">{value}</span>
-              </div>
-            ))}
-          </AnimatedInView>
+            <FadeUp delay={0.24} className="rounded-2xl glass overflow-hidden divide-y divide-white/10">
+              {facts.map(({ label, value }) => (
+                <div key={label} className="flex items-center justify-between px-5 py-4 gap-4">
+                  <span className="text-[12px] text-[#7f8c8c]">{label}</span>
+                  <span className="text-[12px] font-medium text-[#e8ecec] text-right">{value}</span>
+                </div>
+              ))}
+            </FadeUp>
+          </div>
+
+          <FadeUp delay={0.12}>
+            <div className="rounded-3xl bg-[#131616] border border-white/10 p-6 sm:p-9">
+              <Suspense fallback={null}>
+                <ContactForm />
+              </Suspense>
+            </div>
+          </FadeUp>
         </div>
-
-        <AnimatedInView
-          as="div"
-          className="bg-[#f7f6f6] border border-[#e8e8e8] rounded-2xl p-7"
-        >
-          <Suspense fallback={null}>
-            <ContactForm />
-          </Suspense>
-        </AnimatedInView>
       </div>
     </section>
   );

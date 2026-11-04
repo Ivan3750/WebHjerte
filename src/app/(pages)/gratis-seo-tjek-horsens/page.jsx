@@ -12,6 +12,7 @@ export const metadata = {
     "gratis seo tjek horsens, web tjek horsens, seo analyse horsens, hjemmeside analyse horsens, seo horsens, seo midtjylland",
   robots: "index, follow",
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
     description:
       "Professionelt og gratis SEO- og web-tjek for virksomheder i Horsens.",
@@ -19,6 +20,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Gratis SEO- og web-tjek i Horsens",
     description:

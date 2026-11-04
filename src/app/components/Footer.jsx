@@ -69,35 +69,8 @@ const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-[#0b0d0d] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16">
-        {/* CTA */}
-        <div className="py-14 sm:py-20 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/10">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.18em] text-[#5b6868] mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Klar når du er
-            </p>
-            <p className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.4vw,44px)] max-w-[18ch]">
-              Lad os bygge din næste hjemmeside
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Link
-              href="/kontakt"
-              className="text-center whitespace-nowrap text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-7 py-3.5 transition-colors"
-            >
-              Få et gratis tilbud
-            </Link>
-            <a
-              href="tel:+4542760577"
-              className="text-center whitespace-nowrap text-[14px] text-white border border-white/15 hover:border-white/40 rounded-full px-7 py-3.5 transition-colors"
-            >
-              +45 42 76 05 77
-            </a>
-          </div>
-        </div>
-
         {/* Links */}
-        <div className="grid grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.1fr] gap-x-6 gap-y-10 py-12 sm:py-14">
+        <div className="grid grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.1fr] gap-x-6 gap-y-10 pt-14 pb-12 sm:pt-16 sm:pb-14">
           <div className="col-span-2 lg:col-span-1">
             <p className="text-[18px] font-semibold text-white mb-3 tracking-tight">
               Web<span className="text-[#00a8e8]">Hjerte</span>

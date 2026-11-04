@@ -1,175 +1,85 @@
-import Image from "next/image";
-import Link from "next/link";
-import AnimatedInView from "../../components/ui/AnimatedInView";
-import { projects } from "../../../app/data/projects";
+import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
+import CtaSearchBlock from "../../components/ui/CTA";
+import PortfolioGrid from "./_components/PortfolioGrid";
+import { projects } from "../../data/projects";
+import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
-  title: "Portefølje – Webdesign Cases | WebHjerte",
+  title: "Portefølje – Webdesign cases fra Horsens | WebHjerte",
   description:
-    "Se mine webdesignprojekter – køreskole, platforme og lokale virksomheder. Enkelt design, hurtig levering, mobilvenlige løsninger til danske virksomheder.",
+    "Se mine webdesignprojekter – køreskole, produktkataloger, rideklub og lokale virksomheder. Enkelt design, hurtig levering og mobilvenlige løsninger til danske virksomheder.",
   keywords:
     "webdesign cases horsens, portefølje webbureau horsens, hjemmeside eksempler, webdesign referencer midtjylland",
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Portefølje – Webdesign til lokale virksomheder | WebHjerte",
     description:
       "Se eksempler på mit arbejde – hjemmesider til køreskole, fitnesscenter, rideklub og mere. Alle projekter leveret til aftalt tid og pris.",
-    url: "https://www.webhjerte.dk/portefolje",
+    url: `${SITE_URL}/portefolje`,
     siteName: "WebHjerte",
     locale: "da_DK",
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Portefølje – Webdesign cases | WebHjerte Horsens",
-    description:
-      "Se eksempler på hjemmesider bygget til lokale virksomheder i Danmark.",
+    description: "Se eksempler på hjemmesider bygget til lokale virksomheder i Danmark.",
   },
-  alternates: {
-    canonical: "https://www.webhjerte.dk/portefolje",
-  },
+  alternates: { canonical: `${SITE_URL}/portefolje` },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "WebHjerte Portefølje",
-  description: "Webdesignprojekter til lokale virksomheder i Danmark",
-  url: "https://www.webhjerte.dk/portefolje",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "WebHjerte",
-  },
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": `${SITE_URL}/portefolje#webpage`,
+      url: `${SITE_URL}/portefolje`,
+      name: "WebHjerte Portefølje",
+      description: "Webdesignprojekter til lokale virksomheder i Danmark",
+      inLanguage: "da-DK",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: orgRef,
+      breadcrumb: { "@id": `${SITE_URL}/portefolje#breadcrumb` },
+      mainEntity: { "@id": `${SITE_URL}/portefolje#list` },
+    },
+    {
+      "@type": "ItemList",
+      "@id": `${SITE_URL}/portefolje#list`,
+      numberOfItems: projects.length,
+      itemListElement: projects.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${SITE_URL}/portefolje/${p.slug}`,
+        name: `${p.title} – ${p.subtitle}`,
+      })),
+    },
+    { ...breadcrumbLd([{ name: "Forside", path: "/" }, { name: "Portefølje", path: "/portefolje" }]), "@id": `${SITE_URL}/portefolje#breadcrumb` },
+  ],
 };
 
-const ArrowIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-    <path
-      d="M2 7h10M7 2l5 5-5 5"
-      stroke="currentColor"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const Portefolje = () => {
+export default function Portefolje() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      <PageHero
+        breadcrumbs={[{ href: "/", label: "Forside" }, { label: "Portefølje" }]}
+        eyebrow={`${projects.length} udvalgte projekter`}
+        titleLines={["Portefølje –", <span key="s" className="text-[#00a8e8]">hjemmesider der virker</span>]}
+        lead="Hjemmesider leveret til lokale virksomheder i Horsens og resten af Danmark - til aftalt tid og pris."
+        actions={
+          <>
+            <PrimaryLink href="/kontakt">Book gratis samtale</PrimaryLink>
+            <GhostLink href="/services#priser">Se priser</GhostLink>
+          </>
+        }
+        size="md"
       />
-      <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 py-20">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-            Udvalgte projekter
-          </AnimatedInView>
-          <AnimatedInView as="h1" className="maintitle text-white !leading-tight mb-4">
-            Portefølje
-          </AnimatedInView>
-          <AnimatedInView as="p" className="text-[14px] text-[#5a5a5a] max-w-lg leading-[1.75]">
-            Hjemmesider leveret til lokale virksomheder i Horsens og resten af
-            Danmark - til aftalt tid og pris.
-          </AnimatedInView>
-        </div>
-      </section>
 
-      <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 py-16">
-        <div className="max-w-6xl mx-auto flex flex-col gap-20">
-{projects.map((project, index) => (            <AnimatedInView
-              key={project.slug}
-              as="div"
-              className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center ${
-                index % 2 !== 0 ? "md:[direction:rtl]" : ""
-              }`}
-            >
-              <Link
-                href={`/portefolje/${project.slug}`}
-                className="group overflow-hidden rounded-2xl block [direction:ltr]"
-              >
-                <Image
-                  src={project.heroImage}
-                  alt={project.title}
-                  width={700}
-                  height={500}
-                  sizes="(min-width: 1024px) 560px, 100vw"
-                  loading="lazy"
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                />
-              </Link>
-
-              <div className="flex flex-col gap-4 [direction:ltr]">
-                <div className="flex flex-wrap gap-2">
-                  {project.services.map((cat) => (
-                    <span
-                      key={cat}
-                      className="text-[10px] uppercase tracking-[0.08em] text-[#5a5a5a] border border-[#e0e0e0] rounded-full px-2.5 py-1 bg-white"
-                    >
-                      {cat}
-                    </span>
-                  ))}
-                </div>
-
-                <div>
-                  <h2 className="text-[22px] font-medium text-[#1c1e1e] leading-tight">
-                    {project.title}
-                  </h2>
-                  {project.subtitle && (
-                    <p className="text-[22px] font-medium text-[#aaa] leading-tight">
-                      {project.subtitle}
-                    </p>
-                  )}
-                </div>
-{/* 
-                <div className="flex flex-wrap gap-2 mt-1">
-                  <span className="text-[12px] text-[#5a5a5a] border border-[#e0e0e0] bg-white rounded-lg px-3 py-1">
-                    {project.client}
-                  </span>
-                  {project.location && (
-                    <span className="text-[12px] text-[#5a5a5a] border border-[#e0e0e0] bg-white rounded-lg px-3 py-1">
-                      {project.location}
-                    </span>
-                  )}
-                  {project.concept && (
-                    <span className="text-[12px] text-[#888] border border-[#e0e0e0] bg-white rounded-lg px-3 py-1">
-                      Konceptprojekt
-                    </span>
-                  )}
-                </div> */}
-
-                <p className="text-[13px] text-[#777] leading-[1.7]">
-                  {project.description}
-                </p>
-
-                <Link
-                  href={`/portefolje/${project.slug}`}
-                  className="inline-flex items-center gap-2 text-[13px] font-medium text-[#1c1e1e] border-b border-[#1c1e1e] pb-px w-fit hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors mt-2"
-                >
-                  Se projekt <ArrowIcon />
-                </Link>
-              </div>
-            </AnimatedInView>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-[#111313] border-t border-[#1e2020] px-5 sm:px-10 lg:px-20 py-16">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div>
-            <p className="text-[14px] text-[#5a5a5a] mb-1">Næste projekt?</p>
-            <p className="text-[22px] font-medium text-white">Det kan være dit.</p>
-          </div>
-          <Link
-            href="/kontakt"
-            className="bg-[#00a8e8] hover:opacity-85 transition-opacity text-white text-[13px] font-medium px-6 py-3 rounded-xl whitespace-nowrap"
-          >
-            Book gratis samtale 
-          </Link>
-        </div>
-      </section>
+      <PortfolioGrid projects={projects} />
+      <CtaSearchBlock />
     </>
   );
-};
-
-export default Portefolje;
+}

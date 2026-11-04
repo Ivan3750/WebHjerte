@@ -13,6 +13,7 @@ export const metadata = {
   // Reklame-landingsside: duplikerer forsiden/services, så den holdes ude af Google
   robots: { index: false, follow: true },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Ny Professionel Hjemmeside | WebHjerte",
     description:
       "Få en ny, professionel hjemmeside, der ser godt ud og virker. Hurtig levering, fast pris.",
@@ -20,6 +21,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Ny Professionel Hjemmeside – WebHjerte",
     description:

@@ -1,6 +1,6 @@
-"use client";
-
-import AnimatedInView from "../../../components/ui/AnimatedInView";
+import SectionHead from "../../../components/ui/SectionHead";
+import { FadeUp } from "../../../components/home/fx/Reveal";
+import SpotlightCard from "../../../components/home/fx/SpotlightCard";
 
 const reasons = [
   {
@@ -31,7 +31,6 @@ const reasons = [
 
 const paragraphs = [
   {
-    // "Horsens" tilføjet naturligt i første afsnit
     lead: "Hvorfor vælge en lokal webudvikler i Horsens frem for et stort bureau?",
     text: "Et stort bureau kan lyde tryggere på papiret — men i praksis betyder det ofte flere led, længere svartider og en pris, der også dækker deres overhead. Hos WebHjerte betaler du for arbejdet, ikke for administration.",
   },
@@ -51,55 +50,38 @@ const paragraphs = [
 
 export default function WhyUsBlock() {
   return (
-    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
-      <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-          Hvorfor WebHjerte?
-        </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-[#1a1a1a] !leading-tight !mb-14 max-w-[26ch]">
-          Ikke det største bureau — men det bedste valg for din virksomhed
-        </AnimatedInView>
+    <section className="scene bg-[#0b0d0d] relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+        <SectionHead
+          dark
+          eyebrow="Hvorfor WebHjerte?"
+          lines={["Ikke det største bureau —", "men det bedste valg for", "din virksomhed"]}
+          maxW="max-w-[26ch]"
+        />
 
-        {/* 4 core reasons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-20">
-          {reasons.map((r) => (
-            <AnimatedInView
-              key={r.title}
-              as="div"
-              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#f7f6f6] border border-[#e8e8e8] transition-colors  "
-            >
-              <div className="flex items-center gap-3">
-                <span
-                  className="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-medium flex-shrink-0"
-                  style={{
-                    backgroundColor: `${r.color}1a`,
-                    color: r.color,
-                  }}
-                >
-                  {r.n}
-                </span>
-                <h3 className="text-[14.5px] font-medium text-[#5a5a5a]">{r.title}</h3>
-              </div>
-              {/* lysere tekst = bedre kontrast på mørk baggrund */}
-              <p className="text-[13px] text-[#5a5a5a] leading-[1.75]">{r.text}</p>
-            </AnimatedInView>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16 sm:mb-24">
+          {reasons.map((r, i) => (
+            <FadeUp key={r.title} delay={(i % 2) * 0.08}>
+              <SpotlightCard className="h-full rounded-3xl glass" color="0,168,232">
+                <div className="p-7 sm:p-8 flex flex-col gap-4 h-full">
+                  <span className="text-[34px] font-light leading-none tabular-nums" style={{ color: r.color }}>
+                    {r.n}
+                  </span>
+                  <h3 className="text-[17px] font-semibold text-white leading-snug">{r.title}</h3>
+                  <p className="text-[13.5px] text-[#8795a0] leading-[1.8]">{r.text}</p>
+                </div>
+              </SpotlightCard>
+            </FadeUp>
           ))}
         </div>
 
-        {/* SEO-rich supporting copy */}
-        <div className="rounded-2xl border bg-[#f7f6f6] border border-[#e8e8e8] p-8 sm:p-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-9">
-            {paragraphs.map((p) => (
-              <AnimatedInView key={p.lead} as="div" className="flex flex-col gap-2">
-                <h3 className="text-[13.5px] text-[#5a5a5a] font-medium leading-[1.6]">
-                  {p.lead}
-                </h3>
-                <p className="text-[13px] text-[#5a5a5a] leading-[1.85]">
-                  {p.text}
-                </p>
-              </AnimatedInView>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-10 border-t border-white/10 pt-12">
+          {paragraphs.map((p, i) => (
+            <FadeUp key={p.lead} delay={(i % 2) * 0.08} className="flex flex-col gap-2.5">
+              <h3 className="text-[15px] text-white font-medium leading-[1.5]">{p.lead}</h3>
+              <p className="text-[13.5px] text-[#8795a0] leading-[1.85]">{p.text}</p>
+            </FadeUp>
+          ))}
         </div>
       </div>
     </section>

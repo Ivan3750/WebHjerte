@@ -13,6 +13,7 @@ export const metadata = {
     "hjemmeside pris, pris på hjemmeside, pris for en hjemmeside, hvad koster en hjemmeside, webdesign pris",
   robots: "index, follow",
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Hjemmeside Pris – Se Priser hos WebHjerte",
     description:
       "Gennemsigtige priser fra 2.500 DKK. Få et tilbud på 24 timer. Ingen skjulte gebyrer.",
@@ -22,6 +23,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Hjemmeside Pris – Se Priser hos WebHjerte",
     description:

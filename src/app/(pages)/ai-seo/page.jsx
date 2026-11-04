@@ -13,6 +13,7 @@ export const metadata = {
   description:
     "Bliv fundet, når kunder søger efter det, du tilbyder – på Google og i AI-søgning. Jeg optimerer din hjemmeside og indhold, så du får flere kunder uden annoncer.",
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "AI SEO – få din virksomhed fundet på Google | WebHjerte",
     description:
       "AI SEO til små virksomheder i Horsens og Midtjylland. Få mere synlighed på Google med AI-drevet indholdsoptimering og teknisk SEO.",
@@ -22,6 +23,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "AI SEO i Horsens – få mere synlighed med AI | WebHjerte",
     description:

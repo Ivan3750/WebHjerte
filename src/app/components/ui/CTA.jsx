@@ -1,57 +1,61 @@
-"use client";
 import Link from "next/link";
-import AnimatedInView from "./AnimatedInView";
+import { FadeUp, RevealLines } from "../home/fx/Reveal";
+
+const niches = [
+  { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
+  { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
+  { href: "/hjemmeside-til-saloner", label: "Saloner" },
+  { href: "/hjemmeside-til-vvs", label: "VVS" },
+  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
+  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
+];
 
 export default function CtaSearchBlock() {
   return (
-    <section className="bg-[#0af] px-5 sm:px-10 lg:px-20 py-20">
-      <div className=" px-8 sm:px-14 py-16 text-center">
-        <AnimatedInView>
-          <p className="text-[11px] uppercase tracking-[0.1em] text-white/70 mb-3">
+    <section className="scene relative overflow-hidden bg-[#0b0d0d] border-t border-white/[0.06]">
+      <div aria-hidden className="grid-fade absolute inset-0 opacity-50" />
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+        <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-6 sm:px-14 py-14 sm:py-20 text-center">
+          <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-5 inline-flex items-center gap-3">
+            <span className="w-8 h-px bg-[#00a8e8]" />
             webhjerte.dk
-          </p>
-        </AnimatedInView>
-
-        <AnimatedInView>
-          <h2 className="title !text-white !leading-tight !mb-6 max-w-[22ch] mx-auto">
-            Klar til at få en hjemmeside, der rent faktisk virker?
-          </h2>
-        </AnimatedInView>
-
-        <AnimatedInView>
-          <p className="text-[13.5px] text-white/80 leading-[1.85] max-w-[52ch] mx-auto mb-10">
-            Uanset om du mangler en ny hjemmeside, en webshop eller bare vil
-            have flere kunder online — så lad os tage en snak. Det er gratis,
-            uforpligtende, og du får svar inden for 24 timer.
-          </p>
-        </AnimatedInView>
-
-        <AnimatedInView>
-          <a href="/kontakt" className="group bg-white text-[#0af] text-[13px] font-medium uppercase tracking-[0.05em] rounded-full pl-6 pr-2 py-2 inline-flex items-center gap-3 hover:bg-[#f7f6f6] transition-colors">
-            Lad os komme i gang
-            <span className="w-8 h-8 rounded-full bg-[#0af] text-white flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
-               
-            </span>
-          </a>
-         </AnimatedInView>
-
-        <AnimatedInView>
-          <div className="flex flex-wrap justify-center gap-2 mt-8">
-            {[
-              { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-              { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-              { href: "/hjemmeside-til-saloner", label: "Saloner" },
-            ].map((link) => (
+            <span className="w-8 h-px bg-[#00a8e8]" />
+          </FadeUp>
+          <RevealLines
+            lines={["Klar til at få en hjemmeside,", "der rent faktisk virker?"]}
+            className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.8vw,48px)] mb-6"
+          />
+          <FadeUp as="p" delay={0.1} className="text-[14px] text-[#93a0a0] leading-[1.8] max-w-[54ch] mx-auto mb-9">
+            Uanset om du mangler en ny hjemmeside, en webshop eller bare vil have flere kunder online – så lad os tage en snak.
+            Det er gratis, uforpligtende, og du får svar inden for 24 timer.
+          </FadeUp>
+          <FadeUp delay={0.18} className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link
+              href="/kontakt"
+              className="inline-flex items-center gap-2 text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#0b0d0d] rounded-full px-8 py-3.5 transition-colors group"
+            >
+              Lad os komme i gang
+              <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
+            </Link>
+            <a
+              href="tel:+4542760577"
+              className="inline-flex items-center text-[14px] text-white border border-white/15 hover:border-white/40 rounded-full px-8 py-3.5 transition-colors"
+            >
+              +45 42 76 05 77
+            </a>
+          </FadeUp>
+          <FadeUp delay={0.25} className="flex flex-wrap justify-center gap-2 mt-10">
+            {niches.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[12px] text-white/80 border border-white/20 rounded-full px-3.5 py-1.5 hover:border-white/40 hover:text-white transition-colors"
+                className="text-[12px] text-[#9aa5a5] border border-white/10 rounded-full px-4 py-2 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors"
               >
                 {link.label}
               </Link>
             ))}
-          </div>
-        </AnimatedInView>
+          </FadeUp>
+        </div>
       </div>
     </section>
   );

@@ -13,6 +13,7 @@ export const metadata = {
   ],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Freelancer eller webbureau? | WebHjerte",
     description:
       "Forskellen på en freelancer og et webbureau, og hvordan du vælger den rigtige til din hjemmeside.",

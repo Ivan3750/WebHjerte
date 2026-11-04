@@ -9,12 +9,17 @@ import AfterLaunchBlock from "./_components/AfterLaunchBlock";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
 import Questions from "../../components/Questions";
 import CtaSearchBlock from "../../components/ui/CTA";
+import SectionHead from "../../components/ui/SectionHead";
+import { FadeUp } from "../../components/home/fx/Reveal";
+import SpotlightCard from "../../components/home/fx/SpotlightCard";
+import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
   title: "Webdesign & hjemmesider i Horsens – pakker | WebHjerte",
   description:
     "Webdesign, hjemmesider og SEO i Horsens. 4 klare pakker: Landingside 2.500 kr, Basis 4.500 kr, Standard 7.500 kr, Skræddersyet fra 14.000 kr. Ingen skjulte gebyrer.",
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Priser på webdesign – klare pakker uden skjulte gebyrer | WebHjerte",
     description:
       "4 klare pakker til lokale virksomheder i Horsens og Midtjylland. Landingside 2.500 DKK · Basis 4.500 DKK · Standard 7.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 14 dage.",
@@ -24,6 +29,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Webdesign priser i Horsens – fra 2.500 DKK | WebHjerte",
     description:
@@ -34,69 +40,67 @@ export const metadata = {
   },
 };
 
+const packageLd = [
+  { name: "Landingside", price: "2500", url: "/kontakt?pakke=landingside", description: "1 side, mobilvenlig, kontaktformular, basic SEO. Levering: 5 dage." },
+  { name: "Basis hjemmeside", price: "4500", url: "/kontakt?pakke=basis", description: "3–5 sider, mobilvenlig, kontaktformular, basic SEO. Levering: 10 dage." },
+  { name: "Standard hjemmeside", price: "7500", url: "/kontakt?pakke=standard", description: "Op til 8 sider, SEO, Google Analytics, booking og formularer. Levering: 18 dage." },
+  { name: "Skræddersyet løsning", price: "14000", url: "/kontakt?pakke=skraeddersyet", description: "Fuld tilpasning, integrationer, e-commerce og AI-funktioner. Fra 14.000 kr." },
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "WebHjerte",
-  url: "https://www.webhjerte.dk",
-  telephone: "+45 42 76 05 77",
-  email: "hej@webhjerte.dk",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Horsens",
-    addressCountry: "DK",
-  },
-  areaServed: [
-    { "@type": "City", name: "Horsens" },
-    { "@type": "AdministrativeArea", name: "Midtjylland" },
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": `${SITE_URL}/services#webpage`,
+      url: `${SITE_URL}/services`,
+      name: "Webdesign & hjemmesider i Horsens – pakker og priser",
+      inLanguage: "da-DK",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: orgRef,
+      breadcrumb: { "@id": `${SITE_URL}/services#breadcrumb` },
+    },
+    {
+      "@type": "Service",
+      "@id": `${SITE_URL}/services#service`,
+      name: "Hjemmesider, webshops og SEO til små virksomheder",
+      serviceType: "Webdesign og webudvikling",
+      provider: orgRef,
+      areaServed: [
+        { "@type": "City", name: "Horsens" },
+        { "@type": "AdministrativeArea", name: "Midtjylland" },
+        { "@type": "Country", name: "Danmark" },
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Hjemmesidepakker",
+        itemListElement: packageLd.map((p) => ({
+          "@type": "Offer",
+          url: `${SITE_URL}${p.url}`,
+          priceCurrency: "DKK",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            price: p.price,
+            priceCurrency: "DKK",
+            valueAddedTaxIncluded: false,
+          },
+          availability: "https://schema.org/InStock",
+          itemOffered: { "@type": "Service", name: p.name, description: p.description },
+        })),
+      },
+    },
+    { ...breadcrumbLd([{ name: "Forside", path: "/" }, { name: "Services", path: "/services" }]), "@id": `${SITE_URL}/services#breadcrumb` },
   ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Hjemmesidepakker",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        price: "2500",
-        priceCurrency: "DKK",
-        itemOffered: {
-          "@type": "Service",
-          name: "Landingside",
-          description: "1 side, mobilvenlig, kontaktformular, basic SEO",
-        },
-      },
-      {
-        "@type": "Offer",
-        price: "4500",
-        priceCurrency: "DKK",
-        itemOffered: {
-          "@type": "Service",
-          name: "Basis hjemmeside",
-          description: "3–5 sider, mobilvenlig, kontaktformular, basic SEO",
-        },
-      },
-      {
-        "@type": "Offer",
-        price: "7500",
-        priceCurrency: "DKK",
-        itemOffered: {
-          "@type": "Service",
-          name: "Standard hjemmeside",
-          description: "Op til 8 sider, CMS, SEO, Google Analytics, booking",
-        },
-      },
-      {
-        "@type": "Offer",
-        price: "14000",
-        priceCurrency: "DKK",
-        itemOffered: {
-          "@type": "Service",
-          name: "Skræddersyet løsning",
-          description: "Fuld tilpasning, integrationer, e-commerce, AI-funktioner",
-        },
-      },
-    ],
-  },
 };
+
+const niches = [
+  { href: "/hjemmeside-til-haandvaerkere", title: "Håndværkere", desc: "VVS, elektrikere, tømrere, malere og flere." },
+  { href: "/hjemmeside-til-restauranter", title: "Restauranter", desc: "Menu, booking og online bestilling. Undgå Wolt-omkostninger." },
+  { href: "/hjemmeside-til-saloner", title: "Saloner", desc: "Frisørsaloner, skønhedssaloner, barber og flere." },
+  { href: "/hjemmeside-til-vvs", title: "VVS", desc: "Flere opkald og akutte henvendelser fra lokale kunder." },
+  { href: "/hjemmeside-til-elektriker", title: "Elektrikere", desc: "Vis autorisationer, ydelser og få flere tilbudsforespørgsler." },
+  { href: "/hjemmeside-til-tomrer", title: "Tømrere", desc: "Vis dine projekter og bliv fundet af private og erhverv." },
+];
 
 const Services = () => {
   return (
@@ -109,7 +113,7 @@ const Services = () => {
       <HeroService />
       <WhatWeOfferBlock />
       <Whyusblock />
-      <div id="priser" className="scroll-mt-20">
+      <div id="priser" className="scroll-mt-[68px]">
         <PackagesBlock />
       </div>
       <Whatsincludedblock />
@@ -118,62 +122,25 @@ const Services = () => {
       <SupportTariffsBlock />
 
       {/* Niche landing pages */}
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-16 border-t border-[#e8e8e8]">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-            Hjemmesider til din branche
-          </p>
-          <h2 className="title text-[#1a1a1a] !leading-tight !mb-8">
-            Se hvad jeg kan lave for din virksomhed
-          </h2>
+      <section className="scene bg-white border-t border-[#eeecec]">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+          <SectionHead eyebrow="Hjemmesider til din branche" lines={["Se hvad jeg kan lave", "for din virksomhed"]} className="mb-10 sm:mb-14" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {[
-              {
-                href: "/hjemmeside-til-haandvaerkere",
-                title: "Håndværkere",
-                desc: "VVS, elektrikere, tømrere, malere og flere.",
-              },
-              {
-                href: "/hjemmeside-til-restauranter",
-                title: "Restauranter",
-                desc: "Menu, booking og online bestilling. Undgå Wolt-omkostninger.",
-              },
-              {
-                href: "/hjemmeside-til-saloner",
-                title: "Saloner",
-                desc: "Frisørsaloner, skønhedssaloner, barber og flere.",
-              },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="group rounded-2xl p-6 flex flex-col gap-3 bg-[#f7f6f6] border border-[#e8e8e8] hover:border-[#00a8e8]/30 transition-colors"
-              >
-                <div className="flex items-center justify-between">
-                  <p className="text-[15px] font-medium text-[#5a5a5a] group-hover:text-[#00a8e8] transition-colors">
-                    {item.title}
-                  </p>
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    className="text-[#5a5a5a] group-hover:text-[#00a8e8] group-hover:translate-x-0.5 transition-all"
-                  >
-                    <path
-                      d="M3 8h10M9 4l4 4-4 4"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p className="text-[13px] text-[#6a6a6a] leading-relaxed">
-                  {item.desc}
-                </p>
-              </Link>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {niches.map((item, i) => (
+              <FadeUp key={item.href} delay={(i % 3) * 0.07}>
+                <Link href={item.href} className="block h-full">
+                  <SpotlightCard dark={false} className="h-full rounded-3xl bg-[#f7f6f6] border border-[#eeecec] hover:border-[#00a8e8]/40 transition-colors">
+                    <div className="p-6 sm:p-7 flex flex-col gap-3 h-full">
+                      <div className="flex items-center justify-between">
+                        <p className="text-[16px] font-semibold text-[#111313] group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
+                        <span className="text-[#b0aeae] group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" aria-hidden>→</span>
+                      </div>
+                      <p className="text-[13px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
+                    </div>
+                  </SpotlightCard>
+                </Link>
+              </FadeUp>
             ))}
           </div>
         </div>

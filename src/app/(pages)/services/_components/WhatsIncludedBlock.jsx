@@ -1,6 +1,4 @@
-"use client";
-
-import AnimatedInView from "../../../components/ui/AnimatedInView";
+import { FadeUp } from "../../../components/home/fx/Reveal";
 
 const included = [
   "Design og udvikling",
@@ -13,86 +11,56 @@ const included = [
 ];
 
 const extra = [
- "Betalte tredjepartstjenester",
+  "Betalte tredjepartstjenester",
   "Betalingsløsninger",
   "Specifikke premium-værktøjer",
   "Funktioner uden for projektets aftalte omfang",
 ];
 
-const IncludedIcon = () => (
-  <svg width="9" height="9" viewBox="0 0 8 8" fill="none">
-    <path
-      d="M1.5 4l2 2 3-3"
-      stroke="#00a8e8"
-      strokeWidth="1.2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const ExtraIcon = () => (
-  <svg width="9" height="9" viewBox="0 0 8 8" fill="none">
-    <path
-      d="M2 4h4"
-      stroke="#8a8a5a"
-      strokeWidth="1.2"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
 export default function WhatsIncludedBlock() {
   return (
-    <section className="bg-[#111313] px-5 sm:px-10 lg:px-20 pb-20 -mt-4">
-      <div className="max-w-6xl mx-auto">
-        <AnimatedInView
-          as="div"
-          className="rounded-2xl border border-[#2a2d2d] bg-[#1c1e1e] overflow-hidden grid grid-cols-1 sm:grid-cols-2"
-        >
-          {/* Included */}
-          <div className="p-8 sm:p-9 flex flex-col gap-5 sm:border-r border-[#2a2d2d]">
-            <div className="flex items-center gap-2.5">
-              <span className="w-2 h-2 rounded-full bg-[#00a8e8] flex-shrink-0" />
-              <p className="text-[13px] font-medium text-[#e0e0e0]">
-                Alle projekter inkluderer
-              </p>
-            </div>
-            <div className="flex flex-col gap-3">
+    <section className="scene bg-[#f7f6f6]">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pb-20 sm:pb-28">
+        <FadeUp className="rounded-3xl bg-white border border-[#e8e6e6] overflow-hidden grid grid-cols-1 md:grid-cols-2">
+          <div className="p-7 sm:p-10 flex flex-col gap-6 md:border-r border-b md:border-b-0 border-[#eeecec]">
+            <p className="flex items-center gap-2.5 text-[14px] font-semibold text-[#111313]">
+              <span className="w-2 h-2 rounded-full bg-[#00a8e8]" />
+              Alle projekter inkluderer
+            </p>
+            <ul className="flex flex-col gap-3.5">
               {included.map((item) => (
-                <div key={item} className="flex items-center gap-2.5">
-                  <span className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 bg-[#1a2a30] border border-[#0a4a60]">
-                    <IncludedIcon />
+                <li key={item} className="flex items-center gap-3">
+                  <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 bg-[#00a8e8]/10 border border-[#00a8e8]/30">
+                    <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
+                      <path d="M1.5 4l2 2 3-3" stroke="#00a8e8" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </span>
-                  <span className="text-[12.5px] text-[#9a9a9a]">{item}</span>
-                </div>
+                  <span className="text-[13.5px] text-[#4a4a4a]">{item}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
-          {/* Extra costs */}
-          <div className="p-8 sm:p-9 flex flex-col gap-5 bg-[#1a1c1c]">
-            <div className="flex items-center gap-2.5">
-              <span className="w-2 h-2 rounded-full bg-[#6a6a4a] flex-shrink-0" />
-              <p className="text-[13px] font-medium text-[#e0e0e0]">
-                Kan medføre ekstra omkostninger
-              </p>
-            </div>
-            <div className="flex flex-col gap-3">
+          <div className="p-7 sm:p-10 flex flex-col gap-6 bg-[#fbfaf9]">
+            <p className="flex items-center gap-2.5 text-[14px] font-semibold text-[#111313]">
+              <span className="w-2 h-2 rounded-full bg-[#c9a227]" />
+              Kan medføre ekstra omkostninger
+            </p>
+            <ul className="flex flex-col gap-3.5">
               {extra.map((item) => (
-                <div key={item} className="flex items-center gap-2.5">
-                  <span className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 bg-[#232319] border border-[#3a3a28]">
-                    <ExtraIcon />
+                <li key={item} className="flex items-center gap-3">
+                  <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 bg-[#c9a227]/10 border border-[#c9a227]/30">
+                    <span className="w-2 h-[1.5px] bg-[#a8861a]" />
                   </span>
-                  <span className="text-[12.5px] text-[#6a6a6a]">{item}</span>
-                </div>
+                  <span className="text-[13.5px] text-[#6a6a6a]">{item}</span>
+                </li>
               ))}
-            </div>
-            <p className="text-[11px] text-[#4a4a4a] leading-[1.7] mt-1">
+            </ul>
+            <p className="text-[12px] text-[#8a8a8a] leading-[1.7] mt-auto">
               Dette aftales altid tydeligt, før noget bliver bestilt - ingen skjulte tillæg.
             </p>
           </div>
-        </AnimatedInView>
+        </FadeUp>
       </div>
     </section>
   );

@@ -15,6 +15,7 @@ export const metadata = {
   ],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Webbureau i Midtjylland | WebHjerte",
     description:
       "Hjemmesider og SEO til virksomheder i hele Midtjylland. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.",

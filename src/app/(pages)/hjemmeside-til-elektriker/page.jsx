@@ -14,6 +14,7 @@ export const metadata = {
   ],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Hjemmeside til elektriker i Horsens | WebHjerte",
     description:
       "Få en hjemmeside, der viser dine ydelser og får kunder til at kontakte dig. Fast pris fra 2.500 kr.",

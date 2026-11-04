@@ -1,15 +1,17 @@
 import KontaktClient from "./_components/KontaktClient";
 import AfterMessageBlock from "./_components/AfterMessageBlock";
 import Questions from "../../components/Questions";
+import { breadcrumbLd, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
   title: "Kontakt WebHjerte | Webdesign i Horsens",
   description:
-    "Kontakt WebHjerte og få hjælp til en professionel hjemmeside. Webdesign, udvikling og SEO til virksomheder i Horsens og Midtjylland.",
+    "Kontakt WebHjerte og få et gratis tilbud på en professionel hjemmeside. Webdesign, udvikling og SEO til virksomheder i Horsens og Midtjylland – svar inden for 24 timer.",
   alternates: {
     canonical: "https://www.webhjerte.dk/kontakt",
   },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Kontakt WebHjerte | Webdesign i Horsens",
     description:
       "Kontakt WebHjerte om din næste hjemmeside, webdesign eller SEO.",
@@ -17,6 +19,12 @@ export const metadata = {
     siteName: "WebHjerte",
     locale: "da_DK",
     type: "website",
+  },
+  twitter: {
+    images: ["/opengraph-image"],
+    card: "summary_large_image",
+    title: "Kontakt WebHjerte | Webdesign i Horsens",
+    description: "Få et gratis tilbud på din næste hjemmeside – svar inden for 24 timer.",
   },
   robots: {
     index: true,
@@ -26,24 +34,37 @@ export const metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "@id": "https://www.webhjerte.dk/kontakt#contactpage",
-  url: "https://www.webhjerte.dk/kontakt",
-  name: "Kontakt WebHjerte",
-  description:
-    "Kontakt WebHjerte om webdesign, hjemmesideudvikling og SEO i Horsens og Midtjylland.",
-  isPartOf: {
-    "@type": "WebSite",
-    "@id": "https://www.webhjerte.dk/#website",
-    url: "https://www.webhjerte.dk/",
-    name: "WebHjerte",
-  },
-  about: {
-    "@type": "Organization",
-    "@id": "https://www.webhjerte.dk/#organization",
-    name: "WebHjerte",
-    url: "https://www.webhjerte.dk/",
-  },
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": `${SITE_URL}/kontakt#contactpage`,
+      url: `${SITE_URL}/kontakt`,
+      name: "Kontakt WebHjerte",
+      description:
+        "Kontakt WebHjerte om webdesign, hjemmesideudvikling og SEO i Horsens og Midtjylland.",
+      inLanguage: "da-DK",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: { "@id": `${SITE_URL}/#organization` },
+      breadcrumb: { "@id": `${SITE_URL}/kontakt#breadcrumb` },
+      mainEntity: {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: "WebHjerte",
+        url: `${SITE_URL}/`,
+        email: "hej@webhjerte.dk",
+        telephone: "+45 42 76 05 77",
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "customer service",
+          email: "hej@webhjerte.dk",
+          telephone: "+45 42 76 05 77",
+          areaServed: "DK",
+          availableLanguage: ["da", "en"],
+        },
+      },
+    },
+    { ...breadcrumbLd([{ name: "Forside", path: "/" }, { name: "Kontakt", path: "/kontakt" }]), "@id": `${SITE_URL}/kontakt#breadcrumb` },
+  ],
 };
 
 export default function Page() {

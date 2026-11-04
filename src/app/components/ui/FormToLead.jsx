@@ -57,9 +57,11 @@ export default function FormToLead({
             ))}
           </AnimatedInView>
         </div>
-        <Suspense fallback={null}>
-          <ContactForm />
-        </Suspense>
+        <div className="rounded-3xl bg-[#131616] border border-white/10 p-6 sm:p-9">
+          <Suspense fallback={null}>
+            <ContactForm />
+          </Suspense>
+        </div>
       </div>
     </section>
   );

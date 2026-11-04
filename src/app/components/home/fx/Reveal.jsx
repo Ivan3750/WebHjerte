@@ -18,9 +18,9 @@ export function RevealLines({ lines, className = "", delay = 0, as = "h2" }) {
       transition={{ staggerChildren: 0.09, delayChildren: delay }}
     >
       {lines.map((line, i) => (
-        <span key={i} className="block overflow-hidden pb-[0.08em] -mb-[0.08em]">
+        <span key={i} className="block max-sm:inline overflow-hidden max-sm:overflow-visible pb-[0.08em] -mb-[0.08em] max-sm:pb-0 max-sm:mb-0">
           <motion.span
-            className="block"
+            className="block max-sm:inline"
             variants={{
               hidden: { y: reduce ? 0 : "110%", opacity: reduce ? 1 : 0 },
               show: { y: 0, opacity: 1 },
@@ -28,6 +28,7 @@ export function RevealLines({ lines, className = "", delay = 0, as = "h2" }) {
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           >
             {line}
+            {i < lines.length - 1 ? " " : ""}
           </motion.span>
         </span>
       ))}

@@ -1,4 +1,5 @@
-import AnimatedInView from "../ui/AnimatedInView";
+import { FadeUp } from "./fx/Reveal";
+import SectionHead from "../ui/SectionHead";
 
 const steps = [
   {
@@ -32,44 +33,33 @@ const steps = [
     text: "Din side går live — men samarbejdet stopper ikke der. Jeg er stadig kun en besked væk, hvis du får brug for hjælp.",
   },
 ];
+
 export default function ProcessBlock() {
   return (
-    <section className="bg-[#f7f6f6]">
-      <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">
-          Sådan foregår det
-        </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-[#111313] !leading-tight !mb-16 max-w-[24ch]">
-          Fra første besked til live hjemmeside
-        </AnimatedInView>
+    <section className="scene bg-white">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+        <SectionHead eyebrow="Sådan foregår det" lines={["Fra første besked", "til live hjemmeside"]} />
 
-        <div className="border-t border-[#e0dede]">
-          {steps.map((s) => (
-            <AnimatedInView key={s.n} as="div" className="group">
-              <div className="flex items-start sm:items-center gap-6 sm:gap-12 py-9 sm:py-11 border-b border-[#e0dede] transition-colors duration-300">
-                <span
-                  className="text-[44px] sm:text-[64px] font-light leading-none tabular-nums flex-shrink-0 w-[70px] sm:w-[96px] transition-colors duration-300"
-                  style={{ color: "#d8d6d6" }}
-                >
-                  {s.n}
-                </span>
-
-                <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-10">
-                  <p className="text-[17px] sm:text-[19px] font-medium text-[#111313] sm:w-[180px] flex-shrink-0 flex items-center gap-3">
-                    <span
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: s.color }}
-                    />
+        <ol className="border-t border-[#e8e6e6]">
+          {steps.map((s, i) => (
+            <li key={s.n}>
+              <FadeUp delay={i * 0.04}>
+                <div className="group grid grid-cols-[56px_1fr] sm:grid-cols-[110px_220px_1fr] items-baseline gap-x-4 sm:gap-x-8 gap-y-2 py-7 sm:py-9 border-b border-[#e8e6e6] transition-colors hover:bg-[#f7f6f6] px-2 sm:px-4 -mx-2 sm:-mx-4 rounded-xl">
+                  <span className="text-[34px] sm:text-[54px] font-light leading-none tabular-nums text-[#d6d4d4] transition-colors duration-300 group-hover:text-[#00a8e8]">
+                    {s.n}
+                  </span>
+                  <p className="text-[17px] sm:text-[19px] font-semibold text-[#111313] flex items-center gap-3">
+                    <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: s.color }} />
                     {s.title}
                   </p>
-                  <p className="text-[14px] sm:text-[15px] text-[#6a6a6a] leading-[1.7] max-w-lg">
+                  <p className="col-start-2 sm:col-start-auto text-[14px] sm:text-[15px] text-[#6a6a6a] leading-[1.7] max-w-xl">
                     {s.text}
                   </p>
                 </div>
-              </div>
-            </AnimatedInView>
+              </FadeUp>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
     </section>
   );

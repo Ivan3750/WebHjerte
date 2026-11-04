@@ -744,3 +744,18 @@ section.scene { padding: 0; }
 .glass-solid {
   background: rgba(17,21,22,0.94);
 }
+
+/* ───────────── Indre sider ───────────── */
+.orbit-spin { animation: orbit-spin 48s linear infinite; }
+.orbit-counter { animation: orbit-spin 48s linear infinite reverse; }
+@keyframes orbit-spin { to { transform: rotate(360deg); } }
+
+.panel-in { animation: panel-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-spin, .orbit-counter, .panel-in { animation: none !important; }
+}

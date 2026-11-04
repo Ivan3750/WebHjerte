@@ -1,6 +1,6 @@
-"use client";
-
-import AnimatedInView from "../../../components/ui/AnimatedInView";
+import SectionHead from "../../../components/ui/SectionHead";
+import { FadeUp } from "../../../components/home/fx/Reveal";
+import SpotlightCard from "../../../components/home/fx/SpotlightCard";
 
 const points = [
   {
@@ -19,29 +19,27 @@ const points = [
 
 export default function AfterLaunchBlock() {
   return (
-    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
-      <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-          Efter lancering
-        </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-white !leading-tight !mb-4 max-w-[22ch]">
-          Vores samarbejde stopper ikke, når siden går live
-        </AnimatedInView>
-        <AnimatedInView as="p" className="text-[13px] text-[#7a7a7a] leading-[1.85] max-w-[60ch] mb-14">
-          Når siden er live, kan du stadig få hjælp til ændringer, opdateringer og nye funktioner, når din virksomhed vokser.
-        </AnimatedInView>
+    <section className="scene bg-[#0b0d0d]">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-20 sm:pt-28 pb-10">
+        <SectionHead
+          dark
+          eyebrow="Efter lancering"
+          lines={["Vores samarbejde stopper", "ikke, når siden går live"]}
+          lead="Når siden er live, kan du stadig få hjælp til ændringer, opdateringer og nye funktioner, når din virksomhed vokser."
+          maxW="max-w-[24ch]"
+        />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          {points.map((p) => (
-            <AnimatedInView
-              key={p.title}
-              as="div"
-              className="rounded-2xl p-7 flex flex-col gap-3 bg-[#f7f6f6] border-2 border-[#f7f6f6]/10"
-            >
-              <span className="w-2 h-2 rounded-full bg-[#00a8e8] flex-shrink-0" />
-              <p className="text-[15px] font-medium text-[#5a5a5a]">{p.title}</p>
-              <p className="text-[13px] text-[#7a7a7a] leading-[1.75]">{p.text}</p>
-            </AnimatedInView>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {points.map((p, i) => (
+            <FadeUp key={p.title} delay={i * 0.08}>
+              <SpotlightCard className="h-full rounded-3xl glass">
+                <div className="p-7 flex flex-col gap-3 h-full">
+                  <span className="w-2 h-2 rounded-full bg-[#00a8e8]" />
+                  <p className="text-[16px] font-semibold text-white">{p.title}</p>
+                  <p className="text-[13.5px] text-[#8795a0] leading-[1.75]">{p.text}</p>
+                </div>
+              </SpotlightCard>
+            </FadeUp>
           ))}
         </div>
       </div>

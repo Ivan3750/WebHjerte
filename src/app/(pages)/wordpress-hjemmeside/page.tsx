@@ -13,6 +13,7 @@ export const metadata = {
     "wordpress hjemmeside, hjemmeside med wordpress, wordpress webbureau, wordpress horsens, wordpress midtjylland, wordpress pris",
   robots: "index, follow",
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "WordPress Hjemmeside til Din Virksomhed | WebHjerte",
     description:
       "Professionel WordPress-hjemmeside, du selv kan redigere. Hurtig og billig løsning fra WebHjerte.",
@@ -20,6 +21,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "WordPress Hjemmeside – Hurtig & Billig",
     description:

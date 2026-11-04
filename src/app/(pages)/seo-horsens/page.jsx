@@ -15,6 +15,7 @@ export const metadata = {
   ],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "SEO i Horsens – bliv fundet af lokale kunder | WebHjerte",
     description:
       "Lokal SEO og teknisk optimering til virksomheder i Horsens. Start med et gratis SEO-tjek.",

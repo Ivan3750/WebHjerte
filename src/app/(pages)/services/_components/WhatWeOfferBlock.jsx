@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import SectionHead from "../../../components/ui/SectionHead";
 
 const services = [
   {
@@ -45,84 +47,82 @@ export default function WhatWeOfferBlock() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
-      <div className="max-w-6xl mx-auto">
-        <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-          Hvad tilbyder jeg?
-        </p>
-        <h2 className="title text-[#1a1a1a] !leading-tight !mb-4 max-w-[24ch]">
-          Alt din virksomhed behøver — samlet et sted
-        </h2>
-        {/* Ny intro-tekst med "Horsens" */}
-        <p className="text-[14px] text-[#5a5a5a] leading-[1.85] max-w-[60ch] mb-14">
-          Jeg hjælper små og mellemstore virksomheder i Horsens og Midtjylland
-          med hjemmesider, webshops, SEO, AI-integration og løbende support —
-          til en fast pris og med én kontaktperson hele vejen.
-        </p>
+    <section className="scene bg-white">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-20 sm:py-28">
+        <SectionHead
+          eyebrow="Hvad tilbyder jeg?"
+          lines={["Alt din virksomhed behøver", "— samlet et sted"]}
+          lead="Jeg hjælper små og mellemstore virksomheder i Horsens og Midtjylland med hjemmesider, webshops, SEO, AI-integration og løbende support — til en fast pris og med én kontaktperson hele vejen."
+          maxW="max-w-[26ch]"
+        />
 
-        <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-4">
-          {/* Left: clickable service list */}
-          <div className="flex flex-col gap-2">
-            {services.map((s, i) => (
-              <button
-                key={s.name}
-                type="button"
-                aria-pressed={active === i}
-                onClick={() => setActive(i)}
-                className={`group rounded-2xl flex items-center justify-between gap-4 px-5 py-5 border-2 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00a8e8] ${
-                  active === i
-                    ? "bg-[#f0f0f0] border-[#e0e0e0]"
-                    : "bg-[#f7f6f6] border-[#f7f6f6] hover:bg-[#f0f0f0]"
-                }`}
-              >
-                <div className="flex items-center gap-3">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1.25fr] gap-4 lg:gap-6">
+          {/* Liste: vandret scroll på mobil, lodret på desktop */}
+          <div
+            role="tablist"
+            aria-label="Services"
+            className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible no-scrollbar -mx-5 px-5 sm:mx-0 sm:px-0 pb-1 snap-x"
+          >
+            {services.map((s, i) => {
+              const on = active === i;
+              return (
+                <button
+                  key={s.name}
+                  type="button"
+                  role="tab"
+                  aria-selected={on}
+                  aria-controls={`service-panel-${i}`}
+                  id={`service-tab-${i}`}
+                  onClick={() => setActive(i)}
+                  className={`snap-start shrink-0 lg:shrink lg:w-full flex items-center gap-3 rounded-2xl px-5 py-4 text-left border transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00a8e8] ${
+                    on
+                      ? "bg-[#111313] border-[#111313] text-white"
+                      : "bg-[#f7f6f6] border-[#eeecec] text-[#4a4a4a] hover:border-[#d4d2d2]"
+                  }`}
+                >
+                  <span className="text-[11px] tabular-nums opacity-60">0{i + 1}</span>
+                  <span className="text-[14px] font-medium whitespace-nowrap lg:whitespace-normal">{s.name}</span>
                   <span
-                    className="w-2 h-2 rounded-full flex-shrink-0 transition-opacity"
-                    style={{
-                      backgroundColor: s.color,
-                      opacity: active === i ? 1 : 0.35,
-                    }}
+                    className="ml-auto hidden lg:block w-2 h-2 rounded-full transition-opacity"
+                    style={{ backgroundColor: s.color, opacity: on ? 1 : 0.35 }}
                   />
-                  <span className="text-[14px] font-medium text-[#5a5a5a] transition-colors">
-                    {s.name}
-                  </span>
-                </div>
-              </button>
-            ))}
+                </button>
+              );
+            })}
           </div>
 
-          {/* Right: ALLE paneler ligger i HTML — kun den aktive er synlig.
-              Før blev kun ét panel renderet, så Google så kun "Hjemmeside". */}
+          {/* Alle paneler ligger i HTML — kun det aktive er synligt (SEO: Google ser alle services). */}
           <div>
             {services.map((s, i) => (
               <div
                 key={s.name}
-                className={`${
-                  active === i ? "flex" : "hidden"
-                } rounded-2xl p-8 sm:p-10 flex-col gap-6 bg-[#f7f6f6] border-2 border-[#e8e8e8] min-h-[280px]`}
+                role="tabpanel"
+                id={`service-panel-${i}`}
+                aria-labelledby={`service-tab-${i}`}
+                className={`${active === i ? "flex panel-in" : "hidden"} rounded-3xl p-7 sm:p-10 flex-col gap-6 bg-[#f7f6f6] border border-[#eeecec] min-h-[320px]`}
               >
                 <div className="flex items-center gap-3">
-                  <span
-                    className="w-2.5 h-2.5 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: s.color, boxShadow: `0 0 14px 2px ${s.color}66` }}
-                  />
-                  <h3 className="text-[18px] font-medium text-[#5a5a5a]">{s.name}</h3>
+                  <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: s.color }} />
+                  <h3 className="text-[20px] font-semibold text-[#111313] tracking-tight">{s.name}</h3>
                 </div>
 
-                <p className="text-[13.5px] text-[#5a5a5a] leading-[1.85] max-w-[46ch]">
-                  {s.desc}
-                </p>
+                <p className="text-[14px] text-[#5a5a5a] leading-[1.85] max-w-[62ch]">{s.desc}</p>
 
                 <div className="flex flex-wrap gap-2 mt-auto pt-2">
                   {s.items.map((item) => (
-                    <span
-                      key={item}
-                      className="text-[11.5px] text-[#5a5a5a] border border-[#dcdcdc] rounded-full px-3.5 py-1.5 bg-white"
-                    >
+                    <span key={item} className="text-[12px] text-[#4a4a4a] border border-[#e0dede] rounded-full px-3.5 py-1.5 bg-white">
                       {item}
                     </span>
                   ))}
                 </div>
+
+                <Link
+                  href="#priser"
+                  className="group inline-flex items-center gap-2 text-[13px] font-medium text-[#111313] hover:text-[#00a8e8] w-fit"
+                >
+                  Se priser
+                  <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
+                </Link>
               </div>
             ))}
           </div>
