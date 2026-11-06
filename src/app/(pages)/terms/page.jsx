@@ -1,3 +1,4 @@
+import PageHero from "../../components/ui/PageHero";
 export const metadata = {
   title: "Handelsbetingelser | WebHjerte",
   description:
@@ -9,13 +10,13 @@ export const metadata = {
 const Vikar = () => {
   return (
     <>
-      <section className="translations-content-container bg-white text-[#]">
-        <div className="container">
+      <PageHero breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Handelsbetingelser" }]} titleLines={["Handelsbetingelser"]} size="md" />
+      <section className="sheet bg-[#f7f6f6]">
+        <div className="legal max-w-3xl mx-auto px-5 sm:px-10 py-14 sm:py-20">
           <div
             className="tab-content translations-content-item en visible text w-full "
             
           >
-            <h1>Handelsbetingelser for WebHjerte</h1>
             <p>
               <em>
                 ”Dit digitale hjerte banker for kvalitet – vi passer på det som

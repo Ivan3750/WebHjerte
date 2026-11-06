@@ -1,4 +1,4 @@
-import AnimatedInView from "../../components/ui/AnimatedInView";
+import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import FormToLead from "../../components/ui/FormToLead";
 import PackagesBlock from "../services/_components/PackagesBlock";
 import Whatsincludedblock from "../services/_components/WhatsIncludedBlock";
@@ -6,9 +6,9 @@ import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
 export const metadata = {
-  title: "Hjemmeside Pris – Se Priser hos WebHjerte",
+  title: "Hjemmeside pris 2026 – faste priser fra 2.500 kr | WebHjerte",
   description:
-    "Hvad koster en hjemmeside? Se gennemsigtige priser fra 2.500 DKK. Få et konkret tilbud inden for 24 timer – ingen skjulte gebyrer.",
+    "Hvad koster en hjemmeside? Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr. Fast pris, ingen skjulte gebyrer – tilbud inden 24 timer.",
   keywords:
     "hjemmeside pris, pris på hjemmeside, pris for en hjemmeside, hvad koster en hjemmeside, webdesign pris",
   robots: "index, follow",
@@ -67,9 +67,33 @@ const jsonLd = {
     itemListElement: [
       {
         "@type": "Offer",
+        name: "Landingside",
+        priceCurrency: "DKK",
+        price: "2500",
+        availability: "https://schema.org/InStock",
+        url: "https://www.webhjerte.dk/hjemmeside-pris",
+      },
+      {
+        "@type": "Offer",
         name: "Basis hjemmeside",
         priceCurrency: "DKK",
         price: "4500",
+        availability: "https://schema.org/InStock",
+        url: "https://www.webhjerte.dk/hjemmeside-pris",
+      },
+      {
+        "@type": "Offer",
+        name: "Standard hjemmeside",
+        priceCurrency: "DKK",
+        price: "7500",
+        availability: "https://schema.org/InStock",
+        url: "https://www.webhjerte.dk/hjemmeside-pris",
+      },
+      {
+        "@type": "Offer",
+        name: "Skræddersyet løsning",
+        priceCurrency: "DKK",
+        price: "14000",
         availability: "https://schema.org/InStock",
         url: "https://www.webhjerte.dk/hjemmeside-pris",
       },
@@ -79,8 +103,9 @@ const jsonLd = {
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "DKK",
-    lowPrice: "4500",
-    offerCount: "1", 
+    lowPrice: "2500",
+    highPrice: "14000",
+    offerCount: "4",
     url: "https://www.webhjerte.dk/hjemmeside-pris",
   },
 };
@@ -95,19 +120,18 @@ const HjemmesidePris = () => {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <section className="mt-[75px]">
-        <AnimatedInView as="h1" className="maintitle text-center">
-          Hvad koster en hjemmeside?
-        </AnimatedInView>
-        <AnimatedInView
-          as="h2"
-          className="subtitle text-center mt-5 text-balance"
-        >
-          Se gennemsigtige priser fra 2.500 DKK, og find den pakke, der
-          passer til din virksomhed – ingen skjulte gebyrer, ingen
-          overraskelser.
-        </AnimatedInView>
-      </section>
+      <PageHero
+        breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Hjemmeside pris" }]}
+        eyebrow="Priser"
+        titleLines={["Hvad koster en", "hjemmeside?"]}
+        lead="Se faste priser fra 2.500 kr og find den pakke, der passer til din virksomhed – ingen skjulte gebyrer, ingen overraskelser."
+        actions={
+          <>
+            <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+            <GhostLink href="/hjemmeside-pris">Se priser</GhostLink>
+          </>
+        }
+      />
       <PackagesBlock />
       <Whatsincludedblock />
       <CasesCarousel />

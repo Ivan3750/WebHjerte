@@ -7,11 +7,11 @@ import { FadeUp, RevealLines } from "../home/fx/Reveal";
  */
 export default function PageHero({
   breadcrumbs = [],
-  eyebrow,
+  eyebrow = null,
   titleLines,
-  lead,
-  actions,
-  aside,
+  lead = null,
+  actions = null,
+  aside = null,
   size = "lg",
 }) {
   const titleSize =
@@ -76,7 +76,7 @@ export function PrimaryLink({ href, children, className = "" }) {
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-6 py-3 transition-colors ${className}`}
+      className={`inline-flex items-center justify-center text-[13px] font-semibold text-[#10181a] bg-[#00a8e8] hover:bg-white rounded-full px-6 py-3 transition-colors ${className}`}
     >
       {children}
     </Link>

@@ -21,7 +21,33 @@ const groups = [
       { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
       { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
       { href: "/wordpress-hjemmeside", label: "WordPress hjemmeside" },
+      { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
       { href: "/freelancer-vs-bureau", label: "Freelancer vs bureau" },
+    ],
+  },
+  {
+    title: "Områder og emner",
+    links: [
+      { href: "/ai-loesninger", label: "AI-løsninger" },
+      { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
+      { href: "/shopify-hjemmeside", label: "Shopify" },
+      { href: "/webbureau-jylland", label: "Webbureau Jylland" },
+      { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
+      { href: "/webbureau-vejle", label: "Webbureau Vejle" },
+      { href: "/wordpress-horsens", label: "WordPress Horsens" },
+      { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
+      { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
+    ],
+  },
+  {
+    title: "Viden",
+    links: [
+      { href: "/blog", label: "Blog og guides" },
+      { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
+      { href: "/ordliste", label: "Ordliste" },
+      { href: "/om-webhjerte", label: "Fakta om WebHjerte" },
+      { href: "/hosting-og-vedligeholdelse", label: "Hosting og drift" },
+      { href: "/webstrategi", label: "Webstrategi" },
     ],
   },
   {
@@ -68,9 +94,9 @@ const socials = [
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-[#1c1e1e] border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16">
+      <div className="max-w-[88rem] mx-auto px-5 sm:px-10 lg:px-16">
         {/* Links */}
-        <div className="grid grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.1fr] gap-x-6 gap-y-10 pt-14 pb-12 sm:pt-16 sm:pb-14">
+        <div className="grid grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr_1fr_1.1fr] gap-x-6 gap-y-10 pt-14 pb-12 sm:pt-16 sm:pb-14">
           <div className="col-span-2 lg:col-span-1">
             <p className="text-[18px] font-semibold text-white mb-3 tracking-tight">
               Web<span className="text-[#00a8e8]">Hjerte</span>

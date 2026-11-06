@@ -14,7 +14,8 @@ const SITE_URL = "https://www.webhjerte.dk";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  alternates: { canonical: "./" },
+  alternates: { canonical: "./", types: { "text/plain": "/llms.txt" } },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large", "max-video-preview": -1 } },
   applicationName: "WebHjerte",
   authors: [{ name: "Ivan Kohan", url: `${SITE_URL}/om-mig` }],
   creator: "Ivan Kohan",
@@ -54,7 +55,19 @@ export default function RootLayout({ children }) {
                   url: `${SITE_URL}/`,
                   name: "WebHjerte",
                   inLanguage: "da-DK",
+                  description: "WebHjerte – webbureau i Horsens: hjemmesider, SEO og AI-synlighed til fast pris.",
                   publisher: { "@id": `${SITE_URL}/#organization` },
+                },
+                {
+                  "@type": "Person",
+                  "@id": `${SITE_URL}/#ivan`,
+                  name: "Ivan Kohan",
+                  url: `${SITE_URL}/om-mig`,
+                  jobTitle: "Webudvikler og grundlægger af WebHjerte",
+                  image: `${SITE_URL}/ivan-kohan.jpg`,
+                  worksFor: { "@id": `${SITE_URL}/#organization` },
+                  knowsAbout: ["Webdesign", "Webudvikling", "SEO", "AI-SEO", "AI-chatbots", "AI-automatisering", "WordPress", "WooCommerce", "Shopify", "Webflow", "Next.js"],
+                  address: { "@type": "PostalAddress", addressLocality: "Horsens", addressCountry: "DK" },
                 },
                 {
                   "@type": ["ProfessionalService", "LocalBusiness"],
@@ -65,8 +78,20 @@ export default function RootLayout({ children }) {
                   image: `${SITE_URL}/W.png`,
                   description:
                     "WebHjerte er et lokalt webbureau i Horsens. Webdesign, hjemmesider og SEO til små og mellemstore virksomheder i Horsens, Midtjylland og resten af Danmark.",
-                  telephone: "+45 42 76 05 77",
+                  telephone: "+4542760577",
                   email: "hej@webhjerte.dk",
+                  founder: { "@id": `${SITE_URL}/#ivan` },
+                  vatID: "DK46485823",
+                  foundingDate: "2026",
+                  slogan: "Hjemmesider til fast pris – direkte kontakt med udvikleren",
+                  knowsLanguage: ["da", "en"],
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    contactType: "customer service",
+                    telephone: "+4542760577",
+                    email: "hej@webhjerte.dk",
+                    availableLanguage: ["da", "en"],
+                  },
                   priceRange: "2.500 - 14.000 DKK",
                   address: {
                     "@type": "PostalAddress",

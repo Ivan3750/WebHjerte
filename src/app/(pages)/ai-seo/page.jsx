@@ -9,9 +9,9 @@ import Questions from "../../components/Questions";
 import CtaSearchBlock from "../../components/ui/CTA";
 
 export const metadata = {
-  title: "AI SEO i Horsens – få mere synlighed med AI | WebHjerte",
+  title: "AI SEO fra 3.500 kr – bliv fundet i Google & ChatGPT | WebHjerte",
   description:
-    "Bliv fundet, når kunder søger efter det, du tilbyder – på Google og i AI-søgning. Jeg optimerer din hjemmeside og indhold, så du får flere kunder uden annoncer.",
+    "AI SEO til lokale virksomheder: analyse, indhold og struktureret data, så du rangerer i Google og nævnes i ChatGPT og Google AI. Pakker fra 3.500 kr.",
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "AI SEO – få din virksomhed fundet på Google | WebHjerte",
@@ -91,11 +91,11 @@ const jsonLd = {
 const faqs = [
   {
     q: "Hvad er AI SEO egentlig?",
-    a: "AI SEO betyder, at jeg bruger kunstig intelligens til at analysere søgemønstrer, forstå hvad dine kunder søger efter, og optimere din hjemmeside derefter. Det er stadig mennesker, der bestemmer strategien — men AI hjælper mig med at arbejde hurtigere og mere præcist.",
+    a: "AI SEO betyder, at jeg bruger kunstig intelligens til at analysere søgemønstre, forstå hvad dine kunder søger efter, og optimere din hjemmeside derefter. Det er stadig mennesker, der bestemmer strategien — men AI hjælper mig med at arbejde hurtigere og mere præcist.",
   },
   {
     q: "Får jeg resultater med AI SEO?",
-    a: "Ja. Kombinationen af AI-analyse og erfaren SEO-viden giver hurtigere og mere målrettede resultator end traditionel SEO alene. De fleste kunder ser forbedringer i synlighed og organisk trafik inden for 2-3 måneder.",
+    a: "Ja. Kombinationen af AI-analyse og erfaren SEO-viden giver hurtigere og mere målrettede resultater end traditionel SEO alene. De fleste kunder ser forbedringer i synlighed og organisk trafik inden for 2-3 måneder.",
   },
   {
     q: "Er AI SEO bare skrevet af en robot?",
@@ -107,7 +107,7 @@ const faqs = [
   },
   {
     q: "Hvordan ved jeg om det virker?",
-    a: "Du får månedlige rapporter med konkrete tal: din position på relevante søgeord, hvor meget organisk trafik du får, og hvor mange kunder der kontakter dig gennem siden. Du ser resultatet — ikke bare en glad mundtlighed.",
+    a: "Du får månedlige rapporter med konkrete tal: din position på relevante søgeord, hvor meget organisk trafik du får, og hvor mange kunder der kontakter dig gennem siden. Du ser resultatet — ikke bare løfter.",
   },
 ];
 

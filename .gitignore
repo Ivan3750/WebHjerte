@@ -42,3 +42,7 @@ next-env.d.ts
 
 
 src/app/blog/new/
+
+# genereres af next-sitemap i postbuild
+/public/sitemap*.xml
+/public/robots.txt

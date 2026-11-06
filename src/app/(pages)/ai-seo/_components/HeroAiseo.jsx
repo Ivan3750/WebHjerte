@@ -1,4 +1,4 @@
-import Link from "next/link";
+import PageHero, { PrimaryLink, GhostLink } from "../../../components/ui/PageHero";
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 
 const nodes = [
@@ -10,42 +10,18 @@ const nodes = [
 
 export default function HeroAiseo() {
   return (
-    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-24 pb-24">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-16 items-center">
-        {/* Left: text, left-aligned */}
-        <div className="flex flex-col items-start text-left">
-          <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">
-            AI SEO
-          </AnimatedInView>
-
-          <AnimatedInView as="h1" className="maintitle text-white !leading-tight mb-6">
-            Få din virksomhed fundet med AI SEO
-          </AnimatedInView>
-
-          <AnimatedInView as="p" className="text-[14px] text-[#a0a0a0] leading-[1.85] max-w-[46ch] mb-8">
-            Jeg bruger kunstig intelligens til at finde ud af, hvad dine kunder
-            søger efter — og sørger for, at din hjemmeside dukker op, når de
-            gør. Faste priser fra 3.500 DKK.
-          </AnimatedInView>
-
-          {/* CTA-knapper */}
-          <AnimatedInView as="div" className="flex flex-wrap gap-3">
-            <Link
-              href="#priser"
-              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#1c1e1e] transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Se priser
-            </Link>
-            <Link
-              href="/gratis-seo-tjek-horsens"
-              className="inline-flex items-center rounded-full border border-[#3a3d3d] px-6 py-3 text-[13px] font-medium text-[#e0e0e0] transition-colors hover:border-[#5a5d5d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Gratis SEO-tjek
-            </Link>
-          </AnimatedInView>
-        </div>
-
-        {/* Right: visual */}
+    <PageHero
+      breadcrumbs={[{ label: "Forside", href: "/" }, { label: "AI SEO" }]}
+      eyebrow="AI SEO"
+      titleLines={["Få din virksomhed", "fundet med AI SEO"]}
+      lead="Jeg bruger kunstig intelligens til at finde ud af, hvad dine kunder søger efter – og sørger for, at din hjemmeside dukker op i Google, ChatGPT og andre AI-svar, når de gør. Faste priser fra 3.500 DKK."
+      actions={
+        <>
+          <PrimaryLink href="#priser">Se priser</PrimaryLink>
+          <GhostLink href="/gratis-seo-tjek-horsens">Gratis SEO-tjek</GhostLink>
+        </>
+      }
+      aside={
         <AnimatedInView as="div" className="relative aspect-square w-full max-w-[400px] mx-auto">
           <div className="absolute inset-[16%] rounded-full border border-[#2a2d2d]" />
 
@@ -86,7 +62,7 @@ export default function HeroAiseo() {
             }
           `}</style>
         </AnimatedInView>
-      </div>
-    </section>
+      }
+    />
   );
 }

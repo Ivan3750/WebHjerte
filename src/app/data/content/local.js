@@ -1,0 +1,418 @@
+// Lokale og regionale landingssider (baseret på Search Console-søgninger)
+
+const relatedCore = [
+  { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Faste pakker fra 2.500 kr uden skjulte gebyrer." },
+  { href: "/portefolje", title: "Portefølje", desc: "Se eksempler på færdige hjemmesider." },
+  { href: "/gratis-seo-tjek-horsens", title: "Gratis SEO-tjek", desc: "Få en gennemgang af din nuværende hjemmeside." },
+];
+
+export const localPages = [
+  {
+    slug: "webbureau-jylland",
+    type: "service",
+    title: "Webbureau i Jylland – hjemmesider til fast pris | WebHjerte",
+    description:
+      "Webbureau til virksomheder i hele Jylland: Østjylland, Midtjylland, Vestjylland, Nordjylland og Djursland. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.",
+    keywords: ["webbureau Jylland", "webbureau i Jylland", "webbureau Østjylland", "webbureau Nordjylland", "webbureau Djursland", "webbureau Vestjylland"],
+    name: "Webbureau i Jylland",
+    serviceType: "Webbureau",
+    eyebrow: "Webbureau · Jylland",
+    h1: "Webbureau i Jylland – fra Skagen til Kolding",
+    intro:
+      "WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.",
+    summary:
+      "WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr (ekskl. moms).",
+    sections: [
+      {
+        h2: "Et webbureau, der dækker hele Jylland",
+        paragraphs: [
+          "Jylland er en lang halvø med mange lokale markeder: håndværkere i Vestjylland, restauranter i Aarhus, turistvirksomheder i Nordjylland og servicefirmaer i trekantsområdet. Fælles for dem er, at de skal findes af kunder i deres eget område – og her er en lokal, hurtig og velstruktureret hjemmeside det vigtigste redskab.",
+          "Jeg er baseret i Horsens, centralt placeret i Østjylland, og arbejder med virksomheder i hele regionen. Alt kan klares online: kickoff-møde på video, designgodkendelse via link, løbende afstemning i telefon eller mail. Og kommer det til at give mening at mødes, kan vi aftale et fysisk møde.",
+        ],
+      },
+      {
+        h2: "Områder i Jylland",
+        subs: [
+          {
+            h3: "Østjylland og Djursland",
+            paragraphs: [
+              "Horsens, Aarhus, Odder, Skanderborg, Ebeltoft og Grenaa. Her er konkurrencen om lokale søgninger størst, og forskellen på en gennemsnitlig og en god hjemmeside viser sig hurtigt i antallet af henvendelser.",
+            ],
+          },
+          {
+            h3: "Midtjylland",
+            paragraphs: [
+              "Silkeborg, Viborg, Herning, Ikast, Randers og Skive. Mange virksomheder her mangler en moderne, mobilvenlig side og et ordentligt Google-fundament.",
+            ],
+          },
+          {
+            h3: "Trekantområdet og Sydjylland",
+            paragraphs: [
+              "Vejle, Fredericia, Kolding, Middelfart og Esbjerg. God placering for virksomheder, der betjener både private og erhverv på tværs af kommunegrænser.",
+            ],
+          },
+          {
+            h3: "Vest- og Nordjylland",
+            paragraphs: [
+              "Ringkøbing, Holstebro, Thisted, Hjørring, Aalborg og Frederikshavn. Her er onlinesamarbejdet en fordel: du slipper for at betale for kørsel og mødetid.",
+            ],
+          },
+        ],
+      },
+      {
+        h2: "Hvad får du som kunde?",
+        bullets: [
+          "Fast pris aftalt på forhånd – ingen timebaseret overraskelse bagefter.",
+          "Første designudkast inden for 48 timer, og 0 kr for designet, hvis det ikke passer.",
+          "Typisk levering på 2–10 dage afhængigt af pakke.",
+          "SEO, mobiloptimering og hurtig indlæsning bygget ind fra første dag.",
+          "Struktureret data og indhold, der også kan findes i AI-søgning (ChatGPT, Google AI).",
+          "Domæne og kode tilhører dig – ingen bindinger.",
+          "30 dages support efter lancering og herefter vedligeholdelse fra 195 kr/md.",
+        ],
+      },
+      {
+        h2: "Priser på hjemmesider i Jylland",
+        table: {
+          head: ["Pakke", "Fra pris (ekskl. moms)", "Levering", "Omfang"],
+          rows: [
+            ["Landingside", "2.500 kr", "ca. 2 dage", "1 side til kampagne eller én ydelse"],
+            ["Basis", "4.500 kr", "ca. 5 dage", "3–5 sider, kontaktformular, Google Maps, basis-SEO"],
+            ["Standard", "7.500 kr", "ca. 10 dage", "Op til 8 sider, SEO og analytics, booking, 30 dages support"],
+            ["Skræddersyet", "14.000 kr", "Aftales", "Webshop, kundeportal eller specialfunktioner"],
+          ],
+        },
+        paragraphs: ["Alle priser er vejledende startpriser. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit projekt."],
+      },
+      {
+        h2: "Hvorfor vælge et lille webbureau frem for et stort?",
+        paragraphs: [
+          "Store bureauer er gode til store organisationer med komplekse behov. Men for en lokal virksomhed med 1–30 ansatte betyder lagene af projektledere, account managers og møder ofte en højere pris og længere svartid. Hos WebHjerte taler du direkte med den, der designer og bygger – og beslutninger tages på minutter, ikke uger.",
+          "Til gengæld er jeg ikke det rette valg til meget store enterprise-projekter med flere teams og lange procesforløb. Det siger jeg ærligt fra start.",
+        ],
+        cta: { href: "/freelancer-vs-bureau", label: "Freelancer eller webbureau?" },
+      },
+      {
+        h2: "Sådan kommer vi i gang",
+        steps: [
+          { title: "Gratis samtale", text: "Du fortæller om din virksomhed, dine kunder og dine mål. Det tager 15–30 minutter." },
+          { title: "Tilbud inden for 24 timer", text: "Du modtager en fast pris og en tidsplan." },
+          { title: "Designudkast inden for 48 timer", text: "Du ser og godkender designet, før der bygges noget." },
+          { title: "Bygning og test", text: "Jeg bygger siden, tester på mobil og desktop og indarbejder dine rettelser." },
+          { title: "Lancering og support", text: "Siden går live, og du har 30 dages support, hvis noget skal justeres." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Hvilke dele af Jylland arbejder I i?",
+        a: "Hele Jylland – og resten af Danmark. Samarbejdet foregår online, så der er ingen geografiske begrænsninger.",
+      },
+      {
+        q: "Skal jeg møde jer fysisk?",
+        a: "Nej, men det er muligt i mange tilfælde. De fleste kunder foretrækker video eller telefon, fordi det er hurtigere.",
+      },
+      {
+        q: "Hvad koster en hjemmeside hos et webbureau i Jylland?",
+        a: "Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 7.500 kr for Standard og 14.000 kr for skræddersyede løsninger (ekskl. moms).",
+      },
+      {
+        q: "Kan I hjælpe med at blive fundet lokalt i min by?",
+        a: "Ja. Jeg bygger lokal SEO ind i hjemmesiden og kan hjælpe med Google Virksomhedsprofil og lokale landingssider.",
+      },
+    ],
+    related: [
+      { href: "/webbureau-midtjylland", title: "Webbureau Midtjylland", desc: "Hjemmesider til hele regionen." },
+      { href: "/webbureau-aarhus", title: "Webbureau Aarhus", desc: "Hjemmesider til virksomheder i Aarhus." },
+      ...relatedCore.slice(0, 1),
+    ],
+  },
+  {
+    slug: "webbureau-aarhus",
+    type: "service",
+    title: "Webbureau Aarhus – hjemmesider til fast pris | WebHjerte",
+    description:
+      "Webbureau til virksomheder i Aarhus og Østjylland. Hjemmesider fra 2.500 kr, SEO bygget ind og direkte kontakt med udvikleren. Baseret i Horsens – 45 minutter fra Aarhus.",
+    keywords: ["webbureau Aarhus", "webdesign Aarhus", "webdesign århus", "billig hjemmeside Aarhus", "hjemmeside Aarhus"],
+    name: "Webbureau Aarhus",
+    serviceType: "Webbureau",
+    eyebrow: "Webbureau · Aarhus",
+    h1: "Webbureau til virksomheder i Aarhus",
+    intro:
+      "Du behøver ikke et dyrt bureau midt i Aarhus for at få en god hjemmeside. Jeg sidder i Horsens, kender Østjylland og leverer professionelle hjemmesider til fast pris – ofte klar på 2–10 dage.",
+    summary:
+      "WebHjerte hjælper virksomheder i Aarhus med hjemmesider, SEO og AI-synlighed til fast pris fra 2.500 kr. Jeg er baseret i Horsens, cirka 45 minutter fra Aarhus, og arbejder online eller ved fysiske møder, når det giver mening.",
+    sections: [
+      {
+        h2: "Hjemmeside i Aarhus: stor by, hård konkurrence",
+        paragraphs: [
+          "Aarhus er Danmarks næststørste by, og online er konkurrencen derefter. Søger en kunde efter “frisør Aarhus”, “VVS Aarhus” eller “restaurant Aarhus C”, vælger Google blandt hundredvis af virksomheder. Det er derfor ikke nok at have en hjemmeside – den skal være hurtig, tydelig og bygget til lokale søgninger.",
+          "Jeg designer sider, hvor de vigtigste informationer er synlige med det samme: hvad du tilbyder, hvor du holder til, hvad det koster, og hvordan man kontakter dig. Besøgende i en storby har travlt, og siden skal arbejde for dig på få sekunder.",
+        ],
+      },
+      {
+        h2: "Hvorfor vælge et webbureau fra Horsens?",
+        bullets: [
+          "Samme kvalitet som bureauer i Aarhus, men uden store byoverhead i prisen.",
+          "Direkte kontakt med udvikleren – ingen account managers.",
+          "Fast pris og klar tidsplan fra dag ét.",
+          "45 minutter fra Aarhus, når et fysisk møde giver værdi.",
+          "Online workflow, så du kan godkende design og rettelser, når det passer dig.",
+        ],
+      },
+      {
+        h2: "Brancher i Aarhus, jeg hjælper",
+        paragraphs: [
+          "Mange af mine opgaver kommer fra lokale servicevirksomheder, men jeg bygger til alle brancher, der har brug for at blive fundet.",
+        ],
+        bullets: [
+          "Håndværkere og installatører (VVS, el, tømrer, maler).",
+          "Restauranter, caféer og barer – med menu, booking og bestilling.",
+          "Saloner, klinikker og wellness – med tidsbestilling.",
+          "Konsulenter og rådgivere – med fokus på troværdighed og leadgenerering.",
+          "Små webshops og lokale detailhandlere.",
+        ],
+      },
+      {
+        h2: "Lokal SEO i Aarhus",
+        paragraphs: [
+          "En del af arbejdet er at sikre, at Google forstår, at du hører til i Aarhus. Det gør jeg med lokale oplysninger i markup, tydelig omtale af bydele og opland, en optimeret Google Virksomhedsprofil og indhold, der svarer på spørgsmål, kunder faktisk stiller.",
+          "Vil du i toppen for søgninger som “[ydelse] Aarhus”, er der som regel brug for både en god hjemmeside og løbende arbejde med indhold og omtaler. Jeg fortæller ærligt, hvor realistisk din målsætning er, og hvad det kræver.",
+        ],
+        cta: { href: "/seo-horsens", label: "Læs om lokal SEO" },
+      },
+      {
+        h2: "Priser",
+        table: {
+          head: ["Pakke", "Fra pris", "Levering"],
+          rows: [
+            ["Landingside", "2.500 kr", "ca. 2 dage"],
+            ["Basis (3–5 sider)", "4.500 kr", "ca. 5 dage"],
+            ["Standard (op til 8 sider)", "7.500 kr", "ca. 10 dage"],
+            ["Skræddersyet", "14.000 kr", "Aftales"],
+          ],
+        },
+        paragraphs: ["Priser ekskl. moms. Se hvad der er inkluderet på siden om hjemmeside pris."],
+      },
+    ],
+    faqs: [
+      { q: "Har I kontor i Aarhus?", a: "Nej, jeg er baseret i Horsens. Cirka 45 minutter fra Aarhus kan jeg komme ud ved behov, og ellers foregår alt online." },
+      { q: "Er I billigere end bureauer i Aarhus?", a: "Ofte ja, fordi jeg ikke har dyre kontorer eller lange led af projektledere. Du betaler for selve arbejdet." },
+      { q: "Kan I lave en hjemmeside til min Aarhus-virksomhed på under en uge?", a: "Ja, en landingside tager typisk ca. 2 dage og en Basis-hjemmeside ca. 5 dage, når tekst og billeder er klar." },
+    ],
+    related: [
+      { href: "/webbureau-jylland", title: "Webbureau Jylland", desc: "Hele Jylland dækket online." },
+      { href: "/webdesign-horsens", title: "Webdesign Horsens", desc: "Hjemmesider fra Horsens-baseret webdesigner." },
+      ...relatedCore.slice(0, 1),
+    ],
+  },
+  {
+    slug: "webbureau-vejle",
+    type: "service",
+    title: "Webbureau Vejle – hjemmesider fra 2.500 kr | WebHjerte",
+    description:
+      "Webbureau til virksomheder i Vejle og trekantsområdet: Fredericia, Kolding og Horsens. Hjemmesider til fast pris, SEO og direkte kontakt med udvikleren.",
+    keywords: ["webbureau Vejle", "webdesign Vejle", "hjemmeside Vejle", "webbureau Kolding", "webbureau Fredericia"],
+    name: "Webbureau Vejle",
+    serviceType: "Webbureau",
+    eyebrow: "Webbureau · Vejle",
+    h1: "Webbureau i Vejle og trekantsområdet",
+    intro:
+      "Vejle ligger 25 minutter fra Horsens, og mange af mine kunder findes i hele trekantsområdet. Jeg bygger hurtige hjemmesider til fast pris, med lokal SEO og direkte kontakt til udvikleren.",
+    summary:
+      "WebHjerte er et webbureau med base i Horsens, ca. 25–30 minutter fra Vejle. Jeg bygger hjemmesider til virksomheder i Vejle, Fredericia, Kolding og omegn fra 2.500 kr, med levering på 2–10 dage. Et eksempel i porteføljen er Lønbæks Køreskole i Vejle.",
+    sections: [
+      {
+        h2: "Hjemmesider til virksomheder i Vejle",
+        paragraphs: [
+          "Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt – og de forventer at kunne se priser, tilgængelighed og kontaktoplysninger på få sekunder. Min opgave er at bygge en hjemmeside, der opfylder det forventnings-niveau.",
+          "I min portefølje finder du blandt andet en hjemmeside til Lønbæks Køreskole i Vejle. Samme tankegang bruger jeg til alle brancher: tydelig værdi, få klik til kontakt og hurtig indlæsning på mobil.",
+        ],
+        cta: { href: "/portefolje", label: "Se porteføljen" },
+      },
+      {
+        h2: "Trekantsområdet: Vejle, Fredericia og Kolding",
+        paragraphs: [
+          "Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor bygger jeg sider med serviceområde, ikke kun én adresse: du kan omtale alle de byer, du dækker, uden at ende med tynde duplikatsider. Det styrker din lokale synlighed og gør siden mere nyttig for kunderne.",
+        ],
+        bullets: [
+          "Vejle og omegn: Børkop, Give, Egtved, Jelling og Bredsten.",
+          "Fredericia og Middelfart.",
+          "Kolding og Christiansfeld.",
+          "Horsens og Hedensted – mit hjemmemarked.",
+        ],
+      },
+      {
+        h2: "Hvad får du?",
+        bullets: [
+          "Fast pris og aftalt tidsplan.",
+          "Responsivt design, der virker på mobil, tablet og desktop.",
+          "Basis-SEO og struktureret data i alle pakker.",
+          "Kontaktformularer, Google Maps og klik-for-at-ringe.",
+          "30 dages support efter lancering.",
+          "Mulighed for WordPress, hvis du selv vil redigere indholdet.",
+        ],
+      },
+      {
+        h2: "Sådan prissætter jeg",
+        paragraphs: [
+          "Jeg prissætter efter omfang – ikke efter timer. En landingside starter fra 2.500 kr, en Basis-hjemmeside fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr. Alle priser er ekskl. moms. Du får et fast tilbud, før vi går i gang, og prisen ændrer sig kun, hvis vi aftaler at udvide opgaven.",
+        ],
+        cta: { href: "/hjemmeside-pris", label: "Se alle priser" },
+      },
+    ],
+    faqs: [
+      { q: "Arbejder I med virksomheder i Vejle?", a: "Ja. Jeg arbejder med virksomheder i Vejle, Fredericia, Kolding og hele Jylland. Alt kan foregå online." },
+      { q: "Hvor hurtigt kan en hjemmeside være klar?", a: "En landingside ca. 2 dage, Basis ca. 5 dage og Standard ca. 10 dage – når indhold og billeder er klar." },
+      { q: "Kan jeg få en hjemmeside, jeg selv kan redigere?", a: "Ja. Jeg bygger i WordPress, hvis du vil kunne rette tekster og billeder selv." },
+    ],
+    related: [
+      { href: "/webbureau-jylland", title: "Webbureau Jylland", desc: "Hele Jylland dækket online." },
+      { href: "/webbureau-aarhus", title: "Webbureau Aarhus", desc: "Hjemmesider til Aarhus-virksomheder." },
+      { href: "/portefolje/loenbaeks-koereskole", title: "Case: Lønbæks Køreskole", desc: "Hjemmeside til køreskole i Vejle." },
+    ],
+  },
+  {
+    slug: "wordpress-horsens",
+    type: "service",
+    title: "WordPress Horsens & Midtjylland – professionel hjemmeside | WebHjerte",
+    description:
+      "WordPress-hjemmeside til virksomheder i Horsens og Midtjylland. Professionel opsætning, hurtig levering og en løsning, du selv kan redigere. Fra 4.500 kr.",
+    keywords: ["wordpress Horsens", "wordpress Midtjylland", "wordpress firma", "wordpress udvikling Horsens", "professionel wordpress hjemmeside", "wordpress leverandør"],
+    name: "WordPress Horsens",
+    serviceType: "WordPress-udvikling",
+    eyebrow: "WordPress · Horsens & Midtjylland",
+    h1: "WordPress-hjemmeside i Horsens og Midtjylland",
+    intro:
+      "En professionel WordPress-hjemmeside, hvor du selv kan rette tekster, priser og billeder – uden at ringe til en udvikler hver gang. Jeg bygger den hurtig, sikker og klar til Google.",
+    summary:
+      "WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 7.500 kr (Standard), ekskl. moms, med levering på 5–10 dage.",
+    sections: [
+      {
+        h2: "Hvorfor vælge WordPress?",
+        paragraphs: [
+          "WordPress er verdens mest udbredte CMS, og det er der gode grunde til. Systemet er fleksibelt, har et enormt økosystem af plugins og designs, og der findes udviklere overalt. Det betyder, at din hjemmeside ikke er afhængig af én enkelt person – heller ikke mig.",
+          "For en lille virksomhed er den største fordel, at du selv kan skifte åbningstider, tilføje en ny ydelse, skrive en nyhed eller opdatere et tilbud på fem minutter. Det holder siden frisk, hvilket både kunder og Google sætter pris på.",
+        ],
+      },
+      {
+        h2: "Hvad får du i en WordPress-løsning fra WebHjerte?",
+        bullets: [
+          "Skræddersyet design – ikke en uændret skabelon.",
+          "Hurtig opsætning med fokus på ydeevne (billedoptimering, caching, minimal plugin-brug).",
+          "SEO-opsætning: titler, beskrivelser, sitemap, struktureret data og lokal SEO.",
+          "Responsivt design til mobil og tablet.",
+          "Sikkerhed: opdateringer, sikre log-ind-regler og backup-opsætning.",
+          "Kort introduktion, så du ved, hvordan du redigerer siden.",
+          "30 dages support efter lancering.",
+        ],
+      },
+      {
+        h2: "Hvornår er WordPress det rigtige valg – og hvornår er det ikke?",
+        table: {
+          head: ["Situation", "Anbefaling"],
+          rows: [
+            ["Du vil selv redigere tekster og billeder", "WordPress"],
+            ["Du vil have en blog eller nyhedssektion", "WordPress"],
+            ["Du har brug for en enkel webshop", "WordPress med WooCommerce eller Shopify"],
+            ["Du vil have maksimal hastighed og minimal vedligeholdelse", "Skræddersyet kode (fx Next.js)"],
+            ["Du har kun brug for én kampagneside", "Landingside – ofte skræddersyet"],
+          ],
+        },
+        paragraphs: [
+          "Jeg anbefaler det, der passer til dit behov – ikke det, der er nemmest for mig. Jeg bygger både i WordPress og i skræddersyet kode, og vi vælger sammen.",
+        ],
+      },
+      {
+        h2: "WordPress og sikkerhed",
+        paragraphs: [
+          "Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 195 kr/md, hvis du ikke selv vil stå for det.",
+        ],
+        cta: { href: "/hosting-og-vedligeholdelse", label: "Læs om vedligeholdelse" },
+      },
+      {
+        h2: "WordPress og SEO",
+        paragraphs: [
+          "WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter, struktureret data og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Hvad koster en WordPress-hjemmeside?", a: "En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 7.500 kr for Standard (ekskl. moms). Større løsninger aftales individuelt." },
+      { q: "Kan jeg selv redigere en WordPress-hjemmeside?", a: "Ja. Du kan rette tekst, billeder og indhold uden kode. Jeg giver dig en kort introduktion ved aflevering." },
+      { q: "Er WordPress sikkert?", a: "Ja, når det holdes opdateret og sat korrekt op. Jeg kan stå for opdateringer og backup via en vedligeholdelsesaftale." },
+      { q: "Er WordPress langsomt?", a: "Det kan være, hvis det belastes med mange plugins. Jeg bygger med få plugins og optimerer billeder og cache, så siden bliver hurtig." },
+    ],
+    related: [
+      { href: "/wordpress-hjemmeside", title: "WordPress hjemmeside", desc: "Se mere om WordPress-løsningerne." },
+      { href: "/blog/wordpress-eller-skraeddersyet", title: "WordPress eller skræddersyet?", desc: "Guide til at vælge rigtigt." },
+      { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Drift fra 195 kr/md." },
+    ],
+  },
+  {
+    slug: "digitalt-bureau-horsens",
+    type: "service",
+    title: "Digitalt bureau Horsens – hjemmeside, SEO og synlighed | WebHjerte",
+    description:
+      "Digitalt bureau i Horsens: hjemmesider, SEO, AI-synlighed og landingssider til annoncer. Lokalt, hurtigt og til fast pris – uden mellemled.",
+    keywords: ["digitalt bureau Horsens", "marketing bureau Horsens", "marketingbureau Horsens", "reklamebureau Horsens", "digital bureau Horsens", "google ads bureau Horsens"],
+    name: "Digitalt bureau Horsens",
+    serviceType: "Digitalt bureau",
+    eyebrow: "Digitalt bureau · Horsens",
+    h1: "Digitalt bureau i Horsens: det digitale fundament, der skaber kunder",
+    intro:
+      "Marketing starter ved hjemmesiden. Jeg hjælper virksomheder i Horsens med det digitale fundament: hjemmeside, SEO, AI-synlighed, analytics og landingssider til annoncer.",
+    summary:
+      "WebHjerte er et digitalt bureau i Horsens med fokus på webdesign, SEO, AI-synlighed og konverteringsoptimering. Jeg er ikke et reklame- eller PR-bureau, men leverer det tekniske og indholdsmæssige fundament, som annoncer, SEO og sociale medier bygger videre på.",
+    sections: [
+      {
+        h2: "Hvad jeg laver – og hvad jeg ikke laver",
+        paragraphs: [
+          "Mange virksomheder søger et “marketingbureau”, når det egentlig, de mangler, er en hjemmeside, der konverterer. Før du bruger penge på annoncer, skal siden kunne omsætte besøgende til henvendelser. Dér er min styrke.",
+          "Jeg er ikke et fuldservice-reklamebureau med kreative kampagner, tv-spots eller PR. Det tilbyder jeg ikke, og jeg anbefaler dig til dem, der gør, hvis du har brug for det. Det jeg gør, gør jeg grundigt:",
+        ],
+        bullets: [
+          "Webdesign og webudvikling – hjemmesider og landingssider.",
+          "Teknisk og lokal SEO.",
+          "AI-synlighed (GEO) i ChatGPT, Gemini og Google AI.",
+          "Landingssider til Google Ads og sociale annoncer, der er hurtige og målbare.",
+          "Analytics: Google Analytics, Search Console og målinger af henvendelser.",
+          "Konverteringsoptimering: bedre kontaktformularer, tydeligere call-to-actions og hurtigere sider.",
+        ],
+      },
+      {
+        h2: "Landingssider til annoncer",
+        paragraphs: [
+          "Annoncering fungerer kun, hvis den side, besøgende lander på, er skarp. En landingside fra 2.500 kr er bygget til ét formål: at få besøgende til at kontakte dig. Den indlæses hurtigt på mobil, har ét tydeligt budskab og måler hver henvendelse, så du kan se, hvad annoncerne giver.",
+          "Jeg opsætter siden, så den kan måle konverteringer i Google Analytics og Google Ads. Selve annoncestyringen kan du tage selv eller hos en samarbejdspartner – jeg sørger for, at fundamentet er i orden.",
+        ],
+      },
+      {
+        h2: "Fra synlighed til henvendelser",
+        steps: [
+          { title: "Fundament", text: "Hurtig, mobilvenlig hjemmeside med klart tilbud og tydelig kontakt." },
+          { title: "Synlighed", text: "SEO, lokale oplysninger, Google Virksomhedsprofil og AI-synlighed." },
+          { title: "Trafik", text: "Organisk trafik, evt. suppleret med annoncer til landingssider." },
+          { title: "Konvertering", text: "Formularer, telefonklik og booking, som kan måles." },
+          { title: "Optimering", text: "Løbende forbedring baseret på data fra Search Console og analytics." },
+        ],
+      },
+      {
+        h2: "Hvorfor et lokalt bureau i Horsens?",
+        paragraphs: [
+          "Jeg kender det lokale marked og de søgninger, som kunder i Horsens og Midtjylland bruger. Samtidig er jeg lille nok til at svare inden for 24 timer og tilpasse mig din hverdag. Du får én kontaktperson og ingen mellemled.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Laver I Google Ads?", a: "Jeg bygger landingssider og opsætter måling til annoncer. Selve løbende annoncestyring tilbyder jeg ikke som standard, men jeg samarbejder gerne med dit annoncebureau." },
+      { q: "Er I et reklamebureau?", a: "Nej. WebHjerte er et webbureau med fokus på hjemmesider, SEO og AI-synlighed." },
+      { q: "Hvad skal jeg starte med: hjemmeside, SEO eller annoncer?", a: "Start med hjemmesiden. Uden en hurtig og tydelig side går penge til annoncer og SEO til spilde." },
+    ],
+    related: [
+      { href: "/seo-horsens", title: "SEO Horsens", desc: "Bliv fundet af lokale kunder." },
+      { href: "/webstrategi", title: "Webstrategi", desc: "Plan for din digitale tilstedeværelse." },
+      { href: "/geo-ai-synlighed", title: "AI-synlighed", desc: "Bliv nævnt i AI-svar." },
+    ],
+  },
+];

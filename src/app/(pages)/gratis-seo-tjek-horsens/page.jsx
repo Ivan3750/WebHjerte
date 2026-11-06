@@ -2,7 +2,7 @@
 import SEOTextHorsens from "./_components/SEOTextHorsens";
 import LocalTrust from "./_components/LocalTrust";
 import Questions from "../../components/Questions.jsx";
-import AnimatedInView from "../../components/ui/AnimatedInView";
+import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 
 export const metadata = {
   title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
@@ -16,7 +16,7 @@ export const metadata = {
     title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
     description:
       "Professionelt og gratis SEO- og web-tjek for virksomheder i Horsens.",
-    url: "https://webhjerte.dk/gratis-seo-tjek-horsens",
+    url: "https://www.webhjerte.dk/gratis-seo-tjek-horsens",
     type: "website",
   },
   twitter: {
@@ -88,15 +88,18 @@ const GratisSeoTjekHorsens = () => {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <section className="mt-[75px]">
-        <AnimatedInView as="h1" className="maintitle text-center">
-          Gratis SEO- og web-tjek i Horsens
-        </AnimatedInView>
-        <AnimatedInView as="h2" className="text-center text-lg max-w-2xl mx-auto mt-4">
-          Få en professionel gennemgang af din hjemmeside og se, hvordan du kan
-          få flere kunder fra Google – helt gratis og uden binding.
-        </AnimatedInView>
-      </section>
+      <PageHero
+        breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Gratis SEO-tjek Horsens" }]}
+        eyebrow="Gratis analyse"
+        titleLines={["Gratis SEO- og web-tjek", "i Horsens"]}
+        lead="Få en professionel gennemgang af din hjemmeside og se, hvordan du kan få flere kunder fra Google – helt gratis og uden binding."
+        actions={
+          <>
+            <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+            <GhostLink href="/hjemmeside-pris">Se priser</GhostLink>
+          </>
+        }
+      />
 
     
 
