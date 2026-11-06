@@ -15,9 +15,9 @@ import SpotlightCard from "../../components/home/fx/SpotlightCard";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
-  title: "Webdesign & hjemmesider i Horsens – pakker | WebHjerte",
+  title: "Hjemmesider, webshop, SEO & AI i Horsens – priser | WebHjerte",
   description:
-    "Webdesign, hjemmesider og SEO i Horsens. 4 klare pakker: Landingside 2.500 kr, Basis 4.500 kr, Standard 7.500 kr, Skræddersyet fra 14.000 kr. Ingen skjulte gebyrer.",
+    "Alle ydelser og faste priser: hjemmesider i WordPress, Shopify og kode, webshops, SEO og AI-integration (chatbot, automatisering). Fra 2.500 kr.",
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Priser på webdesign – klare pakker uden skjulte gebyrer | WebHjerte",

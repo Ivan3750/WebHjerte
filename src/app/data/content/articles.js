@@ -7,6 +7,74 @@ const base = { published: "2026-11-06", updated: "2026-11-06" };
 const own = [
   {
     ...base,
+    slug: "ai-i-smaa-virksomheder-10-eksempler",
+    title: "AI i små virksomheder: 10 konkrete eksempler, der virker | WebHjerte",
+    description:
+      "10 praktiske eksempler på, hvordan små virksomheder bruger AI: chatbot, booking, tilbud, opfølgning, anmeldelser og synlighed i ChatGPT. Med tips til at komme i gang.",
+    keywords: ["AI små virksomheder", "AI eksempler virksomhed", "AI chatbot", "AI automatisering", "kunstig intelligens virksomhed"],
+    name: "AI i små virksomheder: 10 eksempler",
+    category: "AI",
+    h1: "AI i små virksomheder: 10 konkrete eksempler, der virker",
+    intro:
+      "Glem store buzzwords. Her er ti praktiske måder, hvorpå en lokal virksomhed kan bruge AI i dag – og hvad du skal være opmærksom på.",
+    summary:
+      "Små virksomheder får mest ud af AI på afgrænsede opgaver: chatbot til kundespørgsmål, automatisk booking, kvalificering af leads, opfølgning, anmodning om anmeldelser, udkast til tekster og synlighed i AI-søgning. Start med den opgave, der koster mest tid, og sørg for, at et menneske altid kan gribe ind.",
+    readMinutes: 7,
+    sections: [
+      {
+        h2: "De 10 eksempler",
+        subs: [
+          { h3: "1. Chatbot til de mest stillede spørgsmål", paragraphs: ["Priser, åbningstider, levering, retur: en AI-chatbot besvarer dem med det samme, så du undgår de samme opkald hver dag."] },
+          { h3: "2. Automatisk booking og påmindelser", paragraphs: ["Kunden vælger tid selv, kalenderen opdateres, og en påmindelse sendes automatisk. Det reducerer udeblivelser."] },
+          { h3: "3. Kvalificering af henvendelser", paragraphs: ["AI stiller opfølgende spørgsmål om behov, tidsramme og budget og leverer en færdig oversigt til dig, så du kun bruger tid på relevante kunder."] },
+          { h3: "4. Udkast til tilbud og mails", paragraphs: ["AI skriver første udkast ud fra dine skabeloner og kundens oplysninger. Du gennemgår og sender."] },
+          { h3: "5. Opfølgning på tilbud", paragraphs: ["Automatisk påmindelse efter få dage øger chancen for et svar – uden at du skal huske det."] },
+          { h3: "6. Anmodning om anmeldelser", paragraphs: ["Efter udført opgave sendes et venligt link til Google-anmeldelse. Flere anmeldelser styrker din lokale synlighed."] },
+          { h3: "7. Indhold og opslag", paragraphs: ["AI kan hjælpe med udkast til blogindlæg, beskrivelser og opslag. Brug det som udgangspunkt og tilføj dine egne erfaringer."] },
+          { h3: "8. Produktbeskrivelser og anbefalinger i webshop", paragraphs: ["Hurtigere oprettelse af produkter og relevante forslag til kunderne."] },
+          { h3: "9. Oversættelse og flersproget kundeservice", paragraphs: ["Gør det nemt at hjælpe turister, tilflyttere og udenlandske kunder."] },
+          { h3: "10. Synlighed i AI-søgning", paragraphs: ["Gør din hjemmeside nem at citere for ChatGPT, Gemini og Google AI med svar-først-indhold og struktureret data."] },
+        ],
+      },
+      {
+        h2: "Sådan kommer du i gang",
+        steps: [
+          { title: "Find tidsslugeren", text: "Hvilken opgave gør du igen og igen? Start dér." },
+          { title: "Definér rammerne", text: "Hvad må AI gøre selv, og hvad skal du godkende?" },
+          { title: "Test i lille skala", text: "Prøv med de 20 mest almindelige spørgsmål eller én proces." },
+          { title: "Mål og justér", text: "Se på brugen og kvaliteten og forbedr løbende." },
+        ],
+      },
+      {
+        h2: "Hvad skal du passe på?",
+        bullets: [
+          "AI kan tage fejl – lad aldrig kritiske beslutninger køre uden kontrol.",
+          "Overvej GDPR: hvilke persondata behandles, og er kunden informeret?",
+          "Vær ærlig overfor kunder om, at de taler med en AI.",
+          "Hold dine oplysninger opdaterede, så AI ikke giver forkerte priser eller tider.",
+        ],
+      },
+      {
+        h2: "Få hjælp til at implementere",
+        paragraphs: [
+          "Jeg implementerer AI-løsninger som chatbot, booking, lead-kvalificering og automatisering – med fast pris og fokus på praktisk effekt. Fortæl, hvad der koster dig mest tid, så finder vi den rigtige løsning.",
+        ],
+        cta: { href: "/ai-loesninger", label: "Se AI-løsninger" },
+      },
+    ],
+    faqs: [
+      { q: "Er AI dyrt for små virksomheder?", a: "Det behøver det ikke være. Mange løsninger kan sættes op til en fast pris, og de løbende udgifter til AI-tjenester er ofte beskedne." },
+      { q: "Hvor starter jeg?", a: "Med den opgave, der koster mest tid eller giver flest tabte kunder – ofte kundespørgsmål eller booking." },
+      { q: "Mister jeg kontrollen?", a: "Nej, hvis løsningen er sat rigtigt op. Du bestemmer reglerne og kan altid gribe ind." },
+    ],
+    related: [
+      { href: "/ai-loesninger", title: "AI-løsninger", desc: "Chatbot, booking og automatisering." },
+      { href: "/ai-chatbot-til-hjemmeside", title: "AI-chatbot", desc: "Svar kunderne døgnet rundt." },
+      { href: "/geo-ai-synlighed", title: "AI-synlighed", desc: "Bliv nævnt i ChatGPT." },
+    ],
+  },
+  {
+    ...base,
     slug: "hvad-koster-en-hjemmeside-om-aaret",
     title: "Hvad koster en hjemmeside om året? Drift, domæne og hosting | WebHjerte",
     description:

@@ -35,6 +35,8 @@ const facts = `# WebHjerte
 - Telefon: +45 42 76 05 77
 - E-mail: hej@webhjerte.dk
 - Website: ${SITE}/
+- Platforme: WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (Next.js/React)
+- AI: AI-chatbots, AI-automatisering, AI-booking, lead-kvalificering og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI
 - Arbejdsområde: Horsens, Midtjylland, Jylland og hele Danmark (online)
 
 ## Priser (DKK, ekskl. moms)
@@ -56,6 +58,8 @@ const facts = `# WebHjerte
 
 const core = [
   ["Services og pakker", "/services"],
+  ["AI-løsninger til virksomheder", "/ai-loesninger"],
+  ["Alle typer hjemmesider og platforme", "/alle-typer-hjemmesider"],
   ["Hjemmeside pris", "/hjemmeside-pris"],
   ["Webdesign i Horsens", "/webdesign-horsens"],
   ["SEO i Horsens", "/seo-horsens"],

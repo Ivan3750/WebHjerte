@@ -3,9 +3,9 @@ import LocalLandingPage from "../../components/seo/LocalLandingPage";
 const path = "/seo-horsens";
 
 export const metadata = {
-  title: "SEO Horsens – bliv fundet på Google af lokale kunder | WebHjerte",
+  title: "SEO Horsens – flere lokale kunder fra Google & AI | WebHjerte",
   description:
-    "SEO i Horsens til små virksomheder: lokal SEO, teknisk optimering og indhold, der får dig frem på Google. Start med et gratis SEO-tjek. Få et uforpligtende tilbud.",
+    "SEO i Horsens: lokal SEO, teknisk optimering og AI-synlighed, så kunder finder dig i Google og ChatGPT. Start med et gratis SEO-tjek.",
   keywords: [
     "SEO Horsens",
     "SEO bureau Horsens",

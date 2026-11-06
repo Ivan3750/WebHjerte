@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
                   jobTitle: "Webudvikler og grundlægger af WebHjerte",
                   image: `${SITE_URL}/ivan-kohan.jpg`,
                   worksFor: { "@id": `${SITE_URL}/#organization` },
-                  knowsAbout: ["Webdesign", "Webudvikling", "SEO", "AI-SEO", "WordPress", "Next.js"],
+                  knowsAbout: ["Webdesign", "Webudvikling", "SEO", "AI-SEO", "AI-chatbots", "AI-automatisering", "WordPress", "WooCommerce", "Shopify", "Webflow", "Next.js"],
                   address: { "@type": "PostalAddress", addressLocality: "Horsens", addressCountry: "DK" },
                 },
                 {

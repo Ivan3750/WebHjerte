@@ -11,6 +11,8 @@
 - Telefon: +45 42 76 05 77
 - E-mail: hej@webhjerte.dk
 - Website: https://www.webhjerte.dk/
+- Platforme: WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (Next.js/React)
+- AI: AI-chatbots, AI-automatisering, AI-booking, lead-kvalificering og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI
 - Arbejdsområde: Horsens, Midtjylland, Jylland og hele Danmark (online)
 
 ## Priser (DKK, ekskl. moms)
@@ -28,6 +30,299 @@
 - Er kunden ikke tilfreds med designet, betales 0 kr for designet.
 - Typisk live på 2–10 dage, afhængigt af pakke.
 - Domæne og kode tilhører kunden.
+
+
+---
+
+# Vi bygger alle typer hjemmesider – på den platform, der passer til dig
+URL: https://www.webhjerte.dk/alle-typer-hjemmesider
+
+WordPress, Shopify, Webflow, Wix eller skræddersyet kode? Jeg arbejder på tværs af platforme og vælger ikke efter vane, men efter hvad din virksomhed, dit budget og din hverdag kræver. Og er du allerede på en platform, optimerer eller flytter jeg gerne.
+
+Kort svar: WebHjerte bygger hjemmesider og webshops i WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (fx Next.js og React). Platformen vælges efter behov: WordPress til selvredigering, Shopify til hurtig webshop, Webflow til designfrihed og skræddersyet kode til maksimal hastighed og specialfunktioner. Priser fra 2.500 kr (ekskl. moms), og alle løsninger kan udvides med AI-funktioner.
+
+## Hvilken platform skal jeg vælge?
+Tabellen er en tommelfingerregel. Jeg gennemgår dit behov og anbefaler ærligt – også hvis det betyder en enklere og billigere løsning, end du forventede.
+Platform | Bedst til | Styrker | Vær opmærksom på
+WordPress | Virksomhedssider, blogs, selvredigering | Fleksibelt, stort økosystem, nemt at redigere | Kræver opdateringer og få, gode plugins
+WooCommerce | Webshops på WordPress | Ingen platformsafgift, fuld kontrol | Kræver vedligeholdelse og hosting
+Shopify | Hurtig, driftssikker webshop | Betaling, lager og apps er indbygget | Månedligt abonnement og gebyrer
+Webflow | Designstærke sider og kampagner | Visuel frihed, hurtig hosting | Mere begrænset til avancerede funktioner
+Wix / Squarespace | Meget enkle sider og portfolier | Hurtig opstart, lav startpris | Begrænset SEO-kontrol og fleksibilitet
+Skræddersyet kode (Next.js, React) | Hastighed, unikke funktioner, integrationer | Meget hurtig, fuld frihed, lav vedligeholdelse | Indhold redigeres via CMS eller af udvikler
+
+## Jeg arbejder med både nye og eksisterende sider
+- Ny hjemmeside eller webshop på den platform, der passer bedst.
+- Redesign af en eksisterende side – med bevarelse af indhold og SEO-værdi.
+- Migrering mellem platforme (fx fra Wix til WordPress eller fra WooCommerce til Shopify) uden at miste placeringer.
+- Optimering af hastighed, SEO og konvertering på din nuværende platform.
+- Tilpasninger, plugins, integrationer og fejlretning.
+- Overtagelse af drift og vedligeholdelse fra en tidligere leverandør.
+
+## WordPress og WooCommerce
+WordPress er det mest udbredte redigeringssystem og et godt valg, hvis du selv vil rette tekster, billeder og priser. Jeg bygger skræddersyede designs, optimerer hastighed og SEO og sørger for sikkerhed og opdateringer. Til webshops bruger jeg WooCommerce, når du vil have fuld kontrol og ingen platformsafgift.
+
+## Shopify
+Shopify er ofte den hurtigste vej til en driftssikker webshop: betaling, lager, fragt og skatteregler er klar fra start. Jeg opsætter butikken, tilpasser design, forbinder betaling og fragt og gør produktsiderne klar til Google.
+
+## Webflow, Wix og Squarespace
+Har du allerede en Webflow-, Wix- eller Squarespace-side, hjælper jeg med design, SEO og tilpasninger. Webflow er et stærkt valg til designdrevne sider og kampagner, mens Wix og Squarespace passer til meget enkle behov. Når din virksomhed vokser ud af platformen, hjælper jeg med at flytte til noget mere fleksibelt.
+
+## Skræddersyet kode: Next.js og React
+Til maksimal hastighed, særlige funktioner og integrationer bygger jeg i moderne kode, fx Next.js og React. Siderne er forudgenereret og leveres hurtigt, hvilket giver bedre Core Web Vitals, bedre SEO og lav vedligeholdelse. Det er den teknik, som WebHjerte selv er bygget i.
+
+## Alle platforme kan få AI
+Uanset platform kan jeg tilføje AI: en chatbot, der svarer kunder døgnet rundt, automatisk lead-kvalificering, AI-baseret booking eller automatiske arbejdsgange. Se hvad jeg kan implementere på siden om AI-løsninger.
+
+## Priser
+Priserne er faste og afhænger af omfang, ikke af platform: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger (webshop, kundeportal, AI-funktioner) fra 14.000 kr. Alle priser ekskl. moms. Abonnementer og gebyrer til platforme som Shopify og Webflow betales direkte til udbyderen.
+
+## Ofte stillede spørgsmål
+Q: Hvilke platforme arbejder I med?
+A: WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (Next.js og React). Jeg vælger platformen efter dit behov.
+
+Q: Kan I overtage min eksisterende hjemmeside?
+A: Ja. Jeg kan optimere, videreudvikle eller flytte din side til en anden platform – med fokus på at bevare dine placeringer i Google.
+
+Q: Hvilken platform er bedst til SEO?
+A: Alle de nævnte kan give god SEO, hvis de sættes rigtigt op. Skræddersyet kode og WordPress giver mest kontrol, mens Wix og Squarespace er mere begrænsede.
+
+Q: Koster det mere at bygge i Shopify end i WordPress?
+A: Selve udviklingsprisen afhænger af omfang. Shopify har dog løbende abonnement og gebyrer, som du betaler til Shopify.
+
+Q: Kan en hvilken som helst platform få en AI-chatbot?
+A: I de fleste tilfælde ja. Jeg kan integrere en chatbot og andre AI-funktioner på WordPress, Shopify, Webflow og skræddersyede sider.
+
+
+---
+
+# Shopify webshop: fra idé til driftssikker butik
+URL: https://www.webhjerte.dk/shopify-hjemmeside
+
+Jeg hjælper små og mellemstore virksomheder med at opsætte, designe og optimere Shopify-butikker – og med at flytte en eksisterende webshop til Shopify uden at miste placeringer.
+
+Kort svar: Shopify er en abonnementsbaseret webshop-platform, hvor betaling, lager og fragt er indbygget. WebHjerte opsætter og designer Shopify-butikker, tilknytter danske betalingsmetoder og fragt, optimerer produktsider til Google og kan tilføje AI-funktioner som chatbot og produktanbefalinger. Skræddersyede webshops starter fra 14.000 kr ekskl. moms.
+
+## Hvornår er Shopify det rigtige valg?
+Shopify passer til virksomheder, der vil i gang hurtigt og have en driftssikker løsning uden at tænke på servere og sikkerhed. Du betaler et månedligt abonnement og gebyrer, men får til gengæld en løsning, der er bygget til at sælge.
+- Du vil sælge fysiske eller digitale produkter online og vil hurtigt i luften.
+- Du ønsker minimal teknisk drift og indbygget sikkerhed.
+- Du har brug for mange betalings- og fragtmuligheder.
+- Du vil koble webshoppen på sociale medier og markedspladser.
+
+## Hvad jeg laver i Shopify
+- Opsætning af butik, produkter, kategorier og lager.
+- Tilpasning af tema og design, så butikken matcher dit brand.
+- Betaling (fx kort og MobilePay via betalingsudbydere), fragt og momsindstillinger.
+- SEO for produkter og kategorier, struktureret data og hastighedsoptimering.
+- Migrering fra WooCommerce, Wix eller andre platforme med omdirigeringer, så du bevarer SEO-værdi.
+- Apps og integrationer (regnskab, lager, nyhedsbreve).
+- Handelsbetingelser, privatlivspolitik og cookie-samtykke.
+
+## Shopify vs WooCommerce
+ | Shopify | WooCommerce (WordPress)
+Opstart | Hurtig | Kræver hosting og opsætning
+Drift og sikkerhed | Håndteres af Shopify | Din eller min opgave
+Omkostninger | Abonnement og transaktionsgebyrer | Hosting, plugins og betalingsgebyrer
+Fleksibilitet | Høj via apps og tema | Meget høj, fuld kontrol
+Passer til | Hurtig og driftssikker shop | Shops med særlige behov eller blog og indhold
+
+## Shopify og AI
+En moderne webshop kan bruge AI til at hjælpe kunderne: en chatbot, der svarer på spørgsmål om levering og returnering, automatisk produktbeskrivelse, anbefalinger og lead-opsamling. Jeg integrerer AI i din butik, så du sparer tid på kundeservice og øger salget.
+
+## Pris
+Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr ekskl. moms. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en Shopify webshop?
+A: Hos WebHjerte starter webshops fra 14.000 kr ekskl. moms. Shopifys abonnement og apps kommer oveni og betales til Shopify.
+
+Q: Kan I flytte min webshop til Shopify?
+A: Ja. Jeg flytter produkter, kategorier og indhold og sætter omdirigeringer op, så du bevarer SEO-værdi.
+
+Q: Kan jeg få MobilePay i Shopify?
+A: Ja, via betalingsudbydere, der understøtter MobilePay. Jeg hjælper med opsætningen.
+
+Q: Kan en Shopify-butik få en AI-chatbot?
+A: Ja. Jeg kan integrere en chatbot, der besvarer kundespørgsmål og hjælper med bestillinger.
+
+
+---
+
+# AI i din virksomhed: kundeservice, booking og automatisering – implementeret
+URL: https://www.webhjerte.dk/ai-loesninger
+
+AI er ikke kun noget for store virksomheder. Jeg implementerer praktiske AI-løsninger, der sparer dig timer hver uge, svarer kunder døgnet rundt og gør din virksomhed synlig i både Google og AI-assistenter som ChatGPT.
+
+Kort svar: WebHjerte implementerer AI i små og mellemstore virksomheder: AI-chatbot på hjemmesiden, automatisk besvarelse og booking, lead-kvalificering, automatiserede arbejdsgange og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI. AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr, og AI SEO starter fra 3.500 kr (ekskl. moms). Du får et fast tilbud inden for 24 timer.
+
+## Hvad kan AI konkret gøre for din virksomhed?
+De fleste lokale virksomheder bruger mange timer på de samme opgaver: besvare de samme spørgsmål, bekræfte bookinger, sortere henvendelser og skrive ensartede mails. Det er præcis den slags opgaver, AI er god til. Målet er ikke at erstatte dig, men at give dig tid til arbejdet, der kræver et menneske – og sikre, at ingen kunde ender uden svar.
+- Svar kunderne med det samme – også om aftenen og i weekenden.
+- Kvalificér henvendelser, så du kun bruger tid på relevante kunder.
+- Book møder og tider automatisk og send påmindelser.
+- Spar tid på gentagne opgaver: tilbud, bekræftelser, opfølgning.
+- Bliv nævnt, når kunder spørger ChatGPT, Gemini og Google AI.
+
+## Hvad jeg implementerer
+### AI-chatbot på hjemmesiden
+En chatbot trænet på din virksomheds egne oplysninger – priser, ydelser, åbningstider og typiske spørgsmål. Den svarer dine besøgende, indsamler kontaktoplysninger og sender dig en beskrivelse af henvendelsen. Du bestemmer tone og grænser, og kan altid overtage samtalen.
+### Automatisk booking og kundeservice
+AI, der hjælper kunden med at vælge tid, bekræfter bookingen og håndterer ændringer. Det sparer telefonopkald og reducerer udeblivelser. Kan kobles på din kalender og dit bookingsystem.
+### Lead-kvalificering
+AI stiller de rigtige spørgsmål (budget, behov, tidsramme) og leverer en kvalificeret henvendelse direkte til dig – via mail, SMS eller en besked i den kanal, du bruger.
+### Automatiserede arbejdsgange
+Forbind dine værktøjer, så information flytter sig af sig selv: kontaktformular → CRM → bekræftelsesmail → påmindelse. Jeg sætter workflows op med AI, hvor det giver mening, og simple regler, hvor det er nok.
+### AI i webshop og indhold
+Produktanbefalinger, automatiske produktbeskrivelser, hjælp til kundeservice om levering og returnering og assistance til indholdsproduktion – med din gennemgang før noget publiceres.
+### AI-synlighed (GEO / AI SEO)
+Gør din hjemmeside nem at citere for ChatGPT, Gemini, Perplexity og Google AI-oversigter med struktureret data, svar-først-indhold og llms.txt.
+
+## Min tilgang: praktisk, ærlig og sikker
+- Start med et behov, ikke en teknologi: hvilken opgave koster dig mest tid eller kunder?
+- Små, målbare skridt – fx en chatbot til de 20 mest stillede spørgsmål.
+- Mennesket bestemmer: du kan altid gennemgå, justere og overtage.
+- Datasikkerhed og GDPR: jeg fortæller, hvilke data AI-værktøjet behandler, og sætter samtykke og privatlivspolitik op.
+- Ingen overdrevne løfter: AI kan tage fejl, så vi tester grundigt og sætter klare rammer.
+
+## Sådan foregår et AI-projekt
+1. Gratis behovsafklaring: Vi gennemgår dine opgaver og finder de steder, hvor AI giver størst effekt.
+2. Konkret forslag og fast pris: Du får en beskrivelse af løsningen, tidsplan og pris inden for 24 timer.
+3. Opsætning og træning: Jeg sætter løsningen op og træner den på dine egne oplysninger.
+4. Test: Vi tester sammen med typiske kundespørgsmål og justerer svar og grænser.
+5. Lancering og opfølgning: Løsningen går live, og jeg følger op på brug og kvalitet, så den bliver bedre over tid.
+
+## For hvem giver AI mest mening?
+- Håndværkere og servicevirksomheder, der får mange gentagne forespørgsler og tilbudsønsker.
+- Saloner, klinikker og restauranter med tidsbestilling og spørgsmål om åbningstider og priser.
+- Webshops med mange spørgsmål om levering, retur og produkter.
+- Konsulenter og rådgivere, der vil kvalificere henvendelser, før de bruger tid.
+- Virksomheder, der vil findes i ChatGPT og Google AI.
+
+## Pris
+AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr (ekskl. moms). Mindre tilføjelser, fx en chatbot til en eksisterende hjemmeside, aftales individuelt efter behov – du får et fast tilbud inden for 24 timer. AI SEO-pakker starter fra 3.500 kr. Løbende udgifter til AI-værktøjer (fx brug af sprogmodeller) afhænger af omfang og oplyses på forhånd.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster det at få en AI-chatbot?
+A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. En chatbot til en eksisterende side aftales individuelt, og du får et fast tilbud inden for 24 timer.
+
+Q: Kan AI erstatte min kundeservice?
+A: AI kan overtage de gentagne spørgsmål og give kunden svar med det samme, men du bør altid kunne overtage samtalen. Jeg bygger løsningen, så mennesker stadig har kontrollen.
+
+Q: Er AI-løsninger GDPR-kompatible?
+A: De kan være det, hvis de sættes korrekt op. Jeg gennemgår, hvilke data der behandles, og sætter samtykke og privatlivspolitik op. Har du særlige krav, bør du få dem vurderet af en jurist.
+
+Q: Virker det på min eksisterende hjemmeside?
+A: I de fleste tilfælde ja – uanset om den er bygget i WordPress, Shopify, Webflow eller kode.
+
+Q: Kan jeg se, hvad kunderne spørger om?
+A: Ja. Samtalerne giver værdifuld viden om, hvad kunderne efterspørger, og bruges til at forbedre både svar og hjemmesidens indhold.
+
+Q: Hvad er forskellen på AI-løsninger og AI SEO?
+A: AI-løsninger er funktioner i din virksomhed (chatbot, booking, automatisering). AI SEO handler om at blive fundet og nævnt i Google og AI-assistenter.
+
+
+---
+
+# AI-chatbot til din hjemmeside: svar kunderne, mens du arbejder
+URL: https://www.webhjerte.dk/ai-chatbot-til-hjemmeside
+
+En chatbot, der kender din virksomhed, svarer på kundernes spørgsmål med det samme, indsamler henvendelser og booker tider – også uden for åbningstid.
+
+Kort svar: En AI-chatbot er en samtaleassistent på din hjemmeside, der besvarer spørgsmål ud fra din virksomheds egne oplysninger, kvalificerer leads og kan booke tider. WebHjerte implementerer chatbots på WordPress, Shopify, Webflow og skræddersyede sider med GDPR-opsætning. Chatbots indgår i skræddersyede løsninger fra 14.000 kr, mindre opsætninger tilbydes efter individuelt tilbud.
+
+## Hvad er en AI-chatbot?
+En AI-chatbot er et lille vindue på din hjemmeside, hvor besøgende kan stille spørgsmål i almindeligt sprog. Den bruger en sprogmodel (samme teknologi som ChatGPT), men besvarer kun ud fra de oplysninger, du giver den: priser, ydelser, åbningstider, levering, ofte stillede spørgsmål og kontaktveje.
+Det adskiller den fra gamle “regelbaserede” chatbots, som kun kunne give faste svar. En AI-chatbot forstår spørgsmålet, selv når det er formuleret på mange måder, og kan svare naturligt.
+
+## Hvad kan chatbotten?
+- Besvare spørgsmål om priser, ydelser, åbningstider, levering og returnering.
+- Indsamle navn, kontaktoplysninger og beskrivelse af behovet.
+- Kvalificere leads ved at stille opfølgende spørgsmål.
+- Hjælpe kunden med at booke en tid eller et opkald.
+- Henvise til de rigtige sider, produkter eller kontaktpersoner.
+- Overdrage samtalen til dig, når spørgsmålet kræver et menneske.
+- Svare på dansk og andre sprog.
+
+## Hvad får du ud af det?
+Fordel | Forklaring
+Svar 24/7 | Kunden får hjælp med det samme – også aften og weekend
+Flere henvendelser | Besøgende, der ellers forlader siden, bliver fanget
+Tidsbesparelse | Gentagne spørgsmål bliver besvaret automatisk
+Bedre leads | Du modtager henvendelser med relevant information
+Indsigt | Du lærer, hvad kunderne egentlig spørger om
+
+## Sikkerhed, GDPR og kontrol
+Jeg sætter chatbotten op, så den tydeligt oplyser, at den er en AI, og så besøgende kender til databehandlingen. Privatlivspolitikken opdateres, så den beskriver, hvilke data chatbotten behandler. Du bestemmer, hvad den må og ikke må svare på, og kan til enhver tid se samtalerne.
+AI kan i sjældne tilfælde tage fejl. Derfor tester jeg den grundigt på typiske spørgsmål, sætter klare grænser og sørger for, at kunder altid kan nå et menneske.
+
+## Hvilke platforme?
+Chatbotten kan integreres på WordPress, WooCommerce, Shopify, Webflow og skræddersyede Next.js-sider. Har du allerede en hjemmeside, tilføjer jeg den uden at bygge siden om.
+
+## Pris og forløb
+AI-chatbots indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. En chatbot til en eksisterende hjemmeside aftales individuelt efter, hvor meget den skal kunne – du får et fast tilbud inden for 24 timer. De fleste chatbots kan sættes op på få dage, når dine oplysninger er samlet.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en AI-chatbot til hjemmesiden?
+A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. En chatbot til en eksisterende hjemmeside aftales individuelt, og du får et fast tilbud inden for 24 timer.
+
+Q: Kan chatbotten finde på forkerte svar?
+A: Det kan ske i sjældne tilfælde. Derfor begrænser jeg den til dine egne oplysninger, tester grundigt og sætter regler for, hvad den ikke må svare på.
+
+Q: Kan jeg selv rette i, hvad chatbotten ved?
+A: Ja. Jeg viser, hvordan du opdaterer viden, priser og svar, så chatbotten altid er aktuel.
+
+Q: Er det GDPR-kompatibelt?
+A: Det kan det være, når det er sat korrekt op med information om AI, samtykke og opdateret privatlivspolitik. Jeg hjælper med opsætningen.
+
+
+---
+
+# AI-automatisering: lad systemerne klare de kedelige opgaver
+URL: https://www.webhjerte.dk/ai-automatisering-virksomhed
+
+Hver uge går der timer med at flytte information rundt, sende de samme mails og følge op på henvendelser. Jeg automatiserer det – med AI, hvor det giver mening, og med simple regler, hvor det er nok.
+
+Kort svar: AI-automatisering betyder, at software overtager gentagne arbejdsopgaver: fra kontaktformular til CRM og bekræftelsesmail, automatiske påmindelser, opsamling af leads, rapporter og besvarelse af standardspørgsmål. WebHjerte designer og implementerer automatiseringer for små og mellemstore virksomheder, typisk som en del af en skræddersyet løsning fra 14.000 kr eller som mindre projekter efter individuelt tilbud.
+
+## Hvad kan automatiseres?
+Område | Eksempel på automatisering
+Henvendelser | Kontaktformular → AI vurderer behov → besked til dig og bekræftelsesmail til kunden
+Booking | Kunden vælger tid → kalender opdateres → SMS-påmindelse dagen før
+Kundeservice | Chatbot besvarer standardspørgsmål og sender komplekse sager videre
+Salg | Ny lead → registreres i CRM → opfølgningsmail efter 3 dage
+Anmeldelser | Efter udført opgave → automatisk anmodning om Google-anmeldelse
+Indhold | Udkast til tekster og opslag, som du gennemgår og godkender
+Rapportering | Ugentlig oversigt over henvendelser, trafik og bookinger
+
+## Min tilgang
+1. Kortlæg tidsslugerne: Vi finder de 3–5 opgaver, der koster mest tid eller giver flest tabte kunder.
+2. Vælg værktøjer: Jeg bruger gennemprøvede værktøjer og egne integrationer – og vælger den enkleste løsning, der virker.
+3. Byg og test: Automatiseringen sættes op og testes med virkelige eksempler.
+4. Overlevér: Du får en kort dokumentation og ved præcis, hvad der sker i baggrunden.
+5. Følg op: Vi justerer, når vi har set den i brug.
+
+## Hvad er en AI-agent?
+En AI-agent er en assistent, der ikke kun besvarer spørgsmål, men også udfører opgaver – fx at slå en tid op i kalenderen, oprette en kunde i systemet eller sende en mail. For små virksomheder giver agenter mest værdi i afgrænsede opgaver med klare regler. Jeg bygger dem med rammer og godkendelser, så du altid har kontrollen.
+
+## Realistiske forventninger
+- AI er et værktøj, ikke et trylleslag – de bedste resultater kommer, når processen er klar.
+- Alt, der påvirker kunder eller økonomi, bør kunne gennemgås af et menneske.
+- Du betaler for brug af AI-tjenester løbende – jeg oplyser forventede omkostninger på forhånd.
+- Start småt og udvid, når du ser effekten.
+
+## Pris
+Automatiseringer indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. Mindre automatiseringer aftales individuelt, og du får et fast tilbud inden for 24 timer.
+
+## Ofte stillede spørgsmål
+Q: Hvad kan jeg spare med automatisering?
+A: Det afhænger af opgaverne, men mange virksomheder sparer flere timer om ugen på bookinger, opfølgning og kundespørgsmål.
+
+Q: Skal jeg skifte mine nuværende systemer?
+A: Normalt ikke. Jeg forbinder de værktøjer, du allerede bruger.
+
+Q: Er det sikkert at bruge AI med kundedata?
+A: Det kan det være med korrekt opsætning, databehandleraftaler og information til kunderne. Jeg hjælper med at vælge sikre løsninger.
 
 
 ---
@@ -907,6 +1202,64 @@ A: Det er et valg. Vil du have trafik og omtale fra AI-søgning, skal crawlerne 
 
 Q: Hvad er det vigtigste enkelte tiltag?
 A: At besvare kundernes spørgsmål klart og tidligt på siden og at have korrekte, ens virksomhedsoplysninger overalt.
+
+
+---
+
+# AI i små virksomheder: 10 konkrete eksempler, der virker
+URL: https://www.webhjerte.dk/blog/ai-i-smaa-virksomheder-10-eksempler
+Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+
+Glem store buzzwords. Her er ti praktiske måder, hvorpå en lokal virksomhed kan bruge AI i dag – og hvad du skal være opmærksom på.
+
+Kort svar: Små virksomheder får mest ud af AI på afgrænsede opgaver: chatbot til kundespørgsmål, automatisk booking, kvalificering af leads, opfølgning, anmodning om anmeldelser, udkast til tekster og synlighed i AI-søgning. Start med den opgave, der koster mest tid, og sørg for, at et menneske altid kan gribe ind.
+
+## De 10 eksempler
+### 1. Chatbot til de mest stillede spørgsmål
+Priser, åbningstider, levering, retur: en AI-chatbot besvarer dem med det samme, så du undgår de samme opkald hver dag.
+### 2. Automatisk booking og påmindelser
+Kunden vælger tid selv, kalenderen opdateres, og en påmindelse sendes automatisk. Det reducerer udeblivelser.
+### 3. Kvalificering af henvendelser
+AI stiller opfølgende spørgsmål om behov, tidsramme og budget og leverer en færdig oversigt til dig, så du kun bruger tid på relevante kunder.
+### 4. Udkast til tilbud og mails
+AI skriver første udkast ud fra dine skabeloner og kundens oplysninger. Du gennemgår og sender.
+### 5. Opfølgning på tilbud
+Automatisk påmindelse efter få dage øger chancen for et svar – uden at du skal huske det.
+### 6. Anmodning om anmeldelser
+Efter udført opgave sendes et venligt link til Google-anmeldelse. Flere anmeldelser styrker din lokale synlighed.
+### 7. Indhold og opslag
+AI kan hjælpe med udkast til blogindlæg, beskrivelser og opslag. Brug det som udgangspunkt og tilføj dine egne erfaringer.
+### 8. Produktbeskrivelser og anbefalinger i webshop
+Hurtigere oprettelse af produkter og relevante forslag til kunderne.
+### 9. Oversættelse og flersproget kundeservice
+Gør det nemt at hjælpe turister, tilflyttere og udenlandske kunder.
+### 10. Synlighed i AI-søgning
+Gør din hjemmeside nem at citere for ChatGPT, Gemini og Google AI med svar-først-indhold og struktureret data.
+
+## Sådan kommer du i gang
+1. Find tidsslugeren: Hvilken opgave gør du igen og igen? Start dér.
+2. Definér rammerne: Hvad må AI gøre selv, og hvad skal du godkende?
+3. Test i lille skala: Prøv med de 20 mest almindelige spørgsmål eller én proces.
+4. Mål og justér: Se på brugen og kvaliteten og forbedr løbende.
+
+## Hvad skal du passe på?
+- AI kan tage fejl – lad aldrig kritiske beslutninger køre uden kontrol.
+- Overvej GDPR: hvilke persondata behandles, og er kunden informeret?
+- Vær ærlig overfor kunder om, at de taler med en AI.
+- Hold dine oplysninger opdaterede, så AI ikke giver forkerte priser eller tider.
+
+## Få hjælp til at implementere
+Jeg implementerer AI-løsninger som chatbot, booking, lead-kvalificering og automatisering – med fast pris og fokus på praktisk effekt. Fortæl, hvad der koster dig mest tid, så finder vi den rigtige løsning.
+
+## Ofte stillede spørgsmål
+Q: Er AI dyrt for små virksomheder?
+A: Det behøver det ikke være. Mange løsninger kan sættes op til en fast pris, og de løbende udgifter til AI-tjenester er ofte beskedne.
+
+Q: Hvor starter jeg?
+A: Med den opgave, der koster mest tid eller giver flest tabte kunder – ofte kundespørgsmål eller booking.
+
+Q: Mister jeg kontrollen?
+A: Nej, hvis løsningen er sat rigtigt op. Du bestemmer reglerne og kan altid gribe ind.
 
 
 ---

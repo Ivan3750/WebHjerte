@@ -175,7 +175,7 @@ export default function ContentPage({
               data-speakable
               className="rounded-2xl bg-white border border-[#e8e6e6] border-l-4 border-l-[#00a8e8] px-6 py-5 mb-12 max-w-4xl"
             >
-              <p className="text-[11px] uppercase tracking-[0.14em] text-[#7a7a7a] mb-2">{summaryLabel}</p>
+              <p className="text-[11px] uppercase tracking-[0.14em] text-[#666] mb-2">{summaryLabel}</p>
               <p className="text-[15px] text-[#1c1e1e] leading-[1.75]">{summary}</p>
             </aside>
           )}
@@ -185,7 +185,7 @@ export default function ContentPage({
           {toc.length > 2 ? (
             <nav aria-label="Indhold på siden" className="hidden lg:block">
               <div className="sticky top-24">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#7a7a7a] mb-4">På denne side</p>
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#666] mb-4">På denne side</p>
                 <ol className="flex flex-col gap-2.5 border-l border-[#dcdada]">
                   {toc.map((t) => (
                     <li key={t.id}>
@@ -288,7 +288,7 @@ export default function ContentPage({
                 ))}
                 {section.cta && (
                   <p className="mt-5 text-[14px]">
-                    <Link href={section.cta.href} className="text-[#00a8e8] font-medium hover:underline underline-offset-4">
+                    <Link href={section.cta.href} className="text-[#007aab] font-medium hover:underline underline-offset-4">
                       {section.cta.label} →
                     </Link>
                   </p>
@@ -315,7 +315,7 @@ export default function ContentPage({
       {related.length > 0 && (
         <section className="sheet bg-white border-t border-[#e8e6e6]">
           <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-14 sm:py-20">
-            <p className="text-[11px] uppercase tracking-[0.18em] text-[#7a7a7a] mb-3 flex items-center gap-3">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-[#666] mb-3 flex items-center gap-3">
               <span className="w-8 h-px bg-[#00a8e8]" />
               Læs også
             </p>

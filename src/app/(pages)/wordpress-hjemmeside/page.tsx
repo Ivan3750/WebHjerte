@@ -6,9 +6,9 @@ import Questions from "../../components/Questions";
 import PackagesBlock from "../services/_components/PackagesBlock";
 
 export const metadata = {
-  title: "WordPress Hjemmeside til Din Virksomhed | WebHjerte",
+  title: "WordPress hjemmeside fra 4.500 kr – hurtig & nem at redigere | WebHjerte",
   description:
-    "Få en WordPress-hjemmeside, du selv kan opdatere. Professionelt setup, hurtig levering og skræddersyet til din virksomhed – fra WebHjerte.",
+    "Professionel WordPress-hjemmeside, du selv kan opdatere. Skræddersyet design, SEO og hurtig levering fra Horsens. Også WooCommerce og AI-chatbot.",
   keywords:
     "wordpress hjemmeside, hjemmeside med wordpress, wordpress webbureau, wordpress horsens, wordpress midtjylland, wordpress pris",
   robots: "index, follow",

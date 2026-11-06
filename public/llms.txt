@@ -11,6 +11,8 @@
 - Telefon: +45 42 76 05 77
 - E-mail: hej@webhjerte.dk
 - Website: https://www.webhjerte.dk/
+- Platforme: WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (Next.js/React)
+- AI: AI-chatbots, AI-automatisering, AI-booking, lead-kvalificering og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI
 - Arbejdsområde: Horsens, Midtjylland, Jylland og hele Danmark (online)
 
 ## Priser (DKK, ekskl. moms)
@@ -31,6 +33,8 @@
 
 ## Kerneydelser
 - [Services og pakker](https://www.webhjerte.dk/services)
+- [AI-løsninger til virksomheder](https://www.webhjerte.dk/ai-loesninger)
+- [Alle typer hjemmesider og platforme](https://www.webhjerte.dk/alle-typer-hjemmesider)
 - [Hjemmeside pris](https://www.webhjerte.dk/hjemmeside-pris)
 - [Webdesign i Horsens](https://www.webhjerte.dk/webdesign-horsens)
 - [SEO i Horsens](https://www.webhjerte.dk/seo-horsens)
@@ -53,6 +57,11 @@
 - [Tømrere](https://www.webhjerte.dk/hjemmeside-til-tomrer)
 
 ## Områder, emner og referencer
+- [Alle typer hjemmesider](https://www.webhjerte.dk/alle-typer-hjemmesider): WebHjerte bygger og optimerer alle typer hjemmesider: WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (Next.js/React). Vi vælger platformen efter dit behov.
+- [Shopify webshop](https://www.webhjerte.dk/shopify-hjemmeside): Shopify-webshop til danske virksomheder: opsætning, tilpasset design, betaling, fragt og SEO. Hjælp til nye og eksisterende butikker, migrering og AI-funktioner.
+- [AI-løsninger til virksomheder](https://www.webhjerte.dk/ai-loesninger): Vi implementerer AI i din virksomhed: chatbot på hjemmesiden, automatisk booking og kundeservice, lead-kvalificering, workflows og AI-synlighed i ChatGPT og Google. Baseret i Horsens.
+- [AI-chatbot til hjemmeside](https://www.webhjerte.dk/ai-chatbot-til-hjemmeside): AI-chatbot til din hjemmeside eller webshop: svarer på kundespørgsmål, kvalificerer leads og booker tider – trænet på din virksomheds egne oplysninger. Fast pris og GDPR-opsætning.
+- [AI-automatisering](https://www.webhjerte.dk/ai-automatisering-virksomhed): Automatiser gentagne opgaver med AI: tilbud, bookinger, opfølgning, kundeservice og rapporter. Praktiske eksempler og fast pris til små og mellemstore virksomheder.
 - [Skræddersyede hjemmesider](https://www.webhjerte.dk/skraeddersyede-hjemmesider): Skræddersyede hjemmesider og websider til virksomheder: unikt design, hurtig kode og SEO bygget ind. Fast pris, direkte kontakt og levering på 2–10 dage.
 - [Hjemmeside til virksomhed](https://www.webhjerte.dk/hjemmeside-til-virksomhed): Få en professionel hjemmeside til din virksomhed: struktur, indhold, SEO og kontaktveje, der skaber henvendelser. Fra 2.500 kr og klar på 2–10 dage.
 - [Hjemmeside med webshop](https://www.webhjerte.dk/webshop-hjemmeside): Hjemmeside med webshop til små virksomheder: WooCommerce, Shopify eller skræddersyet løsning. Betaling, lager og SEO. Fra 14.000 kr til fast pris.
@@ -71,6 +80,7 @@
 
 ## Guides
 - [Sådan bliver din virksomhed nævnt af ChatGPT og Google AI](https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai): Praktisk guide til lokale virksomheder: 12 konkrete tiltag, der gør din hjemmeside nem at citere for ChatGPT, Google AI Overviews, Gemini og Perplexity.
+- [AI i små virksomheder: 10 konkrete eksempler, der virker](https://www.webhjerte.dk/blog/ai-i-smaa-virksomheder-10-eksempler): 10 praktiske eksempler på, hvordan små virksomheder bruger AI: chatbot, booking, tilbud, opfølgning, anmeldelser og synlighed i ChatGPT. Med tips til at komme i gang.
 - [Hvad koster en hjemmeside om året?](https://www.webhjerte.dk/blog/hvad-koster-en-hjemmeside-om-aaret): Hvad koster en hjemmeside om året? Gennemgang af domæne, hosting, vedligeholdelse og andre løbende udgifter – med konkrete tal og eksempler.
 - [SEO-tjekliste for lokale virksomheder: 25 punkter du kan tjekke i dag](https://www.webhjerte.dk/blog/seo-tjekliste-lokale-virksomheder): Praktisk SEO-tjekliste til lokale virksomheder i Horsens og Midtjylland: teknik, indhold, Google Virksomhedsprofil og lokale signaler. Gå listen igennem på en time.
 - [Sådan vælger du webbureau: 10 spørgsmål, du bør stille](https://www.webhjerte.dk/blog/vaelg-webbureau-10-spoergsmaal): Skal du vælge webbureau? Stil de 10 spørgsmål, der afslører, om bureauet passer til dig: pris, ejerskab, tid, SEO, support og referencer.

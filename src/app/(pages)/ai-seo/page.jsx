@@ -9,9 +9,9 @@ import Questions from "../../components/Questions";
 import CtaSearchBlock from "../../components/ui/CTA";
 
 export const metadata = {
-  title: "AI SEO i Horsens – få mere synlighed med AI | WebHjerte",
+  title: "AI SEO fra 3.500 kr – bliv fundet i Google & ChatGPT | WebHjerte",
   description:
-    "Bliv fundet, når kunder søger efter det, du tilbyder – på Google og i AI-søgning. Jeg optimerer din hjemmeside og indhold, så du får flere kunder uden annoncer.",
+    "AI SEO til lokale virksomheder: analyse, indhold og struktureret data, så du rangerer i Google og nævnes i ChatGPT og Google AI. Pakker fra 3.500 kr.",
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "AI SEO – få din virksomhed fundet på Google | WebHjerte",

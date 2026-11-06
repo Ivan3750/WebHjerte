@@ -9,6 +9,7 @@ import W from "../../../public/W.png";
 const mainLinks = [
   { href: "/", label: "Forside" },
   { href: "/services", label: "Services" },
+  { href: "/ai-loesninger", label: "AI" },
   { href: "/om-mig", label: "Om mig" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/kontakt", label: "Kontakt" },

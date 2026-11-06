@@ -6,9 +6,9 @@ import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
 export const metadata = {
-  title: "Hjemmeside Pris – Se Priser hos WebHjerte",
+  title: "Hjemmeside pris 2026 – faste priser fra 2.500 kr | WebHjerte",
   description:
-    "Hvad koster en hjemmeside? Se gennemsigtige priser fra 2.500 DKK. Få et konkret tilbud inden for 24 timer – ingen skjulte gebyrer.",
+    "Hvad koster en hjemmeside? Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr. Fast pris, ingen skjulte gebyrer – tilbud inden 24 timer.",
   keywords:
     "hjemmeside pris, pris på hjemmeside, pris for en hjemmeside, hvad koster en hjemmeside, webdesign pris",
   robots: "index, follow",

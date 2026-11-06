@@ -1,23 +1,27 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import HomeHero from "./components/home/HomeHero";
 import ScrollStatement from "./components/home/ScrollStatement";
-import BuildStory from "./components/home/BuildStory";
-import TilbydeSection from "./components/home/TilbydeSection";
 import AboutBlock from "./components/home/AboutBlock";
-import HomeCases from "./components/home/HomeCases";
-import Questions from "./components/Questions";
 import QuickLeadForm from "./components/ui/QuickLeadForm";
-import StickyCallButton from "./components/ui/StickyCallButton";
 import ScrollProgress from "./components/ui/ScrollProgress";
 import TrustStrip from "./components/home/TrustStrip";
+import AiFocus from "./components/home/AiFocus";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
 import SpotlightCard from "./components/home/fx/SpotlightCard";
 
+// Sektioner under første skærm kodesplittes, så den første hydrering på mobil bliver kortere (lavere TBT)
+const BuildStory = dynamic(() => import("./components/home/BuildStory"));
+const TilbydeSection = dynamic(() => import("./components/home/TilbydeSection"));
+const HomeCases = dynamic(() => import("./components/home/HomeCases"));
+const Questions = dynamic(() => import("./components/Questions"));
+const StickyCallButton = dynamic(() => import("./components/ui/StickyCallButton"));
+
 export const metadata = {
-  title: "Webbureau Horsens – hjemmesider fra 2.500 kr | WebHjerte",
+  title: "Webbureau Horsens – hjemmesider, SEO & AI | WebHjerte",
   description:
-    "Webbureau i Horsens med fast pris fra 2.500 kr og levering på 2–10 dage. Første designudkast på 48 timer, 0 kr hvis du ikke kan lide det. Få svar inden for 24 timer.",
+    "Webbureau i Horsens: hjemmesider i WordPress, Shopify eller kode fra 2.500 kr – plus AI-chatbot og SEO. Design på 48 timer, 0 kr hvis det ikke passer.",
   keywords: [
     "webbureau Horsens",
     "webdesign Horsens",
@@ -122,6 +126,7 @@ export default function Home() {
       <ScrollStatement />
       <BuildStory />
       <TilbydeSection />
+      <AiFocus />
       <GuaranteesBlock />
       <HomeCases />
       <AboutBlock />

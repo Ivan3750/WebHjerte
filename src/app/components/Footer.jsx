@@ -28,12 +28,15 @@ const groups = [
   {
     title: "Områder og emner",
     links: [
+      { href: "/ai-loesninger", label: "AI-løsninger" },
+      { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
+      { href: "/shopify-hjemmeside", label: "Shopify" },
       { href: "/webbureau-jylland", label: "Webbureau Jylland" },
       { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
       { href: "/webbureau-vejle", label: "Webbureau Vejle" },
       { href: "/wordpress-horsens", label: "WordPress Horsens" },
-      { href: "/digitalt-bureau-horsens", label: "Digitalt bureau Horsens" },
       { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
+      { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
     ],
   },
   {
