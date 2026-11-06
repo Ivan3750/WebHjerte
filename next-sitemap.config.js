@@ -1,4 +1,25 @@
 /** @type {import('next-sitemap').IConfig} */
+
+const AI_CRAWLERS = [
+  "GPTBot",
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "ClaudeBot",
+  "Claude-User",
+  "Claude-SearchBot",
+  "anthropic-ai",
+  "PerplexityBot",
+  "Perplexity-User",
+  "Google-Extended",
+  "Applebot-Extended",
+  "Bingbot",
+  "CCBot",
+  "cohere-ai",
+  "Meta-ExternalAgent",
+  "DuckAssistBot",
+  "MistralAI-User",
+];
+
 export default {
   // Samme host som canonical-tags (www)
   siteUrl: 'https://www.webhjerte.dk',
@@ -27,7 +48,10 @@ export default {
         // /_next/ må IKKE blokeres: Google skal kunne hente CSS/JS for at rendere siden
         disallow: ['/api/'],
       },
+      // AI-assistenter og AI-søgning er velkomne: indholdet er skrevet til at blive citeret
+      ...AI_CRAWLERS.map((userAgent) => ({ userAgent, allow: '/', disallow: ['/api/'] })),
     ],
+    additionalSitemaps: [],
   },
 
   transform: async (config, path) => {
@@ -36,11 +60,16 @@ export default {
       '/webdesign-horsens': 0.9,
       '/seo-horsens': 0.9,
       '/webbureau-midtjylland': 0.9,
+      '/webbureau-jylland': 0.9,
       '/services': 0.9,
+      '/ai-seo': 0.9,
+      '/geo-ai-synlighed': 0.9,
       '/hjemmeside-pris': 0.8,
       '/om-mig': 0.8,
       '/portefolje': 0.8,
       '/kontakt': 0.8,
+      '/ofte-stillede-spoergsmaal': 0.8,
+      '/blog': 0.7,
     };
 
     return {

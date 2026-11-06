@@ -7,11 +7,11 @@ import { FadeUp, RevealLines } from "../home/fx/Reveal";
  */
 export default function PageHero({
   breadcrumbs = [],
-  eyebrow,
+  eyebrow = null,
   titleLines,
-  lead,
-  actions,
-  aside,
+  lead = null,
+  actions = null,
+  aside = null,
   size = "lg",
 }) {
   const titleSize =

@@ -80,6 +80,52 @@ const sections = [
       "Først tager vi en uforpligtende snak om dine mål. Derefter får du et designudkast inden for 48 timer, som vi tilretter, indtil du er tilfreds. Når designet er godkendt, bygger jeg hjemmesiden, tester den på mobil og computer og sætter den i luften. Du kan se eksempler på tidligere projekter i min portefølje.",
     ],
   },
+  {
+    h2: "Hvad er godt webdesign i 2026?",
+    paragraphs: [
+      "Godt webdesign handler ikke om at have flest effekter, men om at gøre det nemt for den rigtige besøgende at forstå dit tilbud og tage kontakt. I 2026 betyder det en hurtig side på mobil, et klart budskab øverst, tydelige knapper og tillidssignaler som anmeldelser, referencer og CVR-nummer.",
+      "Designet skal også være gennemtænkt til søgemaskiner og AI-assistenter: logisk overskriftsstruktur, hurtig indlæsning og tekst, der besvarer spørgsmål. Et flot design, som ingen finder, er spild af penge.",
+    ],
+  },
+  {
+    h2: "Mine designprincipper",
+    bullets: [
+      "Mobile first: over halvdelen af besøgende kommer fra telefon, så jeg designer til den lille skærm først.",
+      "Ét tydeligt mål pr. side: ring, book eller skriv.",
+      "Klar typografi og luft, så teksten er let at læse.",
+      "Få farver og et konsekvent udtryk, der matcher dit brand.",
+      "Billeder i den rigtige størrelse og format, så siden ikke bliver langsom.",
+      "Tilgængelighed: kontrast, læsbare skrifter og tastaturnavigation.",
+    ],
+  },
+  {
+    h2: "Webdesign til forskellige typer virksomheder",
+    paragraphs: [
+      "En håndværker har brug for at vise ydelser, områder og referencer og gøre det nemt at ringe. En restaurant skal vise menu, åbningstider og booking. En salon har brug for tidsbestilling og billeder, der sælger. Jeg tilpasser designet til din branche og din målgruppe i stedet for at bruge samme skabelon til alle.",
+    ],
+    cta: { href: "/hjemmeside-til-haandvaerkere", label: "Se hjemmesider til brancher" },
+  },
+  {
+    h2: "Priser på webdesign i Horsens",
+    table: {
+      head: ["Pakke", "Fra pris (ekskl. moms)", "Levering"],
+      rows: [
+        ["Landingside", "2.500 kr", "ca. 2 dage"],
+        ["Basis (3–5 sider)", "4.500 kr", "ca. 5 dage"],
+        ["Standard (op til 8 sider)", "7.500 kr", "ca. 10 dage"],
+        ["Skræddersyet", "14.000 kr", "Aftales"],
+      ],
+    },
+    paragraphs: ["Du får en fast pris, før vi går i gang. Se også guiden til, hvad en hjemmeside koster om året, hvis du vil have overblik over de løbende udgifter."],
+    cta: { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", label: "Hvad koster en hjemmeside om året?" },
+  },
+  {
+    h2: "Webdesign i Horsens og resten af Jylland",
+    paragraphs: [
+      "Jeg sidder i Horsens og arbejder med virksomheder i hele Jylland. Se siderne om webbureau i Midtjylland, Jylland, Aarhus og Vejle, hvis du vil se, hvordan jeg arbejder i dit område.",
+    ],
+    cta: { href: "/webbureau-jylland", label: "Webbureau Jylland" },
+  },
 ];
 
 const related = [
@@ -109,6 +155,7 @@ export default function WebdesignHorsensPage() {
       eyebrow="Webdesign i Horsens"
       h1="Webdesign i Horsens – professionelt design til fast pris"
       intro="Jeg designer og bygger moderne, hurtige hjemmesider til virksomheder i Horsens. Du får et første designudkast på 48 timer, fast pris fra 2.500 kr og direkte kontakt med mig – ingen mellemled."
+      summary="WebHjerte er en webdesigner i Horsens, der designer og bygger hurtige, mobilvenlige hjemmesider til fast pris fra 2.500 kr. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis det ikke passer, og ejer selv domæne og kode."
       sections={sections}
       faqs={faqs}
       related={related}

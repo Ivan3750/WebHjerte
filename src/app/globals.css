@@ -45,6 +45,8 @@ a:hover{
   line-height: 1;
 }
 
+.maintitle.text-white { color: #fff; }
+
 .title {
   color: #5e5f5f;
   font-family: Unbounded;
@@ -777,3 +779,14 @@ footer {
   .sheet,
   footer { border-radius: 24px 24px 0 0; margin-top: -24px; }
 }
+
+/* Lange juridiske tekster (privatliv, handelsbetingelser) i samme stil som resten af sitet */
+.legal { font-family: inherit; color: #555; }
+.legal h2 { line-height: 1.25; font-size: clamp(20px, 2.4vw, 26px); font-weight: 600; color: #1c1e1e; margin: 2.5rem 0 1rem; padding-bottom: .5rem; border-bottom: 1px solid #e4e2e2; letter-spacing: -0.2px; }
+.legal h3 { line-height: 1.3; font-size: 17px; font-weight: 600; color: #1c1e1e; margin: 1.75rem 0 .6rem; }
+.legal h4 { font-size: 15px; font-weight: 600; color: #1c1e1e; margin: 1.25rem 0 .5rem; }
+.legal p, .legal li { font-size: 14px; line-height: 1.9; color: #555; }
+.legal p { margin-bottom: 1rem; }
+.legal ul { list-style: disc; margin: 0 0 1rem 1.25rem; }
+.legal li { margin-bottom: .4rem; }
+.legal a { color: #0088c2; text-decoration: underline; text-underline-offset: 3px; }

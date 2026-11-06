@@ -37,11 +37,12 @@ export function RevealLines({ lines, className = "", delay = 0, as = "h2" }) {
 }
 
 /** Fade + løft ind i viewport, med mulighed for forsinkelse. */
-export function FadeUp({ children, className = "", delay = 0, y = 32, as = "div" }) {
+export function FadeUp({ children, className = "", delay = 0, y = 32, as = "div", ...rest }) {
   const reduce = useReducedMotion();
   const Tag = motion[as] || motion.div;
   return (
     <Tag
+      {...rest}
       className={className}
       initial={{ opacity: 0, y: reduce ? 0 : y }}
       whileInView={{ opacity: 1, y: 0 }}

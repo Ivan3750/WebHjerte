@@ -15,9 +15,9 @@ import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
 import SpotlightCard from "./components/home/fx/SpotlightCard";
 
 export const metadata = {
-  title: "Webbureau Horsens | Webdesign til lokale virksomheder | WebHjerte",
+  title: "Webbureau Horsens – hjemmesider fra 2.500 kr | WebHjerte",
   description:
-    "Lokalt webbureau i Horsens: hjemmesider fra 2.500 kr, live på 2–10 dage. Direkte kontakt med udvikleren. Få et gratis tilbud inden for 24 timer.",
+    "Webbureau i Horsens med fast pris fra 2.500 kr og levering på 2–10 dage. Første designudkast på 48 timer, 0 kr hvis du ikke kan lide det. Få svar inden for 24 timer.",
   keywords: [
     "webbureau Horsens",
     "webdesign Horsens",
@@ -55,33 +55,15 @@ export const metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "LocalBusiness"],
-  "@id": "https://www.webhjerte.dk/#organization",
-  name: "WebHjerte",
+  "@type": "WebPage",
+  "@id": "https://www.webhjerte.dk/#webpage",
   url: "https://www.webhjerte.dk/",
-  description:
-    "Webbureau i Horsens, der bygger professionelle hjemmesider til virksomheder i Horsens og Midtjylland.",
-  areaServed: [
-    { "@type": "City", name: "Horsens" },
-    { "@type": "AdministrativeArea", name: "Midtjylland" },
-    { "@type": "Country", name: "Danmark" },
-  ],
-  serviceType: ["Webdesign", "Webudvikling", "Hjemmesider", "SEO"],
-  founder: { "@type": "Person", name: "Ivan Kohan" },
-  telephone: "+45 42 76 05 77",
-  email: "hej@webhjerte.dk",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Horsens",
-    postalCode: "8700",
-    addressCountry: "DK",
-  },
-  priceRange: "$$",
-  sameAs: [
-    "https://www.linkedin.com/company/webhjerte",
-    "https://www.facebook.com/profile.php?id=61575549052729",
-    "https://www.instagram.com/webhjerte",
-  ],
+  name: "Webbureau Horsens – hjemmesider fra 2.500 kr | WebHjerte",
+  inLanguage: "da-DK",
+  isPartOf: { "@id": "https://www.webhjerte.dk/#website" },
+  about: { "@id": "https://www.webhjerte.dk/#organization" },
+  primaryImageOfPage: "https://www.webhjerte.dk/W.png",
+  speakable: { "@type": "SpeakableSpecification", cssSelector: ["[data-speakable]"] },
 };
 
 const localLinks = [
@@ -105,6 +87,16 @@ const localLinks = [
     title: "Hvad koster en hjemmeside?",
     desc: "Se faste priser fra 2.500 kr – ingen skjulte gebyrer.",
   },
+];
+
+const topicLinks = [
+  { href: "/webbureau-jylland", label: "Webbureau Jylland" },
+  { href: "/webbureau-aarhus", label: "Aarhus" },
+  { href: "/webbureau-vejle", label: "Vejle" },
+  { href: "/wordpress-horsens", label: "WordPress" },
+  { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
+  { href: "/geo-ai-synlighed", label: "AI-synlighed" },
+  { href: "/ofte-stillede-spoergsmaal", label: "FAQ" },
 ];
 
 const nicheLinks = [
@@ -147,8 +139,8 @@ export default function Home() {
                 lines={["Webbureau i Horsens, der", "leverer kunder – ikke", "bare et design"]}
                 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.12] text-[clamp(24px,3.2vw,40px)] mb-6"
               />
-              <FadeUp as="p" delay={0.1} className="text-[14px] text-[#5f5f5f] leading-[1.85] mb-4">
-                Som webbureau i Horsens hjælper jeg lokale virksomheder med at blive fundet på Google og omsætte
+              <FadeUp as="p" data-speakable delay={0.1} className="text-[14px] text-[#5f5f5f] leading-[1.85] mb-4">
+                WebHjerte er et webbureau i Horsens, der bygger hjemmesider fra 2.500 kr med levering på 2–10 dage. Som webbureau i Horsens hjælper jeg lokale virksomheder med at blive fundet på Google og omsætte
                 besøgende til henvendelser. Du får en hurtig, mobilvenlig hjemmeside med SEO bygget ind fra første dag –
                 til en fast pris, så du ved præcis, hvad det koster.
               </FadeUp>
@@ -178,6 +170,19 @@ export default function Home() {
           </div>
 
           <FadeUp className="mt-12 pt-8 border-t border-[#e4e2e2] flex flex-wrap items-center gap-3">
+            <span className="text-[12px] text-[#5a5a5a]">Områder og emner:</span>
+            {topicLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-[12px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-1.5 hover:border-[#00a8e8] hover:text-[#00a8e8] hover:-translate-y-0.5 transition-all"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </FadeUp>
+
+          <FadeUp className="mt-4 flex flex-wrap items-center gap-3">
             <span className="text-[12px] text-[#5a5a5a]">Hjemmesider til din branche:</span>
             {nicheLinks.map((l) => (
               <Link

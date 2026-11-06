@@ -79,6 +79,36 @@ const sections = [
       "Mange større bureauer er bygget til store budgetter og lange forløb. Jeg har valgt det modsatte: enkle processer, klare priser og hurtig levering. Du ved, hvad det koster, hvornår det er klar, og hvem du skal ringe til, hvis du har et spørgsmål.",
     ],
   },
+  {
+    h2: "Hvad er forskellen på et lokalt og et stort webbureau?",
+    table: {
+      head: ["", "WebHjerte (lokalt, lille)", "Stort bureau"],
+      rows: [
+        ["Kontakt", "Direkte med udvikleren", "Via projektleder eller account manager"],
+        ["Pris", "Fast pris fra 2.500 kr", "Ofte timebaseret, højere startpris"],
+        ["Svartid", "Inden for 24 timer", "Varierer"],
+        ["Tidsplan", "2–10 dage", "Uger til måneder"],
+        ["Bedst til", "Små og mellemstore virksomheder", "Store organisationer og komplekse projekter"],
+      ],
+    },
+  },
+  {
+    h2: "SEO i Midtjylland",
+    paragraphs: [
+      "Mange virksomheder i Midtjylland betjener kunder i flere byer. Derfor bygger jeg SEO med både et lokalt og et regionalt perspektiv: ydelsessider, serviceområder og indhold, der svarer på det, kunderne spørger om. Det giver bedre synlighed end én enkelt generel forside.",
+    ],
+    cta: { href: "/seo-horsens", label: "Læs om lokal SEO" },
+  },
+  {
+    h2: "Find dit område",
+    bullets: [
+      "Hele Jylland – Skagen til Kolding",
+      "Aarhus og Østjylland",
+      "Vejle og trekantsområdet",
+      "Horsens – mit hjemmemarked",
+    ],
+    cta: { href: "/webbureau-jylland", label: "Se webbureau Jylland" },
+  },
 ];
 
 const related = [
@@ -108,6 +138,7 @@ export default function WebbureauMidtjyllandPage() {
       eyebrow="Webbureau i Midtjylland"
       h1="Webbureau i Midtjylland – hjemmesider til fast pris"
       intro="WebHjerte er et lokalt webbureau fra Horsens, der bygger hurtige og professionelle hjemmesider til virksomheder i hele Midtjylland. Direkte kontakt med udvikleren og levering på 2–10 dage."
+      summary="WebHjerte er et webbureau i Horsens, der bygger hjemmesider til virksomheder i hele Midtjylland: Aarhus, Silkeborg, Vejle, Skanderborg, Randers, Viborg og Herning. Priser fra 2.500 kr, levering på 2–10 dage og direkte kontakt med udvikleren."
       sections={sections}
       faqs={faqs}
       related={related}

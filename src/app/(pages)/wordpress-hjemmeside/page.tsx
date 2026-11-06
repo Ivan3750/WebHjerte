@@ -1,4 +1,4 @@
-import AnimatedInView from "../../components/ui/AnimatedInView";
+import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import ProblemLoesning from "./_components/ProblemLoesning";
 import FormToLead from "../../components/ui/FormToLead";
 import CasesCarousel from "../../components/home/CasesCarousel";
@@ -35,18 +35,18 @@ export const metadata = {
 const WordpressHjemmeside = () => {
   return (
     <>
-      <section className="mt-[75px]">
-        <AnimatedInView as="h1" className="maintitle text-center">
-          WordPress Hjemmeside – Hurtig &amp; Billig
-        </AnimatedInView>
-        <AnimatedInView
-          as="h2"
-          className="subtitle text-center mt-5 text-balance"
-        >
-          Få en WordPress-hjemmeside, du selv kan opdatere. Professionelt
-          setup fra WebHjerte.
-        </AnimatedInView>
-      </section>
+      <PageHero
+        breadcrumbs={[{ label: "Forside", href: "/" }, { label: "WordPress hjemmeside" }]}
+        eyebrow="WordPress"
+        titleLines={["WordPress hjemmeside –", "hurtig og til fast pris"]}
+        lead="Få en WordPress-hjemmeside, du selv kan opdatere. Professionelt setup, hurtig levering og direkte kontakt med udvikleren."
+        actions={
+          <>
+            <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+            <GhostLink href="/hjemmeside-pris">Se priser</GhostLink>
+          </>
+        }
+      />
       <ProblemLoesning />
 {/*       <WordpressFordele />
  */}      <CasesCarousel />

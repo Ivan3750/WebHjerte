@@ -1,0 +1,1164 @@
+# WebHjerte
+
+> WebHjerte er et lokalt webbureau i Horsens, Midtjylland, drevet af webudvikler Ivan Kohan. Vi bygger hurtige, mobilvenlige og søgemaskineoptimerede hjemmesider med fast pris til små og mellemstore virksomheder i Horsens, Midtjylland og resten af Danmark. Kontakt går direkte til udvikleren – uden mellemled. Sproget på sitet er dansk.
+
+## Hurtige fakta
+
+- Navn: WebHjerte
+- Grundlægger: Ivan Kohan
+- CVR: 46485823
+- Adresse: Horsens, 8700, Midtjylland
+- Telefon: +45 42 76 05 77
+- E-mail: hej@webhjerte.dk
+- Website: https://www.webhjerte.dk/
+- Arbejdsområde: Horsens, Midtjylland, Jylland og hele Danmark (online)
+
+## Priser (DKK, ekskl. moms)
+
+- Landingside: fra 2.500 kr. Levering på ca. 2 dage. 1 side til kampagner og annoncer.
+- Basis: fra 4.500 kr. Levering på ca. 5 dage. 3–5 sider.
+- Standard: fra 7.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Skræddersyet: fra 14.000 kr. Aftales individuelt. Webshop, kundeportal og andre specialløsninger.
+- AI SEO: Basis fra 3.500 kr, Standard fra 6.500 kr, Skræddersyet fra 12.000 kr.
+- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned.
+
+## Garantier
+
+- Første designudkast inden for 48 timer efter den første samtale. Intet bygges, før designet er godkendt.
+- Er kunden ikke tilfreds med designet, betales 0 kr for designet.
+- Typisk live på 2–10 dage, afhængigt af pakke.
+- Domæne og kode tilhører kunden.
+
+
+---
+
+# Skræddersyede hjemmesider, der ligner dig – og leverer kunder
+URL: https://www.webhjerte.dk/skraeddersyede-hjemmesider
+
+Ingen færdige skabeloner med dit logo klistret på. Jeg designer og koder din hjemmeside ud fra din virksomhed, dine kunder og dine mål – og leverer den til fast pris.
+
+Kort svar: En skræddersyet hjemmeside er designet og bygget specifikt til din virksomhed i stedet for at være en færdig skabelon. Fordelene er unikt udtryk, hurtigere indlæsning, bedre SEO og frihed til at udvide. Hos WebHjerte starter skræddersyede hjemmesider fra 2.500 kr (landingside), og avancerede løsninger fra 14.000 kr.
+
+## Hvad betyder “skræddersyet”?
+Skræddersyet betyder, at designet og strukturen tegnes fra bunden med udgangspunkt i dit brand, dit tilbud og dine kunders vej mod en henvendelse. Det er modsætningen til skabelonløsninger, hvor du tilpasser farver og tekst i et design, som tusindvis af andre også bruger.
+Det betyder ikke, at det nødvendigvis er dyrt eller langsomt. Fordi jeg arbejder med få, gennemprøvede byggesten, kan jeg levere unikke hjemmesider hurtigt – ofte på 2–10 dage.
+
+## Skræddersyet vs. skabelon
+ | Skræddersyet | Færdig skabelon
+Design | Unikt og tilpasset din virksomhed | Samme udseende som mange andre
+Hastighed | Kun den kode, du har brug for | Ofte tung med ubrugte funktioner
+SEO | Struktur og indhold bygget til dine søgninger | Generisk opsætning
+Fleksibilitet | Kan udvides præcist, som du ønsker | Begrænset af skabelonens muligheder
+Pris i starten | Fra 2.500 kr | Billigere eller gratis
+Ejerskab | Kode og domæne tilhører dig | Varierer – ofte bundet til platform
+
+## Min proces
+1. Afklaring: Vi taler om dine kunder, din konkurrence, dine mål og dit budget.
+2. Design inden for 48 timer: Du får et konkret designudkast. Passer det ikke, betaler du 0 kr for designet.
+3. Udvikling: Først når designet er godkendt, bygger jeg siden i hurtig, moderne kode (fx Next.js) eller WordPress.
+4. Test: Jeg tester på forskellige skærme og browsere og tjekker hastighed og tilgængelighed.
+5. Lancering: Siden går live på dit domæne, og du får 30 dages support.
+
+## Hvad er inkluderet?
+- Responsivt design til mobil, tablet og desktop.
+- Teknisk SEO-grundlag og struktureret data.
+- Kontaktformular, Google Maps og klik-for-at-ringe.
+- Hurtig indlæsning og optimerede billeder.
+- SSL-certifikat og grundlæggende sikkerhed.
+- Mulighed for CMS (WordPress), booking, webshop og integrationer.
+- Dit domæne og din kode tilhører dig fra dag ét.
+
+## Hvad koster det?
+Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er ekskl. moms.
+
+## Ofte stillede spørgsmål
+Q: Hvad er en skræddersyet hjemmeside?
+A: En hjemmeside, der er designet og bygget specifikt til din virksomhed i stedet for at bruge en færdig skabelon.
+
+Q: Er skræddersyede hjemmesider dyre?
+A: Ikke nødvendigvis. Hos WebHjerte starter de fra 2.500 kr for en landingside og 4.500 kr for en Basis-hjemmeside.
+
+Q: Kan jeg selv redigere en skræddersyet hjemmeside?
+A: Ja, hvis den bygges i WordPress eller kobles på et redigeringssystem. Ellers kan jeg stå for rettelser via en vedligeholdelsesaftale.
+
+Q: Hvem ejer hjemmesiden?
+A: Det gør du. Domæne og kode tilhører dig.
+
+
+---
+
+# Professionel hjemmeside til din virksomhed
+URL: https://www.webhjerte.dk/hjemmeside-til-virksomhed
+
+Din hjemmeside er din vigtigste sælger – den arbejder døgnet rundt. Jeg bygger erhvervshjemmesider, der skaber tillid, rangerer på Google og gør det nemt for kunder at kontakte dig.
+
+Kort svar: En god virksomhedshjemmeside forklarer hurtigt, hvad du tilbyder, hvem du hjælper og hvordan kunder kontakter dig. Den indlæses hurtigt på mobil, er søgemaskineoptimeret og viser tillidssignaler som anmeldelser og CVR. Hos WebHjerte koster en professionel hjemmeside fra 2.500 kr, og den kan være klar på 2–10 dage.
+
+## Hvad skal en virksomhedshjemmeside kunne?
+De fleste besøgende bestemmer sig inden for få sekunder, om de bliver på siden. En virksomhedshjemmeside skal derfor svare på tre spørgsmål hurtigt: Hvad tilbyder I? Er I troværdige? Hvordan kommer jeg i gang? Alt andet er sekundært.
+- Et tydeligt budskab øverst på forsiden: hvem hjælper du, og med hvad?
+- Synlige kontaktveje: telefon, e-mail og formular på alle sider.
+- Beviser: anmeldelser, referencer, cases, certificeringer og CVR.
+- Priser eller prisintervaller, hvis det er muligt – det øger tilliden.
+- Hurtig indlæsning og perfekt visning på mobil.
+- Lokale oplysninger, så Google forstår, hvor du arbejder.
+
+## Hvilke sider skal I have?
+Små virksomheder kommer langt med 3–8 sider. Det er bedre at have få gode sider end mange tynde.
+Side | Formål
+Forside | Forklar tilbuddet og led besøgende videre
+Ydelser (én side pr. hovedydelse) | Rangér på søgninger og forklar detaljer
+Om os / om mig | Skab tillid ved at vise, hvem der står bag
+Cases eller referencer | Dokumentér resultater
+Kontakt | Gør det nemt at tage fat i jer
+Blog / guides | Besvar kundernes spørgsmål og rangér bredere
+Privatliv og vilkår | Lovkrav og tryghed
+
+## SEO og synlighed fra første dag
+Jeg bygger SEO ind i fundamentet: logisk overskriftsstruktur, hurtige billeder, titler og beskrivelser, intern linking, sitemap og struktureret data. Siden er desuden skrevet, så den kan forstås af AI-søgning som ChatGPT og Google AI.
+
+## Faste priser
+Alle priser ekskl. moms. Efter lancering får du 30 dages support.
+- Landingside: fra 2.500 kr (1 side).
+- Basis: fra 4.500 kr (3–5 sider).
+- Standard: fra 7.500 kr (op til 8 sider, SEO og analytics, booking).
+- Skræddersyet: fra 14.000 kr (webshop, kundeportal m.m.).
+
+## Typiske fejl på virksomhedshjemmesider
+- For meget tekst om “os” og for lidt om kundens problem.
+- Skjulte kontaktoplysninger eller en formular med for mange felter.
+- Store, uoptimerede billeder, der gør siden langsom.
+- Ingen tydelig opfordring til handling.
+- Forældede priser, åbningstider eller billeder.
+- Manglende tilpasning til mobil.
+
+## Ofte stillede spørgsmål
+Q: Hvor mange sider skal en virksomhedshjemmeside have?
+A: For de fleste små virksomheder er 3–8 sider nok: forside, ydelser, om os, kontakt og evt. cases og blog.
+
+Q: Hvad skal jeg levere af indhold?
+A: Du leverer logo, billeder og gerne en kort beskrivelse. Jeg kan hjælpe med at strukturere og formulere teksterne.
+
+Q: Hvor lang tid tager det?
+A: Typisk 2–10 dage afhængigt af pakke og hvor hurtigt indhold er klart.
+
+
+---
+
+# Hjemmeside med webshop – sælg online uden bøvl
+URL: https://www.webhjerte.dk/webshop-hjemmeside
+
+Jeg bygger webshops til små og mellemstore virksomheder: enkle at administrere, hurtige for kunderne og klar til søgemaskiner. Du får en fast pris og en løsning, du ejer selv.
+
+Kort svar: En webshop er en hjemmeside med produkter, kurv og betaling. Hos WebHjerte bygges webshops som skræddersyede løsninger fra 14.000 kr (ekskl. moms), typisk i WooCommerce eller som skræddersyet kode. Prisen afhænger af antal produkter, betalingsløsninger, integrationer og fragt.
+
+## Hvilken webshop skal jeg vælge?
+Jeg vurderer sammen med dig, hvad der passer til dit sortiment og din økonomi, og anbefaler ærligt – også hvis det betyder, at du ikke behøver mig.
+Løsning | Passer til | Bemærkninger
+WooCommerce (WordPress) | Små og mellemstore shops med behov for fleksibilitet | Ingen platformsafgifter, men kræver vedligeholdelse
+Shopify | Hurtig start, mange apps | Månedligt abonnement og transaktionsgebyrer
+Skræddersyet | Specielle behov, bookinger, abonnementer | Højeste fleksibilitet og hastighed, højere startpris
+
+## Hvad indgår i en webshop?
+- Produktsider med billeder, beskrivelser, varianter og priser.
+- Kategorier, søgning og filtrering.
+- Kurv og kasse med betaling via fx MobilePay, kort og faktura (afhænger af udbyder).
+- Fragt og levering efter dine regler.
+- Lager- og ordrehåndtering.
+- SEO for produkter og kategorier med struktureret data (Product og Offer).
+- Handelsbetingelser, privatlivspolitik og cookie-samtykke (GDPR).
+- Analytics, så du kan se, hvad der sælger.
+
+## Vigtige ting at have styr på
+En webshop har lovkrav, som en almindelig hjemmeside ikke har: fortrydelsesret, tydelig prisvisning inklusive moms, oplysning om levering og betalingsmetoder samt korrekt behandling af persondata. Jeg hjælper med at sætte det op efter gældende regler, men du bør altid have dine handelsbetingelser vurderet, hvis du er i tvivl om juraen.
+
+## Pris og tid
+En enkel webshop starter fra 14.000 kr ekskl. moms og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en webshop?
+A: Hos WebHjerte fra 14.000 kr ekskl. moms. Prisen afhænger af antal produkter, betalingsløsninger og integrationer.
+
+Q: Hvilken platform er bedst?
+A: Det afhænger af dit behov. WooCommerce er fleksibelt og uden platformsafgifter, Shopify er hurtigt at komme i gang med, og skræddersyet kode giver størst frihed.
+
+Q: Kan jeg selv tilføje produkter?
+A: Ja. Jeg viser dig, hvordan du opretter og redigerer produkter, priser og lager.
+
+
+---
+
+# Bæredygtigt webdesign: lette sider, der belaster mindre
+URL: https://www.webhjerte.dk/baeredygtigt-webdesign
+
+Hver gang en side indlæses, bruges der strøm – hos serveren, i netværket og på besøgendes enhed. Jeg bygger lette, hurtige hjemmesider, så dataforbrug og energiforbrug holdes nede uden at gå på kompromis med designet.
+
+Kort svar: Bæredygtigt webdesign handler om at bygge hjemmesider, der overfører mindre data, bruger mindre kode og kører på effektiv (gerne grøn) hosting. Det giver samtidig hurtigere indlæsning, bedre brugeroplevelse og bedre SEO. WebHjerte bygger efter disse principper i alle projekter, men er ikke certificeret som miljøvirksomhed.
+
+## Hvorfor har websider en miljøpåvirkning?
+Internettet kører på datacentre, kabler og enheder, som alle bruger energi. En tung hjemmeside med store billeder, unødvendige scripts og mange eksterne tjenester kræver mere dataoverførsel og mere processorarbejde end en let side. Hver enkelt side betyder lidt – men over tusindvis af besøg bliver det til noget.
+Det er svært at give et præcist tal for én hjemmesides CO₂-aftryk, fordi det afhænger af energimix, enheder og forbindelse. Retningen er til gengæld klar: Mindre data og mindre kode giver lavere forbrug.
+
+## Mine principper for lette hjemmesider
+- Billeder i moderne formater (AVIF og WebP) i den rigtige størrelse og med lazy loading.
+- Minimal JavaScript – kun det, der giver værdi for besøgende.
+- Systemskrifttyper eller få, optimerede webfonts.
+- Ingen auto-afspillende video og tunge animationer uden grund.
+- Få eksterne scripts og tredjepartstjenester, og indlæs dem først, når de er nødvendige.
+- Statisk generering og caching, så siden ikke genopbygges ved hvert besøg.
+- Enkelt og tydeligt design, der gør det nemt at finde frem og kræver færre sidevisninger.
+
+## Hosting: hvad kan du vælge?
+Hosting-udbydere kan have vidt forskellige energiprofiler. Nogle oplyser, at de bruger vedvarende energi eller køber garantier for oprindelse. Jeg anbefaler at vælge udbydere med dokumenteret grøn energi og kort afstand til dine kunder, og jeg hjælper med at vurdere mulighederne. Se mere om drift og hosting på siden om hosting og vedligeholdelse.
+
+## Bæredygtighed og SEO hænger sammen
+Hurtige sider rangerer bedre og konverterer bedre. Derfor er bæredygtigt webdesign sjældent et offer – det er en gevinst på flere fronter: lavere dataforbrug, bedre Core Web Vitals, glade besøgende og bedre synlighed i Google og AI-søgning.
+
+## Ærlighed om grønne claims
+Jeg lover ikke, at din hjemmeside er “klimaneutral”. Det er en påstand, der er svær at dokumentere. Jeg lover til gengæld at bygge så let og effektivt som muligt, være transparent om valg af hosting og værktøjer og måle sidens vægt og hastighed, så du kan se forskellen.
+
+## Ofte stillede spørgsmål
+Q: Hvad er bæredygtigt webdesign?
+A: Webdesign, der minimerer dataforbrug, kode og energiforbrug – ofte ved lette sider, optimerede billeder og effektiv hosting.
+
+Q: Er jeres hjemmesider klimaneutrale?
+A: Nej, og det påstår jeg ikke. Jeg bygger lette og hurtige sider, men en komplet klimaneutralitet er svær at dokumentere.
+
+Q: Koster det mere?
+A: Nej. Lette sider er ofte billigere at drifte og hurtigere at bygge, fordi jeg undgår unødvendige funktioner.
+
+
+---
+
+# Webstrategi: en klar plan, før du bygger eller betaler for mere trafik
+URL: https://www.webhjerte.dk/webstrategi
+
+En hjemmeside uden strategi er en brochure. Jeg hjælper dig med at afklare mål, målgruppe, budskab og prioriteringer, så hver krone og hver time på nettet bliver brugt, hvor det betyder mest.
+
+Kort svar: En webstrategi er en kort, konkret plan for, hvordan din hjemmeside skal skabe resultater: hvem du taler til, hvad du vil have dem til at gøre, hvilket indhold der skal bygges, og hvordan du måler succes. For små virksomheder kan den skrives på få dage og danne grundlag for en ny hjemmeside eller en optimering af den eksisterende.
+
+## Hvad er en webstrategi?
+En webstrategi besvarer fem spørgsmål: Hvem er dine bedste kunder? Hvad søger de efter? Hvad skal hjemmesiden få dem til at gøre? Hvilket indhold og hvilke sider skal der til? Og hvordan ved du, om det virker?
+Den behøver ikke være et tykt dokument. For små og mellemstore virksomheder er en klar plan på nogle få sider ofte mere værdifuld – fordi den bliver brugt.
+
+## Sådan arbejder jeg med strategien
+1. Status: Jeg gennemgår din nuværende hjemmeside, Search Console og analytics, hvis du har det. Er siden ny, starter vi med dine mål.
+2. Målgruppe og søgemønstre: Hvem er kunderne, og hvilke spørgsmål og søgninger bruger de i Google og AI-assistenter?
+3. Konkurrenter: Hvem dukker op, når dine kunder søger, og hvad gør de godt – og dårligt?
+4. Struktur og indhold: Hvilke sider skal der til, og hvad skal hver side besvare? Hvor kan du slå konkurrenterne?
+5. Prioritering: En køreplan i rækkefølge efter effekt og indsats, med forslag til måling.
+
+## Hvad får du ud af det?
+- Et klart overblik over, hvad din hjemmeside skal opnå.
+- En prioriteret liste over sider, tekster og tekniske forbedringer.
+- Forslag til søgeord og spørgsmål, der passer til din branche og dit område.
+- Bedre grundlag for at vælge pakke og budget.
+- En plan for synlighed i både Google og AI-svar.
+
+## Webtjek: første skridt
+Hvis du allerede har en hjemmeside, er det mest effektive første skridt et webtjek. Det er en gratis gennemgang af hastighed, mobilvisning, SEO-grundlag og indhold, som peger på de vigtigste forbedringer. Mange virksomheder opdager her, at en række små rettelser giver mere end en helt ny side.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en webstrategi?
+A: Den indgår i en samtale og et tilbud, når jeg bygger din hjemmeside. Vil du have strategien alene, aftaler vi en fast pris efter en kort samtale.
+
+Q: Er en webstrategi nødvendig for en lille virksomhed?
+A: Du behøver ikke et stort dokument, men en klar plan for mål, målgruppe og indhold sparer tid og penge.
+
+Q: Hvad er forskellen på webstrategi og SEO?
+A: Strategien afklarer mål og prioriteringer. SEO er en del af udførelsen, som får siden til at rangere.
+
+
+---
+
+# Hosting og vedligeholdelse: hvad koster det at holde en hjemmeside kørende?
+URL: https://www.webhjerte.dk/hosting-og-vedligeholdelse
+
+En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 195 kr/md.
+
+Kort svar: Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md (ekskl. moms).
+
+## De løbende omkostninger ved en hjemmeside
+Beløbene er vejledende og varierer med udbyder. Når jeg sender et tilbud, får du overblik over de poster, der er relevante for netop din løsning.
+Post | Typisk niveau | Hvad dækker det?
+Domæne (.dk, .com) | ca. 100–200 kr/år | Din adresse på nettet
+Hosting | Fra gratis til ca. 500 kr/md (afhænger af løsning) | Serverplads, hastighed og oppetid
+SSL-certifikat | Ofte inkluderet | Krypteret forbindelse (https)
+Vedligeholdelse hos WebHjerte | 195–395 kr/md | Opdateringer, sikkerhed, rettelser og support
+Tredjepartsværktøjer | Varierer | Fx booking, nyhedsbreve, betalingsløsning
+
+## Hvad er inkluderet i mit tilbud?
+- 30 dages gratis support efter lancering.
+- Opsætning af hosting og SSL ved lancering (udbyder og abonnement betales direkte af dig, hvis intet andet er aftalt).
+- Domæne og kode tilhører dig – du er ikke låst til mig.
+- Gennemgang af, hvordan siden redigeres og vedligeholdes.
+
+## Vedligeholdelsesabonnement fra 195 kr/md
+Vil du ikke selv holde styr på opdateringer og små rettelser, kan jeg gøre det for dig. Abonnementet kan omfatte:
+- Opdatering af system og plugins (WordPress) eller afhængigheder (skræddersyet kode).
+- Sikkerhedsovervågning og backup.
+- Små rettelser af tekst, billeder og priser.
+- Overvågning af oppetid og hastighed.
+- Hurtig support ved fejl.
+
+## Hvorfor vedligeholdelse er vigtig
+Forældede systemer og plugins er den hyppigste årsag til sikkerhedsproblemer. Dertil kommer, at priser, åbningstider og tilbud skal være aktuelle – både for kundernes skyld og for søgemaskinerne. En side, der aldrig opdateres, mister gradvist både tillid og synlighed.
+Jeg anbefaler at planlægge mindst en gennemgang hvert kvartal: tjek links, formularer, priser og indhold, og kig i Search Console for fejl.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en hjemmeside om året?
+A: Udover selve udviklingen skal du regne med domæne (ca. 100–200 kr/år), hosting og evt. vedligeholdelse. Hos WebHjerte fra 195 kr/md for vedligeholdelse.
+
+Q: Er support inkluderet?
+A: Ja. Du får 30 dages gratis support efter lancering.
+
+Q: Er jeg bundet til jer?
+A: Nej. Domæne og kode tilhører dig, og du kan til enhver tid flytte siden eller vælge en anden leverandør.
+
+Q: Kan I flytte min eksisterende hjemmeside?
+A: Ja, i mange tilfælde. Kontakt mig, så vurderer jeg opgaven.
+
+
+---
+
+# Webbureau i Jylland – fra Skagen til Kolding
+URL: https://www.webhjerte.dk/webbureau-jylland
+
+WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.
+
+Kort svar: WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr (ekskl. moms).
+
+## Et webbureau, der dækker hele Jylland
+Jylland er en lang halvø med mange lokale markeder: håndværkere i Vestjylland, restauranter i Aarhus, turistvirksomheder i Nordjylland og servicefirmaer i trekantsområdet. Fælles for dem er, at de skal findes af kunder i deres eget område – og her er en lokal, hurtig og velstruktureret hjemmeside det vigtigste redskab.
+Jeg er baseret i Horsens, centralt placeret i Østjylland, og arbejder med virksomheder i hele regionen. Alt kan klares online: kickoff-møde på video, designgodkendelse via link, løbende afstemning i telefon eller mail. Og kommer det til at give mening at mødes, kan vi aftale et fysisk møde.
+
+## Områder i Jylland
+### Østjylland og Djursland
+Horsens, Aarhus, Odder, Skanderborg, Ebeltoft og Grenaa. Her er konkurrencen om lokale søgninger størst, og forskellen på en gennemsnitlig og en god hjemmeside viser sig hurtigt i antallet af henvendelser.
+### Midtjylland
+Silkeborg, Viborg, Herning, Ikast, Randers og Skive. Mange virksomheder her mangler en moderne, mobilvenlig side og et ordentligt Google-fundament.
+### Trekantområdet og Sydjylland
+Vejle, Fredericia, Kolding, Middelfart og Esbjerg. God placering for virksomheder, der betjener både private og erhverv på tværs af kommunegrænser.
+### Vest- og Nordjylland
+Ringkøbing, Holstebro, Thisted, Hjørring, Aalborg og Frederikshavn. Her er onlinesamarbejdet en fordel: du slipper for at betale for kørsel og mødetid.
+
+## Hvad får du som kunde?
+- Fast pris aftalt på forhånd – ingen timebaseret overraskelse bagefter.
+- Første designudkast inden for 48 timer, og 0 kr for designet, hvis det ikke passer.
+- Typisk levering på 2–10 dage afhængigt af pakke.
+- SEO, mobiloptimering og hurtig indlæsning bygget ind fra første dag.
+- Struktureret data og indhold, der også kan findes i AI-søgning (ChatGPT, Google AI).
+- Domæne og kode tilhører dig – ingen bindinger.
+- 30 dages support efter lancering og herefter vedligeholdelse fra 195 kr/md.
+
+## Priser på hjemmesider i Jylland
+Alle priser er vejledende startpriser. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit projekt.
+Pakke | Fra pris (ekskl. moms) | Levering | Omfang
+Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagne eller én ydelse
+Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
+Standard | 7.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
+Skræddersyet | 14.000 kr | Aftales | Webshop, kundeportal eller specialfunktioner
+
+## Hvorfor vælge et lille webbureau frem for et stort?
+Store bureauer er gode til store organisationer med komplekse behov. Men for en lokal virksomhed med 1–30 ansatte betyder lagene af projektledere, account managers og møder ofte en højere pris og længere svartid. Hos WebHjerte taler du direkte med den, der designer og bygger – og beslutninger tages på minutter, ikke uger.
+Til gengæld er jeg ikke det rette valg til meget store enterprise-projekter med flere teams og lange procesforløb. Det siger jeg ærligt fra start.
+
+## Sådan kommer vi i gang
+1. Gratis samtale: Du fortæller om din virksomhed, dine kunder og dine mål. Det tager 15–30 minutter.
+2. Tilbud inden for 24 timer: Du modtager en fast pris og en tidsplan.
+3. Designudkast inden for 48 timer: Du ser og godkender designet, før der bygges noget.
+4. Bygning og test: Jeg bygger siden, tester på mobil og desktop og indarbejder dine rettelser.
+5. Lancering og support: Siden går live, og du har 30 dages support, hvis noget skal justeres.
+
+## Ofte stillede spørgsmål
+Q: Hvilke dele af Jylland arbejder I i?
+A: Hele Jylland – og resten af Danmark. Samarbejdet foregår online, så der er ingen geografiske begrænsninger.
+
+Q: Skal jeg møde jer fysisk?
+A: Nej, men det er muligt i mange tilfælde. De fleste kunder foretrækker video eller telefon, fordi det er hurtigere.
+
+Q: Hvad koster en hjemmeside hos et webbureau i Jylland?
+A: Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 7.500 kr for Standard og 14.000 kr for skræddersyede løsninger (ekskl. moms).
+
+Q: Kan I hjælpe med at blive fundet lokalt i min by?
+A: Ja. Jeg bygger lokal SEO ind i hjemmesiden og kan hjælpe med Google Virksomhedsprofil og lokale landingssider.
+
+
+---
+
+# Webbureau til virksomheder i Aarhus
+URL: https://www.webhjerte.dk/webbureau-aarhus
+
+Du behøver ikke et dyrt bureau midt i Aarhus for at få en god hjemmeside. Jeg sidder i Horsens, kender Østjylland og leverer professionelle hjemmesider til fast pris – ofte klar på 2–10 dage.
+
+Kort svar: WebHjerte hjælper virksomheder i Aarhus med hjemmesider, SEO og AI-synlighed til fast pris fra 2.500 kr. Jeg er baseret i Horsens, cirka 45 minutter fra Aarhus, og arbejder online eller ved fysiske møder, når det giver mening.
+
+## Hjemmeside i Aarhus: stor by, hård konkurrence
+Aarhus er Danmarks næststørste by, og online er konkurrencen derefter. Søger en kunde efter “frisør Aarhus”, “VVS Aarhus” eller “restaurant Aarhus C”, vælger Google blandt hundredvis af virksomheder. Det er derfor ikke nok at have en hjemmeside – den skal være hurtig, tydelig og bygget til lokale søgninger.
+Jeg designer sider, hvor de vigtigste informationer er synlige med det samme: hvad du tilbyder, hvor du holder til, hvad det koster, og hvordan man kontakter dig. Besøgende i en storby har travlt, og siden skal arbejde for dig på få sekunder.
+
+## Hvorfor vælge et webbureau fra Horsens?
+- Samme kvalitet som bureauer i Aarhus, men uden store byoverhead i prisen.
+- Direkte kontakt med udvikleren – ingen account managers.
+- Fast pris og klar tidsplan fra dag ét.
+- 45 minutter fra Aarhus, når et fysisk møde giver værdi.
+- Online workflow, så du kan godkende design og rettelser, når det passer dig.
+
+## Brancher i Aarhus, jeg hjælper
+Mange af mine opgaver kommer fra lokale servicevirksomheder, men jeg bygger til alle brancher, der har brug for at blive fundet.
+- Håndværkere og installatører (VVS, el, tømrer, maler).
+- Restauranter, caféer og barer – med menu, booking og bestilling.
+- Saloner, klinikker og wellness – med tidsbestilling.
+- Konsulenter og rådgivere – med fokus på troværdighed og leadgenerering.
+- Små webshops og lokale detailhandlere.
+
+## Lokal SEO i Aarhus
+En del af arbejdet er at sikre, at Google forstår, at du hører til i Aarhus. Det gør jeg med lokale oplysninger i markup, tydelig omtale af bydele og opland, en optimeret Google Virksomhedsprofil og indhold, der svarer på spørgsmål, kunder faktisk stiller.
+Vil du i toppen for søgninger som “[ydelse] Aarhus”, er der som regel brug for både en god hjemmeside og løbende arbejde med indhold og omtaler. Jeg fortæller ærligt, hvor realistisk din målsætning er, og hvad det kræver.
+
+## Priser
+Priser ekskl. moms. Se hvad der er inkluderet på siden om hjemmeside pris.
+Pakke | Fra pris | Levering
+Landingside | 2.500 kr | ca. 2 dage
+Basis (3–5 sider) | 4.500 kr | ca. 5 dage
+Standard (op til 8 sider) | 7.500 kr | ca. 10 dage
+Skræddersyet | 14.000 kr | Aftales
+
+## Ofte stillede spørgsmål
+Q: Har I kontor i Aarhus?
+A: Nej, jeg er baseret i Horsens. Cirka 45 minutter fra Aarhus kan jeg komme ud ved behov, og ellers foregår alt online.
+
+Q: Er I billigere end bureauer i Aarhus?
+A: Ofte ja, fordi jeg ikke har dyre kontorer eller lange led af projektledere. Du betaler for selve arbejdet.
+
+Q: Kan I lave en hjemmeside til min Aarhus-virksomhed på under en uge?
+A: Ja, en landingside tager typisk ca. 2 dage og en Basis-hjemmeside ca. 5 dage, når tekst og billeder er klar.
+
+
+---
+
+# Webbureau i Vejle og trekantsområdet
+URL: https://www.webhjerte.dk/webbureau-vejle
+
+Vejle ligger 25 minutter fra Horsens, og mange af mine kunder findes i hele trekantsområdet. Jeg bygger hurtige hjemmesider til fast pris, med lokal SEO og direkte kontakt til udvikleren.
+
+Kort svar: WebHjerte er et webbureau med base i Horsens, ca. 25–30 minutter fra Vejle. Jeg bygger hjemmesider til virksomheder i Vejle, Fredericia, Kolding og omegn fra 2.500 kr, med levering på 2–10 dage. Et eksempel i porteføljen er Lønbæks Køreskole i Vejle.
+
+## Hjemmesider til virksomheder i Vejle
+Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt – og de forventer at kunne se priser, tilgængelighed og kontaktoplysninger på få sekunder. Min opgave er at bygge en hjemmeside, der opfylder det forventnings-niveau.
+I min portefølje finder du blandt andet en hjemmeside til Lønbæks Køreskole i Vejle. Samme tankegang bruger jeg til alle brancher: tydelig værdi, få klik til kontakt og hurtig indlæsning på mobil.
+
+## Trekantsområdet: Vejle, Fredericia og Kolding
+Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor bygger jeg sider med serviceområde, ikke kun én adresse: du kan omtale alle de byer, du dækker, uden at ende med tynde duplikatsider. Det styrker din lokale synlighed og gør siden mere nyttig for kunderne.
+- Vejle og omegn: Børkop, Give, Egtved, Jelling og Bredsten.
+- Fredericia og Middelfart.
+- Kolding og Christiansfeld.
+- Horsens og Hedensted – mit hjemmemarked.
+
+## Hvad får du?
+- Fast pris og aftalt tidsplan.
+- Responsivt design, der virker på mobil, tablet og desktop.
+- Basis-SEO og struktureret data i alle pakker.
+- Kontaktformularer, Google Maps og klik-for-at-ringe.
+- 30 dages support efter lancering.
+- Mulighed for WordPress, hvis du selv vil redigere indholdet.
+
+## Sådan prissætter jeg
+Jeg prissætter efter omfang – ikke efter timer. En landingside starter fra 2.500 kr, en Basis-hjemmeside fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr. Alle priser er ekskl. moms. Du får et fast tilbud, før vi går i gang, og prisen ændrer sig kun, hvis vi aftaler at udvide opgaven.
+
+## Ofte stillede spørgsmål
+Q: Arbejder I med virksomheder i Vejle?
+A: Ja. Jeg arbejder med virksomheder i Vejle, Fredericia, Kolding og hele Jylland. Alt kan foregå online.
+
+Q: Hvor hurtigt kan en hjemmeside være klar?
+A: En landingside ca. 2 dage, Basis ca. 5 dage og Standard ca. 10 dage – når indhold og billeder er klar.
+
+Q: Kan jeg få en hjemmeside, jeg selv kan redigere?
+A: Ja. Jeg bygger i WordPress, hvis du vil kunne rette tekster og billeder selv.
+
+
+---
+
+# WordPress-hjemmeside i Horsens og Midtjylland
+URL: https://www.webhjerte.dk/wordpress-horsens
+
+En professionel WordPress-hjemmeside, hvor du selv kan rette tekster, priser og billeder – uden at ringe til en udvikler hver gang. Jeg bygger den hurtig, sikker og klar til Google.
+
+Kort svar: WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 7.500 kr (Standard), ekskl. moms, med levering på 5–10 dage.
+
+## Hvorfor vælge WordPress?
+WordPress er verdens mest udbredte CMS, og det er der gode grunde til. Systemet er fleksibelt, har et enormt økosystem af plugins og designs, og der findes udviklere overalt. Det betyder, at din hjemmeside ikke er afhængig af én enkelt person – heller ikke mig.
+For en lille virksomhed er den største fordel, at du selv kan skifte åbningstider, tilføje en ny ydelse, skrive en nyhed eller opdatere et tilbud på fem minutter. Det holder siden frisk, hvilket både kunder og Google sætter pris på.
+
+## Hvad får du i en WordPress-løsning fra WebHjerte?
+- Skræddersyet design – ikke en uændret skabelon.
+- Hurtig opsætning med fokus på ydeevne (billedoptimering, caching, minimal plugin-brug).
+- SEO-opsætning: titler, beskrivelser, sitemap, struktureret data og lokal SEO.
+- Responsivt design til mobil og tablet.
+- Sikkerhed: opdateringer, sikre log-ind-regler og backup-opsætning.
+- Kort introduktion, så du ved, hvordan du redigerer siden.
+- 30 dages support efter lancering.
+
+## Hvornår er WordPress det rigtige valg – og hvornår er det ikke?
+Jeg anbefaler det, der passer til dit behov – ikke det, der er nemmest for mig. Jeg bygger både i WordPress og i skræddersyet kode, og vi vælger sammen.
+Situation | Anbefaling
+Du vil selv redigere tekster og billeder | WordPress
+Du vil have en blog eller nyhedssektion | WordPress
+Du har brug for en enkel webshop | WordPress med WooCommerce eller Shopify
+Du vil have maksimal hastighed og minimal vedligeholdelse | Skræddersyet kode (fx Next.js)
+Du har kun brug for én kampagneside | Landingside – ofte skræddersyet
+
+## WordPress og sikkerhed
+Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 195 kr/md, hvis du ikke selv vil stå for det.
+
+## WordPress og SEO
+WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter, struktureret data og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en WordPress-hjemmeside?
+A: En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 7.500 kr for Standard (ekskl. moms). Større løsninger aftales individuelt.
+
+Q: Kan jeg selv redigere en WordPress-hjemmeside?
+A: Ja. Du kan rette tekst, billeder og indhold uden kode. Jeg giver dig en kort introduktion ved aflevering.
+
+Q: Er WordPress sikkert?
+A: Ja, når det holdes opdateret og sat korrekt op. Jeg kan stå for opdateringer og backup via en vedligeholdelsesaftale.
+
+Q: Er WordPress langsomt?
+A: Det kan være, hvis det belastes med mange plugins. Jeg bygger med få plugins og optimerer billeder og cache, så siden bliver hurtig.
+
+
+---
+
+# Digitalt bureau i Horsens: det digitale fundament, der skaber kunder
+URL: https://www.webhjerte.dk/digitalt-bureau-horsens
+
+Marketing starter ved hjemmesiden. Jeg hjælper virksomheder i Horsens med det digitale fundament: hjemmeside, SEO, AI-synlighed, analytics og landingssider til annoncer.
+
+Kort svar: WebHjerte er et digitalt bureau i Horsens med fokus på webdesign, SEO, AI-synlighed og konverteringsoptimering. Jeg er ikke et reklame- eller PR-bureau, men leverer det tekniske og indholdsmæssige fundament, som annoncer, SEO og sociale medier bygger videre på.
+
+## Hvad jeg laver – og hvad jeg ikke laver
+Mange virksomheder søger et “marketingbureau”, når det egentlig, de mangler, er en hjemmeside, der konverterer. Før du bruger penge på annoncer, skal siden kunne omsætte besøgende til henvendelser. Dér er min styrke.
+Jeg er ikke et fuldservice-reklamebureau med kreative kampagner, tv-spots eller PR. Det tilbyder jeg ikke, og jeg anbefaler dig til dem, der gør, hvis du har brug for det. Det jeg gør, gør jeg grundigt:
+- Webdesign og webudvikling – hjemmesider og landingssider.
+- Teknisk og lokal SEO.
+- AI-synlighed (GEO) i ChatGPT, Gemini og Google AI.
+- Landingssider til Google Ads og sociale annoncer, der er hurtige og målbare.
+- Analytics: Google Analytics, Search Console og målinger af henvendelser.
+- Konverteringsoptimering: bedre kontaktformularer, tydeligere call-to-actions og hurtigere sider.
+
+## Landingssider til annoncer
+Annoncering fungerer kun, hvis den side, besøgende lander på, er skarp. En landingside fra 2.500 kr er bygget til ét formål: at få besøgende til at kontakte dig. Den indlæses hurtigt på mobil, har ét tydeligt budskab og måler hver henvendelse, så du kan se, hvad annoncerne giver.
+Jeg opsætter siden, så den kan måle konverteringer i Google Analytics og Google Ads. Selve annoncestyringen kan du tage selv eller hos en samarbejdspartner – jeg sørger for, at fundamentet er i orden.
+
+## Fra synlighed til henvendelser
+1. Fundament: Hurtig, mobilvenlig hjemmeside med klart tilbud og tydelig kontakt.
+2. Synlighed: SEO, lokale oplysninger, Google Virksomhedsprofil og AI-synlighed.
+3. Trafik: Organisk trafik, evt. suppleret med annoncer til landingssider.
+4. Konvertering: Formularer, telefonklik og booking, som kan måles.
+5. Optimering: Løbende forbedring baseret på data fra Search Console og analytics.
+
+## Hvorfor et lokalt bureau i Horsens?
+Jeg kender det lokale marked og de søgninger, som kunder i Horsens og Midtjylland bruger. Samtidig er jeg lille nok til at svare inden for 24 timer og tilpasse mig din hverdag. Du får én kontaktperson og ingen mellemled.
+
+## Ofte stillede spørgsmål
+Q: Laver I Google Ads?
+A: Jeg bygger landingssider og opsætter måling til annoncer. Selve løbende annoncestyring tilbyder jeg ikke som standard, men jeg samarbejder gerne med dit annoncebureau.
+
+Q: Er I et reklamebureau?
+A: Nej. WebHjerte er et webbureau med fokus på hjemmesider, SEO og AI-synlighed.
+
+Q: Hvad skal jeg starte med: hjemmeside, SEO eller annoncer?
+A: Start med hjemmesiden. Uden en hurtig og tydelig side går penge til annoncer og SEO til spilde.
+
+
+---
+
+# AI-synlighed: bliv nævnt, når kunderne spørger ChatGPT og Google AI
+URL: https://www.webhjerte.dk/geo-ai-synlighed
+
+Flere og flere finder en lokal virksomhed ved at stille et spørgsmål til en AI-assistent i stedet for at klikke sig igennem ti blå links. Jeg gør din hjemmeside nem at forstå, nem at citere og nem at stole på – for både Google, ChatGPT, Gemini og Perplexity.
+
+Kort svar: GEO (Generative Engine Optimization) er arbejdet med at få din virksomhed nævnt og citeret i AI-genererede svar. Det kræver tydelige svar på kundernes spørgsmål, korrekt struktureret data, konsistente virksomhedsoplysninger og en hurtig, teknisk ren hjemmeside. WebHjerte i Horsens bygger alt dette ind i hjemmesider fra 2.500 kr, og tilbyder AI SEO-pakker fra 3.500 kr.
+
+## Hvad er AI-synlighed (GEO)?
+Traditionel SEO handler om at ligge højt på Google-listen. AI-synlighed handler om noget lidt andet: at blive en del af selve svaret. Når en kunde skriver “hvem laver hjemmesider i Horsens?” til ChatGPT, Gemini eller Perplexity, eller ser en AI-oversigt øverst i Google, sammensætter modellen et svar ud fra de kilder, den kan forstå og stole på. Er din virksomhed ikke blandt dem, eksisterer du ikke i det svar – uanset hvor flot din hjemmeside er.
+Fagfolk kalder disciplinen GEO (Generative Engine Optimization) eller AEO (Answer Engine Optimization). Grundprincippet er det samme som i god SEO: hjælp søgemaskinen med at forstå, hvem du er, hvad du tilbyder, hvor du holder til, og hvorfor du er et godt valg. Forskellen er, at AI-systemer læser dit indhold som tekst og relationer – ikke kun som søgeord – og derfor belønner klarhed, konsistens og dokumenterede fakta.
+
+## Hvorfor det er vigtigt for lokale virksomheder lige nu
+Søgeadfærden ændrer sig hurtigt. Mange begynder deres søgning med en samtale: “Hvad koster en hjemmeside?”, “Hvilket webbureau i Horsens er til små virksomheder?”, “Hvor lang tid tager det at få lavet en landingside?”. AI-assistenten svarer direkte og nævner typisk kun få navne. Den, der bliver nævnt, får henvendelsen – de øvrige får ikke engang chancen for at blive vurderet.
+Samtidig viser tal fra Google Search Console for webhjerte.dk, at AI-funktionerne allerede viser siden: forsiden, services, om-siden og flere undersider er blevet vist i AI-oversigter. Det bekræfter, at et lille, lokalt websted godt kan komme med – hvis indholdet er struktureret rigtigt. Det er netop dét, jeg hjælper mine kunder med.
+- AI-svar bliver kortere og mere definitive end klassiske søgeresultater – der er plads til få kilder.
+- Lokale forespørgsler med pris, tid og sammenligning er særligt velegnede til AI-svar.
+- Virksomheder, der er tidligt ude med klart indhold, bliver ofte ved med at blive citeret.
+
+## Sådan vælger AI-systemer, hvem de nævner
+Ingen udefra kender de præcise algoritmer, og de ændrer sig løbende. Men erfaring og de officielle retningslinjer fra søgemaskinerne peger i samme retning. De kilder, der oftest bliver brugt, har fire fælles træk:
+- De besvarer spørgsmålet direkte i de første sætninger (“svar først, forklaring bagefter”).
+- De har tydelig afsender og dokumenteret ekspertise: hvem er ansvarlig, hvor sidder de, hvordan kontakter man dem?
+- De er teknisk lette at læse: hurtig indlæsning, ren HTML, logisk overskriftsstruktur og struktureret data (schema.org).
+- De bliver bekræftet andre steder: Google Virksomhedsprofil, kataloger, omtaler og konsistente oplysninger på tværs af nettet.
+
+## Min metode i seks trin
+1. 1. Kortlæg kundernes spørgsmål: Jeg samler de spørgsmål, dine kunder faktisk stiller – fra Google Search Console, telefonsamtaler, e-mails og AI-assistenterne selv. Spørgsmålene bliver rygraden i dit indhold.
+2. 2. Skriv svar-først-indhold: Hver vigtig side får et kort, præcist svar øverst efterfulgt af uddybning, eksempler, priser og en FAQ. Det er både godt for læsere og nemt for AI at citere.
+3. 3. Struktureret data: Jeg markerer virksomhed, ydelser, priser, FAQ, forfatter og breadcrumbs med JSON-LD, så maskiner forstår indholdet uden at gætte.
+4. 4. Teknisk fundament: Hurtig hjemmeside, mobilvenlig, korrekt indeksering, sitemap, robots-regler der tillader AI-crawlere og en llms.txt-fil, der opsummerer virksomheden til sprogmodeller.
+5. 5. Troværdighed og konsistens: Navn, adresse, telefon, CVR og priser skal være ens overalt. Jeg hjælper med Google Virksomhedsprofil og med at samle omtaler og referencer.
+6. 6. Måling og justering: Jeg følger med i Google Search Console (herunder visninger i AI-funktioner), analytics og stikprøver i ChatGPT, Gemini og Perplexity og justerer indholdet løbende.
+
+## Hvad jeg bygger ind i din hjemmeside
+- Klar og ensartet beskrivelse af, hvem I er, hvad I tilbyder, og hvor I arbejder – skrevet, så den kan citeres ordret.
+- Svar-først-sektioner (“Kort svar”) på de vigtigste sider.
+- FAQ-sektioner med reelle kundespørgsmål og markeret FAQPage-data.
+- Organization-, LocalBusiness-, Service-, Offer-, Person- og BreadcrumbList-markup.
+- Prisoversigter i tabeller, som både mennesker og maskiner nemt læser.
+- En llms.txt og en llms-full.txt, der giver sprogmodeller et ryddeligt overblik over sitet.
+- Robots-regler, der tillader seriøse AI-crawlere, så du ikke blokerer dig selv ude.
+- Forfatterprofil og opdateringsdatoer, så indholdet viser ekspertise og aktualitet.
+
+## Hvad GEO ikke er
+GEO er hverken en genvej eller en trylleformel. Ingen kan love, at en bestemt AI nævner dig på en bestemt dato – og du skal være skeptisk over for dem, der gør det. Jeg lover heller ikke nævnelser i ChatGPT; jeg lover et solidt grundlag, mål du kan følge, og indhold der er værd at citere.
+Det er heller ikke at fylde siden med tekst, som kun er skrevet til robotter. Indhold, der er nyttigt for mennesker, er næsten altid også det, AI-systemer foretrækker. Jeg skriver derfor til dine kunder først og strukturerer teksten, så maskinerne kan følge med.
+
+## Pris og forløb
+AI-synlighed er indbygget i alle nye hjemmesider fra WebHjerte, fra 2.500 kr. Har du allerede en hjemmeside, kan jeg optimere den med en af AI SEO-pakkerne: Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (alle ekskl. moms). Første skridt er altid en gratis gennemgang, hvor du får at vide, hvad der mangler, og hvad det vil koste.
+
+## Ofte stillede spørgsmål
+Q: Hvad betyder GEO?
+A: GEO står for Generative Engine Optimization. Det er arbejdet med at gøre indhold nemt at forstå og citere for generative AI-systemer som ChatGPT, Gemini, Perplexity og Googles AI-oversigter, så virksomheden bliver nævnt i AI-genererede svar.
+
+Q: Er GEO det samme som SEO?
+A: Nej, men de overlapper meget. God SEO (hurtig side, klart indhold, gode links) er fundamentet. GEO tilføjer svar-først-indhold, struktureret data, konsistente virksomhedsoplysninger og en llms.txt, så AI-systemer nemmere kan bruge dit indhold.
+
+Q: Kan I garantere, at ChatGPT nævner min virksomhed?
+A: Nej, og det kan ingen seriøse aktører. Jeg kan skabe de bedste forudsætninger og måle udviklingen, men AI-systemerne styrer selv, hvad de nævner.
+
+Q: Hvor hurtigt kan jeg se effekt?
+A: Tekniske forbedringer og nyt indhold kan blive opfanget inden for uger, men det varierer fra system til system. Typisk vurderer jeg udviklingen over 2–3 måneder.
+
+Q: Skal jeg have en ny hjemmeside for at blive synlig i AI?
+A: Ikke nødvendigvis. Mange eksisterende sider kan optimeres med bedre struktur, FAQ og struktureret data. Hvis siden er meget langsom eller teknisk problematisk, kan en ny side dog være billigere på sigt.
+
+Q: Hvad er llms.txt?
+A: llms.txt er en simpel tekstfil på roden af hjemmesiden, der giver sprogmodeller et ryddeligt overblik over virksomheden og de vigtigste sider. Den er et supplement til sitemap og robots.txt. WebHjerte har både en llms.txt og en udvidet llms-full.txt.
+
+
+---
+
+# Ofte stillede spørgsmål om hjemmesider, priser og SEO
+URL: https://www.webhjerte.dk/ofte-stillede-spoergsmaal
+
+Her finder du korte, ærlige svar på det, de fleste spørger om, før de får lavet en hjemmeside – samlet på ét sted.
+
+Kort svar: WebHjerte bygger hjemmesider fra 2.500 kr (ekskl. moms) med levering på 2–10 dage. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis du ikke er tilfreds, og ejer selv domæne og kode. WebHjerte er baseret i Horsens og arbejder i hele Danmark.
+
+## Priser og betaling
+### Hvad koster en hjemmeside hos WebHjerte?
+Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er ekskl. moms.
+### Er priserne faste?
+Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven.
+### Er der skjulte gebyrer?
+Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
+### Hvad koster vedligeholdelse?
+Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md ekskl. moms.
+### Betaler jeg, hvis jeg ikke kan lide designet?
+Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
+
+## Tid og forløb
+### Hvor lang tid tager det at få en hjemmeside?
+Typisk 2–10 dage: ca. 2 dage for en landingside, ca. 5 dage for Basis og ca. 10 dage for Standard – forudsat at tekster og billeder er klar.
+### Hvornår får jeg første designudkast?
+Inden for 48 timer efter vores første samtale. Intet bygges, før du har godkendt designet.
+### Hvad skal jeg selv levere?
+Logo, billeder og gerne en kort beskrivelse af din virksomhed og dine ydelser. Jeg hjælper med at strukturere og formulere teksterne.
+### Kan jeg få rettelser undervejs?
+Ja. Justeringer er inkluderet, indtil du er tilfreds med designet.
+
+## Teknik og ejerskab
+### Hvem ejer hjemmesiden?
+Du. Domæne og kode tilhører dig, og du er ikke bundet til WebHjerte.
+### Kan jeg selv redigere hjemmesiden?
+Ja, hvis den bygges i WordPress. Ellers kan jeg stå for rettelser via en vedligeholdelsesaftale.
+### Bygger I i WordPress eller skræddersyet kode?
+Begge dele. Jeg anbefaler det, der passer til dit behov – WordPress, hvis du vil redigere selv, og skræddersyet kode (fx Next.js), hvis hastighed og fleksibilitet er vigtigst.
+### Er hjemmesiden mobilvenlig?
+Ja. Alle sider designes responsivt og testes på mobil, tablet og desktop.
+### Er jeres løsninger GDPR-kompatible?
+Ja. Jeg sætter cookie-samtykke, privatlivspolitik og dataminimering op efter gældende regler. Har du specielle juridiske krav, bør du få dem vurderet af en jurist.
+
+## SEO og AI-synlighed
+### Er SEO inkluderet i hjemmesiden?
+Ja. Basis-SEO (titler, beskrivelser, struktur, hastighed og struktureret data) er indbygget. Standard indeholder desuden SEO og analytics-opsætning.
+### Hvad er AI SEO / GEO?
+AI SEO eller GEO (Generative Engine Optimization) gør din hjemmeside nem at forstå og citere for AI-systemer som ChatGPT, Gemini, Perplexity og Google AI-oversigter.
+### Hvor meget koster AI SEO?
+Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (ekskl. moms).
+### Hvor hurtigt kan jeg se resultater af SEO?
+Det afhænger af branche og konkurrence. Teknisk forbedring kan ses hurtigt, men synlighed i søgeresultater opbygges typisk over 2–3 måneder eller mere.
+### Tilbyder I et gratis SEO-tjek?
+Ja. Et gratis SEO- og web-tjek gennemgår hastighed, mobilvisning og SEO-grundlag og peger på de vigtigste forbedringer.
+
+## Samarbejde og område
+### Hvor holder WebHjerte til?
+WebHjerte er baseret i Horsens (8700), Midtjylland.
+### Arbejder I kun i Horsens?
+Nej. Jeg arbejder med virksomheder i hele Midtjylland, Jylland og Danmark. Samarbejdet foregår online, og fysiske møder kan aftales, når det giver værdi.
+### Hvem arbejder jeg sammen med?
+Du har direkte kontakt med Ivan Kohan, som designer og bygger din hjemmeside – uden mellemled.
+### Hvilke brancher arbejder I med?
+Primært små og mellemstore virksomheder: håndværkere, VVS og el, tømrere, restauranter, saloner, klinikker, konsulenter og andre lokale servicevirksomheder.
+### Hvordan kontakter jeg jer?
+Ring på +45 42 76 05 77, skriv til hej@webhjerte.dk eller brug kontaktformularen på hjemmesiden. Du får svar inden for 24 timer.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en hjemmeside hos WebHjerte?
+A: Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er ekskl. moms.
+
+Q: Er priserne faste?
+A: Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven.
+
+Q: Er der skjulte gebyrer?
+A: Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
+
+Q: Hvad koster vedligeholdelse?
+A: Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md ekskl. moms.
+
+Q: Betaler jeg, hvis jeg ikke kan lide designet?
+A: Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
+
+Q: Hvor lang tid tager det at få en hjemmeside?
+A: Typisk 2–10 dage: ca. 2 dage for en landingside, ca. 5 dage for Basis og ca. 10 dage for Standard – forudsat at tekster og billeder er klar.
+
+Q: Hvornår får jeg første designudkast?
+A: Inden for 48 timer efter vores første samtale. Intet bygges, før du har godkendt designet.
+
+Q: Hvad skal jeg selv levere?
+A: Logo, billeder og gerne en kort beskrivelse af din virksomhed og dine ydelser. Jeg hjælper med at strukturere og formulere teksterne.
+
+Q: Kan jeg få rettelser undervejs?
+A: Ja. Justeringer er inkluderet, indtil du er tilfreds med designet.
+
+Q: Hvem ejer hjemmesiden?
+A: Du. Domæne og kode tilhører dig, og du er ikke bundet til WebHjerte.
+
+
+---
+
+# Ordliste: webdesign, SEO og AI-synlighed på almindeligt dansk
+URL: https://www.webhjerte.dk/ordliste
+
+Webbranchen elsker forkortelser. Her får du de vigtigste begreber forklaret kort og uden jargon, så du kan tage kvalificerede beslutninger om din hjemmeside.
+
+Kort svar: Ordlisten forklarer over 25 begreber inden for webdesign, SEO og AI-synlighed – fra “SEO” og “CMS” til “GEO”, “schema.org” og “llms.txt”.
+
+Begreberne er sorteret alfabetisk. Bruger du et ord, du ikke kender fra et tilbud, er du velkommen til at spørge – et godt bureau forklarer sig i et sprog, du forstår.
+
+- AEO (Answer Engine Optimization): Optimering af indhold, så det kan bruges direkte som svar i søgemaskiner og AI-assistenter. Overlapper meget med GEO.
+- AI Overviews: Googles AI-genererede opsummeringer, som vises øverst i visse søgeresultater og refererer til kilder på nettet.
+- Alt-tekst: En kort beskrivelse af et billede, som læses op af skærmlæsere og bruges af søgemaskiner til at forstå billedet.
+- Backlink: Et link fra en anden hjemmeside til din. Kvalitetslinks fra relevante sider er et tegn på troværdighed for søgemaskiner.
+- Breadcrumbs (brødkrummer): En navigationssti øverst på siden (fx Forside / Services / Webdesign), som viser, hvor du er, og hjælper søgemaskiner med at forstå strukturen.
+- Canonical-tag: En markering i sidens kode, der fortæller søgemaskiner, hvilken adresse der er den primære version af en side, så dublerede sider ikke konkurrerer.
+- CMS: Content Management System – et redigeringssystem, hvor du selv kan opdatere tekster og billeder uden at kode. WordPress er det mest udbredte.
+- Core Web Vitals: Googles målinger af brugeroplevelsen: indlæsningshastighed (LCP), respons (INP) og visuel stabilitet (CLS).
+- CTA (call-to-action): En opfordring til handling, fx “Få et gratis tilbud”. Den skal være tydelig og placeret, hvor besøgende er klar til at handle.
+- Konverteringsrate: Andelen af besøgende, der udfører en ønsket handling – fx udfylder en formular eller ringer.
+- CTR (click-through rate): Andelen af visninger i søgeresultaterne, der resulterer i klik. Titel og beskrivelse påvirker CTR.
+- Domæne: Din adresse på nettet, fx webhjerte.dk. Du lejer typisk et domæne for et år ad gangen.
+- E-E-A-T: Erfaring, ekspertise, autoritet og troværdighed – kriterier, Google bruger til at vurdere indholdskvalitet.
+- FAQPage: En type struktureret data, der markerer en side som en samling af spørgsmål og svar, så de kan forstås og vises af søgemaskiner.
+- GEO (Generative Engine Optimization): Optimering af hjemmesidens indhold og tekniske opsætning, så den bliver nævnt og citeret i svar fra ChatGPT, Gemini, Perplexity og andre AI-systemer.
+- Google Search Console: Googles gratis værktøj, der viser, hvilke søgninger din hjemmeside vises på, hvor mange klik den får, og hvilke tekniske fejl der findes.
+- Google Virksomhedsprofil: Din gratis virksomhedsprofil i Google Søgning og Maps, som er afgørende for lokal synlighed.
+- Hosting: Den server, din hjemmeside ligger på, så den kan vises døgnet rundt.
+- JSON-LD: Det format, der oftest bruges til at skrive struktureret data (schema.org) i en hjemmesides kode.
+- Landingside: En enkelt side bygget til ét formål, fx at få besøgende fra en annonce til at kontakte dig.
+- llms.txt: En tekstfil på roden af hjemmesiden, der giver sprogmodeller et overskueligt resumé af virksomheden og dens vigtigste sider.
+- Lokal SEO: Søgemaskineoptimering målrettet søgninger med lokal hensigt, som “webbureau Horsens”. Omfatter bl.a. Google Virksomhedsprofil og lokale oplysninger.
+- Meta-beskrivelse: Den korte tekst under titlen i søgeresultaterne. Den påvirker, om folk klikker, men ikke direkte placeringen.
+- Responsivt design: Design, der automatisk tilpasser sig skærmstørrelsen, så siden fungerer på mobil, tablet og computer.
+- robots.txt: En fil, der fortæller søgemaskiner og andre crawlere, hvilke dele af hjemmesiden de må læse.
+- Schema.org: Et fælles ordforråd til at beskrive indhold (virksomhed, produkt, FAQ, artikel) i en form, maskiner forstår.
+- SEO: Søgemaskineoptimering – arbejdet med at få din hjemmeside til at rangere højere i søgeresultater som Google.
+- Sitemap: En liste over alle sider på hjemmesiden, som hjælper søgemaskiner med at finde og indeksere dem.
+- SSL / https: Et certifikat, der krypterer forbindelsen mellem besøgende og hjemmesiden. Vises som hængelås i browseren og er et krav for troværdighed.
+- UX (brugeroplevelse): Hvor nem og behagelig hjemmesiden er at bruge. God UX gør det nemt at finde information og tage kontakt.
+
+---
+
+# WebHjerte: fakta om webbureauet i Horsens
+URL: https://www.webhjerte.dk/om-webhjerte
+
+Et samlet faktaark om, hvem WebHjerte er, hvad vi tilbyder, hvad det koster, og hvordan du kontakter os – skrevet, så både mennesker og AI-assistenter kan bruge det.
+
+Kort svar: WebHjerte er et lille webbureau i Horsens, drevet af webudvikler Ivan Kohan (CVR 46485823). Virksomheden bygger hjemmesider, SEO og AI-synlighed til små og mellemstore virksomheder i Horsens, Midtjylland og resten af Danmark – til fast pris fra 2.500 kr og med levering på 2–10 dage.
+
+## Kort fortalt
+Emne | Oplysning
+Navn | WebHjerte
+Type | Webbureau (webdesign, webudvikling, SEO, AI-synlighed)
+Grundlægger | Ivan Kohan, webudvikler
+CVR | 46485823
+Beliggenhed | Horsens, 8700, Midtjylland
+Arbejdsområde | Horsens, Midtjylland, Jylland og hele Danmark (online)
+Telefon | +45 42 76 05 77
+E-mail | hej@webhjerte.dk
+Hjemmeside | https://www.webhjerte.dk
+Sprog | Dansk og engelsk
+
+## Hvad tilbyder WebHjerte?
+- Hjemmesider og landingssider (fast pris fra 2.500 kr).
+- WordPress-hjemmesider og skræddersyet webudvikling.
+- Webshops fra 14.000 kr.
+- SEO og lokal SEO i Horsens og Midtjylland.
+- AI SEO og GEO – synlighed i ChatGPT, Gemini og Google AI (fra 3.500 kr).
+- Gratis SEO- og web-tjek.
+- Vedligeholdelse og support (fra 195 kr/md).
+
+## Priser og pakker (ekskl. moms)
+Pakke | Pris fra | Levering | Indhold
+Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagner og annoncer
+Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
+Standard | 7.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
+Skræddersyet | 14.000 kr | Aftales | Webshop, kundeportal og specialløsninger
+
+## Garantier
+- Første designudkast inden for 48 timer efter første samtale.
+- Intet bygges, før designet er godkendt.
+- 0 kr for designet, hvis du ikke er tilfreds.
+- Domæne og kode tilhører kunden.
+- 30 dages support efter lancering.
+
+## Værdier og arbejdsmåde
+WebHjerte er bygget på en enkel idé: lokale virksomheder skal ikke vælge mellem en billig, ubrugelig hjemmeside og en dyr, langsom bureauproces. Derfor arbejder jeg med faste priser, korte forløb og direkte kontakt – du taler altid med den, der bygger din side.
+Jeg lover det, jeg kan holde, og siger ærligt fra, hvis en opgave ikke passer til mig. Det gælder fx meget store enterprise-projekter, fuldservice-reklamekampagner og garantier for placeringer i søgeresultater eller AI-svar.
+
+## Læs mere
+- Om Ivan Kohan: /om-mig
+- Portefølje og cases: /portefolje
+- Priser: /hjemmeside-pris
+- Kontakt: /kontakt
+
+## Ofte stillede spørgsmål
+Q: Hvem står bag WebHjerte?
+A: WebHjerte drives af webudvikler Ivan Kohan fra Horsens (CVR 46485823).
+
+Q: Hvor ligger WebHjerte?
+A: I Horsens (8700), Midtjylland. Kunder findes i hele Danmark.
+
+Q: Hvad koster en hjemmeside hos WebHjerte?
+A: Fra 2.500 kr ekskl. moms for en landingside. Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyet fra 14.000 kr.
+
+
+---
+
+# Sådan bliver din virksomhed nævnt af ChatGPT og Google AI
+URL: https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai
+Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+
+En praktisk guide med 12 tiltag, du kan gå i gang med i dag – uden at være teknisk. Skrevet til lokale virksomheder i Horsens, Midtjylland og resten af Danmark.
+
+Kort svar: For at blive nævnt i AI-svar skal din hjemmeside besvare kundernes spørgsmål klart og tidligt, have korrekte og ensartede virksomhedsoplysninger, bruge struktureret data (schema.org), være hurtig og tillade AI-crawlere i robots.txt. Der findes ingen garanti, men disse tiltag øger sandsynligheden markant.
+
+## Hvorfor skal du overhovedet bekymre dig om AI-svar?
+Når en potentiel kunde spørger en AI-assistent om en lokal leverandør, får de ét sammenhængende svar – ikke en liste, de selv skal vurdere. Det betyder, at færre virksomheder får opmærksomhed, men dem, der bliver nævnt, får den til gengæld ofte i form af en anbefaling. At være med i svaret er derfor mere værdifuldt end en placering som nummer seks i søgeresultaterne.
+Den gode nyhed er, at mange af tiltagene er enkle, og at de også forbedrer din almindelige SEO. Du behøver ikke vælge mellem Google og AI – de to trækker i samme retning.
+
+## De 12 tiltag
+### 1. Skriv svaret først
+Start hver vigtig side med et kort svar på spørgsmålet, siden handler om. “Hvad koster en hjemmeside? Hos os starter priserne fra 2.500 kr.” AI-systemer henter ofte de første sætninger, så placér dit bedste svar der.
+### 2. Brug kundernes egne ord
+Lyt efter, hvordan dine kunder formulerer sig i telefonen og i mails, og brug de samme ord i overskrifter og FAQ. Search Console viser desuden, hvilke søgninger din side allerede vises på.
+### 3. Lav en rigtig FAQ
+Saml 6–10 reelle spørgsmål med korte, ærlige svar. Marker dem som FAQPage i struktureret data. FAQ-formatet passer perfekt til hvordan AI-assistenter bygger svar.
+### 4. Gør afsenderen tydelig
+Skriv, hvem I er, hvor I holder til, CVR-nummer, telefon og e-mail. Vis en forfatter på guides, og link til en om-side. Troværdighed (E-E-A-T) handler om at kunne dokumentere, hvem der står bag.
+### 5. Hold dine oplysninger ens overalt
+Navn, adresse, telefon og åbningstider skal være identiske på hjemmesiden, Google Virksomhedsprofil, Facebook, LinkedIn og i kataloger. Modstridende oplysninger gør AI-systemer usikre.
+### 6. Tilføj struktureret data
+Brug schema.org-markup (JSON-LD) til Organization/LocalBusiness, Service, Offer, FAQPage, Article og BreadcrumbList. Det er ikke synligt for besøgende, men giver maskiner et præcist kort over indholdet.
+### 7. Vis priser og fakta i tabeller
+AI-systemer elsker klare tal. En simpel tabel med pakker, priser og leveringstid er lettere at citere end tre afsnit med omskrivninger.
+### 8. Gør hjemmesiden hurtig og ren
+Langsomme sider med tung JavaScript bliver crawlet dårligere. Optimer billeder, brug moderne format (WebP/AVIF) og undgå, at vigtigt indhold først dukker op efter klik eller scroll.
+### 9. Tillad AI-crawlere
+Tjek din robots.txt. Blokerer du GPTBot, ClaudeBot, PerplexityBot eller Google-Extended, kan de ikke læse din side. Det er en bevidst beslutning – men mange blokerer ved en fejl via en sikkerhedsplugin.
+### 10. Opret llms.txt
+En llms.txt er en kort, læsbar opsummering af virksomheden og dine vigtigste sider. Den er endnu ikke en officiel standard, men er enkel at lave og bruges af flere værktøjer.
+### 11. Byg interne links og emneklynger
+Lav en hovedside om dit emne (fx “Webdesign Horsens”) og understøt den med guides om pris, tid og sammenligning. Link imellem dem, så det er tydeligt, at du dækker emnet i dybden.
+### 12. Opdater og datér indholdet
+Vis, hvornår en side sidst er opdateret, og gennemgå dine priser og fakta mindst en gang om kvartalet. Forældede tal er en af de hyppigste årsager til, at gode sider bliver fravalgt.
+
+## Sådan tjekker du, om det virker
+Stil dine kunders spørgsmål i ChatGPT, Gemini, Perplexity og Google, og notér, hvilke virksomheder der bliver nævnt og hvilke kilder der vises. Gentag hver måned med de samme spørgsmål, så du kan sammenligne. Brug samtidig Google Search Console til at se, hvilke sider der vises, og hvilke søgninger der giver klik.
+Husk, at AI-svar varierer fra gang til gang. Se på tendensen over tid frem for på enkelte svar.
+
+## Brug for hjælp?
+Jeg gennemgår gerne din hjemmeside og siger ærligt, hvad der mangler. Det er gratis og uden binding. Vil du have det hele bygget ind fra start, indeholder alle nye hjemmesider fra WebHjerte de tekniske elementer fra listen ovenfor.
+
+## Ofte stillede spørgsmål
+Q: Kan en lille lokal virksomhed blive nævnt af ChatGPT?
+A: Ja. AI-assistenter nævner ofte lokale virksomheder, når de har klare oplysninger om sted, ydelser og priser. Størrelsen er mindre vigtig end tydelighed og troværdighed.
+
+Q: Skal jeg blokere AI-crawlere for at beskytte mit indhold?
+A: Det er et valg. Vil du have trafik og omtale fra AI-søgning, skal crawlerne tillades. Vil du ikke have, at indholdet bruges til træning, kan du styre det med specifikke regler i robots.txt.
+
+Q: Hvad er det vigtigste enkelte tiltag?
+A: At besvare kundernes spørgsmål klart og tidligt på siden og at have korrekte, ens virksomhedsoplysninger overalt.
+
+
+---
+
+# Hvad koster en hjemmeside om året?
+URL: https://www.webhjerte.dk/blog/hvad-koster-en-hjemmeside-om-aaret
+Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+
+Prisen på selve hjemmesiden er kun starten. Her er et ærligt overblik over de løbende udgifter, du skal regne med, og hvor du kan spare.
+
+Kort svar: Ud over selve udviklingen koster en hjemmeside typisk 100–200 kr om året i domæne, 0–500 kr om måneden i hosting og 195–395 kr om måneden, hvis du vil have vedligeholdelse og support. For en lille virksomhed lander de samlede løbende udgifter ofte på 2.500–6.000 kr om året.
+
+## De fire typer udgifter
+Tallene er vejledende og afhænger af udbyder og løsning. Få altid oplyst alle løbende poster, før du siger ja til et tilbud.
+Udgift | Typisk beløb | Bemærkning
+Domæne | 100–200 kr/år | .dk er billigst; .com og andre endelser kan koste mere
+Hosting | 0–500 kr/md | Afhænger af trafik og platform; statiske sider kan ligge billigt eller gratis
+Vedligeholdelse | 195–395 kr/md hos WebHjerte | Opdateringer, sikkerhed, backup og små rettelser
+Værktøjer | Varierer | Booking, nyhedsbreve, betalingsløsninger og premium-plugins
+
+## Eksempler på årlige omkostninger
+### Lille lokal virksomhed med en enkel hjemmeside
+Domæne ca. 150 kr, enkel hosting ca. 600–1.500 kr om året og evt. vedligeholdelse fra 195 kr/md (2.340 kr/år). I alt typisk ca. 3.000–4.000 kr om året.
+### Servicevirksomhed med booking og analytics
+Domæne, hosting og bookingværktøj (typisk 100–300 kr/md) og vedligeholdelse. Ofte 5.000–8.000 kr om året.
+### Webshop
+Her kommer transaktionsgebyrer, evt. platformsabonnement og lagersystemer oven i. Beløbet afhænger i høj grad af omsætningen.
+
+## Hvordan kan du spare?
+- Vælg et .dk-domæne og forny automatisk, så du undgår dyre gendannelsesgebyrer.
+- Vælg en let hjemmeside uden tunge plugins – den kræver mindre hosting og vedligeholdelse.
+- Undgå bindinger: sørg for, at domæne og kode tilhører dig.
+- Tag stilling til, om du selv vil opdatere siden, eller om du vil have en vedligeholdelsesaftale.
+- Spørg efter total cost of ownership over tre år, ikke kun startprisen.
+
+## Hvad er inkluderet hos WebHjerte?
+Hos WebHjerte får du 30 dages support efter lancering. Derefter kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md ekskl. moms eller selv stå for driften. Domæne og kode tilhører dig, så du kan skifte, når du vil.
+
+## Ofte stillede spørgsmål
+Q: Skal jeg betale for en hjemmeside hvert år?
+A: Du skal som minimum forny domænet hvert år og dække hosting. Selve udviklingen er normalt en engangsudgift.
+
+Q: Hvad sker der, hvis jeg stopper med at betale hosting?
+A: Siden bliver utilgængelig. Derfor er det vigtigt at have domæne og hosting i dit eget navn.
+
+Q: Er vedligeholdelse nødvendig?
+A: Anbefalet. Opdateringer og sikkerhed er afgørende, især for WordPress.
+
+
+---
+
+# SEO-tjekliste for lokale virksomheder: 25 punkter du kan tjekke i dag
+URL: https://www.webhjerte.dk/blog/seo-tjekliste-lokale-virksomheder
+Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+
+Brug listen som et hurtigt webtjek af din egen hjemmeside. Du behøver ingen særlige værktøjer ud over Google Search Console og en mobil.
+
+Kort svar: Lokal SEO handler om at have en hurtig, mobilvenlig hjemmeside med klare ydelses- og lokalitetsoplysninger, en opdateret Google Virksomhedsprofil, konsistente kontaktoplysninger og indhold, der svarer på kundernes spørgsmål. Listen herunder samler 25 konkrete punkter inden for teknik, indhold og lokale signaler.
+
+## Teknik
+- Siden bruger https og har gyldigt SSL-certifikat.
+- Den indlæses hurtigt på mobil (test med PageSpeed Insights).
+- Der er kun én version af hjemmesiden (www eller uden www – med omdirigering).
+- Der findes et sitemap, og det er indsendt til Google Search Console.
+- robots.txt blokerer ikke vigtige sider eller scripts.
+- Hver side har en canonical-tag.
+- Der er ingen døde links eller mange 404-sider.
+- Siden virker uden fejl i Chrome, Safari og på både iPhone og Android.
+
+## Indhold
+- Hver ydelse har sin egen side med en klar overskrift (H1).
+- Titel (ca. 50–60 tegn) og beskrivelse (ca. 140–160 tegn) er unikke og indeholder ydelse + sted.
+- Overskrifterne følger en logisk rækkefølge (H1 → H2 → H3).
+- Siden svarer på de spørgsmål, kunderne faktisk stiller.
+- Der er en FAQ-sektion med 5–10 spørgsmål.
+- Billeder har beskrivende filnavne og alt-tekst.
+- Der er interne links mellem relaterede sider.
+- Priser eller prisintervaller er tydelige (øger tillid og klik).
+
+## Lokale signaler
+- Din Google Virksomhedsprofil er oprettet, verificeret og opdateret.
+- Kategori, åbningstider, telefon og adresse er korrekte.
+- Navn, adresse og telefon (NAP) er ens på hjemmesiden, i Google, Facebook og kataloger.
+- Du har fået anmeldelser og svarer på dem.
+- Siden nævner by, bydele og opland naturligt i teksterne.
+- Der er struktureret data for LocalBusiness og Organization.
+- Du er opført i relevante lokale kataloger og brancheforeninger.
+
+## Måling og AI-synlighed
+- Google Search Console er sat op, og du følger søgninger og klik.
+- Google Analytics (eller tilsvarende) måler henvendelser, ikke kun besøg.
+- robots.txt tillader seriøse AI-crawlere, hvis du vil findes i AI-svar.
+- Vigtige sider har et kort svar øverst og en FAQ med struktureret data.
+
+## Sådan prioriterer du
+Start med teknikken (hastighed, mobil, https), fordi den påvirker alt andet. Derefter Google Virksomhedsprofil og dine tre vigtigste ydelsessider. Når fundamentet er på plads, kan du arbejde videre med indhold og AI-synlighed. Mangler du tid, tilbyder jeg et gratis SEO- og webtjek, hvor jeg gennemgår listen for dig.
+
+## Ofte stillede spørgsmål
+Q: Hvor lang tid tager det at se effekt af SEO?
+A: Tekniske rettelser kan have effekt på uger. Placeringer på konkurrenceprægede søgninger opbygges typisk over 2–6 måneder.
+
+Q: Hvad er vigtigst i lokal SEO?
+A: Google Virksomhedsprofil, konsistente oplysninger, anmeldelser og en hurtig hjemmeside med tydelige ydelsessider.
+
+Q: Kan jeg lave SEO selv?
+A: Ja, de fleste punkter kan du selv tage fat på. Mangler du tid eller viden, kan jeg hjælpe.
+
+
+---
+
+# Sådan vælger du webbureau: 10 spørgsmål, du bør stille
+URL: https://www.webhjerte.dk/blog/vaelg-webbureau-10-spoergsmaal
+Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+
+Det er svært at sammenligne tilbud, hvis du ikke ved, hvad du skal spørge om. Brug disse ti spørgsmål, så du får svar, der betyder noget.
+
+Kort svar: Når du vælger webbureau, så spørg ind til fast pris, leveringstid, ejerskab af domæne og kode, SEO, mobilvenlighed, support efter lancering, referencer og hvem du reelt taler med. Gode bureauer svarer klart og skriftligt – og siger fra, hvis en opgave ikke passer dem.
+
+## De 10 spørgsmål
+### 1. Er prisen fast, og hvad er inkluderet?
+Få et skriftligt tilbud med antal sider, funktioner, antal rettelsesrunder og evt. løbende udgifter. Timeprisbaserede løsninger kan blive dyre uden forvarsel.
+### 2. Hvornår er hjemmesiden klar?
+Få en konkret tidsplan, og spørg, hvad der kan forsinke projektet (fx tekster og billeder fra dig).
+### 3. Hvem ejer domæne, kode og indhold?
+Svaret skal være: dig. Undgå aftaler, hvor du ikke kan tage siden med dig, hvis du skifter leverandør.
+### 4. Hvem arbejder konkret på min hjemmeside?
+Spørg, om du taler med udvikleren eller et salgsled. Mange mellemled betyder længere svartid og højere pris.
+### 5. Hvordan håndterer I SEO og hastighed?
+Basis-SEO bør være en del af leverancen: titler, struktur, mobil, hastighed og struktureret data. Spørg efter konkrete mål (fx PageSpeed).
+### 6. Er hjemmesiden redigerbar for mig?
+Vil du selv ændre indhold? Så skal der bygges i et CMS som WordPress. Hvis ikke, kan skræddersyet kode give højere hastighed.
+### 7. Hvad sker der efter lancering?
+Spørg om support, vedligeholdelse og pris på rettelser. Få det på skrift.
+### 8. Kan jeg se referencer og eksempler?
+Se på porteføljen, tal med tidligere kunder, og tjek, om projekterne ligner dit.
+### 9. Hvad hvis jeg ikke bryder mig om designet?
+Spørg om designgodkendelse og hvad det koster, hvis designet ikke rammer rigtigt. Hos WebHjerte er det 0 kr for designet, hvis du ikke er tilfreds.
+### 10. Hvad kan I ikke hjælpe med?
+Et godt bureau kender sine grænser og siger fra. Hvis svaret altid er “alt”, så vær på vagt.
+
+## Røde flag
+- Garanti for placering nr. 1 på Google.
+- Uklar pris eller “vi vender tilbage med en pris efter projektstart”.
+- Domæne eller hosting registreret i bureauets navn uden din accept.
+- Ingen skriftlig aftale om rettigheder og vilkår.
+- Presset til at beslutte hurtigt uden tid til at sammenligne.
+
+## Hvornår kan det betale sig med et bureau frem for en freelancer?
+Et bureau er typisk bedre, hvis du har brug for flere kompetencer (design, udvikling, tekst, SEO) og en stabil leverandør over tid. En freelancer er ofte hurtigere og billigere til afgrænsede opgaver. Et lille bureau som WebHjerte kombinerer det bedste fra begge verdener: direkte kontakt med udvikleren og en struktureret proces.
+
+## Ofte stillede spørgsmål
+Q: Hvad bør et tilbud indeholde?
+A: Pris, omfang, tidsplan, ejerskab af kode og domæne, support efter lancering samt løbende udgifter.
+
+Q: Er et stort bureau bedre end et lille?
+A: Ikke nødvendigvis. Store bureauer er gode til komplekse projekter, mens små bureauer ofte er hurtigere og billigere for mindre virksomheder.
+
+Q: Hvordan ser jeg, om et bureau er seriøst?
+A: Se efter klare priser, referencer, skriftlige aftaler og ærlige svar – også om, hvad de ikke kan.
+
+
+---
+
+# WordPress eller skræddersyet hjemmeside? Sådan vælger du
+URL: https://www.webhjerte.dk/blog/wordpress-eller-skraeddersyet
+Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+
+Begge løsninger kan give en god hjemmeside. Forskellen ligger i, hvem der skal redigere den, hvor vigtig hastighed er, og hvad du vil bruge den til.
+
+Kort svar: Vælg WordPress, hvis du vil redigere indhold selv, vil have en blog eller en simpel webshop. Vælg skræddersyet kode (fx Next.js), hvis du prioriterer maksimal hastighed, unik funktionalitet og lav vedligeholdelse. Prisen starter hos WebHjerte fra 2.500 kr for en landingside og 4.500 kr for en Basis-hjemmeside.
+
+## Sammenligning
+ | WordPress | Skræddersyet kode
+Redigering | Nem for ikke-tekniske brugere | Kræver udvikler eller et tilkoblet CMS
+Hastighed | God, hvis optimeret – kan blive langsom med mange plugins | Meget høj, fordi der kun indlæses det nødvendige
+Sikkerhed | Kræver løbende opdatering af kerne og plugins | Mindre angrebsflade, især ved statiske sider
+Fleksibilitet | Stort plugin-økosystem | Ubegrænset, men hver funktion skal bygges
+Startpris | Fra 4.500 kr (Basis) | Fra 2.500 kr (landingside)
+Vedligeholdelse | Jævnlige opdateringer | Få opdateringer
+SEO | God med korrekt opsætning | God med korrekt opsætning
+
+## Vælg WordPress, hvis…
+- du selv vil rette tekster, billeder og priser uden udvikler.
+- du vil have en blog eller nyhedssektion, der opdateres ofte.
+- flere i teamet skal kunne redigere indhold.
+- du vil bygge en enkel webshop med WooCommerce.
+
+## Vælg skræddersyet, hvis…
+- hastighed og Core Web Vitals er afgørende for din forretning.
+- du har specielle funktioner (beregnere, kundeportal, integrationer).
+- du ikke har brug for selv at ændre indhold ofte.
+- du vil have færrest mulige vedligeholdelsesopgaver.
+
+## Min anbefaling
+Start med spørgsmålet: Hvem skal opdatere siden, og hvor ofte? Svaret afgør som regel valget. Jeg bygger begge dele og fortæller ærligt, hvad der giver bedst værdi for dig – også selvom det betyder en billigere løsning.
+
+## Ofte stillede spørgsmål
+Q: Er WordPress dårligt til SEO?
+A: Nej. Med ren opsætning, hurtig hosting og få plugins er WordPress en god platform for SEO.
+
+Q: Kan jeg skifte fra WordPress til skræddersyet senere?
+A: Ja, men indhold og design skal migreres. Planlæg derfor valget fra start.
+
+Q: Hvad er billigst?
+A: En enkelt landingside i skræddersyet kode starter fra 2.500 kr. Flersidede WordPress-sites starter fra 4.500 kr.
+
+
+---
+
+# Hvor lang tid tager det at lave en hjemmeside?
+URL: https://www.webhjerte.dk/blog/hvor-lang-tid-tager-det-at-lave-en-hjemmeside
+Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+
+Det korte svar: 2–10 dage hos WebHjerte, hvis indhold og billeder er klar. Her er tidsplanen trin for trin – og hvad der typisk skaber forsinkelser.
+
+Kort svar: En landingside tager typisk ca. 2 dage, en Basis-hjemmeside ca. 5 dage og en Standard-hjemmeside ca. 10 dage hos WebHjerte. Større løsninger som webshops tager 2–4 uger. Den største årsag til forsinkelser er manglende tekster og billeder fra kunden.
+
+## Typisk tidsplan
+Tiderne regnes fra, at designet er godkendt, og indhold er afleveret.
+Pakke | Leveringstid | Hvad tager tid?
+Landingside | ca. 2 dage | Design og én side, tekst og formular
+Basis (3–5 sider) | ca. 5 dage | Design, bygning og test af flere sider
+Standard (op til 8 sider) | ca. 10 dage | SEO, analytics, booking og flere sider
+Webshop / skræddersyet | 2–4 uger | Produkter, betaling, integrationer og test
+
+## Faserne i et projekt
+1. Første samtale (15–30 min.): Mål, målgruppe, ønsker og budget afklares.
+2. Design (inden for 48 timer): Du modtager et konkret designudkast. Intet bygges, før du har godkendt det.
+3. Indhold: Tekster, billeder og logo samles. Jeg hjælper med struktur og formuleringer.
+4. Udvikling: Siden bygges, SEO og analytics sættes op, og formularer testes.
+5. Test og rettelser: Mobil, tablet og desktop gennemgås, og dine rettelser indarbejdes.
+6. Lancering: Siden sættes live på dit domæne.
+
+## Hvad kan forsinke projektet?
+- Tekster og billeder, der leveres sent eller ændres undervejs.
+- Mange rettelsesrunder i designfasen.
+- Afhængighed af tredjepart (fx adgang til domæne eller eksisterende hosting).
+- Ønsker om ekstra funktioner midt i projektet.
+- Juridiske tekster, der skal vurderes af en jurist.
+
+## Sådan får du hurtigst en hjemmeside
+- Saml logo, billeder og en kort tekst om dine ydelser inden første samtale.
+- Vælg en pakke, der passer til det mest nødvendige – du kan altid udvide senere.
+- Giv hurtig feedback på designet.
+- Udpeg én kontaktperson i din virksomhed.
+
+## Ofte stillede spørgsmål
+Q: Kan jeg få en hjemmeside på 2 dage?
+A: Ja, en landingside kan ofte leveres på ca. 2 dage, når indhold og billeder er klar.
+
+Q: Hvorfor tager andre bureauer flere uger?
+A: Mange bureauer har flere led og længere processer. Mindre omfang og direkte kontakt kan gøre forløbet kortere.
+
+Q: Kan siden gå live, før den er helt færdig?
+A: Ja. Vi kan lancere kernen først og udvide løbende.

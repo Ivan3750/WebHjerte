@@ -79,6 +79,52 @@ const sections = [
       "Flere og flere finder svar via AI-assistenter og AI-oversigter i søgeresultaterne. Derfor bygger jeg også hjemmesider, så de er lette for både Google og AI at forstå: tydelig struktur, klare svar og korrekt struktureret data. Læs mere om AI SEO nedenfor.",
     ],
   },
+  {
+    h2: "Hvad er lokal SEO?",
+    paragraphs: [
+      "Lokal SEO er søgemaskineoptimering med fokus på søgninger, hvor kunden leder efter noget i nærheden – “VVS Horsens”, “frisør Horsens”, “webbureau Horsens”. Google viser typisk et kort med tre virksomheder og derefter de almindelige resultater. For at komme med skal Google forstå, hvad du tilbyder, hvor du holder til, og at du er troværdig.",
+      "De vigtigste faktorer er relevans (passer din side til søgningen?), afstand (hvor tæt er du på kunden?) og prominens (hvor kendt og anmeldt er du?). Du kan påvirke relevans og prominens markant – og det er dér, jeg hjælper.",
+    ],
+  },
+  {
+    h2: "Fire trin i min SEO-proces",
+    steps: [
+      { title: "Gratis SEO-tjek", text: "Jeg gennemgår hastighed, mobilvisning, indeksering og indhold og fortæller ærligt, hvad der skal ordnes først." },
+      { title: "Søgeordsanalyse", text: "Jeg finder de søgninger, dine kunder bruger, og vurderer, hvor realistisk det er at ranke på dem." },
+      { title: "Optimering og indhold", text: "Titler, overskrifter, ydelsessider, FAQ og lokale oplysninger sættes op, så siden matcher søgningerne." },
+      { title: "Måling og justering", text: "Jeg følger Google Search Console og analytics og justerer løbende, så du ser, hvad der virker." },
+    ],
+  },
+  {
+    h2: "Google Virksomhedsprofil og lokale signaler",
+    paragraphs: [
+      "Din Google Virksomhedsprofil er ofte det første, en lokal kunde ser. Den skal være verificeret og komplet, med rigtige kategorier, åbningstider, billeder og svar på anmeldelser. Samtidig skal navn, adresse og telefonnummer være identiske på hjemmesiden og i kataloger.",
+    ],
+    bullets: [
+      "Vælg primær og sekundære kategorier med omhu.",
+      "Bed tilfredse kunder om anmeldelser og besvar dem alle.",
+      "Brug samme navn og kontaktoplysninger overalt.",
+      "Opret ydelsessider for hver hovedydelse og omtal dit serviceområde.",
+    ],
+  },
+  {
+    h2: "Typiske SEO-fejl hos lokale virksomheder",
+    bullets: [
+      "Kun én side, der forsøger at ranke på alle ydelser.",
+      "Titler som “Forside” eller kun firmanavnet.",
+      "Langsom mobilside med tunge billeder.",
+      "Manglende eller forkert Google Virksomhedsprofil.",
+      "Ingen interne links og ingen struktureret data.",
+      "Ingen måling – man ved ikke, hvad der virker.",
+    ],
+    cta: { href: "/blog/seo-tjekliste-lokale-virksomheder", label: "Gå SEO-tjeklisten igennem" },
+  },
+  {
+    h2: "Realistiske forventninger",
+    paragraphs: [
+      "SEO er ikke en knap, man trykker på. Ingen kan love en bestemt placering på en bestemt dato. Til gengæld kan du forvente, at en teknisk sund hjemmeside med klare ydelsessider og en opdateret Google Virksomhedsprofil bliver mere synlig over 2–6 måneder. Jeg fortæller dig ærligt, hvilke søgninger der er realistiske, og hvilke der kræver mere tid og indsats.",
+    ],
+  },
 ];
 
 const related = [
@@ -108,6 +154,7 @@ export default function SeoHorsensPage() {
       eyebrow="SEO i Horsens"
       h1="SEO i Horsens – bliv fundet af kunder, der søger efter dig"
       intro="Lokal SEO og teknisk optimering til små og mellemstore virksomheder i Horsens. Jeg sørger for, at din hjemmeside er hurtig, korrekt opsat og relevant for de søgninger, dine kunder foretager."
+      summary="SEO i Horsens handler om at blive fundet af lokale kunder, når de søger på Google og i AI-assistenter. WebHjerte hjælper med teknisk SEO, lokal SEO, indhold og AI-synlighed – og starter altid med et gratis SEO-tjek. AI SEO-pakker starter fra 3.500 kr."
       sections={sections}
       faqs={faqs}
       related={related}

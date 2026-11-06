@@ -1,3 +1,4 @@
+import PageHero from "../../components/ui/PageHero";
 export const metadata = {
   title: "Privatlivspolitik | WebHjerte",
   description:
@@ -9,13 +10,13 @@ export const metadata = {
 const TermsOfUse = () => {
   return (
     <>
-      <section  className="translations-content-container bg-white text-[#]">
-        <div className="container">
+      <PageHero breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Privatlivspolitik" }]} titleLines={["Privatlivspolitik"]} size="md" />
+      <section className="sheet bg-[#f7f6f6]">
+        <div className="legal max-w-3xl mx-auto px-5 sm:px-10 py-14 sm:py-20">
           <div
             className="tab-content translations-content-item en visible text w-full "
             id="en"
           >
-            <h1 className="title !text-center">Privatlivspolitik WebHjerte</h1>
             <p>Sidst opdateret: 6. maj 2025</p>
             <p>
               Denne privatlivspolitik beskriver vores politikker og procedurer

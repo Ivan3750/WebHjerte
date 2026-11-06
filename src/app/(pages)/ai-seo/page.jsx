@@ -91,11 +91,11 @@ const jsonLd = {
 const faqs = [
   {
     q: "Hvad er AI SEO egentlig?",
-    a: "AI SEO betyder, at jeg bruger kunstig intelligens til at analysere søgemønstrer, forstå hvad dine kunder søger efter, og optimere din hjemmeside derefter. Det er stadig mennesker, der bestemmer strategien — men AI hjælper mig med at arbejde hurtigere og mere præcist.",
+    a: "AI SEO betyder, at jeg bruger kunstig intelligens til at analysere søgemønstre, forstå hvad dine kunder søger efter, og optimere din hjemmeside derefter. Det er stadig mennesker, der bestemmer strategien — men AI hjælper mig med at arbejde hurtigere og mere præcist.",
   },
   {
     q: "Får jeg resultater med AI SEO?",
-    a: "Ja. Kombinationen af AI-analyse og erfaren SEO-viden giver hurtigere og mere målrettede resultator end traditionel SEO alene. De fleste kunder ser forbedringer i synlighed og organisk trafik inden for 2-3 måneder.",
+    a: "Ja. Kombinationen af AI-analyse og erfaren SEO-viden giver hurtigere og mere målrettede resultater end traditionel SEO alene. De fleste kunder ser forbedringer i synlighed og organisk trafik inden for 2-3 måneder.",
   },
   {
     q: "Er AI SEO bare skrevet af en robot?",
@@ -107,7 +107,7 @@ const faqs = [
   },
   {
     q: "Hvordan ved jeg om det virker?",
-    a: "Du får månedlige rapporter med konkrete tal: din position på relevante søgeord, hvor meget organisk trafik du får, og hvor mange kunder der kontakter dig gennem siden. Du ser resultatet — ikke bare en glad mundtlighed.",
+    a: "Du får månedlige rapporter med konkrete tal: din position på relevante søgeord, hvor meget organisk trafik du får, og hvor mange kunder der kontakter dig gennem siden. Du ser resultatet — ikke bare løfter.",
   },
 ];
 

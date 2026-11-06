@@ -1,4 +1,4 @@
-import AnimatedInView from "../../components/ui/AnimatedInView";
+import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import PackagesBlock from "../services/_components/PackagesBlock";
  import FormToLead from "../../components/ui/FormToLead";
 import SocialProof from "../../components/home/SocialProof";
@@ -35,18 +35,18 @@ export const metadata = {
 const NyProfessionelHjemmeside = () => {
   return (
     <>
-      <section className="mt-[75px]">
-        <AnimatedInView as="h1" className="maintitle text-center">
-          Få en ny, professionel hjemmeside{" "}
-        </AnimatedInView>
-        <AnimatedInView
-          as="h2"
-          className="subtitle text-center mt-5 text-balance"
-        >
-          En hurtig, moderne og mobilvenlig hjemmeside, der er klar til at
-          tage imod nye kunder – til en fast pris og uden binding.
-        </AnimatedInView>
-      </section>
+      <PageHero
+        breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Ny hjemmeside" }]}
+        eyebrow="Ny hjemmeside"
+        titleLines={["Få en ny, professionel", "hjemmeside"]}
+        lead="En hurtig, moderne og mobilvenlig hjemmeside, der er klar til at tage imod nye kunder – til fast pris og uden binding."
+        actions={
+          <>
+            <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+            <GhostLink href="/hjemmeside-pris">Se priser</GhostLink>
+          </>
+        }
+      />
       <SocialProof />
       <PackagesBlock />
       <CasesCarousel />
