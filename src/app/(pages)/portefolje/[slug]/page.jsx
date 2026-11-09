@@ -27,6 +27,8 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
+    // Kundens brandnavn må ikke give WebHjerte-hits i Google
+    ...(project.noindex ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: url },
     openGraph: {
       title,

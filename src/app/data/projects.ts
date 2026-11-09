@@ -26,6 +26,8 @@ export type Project = {
   designDescription: string;
   developmentDescription: string;
   site?: string;
+  /** true = casen vises på sitet, men holdes ude af Google (så kundens brandnavn ikke giver WebHjerte-hits) */
+  noindex?: boolean;
 };
 export const projects: Project[] = [
   {
@@ -52,6 +54,7 @@ export const projects: Project[] = [
   {
     id: 9,
     slug: "loenbaeks-koereskole",
+    noindex: true,
     title: "Lønbæks Køreskole",
     subtitle: "Ikke det billigste kørekort – men det bedste",
     heroImage: Lønbæks,
@@ -73,6 +76,7 @@ export const projects: Project[] = [
   {
     id: 2,
     slug: "hireon",
+    noindex: true,
     title: "Hireon",
     subtitle: "Fra frafald til færdige ansøgninger",
     heroImage: Hireon,
@@ -94,6 +98,7 @@ export const projects: Project[] = [
   {
     id: 7,
     slug: "veka-center",
+    noindex: true,
     title: "VEKA Center",
     subtitle: "Fra fabrik til færdigt vindue – uden mellemled",
     heroImage: VEKA, // TODO: erstat med rigtige billeder
@@ -186,6 +191,7 @@ export const projects: Project[] = [
   {
     id: 5,
     slug: "monolit",
+    noindex: true,
     title: "Monolit",
     subtitle: "Synlighed, der genererer B2B-henvendelser",
     heroImage: Monolit,
@@ -207,6 +213,7 @@ export const projects: Project[] = [
   {
   id: 10,
   slug: "renserv",
+  noindex: true,
   title: "RenServ",
   subtitle: "En moderne hjemmeside for en familieejet rengøringsvirksomhed",
   heroImage: RenServ,
