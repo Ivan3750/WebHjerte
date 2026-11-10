@@ -4,9 +4,9 @@ export const aiPages = [
   {
     slug: "geo-ai-synlighed",
     type: "service",
-    title: "AI-synlighed (GEO): bliv nævnt i ChatGPT og Google AI | WebHjerte",
+    title: "AI-synlighed (GEO): bliv nævnt i ChatGPT | WebHjerte",
     description:
-      "Sådan bliver din virksomhed fundet og nævnt i ChatGPT, Google AI Overviews, Gemini og Perplexity. Praktisk GEO til lokale virksomheder i Horsens og Midtjylland.",
+      "Sådan bliver din virksomhed nævnt i ChatGPT, Google AI Overviews, Gemini og Perplexity. Praktisk GEO til lokale virksomheder.",
     keywords: ["GEO", "AI synlighed", "ChatGPT synlighed", "Google AI Overviews", "AI SEO Horsens", "ai seo eksperter", "bureau specialist i ai seo"],
     name: "AI-synlighed (GEO)",
     serviceType: "Generative Engine Optimization",
@@ -81,7 +81,7 @@ export const aiPages = [
         h2: "Hvad jeg bygger ind i din hjemmeside",
         bullets: [
           "Klar og ensartet beskrivelse af, hvem I er, hvad I tilbyder, og hvor I arbejder – skrevet, så den kan citeres ordret.",
-          "Svar-først-sektioner (“Kort svar”) på de vigtigste sider.",
+          "Et kort, direkte svar i starten af de vigtigste sider.",
           "FAQ-sektioner med reelle kundespørgsmål og markeret FAQPage-data.",
           "Organization-, LocalBusiness-, Service-, Offer-, Person- og BreadcrumbList-markup.",
           "Prisoversigter i tabeller, som både mennesker og maskiner nemt læser.",
@@ -142,7 +142,7 @@ export const aiPages = [
 export const aiArticles = [
   {
     slug: "saadan-bliver-du-nevnt-af-chatgpt-og-google-ai",
-    title: "Sådan bliver din virksomhed nævnt af ChatGPT og Google AI | WebHjerte",
+    title: "Bliv nævnt af ChatGPT og Google AI: 12 tiltag | WebHjerte",
     description:
       "Praktisk guide til lokale virksomheder: 12 konkrete tiltag, der gør din hjemmeside nem at citere for ChatGPT, Google AI Overviews, Gemini og Perplexity.",
     keywords: ["ChatGPT synlighed", "AI Overviews", "GEO guide", "blive nævnt i ChatGPT"],

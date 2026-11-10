@@ -46,14 +46,14 @@ export default function QuickLeadForm() {
           </svg>
         </div>
         <p className="text-[15px] font-medium text-white">Tak for din besked!</p>
-        <p className="text-[13px] text-[#5a5a5a]">Jeg ringer til dig inden for 24 timer.</p>
+        <p className="text-[14px] text-[#a6b1b1]">Jeg ringer til dig inden for 24 timer.</p>
       </div>
     );
   }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3" aria-live="polite">
-      <p className="text-[13px] font-medium text-[#5a5a5a] mb-1">Få et gratis tilbud</p>
+      <p className="text-[15px] font-semibold text-white mb-1">Få et gratis tilbud</p>
 
       <input
         name="name"
@@ -64,7 +64,7 @@ export default function QuickLeadForm() {
         placeholder="Dit navn"
         value={form.name}
         onChange={set("name")}
-        className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#444] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
+        className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
       />
       <input
         name="phone"
@@ -75,7 +75,7 @@ export default function QuickLeadForm() {
         placeholder="Dit telefonnummer"
         value={form.phone}
         onChange={set("phone")}
-        className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#444] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
+        className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
       />
       <input
         name="url"
@@ -84,7 +84,7 @@ export default function QuickLeadForm() {
         placeholder="Din hjemmeside (valgfrit)"
         value={form.url}
         onChange={set("url")}
-        className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#444] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
+        className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
       />
 
       <input
@@ -112,7 +112,7 @@ export default function QuickLeadForm() {
         </p>
       )}
 
-      <p className="text-[11px] text-[#3a3d3d] text-center mt-1">
+      <p className="text-[12px] text-[#8a9696] text-center mt-1">
         Ingen spam. Ingen binding.{" "}
         <span className="text-[#00a8e8]">Svar inden for 24 timer.</span>
       </p>

@@ -67,7 +67,7 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
                       <p className="text-[18px] sm:text-[19px] font-semibold text-white leading-[1.3] mb-3 group-hover:text-[#00a8e8] transition-colors duration-300">
                         {item.title}
                       </p>
-                      <p className="text-[13.5px] text-[#8fa0a8] leading-[1.75] mb-8">{item.desc}</p>
+                      <p className="readable text-[15px] text-[#a6b1b1] leading-[1.7] mb-8">{item.desc}</p>
                       <div className="mt-auto flex items-center justify-between">
                         <span className="text-[12px] font-medium text-white/60 group-hover:text-white transition-colors">
                           {item.cta || "Læs mere"}
@@ -106,7 +106,7 @@ export function PostCard({ href, title, desc, tag, index = 0, featured = false, 
               <p className="text-[clamp(22px,2.8vw,34px)] font-semibold text-white leading-[1.2] tracking-tight max-w-[26ch] mb-4 group-hover:text-[#00a8e8] transition-colors duration-300">
                 {title}
               </p>
-              <p className="text-[14px] text-[#8fa0a8] leading-[1.8] max-w-[58ch]">{desc}</p>
+              <p className="readable text-[16px] text-[#a6b1b1] leading-[1.75] max-w-[58ch]">{desc}</p>
               {meta && <p className="text-[12px] text-[#6c7a7a] mt-6">{meta}</p>}
             </div>
             <div className="relative hidden md:block">
@@ -136,7 +136,8 @@ export function PostCard({ href, title, desc, tag, index = 0, featured = false, 
           <p className="text-[16.5px] font-semibold text-[#1c1e1e] leading-[1.35] mb-3 group-hover:text-[#00a8e8] transition-colors duration-300">
             {title}
           </p>
-          <p className="text-[13px] text-[#6a6a6a] leading-[1.75] mb-6 line-clamp-4">{desc}</p>
+          <p className="readable text-[14.5px] text-[#4a4f50] leading-[1.7] mb-5 line-clamp-4">{desc}</p>
+          {meta && <p className="text-[12px] text-[#8a8d8d] mb-5">{meta}</p>}
           <div className="mt-auto flex items-center justify-between">
             <span className="text-[12px] font-medium text-[#5a5d5d] group-hover:text-[#00a8e8] transition-colors">Læs guiden</span>
             <ArrowBadge size="sm" />

@@ -9,9 +9,9 @@ const own = [
   {
     ...base,
     slug: "ai-i-smaa-virksomheder-10-eksempler",
-    title: "AI i små virksomheder: 10 konkrete eksempler, der virker | WebHjerte",
+    title: "AI i små virksomheder: 10 eksempler, der virker | WebHjerte",
     description:
-      "10 praktiske eksempler på, hvordan små virksomheder bruger AI i hverdagen: chatbot, booking, tilbud, opfølgning, anmeldelser og synlighed i ChatGPT – og hvor du bør starte.",
+      "10 praktiske eksempler på AI i små virksomheder: chatbot, booking, tilbud, opfølgning og anmeldelser – og hvor du bør starte.",
     keywords: ["AI små virksomheder", "AI eksempler virksomhed", "AI chatbot", "AI automatisering", "kunstig intelligens virksomhed"],
     name: "AI i små virksomheder: 10 eksempler",
     category: "AI",
@@ -95,9 +95,9 @@ const own = [
   {
     ...base,
     slug: "hvad-koster-en-hjemmeside-om-aaret",
-    title: "Hvad koster en hjemmeside om året? Domæne, hosting og drift | WebHjerte",
+    title: "Hvad koster en hjemmeside om året? | WebHjerte",
     description:
-      "Hvad koster en hjemmeside om året? Ærligt overblik over domæne, hosting, vedligeholdelse og værktøjer – med tre konkrete regneeksempler og tips til at undgå dyre abonnementer.",
+      "Ærligt overblik over de årlige udgifter: domæne, hosting, vedligeholdelse og værktøjer – med tre regneeksempler og tips til at spare.",
     keywords: ["hvad koster en hjemmeside om året", "hosting pris", "domæne pris", "hjemmeside abonnement", "hvad koster det at have en hjemmeside", "vedligeholdelse af hjemmeside"],
     name: "Hvad koster en hjemmeside om året?",
     category: "Priser",
@@ -179,7 +179,7 @@ const own = [
     slug: "seo-tjekliste-lokale-virksomheder",
     title: "SEO-tjekliste for lokale virksomheder: 25 punkter | WebHjerte",
     description:
-      "Praktisk SEO-tjekliste til lokale virksomheder i Horsens og Midtjylland: teknik, indhold, Google Virksomhedsprofil og lokale signaler. Lav dit eget webtjek på en time.",
+      "SEO-tjekliste til lokale virksomheder: teknik, indhold, Google Virksomhedsprofil og lokale signaler. Lav dit eget webtjek på en time.",
     keywords: ["seo tjekliste", "lokal seo", "seo tjek af hjemmeside", "seo horsens", "webtjek", "gratis seo tjek"],
     name: "SEO-tjekliste for lokale virksomheder",
     category: "SEO",
@@ -288,9 +288,9 @@ const own = [
   {
     ...base,
     slug: "vaelg-webbureau-10-spoergsmaal",
-    title: "Sådan vælger du webbureau: 10 spørgsmål du bør stille | WebHjerte",
+    title: "Vælg webbureau: 10 spørgsmål, du bør stille | WebHjerte",
     description:
-      "Skal du vælge webbureau eller freelancer? De 10 spørgsmål, der afslører, om leverandøren passer til dig: pris, ejerskab, tidsplan, SEO, support og referencer – plus røde flag.",
+      "De 10 spørgsmål, der afslører, om et webbureau eller en freelancer passer til dig: pris, ejerskab, tidsplan, SEO, support – og røde flag.",
     keywords: ["vælg webbureau", "hvornår kan det betale sig at bruge et bureau", "webbureau pris", "freelancer til bureau", "webbureau til små virksomheder", "webbureau horsens"],
     name: "10 spørgsmål til dit webbureau",
     category: "Guides",
@@ -364,7 +364,7 @@ const own = [
   {
     ...base,
     slug: "wordpress-eller-skraeddersyet",
-    title: "WordPress eller skræddersyet hjemmeside? Sådan vælger du | WebHjerte",
+    title: "WordPress eller skræddersyet hjemmeside? | WebHjerte",
     description:
       "WordPress eller en kodet, skræddersyet hjemmeside? Ærlig sammenligning af pris, hastighed, sikkerhed, redigering og SEO – og hvornår jeg anbefaler hvad.",
     keywords: ["wordpress eller skræddersyet", "wordpress eller kodet hjemmeside", "skræddersyet hjemmeside", "wordpress fordele ulemper", "next.js hjemmeside"],
@@ -453,7 +453,7 @@ const own = [
     slug: "hvor-lang-tid-tager-det-at-lave-en-hjemmeside",
     title: "Hvor lang tid tager det at lave en hjemmeside? | WebHjerte",
     description:
-      "Hvor lang tid tager det at lave en hjemmeside? Realistiske tidsplaner for landingside, firmahjemmeside og webshop – hvad der forsinker projekter, og hvordan du får den hurtigst.",
+      "Realistiske tidsplaner for landingside, firmahjemmeside og webshop – hvad der forsinker et projekt, og hvordan du får siden hurtigst.",
     keywords: ["hvor lang tid tager det at lave en hjemmeside", "hvor lang tid tager en hjemmeside", "hjemmeside hurtigt", "hjemmeside på en uge"],
     name: "Hvor lang tid tager en hjemmeside?",
     category: "Guides",
@@ -491,7 +491,7 @@ const own = [
           { title: "Design (inden for 48 timer)", text: "Du ser et konkret designudkast af forsiden. Passer det ikke, betaler du 0 kr." },
           { title: "Udvikling (2–7 dage)", text: "Når designet er godkendt, bygger jeg resten af siderne og sætter SEO, formularer og tracking op." },
           { title: "Test og rettelser (1–2 dage)", text: "Du får et link og kan klikke rundt. Vi retter det sidste sammen." },
-          { title: "Lancering", text: "Siden går live på dit domæne. Du får 30 dages support i Standard-pakken." },
+          { title: "Lancering", text: "Siden går live på dit domæne. Du får 30 dages support i alle pakker." },
         ],
       },
       {

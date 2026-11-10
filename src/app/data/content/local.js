@@ -12,7 +12,7 @@ export const localPages = [
     type: "service",
     title: "Webbureau i Jylland – hjemmesider til fast pris | WebHjerte",
     description:
-      "Webbureau til virksomheder i hele Jylland: Østjylland, Midtjylland, Vestjylland, Nordjylland og Djursland. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.",
+      "Webbureau til virksomheder i hele Jylland – fra Skagen til Kolding. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.",
     keywords: ["webbureau Jylland", "webbureau i Jylland", "webbureau Østjylland", "webbureau Nordjylland", "webbureau Djursland", "webbureau Vestjylland"],
     name: "Webbureau i Jylland",
     serviceType: "Webbureau",
@@ -151,7 +151,7 @@ export const localPages = [
     type: "service",
     title: "Webbureau Aarhus – hjemmesider til fast pris | WebHjerte",
     description:
-      "Webbureau til virksomheder i Aarhus og Østjylland. Hjemmesider fra 2.500 kr, SEO bygget ind og direkte kontakt med udvikleren. Baseret i Horsens – 45 minutter fra Aarhus.",
+      "Webbureau til virksomheder i Aarhus: hjemmesider fra 2.500 kr, lokal SEO og direkte kontakt. Baseret i Horsens, ca. 45 minutter væk.",
     keywords: ["webbureau Aarhus", "webdesign Aarhus", "webdesign århus", "billig hjemmeside Aarhus", "hjemmeside Aarhus"],
     name: "Webbureau Aarhus",
     serviceType: "Webbureau",
@@ -363,7 +363,7 @@ export const localPages = [
   {
     slug: "wordpress-horsens",
     type: "service",
-    title: "WordPress Horsens & Midtjylland – professionel hjemmeside | WebHjerte",
+    title: "WordPress-hjemmeside i Horsens | WebHjerte",
     description:
       "WordPress-hjemmeside til virksomheder i Horsens og Midtjylland. Professionel opsætning, hurtig levering og en løsning, du selv kan redigere. Fra 4.500 kr.",
     keywords: ["wordpress Horsens", "wordpress Midtjylland", "wordpress firma", "wordpress udvikling Horsens", "wordpress leverandør"],
@@ -440,7 +440,7 @@ export const localPages = [
   {
     slug: "digitalt-bureau-horsens",
     type: "service",
-    title: "Digitalt bureau Horsens – hjemmeside, SEO og synlighed | WebHjerte",
+    title: "Digitalt bureau i Horsens – web og SEO | WebHjerte",
     description:
       "Digitalt bureau i Horsens: hjemmesider, SEO, AI-synlighed og landingssider til annoncer. Lokalt, hurtigt og til fast pris – uden mellemled.",
     keywords: ["digitalt bureau Horsens", "marketing bureau Horsens", "marketingbureau Horsens", "reklamebureau Horsens", "digital bureau Horsens", "google ads bureau Horsens"],

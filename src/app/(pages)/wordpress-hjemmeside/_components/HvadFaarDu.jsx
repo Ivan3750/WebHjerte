@@ -46,13 +46,13 @@ const HvadFaarDu = () => {
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
           as="p"
-          className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3"
+          className="text-[11px] uppercase tracking-[0.1em] text-[#8a9696] mb-3"
         >
           WordPress-pakke
         </AnimatedInView>
         <AnimatedInView
           as="h2"
-          className="title text-white !leading-tight !mb-[16px]"
+          className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-[16px]"
         >
           Det får du med
         </AnimatedInView>
@@ -79,16 +79,16 @@ const HvadFaarDu = () => {
 
           <div className="lg:w-[220px] lg:border-l lg:border-[#2a2d2d] lg:pl-10 flex flex-col justify-between gap-5">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.08em] text-[#5a5a5a] mb-2">
+              <p className="text-[11px] uppercase tracking-[0.08em] text-[#8a9696] mb-2">
                 Fast pris
               </p>
               <div className="flex items-baseline gap-1.5">
                 <span className="text-[34px] font-medium leading-none text-white">
                   3.500
                 </span>
-                <span className="text-[13px] text-[#5a5a5a]">DKK</span>
+                <span className="text-[13px] text-[#8a9696]">DKK</span>
               </div>
-              <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#5a5a5a] mt-3">
+              <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#8a9696] mt-3">
                 Levering: 7 dage
               </span>
             </div>

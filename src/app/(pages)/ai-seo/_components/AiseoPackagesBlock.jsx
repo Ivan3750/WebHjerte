@@ -34,7 +34,7 @@ const packages = [
       "Indholdsoptimering (10 elementer)",
       "Teknisk SEO-grundlag",
       "Google Business Profile",
-      "Support: e-mail i 14 dage",
+      "30 dages support",
     ],
   },
   {
@@ -73,10 +73,10 @@ const AiseoPackagesBlock = () => {
   return (
     <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
+        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a9696] mb-3">
           Priser
         </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-white !leading-tight !mb-[20px]">
+        <AnimatedInView as="h2" className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-[20px]">
           Fast pris — ingen overraskelser
         </AnimatedInView>
         <AnimatedInView as="p" className="text-[13px] text-[#777] max-w-xl !mb-10">
@@ -104,7 +104,7 @@ const AiseoPackagesBlock = () => {
                 </div>
                 <div className="flex items-baseline gap-1.5 mt-3">
                   <span className="text-[28px] font-medium leading-none text-white">{price}</span>
-                  <span className="text-[13px] text-[#5a5a5a]">DKK</span>
+                  <span className="text-[13px] text-[#8a9696]">DKK</span>
                 </div>
               </div>
               <hr className="border-[#2a2d2d]" />
@@ -116,7 +116,7 @@ const AiseoPackagesBlock = () => {
                   </div>
                 ))}
               </div>
-              <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#5a5a5a]">
+              <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#8a9696]">
                 {timing}
               </span>
               <Link

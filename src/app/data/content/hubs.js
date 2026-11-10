@@ -58,7 +58,7 @@ export const hubPages = [
   {
     slug: "ofte-stillede-spoergsmaal",
     type: "page",
-    title: "Ofte stillede spørgsmål om hjemmesider, priser og SEO | WebHjerte",
+    title: "FAQ om hjemmesider, priser og SEO | WebHjerte",
     description:
       "Svar på de mest stillede spørgsmål om hjemmesider hos WebHjerte: priser, tid, ejerskab, WordPress, SEO, AI-synlighed og samarbejde.",
     keywords: ["hjemmeside spørgsmål", "hvad koster en hjemmeside", "hvor lang tid tager en hjemmeside", "FAQ webbureau"],

@@ -82,7 +82,7 @@ export default function HvadGoerProfessionel() {
           >
             Hvad du får
           </AnimatedInView>
-          <AnimatedInView as="h2" className="maintitle text-[#1a1a1a] !leading-tight mb-4">
+          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-4">
             Det, der gør en hjemmeside professionel
           </AnimatedInView>
           <AnimatedInView as="p" className="text-[14px] text-[#7a7a7a] leading-[1.85]">

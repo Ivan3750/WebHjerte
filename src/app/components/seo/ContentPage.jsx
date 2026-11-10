@@ -5,7 +5,7 @@ import CtaSearchBlock from "../ui/CTA";
 import QuickLeadForm from "../ui/QuickLeadForm";
 import ScrollProgress from "../ui/ScrollProgress";
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
-import SectionBody, { slugify } from "./ContentBlocks";
+import SectionBody, { slugify, autoVisual } from "./ContentBlocks";
 import CityScene from "./CityScene";
 import TocNav from "./TocNav";
 import { ReadMore } from "./RelatedCards";
@@ -73,10 +73,6 @@ export default function ContentPage({
       mainEntityOfPage: type === "article" ? url : undefined,
       datePublished: published,
       dateModified: updated || published,
-      speakable: {
-        "@type": "SpeakableSpecification",
-        cssSelector: ["[data-speakable]"],
-      },
     },
     {
       "@type": "BreadcrumbList",
@@ -152,6 +148,17 @@ export default function ContentPage({
 
   const midIdx = sections.length >= 4 ? Math.floor(sections.length / 2) : -1;
 
+  // Samme illustration må kun bruges én gang pr. side
+  const used = new Set();
+  const visuals = sections.map((s, i) => {
+    const v = autoVisual(s, i);
+    const name = typeof v === "string" ? v : v?.name;
+    if (!name) return null;
+    if (used.has(name) && !s.visual) return null;
+    used.add(name);
+    return v;
+  });
+
   /* Mellem-CTA: mørkt kort i læsespalten – uden telefonnummer, ét tydeligt næste skridt */
   const midCta = (
     <FadeUp className="my-4">
@@ -215,24 +222,6 @@ export default function ContentPage({
           </aside>
 
           <div className="readable max-w-[740px] min-w-0">
-            {summary && (
-              <FadeUp>
-                <div className="relative overflow-hidden rounded-3xl bg-white border border-[#e8e6e6] p-6 sm:p-8 mb-14">
-                  <div aria-hidden className="pointer-events-none absolute -top-14 -right-14 w-44 h-44 rounded-full bg-[#00a8e8]/10 blur-2xl" />
-                  <p className="relative text-[11px] uppercase tracking-[0.16em] text-[#00a8e8] font-semibold mb-3 flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-[#00a8e8] text-[#10181a] flex items-center justify-center">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                        <path d="M5 12l5 5 9-10" />
-                      </svg>
-                    </span>
-                    {summaryLabel}
-                  </p>
-                  <p data-speakable className="relative text-[17px] sm:text-[19px] font-medium text-[#1f2323] leading-[1.7]">
-                    {summary}
-                  </p>
-                </div>
-              </FadeUp>
-            )}
             {afterSummary && <div className="mb-16">{afterSummary}</div>}
 
             <div className="flex flex-col gap-16 sm:gap-20">
@@ -253,7 +242,7 @@ export default function ContentPage({
                         />
                       </div>
                     )}
-                    <SectionBody section={section} idx={idx} />
+                    <SectionBody section={section} idx={idx} visual={visuals[idx]} />
                   </article>
                 </div>
               ))}

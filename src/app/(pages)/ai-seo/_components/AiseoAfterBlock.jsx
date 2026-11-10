@@ -24,7 +24,7 @@ export default function AiseoAfterBlock() {
         <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
           Efter lancering
         </AnimatedInView>
-        <AnimatedInView as="h2" className="title text-[#1a1a1a] !leading-tight !mb-4 max-w-[22ch]">
+        <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-4 max-w-[22ch]">
           Jeg stopper ikke, når siden er optimeret
         </AnimatedInView>
         <AnimatedInView as="p" className="text-[13px] text-[#7a7a7a] leading-[1.85] max-w-[60ch] mb-14">

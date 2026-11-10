@@ -22,7 +22,7 @@ export default function FormToLead({
         <div>
           <AnimatedInView
             as="p"
-            className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3"
+            className="text-[11px] uppercase tracking-[0.1em] text-[#8a9696] mb-3"
           >
             {eyebrow}
           </AnimatedInView>
@@ -35,7 +35,7 @@ export default function FormToLead({
           </AnimatedInView>
           <AnimatedInView
             as="p"
-            className="text-[14px] text-[#5a5a5a] leading-[1.75] max-w-md mb-10"
+            className="text-[14px] text-[#8a9696] leading-[1.75] max-w-md mb-10"
           >
             {description}
           </AnimatedInView>
@@ -49,7 +49,7 @@ export default function FormToLead({
                 key={label}
                 className="flex items-center justify-between bg-[#262a2a] px-5 py-4"
               >
-                <span className="text-[12px] text-[#5a5a5a]">{label}</span>
+                <span className="text-[12px] text-[#8a9696]">{label}</span>
                 <span className="text-[12px] font-medium text-[#e0e0e0]">
                   {value}
                 </span>

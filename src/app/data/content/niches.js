@@ -26,7 +26,7 @@ export const nichePages = [
     type: "service",
     title: "Hjemmeside til håndværkere i Horsens | WebHjerte",
     description:
-      "Hjemmeside til håndværkere: sådan får du flere opkald fra lokale kunder. Hvad kunderne leder efter, hvad siden skal indeholde, og de fejl, der koster dig henvendelser.",
+      "Hjemmeside til håndværkere: sådan får du flere opkald fra lokale kunder – hvad siden skal indeholde, og de fejl, der koster henvendelser.",
     keywords: ["hjemmeside håndværker", "hjemmeside til håndværkere", "håndværker hjemmeside Horsens", "webdesign håndværker", "hjemmeside tømrer VVS elektriker maler"],
     name: "Hjemmeside til håndværkere",
     serviceType: "Webdesign",
@@ -174,7 +174,7 @@ export const nichePages = [
     type: "service",
     title: "Hjemmeside til VVS-firma i Horsens | WebHjerte",
     description:
-      "Hjemmeside til VVS-firmaer: sådan får du akutte opkald og tilbudskunder fra lokale søgninger. Opbygning, tekster og de fejl, der koster VVS-firmaer henvendelser.",
+      "Hjemmeside til VVS-firmaer: få akutte opkald og tilbudskunder fra lokale søgninger. Opbygning, tekster og de fejl, du skal undgå.",
     keywords: ["hjemmeside VVS", "VVS hjemmeside Horsens", "VVS-firma hjemmeside", "webdesign VVS", "VVS installatør hjemmeside"],
     name: "Hjemmeside til VVS-firma",
     serviceType: "Webdesign",
@@ -590,7 +590,7 @@ export const nichePages = [
     type: "service",
     title: "Hjemmeside til restaurant og café i Horsens | WebHjerte",
     description:
-      "Hjemmeside til restauranter og caféer: menu, booking og bestilling, som du selv ejer. Sådan får du flere gæster direkte uden at betale kommission til platforme.",
+      "Hjemmeside til restauranter og caféer: menu, booking og egen bestilling. Få flere gæster direkte – uden kommission til platforme.",
     keywords: ["hjemmeside restaurant", "restaurant hjemmeside Horsens", "café hjemmeside", "online bestilling restaurant", "booking restaurant hjemmeside"],
     name: "Hjemmeside til restauranter",
     serviceType: "Webdesign",

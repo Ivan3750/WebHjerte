@@ -1,106 +1,95 @@
-"use client";
+import { RevealLines } from "../../../components/home/fx/Reveal";
+import SectionBody, { slugify } from "../../../components/seo/ContentBlocks";
 
-import AnimatedInView from "../../../components/ui/AnimatedInView";
+const sections = [
+  {
+    h2: "Gratis SEO- og web-tjek i Horsens",
+    paragraphs: [
+      "Med et gratis SEO- og web-tjek får du en gennemgang af din hjemmeside og dens synlighed på Google. Jeg ser på teknisk SEO, indhold, hastighed og brugeroplevelse, så du tydeligt kan se, hvor siden klarer sig godt – og hvor der er potentiale.",
+      "Tjekket er målrettet virksomheder i Horsens og Midtjylland, der ønsker flere henvendelser, bedre placeringer og en hjemmeside, der får besøgende til at tage kontakt.",
+    ],
+    visual: "seo",
+  },
+  {
+    h2: "Det indeholder analysen",
+    paragraphs: [
+      "Jeg vurderer din hjemmeside ud fra de forhold, Google selv lægger vægt på, og sammenligner med, hvordan konkurrenterne i dit område klarer sig.",
+    ],
+    bullets: [
+      "Teknisk SEO: struktur, indeksering og fejl",
+      "Hastighed og Core Web Vitals (LCP, INP og CLS)",
+      "Titler, beskrivelser og overskrifter",
+      "Mobilvisning, tilgængelighed og brugeroplevelse",
+      "Hvor godt siden får besøgende til at tage kontakt",
+    ],
+  },
+  {
+    h2: "Hvorfor lokal SEO betyder så meget",
+    paragraphs: [
+      "Lokal SEO handler om at blive fundet af kunder, der søger efter dine ydelser i dit område. Når nogen søger på fx “webdesign Horsens” eller “tømrer Horsens”, prioriterer Google virksomheder med tydelig lokal relevans.",
+    ],
+    visual: "localpack",
+    callout: {
+      tone: "tip",
+      text: "Google Virksomhedsprofilen er ofte den hurtigste gevinst: rigtig kategori, åbningstider, billeder og nye anmeldelser kan flytte dig i kortresultaterne.",
+    },
+  },
+  {
+    h2: "Typiske fejl, jeg finder",
+    paragraphs: ["Mange virksomheder har flotte hjemmesider, men mister kunder på grund af fejl, man ikke umiddelbart ser:"],
+    compare: {
+      bad: {
+        title: "Det ser jeg ofte",
+        items: [
+          "Manglende lokal optimering – byen står ingen steder",
+          "Langsom indlæsning på mobil",
+          "Uklare knapper og kontaktmuligheder",
+          "Tekniske fejl, der forhindrer korrekt indeksering",
+          "Tekster, der ikke svarer på det, kunderne søger efter",
+        ],
+      },
+      good: {
+        title: "Det får du med",
+        items: [
+          "En prioriteret liste over de vigtigste rettelser",
+          "Konkrete forslag, du selv kan bruge",
+          "Et ærligt svar på, hvad der giver mest effekt",
+          "Svar inden for 24 timer",
+        ],
+      },
+    },
+  },
+  {
+    h2: "Hvem er tjekket relevant for?",
+    paragraphs: [
+      "Små og mellemstore virksomheder i Horsens og omegn – håndværkere, klinikker, konsulenter, webshops og lokale servicevirksomheder, der ønsker flere kunder via Google.",
+      "Uanset om din hjemmeside er ny eller har nogle år på bagen, giver en gennemgang et klart billede af, hvad der skal til for at blive mere synlig.",
+    ],
+    cta: { href: "/seo-horsens", label: "Læs om SEO i Horsens" },
+  },
+];
 
-const SEOTextHorsens = () => {
-  return (
-    <section className="bg-[#F7F6F6] py-12 px-4">
-      <div className="max-w-4xl mx-auto space-y-10 text-gray-700 leading-relaxed">
-
-        <AnimatedInView as="h2" className="text-2xl font-bold text-center">
-          Gratis SEO- og web-tjek i Horsens – få indsigt i din synlighed på Google
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          Med et gratis SEO- og web-tjek i Horsens får du en professionel analyse
-          af din hjemmeside og dens synlighed på Google. Vi gennemgår både teknisk
-          SEO, indhold, hastighed og brugeroplevelse, så du tydeligt kan se, hvor
-          din hjemmeside performer godt – og hvor der er potentiale for forbedring.
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          SEO-tjekket er målrettet virksomheder i Horsens og Midtjylland, der ønsker
-          flere henvendelser, bedre placeringer i søgeresultaterne og en hjemmeside,
-          der rent faktisk konverterer besøgende til kunder.
-        </AnimatedInView>
-
-        <AnimatedInView as="h3" className="text-xl font-semibold">
-          Hvad indeholder vores gratis SEO-analyse?
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          Når du bestiller et gratis SEO-tjek, analyserer vi din hjemmeside ud fra
-          de samme parametre, som Google bruger i sin vurdering. Det betyder, at du
-          får et realistisk billede af, hvordan din hjemmeside klarer sig i forhold
-          til konkurrenterne i Horsens.
-        </AnimatedInView>
-
-        <AnimatedInView as="ul" className="list-disc pl-6 space-y-2">
-          <li>Teknisk SEO (struktur, indeksering og fejl)</li>
-          <li>Hastighed og Core Web Vitals (LCP, FID, CLS)</li>
-          <li>SEO-score og best practice</li>
-          <li>Tilgængelighed og brugeroplevelse</li>
-          <li>Overordnet vurdering af konverteringspotentiale</li>
-        </AnimatedInView>
-
-        <AnimatedInView as="h2" className="text-2xl font-bold text-center">
-          Hvorfor er lokal SEO i Horsens afgørende for din forretning?
-        </AnimatedInView>
-
-        <AnimatedInView as="p">
-          Lokal SEO handler om at blive fundet af kunder, der søger efter dine
-          ydelser i Horsens. Når nogen søger på eksempelvis “SEO bureau Horsens”,
-          “webdesign Horsens” eller “hjemmeside analyse Horsens”, prioriterer Google
-          virksomheder med lokal relevans.
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          Med den rette SEO-strategi kan din virksomhed opnå bedre placeringer i de
-          lokale søgeresultater, øget synlighed på Google Maps og flere relevante
-          henvendelser fra potentielle kunder i nærområdet.
-        </AnimatedInView>
-
-        <AnimatedInView as="h3" className="text-xl font-semibold">
-          Typiske SEO-fejl vi ser hos virksomheder i Horsens
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          Mange virksomheder har flotte hjemmesider, men mister kunder på grund af
-          skjulte SEO-fejl. Under vores SEO-tjek ser vi ofte problemer som:
-        </AnimatedInView>
-
-        <AnimatedInView as="ul" className="list-disc pl-6 space-y-2">
-          <li>Manglende lokal SEO-optimering</li>
-          <li>Langsom indlæsningstid</li>
-          <li>Uklare call-to-actions</li>
-          <li>Tekniske fejl, der forhindrer korrekt indeksering</li>
-          <li>Indhold, der ikke matcher brugernes søgeintention</li>
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          Et gratis SEO-tjek giver dig konkrete anbefalinger til, hvordan disse
-          udfordringer kan løses, så din hjemmeside bliver mere synlig og effektiv.
-        </AnimatedInView>
-
-        <AnimatedInView as="h2" className="text-2xl font-bold text-center">
-          Hvem er dette gratis SEO-tjek relevant for?
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          SEO- og web-tjekket er relevant for både små og mellemstore virksomheder i
-          Horsens, herunder håndværkere, klinikker, konsulenter, webshops og lokale
-          servicevirksomheder, der ønsker flere kunder via Google.
-        </AnimatedInView>
-
-        <AnimatedInView as="p" className="text">
-          Uanset om din hjemmeside er ny eller har eksisteret i flere år, kan en
-          SEO-analyse give værdifuld indsigt i, hvordan du forbedrer din online
-          synlighed og får mere ud af dit website.
-        </AnimatedInView>
-
-      </div>
-    </section>
-  );
-};
+const SEOTextHorsens = () => (
+  <section className="scene bg-[#f7f6f6]">
+    <div className="readable max-w-[760px] mx-auto px-5 sm:px-10 py-16 sm:py-24 flex flex-col gap-16 sm:gap-20">
+      {sections.map((s, idx) => (
+        <article key={s.h2} id={slugify(s.h2)} className="scroll-mt-28">
+          <div className="mb-6">
+            <p className="text-[12px] tabular-nums text-[#00a8e8] mb-3 flex items-center gap-3">
+              {String(idx + 1).padStart(2, "0")}
+              <span className="w-10 h-px bg-[#00a8e8]/40" />
+            </p>
+            <RevealLines
+              as="h2"
+              lines={[s.h2]}
+              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(22px,2.6vw,30px)] max-w-[26ch]"
+            />
+          </div>
+          <SectionBody section={s} idx={idx} visual={s.visual || null} />
+        </article>
+      ))}
+    </div>
+  </section>
+);
 
 export default SEOTextHorsens;
