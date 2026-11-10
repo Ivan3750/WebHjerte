@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PageHero from "../../components/ui/PageHero";
 import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
-import { PostCard } from "../../components/seo/RelatedCards";
+import BlogList from "./_components/BlogList";
 import CtaSearchBlock from "../../components/ui/CTA";
 import { articles } from "../../data/content";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
@@ -19,6 +19,8 @@ const legacy = [
     title: "Hvad koster en hjemmeside i 2026?",
     desc: "Rigtige tal: hjemmesidebygger, freelancer og bureau sammenlignet – plus prisberegner.",
     category: "Priser",
+    readMinutes: 10,
+    updated: "2026-11-10",
   },
   {
     href: "/freelancer-vs-bureau",
@@ -29,11 +31,16 @@ const legacy = [
 ];
 
 export default function BlogPage() {
+  const fmt = (iso) => new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
   const posts = [
     legacy[0],
-    ...articles.map((a) => ({ href: `/blog/${a.slug}`, title: a.h1, desc: a.intro, category: a.category, meta: a.readMinutes ? `${a.readMinutes} min. læsning` : undefined })),
+    ...articles.map((a) => ({ href: `/blog/${a.slug}`, title: a.h1, desc: a.intro, category: a.category, readMinutes: a.readMinutes, updated: a.updated })),
     ...legacy.slice(1),
-  ];
+  ].map((p) => ({
+    ...p,
+    category: p.category === "Guides" ? "Guides" : p.category,
+    meta: [p.readMinutes ? `${p.readMinutes} min. læsning` : null, p.updated ? `Opdateret ${fmt(p.updated)}` : null].filter(Boolean).join(" · ") || undefined,
+  }));
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -71,16 +78,7 @@ export default function BlogPage() {
             className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-10 sm:mb-14"
           />
 
-          <FadeUp className="mb-4">
-            <PostCard featured {...posts[0]} tag={posts[0].category} index={0} meta={posts[0].meta} />
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {posts.slice(1).map((post, i) => (
-              <FadeUp key={post.href} delay={(i % 3) * 0.07}>
-                <PostCard {...post} tag={post.category} index={i + 1} />
-              </FadeUp>
-            ))}
-          </div>
+          <BlogList posts={posts} />
 
           <div className="mt-16 pt-8 border-t border-[#e4e2e2] flex flex-wrap items-center gap-3">
             <span className="text-[12px] text-[#5a5a5a]">Slå begreber op:</span>

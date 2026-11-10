@@ -16,7 +16,7 @@ const SocialProof = () => {
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center px-4 sm:px-6">
         <AnimatedInView
           as="p"
-          className="text-[10px] sm:text-[11px] title uppercase tracking-[0.2em] text-[#666] mb-6 sm:mb-8"
+          className="text-[11px] uppercase tracking-[0.18em] text-[#8a9696] mb-6 sm:mb-8"
         >
           Hvad vores kunder siger
         </AnimatedInView>

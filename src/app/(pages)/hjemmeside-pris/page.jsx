@@ -8,7 +8,7 @@ import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
 export const metadata = {
-  title: "Hjemmeside priser 2026 – fast pris fra 2.500 kr + prisberegner | WebHjerte",
+  title: "Hjemmeside pris 2026 – fast pris fra 2.500 kr | WebHjerte",
   description:
     "Hjemmeside priser: Landingside 2.500 kr, Basis 4.500 kr, Standard 7.500 kr, webshop fra 14.000 kr. Beregn din pris og få et fast tilbud inden for 24 timer.",
   keywords:
@@ -16,7 +16,7 @@ export const metadata = {
   robots: "index, follow",
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
-    title: "Hjemmeside Pris – Se Priser hos WebHjerte",
+    title: "Hjemmeside pris – faste priser fra 2.500 kr",
     description:
       "Gennemsigtige priser fra 2.500 DKK. Få et tilbud på 24 timer. Ingen skjulte gebyrer.",
     url: "https://www.webhjerte.dk/hjemmeside-pris",
@@ -27,7 +27,7 @@ export const metadata = {
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Hjemmeside Pris – Se Priser hos WebHjerte",
+    title: "Hjemmeside pris – faste priser fra 2.500 kr",
     description:
       "Gennemsigtige priser fra 2.500 DKK. Få et tilbud på 24 timer. Ingen skjulte gebyrer.",
   },

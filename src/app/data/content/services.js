@@ -83,7 +83,7 @@ export const servicePages = [
   {
     slug: "hjemmeside-til-virksomhed",
     type: "service",
-    title: "Hjemmeside til virksomhed – professionel og til fast pris | WebHjerte",
+    title: "Hjemmeside til virksomhed – fast pris | WebHjerte",
     description:
       "Få en professionel hjemmeside til din virksomhed: struktur, indhold, SEO og kontaktveje, der skaber henvendelser. Fra 2.500 kr og klar på 2–10 dage.",
     keywords: ["hjemmeside til virksomhed", "professionel hjemmeside", "erhvervshjemmesider", "hjemmesider til virksomheder", "ny hjemmeside til virksomhed", "professionelle hjemmesider", "professionel hjemmeside til små virksomheder", "lav en professionel hjemmeside"],
@@ -169,7 +169,7 @@ export const servicePages = [
   {
     slug: "webshop-hjemmeside",
     type: "service",
-    title: "Professionel hjemmeside med webshop – pris og løsninger | WebHjerte",
+    title: "Hjemmeside med webshop – pris og løsninger | WebHjerte",
     description:
       "Hjemmeside med webshop til små virksomheder: WooCommerce, Shopify eller skræddersyet løsning. Betaling, lager og SEO. Fra 14.000 kr til fast pris.",
     keywords: ["professionel hjemmeside med webshop", "webshop pris", "lav webshop", "woocommerce", "shopify"],
@@ -237,7 +237,7 @@ export const servicePages = [
     type: "service",
     title: "Bæredygtigt webdesign – lette, hurtige hjemmesider | WebHjerte",
     description:
-      "Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug. Sådan bygges en hurtig hjemmeside, der belaster miljøet mindre.",
+      "Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug – hurtigere for brugerne, bedre for miljøet.",
     keywords: ["bæredygtigt webbureau", "bæredygtigt webdesign", "grøn hjemmeside", "grøn hosting", "miljøvenlig hjemmeside"],
     name: "Bæredygtigt webdesign",
     serviceType: "Bæredygtigt webdesign",
@@ -301,7 +301,7 @@ export const servicePages = [
   {
     slug: "webstrategi",
     type: "service",
-    title: "Webstrategi – plan for din hjemmeside og online synlighed | WebHjerte",
+    title: "Webstrategi for små virksomheder | WebHjerte",
     description:
       "Webstrategi for små virksomheder: mål, målgruppe, indhold, SEO og AI-synlighed samlet i en klar plan, du kan handle på. Start med en gratis samtale.",
     keywords: ["webstrategi", "digital strategi", "hjemmeside strategi", "online strategi", "webtjek"],
@@ -363,9 +363,9 @@ export const servicePages = [
   {
     slug: "hosting-og-vedligeholdelse",
     type: "service",
-    title: "Hosting og vedligeholdelse af hjemmeside – pris og drift | WebHjerte",
+    title: "Hosting og vedligeholdelse – pris og drift | WebHjerte",
     description:
-      "Hvad koster hosting og vedligeholdelse af en hjemmeside? Se hvad der er inkluderet, abonnement fra 195 kr/md, og hvad du selv skal betale for domæne og hosting.",
+      "Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 195 kr/md, og hvad domæne og hosting koster.",
     keywords: ["hosting pris", "hosting af hjemmeside pris", "webhosting priser", "vedligeholdelse hjemmeside", "hjemmeside abonnement", "hvad koster en hjemmeside om året"],
     name: "Hosting og vedligeholdelse",
     serviceType: "Hosting og webvedligeholdelse",

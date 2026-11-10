@@ -24,13 +24,13 @@ const packages = [
     cta: "Kom i gang",
     href: "/kontakt?pakke=landingside",
     timing: "Levering: 2 dage",
-    changes: "14 dage",
+    changes: "30 dage",
     features: [
       "1 side (til kampagner/annoncer)",
       "Mobilvenlig",
       "Kontaktformular",
       "Basic SEO",
-      "Support: e-mail i 14 dage",
+      "30 dages support",
     ],
   },
   {
@@ -40,8 +40,8 @@ const packages = [
     cta: "Kom i gang",
     href: "/kontakt?pakke=basis",
     timing: "Levering: 5 dage",
-    changes: "14 dage",
-    features: ["3–5 sider", "Mobilvenlig", "Basic SEO", "Kontaktformular", "Google Maps", "Support: e-mail i 14 dage"],
+    changes: "30 dage",
+    features: ["3–5 sider", "Mobilvenlig", "Basic SEO", "Kontaktformular", "Google Maps", "30 dages support"],
   },
   {
     name: "Standard",

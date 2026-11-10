@@ -23,7 +23,7 @@ const MiljoeBlock = () => {
             <span className="text-[12px] text-[#2d7a36] font-medium">5% til miljøet</span>
           </AnimatedInView>
 
-          -<AnimatedInView as="h2" className="title text-[#1c1e1e] !leading-tight mb-6">
+          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-6">
             5% af omsætningen går til{" "}
             <span className="text-[#3a9e4a]">grønne projekter</span>
           </AnimatedInView>

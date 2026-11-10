@@ -85,7 +85,7 @@ const Questions = ({faqs = faqs_default}) => {
           <p  className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-3">
             Ofte stillede spørgsmål
           </p>
-          <h2  className="title text-[#1c1e1e] !leading-tight">
+          <h2  className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)]">
             Har du{" "}
             <span className="text-[#00a8e8]">spørgsmål?</span>
           </h2>

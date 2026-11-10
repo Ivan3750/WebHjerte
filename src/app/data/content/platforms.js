@@ -10,9 +10,9 @@ export const platformPages = [
   {
     slug: "alle-typer-hjemmesider",
     type: "service",
-    title: "Hjemmesider på alle platforme: WordPress, Shopify, Webflow og kode | WebHjerte",
+    title: "Hjemmesider på alle platforme og i kode | WebHjerte",
     description:
-      "WebHjerte bygger og optimerer alle typer hjemmesider: WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (Next.js/React). Vi vælger platformen efter dit behov.",
+      "WordPress, WooCommerce, Shopify, Webflow, Wix eller skræddersyet kode: jeg bygger og optimerer på alle platforme – og vælger efter dit behov.",
     keywords: ["wordpress", "shopify", "webflow", "wix", "squarespace", "next.js", "hjemmeside platform", "hvilken platform hjemmeside", "webudvikler"],
     name: "Alle typer hjemmesider",
     serviceType: "Webudvikling på alle platforme",
@@ -109,7 +109,7 @@ export const platformPages = [
     type: "service",
     title: "Shopify webshop – opsætning, design og SEO | WebHjerte",
     description:
-      "Shopify-webshop til danske virksomheder: opsætning, tilpasset design, betaling, fragt og SEO. Hjælp til nye og eksisterende butikker, migrering og AI-funktioner.",
+      "Shopify-webshop til danske virksomheder: opsætning, design, betaling, fragt og SEO – for nye og eksisterende butikker.",
     keywords: ["shopify", "shopify webshop", "shopify udvikler", "shopify opsætning", "webshop shopify pris", "shopify danmark"],
     name: "Shopify webshop",
     serviceType: "Shopify-udvikling",
@@ -187,9 +187,9 @@ export const platformPages = [
   {
     slug: "ai-loesninger",
     type: "service",
-    title: "AI-løsninger til virksomheder: chatbot, automatisering og AI-agenter | WebHjerte",
+    title: "AI-løsninger til små virksomheder | WebHjerte",
     description:
-      "Vi implementerer AI i din virksomhed: chatbot på hjemmesiden, automatisk booking og kundeservice, lead-kvalificering, workflows og AI-synlighed i ChatGPT og Google. Baseret i Horsens.",
+      "AI i din virksomhed: chatbot på hjemmesiden, automatisk booking og kundeservice, lead-kvalificering og synlighed i ChatGPT og Google.",
     keywords: ["AI løsninger virksomhed", "AI chatbot hjemmeside", "AI automatisering", "AI agent virksomhed", "AI integration", "AI Horsens", "kunstig intelligens virksomhed"],
     name: "AI-løsninger til virksomheder",
     serviceType: "AI-integration og automatisering",
@@ -307,7 +307,7 @@ export const platformPages = [
     type: "service",
     title: "AI-chatbot til hjemmeside: svar kunder 24/7 | WebHjerte",
     description:
-      "AI-chatbot til din hjemmeside eller webshop: svarer på kundespørgsmål, kvalificerer leads og booker tider – trænet på din virksomheds egne oplysninger. Fast pris og GDPR-opsætning.",
+      "AI-chatbot til hjemmeside eller webshop: svarer kunder, kvalificerer leads og booker tider – trænet på dine egne oplysninger. Fast pris.",
     keywords: ["AI chatbot hjemmeside", "chatbot til hjemmeside", "chatbot virksomhed", "chatbot webshop", "AI kundeservice", "AI booking"],
     name: "AI-chatbot til hjemmeside",
     serviceType: "AI-chatbot",
@@ -387,9 +387,9 @@ export const platformPages = [
   {
     slug: "ai-automatisering-virksomhed",
     type: "service",
-    title: "AI-automatisering for små virksomheder: spar tid hver uge | WebHjerte",
+    title: "AI-automatisering: spar tid hver uge | WebHjerte",
     description:
-      "Automatiser gentagne opgaver med AI: tilbud, bookinger, opfølgning, kundeservice og rapporter. Praktiske eksempler og fast pris til små og mellemstore virksomheder.",
+      "Automatiser gentagne opgaver med AI: tilbud, bookinger, opfølgning og kundeservice. Praktiske eksempler og fast pris til små virksomheder.",
     keywords: ["AI automatisering", "automatisering virksomhed", "AI agent", "workflow automatisering", "AI til små virksomheder", "Zapier Make n8n"],
     name: "AI-automatisering",
     serviceType: "AI-automatisering",

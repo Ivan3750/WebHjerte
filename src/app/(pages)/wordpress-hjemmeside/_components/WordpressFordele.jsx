@@ -60,7 +60,7 @@ export default function WordpressFordele() {
         </AnimatedInView>
         <AnimatedInView
           as="h2"
-          className="maintitle text-[#1a1a1a] !leading-tight mb-16 max-w-2xl"
+          className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-16 max-w-2xl"
         >
           Det du bør vide om en WordPress-hjemmeside
         </AnimatedInView>

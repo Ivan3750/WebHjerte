@@ -7,7 +7,7 @@ import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 export const metadata = {
   title: "Portefølje – Webdesign cases fra Horsens | WebHjerte",
   description:
-    "Se mine webdesignprojekter – køreskole, produktkataloger, rideklub og lokale virksomheder. Enkelt design, hurtig levering og mobilvenlige løsninger til danske virksomheder.",
+    "Se hjemmesider, jeg har bygget: fysioterapi, køreskole, produktkataloger, rideklub og lokale virksomheder – hurtige og mobilvenlige.",
   keywords:
     "webdesign cases horsens, portefølje webbureau horsens, hjemmeside eksempler, webdesign referencer midtjylland",
   openGraph: {

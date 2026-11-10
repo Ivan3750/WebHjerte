@@ -805,3 +805,17 @@ footer {
   font-family: Unbounded, var(--font-unbounded), sans-serif;
   letter-spacing: -0.015em;
 }
+
+/* iOS zoomer ind på felter under 16px – undgå det på mobil */
+@media (max-width: 640px) {
+  input, select, textarea { font-size: 16px !important; }
+}
+
+/* Ens typografi på alle indre sider: Unbounded til overskrifter, Inter til brødtekst. Forsiden beholder sit udtryk. */
+body:not(:has(.is-home)) main :is(p, li, dd, td, th, blockquote, label, input, textarea, select, figcaption) {
+  font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: -0.006em;
+}
+body:not(:has(.is-home)) main :is(h1, h2, h3, h4, dt, .font-display) {
+  font-family: Unbounded, var(--font-unbounded), sans-serif;
+}

@@ -32,14 +32,15 @@ export default function PageHero({
         <div className={aside ? "grid lg:grid-cols-[1.15fr_1fr] gap-14 lg:gap-16 items-center" : ""}>
           <div className="flex flex-col items-start">
             {eyebrow && (
-              <FadeUp as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">
+              <FadeUp as="p" className="text-[11.5px] uppercase tracking-[0.14em] text-[#8a9696] mb-5 flex items-center gap-3">
+                <span className="w-8 h-px bg-[#00a8e8]" />
                 {eyebrow}
               </FadeUp>
             )}
             <RevealLines
               as="h1"
               lines={titleLines}
-              className={`maintitle !leading-[1.12] ${titleSize} mb-6 max-w-[22ch]`}
+              className={`maintitle !text-left !leading-[1.12] ${titleSize} mb-6 max-w-[22ch]`}
             />
             {lead && (
               <FadeUp as="p" delay={0.15} className="readable text-[16px] sm:text-[17px] text-[#b4bdbd] leading-[1.75] max-w-[54ch] mb-8">
@@ -61,7 +62,7 @@ export default function PageHero({
                 {facts.map(({ num, label }) => (
                   <div key={label}>
                     <p className="text-[20px] sm:text-[22px] font-semibold text-white leading-none">{num}</p>
-                    <p className="text-[11px] text-[#8a8a8a] mt-2">{label}</p>
+                    <p className="text-[12.5px] text-[#93a0a0] mt-2">{label}</p>
                   </div>
                 ))}
               </FadeUp>

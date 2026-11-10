@@ -47,7 +47,7 @@ const CircleScore = ({ value, label }) => {
           </span>
         </div>
       </div>
-      <span className="text-[11px] uppercase tracking-[0.08em] text-[#5a5a5a]">
+      <span className="text-[11px] uppercase tracking-[0.08em] text-[#8a9696]">
         {label}
       </span>
     </div>
@@ -56,7 +56,7 @@ const CircleScore = ({ value, label }) => {
 
 const MetricPill = ({ label, value }) => (
   <div className="flex items-center justify-between py-3 border-b border-[#2a2d2d] last:border-0">
-    <span className="text-[13px] text-[#5a5a5a]">{label}</span>
+    <span className="text-[13px] text-[#8a9696]">{label}</span>
     <span className="text-[13px] font-medium text-[#e0e0e0]">{value ?? "-"}</span>
   </div>
 );
@@ -115,22 +115,23 @@ export default function SEO() {
   const isGood = avgScore >= 90;
 
   return (
-    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20 min-h-screen">
-      <div className="max-w-6xl mx-auto">
-        <p className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-16 pt-4 pb-20">
+      <div className="max-w-6xl mx-auto rounded-3xl glass p-6 sm:p-10">
+        <p className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-4 flex items-center gap-3">
+          <span className="w-8 h-px bg-[#00a8e8]" />
           Gratis værktøj
         </p>
-        <h2 className="title text-white !leading-tight mb-2">
+        <h2 className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-2">
           Tjek din hjemmesides SEO-score
         </h2>
-        <p className="text-[14px] text-[#5a5a5a] mb-10 max-w-lg">
+        <p className="readable text-[16px] text-[#a6b1b1] leading-[1.7] mb-8 max-w-lg">
           Indtast din URL og få en analyse af ydeevne, tilgængelighed og SEO -
           på under 30 sekunder.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 max-w-2xl mb-4">
           <input
-            className="flex-1 bg-[#262a2a] border border-[#2a2d2d] focus:border-[#00a8e8] rounded-xl px-4 py-3 text-[13px] text-[#e0e0e0] placeholder-[#444] outline-none transition-colors"
+            className="flex-1 bg-[#262a2a] border border-[#2a2d2d] focus:border-[#00a8e8] rounded-xl px-4 py-3 text-[13px] text-[#e0e0e0] placeholder-[#6c7777] outline-none transition-colors"
             placeholder="webhjerte.dk"
             value={url}
             disabled={loading}
@@ -151,7 +152,7 @@ export default function SEO() {
         )}
 
         {loading && (
-          <div className="flex items-center gap-3 text-[13px] text-[#5a5a5a] mt-10">
+          <div className="flex items-center gap-3 text-[13px] text-[#8a9696] mt-10">
             <span className="w-4 h-4 rounded-full border-2 border-[#00a8e8] border-t-transparent animate-spin" />
             Henter data fra Google PageSpeed...
           </div>
@@ -159,10 +160,10 @@ export default function SEO() {
 
         {!metrics && !loading && !error && (
           <div className="mt-10 rounded-2xl border border-dashed border-[#2a2d2d] bg-[#161818] p-8 text-center">
-            <p className="text-[13px] text-[#5a5a5a] mb-2">
+            <p className="text-[13px] text-[#8a9696] mb-2">
               Indtast din URL ovenfor for at se din SEO-score
             </p>
-            <p className="text-[12px] text-[#3a3d3d]">
+            <p className="text-[12px] text-[#8a9696]">
               Gratis analyse af ydeevne, tilgængelighed og SEO — på under 30 sekunder
             </p>
           </div>
@@ -171,7 +172,7 @@ export default function SEO() {
         {metrics && (
           <div className="mt-12 flex flex-col gap-6">
             <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl p-8">
-              <p className="text-[11px] uppercase tracking-[0.08em] text-[#5a5a5a] mb-8">
+              <p className="text-[11px] uppercase tracking-[0.08em] text-[#8a9696] mb-8">
                 Scores
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
@@ -183,7 +184,7 @@ export default function SEO() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl p-6">
-                <p className="text-[11px] uppercase tracking-[0.08em] text-[#5a5a5a] mb-2">
+                <p className="text-[11px] uppercase tracking-[0.08em] text-[#8a9696] mb-2">
                   Tekniske målinger
                 </p>
                 <MetricPill label="LCP - Largest Contentful Paint" value={metrics.lcp} />
@@ -205,9 +206,9 @@ export default function SEO() {
                   </p>
                   <p className="text-[32px] font-medium text-white leading-none mb-1">
                     {avgScore}
-                    <span className="text-[16px] text-[#5a5a5a]"> / 100</span>
+                    <span className="text-[16px] text-[#8a9696]"> / 100</span>
                   </p>
-                  <p className="text-[13px] text-[#5a5a5a] mt-3">
+                  <p className="text-[13px] text-[#8a9696] mt-3">
                     {isGood
                       ? "Din hjemmeside performer godt på tværs af alle kategorier."
                       : "Din hjemmeside har områder der kan forbedres - det påvirker din placering i Google."}

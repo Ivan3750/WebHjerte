@@ -7,7 +7,7 @@ const path = "/blog/hvad-koster-en-hjemmeside-2026";
 // Search Console: siden får flest visninger på hele sitet (pris-søgninger), men lå på side 5.
 // Derfor en komplet prisguide med markedspriser, typer, årlige udgifter, tilbudstjekliste og prisberegner.
 const article = {
-  title: "Hvad koster en hjemmeside i 2026? Priser + prisberegner | WebHjerte",
+  title: "Hvad koster en hjemmeside i 2026? | WebHjerte",
   description:
     "Hvad koster en hjemmeside i 2026? Se priser hos hjemmesidebygger, freelancer og webbureau, priser på WordPress og webshop, årlige udgifter – og beregn din egen pris.",
   keywords: [

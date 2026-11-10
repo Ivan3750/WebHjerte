@@ -87,7 +87,7 @@ export default function PriceCalculator({ dark = false }) {
   return (
     <div id="prisberegner" className={`scroll-mt-24 rounded-2xl border ${c.wrap} p-5 sm:p-8`}>
       <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">Prisberegner</p>
-      <h2 className={`${dark ? "maintitle" : "title"} !text-[clamp(22px,2.6vw,28px)] !leading-[1.2] !mb-3`}>
+      <h2 className={`${dark ? "text-white" : "text-[#1c1e1e]"} font-semibold tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-3`}>
         Beregn prisen på din hjemmeside
       </h2>
       <p className={`text-[13px] ${c.muted} leading-[1.8] mb-7`}>
@@ -115,7 +115,7 @@ export default function PriceCalculator({ dark = false }) {
           {PLATFORMS.map((x) => (
             <button type="button" key={x.id} aria-pressed={platform === x.id} onClick={() => setPlatform(x.id)} className={option(platform === x.id)}>
               <span className={`block text-[13px] font-medium ${c.text}`}>{x.name}</span>
-              <span className={`block text-[11px] ${c.muted} mt-1 leading-snug`}>{x.desc}</span>
+              <span className={`block text-[12px] ${c.muted} mt-1 leading-snug`}>{x.desc}</span>
             </button>
           ))}
         </div>
@@ -146,7 +146,7 @@ export default function PriceCalculator({ dark = false }) {
           <p className="text-[11px] uppercase tracking-[0.12em] text-[#8a9595]">1. år i alt ca.</p>
           <p className="text-[24px] font-semibold mt-1 text-[#00a8e8]">{p.from ? "fra " : ""}{fmt(firstYear)} kr</p>
         </div>
-        <p className="sm:col-span-3 text-[11px] text-[#8a9595] leading-relaxed">
+        <p className="sm:col-span-3 text-[12.5px] text-[#8a9595] leading-relaxed">
           Alle beløb ekskl. moms. 1. år inkluderer et typisk .dk-domæne (ca. {DOMAIN_PER_YEAR} kr). Første designudkast på 48 timer – 0 kr, hvis det ikke passer.
         </p>
       </div>
@@ -186,7 +186,7 @@ export default function PriceCalculator({ dark = false }) {
           {status === "error" && (
             <p className="sm:col-span-3 text-[12px] text-red-500">Noget gik galt. Prøv igen eller ring på +45 42 76 05 77.</p>
           )}
-          <p className={`sm:col-span-3 text-[11px] ${c.muted}`}>Gratis og uforpligtende. Ingen spam – kun dit tilbud.</p>
+          <p className={`sm:col-span-3 text-[12.5px] ${c.muted}`}>Gratis og uforpligtende. Ingen spam – kun dit tilbud.</p>
         </form>
       )}
     </div>

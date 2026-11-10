@@ -119,6 +119,7 @@ const nicheLinks = [
 export default function Home() {
   return (
     <>
+      <span className="is-home hidden" aria-hidden />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

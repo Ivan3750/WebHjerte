@@ -41,7 +41,7 @@ export default function ProblemLoesning() {
           </AnimatedInView>
           <AnimatedInView
             as="h2"
-            className="maintitle text-[#1a1a1a] !leading-tight mb-4"
+            className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-4"
           >
             Genkender du en af disse?
           </AnimatedInView>

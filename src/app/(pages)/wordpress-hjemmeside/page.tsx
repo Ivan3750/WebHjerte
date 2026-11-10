@@ -8,12 +8,13 @@ import Questions from "../../components/Questions";
 import PackagesBlock from "../services/_components/PackagesBlock";
 import QuickLeadForm from "../../components/ui/QuickLeadForm";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
+import { DataTable } from "../../components/seo/ContentBlocks";
 
 const url = `${SITE_URL}/wordpress-hjemmeside`;
 
 // Search Console: "professionel wordpress hjemmeside" (+ varianter) er sitets største søgeord, men siden lå på side 2–3.
 export const metadata = {
-  title: "Professionel WordPress hjemmeside fra 4.500 kr – fast pris | WebHjerte",
+  title: "WordPress-hjemmeside fra 4.500 kr – fast pris | WebHjerte",
   description:
     "Få en professionel WordPress-hjemmeside til din virksomhed: unikt design, hurtig, SEO-klar og nem at redigere selv. Fast pris fra 4.500 kr, design på 48 timer.",
   keywords: [
@@ -28,7 +29,7 @@ export const metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
-    title: "Professionel WordPress hjemmeside fra 4.500 kr",
+    title: "Professionel WordPress-hjemmeside fra 4.500 kr",
     description:
       "Unikt design, hurtig, SEO-klar og nem at redigere selv. Fast pris og design på 48 timer.",
     url,
@@ -39,7 +40,7 @@ export const metadata = {
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Professionel WordPress hjemmeside fra 4.500 kr",
+    title: "Professionel WordPress-hjemmeside fra 4.500 kr",
     description: "Unikt design, hurtig, SEO-klar og nem at redigere selv. Fast pris.",
   },
   alternates: { canonical: url },
@@ -129,7 +130,7 @@ const WordpressHjemmeside = () => {
       <section className="bg-[#f7f6f6]">
         <div className="max-w-5xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="title !text-[clamp(22px,2.6vw,28px)] !leading-[1.2] !mb-6">
+            <h2 className="text-[#1c1e1e] font-semibold tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-6">
               Det får du i din WordPress-hjemmeside
             </h2>
             <ul className="flex flex-col gap-2.5">
@@ -142,29 +143,10 @@ const WordpressHjemmeside = () => {
             </ul>
           </div>
           <div>
-            <h2 className="title !text-[clamp(22px,2.6vw,28px)] !leading-[1.2] !mb-6">
+            <h2 className="text-[#1c1e1e] font-semibold tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-6">
               WordPress-hjemmeside: pris og leveringstid
             </h2>
-            <div className="overflow-x-auto rounded-2xl border border-[#e8e6e6] bg-white">
-              <table className="w-full text-left text-[13px]">
-                <thead>
-                  <tr className="border-b border-[#e8e6e6] bg-[#fbfafa]">
-                    {comparison.head.map((h) => (
-                      <th key={h || "x"} scope="col" className="px-3 py-3 font-medium text-[#1c1e1e] whitespace-nowrap">{h}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparison.rows.map((row) => (
-                    <tr key={row[0]} className="border-b border-[#f0eeee] last:border-0">
-                      {row.map((cell, i) => (
-                        <td key={i} className={`px-3 py-3 align-top leading-[1.5] ${i === 0 ? "font-medium text-[#1c1e1e]" : i === 1 ? "text-[#007aab] font-medium" : "text-[#555]"}`}>{cell}</td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <DataTable table={comparison} />
             <p className="mt-4 text-[13px] text-[#666] leading-[1.8]">
               Bureau-priser er vejledende markedspriser. Se{" "}
               <Link href="/blog/hvad-koster-en-hjemmeside-2026" className="text-[#007aab] underline underline-offset-4">hvad en hjemmeside koster i 2026</Link>{" "}

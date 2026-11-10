@@ -361,8 +361,8 @@ export function autoVisual(section, idx) {
 }
 
 /** Selve sektionens indhold i en fast, læsevenlig rækkefølge. */
-export default function SectionBody({ section, dark = false, idx = 0 }) {
-  const vis = autoVisual(section, idx);
+export default function SectionBody({ section, dark = false, idx = 0, visual: chosen }) {
+  const vis = chosen !== undefined ? chosen : autoVisual(section, idx);
   const visual = vis ? (
     <ArticleVisual name={typeof vis === "string" ? vis : vis.name} caption={vis.caption} queries={vis.queries} />
   ) : null;
