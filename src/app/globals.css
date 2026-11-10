@@ -790,3 +790,18 @@ footer {
 .legal ul { list-style: disc; margin: 0 0 1rem 1.25rem; }
 .legal li { margin-bottom: .4rem; }
 .legal a { color: #0088c2; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ───────────── Læsevenlig brødtekst på indholdssider ───────────── */
+.readable {
+  font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: -0.006em;
+  font-feature-settings: "cv11", "ss01";
+}
+.readable h1,
+.readable h2,
+.readable h3,
+.readable dt,
+.readable .font-display {
+  font-family: Unbounded, var(--font-unbounded), sans-serif;
+  letter-spacing: -0.015em;
+}

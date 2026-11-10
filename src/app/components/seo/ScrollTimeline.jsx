@@ -40,12 +40,12 @@ export default function ScrollTimeline({ items }) {
             >
               {String(i + 1).padStart(2, "0")}
             </span>
-            <div className={`min-w-0 pt-1.5 transition-opacity duration-500 ${on ? "opacity-100" : "opacity-45"}`}>
-              <p className="text-[16px] font-semibold text-white mb-1.5 flex items-center gap-3">
+            <div className={`min-w-0 pt-1.5 transition-opacity duration-500 ${on ? "opacity-100" : "opacity-60"}`}>
+              <p className="text-[17px] font-semibold text-white mb-1.5 flex items-center gap-3">
                 {stripNum(step.title)}
                 <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: COLORS[i % COLORS.length] }} />
               </p>
-              <p className="text-[14.5px] leading-[1.8] text-[#a3b2b2]">{step.text}</p>
+              <p className="text-[16px] leading-[1.7] text-[#b3c0c0]">{step.text}</p>
             </div>
           </li>
         );

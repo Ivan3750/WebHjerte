@@ -17,7 +17,7 @@ import {
   VisualUptime,
   VisualOwnership,
 } from "../illustrations/Visuals";
-import { TrekantMap } from "./CityScene";
+import { BoelgenScene, BridgeScene } from "./CityScene";
 
 const ease = [0.16, 1, 0.3, 1];
 const inView = { once: true, margin: "-60px" };
@@ -212,7 +212,6 @@ const MAP = {
   funnel: { el: <VFunnel />, caption: "Sådan bliver en søgning til et opkald" },
   localpack: { el: <VLocalPack />, caption: "Sådan ser Googles kortresultater ud – din virksomhed øverst" },
   speed: { el: <VSpeed />, caption: "Hastighed afgør, om kunden bliver" },
-  trekant: { el: <TrekantMap />, caption: "Skematisk kort over de byer, jeg arbejder i omkring Vejle" },
   site: { el: <VisualSite />, caption: "En side, hvor ydelse og handling står øverst" },
   seo: { el: <VisualSeo />, caption: "Synlighed bygges op over tid" },
   phone: { el: <VisualPhone />, caption: "Mobilen er der, hvor de fleste kunder starter" },
@@ -246,7 +245,23 @@ function Parallax({ children }) {
  * Illustration i artikel-layoutet: mørk flade med blå glød, kort billedtekst og parallax.
  * `name` er en nøgle fra MAP. `dark` kan slås fra.
  */
+const SCENES = {
+  boelgen: { el: <BoelgenScene />, caption: "Bølgen – de bølgeformede boliger ved Vejle Fjord" },
+  bridge: { el: <BridgeScene />, caption: "Vejlefjordbroen over Vejle Fjord" },
+};
+
 export default function ArticleVisual({ name, caption, queries, dark = true }) {
+  if (SCENES[name]) {
+    return (
+      <figure className="my-10 -mx-1 sm:mx-0">
+        {SCENES[name].el}
+        <figcaption className="mt-3.5 text-[13px] text-[#6a6d6d] flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#00a8e8]" />
+          {caption || SCENES[name].caption}
+        </figcaption>
+      </figure>
+    );
+  }
   const entry = MAP[name];
   if (!entry && name !== "search-typing") return null;
   const el = name === "search-typing" ? <VSearchTyping queries={queries} /> : entry.el;
@@ -261,7 +276,7 @@ export default function ArticleVisual({ name, caption, queries, dark = true }) {
         </Panel>
       </div>
       {cap && (
-        <figcaption className="mt-3.5 text-[12px] text-[#7a7d7d] flex items-center gap-2">
+        <figcaption className="mt-3.5 text-[13px] text-[#6a6d6d] flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-[#00a8e8]" />
           {cap}
         </figcaption>

@@ -144,9 +144,7 @@ export default function ContentPage({
     </>
   ) : null;
 
-  const aside = city ? (
-    <CityScene city={city} />
-  ) : withForm ? (
+  const aside = withForm ? (
     <div className="rounded-3xl glass p-6 sm:p-8">
       <QuickLeadForm />
     </div>
@@ -168,7 +166,7 @@ export default function ContentPage({
           <p className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(20px,2.4vw,28px)] mb-4 max-w-[22ch]">
             Vil du vide, hvad det koster for dig?
           </p>
-          <p className="text-[14px] text-[#93a0a0] leading-[1.85] max-w-[50ch] mb-7">
+          <p className="readable text-[16px] text-[#a6b1b1] leading-[1.75] max-w-[50ch] mb-7">
             Skriv kort, hvad du har brug for. Du får en fast pris og et første designudkast inden for 48 timer. Passer det ikke, betaler du 0 kr.
           </p>
           <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
@@ -195,6 +193,7 @@ export default function ContentPage({
           </>
         }
         aside={aside}
+        below={city ? <CityScene city={city} /> : null}
       />
 
       <section className="scene bg-[#f7f6f6]">
@@ -215,7 +214,7 @@ export default function ContentPage({
             </div>
           </aside>
 
-          <div className="max-w-[740px] min-w-0">
+          <div className="readable max-w-[740px] min-w-0">
             {summary && (
               <FadeUp>
                 <div className="relative overflow-hidden rounded-3xl bg-white border border-[#e8e6e6] p-6 sm:p-8 mb-14">
@@ -228,7 +227,7 @@ export default function ContentPage({
                     </span>
                     {summaryLabel}
                   </p>
-                  <p data-speakable className="relative text-[16px] sm:text-[17px] font-medium text-[#2a2d2d] leading-[1.8]">
+                  <p data-speakable className="relative text-[17px] sm:text-[19px] font-medium text-[#1f2323] leading-[1.7]">
                     {summary}
                   </p>
                 </div>

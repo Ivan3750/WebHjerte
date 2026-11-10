@@ -234,7 +234,7 @@ export const localPages = [
           "Jeg sidder i Horsens, og Vejle er min nærmeste store nabo mod syd. Fra Horsens følger du E45 sydpå, over Vejlefjordbroen, og er i Vejle på cirka 25–30 minutter. Det betyder, at jeg både kan arbejde med dig online og – hvis det giver mening – mødes med dig ansigt til ansigt.",
           "Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt, og de forventer at kunne se ydelser, priser og kontaktoplysninger på få sekunder. Min opgave er at gøre din virksomhed nem at finde og nem at vælge.",
         ],
-        visual: { name: "trekant", caption: "Skematisk kort: Horsens, Vejle og byerne omkring dem" },
+        visual: { name: "boelgen", caption: "Bølgen ved Vejle Havn – et af byens mest kendte vartegn" },
         callout: {
           tone: "fact",
           title: "Godt at vide",

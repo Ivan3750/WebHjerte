@@ -16,6 +16,7 @@ export default function PageHero({
   aside = null,
   facts = null,
   meta = null,
+  below = null,
   size = "lg",
 }) {
   const titleSize =
@@ -41,7 +42,7 @@ export default function PageHero({
               className={`maintitle !leading-[1.12] ${titleSize} mb-6 max-w-[22ch]`}
             />
             {lead && (
-              <FadeUp as="p" delay={0.15} className="text-[14px] sm:text-[15px] text-[#a0a0a0] leading-[1.85] max-w-[54ch] mb-8">
+              <FadeUp as="p" delay={0.15} className="readable text-[16px] sm:text-[17px] text-[#b4bdbd] leading-[1.75] max-w-[54ch] mb-8">
                 {lead}
               </FadeUp>
             )}
@@ -68,6 +69,11 @@ export default function PageHero({
           </div>
           {aside && <FadeUp delay={0.2}>{aside}</FadeUp>}
         </div>
+        {below && (
+          <FadeUp delay={0.15} className="mt-12 sm:mt-16">
+            {below}
+          </FadeUp>
+        )}
       </div>
     </section>
   );

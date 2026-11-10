@@ -21,7 +21,7 @@ export const slugify = (text) =>
 
 function P({ children, dark }) {
   return (
-    <p className={`text-[15.5px] leading-[1.9] mb-5 last:mb-0 ${dark ? "text-[#a3b2b2]" : "text-[#4a4d4d]"}`}>{children}</p>
+    <p className={`text-[17px] leading-[1.8] mb-6 last:mb-0 ${dark ? "text-[#b3c0c0]" : "text-[#33383a]"}`}>{children}</p>
   );
 }
 
@@ -50,7 +50,7 @@ export function Bullets({ items, dark = false, tone = "good" }) {
       {items.map((item) => (
         <li
           key={item}
-          className={`flex gap-3.5 py-3.5 border-b text-[14.5px] leading-[1.75] ${
+          className={`flex gap-3.5 py-4 border-b text-[16px] leading-[1.7] ${
             dark ? "border-white/10 text-[#b7c4c4]" : "border-[#e6e4e4] text-[#3f4242]"
           }`}
         >
@@ -114,7 +114,7 @@ export function Callout({ data, dark = false }) {
             <p className="text-[11px] uppercase tracking-[0.16em] mb-1.5 font-semibold" style={{ color: t.color }}>
               {data.title || t.label}
             </p>
-            <p className={`text-[15px] leading-[1.8] ${dark ? "text-[#b7c4c4]" : "text-[#2f3333]"}`}>{data.text}</p>
+            <p className={`text-[16.5px] leading-[1.75] ${dark ? "text-[#b7c4c4]" : "text-[#2a2f30]"}`}>{data.text}</p>
           </div>
         </div>
       </aside>
@@ -169,7 +169,7 @@ export function Compare({ data }) {
             </p>
             <ul>
               {c.items.map((item) => (
-                <li key={item} className="flex gap-3 py-2.5 text-[14px] leading-[1.7] text-[#3f4242] border-b border-[#f0eeee] last:border-0">
+                <li key={item} className="flex gap-3 py-3 text-[15.5px] leading-[1.65] text-[#33383a] border-b border-[#f0eeee] last:border-0">
                   <Check tone={c.tone} />
                   <span>{item}</span>
                 </li>
@@ -213,8 +213,8 @@ export function Cards({ items }) {
                 </span>
                 {c.tag && <span className="text-[11px] uppercase tracking-[0.1em] text-[#9a9a9a]">{c.tag}</span>}
               </div>
-              <p className="text-[15.5px] font-semibold text-[#1c1e1e] leading-snug">{c.title}</p>
-              <p className="text-[13.5px] text-[#5f6262] leading-[1.8]">{c.text}</p>
+              <p className="text-[17px] font-semibold text-[#1c1e1e] leading-snug">{c.title}</p>
+              <p className="text-[15px] text-[#4a4f50] leading-[1.7]">{c.text}</p>
               {c.href && (
                 <div className="mt-auto pt-3 flex items-center justify-between">
                   <span className="text-[12px] font-medium text-[#5a5d5d] group-hover:text-[#00a8e8] transition-colors">{c.cta || "Læs mere"}</span>
@@ -244,7 +244,7 @@ export function DataTable({ table }) {
   return (
     <>
       <FadeUp className="hidden sm:block overflow-hidden my-7 rounded-2xl border border-[#e8e6e6] bg-white">
-        <table className="w-full text-left text-[13.5px]">
+        <table className="w-full text-left text-[15px]">
           <thead>
             <tr className="bg-[#f3f2f2] border-b border-[#e8e6e6]">
               {table.head.map((h, i) => (
@@ -270,12 +270,12 @@ export function DataTable({ table }) {
       <div className="sm:hidden flex flex-col gap-3 my-6">
         {table.rows.map((row) => (
           <div key={row[0]} className="rounded-2xl bg-white border border-[#e8e6e6] p-5">
-            <p className="text-[15px] font-semibold text-[#1c1e1e] mb-3">{row[0]}</p>
+            <p className="text-[16px] font-semibold text-[#1c1e1e] mb-3">{row[0]}</p>
             <dl className="flex flex-col gap-2.5">
               {row.slice(1).map((cell, i) => (
                 <div key={i} className="flex flex-col">
                   {table.head[i + 1] && <dt className="text-[10.5px] uppercase tracking-[0.1em] text-[#9a9a9a]">{table.head[i + 1]}</dt>}
-                  <dd className="text-[13.5px] text-[#555858] leading-[1.65]">{cell}</dd>
+                  <dd className="text-[15px] text-[#3f4446] leading-[1.6]">{cell}</dd>
                 </div>
               ))}
             </dl>
@@ -296,8 +296,8 @@ export function Subs({ items }) {
         {items.map((sub) => (
           <FadeUp key={sub.h3}>
             <div className="py-6 border-b border-[#e0dede]">
-              <dt className="text-[16px] font-semibold text-[#1c1e1e] leading-snug mb-2.5">{sub.h3}</dt>
-              <dd className="text-[14.5px] text-[#555858] leading-[1.85]">{sub.paragraphs[0]}</dd>
+              <dt className="text-[17px] font-semibold text-[#1c1e1e] leading-snug mb-2.5">{sub.h3}</dt>
+              <dd className="text-[16px] text-[#3f4446] leading-[1.75]">{sub.paragraphs[0]}</dd>
             </div>
           </FadeUp>
         ))}
@@ -319,10 +319,10 @@ export function Subs({ items }) {
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-[15.5px] font-semibold text-[#1c1e1e] leading-snug">{sub.h3}</h3>
+                  <h3 className="text-[17px] font-semibold text-[#1c1e1e] leading-snug">{sub.h3}</h3>
                 </div>
                 {sub.paragraphs?.map((text) => (
-                  <p key={text.slice(0, 48)} className="text-[14px] text-[#5a5d5d] leading-[1.8]">
+                  <p key={text.slice(0, 48)} className="text-[15px] text-[#4a4f50] leading-[1.75]">
                     {text}
                   </p>
                 ))}
