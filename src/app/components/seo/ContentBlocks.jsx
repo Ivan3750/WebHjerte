@@ -2,6 +2,9 @@ import Link from "next/link";
 import { FadeUp } from "../home/fx/Reveal";
 import SpotlightCard from "../home/fx/SpotlightCard";
 import { ArrowBadge } from "../ui/ArrowIcon";
+import ScrollTimeline from "./ScrollTimeline";
+import StatValue from "./StatValue";
+import ArticleVisual from "./ArticleVisuals";
 
 export const COLORS = ["#00a8e8", "#3ddc97", "#f0a63a", "#8a8ff0", "#e0678a", "#00a8e8"];
 
@@ -13,11 +16,6 @@ export const slugify = (text) =>
     .replace(/å/g, "aa")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
-
-/** Sektioner med trin eller nøgletal får mørk baggrund (kun hvis intet andet tungt indhold er med). */
-export const wantsDark = (s) => !!(s.steps || s.stats) && !s.table && !s.subs && !s.compare && !s.cards;
-
-const stripNum = (t) => t.replace(/^\d+\.\s*/, "");
 
 /* ───────────────────────── Små byggeklodser ───────────────────────── */
 
@@ -95,22 +93,29 @@ export function Callout({ data, dark = false }) {
   return (
     <FadeUp className="my-8">
       <aside
-        className={`rounded-2xl border p-5 sm:p-6 flex gap-4 ${dark ? "bg-white/[0.04] border-white/10" : "bg-white border-[#e8e6e6]"}`}
-        style={{ borderLeft: `3px solid ${t.color}` }}
+        className="relative overflow-hidden rounded-3xl p-6 sm:p-7"
+        style={{ backgroundColor: dark ? "rgba(255,255,255,0.05)" : `${t.color}12` }}
       >
         <span
-          className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-          style={{ backgroundColor: `${t.color}1f`, color: t.color }}
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-            <path d={t.icon} />
-          </svg>
-        </span>
-        <div className="min-w-0">
-          <p className="text-[11px] uppercase tracking-[0.14em] mb-1.5 font-medium" style={{ color: t.color }}>
-            {data.title || t.label}
-          </p>
-          <p className={`text-[14.5px] leading-[1.8] ${dark ? "text-[#b7c4c4]" : "text-[#3f4242]"}`}>{data.text}</p>
+          aria-hidden
+          className="pointer-events-none absolute -top-10 -right-10 w-36 h-36 rounded-full blur-2xl"
+          style={{ backgroundColor: `${t.color}22` }}
+        />
+        <div className="relative flex gap-4">
+          <span
+            className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+            style={{ backgroundColor: t.color, color: "#10181a" }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <path d={t.icon} />
+            </svg>
+          </span>
+          <div className="min-w-0 pt-0.5">
+            <p className="text-[11px] uppercase tracking-[0.16em] mb-1.5 font-semibold" style={{ color: t.color }}>
+              {data.title || t.label}
+            </p>
+            <p className={`text-[15px] leading-[1.8] ${dark ? "text-[#b7c4c4]" : "text-[#2f3333]"}`}>{data.text}</p>
+          </div>
         </div>
       </aside>
     </FadeUp>
@@ -132,7 +137,7 @@ export function Stats({ items, dark = false }) {
                   dark ? "text-[#00a8e8]" : "text-[#1c1e1e]"
                 }`}
               >
-                {it.value}
+                <StatValue value={it.value} />
               </p>
               <div className={`h-px w-full ${dark ? "bg-white/10" : "bg-[#ece9e9]"}`} />
               <p className={`text-[14px] font-medium ${dark ? "text-[#eef2f2]" : "text-[#1c1e1e]"}`}>{it.label}</p>
@@ -154,8 +159,12 @@ export function Compare({ data }) {
     <div className="grid sm:grid-cols-2 gap-3 my-8">
       {cols.map((c, i) => (
         <FadeUp key={c.tone} delay={i * 0.08}>
-          <div className="h-full rounded-2xl bg-white border border-[#e8e6e6] p-5 sm:p-6" style={{ borderTop: `3px solid ${c.color}` }}>
-            <p className="text-[12px] uppercase tracking-[0.14em] font-medium mb-2" style={{ color: c.color }}>
+          <div className="h-full rounded-3xl bg-white border border-[#e8e6e6] p-5 sm:p-6">
+            <p
+              className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.14em] font-semibold mb-3 rounded-full px-3 py-1.5"
+              style={{ color: c.color, backgroundColor: `${c.color}1a` }}
+            >
+              <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: c.color }} />
               {c.title || c.fallback}
             </p>
             <ul>
@@ -173,33 +182,17 @@ export function Compare({ data }) {
   );
 }
 
-export function Steps({ items, dark = false }) {
+export function Steps({ items }) {
   return (
-    <ol className="relative mt-7">
-      <span aria-hidden className={`absolute left-[19px] top-3 bottom-3 w-px ${dark ? "bg-white/10" : "bg-[#e0dede]"}`} />
-      {items.map((step, i) => (
-        <li key={step.title} className="relative">
-          <FadeUp delay={Math.min(i, 4) * 0.05}>
-            <div className="group flex gap-5 sm:gap-6 py-5">
-              <span
-                className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-[12px] tabular-nums font-medium border transition-colors duration-300 group-hover:bg-[#00a8e8] group-hover:border-[#00a8e8] group-hover:text-[#10181a] ${
-                  dark ? "bg-[#1c1e1e] border-white/15 text-white/70" : "bg-[#f7f6f6] border-[#dcdada] text-[#6a6a6a]"
-                }`}
-              >
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <div className="min-w-0 pt-1.5">
-                <p className={`text-[16px] font-semibold mb-1.5 flex items-center gap-3 ${dark ? "text-white" : "text-[#1c1e1e]"}`}>
-                  {stripNum(step.title)}
-                  <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: COLORS[i % COLORS.length] }} />
-                </p>
-                <p className={`text-[14.5px] leading-[1.8] ${dark ? "text-[#a3b2b2]" : "text-[#555858]"}`}>{step.text}</p>
-              </div>
-            </div>
-          </FadeUp>
-        </li>
-      ))}
-    </ol>
+    <FadeUp className="my-9">
+      <div className="relative overflow-hidden rounded-3xl bg-[#1c1e1e] px-5 sm:px-9 py-7 sm:py-10">
+        <div aria-hidden className="grid-fade absolute inset-0 opacity-30" />
+        <div aria-hidden className="pointer-events-none absolute -top-24 -right-16 w-72 h-72 rounded-full bg-[#00a8e8]/[0.10] blur-[90px]" />
+        <div className="relative">
+          <ScrollTimeline items={items} />
+        </div>
+      </div>
+    </FadeUp>
   );
 }
 
@@ -344,18 +337,55 @@ export function Subs({ items }) {
   );
 }
 
+const AUTO = [
+  [/pris|koster|betal/i, "price"],
+  [/tid|dage|hurtig|forløb|kom i gang/i, "clock"],
+  [/google|synlig|søg|seo|fundet/i, "seo"],
+  [/book|kalender|bestil/i, "booking"],
+  [/chat|\bai\b|automat/i, "chat"],
+  [/kontakt|formular|henvendelse/i, "form"],
+  [/mobil/i, "phone"],
+  [/vedligehold|support|hosting|drift|sikker/i, "uptime"],
+  [/ejer|kode|domæne/i, "ownership"],
+  [/design|hjemmeside|side/i, "site"],
+];
+const heavy = (s) => !!(s.steps || s.table || s.compare || s.cards || s.stats || (s.subs && s.subs.length > 2));
+
+/** Vælger en illustration ud fra overskriften, hvis sektionen er let nok til at have en – hver anden sektion. */
+export function autoVisual(section, idx) {
+  if (section.visual === false) return null;
+  if (section.visual) return section.visual;
+  if (!section.h2 || heavy(section) || idx % 2 === 1) return null;
+  const hit = AUTO.find(([re]) => re.test(section.h2));
+  return hit ? hit[1] : null;
+}
+
 /** Selve sektionens indhold i en fast, læsevenlig rækkefølge. */
-export default function SectionBody({ section, dark = false }) {
+export default function SectionBody({ section, dark = false, idx = 0 }) {
+  const vis = autoVisual(section, idx);
+  const visual = vis ? (
+    <ArticleVisual name={typeof vis === "string" ? vis : vis.name} caption={vis.caption} queries={vis.queries} />
+  ) : null;
+  const [first, ...rest] = section.paragraphs || [];
   return (
     <>
-      {section.paragraphs?.map((text) => (
+      {first && (
+        <P key={first.slice(0, 48)} dark={dark}>
+          {first}
+        </P>
+      )}
+      {visual}
+      {rest.map((text) => (
         <P key={text.slice(0, 48)} dark={dark}>
           {text}
         </P>
       ))}
       {section.stats && <Stats items={section.stats} dark={dark} />}
       {section.quote && (
-        <blockquote className="border-l-2 border-[#00a8e8] pl-5 my-8 text-[16px] italic text-[#4a4d4d] leading-[1.8]">“{section.quote}”</blockquote>
+        <blockquote className="relative my-10 px-2 sm:px-6 text-[clamp(18px,2vw,22px)] font-medium text-[#1c1e1e] leading-[1.55] tracking-tight">
+          <span aria-hidden className="absolute -top-6 left-0 text-[64px] leading-none text-[#00a8e8]/30 font-serif">“</span>
+          {section.quote}
+        </blockquote>
       )}
       {section.callout && <Callout data={section.callout} dark={dark} />}
       {section.bullets && <Bullets items={section.bullets} dark={dark} />}
@@ -365,7 +395,7 @@ export default function SectionBody({ section, dark = false }) {
           {text}
         </P>
       ))}
-      {section.steps && <Steps items={section.steps} dark={dark} />}
+      {section.steps && <Steps items={section.steps} />}
       {section.cards && <Cards items={section.cards} />}
       {section.table && <DataTable table={section.table} />}
       {section.subs && <Subs items={section.subs} />}

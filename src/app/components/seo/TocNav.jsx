@@ -68,8 +68,8 @@ export default function TocNav({ items, title = "I denne guide", variant = "side
               >
                 <span
                   aria-hidden
-                  className={`absolute left-[-1px] top-0 h-full w-[2px] origin-center bg-[#00a8e8] transition-transform duration-300 ${
-                    on ? "scale-y-100" : "scale-y-0"
+                  className={`absolute left-[-4px] top-[14px] w-[7px] h-[7px] rounded-full bg-[#00a8e8] transition-transform duration-300 ${
+                    on ? "scale-100" : "scale-0"
                   }`}
                 />
                 <span className={`tabular-nums text-[11px] pt-px ${on ? "text-[#00a8e8]" : "text-[#b5b3b3]"}`}>

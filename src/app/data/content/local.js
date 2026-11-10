@@ -221,19 +221,67 @@ export const localPages = [
       "Vejle ligger 25 minutter fra Horsens, og mange af mine kunder findes i hele trekantsområdet. Jeg bygger hurtige hjemmesider til fast pris, med lokal SEO og direkte kontakt til udvikleren.",
     summary:
       "WebHjerte er et webbureau med base i Horsens, ca. 25–30 minutter fra Vejle. Jeg bygger hjemmesider til virksomheder i Vejle, Fredericia, Kolding og omegn fra 2.500 kr, med levering på 2–10 dage. Et eksempel i porteføljen er Lønbæks Køreskole i Vejle.",
+    city: "vejle",
+    facts: [
+      { num: "25–30 min", label: "Fra Horsens til Vejle" },
+      { num: "Trekanten", label: "Vejle, Fredericia og Kolding" },
+      { num: "48 timer", label: "Til første designudkast" },
+    ],
     sections: [
       {
-        h2: "Hjemmesider til virksomheder i Vejle",
+        h2: "Fra Horsens til Vejle: 25 minutter og en fjord",
         paragraphs: [
-          "Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt – og de forventer at kunne se priser, tilgængelighed og kontaktoplysninger på få sekunder. Min opgave er at bygge en hjemmeside, der opfylder det forventnings-niveau.",
-          "I min portefølje finder du blandt andet en hjemmeside til Lønbæks Køreskole i Vejle. Samme tankegang bruger jeg til alle brancher: tydelig værdi, få klik til kontakt og hurtig indlæsning på mobil.",
+          "Jeg sidder i Horsens, og Vejle er min nærmeste store nabo mod syd. Fra Horsens følger du E45 sydpå, over Vejlefjordbroen, og er i Vejle på cirka 25–30 minutter. Det betyder, at jeg både kan arbejde med dig online og – hvis det giver mening – mødes med dig ansigt til ansigt.",
+          "Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt, og de forventer at kunne se ydelser, priser og kontaktoplysninger på få sekunder. Min opgave er at gøre din virksomhed nem at finde og nem at vælge.",
         ],
-        cta: { href: "/portefolje", label: "Se porteføljen" },
+        visual: { name: "trekant", caption: "Skematisk kort: Horsens, Vejle og byerne omkring dem" },
+        callout: {
+          tone: "fact",
+          title: "Godt at vide",
+          text: "Du behøver ikke komme til Horsens. Kickoff, designgodkendelse og rettelser foregår på video, telefon og mail – og skal vi mødes, kommer jeg gerne forbi.",
+        },
+      },
+      {
+        h2: "Sådan søger virksomheder og kunder i Vejle",
+        paragraphs: [
+          "Lokale søgninger følger et fast mønster: en ydelse plus et stednavn. Eksemplerne herunder er typiske formuleringer – og det er dem, din hjemmeside skal kunne svare på, hvis du vil findes af kunder i Vejle.",
+        ],
+        visual: { name: "search-typing", queries: ["webbureau Vejle", "hjemmeside Vejle", "VVS Vejle", "frisør Vejle", "køreskole Vejle"], caption: "Eksempler på lokale søgninger – ydelse plus by" },
+        cards: [
+          { title: "Ydelse + by", tag: "Mest almindelig", text: "'Elektriker Vejle', 'tømrer Vejle'. Kunden ved, hvad de har brug for, og vælger blandt de første resultater." },
+          { title: "I nærheden", tag: "Mobil", text: "Søgninger fra telefonen på farten. Her afgør Google Virksomhedsprofil og en hurtig side, om du kommer med." },
+          { title: "Pris og anmeldelser", tag: "Sammenligning", text: "Kunderne tjekker, hvad noget koster, og hvad andre mener, før de ringer. Det skal stå klart på din side." },
+          { title: "Sammenligning af leverandører", tag: "Større køb", text: "'Webbureau Vejle', 'hjemmeside pris Vejle'. Her vinder dem, der svarer ærligt og konkret." },
+        ],
+      },
+      {
+        h2: "Brancher, jeg bygger til i og omkring Vejle",
+        paragraphs: [
+          "Jeg arbejder med små og mellemstore virksomheder på tværs af brancher. I min portefølje finder du blandt andet Lønbæks Køreskole i Vejle. Her er de brancher, jeg oftest bygger til – med egne sider med konkrete råd:",
+        ],
+        cards: [
+          { title: "Håndværkere", tag: "Branche", text: "VVS, el, tømrer og maler: ydelser, område, billeder og en nem vej til tilbud.", href: "/hjemmeside-til-haandvaerkere", cta: "Se rådene" },
+          { title: "Køreskoler og undervisning", tag: "Case i Vejle", text: "Se, hvordan Lønbæks Køreskole i Vejle fik en side, der viser værdien i grundig undervisning – og leder eleven frem til den første køretime.", href: "/portefolje/loenbaeks-koereskole", cta: "Se casen" },
+          { title: "Saloner og klinikker", tag: "Branche", text: "Booking, prisliste og billeder, der får nye kunder til at vælge dig.", href: "/hjemmeside-til-saloner", cta: "Se rådene" },
+          { title: "Restauranter og caféer", tag: "Branche", text: "Menu som tekst, booking og egen bestilling – uden at betale kommission.", href: "/hjemmeside-til-restauranter", cta: "Se rådene" },
+        ],
+      },
+      {
+        h2: "Lokal synlighed i Vejle: tre ting, der flytter mest",
+        paragraphs: [
+          "Når kunder i Vejle søger efter dig, ser de ofte først Googles kortresultater. Derfor starter jeg med det, der giver mest effekt for en lokal virksomhed:",
+        ],
+        visual: { name: "localpack", caption: "Googles kortresultater: sådan kan din virksomhed stå øverst" },
+        steps: [
+          { title: "Google Virksomhedsprofil i orden", text: "Rigtig kategori, ydelser, åbningstider, billeder og Vejle som serviceområde. Svar på alle anmeldelser." },
+          { title: "En side pr. ydelse – med Vejle i teksten", text: "Hver ydelse får sin egen side med egne ord, så du findes på de konkrete søgninger i stedet for én samlet 'ydelser'-side." },
+          { title: "Anmeldelser fra kunder i området", text: "Bed om en anmeldelse, når en opgave er færdig. Lokale anmeldelser betyder meget for placeringen i kortet." },
+        ],
       },
       {
         h2: "Trekantsområdet: Vejle, Fredericia og Kolding",
         paragraphs: [
-          "Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor bygger jeg sider med serviceområde, ikke kun én adresse: du kan omtale alle de byer, du dækker, uden at ende med tynde duplikatsider. Det styrker din lokale synlighed og gør siden mere nyttig for kunderne.",
+          "Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor bygger jeg sider med serviceområde, ikke kun én adresse: du kan omtale alle de byer, du dækker, uden at ende med tynde duplikatsider. Det styrker din lokale synlighed og giver kunderne et klart billede af, hvor du kommer.",
         ],
         bullets: [
           "Vejle og omegn: Børkop, Give, Egtved, Jelling og Bredsten.",
@@ -243,7 +291,7 @@ export const localPages = [
         ],
       },
       {
-        h2: "Hvad får du?",
+        h2: "Hvad får du som kunde i Vejle?",
         bullets: [
           "Fast pris og aftalt tidsplan.",
           "Responsivt design, der virker på mobil, tablet og desktop.",
@@ -252,13 +300,10 @@ export const localPages = [
           "30 dages support efter lancering.",
           "Mulighed for WordPress, hvis du selv vil redigere indholdet.",
         ],
-      },
-      {
-        h2: "Sådan prissætter jeg",
-        paragraphs: [
-          "Jeg prissætter efter omfang – ikke efter timer. En landingside starter fra 2.500 kr, en Basis-hjemmeside fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr. Alle priser er ekskl. moms. Du får et fast tilbud, før vi går i gang, og prisen ændrer sig kun, hvis vi aftaler at udvide opgaven.",
+        after: [
+          "Jeg prissætter efter omfang – ikke efter timer – og du får et fast tilbud, før vi går i gang. Alle priser står i prisguiden.",
         ],
-        cta: { href: "/hjemmeside-pris", label: "Se alle priser" },
+        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
       },
     ],
     faqs: [
