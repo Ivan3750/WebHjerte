@@ -6,7 +6,7 @@
 <title>Highlights Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
 <style>
 :root{
   --bg:#141616; --panel:#1c1e1e; --panel2:#232626; --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.16);
@@ -202,7 +202,10 @@ input[type=color]{width:44px;height:34px;padding:2px;border:1px solid var(--line
 <input type="file" id="fileLoad" accept="application/json,.json" hidden>
 <input type="file" id="fileImg" accept="image/*" hidden>
 
+<div id="errBox" style="display:none;position:fixed;inset:auto 12px 12px 12px;z-index:99;background:#3a1717;border:1px solid #ff6b6b;color:#ffd0d0;padding:12px 14px;border-radius:12px;font:13px/1.5 system-ui;white-space:pre-wrap"></div>
 <script>
+window.addEventListener('error', e => { const b = document.getElementById('errBox'); b.style.display = 'block'; b.textContent = 'Помилка: ' + (e.message || e.error) + '\nНадішли цей текст розробнику (' + (navigator.userAgent.match(/(Chrome|Firefox|Safari)\/[\d.]+/) || ['?'])[0] + ')'; });
+window.addEventListener('unhandledrejection', e => { const b = document.getElementById('errBox'); b.style.display = 'block'; b.textContent = 'Помилка: ' + (e.reason && e.reason.message || e.reason); });
 const ASSETS = "__ASSETS__";
 </script>
 <script>
@@ -1082,11 +1085,12 @@ async function boot() {
   $('#logoImg').src = ASSETS.logo;
   restore();
   await Promise.all([...Object.keys(ASSETS).map(k => loadImg(k, ASSETS[k])), ...Object.keys(uploads).map(k => loadImg(k, uploads[k].src))]);
-  try { await Promise.all([300, 400, 500, 600, 700].map(w => document.fonts.load(`${w} 40px Unbounded`))); } catch (e) { /* fallback-font */ }
+  try { await Promise.race([Promise.all([300, 400, 500, 600, 700].map(w => document.fonts.load(`${w} 40px Unbounded`))), new Promise(r => setTimeout(r, 1500))]); } catch (e) { /* fallback-font */ }
   if (!state.hls.find(h => h.id === state.selHl)) state.selHl = state.hls[0].id;
   if (!curHl().slides.find(s => s.id === state.selSlide)) state.selSlide = (curHl().slides[0] || {}).id;
   renderAddSel(); setPreviewSize(); renderAll(); updPlayBtn();
-  document.fonts.ready.then(() => { wrapCache.clear(); renderAll(false); });
+  const refont = () => { wrapCache.clear(); renderAll(false); };
+  document.fonts.ready.then(refont); document.fonts.addEventListener && document.fonts.addEventListener('loadingdone', refont);
   requestAnimationFrame(frame);
   window.__studio = { state, play, drawTo, cv, cx, step, select, runExport, recordSlides, pickMime };
 }
