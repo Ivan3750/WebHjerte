@@ -7,6 +7,8 @@ import WorkOut from "../assets/cases/WorkOutM.png";
 import RenServ from "../assets/cases/renserv.jpg";
 import Lønbæks from "../assets/cases/lønbæks.jpg";
 import VEKA from "../assets/cases/VEKA.png";
+import ImprovePhysio from "../assets/cases/improvephysio.jpg";
+import ImprovePhysioMobile from "../assets/cases/improvephysio-mobile.jpg";
 import { StaticImageData } from "next/image";
 
 export type Project = {
@@ -30,6 +32,29 @@ export type Project = {
   noindex?: boolean;
 };
 export const projects: Project[] = [
+  {
+    id: 11,
+    slug: "improve-physio",
+    noindex: true,
+    title: "Improve Physio & Sport",
+    subtitle: "Fra behandling til booking – på dansk og engelsk",
+    heroImage: ImprovePhysio,
+    gallery: [ImprovePhysio, ImprovePhysioMobile, ImprovePhysio],
+    tags: ["Website design", "Development"],
+    client: "Improve Physio & Sport",
+    location: "Horsens, Danmark",
+    services: ["Website design", "Web udvikling", "Tosproget site (DA/EN)"],
+    site: "https://www.improvephysio.dk",
+    technologies: ["Shopify"],
+    overview:
+      "Improve Physio & Sport er en fysioterapiklinik i Horsens med fokus på sportsfysioterapi og genoptræning, drevet af en fysioterapeut med mere end 10 års erfaring fra professionel fodbold. Klinikken havde brug for en hjemmeside, der kan overbevise nye patienter hurtigt og gøre det let at booke en tid.",
+    overviewExtra:
+      "Hjemmesiden samler klinikkens behandlinger – fysioterapi, genoptræning, massage og flere – og fører besøgende direkte til online booking. Forsiden fortæller hurtigt, hvem der står bag, hvordan forløbet foregår, og hvorfor man kan føle sig tryg. Siden findes på både dansk og engelsk, så også internationale patienter og sportsfolk kan finde rundt.",
+    designDescription:
+      "Designet er mørkt, roligt og eksklusivt, med varme guldtoner, der passer til klinikkens præmie-profil. Nøgletal som erfaring fra professionel fodbold og antal anmeldelser står tydeligt på forsiden, og booking-knappen er aldrig langt væk – på mobil såvel som på computer.",
+    developmentDescription:
+      "Hver behandling har sin egen side med en klar struktur, så patienter og søgemaskiner nemt kan forstå, hvad klinikken tilbyder. Navigationen og sprogskift mellem dansk og engelsk er bygget til at være hurtig på mobilen, hvor de fleste leder efter en fysioterapeut.",
+  },
   {
     id: 1,
     slug: "pizzaria",

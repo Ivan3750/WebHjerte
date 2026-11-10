@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
+import { PrimaryLink, GhostLink } from "./PageHero";
 
 const niches = [
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
@@ -30,21 +31,12 @@ export default function CtaSearchBlock() {
             Det er gratis, uforpligtende, og du får svar inden for 24 timer.
           </FadeUp>
           <FadeUp delay={0.18} className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link
-              href="/kontakt"
-              className="inline-flex items-center gap-2 text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-8 py-3.5 transition-colors group"
-            >
-              Lad os komme i gang
-              <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
-            </Link>
-            <a
-              href="tel:+4542760577"
-              className="inline-flex items-center text-[14px] text-white border border-white/15 hover:border-white/40 rounded-full px-8 py-3.5 transition-colors"
-            >
-              +45 42 76 05 77
-            </a>
+            <PrimaryLink href="/kontakt">Lad os komme i gang</PrimaryLink>
+            <GhostLink href="/portefolje">Se vores cases</GhostLink>
           </FadeUp>
-          <FadeUp delay={0.25} className="flex flex-wrap justify-center gap-2 mt-10">
+          <FadeUp delay={0.25} className="mt-12 pt-8 border-t border-white/[0.08]">
+            <p className="text-[11px] uppercase tracking-[0.14em] text-[#6c7a7a] mb-4">Hjemmesider til din branche</p>
+            <div className="flex flex-wrap justify-center gap-2">
             {niches.map((link) => (
               <Link
                 key={link.href}
@@ -54,6 +46,7 @@ export default function CtaSearchBlock() {
                 {link.label}
               </Link>
             ))}
+            </div>
           </FadeUp>
         </div>
       </div>

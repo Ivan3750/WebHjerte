@@ -1,3 +1,4 @@
+import { ArrowIcon } from "./components/ui/ArrowIcon";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import HomeHero from "./components/home/HomeHero";
@@ -166,7 +167,7 @@ export default function Home() {
                       <div className="p-5 flex flex-col gap-2 h-full">
                         <p className="flex items-center justify-between text-[14px] font-medium text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">
                           {item.title}
-                          <span className="text-[#b8b6b6] transition-all duration-300 group-hover:text-[#00a8e8] group-hover:translate-x-1">→</span>
+                          <ArrowIcon className="w-4 h-4 text-[#b8b6b6] transition-all duration-300 group-hover:text-[#00a8e8] group-hover:translate-x-1" />
                         </p>
                         <p className="text-[12px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
                       </div>

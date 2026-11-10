@@ -49,6 +49,32 @@ const faqs = [
 
 const sections = [
   {
+    h2: "Din webdesigner i Horsens – helt bogstaveligt",
+    paragraphs: [
+      "Jeg sidder selv i Horsens. Det betyder, at jeg kender byen, oplandet og de virksomheder, dine kunder sammenligner dig med. Og vil du hellere tage snakken ansigt til ansigt end på video, kan vi mødes over en kop kaffe i byen.",
+      "Horsens er en by med et stærkt lokalt erhvervsliv – fra håndværkere og butikker i midtbyen til virksomheder ude omkring Hedensted, Brædstrup og Gedved. Fælles for dem er, at kunderne søger lokalt, og at den, der er nemmest at finde og forstå, får opkaldet.",
+    ],
+    visual: { name: "fjord", caption: "Horsens Fjord – hjemmebane for WebHjerte" },
+    callout: {
+      tone: "fact",
+      title: "Godt at vide",
+      text: "Du taler med den, der designer og bygger din side – fra første samtale til lancering. Ingen projektledere og ingen mellemled.",
+    },
+  },
+  {
+    h2: "Sådan søger kunderne i Horsens og omegn",
+    paragraphs: [
+      "De fleste lokale søgninger er korte: en ydelse og et bynavn. Eksemplerne herunder viser, hvad dine kunder typisk skriver – og hvad din hjemmeside skal kunne svare på med det samme.",
+    ],
+    visual: { name: "search-typing", queries: ["webdesign Horsens", "frisør Horsens", "tømrer Horsens", "VVS Hedensted", "restaurant Horsens"], caption: "Eksempler på lokale søgninger i Horsens" },
+    cards: [
+      { title: "Horsens by", tag: "Midtbyen", text: "Butikker, restauranter og klinikker, hvor åbningstider, adresse og booking skal stå klart." },
+      { title: "Oplandet", tag: "Omegn", text: "Brædstrup, Gedved, Østbirk, Hovedgård – og Hedensted og Juelsminde lige ved siden af. Nævn de byer, du dækker." },
+      { title: "Håndværk og service", tag: "Ude hos kunden", text: "Når du kører ud til kunden, er dit område vigtigere end din adresse. Skriv det tydeligt på siden." },
+      { title: "Brancher med egne råd", tag: "Læs mere", text: "Se de konkrete råd til håndværkere, saloner og restauranter.", href: "/hjemmeside-til-haandvaerkere", cta: "Se branchesiderne" },
+    ],
+  },
+  {
     h2: "Webdesign, der arbejder for din virksomhed",
     paragraphs: [
       "Et godt webdesign handler ikke kun om, hvordan siden ser ud. Det handler om, at en besøgende på få sekunder forstår, hvad du tilbyder, stoler på dig og ved, hvordan de kontakter dig. Derfor starter jeg altid med at forstå din virksomhed og dine kunder, før jeg åbner en designfil.",
@@ -150,6 +176,12 @@ export default function WebdesignHorsensPage() {
   return (
     <LocalLandingPage
       path={path}
+      city="horsens"
+      facts={[
+        { num: "0 km", label: "Jeg sidder selv i Horsens" },
+        { num: "Direkte", label: "Kontakt med den, der bygger" },
+        { num: "48 timer", label: "Til første designudkast" },
+      ]}
       name="Webdesign Horsens"
       serviceType="Webdesign"
       eyebrow="Webdesign i Horsens"

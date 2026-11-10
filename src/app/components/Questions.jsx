@@ -106,7 +106,7 @@ const Questions = ({faqs = faqs_default}) => {
 
               <div
                 id={`faq-answer-${i}`}
-                className={`text-[13px] text-[#777] leading-[1.75] overflow-hidden transition-all duration-300 ${
+                className={`readable text-[15.5px] text-[#4a4f50] leading-[1.75] overflow-hidden transition-all duration-300 ${
                   open === i ? "max-h-[32rem] pb-5" : "max-h-0"
                 }`}
               >

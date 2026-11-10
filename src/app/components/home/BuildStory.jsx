@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "../ui/ArrowIcon";
 import { useRef, useState } from "react";
 import {
   motion,
@@ -145,7 +146,7 @@ function Content() {
           Flere henvendelser fra lokale kunder – hver dag.
         </p>
         <span className="inline-flex w-fit text-[9px] font-medium text-white bg-[#00a8e8] rounded-full px-3 py-1.5">
-          Book et møde →
+          Book et møde
         </span>
       </div>
       <div className="grid grid-cols-3 gap-2.5">

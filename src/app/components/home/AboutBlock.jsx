@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../ui/ArrowIcon";
 import Image from "next/image";
 import Link from "next/link";
 import Ivan from "../../assets/Ivan.jpg";
@@ -84,7 +85,7 @@ const AboutBlock = () => {
               className="group inline-flex items-center gap-2 text-[13px] text-[#1c1e1e] border-b border-[#1c1e1e] pb-px hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors w-fit"
             >
               Vil du vide mere om mig og min historie?
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </FadeUp>
         </div>

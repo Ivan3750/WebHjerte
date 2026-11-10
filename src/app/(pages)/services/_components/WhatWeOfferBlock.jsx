@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "../../../components/ui/ArrowIcon";
 import { useState } from "react";
 import Link from "next/link";
 import SectionHead from "../../../components/ui/SectionHead";
@@ -134,7 +135,7 @@ export default function WhatWeOfferBlock() {
                   className="group inline-flex items-center gap-2 text-[13px] font-medium text-[#1c1e1e] hover:text-[#00a8e8] w-fit"
                 >
                   Se priser
-                  <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
+                  <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               </div>
             ))}

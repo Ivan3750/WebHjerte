@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../components/ui/ArrowIcon";
 import Link from "next/link";
 import HeroService from "./_components/HeroService";
 import WhatWeOfferBlock from "./_components/WhatWeOfferBlock";
@@ -134,7 +135,7 @@ const Services = () => {
                     <div className="p-6 sm:p-7 flex flex-col gap-3 h-full">
                       <div className="flex items-center justify-between">
                         <p className="text-[16px] font-semibold text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
-                        <span className="text-[#b0aeae] group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" aria-hidden>→</span>
+                        <ArrowIcon className="w-4 h-4 text-[#b0aeae] group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" />
                       </div>
                       <p className="text-[13px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
                     </div>

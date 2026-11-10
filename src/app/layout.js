@@ -1,4 +1,4 @@
-import { Unbounded } from "next/font/google";
+import { Unbounded, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -6,6 +6,13 @@ import Script from "next/script";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+// Brødtekst: Unbounded er flot i overskrifter, men tung at læse i lange afsnit
+const inter = Inter({
+  variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
@@ -171,7 +178,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${unbounded.variable} antialiased`}
+        className={`${unbounded.variable} ${inter.variable} antialiased`}
         suppressHydrationWarning
       >
         <noscript>

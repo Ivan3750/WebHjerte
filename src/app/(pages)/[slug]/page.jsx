@@ -37,6 +37,8 @@ export default async function ContentRoute({ params }) {
       related={page.related}
       glossary={page.glossary}
       withForm={page.withForm !== false}
+      facts={page.facts}
+      city={page.city}
       description={page.description}
       published={page.published}
       updated={page.updated}

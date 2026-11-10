@@ -4,8 +4,9 @@ import { servicePages } from "./services.js";
 import { hubPages } from "./hubs.js";
 import { platformPages } from "./platforms.js";
 import { articles } from "./articles.js";
+import { nichePages } from "./niches.js";
 
-export const contentPages = [...platformPages, ...servicePages, ...localPages, ...aiPages, ...hubPages];
+export const contentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages];
 export { articles };
 
 export const SITE_URL = "https://www.webhjerte.dk";

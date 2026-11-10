@@ -44,6 +44,7 @@ export default {
     '/portefolje/veka-center',
     '/portefolje/monolit',
     '/portefolje/renserv',
+    '/portefolje/improve-physio',
   ],
 
   robotsTxtOptions: {

@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "../../../components/ui/ArrowIcon";
 import Link from "next/link";
 import Image from "next/image";
 import PageHero from "../../../components/ui/PageHero";
@@ -63,7 +64,7 @@ export default function ProjectDetailClient({ project, next }) {
                   rel="noopener noreferrer"
                   className="inline-block mt-3 text-[13px] text-[#00a8e8] hover:underline"
                 >
-                  {hostOf(project.site)} ↗
+                  <span className="inline-flex items-center gap-1.5">{hostOf(project.site)}<ArrowIcon className="w-3.5 h-3.5" direction="upright" /></span>
                 </a>
               )}
             </div>
@@ -123,7 +124,7 @@ export default function ProjectDetailClient({ project, next }) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-[#00a8e8] hover:bg-[#1c1e1e] text-white px-7 py-3.5 text-[13px] font-semibold transition-colors"
                 >
-                  Se hjemmesiden <span aria-hidden>↗</span>
+                  Se hjemmesiden <ArrowIcon className="w-4 h-4" direction="upright" />
                 </a>
               </FadeUp>
             )}
@@ -187,7 +188,7 @@ export default function ProjectDetailClient({ project, next }) {
                     <span className="block text-[15px] font-normal text-[#8a8a8a] mt-1.5">{next.subtitle}</span>
                   </p>
                   <span className="inline-flex items-center gap-2 text-[13px] font-medium text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">
-                    Se projektet <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
+                    Se projektet <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 </div>
               </Link>

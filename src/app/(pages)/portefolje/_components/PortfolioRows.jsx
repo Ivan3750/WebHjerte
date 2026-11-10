@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../../components/ui/ArrowIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { FadeUp } from "../../../components/home/fx/Reveal";
@@ -43,7 +44,7 @@ export default function PortfolioRows({ projects }) {
                       aria-hidden
                       className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 w-11 h-11 rounded-full bg-white text-[#1c1e1e] flex items-center justify-center transition-transform duration-500 group-hover:rotate-[-45deg] group-hover:scale-110"
                     >
-                      →
+                      <ArrowIcon className="w-5 h-5" direction="upright" />
                     </span>
                   </div>
                 </Link>
@@ -89,7 +90,7 @@ export default function PortfolioRows({ projects }) {
                     className="group/l mt-2 inline-flex items-center gap-2 w-fit text-[13px] font-semibold text-white bg-[#1c1e1e] hover:bg-[#00a8e8] rounded-full px-6 py-3 transition-colors"
                   >
                     Se projekt
-                    <span className="transition-transform duration-300 group-hover/l:translate-x-1" aria-hidden>→</span>
+                    <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover/l:translate-x-1" />
                   </Link>
                 </div>
               </article>

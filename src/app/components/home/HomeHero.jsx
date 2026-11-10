@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "../ui/ArrowIcon";
 import { useRef } from "react";
 import Link from "next/link";
 import {
@@ -217,7 +218,7 @@ export default function HomeHero() {
               className="group inline-flex items-center gap-2 text-sm text-[#d6dcdc] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#00a8e8]"
             >
               Skriv til mig
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </motion.div>
 

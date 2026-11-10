@@ -1,5 +1,7 @@
 import Link from "next/link";
 import PageHero from "../../components/ui/PageHero";
+import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
+import { PostCard } from "../../components/seo/RelatedCards";
 import CtaSearchBlock from "../../components/ui/CTA";
 import { articles } from "../../data/content";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
@@ -10,8 +12,6 @@ export const metadata = {
     "Guides om hjemmesider, priser, lokal SEO og synlighed i AI-søgning, skrevet af WebHjerte i Horsens. Praktiske råd til små virksomheder.",
   alternates: { canonical: "https://www.webhjerte.dk/blog" },
 };
-
-const COLORS = ["#00a8e8", "#3ddc97", "#f0a63a", "#8a8ff0", "#e0678a"];
 
 const legacy = [
   {
@@ -31,7 +31,7 @@ const legacy = [
 export default function BlogPage() {
   const posts = [
     legacy[0],
-    ...articles.map((a) => ({ href: `/blog/${a.slug}`, title: a.h1, desc: a.intro, category: a.category })),
+    ...articles.map((a) => ({ href: `/blog/${a.slug}`, title: a.h1, desc: a.intro, category: a.category, meta: a.readMinutes ? `${a.readMinutes} min. læsning` : undefined })),
     ...legacy.slice(1),
   ];
   const jsonLd = {
@@ -60,43 +60,36 @@ export default function BlogPage() {
         lead="Praktiske guides til dig, der skal have en hjemmeside til din virksomhed i Horsens eller Midtjylland – og blive fundet i både Google og AI-søgning."
         size="md"
       />
-      <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">Alle guides</p>
-          <h2 className="title !leading-tight !mb-12 max-w-[24ch]">Skrevet til dig, der driver en lille virksomhed</h2>
+      <section className="scene bg-[#f7f6f6]">
+        <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+          <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
+            <span className="w-8 h-px bg-[#00a8e8]" />
+            Alle guides
+          </FadeUp>
+          <RevealLines
+            lines={["Skrevet til dig, der", "driver en lille virksomhed"]}
+            className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-10 sm:mb-14"
+          />
+
+          <FadeUp className="mb-4">
+            <PostCard featured {...posts[0]} tag={posts[0].category} index={0} meta={posts[0].meta} />
+          </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {posts.map((post, i) => (
-              <Link
-                key={post.href}
-                href={post.href}
-                className="group rounded-2xl p-7 flex flex-col gap-4 bg-[#f7f6f6] border border-[#e8e8e8] hover:border-[#00a8e8]/40 transition-colors"
-              >
-                <div className="flex items-center gap-3">
-                  <span
-                    className="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-medium flex-shrink-0"
-                    style={{ backgroundColor: `${COLORS[i % COLORS.length]}1a`, color: COLORS[i % COLORS.length] }}
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a]">{post.category}</span>
-                </div>
-                <p className="flex items-start justify-between gap-3 text-[15px] font-medium text-[#3a3a3a] group-hover:text-[#00a8e8] transition-colors leading-snug">
-                  {post.title}
-                  <span className="text-[#b8b6b6] group-hover:text-[#00a8e8] transition-all group-hover:translate-x-1">→</span>
-                </p>
-                <p className="text-[13px] text-[#6a6a6a] leading-[1.75]">{post.desc}</p>
-              </Link>
+            {posts.slice(1).map((post, i) => (
+              <FadeUp key={post.href} delay={(i % 3) * 0.07}>
+                <PostCard {...post} tag={post.category} index={i + 1} />
+              </FadeUp>
             ))}
           </div>
 
-          <div className="mt-14 pt-8 border-t border-[#e4e2e2] flex flex-wrap items-center gap-3">
+          <div className="mt-16 pt-8 border-t border-[#e4e2e2] flex flex-wrap items-center gap-3">
             <span className="text-[12px] text-[#5a5a5a]">Slå begreber op:</span>
             {[
               { href: "/ordliste", label: "Ordliste" },
               { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
               { href: "/om-webhjerte", label: "Fakta om WebHjerte" },
             ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-[12px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-1.5 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors">
+              <Link key={l.href} href={l.href} className="text-[12px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-2 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors">
                 {l.label}
               </Link>
             ))}
