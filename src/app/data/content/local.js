@@ -278,7 +278,7 @@ export const localPages = [
     title: "WordPress Horsens & Midtjylland – professionel hjemmeside | WebHjerte",
     description:
       "WordPress-hjemmeside til virksomheder i Horsens og Midtjylland. Professionel opsætning, hurtig levering og en løsning, du selv kan redigere. Fra 4.500 kr.",
-    keywords: ["wordpress Horsens", "wordpress Midtjylland", "wordpress firma", "wordpress udvikling Horsens", "professionel wordpress hjemmeside", "wordpress leverandør"],
+    keywords: ["wordpress Horsens", "wordpress Midtjylland", "wordpress firma", "wordpress udvikling Horsens", "wordpress leverandør"],
     name: "WordPress Horsens",
     serviceType: "WordPress-udvikling",
     eyebrow: "WordPress · Horsens & Midtjylland",

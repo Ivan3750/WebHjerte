@@ -1,134 +1,228 @@
-import Link from "next/link";
+import ContentPage from "../../../components/seo/ContentPage";
+import PriceCalculator from "../../../components/ui/PriceCalculator";
+import { pageMetadata } from "../../../data/content";
 
 const path = "/blog/hvad-koster-en-hjemmeside-2026";
 
-export const metadata = {
-  title: "Hvad koster en hjemmeside i 2026? | WebHjerte",
+// Search Console: siden får flest visninger på hele sitet (pris-søgninger), men lå på side 5.
+// Derfor en komplet prisguide med markedspriser, typer, årlige udgifter, tilbudstjekliste og prisberegner.
+const article = {
+  title: "Hvad koster en hjemmeside i 2026? Priser + prisberegner | WebHjerte",
   description:
-    "Hvad koster en hjemmeside i 2026? Se WebHjertes faste priser fra 2.500 kr, hvad der er inkluderet, og hvad der kan ændre prisen.",
+    "Hvad koster en hjemmeside i 2026? Se priser hos hjemmesidebygger, freelancer og webbureau, priser på WordPress og webshop, årlige udgifter – og beregn din egen pris.",
   keywords: [
-    "hvad koster en hjemmeside 2026",
-    "hjemmeside pris 2026",
     "hvad koster en hjemmeside",
+    "hvad koster en hjemmeside 2026",
+    "hjemmeside pris",
+    "hjemmesidepriser",
+    "priser hjemmeside",
+    "hjemmeside tilbud",
+    "hvad koster det at få lavet en hjemmeside",
+    "hvad koster en professionel hjemmeside",
+    "wordpress hjemmeside pris",
+    "hvad koster det at lave en webshop",
+    "beregn hjemmeside pris",
+    "prisberegner hjemmeside",
   ],
-  alternates: { canonical: `https://www.webhjerte.dk${path}` },
-  openGraph: {
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
-    title: "Hvad koster en hjemmeside i 2026?",
-    description:
-      "Faste priser fra 2.500 kr, hvad der er inkluderet, og hvad der kan ændre prisen.",
-    url: `https://www.webhjerte.dk${path}`,
-    type: "article",
-    locale: "da_DK",
+  published: "2026-10-28",
+  updated: "2026-11-10",
+};
+
+const sections = [
+  {
+    h2: "Det første spørgsmål, alle stiller",
+    paragraphs: [
+      "“Hvad koster det?” er næsten altid det første, jeg bliver spurgt om – og det er et fair spørgsmål. Problemet er, at svaret på nettet ofte er “det kommer an på”. Det hjælper ingen, når man skal lægge et budget.",
+      "Så her får du rigtige tal. Både hvad det typisk koster i Danmark i 2026, og hvad det koster hos mig. Jeg har selv kigget på mange tilbud, som kunder har fået andre steder, og priserne nedenfor er dem, jeg oftest ser.",
+    ],
   },
-};
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Hvad koster en hjemmeside i 2026?",
-  description:
-    "Hvad koster en hjemmeside i 2026? Faste priser fra 2.500 kr, hvad der er inkluderet, og hvad der kan ændre prisen.",
-  url: `https://www.webhjerte.dk${path}`,
-  inLanguage: "da-DK",
-  author: { "@type": "Person", name: "Ivan Kohan", url: "https://www.webhjerte.dk/om-mig" },
-  publisher: { "@id": "https://www.webhjerte.dk/#organization" },
-  mainEntityOfPage: `https://www.webhjerte.dk${path}`,
-};
-
-const packages = [
-  { name: "Landingside", price: "2.500", text: "1 side til kampagner, annoncer eller én ydelse. Klar på ca. 2 dage." },
-  { name: "Basis", price: "4.500", text: "3–5 sider med kontaktformular, Google Maps og basis-SEO. Klar på ca. 5 dage." },
-  { name: "Standard", price: "7.500", text: "Op til 8 sider med SEO, analytics, booking og 30 dages support. Klar på ca. 10 dage." },
-  { name: "Skræddersyet", price: "Fra 14.000", text: "Til større løsninger som webshop, kundeportal eller specialfunktioner. Aftales individuelt." },
+  {
+    h2: "Priser på hjemmesider i Danmark – overblik",
+    paragraphs: [
+      "Prisen spænder vidt, fordi “en hjemmeside” kan være alt fra én side, du selv klikker sammen, til en webshop med integrationer til lager og bogføring. Tabellen viser de typiske prisniveauer for en lille eller mellemstor virksomhed. Beløbene er vejledende og ekskl. moms.",
+    ],
+    table: {
+      head: ["Løsning", "Engangspris", "Løbende", "Passer til"],
+      rows: [
+        ["Hjemmesidebygger (gør det selv)", "0 kr", "ca. 100–400 kr/md", "Hobby og helt nystartede, der har tid til selv at bygge"],
+        ["Freelancer", "ca. 5.000–30.000 kr", "0–400 kr/md", "Små virksomheder, der vil have hjælp uden bureau-pris"],
+        ["Webbureau", "ca. 25.000–150.000+ kr", "300–2.000 kr/md", "Større virksomheder med mange interessenter"],
+        ["Webshop (bureau/freelancer)", "ca. 15.000–100.000+ kr", "300–1.500 kr/md + platform", "Når du vil sælge online"],
+        ["WebHjerte", "2.500–14.000+ kr (fast pris)", "0, 195 eller 395 kr/md", "Små og mellemstore virksomheder, der vil have bureau-kvalitet til fast pris"],
+      ],
+    },
+    cta: { href: "#prisberegner", label: "Beregn din egen pris" },
+  },
+  {
+    h2: "Hvad koster de forskellige typer hjemmesider?",
+    paragraphs: ["Her er de fem typer, jeg oftest bygger – med typisk markedspris og min egen faste pris."],
+    subs: [
+      {
+        h3: "Landingside (1 side)",
+        paragraphs: [
+          "Én side med ét tilbud – perfekt til en kampagne, Google Ads eller en ny ydelse, du vil teste. Typisk pris: 2.000–10.000 kr. Hos mig: 2.500 kr, klar på ca. 2 dage.",
+        ],
+      },
+      {
+        h3: "Firmahjemmeside (3–8 sider)",
+        paragraphs: [
+          "Den klassiske: forside, ydelser, om os, referencer og kontakt. Det er den, de fleste håndværkere, klinikker og konsulenter har brug for. Typisk pris: 8.000–40.000 kr. Hos mig: Basis 4.500 kr (3–5 sider) eller Standard 7.500 kr (op til 8 sider med SEO, analytics og booking).",
+        ],
+        cta: { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
+      },
+      {
+        h3: "WordPress-hjemmeside",
+        paragraphs: [
+          "WordPress er gratis, men design, opsætning, plugins og hosting er ikke. En professionel WordPress-side koster typisk 8.000–50.000 kr. Hos mig starter flersidede WordPress-sider fra 4.500 kr – og du kan selv rette tekster og billeder bagefter.",
+        ],
+        cta: { href: "/wordpress-hjemmeside", label: "Professionel WordPress-hjemmeside" },
+      },
+      {
+        h3: "Webshop (WooCommerce eller Shopify)",
+        paragraphs: [
+          "En webshop kræver produkter, betaling, fragt, handelsbetingelser og ofte integrationer. Typisk pris: 15.000–100.000+ kr plus platformsgebyrer. Hos mig starter skræddersyede webshops fra 14.000 kr til fast pris.",
+        ],
+        cta: { href: "/webshop-hjemmeside", label: "Se webshop" },
+      },
+      {
+        h3: "Skræddersyet løsning",
+        paragraphs: [
+          "Kundeportal, bookingsystem, AI-chatbot eller automatiseringer bygges efter behov. Prisen aftales ud fra omfanget – hos mig fra 14.000 kr – og du får altid en fast pris, før jeg går i gang.",
+        ],
+      },
+    ],
+  },
+  {
+    h2: "Hvorfor er der så stor forskel på priserne?",
+    paragraphs: [
+      "Det er sjældent selve koden, der gør en hjemmeside dyr. Det er alt omkring den. Hos et typisk bureau skal projektet igennem en sælger, en projektleder, en designer og en udvikler. Der er møder, statusmails og interne overleveringer – og alle timerne ender på din regning. Dertil kommer kontorer og administration.",
+      "Jeg har bevidst valgt at arbejde alene. Det betyder, at du taler direkte med den, der bygger siden, og at pengene går til arbejdet – ikke til overhead. Det er hele forklaringen på, at jeg kan levere en Basis-hjemmeside til 4.500 kr, som et bureau ville tage 25.000 kr for.",
+    ],
+    quote: "Du skal betale for din hjemmeside – ikke for bureauets kontor i midtbyen.",
+  },
+  {
+    h2: "Hvad påvirker prisen?",
+    paragraphs: ["Uanset hvem du vælger, er det de samme ting, der får prisen til at stige:"],
+    bullets: [
+      "Antal sider og sidetyper – hver ny type skal designes og udvikles.",
+      "Tekster og billeder – skal de skrives, oversættes eller fotograferes?",
+      "Funktioner – booking, webshop, login, betaling, flere sprog og integrationer.",
+      "Design – et færdigt tema er billigere end et unikt, skræddersyet design.",
+      "SEO og AI-synlighed – om siden bare skal findes, eller aktivt kæmpe om placeringer på Google og i ChatGPT.",
+      "Hvem der bygger – flere led betyder flere timer.",
+    ],
+    after: [
+      "Mit bedste råd: start med det, du har brug for nu, og byg på senere. En god Basis-side, der er live om en uge, giver flere kunder end en perfekt side, der aldrig bliver færdig.",
+    ],
+  },
+  {
+    h2: "Hvad koster en hjemmeside om året?",
+    paragraphs: [
+      "Ud over engangsprisen er der løbende udgifter. For en lille virksomhed ligger de typisk på 2.500–6.000 kr om året – men en simpel, kodet side kan koste under 1.000 kr om året at have kørende.",
+    ],
+    table: {
+      head: ["Udgift", "Typisk pris", "Bemærkning"],
+      rows: [
+        ["Domæne (.dk)", "ca. 100–200 kr/år", "Skal altid stå i dit eget navn"],
+        ["Hosting", "0–500 kr/md", "Kodede sider kan ofte hostes billigt; WordPress kræver mere"],
+        ["Vedligeholdelse", "195–395 kr/md hos WebHjerte", "Opdateringer, sikkerhed, backup og små rettelser"],
+        ["Plugins og værktøjer", "0–300 kr/md", "Fx booking, nyhedsbrev eller premium-plugins"],
+      ],
+    },
+    cta: { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", label: "Læs hele guiden til årlige udgifter" },
+  },
+  {
+    h2: "Sådan får du et godt hjemmeside-tilbud",
+    paragraphs: ["Når du sammenligner tilbud, så sørg for, at de indeholder det samme. Et godt tilbud skal mindst svare på:"],
+    bullets: [
+      "Er prisen fast, eller betaler du pr. time – og hvad sker der, hvis omfanget ændrer sig?",
+      "Præcis hvilke sider og funktioner er med?",
+      "Er tekster, billeder og SEO-opsætning inkluderet?",
+      "Hvem ejer domæne, kode og indhold? (Det bør være dig.)",
+      "Hvornår er siden færdig, og hvor mange rettelsesrunder er med?",
+      "Hvad koster support, hosting og vedligeholdelse efter lancering?",
+      "Kan løbende aftaler opsiges fra måned til måned?",
+    ],
+    cta: { href: "/blog/vaelg-webbureau-10-spoergsmaal", label: "10 spørgsmål til dit webbureau" },
+  },
+  {
+    h2: "Kan det betale sig at bruge en hjemmesidebygger?",
+    paragraphs: [
+      "Wix, Squarespace og 123hjemmeside er billige at starte på, men du betaler hver måned, så længe siden findes – og du ejer den sjældent. Over tre år betaler mange 4.000–14.000 kr og har stadig en skabelon, der ligner konkurrenternes og er svær at få til at rangere lokalt.",
+      "Det er helt fint til en hobbyside. Men har du brug for kunder fra Google, er en professionelt bygget hjemmeside til fast pris ofte billigere på sigt: En Basis-side hos mig koster 4.500 kr én gang, og du ejer den selv.",
+    ],
+  },
+  {
+    h2: "Et eksempel: når hjemmesiden tjener sig hjem",
+    paragraphs: [
+      "En pizzeria i Horsens, jeg har bygget hjemmeside til, betalte op mod 30 % i gebyr til Wolt og JustEat af hver eneste bestilling. Sælger man for 10.000 kr om måneden via apps, er det op til 3.000 kr – hver måned.",
+      "Med en hurtig hjemmeside, hvor kunderne kan bestille direkte, og som er optimeret til søgninger som “pizza Horsens”, bliver en del af de penge i forretningen. Det er den måde, jeg synes, man skal tænke på prisen: ikke hvad hjemmesiden koster, men hvad den tjener.",
+    ],
+    cta: { href: "/portefolje/pizzaria", label: "Se pizzeria-projektet" },
+  },
+  {
+    h2: "WebHjertes faste priser",
+    paragraphs: ["Alle priser er faste og ekskl. moms. Du får et skriftligt tilbud, før jeg går i gang."],
+    table: {
+      head: ["Pakke", "Pris", "Indhold", "Levering"],
+      rows: [
+        ["Landingside", "2.500 kr", "1 side til kampagner eller én ydelse", "ca. 2 dage"],
+        ["Basis", "4.500 kr", "3–5 sider, kontaktformular, Google Maps og basis-SEO", "ca. 5 dage"],
+        ["Standard", "7.500 kr", "Op til 8 sider, SEO, analytics, booking og 30 dages support", "ca. 10 dage"],
+        ["Skræddersyet", "fra 14.000 kr", "Webshop, kundeportal, AI-chatbot eller specialfunktioner", "Aftales"],
+      ],
+    },
+    cta: { href: "/hjemmeside-pris", label: "Se alt, hvad pakkerne indeholder" },
+  },
+  {
+    h2: "Sådan kommer du i gang",
+    steps: [
+      { title: "Gratis samtale", text: "Vi taler om din virksomhed, dine kunder og hvad siden skal kunne. Du får en fast pris – ingen forpligtelser." },
+      { title: "Design på 48 timer", text: "Du ser et konkret designudkast. Passer det ikke, betaler du 0 kr for designet." },
+      { title: "Udvikling og lancering", text: "Når designet er godkendt, bygger jeg siden – typisk på 2–10 dage – og sætter den live på dit domæne." },
+    ],
+  },
 ];
+
+const faqs = [
+  { q: "Hvad koster en hjemmeside til en lille virksomhed?", a: "En professionel hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr afhængigt af hvem der bygger den. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside (3–5 sider) 4.500 kr og en Standard-hjemmeside (op til 8 sider) 7.500 kr – alle ekskl. moms og til fast pris." },
+  { q: "Hvad koster det at få lavet en webshop?", a: "En webshop koster typisk 15.000–100.000+ kr plus løbende platformsgebyrer. Hos WebHjerte starter skræddersyede webshops i WooCommerce eller Shopify fra 14.000 kr ekskl. moms." },
+  { q: "Hvad koster en WordPress-hjemmeside?", a: "WordPress er gratis software, men design og opsætning koster typisk 8.000–50.000 kr. Hos WebHjerte starter flersidede WordPress-hjemmesider fra 4.500 kr, og du kan selv redigere indholdet." },
+  { q: "Hvad koster en hjemmeside om året?", a: "Regn med ca. 100–200 kr om året for et .dk-domæne, 0–500 kr om måneden for hosting og 195–395 kr om måneden, hvis du vil have vedligeholdelse. For en lille virksomhed lander det typisk på 2.500–6.000 kr om året." },
+  { q: "Er prisen fast, eller betaler jeg pr. time?", a: "Hos WebHjerte er prisen fast. Du får et skriftligt tilbud, før arbejdet starter, og betaler ikke mere, medmindre du selv ønsker flere sider eller funktioner." },
+  { q: "Hvor hurtigt kan jeg få et tilbud?", a: "Du får et konkret tilbud inden for 24 timer og et første designudkast inden for 48 timer efter vores samtale – og betaler 0 kr for designet, hvis det ikke passer." },
+];
+
+const related = [
+  { href: "/hjemmeside-pris", title: "Alle priser og pakker", desc: "Se præcis hvad hver pakke indeholder." },
+  { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", title: "Hvad koster en hjemmeside om året?", desc: "Domæne, hosting og vedligeholdelse." },
+  { href: "/freelancer-vs-bureau", title: "Freelancer eller bureau?", desc: "Hvad får du for pengene?" },
+  { href: "/wordpress-hjemmeside", title: "Professionel WordPress-hjemmeside", desc: "Fra 4.500 kr – du redigerer selv." },
+  { href: "/webshop-hjemmeside", title: "Webshop", desc: "Sælg online fra 14.000 kr." },
+  { href: "/portefolje", title: "Portefølje", desc: "Se hjemmesider, jeg har bygget." },
+];
+
+export const metadata = pageMetadata(article, path, "article");
 
 export default function HvadKosterEnHjemmesidePage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
-      <article className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-20 pb-16">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-5">
-            Guide · Priser
-          </p>
-          <h1 className="maintitle text-white !leading-tight mb-6 text-balance">
-            Hvad koster en hjemmeside i 2026?
-          </h1>
-          <p className="text-[14px] text-[#a0a0a0] leading-[1.85] mb-12">
-            Det korte svar: hos WebHjerte starter en hjemmeside på 2.500 kr. Prisen afhænger af,
-            hvor mange sider du har brug for, og om der skal bygges særlige funktioner. Her er
-            pakkerne, hvad de dækker, og hvad der kan ændre prisen.
-          </p>
-
-          <div className="flex flex-col gap-12 text-[14px] text-[#a0a0a0] leading-[1.9]">
-            <section>
-              <h2 className="title text-white !leading-tight !mb-4">Faste pakkepriser</h2>
-              <p className="mb-6">
-                Alle priser er faste og ekskl. moms. Du får et tilbud, før vi går i gang, så du
-                ved det endelige beløb.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {packages.map((p) => (
-                  <div key={p.name} className="rounded-2xl p-5 bg-[#262a2a] border border-[#2a2d2d]">
-                    <p className="text-[14px] font-medium text-[#e0e0e0]">{p.name}</p>
-                    <p className="text-[22px] font-medium text-white mt-2">
-                      {p.price} <span className="text-[12px] text-[#5a5a5a]">DKK</span>
-                    </p>
-                    <p className="text-[12px] text-[#7a7a7a] mt-2 leading-relaxed">{p.text}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section>
-              <h2 className="title text-white !leading-tight !mb-4">Hvad kan ændre prisen?</h2>
-              <ul className="flex flex-col gap-2.5">
-                <li>Antal sider, og hvor meget indhold der skal skrives eller oversættes.</li>
-                <li>Booking, webshop, betalingsløsninger og andre funktioner ud over det aftalte omfang.</li>
-                <li>Tredjepartstjenester og premium-værktøjer, som du selv betaler for.</li>
-                <li>Om du vil have en WordPress-side, så du selv kan redigere den.</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="title text-white !leading-tight !mb-4">Efter lancering</h2>
-              <p>
-                Du får 30 dages support efter lancering i Standard-pakken. Derefter kan du vælge et
-                vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned, ekskl. moms.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="title text-white !leading-tight !mb-4">Sådan kommer du i gang</h2>
-              <p>
-                Start med et gratis tilbud. Du får et første designudkast inden for 48 timer efter
-                vores samtale, og betaler 0 kr for designet, hvis det ikke passer. Først når
-                designet er godkendt, bygger jeg hjemmesiden.
-              </p>
-            </section>
-          </div>
-
-          <div className="mt-14 pt-8 border-t border-[#1e2020] flex flex-wrap gap-3">
-            <Link
-              href="/kontakt"
-              className="inline-flex items-center rounded-full bg-[#00a8e8] px-6 py-3 text-[13px] font-medium text-[#1c1e1e] transition-opacity hover:opacity-90"
-            >
-              Få et gratis tilbud
-            </Link>
-            <Link
-              href="/hjemmeside-pris"
-              className="inline-flex items-center rounded-full border border-[#3a3d3d] px-6 py-3 text-[13px] font-medium text-[#e0e0e0] transition-colors hover:border-[#5a5d5d]"
-            >
-              Se alle priser
-            </Link>
-          </div>
-        </div>
-      </article>
-    </>
+    <ContentPage
+      path={path}
+      type="article"
+      name="Hvad koster en hjemmeside i 2026?"
+      eyebrow="Guide · Priser · 10 min. læsning"
+      h1="Hvad koster en hjemmeside i 2026? Priser, eksempler og prisberegner"
+      intro="Rigtige tal i stedet for “det kommer an på”. Hvad en hjemmeside koster hos en hjemmesidebygger, en freelancer og et bureau – og hvad den koster hos mig."
+      summary="En hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr hos en freelancer og 25.000–150.000 kr hos et webbureau. En webshop koster typisk 15.000–100.000+ kr. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside 4.500 kr, en Standard-hjemmeside 7.500 kr og webshops eller skræddersyede løsninger fra 14.000 kr – alle til fast pris ekskl. moms. Løbende udgifter er typisk 2.500–6.000 kr om året."
+      afterSummary={<PriceCalculator />}
+      sections={sections}
+      faqs={faqs}
+      related={related}
+      breadcrumbs={[{ label: "Blog", href: "/blog" }]}
+      withForm={false}
+      description={article.description}
+      published={article.published}
+      updated={article.updated}
+    />
   );
 }

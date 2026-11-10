@@ -1,3 +1,5 @@
+import Link from "next/link";
+import PriceCalculator from "../../components/ui/PriceCalculator";
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import FormToLead from "../../components/ui/FormToLead";
 import PackagesBlock from "../services/_components/PackagesBlock";
@@ -6,11 +8,11 @@ import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
 export const metadata = {
-  title: "Hjemmeside pris 2026 – faste priser fra 2.500 kr | WebHjerte",
+  title: "Hjemmeside priser 2026 – fast pris fra 2.500 kr + prisberegner | WebHjerte",
   description:
-    "Hvad koster en hjemmeside? Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr. Fast pris, ingen skjulte gebyrer – tilbud inden 24 timer.",
+    "Hjemmeside priser: Landingside 2.500 kr, Basis 4.500 kr, Standard 7.500 kr, webshop fra 14.000 kr. Beregn din pris og få et fast tilbud inden for 24 timer.",
   keywords:
-    "hjemmeside pris, pris på hjemmeside, pris for en hjemmeside, hvad koster en hjemmeside, webdesign pris",
+    "hjemmeside pris, hjemmeside priser, hjemmesidepriser, priser hjemmeside, hjemmeside tilbud, hjemmeside fast pris, beregn hjemmeside pris, webdesign pris",
   robots: "index, follow",
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
@@ -123,16 +125,28 @@ const HjemmesidePris = () => {
       <PageHero
         breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Hjemmeside pris" }]}
         eyebrow="Priser"
-        titleLines={["Hvad koster en", "hjemmeside?"]}
+        titleLines={["Hjemmeside priser –", "fast pris fra 2.500 kr"]}
         lead="Se faste priser fra 2.500 kr og find den pakke, der passer til din virksomhed – ingen skjulte gebyrer, ingen overraskelser."
         actions={
           <>
             <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
-            <GhostLink href="/hjemmeside-pris">Se priser</GhostLink>
+            <GhostLink href="#prisberegner">Beregn din pris</GhostLink>
           </>
         }
       />
       <PackagesBlock />
+      <section className="bg-[#f7f6f6]">
+        <div className="max-w-4xl mx-auto px-5 sm:px-10 py-16 sm:py-20">
+          <PriceCalculator />
+          <p className="mt-6 text-[13px] text-[#666] leading-[1.8]">
+            Vil du sammenligne med freelancere, bureauer og hjemmesidebyggere? Læs{" "}
+            <Link href="/blog/hvad-koster-en-hjemmeside-2026" className="text-[#007aab] underline underline-offset-4">
+              hvad en hjemmeside koster i 2026
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
       <Whatsincludedblock />
       <CasesCarousel />
       <SocialProof />

@@ -49,6 +49,7 @@ export default function ContentPage({
   glossary,
   description,
   extra,
+  afterSummary,
 }) {
   const url = `${SITE_URL}${path}`;
   const trail = [{ name: "Forside", path: "/" }, ...breadcrumbs.map((b) => ({ name: b.label, path: b.href })), { name, path }];
@@ -118,18 +119,63 @@ export default function ContentPage({
 
   const jsonLd = { "@context": "https://schema.org", "@graph": graph.filter(Boolean) };
 
-  const toc = sections.filter((s) => s.h2).map((s) => ({ id: s.id || slugify(s.h2), label: s.h2 }));
+  const colors = ["#00a8e8", "#3ddc97", "#f0a63a", "#8a8ff0", "#e0678a", "#00a8e8"];
+  const midIndex = sections.length >= 4 ? Math.floor(sections.length / 2) : -1;
+
+  const P = ({ children }) => <p className="text-[14.5px] text-[#6a6a6a] leading-[1.95] mb-5 last:mb-0">{children}</p>;
+
+  const Bullets = ({ items }) => (
+    <ul className="flex flex-col gap-3 my-6">
+      {items.map((item) => (
+        <li key={item} className="flex gap-3 text-[14px] text-[#5a5a5a] leading-[1.75]">
+          <span className="mt-[3px] w-[18px] h-[18px] rounded-full bg-[#00a8e8]/15 flex items-center justify-center flex-shrink-0">
+            <svg width="9" height="9" viewBox="0 0 10 10" fill="none" aria-hidden>
+              <path d="M2 5.2l2 2L8 3" stroke="#00a8e8" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
+
+  const MoreLink = ({ cta }) => (
+    <p className="mt-6">
+      <Link
+        href={cta.href}
+        className="text-[13px] font-medium text-[#5a5a5a] border-b border-[#5a5a5a] pb-px hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors"
+      >
+        {cta.label} →
+      </Link>
+    </p>
+  );
+
+  const MidCta = () => (
+    <aside className="rounded-2xl bg-[#1c1e1e] p-7 sm:p-10 my-4">
+      <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">Fast pris · svar inden for 24 timer</p>
+      <p className="font-[Unbounded] font-semibold text-[#00a8e8] text-[clamp(20px,2.4vw,26px)] leading-[1.25] mb-4 max-w-[24ch]">
+        Vil du vide, hvad det koster for dig?
+      </p>
+      <p className="text-[14px] text-[#a0a0a0] leading-[1.85] mb-7 max-w-[52ch]">
+        Skriv kort, hvad du har brug for. Så ringer jeg dig op, og du får en fast pris – og et første designudkast på 48 timer. Passer det ikke, betaler du 0 kr.
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+        <GhostLink href="tel:+4542760577">Ring 42 76 05 77</GhostLink>
+      </div>
+    </aside>
+  );
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <PageHero
-        breadcrumbs={[{ label: "Forside", href: "/" }, ...breadcrumbs, { label: name }]}
         eyebrow={eyebrow}
         titleLines={[h1]}
         lead={intro}
         size="md"
+        facts={type === "service" ? facts : null}
         actions={
           <>
             <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
@@ -138,170 +184,161 @@ export default function ContentPage({
         }
         aside={
           withForm ? (
-            <div className="rounded-3xl border border-white/10 bg-[#242828] p-6 sm:p-8">
+            <div className="rounded-2xl border border-[#2a2d2d] bg-[#242828] p-6 sm:p-8">
               <QuickLeadForm />
             </div>
           ) : null
         }
       />
 
-      {/* Fakta + kort svar */}
-      <section className="sheet bg-[#f7f6f6]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-14 sm:pt-20">
-          {facts?.length > 0 && type === "service" && (
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10">
-              {facts.map(({ num, label }) => (
-                <div key={label} className="rounded-2xl bg-white border border-[#e8e6e6] px-5 py-4">
-                  <p className="text-[18px] font-semibold text-[#1c1e1e]">{num}</p>
-                  <p className="text-[12px] text-[#6a6a6a] mt-1">{label}</p>
-                </div>
-              ))}
+      <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 pt-16 sm:pt-20 pb-20 sm:pb-28">
+        <div className="max-w-3xl mx-auto">
+          {type === "article" && (
+            <div className="pb-8 mb-10 border-b border-[#e8e8e8]">
+              <div>
+                <p className="text-[13px] font-medium text-[#3a3a3a]">
+                  Skrevet af{" "}
+                  <Link href="/om-mig" className="border-b border-[#3a3a3a]/40 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors">
+                    Ivan Kohan
+                  </Link>
+                </p>
+                <p className="text-[12px] text-[#8a8a8a] mt-0.5">
+                  Webudvikler i Horsens
+                  {updated ? <> · Opdateret {fmtDate(updated)}</> : published ? <> · {fmtDate(published)}</> : null}
+                </p>
+              </div>
             </div>
           )}
 
-          {(published || updated) && type === "article" && (
-            <p className="text-[12px] text-[#6a6a6a] mb-6">
-              Af{" "}
-              <Link href="/om-mig" className="text-[#1c1e1e] underline decoration-[#00a8e8]/50 underline-offset-4">
-                Ivan Kohan
-              </Link>
-              {published && <> · Udgivet {fmtDate(published)}</>}
-              {updated && updated !== published && <> · Opdateret {fmtDate(updated)}</>}
+          {summary && (
+            <p data-speakable className="text-[16px] sm:text-[17px] font-medium text-[#3a3a3a] leading-[1.8] mb-14">
+              {summary}
             </p>
           )}
 
-          {summary && (
-            <aside
-              data-speakable
-              className="rounded-2xl bg-white border border-[#e8e6e6] border-l-4 border-l-[#00a8e8] px-6 py-5 mb-12 max-w-4xl"
-            >
-              <p className="text-[11px] uppercase tracking-[0.14em] text-[#666] mb-2">{summaryLabel}</p>
-              <p className="text-[15px] text-[#1c1e1e] leading-[1.75]">{summary}</p>
-            </aside>
-          )}
-        </div>
+          {afterSummary && <div className="mb-16">{afterSummary}</div>}
 
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pb-16 sm:pb-24 grid grid-cols-1 lg:grid-cols-[240px_minmax(0,1fr)] gap-10 lg:gap-16">
-          {toc.length > 2 ? (
-            <nav aria-label="Indhold på siden" className="hidden lg:block">
-              <div className="sticky top-24">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#666] mb-4">På denne side</p>
-                <ol className="flex flex-col gap-2.5 border-l border-[#dcdada]">
-                  {toc.map((t) => (
-                    <li key={t.id}>
-                      <a
-                        href={`#${t.id}`}
-                        className="block pl-4 text-[12px] leading-snug text-[#5a5a5a] hover:text-[#00a8e8] transition-colors"
-                      >
-                        {t.label}
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            </nav>
-          ) : (
-            <span className="hidden lg:block" />
-          )}
+          <div className="flex flex-col gap-16 sm:gap-20">
+            {sections.map((section, idx) => (
+              <div key={section.h2 || section.paragraphs?.[0]} className="contents">
+                {idx === midIndex && <MidCta />}
+                <article id={section.id || (section.h2 ? slugify(section.h2) : undefined)} className="scroll-mt-24">
+                  {section.eyebrow && (
+                    <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">{section.eyebrow}</p>
+                  )}
+                  {section.h2 && (
+                    <h2 className="title !text-[clamp(22px,2.6vw,30px)] !leading-[1.2] !mb-6 max-w-[26ch]">{section.h2}</h2>
+                  )}
+                  {section.paragraphs?.map((text) => <P key={text.slice(0, 48)}>{text}</P>)}
+                  {section.quote && (
+                    <blockquote className="border-l-2 border-[#00a8e8] pl-5 my-8 text-[15px] italic text-[#5a5a5a] leading-[1.8]">
+                      “{section.quote}”
+                    </blockquote>
+                  )}
+                  {section.bullets && <Bullets items={section.bullets} />}
+                  {section.after?.map((text) => <P key={text.slice(0, 48)}>{text}</P>)}
 
-          <div className="max-w-3xl flex flex-col gap-14">
-            {sections.map((section) => (
-              <article key={section.h2 || section.paragraphs?.[0]} id={section.id || (section.h2 ? slugify(section.h2) : undefined)} className="scroll-mt-24">
-                {section.h2 && (
-                  <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(20px,2.4vw,28px)] mb-5">
-                    {section.h2}
-                  </h2>
-                )}
-                {section.paragraphs?.map((text) => (
-                  <p key={text.slice(0, 48)} className="text-[14px] text-[#555] leading-[1.95] mb-4">
-                    {text}
-                  </p>
-                ))}
-                {section.bullets && (
-                  <ul className="flex flex-col gap-2.5 my-4">
-                    {section.bullets.map((item) => (
-                      <li key={item} className="flex gap-3 text-[14px] text-[#555] leading-[1.75]">
-                        <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-[#00a8e8] flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                {section.steps && (
-                  <ol className="flex flex-col gap-3 my-5">
-                    {section.steps.map((step, i) => (
-                      <li key={step.title} className="flex gap-4 rounded-2xl bg-white border border-[#e8e6e6] p-5">
-                        <span className="text-[12px] font-semibold text-[#00a8e8] pt-0.5">{String(i + 1).padStart(2, "0")}</span>
-                        <div>
-                          <p className="text-[14px] font-medium text-[#1c1e1e] mb-1">{step.title}</p>
-                          <p className="text-[13px] text-[#666] leading-[1.8]">{step.text}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ol>
-                )}
-                {section.table && (
-                  <div className="overflow-x-auto my-5 rounded-2xl border border-[#e8e6e6] bg-white">
-                    <table className="w-full text-left text-[13px]">
-                      <thead>
-                        <tr className="border-b border-[#e8e6e6] bg-[#fbfafa]">
-                          {section.table.head.map((h) => (
-                            <th key={h} scope="col" className="px-4 py-3 font-medium text-[#1c1e1e] whitespace-nowrap">
-                              {h}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {section.table.rows.map((row) => (
-                          <tr key={row[0]} className="border-b border-[#f0eeee] last:border-0">
-                            {row.map((cell, i) => (
-                              <td key={i} className={`px-4 py-3 align-top leading-[1.6] ${i === 0 ? "font-medium text-[#1c1e1e]" : "text-[#555]"}`}>
-                                {cell}
-                              </td>
+                  {section.steps && (
+                    <ol className="border-t border-[#e0dede] mt-6">
+                      {section.steps.map((step, i) => (
+                        <li key={step.title} className="flex items-start gap-5 sm:gap-8 py-7 border-b border-[#e0dede]">
+                          <span className="text-[38px] sm:text-[48px] font-light leading-none tabular-nums flex-shrink-0 w-[56px] sm:w-[72px] text-[#d8d6d6]">
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
+                          <div className="min-w-0">
+                            <p className="text-[16px] font-medium text-[#111313] flex items-center gap-3 mb-2">
+                              <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: colors[i % colors.length] }} />
+                              {step.title}
+                            </p>
+                            <p className="text-[14px] text-[#6a6a6a] leading-[1.75]">{step.text}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+
+                  {section.table && (
+                    <>
+                      <div className="hidden sm:block overflow-hidden my-7 rounded-2xl border border-[#e8e8e8] bg-white">
+                        <table className="w-full text-left text-[13px]">
+                          <thead>
+                            <tr className="border-b border-[#e8e8e8]">
+                              {section.table.head.map((h, i) => (
+                                <th key={h || i} scope="col" className="px-5 py-4 text-[11px] uppercase tracking-[0.08em] font-medium text-[#8a8a8a]">
+                                  {h}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {section.table.rows.map((row) => (
+                              <tr key={row[0]} className="border-b border-[#f0eeee] last:border-0">
+                                {row.map((cell, i) => (
+                                  <td key={i} className={`px-5 py-4 align-top leading-[1.65] ${i === 0 ? "font-medium text-[#3a3a3a]" : "text-[#6a6a6a]"}`}>
+                                    {cell}
+                                  </td>
+                                ))}
+                              </tr>
                             ))}
-                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="sm:hidden flex flex-col gap-3 my-6">
+                        {section.table.rows.map((row) => (
+                          <div key={row[0]} className="rounded-2xl bg-white border border-[#e8e8e8] p-5">
+                            <p className="text-[14px] font-medium text-[#3a3a3a] mb-3">{row[0]}</p>
+                            <dl className="flex flex-col gap-2">
+                              {row.slice(1).map((cell, i) => (
+                                <div key={i} className="flex flex-col">
+                                  {section.table.head[i + 1] && (
+                                    <dt className="text-[10.5px] uppercase tracking-[0.08em] text-[#9a9a9a]">{section.table.head[i + 1]}</dt>
+                                  )}
+                                  <dd className="text-[13px] text-[#6a6a6a] leading-[1.6]">{cell}</dd>
+                                </div>
+                              ))}
+                            </dl>
+                          </div>
                         ))}
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-                {section.subs?.map((sub) => (
-                  <div key={sub.h3} className="mt-7">
-                    <h3 className="text-[16px] font-medium text-[#1c1e1e] mb-3">{sub.h3}</h3>
-                    {sub.paragraphs?.map((text) => (
-                      <p key={text.slice(0, 48)} className="text-[14px] text-[#555] leading-[1.95] mb-4">
-                        {text}
-                      </p>
-                    ))}
-                    {sub.bullets && (
-                      <ul className="flex flex-col gap-2.5 my-3">
-                        {sub.bullets.map((item) => (
-                          <li key={item} className="flex gap-3 text-[14px] text-[#555] leading-[1.75]">
-                            <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-[#00a8e8] flex-shrink-0" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
-                {section.cta && (
-                  <p className="mt-5 text-[14px]">
-                    <Link href={section.cta.href} className="text-[#007aab] font-medium hover:underline underline-offset-4">
-                      {section.cta.label} →
-                    </Link>
-                  </p>
-                )}
-              </article>
+                      </div>
+                    </>
+                  )}
+
+                  {section.subs && (
+                    <div className={`grid grid-cols-1 ${section.subs.length > 1 ? "sm:grid-cols-2" : ""} gap-3 mt-7`}>
+                      {section.subs.map((sub, i) => (
+                        <div key={sub.h3} className="rounded-2xl p-6 sm:p-7 flex flex-col gap-4 bg-white border border-[#e8e8e8]">
+                          <div className="flex items-center gap-3">
+                            <span
+                              className="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-medium flex-shrink-0"
+                              style={{ backgroundColor: `${colors[i % colors.length]}1a`, color: colors[i % colors.length] }}
+                            >
+                              {String(i + 1).padStart(2, "0")}
+                            </span>
+                            <h3 className="text-[15px] font-medium text-[#3a3a3a] leading-snug">{sub.h3}</h3>
+                          </div>
+                          {sub.paragraphs?.map((text) => (
+                            <p key={text.slice(0, 48)} className="text-[13.5px] text-[#6a6a6a] leading-[1.8]">
+                              {text}
+                            </p>
+                          ))}
+                          {sub.bullets && <Bullets items={sub.bullets} />}
+                          {sub.cta && <MoreLink cta={sub.cta} />}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {section.cta && <MoreLink cta={section.cta} />}
+                </article>
+              </div>
             ))}
 
             {glossary && (
-              <dl className="flex flex-col gap-4">
+              <dl className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {glossary.map((g) => (
-                  <div key={g.term} id={slugify(g.term)} className="scroll-mt-24 rounded-2xl bg-white border border-[#e8e6e6] p-5">
-                    <dt className="text-[15px] font-semibold text-[#1c1e1e] mb-2">{g.term}</dt>
-                    <dd className="text-[13px] text-[#555] leading-[1.85]">{g.def}</dd>
+                  <div key={g.term} id={slugify(g.term)} className="scroll-mt-24 rounded-2xl bg-white border border-[#e8e8e8] p-6">
+                    <dt className="text-[15px] font-medium text-[#3a3a3a] mb-2">{g.term}</dt>
+                    <dd className="text-[13.5px] text-[#6a6a6a] leading-[1.8]">{g.def}</dd>
                   </div>
                 ))}
               </dl>
@@ -313,27 +350,22 @@ export default function ContentPage({
       {extra}
 
       {related.length > 0 && (
-        <section className="sheet bg-white border-t border-[#e8e6e6]">
-          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-14 sm:py-20">
-            <p className="text-[11px] uppercase tracking-[0.18em] text-[#666] mb-3 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Læs også
-            </p>
-            <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.15] text-[clamp(22px,2.8vw,34px)] mb-8">
-              Mere om hvad jeg kan hjælpe med
-            </h2>
+        <section className="bg-white px-5 sm:px-10 lg:px-20 py-20">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">Læs også</p>
+            <h2 className="title !leading-tight !mb-10 max-w-[24ch]">Mere, der kan hjælpe dig videre</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {related.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group rounded-2xl p-6 flex flex-col gap-2 bg-[#f7f6f6] border border-[#e8e6e6] hover:border-[#00a8e8]/40 transition-colors"
+                  className="group rounded-2xl p-6 flex flex-col gap-2 bg-[#f7f6f6] border border-[#e8e8e8] hover:border-[#00a8e8]/40 transition-colors"
                 >
-                  <p className="flex items-center justify-between text-[14px] font-medium text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">
+                  <p className="flex items-center justify-between gap-3 text-[14px] font-medium text-[#5a5a5a] group-hover:text-[#00a8e8] transition-colors">
                     {item.title}
-                    <span className="text-[#b8b6b6] group-hover:text-[#00a8e8] transition-all group-hover:translate-x-1">→</span>
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
                   </p>
-                  <p className="text-[12px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
+                  <p className="text-[12.5px] text-[#7a7a7a] leading-relaxed">{item.desc}</p>
                 </Link>
               ))}
             </div>

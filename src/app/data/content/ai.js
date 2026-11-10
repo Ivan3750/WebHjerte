@@ -150,18 +150,26 @@ export const aiArticles = [
     category: "AI-synlighed",
     h1: "Sådan bliver din virksomhed nævnt af ChatGPT og Google AI",
     intro:
-      "En praktisk guide med 12 tiltag, du kan gå i gang med i dag – uden at være teknisk. Skrevet til lokale virksomheder i Horsens, Midtjylland og resten af Danmark.",
+      "Flere og flere kunder spørger ChatGPT i stedet for at google. Her er de 12 ting, jeg selv gør på mine kunders hjemmesider – og på min egen – for at blive nævnt i svaret.",
     summary:
       "For at blive nævnt i AI-svar skal din hjemmeside besvare kundernes spørgsmål klart og tidligt, have korrekte og ensartede virksomhedsoplysninger, bruge struktureret data (schema.org), være hurtig og tillade AI-crawlere i robots.txt. Der findes ingen garanti, men disse tiltag øger sandsynligheden markant.",
     published: "2026-11-06",
-    updated: "2026-11-06",
-    readMinutes: 8,
+    updated: "2026-11-10",
+    readMinutes: 10,
     sections: [
       {
         h2: "Hvorfor skal du overhovedet bekymre dig om AI-svar?",
         paragraphs: [
           "Når en potentiel kunde spørger en AI-assistent om en lokal leverandør, får de ét sammenhængende svar – ikke en liste, de selv skal vurdere. Det betyder, at færre virksomheder får opmærksomhed, men dem, der bliver nævnt, får den til gengæld ofte i form af en anbefaling. At være med i svaret er derfor mere værdifuldt end en placering som nummer seks i søgeresultaterne.",
           "Den gode nyhed er, at mange af tiltagene er enkle, og at de også forbedrer din almindelige SEO. Du behøver ikke vælge mellem Google og AI – de to trækker i samme retning.",
+        ],
+        quote: "I AI-søgning findes der ingen side 2. Enten bliver du nævnt, eller også gør du ikke.",
+      },
+      {
+        h2: "Hvad jeg selv har set virke",
+        paragraphs: [
+          "WebHjerte er et ungt firma fra 2026. Alligevel kan jeg i Google Search Console se, at siden allerede bliver vist på lange spørgsmål som “hvilket bureau er specialist i AI SEO?” og “hvordan får jeg min virksomhed nævnt i AI-svar som Perplexity og Google AI?” – ofte i top 3–6. Ikke fordi jeg har et stort budget, men fordi siderne svarer direkte på præcis de spørgsmål.",
+          "Det er den vigtigste lære: AI-systemer belønner ikke den største virksomhed. De belønner den, der har det klareste, mest konkrete svar – med pris, sted og en tydelig afsender. Det kan en lokal tømrer i Horsens sagtens konkurrere på.",
         ],
       },
       {
