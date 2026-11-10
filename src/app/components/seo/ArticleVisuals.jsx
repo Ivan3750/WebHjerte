@@ -18,6 +18,9 @@ import {
   VisualOwnership,
 } from "../illustrations/Visuals";
 import { BoelgenScene, BridgeScene } from "./CityScene";
+import { IsbjergetScene } from "./scenes/Aarhus";
+import { HorsensFjordScene } from "./scenes/Horsens";
+import { VindmoellerScene } from "./scenes/Jylland";
 
 const ease = [0.16, 1, 0.3, 1];
 const inView = { once: true, margin: "-60px" };
@@ -248,6 +251,9 @@ function Parallax({ children }) {
 const SCENES = {
   boelgen: { el: <BoelgenScene />, caption: "Bølgen – de bølgeformede boliger ved Vejle Fjord" },
   bridge: { el: <BridgeScene />, caption: "Vejlefjordbroen over Vejle Fjord" },
+  isbjerget: { el: <IsbjergetScene />, caption: "Isbjerget på Aarhus Ø" },
+  fjord: { el: <HorsensFjordScene />, caption: "Horsens Fjord" },
+  vindmoller: { el: <VindmoellerScene />, caption: "Vindmøller ved Vestkysten" },
 };
 
 export default function ArticleVisual({ name, caption, queries, dark = true }) {

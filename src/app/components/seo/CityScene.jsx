@@ -2,6 +2,9 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion, useAnimationFrame, useInView } from "framer-motion";
+import { ArosScene } from "./scenes/Aarhus";
+import { FaengsletScene } from "./scenes/Horsens";
+import { SkagenScene } from "./scenes/Jylland";
 
 const ease = [0.16, 1, 0.3, 1];
 const inView = { once: true, margin: "-60px" };
@@ -542,8 +545,10 @@ export function BoelgenScene() {
   );
 }
 
-/** Hero-illustration pr. by. Flere byer tilføjes her. */
+const HERO = { vejle: BridgeScene, aarhus: ArosScene, horsens: FaengsletScene, jylland: SkagenScene };
+
+/** Hero-illustration pr. by. */
 export default function CityScene({ city }) {
-  if (city === "vejle") return <BridgeScene />;
-  return null;
+  const Scene = HERO[city];
+  return Scene ? <Scene /> : null;
 }
