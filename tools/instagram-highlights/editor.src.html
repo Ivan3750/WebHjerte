@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Highlights Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#141616; --panel:#1c1e1e; --panel2:#232626; --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.16);
+  --ink:#ededed; --mut:#93a0a0; --dim:#617070; --blue:#00a8e8; --green:#3ddc97; --danger:#ff6b6b;
+  --ui:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:14px;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+.top{min-height:56px;flex-wrap:wrap;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 16px;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:20}
+.brand{display:flex;align-items:center;gap:10px;font-family:Unbounded,var(--ui);font-weight:600;font-size:14px;white-space:nowrap}
+.brand img{width:28px;height:28px}
+.brand small{font-family:var(--ui);font-weight:400;color:var(--mut);font-size:12px;margin-left:4px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.btn{border:1px solid var(--line2);background:transparent;border-radius:10px;padding:8px 12px;font-size:13px;transition:.15s;white-space:nowrap}
+.btn:hover{background:rgba(255,255,255,.06)}
+.btn:disabled{opacity:.35;cursor:default}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}
+.btn.primary:hover{filter:brightness(1.1)}
+.btn.sm{padding:5px 9px;font-size:12px;border-radius:8px}
+.app{display:grid;grid-template-columns:360px minmax(0,1fr) 360px;gap:0;min-height:calc(100vh - 56px)}
+.col{padding:16px;overflow:auto;max-height:calc(100vh - 56px)}
+.left{border-right:1px solid var(--line)}
+.right{border-left:1px solid var(--line)}
+h3{margin:0 0 10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:600;display:flex;align-items:center;justify-content:space-between}
+.hint{font-size:12px;color:var(--mut);line-height:1.5;margin:8px 0 0}
+/* highlight circles */
+.hls{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:22px}
+.hl{display:flex;flex-direction:column;align-items:center;gap:6px;cursor:grab;padding:6px 2px;border-radius:14px;border:1px solid transparent;transition:.15s;user-select:none}
+.hl canvas{width:64px;height:64px;border-radius:50%;box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--line2)}
+.hl span{font-size:11px;color:var(--mut);max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hl.sel canvas{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--ac,var(--blue))}
+.hl.sel span{color:var(--ink)}
+.hl.over{background:rgba(0,168,232,.12);border-color:var(--blue)}
+.hl.dragging{opacity:.4}
+/* slide cards */
+.slides{display:flex;flex-direction:column;gap:8px;position:relative}
+.card{display:grid;grid-template-columns:18px 54px 1fr auto;gap:10px;align-items:center;padding:8px 8px 8px 6px;border:1px solid var(--line);border-radius:14px;background:var(--panel2);cursor:pointer;transition:border-color .15s,background .15s,opacity .15s;position:relative}
+.card:hover{border-color:var(--line2)}
+.card.sel{border-color:var(--blue);background:rgba(0,168,232,.08)}
+.card.off{opacity:.5}
+.card.dragging{opacity:.3}
+.card.drop-before::before,.card.drop-after::after{content:"";position:absolute;left:0;right:0;height:3px;background:var(--blue);border-radius:3px;box-shadow:0 0 12px var(--blue)}
+.card.drop-before::before{top:-6px}.card.drop-after::after{bottom:-6px}
+.grip{color:var(--dim);cursor:grab;font-size:16px;text-align:center;user-select:none;line-height:1}
+.card canvas{width:54px;height:96px;border-radius:8px;background:#111;display:block}
+.cmeta{min-width:0}
+.cmeta b{display:block;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cmeta small{color:var(--mut);font-size:11px}
+.cbtns{display:flex;flex-direction:column;gap:3px}
+.cbtns .row{display:flex;gap:3px}
+.ib{width:26px;height:26px;border-radius:7px;border:1px solid var(--line);background:transparent;font-size:12px;display:grid;place-items:center;padding:0;color:var(--mut)}
+.ib:hover{background:rgba(255,255,255,.08);color:var(--ink)}
+.ib.del:hover{color:var(--danger);border-color:var(--danger)}
+.badge{display:inline-block;font-size:10px;padding:1px 6px;border-radius:99px;background:rgba(255,255,255,.08);color:var(--mut);margin-left:4px;vertical-align:1px}
+.addrow{display:flex;gap:8px;margin-top:12px}
+.addrow select{flex:1}
+/* center */
+.center{display:flex;flex-direction:column;align-items:center;padding:20px 16px;gap:14px;overflow:auto;max-height:calc(100vh - 56px)}
+.phone{position:relative;height:min(78vh,760px);aspect-ratio:9/16;border-radius:34px;overflow:hidden;background:#000;box-shadow:0 0 0 8px #0a0b0b,0 0 0 9px var(--line2),0 40px 80px -30px rgba(0,0,0,.8)}
+.phone canvas{width:100%;height:100%;display:block}
+.bars{position:absolute;left:14px;right:14px;top:12px;display:flex;gap:4px;z-index:3;pointer-events:none}
+.bars i{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.28);overflow:hidden;display:block}
+.bars i b{display:block;height:100%;width:0;background:#fff}
+.safe{position:absolute;inset:0;pointer-events:none;z-index:2;display:none}
+.safe.on{display:block}
+.safe::before,.safe::after{content:"";position:absolute;left:0;right:0;background:repeating-linear-gradient(45deg,rgba(255,107,107,.16) 0 8px,transparent 8px 16px);border:1px dashed rgba(255,107,107,.6)}
+.safe::before{top:0;height:14%}
+.safe::after{bottom:0;height:13%}
+.tap{position:absolute;top:0;bottom:0;width:30%;z-index:4;cursor:pointer}
+.tap.l{left:0}.tap.r{right:0}
+.ctrl{display:flex;align-items:center;gap:10px;width:min(100%,520px)}
+.ctrl input[type=range]{flex:1}
+.ctrl .tm{font-variant-numeric:tabular-nums;color:var(--mut);font-size:12px;min-width:74px;text-align:right}
+.round{width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);background:var(--panel2);display:grid;place-items:center;font-size:15px;padding:0}
+.round.big{width:48px;height:48px;background:var(--blue);border-color:var(--blue);color:#fff}
+.toggles{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;color:var(--mut);font-size:12px}
+.toggles label{display:flex;gap:6px;align-items:center;cursor:pointer}
+/* inspector */
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.field>label{font-size:11px;color:var(--mut)}
+input[type=text],input[type=number],textarea,select{background:#141616;border:1px solid var(--line2);border-radius:9px;padding:8px 10px;width:100%;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--blue)}
+textarea{resize:vertical;min-height:74px;line-height:1.45}
+input[type=color]{width:44px;height:34px;padding:2px;border:1px solid var(--line2);border-radius:9px;background:#141616}
+.imgpick{display:flex;gap:10px;align-items:center}
+.imgpick img{width:76px;height:43px;object-fit:cover;border-radius:7px;border:1px solid var(--line2);background:#111;flex:none}
+.sep{height:1px;background:var(--line);margin:16px 0}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dur{display:flex;gap:10px;align-items:center}
+.dur input[type=range]{flex:1}
+.dur output{font-variant-numeric:tabular-nums;min-width:38px;text-align:right;color:var(--mut)}
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.66);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.modal.on{display:flex}
+.sheet{background:var(--panel);border:1px solid var(--line2);border-radius:20px;max-width:560px;width:100%;padding:22px;max-height:92vh;overflow:auto}
+.sheet h2{margin:0 0 4px;font-family:Unbounded,var(--ui);font-size:16px;font-weight:600}
+.sheet p{color:var(--mut);margin:4px 0 14px;line-height:1.5;font-size:13px}
+.opt{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.opt b{display:block;font-size:13px;margin-bottom:2px}
+.opt small{color:var(--mut);font-size:12px;line-height:1.4;display:block}
+.note{background:rgba(255,181,71,.1);border:1px solid rgba(255,181,71,.35);color:#ffd08a;border-radius:10px;padding:10px 12px;font-size:12px;line-height:1.5;margin:8px 0}
+.rec{text-align:center}
+.rec .pb{height:8px;border-radius:8px;background:rgba(255,255,255,.1);overflow:hidden;margin:16px 0 8px}
+.rec .pb i{display:block;height:100%;width:0;background:var(--blue)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2b2f2f;border:1px solid var(--line2);padding:10px 16px;border-radius:12px;z-index:80;opacity:0;pointer-events:none;transition:.25s;font-size:13px;max-width:90vw}
+.toast.on{opacity:1}
+.empty{color:var(--dim);text-align:center;padding:30px 10px;font-size:13px}
+@media (max-width:1100px){
+  .app{grid-template-columns:1fr;}
+  .col,.center{max-height:none}
+  .center{order:-1}
+  .left,.right{border:0;border-top:1px solid var(--line)}
+  .phone{height:min(70vh,640px)}
+  .actions .hide-m{display:none}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img src="" id="logoImg" alt=""> Highlights Studio <small>WebHjerte</small></div>
+  <div class="actions">
+    <button class="btn" id="btnUndo" title="Ctrl+Z">↶ Назад</button>
+    <button class="btn hide-m" id="btnSave">⬇ Зберегти проєкт</button>
+    <button class="btn hide-m" id="btnLoad">⬆ Відкрити</button>
+    <button class="btn hide-m" id="btnReset">Скинути</button>
+    <button class="btn primary" id="btnExport">Експорт ▸</button>
+  </div>
+</header>
+
+<main class="app">
+  <aside class="col left">
+    <h3>Highlights (кружечки)</h3>
+    <div class="hls" id="hls"></div>
+    <h3><span id="slidesTitle">Слайди</span><span id="slidesDur" style="text-transform:none;letter-spacing:0"></span></h3>
+    <div class="slides" id="slides"></div>
+    <div class="addrow">
+      <select id="addType"></select>
+      <button class="btn" id="btnAdd">+ Додати</button>
+    </div>
+    <p class="hint">Тягни картки за ⋮⋮, щоб змінити порядок. Перетягни картку на кружечок зверху — слайд перейде в інший highlight. Кружечки теж можна міняти місцями. Кнопки ▲▼ роблять те саме без миші (на телефоні).</p>
+  </aside>
+
+  <section class="center">
+    <div class="phone" id="phone">
+      <div class="bars" id="bars"></div>
+      <div class="safe" id="safe"></div>
+      <div class="tap l" id="tapL"></div><div class="tap r" id="tapR"></div>
+      <canvas id="cv"></canvas>
+    </div>
+    <div class="ctrl">
+      <button class="round" id="btnPrev" title="Назад">⏮</button>
+      <button class="round big" id="btnPlay" title="Пауза / Відтворення (пробіл)">⏸</button>
+      <button class="round" id="btnNext" title="Далі">⏭</button>
+      <input type="range" id="scrub" min="0" max="1000" value="0">
+      <span class="tm" id="tm">0.0 / 5.0s</span>
+    </div>
+    <div class="toggles">
+      <label><input type="checkbox" id="chkAuto" checked> Автоперехід до наступного</label>
+      <label><input type="checkbox" id="chkSafe"> Показати зони Instagram UI</label>
+    </div>
+  </section>
+
+  <aside class="col right" id="inspector"></aside>
+</main>
+
+<div class="modal" id="exportModal">
+  <div class="sheet">
+    <h2>Експорт</h2>
+    <p>Відео записується в реальному часі з того, що ти бачиш у превʼю (1080×1920, 30 fps). Тримай цю вкладку відкритою й активною, поки йде запис.</p>
+    <div class="note" id="fmtNote"></div>
+    <div class="opt"><div><b>🎬 Вибраний highlight — одне відео</b><small>Усі видимі слайди підряд, з безшовним фоном. Instagram сам розріже на історії.</small></div><button class="btn primary sm" data-exp="hl">Записати</button></div>
+    <div class="opt"><div><b>🎞 Вибраний highlight — кожен слайд окремим відео</b><small>Найзручніше для Stories: один файл = одна історія. Браузер може спитати дозвіл на кілька завантажень.</small></div><button class="btn sm" data-exp="each">Записати</button></div>
+    <div class="opt"><div><b>📦 Усі highlights — по відео на кожен</b><small>4 файли поспіль.</small></div><button class="btn sm" data-exp="all">Записати</button></div>
+    <div class="opt"><div><b>🖼 PNG поточного кадру</b><small>Кадр, який зараз на екрані (постав паузу й підбери момент повзунком).</small></div><button class="btn sm" data-exp="png">PNG</button></div>
+    <div class="opt"><div><b>⭕ Обкладинка вибраного highlight</b><small>PNG 1080×1920 — в Instagram обрізається в коло.</small></div><button class="btn sm" data-exp="cover">PNG</button></div>
+    <div class="opt"><div><b>⭕ Усі 4 обкладинки</b><small></small></div><button class="btn sm" data-exp="covers">PNG ×4</button></div>
+    <div style="text-align:right;margin-top:14px"><button class="btn" id="btnCloseExport">Закрити</button></div>
+  </div>
+</div>
+
+<div class="modal" id="recModal">
+  <div class="sheet rec">
+    <h2 id="recTitle">Запис…</h2>
+    <p id="recSub">Не перемикай вкладку</p>
+    <div class="pb"><i id="recBar"></i></div>
+    <div id="recTxt" style="color:var(--mut);font-size:12px"></div>
+    <div style="margin-top:16px"><button class="btn" id="btnCancelRec">Скасувати</button></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<input type="file" id="fileLoad" accept="application/json,.json" hidden>
+<input type="file" id="fileImg" accept="image/*" hidden>
+
+<script>
+const ASSETS = "__ASSETS__";
+</script>
+<script>
+(() => {
+'use strict';
+
+/* ═════════════════════════ Konstanter & hjælpere ═════════════════════════ */
+const W = 1080, H = 1920, M = 90, CW = 900;
+const STORE_KEY = 'wh-highlights-studio-v1';
+let RS = 1;   // render-skala (preview/thumbnail/eksport)
+let GA = 1;   // global alpha (slide-exit)
+
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const seg = (t, t0, d) => clamp((t - t0) / d);
+const eo = x => 1 - Math.pow(1 - x, 3);
+const ex = x => x >= 1 ? 1 : 1 - Math.pow(2, -10 * x);
+const eio = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+const ob = x => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+const uid = () => Math.random().toString(36).slice(2, 9);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const F = (w, s) => `${w} ${s}px Unbounded, "Segoe UI", system-ui, sans-serif`;
+const al = (c, a) => { c.globalAlpha = clamp(a) * GA; };
+
+const hexCache = {};
+function hexA(hex, a) {
+  const k = hex + a; if (hexCache[k]) return hexCache[k];
+  const h = hex.replace('#', ''); const n = parseInt(h.length === 3 ? h.split('').map(x => x + x).join('') : h, 16);
+  return hexCache[k] = `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+}
+function rr(c, x, y, w, h, r) { c.beginPath(); if (c.roundRect) c.roundRect(x, y, w, h, r); else { c.rect(x, y, w, h); } }
+function ls(c, px) { if ('letterSpacing' in c) c.letterSpacing = px + 'px'; }
+
+/* ═════════════════════════ Billeder ═════════════════════════ */
+const IMG = {};
+const IMG_LABELS = { pizzaria: 'Pizzaria', koereskole: 'Lønbæks Køreskole', hireon: 'Hireon', veka: 'VEKA Center', workout: 'WorkOut', hesteklub: 'Hesteklub', monolit: 'Monolit', renserv: 'RenServ', ivan: 'Ivan (portræt)' };
+const uploads = {};   // key -> {src,label}
+function loadImg(key, src) {
+  return new Promise(res => { const im = new Image(); im.onload = () => { IMG[key] = im; res(); }; im.onerror = () => res(); im.src = src; });
+}
+function imgSrc(key) { return ASSETS[key] || (uploads[key] && uploads[key].src) || ''; }
+function imgOptions() {
+  const o = Object.keys(IMG_LABELS).map(k => [k, IMG_LABELS[k]]);
+  Object.keys(uploads).forEach(k => o.push([k, '⬆ ' + uploads[k].label]));
+  return o;
+}
+
+/* ═════════════════════════ Ikoner (lucide, ISC) ═════════════════════════ */
+const ICONS = {
+  monitor: { p: ['M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z', 'M8 21h8', 'M12 17v4'], n: 'Монітор (проєкти)' },
+  quote: { p: ['M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z', 'M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'], n: 'Лапки (відгуки)' },
+  sparkles: { p: ['M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z', 'M20 3v4', 'M22 5h-4', 'M4 17v2', 'M5 18H3'], n: 'Іскри (AI)' },
+  heart: { img: 'logo', n: 'Серце WebHjerte' },
+  phone: { p: ['M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'], n: 'Телефон' },
+  mail: { p: ['M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z', 'm22 6-10 7L2 6'], n: 'Лист' },
+  globe: { p: ['M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z', 'M2 12h20', 'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'], n: 'Глобус' },
+  pin: { p: ['M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z', 'M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'], n: 'Мітка' },
+  check: { p: ['M20 6 9 17l-5-5'], n: 'Галочка' },
+  rocket: { p: ['M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z', 'm12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z', 'M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0', 'M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5'], n: 'Ракета' },
+  star: { p: ['M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'], n: 'Зірка' },
+};
+const iconPaths = {};
+function drawIcon(c, name, cx, cy, size, color, lw = 1.6, fillA = 0) {
+  const ic = ICONS[name] || ICONS.star;
+  if (ic.img) { const im = IMG[ic.img]; if (im) c.drawImage(im, cx - size / 2, cy - size / 2, size, size); return; }
+  c.save(); c.translate(cx - size / 2, cy - size / 2); c.scale(size / 24, size / 24);
+  c.strokeStyle = color; c.lineWidth = lw; c.lineCap = 'round'; c.lineJoin = 'round';
+  ic.p.forEach((d, i) => {
+    const key = name + i; const p = iconPaths[key] || (iconPaths[key] = new Path2D(d));
+    if (fillA && i === 0) { c.fillStyle = hexA(color, fillA); c.fill(p); }
+    c.stroke(p);
+  });
+  c.restore();
+}
+
+/* ═════════════════════════ Tekst-hjælpere ═════════════════════════ */
+const wrapCache = new Map();
+function wrap(c, text, font, maxW) {
+  const key = font + '|' + maxW + '|' + text;
+  if (wrapCache.has(key)) return wrapCache.get(key);
+  c.font = font; ls(c, 0);
+  const out = [];
+  String(text ?? '').split('\n').forEach(para => {
+    if (!para.trim()) { out.push(''); return; }
+    let line = '';
+    para.split(/\s+/).forEach(w => {
+      const test = line ? line + ' ' + w : w;
+      if (c.measureText(test).width > maxW && line) { out.push(line); line = w; } else line = test;
+    });
+    out.push(line);
+  });
+  if (wrapCache.size > 600) wrapCache.clear();
+  wrapCache.set(key, out); return out;
+}
+function fit(c, text, weight, maxSize, minSize, maxW, maxH, lhMul = 1.15) {
+  let s = maxSize, lines;
+  for (; s >= minSize; s -= 2) {
+    lines = wrap(c, text, F(weight, s), maxW);
+    if (lines.length * s * lhMul <= maxH) break;
+  }
+  if (s < minSize) { s = minSize; lines = wrap(c, text, F(weight, s), maxW); }
+  return { size: s, lines, lh: s * lhMul };
+}
+// Maske-reveal, linje for linje (som sitets RevealLines)
+function reveal(c, lines, x, y, size, lh, t, t0, color, o = {}) {
+  c.font = F(o.w || 600, size); c.textAlign = o.align || 'left'; c.textBaseline = 'alphabetic'; ls(c, o.ls || 0);
+  lines.forEach((ln, i) => {
+    const p = ex(seg(t, t0 + i * (o.stag ?? .09), o.dur || .9));
+    const top = y + i * lh;
+    c.save(); c.beginPath(); c.rect(0, top - size * .08, W, lh + size * .12); c.clip();
+    al(c, Math.min(1, p * 1.6));
+    c.fillStyle = typeof color === 'function' ? color(i, lines.length) : color;
+    c.fillText(ln, x, top + size * .92 + (1 - p) * lh * 1.15);
+    c.restore();
+  });
+  ls(c, 0);
+  return y + lines.length * lh;
+}
+// Fade + løft
+function fadeUp(c, t, t0, fn, o = {}) {
+  const p = ex(seg(t, t0, o.dur || .8)); if (p <= 0) return;
+  c.save(); al(c, Math.min(1, p * 1.5)); c.translate(0, (1 - p) * (o.dy ?? 36)); fn(p); c.restore();
+}
+function textBlock(c, lines, x, y, size, lh, color, w = 400, align = 'left') {
+  c.font = F(w, size); c.fillStyle = color; c.textAlign = align; c.textBaseline = 'alphabetic'; ls(c, 0);
+  lines.forEach((ln, i) => c.fillText(ln, x, y + i * lh + size * .92));
+  return y + lines.length * lh;
+}
+function pill(c, txt, x, y, o = {}) { // y = øvre kant. Returnerer bredde
+  const size = o.size || 22, padX = o.padX ?? size * 1.0, h = o.h || size * 2.1;
+  c.font = F(o.w || 500, size); ls(c, o.ls ?? 0);
+  const tw = c.measureText(txt).width; const dot = o.dot ? size * 1.4 : 0;
+  const w = tw + padX * 2 + dot;
+  const px = o.align === 'right' ? x - w : o.align === 'center' ? x - w / 2 : x;
+  rr(c, px, y, w, h, h / 2); c.fillStyle = o.fill || 'rgba(255,255,255,.06)'; c.fill();
+  c.lineWidth = 2; c.strokeStyle = o.stroke || 'rgba(255,255,255,.12)'; c.stroke();
+  if (o.dot) { pulse(c, px + padX + size * .3, y + h / 2, size * .26, o.dot, o.t || 0); }
+  c.fillStyle = o.color || '#c4cccc'; c.textAlign = 'left'; c.textBaseline = 'middle';
+  c.fillText(txt, px + padX + dot, y + h / 2 + size * .04); ls(c, 0);
+  return w;
+}
+function pulse(c, x, y, r, col, t) {
+  const k = (t % 2.2) / 2.2, e = ex(k);
+  c.save(); c.globalAlpha = (c.globalAlpha) * .5 * (1 - e); c.fillStyle = col;
+  c.beginPath(); c.arc(x, y, r * (1 + 2.2 * e), 0, 7); c.fill(); c.restore();
+  c.fillStyle = col; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill();
+}
+function glass(c, x, y, w, h, r, o = {}) {
+  c.save();
+  if (!o.noShadow) { c.shadowColor = 'rgba(0,0,0,.5)'; c.shadowBlur = 50 * RS; c.shadowOffsetY = 22 * RS; }
+  rr(c, x, y, w, h, r); c.fillStyle = o.fill || 'rgba(40,44,44,.92)'; c.fill(); c.restore();
+  rr(c, x, y, w, h, r); c.fillStyle = 'rgba(255,255,255,.04)'; c.fill();
+  c.lineWidth = 2; c.strokeStyle = o.stroke || 'rgba(255,255,255,.10)'; c.stroke();
+}
+function cover(c, img, x, y, w, h, o = {}) {
+  if (!img) { c.fillStyle = '#111'; c.fillRect(x, y, w, h); return; }
+  const z = o.zoom || 1, s = Math.max(w / img.width, h / img.height) * z, sw = w / s, sh = h / s;
+  let sx = (img.width - sw) * (o.fx ?? .5) + (o.dx || 0), sy = (img.height - sh) * (o.fy ?? .5) + (o.dy || 0);
+  sx = clamp(sx, 0, img.width - sw); sy = clamp(sy, 0, img.height - sh);
+  c.drawImage(img, sx, sy, sw, sh, x, y, w, h);
+}
+function kicker(c, txt, t, y, accent) { // "—— label" i sitets stil
+  if (!txt) return;
+  fadeUp(c, t, .15, () => {
+    const lw = 64 * ex(seg(t, .15, .8));
+    c.fillStyle = accent; c.fillRect(M, y + 18, lw, 3);
+    c.font = F(500, 24); ls(c, 5); c.fillStyle = '#8a9a9a'; c.textAlign = 'left'; c.textBaseline = 'alphabetic';
+    c.fillText(String(txt).toUpperCase(), M + 84, y + 28); ls(c, 0);
+  }, { dy: 16 });
+}
+const lines_ = s => String(s || '').split('\n').map(x => x.trim()).filter(Boolean);
+
+/* ═════════════════════════ Baggrund, brand, footer ═════════════════════════ */
+let gridCv = null;
+function getGrid() {
+  if (gridCv) return gridCv;
+  const g = document.createElement('canvas'); g.width = W; g.height = H; const c = g.getContext('2d');
+  c.strokeStyle = 'rgba(255,255,255,.055)'; c.lineWidth = 2; c.beginPath();
+  for (let x = 0; x <= W; x += 96) { c.moveTo(x, 0); c.lineTo(x, H); }
+  for (let y = 0; y <= H; y += 96) { c.moveTo(0, y); c.lineTo(W, y); }
+  c.stroke(); c.globalCompositeOperation = 'destination-in';
+  const rg = c.createRadialGradient(W / 2, H * .42, 80, W / 2, H * .42, 1150);
+  rg.addColorStop(0, '#000'); rg.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = rg; c.fillRect(0, 0, W, H);
+  return gridCv = g;
+}
+function blob(c, x, y, r, col, a) {
+  const g = c.createRadialGradient(x, y, 0, x, y, r); g.addColorStop(0, hexA(col, a)); g.addColorStop(1, hexA(col, 0));
+  c.fillStyle = g; c.fillRect(x - r, y - r, 2 * r, 2 * r);
+}
+function drawBg(c, gt, accent) {
+  c.globalAlpha = 1; c.fillStyle = '#1c1e1e'; c.fillRect(0, 0, W, H);
+  blob(c, W * .88 + Math.sin(gt * .3) * 90, 360 + Math.cos(gt * .25) * 70, 760, accent, .24);
+  blob(c, W * .06 + Math.cos(gt * .27) * 80, 1520 + Math.sin(gt * .2) * 90, 820, '#8a8ff0', .14);
+  blob(c, W * .5 + Math.sin(gt * .21) * 120, 980 + Math.cos(gt * .17) * 110, 520, '#3ddc97', .05);
+  c.drawImage(getGrid(), 0, 0);
+  for (let i = 0; i < 16; i++) { // svævende støv
+    const sp = 14 + (i % 4) * 7, x = (i * 173 + Math.sin(gt * .4 + i) * 30) % W, y = ((i * 317 - gt * sp) % H + H) % H;
+    c.fillStyle = `rgba(255,255,255,${.06 + (i % 3) * .05})`; c.beginPath(); c.arc(x, y, 2.5 + (i % 3) * 1.6, 0, 7); c.fill();
+  }
+}
+function drawBrand(c, t, hl) {
+  al(c, ex(seg(t, .05, .7)));
+  if (IMG.logo) c.drawImage(IMG.logo, M - 6, 272, 64, 64);
+  c.font = F(600, 32); c.fillStyle = '#fff'; c.textAlign = 'left'; c.textBaseline = 'middle'; ls(c, 0);
+  c.fillText('WebHjerte', M + 66, 306);
+  c.font = F(500, 21); ls(c, 5); c.fillStyle = hl.accent; c.textAlign = 'right';
+  c.fillText(String(hl.name || '').toUpperCase(), W - M, 308); ls(c, 0);
+}
+function drawFooter(c, t) {
+  al(c, .75 * ex(seg(t, .3, .8)));
+  c.font = F(400, 24); c.fillStyle = '#617070'; c.textBaseline = 'middle'; ls(c, 1);
+  c.textAlign = 'left'; c.fillText('webhjerte.dk', M, 1634);
+  c.textAlign = 'right'; c.fillText('Horsens · Danmark', W - M, 1634); ls(c, 0);
+}
+
+/* ═════════════════════════ Slide-typer ═════════════════════════ */
+const R = {};
+
+R.intro = (c, s, t, d, m) => {
+  const ac = m.hl.accent; kicker(c, s.kicker, t, 385, ac);
+  const y = 460, ph = 700, p = ex(seg(t, .15, 1.1));
+  if (p > 0) {
+    c.save(); const hh = ph * p; rr(c, M, y + (ph - hh) / 2, CW, hh, 56); c.clip();
+    cover(c, IMG[s.image], M, y, CW, ph, { zoom: 1.02 + .1 * seg(t, 0, d), fx: .5, fy: .27 });
+    const g = c.createLinearGradient(0, y + ph * .6, 0, y + ph); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.55)');
+    c.fillStyle = g; c.fillRect(M, y, CW, ph);
+    c.restore();
+    c.save(); rr(c, M, y + (ph - hh) / 2, CW, hh, 56); c.lineWidth = 2; c.strokeStyle = 'rgba(255,255,255,.14)'; c.stroke(); c.restore();
+    fadeUp(c, t, 1.0, () => { if (s.badge) pill(c, s.badge, M + 28, y + ph - 28 - 66, { size: 26, h: 66, dot: '#3ddc97', t, fill: 'rgba(20,24,24,.78)', color: '#fff' }); }, { dy: 30 });
+  }
+  const f = fit(c, s.title, 600, 66, 40, CW, 150, 1.14);
+  let yy = reveal(c, f.lines, M, y + ph + 50, f.size, f.lh, t, .7, (i, n) => i === n - 1 ? ac : '#fff');
+  const b = wrap(c, s.body, F(400, 30), CW);
+  fadeUp(c, t, 1.25, () => { textBlock(c, b.slice(0, 4), M, yy + 18, 30, 46, '#93a0a0'); });
+  const by = yy + 18 + Math.min(4, b.length) * 46 + 22;
+  const chips = String(s.chips || '').split(',').map(x => x.trim()).filter(Boolean);
+  let cx = M;
+  chips.forEach((ch, i) => fadeUp(c, t, 1.5 + i * .12, () => { cx += pill(c, ch, cx, by, { size: 22 }) + 12; }, { dy: 18 }));
+};
+
+R.case = (c, s, t, d, m) => {
+  const ac = m.hl.accent;
+  fadeUp(c, t, .1, () => {
+    const w1 = pill(c, 'CASE ' + String(m.caseNo || 1).padStart(2, '0') + (m.caseTotal > 1 ? ' / ' + String(m.caseTotal).padStart(2, '0') : ''), M, 392, { size: 22, ls: 3, color: '#fff', fill: hexA(ac, .22), stroke: hexA(ac, .6), w: 600 });
+    if (s.location) pill(c, s.location, W - M, 392, { size: 22, align: 'right' });
+  }, { dy: 20 });
+  // billede-kort
+  const y = 480, h = 640, p = ex(seg(t, .2, 1.1)), sc = .9 + .1 * p;
+  if (p > 0) {
+    c.save(); c.translate(W / 2, y + h / 2); c.scale(sc, sc); c.translate(-W / 2, -(y + h / 2) + (1 - p) * 80); al(c, Math.min(1, p * 1.6));
+    c.save(); c.shadowColor = 'rgba(0,0,0,.6)'; c.shadowBlur = 60 * RS; c.shadowOffsetY = 28 * RS; rr(c, M, y, CW, h, 44); c.fillStyle = '#111'; c.fill(); c.restore();
+    c.save(); rr(c, M, y, CW, h, 44); c.clip();
+    const k = seg(t, .2, d - .2);
+    cover(c, IMG[s.image], M, y, CW, h, { zoom: 1.0 + .16 * eio(k), fx: .5, fy: .5, dx: -30 * k });
+    // glans
+    const sh = seg(t, 1.3, 1.0);
+    if (sh > 0 && sh < 1) { const gx = M - 300 + (CW + 600) * eio(sh); const g = c.createLinearGradient(gx - 160, 0, gx + 160, 0); g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(.5, 'rgba(255,255,255,.18)'); g.addColorStop(1, 'rgba(255,255,255,0)'); c.fillStyle = g; c.fillRect(M, y, CW, h); }
+    c.restore();
+    rr(c, M, y, CW, h, 44); c.lineWidth = 2; c.strokeStyle = 'rgba(255,255,255,.16)'; c.stroke();
+    c.restore();
+  }
+  // tags flyder over kortets nederkant
+  const tags = String(s.tags || '').split(',').map(x => x.trim()).filter(Boolean);
+  let tx = M + 24;
+  tags.slice(0, 4).forEach((tg, i) => { fadeUp(c, t, 1.0 + i * .12, () => { tx += pill(c, tg, tx, y + h - 36, { size: 21, fill: 'rgba(20,24,24,.86)', color: '#e6eaea', stroke: 'rgba(255,255,255,.18)' }) + 10; }, { dy: 26 }); });
+  // tekst
+  const f = fit(c, s.title, 700, 78, 44, CW, 180, 1.1);
+  let yy = reveal(c, f.lines, M, y + h + 84, f.size, f.lh, t, .75, '#fff');
+  const sub = wrap(c, s.subtitle, F(500, 38), CW).slice(0, 3);
+  yy = reveal(c, sub, M, yy + 14, 38, 51, t, 1.0, ac, { w: 500 });
+  const bod = wrap(c, s.body, F(400, 30), CW).slice(0, 4);
+  fadeUp(c, t, 1.5, () => { textBlock(c, bod, M, yy + 22, 30, 46, '#93a0a0'); });
+};
+
+R.review = (c, s, t, d, m) => {
+  const ac = m.hl.accent;
+  fadeUp(c, t, .1, () => pill(c, 'KUNDEUDTALELSE', M, 392, { size: 22, ls: 4, color: ac, fill: hexA(ac, .14), stroke: hexA(ac, .4), w: 600 }), { dy: 16 });
+  const qp = ob(seg(t, .2, .9));
+  c.save(); al(c, ex(seg(t, .2, .5))); c.translate(M - 6, 760); c.scale(qp, qp); c.font = '700 320px Georgia, "Times New Roman", serif'; c.fillStyle = ac; c.textAlign = 'left'; c.textBaseline = 'alphabetic'; c.fillText('“', 0, 0); c.restore();
+  const f = fit(c, s.quote, 500, 60, 34, CW, 640, 1.38);
+  let yy = reveal(c, f.lines, M, 790, f.size, f.lh, t, .6, '#f4f7f7', { w: 500, stag: .14 });
+  const ly = yy + 40, lp = ex(seg(t, 1.5, .8));
+  c.fillStyle = 'rgba(255,255,255,.14)'; c.fillRect(M, ly, CW * lp, 2);
+  fadeUp(c, t, 1.7, () => {
+    const cy = ly + 86;
+    c.fillStyle = hexA(ac, .2); c.beginPath(); c.arc(M + 48, cy, 48, 0, 7); c.fill(); c.lineWidth = 3; c.strokeStyle = ac; c.stroke();
+    c.font = F(700, 40); c.fillStyle = '#fff'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText((s.name || '?').trim().charAt(0).toUpperCase(), M + 48, cy + 3);
+    c.textAlign = 'left'; c.textBaseline = 'alphabetic'; c.font = F(600, 38); c.fillStyle = '#fff'; c.fillText(s.name || '', M + 120, cy - 4);
+    c.font = F(400, 27); c.fillStyle = '#8a9a9a'; c.fillText([s.company, s.city].filter(Boolean).join(' · '), M + 120, cy + 40);
+  });
+};
+
+R.stat = (c, s, t, d, m) => {
+  const ac = m.hl.accent, cx = W / 2, cy = 880;
+  fadeUp(c, t, .1, () => { if (s.kicker) pill(c, s.kicker, cx, 392, { size: 22, ls: 4, align: 'center', color: ac, fill: hexA(ac, .14), stroke: hexA(ac, .4), w: 600 }); }, { dy: 16 });
+  const rp = ex(seg(t, .1, 1.2));
+  c.save(); al(c, rp * .5); c.lineWidth = 3; c.strokeStyle = hexA(ac, .5); c.setLineDash([2, 30]); c.lineCap = 'round'; c.lineDashOffset = -t * 26;
+  c.beginPath(); c.arc(cx, cy, 400 * (.8 + .2 * rp), 0, 7); c.stroke(); c.restore();
+  c.save(); al(c, rp * .35); c.lineWidth = 2; c.strokeStyle = 'rgba(255,255,255,.12)'; c.beginPath(); c.arc(cx, cy, 500 * (.8 + .2 * rp), 0, 7); c.stroke(); c.restore();
+  blob(c, cx, cy, 520, ac, .16 * rp);
+  const raw = String(s.value ?? '').trim(), num = /^\d+([.,]\d+)?$/.test(raw);
+  let shown = raw;
+  if (num) { const v = parseFloat(raw.replace(',', '.')), p = ex(seg(t, .35, 1.5)); const dec = /[.,]/.test(raw) ? (raw.split(/[.,]/)[1] || '').length : 0; shown = (v * p).toFixed(dec).replace('.', ','); if (!dec) shown = String(Math.round(v * p)); }
+  const full = (s.prefix || '') + shown + (s.suffix || '');
+  c.font = F(700, 300); ls(c, -6);
+  const w300 = c.measureText((s.prefix || '') + raw + (s.suffix || '')).width; const size = Math.min(300, 300 * 760 / Math.max(1, w300));
+  const pp = ob(seg(t, .3, .9));
+  c.save(); al(c, ex(seg(t, .3, .4))); c.translate(cx, cy); c.scale(.85 + .15 * pp, .85 + .15 * pp);
+  c.font = F(700, size); ls(c, -size * .02); c.fillStyle = ac; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(full, 0, 0); c.restore(); ls(c, 0);
+  const f = fit(c, s.label, 600, 58, 36, CW, 190, 1.15);
+  let yy = reveal(c, f.lines, cx, 1290, f.size, f.lh, t, 1.0, '#fff', { align: 'center' });
+  const sub = wrap(c, s.sub, F(400, 31), 820).slice(0, 4);
+  fadeUp(c, t, 1.5, () => textBlock(c, sub, cx, yy + 16, 31, 46, '#93a0a0', 400, 'center'));
+};
+
+R.list = (c, s, t, d, m) => {
+  const ac = m.hl.accent; kicker(c, s.kicker, t, 385, ac);
+  const f = fit(c, s.title, 600, 68, 40, CW, 150, 1.12);
+  let y = reveal(c, f.lines, M, 450, f.size, f.lh, t, .3, (i, n) => i === n - 1 ? ac : '#fff');
+  const items = lines_(s.items).slice(0, 7).map(l => { const [a, ...b] = l.split('|'); return { a: a.trim(), b: b.join('|').trim() }; });
+  const top = y + 44, avail = 1590 - top, n = Math.max(1, items.length), gap = 22;
+  const rowH = Math.min(200, (avail - (n - 1) * gap) / n);
+  const tS = clamp(rowH * .27, 30, 44), dS = clamp(rowH * .19, 22, 29);
+  const steps = s.style === 'steps';
+  if (steps && n > 1) { // forbindelseslinje
+    const lp = ex(seg(t, .6, 1.6)); c.fillStyle = 'rgba(255,255,255,.12)';
+    c.fillRect(M + 52 - 1.5, top + rowH / 2, 3, (n - 1) * (rowH + gap) * lp);
+  }
+  items.forEach((it, i) => {
+    const yy = top + i * (rowH + gap), t0 = .55 + i * .17, p = ex(seg(t, t0, .8));
+    if (p <= 0) return;
+    c.save(); al(c, Math.min(1, p * 1.5)); c.translate((1 - p) * 70, 0);
+    glass(c, M, yy, CW, rowH, 36, { noShadow: true, fill: 'rgba(36,40,40,.9)' });
+    const icx = M + 52, icy = yy + rowH / 2, r = Math.min(34, rowH * .3);
+    c.fillStyle = hexA(ac, .16); c.beginPath(); c.arc(icx, icy, r, 0, 7); c.fill(); c.lineWidth = 2.5; c.strokeStyle = hexA(ac, .7); c.stroke();
+    if (steps) { c.font = F(700, r * .8); c.fillStyle = '#fff'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(String(i + 1), icx, icy + 2); }
+    else { const k = ex(seg(t, t0 + .2, .5)); c.save(); c.beginPath(); c.rect(icx - r, icy - r, 2 * r * k, 2 * r); c.clip(); drawIcon(c, 'check', icx, icy, r * 1.15, ac, 2.6); c.restore(); }
+    const tx = M + 52 + r + 28, mw = CW - (tx - M) - 28;
+    const dl = it.b ? wrap(c, it.b, F(400, dS), mw).slice(0, 2) : [];
+    const blockH = tS * 1.2 + (dl.length ? dl.length * dS * 1.35 + 6 : 0);
+    let ty = yy + (rowH - blockH) / 2;
+    c.font = F(600, tS); c.fillStyle = '#fff'; c.textAlign = 'left'; c.textBaseline = 'alphabetic';
+    const tl = wrap(c, it.a, F(600, tS), mw)[0]; c.fillText(tl, tx, ty + tS * .95);
+    if (dl.length) textBlock(c, dl, tx, ty + tS * 1.2 + 6, dS, dS * 1.35, '#8a9a9a');
+    c.restore();
+  });
+};
+
+R.text = (c, s, t, d, m) => {
+  const ac = m.hl.accent; kicker(c, s.kicker, t, 385, ac);
+  const rp = ex(seg(t, 0, 1.6));
+  c.save(); al(c, .5 * rp); c.strokeStyle = hexA(ac, .22); c.lineWidth = 3; c.setLineDash([3, 22]); c.lineCap = 'round';
+  c.translate(W - 120, 1500); c.rotate(t * .12); c.beginPath(); c.arc(0, 0, 420, 0, 7); c.stroke(); c.setLineDash([]); c.strokeStyle = 'rgba(255,255,255,.07)'; c.beginPath(); c.arc(0, 0, 540, 0, 7); c.stroke(); c.restore();
+  const f = fit(c, s.title, 700, 104, 48, CW, 720, 1.1);
+  const accMode = s.accent || 'last';
+  const col = (i, n) => accMode === 'all' ? ac : accMode === 'last' && i === n - 1 ? ac : '#fff';
+  const bod = wrap(c, s.body, F(400, 34), CW).slice(0, 6);
+  const total = f.lines.length * f.lh + (bod.length ? 40 + bod.length * 52 : 0);
+  const y0 = Math.max(470, 1020 - total / 2);
+  let yy = reveal(c, f.lines, M, y0, f.size, f.lh, t, .35, col);
+  fadeUp(c, t, 1.2, () => textBlock(c, bod, M, yy + 36, 34, 52, '#93a0a0'));
+};
+
+R.grid = (c, s, t, d, m) => {
+  const ac = m.hl.accent; kicker(c, s.kicker, t, 385, ac);
+  const f = fit(c, s.title, 600, 68, 40, CW, 150, 1.12);
+  let y = reveal(c, f.lines, M, 450, f.size, f.lh, t, .3, (i, n) => i === n - 1 ? ac : '#fff');
+  const keys = [s.img1, s.img2, s.img3, s.img4].filter(Boolean);
+  let top = y + 36;
+  if (s.body) { const b = wrap(c, s.body, F(400, 28), CW).slice(0, 2); fadeUp(c, t, .9, () => textBlock(c, b, M, top, 28, 42, '#93a0a0')); top += b.length * 42 + 20; }
+  const gw = (CW - 24) / 2, gh = Math.min(390, (1590 - top - 60 - 24) / 2);
+  keys.forEach((k, i) => {
+    const col = i % 2, row = Math.floor(i / 2), x = M + col * (gw + 24), yy = top + row * (gh + 24) + (col ? 56 : 0);
+    const p = ob(seg(t, .5 + i * .18, .9)); if (p <= 0) return;
+    const fl = Math.sin(t * 1.2 + i * 1.7) * 7;
+    c.save(); al(c, ex(seg(t, .5 + i * .18, .4))); c.translate(x + gw / 2, yy + gh / 2 + fl); c.scale(.6 + .4 * p, .6 + .4 * p);
+    c.save(); c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = 40 * RS; c.shadowOffsetY = 18 * RS; rr(c, -gw / 2, -gh / 2, gw, gh, 36); c.fillStyle = '#111'; c.fill(); c.restore();
+    c.save(); rr(c, -gw / 2, -gh / 2, gw, gh, 36); c.clip(); cover(c, IMG[k], -gw / 2, -gh / 2, gw, gh, { zoom: 1.0 + .05 * (1 + Math.sin(t * .6 + i)), fx: .5, fy: .5 }); c.restore();
+    rr(c, -gw / 2, -gh / 2, gw, gh, 36); c.lineWidth = 2; c.strokeStyle = 'rgba(255,255,255,.16)'; c.stroke();
+    c.restore();
+  });
+};
+
+R.contact = (c, s, t, d, m) => {
+  const ac = m.hl.accent; kicker(c, s.kicker, t, 385, ac);
+  const f = fit(c, s.title, 700, 80, 44, CW, 250, 1.1);
+  let y = reveal(c, f.lines, M, 450, f.size, f.lh, t, .3, (i, n) => i === n - 1 ? ac : '#fff');
+  const rows = [['phone', s.phone], ['mail', s.mail], ['globe', s.web], ['pin', s.place]].filter(r => r[1]);
+  const top = y + 40, hdr = 150, rh = 92, ch = hdr + rows.length * rh + 24;
+  const p = ex(seg(t, .6, .9));
+  if (p > 0) {
+    c.save(); al(c, Math.min(1, p * 1.5)); c.translate(0, (1 - p) * 60);
+    glass(c, M, top, CW, ch, 44);
+    const ax = M + 34 + 50, ay = top + hdr / 2;
+    c.save(); c.beginPath(); c.arc(ax, ay, 50, 0, 7); c.clip(); cover(c, IMG.ivan, ax - 50, ay - 50, 100, 100, { fx: .5, fy: .27, zoom: 2.0 }); c.restore();
+    c.lineWidth = 3; c.strokeStyle = ac; c.beginPath(); c.arc(ax, ay, 50, 0, 7); c.stroke();
+    c.font = F(600, 38); c.fillStyle = '#fff'; c.textAlign = 'left'; c.textBaseline = 'alphabetic'; c.fillText('Ivan Kohan', ax + 76, ay - 2);
+    c.font = F(400, 24); c.fillStyle = '#8a9a9a'; c.fillText('Webudvikler · Grundlægger', ax + 76, ay + 36);
+    c.fillStyle = 'rgba(255,255,255,.09)'; c.fillRect(M + 34, top + hdr - 6, CW - 68, 2);
+    c.restore();
+  }
+  rows.forEach(([ic, tx], i) => fadeUp(c, t, 1.0 + i * .14, () => {
+    const yy = top + hdr + i * rh + rh / 2 + 6, cx = M + 34 + 34;
+    c.fillStyle = hexA(ac, .15); c.beginPath(); c.arc(cx, yy, 30, 0, 7); c.fill();
+    drawIcon(c, ic, cx, yy, 32, ac, 2);
+    c.font = F(500, 33); c.fillStyle = '#f2f5f5'; c.textAlign = 'left'; c.textBaseline = 'middle'; c.fillText(tx, cx + 58, yy + 2);
+  }, { dy: 22 }));
+  const by = top + ch + 40;
+  if (s.badge) fadeUp(c, t, 1.7, () => pill(c, s.badge, M, by, { size: 24, h: 64, dot: '#3ddc97', t, color: '#e6eaea' }), { dy: 18 });
+  if (s.cta) fadeUp(c, t, 1.95, () => {
+    const bw = CW, bh = 128, bx = M, byy = by + 100, pu = 1 + Math.sin(t * 3) * .012;
+    c.save(); c.translate(W / 2, byy + bh / 2); c.scale(pu, pu); c.translate(-W / 2, -(byy + bh / 2));
+    c.save(); c.shadowColor = hexA('#00a8e8', .5); c.shadowBlur = 50 * RS; c.shadowOffsetY = 14 * RS; rr(c, bx, byy, bw, bh, bh / 2); c.fillStyle = '#00a8e8'; c.fill(); c.restore();
+    c.save(); rr(c, bx, byy, bw, bh, bh / 2); c.clip(); const sw = ((t * .55) % 1.6) * (bw + 400) - 300 + bx; const g = c.createLinearGradient(sw, 0, sw + 200, 0); g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(.5, 'rgba(255,255,255,.35)'); g.addColorStop(1, 'rgba(255,255,255,0)'); c.fillStyle = g; c.fillRect(bx, byy, bw, bh); c.restore();
+    c.font = F(600, 38); c.fillStyle = '#fff'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(s.cta + '  →', W / 2, byy + bh / 2 + 3);
+    c.restore();
+  }, { dy: 30 });
+};
+
+/* ═════════════════════════ Slide-wrapper og cover ═════════════════════════ */
+function drawSlide(c, s, hl, t, gt, meta, opts = {}) {
+  GA = 1; drawBg(c, gt, hl.accent);
+  const d = s.duration || 5;
+  const exitK = clamp((d - t) / .4); GA = eo(exitK);
+  c.save(); c.translate(0, (1 - eo(exitK)) * -24);
+  drawBrand(c, t, hl);
+  (R[s.type] || R.text)(c, s, t, d, { hl, ...meta });
+  drawFooter(c, t);
+  c.restore(); GA = 1; c.globalAlpha = 1; c.setLineDash([]); ls(c, 0);
+  if (opts.ribbon && s.off) { c.save(); c.fillStyle = 'rgba(255,107,107,.9)'; c.fillRect(0, 0, W, 70); c.font = F(700, 30); c.fillStyle = '#fff'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('ПРИХОВАНО · не потрапить в експорт', W / 2, 36); c.restore(); }
+}
+function drawCover(c, hl) {
+  RS_set(c);
+  c.fillStyle = '#16181a'; c.fillRect(0, 0, W, H);
+  blob(c, W / 2, H / 2, 640, hl.accent, .42);
+  blob(c, W / 2, H / 2, 380, hl.accent, .22);
+  c.save(); c.translate(W / 2, H / 2);
+  c.lineWidth = 6; c.strokeStyle = hexA(hl.accent, .8); c.beginPath(); c.arc(0, 0, 360, 0, 7); c.stroke();
+  c.lineWidth = 3; c.strokeStyle = hexA(hl.accent, .35); c.setLineDash([2, 26]); c.lineCap = 'round'; c.beginPath(); c.arc(0, 0, 420, 0, 7); c.stroke(); c.setLineDash([]);
+  c.restore();
+  drawIcon(c, hl.icon, W / 2, H / 2, 380, hl.accent === '#ffffff' ? '#fff' : hl.accent, 1.5, .14);
+}
+function RS_set() {}
+
+/* ═════════════════════════ Standarddata ═════════════════════════ */
+const mk = (type, p) => ({ id: uid(), type, duration: 5, off: false, ...p });
+const CASE = (image, title, subtitle, body, tags, location) => mk('case', { duration: 5.5, image, title, subtitle, body, tags, location });
+function defaults() {
+  return [
+    { id: 'h1', name: 'Projekter', icon: 'monitor', accent: '#00a8e8', slides: [
+      mk('grid', { duration: 6, kicker: 'Udvalgte projekter', title: 'Hjemmesider, der arbejder for kunden', body: '', img1: 'pizzaria', img2: 'workout', img3: 'hesteklub', img4: 'renserv' }),
+      CASE('pizzaria', 'Pizzaria', 'Fra afhængighed af Wolt til egne kunder', 'Wolt og JustEat tog op mod 30% i gebyr. Nu bestiller kunderne direkte – på under et minut.', 'Webdesign, Udvikling, Lokal SEO', 'Horsens'),
+      CASE('koereskole', 'Lønbæks Køreskole', 'Ikke det billigste kørekort – men det bedste', 'En tryg vej fra "jeg overvejer kørekort" til booket første køretime.', 'Webdesign, Next.js, Lokal SEO', 'Vejle'),
+      CASE('hireon', 'Hireon', 'Fra frafald til færdige ansøgninger', 'Hele brugerrejsen kortlagt – onboardingen skåret ned til det essentielle.', 'UX design, Webudvikling', 'Berlin'),
+      CASE('veka', 'VEKA Center', 'Fra fabrik til færdigt vindue – uden mellemled', 'Et trin-for-trin-værktøj, der guider kunden til det rigtige vindue.', 'Produktkatalog, Leads, SEO', 'Kyiv'),
+      CASE('workout', 'WorkOut', 'Fra besøgende til betalende medlemmer', 'Medlemsfordele, sociale beviser og en funnel, der guider hele vejen til køb.', 'UI design, Webudvikling', 'Aarhus'),
+      CASE('hesteklub', 'Hesteklub', 'En hjemmeside, medlemmerne rent faktisk kan finde rundt i', 'Holdoversigt, priser og kontakt, hvor man forventer dem – og CMS til selv at opdatere.', 'Webdesign, CMS, SEO', 'Vejle'),
+      CASE('monolit', 'Monolit', 'Synlighed, der genererer B2B-henvendelser', 'Målrettet søgeord som "Pengeskabe erhverv" – flere organiske leads uden pris pr. klik.', 'Produktkatalog, SEO', 'Aarhus'),
+      CASE('renserv', 'RenServ', 'En moderne hjemmeside for en familieejet rengøringsvirksomhed', 'Hurtig, mobiloptimeret og bygget til lokal synlighed.', 'Webdesign, Next.js, Lokal SEO', 'Danmark'),
+      mk('text', { duration: 5, kicker: 'Din tur', title: 'Din virksomhed\nkunne stå her', body: 'Skriv til mig – så får du første design inden for 48 timer.', accent: 'last' }),
+    ] },
+    { id: 'h2', name: 'Udtalelser', icon: 'quote', accent: '#3ddc97', slides: [
+      mk('text', { duration: 4, kicker: 'Kundeudtalelser', title: 'Det siger\nmine kunder', body: '', accent: 'last' }),
+      mk('review', { duration: 9, quote: 'Vi kan varmt anbefale Ivan! Han arbejder professionelt og hurtigt, kommer med nyttige anbefalinger og har tålmodighed med vores kaotiske ideer. Nem og behagelig kommunikation.', name: 'Vasyl', company: 'VEKA Company', city: '' }),
+      mk('review', { duration: 8, off: true, quote: 'Skriv kundens egne ord her – kopiér udtalelsen ordret.', name: 'Navn', company: 'Virksomhed', city: 'By' }),
+      mk('review', { duration: 8, off: true, quote: 'Skriv kundens egne ord her – kopiér udtalelsen ordret.', name: 'Navn', company: 'Virksomhed', city: 'By' }),
+    ] },
+    { id: 'h3', name: 'Services + AI', icon: 'sparkles', accent: '#8a8ff0', slides: [
+      mk('text', { duration: 4.5, kicker: 'Hvad jeg laver', title: 'Hjemmesider\n+ AI, der sælger', body: 'WordPress, Shopify eller skræddersyet kode – og AI, der svarer kunder og booker tider.', accent: 'last' }),
+      mk('list', { duration: 7, kicker: 'Fast pris · ekskl. moms', title: 'Hvad koster en hjemmeside?', style: 'steps', items: 'Landingside | fra 2.500 kr · klar på ca. 2 dage\nBasis | fra 4.500 kr · 3–5 sider · ca. 5 dage\nStandard | fra 7.500 kr · SEO og booking · ca. 10 dage\nSkræddersyet | fra 14.000 kr · webshop og special' }),
+      mk('list', { duration: 7, kicker: 'AI-løsninger', title: 'AI til din virksomhed', style: 'checks', items: 'AI-chatbot | svarer kunder – trænet på din virksomhed\nAI-automatisering | tilbud, opfølgning og rapporter\nAI-booking | kunderne booker tider selv\nAI-synlighed (GEO) | bliv nævnt i ChatGPT og Google AI' }),
+      mk('text', { duration: 6, kicker: 'AI SEO', title: 'I AI-søgning findes der ingen side 2.', body: 'Enten bliver du nævnt – eller også gør du ikke.', accent: 'all' }),
+    ] },
+    { id: 'h4', name: 'Kontakt', icon: 'heart', accent: '#ffb547', slides: [
+      mk('intro', { duration: 6.5, kicker: 'Personen bag', title: 'Jeg hedder Ivan –\nmanden bag WebHjerte', body: 'Ingen mellemled. Bare mig, direkte dialog og en hjemmeside, der rent faktisk virker for din forretning.', chips: 'Horsens, Direkte kontakt, 2–10 dage', badge: 'Svarer inden for 24 timer', image: 'ivan' }),
+      mk('list', { duration: 8, kicker: 'Sådan foregår det', title: 'Fra første snak til live', style: 'steps', items: 'Kontakt | uforpligtende og gratis snak\nAfklaring | pris og tid aftales skriftligt\nDesign | første udkast inden for 48 timer\nFeedback | vi justerer, til det er rigtigt\nLaunch | live på 2–10 dage' }),
+      mk('stat', { duration: 5, kicker: 'Garanti', prefix: '', value: '0', suffix: ' kr', label: 'hvis du ikke er tilfreds med designet', sub: 'Intet bygges, før du har godkendt designet. Domæne og kode tilhører dig.' }),
+      mk('contact', { duration: 8, kicker: 'Lad os snakke', title: 'Klar til din nye hjemmeside?', phone: '+45 42 76 05 77', mail: 'hej@webhjerte.dk', web: 'webhjerte.dk', place: 'Horsens, Midtjylland', badge: 'Svarer inden for 24 timer', cta: 'Book gratis samtale' }),
+    ] },
+  ];
+}
+
+/* ═════════════════════════ Skema til inspector ═════════════════════════ */
+const ACC_OPTS = [['last', 'Остання лінія кольорова'], ['all', 'Весь заголовок кольоровий'], ['none', 'Без акценту']];
+const SCHEMA = {
+  intro: { name: 'Інтро з фото', ico: '👋', f: [['kicker', 'text', 'Надпис зверху'], ['title', 'area', 'Заголовок (Enter = новий рядок)'], ['body', 'area', 'Текст'], ['chips', 'text', 'Чіпи (через кому)'], ['badge', 'text', 'Зелений бейдж на фото'], ['image', 'img', 'Фото']] },
+  case: { name: 'Робота (кейс)', ico: '🖥', f: [['image', 'img', 'Скріншот'], ['title', 'text', 'Назва'], ['subtitle', 'text', 'Підзаголовок'], ['body', 'area', 'Короткий опис'], ['tags', 'text', 'Теги (через кому)'], ['location', 'text', 'Місто']] },
+  review: { name: 'Відгук', ico: '💬', f: [['quote', 'area', 'Текст відгуку (дослівно від клієнта)'], ['name', 'text', 'Імʼя'], ['company', 'text', 'Компанія'], ['city', 'text', 'Місто']] },
+  stat: { name: 'Велика цифра', ico: '🔢', f: [['kicker', 'text', 'Мітка зверху'], ['prefix', 'text', 'Перед числом'], ['value', 'text', 'Число (рахує від 0) або текст'], ['suffix', 'text', 'Після числа'], ['label', 'area', 'Підпис'], ['sub', 'area', 'Пояснення']] },
+  list: { name: 'Список / кроки', ico: '☰', f: [['kicker', 'text', 'Надпис зверху'], ['title', 'area', 'Заголовок'], ['style', 'sel', 'Стиль', [['checks', 'Галочки'], ['steps', 'Кроки 1-2-3']]], ['items', 'area', 'Пункти — кожен з нового рядка: «Заголовок | опис»', 7]] },
+  text: { name: 'Текст', ico: '𝐓', f: [['kicker', 'text', 'Надпис зверху'], ['title', 'area', 'Заголовок'], ['accent', 'sel', 'Колір акценту', ACC_OPTS], ['body', 'area', 'Текст']] },
+  grid: { name: 'Колаж скрінів', ico: '▦', f: [['kicker', 'text', 'Надпис зверху'], ['title', 'area', 'Заголовок'], ['body', 'text', 'Рядок під заголовком'], ['img1', 'img', 'Фото 1'], ['img2', 'img', 'Фото 2'], ['img3', 'img', 'Фото 3'], ['img4', 'img', 'Фото 4']] },
+  contact: { name: 'Контакти + CTA', ico: '☎', f: [['kicker', 'text', 'Надпис зверху'], ['title', 'area', 'Заголовок'], ['phone', 'text', 'Телефон'], ['mail', 'text', 'E-mail'], ['web', 'text', 'Сайт'], ['place', 'text', 'Місце'], ['badge', 'text', 'Зелений бейдж'], ['cta', 'text', 'Текст кнопки']] },
+};
+const NEW_DEFAULTS = {
+  intro: { title: 'Titel', body: '', chips: '', badge: '', kicker: '', image: 'ivan' },
+  case: { image: 'pizzaria', title: 'Projekt', subtitle: '', body: '', tags: '', location: '' },
+  review: { quote: 'Skriv kundens egne ord her.', name: 'Navn', company: 'Virksomhed', city: '' },
+  stat: { kicker: '', prefix: '', value: '48', suffix: ' t', label: 'Første designudkast', sub: '' },
+  list: { kicker: '', title: 'Overskrift', style: 'checks', items: 'Punkt 1 | beskrivelse\nPunkt 2 | beskrivelse\nPunkt 3 | beskrivelse' },
+  text: { kicker: '', title: 'Din overskrift', body: '', accent: 'last' },
+  grid: { kicker: '', title: 'Udvalgte projekter', body: '', img1: 'pizzaria', img2: 'workout', img3: 'hesteklub', img4: 'renserv' },
+  contact: { kicker: 'Lad os snakke', title: 'Klar til din nye hjemmeside?', phone: '+45 42 76 05 77', mail: 'hej@webhjerte.dk', web: 'webhjerte.dk', place: 'Horsens', badge: 'Svarer inden for 24 timer', cta: 'Book gratis samtale' },
+};
+
+/* ═════════════════════════ State, undo, persist ═════════════════════════ */
+let state = { hls: defaults(), selHl: 'h1', selSlide: null };
+state.selSlide = state.hls[0].slides[0].id;
+const undoStack = []; let lastCoalesce = { k: '', at: 0 };
+const snap = () => JSON.stringify({ hls: state.hls, selHl: state.selHl, selSlide: state.selSlide });
+function mutate(fn, coKey) {
+  const now = Date.now();
+  if (!(coKey && lastCoalesce.k === coKey && now - lastCoalesce.at < 1200)) { undoStack.push(snap()); if (undoStack.length > 80) undoStack.shift(); }
+  lastCoalesce = { k: coKey || '', at: now };
+  fn(); save(); updateUndo();
+}
+function undo() { const s = undoStack.pop(); if (!s) return; const o = JSON.parse(s); state.hls = o.hls; state.selHl = o.selHl; state.selSlide = o.selSlide; save(); updateUndo(); renderAll(true); }
+function updateUndo() { $('#btnUndo').disabled = !undoStack.length; }
+function save() {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify({ v: 1, hls: state.hls, selHl: state.selHl, selSlide: state.selSlide, uploads })); } catch (e) { /* kvote – ignoreres */ }
+}
+function restore() {
+  try {
+    const raw = localStorage.getItem(STORE_KEY); if (!raw) return;
+    const o = JSON.parse(raw); if (!o || !Array.isArray(o.hls) || !o.hls.length) return;
+    Object.assign(uploads, o.uploads || {}); state.hls = o.hls; state.selHl = o.selHl; state.selSlide = o.selSlide;
+  } catch (e) { /* ignore */ }
+}
+const curHl = () => state.hls.find(h => h.id === state.selHl) || state.hls[0];
+const curSlide = () => { const h = curHl(); return h.slides.find(s => s.id === state.selSlide) || h.slides[0]; };
+function findSlide(id) { for (const h of state.hls) { const i = h.slides.findIndex(s => s.id === id); if (i >= 0) return { h, i, s: h.slides[i] }; } return null; }
+
+/* ═════════════════════════ Preview-motor ═════════════════════════ */
+const cv = $('#cv'), cx = cv.getContext('2d');
+let PREVIEW_RS = .6, exporting = false;
+const play = { on: true, t: 0, gt: 0, last: 0 };
+function setPreviewSize() { const dpr = Math.min(2, window.devicePixelRatio || 1); const rect = $('#phone').getBoundingClientRect(); PREVIEW_RS = clamp(rect.height * dpr / H, .35, 1); }
+function metaFor(hl, s) {
+  const cases = hl.slides.filter(x => x.type === 'case' && !x.off);
+  const i = cases.indexOf(s);
+  return { caseNo: i >= 0 ? i + 1 : (cases.length + 1), caseTotal: Math.max(cases.length, i >= 0 ? cases.length : cases.length + 1) };
+}
+function drawTo(canvas, c, s, hl, t, gt, scale, opts) {
+  if (canvas.width !== Math.round(W * scale)) { canvas.width = Math.round(W * scale); canvas.height = Math.round(H * scale); }
+  RS = scale; c.setTransform(scale, 0, 0, scale, 0, 0);
+  drawSlide(c, s, hl, t, gt, metaFor(hl, s), opts);
+  c.setTransform(1, 0, 0, 1, 0, 0); RS = 1;
+}
+function renderPreview() {
+  const s = curSlide(), hl = curHl(); if (!s) return;
+  drawTo(cv, cx, s, hl, play.t, play.gt, PREVIEW_RS, { ribbon: true });
+  const d = s.duration || 5;
+  $('#tm').textContent = play.t.toFixed(1) + ' / ' + d.toFixed(1) + 's';
+  if (!scrubbing) $('#scrub').value = Math.round(play.t / d * 1000);
+  const bars = $('#bars').children, vis = hl.slides.filter(x => !x.off); const idx = vis.indexOf(s);
+  for (let i = 0; i < bars.length; i++) { const b = bars[i].firstChild; b.style.width = (idx < 0 ? 0 : i < idx ? 100 : i === idx ? play.t / d * 100 : 0) + '%'; }
+}
+let scrubbing = false;
+function frame(now) {
+  requestAnimationFrame(frame);
+  const dt = Math.min(.1, (now - (play.last || now)) / 1000); play.last = now;
+  if (exporting) return;
+  play.gt += dt;
+  if (play.on) {
+    play.t += dt; const d = curSlide().duration || 5;
+    const ae = document.activeElement, editing = ae && $('#inspector').contains(ae) && /^(INPUT|TEXTAREA)$/.test(ae.tagName) && ae.type !== 'range';
+    if (play.t >= d) { if ($('#chkAuto').checked && !editing) step(1, true); else play.t = 0; }
+  }
+  renderPreview();
+}
+function step(dir, auto) {
+  const hl = curHl(); const vis = hl.slides.filter(x => !x.off); if (!vis.length) return;
+  let i = vis.indexOf(curSlide()); if (i < 0) i = dir > 0 ? -1 : 0;
+  i = (i + dir + vis.length) % vis.length; select(hl.id, vis[i].id, true);
+}
+function select(hlId, slideId, keepPlay) {
+  const sameHl = state.selHl === hlId;
+  state.selHl = hlId; state.selSlide = slideId; play.t = 0; if (!keepPlay) play.on = true; updPlayBtn();
+  if (sameHl) {
+    document.querySelectorAll('.card').forEach(c => c.classList.toggle('sel', c.dataset.id === slideId));
+    renderInspector(); renderPreview();
+  } else renderAll();
+  save();
+}
+function updPlayBtn() { $('#btnPlay').textContent = play.on ? '⏸' : '▶'; }
+
+/* ═════════════════════════ UI: venstre panel ═════════════════════════ */
+let drag = null;
+function renderHls() {
+  const box = $('#hls'); box.innerHTML = '';
+  state.hls.forEach(h => {
+    const d = document.createElement('div'); d.className = 'hl' + (h.id === state.selHl ? ' sel' : ''); d.style.setProperty('--ac', h.accent); d.draggable = true; d.dataset.id = h.id;
+    const cvs = document.createElement('canvas'); cvs.width = 128; cvs.height = 128; const c = cvs.getContext('2d');
+    const full = document.createElement('canvas'); full.width = 270; full.height = 480; const fc = full.getContext('2d'); fc.scale(.25, .25); RS = .25; drawCover(fc, h); RS = 1;
+    c.save(); c.beginPath(); c.arc(64, 64, 64, 0, 7); c.clip(); c.drawImage(full, 0, 0, 270, 480, 0, -(480 - 270) / 2 * (128 / 270), 128, 128 * 480 / 270); c.restore();
+    const sp = document.createElement('span'); sp.textContent = h.name;
+    d.append(cvs, sp); box.append(d);
+    d.onclick = () => { if (h.id !== state.selHl) select(h.id, h.slides[0]?.id); };
+    d.ondragstart = e => { drag = { kind: 'hl', id: h.id }; e.dataTransfer.setData('text/plain', h.id); e.dataTransfer.effectAllowed = 'move'; setTimeout(() => d.classList.add('dragging'), 0); };
+    d.ondragend = () => { drag = null; renderHls(); };
+    d.ondragover = e => { if (!drag) return; e.preventDefault(); d.classList.add('over'); };
+    d.ondragleave = () => d.classList.remove('over');
+    d.ondrop = e => {
+      e.preventDefault(); d.classList.remove('over'); if (!drag) return;
+      if (drag.kind === 'slide') { moveSlide(drag.id, h.id, h.slides.length); toast('Слайд перенесено в «' + h.name + '»'); }
+      else if (drag.kind === 'hl' && drag.id !== h.id) { mutate(() => { const a = state.hls.findIndex(x => x.id === drag.id), b = state.hls.findIndex(x => x.id === h.id); const [m] = state.hls.splice(a, 1); state.hls.splice(b, 0, m); }); renderAll(); }
+      drag = null;
+    };
+  });
+}
+function moveSlide(slideId, toHlId, toIdx) {
+  mutate(() => {
+    const f = findSlide(slideId); if (!f) return;
+    f.h.slides.splice(f.i, 1);
+    const to = state.hls.find(h => h.id === toHlId);
+    let idx = toIdx; if (f.h === to && f.i < idx) idx--;
+    to.slides.splice(clamp(idx, 0, to.slides.length), 0, f.s);
+  });
+  renderAll();
+}
+function slideTitle(s) {
+  const first = v => String(v || '').split('\n')[0];
+  if (s.type === 'review') return (s.name || '—') + ' · ' + first(s.quote).slice(0, 28) + '…';
+  if (s.type === 'stat') return (s.prefix || '') + s.value + (s.suffix || '') + ' · ' + first(s.label);
+  return first(s.title) || first(s.kicker) || SCHEMA[s.type].name;
+}
+const thumbTimers = {};
+function drawThumb(cvs, s, hl) {
+  const t = Math.min((s.duration || 5) * .6, 3.2);
+  const c = cvs.getContext('2d'); drawTo(cvs, c, s, hl, t, 4, cvs.width / W, {});
+}
+function renderSlides() {
+  const hl = curHl(), box = $('#slides'); box.innerHTML = '';
+  $('#slidesTitle').textContent = 'Слайди · ' + hl.name;
+  const tot = hl.slides.filter(s => !s.off).reduce((a, s) => a + (s.duration || 5), 0);
+  $('#slidesDur').textContent = hl.slides.filter(s => !s.off).length + ' шт · ' + tot.toFixed(0) + ' с';
+  if (!hl.slides.length) box.innerHTML = '<div class="empty">Порожньо. Додай слайд нижче або перетягни сюди з іншого highlight.</div>';
+  hl.slides.forEach((s, i) => {
+    const d = document.createElement('div'); d.className = 'card' + (s.id === state.selSlide ? ' sel' : '') + (s.off ? ' off' : ''); d.draggable = true; d.dataset.id = s.id;
+    d.innerHTML = `<div class="grip" title="Тягни">⋮⋮</div><canvas width="54" height="96"></canvas>
+      <div class="cmeta"><b>${esc(slideTitle(s))}</b><small>${SCHEMA[s.type].ico} ${SCHEMA[s.type].name} · ${(s.duration || 5).toFixed(1)}с${s.off ? '<span class="badge">приховано</span>' : ''}</small></div>
+      <div class="cbtns"><div class="row"><button class="ib" data-a="up" title="Вгору">▲</button><button class="ib" data-a="dup" title="Дублювати">⧉</button></div><div class="row"><button class="ib" data-a="down" title="Вниз">▼</button><button class="ib del" data-a="del" title="Видалити">✕</button></div></div>`;
+    box.append(d);
+    const tc = d.querySelector('canvas'); const cvs = document.createElement('canvas'); cvs.width = 108; cvs.height = 192;
+    setTimeout(() => { drawThumb(cvs, s, hl); tc.getContext('2d').drawImage(cvs, 0, 0, 54, 96); }, i * 12);
+    d.onclick = e => {
+      const a = e.target.closest('button')?.dataset.a;
+      if (a === 'up') { if (i > 0) { mutate(() => { const [m] = hl.slides.splice(i, 1); hl.slides.splice(i - 1, 0, m); }); renderAll(); } }
+      else if (a === 'down') { if (i < hl.slides.length - 1) { mutate(() => { const [m] = hl.slides.splice(i, 1); hl.slides.splice(i + 1, 0, m); }); renderAll(); } }
+      else if (a === 'dup') { mutate(() => { const n = JSON.parse(JSON.stringify(s)); n.id = uid(); hl.slides.splice(i + 1, 0, n); state.selSlide = n.id; }); play.t = 0; renderAll(); }
+      else if (a === 'del') { if (confirm('Видалити цей слайд?')) { mutate(() => { hl.slides.splice(i, 1); if (state.selSlide === s.id) state.selSlide = (hl.slides[Math.min(i, hl.slides.length - 1)] || {}).id; }); play.t = 0; renderAll(); } }
+      else select(hl.id, s.id);
+    };
+    d.ondragstart = e => { drag = { kind: 'slide', id: s.id }; e.dataTransfer.setData('text/plain', s.id); e.dataTransfer.effectAllowed = 'move'; setTimeout(() => d.classList.add('dragging'), 0); };
+    d.ondragend = () => { drag = null; box.querySelectorAll('.card').forEach(x => x.classList.remove('dragging', 'drop-before', 'drop-after')); };
+    d.ondragover = e => {
+      if (!drag || drag.kind !== 'slide') return; e.preventDefault();
+      const r = d.getBoundingClientRect(), before = e.clientY < r.top + r.height / 2;
+      box.querySelectorAll('.card').forEach(x => x.classList.remove('drop-before', 'drop-after'));
+      if (drag.id !== s.id) d.classList.add(before ? 'drop-before' : 'drop-after');
+    };
+    d.ondrop = e => {
+      if (!drag || drag.kind !== 'slide') return; e.preventDefault();
+      const r = d.getBoundingClientRect(), before = e.clientY < r.top + r.height / 2; const id = drag.id; drag = null;
+      if (id !== s.id) moveSlide(id, hl.id, i + (before ? 0 : 1));
+    };
+  });
+  const bars = $('#bars'); bars.innerHTML = ''; hl.slides.filter(x => !x.off).forEach(() => bars.append(Object.assign(document.createElement('i'), { innerHTML: '<b></b>' })));
+}
+// slide-liste som drop-zone nederst (til sidste position)
+$('#slides').addEventListener('dragover', e => { if (drag && drag.kind === 'slide' && e.target === $('#slides')) e.preventDefault(); });
+$('#slides').addEventListener('drop', e => { if (drag && drag.kind === 'slide' && e.target === $('#slides')) { e.preventDefault(); const id = drag.id; drag = null; moveSlide(id, curHl().id, curHl().slides.length); } });
+
+/* ═════════════════════════ UI: inspector ═════════════════════════ */
+function renderInspector() {
+  const hl = curHl(), s = curSlide(), box = $('#inspector'); box.innerHTML = '';
+  const iconOpts = Object.keys(ICONS).map(k => `<option value="${k}" ${hl.icon === k ? 'selected' : ''}>${ICONS[k].n}</option>`).join('');
+  let html = `<h3>Highlight</h3>
+   <div class="field"><label>Назва (під кружечком)</label><input type="text" id="hlName" value="${esc(hl.name)}"></div>
+   <div class="pair"><div class="field"><label>Іконка обкладинки</label><select id="hlIcon">${iconOpts}</select></div>
+   <div class="field"><label>Акцентний колір</label><input type="color" id="hlAcc" value="${hl.accent}"></div></div>
+   <div class="sep"></div>`;
+  if (!s) { box.innerHTML = html + '<div class="empty">Вибери слайд зліва</div>'; bindHl(); return; }
+  const sc = SCHEMA[s.type];
+  html += `<h3><span>${sc.ico} ${sc.name}</span></h3>
+   <div class="field"><label>Тривалість</label><div class="dur"><input type="range" id="fDur" min="2" max="15" step=".5" value="${s.duration || 5}"><output id="oDur">${(s.duration || 5).toFixed(1)}с</output></div></div>
+   <div class="field"><label style="display:flex;gap:8px;align-items:center;cursor:pointer"><input type="checkbox" id="fOff" ${s.off ? 'checked' : ''}> Приховати (не йде в експорт і автоплей)</label></div>
+   <div class="sep"></div>`;
+  sc.f.forEach(([k, kind, label, extra]) => {
+    const v = s[k] ?? '';
+    if (kind === 'text') html += `<div class="field"><label>${label}</label><input type="text" data-k="${k}" value="${esc(v)}"></div>`;
+    else if (kind === 'area') html += `<div class="field"><label>${label}</label><textarea data-k="${k}" rows="${extra || 3}">${esc(v)}</textarea></div>`;
+    else if (kind === 'sel') html += `<div class="field"><label>${label}</label><select data-k="${k}">${extra.map(o => `<option value="${o[0]}" ${v === o[0] ? 'selected' : ''}>${o[1]}</option>`).join('')}</select></div>`;
+    else if (kind === 'img') html += `<div class="field"><label>${label}</label><div class="imgpick"><img data-pv="${k}" src="${imgSrc(v)}" alt=""><select data-k="${k}">${imgOptions().map(o => `<option value="${o[0]}" ${v === o[0] ? 'selected' : ''}>${esc(o[1])}</option>`).join('')}</select></div><button class="btn sm" data-up="${k}" style="align-self:flex-start">⬆ Завантажити своє зображення</button></div>`;
+  });
+  html += `<p class="hint">Усі зміни одразу видно в превʼю й автоматично зберігаються в цьому браузері. Файл «Зберегти проєкт» — для резервної копії.</p>`;
+  box.innerHTML = html; bindHl();
+  const upd = () => { renderPreview(); refreshCard(s); };
+  $('#fDur').oninput = e => { mutate(() => { s.duration = +e.target.value; }, 'dur' + s.id); $('#oDur').textContent = s.duration.toFixed(1) + 'с'; upd(); renderSlidesMetaOnly(); };
+  $('#fOff').onchange = e => { mutate(() => { s.off = e.target.checked; }); renderAll(); };
+  box.querySelectorAll('[data-k]').forEach(el => {
+    const k = el.dataset.k, h = e => { mutate(() => { s[k] = e.target.value; }, 'f' + s.id + k); if (el.tagName === 'SELECT' && el.closest('.imgpick')) box.querySelector(`[data-pv="${k}"]`).src = imgSrc(s[k]); upd(); };
+    el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', h);
+  });
+  box.querySelectorAll('[data-up]').forEach(b => b.onclick = () => pickImage(s, b.dataset.up));
+}
+function bindHl() {
+  const hl = curHl();
+  $('#hlName').oninput = e => { mutate(() => { hl.name = e.target.value; }, 'hn' + hl.id); renderHlsDebounced(); renderSlidesTitleOnly(); };
+  $('#hlIcon').onchange = e => { mutate(() => { hl.icon = e.target.value; }); renderHls(); };
+  $('#hlAcc').oninput = e => { mutate(() => { hl.accent = e.target.value; }, 'ha' + hl.id); renderHlsDebounced(); renderPreview(); };
+}
+let hlT; function renderHlsDebounced() { clearTimeout(hlT); hlT = setTimeout(renderHls, 150); }
+function renderSlidesTitleOnly() { $('#slidesTitle').textContent = 'Слайди · ' + curHl().name; }
+function renderSlidesMetaOnly() { const hl = curHl(); const tot = hl.slides.filter(s => !s.off).reduce((a, s) => a + (s.duration || 5), 0); $('#slidesDur').textContent = hl.slides.filter(s => !s.off).length + ' шт · ' + tot.toFixed(0) + ' с'; }
+function refreshCard(s) {
+  clearTimeout(thumbTimers[s.id]);
+  thumbTimers[s.id] = setTimeout(() => {
+    const d = document.querySelector(`.card[data-id="${s.id}"]`); if (!d) return;
+    d.querySelector('b').textContent = slideTitle(s);
+    const cvs = document.createElement('canvas'); cvs.width = 108; cvs.height = 192; drawThumb(cvs, s, curHl());
+    d.querySelector('canvas').getContext('2d').drawImage(cvs, 0, 0, 54, 96);
+    d.querySelector('small').innerHTML = `${SCHEMA[s.type].ico} ${SCHEMA[s.type].name} · ${(s.duration || 5).toFixed(1)}с${s.off ? '<span class="badge">приховано</span>' : ''}`;
+  }, 250);
+}
+function pickImage(s, key) {
+  const f = $('#fileImg'); f.value = '';
+  f.onchange = () => {
+    const file = f.files[0]; if (!file) return;
+    const rd = new FileReader();
+    rd.onload = async () => {
+      // стискаємо до 1600 px, щоб не перевантажити сховище
+      const im = new Image(); im.onload = async () => {
+        const sc = Math.min(1, 1600 / Math.max(im.width, im.height)); const c = document.createElement('canvas'); c.width = Math.round(im.width * sc); c.height = Math.round(im.height * sc);
+        c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+        const src = c.toDataURL('image/jpeg', .85), k = 'up_' + uid();
+        uploads[k] = { src, label: file.name.slice(0, 24) }; await loadImg(k, src);
+        mutate(() => { s[key] = k; }); renderInspector(); renderPreview(); refreshCard(s); toast('Зображення додано');
+      }; im.src = rd.result;
+    };
+    rd.readAsDataURL(file);
+  };
+  f.click();
+}
+
+/* ═════════════════════════ Add slide, helpers ═════════════════════════ */
+function renderAddSel() { $('#addType').innerHTML = Object.keys(SCHEMA).map(k => `<option value="${k}">${SCHEMA[k].ico} ${SCHEMA[k].name}</option>`).join(''); }
+$('#btnAdd').onclick = () => {
+  const type = $('#addType').value, hl = curHl(); const s = mk(type, JSON.parse(JSON.stringify(NEW_DEFAULTS[type])));
+  const idx = hl.slides.findIndex(x => x.id === state.selSlide);
+  mutate(() => { hl.slides.splice(idx < 0 ? hl.slides.length : idx + 1, 0, s); state.selSlide = s.id; });
+  play.t = 0; renderAll();
+};
+let toastT; function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2200); }
+function renderAll(rebuildInspector = true) { renderHls(); renderSlides(); if (rebuildInspector) renderInspector(); renderPreview(); updUndo(); }
+function updUndo() { updateUndo(); }
+
+/* ═════════════════════════ Controls ═════════════════════════ */
+$('#btnPlay').onclick = () => { play.on = !play.on; updPlayBtn(); };
+$('#btnNext').onclick = () => step(1);
+$('#btnPrev').onclick = () => step(-1);
+$('#tapL').onclick = () => step(-1);
+$('#tapR').onclick = () => step(1);
+const scrub = $('#scrub');
+scrub.addEventListener('input', () => { scrubbing = true; play.on = false; updPlayBtn(); play.t = scrub.value / 1000 * (curSlide().duration || 5); renderPreview(); });
+scrub.addEventListener('change', () => { scrubbing = false; });
+$('#chkSafe').onchange = e => $('#safe').classList.toggle('on', e.target.checked);
+$('#btnUndo').onclick = undo;
+document.addEventListener('keydown', e => {
+  const tag = (e.target.tagName || '').toLowerCase(); const typing = tag === 'input' || tag === 'textarea' || tag === 'select';
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z' && !(typing && tag !== 'select' && e.target.type !== 'range')) { e.preventDefault(); undo(); }
+  if (typing) return;
+  if (e.key === ' ') { e.preventDefault(); $('#btnPlay').click(); }
+  if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1);
+});
+$('#btnSave').onclick = () => {
+  const blob = new Blob([JSON.stringify({ v: 1, hls: state.hls, uploads }, null, 1)], { type: 'application/json' });
+  dl(blob, 'webhjerte-highlights-projekt.json'); toast('Проєкт збережено');
+};
+$('#btnLoad').onclick = () => { $('#fileLoad').value = ''; $('#fileLoad').click(); };
+$('#fileLoad').onchange = async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const o = JSON.parse(await f.text()); if (!Array.isArray(o.hls)) throw 0;
+    undoStack.push(snap()); Object.assign(uploads, o.uploads || {}); for (const k in (o.uploads || {})) await loadImg(k, o.uploads[k].src);
+    state.hls = o.hls; state.selHl = o.hls[0].id; state.selSlide = (o.hls[0].slides[0] || {}).id; save(); play.t = 0; renderAll(); toast('Проєкт відкрито');
+  } catch (err) { toast('Не вдалося прочитати файл'); }
+};
+$('#btnReset').onclick = () => { if (!confirm('Скинути все до початкового стану? (можна повернути кнопкою «Назад»)')) return; mutate(() => { state.hls = defaults(); state.selHl = 'h1'; state.selSlide = state.hls[0].slides[0].id; }); play.t = 0; renderAll(); };
+
+/* ═════════════════════════ Eksport ═════════════════════════ */
+function dl(blob, name) { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000); }
+const slug = s => String(s || 'x').toLowerCase().replace(/[^a-z0-9æøå]+/g, '-').replace(/^-|-$/g, '') || 'x';
+function pickMime() {
+  const c = ['video/mp4;codecs=avc1.640028', 'video/mp4;codecs=avc1', 'video/mp4', 'video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm'];
+  if (!window.MediaRecorder) return null;
+  return c.find(m => MediaRecorder.isTypeSupported(m)) || null;
+}
+function fmtNote() {
+  const m = pickMime(), n = $('#fmtNote');
+  if (!m) { n.textContent = 'Цей браузер не вміє записувати відео з canvas. Відкрий у Chrome / Edge / Safari — або зроби запис екрана.'; return; }
+  if (m.startsWith('video/mp4')) { n.style.background = 'rgba(61,220,151,.1)'; n.style.borderColor = 'rgba(61,220,151,.4)'; n.style.color = '#9ff0c9'; n.textContent = 'Формат: MP4 (H.264) — Instagram приймає напряму.'; }
+  else n.textContent = 'Цей браузер записує WebM, а Instagram його не приймає. Для MP4 відкрий редактор у Chrome (126+) або Safari — або конвертуй WebM у MP4 (CloudConvert, HandBrake).';
+}
+let cancelRec = false;
+async function recordSlides(slides, hl, name, label) {
+  const mime = pickMime(); if (!mime) { toast('Запис відео не підтримується'); return null; }
+  const ext = mime.startsWith('video/mp4') ? 'mp4' : 'webm';
+  const stream = cv.captureStream(30);
+  const rec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 10_000_000 });
+  const chunks = []; rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+  const done = new Promise(r => rec.onstop = r);
+  const total = slides.reduce((a, s) => a + (s.duration || 5), 0);
+  rec.start(500);
+  let gt = 0, elapsedAll = 0;
+  for (const s of slides) {
+    const d = s.duration || 5; const t0 = performance.now();
+    await new Promise(res => {
+      const tick = () => {
+        if (cancelRec) return res();
+        const t = (performance.now() - t0) / 1000;
+        if (t >= d) return res();
+        drawTo(cv, cx, s, hl, t, gt + t, 1, {});
+        $('#recBar').style.width = ((elapsedAll + t) / total * 100) + '%';
+        $('#recTxt').textContent = label + ' · ' + (elapsedAll + t).toFixed(1) + ' / ' + total.toFixed(1) + ' с';
+        requestAnimationFrame(tick);
+      }; tick();
+    });
+    if (cancelRec) break; gt += d; elapsedAll += d;
+  }
+  await new Promise(r => setTimeout(r, 250)); rec.stop(); await done; stream.getTracks().forEach(t => t.stop());
+  if (cancelRec) return null;
+  const blob = new Blob(chunks, { type: mime.split(';')[0] });
+  dl(blob, name + '.' + ext); return blob;
+}
+async function runExport(kind) {
+  const hl = curHl();
+  if (['hl', 'each', 'all'].includes(kind)) {
+    $('#exportModal').classList.remove('on');
+    exporting = true; cancelRec = false; play.on = false; updPlayBtn(); $('#recModal').classList.add('on');
+    const jobs = [];
+    const targets = kind === 'all' ? state.hls : [hl];
+    targets.forEach(h => {
+      const vis = h.slides.filter(s => !s.off); if (!vis.length) return;
+      if (kind === 'each') vis.forEach((s, i) => jobs.push({ h, slides: [s], name: `webhjerte-${slug(h.name)}-${String(i + 1).padStart(2, '0')}-${s.type}`, label: h.name + ' · ' + (i + 1) + '/' + vis.length }));
+      else jobs.push({ h, slides: vis, name: `webhjerte-highlight-${slug(h.name)}`, label: h.name });
+    });
+    if (!jobs.length) { toast('Немає видимих слайдів'); }
+    let n = 0;
+    for (const j of jobs) {
+      $('#recTitle').textContent = `Запис ${++n} з ${jobs.length}`; $('#recSub').textContent = 'Не перемикай вкладку — запис іде в реальному часі';
+      await recordSlides(j.slides, j.h, j.name, j.label); if (cancelRec) break;
+      await new Promise(r => setTimeout(r, 400));
+    }
+    exporting = false; $('#recModal').classList.remove('on'); setPreviewSize(); renderPreview();
+    toast(cancelRec ? 'Запис скасовано' : 'Готово! Файли в завантаженнях'); return;
+  }
+  if (kind === 'png') {
+    const s = curSlide(), c = document.createElement('canvas'); drawTo(c, c.getContext('2d'), s, hl, play.t, play.gt, 1, {});
+    c.toBlob(b => dl(b, `webhjerte-${slug(hl.name)}-${slug(s.type)}.png`)); toast('PNG збережено');
+  }
+  if (kind === 'cover' || kind === 'covers') {
+    const list = kind === 'cover' ? [hl] : state.hls;
+    for (const h of list) { const c = document.createElement('canvas'); c.width = W; c.height = H; drawCover(c.getContext('2d'), h); await new Promise(r => c.toBlob(b => { dl(b, `webhjerte-cover-${slug(h.name)}.png`); r(); })); await new Promise(r => setTimeout(r, 250)); }
+    toast('Обкладинки збережено');
+  }
+}
+$('#btnExport').onclick = () => { fmtNote(); $('#exportModal').classList.add('on'); };
+$('#btnCloseExport').onclick = () => $('#exportModal').classList.remove('on');
+$('#exportModal').addEventListener('click', e => { if (e.target.id === 'exportModal') e.target.classList.remove('on'); });
+document.querySelectorAll('[data-exp]').forEach(b => b.onclick = () => runExport(b.dataset.exp));
+$('#btnCancelRec').onclick = () => { cancelRec = true; };
+window.addEventListener('resize', () => { if (!exporting) setPreviewSize(); });
+
+/* ═════════════════════════ Start ═════════════════════════ */
+async function boot() {
+  $('#logoImg').src = ASSETS.logo;
+  restore();
+  await Promise.all([...Object.keys(ASSETS).map(k => loadImg(k, ASSETS[k])), ...Object.keys(uploads).map(k => loadImg(k, uploads[k].src))]);
+  try { await Promise.all([300, 400, 500, 600, 700].map(w => document.fonts.load(`${w} 40px Unbounded`))); } catch (e) { /* fallback-font */ }
+  if (!state.hls.find(h => h.id === state.selHl)) state.selHl = state.hls[0].id;
+  if (!curHl().slides.find(s => s.id === state.selSlide)) state.selSlide = (curHl().slides[0] || {}).id;
+  renderAddSel(); setPreviewSize(); renderAll(); updPlayBtn();
+  document.fonts.ready.then(() => { wrapCache.clear(); renderAll(false); });
+  requestAnimationFrame(frame);
+  window.__studio = { state, play, drawTo, cv, cx, step, select, runExport, recordSlides, pickMime };
+}
+boot();
+})();
+</script>
+</body>
+</html>
