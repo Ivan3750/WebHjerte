@@ -4,7 +4,6 @@ import Questions from "../Questions";
 import CtaSearchBlock from "../ui/CTA";
 import QuickLeadForm from "../ui/QuickLeadForm";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
-import Image from "next/image";
 
 const slugify = (text) =>
   text
@@ -195,8 +194,7 @@ export default function ContentPage({
       <section className="bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 pt-16 sm:pt-20 pb-20 sm:pb-28">
         <div className="max-w-3xl mx-auto">
           {type === "article" && (
-            <div className="flex items-center gap-4 pb-8 mb-10 border-b border-[#e8e8e8]">
-              <Image src="/ivan-kohan.jpg" alt="Ivan Kohan" width={48} height={48} className="w-12 h-12 rounded-full object-cover" />
+            <div className="pb-8 mb-10 border-b border-[#e8e8e8]">
               <div>
                 <p className="text-[13px] font-medium text-[#3a3a3a]">
                   Skrevet af{" "}
