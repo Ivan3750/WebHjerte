@@ -64,7 +64,7 @@ const related = [
   },
   {
     href: "/hjemmeside-pris",
-    title: "Hvad koster en hjemmeside?",
+    title: "Hjemmeside priser",
     desc: "Se de faste priser og hvad de dækker.",
   },
   {

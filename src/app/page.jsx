@@ -88,8 +88,8 @@ const localLinks = [
   },
   {
     href: "/hjemmeside-pris",
-    title: "Hvad koster en hjemmeside?",
-    desc: "Se faste priser fra 2.500 kr – ingen skjulte gebyrer.",
+    title: "Hjemmeside priser",
+    desc: "Faste priser fra 2.500 kr og prisberegner – ingen skjulte gebyrer.",
   },
 ];
 
@@ -97,7 +97,10 @@ const topicLinks = [
   { href: "/webbureau-jylland", label: "Webbureau Jylland" },
   { href: "/webbureau-aarhus", label: "Aarhus" },
   { href: "/webbureau-vejle", label: "Vejle" },
-  { href: "/wordpress-horsens", label: "WordPress" },
+  { href: "/wordpress-hjemmeside", label: "Professionel WordPress hjemmeside" },
+  { href: "/wordpress-horsens", label: "WordPress Horsens" },
+  { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
+  { href: "/blog/hvad-koster-en-hjemmeside-2026", label: "Hvad koster en hjemmeside?" },
   { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
   { href: "/geo-ai-synlighed", label: "AI-synlighed" },
   { href: "/ofte-stillede-spoergsmaal", label: "FAQ" },

@@ -49,6 +49,7 @@ export default function ContentPage({
   glossary,
   description,
   extra,
+  afterSummary,
 }) {
   const url = `${SITE_URL}${path}`;
   const trail = [{ name: "Forside", path: "/" }, ...breadcrumbs.map((b) => ({ name: b.label, path: b.href })), { name, path }];
@@ -179,6 +180,8 @@ export default function ContentPage({
               <p className="text-[15px] text-[#1c1e1e] leading-[1.75]">{summary}</p>
             </aside>
           )}
+
+          {afterSummary && <div className="mb-12 max-w-4xl">{afterSummary}</div>}
         </div>
 
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pb-16 sm:pb-24 grid grid-cols-1 lg:grid-cols-[240px_minmax(0,1fr)] gap-10 lg:gap-16">
@@ -283,6 +286,13 @@ export default function ContentPage({
                           </li>
                         ))}
                       </ul>
+                    )}
+                    {sub.cta && (
+                      <p className="mt-1 text-[14px]">
+                        <Link href={sub.cta.href} className="text-[#007aab] font-medium hover:underline underline-offset-4">
+                          {sub.cta.label} →
+                        </Link>
+                      </p>
                     )}
                   </div>
                 ))}
