@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "../ui/ArrowIcon";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -96,7 +97,7 @@ export default function HomeCases() {
               className="group inline-flex items-center gap-2 text-sm text-white border border-white/15 rounded-full px-5 py-2.5 hover:border-[#00a8e8] hover:text-[#00a8e8]"
             >
               Se alle projekter
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </FadeUp>
         </div>

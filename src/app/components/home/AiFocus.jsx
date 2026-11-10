@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../ui/ArrowIcon";
 import Link from "next/link";
 import { FadeUp, RevealLines } from "./fx/Reveal";
 
@@ -62,7 +63,7 @@ export default function AiFocus() {
                 <p className="text-[16px] font-medium text-white leading-snug">{c.title}</p>
                 <p className="text-[13px] text-[#8795a0] leading-[1.75] flex-1">{c.text}</p>
                 <span className="text-[12px] text-[#c7d0d0] group-hover:text-[#00a8e8] transition-colors">
-                  Læs mere <span aria-hidden>→</span>
+                  Læs mere <ArrowIcon className="w-3.5 h-3.5 inline-block ml-1 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
               </Link>
             </FadeUp>

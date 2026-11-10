@@ -15,13 +15,19 @@ export default function PageHero({
   actions = null,
   aside = null,
   facts = null,
+  meta = null,
   size = "lg",
 }) {
   const titleSize =
     size === "lg" ? "!text-[clamp(30px,4vw,52px)]" : "!text-[clamp(28px,3.4vw,44px)]";
   return (
-    <section className="relative bg-[#1c1e1e]">
-      <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 pt-20 sm:pt-24 pb-20 sm:pb-24">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e]">
+      <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-48 right-[-8%] w-[560px] h-[560px] rounded-full bg-[#00a8e8]/[0.09] blur-[120px]"
+      />
+      <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 pt-20 sm:pt-24 pb-24 sm:pb-28">
         <div className={aside ? "grid lg:grid-cols-[1.15fr_1fr] gap-14 lg:gap-16 items-center" : ""}>
           <div className="flex flex-col items-start">
             {eyebrow && (
@@ -37,6 +43,11 @@ export default function PageHero({
             {lead && (
               <FadeUp as="p" delay={0.15} className="text-[14px] sm:text-[15px] text-[#a0a0a0] leading-[1.85] max-w-[54ch] mb-8">
                 {lead}
+              </FadeUp>
+            )}
+            {meta && (
+              <FadeUp delay={0.2} className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8 text-[12px] text-[#8a9696]">
+                {meta}
               </FadeUp>
             )}
             {actions && (

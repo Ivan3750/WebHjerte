@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowIcon } from "../ui/ArrowIcon";
 import Link from "next/link";
 import { FadeUp, RevealLines } from "./fx/Reveal";
 import SpotlightCard from "./fx/SpotlightCard";
@@ -67,7 +68,7 @@ const TilbydeSection = () => {
               className="group inline-flex items-center gap-2 text-sm text-[#1c1e1e] border border-[#dcdada] bg-white rounded-full px-5 py-2.5 hover:border-[#00a8e8] hover:text-[#00a8e8]"
             >
               Se alle priser
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </FadeUp>
         </div>
