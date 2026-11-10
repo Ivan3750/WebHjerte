@@ -126,10 +126,10 @@ const WordpressHjemmeside = () => {
       <ProblemLoesning />
       <HvadGoerProfessionel />
 
-      <section className="sheet bg-[#f7f6f6]">
+      <section className="bg-[#f7f6f6]">
         <div className="max-w-5xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(20px,2.4vw,28px)] mb-5">
+            <h2 className="title !text-[clamp(22px,2.6vw,28px)] !leading-[1.2] !mb-6">
               Det får du i din WordPress-hjemmeside
             </h2>
             <ul className="flex flex-col gap-2.5">
@@ -142,7 +142,7 @@ const WordpressHjemmeside = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(20px,2.4vw,28px)] mb-5">
+            <h2 className="title !text-[clamp(22px,2.6vw,28px)] !leading-[1.2] !mb-6">
               WordPress-hjemmeside: pris og leveringstid
             </h2>
             <div className="overflow-x-auto rounded-2xl border border-[#e8e6e6] bg-white">

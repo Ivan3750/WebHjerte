@@ -26,7 +26,7 @@ export default async function ArticleRoute({ params }) {
       path={articlePath(a)}
       type="article"
       name={a.name}
-      eyebrow={`Guide · ${a.category}${a.readMinutes ? ` · ${a.readMinutes} min. læsning` : ""}`}
+      eyebrow={`${a.category === "Guides" ? "Guide" : `Guide · ${a.category}`}${a.readMinutes ? ` · ${a.readMinutes} min. læsning` : ""}`}
       h1={a.h1}
       intro={a.intro}
       summary={a.summary}

@@ -135,7 +135,7 @@ const HjemmesidePris = () => {
         }
       />
       <PackagesBlock />
-      <section className="sheet bg-[#f7f6f6]">
+      <section className="bg-[#f7f6f6]">
         <div className="max-w-4xl mx-auto px-5 sm:px-10 py-16 sm:py-20">
           <PriceCalculator />
           <p className="mt-6 text-[13px] text-[#666] leading-[1.8]">

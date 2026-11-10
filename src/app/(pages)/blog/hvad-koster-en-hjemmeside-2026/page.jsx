@@ -30,9 +30,16 @@ const article = {
 
 const sections = [
   {
+    h2: "Det første spørgsmål, alle stiller",
+    paragraphs: [
+      "“Hvad koster det?” er næsten altid det første, jeg bliver spurgt om – og det er et fair spørgsmål. Problemet er, at svaret på nettet ofte er “det kommer an på”. Det hjælper ingen, når man skal lægge et budget.",
+      "Så her får du rigtige tal. Både hvad det typisk koster i Danmark i 2026, og hvad det koster hos mig. Jeg har selv kigget på mange tilbud, som kunder har fået andre steder, og priserne nedenfor er dem, jeg oftest ser.",
+    ],
+  },
+  {
     h2: "Priser på hjemmesider i Danmark – overblik",
     paragraphs: [
-      "Prisen på en hjemmeside spænder vidt, fordi “en hjemmeside” kan være alt fra én side, du selv klikker sammen, til en webshop med integrationer. Tabellen viser de typiske prisniveauer i Danmark i 2026 for en lille eller mellemstor virksomhed. Beløbene er vejledende og ekskl. moms.",
+      "Prisen spænder vidt, fordi “en hjemmeside” kan være alt fra én side, du selv klikker sammen, til en webshop med integrationer til lager og bogføring. Tabellen viser de typiske prisniveauer for en lille eller mellemstor virksomhed. Beløbene er vejledende og ekskl. moms.",
     ],
     table: {
       head: ["Løsning", "Engangspris", "Løbende", "Passer til"],
@@ -48,55 +55,70 @@ const sections = [
   },
   {
     h2: "Hvad koster de forskellige typer hjemmesider?",
+    paragraphs: ["Her er de fem typer, jeg oftest bygger – med typisk markedspris og min egen faste pris."],
     subs: [
       {
         h3: "Landingside (1 side)",
         paragraphs: [
-          "En landingside samler ét tilbud på én side – godt til kampagner, Google Ads eller en ny ydelse. Typisk pris: 2.000–10.000 kr. Hos WebHjerte: 2.500 kr, klar på ca. 2 dage.",
+          "Én side med ét tilbud – perfekt til en kampagne, Google Ads eller en ny ydelse, du vil teste. Typisk pris: 2.000–10.000 kr. Hos mig: 2.500 kr, klar på ca. 2 dage.",
         ],
       },
       {
         h3: "Firmahjemmeside (3–8 sider)",
         paragraphs: [
-          "Den klassiske hjemmeside til en virksomhed: forside, ydelser, om os, referencer og kontakt. Typisk pris: 8.000–40.000 kr. Hos WebHjerte: Basis 4.500 kr (3–5 sider) eller Standard 7.500 kr (op til 8 sider med SEO, analytics og booking).",
+          "Den klassiske: forside, ydelser, om os, referencer og kontakt. Det er den, de fleste håndværkere, klinikker og konsulenter har brug for. Typisk pris: 8.000–40.000 kr. Hos mig: Basis 4.500 kr (3–5 sider) eller Standard 7.500 kr (op til 8 sider med SEO, analytics og booking).",
         ],
         cta: { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
       },
       {
         h3: "WordPress-hjemmeside",
         paragraphs: [
-          "WordPress koster ikke noget i licens, men du betaler for design, opsætning, plugins og hosting. En professionel WordPress-hjemmeside koster typisk 8.000–50.000 kr. Hos WebHjerte starter flersidede WordPress-sider fra 4.500 kr, og du kan selv redigere tekster og billeder bagefter.",
+          "WordPress er gratis, men design, opsætning, plugins og hosting er ikke. En professionel WordPress-side koster typisk 8.000–50.000 kr. Hos mig starter flersidede WordPress-sider fra 4.500 kr – og du kan selv rette tekster og billeder bagefter.",
         ],
+        cta: { href: "/wordpress-hjemmeside", label: "Professionel WordPress-hjemmeside" },
       },
       {
         h3: "Webshop (WooCommerce eller Shopify)",
         paragraphs: [
-          "En webshop kræver produkter, betaling, fragt, handelsbetingelser og ofte integrationer til lager eller bogføring. Typisk pris: 15.000–100.000+ kr plus platformsgebyrer. Hos WebHjerte starter skræddersyede webshops fra 14.000 kr til fast pris.",
+          "En webshop kræver produkter, betaling, fragt, handelsbetingelser og ofte integrationer. Typisk pris: 15.000–100.000+ kr plus platformsgebyrer. Hos mig starter skræddersyede webshops fra 14.000 kr til fast pris.",
         ],
+        cta: { href: "/webshop-hjemmeside", label: "Se webshop" },
       },
       {
         h3: "Skræddersyet løsning",
         paragraphs: [
-          "Kundeportal, bookingsystem, AI-chatbot eller automatiseringer bygges efter behov. Prisen aftales ud fra omfanget – hos WebHjerte fra 14.000 kr – og du får altid en fast pris, før arbejdet starter.",
+          "Kundeportal, bookingsystem, AI-chatbot eller automatiseringer bygges efter behov. Prisen aftales ud fra omfanget – hos mig fra 14.000 kr – og du får altid en fast pris, før jeg går i gang.",
         ],
       },
     ],
   },
   {
+    h2: "Hvorfor er der så stor forskel på priserne?",
+    paragraphs: [
+      "Det er sjældent selve koden, der gør en hjemmeside dyr. Det er alt omkring den. Hos et typisk bureau skal projektet igennem en sælger, en projektleder, en designer og en udvikler. Der er møder, statusmails og interne overleveringer – og alle timerne ender på din regning. Dertil kommer kontorer og administration.",
+      "Jeg har bevidst valgt at arbejde alene. Det betyder, at du taler direkte med den, der bygger siden, og at pengene går til arbejdet – ikke til overhead. Det er hele forklaringen på, at jeg kan levere en Basis-hjemmeside til 4.500 kr, som et bureau ville tage 25.000 kr for.",
+    ],
+    quote: "Du skal betale for din hjemmeside – ikke for bureauets kontor i midtbyen.",
+  },
+  {
     h2: "Hvad påvirker prisen?",
+    paragraphs: ["Uanset hvem du vælger, er det de samme ting, der får prisen til at stige:"],
     bullets: [
-      "Antal sider og skabeloner – hver ny sidetype kræver design og udvikling.",
+      "Antal sider og sidetyper – hver ny type skal designes og udvikles.",
       "Tekster og billeder – skal de skrives, oversættes eller fotograferes?",
-      "Funktioner – booking, webshop, login, betaling, flersprog og integrationer.",
-      "Design – færdigt tema er billigere end et unikt, skræddersyet design.",
-      "SEO og AI-synlighed – om siden bare skal findes eller aktivt kæmpe om placeringer på Google og i ChatGPT.",
-      "Hvem der bygger – bureauer har flere led (projektleder, designer, udvikler) og dermed højere timepris.",
+      "Funktioner – booking, webshop, login, betaling, flere sprog og integrationer.",
+      "Design – et færdigt tema er billigere end et unikt, skræddersyet design.",
+      "SEO og AI-synlighed – om siden bare skal findes, eller aktivt kæmpe om placeringer på Google og i ChatGPT.",
+      "Hvem der bygger – flere led betyder flere timer.",
+    ],
+    after: [
+      "Mit bedste råd: start med det, du har brug for nu, og byg på senere. En god Basis-side, der er live om en uge, giver flere kunder end en perfekt side, der aldrig bliver færdig.",
     ],
   },
   {
     h2: "Hvad koster en hjemmeside om året?",
     paragraphs: [
-      "Ud over engangsprisen skal du regne med løbende udgifter. For en lille virksomhed ligger de typisk på 2.500–6.000 kr om året.",
+      "Ud over engangsprisen er der løbende udgifter. For en lille virksomhed ligger de typisk på 2.500–6.000 kr om året – men en simpel, kodet side kan koste under 1.000 kr om året at have kørende.",
     ],
     table: {
       head: ["Udgift", "Typisk pris", "Bemærkning"],
@@ -111,27 +133,36 @@ const sections = [
   },
   {
     h2: "Sådan får du et godt hjemmeside-tilbud",
-    paragraphs: ["Når du sammenligner tilbud, så tjek at de indeholder det samme. Et godt tilbud på en hjemmeside skal mindst svare på:"],
+    paragraphs: ["Når du sammenligner tilbud, så sørg for, at de indeholder det samme. Et godt tilbud skal mindst svare på:"],
     bullets: [
-      "Fast pris eller timepris – og hvad sker der, hvis omfanget ændrer sig?",
-      "Præcis hvilke sider og funktioner, der er med.",
-      "Om tekster, billeder og SEO-opsætning er inkluderet.",
-      "Hvem der ejer domæne, kode og indhold (det bør være dig).",
-      "Leveringstid og hvor mange rettelsesrunder, der er med.",
-      "Hvad support, hosting og vedligeholdelse koster efter lancering.",
-      "Om du kan opsige løbende aftaler fra måned til måned.",
+      "Er prisen fast, eller betaler du pr. time – og hvad sker der, hvis omfanget ændrer sig?",
+      "Præcis hvilke sider og funktioner er med?",
+      "Er tekster, billeder og SEO-opsætning inkluderet?",
+      "Hvem ejer domæne, kode og indhold? (Det bør være dig.)",
+      "Hvornår er siden færdig, og hvor mange rettelsesrunder er med?",
+      "Hvad koster support, hosting og vedligeholdelse efter lancering?",
+      "Kan løbende aftaler opsiges fra måned til måned?",
     ],
+    cta: { href: "/blog/vaelg-webbureau-10-spoergsmaal", label: "10 spørgsmål til dit webbureau" },
   },
   {
     h2: "Kan det betale sig at bruge en hjemmesidebygger?",
     paragraphs: [
-      "Hjemmesidebyggere som Wix, Squarespace og 123hjemmeside er billige at starte på, men du betaler hver måned, så længe siden findes, og du ejer sjældent selve løsningen. Over tre år betaler mange 4.000–14.000 kr – og har stadig en skabelon, der ligner konkurrenternes og er svær at få til at rangere lokalt.",
-      "Har du brug for kunder fra Google, er en professionelt bygget hjemmeside til fast pris ofte billigere på sigt: Hos WebHjerte koster en Basis-side 4.500 kr én gang, og du ejer den selv.",
+      "Wix, Squarespace og 123hjemmeside er billige at starte på, men du betaler hver måned, så længe siden findes – og du ejer den sjældent. Over tre år betaler mange 4.000–14.000 kr og har stadig en skabelon, der ligner konkurrenternes og er svær at få til at rangere lokalt.",
+      "Det er helt fint til en hobbyside. Men har du brug for kunder fra Google, er en professionelt bygget hjemmeside til fast pris ofte billigere på sigt: En Basis-side hos mig koster 4.500 kr én gang, og du ejer den selv.",
     ],
   },
   {
+    h2: "Et eksempel: når hjemmesiden tjener sig hjem",
+    paragraphs: [
+      "En pizzeria i Horsens, jeg har bygget hjemmeside til, betalte op mod 30 % i gebyr til Wolt og JustEat af hver eneste bestilling. Sælger man for 10.000 kr om måneden via apps, er det op til 3.000 kr – hver måned.",
+      "Med en hurtig hjemmeside, hvor kunderne kan bestille direkte, og som er optimeret til søgninger som “pizza Horsens”, bliver en del af de penge i forretningen. Det er den måde, jeg synes, man skal tænke på prisen: ikke hvad hjemmesiden koster, men hvad den tjener.",
+    ],
+    cta: { href: "/portefolje/pizzaria", label: "Se pizzeria-projektet" },
+  },
+  {
     h2: "WebHjertes faste priser",
-    paragraphs: ["Alle priser er faste og ekskl. moms. Du får et skriftligt tilbud, før vi går i gang."],
+    paragraphs: ["Alle priser er faste og ekskl. moms. Du får et skriftligt tilbud, før jeg går i gang."],
     table: {
       head: ["Pakke", "Pris", "Indhold", "Levering"],
       rows: [
@@ -141,12 +172,12 @@ const sections = [
         ["Skræddersyet", "fra 14.000 kr", "Webshop, kundeportal, AI-chatbot eller specialfunktioner", "Aftales"],
       ],
     },
-    cta: { href: "/kontakt", label: "Få et gratis tilbud inden for 24 timer" },
+    cta: { href: "/hjemmeside-pris", label: "Se alt, hvad pakkerne indeholder" },
   },
   {
     h2: "Sådan kommer du i gang",
     steps: [
-      { title: "Gratis samtale", text: "Vi taler om din virksomhed, dine kunder og hvad siden skal kunne. Du får en fast pris." },
+      { title: "Gratis samtale", text: "Vi taler om din virksomhed, dine kunder og hvad siden skal kunne. Du får en fast pris – ingen forpligtelser." },
       { title: "Design på 48 timer", text: "Du ser et konkret designudkast. Passer det ikke, betaler du 0 kr for designet." },
       { title: "Udvikling og lancering", text: "Når designet er godkendt, bygger jeg siden – typisk på 2–10 dage – og sætter den live på dit domæne." },
     ],
@@ -179,9 +210,9 @@ export default function HvadKosterEnHjemmesidePage() {
       path={path}
       type="article"
       name="Hvad koster en hjemmeside i 2026?"
-      eyebrow="Guide · Priser · 7 min. læsning"
+      eyebrow="Guide · Priser · 10 min. læsning"
       h1="Hvad koster en hjemmeside i 2026? Priser, eksempler og prisberegner"
-      intro="Et ærligt overblik over, hvad en hjemmeside koster i Danmark – hos en hjemmesidebygger, en freelancer og et webbureau – og hvad du skal betale om året bagefter."
+      intro="Rigtige tal i stedet for “det kommer an på”. Hvad en hjemmeside koster hos en hjemmesidebygger, en freelancer og et bureau – og hvad den koster hos mig."
       summary="En hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr hos en freelancer og 25.000–150.000 kr hos et webbureau. En webshop koster typisk 15.000–100.000+ kr. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside 4.500 kr, en Standard-hjemmeside 7.500 kr og webshops eller skræddersyede løsninger fra 14.000 kr – alle til fast pris ekskl. moms. Løbende udgifter er typisk 2.500–6.000 kr om året."
       afterSummary={<PriceCalculator />}
       sections={sections}

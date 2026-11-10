@@ -85,9 +85,9 @@ export default function PriceCalculator({ dark = false }) {
     }`;
 
   return (
-    <div id="prisberegner" className={`scroll-mt-24 rounded-3xl border ${c.wrap} p-5 sm:p-8`}>
-      <p className="text-[11px] uppercase tracking-[0.14em] text-[#00a8e8] mb-2">Prisberegner</p>
-      <h2 className={`${c.text} font-semibold tracking-tight leading-[1.2] text-[clamp(20px,2.4vw,28px)] mb-2`}>
+    <div id="prisberegner" className={`scroll-mt-24 rounded-2xl border ${c.wrap} p-5 sm:p-8`}>
+      <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">Prisberegner</p>
+      <h2 className={`${dark ? "maintitle" : "title"} !text-[clamp(22px,2.6vw,28px)] !leading-[1.2] !mb-3`}>
         Beregn prisen på din hjemmeside
       </h2>
       <p className={`text-[13px] ${c.muted} leading-[1.8] mb-7`}>
