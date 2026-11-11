@@ -24,26 +24,26 @@ const QUESTIONS = [
 ];
 
 function recommend(a) {
-  if (a.special) return { name: "Skræddersyet kode", why: "Fuld frihed og højeste hastighed – bygget præcis til dine behov.", color: "#8a8ff0", href: "/skraeddersyede-hjemmesider" };
-  if (a.shop && a.edit) return { name: "Shopify", why: "Hurtig, driftssikker butik, som du selv styrer.", color: "#5e8e3e", href: "/shopify-hjemmeside" };
-  if (a.shop) return { name: "WooCommerce", why: "Webshop i WordPress uden platformsafgift.", color: "#7f54b3", href: "/webshop-hjemmeside" };
-  if (a.edit) return { name: "WordPress", why: "Nem at redigere selv og stærk til indhold og SEO.", color: "#2271b1", href: "/wordpress-hjemmeside" };
-  return { name: "Next.js", why: "Lynhurtig side uden plugins at vedligeholde.", color: "#111", href: "/skraeddersyede-hjemmesider" };
+  if (a.special) return { name: "Skræddersyet kode", why: "Fuld frihed og højeste hastighed – bygget præcis til dine behov.", color: "#00a8e8", href: "/skraeddersyede-hjemmesider" };
+  if (a.shop && a.edit) return { name: "Shopify", why: "Hurtig, driftssikker butik, som du selv styrer.", color: "#00a8e8", href: "/shopify-hjemmeside" };
+  if (a.shop) return { name: "WooCommerce", why: "Webshop i WordPress uden platformsafgift.", color: "#00a8e8", href: "/webshop-hjemmeside" };
+  if (a.edit) return { name: "WordPress", why: "Nem at redigere selv og stærk til indhold og SEO.", color: "#00a8e8", href: "/wordpress-hjemmeside" };
+  return { name: "Next.js", why: "Lynhurtig side uden plugins at vedligeholde.", color: "#1c1e1e", href: "/skraeddersyede-hjemmesider" };
 }
 
 export function PlatformQuiz() {
   const [a, setA] = useState({ shop: false, edit: true, special: false });
   const r = recommend(a);
   return (
-    <section className="scene bg-[#f2f2fb]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Find din platform" lines={["Tre spørgsmål –", "ét ærligt svar"]} className="mb-10" />
         <div className="grid lg:grid-cols-[1.1fr_1fr] gap-4">
           <div className="flex flex-col gap-3">
             {QUESTIONS.map(({ key, q }) => (
-              <div key={key} className="rounded-3xl bg-white border border-[#e2e2f2] p-5 flex items-center justify-between gap-4">
+              <div key={key} className="rounded-3xl bg-white border border-[#e8e6e6] p-5 flex items-center justify-between gap-4">
                 <p className="text-[15px] text-[#1c1e1e]">{q}</p>
-                <div className="flex rounded-full bg-[#f2f2fb] p-1 shrink-0">
+                <div className="flex rounded-full bg-[#f7f6f6] p-1 shrink-0">
                   {[
                     [true, "Ja"],
                     [false, "Nej"],
@@ -53,7 +53,7 @@ export function PlatformQuiz() {
                       type="button"
                       aria-pressed={a[key] === v}
                       onClick={() => setA((s) => ({ ...s, [key]: v }))}
-                      className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${a[key] === v ? "bg-[#1c1e1e] text-white" : "text-[#5a5d70]"}`}
+                      className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${a[key] === v ? "bg-[#1c1e1e] text-white" : "text-[#6a6a6a]"}`}
                     >
                       {l}
                     </button>
@@ -92,14 +92,14 @@ const SHOPIFY_TASKS = [
 
 export function ShopifyTasks() {
   return (
-    <section className="scene bg-[#f2faf5]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Det laver jeg i Shopify" lines={["Fra tom butik til", "første ordre"]} className="mb-10" />
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {SHOPIFY_TASKS.map(([icon, t], i) => (
             <FadeUp key={t} delay={i * 0.06}>
-              <div className="h-full rounded-3xl bg-white border border-[#d5ecdf] p-5 sm:p-6 flex items-center gap-4">
-                <span className="w-12 h-12 shrink-0 rounded-2xl bg-[#1f9d6b] text-white flex items-center justify-center">
+              <div className="h-full rounded-3xl bg-white border border-[#e4e2e2] p-5 sm:p-6 flex items-center gap-4">
+                <span className="w-12 h-12 shrink-0 rounded-2xl bg-[#00a8e8] text-white flex items-center justify-center">
                   <Ico d={icon} className="w-5 h-5" />
                 </span>
                 <p className="text-[15px] font-medium text-[#1c1e1e] leading-snug">{t}</p>
@@ -122,13 +122,13 @@ const VS = [
 export function ShopifyVsWoo() {
   const [side, setSide] = useState(0);
   return (
-    <section className="scene relative overflow-hidden bg-[#13241b]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div className="relative max-w-5xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead dark eyebrow="Shopify vs WooCommerce" lines={["Tryk og sammenlign"]} className="mb-8" />
         <div className="inline-flex rounded-full bg-white/[0.06] border border-white/10 p-1 mb-6">
           {["Shopify", "WooCommerce"].map((n, i) => (
-            <button key={n} type="button" aria-pressed={side === i} onClick={() => setSide(i)} className="relative rounded-full px-5 py-2.5 text-[13px] font-medium" style={{ color: side === i ? "#10181a" : "#b9c9bf" }}>
-              {side === i && <motion.span layoutId="vs-pill" className="absolute inset-0 rounded-full" style={{ backgroundColor: i ? "#b59cf0" : "#3ddc97" }} />}
+            <button key={n} type="button" aria-pressed={side === i} onClick={() => setSide(i)} className="relative rounded-full px-5 py-2.5 text-[13px] font-medium" style={{ color: side === i ? "#10181a" : "#b4bebe" }}>
+              {side === i && <motion.span layoutId="vs-pill" className="absolute inset-0 rounded-full" style={{ backgroundColor: i ? "#00a8e8" : "#00a8e8" }} />}
               <span className="relative">{n}</span>
             </button>
           ))}
@@ -136,7 +136,7 @@ export function ShopifyVsWoo() {
         <div className="flex flex-col gap-2">
           {VS.map((row, k) => (
             <div key={row[0]} className="grid grid-cols-[1fr_1.4fr] gap-3 rounded-2xl bg-white/[0.04] border border-white/10 px-5 py-4">
-              <span className="text-[13.5px] text-[#9fb3a8]">{row[0]}</span>
+              <span className="text-[13.5px] text-[#a6b1b1]">{row[0]}</span>
               <AnimatePresence mode="wait">
                 <motion.span key={side} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.25, delay: k * 0.04 }} className="text-[15px] font-medium text-white">
                   {row[side + 1]}
@@ -154,28 +154,28 @@ export function ShopifyVsWoo() {
 
 export function GeoCompare() {
   return (
-    <section className="scene bg-[#f3f2fb]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Søgning har ændret sig" lines={["Før: ti links.", "Nu: ét svar."]} lead="Når AI giver ét svar, er det kun de virksomheder, der bliver nævnt, som får kunden." className="mb-10" />
         <div className="grid md:grid-cols-2 gap-4">
-          <FadeUp className="rounded-3xl bg-white border border-[#e2e1f0] p-6">
-            <p className="text-[11px] uppercase tracking-[0.16em] text-[#8a8a9a] mb-4">Google før</p>
+          <FadeUp className="rounded-3xl bg-white border border-[#e8e6e6] p-6">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[#8a9696] mb-4">Google før</p>
             <div className="flex flex-col gap-3">
               {Array.from({ length: 6 }).map((_, i) => (
                 <div key={i} className="opacity-70">
-                  <div className="h-2.5 rounded bg-[#1a5fb4]/60 mb-1.5" style={{ width: `${70 - i * 6}%` }} />
-                  <div className="h-2 rounded bg-[#e6e6ee] w-11/12" />
+                  <div className="h-2.5 rounded bg-[#00a8e8]/60 mb-1.5" style={{ width: `${70 - i * 6}%` }} />
+                  <div className="h-2 rounded bg-[#e8e6e6] w-11/12" />
                 </div>
               ))}
             </div>
-            <p className="mt-5 text-[13.5px] text-[#5a5d70]">Kunden klikker, sammenligner og vælger selv.</p>
+            <p className="mt-5 text-[13.5px] text-[#6a6a6a]">Kunden klikker, sammenligner og vælger selv.</p>
           </FadeUp>
-          <FadeUp delay={0.15} className="rounded-3xl bg-[#1e1c2a] p-6 text-white">
-            <p className="text-[11px] uppercase tracking-[0.16em] text-[#8a8ff0] mb-4">AI nu</p>
-            <div className="rounded-2xl bg-white/[0.06] p-4 text-[14.5px] leading-[1.7] text-[#d9d8e8]">
-              Jeg vil anbefale <mark className="bg-[#8a8ff0]/30 text-white rounded px-1">én virksomhed</mark>, fordi de har klare priser, gode anmeldelser og svarer hurtigt.
+          <FadeUp delay={0.15} className="rounded-3xl bg-[#1c1e1e] p-6 text-white">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[#00a8e8] mb-4">AI nu</p>
+            <div className="rounded-2xl bg-white/[0.06] p-4 text-[14.5px] leading-[1.7] text-[#e4e2e2]">
+              Jeg vil anbefale <mark className="bg-[#00a8e8]/30 text-white rounded px-1">én virksomhed</mark>, fordi de har klare priser, gode anmeldelser og svarer hurtigt.
             </div>
-            <p className="mt-5 text-[13.5px] text-[#b8b6cc]">AI vælger for kunden. Er du ikke nævnt, findes du ikke.</p>
+            <p className="mt-5 text-[13.5px] text-[#b4bebe]">AI vælger for kunden. Er du ikke nævnt, findes du ikke.</p>
           </FadeUp>
         </div>
       </div>
@@ -187,17 +187,17 @@ const GEO_STEPS = ["Kundernes spørgsmål", "Tekster, der svarer", "Data AI kan 
 
 export function GeoSteps() {
   return (
-    <section className="scene relative overflow-hidden bg-[#16141f]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead dark eyebrow="Metoden" lines={["Seks trin til at", "blive nævnt"]} className="mb-12" />
         <div className="relative grid grid-cols-2 md:grid-cols-6 gap-3">
           <div aria-hidden className="hidden md:block absolute left-[8%] right-[8%] top-7 h-0.5 bg-white/10">
-            <motion.span className="block h-full bg-[#8a8ff0]" initial={{ width: 0 }} whileInView={{ width: "100%" }} viewport={{ once: true }} transition={{ duration: 2, ease }} />
+            <motion.span className="block h-full bg-[#00a8e8]" initial={{ width: 0 }} whileInView={{ width: "100%" }} viewport={{ once: true }} transition={{ duration: 2, ease }} />
           </div>
           {GEO_STEPS.map((s, i) => (
             <FadeUp key={s} delay={i * 0.12} className="relative flex flex-col items-center text-center">
-              <span className="w-14 h-14 rounded-2xl bg-[#8a8ff0] text-[#16141f] text-[18px] font-semibold flex items-center justify-center mb-4">{i + 1}</span>
-              <p className="text-[13.5px] text-[#d9d8e8] leading-snug">{s}</p>
+              <span className="w-14 h-14 rounded-2xl bg-[#00a8e8] text-[#1c1e1e] text-[18px] font-semibold flex items-center justify-center mb-4">{i + 1}</span>
+              <p className="text-[13.5px] text-[#e4e2e2] leading-snug">{s}</p>
             </FadeUp>
           ))}
         </div>
@@ -217,13 +217,13 @@ export function ChatbotLead() {
     ["Hvornår", "Inden for 2 uger"],
   ];
   return (
-    <section className="scene bg-[#eef6fa]">
+    <section className="scene bg-[#e4f0f7]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Fra samtale til opgave" lines={["Chatten slutter –", "et færdigt lead lander hos dig"]} className="mb-10" />
         <div className="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-center">
-          <FadeUp className="rounded-3xl bg-white border border-[#d6e6ee] p-5 flex flex-col gap-2">
+          <FadeUp className="rounded-3xl bg-white border border-[#e4f0f7] p-5 flex flex-col gap-2">
             {["Hvad koster rens af tagrender?", "Typisk 1.200–1.800 kr. Hvor bor du?", "Brædstrup – gerne snart", "Det dækker vi. Må jeg få dit nummer?"].map((t, i) => (
-              <p key={t} className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-[13px] ${i % 2 ? "self-start bg-[#f1f4f6] text-[#1c1e1e]" : "self-end bg-[#00a8e8] text-white"}`}>
+              <p key={t} className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-[13px] ${i % 2 ? "self-start bg-[#f7f6f6] text-[#1c1e1e]" : "self-end bg-[#00a8e8] text-white"}`}>
                 {t}
               </p>
             ))}
@@ -238,7 +238,7 @@ export function ChatbotLead() {
             <Ico d="M5 12h14M13 6l6 6-6 6" />
           </motion.span>
           <FadeUp delay={0.3} className="rounded-3xl bg-[#1c1e1e] p-6 text-white">
-            <p className="flex items-center gap-2 text-[12px] text-[#3ddc97] mb-4">
+            <p className="flex items-center gap-2 text-[12px] text-[#00a8e8] mb-4">
               <Ico d={ICONS.mail} className="w-4 h-4" /> Nyt lead · 21:47
             </p>
             {fields.map(([k, v], i) => (

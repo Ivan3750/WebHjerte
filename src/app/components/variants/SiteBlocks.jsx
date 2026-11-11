@@ -26,12 +26,12 @@ const SPOTS = [
 function Mock({ active }) {
   const hi = (i) => (active === i ? "ring-2 ring-[#00a8e8] ring-offset-2 ring-offset-white" : "");
   return (
-    <div className="relative rounded-2xl bg-white border border-[#e3e1e1] shadow-[0_30px_70px_-35px_rgba(0,0,0,0.35)] overflow-hidden">
+    <div className="relative rounded-2xl bg-white border border-[#e4e2e2] shadow-[0_30px_70px_-35px_rgba(28,30,30,0.35)] overflow-hidden">
       <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-[#eceaea]">
         <span className="w-2 h-2 rounded-full bg-[#e6e4e4]" />
         <span className="w-2 h-2 rounded-full bg-[#e6e4e4]" />
         <span className="w-2 h-2 rounded-full bg-[#e6e4e4]" />
-        <span className="ml-3 flex-1 max-w-[240px] h-5 rounded-md bg-[#f3f2f2] text-[10px] text-[#8a8f8f] flex items-center px-2">hansen-toemrer.dk</span>
+        <span className="ml-3 flex-1 max-w-[240px] h-5 rounded-md bg-[#f1f0ee] text-[10px] text-[#8a8f8f] flex items-center px-2">hansen-toemrer.dk</span>
       </div>
       <div className="p-4 sm:p-6 grid grid-cols-[1.3fr_1fr] gap-4">
         <div className={`rounded-xl p-3 transition-all duration-300 ${hi(0)}`}>
@@ -44,7 +44,7 @@ function Mock({ active }) {
           </span>
         </div>
         <div className={`rounded-xl p-3 bg-[#f7f6f6] transition-all duration-300 ${hi(2)}`}>
-          <p className="flex gap-0.5 text-[#f0a63a] mb-1.5">
+          <p className="flex gap-0.5 text-[#00a8e8] mb-1.5">
             {[0, 1, 2, 3, 4].map((i) => (
               <svg key={i} viewBox="0 0 24 24" className="w-3 h-3" fill="currentColor" aria-hidden>
                 <path d={ICONS.star} />
@@ -60,17 +60,17 @@ function Mock({ active }) {
           <span className="h-4 rounded-full bg-[#1c1e1e] text-white text-[8px] flex items-center justify-center">Send</span>
         </div>
         <div className={`col-span-2 rounded-xl p-3 flex items-center gap-3 transition-all duration-300 ${hi(4)}`}>
-          <Ico d={ICONS.bolt} className="w-4 h-4 text-[#3ddc97]" />
+          <Ico d={ICONS.bolt} className="w-4 h-4 text-[#00a8e8]" />
           <span className="flex-1 h-2 rounded-full bg-[#eceaea] overflow-hidden">
             <motion.span
-              className="block h-full bg-[#3ddc97]"
+              className="block h-full bg-[#00a8e8]"
               initial={{ width: "0%" }}
               whileInView={{ width: "96%" }}
               viewport={{ once: true }}
               transition={{ duration: 1.4, ease }}
             />
           </span>
-          <span className="text-[10px] font-semibold text-[#1f9d6b] tabular-nums">96/100</span>
+          <span className="text-[10px] font-semibold text-[#00a8e8] tabular-nums">96/100</span>
         </div>
       </div>
       {SPOTS.map((s, i) => (
@@ -126,7 +126,7 @@ export function SiteAnatomy() {
                   }}
                   aria-pressed={active === i}
                   className={`w-full text-left rounded-2xl border px-5 py-4 flex gap-4 transition-all duration-300 ${
-                    active === i ? "bg-white border-[#00a8e8]/50 shadow-[0_18px_40px_-28px_rgba(0,100,150,0.4)]" : "bg-transparent border-transparent hover:bg-white/60"
+                    active === i ? "bg-white border-[#00a8e8]/50 shadow-[0_18px_40px_-28px_rgba(0,168,232,0.4)]" : "bg-transparent border-transparent hover:bg-white/60"
                   }`}
                 >
                   <span

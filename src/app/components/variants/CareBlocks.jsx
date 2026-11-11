@@ -38,10 +38,10 @@ export function CareStatus() {
 /* ───────────── En måned med din hjemmeside ───────────── */
 
 const KINDS = {
-  backup: { label: "Backup", color: "#3ddc97", icon: ICONS.box, text: "Hver nat tages en kopi af hele siden. Går noget galt, er den tilbage på minutter." },
-  update: { label: "Opdateringer", color: "#00a8e8", icon: ICONS.refresh, text: "System og plugins opdateres løbende – og testes, så intet går i stykker." },
-  fix: { label: "Dine rettelser", color: "#8a8ff0", icon: ICONS.pencil, text: "Nye priser, billeder eller åbningstider? Send en mail, så retter jeg det (Standard og Pro)." },
-  report: { label: "Rapport", color: "#f0a63a", icon: ICONS.star, text: "Sidst på måneden får du en kort status over, hvad der er lavet (Standard og Pro)." },
+  backup: { label: "Backup", color: "#00a8e8", icon: ICONS.box, text: "Hver nat tages en kopi af hele siden. Går noget galt, er den tilbage på minutter." },
+  update: { label: "Opdateringer", color: "#1c1e1e", icon: ICONS.refresh, text: "System og plugins opdateres løbende – og testes, så intet går i stykker." },
+  fix: { label: "Dine rettelser", color: "#8a9696", icon: ICONS.pencil, text: "Nye priser, billeder eller åbningstider? Send en mail, så retter jeg det (Standard og Pro)." },
+  report: { label: "Rapport", color: "#0a5a7a", icon: ICONS.star, text: "Sidst på måneden får du en kort status over, hvad der er lavet (Standard og Pro)." },
 };
 
 const dayKinds = (d) => {
@@ -111,7 +111,7 @@ export function CareMonth() {
                   onMouseEnter={() => setFocus(key)}
                   aria-pressed={on}
                   className={`text-left rounded-2xl border px-5 py-4 flex gap-4 transition-all duration-300 ${
-                    on ? "bg-white border-transparent shadow-[0_18px_40px_-28px_rgba(0,0,0,0.35)]" : "bg-transparent border-[#e4e2e2] hover:bg-white/60"
+                    on ? "bg-white border-transparent shadow-[0_18px_40px_-28px_rgba(28,30,30,0.35)]" : "bg-transparent border-[#e4e2e2] hover:bg-white/60"
                   }`}
                   style={on ? { boxShadow: `inset 0 0 0 1.5px ${k.color}` } : undefined}
                 >
@@ -137,9 +137,9 @@ export function CareMonth() {
 /* ───────────── Hvad koster det om året – visuelt ───────────── */
 
 const COSTS = [
-  { label: "Domæne", value: "100–200 kr/år", w: 8, color: "#8a8ff0" },
-  { label: "Hosting", value: "0–500 kr/md", w: 22, color: "#00a8e8" },
-  { label: "Vedligehold hos mig", value: "249–799 kr/md · hosting med", w: 70, color: "#3ddc97" },
+  { label: "Domæne", value: "100–200 kr/år", w: 8, color: "#93a0a0" },
+  { label: "Hosting", value: "0–500 kr/md", w: 22, color: "#0a5a7a" },
+  { label: "Vedligehold hos mig", value: "249–799 kr/md · hosting med", w: 70, color: "#00a8e8" },
 ];
 
 export function CareCosts() {

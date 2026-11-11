@@ -54,7 +54,7 @@ export function AiChatDemo() {
       <div className="flex items-center gap-3 px-5 py-4 border-b border-white/10">
         <span className="relative w-9 h-9 rounded-full bg-[#00a8e8] text-[#10181a] flex items-center justify-center">
           <Ico d={ICONS.spark} />
-          <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-[#3ddc97] border-2 border-[#242828]" />
+          <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-[#00a8e8] border-2 border-[#242828]" />
         </span>
         <div className="leading-tight">
           <p className="text-[13px] font-semibold text-white">AI-assistent</p>
@@ -170,7 +170,7 @@ export function AiSavings() {
               <p className="mt-3 text-[15px] text-[#a6b1b1]">Det svarer til ca. {days} arbejdsdage hver måned.</p>
               <div className="mt-8 h-3 rounded-full bg-white/10 overflow-hidden">
                 <motion.div
-                  className="h-full rounded-full bg-gradient-to-r from-[#00a8e8] to-[#3ddc97]"
+                  className="h-full rounded-full bg-[#00a8e8]"
                   animate={{ width: `${Math.min(100, (hours / max) * 100)}%` }}
                   transition={{ duration: 0.5, ease }}
                 />
@@ -224,7 +224,7 @@ export function AiDayCompare() {
                 className={`relative rounded-full px-5 py-2.5 text-[13px] font-medium transition-colors ${mode === k ? "text-[#10181a]" : "text-[#a6b1b1] hover:text-white"}`}
               >
                 {mode === k && (
-                  <motion.span layoutId="day-pill" className={`absolute inset-0 rounded-full ${k === "with" ? "bg-[#3ddc97]" : "bg-[#e0678a]"}`} transition={{ duration: 0.4, ease }} />
+                  <motion.span layoutId="day-pill" className={`absolute inset-0 rounded-full ${k === "with" ? "bg-[#00a8e8]" : "bg-[#00a8e8]"}`} transition={{ duration: 0.4, ease }} />
                 )}
                 <span className="relative">{label}</span>
               </button>
@@ -240,7 +240,7 @@ export function AiDayCompare() {
                 <div className="relative flex items-center gap-4 sm:gap-6">
                   <span
                     className={`relative z-10 w-14 h-14 sm:w-[70px] sm:h-[70px] shrink-0 rounded-2xl flex flex-col items-center justify-center transition-colors duration-500 ${
-                      on ? "bg-[#3ddc97] text-[#10181a]" : "bg-[#2a2e2e] text-[#e0678a] border border-white/10"
+                      on ? "bg-[#00a8e8] text-[#10181a]" : "bg-[#2a2d2d] text-[#00a8e8] border border-white/10"
                     }`}
                   >
                     <Ico d={ICONS[d.icon]} className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -341,7 +341,7 @@ export function AiByTrade() {
               <ul className="flex flex-col gap-4 mb-8">
                 {t.points.map((p) => (
                   <li key={p} className="flex gap-3 text-[15px] text-[#3f4242] leading-[1.6]">
-                    <span className="mt-0.5 w-6 h-6 shrink-0 rounded-full bg-[#3ddc97]/15 text-[#1f9d6b] flex items-center justify-center">
+                    <span className="mt-0.5 w-6 h-6 shrink-0 rounded-full bg-[#00a8e8]/15 text-[#00a8e8] flex items-center justify-center">
                       <Ico d={ICONS.check} className="w-3.5 h-3.5" />
                     </span>
                     {p}

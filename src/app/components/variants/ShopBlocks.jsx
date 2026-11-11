@@ -22,10 +22,10 @@ function SceneGoogle() {
     <div className="absolute inset-0 flex items-center justify-center px-4">
       <div className={`w-full max-w-[230px] rounded-xl p-3 ${card}`}>
         <div className="h-5 rounded-full bg-[var(--v-panel)] px-2.5 flex items-center text-[9px] text-[var(--v-muted)] mb-2.5">keramik krus håndlavet</div>
-        <p className="text-[10.5px] font-semibold text-[#1a5fb4] leading-tight">Håndlavet krus – blå glasur</p>
-        <p className="text-[9px] text-[#1f9d6b] mt-0.5">dinbutik.dk</p>
+        <p className="text-[10.5px] font-semibold text-[#00a8e8] leading-tight">Håndlavet krus – blå glasur</p>
+        <p className="text-[9px] text-[#00a8e8] mt-0.5">dinbutik.dk</p>
         <p className="flex items-center gap-2 mt-1.5 text-[9px] text-[var(--v-muted)]">
-          <span className="text-[var(--v-ink)] font-semibold">189 kr</span>· <span className="text-[#1f9d6b]">På lager</span>
+          <span className="text-[var(--v-ink)] font-semibold">189 kr</span>· <span className="text-[#00a8e8]">På lager</span>
         </p>
       </div>
     </div>
@@ -52,7 +52,7 @@ function SceneCart() {
         whileInView={{ scale: 1 }}
         viewport={inView}
         transition={{ delay: 1.1, type: "spring", stiffness: 300, damping: 12 }}
-        className="absolute top-6 right-[24%] w-6 h-6 rounded-full bg-[#3ddc97] text-white text-[10px] font-semibold flex items-center justify-center"
+        className="absolute top-6 right-[24%] w-6 h-6 rounded-full bg-[#00a8e8] text-white text-[10px] font-semibold flex items-center justify-center"
       >
         1
       </motion.span>
@@ -63,7 +63,7 @@ function ScenePay() {
   return (
     <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-4">
       {[
-        ["MobilePay", "#5a78ff"],
+        ["MobilePay", "#00a8e8"],
         ["Kort", "#1c1e1e"],
         ["Apple Pay", "#1c1e1e"],
       ].map(([m, c], i) => (
@@ -73,7 +73,7 @@ function ScenePay() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={inView}
           transition={{ delay: 0.15 + i * 0.12, duration: 0.5, ease }}
-          className={`w-full max-w-[190px] flex items-center gap-2 rounded-lg px-3 py-2 ${card} ${i === 0 ? "!border-[#5a78ff]" : ""}`}
+          className={`w-full max-w-[190px] flex items-center gap-2 rounded-lg px-3 py-2 ${card} ${i === 0 ? "!border-[#00a8e8]" : ""}`}
         >
           <span className="w-3 h-3 rounded-full border-2" style={{ borderColor: c, background: i === 0 ? c : "transparent" }} />
           <span className="text-[10.5px] text-[var(--v-ink)]">{m}</span>
@@ -90,9 +90,9 @@ function SceneOrder() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={inView}
         transition={{ delay: 0.3, type: "spring", stiffness: 200, damping: 16 }}
-        className={`w-full max-w-[220px] rounded-2xl p-3 flex gap-2.5 items-start shadow-[0_18px_40px_-20px_rgba(0,0,0,0.35)] ${card}`}
+        className={`w-full max-w-[220px] rounded-2xl p-3 flex gap-2.5 items-start shadow-[0_18px_40px_-20px_rgba(28,30,30,0.35)] ${card}`}
       >
-        <span className="w-8 h-8 rounded-lg bg-[#3ddc97] text-white flex items-center justify-center shrink-0">
+        <span className="w-8 h-8 rounded-lg bg-[#00a8e8] text-white flex items-center justify-center shrink-0">
           <Ico d={ICONS.box} />
         </span>
         <span className="leading-tight">
@@ -174,7 +174,7 @@ export function ShopPlatforms() {
                             whileInView={{ opacity: 1 }}
                             viewport={inView}
                             transition={{ delay: 0.2 + n * 0.08 }}
-                            className={`h-2 flex-1 rounded-full ${n <= v ? (label === "Fleksibilitet" ? "bg-[#3ddc97]" : "bg-[#00a8e8]") : "bg-white/10"}`}
+                            className={`h-2 flex-1 rounded-full ${n <= v ? (label === "Fleksibilitet" ? "bg-[#00a8e8]" : "bg-[#00a8e8]") : "bg-white/10"}`}
                           />
                         ))}
                       </div>

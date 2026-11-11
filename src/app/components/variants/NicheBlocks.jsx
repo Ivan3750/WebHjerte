@@ -25,21 +25,21 @@ const Q3 = [
 
 export function TradesThreeSeconds() {
   return (
-    <section className="scene bg-[#fbf6ee]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Tre sekunder" lines={["Kunden har tre spørgsmål –", "siden svarer på dem alle"]} className="mb-10 sm:mb-14" />
         <div className="relative grid md:grid-cols-3 gap-4">
-          <div aria-hidden className="hidden md:block absolute left-0 right-0 top-[38px] h-1 rounded-full bg-[#f0a63a]/15 overflow-hidden">
-            <motion.span className="block h-full bg-[#f0a63a]" initial={{ width: 0 }} whileInView={{ width: "100%" }} viewport={{ once: true }} transition={{ duration: 3, ease: "linear" }} />
+          <div aria-hidden className="hidden md:block absolute left-0 right-0 top-[38px] h-1 rounded-full bg-[#00a8e8]/15 overflow-hidden">
+            <motion.span className="block h-full bg-[#00a8e8]" initial={{ width: 0 }} whileInView={{ width: "100%" }} viewport={{ once: true }} transition={{ duration: 3, ease: "linear" }} />
           </div>
           {Q3.map((q, i) => (
             <FadeUp key={q.q} delay={i * 0.9}>
-              <div className="relative h-full rounded-3xl bg-white border border-[#f0e2cc] p-6 sm:p-7">
-                <span className="relative z-10 inline-flex items-center gap-2 rounded-full bg-[#f0a63a] text-[#2a1d0a] text-[12px] font-semibold px-3 py-1.5 mb-6">
+              <div className="relative h-full rounded-3xl bg-white border border-[#e4e2e2] p-6 sm:p-7">
+                <span className="relative z-10 inline-flex items-center gap-2 rounded-full bg-[#00a8e8] text-[#1c1e1e] text-[12px] font-semibold px-3 py-1.5 mb-6">
                   <Ico d={q.icon} className="w-3.5 h-3.5" /> {q.s}
                 </span>
                 <p className="text-[19px] font-semibold text-[#1c1e1e] mb-3">{q.q}</p>
-                <p className="text-[14.5px] text-[#6b5a44] leading-[1.6]">{q.a}</p>
+                <p className="text-[14.5px] text-[#5a5a5a] leading-[1.6]">{q.a}</p>
               </div>
             </FadeUp>
           ))}
@@ -51,15 +51,15 @@ export function TradesThreeSeconds() {
 
 const TRADES = [
   { href: "/hjemmeside-til-vvs", name: "VVS", note: "Akut-knap + tilbud", color: "#00a8e8", icon: "M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z" },
-  { href: "/hjemmeside-til-elektriker", name: "Elektriker", note: "Tillid og elbil-ladere", color: "#f5c84c", icon: ICONS.bolt },
-  { href: "/hjemmeside-til-tomrer", name: "Tømrer", note: "Projekter, der sælger", color: "#c98a4b", icon: "M3 20h18M5 20V10l7-6 7 6v10M9 20v-6h6v6" },
-  { href: "/hjemmeside-til-saloner", name: "Salon", note: "Booking døgnet rundt", color: "#d4688a", icon: "M6 6a3 3 0 106 0 3 3 0 00-6 0zM6 18a3 3 0 106 0 3 3 0 00-6 0zM20 4L8.5 15.5M14.5 14.5L20 20" },
-  { href: "/hjemmeside-til-restauranter", name: "Restaurant", note: "Menu og bordbooking", color: "#e8875b", icon: "M6 3v8a2 2 0 002 2v8M10 3v6M14 3c-1 2-1 6 0 8h2v10" },
+  { href: "/hjemmeside-til-elektriker", name: "Elektriker", note: "Tillid og elbil-ladere", color: "#00a8e8", icon: ICONS.bolt },
+  { href: "/hjemmeside-til-tomrer", name: "Tømrer", note: "Projekter, der sælger", color: "#00a8e8", icon: "M3 20h18M5 20V10l7-6 7 6v10M9 20v-6h6v6" },
+  { href: "/hjemmeside-til-saloner", name: "Salon", note: "Booking døgnet rundt", color: "#00a8e8", icon: "M6 6a3 3 0 106 0 3 3 0 00-6 0zM6 18a3 3 0 106 0 3 3 0 00-6 0zM20 4L8.5 15.5M14.5 14.5L20 20" },
+  { href: "/hjemmeside-til-restauranter", name: "Restaurant", note: "Menu og bordbooking", color: "#00a8e8", icon: "M6 3v8a2 2 0 002 2v8M10 3v6M14 3c-1 2-1 6 0 8h2v10" },
 ];
 
 export function TradesGrid() {
   return (
-    <section className="scene relative overflow-hidden bg-[#1d1b18]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead dark eyebrow="Find din branche" lines={["Hver branche har", "sin egen side"]} className="mb-10 sm:mb-14" />
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
@@ -70,7 +70,7 @@ export function TradesGrid() {
                   <Ico d={t.icon} className="w-5 h-5" />
                 </span>
                 <p className="text-[16px] font-semibold text-white">{t.name}</p>
-                <p className="text-[12.5px] text-[#a69c8f] mt-1 mb-5">{t.note}</p>
+                <p className="text-[12.5px] text-[#93a0a0] mt-1 mb-5">{t.note}</p>
                 <span className="mt-auto">
                   <ArrowBadge size="sm" tone="dark" />
                 </span>
@@ -88,13 +88,13 @@ export function TradesGrid() {
 const PATHS = {
   akut: {
     label: "Vand på gulvet",
-    color: "#e0678a",
+    color: "#00a8e8",
     steps: ["Googler “VVS akut Horsens” på mobilen", "Ser en rød knap: Ring nu", "Ét tryk – du har opkaldet"],
     time: "Under 30 sek.",
   },
   plan: {
     label: "Nyt badeværelse",
-    color: "#00a8e8",
+    color: "#1c1e1e",
     steps: ["Kigger på dine badeværelser fra før/efter", "Læser, hvad opgaven omfatter", "Sender en kort formular med billeder"],
     time: "Over et par dage",
   },
@@ -104,10 +104,10 @@ export function VvsTwoPaths() {
   const [k, setK] = useState("akut");
   const p = PATHS[k];
   return (
-    <section className="scene bg-[#eef6fa]">
+    <section className="scene bg-[#e4f0f7]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="To kunder" lines={["Hvem er du i dag?"]} lead="Vælg en kunde og se, hvilken vej siden fører dem." className="mb-8" />
-        <div className="inline-flex rounded-full bg-white border border-[#d6e6ee] p-1 mb-8">
+        <div className="inline-flex rounded-full bg-white border border-[#e4f0f7] p-1 mb-8">
           {Object.entries(PATHS).map(([key, v]) => (
             <button
               key={key}
@@ -115,7 +115,7 @@ export function VvsTwoPaths() {
               onClick={() => setK(key)}
               aria-pressed={k === key}
               className="relative rounded-full px-5 py-2.5 text-[13px] font-medium"
-              style={{ color: k === key ? "#fff" : "#3a4a52" }}
+              style={{ color: k === key ? "#ffffff" : "#3a3a3a" }}
             >
               {k === key && <motion.span layoutId="vvs-pill" className="absolute inset-0 rounded-full" style={{ backgroundColor: v.color }} transition={{ duration: 0.4, ease }} />}
               <span className="relative">{v.label}</span>
@@ -141,7 +141,7 @@ export function VvsTwoPaths() {
             ))}
           </motion.div>
         </AnimatePresence>
-        <p className="mt-6 text-[14px] text-[#4a5a62]">
+        <p className="mt-6 text-[14px] text-[#5a5a5a]">
           Tid fra søgning til kontakt: <strong style={{ color: p.color }}>{p.time}</strong>
         </p>
       </div>
@@ -160,7 +160,7 @@ const BADGES = [
 
 export function ElTrust() {
   return (
-    <section className="scene relative overflow-hidden bg-[#17191c]">
+    <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-16 items-center">
         <SectionHead dark eyebrow="Tillid først" lines={["Ingen lukker en", "fremmed ind til", "eltavlen"]} lead="Før kunden ringer, tjekker de fire ting. Siden viser dem, før de når at lede." className="" />
         <div className="grid grid-cols-2 gap-3">
@@ -172,12 +172,12 @@ export function ElTrust() {
                   whileInView={{ scale: 1, rotate: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + i * 0.15, type: "spring", stiffness: 260, damping: 14 }}
-                  className="w-11 h-11 rounded-2xl bg-[#f5c84c] text-[#17191c] flex items-center justify-center mb-5"
+                  className="w-11 h-11 rounded-2xl bg-[#00a8e8] text-[#1c1e1e] flex items-center justify-center mb-5"
                 >
                   <Ico d={icon} className="w-5 h-5" />
                 </motion.span>
                 <p className="text-[16px] font-semibold text-white">{t}</p>
-                <p className="text-[13px] text-[#9aa3a8] mt-1 leading-[1.6]">{d}</p>
+                <p className="text-[13px] text-[#93a0a0] mt-1 leading-[1.6]">{d}</p>
               </div>
             </FadeUp>
           ))}
@@ -191,20 +191,20 @@ const CHARGER_Q = ["Hvad koster det?", "Hvor lang tid tager det?", "Passer den t
 
 export function ElCharger() {
   return (
-    <section className="scene bg-[#fffaf0]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid md:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
         <FadeUp>
-          <div className="relative h-[320px] rounded-3xl bg-[#17191c] overflow-hidden flex items-center justify-center">
-            <div className="relative w-[90px] h-[170px] rounded-[22px] bg-[#f4f4f2] border-4 border-[#2b2e33] flex flex-col items-center pt-5">
-              <span className="w-10 h-10 rounded-full border-4 border-[#2b2e33] flex items-center justify-center text-[#f5c84c]">
+          <div className="relative h-[320px] rounded-3xl bg-[#1c1e1e] overflow-hidden flex items-center justify-center">
+            <div className="relative w-[90px] h-[170px] rounded-[22px] bg-[#f7f6f6] border-4 border-[#2a2d2d] flex flex-col items-center pt-5">
+              <span className="w-10 h-10 rounded-full border-4 border-[#2a2d2d] flex items-center justify-center text-[#00a8e8]">
                 <Ico d={ICONS.bolt} className="w-5 h-5" />
               </span>
-              <div className="mt-5 w-12 h-2 rounded-full bg-[#ddd] overflow-hidden">
-                <motion.span className="block h-full bg-[#3ddc97]" animate={{ width: ["10%", "100%"] }} transition={{ duration: 3, repeat: Infinity }} />
+              <div className="mt-5 w-12 h-2 rounded-full bg-[#e4e2e2] overflow-hidden">
+                <motion.span className="block h-full bg-[#00a8e8]" animate={{ width: ["10%", "100%"] }} transition={{ duration: 3, repeat: Infinity }} />
               </div>
             </div>
             <svg viewBox="0 0 200 120" className="absolute bottom-0 left-0 w-[60%]" fill="none" aria-hidden>
-              <path d="M200 30 C 120 30, 140 110, 40 100" stroke="#2b2e33" strokeWidth="8" strokeLinecap="round" />
+              <path d="M200 30 C 120 30, 140 110, 40 100" stroke="#2a2d2d" strokeWidth="8" strokeLinecap="round" />
             </svg>
           </div>
         </FadeUp>
@@ -218,7 +218,7 @@ export function ElCharger() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 + i * 0.12 }}
-                className="rounded-full bg-white border border-[#f0dfb0] px-4 py-2.5 text-[14px] text-[#3a3320]"
+                className="rounded-full bg-white border border-[#c7d0d0] px-4 py-2.5 text-[14px] text-[#2a2d2d]"
               >
                 {q}
               </motion.span>
@@ -234,10 +234,10 @@ export function ElCharger() {
 
 function OldDeck() {
   return (
-    <div className="absolute inset-0 bg-[#8d9a8a]">
-      <div className="absolute inset-x-0 bottom-0 h-[45%]" style={{ background: "repeating-linear-gradient(90deg,#7a6f60 0 22px,#6a5f50 22px 25px)", filter: "saturate(0.4)" }} />
+    <div className="absolute inset-0 bg-[#8a9696]">
+      <div className="absolute inset-x-0 bottom-0 h-[45%]" style={{ background: "repeating-linear-gradient(90deg,#6a6a6a 0 22px,#5a5a5a 22px 25px)", filter: "saturate(0.4)" }} />
       {[18, 46, 72].map((x) => (
-        <span key={x} className="absolute bottom-[40%] w-8 h-3 rounded bg-[#5b5244] rotate-12" style={{ left: `${x}%` }} />
+        <span key={x} className="absolute bottom-[40%] w-8 h-3 rounded bg-[#5a5a5a] rotate-12" style={{ left: `${x}%` }} />
       ))}
       <span className="absolute left-4 top-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/90 bg-black/30 rounded-full px-3 py-1">Før</span>
     </div>
@@ -245,14 +245,14 @@ function OldDeck() {
 }
 function NewDeck() {
   return (
-    <div className="absolute inset-0 bg-gradient-to-b from-[#bfe3f5] to-[#e9f4ec]">
-      <div className="absolute inset-x-0 bottom-0 h-[45%]" style={{ background: "repeating-linear-gradient(90deg,#d39558 0 22px,#bf7f42 22px 24px)" }} />
-      <div className="absolute bottom-[45%] inset-x-[8%] h-[3px] bg-[#8a5a2e]" />
+    <div className="absolute inset-0 bg-gradient-to-b from-[#dfe6e6] to-[#f1f0ee]">
+      <div className="absolute inset-x-0 bottom-0 h-[45%]" style={{ background: "repeating-linear-gradient(90deg,#00a8e8 0 22px,#0a5a7a 22px 24px)" }} />
+      <div className="absolute bottom-[45%] inset-x-[8%] h-[3px] bg-[#00a8e8]" />
       {[12, 30, 48, 66, 84].map((x) => (
-        <span key={x} className="absolute bottom-[45%] w-[3px] h-14 bg-[#8a5a2e]" style={{ left: `${x}%` }} />
+        <span key={x} className="absolute bottom-[45%] w-[3px] h-14 bg-[#00a8e8]" style={{ left: `${x}%` }} />
       ))}
-      <span className="absolute right-[18%] bottom-[48%] w-14 h-10 rounded-t-full bg-[#3f8a5a]" />
-      <span className="absolute right-4 top-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#5a3a1a] bg-white/70 rounded-full px-3 py-1">Efter</span>
+      <span className="absolute right-[18%] bottom-[48%] w-14 h-10 rounded-t-full bg-[#00a8e8]" />
+      <span className="absolute right-4 top-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#3a3a3a] bg-white/70 rounded-full px-3 py-1">Efter</span>
     </div>
   );
 }
@@ -265,7 +265,7 @@ export function TomrerBeforeAfter() {
     setPos(Math.max(4, Math.min(96, ((clientX - r.left) / r.width) * 100)));
   };
   return (
-    <section className="scene bg-[#f4ede3]">
+    <section className="scene bg-[#eeecec]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Før og efter" lines={["Kunden vil se,", "før de vælger"]} lead="Træk i skyderen. Sådan viser din side et projekt – det overbeviser mere end ti afsnit tekst." className="mb-10" />
         <div
@@ -282,7 +282,7 @@ export function TomrerBeforeAfter() {
             <OldDeck />
           </div>
           <div className="absolute inset-y-0 w-1 bg-white -ml-0.5" style={{ left: `${pos}%` }}>
-            <span className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 w-11 h-11 rounded-full bg-white shadow-lg flex items-center justify-center text-[#b8692e] text-[14px] font-semibold">⇆</span>
+            <span className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 w-11 h-11 rounded-full bg-white shadow-lg flex items-center justify-center text-[#00a8e8] text-[14px] font-semibold">⇆</span>
           </div>
           <input
             type="range"
@@ -294,9 +294,9 @@ export function TomrerBeforeAfter() {
             className="sr-only"
           />
         </div>
-        <div className="mt-5 flex flex-wrap gap-3 text-[13px] text-[#6b5a44]">
+        <div className="mt-5 flex flex-wrap gap-3 text-[13px] text-[#5a5a5a]">
           {["Terrasse · 32 m²", "Lærk", "4 arbejdsdage", "Horsens"].map((t) => (
-            <span key={t} className="rounded-full bg-white border border-[#e6d7c3] px-4 py-2">
+            <span key={t} className="rounded-full bg-white border border-[#c7d0d0] px-4 py-2">
               {t}
             </span>
           ))}
@@ -317,17 +317,17 @@ export function RestCommission() {
   const fmt = (n) => n.toLocaleString("da-DK");
   const Row = ({ label, value, set, min, max, step, unit }) => (
     <label className="block">
-      <span className="flex justify-between mb-2 text-[14px] text-[#e9ddd3]">
+      <span className="flex justify-between mb-2 text-[14px] text-[#e4e2e2]">
         {label}
         <strong className="text-white tabular-nums">
           {fmt(value)} {unit}
         </strong>
       </span>
-      <input type="range" min={min} max={max} step={step} value={value} onChange={(e) => set(+e.target.value)} className="w-full accent-[#e8875b]" />
+      <input type="range" min={min} max={max} step={step} value={value} onChange={(e) => set(+e.target.value)} className="w-full accent-[#00a8e8]" />
     </label>
   );
   return (
-    <section className="scene relative overflow-hidden bg-[#2a221d]">
+    <section className="scene relative overflow-hidden bg-[#242828]">
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead dark eyebrow="Egen bestilling" lines={["Hvad betaler du", "platformene?"]} lead="Mange platforme tager op til ca. 30 % i kommission, afhængigt af aftalen. Skru på dine egne tal." className="mb-10" />
         <div className="grid lg:grid-cols-2 gap-4">
@@ -336,11 +336,11 @@ export function RestCommission() {
             <Row label="Gennemsnitlig ordre" value={avg} set={setAvg} min={100} max={600} step={10} unit="kr" />
             <Row label="Kommission" value={pct} set={setPct} min={10} max={30} step={1} unit="%" />
           </div>
-          <div className="rounded-3xl bg-[#f7efe3] p-6 sm:p-8 flex flex-col">
-            <p className="text-[11px] uppercase tracking-[0.16em] text-[#9a7b5f]">Kommission pr. år</p>
-            <p className="text-[clamp(44px,6vw,72px)] font-semibold text-[#2a221d] tracking-tight leading-none mt-3 tabular-nums">{fmt(year)} kr</p>
-            <p className="text-[14px] text-[#6b5a44] mt-3">≈ {fmt(month)} kr hver måned, der går til mellemled.</p>
-            <p className="mt-auto pt-8 text-[13px] text-[#6b5a44] leading-[1.7]">
+          <div className="rounded-3xl bg-[#f1f0ee] p-6 sm:p-8 flex flex-col">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[#8a8a8a]">Kommission pr. år</p>
+            <p className="text-[clamp(44px,6vw,72px)] font-semibold text-[#242828] tracking-tight leading-none mt-3 tabular-nums">{fmt(year)} kr</p>
+            <p className="text-[14px] text-[#5a5a5a] mt-3">≈ {fmt(month)} kr hver måned, der går til mellemled.</p>
+            <p className="mt-auto pt-8 text-[13px] text-[#5a5a5a] leading-[1.7]">
               Flytter du blot en del af de faste gæster til egen bestilling på hjemmesiden, beholder du marginen – og kontakten til gæsten.
             </p>
           </div>
@@ -366,7 +366,7 @@ export function SalonBuilder() {
   const price = sel.reduce((a, [, p]) => a + p, 0);
   const mins = sel.reduce((a, [, , m]) => a + m, 0);
   return (
-    <section className="scene bg-[#fbf2f4]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid lg:grid-cols-[1fr_1fr] gap-10 items-center">
         <div>
           <SectionHead eyebrow="Prisliste, der sælger" lines={["Kunden ser prisen", "og tiden – og booker"]} lead="Tryk på behandlingerne. Sådan kan din prisliste virke: pris og varighed med det samme, ingen telefon." className="mb-8" />
@@ -379,7 +379,7 @@ export function SalonBuilder() {
                   type="button"
                   aria-pressed={on}
                   onClick={() => setPicked((s) => (on ? s.filter((x) => x !== n) : [...s, n]))}
-                  className={`rounded-full border px-4 py-2.5 text-[13.5px] transition-colors ${on ? "bg-[#c9557d] border-[#c9557d] text-white" : "bg-white border-[#ecd3db] text-[#5a3a46] hover:border-[#c9557d]"}`}
+                  className={`rounded-full border px-4 py-2.5 text-[13.5px] transition-colors ${on ? "bg-[#00a8e8] border-[#00a8e8] text-white" : "bg-white border-[#e4e2e2] text-[#3a3a3a] hover:border-[#00a8e8]"}`}
                 >
                   {n} · {p} kr
                 </button>
@@ -388,27 +388,27 @@ export function SalonBuilder() {
           </div>
         </div>
         <FadeUp>
-          <div className="rounded-3xl bg-white border border-[#ecd3db] p-6 sm:p-8">
-            <p className="text-[11px] uppercase tracking-[0.16em] text-[#c9557d] mb-4">Din booking</p>
+          <div className="rounded-3xl bg-white border border-[#e4e2e2] p-6 sm:p-8">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[#00a8e8] mb-4">Din booking</p>
             <div className="min-h-[120px] flex flex-col gap-2">
               <AnimatePresence>
                 {sel.map(([n, p, m]) => (
-                  <motion.p key={n} layout initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} className="flex justify-between text-[14.5px] text-[#3a2a30]">
+                  <motion.p key={n} layout initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} className="flex justify-between text-[14.5px] text-[#2a2d2d]">
                     <span>
-                      {n} <span className="text-[#a08a92] text-[12px]">· {m} min.</span>
+                      {n} <span className="text-[#8a8a8a] text-[12px]">· {m} min.</span>
                     </span>
                     <span>{p} kr</span>
                   </motion.p>
                 ))}
               </AnimatePresence>
-              {!sel.length && <p className="text-[14px] text-[#a08a92]">Vælg en behandling</p>}
+              {!sel.length && <p className="text-[14px] text-[#8a8a8a]">Vælg en behandling</p>}
             </div>
-            <div className="mt-5 pt-5 border-t border-[#f0dfe4] flex items-end justify-between">
+            <div className="mt-5 pt-5 border-t border-[#e8e6e6] flex items-end justify-between">
               <div>
-                <p className="text-[12px] text-[#a08a92]">I alt · {mins} min.</p>
+                <p className="text-[12px] text-[#8a8a8a]">I alt · {mins} min.</p>
                 <p className="text-[30px] font-semibold text-[#1c1e1e] tabular-nums leading-tight">{price.toLocaleString("da-DK")} kr</p>
               </div>
-              <span className={`rounded-full px-5 py-2.5 text-[13px] font-semibold ${sel.length ? "bg-[#c9557d] text-white" : "bg-[#f0e4e8] text-[#b8a0a8]"}`}>Vælg tid →</span>
+              <span className={`rounded-full px-5 py-2.5 text-[13px] font-semibold ${sel.length ? "bg-[#00a8e8] text-white" : "bg-[#e8e6e6] text-[#a6b1b1]"}`}>Vælg tid →</span>
             </div>
           </div>
         </FadeUp>

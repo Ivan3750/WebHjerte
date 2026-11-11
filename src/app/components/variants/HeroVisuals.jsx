@@ -22,10 +22,10 @@ export function HeroTrades() {
   const reduce = useReducedMotion();
   const tools = [
     ["VVS", "#00a8e8", "8%", "18%"],
-    ["El", "#f5c84c", "74%", "12%"],
-    ["Tømrer", "#c98a4b", "4%", "66%"],
-    ["Maler", "#e0678a", "76%", "62%"],
-    ["Murer", "#8a8ff0", "60%", "86%"],
+    ["El", "#00a8e8", "74%", "12%"],
+    ["Tømrer", "#00a8e8", "4%", "66%"],
+    ["Maler", "#00a8e8", "76%", "62%"],
+    ["Murer", "#00a8e8", "60%", "86%"],
   ];
   return (
     <Frame className="border border-white/10 bg-white/[0.03]">
@@ -45,23 +45,23 @@ export function HeroTrades() {
         {[0, 1, 2].map((i) => (
           <motion.span
             key={i}
-            className="absolute w-[170px] h-[170px] rounded-full border-2 border-[#f0a63a]"
+            className="absolute w-[170px] h-[170px] rounded-full border-2 border-[#00a8e8]"
             animate={reduce ? {} : { scale: [0.8, 1.8], opacity: [0.5, 0] }}
             transition={{ duration: 2.4, repeat: Infinity, delay: i * 0.8 }}
           />
         ))}
-        <div className="relative w-[190px] rounded-[30px] border-[3px] border-[#3a3530] bg-[#26221e] p-4 pt-6 text-center shadow-2xl">
-          <p className="text-[10px] uppercase tracking-[0.16em] text-[#a89a8a]">Indgående opkald</p>
+        <div className="relative w-[190px] rounded-[30px] border-[3px] border-[#3a3a3a] bg-[#1c1e1e] p-4 pt-6 text-center shadow-2xl">
+          <p className="text-[10px] uppercase tracking-[0.16em] text-[#93a0a0]">Indgående opkald</p>
           <p className="text-[17px] font-semibold text-white mt-3">Ny kunde</p>
-          <p className="text-[11.5px] text-[#c9bcae] mt-1">Hedensted · fandt dig på Google</p>
+          <p className="text-[11.5px] text-[#b4bebe] mt-1">Hedensted · fandt dig på Google</p>
           <div className="flex justify-center gap-6 mt-7 mb-1">
-            <span className="w-11 h-11 rounded-full bg-[#e0678a] flex items-center justify-center text-white rotate-[135deg]">
+            <span className="w-11 h-11 rounded-full bg-[#3a3a3a] flex items-center justify-center text-white rotate-[135deg]">
               <Ico d={ICONS.phone} />
             </span>
             <motion.span
               animate={reduce ? {} : { rotate: [0, -14, 14, -10, 10, 0] }}
               transition={{ duration: 0.9, repeat: Infinity, repeatDelay: 0.8 }}
-              className="w-11 h-11 rounded-full bg-[#3ddc97] flex items-center justify-center text-white"
+              className="w-11 h-11 rounded-full bg-[#00a8e8] flex items-center justify-center text-white"
             >
               <Ico d={ICONS.phone} />
             </motion.span>
@@ -76,11 +76,11 @@ export function HeroTrades() {
 export function HeroVvs() {
   const reduce = useReducedMotion();
   return (
-    <Frame className="bg-white border border-[#cfe3ee]">
+    <Frame className="bg-white border border-[#e4f0f7]">
       <svg viewBox="0 0 200 440" className="absolute left-0 top-0 h-full w-[38%]" fill="none" aria-hidden>
-        <path d="M-10 80 H90 Q120 80 120 110 V220" stroke="#cfdde6" strokeWidth="22" strokeLinecap="round" />
-        <path d="M-10 80 H90 Q120 80 120 110 V220" stroke="#e8f1f6" strokeWidth="12" strokeLinecap="round" />
-        <rect x="104" y="214" width="32" height="16" rx="4" fill="#9fb6c4" />
+        <path d="M-10 80 H90 Q120 80 120 110 V220" stroke="#dfe6e6" strokeWidth="22" strokeLinecap="round" />
+        <path d="M-10 80 H90 Q120 80 120 110 V220" stroke="#e4f0f7" strokeWidth="12" strokeLinecap="round" />
+        <rect x="104" y="214" width="32" height="16" rx="4" fill="#a6b1b1" />
       </svg>
       {[0, 1, 2].map((i) => (
         <motion.span
@@ -97,24 +97,24 @@ export function HeroVvs() {
         animate={reduce ? {} : { scaleX: [0.8, 1.1, 0.8] }}
         transition={{ duration: 2.8, repeat: Infinity }}
       />
-      <div className="absolute right-[8%] top-1/2 -translate-y-1/2 w-[210px] rounded-[30px] border-[3px] border-[#1c1e1e] bg-white p-3.5 pt-5 shadow-[0_30px_60px_-30px_rgba(0,80,120,0.5)]">
+      <div className="absolute right-[8%] top-1/2 -translate-y-1/2 w-[210px] rounded-[30px] border-[3px] border-[#1c1e1e] bg-white p-3.5 pt-5 shadow-[0_30px_60px_-30px_rgba(0,168,232,0.5)]">
         <p className="text-[13px] font-semibold text-[#1c1e1e]">Hansen VVS</p>
-        <p className="text-[10px] text-[#6a7276] mb-4">Horsens · Hedensted · Juelsminde</p>
+        <p className="text-[10px] text-[#6a6a6a] mb-4">Horsens · Hedensted · Juelsminde</p>
         <motion.div
-          animate={reduce ? {} : { boxShadow: ["0 0 0 0 rgba(224,103,138,0.6)", "0 0 0 12px rgba(224,103,138,0)"] }}
+          animate={reduce ? {} : { boxShadow: ["0 0 0 0 rgba(0,168,232,0.6)", "0 0 0 12px rgba(0,168,232,0)"] }}
           transition={{ duration: 1.6, repeat: Infinity }}
-          className="rounded-2xl bg-[#e0678a] text-white px-3 py-3 mb-2.5"
+          className="rounded-2xl bg-[#00a8e8] text-white px-3 py-3 mb-2.5"
         >
           <p className="text-[12.5px] font-semibold flex items-center gap-2">
             <Ico d={ICONS.phone} className="w-3.5 h-3.5" /> Akut hjælp
           </p>
           <p className="text-[10px] opacity-90 mt-0.5">Vandskade? Ring – også i weekenden</p>
         </motion.div>
-        <div className="rounded-2xl border border-[#d9e5ec] px-3 py-3">
+        <div className="rounded-2xl border border-[#e4f0f7] px-3 py-3">
           <p className="text-[12.5px] font-semibold text-[#1c1e1e]">Nyt badeværelse?</p>
-          <p className="text-[10px] text-[#6a7276] mt-0.5">Få et tilbud på 24 timer →</p>
+          <p className="text-[10px] text-[#6a6a6a] mt-0.5">Få et tilbud på 24 timer →</p>
         </div>
-        <div className="mt-3 flex items-center gap-1.5 text-[9.5px] text-[#1f9d6b]">
+        <div className="mt-3 flex items-center gap-1.5 text-[9.5px] text-[#00a8e8]">
           <Ico d={ICONS.shield} className="w-3 h-3" /> Autoriseret VVS-installatør
         </div>
       </div>
@@ -127,14 +127,14 @@ export function HeroEl() {
   const reduce = useReducedMotion();
   const paths = ["M0 90 H120 V170 H260", "M0 250 H90 V200 H260", "M0 330 H160 V230 H260"];
   return (
-    <Frame className="border border-white/10 bg-[#1b1d20]">
+    <Frame className="border border-white/10 bg-[#1c1e1e]">
       <svg viewBox="0 0 520 440" className="absolute inset-0 w-full h-full" fill="none" aria-hidden>
         {paths.map((d, i) => (
           <g key={d}>
             <path d={d} stroke="rgba(255,255,255,0.08)" strokeWidth="3" />
             <motion.path
               d={d}
-              stroke="#f5c84c"
+              stroke="#00a8e8"
               strokeWidth="3"
               strokeLinecap="round"
               initial={{ pathLength: 0 }}
@@ -144,7 +144,7 @@ export function HeroEl() {
             {!reduce && (
               <motion.path
                 d={d}
-                stroke="#fff6d1"
+                stroke="#f1f0ee"
                 strokeWidth="3.5"
                 strokeLinecap="round"
                 strokeDasharray="10 600"
@@ -155,48 +155,48 @@ export function HeroEl() {
             )}
           </g>
         ))}
-        <path d="M260 160 V260" stroke="#f5c84c" strokeWidth="3" />
-        <path d="M260 210 H300" stroke="#f5c84c" strokeWidth="3" />
+        <path d="M260 160 V260" stroke="#00a8e8" strokeWidth="3" />
+        <path d="M260 210 H300" stroke="#00a8e8" strokeWidth="3" />
       </svg>
       <div className="absolute left-[58%] top-1/2 -translate-y-1/2 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0.2 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.6, duration: 0.6 }}
-          className="absolute -top-10 w-44 h-44 rounded-full bg-[#f5c84c]/30 blur-2xl"
+          className="absolute -top-10 w-44 h-44 rounded-full bg-[#00a8e8]/30 blur-2xl"
         />
         <svg viewBox="0 0 80 110" className="relative w-24 h-32" aria-hidden>
           <motion.path
             d="M40 6a30 30 0 00-18 54c4 3 6 8 6 13v6h24v-6c0-5 2-10 6-13A30 30 0 0040 6z"
-            initial={{ fill: "#2c2f33" }}
-            animate={{ fill: "#f5c84c" }}
+            initial={{ fill: "#2a2d2d" }}
+            animate={{ fill: "#00a8e8" }}
             transition={{ delay: 1.6, duration: 0.5 }}
-            stroke="#f5c84c"
+            stroke="#00a8e8"
             strokeWidth="2.5"
           />
-          <rect x="28" y="84" width="24" height="8" rx="2" fill="#6b6f74" />
-          <rect x="31" y="95" width="18" height="7" rx="2" fill="#6b6f74" />
+          <rect x="28" y="84" width="24" height="8" rx="2" fill="#6a6a6a" />
+          <rect x="31" y="95" width="18" height="7" rx="2" fill="#6a6a6a" />
         </svg>
       </div>
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 0.6, ease }}
-        className="absolute right-5 top-5 rounded-2xl bg-[#26292d] border border-white/10 px-4 py-3"
+        className="absolute right-5 top-5 rounded-2xl bg-[#242828] border border-white/10 px-4 py-3"
       >
         <p className="flex items-center gap-2 text-[12px] font-semibold text-white">
-          <span className="w-5 h-5 rounded-full bg-[#3ddc97] text-[#10181a] flex items-center justify-center">
+          <span className="w-5 h-5 rounded-full bg-[#00a8e8] text-[#10181a] flex items-center justify-center">
             <Ico d={ICONS.check} className="w-3 h-3" />
           </span>
           Autoriseret elinstallatør
         </p>
-        <p className="text-[10.5px] text-[#9aa3a8] mt-1 pl-7">Vist tydeligt på forsiden</p>
+        <p className="text-[10.5px] text-[#93a0a0] mt-1 pl-7">Vist tydeligt på forsiden</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.3, duration: 0.6, ease }}
-        className="absolute right-5 bottom-5 rounded-2xl bg-[#f5c84c] text-[#1b1d20] px-4 py-3"
+        className="absolute right-5 bottom-5 rounded-2xl bg-[#00a8e8] text-[#1c1e1e] px-4 py-3"
       >
         <p className="text-[12px] font-semibold flex items-center gap-2">
           <Ico d={ICONS.bolt} className="w-3.5 h-3.5" /> Elbil-lader
@@ -210,7 +210,7 @@ export function HeroEl() {
 /* ───────── Tømrer: tegning af et hus, der tegner sig selv, og et færdigt projekt ───────── */
 export function HeroTomrer() {
   return (
-    <Frame className="bg-[#1f4e7a]">
+    <Frame className="bg-[#00a8e8]">
       <div
         aria-hidden
         className="absolute inset-0 opacity-40"
@@ -230,7 +230,7 @@ export function HeroTomrer() {
           <motion.path
             key={d}
             d={d}
-            stroke="#e7f1fb"
+            stroke="#e4f0f7"
             strokeWidth="2.2"
             strokeLinejoin="round"
             initial={{ pathLength: 0 }}
@@ -239,8 +239,8 @@ export function HeroTomrer() {
           />
         ))}
         <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.8 }}>
-          <path d="M60 282 H340 M60 276 V288 M340 276 V288" stroke="#9cc6ee" strokeWidth="1.4" />
-          <text x="200" y="298" fill="#9cc6ee" fontSize="11" textAnchor="middle" fontFamily="monospace">
+          <path d="M60 282 H340 M60 276 V288 M340 276 V288" stroke="#00a8e8" strokeWidth="1.4" />
+          <text x="200" y="298" fill="#00a8e8" fontSize="11" textAnchor="middle" fontFamily="monospace">
             8.400 mm
           </text>
         </motion.g>
@@ -251,7 +251,7 @@ export function HeroTomrer() {
         transition={{ delay: 1.6, duration: 0.9, ease }}
         className="absolute right-[6%] bottom-[8%] w-[46%] max-w-[220px] rounded-2xl bg-white p-2.5 shadow-2xl"
       >
-        <div className="h-24 rounded-xl overflow-hidden" style={{ background: "repeating-linear-gradient(90deg,#c98a4b 0 18px,#b8773a 18px 20px)" }} />
+        <div className="h-24 rounded-xl overflow-hidden" style={{ background: "repeating-linear-gradient(90deg,#e4f0f7 0 18px,#cfe9f5 18px 20px)" }} />
         <p className="text-[12px] font-semibold text-[#1c1e1e] mt-2">Ny terrasse · Horsens</p>
         <p className="text-[10px] text-[#6a6a6a]">32 m² · lærk · 4 dage</p>
       </motion.div>
@@ -270,27 +270,27 @@ export function HeroRestaurant() {
     ["Hjemmelavet is", "med bær", "65"],
   ];
   return (
-    <Frame h="h-[520px] sm:h-[440px]" className="bg-[#2a221d] border border-white/10">
-      <div className="absolute left-[6%] top-[5%] sm:top-[8%] w-[80%] sm:w-[54%] rounded-2xl bg-[#f7efe3] p-5 shadow-2xl -rotate-2">
-        <p className="text-center text-[10px] uppercase tracking-[0.3em] text-[#9a7b5f]">Menu</p>
-        <p className="text-center text-[17px] font-semibold text-[#2a221d] mb-4" style={{ fontFamily: "Georgia, serif" }}>
+    <Frame h="h-[520px] sm:h-[440px]" className="bg-[#242828] border border-white/10">
+      <div className="absolute left-[6%] top-[5%] sm:top-[8%] w-[80%] sm:w-[54%] rounded-2xl bg-[#f1f0ee] p-5 shadow-2xl -rotate-2">
+        <p className="text-center text-[10px] uppercase tracking-[0.3em] text-[#8a8a8a]">Menu</p>
+        <p className="text-center text-[17px] font-semibold text-[#242828] mb-4" style={{ fontFamily: "Georgia, serif" }}>
           Aftenkort
         </p>
         {menu.map(([n, s, p]) => (
           <div key={n} className="flex items-end gap-2 mb-3">
             <div className="min-w-0">
-              <p className="text-[12.5px] font-semibold text-[#2a221d] leading-tight" style={{ fontFamily: "Georgia, serif" }}>
+              <p className="text-[12.5px] font-semibold text-[#242828] leading-tight" style={{ fontFamily: "Georgia, serif" }}>
                 {n}
               </p>
-              <p className="text-[10px] text-[#8a7560]">{s}</p>
+              <p className="text-[10px] text-[#6a6a6a]">{s}</p>
             </div>
-            <span className="flex-1 border-b border-dotted border-[#c9b39a] mb-1" />
-            <span className="text-[12px] font-semibold text-[#2a221d]">{p}</span>
+            <span className="flex-1 border-b border-dotted border-[#a6b1b1] mb-1" />
+            <span className="text-[12px] font-semibold text-[#242828]">{p}</span>
           </div>
         ))}
         <p className="mt-3 flex gap-1.5">
           {["Glutenfri", "Vegansk"].map((t) => (
-            <span key={t} className="text-[9px] rounded-full bg-[#e8875b]/15 text-[#b35a33] px-2 py-0.5">
+            <span key={t} className="text-[9px] rounded-full bg-[#00a8e8]/15 text-[#00a8e8] px-2 py-0.5">
               {t}
             </span>
           ))}
@@ -299,11 +299,11 @@ export function HeroRestaurant() {
       <div className="absolute right-[5%] bottom-[5%] sm:bottom-[7%] w-[70%] sm:w-[50%] max-w-[240px] rounded-2xl bg-white p-4 shadow-2xl">
         {done ? (
           <div className="text-center py-6">
-            <span className="mx-auto w-10 h-10 rounded-full bg-[#3ddc97] text-white flex items-center justify-center mb-2">
+            <span className="mx-auto w-10 h-10 rounded-full bg-[#00a8e8] text-white flex items-center justify-center mb-2">
               <Ico d={ICONS.check} />
             </span>
             <p className="text-[13px] font-semibold text-[#1c1e1e]">Bord til {people} kl. {time}</p>
-            <button type="button" onClick={() => setDone(false)} className="text-[11px] text-[#e8875b] mt-1">
+            <button type="button" onClick={() => setDone(false)} className="text-[11px] text-[#00a8e8] mt-1">
               Prøv igen
             </button>
           </div>
@@ -313,7 +313,7 @@ export function HeroRestaurant() {
             <p className="text-[10px] text-[#8a8a8a] mb-1">Antal</p>
             <div className="flex gap-1.5 mb-2.5">
               {[2, 4, 6].map((n) => (
-                <button key={n} type="button" onClick={() => setPeople(n)} className={`flex-1 rounded-lg py-1.5 text-[11px] ${people === n ? "bg-[#e8875b] text-white" : "bg-[#f4f1ee] text-[#3a3a3a]"}`}>
+                <button key={n} type="button" onClick={() => setPeople(n)} className={`flex-1 rounded-lg py-1.5 text-[11px] ${people === n ? "bg-[#00a8e8] text-white" : "bg-[#f1f0ee] text-[#3a3a3a]"}`}>
                   {n}
                 </button>
               ))}
@@ -321,12 +321,12 @@ export function HeroRestaurant() {
             <p className="text-[10px] text-[#8a8a8a] mb-1">Tid i aften</p>
             <div className="flex gap-1.5 mb-3">
               {["17:30", "19:00", "20:30"].map((t) => (
-                <button key={t} type="button" onClick={() => setTime(t)} className={`flex-1 rounded-lg py-1.5 text-[11px] ${time === t ? "bg-[#e8875b] text-white" : "bg-[#f4f1ee] text-[#3a3a3a]"}`}>
+                <button key={t} type="button" onClick={() => setTime(t)} className={`flex-1 rounded-lg py-1.5 text-[11px] ${time === t ? "bg-[#00a8e8] text-white" : "bg-[#f1f0ee] text-[#3a3a3a]"}`}>
                   {t}
                 </button>
               ))}
             </div>
-            <button type="button" onClick={() => setDone(true)} className="w-full rounded-full bg-[#2a221d] text-white text-[11.5px] font-semibold py-2">
+            <button type="button" onClick={() => setDone(true)} className="w-full rounded-full bg-[#242828] text-white text-[11.5px] font-semibold py-2">
               Bekræft
             </button>
           </>
@@ -347,22 +347,22 @@ export function HeroSalon() {
     return () => clearInterval(t);
   }, [reduce]);
   return (
-    <Frame className="bg-white border border-[#efd7de]">
-      <div className="absolute left-[5%] top-[8%] w-[40%] min-w-[150px] rounded-2xl bg-[#fbf3f5] p-3.5">
-        <p className="text-[10px] uppercase tracking-[0.16em] text-[#c9557d] mb-3">Prisliste</p>
+    <Frame className="bg-white border border-[#e4e2e2]">
+      <div className="absolute left-[5%] top-[8%] w-[40%] min-w-[150px] rounded-2xl bg-[#f7f6f6] p-3.5">
+        <p className="text-[10px] uppercase tracking-[0.16em] text-[#00a8e8] mb-3">Prisliste</p>
         {[
           ["Dameklip", "450"],
           ["Herreklip", "320"],
           ["Farve + klip", "1.050"],
           ["Bryn & vipper", "290"],
         ].map(([n, p]) => (
-          <p key={n} className="flex justify-between text-[12px] text-[#3a2a30] py-1.5 border-b border-[#f0dfe4] last:border-0">
+          <p key={n} className="flex justify-between text-[12px] text-[#2a2d2d] py-1.5 border-b border-[#e8e6e6] last:border-0">
             <span>{n}</span>
             <span className="font-semibold">{p} kr</span>
           </p>
         ))}
       </div>
-      <div className="absolute right-[4%] top-1/2 -translate-y-1/2 w-[180px] rounded-[30px] border-[3px] border-[#3a2a30] bg-white p-3.5 pt-5 shadow-[0_30px_60px_-30px_rgba(150,40,80,0.5)]">
+      <div className="absolute right-[4%] top-1/2 -translate-y-1/2 w-[180px] rounded-[30px] border-[3px] border-[#2a2d2d] bg-white p-3.5 pt-5 shadow-[0_30px_60px_-30px_rgba(0,168,232,0.5)]">
         <p className="text-[12.5px] font-semibold text-[#1c1e1e]">Vælg tid · torsdag</p>
         <div className="grid grid-cols-2 gap-1.5 mt-3">
           {slots.map((s, i) => {
@@ -371,21 +371,21 @@ export function HeroSalon() {
               <motion.span
                 key={s}
                 layout
-                className={`rounded-lg py-2 text-center text-[11px] transition-colors duration-500 ${on ? "bg-[#c9557d] text-white" : "bg-[#f6eef1] text-[#6a5560]"}`}
+                className={`rounded-lg py-2 text-center text-[11px] transition-colors duration-500 ${on ? "bg-[#00a8e8] text-white" : "bg-[#f1f0ee] text-[#5a5a5a]"}`}
               >
                 {on ? "Booket" : s}
               </motion.span>
             );
           })}
         </div>
-        <p className="mt-3 text-[10px] text-[#1f9d6b] flex items-center gap-1.5">
+        <p className="mt-3 text-[10px] text-[#00a8e8] flex items-center gap-1.5">
           <Ico d={ICONS.check} className="w-3 h-3" /> SMS-påmindelse dagen før
         </p>
       </div>
       <motion.div
         animate={reduce ? {} : { y: [0, -6, 0] }}
         transition={{ duration: 3, repeat: Infinity }}
-        className="absolute left-[6%] bottom-[8%] rounded-2xl bg-[#c9557d] text-white px-4 py-3 shadow-xl"
+        className="absolute left-[6%] bottom-[8%] rounded-2xl bg-[#00a8e8] text-white px-4 py-3 shadow-xl"
       >
         <p className="text-[18px] font-semibold leading-none">{taken.length}/6</p>
         <p className="text-[10px] opacity-90 mt-1">tider booket online</p>
@@ -410,36 +410,36 @@ const CITIES = [
 
 export function HeroJylland() {
   return (
-    <Frame className="border border-white/10 bg-[#152026]">
+    <Frame className="border border-white/10 bg-[#1c1e1e]">
       <svg viewBox="0 0 330 410" className="absolute inset-0 m-auto h-[92%] w-auto" fill="none" aria-hidden>
         <motion.path
           d={JUTLAND}
-          stroke="#3ddc97"
+          stroke="#00a8e8"
           strokeWidth="2"
           strokeLinejoin="round"
-          fill="rgba(61,220,151,0.07)"
+          fill="rgba(0,168,232,0.07)"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{ duration: 2.2, ease }}
         />
         {CITIES.map(([n, x, y], i) => (
           <motion.g key={n} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 + i * 0.15 }}>
-            <circle cx={x} cy={y} r="3.5" fill="#cfe9df" />
-            <text x={x + 7} y={y + 4} fontSize="10" fill="#9fb8b0">
+            <circle cx={x} cy={y} r="3.5" fill="#e4e2e2" />
+            <text x={x + 7} y={y + 4} fontSize="10" fill="#a6b1b1">
               {n}
             </text>
           </motion.g>
         ))}
         <motion.g initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 2.8, type: "spring" }} style={{ transformOrigin: "205px 262px" }}>
-          <circle cx="205" cy="262" r="16" fill="#3ddc97" opacity="0.25" />
-          <circle cx="205" cy="262" r="6" fill="#3ddc97" />
-          <text x="186" y="252" fontSize="12" fontWeight="600" fill="#fff" textAnchor="end">
+          <circle cx="205" cy="262" r="16" fill="#00a8e8" opacity="0.25" />
+          <circle cx="205" cy="262" r="6" fill="#00a8e8" />
+          <text x="186" y="252" fontSize="12" fontWeight="600" fill="#ffffff" textAnchor="end">
             Horsens
           </text>
         </motion.g>
       </svg>
       <div className="absolute right-4 top-4 rounded-2xl bg-white/[0.06] border border-white/10 px-4 py-3">
-        <p className="text-[10px] uppercase tracking-[0.16em] text-[#3ddc97]">Online samarbejde</p>
+        <p className="text-[10px] uppercase tracking-[0.16em] text-[#00a8e8]">Online samarbejde</p>
         <p className="text-[13px] font-semibold text-white mt-1">Skagen → Kolding · 0 kr kørsel</p>
       </div>
     </Frame>
@@ -450,9 +450,9 @@ export function HeroJylland() {
 export function HeroVejle() {
   const pts = { Horsens: [250, 70], Vejle: [170, 170], Fredericia: [250, 280], Kolding: [110, 300] };
   return (
-    <Frame className="bg-white border border-[#d6e7ef]">
+    <Frame className="bg-white border border-[#e4f0f7]">
       <svg viewBox="0 0 360 380" className="absolute inset-0 w-full h-full" fill="none" aria-hidden>
-        <path d="M-10 150 C 80 140, 120 175, 170 170 S 300 200, 380 190" stroke="#cfe6f2" strokeWidth="26" strokeLinecap="round" />
+        <path d="M-10 150 C 80 140, 120 175, 170 170 S 300 200, 380 190" stroke="#e4f0f7" strokeWidth="26" strokeLinecap="round" />
         <motion.path
           d="M250 70 C 230 120, 200 140, 170 170"
           stroke="#00a8e8"
@@ -464,9 +464,9 @@ export function HeroVejle() {
         />
         <motion.path
           d="M170 170 L250 280 L110 300 Z"
-          stroke="#f0a63a"
+          stroke="#00a8e8"
           strokeWidth="2.5"
-          fill="rgba(240,166,58,0.1)"
+          fill="rgba(0,168,232,0.1)"
           strokeLinejoin="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
@@ -474,7 +474,7 @@ export function HeroVejle() {
         />
         {Object.entries(pts).map(([n, [x, y]], i) => (
           <motion.g key={n} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 + i * 0.4 }}>
-            <circle cx={x} cy={y} r={n === "Vejle" ? 8 : 5} fill={n === "Horsens" ? "#00a8e8" : n === "Vejle" ? "#1c1e1e" : "#f0a63a"} />
+            <circle cx={x} cy={y} r={n === "Vejle" ? 8 : 5} fill={n === "Horsens" ? "#00a8e8" : n === "Vejle" ? "#1c1e1e" : "#00a8e8"} />
             <text x={x + 12} y={y + 4} fontSize="13" fontWeight="600" fill="#1c1e1e">
               {n}
             </text>
@@ -494,9 +494,9 @@ export function HeroVejle() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.6 }}
-        className="absolute right-5 bottom-5 rounded-2xl bg-[#fff4e4] border border-[#f3d9b1] px-4 py-2.5"
+        className="absolute right-5 bottom-5 rounded-2xl bg-[#f1f0ee] border border-[#c7d0d0] px-4 py-2.5"
       >
-        <p className="text-[10px] uppercase tracking-[0.14em] text-[#b5762a]">Trekantsområdet</p>
+        <p className="text-[10px] uppercase tracking-[0.14em] text-[#00a8e8]">Trekantsområdet</p>
         <p className="text-[12.5px] font-semibold text-[#1c1e1e]">Én side · tre byer</p>
       </motion.div>
     </Frame>
@@ -507,33 +507,33 @@ export function HeroVejle() {
 export function HeroWpHorsens() {
   const items = ["Sider", "Indlæg", "Medier", "Ydelser", "Indstillinger"];
   return (
-    <Frame className="bg-white border border-[#dfe6ea] shadow-[0_30px_70px_-40px_rgba(0,0,0,0.35)]">
-      <div className="absolute inset-y-0 left-0 w-[30%] bg-[#1d2327] p-4">
+    <Frame className="bg-white border border-[#e4f0f7] shadow-[0_30px_70px_-40px_rgba(28,30,30,0.35)]">
+      <div className="absolute inset-y-0 left-0 w-[30%] bg-[#242828] p-4">
         <span className="w-8 h-8 rounded-full border-2 border-white/70 text-white/80 text-[13px] font-serif flex items-center justify-center mb-5">W</span>
         {items.map((it, i) => (
-          <p key={it} className={`text-[11.5px] py-2 px-2 rounded-md ${i === 3 ? "bg-[#2271b1] text-white" : "text-[#c3c4c7]"}`}>
+          <p key={it} className={`text-[11.5px] py-2 px-2 rounded-md ${i === 3 ? "bg-[#00a8e8] text-white" : "text-[#c7d0d0]"}`}>
             {it}
           </p>
         ))}
       </div>
-      <div className="absolute inset-y-0 right-0 w-[70%] p-5 bg-[#f6f7f7]">
-        <p className="text-[14px] font-semibold text-[#1d2327] mb-3">Rediger: Ydelser</p>
-        <div className="rounded-xl bg-white border border-[#dcdcde] p-3.5 mb-3">
-          <p className="text-[10px] text-[#8c8f94] mb-1">Overskrift</p>
-          <p className="text-[13px] font-semibold text-[#1d2327]">Malerarbejde i Horsens og omegn</p>
+      <div className="absolute inset-y-0 right-0 w-[70%] p-5 bg-[#f7f6f6]">
+        <p className="text-[14px] font-semibold text-[#242828] mb-3">Rediger: Ydelser</p>
+        <div className="rounded-xl bg-white border border-[#e4e2e2] p-3.5 mb-3">
+          <p className="text-[10px] text-[#8a9696] mb-1">Overskrift</p>
+          <p className="text-[13px] font-semibold text-[#242828]">Malerarbejde i Horsens og omegn</p>
         </div>
-        <div className="rounded-xl bg-white border border-[#2271b1] p-3.5 mb-3">
-          <p className="text-[10px] text-[#8c8f94] mb-1">Pris fra</p>
+        <div className="rounded-xl bg-white border border-[#00a8e8] p-3.5 mb-3">
+          <p className="text-[10px] text-[#8a9696] mb-1">Pris fra</p>
           <TypeLoop words={["149 kr/m²", "159 kr/m²"]} />
         </div>
         <div className="grid grid-cols-3 gap-2 mb-4">
-          {["#d9c7a8", "#a8c1d9", "#c4d9a8"].map((c) => (
+          {["#e4f0f7", "#cfe9f5", "#e8e6e6"].map((c) => (
             <span key={c} className="h-14 rounded-lg" style={{ backgroundColor: c }} />
           ))}
         </div>
-        <span className="inline-block rounded-md bg-[#2271b1] text-white text-[11px] font-semibold px-4 py-2">Opdater</span>
+        <span className="inline-block rounded-md bg-[#00a8e8] text-white text-[11px] font-semibold px-4 py-2">Opdater</span>
       </div>
-      <div className="absolute right-4 top-4 rounded-full bg-[#1d2327] text-white text-[10px] px-3 py-1.5">📍 Horsens</div>
+      <div className="absolute right-4 top-4 rounded-full bg-[#242828] text-white text-[10px] px-3 py-1.5">📍 Horsens</div>
     </Frame>
   );
 }
@@ -547,9 +547,9 @@ function TypeLoop({ words }) {
     return () => clearInterval(t);
   }, [reduce, words.length]);
   return (
-    <p className="text-[13px] text-[#1d2327]">
+    <p className="text-[13px] text-[#242828]">
       {words[i]}
-      <span className="inline-block w-px h-3.5 bg-[#2271b1] ml-0.5 align-middle animate-pulse" />
+      <span className="inline-block w-px h-3.5 bg-[#00a8e8] ml-0.5 align-middle animate-pulse" />
     </p>
   );
 }
@@ -558,14 +558,14 @@ function TypeLoop({ words }) {
 export function HeroOrbit() {
   const reduce = useReducedMotion();
   const ring = [
-    ["WordPress", "#2271b1"],
-    ["Shopify", "#5e8e3e"],
-    ["Webflow", "#4353ff"],
-    ["Next.js", "#111"],
-    ["WooCommerce", "#7f54b3"],
-    ["Wix", "#0c6efc"],
-    ["Squarespace", "#222"],
-    ["React", "#149eca"],
+    ["WordPress", "#00a8e8"],
+    ["Shopify", "#00a8e8"],
+    ["Webflow", "#00a8e8"],
+    ["Next.js", "#1c1e1e"],
+    ["WooCommerce", "#00a8e8"],
+    ["Wix", "#00a8e8"],
+    ["Squarespace", "#1c1e1e"],
+    ["React", "#00a8e8"],
   ];
   return (
     <Frame h="h-[340px] sm:h-[460px]">
@@ -594,7 +594,7 @@ export function HeroOrbit() {
             );
           })}
         </motion.div>
-        <div className="relative w-36 h-36 rounded-full bg-gradient-to-br from-[#8a8ff0] to-[#00a8e8] flex flex-col items-center justify-center text-[#10181a] shadow-[0_0_80px_rgba(138,143,240,0.5)]">
+        <div className="relative w-36 h-36 rounded-full bg-[#00a8e8] flex flex-col items-center justify-center text-[#10181a] shadow-[0_0_80px_rgba(0,168,232,0.5)]">
           <p className="text-[11px] uppercase tracking-[0.14em] opacity-70">Din</p>
           <p className="text-[18px] font-semibold">hjemmeside</p>
           <p className="text-[10px] mt-1 opacity-80">+ AI på dem alle</p>
@@ -615,19 +615,19 @@ export function HeroShopify() {
   }, [reduce]);
   const bars = [30, 42, 38, 55, 48, 66, 74, 62, 80, 92];
   return (
-    <Frame className="bg-white border border-[#cfe8da] shadow-[0_30px_70px_-40px_rgba(20,90,50,0.45)]">
+    <Frame className="bg-white border border-[#e4e2e2] shadow-[0_30px_70px_-40px_rgba(58,58,58,0.45)]">
       <div className="p-5 sm:p-6 h-full flex flex-col">
         <div className="flex items-center justify-between mb-5">
           <p className="text-[13px] font-semibold text-[#1c1e1e]">I dag</p>
-          <span className="text-[10.5px] rounded-full bg-[#e3f5ea] text-[#1f7a4f] px-2.5 py-1">● Live</span>
+          <span className="text-[10.5px] rounded-full bg-[#eeecec] text-[#00a8e8] px-2.5 py-1">● Live</span>
         </div>
         <div className="grid grid-cols-2 gap-3 mb-5">
-          <div className="rounded-xl bg-[#f5faf7] p-3.5">
-            <p className="text-[10.5px] text-[#6a7a70]">Ordrer</p>
+          <div className="rounded-xl bg-[#f7f6f6] p-3.5">
+            <p className="text-[10.5px] text-[#6a6a6a]">Ordrer</p>
             <p className="text-[26px] font-semibold text-[#1c1e1e] tabular-nums leading-tight">{orders}</p>
           </div>
-          <div className="rounded-xl bg-[#f5faf7] p-3.5">
-            <p className="text-[10.5px] text-[#6a7a70]">Omsætning</p>
+          <div className="rounded-xl bg-[#f7f6f6] p-3.5">
+            <p className="text-[10.5px] text-[#6a6a6a]">Omsætning</p>
             <p className="text-[26px] font-semibold text-[#1c1e1e] tabular-nums leading-tight">{(orders * 365).toLocaleString("da-DK")} kr</p>
           </div>
         </div>
@@ -639,7 +639,7 @@ export function HeroShopify() {
               animate={{ scaleY: 1 }}
               transition={{ delay: 0.2 + i * 0.06, duration: 0.7, ease }}
               style={{ height: `${h}%`, transformOrigin: "bottom" }}
-              className={`flex-1 rounded-t-md ${i === bars.length - 1 ? "bg-[#1f9d6b]" : "bg-[#d5ecdf]"}`}
+              className={`flex-1 rounded-t-md ${i === bars.length - 1 ? "bg-[#00a8e8]" : "bg-[#e4e2e2]"}`}
             />
           ))}
         </div>
@@ -689,28 +689,28 @@ export function HeroGeo() {
   const name = "Din Virksomhed";
   const k = shown.indexOf(name);
   return (
-    <div className="rounded-[28px] border border-white/10 bg-[#1e1c2a] p-5 sm:p-7 text-left">
+    <div className="rounded-[28px] border border-white/10 bg-[#1c1e1e] p-5 sm:p-7 text-left">
       <div className="flex justify-end mb-5">
-        <p className="max-w-[80%] rounded-2xl rounded-br-sm bg-white/[0.08] px-4 py-3 text-[14px] text-[#e4e3f0]">
+        <p className="max-w-[80%] rounded-2xl rounded-br-sm bg-white/[0.08] px-4 py-3 text-[14px] text-[#e8e6e6]">
           Hvem kan du anbefale til en ny hjemmeside i Horsens?
         </p>
       </div>
       <div className="flex gap-3">
-        <span className="w-9 h-9 shrink-0 rounded-full bg-[#8a8ff0] text-[#16141f] flex items-center justify-center">
+        <span className="w-9 h-9 shrink-0 rounded-full bg-[#00a8e8] text-[#1c1e1e] flex items-center justify-center">
           <Ico d={ICONS.spark} />
         </span>
         <div className="min-w-0 flex-1">
-          <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#d9d8e8] min-h-[84px]">
+          <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#e4e2e2] min-h-[84px]">
             {k >= 0 ? (
               <>
                 {shown.slice(0, k)}
-                <mark className="bg-[#8a8ff0]/25 text-white rounded px-1">{shown.slice(k, k + name.length)}</mark>
+                <mark className="bg-[#00a8e8]/25 text-white rounded px-1">{shown.slice(k, k + name.length)}</mark>
                 {shown.slice(k + name.length)}
               </>
             ) : (
               shown
             )}
-            {n < ANSWER.length && <span className="inline-block w-2 h-4 bg-[#8a8ff0] ml-0.5 align-middle animate-pulse" />}
+            {n < ANSWER.length && <span className="inline-block w-2 h-4 bg-[#00a8e8] ml-0.5 align-middle animate-pulse" />}
           </p>
           <motion.div
             className="flex flex-wrap gap-2 mt-4"
@@ -718,7 +718,7 @@ export function HeroGeo() {
             transition={{ duration: 0.4 }}
           >
             {["dinvirksomhed.dk", "Google Virksomhedsprofil", "Anmeldelser"].map((s, i) => (
-              <span key={s} className="text-[11px] rounded-full border border-[#8a8ff0]/40 text-[#c4c6f7] px-3 py-1">
+              <span key={s} className="text-[11px] rounded-full border border-[#00a8e8]/40 text-[#e4e2e2] px-3 py-1">
                 [{i + 1}] {s}
               </span>
             ))}
@@ -746,21 +746,21 @@ export function HeroChatbot() {
     return () => clearTimeout(t);
   }, [step, reduce]);
   return (
-    <Frame className="bg-[#eef3f6]">
-      <div className="absolute inset-4 rounded-2xl bg-white border border-[#dde5ea] overflow-hidden">
-        <div className="flex gap-1.5 px-3 py-2 border-b border-[#eef1f3]">
+    <Frame className="bg-[#f1f0ee]">
+      <div className="absolute inset-4 rounded-2xl bg-white border border-[#e4f0f7] overflow-hidden">
+        <div className="flex gap-1.5 px-3 py-2 border-b border-[#f1f0ee]">
           {[0, 1, 2].map((i) => (
-            <span key={i} className="w-2 h-2 rounded-full bg-[#e3e7ea]" />
+            <span key={i} className="w-2 h-2 rounded-full bg-[#e8e6e6]" />
           ))}
         </div>
         <div className="p-4 opacity-50">
           <div className="h-3 w-1/2 rounded bg-[#1c1e1e] mb-2" />
-          <div className="h-2 w-2/3 rounded bg-[#dfe4e7] mb-1.5" />
-          <div className="h-2 w-1/2 rounded bg-[#dfe4e7] mb-4" />
+          <div className="h-2 w-2/3 rounded bg-[#e4e2e2] mb-1.5" />
+          <div className="h-2 w-1/2 rounded bg-[#e4e2e2] mb-4" />
           <div className="h-20 w-[45%] rounded-xl bg-[#cfe9f5]" />
         </div>
       </div>
-      <div className="absolute right-6 bottom-6 w-[78%] max-w-[300px] rounded-2xl bg-white shadow-[0_24px_60px_-20px_rgba(0,60,90,0.45)] border border-[#dde5ea] overflow-hidden">
+      <div className="absolute right-6 bottom-6 w-[78%] max-w-[300px] rounded-2xl bg-white shadow-[0_24px_60px_-20px_rgba(42,45,45,0.45)] border border-[#e4f0f7] overflow-hidden">
         <div className="bg-[#00a8e8] text-white px-4 py-2.5 flex items-center gap-2">
           <Ico d={ICONS.spark} className="w-3.5 h-3.5" />
           <span className="text-[12px] font-semibold">Spørg os – svar med det samme</span>
@@ -771,13 +771,13 @@ export function HeroChatbot() {
               key={i}
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`max-w-[88%] rounded-xl px-3 py-2 text-[11px] leading-snug ${who === "bot" ? "self-start bg-[#f1f4f6] text-[#1c1e1e]" : "self-end bg-[#00a8e8] text-white"}`}
+              className={`max-w-[88%] rounded-xl px-3 py-2 text-[11px] leading-snug ${who === "bot" ? "self-start bg-[#f7f6f6] text-[#1c1e1e]" : "self-end bg-[#00a8e8] text-white"}`}
             >
               {t}
             </motion.p>
           ))}
           {step > CONVO.length && (
-            <motion.p initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="self-center mt-1 text-[10.5px] rounded-full bg-[#e3f7ee] text-[#1f7a4f] px-3 py-1.5">
+            <motion.p initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="self-center mt-1 text-[10.5px] rounded-full bg-[#f1f0ee] text-[#00a8e8] px-3 py-1.5">
               ✉ Nyt lead sendt til din mail
             </motion.p>
           )}

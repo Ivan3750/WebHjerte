@@ -35,7 +35,7 @@ function Btn({ href, children, theme }) {
       className="inline-flex items-center gap-2 text-[13px] font-semibold rounded-full pl-6 pr-2 py-2 hover:opacity-90 transition-opacity"
     >
       {children}
-      <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: theme.light ? "rgba(255,255,255,0.25)" : "rgba(0,0,0,0.18)" }}>
+      <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: theme.light ? "rgba(255,255,255,0.25)" : "rgba(28,30,30,0.18)" }}>
         <svg viewBox="0 0 16 16" className="w-3.5 h-3.5" fill="none" aria-hidden>
           <path d="M2.5 8h10.2M8.6 3.9L12.7 8l-4.1 4.1" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
@@ -60,15 +60,15 @@ function Ghost({ href, children, theme }) {
 export default function ThemedHero({ theme, layout = "split", eyebrow, h1, lead, facts, visual, cta = "Få et gratis tilbud", ghost = { href: "/portefolje", label: "Se eksempler" } }) {
   const light = theme.light;
   const ink = light ? "#1c1e1e" : "#ffffff";
-  const muted = light ? "#4f5455" : "#aeb8b8";
-  const patternColor = light ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.05)";
+  const muted = light ? "#5a5a5a" : "#b4bebe";
+  const patternColor = light ? "rgba(28,30,30,0.06)" : "rgba(255,255,255,0.05)";
   const center = layout === "center";
   const stack = layout === "stack";
 
   const text = (
     <div className={`flex flex-col ${center ? "items-center text-center" : "items-start"}`}>
       {eyebrow && (
-        <FadeUp as="p" className="text-[11.5px] uppercase tracking-[0.16em] mb-5 flex items-center gap-3" style={{ color: theme.accent }}>
+        <FadeUp as="p" className="text-[11.5px] uppercase tracking-[0.16em] mb-5 flex items-center gap-3" style={{ color: light ? "#8a8a8a" : "#8a9696" }}>
           <span className="w-8 h-px" style={{ backgroundColor: theme.accent }} />
           {eyebrow}
           {center && <span className="w-8 h-px" style={{ backgroundColor: theme.accent }} />}
@@ -102,7 +102,7 @@ export default function ThemedHero({ theme, layout = "split", eyebrow, h1, lead,
             <div
               key={label}
               className="rounded-2xl px-3 sm:px-4 py-3 border text-left"
-              style={{ borderColor: light ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.1)", backgroundColor: light ? "rgba(255,255,255,0.6)" : "rgba(255,255,255,0.04)" }}
+              style={{ borderColor: light ? "rgba(28,30,30,0.08)" : "rgba(255,255,255,0.1)", backgroundColor: light ? "rgba(255,255,255,0.6)" : "rgba(255,255,255,0.04)" }}
             >
               <p className="text-[15px] sm:text-[17px] font-semibold leading-tight" style={{ color: ink }}>
                 {num}
