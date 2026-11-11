@@ -26,6 +26,9 @@ const nextConfig = {
         destination: "/om-mig",
         permanent: true,
       },
+      // Fjernede referencesider (skrevet til AI frem for kunder)
+      { source: "/om-webhjerte", destination: "/om-mig", permanent: true },
+      { source: "/ordliste", destination: "/ofte-stillede-spoergsmaal", permanent: true },
     ];
   },
   async headers() {

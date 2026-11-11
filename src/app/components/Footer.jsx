@@ -45,10 +45,7 @@ const groups = [
     links: [
       { href: "/blog", label: "Blog og guides" },
       { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
-      { href: "/ordliste", label: "Ordliste" },
-      { href: "/om-webhjerte", label: "Fakta om WebHjerte" },
       { href: "/hosting-og-vedligeholdelse", label: "Hosting og drift" },
-      { href: "/webstrategi", label: "Webstrategi" },
     ],
   },
   {

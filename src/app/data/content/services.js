@@ -52,7 +52,7 @@ export const servicePages = [
         h2: "Hvad er inkluderet?",
         bullets: [
           "Responsivt design til mobil, tablet og desktop.",
-          "Teknisk SEO-grundlag og struktureret data.",
+          "Teknisk SEO-grundlag, så Google viser dine oplysninger korrekt.",
           "Kontaktformular, Google Maps og klik-for-at-ringe.",
           "Hurtig indlæsning og optimerede billeder.",
           "SSL-certifikat og grundlæggende sikkerhed.",
@@ -129,7 +129,7 @@ export const servicePages = [
       {
         h2: "SEO og synlighed fra første dag",
         paragraphs: [
-          "Jeg bygger SEO ind i fundamentet: logisk overskriftsstruktur, hurtige billeder, titler og beskrivelser, intern linking, sitemap og struktureret data. Siden er desuden skrevet, så den kan forstås af AI-søgning som ChatGPT og Google AI.",
+          "Jeg bygger SEO ind i fundamentet: logisk overskriftsstruktur, hurtige billeder, titler og beskrivelser, intern linking og sitemap. Teksterne svarer direkte på kundernes spørgsmål, så du også kan blive anbefalet af ChatGPT og Googles AI.",
         ],
         cta: { href: "/geo-ai-synlighed", label: "Læs om AI-synlighed" },
       },
@@ -202,7 +202,7 @@ export const servicePages = [
           "Kurv og kasse med betaling via fx MobilePay, kort og faktura (afhænger af udbyder).",
           "Fragt og levering efter dine regler.",
           "Lager- og ordrehåndtering.",
-          "SEO for produkter og kategorier med struktureret data (Product og Offer).",
+          "SEO for produkter og kategorier, så pris og lagerstatus kan vises direkte i Google.",
           "Handelsbetingelser, privatlivspolitik og cookie-samtykke (GDPR).",
           "Analytics, så du kan se, hvad der sælger.",
         ],
@@ -234,7 +234,8 @@ export const servicePages = [
   },
   {
     slug: "baeredygtigt-webdesign",
-    type: "service",
+    type: "article", // vises på /blog som guide
+    category: "Guides",
     title: "Bæredygtigt webdesign – lette, hurtige hjemmesider | WebHjerte",
     description:
       "Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug – hurtigere for brugerne, bedre for miljøet.",
@@ -300,7 +301,8 @@ export const servicePages = [
   },
   {
     slug: "webstrategi",
-    type: "service",
+    type: "article", // vises på /blog som guide
+    category: "Guides",
     title: "Webstrategi for små virksomheder | WebHjerte",
     description:
       "Webstrategi for små virksomheder: mål, målgruppe, indhold, SEO og AI-synlighed samlet i en klar plan, du kan handle på. Start med en gratis samtale.",

@@ -116,7 +116,7 @@ Shopify passer til virksomheder, der vil i gang hurtigt og have en driftssikker 
 - Opsætning af butik, produkter, kategorier og lager.
 - Tilpasning af tema og design, så butikken matcher dit brand.
 - Betaling (fx kort og MobilePay via betalingsudbydere), fragt og momsindstillinger.
-- SEO for produkter og kategorier, struktureret data og hastighedsoptimering.
+- SEO for produkter og kategorier, så pris og lagerstatus kan vises i Google, og hurtig indlæsning.
 - Migrering fra WooCommerce, Wix eller andre platforme med omdirigeringer, så du bevarer SEO-værdi.
 - Apps og integrationer (regnskab, lager, nyhedsbreve).
 - Handelsbetingelser, privatlivspolitik og cookie-samtykke.
@@ -178,7 +178,7 @@ Forbind dine værktøjer, så information flytter sig af sig selv: kontaktformul
 ### AI i webshop og indhold
 Produktanbefalinger, automatiske produktbeskrivelser, hjælp til kundeservice om levering og returnering og assistance til indholdsproduktion – med din gennemgang før noget publiceres.
 ### AI-synlighed (GEO / AI SEO)
-Gør din hjemmeside nem at citere for ChatGPT, Gemini, Perplexity og Google AI-oversigter med struktureret data, svar-først-indhold og llms.txt.
+Gør din virksomhed let at finde og anbefale, når kunder spørger ChatGPT, Gemini eller Googles AI.
 
 ## Min tilgang: praktisk, ærlig og sikker
 - Start med et behov, ikke en teknologi: hvilken opgave koster dig mest tid eller kunder?
@@ -358,7 +358,7 @@ Ejerskab | Kode og domæne tilhører dig | Varierer – ofte bundet til platform
 
 ## Hvad er inkluderet?
 - Responsivt design til mobil, tablet og desktop.
-- Teknisk SEO-grundlag og struktureret data.
+- Teknisk SEO-grundlag, så Google viser dine oplysninger korrekt.
 - Kontaktformular, Google Maps og klik-for-at-ringe.
 - Hurtig indlæsning og optimerede billeder.
 - SSL-certifikat og grundlæggende sikkerhed.
@@ -412,7 +412,7 @@ Blog / guides | Besvar kundernes spørgsmål og rangér bredere
 Privatliv og vilkår | Lovkrav og tryghed
 
 ## SEO og synlighed fra første dag
-Jeg bygger SEO ind i fundamentet: logisk overskriftsstruktur, hurtige billeder, titler og beskrivelser, intern linking, sitemap og struktureret data. Siden er desuden skrevet, så den kan forstås af AI-søgning som ChatGPT og Google AI.
+Jeg bygger SEO ind i fundamentet: logisk overskriftsstruktur, hurtige billeder, titler og beskrivelser, intern linking og sitemap. Teksterne svarer direkte på kundernes spørgsmål, så du også kan blive anbefalet af ChatGPT og Googles AI.
 
 ## Faste priser
 Alle priser inkl. moms. Efter lancering får du 30 dages support.
@@ -462,7 +462,7 @@ Skræddersyet | Specielle behov, bookinger, abonnementer | Højeste fleksibilite
 - Kurv og kasse med betaling via fx MobilePay, kort og faktura (afhænger af udbyder).
 - Fragt og levering efter dine regler.
 - Lager- og ordrehåndtering.
-- SEO for produkter og kategorier med struktureret data (Product og Offer).
+- SEO for produkter og kategorier, så pris og lagerstatus kan vises direkte i Google.
 - Handelsbetingelser, privatlivspolitik og cookie-samtykke (GDPR).
 - Analytics, så du kan se, hvad der sælger.
 
@@ -648,7 +648,7 @@ Uanset hvor i Jylland du holder til, søger dine kunder på samme måde: en ydel
 - Første designudkast inden for 48 timer, og 0 kr for designet, hvis det ikke passer.
 - Typisk levering på 2–10 dage afhængigt af pakke.
 - SEO, mobiloptimering og hurtig indlæsning bygget ind fra første dag.
-- Struktureret data og indhold, der også kan findes i AI-søgning (ChatGPT, Google AI).
+- Indhold, der også bliver fundet, når kunder spørger ChatGPT eller Googles AI.
 - Domæne og kode tilhører dig – ingen bindinger.
 - 30 dages support efter lancering og herefter vedligeholdelse fra 249 kr/md.
 
@@ -767,7 +767,7 @@ Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor 
 ## Hvad får du som kunde i Vejle?
 - Fast pris og aftalt tidsplan.
 - Responsivt design, der virker på mobil, tablet og desktop.
-- Basis-SEO og struktureret data i alle pakker.
+- Basis-SEO i alle pakker, så Google forstår din side.
 - Kontaktformularer, Google Maps og klik-for-at-ringe.
 - 30 dages support efter lancering.
 - Mulighed for WordPress, hvis du selv vil redigere indholdet.
@@ -799,7 +799,7 @@ For en lille virksomhed er den største fordel, at du selv kan skifte åbningsti
 ## Hvad får du i en WordPress-løsning fra WebHjerte?
 - Skræddersyet design – ikke en uændret skabelon.
 - Hurtig opsætning med fokus på ydeevne (billedoptimering, caching, minimal plugin-brug).
-- SEO-opsætning: titler, beskrivelser, sitemap, struktureret data og lokal SEO.
+- SEO-opsætning: titler, beskrivelser, sitemap og lokal SEO.
 - Responsivt design til mobil og tablet.
 - Sikkerhed: opdateringer, sikre log-ind-regler og backup-opsætning.
 - Kort introduktion, så du ved, hvordan du redigerer siden.
@@ -818,7 +818,7 @@ Du har kun brug for én kampagneside | Landingside – ofte skræddersyet
 Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 249 kr/md, hvis du ikke selv vil stå for det.
 
 ## WordPress og SEO
-WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter, struktureret data og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.
+WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en WordPress-hjemmeside?
@@ -1247,9 +1247,9 @@ Ingen udefra kender de præcise algoritmer, og de ændrer sig løbende. Men erfa
 
 ## Min metode i seks trin
 1. 1. Kortlæg kundernes spørgsmål: Jeg samler de spørgsmål, dine kunder faktisk stiller – fra Google Search Console, telefonsamtaler, e-mails og AI-assistenterne selv. Spørgsmålene bliver rygraden i dit indhold.
-2. 2. Skriv svar-først-indhold: Hver vigtig side får et kort, præcist svar øverst efterfulgt af uddybning, eksempler, priser og en FAQ. Det er både godt for læsere og nemt for AI at citere.
-3. 3. Struktureret data: Jeg markerer virksomhed, ydelser, priser, FAQ, forfatter og breadcrumbs med JSON-LD, så maskiner forstår indholdet uden at gætte.
-4. 4. Teknisk fundament: Hurtig hjemmeside, mobilvenlig, korrekt indeksering, sitemap, robots-regler der tillader AI-crawlere og en llms.txt-fil, der opsummerer virksomheden til sprogmodeller.
+2. 2. Tekster, der svarer direkte: Hver vigtig side får et kort, præcist svar øverst efterfulgt af uddybning, eksempler, priser og en FAQ. Det er godt for dine kunder – og nemt for AI at gengive korrekt.
+3. 3. Oplysninger, Google og AI kan læse: Jeg markerer navn, adresse, ydelser, priser og spørgsmål i sidens kode, så Google og AI forstår din virksomhed uden at gætte.
+4. 4. Teknisk fundament: Hurtig hjemmeside, mobilvenlig, korrekt indeksering, sitemap, adgang for AI-tjenesterne og en kort opsummering af virksomheden, som de kan læse.
 5. 5. Troværdighed og konsistens: Navn, adresse, telefon, CVR og priser skal være ens overalt. Jeg hjælper med Google Virksomhedsprofil og med at samle omtaler og referencer.
 6. 6. Måling og justering: Jeg følger med i Google Search Console (herunder visninger i AI-funktioner), analytics og stikprøver i ChatGPT, Gemini og Perplexity og justerer indholdet løbende.
 
@@ -1259,7 +1259,7 @@ Ingen udefra kender de præcise algoritmer, og de ændrer sig løbende. Men erfa
 - FAQ-sektioner med reelle kundespørgsmål og markeret FAQPage-data.
 - Organization-, LocalBusiness-, Service-, Offer-, Person- og BreadcrumbList-markup.
 - Prisoversigter i tabeller, som både mennesker og maskiner nemt læser.
-- En llms.txt og en llms-full.txt, der giver sprogmodeller et ryddeligt overblik over sitet.
+- En kort opsummering af din virksomhed, som AI-tjenester kan læse.
 - Robots-regler, der tillader seriøse AI-crawlere, så du ikke blokerer dig selv ude.
 - Forfatterprofil og opdateringsdatoer, så indholdet viser ekspertise og aktualitet.
 
@@ -1275,7 +1275,7 @@ Q: Hvad betyder GEO?
 A: GEO står for Generative Engine Optimization. Det er arbejdet med at gøre indhold nemt at forstå og citere for generative AI-systemer som ChatGPT, Gemini, Perplexity og Googles AI-oversigter, så virksomheden bliver nævnt i AI-genererede svar.
 
 Q: Er GEO det samme som SEO?
-A: Nej, men de overlapper meget. God SEO (hurtig side, klart indhold, gode links) er fundamentet. GEO tilføjer svar-først-indhold, struktureret data, konsistente virksomhedsoplysninger og en llms.txt, så AI-systemer nemmere kan bruge dit indhold.
+A: Nej, men de overlapper meget. God SEO (hurtig side, klart indhold, gode links) er fundamentet. GEO tilføjer tekster, der svarer direkte på kundernes spørgsmål, ensartede virksomhedsoplysninger og en teknisk opsætning, så AI-tjenester nemmere kan bruge dit indhold.
 
 Q: Kan I garantere, at ChatGPT nævner min virksomhed?
 A: Nej, og det kan ingen seriøse aktører. Jeg kan skabe de bedste forudsætninger og måle udviklingen, men AI-systemerne styrer selv, hvad de nævner.
@@ -1285,9 +1285,6 @@ A: Tekniske forbedringer og nyt indhold kan blive opfanget inden for uger, men d
 
 Q: Skal jeg have en ny hjemmeside for at blive synlig i AI?
 A: Ikke nødvendigvis. Mange eksisterende sider kan optimeres med bedre struktur, FAQ og struktureret data. Hvis siden er meget langsom eller teknisk problematisk, kan en ny side dog være billigere på sigt.
-
-Q: Hvad er llms.txt?
-A: llms.txt er en simpel tekstfil på roden af hjemmesiden, der giver sprogmodeller et ryddeligt overblik over virksomheden og de vigtigste sider. Den er et supplement til sitemap og robots.txt. WebHjerte har både en llms.txt og en udvidet llms-full.txt.
 
 
 ---
@@ -1335,7 +1332,7 @@ Ja. Jeg sætter cookie-samtykke, privatlivspolitik og dataminimering op efter g�
 
 ## SEO og AI-synlighed
 ### Er SEO inkluderet i hjemmesiden?
-Ja. Basis-SEO (titler, beskrivelser, struktur, hastighed og struktureret data) er indbygget. Standard indeholder desuden SEO og analytics-opsætning.
+Ja. Basis-SEO (titler, beskrivelser, struktur og hastighed) er indbygget. Standard indeholder desuden SEO og analytics-opsætning.
 ### Hvad er AI SEO / GEO?
 AI SEO eller GEO (Generative Engine Optimization) gør din hjemmeside nem at forstå og citere for AI-systemer som ChatGPT, Gemini, Perplexity og Google AI-oversigter.
 ### Hvor meget koster AI SEO?
@@ -1387,114 +1384,6 @@ A: Ja. Justeringer er inkluderet, indtil du er tilfreds med designet.
 
 Q: Hvem ejer hjemmesiden?
 A: Du. Domæne og kode tilhører dig, og du er ikke bundet til WebHjerte.
-
-
----
-
-# Ordliste: webdesign, SEO og AI-synlighed på almindeligt dansk
-URL: https://www.webhjerte.dk/ordliste
-
-Webbranchen elsker forkortelser. Her får du de vigtigste begreber forklaret kort og uden jargon, så du kan tage kvalificerede beslutninger om din hjemmeside.
-
-Kort svar: Ordlisten forklarer over 25 begreber inden for webdesign, SEO og AI-synlighed – fra “SEO” og “CMS” til “GEO”, “schema.org” og “llms.txt”.
-
-Begreberne er sorteret alfabetisk. Bruger du et ord, du ikke kender fra et tilbud, er du velkommen til at spørge – et godt bureau forklarer sig i et sprog, du forstår.
-
-- AEO (Answer Engine Optimization): Optimering af indhold, så det kan bruges direkte som svar i søgemaskiner og AI-assistenter. Overlapper meget med GEO.
-- AI Overviews: Googles AI-genererede opsummeringer, som vises øverst i visse søgeresultater og refererer til kilder på nettet.
-- Alt-tekst: En kort beskrivelse af et billede, som læses op af skærmlæsere og bruges af søgemaskiner til at forstå billedet.
-- Backlink: Et link fra en anden hjemmeside til din. Kvalitetslinks fra relevante sider er et tegn på troværdighed for søgemaskiner.
-- Breadcrumbs (brødkrummer): En navigationssti øverst på siden (fx Forside / Services / Webdesign), som viser, hvor du er, og hjælper søgemaskiner med at forstå strukturen.
-- Canonical-tag: En markering i sidens kode, der fortæller søgemaskiner, hvilken adresse der er den primære version af en side, så dublerede sider ikke konkurrerer.
-- CMS: Content Management System – et redigeringssystem, hvor du selv kan opdatere tekster og billeder uden at kode. WordPress er det mest udbredte.
-- Core Web Vitals: Googles målinger af brugeroplevelsen: indlæsningshastighed (LCP), respons (INP) og visuel stabilitet (CLS).
-- CTA (call-to-action): En opfordring til handling, fx “Få et gratis tilbud”. Den skal være tydelig og placeret, hvor besøgende er klar til at handle.
-- Konverteringsrate: Andelen af besøgende, der udfører en ønsket handling – fx udfylder en formular eller ringer.
-- CTR (click-through rate): Andelen af visninger i søgeresultaterne, der resulterer i klik. Titel og beskrivelse påvirker CTR.
-- Domæne: Din adresse på nettet, fx webhjerte.dk. Du lejer typisk et domæne for et år ad gangen.
-- E-E-A-T: Erfaring, ekspertise, autoritet og troværdighed – kriterier, Google bruger til at vurdere indholdskvalitet.
-- FAQPage: En type struktureret data, der markerer en side som en samling af spørgsmål og svar, så de kan forstås og vises af søgemaskiner.
-- GEO (Generative Engine Optimization): Optimering af hjemmesidens indhold og tekniske opsætning, så den bliver nævnt og citeret i svar fra ChatGPT, Gemini, Perplexity og andre AI-systemer.
-- Google Search Console: Googles gratis værktøj, der viser, hvilke søgninger din hjemmeside vises på, hvor mange klik den får, og hvilke tekniske fejl der findes.
-- Google Virksomhedsprofil: Din gratis virksomhedsprofil i Google Søgning og Maps, som er afgørende for lokal synlighed.
-- Hosting: Den server, din hjemmeside ligger på, så den kan vises døgnet rundt.
-- JSON-LD: Det format, der oftest bruges til at skrive struktureret data (schema.org) i en hjemmesides kode.
-- Landingside: En enkelt side bygget til ét formål, fx at få besøgende fra en annonce til at kontakte dig.
-- llms.txt: En tekstfil på roden af hjemmesiden, der giver sprogmodeller et overskueligt resumé af virksomheden og dens vigtigste sider.
-- Lokal SEO: Søgemaskineoptimering målrettet søgninger med lokal hensigt, som “webbureau Horsens”. Omfatter bl.a. Google Virksomhedsprofil og lokale oplysninger.
-- Meta-beskrivelse: Den korte tekst under titlen i søgeresultaterne. Den påvirker, om folk klikker, men ikke direkte placeringen.
-- Responsivt design: Design, der automatisk tilpasser sig skærmstørrelsen, så siden fungerer på mobil, tablet og computer.
-- robots.txt: En fil, der fortæller søgemaskiner og andre crawlere, hvilke dele af hjemmesiden de må læse.
-- Schema.org: Et fælles ordforråd til at beskrive indhold (virksomhed, produkt, FAQ, artikel) i en form, maskiner forstår.
-- SEO: Søgemaskineoptimering – arbejdet med at få din hjemmeside til at rangere højere i søgeresultater som Google.
-- Sitemap: En liste over alle sider på hjemmesiden, som hjælper søgemaskiner med at finde og indeksere dem.
-- SSL / https: Et certifikat, der krypterer forbindelsen mellem besøgende og hjemmesiden. Vises som hængelås i browseren og er et krav for troværdighed.
-- UX (brugeroplevelse): Hvor nem og behagelig hjemmesiden er at bruge. God UX gør det nemt at finde information og tage kontakt.
-
----
-
-# WebHjerte: fakta om webbureauet i Horsens
-URL: https://www.webhjerte.dk/om-webhjerte
-
-Et samlet faktaark om, hvem WebHjerte er, hvad vi tilbyder, hvad det koster, og hvordan du kontakter os – skrevet, så både mennesker og AI-assistenter kan bruge det.
-
-Kort svar: WebHjerte er et lille webbureau i Horsens, drevet af webudvikler Ivan Kohan (CVR 46485823). Virksomheden bygger hjemmesider, SEO og AI-synlighed til små og mellemstore virksomheder i Horsens, Midtjylland og resten af Danmark – til fast pris fra 2.500 kr og med levering på 2–10 dage.
-
-## Kort fortalt
-Emne | Oplysning
-Navn | WebHjerte
-Type | Webbureau (webdesign, webudvikling, SEO, AI-synlighed)
-Grundlægger | Ivan Kohan, webudvikler
-CVR | 46485823
-Beliggenhed | Horsens, 8700, Midtjylland
-Arbejdsområde | Horsens, Midtjylland, Jylland og hele Danmark (online)
-Telefon | +45 42 76 05 77
-E-mail | hej@webhjerte.dk
-Hjemmeside | https://www.webhjerte.dk
-Sprog | Dansk og engelsk
-
-## Hvad tilbyder WebHjerte?
-- Hjemmesider og landingssider (fast pris fra 2.500 kr).
-- WordPress-hjemmesider og skræddersyet webudvikling.
-- Webshops fra 14.000 kr.
-- SEO og lokal SEO i Horsens og Midtjylland.
-- AI SEO og GEO – synlighed i ChatGPT, Gemini og Google AI (fra 3.500 kr).
-- Gratis SEO- og web-tjek.
-- Vedligeholdelse og support (fra 249 kr/md).
-
-## Priser og pakker (inkl. moms)
-Pakke | Pris fra | Levering | Indhold
-Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagner og annoncer
-Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
-Standard | 8.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
-Skræddersyet | 14.000 kr | Aftales | Webshop, kundeportal og specialløsninger
-
-## Garantier
-- Første designudkast inden for 48 timer efter første samtale.
-- Intet bygges, før designet er godkendt.
-- 0 kr for designet, hvis du ikke er tilfreds.
-- Domæne og kode tilhører kunden.
-- 30 dages support efter lancering.
-
-## Værdier og arbejdsmåde
-WebHjerte er bygget på en enkel idé: lokale virksomheder skal ikke vælge mellem en billig, ubrugelig hjemmeside og en dyr, langsom bureauproces. Derfor arbejder jeg med faste priser, korte forløb og direkte kontakt – du taler altid med den, der bygger din side.
-Jeg lover det, jeg kan holde, og siger ærligt fra, hvis en opgave ikke passer til mig. Det gælder fx meget store enterprise-projekter, fuldservice-reklamekampagner og garantier for placeringer i søgeresultater eller AI-svar.
-
-## Læs mere
-- Om Ivan Kohan: /om-mig
-- Portefølje og cases: /portefolje
-- Priser: /hjemmeside-pris
-- Kontakt: /kontakt
-
-## Ofte stillede spørgsmål
-Q: Hvem står bag WebHjerte?
-A: WebHjerte drives af webudvikler Ivan Kohan fra Horsens (CVR 46485823).
-
-Q: Hvor ligger WebHjerte?
-A: I Horsens (8700), Midtjylland. Kunder findes i hele Danmark.
-
-Q: Hvad koster en hjemmeside hos WebHjerte?
-A: Fra 2.500 kr inkl. moms for en landingside. Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyet fra 14.000 kr.
 
 
 ---

@@ -19,7 +19,7 @@ const cards = [
     href: "/geo-ai-synlighed",
     tag: "AI-synlighed",
     title: "Bliv nævnt i ChatGPT og Google AI",
-    text: "Svar-først-indhold, struktureret data og llms.txt, så AI-assistenter forstår og anbefaler din virksomhed.",
+    text: "Tekster, der svarer direkte på kundernes spørgsmål – og en opsætning, så ChatGPT og Google forstår, hvad du laver, og anbefaler dig.",
   },
   {
     href: "/ai-seo",

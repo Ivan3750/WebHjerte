@@ -83,8 +83,6 @@
 - [Hjemmeside til saloner](https://www.webhjerte.dk/hjemmeside-til-saloner): Hjemmeside til frisørsaloner, skønhedssaloner og barbers: online booking, prisliste og billeder, der fylder kalenderen. Praktiske råd til saloner.
 - [AI-synlighed (GEO)](https://www.webhjerte.dk/geo-ai-synlighed): Sådan bliver din virksomhed nævnt i ChatGPT, Google AI Overviews, Gemini og Perplexity. Praktisk GEO til lokale virksomheder.
 - [Ofte stillede spørgsmål](https://www.webhjerte.dk/ofte-stillede-spoergsmaal): Svar på de mest stillede spørgsmål om hjemmesider hos WebHjerte: priser, tid, ejerskab, WordPress, SEO, AI-synlighed og samarbejde.
-- [Ordliste](https://www.webhjerte.dk/ordliste): Forstå fagudtrykkene: SEO, GEO, schema.org, CMS, responsivt design, Core Web Vitals, llms.txt og mere. Forklaret i et enkelt sprog.
-- [Om WebHjerte – fakta](https://www.webhjerte.dk/om-webhjerte): Fakta om WebHjerte: webbureau i Horsens, grundlagt af Ivan Kohan. CVR, kontaktoplysninger, priser, garantier, værdier og arbejdsområde samlet på én side.
 
 ## Guides
 - [Sådan bliver din virksomhed nævnt af ChatGPT og Google AI](https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai): Praktisk guide til lokale virksomheder: 12 konkrete tiltag, der gør din hjemmeside nem at citere for ChatGPT, Google AI Overviews, Gemini og Perplexity.

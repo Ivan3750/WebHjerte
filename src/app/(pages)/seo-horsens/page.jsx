@@ -60,7 +60,7 @@ const sections = [
     bullets: [
       "Gratis SEO- og web-tjek, der afdækker de vigtigste problemer og muligheder",
       "Søgeordsanalyse tilpasset din branche og dit lokalområde",
-      "Teknisk SEO: hastighed, mobilvisning, struktureret data, sitemap og indeksering",
+      "Teknisk SEO: hastighed, mobilvisning, sitemap og at Google kan finde alle dine sider",
       "On-page SEO: titler, beskrivelser, overskrifter og interne links",
       "Lokal SEO: Google Virksomhedsprofil, lokale oplysninger og konsistente kontaktdata",
       "Indhold, der besvarer dine kunders spørgsmål og styrker din troværdighed",
@@ -76,7 +76,7 @@ const sections = [
   {
     h2: "SEO og AI-søgning",
     paragraphs: [
-      "Flere og flere finder svar via AI-assistenter og AI-oversigter i søgeresultaterne. Derfor bygger jeg også hjemmesider, så de er lette for både Google og AI at forstå: tydelig struktur, klare svar og korrekt struktureret data. Læs mere om AI SEO nedenfor.",
+      "Flere og flere finder svar via AI-assistenter og AI-oversigter i søgeresultaterne. Derfor bygger jeg også hjemmesider, så de er lette for både Google og AI at forstå: tydelig struktur, klare svar og korrekte oplysninger om din virksomhed. Læs mere om AI SEO nedenfor.",
     ],
   },
   {
@@ -114,7 +114,7 @@ const sections = [
       "Titler som “Forside” eller kun firmanavnet.",
       "Langsom mobilside med tunge billeder.",
       "Manglende eller forkert Google Virksomhedsprofil.",
-      "Ingen interne links og ingen struktureret data.",
+      "Ingen interne links mellem siderne.",
       "Ingen måling – man ved ikke, hvad der virker.",
     ],
     cta: { href: "/blog/seo-tjekliste-lokale-virksomheder", label: "Gå SEO-tjeklisten igennem" },

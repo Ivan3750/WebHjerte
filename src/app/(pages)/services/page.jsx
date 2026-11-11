@@ -131,6 +131,49 @@ const niches = [
   { href: "/hjemmeside-til-tomrer", title: "Tømrere", desc: "Vis dine projekter og bliv fundet af private og erhverv." },
 ];
 
+const areas = [
+  { href: "/webdesign-horsens", title: "Horsens", desc: "Webdesign og hjemmesider til virksomheder i Horsens." },
+  { href: "/seo-horsens", title: "SEO i Horsens", desc: "Bliv fundet, når kunder i Horsens søger efter dig." },
+  { href: "/webbureau-aarhus", title: "Aarhus", desc: "Hjemmesider til fast pris til virksomheder i Aarhus." },
+  { href: "/webbureau-vejle", title: "Vejle", desc: "Hjemmesider til virksomheder i Vejle og omegn." },
+  { href: "/webbureau-midtjylland", title: "Midtjylland", desc: "Silkeborg, Skanderborg, Hedensted og resten af regionen." },
+  { href: "/webbureau-jylland", title: "Hele Jylland", desc: "Fra Skagen til Kolding – alt foregår online." },
+];
+
+const moreServices = [
+  { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
+  { href: "/shopify-hjemmeside", label: "Shopify-webshop" },
+  { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
+  { href: "/wordpress-horsens", label: "WordPress i Horsens" },
+  { href: "/digitalt-bureau-horsens", label: "Digitalt bureau Horsens" },
+  { href: "/ai-seo", label: "AI SEO" },
+  { href: "/geo-ai-synlighed", label: "Synlighed i ChatGPT" },
+  { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
+  { href: "/ai-automatisering-virksomhed", label: "AI-automatisering" },
+  { href: "/gratis-seo-tjek-horsens", label: "Gratis SEO-tjek" },
+  { href: "/partner", label: "Partnerskab" },
+];
+
+const LinkCards = ({ items }) => (
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {items.map((item, i) => (
+      <FadeUp key={item.href} delay={(i % 3) * 0.07}>
+        <Link href={item.href} className="block h-full">
+          <SpotlightCard dark={false} className="h-full rounded-3xl bg-[#f7f6f6] border border-[#eeecec] hover:border-[#00a8e8]/40 transition-colors">
+            <div className="p-6 sm:p-7 flex flex-col gap-3 h-full">
+              <div className="flex items-center justify-between">
+                <p className="text-[16px] font-semibold text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
+                <ArrowIcon className="w-4 h-4 text-[#b0aeae] group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" />
+              </div>
+              <p className="text-[13px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
+            </div>
+          </SpotlightCard>
+        </Link>
+      </FadeUp>
+    ))}
+  </div>
+);
+
 const Services = () => {
   return (
     <>
@@ -151,26 +194,23 @@ const Services = () => {
       <AfterLaunchBlock />
       <SupportTariffsBlock />
 
-      {/* Niche landing pages */}
-      <section className="scene bg-[#eceeee] border-t border-[#eeecec]">
+      {/* Brancher og områder – ikke i menuen, men samlet her */}
+      <section id="brancher" className="scene bg-[#eceeee] border-t border-[#eeecec] scroll-mt-[68px]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-          <SectionHead eyebrow="Hjemmesider til din branche" lines={["Se hvad jeg kan lave", "for din virksomhed"]} className="mb-10 sm:mb-14" />
+          <SectionHead eyebrow="Til din branche" lines={["Se hvad jeg kan lave", "for din virksomhed"]} className="mb-10 sm:mb-14" />
+          <LinkCards items={niches} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {niches.map((item, i) => (
-              <FadeUp key={item.href} delay={(i % 3) * 0.07}>
-                <Link href={item.href} className="block h-full">
-                  <SpotlightCard dark={false} className="h-full rounded-3xl bg-[#f7f6f6] border border-[#eeecec] hover:border-[#00a8e8]/40 transition-colors">
-                    <div className="p-6 sm:p-7 flex flex-col gap-3 h-full">
-                      <div className="flex items-center justify-between">
-                        <p className="text-[16px] font-semibold text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
-                        <ArrowIcon className="w-4 h-4 text-[#b0aeae] group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" />
-                      </div>
-                      <p className="text-[13px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
-                    </div>
-                  </SpotlightCard>
-                </Link>
-              </FadeUp>
+          <div id="omraader" className="scroll-mt-[90px] mt-16 sm:mt-24">
+            <SectionHead eyebrow="I dit område" lines={["Lokal hjælp –", "uanset hvor du er"]} className="mb-10 sm:mb-14" />
+            <LinkCards items={areas} />
+          </div>
+
+          <div className="mt-16 pt-8 border-t border-[#dcdede] flex flex-wrap items-center gap-2.5">
+            <span className="text-[12px] text-[#5a5a5a] mr-1">Flere ydelser:</span>
+            {moreServices.map((l) => (
+              <Link key={l.href} href={l.href} className="text-[12.5px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-2 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors">
+                {l.label}
+              </Link>
             ))}
           </div>
         </div>

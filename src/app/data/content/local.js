@@ -85,7 +85,7 @@ export const localPages = [
           "Første designudkast inden for 48 timer, og 0 kr for designet, hvis det ikke passer.",
           "Typisk levering på 2–10 dage afhængigt af pakke.",
           "SEO, mobiloptimering og hurtig indlæsning bygget ind fra første dag.",
-          "Struktureret data og indhold, der også kan findes i AI-søgning (ChatGPT, Google AI).",
+          "Indhold, der også bliver fundet, når kunder spørger ChatGPT eller Googles AI.",
           "Domæne og kode tilhører dig – ingen bindinger.",
           "30 dages support efter lancering og herefter vedligeholdelse fra 249 kr/md.",
         ],
@@ -191,7 +191,7 @@ export const localPages = [
           { title: "Ydelse + bydel", tag: "Præcis", text: "'Frisør Aarhus C', 'tømrer Viby J'. Jo mere præcis søgningen er, jo tættere på et køb er kunden." },
           { title: "I nærheden – lige nu", tag: "Mobil", text: "Mange søger på farten. Åbningstider, adresse og et telefonnummer, der kan trykkes på, afgør, om de vælger dig." },
           { title: "Sammenligning", tag: "Mange valg", text: "Kunden har flere faner åbne. Tydelige priser, anmeldelser og billeder af dit arbejde gør dig til det lette valg." },
-          { title: "Spørgsmål til AI", tag: "Nyt", text: "Flere spørger ChatGPT eller Googles AI om anbefalinger. Klare svar og struktureret data øger chancen for at blive nævnt." },
+          { title: "Spørgsmål til AI", tag: "Nyt", text: "Flere spørger ChatGPT eller Googles AI om anbefalinger. Klare svar på din hjemmeside og en opdateret Google-profil øger chancen for at blive nævnt." },
         ],
       },
       {
@@ -338,7 +338,7 @@ export const localPages = [
         bullets: [
           "Fast pris og aftalt tidsplan.",
           "Responsivt design, der virker på mobil, tablet og desktop.",
-          "Basis-SEO og struktureret data i alle pakker.",
+          "Basis-SEO i alle pakker, så Google forstår din side.",
           "Kontaktformularer, Google Maps og klik-for-at-ringe.",
           "30 dages support efter lancering.",
           "Mulighed for WordPress, hvis du selv vil redigere indholdet.",
@@ -388,7 +388,7 @@ export const localPages = [
         bullets: [
           "Skræddersyet design – ikke en uændret skabelon.",
           "Hurtig opsætning med fokus på ydeevne (billedoptimering, caching, minimal plugin-brug).",
-          "SEO-opsætning: titler, beskrivelser, sitemap, struktureret data og lokal SEO.",
+          "SEO-opsætning: titler, beskrivelser, sitemap og lokal SEO.",
           "Responsivt design til mobil og tablet.",
           "Sikkerhed: opdateringer, sikre log-ind-regler og backup-opsætning.",
           "Kort introduktion, så du ved, hvordan du redigerer siden.",
@@ -421,7 +421,7 @@ export const localPages = [
       {
         h2: "WordPress og SEO",
         paragraphs: [
-          "WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter, struktureret data og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.",
+          "WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.",
         ],
       },
     ],
