@@ -7,31 +7,91 @@ import { usePathname } from "next/navigation";
 import W from "../../../public/W.png";
 
 /**
- * Menustruktur – enkel, så en kunde uden teknisk viden kan finde rundt.
+ * Menustruktur: Services (hjemmesider + lokalt), AI, Brancher, Priser, Portefølje, Blog og Om.
  * Et punkt er enten et direkte link ({ href }) eller en gruppe med undermenu ({ columns }).
- * Branche- og bysider ligger ikke i menuen; de findes på /services og i footeren.
+ * Branche-, by- og AI-sider ligger i hver sin undermenu.
  */
 const navItems = [
   {
-    label: "Hjemmesider",
+    label: "Services",
     columns: [
       {
-        title: "Hvad har du brug for?",
+        title: "Hjemmesider",
         links: [
-          { href: "/hjemmeside-til-virksomhed", label: "Ny hjemmeside", desc: "En professionel side til din virksomhed" },
-          { href: "/webshop-hjemmeside", label: "Webshop", desc: "Sælg dine varer online" },
-          { href: "/wordpress-hjemmeside", label: "WordPress", desc: "En side, du selv kan redigere" },
-          { href: "/hosting-og-vedligeholdelse", label: "Drift og vedligehold", desc: "Jeg passer siden for dig hver måned" },
-          { href: "/services", label: "Alle ydelser", desc: "Overblik, brancher og områder" },
+          { href: "/services", label: "Alle services" },
+          { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
+          { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
+          { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
+          { href: "/shopify-hjemmeside", label: "Shopify-hjemmeside" },
+          { href: "/webshop-hjemmeside", label: "Webshop" },
+          { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
+          { href: "/hosting-og-vedligeholdelse", label: "Hosting og vedligeholdelse" },
+        ],
+      },
+      {
+        title: "Lokalt",
+        links: [
+          { href: "/webdesign-horsens", label: "Webdesign Horsens" },
+          { href: "/seo-horsens", label: "SEO Horsens" },
+          { href: "/wordpress-horsens", label: "WordPress Horsens" },
+          { href: "/digitalt-bureau-horsens", label: "Digitalt bureau Horsens" },
+          { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
+          { href: "/webbureau-vejle", label: "Webbureau Vejle" },
+          { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
+          { href: "/webbureau-jylland", label: "Webbureau Jylland" },
         ],
       },
     ],
   },
-  { href: "/ai-loesninger", label: "AI" },
+  {
+    label: "AI",
+    columns: [
+      {
+        title: "AI til din virksomhed",
+        links: [
+          { href: "/ai-loesninger", label: "AI-løsninger" },
+          { href: "/ai-seo", label: "AI SEO" },
+          { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
+          { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
+          { href: "/ai-automatisering-virksomhed", label: "AI-automatisering" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Brancher",
+    columns: [
+      {
+        title: "Hjemmeside til",
+        links: [
+          { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
+          { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
+          { href: "/hjemmeside-til-saloner", label: "Saloner" },
+          { href: "/hjemmeside-til-vvs", label: "VVS" },
+          { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
+          { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
+        ],
+      },
+    ],
+  },
   { href: "/hjemmeside-pris", label: "Priser" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/blog", label: "Blog" },
-  { href: "/om-mig", label: "Om mig" },
+  {
+    label: "Om",
+    columns: [
+      {
+        title: "Om WebHjerte",
+        links: [
+          { href: "/om-mig", label: "Om mig" },
+          { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
+          { href: "/freelancer-vs-bureau", label: "Freelancer vs. bureau" },
+          { href: "/partner", label: "Partnerskab" },
+          { href: "/kontakt", label: "Kontakt" },
+        ],
+      },
+    ],
+  },
 ];
 
 const isActivePath = (pathname, href) =>
