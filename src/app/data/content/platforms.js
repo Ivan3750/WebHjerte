@@ -187,6 +187,12 @@ export const platformPages = [
   {
     slug: "ai-loesninger",
     type: "service",
+    variant: "ai",
+    facts: [
+      { num: "24/7", label: "Svar til dine kunder" },
+      { num: "3.500 kr", label: "AI SEO fra" },
+      { num: "24 timer", label: "Til fast tilbud" },
+    ],
     title: "AI-løsninger til små virksomheder | WebHjerte",
     description:
       "AI i din virksomhed: chatbot på hjemmesiden, automatisk booking og kundeservice, lead-kvalificering og synlighed i ChatGPT og Google.",

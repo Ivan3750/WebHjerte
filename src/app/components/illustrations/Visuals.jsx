@@ -512,3 +512,308 @@ export function VisualCode() {
     </div>
   );
 }
+
+/* ───────────── Flere illustrationer (AI, lokal, webshop, drift, redigering) ───────────── */
+
+const Icon = ({ d, className = "w-4 h-4" }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+    <path d={d} />
+  </svg>
+);
+
+export const ICONS = {
+  mail: "M3 6h18v12H3zM3 7l9 6 9-6",
+  spark: "M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4zM18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z",
+  calendar: "M4 6h16v14H4zM4 10h16M8 3v4M16 3v4",
+  cart: "M3 4h2l2.4 11h11L21 8H6.2M9 20h.01M18 20h.01",
+  card: "M3 6h18v12H3zM3 10h18M7 15h4",
+  box: "M4 8l8-4 8 4v8l-8 4-8-4zM4 8l8 4 8-4M12 12v8",
+  pin: "M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21zM12 12a2.5 2.5 0 100-5 2.5 2.5 0 000 5z",
+  shield: "M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z",
+  refresh: "M20 11a8 8 0 00-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0014.5 4.5L20 16M20 20v-4h-4",
+  bolt: "M13 3L5 13h6l-1 8 8-10h-6z",
+  check: "M5 12.5l4.5 4.5L19 7",
+  pencil: "M4 20h4L19 9l-4-4L4 16zM14 6l4 4",
+  phone: "M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2C10 21 3 14 3 6a2 2 0 012-2z",
+  star: "M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z",
+};
+
+/** Henvendelse → AI → kalender: tre trin med en prik, der løber igennem. */
+export function VisualFlow({ steps = [["mail", "Ny besked"], ["spark", "AI svarer"], ["calendar", "Booket"]] }) {
+  return (
+    <div className="absolute inset-0 flex items-center justify-center px-4">
+      <div className="relative w-full max-w-[300px] flex items-start justify-between">
+        <div className="absolute left-[16%] right-[16%] top-[22px] border-t border-dashed border-[var(--v-line)]" />
+        <motion.span
+          aria-hidden
+          initial={{ left: "16%", opacity: 0 }}
+          whileInView={{ left: ["16%", "84%"], opacity: [0, 1, 1, 0] }}
+          viewport={inView}
+          transition={{ duration: 2.2, repeat: Infinity, repeatDelay: 0.6, ease: "easeInOut" }}
+          className="absolute top-[18px] w-2 h-2 -ml-1 rounded-full bg-[#00a8e8] shadow-[0_0_12px_2px_rgba(0,168,232,0.6)]"
+        />
+        {steps.map(([icon, label], i) => (
+          <motion.div
+            key={label}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={inView}
+            transition={{ delay: 0.1 + i * 0.15, duration: 0.7, ease }}
+            className="relative flex flex-col items-center gap-2 w-1/3"
+          >
+            <span
+              className={`w-11 h-11 rounded-xl flex items-center justify-center ${
+                i === 1 ? "bg-[#00a8e8] text-white" : i === steps.length - 1 ? "bg-[#3ddc97] text-white" : `${card} text-[var(--v-ink)]`
+              }`}
+            >
+              <Icon d={ICONS[icon]} />
+            </span>
+            <span className="text-[10px] text-[var(--v-ink)] text-center leading-tight">{label}</span>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Et AI-svar, der anbefaler "din virksomhed" – til AI-synlighed/GEO. */
+export function VisualAiAnswer({ q = "Bedste tømrer i Horsens?", name = "Din virksomhed" }) {
+  return (
+    <div className="absolute inset-0 flex flex-col justify-center gap-2 px-5">
+      <motion.div
+        initial={{ opacity: 0, y: 8 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={inView}
+        transition={{ duration: 0.6, ease }}
+        className={`self-end rounded-2xl rounded-br-sm px-3 py-2 text-[10.5px] text-[var(--v-ink)] ${card}`}
+      >
+        {q}
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={inView}
+        transition={{ delay: 0.5, duration: 0.7, ease }}
+        className={`rounded-2xl rounded-bl-sm p-3 ${card}`}
+      >
+        <p className="flex items-center gap-1.5 text-[9px] uppercase tracking-[0.12em] text-[var(--v-muted)] mb-2">
+          <span className="text-[#00a8e8]">
+            <Icon d={ICONS.spark} className="w-3 h-3" />
+          </span>
+          AI-svar
+        </p>
+        <div className="flex items-center gap-2 rounded-lg bg-[#00a8e8]/10 px-2 py-1.5 mb-1.5">
+          <span className="w-4 h-4 rounded-md bg-[#00a8e8] text-white text-[8px] font-semibold flex items-center justify-center">1</span>
+          <span className="text-[10.5px] font-semibold text-[var(--v-ink)]">{name}</span>
+          <span className="ml-auto flex text-[#f0a63a]">
+            {[0, 1, 2, 3, 4].map((i) => (
+              <Icon key={i} d={ICONS.star} className="w-2.5 h-2.5" />
+            ))}
+          </span>
+        </div>
+        <div className="h-1.5 w-11/12 rounded bg-[var(--v-bar)] mb-1" />
+        <div className="h-1.5 w-2/3 rounded bg-[var(--v-bar)]" />
+      </motion.div>
+    </div>
+  );
+}
+
+/** Stiliseret kort over Midtjylland med en pulserende nål – til lokale sider. */
+export function VisualMapPin({ main = "Horsens", others = [["Aarhus", 72, 22], ["Vejle", 30, 76], ["Silkeborg", 22, 26], ["Skanderborg", 58, 40]] }) {
+  return (
+    <div className="absolute inset-0">
+      <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 w-full h-full" aria-hidden>
+        <path d="M-10 150 C 60 120, 90 170, 150 140 S 250 110, 310 130" stroke="var(--v-line)" strokeWidth="1.5" fill="none" />
+        <path d="M-10 60 C 70 80, 120 30, 190 55 S 270 40, 310 20" stroke="var(--v-line)" strokeWidth="1.5" fill="none" />
+        <path d="M120 -10 C 110 60, 160 110, 140 210" stroke="var(--v-line)" strokeWidth="1.5" fill="none" strokeDasharray="4 4" />
+      </svg>
+      {others.map(([label, x, y], i) => (
+        <motion.span
+          key={label}
+          initial={{ opacity: 0, scale: 0.6 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={inView}
+          transition={{ delay: 0.3 + i * 0.1, duration: 0.5 }}
+          className="absolute flex items-center gap-1 text-[9.5px] text-[var(--v-muted)]"
+          style={{ left: `${x}%`, top: `${y}%` }}
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-[var(--v-muted)]" />
+          {label}
+        </motion.span>
+      ))}
+      <div className="absolute left-1/2 top-[56%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+        <span className="absolute top-[22px] w-16 h-16 -mt-8 rounded-full bg-[#00a8e8]/15 animate-ping" />
+        <motion.span
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={inView}
+          transition={{ type: "spring", stiffness: 260, damping: 14 }}
+          className="relative text-[#00a8e8]"
+        >
+          <svg viewBox="0 0 24 24" className="w-9 h-9" fill="currentColor" aria-hidden>
+            <path d="M12 22s-7.5-6.6-7.5-12.2a7.5 7.5 0 0115 0C19.5 15.4 12 22 12 22z" />
+            <circle cx="12" cy="9.8" r="2.8" fill="#fff" />
+          </svg>
+        </motion.span>
+        <span className={`relative mt-1 text-[10px] font-semibold rounded-full px-2.5 py-1 text-[var(--v-ink)] ${card}`}>{main}</span>
+      </div>
+    </div>
+  );
+}
+
+/** Kurv → betaling → pakke sendt. */
+export function VisualCheckout() {
+  const steps = [
+    ["cart", "Kurv", "2 varer"],
+    ["card", "Betaling", "MobilePay"],
+    ["box", "Sendt", "GLS · i morgen"],
+  ];
+  return (
+    <div className="absolute inset-0 flex items-center justify-center px-4">
+      <div className="flex items-center gap-1.5 w-full max-w-[320px]">
+        {steps.map(([icon, label, sub], i) => (
+          <div key={label} className="contents">
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={inView}
+              transition={{ delay: 0.15 + i * 0.25, duration: 0.7, ease }}
+              className={`flex-1 rounded-xl p-2.5 ${card} ${i === 2 ? "!border-[#3ddc97]" : ""}`}
+            >
+              <span className={`w-7 h-7 rounded-lg flex items-center justify-center mb-2 ${i === 2 ? "bg-[#3ddc97] text-white" : "bg-[#00a8e8]/[0.12] text-[#00a8e8]"}`}>
+                <Icon d={ICONS[icon]} className="w-3.5 h-3.5" />
+              </span>
+              <p className="text-[10.5px] font-semibold text-[var(--v-ink)] leading-tight">{label}</p>
+              <p className="text-[9px] text-[var(--v-muted)] leading-tight mt-0.5">{sub}</p>
+            </motion.div>
+            {i < steps.length - 1 && <span className="text-[var(--v-muted)] text-[10px] shrink-0">›</span>}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Teksten på siden skifter, mens man skriver – "du kan selv rette". */
+export function VisualEditor({ from = "Åbent 8–16", to = "Åbent 7–17" }) {
+  return (
+    <div className="absolute inset-0 flex items-center justify-center px-5">
+      <div className={`w-full max-w-[290px] rounded-xl overflow-hidden ${card} shadow-[0_14px_40px_-18px_rgba(0,0,0,0.3)]`}>
+        <div className="flex items-center gap-2 px-3 py-1.5 border-b border-[var(--v-line)]">
+          <span className="text-[#00a8e8]">
+            <Icon d={ICONS.pencil} className="w-3 h-3" />
+          </span>
+          <span className="text-[9.5px] text-[var(--v-muted)]">Rediger side</span>
+          <motion.span
+            initial={{ backgroundColor: "rgba(0,168,232,1)" }}
+            whileInView={{ backgroundColor: ["rgba(0,168,232,1)", "rgba(61,220,151,1)"] }}
+            viewport={inView}
+            transition={{ delay: 2.2, duration: 0.3 }}
+            className="ml-auto text-[9px] text-white rounded-full px-2.5 py-0.5"
+          >
+            Gem
+          </motion.span>
+        </div>
+        <div className="p-3">
+          <div className="h-2 w-3/5 rounded bg-[var(--v-ink)] mb-2.5" />
+          <div className="relative h-6 rounded-md border border-[#00a8e8] px-2 flex items-center overflow-hidden">
+            <motion.span
+              initial={{ opacity: 1 }}
+              whileInView={{ opacity: [1, 1, 0] }}
+              viewport={inView}
+              transition={{ duration: 1.4, times: [0, 0.7, 1] }}
+              className="absolute left-2 text-[10.5px] text-[var(--v-ink)]"
+            >
+              {from}
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: [0, 1] }}
+              viewport={inView}
+              transition={{ delay: 1.4, duration: 0.4 }}
+              className="absolute left-2 text-[10.5px] text-[var(--v-ink)] font-medium"
+            >
+              {to}
+              <span className="inline-block w-px h-3 bg-[#00a8e8] ml-0.5 align-middle animate-pulse" />
+            </motion.span>
+          </div>
+          <div className="h-1.5 w-full rounded bg-[var(--v-bar)] mt-2.5 mb-1" />
+          <div className="h-1.5 w-4/5 rounded bg-[var(--v-bar)]" />
+          <motion.p
+            initial={{ opacity: 0, y: 4 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={inView}
+            transition={{ delay: 2.5, duration: 0.5 }}
+            className="mt-2.5 flex items-center gap-1.5 text-[9.5px] text-[#1f9d6b]"
+          >
+            <Icon d={ICONS.check} className="w-3 h-3" /> Opdateret på siden
+          </motion.p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** Månedlig driftsrapport: backup, opdateringer, hastighed. */
+export function VisualReport() {
+  const rows = [
+    ["shield", "Sikkerhedstjek", "OK"],
+    ["refresh", "Opdateringer", "12 stk."],
+    ["box", "Backup", "30/30"],
+    ["bolt", "Hastighed", "98"],
+  ];
+  return (
+    <div className="absolute inset-0 flex items-center justify-center px-5">
+      <div className={`w-full max-w-[260px] rounded-xl p-3 ${card}`}>
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-[10px] font-semibold text-[var(--v-ink)]">Rapport · november</span>
+          <span className="text-[9px] text-[#1f9d6b] bg-[#3ddc97]/15 rounded-full px-2 py-0.5">Alt grønt</span>
+        </div>
+        {rows.map(([icon, label, val], i) => (
+          <motion.div
+            key={label}
+            initial={{ opacity: 0, x: 10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={inView}
+            transition={{ delay: 0.15 + i * 0.12, duration: 0.5, ease }}
+            className="flex items-center gap-2 py-1.5 border-t border-[var(--v-line)]"
+          >
+            <span className="text-[#3ddc97]">
+              <Icon d={ICONS[icon]} className="w-3.5 h-3.5" />
+            </span>
+            <span className="text-[10px] text-[var(--v-ink)]">{label}</span>
+            <span className="ml-auto text-[10px] tabular-nums text-[var(--v-muted)]">{val}</span>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Ur-ikon med "timer sparet" – til automatisering. */
+export function VisualHoursSaved({ hours = 6 }) {
+  return (
+    <div className="absolute inset-0 flex items-center justify-center gap-4 px-5">
+      <div className="flex items-end gap-1.5 h-[90px]">
+        {[70, 62, 55, 40, 30, 22].map((h, i) => (
+          <motion.span
+            key={i}
+            initial={{ scaleY: 0 }}
+            whileInView={{ scaleY: 1 }}
+            viewport={inView}
+            transition={{ delay: 0.1 + i * 0.08, duration: 0.7, ease }}
+            style={{ height: `${h}%`, transformOrigin: "bottom" }}
+            className={`w-3.5 rounded-t-md ${i >= 3 ? "bg-[#3ddc97]" : "bg-[var(--v-bar)]"}`}
+          />
+        ))}
+      </div>
+      <div className="leading-none">
+        <p className="text-[30px] font-semibold text-[var(--v-ink)] tracking-tight">
+          {hours}
+          <span className="text-[13px] font-normal text-[var(--v-muted)]"> t</span>
+        </p>
+        <p className="text-[10px] text-[var(--v-muted)] mt-1.5">sparet pr. uge</p>
+      </div>
+    </div>
+  );
+}

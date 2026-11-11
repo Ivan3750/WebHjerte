@@ -1,4 +1,3 @@
-import { ArrowIcon } from "./components/ui/ArrowIcon";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import HomeHero from "./components/home/HomeHero";
@@ -10,7 +9,7 @@ import TrustStrip from "./components/home/TrustStrip";
 import AiFocus from "./components/home/AiFocus";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
-import SpotlightCard from "./components/home/fx/SpotlightCard";
+import { Panel, VisualDesign, VisualDashboard, VisualMapPin, VisualPrice } from "./components/illustrations/Visuals";
 
 // Sektioner under første skærm kodesplittes, så den første hydrering på mobil bliver kortere (lavere TBT)
 const BuildStory = dynamic(() => import("./components/home/BuildStory"));
@@ -75,21 +74,25 @@ const localLinks = [
   {
     href: "/webdesign-horsens",
     title: "Webdesign Horsens",
+    visual: <VisualDesign />,
     desc: "Skræddersyet design, der bygger tillid og får besøgende til at handle.",
   },
   {
     href: "/seo-horsens",
     title: "SEO Horsens",
+    visual: <VisualDashboard />,
     desc: "Bliv fundet af kunder, der søger efter dig lokalt på Google.",
   },
   {
     href: "/webbureau-midtjylland",
     title: "Webbureau Midtjylland",
+    visual: <VisualMapPin />,
     desc: "Hjemmesider til virksomheder i Aarhus, Silkeborg, Vejle og hele regionen.",
   },
   {
     href: "/hjemmeside-pris",
     title: "Hjemmeside priser",
+    visual: <VisualPrice />,
     desc: "Faste priser fra 2.500 kr inkl. moms og prisberegner – ingen skjulte gebyrer.",
   },
 ];
@@ -160,19 +163,20 @@ export default function Home() {
               </FadeUp>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 content-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 content-start">
               {localLinks.map((item, i) => (
-                <FadeUp key={item.href} delay={i * 0.07}>
-                  <Link href={item.href} className="block h-full">
-                    <SpotlightCard dark={false} className="h-full rounded-2xl bg-white border border-[#e8e6e6] hover:border-[#00a8e8]/40 transition-colors">
-                      <div className="p-5 flex flex-col gap-2 h-full">
-                        <p className="flex items-center justify-between text-[14px] font-medium text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">
-                          {item.title}
-                          <ArrowIcon className="w-4 h-4 text-[#b8b6b6] transition-all duration-300 group-hover:text-[#00a8e8] group-hover:translate-x-1" />
-                        </p>
-                        <p className="text-[12px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
-                      </div>
-                    </SpotlightCard>
+                <FadeUp key={item.href} delay={i * 0.07} className="h-full">
+                  <Link
+                    href={item.href}
+                    className="group h-full flex flex-col rounded-3xl bg-white border border-[#e8e6e6] hover:border-[#00a8e8]/50 hover:-translate-y-1 hover:shadow-[0_24px_50px_-30px_rgba(0,100,150,0.35)] transition-all duration-500"
+                  >
+                    <div className="m-2">
+                      <Panel h="h-[130px]">{item.visual}</Panel>
+                    </div>
+                    <div className="px-4 pt-2 pb-5 flex flex-col gap-1.5">
+                      <p className="text-[15px] font-semibold text-[#1c1e1e] group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
+                      <p className="text-[12.5px] text-[#6a6a6a] leading-relaxed">{item.desc}</p>
+                    </div>
                   </Link>
                 </FadeUp>
               ))}

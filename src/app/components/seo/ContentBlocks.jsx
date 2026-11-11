@@ -352,10 +352,10 @@ const AUTO = [
 const heavy = (s) => !!(s.steps || s.table || s.compare || s.cards || s.stats || (s.subs && s.subs.length > 2));
 
 /** Vælger en illustration ud fra overskriften, hvis sektionen er let nok til at have en – hver anden sektion. */
-export function autoVisual(section, idx) {
+export function autoVisual(section, idx, dense = false) {
   if (section.visual === false) return null;
   if (section.visual) return section.visual;
-  if (!section.h2 || heavy(section) || idx % 2 === 1) return null;
+  if (!section.h2 || heavy(section) || (!dense && idx % 2 === 1)) return null;
   const hit = AUTO.find(([re]) => re.test(section.h2));
   return hit ? hit[1] : null;
 }

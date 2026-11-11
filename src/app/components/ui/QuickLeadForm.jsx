@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 
+const MAX_COMMENT = 500;
+
 export default function QuickLeadForm() {
-  const [form, setForm] = useState({ name: "", phone: "", url: "", website: "" });
+  const [form, setForm] = useState({ name: "", email: "", url: "", comment: "", website: "" });
   const [status, setStatus] = useState("idle");
 
   const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
@@ -18,10 +20,10 @@ export default function QuickLeadForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
-          phone: form.phone,
+          email: form.email,
           website: form.website,
           pakke: "Quick lead",
-          message: form.url ? `Nuværende hjemmeside: ${form.url}` : "",
+          message: [form.comment.trim(), form.url && `Nuværende hjemmeside: ${form.url}`].filter(Boolean).join("\n\n"),
         }),
       });
 
@@ -46,7 +48,7 @@ export default function QuickLeadForm() {
           </svg>
         </div>
         <p className="text-[15px] font-medium text-white">Tak for din besked!</p>
-        <p className="text-[14px] text-[#a6b1b1]">Jeg ringer til dig inden for 24 timer.</p>
+        <p className="text-[14px] text-[#a6b1b1]">Jeg skriver til dig inden for 24 timer.</p>
       </div>
     );
   }
@@ -67,14 +69,15 @@ export default function QuickLeadForm() {
         className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
       />
       <input
-        name="phone"
-        type="tel"
-        autoComplete="tel"
-        aria-label="Dit telefonnummer"
+        name="email"
+        type="email"
+        autoComplete="email"
+        inputMode="email"
+        aria-label="Din e-mail"
         required
-        placeholder="Dit telefonnummer"
-        value={form.phone}
-        onChange={set("phone")}
+        placeholder="Din e-mail"
+        value={form.email}
+        onChange={set("email")}
         className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
       />
       <input
@@ -86,6 +89,29 @@ export default function QuickLeadForm() {
         onChange={set("url")}
         className="w-full bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 py-3 outline-none transition-colors"
       />
+
+      <div className="relative">
+        <textarea
+          name="comment"
+          rows={4}
+          maxLength={MAX_COMMENT}
+          aria-label="Kommentar"
+          aria-describedby="quick-lead-count"
+          placeholder="Fortæl kort, hvad du har brug for (valgfrit)"
+          value={form.comment}
+          onChange={set("comment")}
+          className="w-full resize-none bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 pt-3 pb-7 outline-none transition-colors leading-[1.6]"
+        />
+        <span
+          id="quick-lead-count"
+          aria-live="polite"
+          className={`absolute right-3 bottom-2.5 text-[11px] tabular-nums ${
+            form.comment.length >= MAX_COMMENT ? "text-[#e0678a]" : "text-[#9aa0a0]"
+          }`}
+        >
+          {form.comment.length}/{MAX_COMMENT}
+        </span>
+      </div>
 
       <input
         type="text"
@@ -108,7 +134,7 @@ export default function QuickLeadForm() {
 
       {status === "error" && (
         <p className="text-[12px] text-red-400 text-center">
-          Noget gik galt. Prøv igen eller ring til +45 42 76 05 77
+          Noget gik galt. Prøv igen eller skriv til hej@webhjerte.dk
         </p>
       )}
 

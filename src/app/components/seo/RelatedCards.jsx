@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
 import SpotlightCard from "../home/fx/SpotlightCard";
 import { ArrowBadge } from "../ui/ArrowIcon";
+import BlogCover from "./BlogCover";
 
 const ACCENTS = ["#00a8e8", "#3ddc97", "#f0a63a", "#8a8ff0", "#e0678a"];
 
@@ -86,31 +87,38 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
   );
 }
 
-/** Lyst kort til oversigter (fx blog-forsiden). `featured` giver et stort, mørkt hovedkort. */
+/** Kort til blog-oversigten: illustration øverst, kort tekst. `featured` giver et stort, mørkt hovedkort. */
 export function PostCard({ href, title, desc, tag, index = 0, featured = false, meta }) {
   const accent = ACCENTS[index % ACCENTS.length];
+  const chip = (
+    <span
+      className="inline-flex items-center gap-2 text-[10.5px] uppercase tracking-[0.12em] rounded-full px-2.5 py-1"
+      style={{ color: accent, backgroundColor: `${accent}1a` }}
+    >
+      {tag}
+    </span>
+  );
   if (featured) {
     return (
       <Link href={href} className="group block rounded-3xl overflow-hidden">
         <SpotlightCard className="rounded-3xl bg-[#1c1e1e] border border-white/10 group-hover:border-[#00a8e8]/50 transition-colors duration-500">
-          <div className="relative p-7 sm:p-12 grid md:grid-cols-[1fr_auto] gap-8 items-end">
-            <div aria-hidden className="grid-fade absolute inset-0 opacity-40" />
-            <div className="relative">
-              <span
-                className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.12em] rounded-full px-3 py-1.5 border mb-7"
-                style={{ color: accent, borderColor: `${accent}40`, backgroundColor: `${accent}14` }}
-              >
-                <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: accent }} />
-                Udvalgt · {tag}
-              </span>
-              <p className="text-[clamp(22px,2.8vw,34px)] font-semibold text-white leading-[1.2] tracking-tight max-w-[26ch] mb-4 group-hover:text-[#00a8e8] transition-colors duration-300">
+          <div className="relative p-2.5 grid md:grid-cols-[1fr_1.05fr] gap-2 items-center">
+            <div className="relative p-5 sm:p-9 order-2 md:order-1">
+              <p className="flex items-center gap-2 mb-5">
+                <span className="text-[10.5px] uppercase tracking-[0.12em] text-[#00a8e8]">Udvalgt</span>
+                {chip}
+              </p>
+              <p className="text-[clamp(22px,2.8vw,34px)] font-semibold text-white leading-[1.2] tracking-tight max-w-[22ch] mb-4 group-hover:text-[#00a8e8] transition-colors duration-300">
                 {title}
               </p>
-              <p className="readable text-[16px] text-[#a6b1b1] leading-[1.75] max-w-[58ch]">{desc}</p>
-              {meta && <p className="text-[12px] text-[#6c7a7a] mt-6">{meta}</p>}
+              <p className="readable text-[15px] text-[#a6b1b1] leading-[1.7] max-w-[46ch] line-clamp-2">{desc}</p>
+              <div className="mt-7 flex items-center gap-4">
+                <ArrowBadge tone="dark" />
+                {meta && <span className="text-[12px] text-[#6c7a7a]">{meta}</span>}
+              </div>
             </div>
-            <div className="relative hidden md:block">
-              <ArrowBadge tone="dark" size="lg" />
+            <div className="order-1 md:order-2">
+              <BlogCover href={href} category={tag} dark h="h-[220px] sm:h-[300px]" />
             </div>
           </div>
         </SpotlightCard>
@@ -119,31 +127,20 @@ export function PostCard({ href, title, desc, tag, index = 0, featured = false, 
   }
   return (
     <Link href={href} className="group block h-full rounded-3xl">
-      <SpotlightCard
-        dark={false}
-        className="h-full rounded-3xl bg-white border border-[#e8e6e6] group-hover:border-[#00a8e8]/50 group-hover:-translate-y-1 transition-all duration-500 group-hover:shadow-[0_24px_50px_-28px_rgba(0,100,150,0.35)]"
-      >
-        <div className="p-6 sm:p-7 flex flex-col h-full min-h-[230px]">
-          <div className="flex items-center justify-between mb-6">
-            <span
-              className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.12em] rounded-full px-3 py-1.5"
-              style={{ color: accent, backgroundColor: `${accent}1a` }}
-            >
-              {tag}
-            </span>
-            <span className="text-[12px] tabular-nums text-[#c4c2c2]">{String(index + 1).padStart(2, "0")}</span>
-          </div>
-          <p className="text-[16.5px] font-semibold text-[#1c1e1e] leading-[1.35] mb-3 group-hover:text-[#00a8e8] transition-colors duration-300">
-            {title}
-          </p>
-          <p className="readable text-[14.5px] text-[#4a4f50] leading-[1.7] mb-5 line-clamp-4">{desc}</p>
-          {meta && <p className="text-[12px] text-[#8a8d8d] mb-5">{meta}</p>}
+      <div className="h-full rounded-3xl bg-white border border-[#e8e6e6] group-hover:border-[#00a8e8]/50 group-hover:-translate-y-1 transition-all duration-500 group-hover:shadow-[0_24px_50px_-28px_rgba(0,100,150,0.35)] flex flex-col">
+        <div className="m-2.5">
+          <BlogCover href={href} category={tag} />
+        </div>
+        <div className="px-5 sm:px-6 pt-3 pb-6 flex flex-col flex-1">
+          <div className="mb-3">{chip}</div>
+          <p className="text-[16.5px] font-semibold text-[#1c1e1e] leading-[1.35] mb-2 group-hover:text-[#00a8e8] transition-colors duration-300">{title}</p>
+          <p className="readable text-[14px] text-[#5a5d5d] leading-[1.65] mb-5 line-clamp-2">{desc}</p>
           <div className="mt-auto flex items-center justify-between">
-            <span className="text-[12px] font-medium text-[#5a5d5d] group-hover:text-[#00a8e8] transition-colors">Læs guiden</span>
+            {meta ? <span className="text-[11.5px] text-[#8a8d8d]">{meta.split(" · ")[0]}</span> : <span className="text-[12px] font-medium text-[#5a5d5d]">Læs guiden</span>}
             <ArrowBadge size="sm" />
           </div>
         </div>
-      </SpotlightCard>
+      </div>
     </Link>
   );
 }

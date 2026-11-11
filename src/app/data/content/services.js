@@ -83,6 +83,7 @@ export const servicePages = [
   {
     slug: "hjemmeside-til-virksomhed",
     type: "service",
+    variant: "site",
     title: "Hjemmeside til virksomhed – fast pris | WebHjerte",
     description:
       "Få en professionel hjemmeside til din virksomhed: struktur, indhold, SEO og kontaktveje, der skaber henvendelser. Fra 2.500 kr og klar på 2–10 dage.",
@@ -169,6 +170,12 @@ export const servicePages = [
   {
     slug: "webshop-hjemmeside",
     type: "service",
+    variant: "shop",
+    facts: [
+      { num: "14.000 kr", label: "Webshop fra (inkl. moms)" },
+      { num: "2–4 uger", label: "Typisk leveringstid" },
+      { num: "0 kr", label: "Hvis designet ikke passer" },
+    ],
     title: "Hjemmeside med webshop – pris og løsninger | WebHjerte",
     description:
       "Hjemmeside med webshop til små virksomheder: WooCommerce, Shopify eller skræddersyet løsning. Betaling, lager og SEO. Fra 14.000 kr til fast pris.",
@@ -365,6 +372,12 @@ export const servicePages = [
   {
     slug: "hosting-og-vedligeholdelse",
     type: "service",
+    variant: "care",
+    facts: [
+      { num: "249 kr", label: "Pr. måned fra (inkl. moms)" },
+      { num: "30 dage", label: "Gratis support efter lancering" },
+      { num: "0", label: "Binding – opsig når du vil" },
+    ],
     title: "Hosting og vedligeholdelse – pris og drift | WebHjerte",
     description:
       "Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 249 kr/md, og hvad domæne og hosting koster.",
