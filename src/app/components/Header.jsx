@@ -87,6 +87,7 @@ const navItems = [
           { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
           { href: "/ordliste", label: "Ordliste" },
           { href: "/freelancer-vs-bureau", label: "Freelancer vs. bureau" },
+          { href: "/partner", label: "Partnerskab" },
           { href: "/kontakt", label: "Kontakt" },
         ],
       },

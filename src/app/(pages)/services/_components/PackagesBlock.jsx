@@ -45,7 +45,7 @@ const packages = [
   },
   {
     name: "Standard",
-    price: "7.500",
+    price: "8.500",
     popular: true,
     cta: "Kom i gang",
     href: "/kontakt?pakke=standard",
@@ -173,7 +173,7 @@ const PackagesBlock = () => {
           <div>
             <p className="text-[11px] uppercase tracking-[0.14em] text-[#00a8e8] mb-1.5">Bagefter</p>
             <p className="text-[13px] text-[#5a5a5a] leading-relaxed">
-              Vedligeholdelsesabonnement fra <strong className="text-[#1c1e1e]">195 til 395 DKK pr. måned</strong> (inkl. moms) til opdateringer, rettelser og mindre ændringer.
+              Vedligeholdelsesabonnement fra <strong className="text-[#1c1e1e]">249 til 799 DKK pr. måned</strong> (inkl. moms) til opdateringer, rettelser og mindre ændringer.
             </p>
           </div>
         </FadeUp>

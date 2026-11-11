@@ -48,7 +48,7 @@ const sections = [
         ["Freelancer", "ca. 5.000–30.000 kr", "0–400 kr/md", "Små virksomheder, der vil have hjælp uden bureau-pris"],
         ["Webbureau", "ca. 25.000–150.000+ kr", "300–2.000 kr/md", "Større virksomheder med mange interessenter"],
         ["Webshop (bureau/freelancer)", "ca. 15.000–100.000+ kr", "300–1.500 kr/md + platform", "Når du vil sælge online"],
-        ["WebHjerte", "2.500–14.000+ kr (fast pris)", "0, 195 eller 395 kr/md", "Små og mellemstore virksomheder, der vil have bureau-kvalitet til fast pris"],
+        ["WebHjerte", "2.500–14.000+ kr (fast pris)", "0, 249, 449 eller 799 kr/md", "Små og mellemstore virksomheder, der vil have bureau-kvalitet til fast pris"],
       ],
     },
     cta: { href: "#prisberegner", label: "Beregn din egen pris" },
@@ -66,7 +66,7 @@ const sections = [
       {
         h3: "Firmahjemmeside (3–8 sider)",
         paragraphs: [
-          "Den klassiske: forside, ydelser, om os, referencer og kontakt. Det er den, de fleste håndværkere, klinikker og konsulenter har brug for. Typisk pris: 8.000–40.000 kr. Hos mig: Basis 4.500 kr (3–5 sider) eller Standard 7.500 kr (op til 8 sider med SEO, analytics og booking).",
+          "Den klassiske: forside, ydelser, om os, referencer og kontakt. Det er den, de fleste håndværkere, klinikker og konsulenter har brug for. Typisk pris: 8.000–40.000 kr. Hos mig: Basis 4.500 kr (3–5 sider) eller Standard 8.500 kr (op til 8 sider med SEO, analytics og booking).",
         ],
         cta: { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
       },
@@ -125,7 +125,7 @@ const sections = [
       rows: [
         ["Domæne (.dk)", "ca. 100–200 kr/år", "Skal altid stå i dit eget navn"],
         ["Hosting", "0–500 kr/md", "Kodede sider kan ofte hostes billigt; WordPress kræver mere"],
-        ["Vedligeholdelse", "195–395 kr/md hos WebHjerte", "Opdateringer, sikkerhed, backup og små rettelser"],
+        ["Vedligeholdelse", "249–799 kr/md hos WebHjerte", "Opdateringer, sikkerhed, backup og små rettelser"],
         ["Plugins og værktøjer", "0–300 kr/md", "Fx booking, nyhedsbrev eller premium-plugins"],
       ],
     },
@@ -168,7 +168,7 @@ const sections = [
       rows: [
         ["Landingside", "2.500 kr", "1 side til kampagner eller én ydelse", "ca. 2 dage"],
         ["Basis", "4.500 kr", "3–5 sider, kontaktformular, Google Maps og basis-SEO", "ca. 5 dage"],
-        ["Standard", "7.500 kr", "Op til 8 sider, SEO, analytics, booking og 30 dages support", "ca. 10 dage"],
+        ["Standard", "8.500 kr", "Op til 8 sider, SEO, analytics, booking og 30 dages support", "ca. 10 dage"],
         ["Skræddersyet", "fra 14.000 kr", "Webshop, kundeportal, AI-chatbot eller specialfunktioner", "Aftales"],
       ],
     },
@@ -185,10 +185,10 @@ const sections = [
 ];
 
 const faqs = [
-  { q: "Hvad koster en hjemmeside til en lille virksomhed?", a: "En professionel hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr afhængigt af hvem der bygger den. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside (3–5 sider) 4.500 kr og en Standard-hjemmeside (op til 8 sider) 7.500 kr – alle inkl. moms og til fast pris." },
+  { q: "Hvad koster en hjemmeside til en lille virksomhed?", a: "En professionel hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr afhængigt af hvem der bygger den. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside (3–5 sider) 4.500 kr og en Standard-hjemmeside (op til 8 sider) 8.500 kr – alle inkl. moms og til fast pris." },
   { q: "Hvad koster det at få lavet en webshop?", a: "En webshop koster typisk 15.000–100.000+ kr plus løbende platformsgebyrer. Hos WebHjerte starter skræddersyede webshops i WooCommerce eller Shopify fra 14.000 kr inkl. moms." },
   { q: "Hvad koster en WordPress-hjemmeside?", a: "WordPress er gratis software, men design og opsætning koster typisk 8.000–50.000 kr. Hos WebHjerte starter flersidede WordPress-hjemmesider fra 4.500 kr, og du kan selv redigere indholdet." },
-  { q: "Hvad koster en hjemmeside om året?", a: "Regn med ca. 100–200 kr om året for et .dk-domæne, 0–500 kr om måneden for hosting og 195–395 kr om måneden, hvis du vil have vedligeholdelse. For en lille virksomhed lander det typisk på 2.500–6.000 kr om året." },
+  { q: "Hvad koster en hjemmeside om året?", a: "Regn med ca. 100–200 kr om året for et .dk-domæne, 0–500 kr om måneden for hosting og 249–799 kr om måneden, hvis du vil have vedligeholdelse. For en lille virksomhed lander det typisk på 2.500–6.000 kr om året." },
   { q: "Er prisen fast, eller betaler jeg pr. time?", a: "Hos WebHjerte er prisen fast. Du får et skriftligt tilbud, før arbejdet starter, og betaler ikke mere, medmindre du selv ønsker flere sider eller funktioner." },
   { q: "Hvor hurtigt kan jeg få et tilbud?", a: "Du får et konkret tilbud inden for 24 timer og et første designudkast inden for 48 timer efter vores samtale – og betaler 0 kr for designet, hvis det ikke passer." },
 ];
@@ -213,7 +213,7 @@ export default function HvadKosterEnHjemmesidePage() {
       eyebrow="Guide · Priser · 10 min. læsning"
       h1="Hvad koster en hjemmeside i 2026? Priser, eksempler og prisberegner"
       intro="Rigtige tal i stedet for “det kommer an på”. Hvad en hjemmeside koster hos en hjemmesidebygger, en freelancer og et bureau – og hvad den koster hos mig."
-      summary="En hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr hos en freelancer og 25.000–150.000 kr hos et webbureau. En webshop koster typisk 15.000–100.000+ kr. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside 4.500 kr, en Standard-hjemmeside 7.500 kr og webshops eller skræddersyede løsninger fra 14.000 kr – alle til fast pris inkl. moms. Løbende udgifter er typisk 2.500–6.000 kr om året."
+      summary="En hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr hos en freelancer og 25.000–150.000 kr hos et webbureau. En webshop koster typisk 15.000–100.000+ kr. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside 4.500 kr, en Standard-hjemmeside 8.500 kr og webshops eller skræddersyede løsninger fra 14.000 kr – alle til fast pris inkl. moms. Løbende udgifter er typisk 2.500–6.000 kr om året."
       afterSummary={<PriceCalculator />}
       sections={sections}
       faqs={faqs}

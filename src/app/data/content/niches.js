@@ -23,6 +23,7 @@ export const nichePages = [
   /* ─────────────────────────── Håndværkere (overblik) ─────────────────────────── */
   {
     slug: "hjemmeside-til-haandvaerkere",
+    nichePackage: "håndværkere", // viser pakken "Lokal synlighed"
     type: "service",
     title: "Hjemmeside til håndværkere i Horsens | WebHjerte",
     description:
@@ -171,6 +172,7 @@ export const nichePages = [
   /* ─────────────────────────── VVS ─────────────────────────── */
   {
     slug: "hjemmeside-til-vvs",
+    nichePackage: "VVS-firmaer", // viser pakken "Lokal synlighed"
     type: "service",
     title: "Hjemmeside til VVS-firma i Horsens | WebHjerte",
     description:
@@ -298,6 +300,7 @@ export const nichePages = [
   /* ─────────────────────────── Elektriker ─────────────────────────── */
   {
     slug: "hjemmeside-til-elektriker",
+    nichePackage: "elektrikere", // viser pakken "Lokal synlighed"
     type: "service",
     title: "Hjemmeside til elektriker i Horsens | WebHjerte",
     description:
@@ -445,6 +448,7 @@ export const nichePages = [
   /* ─────────────────────────── Tømrer ─────────────────────────── */
   {
     slug: "hjemmeside-til-tomrer",
+    nichePackage: "tømrere", // viser pakken "Lokal synlighed"
     type: "service",
     title: "Hjemmeside til tømrer i Horsens | WebHjerte",
     description:

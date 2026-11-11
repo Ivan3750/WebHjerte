@@ -82,6 +82,7 @@ export default {
       '/kontakt': 0.8,
       '/ofte-stillede-spoergsmaal': 0.8,
       '/blog': 0.7,
+      '/partner': 0.6,
     };
 
     return {

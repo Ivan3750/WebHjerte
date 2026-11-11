@@ -19,10 +19,12 @@
 
 - Landingside: fra 2.500 kr. Levering på ca. 2 dage. 1 side til kampagner og annoncer.
 - Basis: fra 4.500 kr. Levering på ca. 5 dage. 3–5 sider.
-- Standard: fra 7.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Standard: fra 8.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Lokal synlighed (til håndværkere og lokale servicevirksomheder): fra 9.500 kr. Standard-hjemmeside + Google Business Profile, lokal SEO, anmeldelses-flow og 3 måneders vedligehold.
 - Skræddersyet: fra 14.000 kr. Aftales individuelt. Webshop, kundeportal og andre specialløsninger.
 - AI SEO: Basis fra 3.500 kr, Standard fra 6.500 kr, Skræddersyet fra 12.000 kr.
-- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned.
+- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement: Basis 249 kr/md (hosting, backup, opdateringer), Standard 449 kr/md (+ 30 min. ændringer og månedlig rapport), Pro 799 kr/md (+ 2 timers ændringer, SEO-rapport og Google-anmeldelser). Løbende måned, 30 dages opsigelse.
+- Partnerskab: underleverandør for bureauer og 10 % henvisningsprovision til revisorer (se /partner).
 
 ## Garantier
 
@@ -67,7 +69,7 @@
 - [Hjemmeside med webshop](https://www.webhjerte.dk/webshop-hjemmeside): Hjemmeside med webshop til små virksomheder: WooCommerce, Shopify eller skræddersyet løsning. Betaling, lager og SEO. Fra 14.000 kr til fast pris.
 - [Bæredygtigt webdesign](https://www.webhjerte.dk/baeredygtigt-webdesign): Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug – hurtigere for brugerne, bedre for miljøet.
 - [Webstrategi](https://www.webhjerte.dk/webstrategi): Webstrategi for små virksomheder: mål, målgruppe, indhold, SEO og AI-synlighed samlet i en klar plan, du kan handle på. Start med en gratis samtale.
-- [Hosting og vedligeholdelse](https://www.webhjerte.dk/hosting-og-vedligeholdelse): Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 195 kr/md, og hvad domæne og hosting koster.
+- [Hosting og vedligeholdelse](https://www.webhjerte.dk/hosting-og-vedligeholdelse): Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 249 kr/md, og hvad domæne og hosting koster.
 - [Webbureau i Jylland](https://www.webhjerte.dk/webbureau-jylland): Webbureau til virksomheder i hele Jylland – fra Skagen til Kolding. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.
 - [Webbureau Aarhus](https://www.webhjerte.dk/webbureau-aarhus): Webbureau til virksomheder i Aarhus: hjemmesider fra 2.500 kr, lokal SEO og direkte kontakt. Baseret i Horsens, ca. 45 minutter væk.
 - [Webbureau Vejle](https://www.webhjerte.dk/webbureau-vejle): Webbureau til virksomheder i Vejle og trekantsområdet: Fredericia, Kolding og Horsens. Hjemmesider til fast pris, SEO og direkte kontakt med udvikleren.

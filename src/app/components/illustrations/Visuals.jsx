@@ -289,7 +289,7 @@ export function VisualPrice() {
       >
         <p className="text-[10px] uppercase tracking-[0.14em] text-[var(--v-muted)] mb-1.5">Fast pris</p>
         <p className="text-[28px] leading-none font-semibold text-[var(--v-ink)] tracking-tight">
-          7.500 <span className="text-[12px] font-normal text-[var(--v-muted)]">kr</span>
+          8.500 <span className="text-[12px] font-normal text-[var(--v-muted)]">kr</span>
         </p>
         <p className="mt-2 inline-flex items-center gap-1.5 text-[10px] text-[#1f9d6b]">
           <span className="w-1.5 h-1.5 rounded-full bg-[#3ddc97]" /> ingen skjulte gebyrer

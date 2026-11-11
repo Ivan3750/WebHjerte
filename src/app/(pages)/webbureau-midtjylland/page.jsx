@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Hvad koster en hjemmeside fra et webbureau i Midtjylland?",
-    a: "Hos WebHjerte starter priserne fra 2.500 kr for en landingside, 4.500 kr for Basis og 7.500 kr for Standard. Skræddersyede løsninger starter fra 14.000 kr. Alle priser er faste og aftales på forhånd.",
+    a: "Hos WebHjerte starter priserne fra 2.500 kr for en landingside, 4.500 kr for Basis og 8.500 kr for Standard. Skræddersyede løsninger starter fra 14.000 kr. Alle priser er faste og aftales på forhånd.",
   },
   {
     q: "Kan I møde mig fysisk, hvis jeg bor uden for Horsens?",

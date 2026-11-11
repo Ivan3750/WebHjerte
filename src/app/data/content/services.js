@@ -63,7 +63,7 @@ export const servicePages = [
       {
         h2: "Hvad koster det?",
         paragraphs: [
-          "Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.",
+          "Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.",
         ],
         cta: { href: "/hjemmeside-pris", label: "Se alle priser" },
       },
@@ -138,7 +138,7 @@ export const servicePages = [
         bullets: [
           "Landingside: fra 2.500 kr (1 side).",
           "Basis: fra 4.500 kr (3–5 sider).",
-          "Standard: fra 7.500 kr (op til 8 sider, SEO og analytics, booking).",
+          "Standard: fra 8.500 kr (op til 8 sider, SEO og analytics, booking).",
           "Skræddersyet: fra 14.000 kr (webshop, kundeportal m.m.).",
         ],
         paragraphs: ["Alle priser inkl. moms. Efter lancering får du 30 dages support."],
@@ -293,7 +293,7 @@ export const servicePages = [
       { q: "Koster det mere?", a: "Nej. Lette sider er ofte billigere at drifte og hurtigere at bygge, fordi jeg undgår unødvendige funktioner." },
     ],
     related: [
-      { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Drift fra 195 kr/md." },
+      { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Drift fra 249 kr/md." },
       { href: "/skraeddersyede-hjemmesider", title: "Skræddersyede hjemmesider", desc: "Hurtig kode uden overflødige funktioner." },
       { href: "/seo-horsens", title: "SEO Horsens", desc: "Hurtige sider rangerer bedre." },
     ],
@@ -365,16 +365,16 @@ export const servicePages = [
     type: "service",
     title: "Hosting og vedligeholdelse – pris og drift | WebHjerte",
     description:
-      "Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 195 kr/md, og hvad domæne og hosting koster.",
+      "Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 249 kr/md, og hvad domæne og hosting koster.",
     keywords: ["hosting pris", "hosting af hjemmeside pris", "webhosting priser", "vedligeholdelse hjemmeside", "hjemmeside abonnement", "hvad koster en hjemmeside om året"],
     name: "Hosting og vedligeholdelse",
     serviceType: "Hosting og webvedligeholdelse",
     eyebrow: "Drift og support",
     h1: "Hosting og vedligeholdelse: hvad koster det at holde en hjemmeside kørende?",
     intro:
-      "En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 195 kr/md.",
+      "En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 249 kr/md.",
     summary:
-      "Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md (inkl. moms).",
+      "Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md (inkl. moms).",
     sections: [
       {
         h2: "De løbende omkostninger ved en hjemmeside",
@@ -384,7 +384,7 @@ export const servicePages = [
             ["Domæne (.dk, .com)", "ca. 100–200 kr/år", "Din adresse på nettet"],
             ["Hosting", "Fra gratis til ca. 500 kr/md (afhænger af løsning)", "Serverplads, hastighed og oppetid"],
             ["SSL-certifikat", "Ofte inkluderet", "Krypteret forbindelse (https)"],
-            ["Vedligeholdelse hos WebHjerte", "195–395 kr/md", "Opdateringer, sikkerhed, rettelser og support"],
+            ["Vedligeholdelse hos WebHjerte", "249–799 kr/md", "Opdateringer, sikkerhed, rettelser og support"],
             ["Tredjepartsværktøjer", "Varierer", "Fx booking, nyhedsbreve, betalingsløsning"],
           ],
         },
@@ -396,24 +396,29 @@ export const servicePages = [
         h2: "Hvad er inkluderet i mit tilbud?",
         bullets: [
           "30 dages gratis support efter lancering.",
-          "Opsætning af hosting og SSL ved lancering (udbyder og abonnement betales direkte af dig, hvis intet andet er aftalt).",
+          "Opsætning af hosting og SSL ved lancering. Med et vedligeholdelsesabonnement står jeg for hosting – ellers betaler du udbyderen direkte.",
           "Domæne og kode tilhører dig – du er ikke låst til mig.",
           "Gennemgang af, hvordan siden redigeres og vedligeholdes.",
         ],
       },
       {
-        h2: "Vedligeholdelsesabonnement fra 195 kr/md",
+        h2: "Vedligeholdelsesabonnement fra 249 kr/md",
         paragraphs: [
-          "Vil du ikke selv holde styr på opdateringer og små rettelser, kan jeg gøre det for dig. Abonnementet kan omfatte:",
+          "Vil du ikke selv holde styr på hosting, opdateringer og små rettelser, gør jeg det for dig. Der er tre niveauer – alle priser er inkl. moms, løbende måned med 30 dages opsigelse og uden binding.",
         ],
+        table: {
+          head: ["Abonnement", "Pris", "Indhold"],
+          rows: [
+            ["Basis", "249 kr/md", "Hosting, SSL, daglig backup, opdateringer, overvågning af oppetid og fornyelse af domæne"],
+            ["Standard", "449 kr/md", "Alt i Basis + op til 30 min. ændringer pr. måned og månedlig statusrapport"],
+            ["Pro", "799 kr/md", "Alt i Standard + op til 2 timers ændringer, SEO-rapport, Google-anmeldelser og Google Business Profile"],
+          ],
+        },
         bullets: [
-          "Opdatering af system og plugins (WordPress) eller afhængigheder (skræddersyet kode).",
-          "Sikkerhedsovervågning og backup.",
-          "Små rettelser af tekst, billeder og priser.",
-          "Overvågning af oppetid og hastighed.",
-          "Hurtig support ved fejl.",
+          "Ubrugte minutter overføres ikke til næste måned.",
+          "Større opgaver aftales til fast pris, før jeg går i gang.",
         ],
-        cta: { href: "/kontakt", label: "Spørg til vedligeholdelse" },
+        cta: { href: "/services#vedligeholdelse", label: "Se abonnementerne" },
       },
       {
         h2: "Hvorfor vedligeholdelse er vigtig",
@@ -424,7 +429,7 @@ export const servicePages = [
       },
     ],
     faqs: [
-      { q: "Hvad koster en hjemmeside om året?", a: "Udover selve udviklingen skal du regne med domæne (ca. 100–200 kr/år), hosting og evt. vedligeholdelse. Hos WebHjerte fra 195 kr/md for vedligeholdelse." },
+      { q: "Hvad koster en hjemmeside om året?", a: "Udover selve udviklingen skal du regne med domæne (ca. 100–200 kr/år), hosting og evt. vedligeholdelse. Hos WebHjerte fra 249 kr/md for vedligeholdelse." },
       { q: "Er support inkluderet?", a: "Ja. Du får 30 dages gratis support efter lancering." },
       { q: "Er jeg bundet til jer?", a: "Nej. Domæne og kode tilhører dig, og du kan til enhver tid flytte siden eller vælge en anden leverandør." },
       { q: "Kan I flytte min eksisterende hjemmeside?", a: "Ja, i mange tilfælde. Kontakt mig, så vurderer jeg opgaven." },

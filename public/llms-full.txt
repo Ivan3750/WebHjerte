@@ -19,10 +19,12 @@
 
 - Landingside: fra 2.500 kr. Levering på ca. 2 dage. 1 side til kampagner og annoncer.
 - Basis: fra 4.500 kr. Levering på ca. 5 dage. 3–5 sider.
-- Standard: fra 7.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Standard: fra 8.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Lokal synlighed (til håndværkere og lokale servicevirksomheder): fra 9.500 kr. Standard-hjemmeside + Google Business Profile, lokal SEO, anmeldelses-flow og 3 måneders vedligehold.
 - Skræddersyet: fra 14.000 kr. Aftales individuelt. Webshop, kundeportal og andre specialløsninger.
 - AI SEO: Basis fra 3.500 kr, Standard fra 6.500 kr, Skræddersyet fra 12.000 kr.
-- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned.
+- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement: Basis 249 kr/md (hosting, backup, opdateringer), Standard 449 kr/md (+ 30 min. ændringer og månedlig rapport), Pro 799 kr/md (+ 2 timers ændringer, SEO-rapport og Google-anmeldelser). Løbende måned, 30 dages opsigelse.
+- Partnerskab: underleverandør for bureauer og 10 % henvisningsprovision til revisorer (se /partner).
 
 ## Garantier
 
@@ -75,7 +77,7 @@ Til maksimal hastighed, særlige funktioner og integrationer bygger jeg i modern
 Uanset platform kan jeg tilføje AI: en chatbot, der svarer kunder døgnet rundt, automatisk lead-kvalificering, AI-baseret booking eller automatiske arbejdsgange. Se hvad jeg kan implementere på siden om AI-løsninger.
 
 ## Priser
-Priserne er faste og afhænger af omfang, ikke af platform: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger (webshop, kundeportal, AI-funktioner) fra 14.000 kr. Alle priser inkl. moms. Abonnementer og gebyrer til platforme som Shopify og Webflow betales direkte til udbyderen.
+Priserne er faste og afhænger af omfang, ikke af platform: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger (webshop, kundeportal, AI-funktioner) fra 14.000 kr. Alle priser inkl. moms. Abonnementer og gebyrer til platforme som Shopify og Webflow betales direkte til udbyderen.
 
 ## Ofte stillede spørgsmål
 Q: Hvilke platforme arbejder I med?
@@ -364,7 +366,7 @@ Ejerskab | Kode og domæne tilhører dig | Varierer – ofte bundet til platform
 - Dit domæne og din kode tilhører dig fra dag ét.
 
 ## Hvad koster det?
-Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.
+Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.
 
 ## Ofte stillede spørgsmål
 Q: Hvad er en skræddersyet hjemmeside?
@@ -416,7 +418,7 @@ Jeg bygger SEO ind i fundamentet: logisk overskriftsstruktur, hurtige billeder, 
 Alle priser inkl. moms. Efter lancering får du 30 dages support.
 - Landingside: fra 2.500 kr (1 side).
 - Basis: fra 4.500 kr (3–5 sider).
-- Standard: fra 7.500 kr (op til 8 sider, SEO og analytics, booking).
+- Standard: fra 8.500 kr (op til 8 sider, SEO og analytics, booking).
 - Skræddersyet: fra 14.000 kr (webshop, kundeportal m.m.).
 
 ## Typiske fejl på virksomhedshjemmesider
@@ -569,9 +571,9 @@ A: Strategien afklarer mål og prioriteringer. SEO er en del af udførelsen, som
 # Hosting og vedligeholdelse: hvad koster det at holde en hjemmeside kørende?
 URL: https://www.webhjerte.dk/hosting-og-vedligeholdelse
 
-En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 195 kr/md.
+En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 249 kr/md.
 
-Kort svar: Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md (inkl. moms).
+Kort svar: Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md (inkl. moms).
 
 ## De løbende omkostninger ved en hjemmeside
 Beløbene er vejledende og varierer med udbyder. Når jeg sender et tilbud, får du overblik over de poster, der er relevante for netop din løsning.
@@ -579,22 +581,23 @@ Post | Typisk niveau | Hvad dækker det?
 Domæne (.dk, .com) | ca. 100–200 kr/år | Din adresse på nettet
 Hosting | Fra gratis til ca. 500 kr/md (afhænger af løsning) | Serverplads, hastighed og oppetid
 SSL-certifikat | Ofte inkluderet | Krypteret forbindelse (https)
-Vedligeholdelse hos WebHjerte | 195–395 kr/md | Opdateringer, sikkerhed, rettelser og support
+Vedligeholdelse hos WebHjerte | 249–799 kr/md | Opdateringer, sikkerhed, rettelser og support
 Tredjepartsværktøjer | Varierer | Fx booking, nyhedsbreve, betalingsløsning
 
 ## Hvad er inkluderet i mit tilbud?
 - 30 dages gratis support efter lancering.
-- Opsætning af hosting og SSL ved lancering (udbyder og abonnement betales direkte af dig, hvis intet andet er aftalt).
+- Opsætning af hosting og SSL ved lancering. Med et vedligeholdelsesabonnement står jeg for hosting – ellers betaler du udbyderen direkte.
 - Domæne og kode tilhører dig – du er ikke låst til mig.
 - Gennemgang af, hvordan siden redigeres og vedligeholdes.
 
-## Vedligeholdelsesabonnement fra 195 kr/md
-Vil du ikke selv holde styr på opdateringer og små rettelser, kan jeg gøre det for dig. Abonnementet kan omfatte:
-- Opdatering af system og plugins (WordPress) eller afhængigheder (skræddersyet kode).
-- Sikkerhedsovervågning og backup.
-- Små rettelser af tekst, billeder og priser.
-- Overvågning af oppetid og hastighed.
-- Hurtig support ved fejl.
+## Vedligeholdelsesabonnement fra 249 kr/md
+Vil du ikke selv holde styr på hosting, opdateringer og små rettelser, gør jeg det for dig. Der er tre niveauer – alle priser er inkl. moms, løbende måned med 30 dages opsigelse og uden binding.
+- Ubrugte minutter overføres ikke til næste måned.
+- Større opgaver aftales til fast pris, før jeg går i gang.
+Abonnement | Pris | Indhold
+Basis | 249 kr/md | Hosting, SSL, daglig backup, opdateringer, overvågning af oppetid og fornyelse af domæne
+Standard | 449 kr/md | Alt i Basis + op til 30 min. ændringer pr. måned og månedlig statusrapport
+Pro | 799 kr/md | Alt i Standard + op til 2 timers ændringer, SEO-rapport, Google-anmeldelser og Google Business Profile
 
 ## Hvorfor vedligeholdelse er vigtig
 Forældede systemer og plugins er den hyppigste årsag til sikkerhedsproblemer. Dertil kommer, at priser, åbningstider og tilbud skal være aktuelle – både for kundernes skyld og for søgemaskinerne. En side, der aldrig opdateres, mister gradvist både tillid og synlighed.
@@ -602,7 +605,7 @@ Jeg anbefaler at planlægge mindst en gennemgang hvert kvartal: tjek links, form
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en hjemmeside om året?
-A: Udover selve udviklingen skal du regne med domæne (ca. 100–200 kr/år), hosting og evt. vedligeholdelse. Hos WebHjerte fra 195 kr/md for vedligeholdelse.
+A: Udover selve udviklingen skal du regne med domæne (ca. 100–200 kr/år), hosting og evt. vedligeholdelse. Hos WebHjerte fra 249 kr/md for vedligeholdelse.
 
 Q: Er support inkluderet?
 A: Ja. Du får 30 dages gratis support efter lancering.
@@ -621,7 +624,7 @@ URL: https://www.webhjerte.dk/webbureau-jylland
 
 WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.
 
-Kort svar: WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr (inkl. moms).
+Kort svar: WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger fra 14.000 kr (inkl. moms).
 
 ## Et webbureau, der dækker hele Jylland
 Jylland er en lang halvø med mange lokale markeder: håndværkere i Vestjylland, restauranter i Aarhus, turistvirksomheder i Nordjylland og servicefirmaer i trekantsområdet. Fælles for dem er, at de skal findes af kunder i deres eget område – og her er en lokal, hurtig og velstruktureret hjemmeside det vigtigste redskab.
@@ -647,14 +650,14 @@ Uanset hvor i Jylland du holder til, søger dine kunder på samme måde: en ydel
 - SEO, mobiloptimering og hurtig indlæsning bygget ind fra første dag.
 - Struktureret data og indhold, der også kan findes i AI-søgning (ChatGPT, Google AI).
 - Domæne og kode tilhører dig – ingen bindinger.
-- 30 dages support efter lancering og herefter vedligeholdelse fra 195 kr/md.
+- 30 dages support efter lancering og herefter vedligeholdelse fra 249 kr/md.
 
 ## Priser på hjemmesider i Jylland
 Alle priser er vejledende startpriser. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit projekt.
 Pakke | Fra pris (inkl. moms) | Levering | Omfang
 Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagne eller én ydelse
 Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
-Standard | 7.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
+Standard | 8.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
 Skræddersyet | 14.000 kr | Aftales | Webshop, kundeportal eller specialfunktioner
 
 ## Hvorfor vælge et lille webbureau frem for et stort?
@@ -676,7 +679,7 @@ Q: Skal jeg møde jer fysisk?
 A: Nej, men det er muligt i mange tilfælde. De fleste kunder foretrækker video eller telefon, fordi det er hurtigere.
 
 Q: Hvad koster en hjemmeside hos et webbureau i Jylland?
-A: Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 7.500 kr for Standard og 14.000 kr for skræddersyede løsninger (inkl. moms).
+A: Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 8.500 kr for Standard og 14.000 kr for skræddersyede løsninger (inkl. moms).
 
 Q: Kan I hjælpe med at blive fundet lokalt i min by?
 A: Ja. Jeg bygger lokal SEO ind i hjemmesiden og kan hjælpe med Google Virksomhedsprofil og lokale landingssider.
@@ -787,7 +790,7 @@ URL: https://www.webhjerte.dk/wordpress-horsens
 
 En professionel WordPress-hjemmeside, hvor du selv kan rette tekster, priser og billeder – uden at ringe til en udvikler hver gang. Jeg bygger den hurtig, sikker og klar til Google.
 
-Kort svar: WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 7.500 kr (Standard), inkl. moms, med levering på 5–10 dage.
+Kort svar: WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 8.500 kr (Standard), inkl. moms, med levering på 5–10 dage.
 
 ## Hvorfor vælge WordPress?
 WordPress er verdens mest udbredte CMS, og det er der gode grunde til. Systemet er fleksibelt, har et enormt økosystem af plugins og designs, og der findes udviklere overalt. Det betyder, at din hjemmeside ikke er afhængig af én enkelt person – heller ikke mig.
@@ -812,14 +815,14 @@ Du vil have maksimal hastighed og minimal vedligeholdelse | Skræddersyet kode (
 Du har kun brug for én kampagneside | Landingside – ofte skræddersyet
 
 ## WordPress og sikkerhed
-Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 195 kr/md, hvis du ikke selv vil stå for det.
+Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 249 kr/md, hvis du ikke selv vil stå for det.
 
 ## WordPress og SEO
 WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter, struktureret data og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en WordPress-hjemmeside?
-A: En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 7.500 kr for Standard (inkl. moms). Større løsninger aftales individuelt.
+A: En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 8.500 kr for Standard (inkl. moms). Større løsninger aftales individuelt.
 
 Q: Kan jeg selv redigere en WordPress-hjemmeside?
 A: Ja. Du kan rette tekst, billeder og indhold uden kode. Jeg giver dig en kort introduktion ved aflevering.
@@ -1298,13 +1301,13 @@ Kort svar: WebHjerte bygger hjemmesider fra 2.500 kr (inkl. moms) med levering p
 
 ## Priser og betaling
 ### Hvad koster en hjemmeside hos WebHjerte?
-Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms.
+Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 8.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms.
 ### Er priserne faste?
 Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven.
 ### Er der skjulte gebyrer?
 Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
 ### Hvad koster vedligeholdelse?
-Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md inkl. moms.
+Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms.
 ### Betaler jeg, hvis jeg ikke kan lide designet?
 Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
 
@@ -1356,7 +1359,7 @@ Ring på +45 42 76 05 77, skriv til hej@webhjerte.dk eller brug kontaktformulare
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en hjemmeside hos WebHjerte?
-A: Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms.
+A: Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 8.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms.
 
 Q: Er priserne faste?
 A: Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven.
@@ -1365,7 +1368,7 @@ Q: Er der skjulte gebyrer?
 A: Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
 
 Q: Hvad koster vedligeholdelse?
-A: Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md inkl. moms.
+A: Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms.
 
 Q: Betaler jeg, hvis jeg ikke kan lide designet?
 A: Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
@@ -1457,13 +1460,13 @@ Sprog | Dansk og engelsk
 - SEO og lokal SEO i Horsens og Midtjylland.
 - AI SEO og GEO – synlighed i ChatGPT, Gemini og Google AI (fra 3.500 kr).
 - Gratis SEO- og web-tjek.
-- Vedligeholdelse og support (fra 195 kr/md).
+- Vedligeholdelse og support (fra 249 kr/md).
 
 ## Priser og pakker (inkl. moms)
 Pakke | Pris fra | Levering | Indhold
 Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagner og annoncer
 Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
-Standard | 7.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
+Standard | 8.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
 Skræddersyet | 14.000 kr | Aftales | Webshop, kundeportal og specialløsninger
 
 ## Garantier
@@ -1491,7 +1494,7 @@ Q: Hvor ligger WebHjerte?
 A: I Horsens (8700), Midtjylland. Kunder findes i hele Danmark.
 
 Q: Hvad koster en hjemmeside hos WebHjerte?
-A: Fra 2.500 kr inkl. moms for en landingside. Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyet fra 14.000 kr.
+A: Fra 2.500 kr inkl. moms for en landingside. Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyet fra 14.000 kr.
 
 
 ---
@@ -1635,7 +1638,7 @@ Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
 Prisen på selve hjemmesiden er kun starten. Her er de løbende udgifter, du skal regne med – og hvor mange betaler alt for meget.
 
-Kort svar: For en lille virksomhed koster en hjemmeside typisk 2.500–6.000 kr om året at have kørende: ca. 100–200 kr for et .dk-domæne, 0–500 kr om måneden for hosting og 195–395 kr om måneden, hvis du vil have nogen til at holde den opdateret. Det dyreste er sjældent teknikken – det er de abonnementer, man har glemt, man betaler for.
+Kort svar: For en lille virksomhed koster en hjemmeside typisk 2.500–6.000 kr om året at have kørende: ca. 100–200 kr for et .dk-domæne, 0–500 kr om måneden for hosting og 249–799 kr om måneden, hvis du vil have nogen til at holde den opdateret. Det dyreste er sjældent teknikken – det er de abonnementer, man har glemt, man betaler for.
 
 ## Hvorfor det er værd at regne efter
 Når jeg kigger på nye kunders eksisterende hjemmesider, finder jeg næsten altid noget, de betaler for uden at vide det. Et premium-tema, der fornyes automatisk. Et backup-plugin, der aldrig er brugt. Et hostingabonnement til 400 kr om måneden for en side med 300 besøgende.
@@ -1645,7 +1648,7 @@ Det er ikke store beløb hver for sig. Men over fem år bliver det let til 15.00
 Udgift | Typisk beløb | Det skal du vide
 Domæne | 100–200 kr/år | .dk er billigst. Sørg for, at domænet står i dit navn – ikke bureauets.
 Hosting | 0–500 kr/md | Kodede sider kan ligge meget billigt. WordPress og webshops kræver mere.
-Vedligeholdelse | 195–395 kr/md hos WebHjerte | Opdateringer, sikkerhed, backup og små rettelser. Frivilligt.
+Vedligeholdelse | 249–799 kr/md hos WebHjerte | Opdateringer, sikkerhed, backup og små rettelser. Frivilligt.
 Værktøjer | 0–300 kr/md | Booking, nyhedsbrev, betalingsløsning eller premium-plugins.
 
 ## Tre regneeksempler
@@ -1654,15 +1657,15 @@ Her er tre typiske situationer, jeg ser hos små virksomheder. Alle beløb er in
 En kodet hjemmeside uden løbende redigering. Domæne ca. 150 kr, hosting ca. 0–600 kr om året og ingen fast aftale – rettelser betales, når der er brug for dem.
 - Ca. 150–750 kr om året
 ### Frisør med WordPress og booking
-WordPress, så salonen selv kan skifte priser og billeder, plus et bookingsystem. Hosting ca. 100 kr/md, booking ca. 200 kr/md og vedligeholdelse 195 kr/md.
-- Ca. 6.000 kr om året
+WordPress, så salonen selv kan skifte priser og billeder, plus et bookingsystem. Hosting ca. 100 kr/md, booking ca. 200 kr/md og vedligeholdelse 249 kr/md.
+- Ca. 6.500 kr om året
 ### Lille webshop
-En webshop med 100 varer kræver mere: Shopify-abonnement eller kraftigere hosting, betalingsløsning og jævnlige opdateringer. Vedligeholdelse 395 kr/md.
+En webshop med 100 varer kræver mere: Shopify-abonnement eller kraftigere hosting, betalingsløsning og jævnlige opdateringer. Vedligeholdelse 449 kr/md.
 - Ca. 8.000–12.000 kr om året + transaktionsgebyrer
 
 ## Hvad får du for vedligeholdelse?
 En hjemmeside er ikke en brochure, du trykker én gang. Software skal opdateres, sikkerhedshuller lukkes, og der skal tages backup. Især WordPress-sider, der ikke bliver opdateret, er et af de mest almindelige mål for hackere.
-Hos mig koster vedligeholdelse 195 eller 395 kr om måneden. Det dækker opdateringer, overvågning, backup og små rettelser – og du skriver direkte til mig, ikke til en supportkø. Du kan opsige fra måned til måned.
+Hos mig koster vedligeholdelse 249, 449 eller 799 kr om måneden. Det dækker opdateringer, overvågning, backup og små rettelser – og du skriver direkte til mig, ikke til en supportkø. Du kan opsige fra måned til måned.
 
 ## Sådan undgår du at betale for meget
 - Gå dine kontoudtog igennem og find alle abonnementer, der har med hjemmesiden at gøre.
@@ -1682,7 +1685,7 @@ Q: Hvad koster et .dk-domæne?
 A: Typisk 100–200 kr om året inkl. moms, afhængigt af udbyder.
 
 Q: Skal jeg have en vedligeholdelsesaftale?
-A: Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 195–395 kr om måneden uden binding.
+A: Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 249–799 kr om måneden uden binding.
 
 Q: Hvad sker der, hvis jeg stopper med at betale for hosting?
 A: Hjemmesiden går offline. Derfor er det vigtigt, at du ejer domænet og har en kopi af siden, så den kan flyttes til en anden udbyder.
@@ -1877,7 +1880,7 @@ Q: Er WordPress dårligt for SEO?
 A: Nej. WordPress kan rangere rigtig godt, hvis siden er hurtig, sat rigtigt op og ikke fyldt med unødvendige plugins.
 
 Q: Kan jeg selv redigere en skræddersyet hjemmeside?
-A: Ja, hvis vi kobler et redigeringssystem (CMS) på. Ellers står jeg for rettelser via en vedligeholdelsesaftale fra 195 kr/md.
+A: Ja, hvis vi kobler et redigeringssystem (CMS) på. Ellers står jeg for rettelser via en vedligeholdelsesaftale fra 249 kr/md.
 
 Q: Hvad er billigst på lang sigt?
 A: En kodet hjemmeside har typisk de laveste driftsudgifter, fordi den ikke kræver løbende opdateringer af plugins og WordPress.

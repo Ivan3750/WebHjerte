@@ -4,10 +4,10 @@ const faqGroups = [
   {
     h2: "Priser og betaling",
     items: [
-      ["Hvad koster en hjemmeside hos WebHjerte?", "Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms."],
+      ["Hvad koster en hjemmeside hos WebHjerte?", "Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 8.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms."],
       ["Er priserne faste?", "Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven."],
       ["Er der skjulte gebyrer?", "Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne."],
-      ["Hvad koster vedligeholdelse?", "Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md inkl. moms."],
+      ["Hvad koster vedligeholdelse?", "Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms."],
       ["Betaler jeg, hvis jeg ikke kan lide designet?", "Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet."],
     ],
   },
@@ -181,7 +181,7 @@ export const hubPages = [
           "SEO og lokal SEO i Horsens og Midtjylland.",
           "AI SEO og GEO – synlighed i ChatGPT, Gemini og Google AI (fra 3.500 kr).",
           "Gratis SEO- og web-tjek.",
-          "Vedligeholdelse og support (fra 195 kr/md).",
+          "Vedligeholdelse og support (fra 249 kr/md).",
         ],
       },
       {
@@ -191,7 +191,7 @@ export const hubPages = [
           rows: [
             ["Landingside", "2.500 kr", "ca. 2 dage", "1 side til kampagner og annoncer"],
             ["Basis", "4.500 kr", "ca. 5 dage", "3–5 sider, kontaktformular, Google Maps, basis-SEO"],
-            ["Standard", "7.500 kr", "ca. 10 dage", "Op til 8 sider, SEO og analytics, booking, 30 dages support"],
+            ["Standard", "8.500 kr", "ca. 10 dage", "Op til 8 sider, SEO og analytics, booking, 30 dages support"],
             ["Skræddersyet", "14.000 kr", "Aftales", "Webshop, kundeportal og specialløsninger"],
           ],
         },
@@ -226,7 +226,7 @@ export const hubPages = [
     faqs: [
       { q: "Hvem står bag WebHjerte?", a: "WebHjerte drives af webudvikler Ivan Kohan fra Horsens (CVR 46485823)." },
       { q: "Hvor ligger WebHjerte?", a: "I Horsens (8700), Midtjylland. Kunder findes i hele Danmark." },
-      { q: "Hvad koster en hjemmeside hos WebHjerte?", a: "Fra 2.500 kr inkl. moms for en landingside. Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyet fra 14.000 kr." },
+      { q: "Hvad koster en hjemmeside hos WebHjerte?", a: "Fra 2.500 kr inkl. moms for en landingside. Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyet fra 14.000 kr." },
     ],
     related: [
       { href: "/om-mig", title: "Om Ivan Kohan", desc: "Historien bag WebHjerte." },

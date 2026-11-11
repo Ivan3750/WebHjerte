@@ -36,7 +36,7 @@ const inkluderet = [
 
 const kodePakker = [
   { name: "Basis", price: "4.500" },
-  { name: "Standard", price: "7.500" },
+  { name: "Standard", price: "8.500" },
   { name: "Skræddersyet", price: "14.000" },
 ];
 

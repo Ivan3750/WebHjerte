@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import NichePackage from "../../components/ui/NichePackage";
 import ContentPage from "../../components/seo/ContentPage";
 import { contentPages, pageMetadata, pagePath } from "../../data/content";
 
@@ -42,6 +43,7 @@ export default async function ContentRoute({ params }) {
       description={page.description}
       published={page.published}
       updated={page.updated}
+      extra={page.nichePackage ? <NichePackage className="bg-[#1c1e1e] pt-16 sm:pt-24" trade={page.nichePackage} /> : undefined}
     />
   );
 }

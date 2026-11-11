@@ -15,6 +15,7 @@ export default function FormToLead({
   titleLine = "Klar til en side, der ser proffesional ud?",
   description = "Har du allerede en hjemmeside, der trænger til et løft, eller starter du helt forfra? Skriv det i formularen - jeg svarer inden for 24 timer.",
   facts = defaultFacts,
+  defaultPakke = "",
 }) {
   return (
     <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-20 pb-10">
@@ -59,7 +60,7 @@ export default function FormToLead({
         </div>
         <div className="rounded-3xl bg-[#242828] border border-white/10 p-6 sm:p-9">
           <Suspense fallback={null}>
-            <ContactForm />
+            <ContactForm defaultPakke={defaultPakke} />
           </Suspense>
         </div>
       </div>
