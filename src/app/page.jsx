@@ -99,21 +99,15 @@ const topicLinks = [
   { href: "/webbureau-aarhus", label: "Aarhus" },
   { href: "/webbureau-vejle", label: "Vejle" },
   { href: "/wordpress-hjemmeside", label: "Professionel WordPress hjemmeside" },
-  { href: "/wordpress-horsens", label: "WordPress Horsens" },
-  { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
+  { href: "/services", label: "Alle ydelser" },
   { href: "/blog/hvad-koster-en-hjemmeside-2026", label: "Hvad koster en hjemmeside?" },
-  { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
-  { href: "/geo-ai-synlighed", label: "AI-synlighed" },
+  { href: "/ai-seo", label: "AI SEO" },
   { href: "/ofte-stillede-spoergsmaal", label: "FAQ" },
 ];
 
 const nicheLinks = [
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-  { href: "/hjemmeside-til-saloner", label: "Saloner" },
-  { href: "/hjemmeside-til-vvs", label: "VVS" },
-  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
 ];
 
 export default function Home() {

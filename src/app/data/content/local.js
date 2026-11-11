@@ -211,7 +211,7 @@ export const localPages = [
         ],
         cards: [
           { title: "Restauranter og caféer", tag: "Branche", text: "Menu som tekst, booking og egen bestilling – vigtigt i en by med mange spisesteder.", href: "/hjemmeside-til-restauranter", cta: "Se rådene" },
-          { title: "Saloner og klinikker", tag: "Branche", text: "Online booking, prisliste og billeder, der får nye kunder til at vælge dig.", href: "/hjemmeside-til-saloner", cta: "Se rådene" },
+          { title: "Saloner og klinikker", tag: "Branche", text: "Online booking, prisliste og billeder, der får nye kunder til at vælge dig.", href: "/kontakt", cta: "Få et tilbud" },
           { title: "Håndværkere", tag: "Branche", text: "VVS, el og tømrer: ydelser, områder og en nem vej til tilbud.", href: "/hjemmeside-til-haandvaerkere", cta: "Se rådene" },
           { title: "Webshops og detailhandel", tag: "Løsning", text: "Små webshops, der er nemme at drive – og hurtige at handle i.", href: "/webshop-hjemmeside", cta: "Læs om webshops" },
         ],
@@ -305,7 +305,7 @@ export const localPages = [
         cards: [
           { title: "Håndværkere", tag: "Branche", text: "VVS, el, tømrer og maler: ydelser, område, billeder og en nem vej til tilbud.", href: "/hjemmeside-til-haandvaerkere", cta: "Se rådene" },
           { title: "Køreskoler og undervisning", tag: "Case i Vejle", text: "Se, hvordan Lønbæks Køreskole i Vejle fik en side, der viser værdien i grundig undervisning – og leder eleven frem til den første køretime.", href: "/portefolje/loenbaeks-koereskole", cta: "Se casen" },
-          { title: "Saloner og klinikker", tag: "Branche", text: "Booking, prisliste og billeder, der får nye kunder til at vælge dig.", href: "/hjemmeside-til-saloner", cta: "Se rådene" },
+          { title: "Saloner og klinikker", tag: "Branche", text: "Booking, prisliste og billeder, der får nye kunder til at vælge dig.", href: "/kontakt", cta: "Få et tilbud" },
           { title: "Restauranter og caféer", tag: "Branche", text: "Menu som tekst, booking og egen bestilling – uden at betale kommission.", href: "/hjemmeside-til-restauranter", cta: "Se rådene" },
         ],
       },
@@ -358,149 +358,6 @@ export const localPages = [
       { href: "/webbureau-jylland", title: "Webbureau Jylland", desc: "Hele Jylland dækket online." },
       { href: "/webbureau-aarhus", title: "Webbureau Aarhus", desc: "Hjemmesider til Aarhus-virksomheder." },
       { href: "/portefolje/loenbaeks-koereskole", title: "Case: Lønbæks Køreskole", desc: "Hjemmeside til køreskole i Vejle." },
-    ],
-  },
-  {
-    slug: "wordpress-horsens",
-    type: "service",
-    title: "WordPress-hjemmeside i Horsens | WebHjerte",
-    description:
-      "WordPress-hjemmeside til virksomheder i Horsens og Midtjylland. Professionel opsætning, hurtig levering og en løsning, du selv kan redigere. Fra 4.500 kr.",
-    keywords: ["wordpress Horsens", "wordpress Midtjylland", "wordpress firma", "wordpress udvikling Horsens", "wordpress leverandør"],
-    name: "WordPress Horsens",
-    serviceType: "WordPress-udvikling",
-    eyebrow: "WordPress · Horsens & Midtjylland",
-    h1: "WordPress-hjemmeside i Horsens og Midtjylland",
-    intro:
-      "En professionel WordPress-hjemmeside, hvor du selv kan rette tekster, priser og billeder – uden at ringe til en udvikler hver gang. Jeg bygger den hurtig, sikker og klar til Google.",
-    summary:
-      "WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 8.500 kr (Standard), inkl. moms, med levering på 5–10 dage.",
-    sections: [
-      {
-        h2: "Hvorfor vælge WordPress?",
-        paragraphs: [
-          "WordPress er verdens mest udbredte CMS, og det er der gode grunde til. Systemet er fleksibelt, har et enormt økosystem af plugins og designs, og der findes udviklere overalt. Det betyder, at din hjemmeside ikke er afhængig af én enkelt person – heller ikke mig.",
-          "For en lille virksomhed er den største fordel, at du selv kan skifte åbningstider, tilføje en ny ydelse, skrive en nyhed eller opdatere et tilbud på fem minutter. Det holder siden frisk, hvilket både kunder og Google sætter pris på.",
-        ],
-      },
-      {
-        h2: "Hvad får du i en WordPress-løsning fra WebHjerte?",
-        bullets: [
-          "Skræddersyet design – ikke en uændret skabelon.",
-          "Hurtig opsætning med fokus på ydeevne (billedoptimering, caching, minimal plugin-brug).",
-          "SEO-opsætning: titler, beskrivelser, sitemap og lokal SEO.",
-          "Responsivt design til mobil og tablet.",
-          "Sikkerhed: opdateringer, sikre log-ind-regler og backup-opsætning.",
-          "Kort introduktion, så du ved, hvordan du redigerer siden.",
-          "30 dages support efter lancering.",
-        ],
-      },
-      {
-        h2: "Hvornår er WordPress det rigtige valg – og hvornår er det ikke?",
-        table: {
-          head: ["Situation", "Anbefaling"],
-          rows: [
-            ["Du vil selv redigere tekster og billeder", "WordPress"],
-            ["Du vil have en blog eller nyhedssektion", "WordPress"],
-            ["Du har brug for en enkel webshop", "WordPress med WooCommerce eller Shopify"],
-            ["Du vil have maksimal hastighed og minimal vedligeholdelse", "Skræddersyet kode (fx Next.js)"],
-            ["Du har kun brug for én kampagneside", "Landingside – ofte skræddersyet"],
-          ],
-        },
-        paragraphs: [
-          "Jeg anbefaler det, der passer til dit behov – ikke det, der er nemmest for mig. Jeg bygger både i WordPress og i skræddersyet kode, og vi vælger sammen.",
-        ],
-      },
-      {
-        h2: "WordPress og sikkerhed",
-        paragraphs: [
-          "Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 249 kr/md, hvis du ikke selv vil stå for det.",
-        ],
-        cta: { href: "/hosting-og-vedligeholdelse", label: "Læs om vedligeholdelse" },
-      },
-      {
-        h2: "WordPress og SEO",
-        paragraphs: [
-          "WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.",
-        ],
-      },
-    ],
-    faqs: [
-      { q: "Hvad koster en WordPress-hjemmeside?", a: "En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 8.500 kr for Standard (inkl. moms). Større løsninger aftales individuelt." },
-      { q: "Kan jeg selv redigere en WordPress-hjemmeside?", a: "Ja. Du kan rette tekst, billeder og indhold uden kode. Jeg giver dig en kort introduktion ved aflevering." },
-      { q: "Er WordPress sikkert?", a: "Ja, når det holdes opdateret og sat korrekt op. Jeg kan stå for opdateringer og backup via en vedligeholdelsesaftale." },
-      { q: "Er WordPress langsomt?", a: "Det kan være, hvis det belastes med mange plugins. Jeg bygger med få plugins og optimerer billeder og cache, så siden bliver hurtig." },
-    ],
-    related: [
-      { href: "/wordpress-hjemmeside", title: "WordPress hjemmeside", desc: "Se mere om WordPress-løsningerne." },
-      { href: "/blog/wordpress-eller-skraeddersyet", title: "WordPress eller skræddersyet?", desc: "Guide til at vælge rigtigt." },
-      { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Drift fra 249 kr/md." },
-    ],
-  },
-  {
-    slug: "digitalt-bureau-horsens",
-    type: "service",
-    title: "Digitalt bureau i Horsens – web og SEO | WebHjerte",
-    description:
-      "Digitalt bureau i Horsens: hjemmesider, SEO, AI-synlighed og landingssider til annoncer. Lokalt, hurtigt og til fast pris – uden mellemled.",
-    keywords: ["digitalt bureau Horsens", "marketing bureau Horsens", "marketingbureau Horsens", "reklamebureau Horsens", "digital bureau Horsens", "google ads bureau Horsens"],
-    name: "Digitalt bureau Horsens",
-    serviceType: "Digitalt bureau",
-    eyebrow: "Digitalt bureau · Horsens",
-    h1: "Digitalt bureau i Horsens: det digitale fundament, der skaber kunder",
-    intro:
-      "Marketing starter ved hjemmesiden. Jeg hjælper virksomheder i Horsens med det digitale fundament: hjemmeside, SEO, AI-synlighed, analytics og landingssider til annoncer.",
-    summary:
-      "WebHjerte er et digitalt bureau i Horsens med fokus på webdesign, SEO, AI-synlighed og konverteringsoptimering. Jeg er ikke et reklame- eller PR-bureau, men leverer det tekniske og indholdsmæssige fundament, som annoncer, SEO og sociale medier bygger videre på.",
-    sections: [
-      {
-        h2: "Hvad jeg laver – og hvad jeg ikke laver",
-        paragraphs: [
-          "Mange virksomheder søger et “marketingbureau”, når det egentlig, de mangler, er en hjemmeside, der konverterer. Før du bruger penge på annoncer, skal siden kunne omsætte besøgende til henvendelser. Dér er min styrke.",
-          "Jeg er ikke et fuldservice-reklamebureau med kreative kampagner, tv-spots eller PR. Det tilbyder jeg ikke, og jeg anbefaler dig til dem, der gør, hvis du har brug for det. Det jeg gør, gør jeg grundigt:",
-        ],
-        bullets: [
-          "Webdesign og webudvikling – hjemmesider og landingssider.",
-          "Teknisk og lokal SEO.",
-          "AI-synlighed (GEO) i ChatGPT, Gemini og Google AI.",
-          "Landingssider til Google Ads og sociale annoncer, der er hurtige og målbare.",
-          "Analytics: Google Analytics, Search Console og målinger af henvendelser.",
-          "Konverteringsoptimering: bedre kontaktformularer, tydeligere call-to-actions og hurtigere sider.",
-        ],
-      },
-      {
-        h2: "Landingssider til annoncer",
-        paragraphs: [
-          "Annoncering fungerer kun, hvis den side, besøgende lander på, er skarp. En landingside fra 2.500 kr er bygget til ét formål: at få besøgende til at kontakte dig. Den indlæses hurtigt på mobil, har ét tydeligt budskab og måler hver henvendelse, så du kan se, hvad annoncerne giver.",
-          "Jeg opsætter siden, så den kan måle konverteringer i Google Analytics og Google Ads. Selve annoncestyringen kan du tage selv eller hos en samarbejdspartner – jeg sørger for, at fundamentet er i orden.",
-        ],
-      },
-      {
-        h2: "Fra synlighed til henvendelser",
-        steps: [
-          { title: "Fundament", text: "Hurtig, mobilvenlig hjemmeside med klart tilbud og tydelig kontakt." },
-          { title: "Synlighed", text: "SEO, lokale oplysninger, Google Virksomhedsprofil og AI-synlighed." },
-          { title: "Trafik", text: "Organisk trafik, evt. suppleret med annoncer til landingssider." },
-          { title: "Konvertering", text: "Formularer, telefonklik og booking, som kan måles." },
-          { title: "Optimering", text: "Løbende forbedring baseret på data fra Search Console og analytics." },
-        ],
-      },
-      {
-        h2: "Hvorfor et lokalt bureau i Horsens?",
-        paragraphs: [
-          "Jeg kender det lokale marked og de søgninger, som kunder i Horsens og Midtjylland bruger. Samtidig er jeg lille nok til at svare inden for 24 timer og tilpasse mig din hverdag. Du får én kontaktperson og ingen mellemled.",
-        ],
-      },
-    ],
-    faqs: [
-      { q: "Laver I Google Ads?", a: "Jeg bygger landingssider og opsætter måling til annoncer. Selve løbende annoncestyring tilbyder jeg ikke som standard, men jeg samarbejder gerne med dit annoncebureau." },
-      { q: "Er I et reklamebureau?", a: "Nej. WebHjerte er et webbureau med fokus på hjemmesider, SEO og AI-synlighed." },
-      { q: "Hvad skal jeg starte med: hjemmeside, SEO eller annoncer?", a: "Start med hjemmesiden. Uden en hurtig og tydelig side går penge til annoncer og SEO til spilde." },
-    ],
-    related: [
-      { href: "/seo-horsens", title: "SEO Horsens", desc: "Bliv fundet af lokale kunder." },
-      { href: "/webstrategi", title: "Webstrategi", desc: "Plan for din digitale tilstedeværelse." },
-      { href: "/geo-ai-synlighed", title: "AI-synlighed", desc: "Bliv nævnt i AI-svar." },
     ],
   },
 ];

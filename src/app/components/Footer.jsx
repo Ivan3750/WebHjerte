@@ -22,7 +22,7 @@ const groups = [
       { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
       { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
       { href: "/wordpress-hjemmeside", label: "WordPress hjemmeside" },
-      { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
+      { href: "/webshop-hjemmeside", label: "Webshop" },
       { href: "/freelancer-vs-bureau", label: "Freelancer vs bureau" },
     ],
   },
@@ -30,14 +30,11 @@ const groups = [
     title: "Områder og emner",
     links: [
       { href: "/ai-loesninger", label: "AI-løsninger" },
-      { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
       { href: "/shopify-hjemmeside", label: "Shopify" },
       { href: "/webbureau-jylland", label: "Webbureau Jylland" },
       { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
       { href: "/webbureau-vejle", label: "Webbureau Vejle" },
-      { href: "/wordpress-horsens", label: "WordPress Horsens" },
-      { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
-      { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
+      { href: "/ai-seo", label: "AI SEO" },
     ],
   },
   {
@@ -53,10 +50,6 @@ const groups = [
     links: [
       { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
       { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-      { href: "/hjemmeside-til-saloner", label: "Saloner" },
-      { href: "/hjemmeside-til-vvs", label: "VVS" },
-      { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-      { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
     ],
   },
 ];

@@ -29,6 +29,23 @@ const nextConfig = {
       // Fjernede referencesider (skrevet til AI frem for kunder)
       { source: "/om-webhjerte", destination: "/om-mig", permanent: true },
       { source: "/ordliste", destination: "/ofte-stillede-spoergsmaal", permanent: true },
+      // Sammenlagte sider (sitet er gjort enklere) – placeringer og links føres videre
+      { source: "/digitalt-bureau-horsens", destination: "/webdesign-horsens", permanent: true },
+      { source: "/wordpress-horsens", destination: "/wordpress-hjemmeside", permanent: true },
+      { source: "/hjemmeside-til-virksomhed", destination: "/services", permanent: true },
+      { source: "/skraeddersyede-hjemmesider", destination: "/services", permanent: true },
+      { source: "/alle-typer-hjemmesider", destination: "/services", permanent: true },
+      { source: "/baeredygtigt-webdesign", destination: "/blog", permanent: true },
+      { source: "/webstrategi", destination: "/blog", permanent: true },
+      { source: "/ny-professionel-hjemmeside", destination: "/services", permanent: true },
+      { source: "/gratis-analyse", destination: "/gratis-seo-tjek-horsens", permanent: true },
+      { source: "/ai-chatbot-til-hjemmeside", destination: "/ai-loesninger", permanent: true },
+      { source: "/ai-automatisering-virksomhed", destination: "/ai-loesninger", permanent: true },
+      { source: "/geo-ai-synlighed", destination: "/ai-seo", permanent: true },
+      { source: "/hjemmeside-til-vvs", destination: "/hjemmeside-til-haandvaerkere", permanent: true },
+      { source: "/hjemmeside-til-elektriker", destination: "/hjemmeside-til-haandvaerkere", permanent: true },
+      { source: "/hjemmeside-til-tomrer", destination: "/hjemmeside-til-haandvaerkere", permanent: true },
+      { source: "/hjemmeside-til-saloner", destination: "/services", permanent: true },
     ];
   },
   async headers() {

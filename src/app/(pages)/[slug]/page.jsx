@@ -41,7 +41,6 @@ export default async function ContentRoute({ params }) {
       description={page.description}
       published={page.published}
       updated={page.updated}
-      nichePackage={page.nichePackage}
     />
   );
 }

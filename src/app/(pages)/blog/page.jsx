@@ -29,18 +29,6 @@ const legacy = [
     category: "Guides",
   },
   {
-    href: "/webstrategi",
-    title: "Webstrategi: en klar plan, før du bygger",
-    desc: "Sådan finder du ud af, hvad din hjemmeside skal kunne – før du bruger penge på den.",
-    category: "Guides",
-  },
-  {
-    href: "/baeredygtigt-webdesign",
-    title: "Bæredygtigt webdesign",
-    desc: "Lette, hurtige sider, der belaster mindre – og som kunderne har det bedre med.",
-    category: "Guides",
-  },
-  {
     href: "/ofte-stillede-spoergsmaal",
     title: "Ofte stillede spørgsmål",
     desc: "Korte, ærlige svar om priser, tid, ejerskab og samarbejde.",

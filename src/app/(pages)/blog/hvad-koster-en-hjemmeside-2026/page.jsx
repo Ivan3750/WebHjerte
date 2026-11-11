@@ -68,7 +68,7 @@ const sections = [
         paragraphs: [
           "Den klassiske: forside, ydelser, om os, referencer og kontakt. Det er den, de fleste håndværkere, klinikker og konsulenter har brug for. Typisk pris: 8.000–40.000 kr. Hos mig: Basis 4.500 kr (3–5 sider) eller Standard 8.500 kr (op til 8 sider med SEO, analytics og booking).",
         ],
-        cta: { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
+        cta: { href: "/services", label: "Se alle ydelser" },
       },
       {
         h3: "WordPress-hjemmeside",

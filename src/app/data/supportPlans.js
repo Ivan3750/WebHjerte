@@ -46,7 +46,7 @@ export const supportPlans = [
 ];
 
 export const supportTerms = [
-  "De første 30 dage efter lancering er support gratis.",
+  "Alle priser er inkl. moms. De første 30 dage efter lancering er support gratis.",
   "Løbende måned med 30 dages opsigelse – ingen binding.",
   "Ubrugte minutter overføres ikke til næste måned.",
   "Større opgaver uden for abonnementet aftales til fast pris, før jeg går i gang.",

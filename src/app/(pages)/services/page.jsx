@@ -125,10 +125,6 @@ const jsonLd = {
 const niches = [
   { href: "/hjemmeside-til-haandvaerkere", title: "Håndværkere", desc: "VVS, elektrikere, tømrere, malere og flere." },
   { href: "/hjemmeside-til-restauranter", title: "Restauranter", desc: "Menu, booking og online bestilling. Undgå Wolt-omkostninger." },
-  { href: "/hjemmeside-til-saloner", title: "Saloner", desc: "Frisørsaloner, skønhedssaloner, barber og flere." },
-  { href: "/hjemmeside-til-vvs", title: "VVS", desc: "Flere opkald og akutte henvendelser fra lokale kunder." },
-  { href: "/hjemmeside-til-elektriker", title: "Elektrikere", desc: "Vis autorisationer, ydelser og få flere tilbudsforespørgsler." },
-  { href: "/hjemmeside-til-tomrer", title: "Tømrere", desc: "Vis dine projekter og bliv fundet af private og erhverv." },
 ];
 
 const areas = [
@@ -141,15 +137,11 @@ const areas = [
 ];
 
 const moreServices = [
-  { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
+  { href: "/webshop-hjemmeside", label: "Webshop" },
   { href: "/shopify-hjemmeside", label: "Shopify-webshop" },
-  { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
-  { href: "/wordpress-horsens", label: "WordPress i Horsens" },
-  { href: "/digitalt-bureau-horsens", label: "Digitalt bureau Horsens" },
+  { href: "/hosting-og-vedligeholdelse", label: "Hosting og drift" },
+  { href: "/ai-loesninger", label: "AI-løsninger" },
   { href: "/ai-seo", label: "AI SEO" },
-  { href: "/geo-ai-synlighed", label: "Synlighed i ChatGPT" },
-  { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
-  { href: "/ai-automatisering-virksomhed", label: "AI-automatisering" },
   { href: "/gratis-seo-tjek-horsens", label: "Gratis SEO-tjek" },
   { href: "/partner", label: "Partnerskab" },
 ];

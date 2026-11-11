@@ -36,12 +36,12 @@
 ## Kerneydelser
 - [Services og pakker](https://www.webhjerte.dk/services)
 - [AI-løsninger til virksomheder](https://www.webhjerte.dk/ai-loesninger)
-- [Alle typer hjemmesider og platforme](https://www.webhjerte.dk/alle-typer-hjemmesider)
 - [Hjemmeside pris](https://www.webhjerte.dk/hjemmeside-pris)
 - [Webdesign i Horsens](https://www.webhjerte.dk/webdesign-horsens)
 - [SEO i Horsens](https://www.webhjerte.dk/seo-horsens)
 - [AI SEO](https://www.webhjerte.dk/ai-seo)
 - [Webbureau i Midtjylland](https://www.webhjerte.dk/webbureau-midtjylland)
+- [Partnerskab for bureauer og revisorer](https://www.webhjerte.dk/partner)
 - [WordPress-hjemmeside](https://www.webhjerte.dk/wordpress-hjemmeside)
 - [Gratis SEO-tjek i Horsens](https://www.webhjerte.dk/gratis-seo-tjek-horsens)
 - [Freelancer eller webbureau](https://www.webhjerte.dk/freelancer-vs-bureau)
@@ -53,35 +53,17 @@
 ## Brancher
 - [Håndværkere](https://www.webhjerte.dk/hjemmeside-til-haandvaerkere)
 - [Restauranter](https://www.webhjerte.dk/hjemmeside-til-restauranter)
-- [Saloner](https://www.webhjerte.dk/hjemmeside-til-saloner)
-- [VVS](https://www.webhjerte.dk/hjemmeside-til-vvs)
-- [Elektrikere](https://www.webhjerte.dk/hjemmeside-til-elektriker)
-- [Tømrere](https://www.webhjerte.dk/hjemmeside-til-tomrer)
 
 ## Områder, emner og referencer
-- [Alle typer hjemmesider](https://www.webhjerte.dk/alle-typer-hjemmesider): WordPress, WooCommerce, Shopify, Webflow, Wix eller skræddersyet kode: jeg bygger og optimerer på alle platforme – og vælger efter dit behov.
 - [Shopify webshop](https://www.webhjerte.dk/shopify-hjemmeside): Shopify-webshop til danske virksomheder: opsætning, design, betaling, fragt og SEO – for nye og eksisterende butikker.
 - [AI-løsninger til virksomheder](https://www.webhjerte.dk/ai-loesninger): AI i din virksomhed: chatbot på hjemmesiden, automatisk booking og kundeservice, lead-kvalificering og synlighed i ChatGPT og Google.
-- [AI-chatbot til hjemmeside](https://www.webhjerte.dk/ai-chatbot-til-hjemmeside): AI-chatbot til hjemmeside eller webshop: svarer kunder, kvalificerer leads og booker tider – trænet på dine egne oplysninger. Fast pris.
-- [AI-automatisering](https://www.webhjerte.dk/ai-automatisering-virksomhed): Automatiser gentagne opgaver med AI: tilbud, bookinger, opfølgning og kundeservice. Praktiske eksempler og fast pris til små virksomheder.
-- [Skræddersyede hjemmesider](https://www.webhjerte.dk/skraeddersyede-hjemmesider): Skræddersyede hjemmesider og websider til virksomheder: unikt design, hurtig kode og SEO bygget ind. Fast pris, direkte kontakt og levering på 2–10 dage.
-- [Hjemmeside til virksomhed](https://www.webhjerte.dk/hjemmeside-til-virksomhed): Få en professionel hjemmeside til din virksomhed: struktur, indhold, SEO og kontaktveje, der skaber henvendelser. Fra 2.500 kr og klar på 2–10 dage.
 - [Hjemmeside med webshop](https://www.webhjerte.dk/webshop-hjemmeside): Hjemmeside med webshop til små virksomheder: WooCommerce, Shopify eller skræddersyet løsning. Betaling, lager og SEO. Fra 14.000 kr til fast pris.
-- [Bæredygtigt webdesign](https://www.webhjerte.dk/baeredygtigt-webdesign): Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug – hurtigere for brugerne, bedre for miljøet.
-- [Webstrategi](https://www.webhjerte.dk/webstrategi): Webstrategi for små virksomheder: mål, målgruppe, indhold, SEO og AI-synlighed samlet i en klar plan, du kan handle på. Start med en gratis samtale.
 - [Hosting og vedligeholdelse](https://www.webhjerte.dk/hosting-og-vedligeholdelse): Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 249 kr/md, og hvad domæne og hosting koster.
 - [Webbureau i Jylland](https://www.webhjerte.dk/webbureau-jylland): Webbureau til virksomheder i hele Jylland – fra Skagen til Kolding. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.
 - [Webbureau Aarhus](https://www.webhjerte.dk/webbureau-aarhus): Webbureau til virksomheder i Aarhus: hjemmesider fra 2.500 kr, lokal SEO og direkte kontakt. Baseret i Horsens, ca. 45 minutter væk.
 - [Webbureau Vejle](https://www.webhjerte.dk/webbureau-vejle): Webbureau til virksomheder i Vejle og trekantsområdet: Fredericia, Kolding og Horsens. Hjemmesider til fast pris, SEO og direkte kontakt med udvikleren.
-- [WordPress Horsens](https://www.webhjerte.dk/wordpress-horsens): WordPress-hjemmeside til virksomheder i Horsens og Midtjylland. Professionel opsætning, hurtig levering og en løsning, du selv kan redigere. Fra 4.500 kr.
-- [Digitalt bureau Horsens](https://www.webhjerte.dk/digitalt-bureau-horsens): Digitalt bureau i Horsens: hjemmesider, SEO, AI-synlighed og landingssider til annoncer. Lokalt, hurtigt og til fast pris – uden mellemled.
 - [Hjemmeside til håndværkere](https://www.webhjerte.dk/hjemmeside-til-haandvaerkere): Hjemmeside til håndværkere: sådan får du flere opkald fra lokale kunder – hvad siden skal indeholde, og de fejl, der koster henvendelser.
-- [Hjemmeside til VVS-firma](https://www.webhjerte.dk/hjemmeside-til-vvs): Hjemmeside til VVS-firmaer: få akutte opkald og tilbudskunder fra lokale søgninger. Opbygning, tekster og de fejl, du skal undgå.
-- [Hjemmeside til elektriker](https://www.webhjerte.dk/hjemmeside-til-elektriker): Hjemmeside til elektrikere: byg tillid med autorisation, vis opgaver og få henvendelser på elbil-ladere, tavler og fejlfinding. Praktiske råd og lokal SEO.
-- [Hjemmeside til tømrer](https://www.webhjerte.dk/hjemmeside-til-tomrer): Hjemmeside til tømrere: vis projekterne, forklar forløbet og få henvendelser på terrasser, tilbygninger og køkkener. Praktiske råd til tømrerfirmaer.
 - [Hjemmeside til restauranter](https://www.webhjerte.dk/hjemmeside-til-restauranter): Hjemmeside til restauranter og caféer: menu, booking og egen bestilling. Få flere gæster direkte – uden kommission til platforme.
-- [Hjemmeside til saloner](https://www.webhjerte.dk/hjemmeside-til-saloner): Hjemmeside til frisørsaloner, skønhedssaloner og barbers: online booking, prisliste og billeder, der fylder kalenderen. Praktiske råd til saloner.
-- [AI-synlighed (GEO)](https://www.webhjerte.dk/geo-ai-synlighed): Sådan bliver din virksomhed nævnt i ChatGPT, Google AI Overviews, Gemini og Perplexity. Praktisk GEO til lokale virksomheder.
 - [Ofte stillede spørgsmål](https://www.webhjerte.dk/ofte-stillede-spoergsmaal): Svar på de mest stillede spørgsmål om hjemmesider hos WebHjerte: priser, tid, ejerskab, WordPress, SEO, AI-synlighed og samarbejde.
 
 ## Guides

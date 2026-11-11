@@ -3,23 +3,35 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
+// Kun de faste pakker – så formularen er let at udfylde (priserne er inkl. moms)
 const packages = [
   { value: "", label: "Vælg pakke (valgfrit)" },
   { value: "Ved ikke endnu", label: "Ved ikke endnu" },
-  { value: "landingside", label: "Landingside – 2.500 DKK inkl. moms" },
-  { value: "basis", label: "Basis – 4.500 DKK inkl. moms" },
-  { value: "standard", label: "Standard – 8.500 DKK inkl. moms" },
-  { value: "lokal-synlighed", label: "Lokal synlighed – fra 9.500 DKK inkl. moms" },
-  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK inkl. moms" },
-  { value: "wordpress", label: "WordPress-hjemmeside – fra 4.500 DKK inkl. moms" },
-  { value: "ai-seo-basis", label: "AI SEO Basis – 3.500 DKK inkl. moms" },
-  { value: "ai-seo-standard", label: "AI SEO Standard – 6.500 DKK inkl. moms" },
-  { value: "ai-seo-skraeddersyet", label: "AI SEO Skræddersyet – fra 12.000 DKK inkl. moms" },
-  { value: "vedligehold-basis", label: "Vedligehold Basis – 249 DKK/md inkl. moms" },
-  { value: "vedligehold-standard", label: "Vedligehold Standard – 449 DKK/md inkl. moms" },
-  { value: "vedligehold-pro", label: "Vedligehold Pro – 799 DKK/md inkl. moms" },
-  { value: "partnerskab", label: "Partnerskab (bureau / revisor)" },
+  { value: "landingside", label: "Landingside – 2.500 DKK" },
+  { value: "basis", label: "Basis – 4.500 DKK" },
+  { value: "standard", label: "Standard – 8.500 DKK" },
+  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK" },
 ];
+
+// Knapper andre steder på sitet sender ?pakke=… – de skrives ind i beskeden i stedet for at fylde listen ud
+const interests = {
+  wordpress: "WordPress-hjemmeside",
+  "lokal-synlighed": "Lokal synlighed (hjemmeside + Google-profil)",
+  "ai-seo-basis": "AI SEO Basis",
+  "ai-seo-standard": "AI SEO Standard",
+  "ai-seo-skraeddersyet": "AI SEO Skræddersyet",
+  "vedligehold-basis": "Vedligehold Basis (249 kr/md)",
+  "vedligehold-standard": "Vedligehold Standard (449 kr/md)",
+  "vedligehold-pro": "Vedligehold Pro (799 kr/md)",
+  partnerskab: "Partnerskab (bureau / revisor)",
+};
+
+const initialFor = (pakke) =>
+  packages.some((p) => p.value === pakke)
+    ? { pakke, message: "" }
+    : interests[pakke]
+      ? { pakke: "", message: `Jeg er interesseret i: ${interests[pakke]}.\n\n` }
+      : { pakke: "", message: "" };
 
 const fieldClass =
   "w-full bg-[#1c1e1e] text-[14px] text-white placeholder:text-[#7a8787] border border-white/10 rounded-xl px-4 py-3.5 outline-none transition-colors focus:border-[#00a8e8] focus-visible:ring-2 focus-visible:ring-[#00a8e8]/30";
@@ -32,12 +44,12 @@ const Label = ({ htmlFor, children }) => (
 
 const ContactForm = ({ defaultPakke = "" }) => {
   const searchParams = useSearchParams();
-  const [form, setForm] = useState({ name: "", email: "", phone: "", pakke: defaultPakke, message: "", website: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", website: "", ...initialFor(defaultPakke) });
   const [status, setStatus] = useState("idle");
 
   useEffect(() => {
     const pakke = searchParams.get("pakke") ?? "";
-    if (pakke && packages.some((p) => p.value === pakke)) setForm((f) => ({ ...f, pakke }));
+    if (pakke) setForm((f) => ({ ...f, ...initialFor(pakke), message: f.message || initialFor(pakke).message }));
   }, [searchParams]);
 
   const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
@@ -111,6 +123,7 @@ const ContactForm = ({ defaultPakke = "" }) => {
               </option>
             ))}
           </select>
+          <p className="mt-1.5 text-[11px] text-[#7a8787]">Alle priser er inkl. moms.</p>
         </div>
       </div>
 
