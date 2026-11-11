@@ -1,138 +1,6 @@
 // Sider om synlighed i AI-søgning (GEO / AI Overviews / ChatGPT / Perplexity)
 
 export const aiPages = [
-  {
-    slug: "geo-ai-synlighed",
-    type: "service",
-    title: "AI-synlighed (GEO): bliv nævnt i ChatGPT | WebHjerte",
-    description:
-      "Sådan bliver din virksomhed nævnt i ChatGPT, Google AI Overviews, Gemini og Perplexity. Praktisk GEO til lokale virksomheder.",
-    keywords: ["GEO", "AI synlighed", "ChatGPT synlighed", "Google AI Overviews", "AI SEO Horsens", "ai seo eksperter", "bureau specialist i ai seo"],
-    name: "AI-synlighed (GEO)",
-    serviceType: "Generative Engine Optimization",
-    eyebrow: "AI-synlighed · GEO",
-    h1: "AI-synlighed: bliv nævnt, når kunderne spørger ChatGPT og Google AI",
-    intro:
-      "Flere og flere finder en lokal virksomhed ved at stille et spørgsmål til en AI-assistent i stedet for at klikke sig igennem ti blå links. Jeg gør din hjemmeside nem at forstå, nem at citere og nem at stole på – for både Google, ChatGPT, Gemini og Perplexity.",
-    summary:
-      "GEO (Generative Engine Optimization) er arbejdet med at få din virksomhed nævnt og citeret i AI-genererede svar. Det kræver tydelige svar på kundernes spørgsmål, korrekt struktureret data, konsistente virksomhedsoplysninger og en hurtig, teknisk ren hjemmeside. WebHjerte i Horsens bygger alt dette ind i hjemmesider fra 2.500 kr, og tilbyder AI SEO-pakker fra 3.500 kr.",
-    sections: [
-      {
-        h2: "Hvad er AI-synlighed (GEO)?",
-        paragraphs: [
-          "Traditionel SEO handler om at ligge højt på Google-listen. AI-synlighed handler om noget lidt andet: at blive en del af selve svaret. Når en kunde skriver “hvem laver hjemmesider i Horsens?” til ChatGPT, Gemini eller Perplexity, eller ser en AI-oversigt øverst i Google, sammensætter modellen et svar ud fra de kilder, den kan forstå og stole på. Er din virksomhed ikke blandt dem, eksisterer du ikke i det svar – uanset hvor flot din hjemmeside er.",
-          "Fagfolk kalder disciplinen GEO (Generative Engine Optimization) eller AEO (Answer Engine Optimization). Grundprincippet er det samme som i god SEO: hjælp søgemaskinen med at forstå, hvem du er, hvad du tilbyder, hvor du holder til, og hvorfor du er et godt valg. Forskellen er, at AI-systemer læser dit indhold som tekst og relationer – ikke kun som søgeord – og derfor belønner klarhed, konsistens og dokumenterede fakta.",
-        ],
-      },
-      {
-        h2: "Hvorfor det er vigtigt for lokale virksomheder lige nu",
-        paragraphs: [
-          "Søgeadfærden ændrer sig hurtigt. Mange begynder deres søgning med en samtale: “Hvad koster en hjemmeside?”, “Hvilket webbureau i Horsens er til små virksomheder?”, “Hvor lang tid tager det at få lavet en landingside?”. AI-assistenten svarer direkte og nævner typisk kun få navne. Den, der bliver nævnt, får henvendelsen – de øvrige får ikke engang chancen for at blive vurderet.",
-          "Samtidig viser tal fra Google Search Console for webhjerte.dk, at AI-funktionerne allerede viser siden: forsiden, services, om-siden og flere undersider er blevet vist i AI-oversigter. Det bekræfter, at et lille, lokalt websted godt kan komme med – hvis indholdet er struktureret rigtigt. Det er netop dét, jeg hjælper mine kunder med.",
-        ],
-        bullets: [
-          "AI-svar bliver kortere og mere definitive end klassiske søgeresultater – der er plads til få kilder.",
-          "Lokale forespørgsler med pris, tid og sammenligning er særligt velegnede til AI-svar.",
-          "Virksomheder, der er tidligt ude med klart indhold, bliver ofte ved med at blive citeret.",
-        ],
-      },
-      {
-        h2: "Sådan vælger AI-systemer, hvem de nævner",
-        paragraphs: [
-          "Ingen udefra kender de præcise algoritmer, og de ændrer sig løbende. Men erfaring og de officielle retningslinjer fra søgemaskinerne peger i samme retning. De kilder, der oftest bliver brugt, har fire fælles træk:",
-        ],
-        bullets: [
-          "De besvarer spørgsmålet direkte i de første sætninger (“svar først, forklaring bagefter”).",
-          "De har tydelig afsender og dokumenteret ekspertise: hvem er ansvarlig, hvor sidder de, hvordan kontakter man dem?",
-          "De er teknisk lette at læse: hurtig indlæsning, ren HTML, logisk overskriftsstruktur og struktureret data (schema.org).",
-          "De bliver bekræftet andre steder: Google Virksomhedsprofil, kataloger, omtaler og konsistente oplysninger på tværs af nettet.",
-        ],
-      },
-      {
-        h2: "Min metode i seks trin",
-        steps: [
-          {
-            title: "1. Kortlæg kundernes spørgsmål",
-            text: "Jeg samler de spørgsmål, dine kunder faktisk stiller – fra Google Search Console, telefonsamtaler, e-mails og AI-assistenterne selv. Spørgsmålene bliver rygraden i dit indhold.",
-          },
-          {
-            title: "2. Tekster, der svarer direkte",
-            text: "Hver vigtig side får et kort, præcist svar øverst efterfulgt af uddybning, eksempler, priser og en FAQ. Det er godt for dine kunder – og nemt for AI at gengive korrekt.",
-          },
-          {
-            title: "3. Oplysninger, Google og AI kan læse",
-            text: "Jeg markerer navn, adresse, ydelser, priser og spørgsmål i sidens kode, så Google og AI forstår din virksomhed uden at gætte.",
-          },
-          {
-            title: "4. Teknisk fundament",
-            text: "Hurtig hjemmeside, mobilvenlig, korrekt indeksering, sitemap, adgang for AI-tjenesterne og en kort opsummering af virksomheden, som de kan læse.",
-          },
-          {
-            title: "5. Troværdighed og konsistens",
-            text: "Navn, adresse, telefon, CVR og priser skal være ens overalt. Jeg hjælper med Google Virksomhedsprofil og med at samle omtaler og referencer.",
-          },
-          {
-            title: "6. Måling og justering",
-            text: "Jeg følger med i Google Search Console (herunder visninger i AI-funktioner), analytics og stikprøver i ChatGPT, Gemini og Perplexity og justerer indholdet løbende.",
-          },
-        ],
-      },
-      {
-        h2: "Hvad jeg bygger ind i din hjemmeside",
-        bullets: [
-          "Klar og ensartet beskrivelse af, hvem I er, hvad I tilbyder, og hvor I arbejder – skrevet, så den kan citeres ordret.",
-          "Et kort, direkte svar i starten af de vigtigste sider.",
-          "FAQ-sektioner med reelle kundespørgsmål og markeret FAQPage-data.",
-          "Organization-, LocalBusiness-, Service-, Offer-, Person- og BreadcrumbList-markup.",
-          "Prisoversigter i tabeller, som både mennesker og maskiner nemt læser.",
-          "En kort opsummering af din virksomhed, som AI-tjenester kan læse.",
-          "Robots-regler, der tillader seriøse AI-crawlere, så du ikke blokerer dig selv ude.",
-          "Forfatterprofil og opdateringsdatoer, så indholdet viser ekspertise og aktualitet.",
-        ],
-      },
-      {
-        h2: "Hvad GEO ikke er",
-        paragraphs: [
-          "GEO er hverken en genvej eller en trylleformel. Ingen kan love, at en bestemt AI nævner dig på en bestemt dato – og du skal være skeptisk over for dem, der gør det. Jeg lover heller ikke nævnelser i ChatGPT; jeg lover et solidt grundlag, mål du kan følge, og indhold der er værd at citere.",
-          "Det er heller ikke at fylde siden med tekst, som kun er skrevet til robotter. Indhold, der er nyttigt for mennesker, er næsten altid også det, AI-systemer foretrækker. Jeg skriver derfor til dine kunder først og strukturerer teksten, så maskinerne kan følge med.",
-        ],
-      },
-      {
-        h2: "Pris og forløb",
-        paragraphs: [
-          "AI-synlighed er indbygget i alle nye hjemmesider fra WebHjerte, fra 2.500 kr. Har du allerede en hjemmeside, kan jeg optimere den med en af AI SEO-pakkerne: Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (alle inkl. moms). Første skridt er altid en gratis gennemgang, hvor du får at vide, hvad der mangler, og hvad det vil koste.",
-        ],
-        cta: { href: "/ai-seo", label: "Se AI SEO-pakkerne" },
-      },
-    ],
-    faqs: [
-      {
-        q: "Hvad betyder GEO?",
-        a: "GEO står for Generative Engine Optimization. Det er arbejdet med at gøre indhold nemt at forstå og citere for generative AI-systemer som ChatGPT, Gemini, Perplexity og Googles AI-oversigter, så virksomheden bliver nævnt i AI-genererede svar.",
-      },
-      {
-        q: "Er GEO det samme som SEO?",
-        a: "Nej, men de overlapper meget. God SEO (hurtig side, klart indhold, gode links) er fundamentet. GEO tilføjer tekster, der svarer direkte på kundernes spørgsmål, ensartede virksomhedsoplysninger og en teknisk opsætning, så AI-tjenester nemmere kan bruge dit indhold.",
-      },
-      {
-        q: "Kan I garantere, at ChatGPT nævner min virksomhed?",
-        a: "Nej, og det kan ingen seriøse aktører. Jeg kan skabe de bedste forudsætninger og måle udviklingen, men AI-systemerne styrer selv, hvad de nævner.",
-      },
-      {
-        q: "Hvor hurtigt kan jeg se effekt?",
-        a: "Tekniske forbedringer og nyt indhold kan blive opfanget inden for uger, men det varierer fra system til system. Typisk vurderer jeg udviklingen over 2–3 måneder.",
-      },
-      {
-        q: "Skal jeg have en ny hjemmeside for at blive synlig i AI?",
-        a: "Ikke nødvendigvis. Mange eksisterende sider kan optimeres med bedre struktur, FAQ og struktureret data. Hvis siden er meget langsom eller teknisk problematisk, kan en ny side dog være billigere på sigt.",
-      },
-    ],
-    related: [
-      { href: "/ai-seo", title: "AI SEO-pakker", desc: "Priser og indhold i AI SEO fra 3.500 kr." },
-      { href: "/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai", title: "Guide: bliv nævnt af ChatGPT", desc: "Praktisk tjekliste, du selv kan gå i gang med." },
-      { href: "/kontakt", title: "Få et tilbud", desc: "Fortæl, hvad du har brug for – svar inden for 24 timer." },
-    ],
-  },
 ];
 
 export const aiArticles = [
@@ -275,8 +143,7 @@ export const aiArticles = [
       },
     ],
     related: [
-      { href: "/geo-ai-synlighed", title: "AI-synlighed (GEO)", desc: "Min metode til at blive nævnt i AI-svar." },
-      { href: "/ai-seo", title: "AI SEO-pakker", desc: "Fra 3.500 kr." },
+      { href: "/ai-seo", title: "AI SEO", desc: "Min metode til at blive fundet i Google og nævnt i AI-svar." },
       { href: "/blog/seo-tjekliste-lokale-virksomheder", title: "SEO-tjekliste", desc: "Lokal SEO trin for trin." },
     ],
   },

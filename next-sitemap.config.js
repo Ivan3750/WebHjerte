@@ -34,9 +34,10 @@ export default {
     '/404',
     '/500',
     '/api/*',
-    '/opengraph-image',
+    // Annonce-landingssider (noindex, ikke i menuen)
     '/ny-professionel-hjemmeside',
     '/gratis-analyse',
+    '/opengraph-image',
     '/privacy',
     '/terms',
     // Kunde-cases: holdes ude af Google, så kundernes brandnavne ikke giver WebHjerte-hits
@@ -71,11 +72,8 @@ export default {
       '/webbureau-jylland': 0.9,
       '/services': 0.9,
       '/ai-seo': 0.9,
-      '/geo-ai-synlighed': 0.9,
       '/ai-loesninger': 0.9,
-      '/alle-typer-hjemmesider': 0.8,
       '/shopify-hjemmeside': 0.8,
-      '/ai-chatbot-til-hjemmeside': 0.8,
       '/hjemmeside-pris': 0.8,
       '/om-mig': 0.8,
       '/portefolje': 0.8,

@@ -5,10 +5,6 @@ import { PrimaryLink, GhostLink } from "./PageHero";
 const niches = [
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-  { href: "/hjemmeside-til-saloner", label: "Saloner" },
-  { href: "/hjemmeside-til-vvs", label: "VVS" },
-  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
 ];
 
 export default function CtaSearchBlock() {

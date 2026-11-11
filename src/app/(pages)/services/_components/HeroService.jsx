@@ -45,7 +45,7 @@ export default function HeroServices() {
       breadcrumbs={[{ href: "/", label: "Forside" }, { label: "Services" }]}
       eyebrow="Mine services"
       titleLines={["Hjemmesider til små", "virksomheder i Horsens"]}
-      lead="Som webudvikler i Horsens bygger jeg professionelt webdesign, SEO, webshops og integrationer — digitale løsninger, der gør det nemmere for dine kunder at finde, forstå og vælge din virksomhed. Faste priser fra 2.500 DKK inkl. moms."
+      lead="Som webudvikler i Horsens bygger jeg professionelt webdesign, SEO, webshops og integrationer — digitale løsninger, der gør det nemmere for dine kunder at finde, forstå og vælge din virksomhed. Faste priser fra 2.500 DKK."
       actions={
         <>
           <PrimaryLink href="#priser">Se priser</PrimaryLink>

@@ -40,7 +40,7 @@ export default function NichePackage({ className = "bg-[#e4f0f7]", trade = "hån
               <span className="text-[clamp(30px,3vw,40px)] font-semibold tracking-tight leading-none">{NICHE_PACKAGE_PRICE}</span>
               <span className="text-[13px] text-[#7f8c8c]">DKK</span>
             </div>
-            <p className="mt-1.5 text-[11px] text-[#7f8c8c]">inkl. moms · levering ca. 10 dage</p>
+            <p className="mt-1.5 text-[11px] text-[#7f8c8c]">Levering ca. 10 dage</p>
             <Link
               href="/kontakt?pakke=lokal-synlighed"
               className="mt-7 inline-flex items-center justify-center rounded-full bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] transition-colors px-6 py-3 text-[13px] font-semibold"

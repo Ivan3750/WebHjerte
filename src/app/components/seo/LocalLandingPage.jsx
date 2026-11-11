@@ -1,8 +1,9 @@
 import ContentPage from "./ContentPage";
+import ProcessBlock from "../home/ProcessBlock";
 
 /**
  * Skabelon til lokale SEO-landingssider (Horsens / Midtjylland).
- * Tynd wrapper om den fælles ContentPage (som selv viser pris, garantier, cases og proces).
+ * Tynd wrapper om den fælles ContentPage, så alle sider deler samme udtryk.
  */
 export default function LocalLandingPage({ path, name, serviceType, eyebrow, h1, intro, sections, faqs, related, summary, city, facts }) {
   return (
@@ -20,6 +21,7 @@ export default function LocalLandingPage({ path, name, serviceType, eyebrow, h1,
       related={related}
       city={city}
       facts={facts}
+      extra={<ProcessBlock />}
     />
   );
 }

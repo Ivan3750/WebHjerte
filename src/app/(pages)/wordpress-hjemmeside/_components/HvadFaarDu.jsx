@@ -61,7 +61,7 @@ const HvadFaarDu = () => {
           className="text-[14px] text-[#777] max-w-xl mb-10"
         >
           Én fast pris, ét fast fundament – ingen skjulte tillæg eller
-          overraskelser undervejs.
+          overraskelser undervejs. Alle priser er inkl. moms.
         </AnimatedInView>
 
         <AnimatedInView
@@ -89,7 +89,6 @@ const HvadFaarDu = () => {
                 </span>
                 <span className="text-[13px] text-[#8a9696]">DKK</span>
               </div>
-              <p className="text-[11px] text-[#8a9696] mt-1.5">inkl. moms</p>
               <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#8a9696] mt-3">
                 Levering: ca. 5 dage
               </span>
@@ -119,7 +118,7 @@ const HvadFaarDu = () => {
               {kodePakker.map((p) => (
                 <span key={p.name} className="text-[12px] text-[#777]">
                   <span className="text-[#c9c9c9]">{p.name}</span> fra{" "}
-                  <span className="text-white">{p.price} DKK</span> inkl. moms
+                  <span className="text-white">{p.price} DKK</span>
                 </span>
               ))}
             </div>

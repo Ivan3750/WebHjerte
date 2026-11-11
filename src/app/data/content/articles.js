@@ -43,7 +43,7 @@ const own = [
           { h3: "Hjælp til tekster og opslag", paragraphs: ["AI er god til at komme i gang med et blogindlæg, en ydelsestekst eller et Facebook-opslag. Men tilføj altid dine egne erfaringer og eksempler – det er dem, kunderne (og Google) reagerer på."] },
           { h3: "Produkttekster i webshoppen", paragraphs: ["Har du 200 produkter, er AI en stor hjælp til at skrive ensartede beskrivelser og forslag til relaterede varer. Du kontrollerer, at mål og materialer er korrekte."] },
           { h3: "Kundeservice på flere sprog", paragraphs: ["Tyske turister, ukrainske tilflyttere eller engelsktalende kunder: AI kan svare på deres sprog, så du ikke mister dem, bare fordi hjemmesiden kun er på dansk."] },
-          { h3: "Synlighed i ChatGPT og Google AI", paragraphs: ["Flere og flere spørger ChatGPT “hvem kan lave X i Horsens?”. Med klare svar på din hjemmeside, struktureret data og en opdateret Google-profil øger du chancen for at blive nævnt."], cta: { href: "/geo-ai-synlighed", label: "Læs om AI-synlighed" } },
+          { h3: "Synlighed i ChatGPT og Google AI", paragraphs: ["Flere og flere spørger ChatGPT “hvem kan lave X i Horsens?”. Med klare svar på din hjemmeside, struktureret data og en opdateret Google-profil øger du chancen for at blive nævnt."], cta: { href: "/ai-seo", label: "Læs om AI-synlighed" } },
         ],
       },
       {
@@ -88,8 +88,7 @@ const own = [
     ],
     related: [
       { href: "/ai-loesninger", title: "AI-løsninger", desc: "Chatbot, booking og automatisering." },
-      { href: "/ai-chatbot-til-hjemmeside", title: "AI-chatbot", desc: "Svar kunderne døgnet rundt." },
-      { href: "/geo-ai-synlighed", title: "AI-synlighed", desc: "Bliv nævnt i ChatGPT." },
+      { href: "/ai-seo", title: "AI SEO", desc: "Bliv fundet i Google og nævnt i ChatGPT." },
     ],
   },
   {
@@ -164,7 +163,7 @@ const own = [
     ],
     faqs: [
       { q: "Hvad koster det at have en hjemmeside om året?", a: "For en lille virksomhed typisk 2.500–6.000 kr om året inkl. domæne, hosting og vedligeholdelse. En simpel kodet side uden fast aftale kan koste under 1.000 kr om året." },
-      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året inkl. moms, afhængigt af udbyder." },
+      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året, afhængigt af udbyder." },
       { q: "Skal jeg have en vedligeholdelsesaftale?", a: "Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 249–799 kr om måneden uden binding." },
       { q: "Hvad sker der, hvis jeg stopper med at betale for hosting?", a: "Hjemmesiden går offline. Derfor er det vigtigt, at du ejer domænet og har en kopi af siden, så den kan flyttes til en anden udbyder." },
     ],
@@ -282,7 +281,7 @@ const own = [
     related: [
       { href: "/seo-horsens", title: "SEO Horsens", desc: "Lokal SEO i praksis." },
       { href: "/gratis-seo-tjek-horsens", title: "Gratis SEO-tjek", desc: "Få din side gennemgået." },
-      { href: "/geo-ai-synlighed", title: "AI-synlighed", desc: "Bliv nævnt i AI-svar." },
+      { href: "/ai-seo", title: "AI SEO", desc: "Bliv fundet i Google og nævnt i AI-svar." },
     ],
   },
   {
@@ -444,7 +443,6 @@ const own = [
     ],
     related: [
       { href: "/wordpress-hjemmeside", title: "Professionel WordPress-hjemmeside", desc: "Fra 4.500 kr." },
-      { href: "/skraeddersyede-hjemmesider", title: "Skræddersyede hjemmesider", desc: "Unikt design og hurtig kode." },
       { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside?", desc: "Priser og prisberegner." },
     ],
   },
@@ -533,7 +531,6 @@ const own = [
     ],
     related: [
       { href: "/hjemmeside-pris", title: "Hjemmeside priser", desc: "Se pakker og leveringstider." },
-      { href: "/hjemmeside-til-virksomhed", title: "Hjemmeside til virksomhed", desc: "Hvad en erhvervshjemmeside skal kunne." },
       { href: "/kontakt", title: "Kontakt", desc: "Få et tilbud inden for 24 timer." },
     ],
   },

@@ -61,12 +61,12 @@ const facts = `# WebHjerte
 const core = [
   ["Services og pakker", "/services"],
   ["AI-løsninger til virksomheder", "/ai-loesninger"],
-  ["Alle typer hjemmesider og platforme", "/alle-typer-hjemmesider"],
   ["Hjemmeside pris", "/hjemmeside-pris"],
   ["Webdesign i Horsens", "/webdesign-horsens"],
   ["SEO i Horsens", "/seo-horsens"],
   ["AI SEO", "/ai-seo"],
   ["Webbureau i Midtjylland", "/webbureau-midtjylland"],
+  ["Partnerskab for bureauer og revisorer", "/partner"],
   ["WordPress-hjemmeside", "/wordpress-hjemmeside"],
   ["Gratis SEO-tjek i Horsens", "/gratis-seo-tjek-horsens"],
   ["Freelancer eller webbureau", "/freelancer-vs-bureau"],
@@ -78,10 +78,6 @@ const core = [
 const niches = [
   ["Håndværkere", "/hjemmeside-til-haandvaerkere"],
   ["Restauranter", "/hjemmeside-til-restauranter"],
-  ["Saloner", "/hjemmeside-til-saloner"],
-  ["VVS", "/hjemmeside-til-vvs"],
-  ["Elektrikere", "/hjemmeside-til-elektriker"],
-  ["Tømrere", "/hjemmeside-til-tomrer"],
 ];
 const link = ([t, p], d) => `- [${t}](${SITE}${p})${d ? `: ${d}` : ""}`;
 

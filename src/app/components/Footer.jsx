@@ -3,15 +3,16 @@ import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
 
 const groups = [
   {
-    title: "Virksomhed",
+    title: "WebHjerte",
     links: [
       { href: "/", label: "Forside" },
       { href: "/services", label: "Services" },
+      { href: "/hjemmeside-pris", label: "Priser" },
       { href: "/portefolje", label: "Portefølje" },
       { href: "/om-mig", label: "Om mig" },
       { href: "/blog", label: "Blog" },
-      { href: "/partner", label: "Partnerskab" },
       { href: "/kontakt", label: "Kontakt" },
+      { href: "/partner", label: "Partnerskab" },
     ],
   },
   {
@@ -19,44 +20,24 @@ const groups = [
     links: [
       { href: "/webdesign-horsens", label: "Webdesign Horsens" },
       { href: "/seo-horsens", label: "SEO Horsens" },
-      { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
-      { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
-      { href: "/wordpress-hjemmeside", label: "WordPress hjemmeside" },
-      { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
-      { href: "/freelancer-vs-bureau", label: "Freelancer vs bureau" },
-    ],
-  },
-  {
-    title: "Områder og emner",
-    links: [
-      { href: "/ai-loesninger", label: "AI-løsninger" },
-      { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
+      { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
+      { href: "/webshop-hjemmeside", label: "Webshop" },
       { href: "/shopify-hjemmeside", label: "Shopify" },
-      { href: "/webbureau-jylland", label: "Webbureau Jylland" },
-      { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
-      { href: "/webbureau-vejle", label: "Webbureau Vejle" },
-      { href: "/wordpress-horsens", label: "WordPress Horsens" },
-      { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
-      { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
-    ],
-  },
-  {
-    title: "Viden",
-    links: [
-      { href: "/blog", label: "Blog og guides" },
-      { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
+      { href: "/ai-loesninger", label: "AI-løsninger" },
+      { href: "/ai-seo", label: "AI SEO" },
       { href: "/hosting-og-vedligeholdelse", label: "Hosting og drift" },
     ],
   },
   {
-    title: "Brancher",
+    title: "Områder og brancher",
     links: [
+      { href: "/webbureau-aarhus", label: "Aarhus" },
+      { href: "/webbureau-vejle", label: "Vejle" },
+      { href: "/webbureau-midtjylland", label: "Midtjylland" },
+      { href: "/webbureau-jylland", label: "Hele Jylland" },
       { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
       { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-      { href: "/hjemmeside-til-saloner", label: "Saloner" },
-      { href: "/hjemmeside-til-vvs", label: "VVS" },
-      { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-      { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
+      { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
     ],
   },
 ];
@@ -94,7 +75,7 @@ const Footer = () => {
     <footer className="relative overflow-hidden bg-[#1c1e1e] border-t border-white/10">
       <div className="max-w-[88rem] mx-auto px-5 sm:px-10 lg:px-16">
         {/* Links */}
-        <div className="grid grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr_1fr_1.1fr] gap-x-6 gap-y-10 pt-14 pb-12 sm:pt-16 sm:pb-14">
+        <div className="grid grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr] gap-x-6 gap-y-10 pt-14 pb-12 sm:pt-16 sm:pb-14">
           <div className="col-span-2 lg:col-span-1">
             <p className="text-[18px] font-semibold text-white mb-3 tracking-tight">
               Web<span className="text-[#00a8e8]">Hjerte</span>
@@ -150,8 +131,8 @@ const Footer = () => {
         </div>
 
         {/* Bund */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-6 border-t border-white/10">
-          <p className="text-[12px] text-[#7a8787] leading-relaxed">© 2026 WebHjerte · CVR: 46485823</p>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-6 pb-24 md:pb-6 border-t border-white/10">
+          <p className="text-[12px] text-[#7a8787] leading-relaxed">© 2026 WebHjerte · CVR: 46485823 · Alle priser er inkl. moms.</p>
           <p className="text-[12px] text-[#7a8787] flex gap-5">
             {legalLinks.map(({ href, label }) => (
               <Link key={href} href={href} className="hover:text-white transition-colors">

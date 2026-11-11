@@ -52,7 +52,6 @@ const SupportTariffsBlock = () => {
                     </span>
                     <span className={`text-[13px] ${popular ? "text-[#8a8a8a]" : "text-[#7f8c8c]"}`}>DKK / md</span>
                   </div>
-                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#8a8a8a]" : "text-[#7f8c8c]"}`}>inkl. moms</p>
                 </div>
 
                 <ul className="flex flex-col gap-3 flex-1">

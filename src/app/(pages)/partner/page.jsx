@@ -59,7 +59,7 @@ const steps = [
 const faqs = [
   {
     q: "Hvordan fungerer henvisningsprovisionen?",
-    a: "Når en kunde, du har henvist, har betalt for sin hjemmeside, får du 10 % af projektprisen inkl. moms. Kunden nævner dit navn, eller du sender mig kontakten direkte. Provisionen gælder selve projektet, ikke løbende abonnementer.",
+    a: "Når en kunde, du har henvist, har betalt for sin hjemmeside, får du 10 % af projektprisen. Kunden nævner dit navn, eller du sender mig kontakten direkte. Provisionen gælder selve projektet, ikke løbende abonnementer.",
   },
   {
     q: "Ser min kunde, at du er underleverandør?",

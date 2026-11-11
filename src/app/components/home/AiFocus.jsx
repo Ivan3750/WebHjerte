@@ -4,19 +4,19 @@ import { FadeUp, RevealLines } from "./fx/Reveal";
 
 const cards = [
   {
-    href: "/ai-chatbot-til-hjemmeside",
+    href: "/ai-loesninger",
     tag: "Kundeservice",
     title: "AI-chatbot, der svarer 24/7",
     text: "Trænet på dine egne priser og ydelser. Svarer, kvalificerer leads og booker tider – også når du sover.",
   },
   {
-    href: "/ai-automatisering-virksomhed",
+    href: "/ai-loesninger",
     tag: "Automatisering",
     title: "Spar timer hver uge",
     text: "Formularer, bookinger, påmindelser og opfølgning kører af sig selv, så du kan bruge tiden på kunderne.",
   },
   {
-    href: "/geo-ai-synlighed",
+    href: "/ai-seo",
     tag: "AI-synlighed",
     title: "Bliv nævnt i ChatGPT og Google AI",
     text: "Tekster, der svarer direkte på kundernes spørgsmål – og en opsætning, så ChatGPT og Google forstår, hvad du laver, og anbefaler dig.",
@@ -87,7 +87,7 @@ export default function AiFocus() {
             <Link href="/ai-loesninger" className="inline-flex items-center text-[13px] font-semibold text-[#1c1e1e] bg-[#00a8e8] hover:bg-white rounded-full px-6 py-3 transition-colors">
               Se AI-løsninger
             </Link>
-            <Link href="/alle-typer-hjemmesider" className="inline-flex items-center text-[13px] font-medium text-white border border-white/15 hover:border-white/40 rounded-full px-6 py-3 transition-colors">
+            <Link href="/services" className="inline-flex items-center text-[13px] font-medium text-white border border-white/15 hover:border-white/40 rounded-full px-6 py-3 transition-colors">
               Alle platforme
             </Link>
           </div>

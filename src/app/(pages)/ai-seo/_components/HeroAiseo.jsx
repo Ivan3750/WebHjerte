@@ -14,7 +14,7 @@ export default function HeroAiseo() {
       breadcrumbs={[{ label: "Forside", href: "/" }, { label: "AI SEO" }]}
       eyebrow="AI SEO"
       titleLines={["Få din virksomhed", "fundet med AI SEO"]}
-      lead="Jeg bruger kunstig intelligens til at finde ud af, hvad dine kunder søger efter – og sørger for, at din hjemmeside dukker op i Google, ChatGPT og andre AI-svar, når de gør. Faste priser fra 3.500 DKK inkl. moms."
+      lead="Jeg bruger kunstig intelligens til at finde ud af, hvad dine kunder søger efter – og sørger for, at din hjemmeside dukker op i Google, ChatGPT og andre AI-svar, når de gør. Faste priser fra 3.500 DKK."
       actions={
         <>
           <PrimaryLink href="#priser">Se priser</PrimaryLink>

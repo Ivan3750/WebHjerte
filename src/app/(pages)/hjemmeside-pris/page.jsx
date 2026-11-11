@@ -10,7 +10,7 @@ import CasesCarousel from "../../components/home/CasesCarousel";
 export const metadata = {
   title: "Hjemmeside pris 2026 – fast pris fra 2.500 kr | WebHjerte",
   description:
-    "Hjemmeside priser inkl. moms: Landingside 2.500 kr, Basis 4.500 kr, Standard 8.500 kr, webshop fra 14.000 kr. Beregn din pris og få et fast tilbud.",
+    "Hjemmeside priser: Landingside 2.500 kr, Basis 4.500 kr, Standard 8.500 kr, webshop fra 14.000 kr. Beregn din pris og få et fast tilbud.",
   keywords:
     "hjemmeside pris, hjemmeside priser, hjemmesidepriser, priser hjemmeside, hjemmeside tilbud, hjemmeside fast pris, beregn hjemmeside pris, webdesign pris",
   robots: "index, follow",

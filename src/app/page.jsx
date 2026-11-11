@@ -90,7 +90,7 @@ const localLinks = [
   {
     href: "/hjemmeside-pris",
     title: "Hjemmeside priser",
-    desc: "Faste priser fra 2.500 kr inkl. moms og prisberegner – ingen skjulte gebyrer.",
+    desc: "Faste priser fra 2.500 kr og prisberegner – ingen skjulte gebyrer.",
   },
 ];
 
@@ -99,21 +99,15 @@ const topicLinks = [
   { href: "/webbureau-aarhus", label: "Aarhus" },
   { href: "/webbureau-vejle", label: "Vejle" },
   { href: "/wordpress-hjemmeside", label: "Professionel WordPress hjemmeside" },
-  { href: "/wordpress-horsens", label: "WordPress Horsens" },
-  { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
+  { href: "/services", label: "Alle ydelser" },
   { href: "/blog/hvad-koster-en-hjemmeside-2026", label: "Hvad koster en hjemmeside?" },
-  { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
-  { href: "/geo-ai-synlighed", label: "AI-synlighed" },
+  { href: "/ai-seo", label: "AI SEO" },
   { href: "/ofte-stillede-spoergsmaal", label: "FAQ" },
 ];
 
 const nicheLinks = [
   { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
   { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-  { href: "/hjemmeside-til-saloner", label: "Saloner" },
-  { href: "/hjemmeside-til-vvs", label: "VVS" },
-  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
 ];
 
 export default function Home() {
@@ -150,7 +144,7 @@ export default function Home() {
                 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.12] text-[clamp(24px,3.2vw,40px)] mb-6"
               />
               <FadeUp as="p" data-speakable delay={0.1} className="text-[14px] text-[#5f5f5f] leading-[1.85] mb-4">
-                WebHjerte er et webbureau i Horsens, der bygger hjemmesider fra 2.500 kr (inkl. moms) med levering på 2–10 dage. Som webbureau i Horsens hjælper jeg lokale virksomheder med at blive fundet på Google og omsætte
+                WebHjerte er et webbureau i Horsens, der bygger hjemmesider fra 2.500 kr med levering på 2–10 dage. Som webbureau i Horsens hjælper jeg lokale virksomheder med at blive fundet på Google og omsætte
                 besøgende til henvendelser. Du får en hurtig, mobilvenlig hjemmeside med SEO bygget ind fra første dag –
                 til en fast pris, så du ved præcis, hvad det koster.
               </FadeUp>
