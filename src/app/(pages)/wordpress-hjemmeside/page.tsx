@@ -9,6 +9,7 @@ import PackagesBlock from "../services/_components/PackagesBlock";
 import QuickLeadForm from "../../components/ui/QuickLeadForm";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
 import { DataTable } from "../../components/seo/ContentBlocks";
+import { WpEditDemo } from "../../components/variants/WpBlocks";
 
 const url = `${SITE_URL}/wordpress-hjemmeside`;
 
@@ -126,6 +127,7 @@ const WordpressHjemmeside = () => {
         }
       />
       <ProblemLoesning />
+      <WpEditDemo />
       <HvadGoerProfessionel />
 
       <section className="bg-[#f7f6f6]">

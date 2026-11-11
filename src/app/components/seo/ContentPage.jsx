@@ -6,6 +6,7 @@ import QuickLeadForm from "../ui/QuickLeadForm";
 import ScrollProgress from "../ui/ScrollProgress";
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
 import SectionBody, { slugify, autoVisual } from "./ContentBlocks";
+import BlogCover from "./BlogCover";
 import CityScene from "./CityScene";
 import TocNav from "./TocNav";
 import { ReadMore } from "./RelatedCards";
@@ -16,6 +17,43 @@ import NichePackage from "../ui/NichePackage";
 import GuaranteesBlock from "../home/GuaranteesBlock";
 import CasesCarousel from "../home/CasesCarousel";
 import ProcessBlock from "../home/ProcessBlock";
+import SupportTariffsBlock from "../../(pages)/services/_components/SupportTariffsBlock";
+import { AiChatDemo, AiSavings, AiDayCompare, AiByTrade, AiStart } from "../variants/AiBlocks";
+import { SiteAnatomy, SiteTree } from "../variants/SiteBlocks";
+import { ShopJourney, ShopPlatforms, ShopPrice } from "../variants/ShopBlocks";
+import { CareStatus, CareMonth, CareCosts } from "../variants/CareBlocks";
+
+/**
+ * Hver hovedside i menuen har sin egen opbygning og sine egne illustrerede blokke,
+ * så siderne ikke ligner hinanden. `aside` erstatter formularen i hero, `blocks` erstatter
+ * de fælles blokke (pris, garantier, cases, proces), og `open` er antal åbne afsnit i "Godt at vide".
+ */
+const VARIANTS = {
+  ai: {
+    aside: <AiChatDemo />,
+    blocks: [<AiSavings key="s" />, <AiDayCompare key="d" />, <AiByTrade key="t" />, <AiStart key="p" />],
+    open: 0,
+  },
+  site: {
+    blocks: [<SiteAnatomy key="a" />, <SiteTree key="t" />, <PriceStrip key="p" />, <CasesCarousel key="c" />],
+    open: 1,
+  },
+  shop: {
+    blocks: [<ShopJourney key="j" />, <ShopPlatforms key="p" />, <ShopPrice key="pr" />, <CasesCarousel key="c" />],
+    open: 0,
+  },
+  care: {
+    aside: <CareStatus />,
+    blocks: [
+      <CareMonth key="m" />,
+      <div key="t" className="bg-[#1c1e1e] pt-16 sm:pt-24">
+        <SupportTariffsBlock />
+      </div>,
+      <CareCosts key="c" />,
+    ],
+    open: 0,
+  },
+};
 
 const fmtDate = (iso) =>
   new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
@@ -61,7 +99,9 @@ export default function ContentPage({
   afterSummary,
   readMinutes,
   city,
+  variant,
 }) {
+  const v = VARIANTS[variant];
   const url = `${SITE_URL}${path}`;
   const trail = [{ name: "Forside", path: "/" }, ...breadcrumbs.map((b) => ({ name: b.label, path: b.href })), { name, path }];
 
@@ -136,7 +176,7 @@ export default function ContentPage({
     </>
   ) : null;
 
-  const aside = withForm ? (
+  const aside = v?.aside ? v.aside : withForm ? (
     <div className="rounded-3xl glass p-6 sm:p-8">
       <QuickLeadForm />
     </div>
@@ -147,7 +187,8 @@ export default function ContentPage({
   // Samme illustration må kun bruges én gang pr. side
   const used = new Set();
   const visuals = sections.map((s, i) => {
-    const v = autoVisual(s, i);
+    // I artikler står forsidebilledet lige over første afsnit, så det får ingen ekstra illustration
+    const v = isArticle && i === 0 && !s.visual ? null : autoVisual(s, i, isArticle);
     const name = typeof v === "string" ? v : v?.name;
     if (!name) return null;
     if (used.has(name) && !s.visual) return null;
@@ -219,6 +260,16 @@ export default function ContentPage({
             </aside>
 
             <div className="readable max-w-[740px] min-w-0">
+              {/* Illustration og et kort svar øverst – så man får pointen uden at læse hele guiden */}
+              <FadeUp className="mb-14">
+                <BlogCover href={path} dark h="h-[220px] sm:h-[320px]" />
+                {summary && (
+                  <aside className="mt-5 rounded-3xl bg-white border border-[#e8e6e6] p-6 sm:p-8">
+                    <p className="text-[11px] uppercase tracking-[0.16em] text-[#00a8e8] font-semibold mb-3">{summaryLabel}</p>
+                    <p className="text-[16.5px] leading-[1.75] text-[#2a2f30]">{summary}</p>
+                  </aside>
+                )}
+              </FadeUp>
               {afterSummary && <div className="mb-16">{afterSummary}</div>}
 
               <div className="flex flex-col gap-16 sm:gap-20">
@@ -250,7 +301,7 @@ export default function ContentPage({
         </section>
       ) : (
         <>
-          {isService && (
+          {v ? v.blocks : isService && (
             <>
               <PriceStrip />
               <GuaranteesBlock />
@@ -260,7 +311,7 @@ export default function ContentPage({
             </>
           )}
           {afterSummary}
-          <GuideSection sections={sections} visuals={visuals} collapse={isService} />
+          <GuideSection sections={sections} visuals={visuals} collapse={isService} open={v ? v.open : 2} />
         </>
       )}
 
@@ -284,7 +335,7 @@ const Chevron = () => (
  * "Godt at vide": den lange tekst til dem, der vil læse mere – uden nummerering og indholdsfortegnelse.
  * På tjenestesider er de første to afsnit åbne og resten sammenklappet (<details>), men stadig i HTML'en.
  */
-function GuideSection({ sections, visuals, collapse }) {
+function GuideSection({ sections, visuals, collapse, open: openCount = 2 }) {
   const h2Class = "text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(20px,2.4vw,28px)] [overflow-wrap:break-word]";
   return (
     <section className="scene bg-[#f7f6f6]">
@@ -300,7 +351,7 @@ function GuideSection({ sections, visuals, collapse }) {
         <div className="flex flex-col gap-4">
           {sections.map((section, idx) => {
             const id = section.id || (section.h2 ? slugify(section.h2) : undefined);
-            const open = !collapse || !section.h2 || idx < 2;
+            const open = !collapse || !section.h2 || idx < openCount;
             if (open) {
               return (
                 <article key={section.h2 || section.paragraphs?.[0]} id={id} className="scroll-mt-28 rounded-3xl bg-white border border-[#e8e6e6] p-6 sm:p-9">
