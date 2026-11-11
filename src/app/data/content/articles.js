@@ -163,7 +163,7 @@ const own = [
     ],
     faqs: [
       { q: "Hvad koster det at have en hjemmeside om året?", a: "For en lille virksomhed typisk 2.500–6.000 kr om året inkl. domæne, hosting og vedligeholdelse. En simpel kodet side uden fast aftale kan koste under 1.000 kr om året." },
-      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året inkl. moms, afhængigt af udbyder." },
+      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året, afhængigt af udbyder." },
       { q: "Skal jeg have en vedligeholdelsesaftale?", a: "Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 249–799 kr om måneden uden binding." },
       { q: "Hvad sker der, hvis jeg stopper med at betale for hosting?", a: "Hjemmesiden går offline. Derfor er det vigtigt, at du ejer domænet og har en kopi af siden, så den kan flyttes til en anden udbyder." },
     ],

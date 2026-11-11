@@ -34,7 +34,7 @@ const sections = [
     h2: "Pris og gennemsigtighed",
     paragraphs: [
       "Et større bureau har typisk højere faste omkostninger, som også skal dækkes af prisen. En freelancer arbejder ofte timebaseret, hvilket gør det svært at vide det endelige beløb på forhånd.",
-      "Hos WebHjerte starter pakkerne på fast pris: 2.500 kr for en landingside, 4.500 kr for Basis og 8.500 kr for Standard, alle inkl. moms.",
+      "Hos WebHjerte starter pakkerne på fast pris: 2.500 kr for en landingside, 4.500 kr for Basis og 8.500 kr for Standard.",
     ],
   },
   {

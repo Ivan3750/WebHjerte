@@ -20,7 +20,7 @@ export const platformPages = [
     intro:
       "Jeg hjælper små og mellemstore virksomheder med at opsætte, designe og optimere Shopify-butikker – og med at flytte en eksisterende webshop til Shopify uden at miste placeringer.",
     summary:
-      "Shopify er en abonnementsbaseret webshop-platform, hvor betaling, lager og fragt er indbygget. WebHjerte opsætter og designer Shopify-butikker, tilknytter danske betalingsmetoder og fragt, optimerer produktsider til Google og kan tilføje AI-funktioner som chatbot og produktanbefalinger. Skræddersyede webshops starter fra 14.000 kr inkl. moms.",
+      "Shopify er en abonnementsbaseret webshop-platform, hvor betaling, lager og fragt er indbygget. WebHjerte opsætter og designer Shopify-butikker, tilknytter danske betalingsmetoder og fragt, optimerer produktsider til Google og kan tilføje AI-funktioner som chatbot og produktanbefalinger. Skræddersyede webshops starter fra 14.000 kr.",
     sections: [
       {
         h2: "Hvornår er Shopify det rigtige valg?",
@@ -69,13 +69,13 @@ export const platformPages = [
       {
         h2: "Pris",
         paragraphs: [
-          "Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr inkl. moms. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.",
+          "Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.",
         ],
         cta: { href: "/kontakt", label: "Få et tilbud på din Shopify-butik" },
       },
     ],
     faqs: [
-      { q: "Hvad koster en Shopify webshop?", a: "Hos WebHjerte starter webshops fra 14.000 kr inkl. moms. Shopifys abonnement og apps kommer oveni og betales til Shopify." },
+      { q: "Hvad koster en Shopify webshop?", a: "Hos WebHjerte starter webshops fra 14.000 kr. Shopifys abonnement og apps kommer oveni og betales til Shopify." },
       { q: "Kan I flytte min webshop til Shopify?", a: "Ja. Jeg flytter produkter, kategorier og indhold og sætter omdirigeringer op, så du bevarer SEO-værdi." },
       { q: "Kan jeg få MobilePay i Shopify?", a: "Ja, via betalingsudbydere, der understøtter MobilePay. Jeg hjælper med opsætningen." },
       { q: "Kan en Shopify-butik få en AI-chatbot?", a: "Ja. Jeg kan integrere en chatbot, der besvarer kundespørgsmål og hjælper med bestillinger." },
@@ -99,7 +99,7 @@ export const platformPages = [
     intro:
       "AI er ikke kun noget for store virksomheder. Jeg implementerer praktiske AI-løsninger, der sparer dig timer hver uge, svarer kunder døgnet rundt og gør din virksomhed synlig i både Google og AI-assistenter som ChatGPT.",
     summary:
-      "WebHjerte implementerer AI i små og mellemstore virksomheder: AI-chatbot på hjemmesiden, automatisk besvarelse og booking, lead-kvalificering, automatiserede arbejdsgange og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI. AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr, og AI SEO starter fra 3.500 kr (inkl. moms). Du får et fast tilbud inden for 24 timer.",
+      "WebHjerte implementerer AI i små og mellemstore virksomheder: AI-chatbot på hjemmesiden, automatisk besvarelse og booking, lead-kvalificering, automatiserede arbejdsgange og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI. AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr, og AI SEO starter fra 3.500 kr. Du får et fast tilbud inden for 24 timer.",
     sections: [
       {
         h2: "Hvad kan AI konkret gøre for din virksomhed?",
@@ -188,13 +188,13 @@ export const platformPages = [
       {
         h2: "Pris",
         paragraphs: [
-          "AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr (inkl. moms). Mindre tilføjelser, fx en chatbot til en eksisterende hjemmeside, aftales individuelt efter behov – du får et fast tilbud inden for 24 timer. AI SEO-pakker starter fra 3.500 kr. Løbende udgifter til AI-værktøjer (fx brug af sprogmodeller) afhænger af omfang og oplyses på forhånd.",
+          "AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr. Mindre tilføjelser, fx en chatbot til en eksisterende hjemmeside, aftales individuelt efter behov – du får et fast tilbud inden for 24 timer. AI SEO-pakker starter fra 3.500 kr. Løbende udgifter til AI-værktøjer (fx brug af sprogmodeller) afhænger af omfang og oplyses på forhånd.",
         ],
         cta: { href: "/kontakt", label: "Få et gratis forslag" },
       },
     ],
     faqs: [
-      { q: "Hvad koster det at få en AI-chatbot?", a: "AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr inkl. moms. En chatbot til en eksisterende side aftales individuelt, og du får et fast tilbud inden for 24 timer." },
+      { q: "Hvad koster det at få en AI-chatbot?", a: "AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr. En chatbot til en eksisterende side aftales individuelt, og du får et fast tilbud inden for 24 timer." },
       { q: "Kan AI erstatte min kundeservice?", a: "AI kan overtage de gentagne spørgsmål og give kunden svar med det samme, men du bør altid kunne overtage samtalen. Jeg bygger løsningen, så mennesker stadig har kontrollen." },
       { q: "Er AI-løsninger GDPR-kompatible?", a: "De kan være det, hvis de sættes korrekt op. Jeg gennemgår, hvilke data der behandles, og sætter samtykke og privatlivspolitik op. Har du særlige krav, bør du få dem vurderet af en jurist." },
       { q: "Virker det på min eksisterende hjemmeside?", a: "I de fleste tilfælde ja – uanset om den er bygget i WordPress, Shopify, Webflow eller kode." },

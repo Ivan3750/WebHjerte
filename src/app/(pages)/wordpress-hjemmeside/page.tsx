@@ -69,7 +69,7 @@ const comparison = {
 };
 
 const faqs = [
-  { q: "Hvad koster en professionel WordPress-hjemmeside?", a: "Hos WebHjerte koster en WordPress-hjemmeside med 3–5 sider 4.500 kr (Basis), og op til 8 sider med SEO, analytics og booking 8.500 kr (Standard). WooCommerce-webshops starter fra 14.000 kr. Alle priser er faste og inkl. moms." },
+  { q: "Hvad koster en professionel WordPress-hjemmeside?", a: "Hos WebHjerte koster en WordPress-hjemmeside med 3–5 sider 4.500 kr (Basis), og op til 8 sider med SEO, analytics og booking 8.500 kr (Standard). WooCommerce-webshops starter fra 14.000 kr. Alle priser er faste." },
   { q: "Kan jeg selv redigere min WordPress-hjemmeside?", a: "Ja. Du får adgang til WordPress og en kort videogennemgang, så du selv kan rette tekster, billeder, priser og åbningstider – uden at ringe til en udvikler." },
   { q: "Hvor lang tid tager det at lave en WordPress-hjemmeside?", a: "Typisk 5–10 dage. Du ser et første designudkast inden for 48 timer, og betaler 0 kr for designet, hvis det ikke passer." },
   { q: "Hvad gør en WordPress-hjemmeside professionel?", a: "Et unikt design, hurtig indlæsning, korrekt SEO-opsætning, tydelige kontaktveje, sikkerhed og backup – og så få, velvalgte plugins, så siden ikke bliver langsom eller sårbar." },
@@ -94,7 +94,7 @@ const jsonLd = {
         priceCurrency: "DKK",
         price: "4500",
         priceSpecification: { "@type": "PriceSpecification", price: "4500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
-        description: "Flersidet WordPress-hjemmeside fra 4.500 kr inkl. moms",
+        description: "Flersidet WordPress-hjemmeside fra 4.500 kr",
       },
     },
     breadcrumbLd([

@@ -41,7 +41,7 @@ URL: https://www.webhjerte.dk/shopify-hjemmeside
 
 Jeg hjælper små og mellemstore virksomheder med at opsætte, designe og optimere Shopify-butikker – og med at flytte en eksisterende webshop til Shopify uden at miste placeringer.
 
-Kort svar: Shopify er en abonnementsbaseret webshop-platform, hvor betaling, lager og fragt er indbygget. WebHjerte opsætter og designer Shopify-butikker, tilknytter danske betalingsmetoder og fragt, optimerer produktsider til Google og kan tilføje AI-funktioner som chatbot og produktanbefalinger. Skræddersyede webshops starter fra 14.000 kr inkl. moms.
+Kort svar: Shopify er en abonnementsbaseret webshop-platform, hvor betaling, lager og fragt er indbygget. WebHjerte opsætter og designer Shopify-butikker, tilknytter danske betalingsmetoder og fragt, optimerer produktsider til Google og kan tilføje AI-funktioner som chatbot og produktanbefalinger. Skræddersyede webshops starter fra 14.000 kr.
 
 ## Hvornår er Shopify det rigtige valg?
 Shopify passer til virksomheder, der vil i gang hurtigt og have en driftssikker løsning uden at tænke på servere og sikkerhed. Du betaler et månedligt abonnement og gebyrer, men får til gengæld en løsning, der er bygget til at sælge.
@@ -71,11 +71,11 @@ Passer til | Hurtig og driftssikker shop | Shops med særlige behov eller blog o
 En moderne webshop kan bruge AI til at hjælpe kunderne: en chatbot, der svarer på spørgsmål om levering og returnering, automatisk produktbeskrivelse, anbefalinger og lead-opsamling. Jeg integrerer AI i din butik, så du sparer tid på kundeservice og øger salget.
 
 ## Pris
-Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr inkl. moms. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.
+Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en Shopify webshop?
-A: Hos WebHjerte starter webshops fra 14.000 kr inkl. moms. Shopifys abonnement og apps kommer oveni og betales til Shopify.
+A: Hos WebHjerte starter webshops fra 14.000 kr. Shopifys abonnement og apps kommer oveni og betales til Shopify.
 
 Q: Kan I flytte min webshop til Shopify?
 A: Ja. Jeg flytter produkter, kategorier og indhold og sætter omdirigeringer op, så du bevarer SEO-værdi.
@@ -94,7 +94,7 @@ URL: https://www.webhjerte.dk/ai-loesninger
 
 AI er ikke kun noget for store virksomheder. Jeg implementerer praktiske AI-løsninger, der sparer dig timer hver uge, svarer kunder døgnet rundt og gør din virksomhed synlig i både Google og AI-assistenter som ChatGPT.
 
-Kort svar: WebHjerte implementerer AI i små og mellemstore virksomheder: AI-chatbot på hjemmesiden, automatisk besvarelse og booking, lead-kvalificering, automatiserede arbejdsgange og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI. AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr, og AI SEO starter fra 3.500 kr (inkl. moms). Du får et fast tilbud inden for 24 timer.
+Kort svar: WebHjerte implementerer AI i små og mellemstore virksomheder: AI-chatbot på hjemmesiden, automatisk besvarelse og booking, lead-kvalificering, automatiserede arbejdsgange og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI. AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr, og AI SEO starter fra 3.500 kr. Du får et fast tilbud inden for 24 timer.
 
 ## Hvad kan AI konkret gøre for din virksomhed?
 De fleste lokale virksomheder bruger mange timer på de samme opgaver: besvare de samme spørgsmål, bekræfte bookinger, sortere henvendelser og skrive ensartede mails. Det er præcis den slags opgaver, AI er god til. Målet er ikke at erstatte dig, men at give dig tid til arbejdet, der kræver et menneske – og sikre, at ingen kunde ender uden svar.
@@ -140,11 +140,11 @@ Gør din virksomhed let at finde og anbefale, når kunder spørger ChatGPT, Gemi
 - Virksomheder, der vil findes i ChatGPT og Google AI.
 
 ## Pris
-AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr (inkl. moms). Mindre tilføjelser, fx en chatbot til en eksisterende hjemmeside, aftales individuelt efter behov – du får et fast tilbud inden for 24 timer. AI SEO-pakker starter fra 3.500 kr. Løbende udgifter til AI-værktøjer (fx brug af sprogmodeller) afhænger af omfang og oplyses på forhånd.
+AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr. Mindre tilføjelser, fx en chatbot til en eksisterende hjemmeside, aftales individuelt efter behov – du får et fast tilbud inden for 24 timer. AI SEO-pakker starter fra 3.500 kr. Løbende udgifter til AI-værktøjer (fx brug af sprogmodeller) afhænger af omfang og oplyses på forhånd.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster det at få en AI-chatbot?
-A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr inkl. moms. En chatbot til en eksisterende side aftales individuelt, og du får et fast tilbud inden for 24 timer.
+A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr. En chatbot til en eksisterende side aftales individuelt, og du får et fast tilbud inden for 24 timer.
 
 Q: Kan AI erstatte min kundeservice?
 A: AI kan overtage de gentagne spørgsmål og give kunden svar med det samme, men du bør altid kunne overtage samtalen. Jeg bygger løsningen, så mennesker stadig har kontrollen.
@@ -169,7 +169,7 @@ URL: https://www.webhjerte.dk/webshop-hjemmeside
 
 Jeg bygger webshops til små og mellemstore virksomheder: enkle at administrere, hurtige for kunderne og klar til søgemaskiner. Du får en fast pris og en løsning, du ejer selv.
 
-Kort svar: En webshop er en hjemmeside med produkter, kurv og betaling. Hos WebHjerte bygges webshops som skræddersyede løsninger fra 14.000 kr (inkl. moms), typisk i WooCommerce eller som skræddersyet kode. Prisen afhænger af antal produkter, betalingsløsninger, integrationer og fragt.
+Kort svar: En webshop er en hjemmeside med produkter, kurv og betaling. Hos WebHjerte bygges webshops som skræddersyede løsninger fra 14.000 kr, typisk i WooCommerce eller som skræddersyet kode. Prisen afhænger af antal produkter, betalingsløsninger, integrationer og fragt.
 
 ## Hvilken webshop skal jeg vælge?
 Jeg vurderer sammen med dig, hvad der passer til dit sortiment og din økonomi, og anbefaler ærligt – også hvis det betyder, at du ikke behøver mig.
@@ -192,11 +192,11 @@ Skræddersyet | Specielle behov, bookinger, abonnementer | Højeste fleksibilite
 En webshop har lovkrav, som en almindelig hjemmeside ikke har: fortrydelsesret, tydelig prisvisning inklusive moms, oplysning om levering og betalingsmetoder samt korrekt behandling af persondata. Jeg hjælper med at sætte det op efter gældende regler, men du bør altid have dine handelsbetingelser vurderet, hvis du er i tvivl om juraen.
 
 ## Pris og tid
-En enkel webshop starter fra 14.000 kr inkl. moms og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.
+En enkel webshop starter fra 14.000 kr og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en webshop?
-A: Hos WebHjerte fra 14.000 kr inkl. moms. Prisen afhænger af antal produkter, betalingsløsninger og integrationer.
+A: Hos WebHjerte fra 14.000 kr. Prisen afhænger af antal produkter, betalingsløsninger og integrationer.
 
 Q: Hvilken platform er bedst?
 A: Det afhænger af dit behov. WooCommerce er fleksibelt og uden platformsafgifter, Shopify er hurtigt at komme i gang med, og skræddersyet kode giver størst frihed.
@@ -212,7 +212,7 @@ URL: https://www.webhjerte.dk/hosting-og-vedligeholdelse
 
 En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 249 kr/md.
 
-Kort svar: Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md (inkl. moms).
+Kort svar: Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md.
 
 ## De løbende omkostninger ved en hjemmeside
 Beløbene er vejledende og varierer med udbyder. Når jeg sender et tilbud, får du overblik over de poster, der er relevante for netop din løsning.
@@ -263,7 +263,7 @@ URL: https://www.webhjerte.dk/webbureau-jylland
 
 WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.
 
-Kort svar: WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger fra 14.000 kr (inkl. moms).
+Kort svar: WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger fra 14.000 kr.
 
 ## Et webbureau, der dækker hele Jylland
 Jylland er en lang halvø med mange lokale markeder: håndværkere i Vestjylland, restauranter i Aarhus, turistvirksomheder i Nordjylland og servicefirmaer i trekantsområdet. Fælles for dem er, at de skal findes af kunder i deres eget område – og her er en lokal, hurtig og velstruktureret hjemmeside det vigtigste redskab.
@@ -293,7 +293,7 @@ Uanset hvor i Jylland du holder til, søger dine kunder på samme måde: en ydel
 
 ## Priser på hjemmesider i Jylland
 Alle priser er vejledende startpriser. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit projekt.
-Pakke | Fra pris (inkl. moms) | Levering | Omfang
+Pakke | Fra pris | Levering | Omfang
 Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagne eller én ydelse
 Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
 Standard | 8.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
@@ -318,7 +318,7 @@ Q: Skal jeg møde jer fysisk?
 A: Nej, men det er muligt i mange tilfælde. De fleste kunder foretrækker video eller telefon, fordi det er hurtigere.
 
 Q: Hvad koster en hjemmeside hos et webbureau i Jylland?
-A: Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 8.500 kr for Standard og 14.000 kr for skræddersyede løsninger (inkl. moms).
+A: Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 8.500 kr for Standard og 14.000 kr for skræddersyede løsninger.
 
 Q: Kan I hjælpe med at blive fundet lokalt i min by?
 A: Ja. Jeg bygger lokal SEO ind i hjemmesiden og kan hjælpe med Google Virksomhedsprofil og lokale landingssider.
@@ -537,7 +537,7 @@ URL: https://www.webhjerte.dk/ofte-stillede-spoergsmaal
 
 Her finder du korte, ærlige svar på det, de fleste spørger om, før de får lavet en hjemmeside – samlet på ét sted.
 
-Kort svar: WebHjerte bygger hjemmesider fra 2.500 kr (inkl. moms) med levering på 2–10 dage. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis du ikke er tilfreds, og ejer selv domæne og kode. WebHjerte er baseret i Horsens og arbejder i hele Danmark.
+Kort svar: WebHjerte bygger hjemmesider fra 2.500 kr med levering på 2–10 dage. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis du ikke er tilfreds, og ejer selv domæne og kode. WebHjerte er baseret i Horsens og arbejder i hele Danmark.
 
 ## Priser og betaling
 ### Hvad koster en hjemmeside hos WebHjerte?
@@ -547,7 +547,7 @@ Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi af
 ### Er der skjulte gebyrer?
 Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
 ### Hvad koster vedligeholdelse?
-Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms.
+Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md.
 ### Betaler jeg, hvis jeg ikke kan lide designet?
 Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
 
@@ -579,7 +579,7 @@ Ja. Basis-SEO (titler, beskrivelser, struktur og hastighed) er indbygget. Standa
 ### Hvad er AI SEO / GEO?
 AI SEO eller GEO (Generative Engine Optimization) gør din hjemmeside nem at forstå og citere for AI-systemer som ChatGPT, Gemini, Perplexity og Google AI-oversigter.
 ### Hvor meget koster AI SEO?
-Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (inkl. moms).
+Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr.
 ### Hvor hurtigt kan jeg se resultater af SEO?
 Det afhænger af branche og konkurrence. Teknisk forbedring kan ses hurtigt, men synlighed i søgeresultater opbygges typisk over 2–3 måneder eller mere.
 ### Tilbyder I et gratis SEO-tjek?
@@ -608,7 +608,7 @@ Q: Er der skjulte gebyrer?
 A: Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
 
 Q: Hvad koster vedligeholdelse?
-A: Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms.
+A: Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md.
 
 Q: Betaler jeg, hvis jeg ikke kan lide designet?
 A: Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
@@ -814,7 +814,7 @@ Q: Hvad koster det at have en hjemmeside om året?
 A: For en lille virksomhed typisk 2.500–6.000 kr om året inkl. domæne, hosting og vedligeholdelse. En simpel kodet side uden fast aftale kan koste under 1.000 kr om året.
 
 Q: Hvad koster et .dk-domæne?
-A: Typisk 100–200 kr om året inkl. moms, afhængigt af udbyder.
+A: Typisk 100–200 kr om året, afhængigt af udbyder.
 
 Q: Skal jeg have en vedligeholdelsesaftale?
 A: Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 249–799 kr om måneden uden binding.

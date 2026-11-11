@@ -95,7 +95,7 @@ export default function ContentPage({
         priceCurrency: "DKK",
         price: "2500",
         priceSpecification: { "@type": "PriceSpecification", price: "2500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
-        description: "Priser starter fra 2.500 kr (inkl. moms) for en landingside",
+        description: "Priser starter fra 2.500 kr for en landingside",
       },
     });
   }

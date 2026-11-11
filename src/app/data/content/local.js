@@ -21,7 +21,7 @@ export const localPages = [
     intro:
       "WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.",
     summary:
-      "WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger fra 14.000 kr (inkl. moms).",
+      "WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger fra 14.000 kr.",
     city: "jylland",
     facts: [
       { num: "Hele Jylland", label: "Fra Skagen til Kolding" },
@@ -93,7 +93,7 @@ export const localPages = [
       {
         h2: "Priser på hjemmesider i Jylland",
         table: {
-          head: ["Pakke", "Fra pris (inkl. moms)", "Levering", "Omfang"],
+          head: ["Pakke", "Fra pris", "Levering", "Omfang"],
           rows: [
             ["Landingside", "2.500 kr", "ca. 2 dage", "1 side til kampagne eller én ydelse"],
             ["Basis", "4.500 kr", "ca. 5 dage", "3–5 sider, kontaktformular, Google Maps, basis-SEO"],
@@ -133,7 +133,7 @@ export const localPages = [
       },
       {
         q: "Hvad koster en hjemmeside hos et webbureau i Jylland?",
-        a: "Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 8.500 kr for Standard og 14.000 kr for skræddersyede løsninger (inkl. moms).",
+        a: "Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 8.500 kr for Standard og 14.000 kr for skræddersyede løsninger.",
       },
       {
         q: "Kan I hjælpe med at blive fundet lokalt i min by?",

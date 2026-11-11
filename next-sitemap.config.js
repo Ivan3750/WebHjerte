@@ -34,6 +34,9 @@ export default {
     '/404',
     '/500',
     '/api/*',
+    // Annonce-landingssider (noindex, ikke i menuen)
+    '/ny-professionel-hjemmeside',
+    '/gratis-analyse',
     '/opengraph-image',
     '/privacy',
     '/terms',

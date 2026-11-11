@@ -37,8 +37,6 @@ const nextConfig = {
       { source: "/alle-typer-hjemmesider", destination: "/services", permanent: true },
       { source: "/baeredygtigt-webdesign", destination: "/blog", permanent: true },
       { source: "/webstrategi", destination: "/blog", permanent: true },
-      { source: "/ny-professionel-hjemmeside", destination: "/services", permanent: true },
-      { source: "/gratis-analyse", destination: "/gratis-seo-tjek-horsens", permanent: true },
       { source: "/ai-chatbot-til-hjemmeside", destination: "/ai-loesninger", permanent: true },
       { source: "/ai-automatisering-virksomhed", destination: "/ai-loesninger", permanent: true },
       { source: "/geo-ai-synlighed", destination: "/ai-seo", permanent: true },
