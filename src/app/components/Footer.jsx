@@ -10,6 +10,7 @@ const groups = [
       { href: "/portefolje", label: "Portefølje" },
       { href: "/om-mig", label: "Om mig" },
       { href: "/blog", label: "Blog" },
+      { href: "/partner", label: "Partnerskab" },
       { href: "/kontakt", label: "Kontakt" },
     ],
   },

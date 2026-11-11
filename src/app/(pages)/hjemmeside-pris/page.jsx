@@ -10,7 +10,7 @@ import CasesCarousel from "../../components/home/CasesCarousel";
 export const metadata = {
   title: "Hjemmeside pris 2026 – fast pris fra 2.500 kr | WebHjerte",
   description:
-    "Hjemmeside priser: Landingside 2.500 kr, Basis 4.500 kr, Standard 7.500 kr, webshop fra 14.000 kr. Beregn din pris og få et fast tilbud inden for 24 timer.",
+    "Hjemmeside priser inkl. moms: Landingside 2.500 kr, Basis 4.500 kr, Standard 8.500 kr, webshop fra 14.000 kr. Beregn din pris og få et fast tilbud.",
   keywords:
     "hjemmeside pris, hjemmeside priser, hjemmesidepriser, priser hjemmeside, hjemmeside tilbud, hjemmeside fast pris, beregn hjemmeside pris, webdesign pris",
   robots: "index, follow",
@@ -72,6 +72,7 @@ const jsonLd = {
         name: "Landingside",
         priceCurrency: "DKK",
         price: "2500",
+        priceSpecification: { "@type": "PriceSpecification", price: "2500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         availability: "https://schema.org/InStock",
         url: "https://www.webhjerte.dk/hjemmeside-pris",
       },
@@ -80,6 +81,7 @@ const jsonLd = {
         name: "Basis hjemmeside",
         priceCurrency: "DKK",
         price: "4500",
+        priceSpecification: { "@type": "PriceSpecification", price: "4500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         availability: "https://schema.org/InStock",
         url: "https://www.webhjerte.dk/hjemmeside-pris",
       },
@@ -87,7 +89,8 @@ const jsonLd = {
         "@type": "Offer",
         name: "Standard hjemmeside",
         priceCurrency: "DKK",
-        price: "7500",
+        price: "8500",
+        priceSpecification: { "@type": "PriceSpecification", price: "8500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         availability: "https://schema.org/InStock",
         url: "https://www.webhjerte.dk/hjemmeside-pris",
       },
@@ -96,6 +99,7 @@ const jsonLd = {
         name: "Skræddersyet løsning",
         priceCurrency: "DKK",
         price: "14000",
+        priceSpecification: { "@type": "PriceSpecification", price: "14000", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         availability: "https://schema.org/InStock",
         url: "https://www.webhjerte.dk/hjemmeside-pris",
       },
@@ -126,7 +130,7 @@ const HjemmesidePris = () => {
         breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Hjemmeside pris" }]}
         eyebrow="Priser"
         titleLines={["Hjemmeside priser –", "fast pris fra 2.500 kr"]}
-        lead="Se faste priser fra 2.500 kr og find den pakke, der passer til din virksomhed – ingen skjulte gebyrer, ingen overraskelser."
+        lead="Se faste priser fra 2.500 kr inkl. moms og find den pakke, der passer til din virksomhed – ingen skjulte gebyrer, ingen overraskelser."
         actions={
           <>
             <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>

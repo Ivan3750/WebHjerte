@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { supportPlans } from "../../data/supportPlans";
 
-// Kun WebHjertes faste, offentliggjorte priser (ekskl. moms) – ingen opfundne tillæg
+// Kun WebHjertes faste, offentliggjorte priser (inkl. moms) – ingen opfundne tillæg
 const PACKAGES = [
   { id: "landing", name: "Landingside", price: 2500, from: false, desc: "1 side · klar på ca. 2 dage" },
   { id: "basis", name: "Basis", price: 4500, from: false, desc: "3–5 sider · klar på ca. 5 dage" },
-  { id: "standard", name: "Standard", price: 7500, from: false, desc: "Op til 8 sider · SEO, booking, analytics" },
+  { id: "standard", name: "Standard", price: 8500, from: false, desc: "Op til 8 sider · SEO, booking, analytics" },
+  { id: "lokal", name: "Lokal synlighed", price: 9500, from: true, desc: "Standard + Google-profil, lokal SEO, anmeldelser" },
   { id: "custom", name: "Webshop / skræddersyet", price: 14000, from: true, desc: "Webshop, kundeportal, AI-chatbot m.m." },
 ];
 
@@ -19,8 +21,7 @@ const PLATFORMS = [
 
 const SUPPORT = [
   { id: "none", name: "Ingen aftale", monthly: 0 },
-  { id: "basic", name: "Vedligeholdelse", monthly: 195 },
-  { id: "plus", name: "Vedligeholdelse+", monthly: 395 },
+  ...supportPlans.map((x) => ({ id: x.id, name: `Vedligehold ${x.name}`, monthly: x.price })),
 ];
 
 const DOMAIN_PER_YEAR = 150; // typisk .dk-domæne
@@ -30,7 +31,7 @@ const fmt = (n) => n.toLocaleString("da-DK");
 export default function PriceCalculator({ dark = false }) {
   const [pkg, setPkg] = useState("basis");
   const [platform, setPlatform] = useState("ved-ikke");
-  const [support, setSupport] = useState("basic");
+  const [support, setSupport] = useState("standard");
   const [form, setForm] = useState({ name: "", contact: "", website: "" });
   const [status, setStatus] = useState("idle");
 
@@ -41,7 +42,7 @@ export default function PriceCalculator({ dark = false }) {
 
   const estimate = `${p.name}${p.from ? " (fra)" : ""} ${fmt(p.price)} kr · Platform: ${pl.name} · ${s.name}${
     s.monthly ? ` ${s.monthly} kr/md` : ""
-  } · 1. år ca. ${fmt(firstYear)} kr ekskl. moms`;
+  } · 1. år ca. ${fmt(firstYear)} kr inkl. moms`;
 
   const track = (event, extra = {}) => {
     window.dataLayer = window.dataLayer || [];
@@ -123,7 +124,7 @@ export default function PriceCalculator({ dark = false }) {
 
       <fieldset className="mb-7">
         <legend className={`text-[13px] font-medium ${c.text} mb-3`}>3. Hjælp efter lancering?</legend>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">
           {SUPPORT.map((x) => (
             <button type="button" key={x.id} aria-pressed={support === x.id} onClick={() => setSupport(x.id)} className={option(support === x.id)}>
               <span className={`block text-[13px] font-medium ${c.text}`}>{x.name}</span>
@@ -147,7 +148,7 @@ export default function PriceCalculator({ dark = false }) {
           <p className="text-[24px] font-semibold mt-1 text-[#00a8e8]">{p.from ? "fra " : ""}{fmt(firstYear)} kr</p>
         </div>
         <p className="sm:col-span-3 text-[12.5px] text-[#8a9595] leading-relaxed">
-          Alle beløb ekskl. moms. 1. år inkluderer et typisk .dk-domæne (ca. {DOMAIN_PER_YEAR} kr). Første designudkast på 48 timer – 0 kr, hvis det ikke passer.
+          Alle beløb inkl. moms. 1. år inkluderer et typisk .dk-domæne (ca. {DOMAIN_PER_YEAR} kr). Første designudkast på 48 timer – 0 kr, hvis det ikke passer.
         </p>
       </div>
 

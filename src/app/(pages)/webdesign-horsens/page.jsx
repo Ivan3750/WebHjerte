@@ -27,7 +27,7 @@ export const metadata = {
 const faqs = [
   {
     q: "Hvad koster webdesign i Horsens?",
-    a: "Priserne starter fra 2.500 kr for en landingside. En Basis-hjemmeside på 3-5 sider koster 4.500 kr, og Standard med op til 8 sider koster 7.500 kr. Større og skræddersyede løsninger starter fra 14.000 kr. Prisen er fast og aftales, før vi går i gang.",
+    a: "Priserne starter fra 2.500 kr for en landingside. En Basis-hjemmeside på 3-5 sider koster 4.500 kr, og Standard med op til 8 sider koster 8.500 kr. Større og skræddersyede løsninger starter fra 14.000 kr. Prisen er fast og aftales, før vi går i gang.",
   },
   {
     q: "Hvor hurtigt kan I levere et webdesign?",
@@ -134,11 +134,11 @@ const sections = [
   {
     h2: "Priser på webdesign i Horsens",
     table: {
-      head: ["Pakke", "Fra pris (ekskl. moms)", "Levering"],
+      head: ["Pakke", "Fra pris (inkl. moms)", "Levering"],
       rows: [
         ["Landingside", "2.500 kr", "ca. 2 dage"],
         ["Basis (3–5 sider)", "4.500 kr", "ca. 5 dage"],
-        ["Standard (op til 8 sider)", "7.500 kr", "ca. 10 dage"],
+        ["Standard (op til 8 sider)", "8.500 kr", "ca. 10 dage"],
         ["Skræddersyet", "14.000 kr", "Aftales"],
       ],
     },

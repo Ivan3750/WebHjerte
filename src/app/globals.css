@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* useScroll (framer-motion) måler i forhold til <html>, som skal være positioneret */
+html {
+  position: relative;
+}
+
 body {
   color: #ededed;
   background: #1c1e1e;
@@ -21,7 +26,7 @@ a:hover{
   scale: 0.998;
 }
 .btn {
-  background-color: #00aaff;
+  background-color: #00a8e8;
   color: rgb(255, 255, 255);
   font-family: Unbounded;
   font-size: 20px;
@@ -37,7 +42,7 @@ a:hover{
   transition: 0.2s;
 }
 .maintitle {
-  color: rgb(0, 170, 255);
+  color: #00a8e8;
   font-family: Unbounded;
   font-size: 38px; 
   font-weight: 600;
@@ -422,7 +427,7 @@ button:active {
   transition: all 0.3s ease-in-out;
   padding-block: 0.5rem;
   padding-inline: 1.25rem;
-  background-color: #00aaff;
+  background-color: #00a8e8;
   border-radius: 9999px;
   display: flex;
   align-items: center;

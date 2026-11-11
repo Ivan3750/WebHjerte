@@ -218,7 +218,7 @@ export default function SEO() {
                 {!isGood && (
                   <Link
                     href="/kontakt"
-                    className="mt-6 bg-[#00a8e8] hover:opacity-85 transition-opacity text-white text-[13px] font-medium px-5 py-2.5 rounded-xl text-center"
+                    className="mt-6 bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] transition-colors text-white text-[13px] font-semibold px-5 py-3 rounded-full text-center"
                   >
                     Book gratis gennemgang 
                   </Link>

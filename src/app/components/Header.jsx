@@ -6,56 +6,181 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import W from "../../../public/W.png";
 
-const mainLinks = [
-  { href: "/", label: "Forside" },
-  { href: "/services", label: "Services" },
-  { href: "/ai-loesninger", label: "AI" },
-  { href: "/om-mig", label: "Om mig" },
+/**
+ * Menustruktur. Et punkt er enten et direkte link ({ href }) eller en gruppe
+ * med undermenu ({ columns }). Samme data bruges til desktop og mobil.
+ */
+const navItems = [
+  {
+    label: "Services",
+    columns: [
+      {
+        title: "Hjemmesider",
+        links: [
+          { href: "/services", label: "Alle services" },
+          { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
+          { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
+          { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
+          { href: "/shopify-hjemmeside", label: "Shopify-hjemmeside" },
+          { href: "/webshop-hjemmeside", label: "Webshop" },
+          { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
+          { href: "/hosting-og-vedligeholdelse", label: "Hosting og vedligeholdelse" },
+        ],
+      },
+      {
+        title: "Lokalt",
+        links: [
+          { href: "/webdesign-horsens", label: "Webdesign Horsens" },
+          { href: "/seo-horsens", label: "SEO Horsens" },
+          { href: "/wordpress-horsens", label: "WordPress Horsens" },
+          { href: "/digitalt-bureau-horsens", label: "Digitalt bureau Horsens" },
+          { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
+          { href: "/webbureau-vejle", label: "Webbureau Vejle" },
+          { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
+          { href: "/webbureau-jylland", label: "Webbureau Jylland" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "AI",
+    columns: [
+      {
+        title: "AI til din virksomhed",
+        links: [
+          { href: "/ai-loesninger", label: "AI-løsninger" },
+          { href: "/ai-seo", label: "AI SEO" },
+          { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
+          { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
+          { href: "/ai-automatisering-virksomhed", label: "AI-automatisering" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Brancher",
+    columns: [
+      {
+        title: "Hjemmeside til",
+        links: [
+          { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
+          { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
+          { href: "/hjemmeside-til-saloner", label: "Saloner" },
+          { href: "/hjemmeside-til-vvs", label: "VVS" },
+          { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
+          { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
+        ],
+      },
+    ],
+  },
+  { href: "/hjemmeside-pris", label: "Priser" },
   { href: "/portefolje", label: "Portefølje" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/blog", label: "Blog" },
+  {
+    label: "Om",
+    columns: [
+      {
+        title: "Om WebHjerte",
+        links: [
+          { href: "/om-mig", label: "Om mig" },
+          { href: "/om-webhjerte", label: "Fakta om WebHjerte" },
+          { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
+          { href: "/ordliste", label: "Ordliste" },
+          { href: "/freelancer-vs-bureau", label: "Freelancer vs. bureau" },
+          { href: "/partner", label: "Partnerskab" },
+          { href: "/kontakt", label: "Kontakt" },
+        ],
+      },
+    ],
+  },
 ];
 
-const nicheLinks = [
-  { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-  { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-  { href: "/hjemmeside-til-saloner", label: "Saloner" },
-  { href: "/hjemmeside-til-vvs", label: "VVS" },
-  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
-];
+const isActivePath = (pathname, href) =>
+  href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 
-const NavLink = ({ href, label, pathname, onClick }) => {
-  const isActive = pathname === href;
+const groupLinks = (item) => item.columns.flatMap((c) => c.links);
+const isGroupActive = (pathname, item) => groupLinks(item).some((l) => isActivePath(pathname, l.href));
+
+const Underline = ({ active }) => (
+  <span
+    aria-hidden
+    className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] rounded-full bg-[#00a8e8] transition-all duration-300 ${
+      active ? "w-4" : "w-0"
+    }`}
+  />
+);
+
+const itemClass = (active) =>
+  `relative text-[13px] px-3 xl:px-3.5 py-2 transition-colors whitespace-nowrap ${
+    active ? "text-white" : "text-[#8b9797] hover:text-white"
+  }`;
+
+const DesktopDropdown = ({ item, pathname, open, onToggle, onClose }) => {
+  const active = isGroupActive(pathname, item);
+  const wide = item.columns.length > 1;
+  const id = `menu-${item.label.toLowerCase()}`;
+
   return (
-    <Link
-      href={href}
-      onClick={onClick}
-      aria-current={isActive ? "page" : undefined}
-      className={`relative text-[13px] px-3.5 py-2 transition-colors ${
-        isActive ? "text-white" : "text-[#8b9797] hover:text-white"
-      }`}
-    >
-      {label}
-      <span
-        className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] rounded-full bg-[#00a8e8] transition-all duration-300 ${
-          isActive ? "w-4" : "w-0"
-        }`}
-      />
-    </Link>
+    <div className="relative">
+      <button
+        type="button"
+        onClick={onToggle}
+        className={`${itemClass(active || open)} flex items-center gap-1`}
+        aria-expanded={open}
+        aria-controls={id}
+      >
+        {item.label}
+        <IoChevronDown size={13} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+        <Underline active={active} />
+      </button>
+
+      <div
+        id={id}
+        className={`absolute top-full mt-3 p-2 bg-[#111414] border border-white/10 rounded-2xl shadow-2xl transition-all duration-200 z-50 ${
+          wide ? "left-0 w-[520px] grid grid-cols-2 gap-2" : "left-1/2 -translate-x-1/2 w-[260px]"
+        } ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none invisible"}`}
+      >
+        {item.columns.map((col) => (
+          <div key={col.title}>
+            <p className="px-3.5 pt-2.5 pb-1.5 text-[10.5px] uppercase tracking-[0.16em] text-[#5f6c6c]">{col.title}</p>
+            <ul>
+              {col.links.map((link) => {
+                const current = pathname === link.href;
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      onClick={onClose}
+                      aria-current={current ? "page" : undefined}
+                      className={`block px-3.5 py-2 rounded-xl text-[13px] transition-colors ${
+                        current ? "text-white bg-white/10" : "text-[#9aa5a5] hover:text-white hover:bg-white/5"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isNicheOpen, setIsNicheOpen] = useState(false);
+  const [openGroup, setOpenGroup] = useState(null); // desktop-dropdown
+  const [mobileGroup, setMobileGroup] = useState(null); // mobil-accordion
   const pathname = usePathname();
-  const nicheRef = useRef(null);
+  const navRef = useRef(null);
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+  const closeGroup = () => setOpenGroup(null);
 
   useEffect(() => {
-    if (typeof window === "undefined" || typeof document === "undefined") return;
     if (!isMobileMenuOpen) return;
 
     const scrollY = window.scrollY;
@@ -76,97 +201,74 @@ const Header = () => {
     };
   }, [isMobileMenuOpen]);
 
+  // Luk alt ved sideskift
   useEffect(() => {
     closeMobileMenu();
-    setIsNicheOpen(false);
+    closeGroup();
+  }, [pathname]);
+
+  // Åbn den mobile gruppe, der indeholder den aktuelle side
+  useEffect(() => {
+    const current = navItems.find((item) => item.columns && isGroupActive(pathname, item));
+    setMobileGroup(current ? current.label : null);
   }, [pathname]);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
     const onKeyDown = (e) => {
       if (e.key === "Escape") {
         closeMobileMenu();
-        setIsNicheOpen(false);
+        closeGroup();
       }
+    };
+    const onMouseDown = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) closeGroup();
     };
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, []);
-
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (nicheRef.current && !nicheRef.current.contains(e.target)) {
-        setIsNicheOpen(false);
-      }
+    document.addEventListener("mousedown", onMouseDown);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("mousedown", onMouseDown);
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
-  const isNicheActive = nicheLinks.some((l) => l.href === pathname);
-
-  const nicheOpenClass = isNicheOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none";
 
   return (
-    <header className="sticky top-0 left-0 z-50 h-[68px] flex items-center justify-between px-4 md:px-6 lg:px-10 bg-[#1c1e1e] border-b border-white/10">
-      <Link href="/" aria-label="Gå til forsiden" className="flex items-center gap-2.5">
+    <header className="sticky top-0 left-0 z-50 h-[68px] flex items-center justify-between gap-4 px-4 md:px-6 lg:px-8 xl:px-10 bg-[#1c1e1e] border-b border-white/10">
+      <Link href="/" aria-label="WebHjerte – gå til forsiden" className="flex items-center gap-2.5 shrink-0">
         <Image src={W} width={36} height={36} alt="WebHjerte logo" priority />
-        <p className="text-white text-[17px] font-semibold tracking-tight logo-web">
+        <span className="text-white text-[17px] font-semibold tracking-tight logo-web">
           Web<span className="text-[#00a8e8]">Hjerte</span>
-        </p>
+        </span>
       </Link>
 
-      <nav className="hidden md:flex items-center" aria-label="Hovedmenu">
-        {mainLinks.slice(0, 2).map((link) => (
-          <NavLink key={link.href} {...link} pathname={pathname} />
-        ))}
-
-        <div ref={nicheRef} className="relative">
-          <button
-            onClick={() => setIsNicheOpen(!isNicheOpen)}
-            className={`relative text-[13px] px-3.5 py-2 transition-colors flex items-center gap-1 ${
-              isNicheActive || isNicheOpen ? "text-white" : "text-[#8b9797] hover:text-white"
-            }`}
-            aria-expanded={isNicheOpen}
-            aria-haspopup="true"
-          >
-            Brancher
-            <IoChevronDown size={13} className={`transition-transform duration-300 ${isNicheOpen ? "rotate-180" : ""}`} />
-            <span
-              className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] rounded-full bg-[#00a8e8] transition-all duration-300 ${
-                isNicheActive ? "w-4" : "w-0"
-              }`}
+      <nav ref={navRef} className="hidden lg:flex items-center" aria-label="Hovedmenu">
+        {navItems.map((item) =>
+          item.columns ? (
+            <DesktopDropdown
+              key={item.label}
+              item={item}
+              pathname={pathname}
+              open={openGroup === item.label}
+              onToggle={() => setOpenGroup((g) => (g === item.label ? null : item.label))}
+              onClose={closeGroup}
             />
-          </button>
-
-          <div
-            className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[300px] p-2 grid grid-cols-2 gap-1 bg-[#111414] border border-white/10 rounded-2xl shadow-2xl transition-all duration-200 z-50 ${nicheOpenClass}`}
-          >
-            {nicheLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsNicheOpen(false)}
-                tabIndex={isNicheOpen ? 0 : -1}
-                className={`px-3.5 py-2.5 rounded-xl text-[13px] transition-colors ${
-                  pathname === link.href ? "text-white bg-white/10" : "text-[#9aa5a5] hover:text-white hover:bg-white/5"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {mainLinks.slice(2).map((link) => (
-          <NavLink key={link.href} {...link} pathname={pathname} />
-        ))}
+          ) : (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={pathname === item.href ? "page" : undefined}
+              className={itemClass(isActivePath(pathname, item.href))}
+            >
+              {item.label}
+              <Underline active={isActivePath(pathname, item.href)} />
+            </Link>
+          )
+        )}
       </nav>
 
-      <div className="hidden md:flex items-center">
+      <div className="hidden lg:flex items-center shrink-0">
         <Link
           href="/kontakt"
-          className="text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-5 py-2.5 transition-colors"
+          className="text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-5 py-2.5 transition-colors whitespace-nowrap"
         >
           Få et gratis tilbud
         </Link>
@@ -174,7 +276,7 @@ const Header = () => {
 
       <button
         type="button"
-        className="md:hidden w-11 h-11 -mr-2 flex items-center justify-center text-white text-[26px] touch-manipulation"
+        className="lg:hidden w-11 h-11 -mr-2 flex items-center justify-center text-white text-[26px] touch-manipulation"
         onClick={toggleMobileMenu}
         aria-label={isMobileMenuOpen ? "Luk menu" : "Åbn menu"}
         aria-expanded={isMobileMenuOpen}
@@ -188,8 +290,10 @@ const Header = () => {
         id="mobile-menu"
         role="dialog"
         aria-modal="true"
+        aria-label="Menu"
         aria-hidden={!isMobileMenuOpen}
-        className={`fixed inset-0 h-[100dvh] w-screen z-[999] bg-[#1c1e1e] flex flex-col overscroll-contain transition-transform duration-300 md:hidden ${
+        inert={!isMobileMenuOpen}
+        className={`fixed inset-0 h-[100dvh] w-screen z-[999] bg-[#1c1e1e] flex flex-col overscroll-contain transition-transform duration-300 lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
         }`}
         style={{ paddingTop: "env(safe-area-inset-top)", paddingBottom: "env(safe-area-inset-bottom)" }}
@@ -208,41 +312,78 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-5 py-6">
+        <div className="flex-1 overflow-y-auto px-5 py-4">
           <nav className="flex flex-col" aria-label="Mobilmenu">
-            {mainLinks.map((link, i) => {
-              const active = pathname === link.href;
+            <Link
+              href="/"
+              onClick={closeMobileMenu}
+              className={`py-3.5 border-b border-white/[0.07] text-[22px] font-semibold tracking-tight ${
+                pathname === "/" ? "text-[#00a8e8]" : "text-white"
+              }`}
+            >
+              Forside
+            </Link>
+            {navItems.map((item) => {
+              if (!item.columns) {
+                const active = isActivePath(pathname, item.href);
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={closeMobileMenu}
+                    className={`py-3.5 border-b border-white/[0.07] text-[22px] font-semibold tracking-tight ${
+                      active ? "text-[#00a8e8]" : "text-white"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              }
+              const expanded = mobileGroup === item.label;
+              const active = isGroupActive(pathname, item);
+              const panelId = `mobile-${item.label.toLowerCase()}`;
               return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={closeMobileMenu}
-                  className="flex items-baseline gap-4 py-3.5 border-b border-white/[0.07]"
-                >
-                  <span className="text-[11px] tabular-nums text-[#4b5757]">0{i + 1}</span>
-                  <span className={`text-[24px] font-semibold tracking-tight ${active ? "text-[#00a8e8]" : "text-white"}`}>
-                    {link.label}
-                  </span>
-                </Link>
+                <div key={item.label} className="border-b border-white/[0.07]">
+                  <button
+                    type="button"
+                    onClick={() => setMobileGroup(expanded ? null : item.label)}
+                    aria-expanded={expanded}
+                    aria-controls={panelId}
+                    className={`w-full flex items-center justify-between py-3.5 text-[22px] font-semibold tracking-tight ${
+                      active ? "text-[#00a8e8]" : "text-white"
+                    }`}
+                  >
+                    {item.label}
+                    <IoChevronDown size={20} className={`text-[#7a8787] transition-transform duration-300 ${expanded ? "rotate-180" : ""}`} />
+                  </button>
+                  <div id={panelId} hidden={!expanded} className="pb-4">
+                    {item.columns.map((col) => (
+                      <div key={col.title} className="mt-1 mb-3">
+                        {item.columns.length > 1 && (
+                          <p className="text-[10.5px] uppercase tracking-[0.16em] text-[#7a8787] mb-2">{col.title}</p>
+                        )}
+                        <div className="flex flex-wrap gap-2">
+                          {col.links.map((link) => (
+                            <Link
+                              key={link.href}
+                              href={link.href}
+                              onClick={closeMobileMenu}
+                              aria-current={pathname === link.href ? "page" : undefined}
+                              className={`text-[13px] rounded-full px-4 py-2.5 border ${
+                                pathname === link.href ? "border-[#00a8e8] text-[#00a8e8]" : "border-white/10 text-[#b4bebe]"
+                              }`}
+                            >
+                              {link.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               );
             })}
           </nav>
-
-          <p className="text-[11px] uppercase tracking-[0.16em] text-[#7a8787] mt-8 mb-3">Brancher</p>
-          <div className="flex flex-wrap gap-2">
-            {nicheLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={closeMobileMenu}
-                className={`text-[13px] rounded-full px-4 py-2.5 border ${
-                  pathname === link.href ? "border-[#00a8e8] text-[#00a8e8]" : "border-white/10 text-[#b4bebe]"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
         </div>
 
         <div className="shrink-0 px-5 pt-4 pb-5 border-t border-white/10 flex flex-col gap-3">

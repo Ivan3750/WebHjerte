@@ -39,14 +39,16 @@ const facts = `# WebHjerte
 - AI: AI-chatbots, AI-automatisering, AI-booking, lead-kvalificering og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI
 - Arbejdsområde: Horsens, Midtjylland, Jylland og hele Danmark (online)
 
-## Priser (DKK, ekskl. moms)
+## Priser (DKK, inkl. moms)
 
 - Landingside: fra 2.500 kr. Levering på ca. 2 dage. 1 side til kampagner og annoncer.
 - Basis: fra 4.500 kr. Levering på ca. 5 dage. 3–5 sider.
-- Standard: fra 7.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Standard: fra 8.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Lokal synlighed (til håndværkere og lokale servicevirksomheder): fra 9.500 kr. Standard-hjemmeside + Google Business Profile, lokal SEO, anmeldelses-flow og 3 måneders vedligehold.
 - Skræddersyet: fra 14.000 kr. Aftales individuelt. Webshop, kundeportal og andre specialløsninger.
 - AI SEO: Basis fra 3.500 kr, Standard fra 6.500 kr, Skræddersyet fra 12.000 kr.
-- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned.
+- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement: Basis 249 kr/md (hosting, backup, opdateringer), Standard 449 kr/md (+ 30 min. ændringer og månedlig rapport), Pro 799 kr/md (+ 2 timers ændringer, SEO-rapport og Google-anmeldelser). Løbende måned, 30 dages opsigelse.
+- Partnerskab: underleverandør for bureauer og 10 % henvisningsprovision til revisorer (se /partner).
 
 ## Garantier
 

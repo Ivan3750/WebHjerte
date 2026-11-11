@@ -15,14 +15,16 @@
 - AI: AI-chatbots, AI-automatisering, AI-booking, lead-kvalificering og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI
 - Arbejdsområde: Horsens, Midtjylland, Jylland og hele Danmark (online)
 
-## Priser (DKK, ekskl. moms)
+## Priser (DKK, inkl. moms)
 
 - Landingside: fra 2.500 kr. Levering på ca. 2 dage. 1 side til kampagner og annoncer.
 - Basis: fra 4.500 kr. Levering på ca. 5 dage. 3–5 sider.
-- Standard: fra 7.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Standard: fra 8.500 kr. Levering på ca. 10 dage. Op til 8 sider, SEO og analytics, booking og formularer.
+- Lokal synlighed (til håndværkere og lokale servicevirksomheder): fra 9.500 kr. Standard-hjemmeside + Google Business Profile, lokal SEO, anmeldelses-flow og 3 måneders vedligehold.
 - Skræddersyet: fra 14.000 kr. Aftales individuelt. Webshop, kundeportal og andre specialløsninger.
 - AI SEO: Basis fra 3.500 kr, Standard fra 6.500 kr, Skræddersyet fra 12.000 kr.
-- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement fra 195 til 395 kr. pr. måned.
+- Support efter lancering: 30 dage inkluderet. Herefter vedligeholdelsesabonnement: Basis 249 kr/md (hosting, backup, opdateringer), Standard 449 kr/md (+ 30 min. ændringer og månedlig rapport), Pro 799 kr/md (+ 2 timers ændringer, SEO-rapport og Google-anmeldelser). Løbende måned, 30 dages opsigelse.
+- Partnerskab: underleverandør for bureauer og 10 % henvisningsprovision til revisorer (se /partner).
 
 ## Garantier
 
@@ -39,7 +41,7 @@ URL: https://www.webhjerte.dk/alle-typer-hjemmesider
 
 WordPress, Shopify, Webflow, Wix eller skræddersyet kode? Jeg arbejder på tværs af platforme og vælger ikke efter vane, men efter hvad din virksomhed, dit budget og din hverdag kræver. Og er du allerede på en platform, optimerer eller flytter jeg gerne.
 
-Kort svar: WebHjerte bygger hjemmesider og webshops i WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (fx Next.js og React). Platformen vælges efter behov: WordPress til selvredigering, Shopify til hurtig webshop, Webflow til designfrihed og skræddersyet kode til maksimal hastighed og specialfunktioner. Priser fra 2.500 kr (ekskl. moms), og alle løsninger kan udvides med AI-funktioner.
+Kort svar: WebHjerte bygger hjemmesider og webshops i WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace og skræddersyet kode (fx Next.js og React). Platformen vælges efter behov: WordPress til selvredigering, Shopify til hurtig webshop, Webflow til designfrihed og skræddersyet kode til maksimal hastighed og specialfunktioner. Priser fra 2.500 kr (inkl. moms), og alle løsninger kan udvides med AI-funktioner.
 
 ## Hvilken platform skal jeg vælge?
 Tabellen er en tommelfingerregel. Jeg gennemgår dit behov og anbefaler ærligt – også hvis det betyder en enklere og billigere løsning, end du forventede.
@@ -75,7 +77,7 @@ Til maksimal hastighed, særlige funktioner og integrationer bygger jeg i modern
 Uanset platform kan jeg tilføje AI: en chatbot, der svarer kunder døgnet rundt, automatisk lead-kvalificering, AI-baseret booking eller automatiske arbejdsgange. Se hvad jeg kan implementere på siden om AI-løsninger.
 
 ## Priser
-Priserne er faste og afhænger af omfang, ikke af platform: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger (webshop, kundeportal, AI-funktioner) fra 14.000 kr. Alle priser ekskl. moms. Abonnementer og gebyrer til platforme som Shopify og Webflow betales direkte til udbyderen.
+Priserne er faste og afhænger af omfang, ikke af platform: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger (webshop, kundeportal, AI-funktioner) fra 14.000 kr. Alle priser inkl. moms. Abonnementer og gebyrer til platforme som Shopify og Webflow betales direkte til udbyderen.
 
 ## Ofte stillede spørgsmål
 Q: Hvilke platforme arbejder I med?
@@ -101,7 +103,7 @@ URL: https://www.webhjerte.dk/shopify-hjemmeside
 
 Jeg hjælper små og mellemstore virksomheder med at opsætte, designe og optimere Shopify-butikker – og med at flytte en eksisterende webshop til Shopify uden at miste placeringer.
 
-Kort svar: Shopify er en abonnementsbaseret webshop-platform, hvor betaling, lager og fragt er indbygget. WebHjerte opsætter og designer Shopify-butikker, tilknytter danske betalingsmetoder og fragt, optimerer produktsider til Google og kan tilføje AI-funktioner som chatbot og produktanbefalinger. Skræddersyede webshops starter fra 14.000 kr ekskl. moms.
+Kort svar: Shopify er en abonnementsbaseret webshop-platform, hvor betaling, lager og fragt er indbygget. WebHjerte opsætter og designer Shopify-butikker, tilknytter danske betalingsmetoder og fragt, optimerer produktsider til Google og kan tilføje AI-funktioner som chatbot og produktanbefalinger. Skræddersyede webshops starter fra 14.000 kr inkl. moms.
 
 ## Hvornår er Shopify det rigtige valg?
 Shopify passer til virksomheder, der vil i gang hurtigt og have en driftssikker løsning uden at tænke på servere og sikkerhed. Du betaler et månedligt abonnement og gebyrer, men får til gengæld en løsning, der er bygget til at sælge.
@@ -131,11 +133,11 @@ Passer til | Hurtig og driftssikker shop | Shops med særlige behov eller blog o
 En moderne webshop kan bruge AI til at hjælpe kunderne: en chatbot, der svarer på spørgsmål om levering og returnering, automatisk produktbeskrivelse, anbefalinger og lead-opsamling. Jeg integrerer AI i din butik, så du sparer tid på kundeservice og øger salget.
 
 ## Pris
-Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr ekskl. moms. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.
+Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr inkl. moms. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en Shopify webshop?
-A: Hos WebHjerte starter webshops fra 14.000 kr ekskl. moms. Shopifys abonnement og apps kommer oveni og betales til Shopify.
+A: Hos WebHjerte starter webshops fra 14.000 kr inkl. moms. Shopifys abonnement og apps kommer oveni og betales til Shopify.
 
 Q: Kan I flytte min webshop til Shopify?
 A: Ja. Jeg flytter produkter, kategorier og indhold og sætter omdirigeringer op, så du bevarer SEO-værdi.
@@ -154,7 +156,7 @@ URL: https://www.webhjerte.dk/ai-loesninger
 
 AI er ikke kun noget for store virksomheder. Jeg implementerer praktiske AI-løsninger, der sparer dig timer hver uge, svarer kunder døgnet rundt og gør din virksomhed synlig i både Google og AI-assistenter som ChatGPT.
 
-Kort svar: WebHjerte implementerer AI i små og mellemstore virksomheder: AI-chatbot på hjemmesiden, automatisk besvarelse og booking, lead-kvalificering, automatiserede arbejdsgange og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI. AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr, og AI SEO starter fra 3.500 kr (ekskl. moms). Du får et fast tilbud inden for 24 timer.
+Kort svar: WebHjerte implementerer AI i små og mellemstore virksomheder: AI-chatbot på hjemmesiden, automatisk besvarelse og booking, lead-kvalificering, automatiserede arbejdsgange og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI. AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr, og AI SEO starter fra 3.500 kr (inkl. moms). Du får et fast tilbud inden for 24 timer.
 
 ## Hvad kan AI konkret gøre for din virksomhed?
 De fleste lokale virksomheder bruger mange timer på de samme opgaver: besvare de samme spørgsmål, bekræfte bookinger, sortere henvendelser og skrive ensartede mails. Det er præcis den slags opgaver, AI er god til. Målet er ikke at erstatte dig, men at give dig tid til arbejdet, der kræver et menneske – og sikre, at ingen kunde ender uden svar.
@@ -200,11 +202,11 @@ Gør din hjemmeside nem at citere for ChatGPT, Gemini, Perplexity og Google AI-o
 - Virksomheder, der vil findes i ChatGPT og Google AI.
 
 ## Pris
-AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr (ekskl. moms). Mindre tilføjelser, fx en chatbot til en eksisterende hjemmeside, aftales individuelt efter behov – du får et fast tilbud inden for 24 timer. AI SEO-pakker starter fra 3.500 kr. Løbende udgifter til AI-værktøjer (fx brug af sprogmodeller) afhænger af omfang og oplyses på forhånd.
+AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr (inkl. moms). Mindre tilføjelser, fx en chatbot til en eksisterende hjemmeside, aftales individuelt efter behov – du får et fast tilbud inden for 24 timer. AI SEO-pakker starter fra 3.500 kr. Løbende udgifter til AI-værktøjer (fx brug af sprogmodeller) afhænger af omfang og oplyses på forhånd.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster det at få en AI-chatbot?
-A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. En chatbot til en eksisterende side aftales individuelt, og du får et fast tilbud inden for 24 timer.
+A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr inkl. moms. En chatbot til en eksisterende side aftales individuelt, og du får et fast tilbud inden for 24 timer.
 
 Q: Kan AI erstatte min kundeservice?
 A: AI kan overtage de gentagne spørgsmål og give kunden svar med det samme, men du bør altid kunne overtage samtalen. Jeg bygger løsningen, så mennesker stadig har kontrollen.
@@ -260,11 +262,11 @@ AI kan i sjældne tilfælde tage fejl. Derfor tester jeg den grundigt på typisk
 Chatbotten kan integreres på WordPress, WooCommerce, Shopify, Webflow og skræddersyede Next.js-sider. Har du allerede en hjemmeside, tilføjer jeg den uden at bygge siden om.
 
 ## Pris og forløb
-AI-chatbots indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. En chatbot til en eksisterende hjemmeside aftales individuelt efter, hvor meget den skal kunne – du får et fast tilbud inden for 24 timer. De fleste chatbots kan sættes op på få dage, når dine oplysninger er samlet.
+AI-chatbots indgår i skræddersyede løsninger fra 14.000 kr inkl. moms. En chatbot til en eksisterende hjemmeside aftales individuelt efter, hvor meget den skal kunne – du får et fast tilbud inden for 24 timer. De fleste chatbots kan sættes op på få dage, når dine oplysninger er samlet.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en AI-chatbot til hjemmesiden?
-A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. En chatbot til en eksisterende hjemmeside aftales individuelt, og du får et fast tilbud inden for 24 timer.
+A: AI-funktioner indgår i skræddersyede løsninger fra 14.000 kr inkl. moms. En chatbot til en eksisterende hjemmeside aftales individuelt, og du får et fast tilbud inden for 24 timer.
 
 Q: Kan chatbotten finde på forkerte svar?
 A: Det kan ske i sjældne tilfælde. Derfor begrænser jeg den til dine egne oplysninger, tester grundigt og sætter regler for, hvad den ikke må svare på.
@@ -312,7 +314,7 @@ En AI-agent er en assistent, der ikke kun besvarer spørgsmål, men også udfør
 - Start småt og udvid, når du ser effekten.
 
 ## Pris
-Automatiseringer indgår i skræddersyede løsninger fra 14.000 kr ekskl. moms. Mindre automatiseringer aftales individuelt, og du får et fast tilbud inden for 24 timer.
+Automatiseringer indgår i skræddersyede løsninger fra 14.000 kr inkl. moms. Mindre automatiseringer aftales individuelt, og du får et fast tilbud inden for 24 timer.
 
 ## Ofte stillede spørgsmål
 Q: Hvad kan jeg spare med automatisering?
@@ -364,7 +366,7 @@ Ejerskab | Kode og domæne tilhører dig | Varierer – ofte bundet til platform
 - Dit domæne og din kode tilhører dig fra dag ét.
 
 ## Hvad koster det?
-Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er ekskl. moms.
+Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.
 
 ## Ofte stillede spørgsmål
 Q: Hvad er en skræddersyet hjemmeside?
@@ -413,10 +415,10 @@ Privatliv og vilkår | Lovkrav og tryghed
 Jeg bygger SEO ind i fundamentet: logisk overskriftsstruktur, hurtige billeder, titler og beskrivelser, intern linking, sitemap og struktureret data. Siden er desuden skrevet, så den kan forstås af AI-søgning som ChatGPT og Google AI.
 
 ## Faste priser
-Alle priser ekskl. moms. Efter lancering får du 30 dages support.
+Alle priser inkl. moms. Efter lancering får du 30 dages support.
 - Landingside: fra 2.500 kr (1 side).
 - Basis: fra 4.500 kr (3–5 sider).
-- Standard: fra 7.500 kr (op til 8 sider, SEO og analytics, booking).
+- Standard: fra 8.500 kr (op til 8 sider, SEO og analytics, booking).
 - Skræddersyet: fra 14.000 kr (webshop, kundeportal m.m.).
 
 ## Typiske fejl på virksomhedshjemmesider
@@ -445,7 +447,7 @@ URL: https://www.webhjerte.dk/webshop-hjemmeside
 
 Jeg bygger webshops til små og mellemstore virksomheder: enkle at administrere, hurtige for kunderne og klar til søgemaskiner. Du får en fast pris og en løsning, du ejer selv.
 
-Kort svar: En webshop er en hjemmeside med produkter, kurv og betaling. Hos WebHjerte bygges webshops som skræddersyede løsninger fra 14.000 kr (ekskl. moms), typisk i WooCommerce eller som skræddersyet kode. Prisen afhænger af antal produkter, betalingsløsninger, integrationer og fragt.
+Kort svar: En webshop er en hjemmeside med produkter, kurv og betaling. Hos WebHjerte bygges webshops som skræddersyede løsninger fra 14.000 kr (inkl. moms), typisk i WooCommerce eller som skræddersyet kode. Prisen afhænger af antal produkter, betalingsløsninger, integrationer og fragt.
 
 ## Hvilken webshop skal jeg vælge?
 Jeg vurderer sammen med dig, hvad der passer til dit sortiment og din økonomi, og anbefaler ærligt – også hvis det betyder, at du ikke behøver mig.
@@ -468,11 +470,11 @@ Skræddersyet | Specielle behov, bookinger, abonnementer | Højeste fleksibilite
 En webshop har lovkrav, som en almindelig hjemmeside ikke har: fortrydelsesret, tydelig prisvisning inklusive moms, oplysning om levering og betalingsmetoder samt korrekt behandling af persondata. Jeg hjælper med at sætte det op efter gældende regler, men du bør altid have dine handelsbetingelser vurderet, hvis du er i tvivl om juraen.
 
 ## Pris og tid
-En enkel webshop starter fra 14.000 kr ekskl. moms og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.
+En enkel webshop starter fra 14.000 kr inkl. moms og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en webshop?
-A: Hos WebHjerte fra 14.000 kr ekskl. moms. Prisen afhænger af antal produkter, betalingsløsninger og integrationer.
+A: Hos WebHjerte fra 14.000 kr inkl. moms. Prisen afhænger af antal produkter, betalingsløsninger og integrationer.
 
 Q: Hvilken platform er bedst?
 A: Det afhænger af dit behov. WooCommerce er fleksibelt og uden platformsafgifter, Shopify er hurtigt at komme i gang med, og skræddersyet kode giver størst frihed.
@@ -569,9 +571,9 @@ A: Strategien afklarer mål og prioriteringer. SEO er en del af udførelsen, som
 # Hosting og vedligeholdelse: hvad koster det at holde en hjemmeside kørende?
 URL: https://www.webhjerte.dk/hosting-og-vedligeholdelse
 
-En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 195 kr/md.
+En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 249 kr/md.
 
-Kort svar: Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md (ekskl. moms).
+Kort svar: Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md (inkl. moms).
 
 ## De løbende omkostninger ved en hjemmeside
 Beløbene er vejledende og varierer med udbyder. Når jeg sender et tilbud, får du overblik over de poster, der er relevante for netop din løsning.
@@ -579,22 +581,23 @@ Post | Typisk niveau | Hvad dækker det?
 Domæne (.dk, .com) | ca. 100–200 kr/år | Din adresse på nettet
 Hosting | Fra gratis til ca. 500 kr/md (afhænger af løsning) | Serverplads, hastighed og oppetid
 SSL-certifikat | Ofte inkluderet | Krypteret forbindelse (https)
-Vedligeholdelse hos WebHjerte | 195–395 kr/md | Opdateringer, sikkerhed, rettelser og support
+Vedligeholdelse hos WebHjerte | 249–799 kr/md | Opdateringer, sikkerhed, rettelser og support
 Tredjepartsværktøjer | Varierer | Fx booking, nyhedsbreve, betalingsløsning
 
 ## Hvad er inkluderet i mit tilbud?
 - 30 dages gratis support efter lancering.
-- Opsætning af hosting og SSL ved lancering (udbyder og abonnement betales direkte af dig, hvis intet andet er aftalt).
+- Opsætning af hosting og SSL ved lancering. Med et vedligeholdelsesabonnement står jeg for hosting – ellers betaler du udbyderen direkte.
 - Domæne og kode tilhører dig – du er ikke låst til mig.
 - Gennemgang af, hvordan siden redigeres og vedligeholdes.
 
-## Vedligeholdelsesabonnement fra 195 kr/md
-Vil du ikke selv holde styr på opdateringer og små rettelser, kan jeg gøre det for dig. Abonnementet kan omfatte:
-- Opdatering af system og plugins (WordPress) eller afhængigheder (skræddersyet kode).
-- Sikkerhedsovervågning og backup.
-- Små rettelser af tekst, billeder og priser.
-- Overvågning af oppetid og hastighed.
-- Hurtig support ved fejl.
+## Vedligeholdelsesabonnement fra 249 kr/md
+Vil du ikke selv holde styr på hosting, opdateringer og små rettelser, gør jeg det for dig. Der er tre niveauer – alle priser er inkl. moms, løbende måned med 30 dages opsigelse og uden binding.
+- Ubrugte minutter overføres ikke til næste måned.
+- Større opgaver aftales til fast pris, før jeg går i gang.
+Abonnement | Pris | Indhold
+Basis | 249 kr/md | Hosting, SSL, daglig backup, opdateringer, overvågning af oppetid og fornyelse af domæne
+Standard | 449 kr/md | Alt i Basis + op til 30 min. ændringer pr. måned og månedlig statusrapport
+Pro | 799 kr/md | Alt i Standard + op til 2 timers ændringer, SEO-rapport, Google-anmeldelser og Google Business Profile
 
 ## Hvorfor vedligeholdelse er vigtig
 Forældede systemer og plugins er den hyppigste årsag til sikkerhedsproblemer. Dertil kommer, at priser, åbningstider og tilbud skal være aktuelle – både for kundernes skyld og for søgemaskinerne. En side, der aldrig opdateres, mister gradvist både tillid og synlighed.
@@ -602,7 +605,7 @@ Jeg anbefaler at planlægge mindst en gennemgang hvert kvartal: tjek links, form
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en hjemmeside om året?
-A: Udover selve udviklingen skal du regne med domæne (ca. 100–200 kr/år), hosting og evt. vedligeholdelse. Hos WebHjerte fra 195 kr/md for vedligeholdelse.
+A: Udover selve udviklingen skal du regne med domæne (ca. 100–200 kr/år), hosting og evt. vedligeholdelse. Hos WebHjerte fra 249 kr/md for vedligeholdelse.
 
 Q: Er support inkluderet?
 A: Ja. Du får 30 dages gratis support efter lancering.
@@ -621,7 +624,7 @@ URL: https://www.webhjerte.dk/webbureau-jylland
 
 WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.
 
-Kort svar: WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr (ekskl. moms).
+Kort svar: WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger fra 14.000 kr (inkl. moms).
 
 ## Et webbureau, der dækker hele Jylland
 Jylland er en lang halvø med mange lokale markeder: håndværkere i Vestjylland, restauranter i Aarhus, turistvirksomheder i Nordjylland og servicefirmaer i trekantsområdet. Fælles for dem er, at de skal findes af kunder i deres eget område – og her er en lokal, hurtig og velstruktureret hjemmeside det vigtigste redskab.
@@ -637,6 +640,9 @@ Vejle, Fredericia, Kolding, Middelfart og Esbjerg. God placering for virksomhede
 ### Vest- og Nordjylland
 Ringkøbing, Holstebro, Thisted, Hjørring, Aalborg og Frederikshavn. Her er onlinesamarbejdet en fordel: du slipper for at betale for kørsel og mødetid.
 
+## Lokale søgninger fra Skagen til Kolding
+Uanset hvor i Jylland du holder til, søger dine kunder på samme måde: en ydelse plus en by. Forskellen er, hvor mange konkurrenter du har. I Aarhus og Aalborg er der mange; i mindre byer kan en god side hurtigt gøre dig til det oplagte valg.
+
 ## Hvad får du som kunde?
 - Fast pris aftalt på forhånd – ingen timebaseret overraskelse bagefter.
 - Første designudkast inden for 48 timer, og 0 kr for designet, hvis det ikke passer.
@@ -644,14 +650,14 @@ Ringkøbing, Holstebro, Thisted, Hjørring, Aalborg og Frederikshavn. Her er onl
 - SEO, mobiloptimering og hurtig indlæsning bygget ind fra første dag.
 - Struktureret data og indhold, der også kan findes i AI-søgning (ChatGPT, Google AI).
 - Domæne og kode tilhører dig – ingen bindinger.
-- 30 dages support efter lancering og herefter vedligeholdelse fra 195 kr/md.
+- 30 dages support efter lancering og herefter vedligeholdelse fra 249 kr/md.
 
 ## Priser på hjemmesider i Jylland
 Alle priser er vejledende startpriser. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit projekt.
-Pakke | Fra pris (ekskl. moms) | Levering | Omfang
+Pakke | Fra pris (inkl. moms) | Levering | Omfang
 Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagne eller én ydelse
 Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
-Standard | 7.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
+Standard | 8.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
 Skræddersyet | 14.000 kr | Aftales | Webshop, kundeportal eller specialfunktioner
 
 ## Hvorfor vælge et lille webbureau frem for et stort?
@@ -673,7 +679,7 @@ Q: Skal jeg møde jer fysisk?
 A: Nej, men det er muligt i mange tilfælde. De fleste kunder foretrækker video eller telefon, fordi det er hurtigere.
 
 Q: Hvad koster en hjemmeside hos et webbureau i Jylland?
-A: Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 7.500 kr for Standard og 14.000 kr for skræddersyede løsninger (ekskl. moms).
+A: Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 8.500 kr for Standard og 14.000 kr for skræddersyede løsninger (inkl. moms).
 
 Q: Kan I hjælpe med at blive fundet lokalt i min by?
 A: Ja. Jeg bygger lokal SEO ind i hjemmesiden og kan hjælpe med Google Virksomhedsprofil og lokale landingssider.
@@ -692,32 +698,28 @@ Kort svar: WebHjerte hjælper virksomheder i Aarhus med hjemmesider, SEO og AI-s
 Aarhus er Danmarks næststørste by, og online er konkurrencen derefter. Søger en kunde efter “frisør Aarhus”, “VVS Aarhus” eller “restaurant Aarhus C”, vælger Google blandt hundredvis af virksomheder. Det er derfor ikke nok at have en hjemmeside – den skal være hurtig, tydelig og bygget til lokale søgninger.
 Jeg designer sider, hvor de vigtigste informationer er synlige med det samme: hvad du tilbyder, hvor du holder til, hvad det koster, og hvordan man kontakter dig. Besøgende i en storby har travlt, og siden skal arbejde for dig på få sekunder.
 
+## Sådan søger kunderne i Aarhus
+Aarhus-kunder er vant til mange valgmuligheder. De søger hurtigt, sammenligner to-tre resultater og vælger den, der svarer tydeligst. Eksemplerne her er typiske søgninger – de viser, hvad din side skal kunne svare på.
+
 ## Hvorfor vælge et webbureau fra Horsens?
 - Samme kvalitet som bureauer i Aarhus, men uden store byoverhead i prisen.
 - Direkte kontakt med udvikleren – ingen account managers.
 - Fast pris og klar tidsplan fra dag ét.
-- 45 minutter fra Aarhus, når et fysisk møde giver værdi.
+- Cirka 45 minutter fra Aarhus, når et fysisk møde giver værdi.
 - Online workflow, så du kan godkende design og rettelser, når det passer dig.
 
 ## Brancher i Aarhus, jeg hjælper
-Mange af mine opgaver kommer fra lokale servicevirksomheder, men jeg bygger til alle brancher, der har brug for at blive fundet.
-- Håndværkere og installatører (VVS, el, tømrer, maler).
-- Restauranter, caféer og barer – med menu, booking og bestilling.
-- Saloner, klinikker og wellness – med tidsbestilling.
-- Konsulenter og rådgivere – med fokus på troværdighed og leadgenerering.
-- Små webshops og lokale detailhandlere.
+Mange af mine opgaver kommer fra lokale servicevirksomheder, men jeg bygger til alle brancher, der har brug for at blive fundet. Her er de mest almindelige – med konkrete råd:
 
 ## Lokal SEO i Aarhus
 En del af arbejdet er at sikre, at Google forstår, at du hører til i Aarhus. Det gør jeg med lokale oplysninger i markup, tydelig omtale af bydele og opland, en optimeret Google Virksomhedsprofil og indhold, der svarer på spørgsmål, kunder faktisk stiller.
 Vil du i toppen for søgninger som “[ydelse] Aarhus”, er der som regel brug for både en god hjemmeside og løbende arbejde med indhold og omtaler. Jeg fortæller ærligt, hvor realistisk din målsætning er, og hvad det kræver.
+1. Google Virksomhedsprofil: Rigtig kategori, bydele som serviceområde, billeder og svar på anmeldelser.
+2. Sider pr. ydelse og bydel: Egne sider, hvor det giver mening – med eget indhold, ikke kopier.
+3. Omtaler og anmeldelser: Lokale omtaler og nye anmeldelser holder dig synlig i en by med hård konkurrence.
 
-## Priser
-Priser ekskl. moms. Se hvad der er inkluderet på siden om hjemmeside pris.
-Pakke | Fra pris | Levering
-Landingside | 2.500 kr | ca. 2 dage
-Basis (3–5 sider) | 4.500 kr | ca. 5 dage
-Standard (op til 8 sider) | 7.500 kr | ca. 10 dage
-Skræddersyet | 14.000 kr | Aftales
+## Hvad koster det?
+Priserne ligger fast og er de samme, uanset om du sidder i Aarhus eller Horsens. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit projekt.
 
 ## Ofte stillede spørgsmål
 Q: Har I kontor i Aarhus?
@@ -739,27 +741,36 @@ Vejle ligger 25 minutter fra Horsens, og mange af mine kunder findes i hele trek
 
 Kort svar: WebHjerte er et webbureau med base i Horsens, ca. 25–30 minutter fra Vejle. Jeg bygger hjemmesider til virksomheder i Vejle, Fredericia, Kolding og omegn fra 2.500 kr, med levering på 2–10 dage. Et eksempel i porteføljen er Lønbæks Køreskole i Vejle.
 
-## Hjemmesider til virksomheder i Vejle
-Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt – og de forventer at kunne se priser, tilgængelighed og kontaktoplysninger på få sekunder. Min opgave er at bygge en hjemmeside, der opfylder det forventnings-niveau.
-I min portefølje finder du blandt andet en hjemmeside til Lønbæks Køreskole i Vejle. Samme tankegang bruger jeg til alle brancher: tydelig værdi, få klik til kontakt og hurtig indlæsning på mobil.
+## Fra Horsens til Vejle: 25 minutter og en fjord
+Jeg sidder i Horsens, og Vejle er min nærmeste store nabo mod syd. Fra Horsens følger du E45 sydpå, over Vejlefjordbroen, og er i Vejle på cirka 25–30 minutter. Det betyder, at jeg både kan arbejde med dig online og – hvis det giver mening – mødes med dig ansigt til ansigt.
+Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt, og de forventer at kunne se ydelser, priser og kontaktoplysninger på få sekunder. Min opgave er at gøre din virksomhed nem at finde og nem at vælge.
+
+## Sådan søger virksomheder og kunder i Vejle
+Lokale søgninger følger et fast mønster: en ydelse plus et stednavn. Eksemplerne herunder er typiske formuleringer – og det er dem, din hjemmeside skal kunne svare på, hvis du vil findes af kunder i Vejle.
+
+## Brancher, jeg bygger til i og omkring Vejle
+Jeg arbejder med små og mellemstore virksomheder på tværs af brancher. I min portefølje finder du blandt andet Lønbæks Køreskole i Vejle. Her er de brancher, jeg oftest bygger til – med egne sider med konkrete råd:
+
+## Lokal synlighed i Vejle: tre ting, der flytter mest
+Når kunder i Vejle søger efter dig, ser de ofte først Googles kortresultater. Derfor starter jeg med det, der giver mest effekt for en lokal virksomhed:
+1. Google Virksomhedsprofil i orden: Rigtig kategori, ydelser, åbningstider, billeder og Vejle som serviceområde. Svar på alle anmeldelser.
+2. En side pr. ydelse – med Vejle i teksten: Hver ydelse får sin egen side med egne ord, så du findes på de konkrete søgninger i stedet for én samlet 'ydelser'-side.
+3. Anmeldelser fra kunder i området: Bed om en anmeldelse, når en opgave er færdig. Lokale anmeldelser betyder meget for placeringen i kortet.
 
 ## Trekantsområdet: Vejle, Fredericia og Kolding
-Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor bygger jeg sider med serviceområde, ikke kun én adresse: du kan omtale alle de byer, du dækker, uden at ende med tynde duplikatsider. Det styrker din lokale synlighed og gør siden mere nyttig for kunderne.
+Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor bygger jeg sider med serviceområde, ikke kun én adresse: du kan omtale alle de byer, du dækker, uden at ende med tynde duplikatsider. Det styrker din lokale synlighed og giver kunderne et klart billede af, hvor du kommer.
 - Vejle og omegn: Børkop, Give, Egtved, Jelling og Bredsten.
 - Fredericia og Middelfart.
 - Kolding og Christiansfeld.
 - Horsens og Hedensted – mit hjemmemarked.
 
-## Hvad får du?
+## Hvad får du som kunde i Vejle?
 - Fast pris og aftalt tidsplan.
 - Responsivt design, der virker på mobil, tablet og desktop.
 - Basis-SEO og struktureret data i alle pakker.
 - Kontaktformularer, Google Maps og klik-for-at-ringe.
 - 30 dages support efter lancering.
 - Mulighed for WordPress, hvis du selv vil redigere indholdet.
-
-## Sådan prissætter jeg
-Jeg prissætter efter omfang – ikke efter timer. En landingside starter fra 2.500 kr, en Basis-hjemmeside fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr. Alle priser er ekskl. moms. Du får et fast tilbud, før vi går i gang, og prisen ændrer sig kun, hvis vi aftaler at udvide opgaven.
 
 ## Ofte stillede spørgsmål
 Q: Arbejder I med virksomheder i Vejle?
@@ -779,7 +790,7 @@ URL: https://www.webhjerte.dk/wordpress-horsens
 
 En professionel WordPress-hjemmeside, hvor du selv kan rette tekster, priser og billeder – uden at ringe til en udvikler hver gang. Jeg bygger den hurtig, sikker og klar til Google.
 
-Kort svar: WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 7.500 kr (Standard), ekskl. moms, med levering på 5–10 dage.
+Kort svar: WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 8.500 kr (Standard), inkl. moms, med levering på 5–10 dage.
 
 ## Hvorfor vælge WordPress?
 WordPress er verdens mest udbredte CMS, og det er der gode grunde til. Systemet er fleksibelt, har et enormt økosystem af plugins og designs, og der findes udviklere overalt. Det betyder, at din hjemmeside ikke er afhængig af én enkelt person – heller ikke mig.
@@ -804,14 +815,14 @@ Du vil have maksimal hastighed og minimal vedligeholdelse | Skræddersyet kode (
 Du har kun brug for én kampagneside | Landingside – ofte skræddersyet
 
 ## WordPress og sikkerhed
-Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 195 kr/md, hvis du ikke selv vil stå for det.
+Fordi WordPress er så udbredt, er det også et mål for automatiske angreb. Risikoen styres ved at holde kerne og plugins opdateret, bruge få og velvedligeholdte plugins, have stærke adgangskoder og tofaktor-login samt tage backup. Det er en del af mine vedligeholdelsesaftaler fra 249 kr/md, hvis du ikke selv vil stå for det.
 
 ## WordPress og SEO
 WordPress er en god platform til SEO, hvis den sættes rigtigt op. Jeg sørger for rene URL’er, hurtig indlæsning, korrekte overskrifter, struktureret data og sitemap. Vi gennemgår også hvilke sider, der skal oprettes for at ramme dine vigtigste søgninger i Horsens og Midtjylland.
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en WordPress-hjemmeside?
-A: En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 7.500 kr for Standard (ekskl. moms). Større løsninger aftales individuelt.
+A: En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 8.500 kr for Standard (inkl. moms). Større løsninger aftales individuelt.
 
 Q: Kan jeg selv redigere en WordPress-hjemmeside?
 A: Ja. Du kan rette tekst, billeder og indhold uden kode. Jeg giver dig en kort introduktion ved aflevering.
@@ -869,6 +880,346 @@ A: Start med hjemmesiden. Uden en hurtig og tydelig side går penge til annoncer
 
 ---
 
+# Hjemmeside til håndværkere, der får telefonen til at ringe
+URL: https://www.webhjerte.dk/hjemmeside-til-haandvaerkere
+
+Dine kunder finder dig ikke på reklamer – de finder dig, når vandet løber, lyset går, eller terrassen skal bygges. En hjemmeside til en håndværker skal derfor ikke være pæn først og fremmest. Den skal gøre det let at vælge dig og endnu lettere at kontakte dig.
+
+Kort svar: En god håndværkerside besvarer tre spørgsmål på få sekunder: Hvad laver du? Arbejder du hos mig? Hvordan kommer jeg i kontakt med dig? Resten – billeder, anmeldelser, autorisation og pris – er det, der får kunden til at vælge dig frem for de to andre, vedkommende har åbnet i andre faner.
+
+## Sådan vælger kunderne en håndværker
+Når nogen skal have en håndværker, åbner de sjældent kun én side. De søger, åbner tre-fire resultater og vælger hurtigt – ofte på mobilen, ofte mens de har et problem, der skal løses. Den side, der først gør det klart, at du kan det, de har brug for, og arbejder i deres område, vinder samtalen.
+Det betyder, at en håndværkerside fungerer bedst, når den er bygget om kundens spørgsmål og ikke om firmaets historie. Kunden spørger sig selv: Kan de hjælpe mig? Er de til at stole på? Hvor hurtigt kan jeg få fat i dem? Kan jeg se, hvad de har lavet før?
+
+## Det leder dine kunder efter
+
+## Opbygningen, der virker på de fleste håndværkersider
+1. Øverst: ydelse, område og handling: En overskrift, der siger, hvad du laver og hvor, og en tydelig knap til at ringe eller skrive. Ingen slideshow, ingen velkomsttekst.
+2. Dine ydelser i korte afsnit: Hver ydelse får sin egen kort beskrivelse – og gerne sin egen side, når du vil findes på de specifikke søgninger.
+3. Dit arbejde – med billeder: Tre til seks projekter, hver med et før/efter-billede, hvad opgaven gik ud på, og hvor lang tid den tog.
+4. Tillid: anmeldelser, autorisation og garanti: Rigtige citater fra kunder med fornavn og by. Skriv, hvilken autorisation og forsikring du har.
+5. Sådan foregår det: Tre-fire korte trin fra første kontakt til færdigt arbejde. Det fjerner det, der gør kunder nervøse.
+6. Kontakt, der er nem: Telefonnummer, der kan trykkes, og en kort formular, hvor kunden kan beskrive opgaven og vedhæfte et billede.
+
+## Gør – og undgå
+
+## Fundet lokalt: Google, kort og anmeldelser
+Håndværkere bliver især fundet på tre måder: i Googles kortresultater (Google Virksomhedsprofil), i almindelige søgeresultater og via anbefalinger. Hjemmesiden er det, der binder det sammen: den bekræfter, hvem du er, og giver Google noget at forstå dit område ud fra.
+
+## Find din branche
+Håndværkerfirmaer har forskellige kunder og forskellige søgninger. Her er de brancher, jeg har skrevet særskilt om – med konkrete råd til netop dem.
+
+## Hvilken løsning passer til dig?
+Den rigtige størrelse afhænger af, hvor mange ydelser og områder du vil findes på – ikke af, hvor stort dit firma er. Det er min typiske anbefaling:
+Situation | Typisk løsning | Hvorfor
+Enkeltmandsfirma med få ydelser | Landingside eller Basis | Én samlet side med ydelser, billeder og kontakt er nok til at komme i gang.
+Flere ydelser og flere byer | Basis eller Standard | Egne sider pr. ydelse giver flere måder at blive fundet på.
+Mange projekter og behov for booking/tilbud | Standard | Galleri, formularer og måling af, hvilke sider der giver henvendelser.
+
+## Ofte stillede spørgsmål
+Q: Skal en håndværker overhovedet have en hjemmeside – er Facebook ikke nok?
+A: Facebook er godt til at vise dit arbejde, men kunder, der søger på Google efter en håndværker, ender oftest på hjemmesider og i Googles kort. En hjemmeside giver dig også din egen, stabile placering uden at være afhængig af, hvad en platform viser.
+
+Q: Hvad skal der stå på en håndværkers hjemmeside?
+A: Dine ydelser, dit arbejdsområde, billeder af udført arbejde, anmeldelser, autorisation og en nem måde at kontakte dig på. Resten er bonus.
+
+Q: Kan jeg selv opdatere billeder og tekster?
+A: Ja, hvis siden bygges i WordPress. Ellers kan jeg opdatere for dig via en aftale. Det vigtigste er, at billederne bliver ved med at komme til – det er dem, der overbeviser kunderne.
+
+Q: Hvor hurtigt kan jeg få flere henvendelser?
+A: Det afhænger af, hvor godt dit lokale marked er dækket. En ny, hurtig side med klare ydelser kan give flere kontakter fra de første uger, men placeringer på Google bygges typisk op over 2–3 måneder.
+
+Q: Hvad er forskellen på dig og de landsdækkende håndværkerportaler?
+A: Portaler tager ofte betaling pr. lead og deler dem med dine konkurrenter. Din egen hjemmeside og Google-profil giver kunder, der selv har valgt dig – og du ejer relationen.
+
+
+---
+
+# Hjemmeside til VVS-firma i Horsens – akutte opkald og gode projekter
+URL: https://www.webhjerte.dk/hjemmeside-til-vvs
+
+Et VVS-firma har to meget forskellige kunder: den, der har vand på gulvet lige nu, og den, der planlægger et nyt badeværelse om tre måneder. Din hjemmeside skal tale til begge – og gøre det klart, hvilken vej hver af dem skal gå.
+
+Kort svar: VVS-kunder søger ofte under pres. Siden skal derfor have et synligt akut-nummer øverst, en rolig tilbudsvej til de planlagte projekter og tydelige bevis for, at du er autoriseret og arbejder i kundens område. Resten er detaljer, der gør forskellen mellem et opkald og et tilbagetryk.
+
+## To kunder – to veje igennem siden
+Den akutte kunde har hast, er ofte stresset og kigger på mobilen. De leder efter ét sted: et telefonnummer og en bekræftelse på, at du kommer ud i deres område. Hver ekstra sætning eller menu er en grund til at trykke tilbage og prøve det næste firma.
+Den planlagte kunde har tid og vil sammenligne. De læser om dine ydelser, kigger på billeder af tidligere badeværelser og varmepumper og skriver, når de føler sig trygge. Her vinder du på detaljer, tillid og et let tilbudsflow.
+
+## De ydelser, kunderne søger på
+VVS dækker mange ting, men kunderne søger på meget konkrete problemer. Hver ydelse, du tilbyder, bør have sin egen overskrift – og helst sin egen side, hvis du vil findes på specifikke søgninger.
+
+## Siden bygget som en vej til opkaldet
+1. Øverst: akut-knap og tilbudsknap: Telefonnummeret er til at trykke på, og der står, hvilke områder og tider du dækker. Formularen er kort: navn, telefon, hvad det drejer sig om.
+2. Dine ydelser med egne overskrifter: Brug kundens ord: 'stoppet afløb', 'ny varmepumpe', 'nyt badeværelse'. Hver får et kort afsnit og en handling.
+3. Bevis: autorisation, forsikring og anmeldelser: Skriv, at du er autoriseret VVS-installatør, hvis du er det, og vis rigtige anmeldelser fra kunder i området.
+4. Projekter og billeder: Tre til seks gennemarbejdede cases med før/efter, hvad der blev lavet, og hvor lang tid det tog.
+5. Område og åbningstid: Nævn byerne med navn og skriv, hvornår man kan få fat i dig, og hvad der gælder for akutte henvendelser uden for normal tid.
+6. Spørgsmål og svar: Hvad koster et opkald? Hvor hurtigt kan I komme? Svar åbent på det, kunderne alligevel spørger om i telefonen.
+
+## Det, der får VVS-sider til at give opkald
+- Telefonnummer og tilbudsknap synlige uden at scrolle, især på mobil
+- Ydelser beskrevet som kunden ville søge dem – ikke som branchens fagsprog
+- Områder og byer skrevet ud, så kunden ved, at du kommer til dem
+- Autorisation, forsikring og garanti nævnt tydeligt og tidligt
+- Billeder fra rigtige opgaver – gerne fra køkken, badeværelse og teknikrum
+- Et svar på 'hvad koster det cirka?' – også hvis det kun er en ramme
+- En formular, hvor man kan vedhæfte et billede af problemet
+
+## Lokal SEO: bliv fundet, når det brænder på
+VVS er en af de brancher, hvor lokale søgninger afgør meget. Folk skriver 'VVS Horsens', 'vvs akut' eller 'stoppet afløb Horsens' – og vælger et af de første resultater, ofte i Googles kortvisning.
+
+## Hvilken løsning passer til et VVS-firma?
+Situation | Typisk løsning | Hvorfor
+Mest akut og service, få ydelser | Landingside eller Basis | Hurtig side med nummer, ydelser og område – klar på få dage.
+Både service og større projekter | Basis eller Standard | Egne sider til badeværelser og varmepumper med billeder og tilbudsformular.
+Flere byer og mange ydelser | Standard | Plads til lokale sider, galleri og måling af, hvilke sider der giver opkald.
+
+## Ofte stillede spørgsmål
+Q: Hvad skal et VVS-firma have på sin hjemmeside?
+A: Et tydeligt telefonnummer til akutte opkald, dine ydelser, dit område, autorisation og forsikring, billeder af udført arbejde, anmeldelser og en kort formular til tilbud.
+
+Q: Hvordan får et VVS-firma flere akutte opkald fra Google?
+A: Ved at have en hurtig side med et synligt telefonnummer, en optimeret Google Virksomhedsprofil med korrekte oplysninger og mange nylige anmeldelser, samt tekster, der nævner de byer, du dækker.
+
+Q: Bør akutte opkald og tilbud have hver sin vej på siden?
+A: Ja. Den akutte kunde vil ringe nu, den planlagte kunde vil læse og skrive. To tydelige knapper øverst gør, at begge får, hvad de leder efter, uden at lede.
+
+Q: Kan siden vise et galleri af badeværelser og varmepumper?
+A: Ja. Billeder fra rigtige opgaver er det stærkeste bevis på kvalitet. Jeg sætter galleriet op, så du nemt kan tilføje nye projekter bagefter.
+
+Q: Hvad hvis jeg også arbejder uden for Horsens?
+A: Så får hvert område sin egen lokale side eller sektion, så du kan blive fundet i flere byer uden at kopiere tekster.
+
+
+---
+
+# Hjemmeside til elektriker i Horsens – tillid først, så opkaldet
+URL: https://www.webhjerte.dk/hjemmeside-til-elektriker
+
+Kunder lader en elektriker gå ind i deres hjem og røre ved noget, der kan være farligt. Derfor handler en elektrikersides vigtigste opgave om tillid: at vise, at du er autoriseret, hvad du laver, og at der er et rigtigt menneske bag.
+
+Kort svar: En elektrikers hjemmeside vinder på tillid og tydelighed. Skriv, hvad du er autoriseret til, vis rigtige opgaver, forklar forløbet fra henvendelse til færdigt arbejde, og gør det nemt at beskrive opgaven med et billede. Elbil-ladere, tavler og fejlfinding er de emner, flest kunder leder efter.
+
+## Hvorfor tillid er alt for en elektriker
+Elarbejde handler om sikkerhed. Kunden ved, at fejl kan give brand eller stød, og vil derfor ikke bare have den billigste – men en, de kan stole på. Det gør hjemmesiden til en tillidsmaskine: den skal vise, at du er professionel, autoriseret og til at få fat i.
+Det er også derfor, de bedste elektrikersider ikke er de mest flotte, men de mest tydelige: de siger direkte, hvad de laver, hvor, og hvad kunden kan forvente.
+
+## Det søger kunderne efter
+
+## Siden bygget til at skabe tillid
+1. Øverst: hvem, hvad og hvor: En klar overskrift, dit område og to knapper: ring eller beskriv opgaven. Autorisation vises som et lille, tydeligt mærke.
+2. Ydelser med forklaring: Hver ydelse får et afsnit, der forklarer, hvad den indebærer, og hvornår kunden skal ringe i stedet for at vente.
+3. Rigtige opgaver: Fotos af færdige installationer, tavler og ladere, med kort tekst om opgaven. Det viser dit håndværk og din ryddelighed.
+4. Anmeldelser og referencer: Citater med fornavn og by, links til Google-anmeldelser og eventuelle erhvervskunder, du må nævne.
+5. Sådan foregår et forløb: Henvendelse → besigtigelse → tilbud → udførelse → dokumentation. Kunder bliver trygge, når de kan se forløbet.
+6. Nem kontakt med billede: Formularen lader kunden beskrive opgaven og vedhæfte et billede af tavlen eller stedet – så du kan give et mere præcist svar.
+
+## Gør – og undgå
+
+## Elbil-lader: den side, der kan give flest projekter
+Efterspørgslen på elbil-ladere vokser, og kunderne har mange spørgsmål, før de ringer: hvad koster det, hvor lang tid tager det, passer lederen til min bil, og skal der nyt i tavlen? En side, der besvarer dem ærligt, får henvendelser fra kunder, der allerede er langt i processen.
+- Forklar, hvad en installation typisk indebærer, og hvad kunden selv skal gøre først
+- Skriv, hvilke ladere og mærker du arbejder med – og hvad der afgør valget
+- Vis et eksempel på et færdigt projekt med billede
+- Fortæl, hvad der afgør prisen, så kunden forstår et tilbud
+- Giv mulighed for at sende et billede af tavlen og placeringen
+
+## Lokal synlighed for elektrikere
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Enkeltmand med service og fejlfinding | Landingside eller Basis | Tydelig side med ydelser, tillid og kontakt.
+Du vil have projekter som elbil-ladere og tavler | Basis eller Standard | Egne sider til de store projekter og galleri.
+Flere medarbejdere og flere områder | Standard | Lokale sider, formularer og måling af henvendelser.
+
+## Ofte stillede spørgsmål
+Q: Hvad skal en elektrikers hjemmeside indeholde?
+A: Dine ydelser, dit område, autorisation og forsikring, billeder af udført arbejde, anmeldelser, forløbet fra henvendelse til færdigt arbejde og en nem måde at kontakte dig på – gerne med mulighed for at vedhæfte billeder.
+
+Q: Skal jeg skrive priser på siden?
+A: Du behøver ikke lægge dig fast, men en forklaring på, hvad der afgør prisen – eller en vejledende ramme – filtrerer uforpligtende henvendelser fra og skaber tillid.
+
+Q: Er en side om elbil-ladere en god idé?
+A: Ja, hvis du installerer dem. Kunderne søger konkret på emnet og har mange spørgsmål. En selvstændig side kan fange søgninger, som en generel side ikke dækker.
+
+Q: Hvordan viser jeg, at jeg er autoriseret?
+A: Skriv tydeligt, hvad din autorisation dækker, og vis den som et synligt mærke øverst og på kontaktsiden. Nævn også brancheforeninger og forsikringer.
+
+Q: Hvor hurtigt er siden klar?
+A: Efter den første samtale får du et designudkast inden for 48 timer. Når du har godkendt det, er siden typisk live på 2–10 dage, afhængigt af omfang.
+
+
+---
+
+# Hjemmeside til tømrer i Horsens – vis projekterne, få de gode opgaver
+URL: https://www.webhjerte.dk/hjemmeside-til-tomrer
+
+Tømrerarbejde er store beslutninger. Kunden vil bygge en terrasse, en tilbygning eller et nyt køkken og vil se, hvad du har bygget, før de ringer. Din hjemmeside er dit portfolio – og din første besigtigelse.
+
+Kort svar: En tømrerside vinder på billeder, forløb og tillid. Vis færdige projekter med kort tekst om opgaven, forklar processen fra første samtale til afleveret arbejde, og gør det nemt at beskrive et projekt. Så filtrerer du de uforpligtende fra og får de opgaver, du helst vil have.
+
+## Kunden vil se, før de vælger
+Til store opgaver vælger kunden ud fra tillid og kvalitet. De spørger vennerne, søger på Google og kigger billeder. En hjemmeside, der viser dine projekter tydeligt – med de rigtige billeder og kort tekst – flytter dig fra 'et firma blandt mange' til 'den vi har lyst til at ringe til'.
+Det betyder også, at tømrersider ikke skal være lange og fyldt med tekst. De skal være visuelle, rolige og fortælle, hvad du bygger, hvordan du arbejder, og hvem man skriver til.
+
+## De opgaver, kunderne søger på
+
+## Siden bygget som et portfolio
+1. Øverst: et stærkt billede og en klar linje: Ét godt projektbillede, hvad du laver og hvor, og en tydelig knap til at beskrive opgaven.
+2. Ydelser i få, klare grupper: Terrasser, tilbygninger, køkkener, tag og vinduer. Hver gruppe med et eksempel og et link til flere billeder.
+3. Udvalgte projekter: Tre til seks cases med billeder, kort beskrivelse, materialer og tidsforbrug. Én side pr. projekt, hvis du vil findes på specifikke søgninger.
+4. Sådan arbejder jeg: Fra første samtale over besigtigelse og tilbud til aflevering. Kunden bliver tryg, når de kan se forløbet.
+5. Anmeldelser og tillid: Citater fra kunder, eventuel mesterbrev eller medlemskab, og referencer, du må nævne.
+6. Nem kontakt: En formular, hvor kunden kan beskrive projektet, vedhæfte skitser eller billeder og skrive ønsket tidsramme.
+
+## Gør – og undgå
+
+## Billeder, der sælger – uden at ødelægge hastigheden
+Billeder er tømrerens vigtigste redskab, men tunge billeder gør siden langsom. Jeg komprimerer og indlæser dem, så de fylder minimalt, men ser skarpe ud. Siden åbner hurtigt – også på mobilen på byggepladsen.
+For at få mest ud af det kan du tage billeder under og efter projektet: før, undervejs, færdigt, og en detalje. Selv telefonbilleder i godt lys duer, så længe de er rene og viser, hvad opgaven gik ud på.
+- Tag billeder i dagslys og med ryddet område
+- Tag både overblik og detaljer (samlinger, afslutninger)
+- Skriv kort, hvad opgaven var, og hvad der var særligt
+- Bed om lov, før du bruger billeder af kundens bolig
+
+## Lokal SEO for tømrere
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Få ydelser og begrænset billedmateriale | Landingside eller Basis | En samlet side med projekter og kontakt kommer hurtigt i gang.
+Du vil vise mange projekter | Basis eller Standard | Galleri og egne projektsider med billeder og tekst.
+Flere medarbejdere og store opgaver | Standard | Lokale sider, formularer og måling af, hvilke sider der giver opgaver.
+
+## Ofte stillede spørgsmål
+Q: Hvad skal en tømrers hjemmeside indeholde?
+A: Dine ydelser, udvalgte projekter med billeder og kort tekst, en forklaring på forløbet, anmeldelser, dit område og en nem måde at beskrive et projekt på.
+
+Q: Hvor mange billeder har jeg brug for?
+A: Start med tre til seks gode projekter, hver med fire-otte billeder. Det er bedre end mange tilfældige billeder. Du kan altid tilføje flere.
+
+Q: Kan jeg selv tilføje nye projekter?
+A: Ja, hvis siden bygges i WordPress, kan du selv tilføje projekter med billeder og tekst. Ellers kan jeg gøre det for dig via en aftale.
+
+Q: Bliver siden langsom af mange billeder?
+A: Ikke hvis den er bygget rigtigt. Jeg komprimerer og indlæser billederne, så siden åbner hurtigt, også på mobil.
+
+Q: Hvordan får jeg flere store opgaver?
+A: Ved at vise de opgaver, du vil have flere af, og ved at gøre det let at beskrive et projekt. Lokale sider og Google-anmeldelser hjælper de rigtige kunder med at finde dig.
+
+
+---
+
+# Hjemmeside til restauranter og caféer i Horsens
+URL: https://www.webhjerte.dk/hjemmeside-til-restauranter
+
+Dine gæster skal kunne se menuen, finde åbningstiderne og booke bord eller bestille mad – uden at skulle leje sig ind hos en platform. En god restaurantside gør det på få sekunder, og giver dig kunderelationen tilbage.
+
+Kort svar: En restaurantside skal besvare gæstens tre spørgsmål hurtigt: Hvad serverer I? Hvornår har I åbent, og hvor ligger I? Hvordan booker eller bestiller jeg? Med menu som tekst (ikke kun PDF), en synlig bookingknap og egen bestilling beholder du både gæsten og marginen.
+
+## Hvad gæster tjekker, før de vælger dig
+De fleste vælger restaurant på mobilen, ofte samme dag. De kigger på billeder, læser menuen, tjekker åbningstider og kigger på anmeldelser – og beslutter på få minutter. Er menuen en tung PDF, åbningstiderne forkerte eller bookingen svær at finde, tager de det næste sted.
+
+## Det skal være på forsiden
+
+## Egen bestilling vs. platforme
+Platforme som Wolt og Just Eat giver synlighed, men tager en kommission, som kan være op til omkring 30 %, afhængigt af aftalen. Samtidig ejer platformen kundeforholdet: du ser sjældent kundens navn eller kontaktinfo, og kan ikke bygge relationen selv.
+Egen bestilling på hjemmesiden betyder, at du beholder marginen og kunderne. Det kræver, at gæsterne ved, du findes – derfor bør du bruge begge dele: platforme til at blive opdaget og egen side til de gæster, der kender dig.
+
+## Siden bygget til gæster på mobilen
+1. Øverst: stemning, åbningstid og booking: Et godt billede, hvad du serverer, og to knapper: book bord og se menuen.
+2. Menuen som tekst: Opdelt i forretter, hovedretter og desserter, med allergener og vegetarretter tydeligt markeret.
+3. Din historie og dit sted: Kort om, hvem I er, og hvad der gør jer særlige. Fortæl, hvad gæsten kan forvente.
+4. Booking og bestilling: En enkel booking-formular eller link til dit system. Valgfrit: bestilling af take away og udlevering.
+5. Anmeldelser og billeder: Rigtige citater, galleri og link til Google. Det er det, der får nye gæster til at tage chancen.
+6. Find os og kontakt: Kort, parkering, åbningstider og telefon. Gør det nemt at finde vej og kontakte jer.
+
+## Lokal synlighed for restauranter
+
+## Gør – og undgå
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Café eller restaurant med fast menu | Landingside eller Basis | Menu, billeder, booking og kontakt på en samlet, hurtig side.
+Flere menuer, selskaber og begivenheder | Basis eller Standard | Egne sider til selskaber, brunch og arrangementer.
+Take away og online bestilling | Standard eller skræddersyet | Bestillingsfunktion, betaling og integration til dit køkken.
+
+## Ofte stillede spørgsmål
+Q: Skal menuen være som tekst eller PDF?
+A: Som tekst. Den kan læses på mobilen, findes af Google og er nem at opdatere. Du kan altid tilbyde en PDF til print ved siden af.
+
+Q: Kan gæster bestille mad direkte på hjemmesiden?
+A: Ja, jeg kan bygge en bestillingsfunktion, så gæster kan bestille take away uden at ringe. Du undgår kommission til platforme og beholder kundekontakten.
+
+Q: Kan jeg selv opdatere menuen?
+A: Ja, hvis siden bygges i WordPress, kan du selv redigere menu, priser og åbningstider. Ellers kan jeg gøre det for dig via en aftale.
+
+Q: Hvordan kobler jeg booking til siden?
+A: Enten ved at linke til dit eksisterende bookingsystem eller ved at bygge en enkel formular, der sender forespørgsler til dig. Begge dele virker godt på mobil.
+
+Q: Hvordan bliver jeg fundet på Google?
+A: Med en opdateret Google Virksomhedsprofil, menu som tekst, lokale tekster og anmeldelser. Det er de tre ting, der betyder mest for restauranter.
+
+
+---
+
+# Hjemmeside til salon i Horsens – fyld kalenderen
+URL: https://www.webhjerte.dk/hjemmeside-til-saloner
+
+Dine kunder vil se resultaterne, finde en tid og booke uden at ringe. En god salonside gør det på under et minut – og får nye kunder til at vælge dig frem for salonen på den anden side af gaden.
+
+Kort svar: En salonside vinder på billeder, tydelige priser og nem booking. Vis dit arbejde, forklar ydelserne og hvad de koster, og lad kunden booke direkte. Så sparer du telefontid, får flere nye kunder og bliver fundet, når folk søger på din type behandling i området.
+
+## Hvad kunder tjekker, før de booker
+Nye kunder vælger salon ud fra billeder, anmeldelser og tillid. De kigger på dit arbejde, tjekker priser, og vil kunne booke med det samme. Hvis de skal ringe eller vente på svar, mister du dem ofte til en salon, hvor det er nemmere.
+
+## Det skal være på forsiden
+
+## Siden bygget til at fylde kalenderen
+1. Øverst: stemning, booking og ydelser: Et godt billede af salonen eller et resultat, hvad du tilbyder, og en tydelig 'Book tid'-knap.
+2. Ydelser og priser: Gruppér efter behandling og vis varighed og pris. Forklar kort, hvad der er med.
+3. Galleri med resultater: Før/efter og stilarter, gerne opdelt efter behandling. Opdater løbende – det viser, at I er aktive.
+4. Dit team: Billeder og en kort tekst om hver stylist, deres speciale og hvem man booker hos.
+5. Anmeldelser: Rigtige citater med fornavn og link til Google. Placér dem tæt på booking-knappen.
+6. Find os og kontakt: Adresse, parkering, åbningstider og kontaktmuligheder. Hold dem opdaterede.
+
+## Online booking: sådan bruger du det klogt
+Online booking sparer telefontid og giver kunden frihed til at vælge tid, når de har lyst – ofte om aftenen. Det kan enten være dit eksisterende bookingsystem, som jeg linker til eller indlejrer på siden, eller en enkel forespørgselsformular, hvor du bekræfter tiden.
+- Gør bookingknappen synlig på alle sider, især på mobilen
+- Vis behandlingens varighed og pris, før kunden booker
+- Send en bekræftelse og eventuelt en påmindelse, så færre udebliver
+- Lad nye kunder booke uden at oprette en konto
+- Giv mulighed for at skrive en note, fx til farvebehandlinger
+
+## Gør – og undgå
+
+## Lokal synlighed for saloner
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Mindre salon med få behandlinger | Landingside eller Basis | Ydelser, priser, billeder og booking på en hurtig side.
+Flere behandlinger og stylister | Basis eller Standard | Egne sider til behandlinger og team, galleri og booking.
+Salon med særlige behandlinger og kurser | Standard | Booking, formularer og måling af, hvilke sider der giver bookinger.
+
+## Ofte stillede spørgsmål
+Q: Kan kunder booke tider direkte på hjemmesiden?
+A: Ja. Jeg kan bygge en bookingfunktion eller koble siden til dit eksisterende bookingsystem, så kunder kan booke uden at ringe.
+
+Q: Skal prislisten stå på siden?
+A: Ja, helst. Kunder vil vide, hvad en behandling koster, før de booker. En ærlig prisliste filtrerer de forkerte henvendelser fra og skaber tillid.
+
+Q: Kan jeg selv opdatere galleriet?
+A: Ja, hvis siden bygges i WordPress, kan du selv tilføje billeder og tekster. Ellers kan jeg opdatere det for dig via en aftale.
+
+Q: Kan jeg beholde mit nuværende bookingsystem?
+A: Ja. Jeg bygger siden, så den fungerer sammen med det system, du bruger – du behøver ikke skifte.
+
+Q: Hvordan får jeg flere nye kunder?
+A: Med en opdateret Google Virksomhedsprofil, billeder af dit arbejde, anmeldelser og en side, der er nem at booke fra. Det er de tre ting, der får nye kunder til at vælge dig.
+
+
+---
+
 # AI-synlighed: bliv nævnt, når kunderne spørger ChatGPT og Google AI
 URL: https://www.webhjerte.dk/geo-ai-synlighed
 
@@ -904,7 +1255,7 @@ Ingen udefra kender de præcise algoritmer, og de ændrer sig løbende. Men erfa
 
 ## Hvad jeg bygger ind i din hjemmeside
 - Klar og ensartet beskrivelse af, hvem I er, hvad I tilbyder, og hvor I arbejder – skrevet, så den kan citeres ordret.
-- Svar-først-sektioner (“Kort svar”) på de vigtigste sider.
+- Et kort, direkte svar i starten af de vigtigste sider.
 - FAQ-sektioner med reelle kundespørgsmål og markeret FAQPage-data.
 - Organization-, LocalBusiness-, Service-, Offer-, Person- og BreadcrumbList-markup.
 - Prisoversigter i tabeller, som både mennesker og maskiner nemt læser.
@@ -917,7 +1268,7 @@ GEO er hverken en genvej eller en trylleformel. Ingen kan love, at en bestemt AI
 Det er heller ikke at fylde siden med tekst, som kun er skrevet til robotter. Indhold, der er nyttigt for mennesker, er næsten altid også det, AI-systemer foretrækker. Jeg skriver derfor til dine kunder først og strukturerer teksten, så maskinerne kan følge med.
 
 ## Pris og forløb
-AI-synlighed er indbygget i alle nye hjemmesider fra WebHjerte, fra 2.500 kr. Har du allerede en hjemmeside, kan jeg optimere den med en af AI SEO-pakkerne: Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (alle ekskl. moms). Første skridt er altid en gratis gennemgang, hvor du får at vide, hvad der mangler, og hvad det vil koste.
+AI-synlighed er indbygget i alle nye hjemmesider fra WebHjerte, fra 2.500 kr. Har du allerede en hjemmeside, kan jeg optimere den med en af AI SEO-pakkerne: Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (alle inkl. moms). Første skridt er altid en gratis gennemgang, hvor du får at vide, hvad der mangler, og hvad det vil koste.
 
 ## Ofte stillede spørgsmål
 Q: Hvad betyder GEO?
@@ -946,17 +1297,17 @@ URL: https://www.webhjerte.dk/ofte-stillede-spoergsmaal
 
 Her finder du korte, ærlige svar på det, de fleste spørger om, før de får lavet en hjemmeside – samlet på ét sted.
 
-Kort svar: WebHjerte bygger hjemmesider fra 2.500 kr (ekskl. moms) med levering på 2–10 dage. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis du ikke er tilfreds, og ejer selv domæne og kode. WebHjerte er baseret i Horsens og arbejder i hele Danmark.
+Kort svar: WebHjerte bygger hjemmesider fra 2.500 kr (inkl. moms) med levering på 2–10 dage. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis du ikke er tilfreds, og ejer selv domæne og kode. WebHjerte er baseret i Horsens og arbejder i hele Danmark.
 
 ## Priser og betaling
 ### Hvad koster en hjemmeside hos WebHjerte?
-Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er ekskl. moms.
+Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 8.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms.
 ### Er priserne faste?
 Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven.
 ### Er der skjulte gebyrer?
 Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
 ### Hvad koster vedligeholdelse?
-Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md ekskl. moms.
+Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms.
 ### Betaler jeg, hvis jeg ikke kan lide designet?
 Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
 
@@ -988,7 +1339,7 @@ Ja. Basis-SEO (titler, beskrivelser, struktur, hastighed og struktureret data) e
 ### Hvad er AI SEO / GEO?
 AI SEO eller GEO (Generative Engine Optimization) gør din hjemmeside nem at forstå og citere for AI-systemer som ChatGPT, Gemini, Perplexity og Google AI-oversigter.
 ### Hvor meget koster AI SEO?
-Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (ekskl. moms).
+Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (inkl. moms).
 ### Hvor hurtigt kan jeg se resultater af SEO?
 Det afhænger af branche og konkurrence. Teknisk forbedring kan ses hurtigt, men synlighed i søgeresultater opbygges typisk over 2–3 måneder eller mere.
 ### Tilbyder I et gratis SEO-tjek?
@@ -1008,7 +1359,7 @@ Ring på +45 42 76 05 77, skriv til hej@webhjerte.dk eller brug kontaktformulare
 
 ## Ofte stillede spørgsmål
 Q: Hvad koster en hjemmeside hos WebHjerte?
-A: Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er ekskl. moms.
+A: Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 8.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms.
 
 Q: Er priserne faste?
 A: Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven.
@@ -1017,7 +1368,7 @@ Q: Er der skjulte gebyrer?
 A: Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne.
 
 Q: Hvad koster vedligeholdelse?
-A: Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md ekskl. moms.
+A: Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms.
 
 Q: Betaler jeg, hvis jeg ikke kan lide designet?
 A: Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet.
@@ -1109,13 +1460,13 @@ Sprog | Dansk og engelsk
 - SEO og lokal SEO i Horsens og Midtjylland.
 - AI SEO og GEO – synlighed i ChatGPT, Gemini og Google AI (fra 3.500 kr).
 - Gratis SEO- og web-tjek.
-- Vedligeholdelse og support (fra 195 kr/md).
+- Vedligeholdelse og support (fra 249 kr/md).
 
-## Priser og pakker (ekskl. moms)
+## Priser og pakker (inkl. moms)
 Pakke | Pris fra | Levering | Indhold
 Landingside | 2.500 kr | ca. 2 dage | 1 side til kampagner og annoncer
 Basis | 4.500 kr | ca. 5 dage | 3–5 sider, kontaktformular, Google Maps, basis-SEO
-Standard | 7.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
+Standard | 8.500 kr | ca. 10 dage | Op til 8 sider, SEO og analytics, booking, 30 dages support
 Skræddersyet | 14.000 kr | Aftales | Webshop, kundeportal og specialløsninger
 
 ## Garantier
@@ -1143,22 +1494,26 @@ Q: Hvor ligger WebHjerte?
 A: I Horsens (8700), Midtjylland. Kunder findes i hele Danmark.
 
 Q: Hvad koster en hjemmeside hos WebHjerte?
-A: Fra 2.500 kr ekskl. moms for en landingside. Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyet fra 14.000 kr.
+A: Fra 2.500 kr inkl. moms for en landingside. Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyet fra 14.000 kr.
 
 
 ---
 
 # Sådan bliver din virksomhed nævnt af ChatGPT og Google AI
 URL: https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai
-Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
-En praktisk guide med 12 tiltag, du kan gå i gang med i dag – uden at være teknisk. Skrevet til lokale virksomheder i Horsens, Midtjylland og resten af Danmark.
+Flere og flere kunder spørger ChatGPT i stedet for at google. Her er de 12 ting, jeg selv gør på mine kunders hjemmesider – og på min egen – for at blive nævnt i svaret.
 
 Kort svar: For at blive nævnt i AI-svar skal din hjemmeside besvare kundernes spørgsmål klart og tidligt, have korrekte og ensartede virksomhedsoplysninger, bruge struktureret data (schema.org), være hurtig og tillade AI-crawlere i robots.txt. Der findes ingen garanti, men disse tiltag øger sandsynligheden markant.
 
 ## Hvorfor skal du overhovedet bekymre dig om AI-svar?
 Når en potentiel kunde spørger en AI-assistent om en lokal leverandør, får de ét sammenhængende svar – ikke en liste, de selv skal vurdere. Det betyder, at færre virksomheder får opmærksomhed, men dem, der bliver nævnt, får den til gengæld ofte i form af en anbefaling. At være med i svaret er derfor mere værdifuldt end en placering som nummer seks i søgeresultaterne.
 Den gode nyhed er, at mange af tiltagene er enkle, og at de også forbedrer din almindelige SEO. Du behøver ikke vælge mellem Google og AI – de to trækker i samme retning.
+
+## Hvad jeg selv har set virke
+WebHjerte er et ungt firma fra 2026. Alligevel kan jeg i Google Search Console se, at siden allerede bliver vist på lange spørgsmål som “hvilket bureau er specialist i AI SEO?” og “hvordan får jeg min virksomhed nævnt i AI-svar som Perplexity og Google AI?” – ofte i top 3–6. Ikke fordi jeg har et stort budget, men fordi siderne svarer direkte på præcis de spørgsmål.
+Det er den vigtigste lære: AI-systemer belønner ikke den største virksomhed. De belønner den, der har det klareste, mest konkrete svar – med pris, sted og en tydelig afsender. Det kan en lokal tømrer i Horsens sagtens konkurrere på.
 
 ## De 12 tiltag
 ### 1. Skriv svaret først
@@ -1208,310 +1563,391 @@ A: At besvare kundernes spørgsmål klart og tidligt på siden og at have korrek
 
 # AI i små virksomheder: 10 konkrete eksempler, der virker
 URL: https://www.webhjerte.dk/blog/ai-i-smaa-virksomheder-10-eksempler
-Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
-Glem store buzzwords. Her er ti praktiske måder, hvorpå en lokal virksomhed kan bruge AI i dag – og hvad du skal være opmærksom på.
+Ingen buzzwords, ingen robotter, der overtager firmaet. Bare ti måder, hvorpå en lokal virksomhed kan spare tid og vinde flere kunder med AI allerede i dag.
 
-Kort svar: Små virksomheder får mest ud af AI på afgrænsede opgaver: chatbot til kundespørgsmål, automatisk booking, kvalificering af leads, opfølgning, anmodning om anmeldelser, udkast til tekster og synlighed i AI-søgning. Start med den opgave, der koster mest tid, og sørg for, at et menneske altid kan gribe ind.
+Kort svar: De fleste små virksomheder har ikke brug for “en AI-strategi”. De har brug for at slippe for de samme fem spørgsmål i telefonen hver dag, at følge op på tilbud uden at glemme det, og at blive fundet, når kunder spørger ChatGPT. Her er ti eksempler, jeg selv ville starte med – og hvordan du undgår de typiske fejl.
+
+## Først: hvad AI faktisk er godt til
+Når jeg taler med håndværkere, frisører og butiksejere i Horsens, er den første reaktion på AI ofte skepsis. Og det er sundt. AI er ikke magi, og den skal ikke drive din forretning. Men den er rigtig god til én ting: opgaver, der gentager sig, og som følger nogenlunde de samme regler hver gang.
+Tænk på det sådan her: hvis du kan forklare en opgave til en ny elev på fem minutter, kan AI sandsynligvis også lære den. Hvis opgaven kræver erfaring, dømmekraft eller et godt øje for kunden, skal du stadig gøre den selv.
 
 ## De 10 eksempler
-### 1. Chatbot til de mest stillede spørgsmål
-Priser, åbningstider, levering, retur: en AI-chatbot besvarer dem med det samme, så du undgår de samme opkald hver dag.
-### 2. Automatisk booking og påmindelser
-Kunden vælger tid selv, kalenderen opdateres, og en påmindelse sendes automatisk. Det reducerer udeblivelser.
-### 3. Kvalificering af henvendelser
-AI stiller opfølgende spørgsmål om behov, tidsramme og budget og leverer en færdig oversigt til dig, så du kun bruger tid på relevante kunder.
-### 4. Udkast til tilbud og mails
-AI skriver første udkast ud fra dine skabeloner og kundens oplysninger. Du gennemgår og sender.
-### 5. Opfølgning på tilbud
-Automatisk påmindelse efter få dage øger chancen for et svar – uden at du skal huske det.
-### 6. Anmodning om anmeldelser
-Efter udført opgave sendes et venligt link til Google-anmeldelse. Flere anmeldelser styrker din lokale synlighed.
-### 7. Indhold og opslag
-AI kan hjælpe med udkast til blogindlæg, beskrivelser og opslag. Brug det som udgangspunkt og tilføj dine egne erfaringer.
-### 8. Produktbeskrivelser og anbefalinger i webshop
-Hurtigere oprettelse af produkter og relevante forslag til kunderne.
-### 9. Oversættelse og flersproget kundeservice
-Gør det nemt at hjælpe turister, tilflyttere og udenlandske kunder.
-### 10. Synlighed i AI-søgning
-Gør din hjemmeside nem at citere for ChatGPT, Gemini og Google AI med svar-først-indhold og struktureret data.
+Eksemplerne er sorteret efter, hvor hurtigt de typisk giver en mærkbar forskel for en lille virksomhed.
+### Chatbot til de mest stillede spørgsmål
+Hvad koster det? Har I tid på fredag? Kører I også til Hedensted? En chatbot på hjemmesiden svarer med det samme – også klokken 22, når kunden faktisk sidder og overvejer. Du får færre afbrydelser og flere henvendelser, der allerede kender prisen.
+### Online booking med påmindelser
+Kunden vælger selv en ledig tid, kalenderen opdateres automatisk, og der sendes en SMS dagen før. For frisører og klinikker betyder det typisk færre udeblivelser og mindre tid i telefonen.
+### Kvalificering af henvendelser
+I stedet for en tom kontaktformular stiller AI et par opfølgende spørgsmål: hvad skal laves, hvornår, og hvad er budgettet? Du får en færdig oversigt og kan prioritere de opgaver, der passer dig.
+### Første udkast til tilbud og mails
+AI skriver udkastet ud fra dine egne skabeloner og kundens oplysninger. Du læser igennem, retter og sender. Det, der før tog en halv time om aftenen, tager fem minutter.
+### Automatisk opfølgning på tilbud
+Mange tilbud dør, fordi ingen følger op. En venlig påmindelse efter tre dage – sendt automatisk – er en af de billigste måder at vinde flere opgaver på.
+### Anmodning om Google-anmeldelser
+Når opgaven er færdig, får kunden en kort besked med et direkte link til din Google-profil. Flere anmeldelser er et af de stærkeste signaler i lokal SEO.
+### Hjælp til tekster og opslag
+AI er god til at komme i gang med et blogindlæg, en ydelsestekst eller et Facebook-opslag. Men tilføj altid dine egne erfaringer og eksempler – det er dem, kunderne (og Google) reagerer på.
+### Produkttekster i webshoppen
+Har du 200 produkter, er AI en stor hjælp til at skrive ensartede beskrivelser og forslag til relaterede varer. Du kontrollerer, at mål og materialer er korrekte.
+### Kundeservice på flere sprog
+Tyske turister, ukrainske tilflyttere eller engelsktalende kunder: AI kan svare på deres sprog, så du ikke mister dem, bare fordi hjemmesiden kun er på dansk.
+### Synlighed i ChatGPT og Google AI
+Flere og flere spørger ChatGPT “hvem kan lave X i Horsens?”. Med klare svar på din hjemmeside, struktureret data og en opdateret Google-profil øger du chancen for at blive nævnt.
 
-## Sådan kommer du i gang
-1. Find tidsslugeren: Hvilken opgave gør du igen og igen? Start dér.
-2. Definér rammerne: Hvad må AI gøre selv, og hvad skal du godkende?
-3. Test i lille skala: Prøv med de 20 mest almindelige spørgsmål eller én proces.
-4. Mål og justér: Se på brugen og kvaliteten og forbedr løbende.
+## Hvad koster det?
+Det overrasker mange, hvor lidt det kan koste. Selve AI-tjenesterne koster ofte under 100–300 kr om måneden for en lille virksomhed. Den egentlige udgift er opsætningen: at tilpasse chatbotten til dine priser og ydelser, koble booking til din kalender eller sætte opfølgningen op, så den lyder som dig.
+Hos mig indgår AI-funktioner i skræddersyede løsninger fra 14.000 kr, og mindre opsætninger aftales til en fast pris efter en kort snak. Du får altid prisen, før jeg går i gang.
 
-## Hvad skal du passe på?
-- AI kan tage fejl – lad aldrig kritiske beslutninger køre uden kontrol.
-- Overvej GDPR: hvilke persondata behandles, og er kunden informeret?
-- Vær ærlig overfor kunder om, at de taler med en AI.
-- Hold dine oplysninger opdaterede, så AI ikke giver forkerte priser eller tider.
+## Sådan kommer du i gang – uden at det bliver et stort projekt
+1. Find tidsslugeren: Skriv i en uge ned, hvad du bruger tid på, som ikke direkte tjener penge. Typisk vinder telefonen, mails og tilbud.
+2. Bestem rammerne: Hvad må AI gøre selv, og hvad skal du godkende? En chatbot må gerne fortælle priser, men ikke love en dato, du ikke kan holde.
+3. Start småt: Tag de 20 spørgsmål, du oftest får, eller én proces. Det er nok til at se, om det virker.
+4. Se på resultatet: Efter en måned kigger vi på, hvad kunderne spurgte om, og hvor svarene kan blive bedre.
 
-## Få hjælp til at implementere
-Jeg implementerer AI-løsninger som chatbot, booking, lead-kvalificering og automatisering – med fast pris og fokus på praktisk effekt. Fortæl, hvad der koster dig mest tid, så finder vi den rigtige løsning.
+## Det skal du passe på
+AI er et værktøj, ikke en medarbejder, du kan glemme. De fire ting, jeg altid sætter op med kunderne:
+- Kritiske ting – priser på store opgaver, aftaler, reklamationer – skal altid forbi et menneske.
+- GDPR: kunden skal vide, hvad der sker med deres oplysninger, og data skal behandles i EU, hvor det er muligt.
+- Vær ærlig: skriv, at kunden taler med en AI-assistent, og gør det nemt at få fat i dig.
+- Hold oplysningerne opdaterede. En chatbot med sidste års priser gør mere skade end gavn.
+
+## Vil du have hjælp?
+Jeg bygger AI-chatbots, booking, lead-kvalificering og små automatiseringer til virksomheder i Horsens og resten af Danmark. Fortæl mig, hvad der stjæler mest af din tid, så siger jeg ærligt, om AI kan hjælpe – og hvad det koster.
 
 ## Ofte stillede spørgsmål
 Q: Er AI dyrt for små virksomheder?
-A: Det behøver det ikke være. Mange løsninger kan sættes op til en fast pris, og de løbende udgifter til AI-tjenester er ofte beskedne.
+A: Nej, ikke nødvendigvis. Selve AI-tjenesterne koster ofte under 100–300 kr om måneden. Den største udgift er opsætningen, som hos WebHjerte aftales til fast pris.
 
-Q: Hvor starter jeg?
-A: Med den opgave, der koster mest tid eller giver flest tabte kunder – ofte kundespørgsmål eller booking.
+Q: Hvor skal jeg starte med AI?
+A: Med den opgave, der koster mest tid eller giver flest tabte kunder – typisk kundespørgsmål, booking eller opfølgning på tilbud.
 
-Q: Mister jeg kontrollen?
-A: Nej, hvis løsningen er sat rigtigt op. Du bestemmer reglerne og kan altid gribe ind.
+Q: Mister jeg kontrollen, hvis AI svarer kunderne?
+A: Nej, hvis løsningen er sat rigtigt op. Du bestemmer, hvad AI må svare på, og vigtige sager sendes altid videre til dig.
+
+Q: Kan AI erstatte en medarbejder?
+A: Sjældent helt. Men den kan fjerne de gentagne opgaver, så du og dine medarbejdere får tid til det arbejde, kunderne betaler for.
 
 
 ---
 
 # Hvad koster en hjemmeside om året?
 URL: https://www.webhjerte.dk/blog/hvad-koster-en-hjemmeside-om-aaret
-Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
-Prisen på selve hjemmesiden er kun starten. Her er et ærligt overblik over de løbende udgifter, du skal regne med, og hvor du kan spare.
+Prisen på selve hjemmesiden er kun starten. Her er de løbende udgifter, du skal regne med – og hvor mange betaler alt for meget.
 
-Kort svar: Ud over selve udviklingen koster en hjemmeside typisk 100–200 kr om året i domæne, 0–500 kr om måneden i hosting og 195–395 kr om måneden, hvis du vil have vedligeholdelse og support. For en lille virksomhed lander de samlede løbende udgifter ofte på 2.500–6.000 kr om året.
+Kort svar: For en lille virksomhed koster en hjemmeside typisk 2.500–6.000 kr om året at have kørende: ca. 100–200 kr for et .dk-domæne, 0–500 kr om måneden for hosting og 249–799 kr om måneden, hvis du vil have nogen til at holde den opdateret. Det dyreste er sjældent teknikken – det er de abonnementer, man har glemt, man betaler for.
 
-## De fire typer udgifter
-Tallene er vejledende og afhænger af udbyder og løsning. Få altid oplyst alle løbende poster, før du siger ja til et tilbud.
-Udgift | Typisk beløb | Bemærkning
-Domæne | 100–200 kr/år | .dk er billigst; .com og andre endelser kan koste mere
-Hosting | 0–500 kr/md | Afhænger af trafik og platform; statiske sider kan ligge billigt eller gratis
-Vedligeholdelse | 195–395 kr/md hos WebHjerte | Opdateringer, sikkerhed, backup og små rettelser
-Værktøjer | Varierer | Booking, nyhedsbreve, betalingsløsninger og premium-plugins
+## Hvorfor det er værd at regne efter
+Når jeg kigger på nye kunders eksisterende hjemmesider, finder jeg næsten altid noget, de betaler for uden at vide det. Et premium-tema, der fornyes automatisk. Et backup-plugin, der aldrig er brugt. Et hostingabonnement til 400 kr om måneden for en side med 300 besøgende.
+Det er ikke store beløb hver for sig. Men over fem år bliver det let til 15.000–25.000 kr – mere, end mange har betalt for selve hjemmesiden.
 
-## Eksempler på årlige omkostninger
-### Lille lokal virksomhed med en enkel hjemmeside
-Domæne ca. 150 kr, enkel hosting ca. 600–1.500 kr om året og evt. vedligeholdelse fra 195 kr/md (2.340 kr/år). I alt typisk ca. 3.000–4.000 kr om året.
-### Servicevirksomhed med booking og analytics
-Domæne, hosting og bookingværktøj (typisk 100–300 kr/md) og vedligeholdelse. Ofte 5.000–8.000 kr om året.
-### Webshop
-Her kommer transaktionsgebyrer, evt. platformsabonnement og lagersystemer oven i. Beløbet afhænger i høj grad af omsætningen.
+## De fire løbende udgifter
+Udgift | Typisk beløb | Det skal du vide
+Domæne | 100–200 kr/år | .dk er billigst. Sørg for, at domænet står i dit navn – ikke bureauets.
+Hosting | 0–500 kr/md | Kodede sider kan ligge meget billigt. WordPress og webshops kræver mere.
+Vedligeholdelse | 249–799 kr/md hos WebHjerte | Opdateringer, sikkerhed, backup og små rettelser. Frivilligt.
+Værktøjer | 0–300 kr/md | Booking, nyhedsbrev, betalingsløsning eller premium-plugins.
 
-## Hvordan kan du spare?
-- Vælg et .dk-domæne og forny automatisk, så du undgår dyre gendannelsesgebyrer.
-- Vælg en let hjemmeside uden tunge plugins – den kræver mindre hosting og vedligeholdelse.
-- Undgå bindinger: sørg for, at domæne og kode tilhører dig.
-- Tag stilling til, om du selv vil opdatere siden, eller om du vil have en vedligeholdelsesaftale.
-- Spørg efter total cost of ownership over tre år, ikke kun startprisen.
+## Tre regneeksempler
+Her er tre typiske situationer, jeg ser hos små virksomheder. Alle beløb er inkl. moms og vejledende.
+### Håndværker med 5 sider
+En kodet hjemmeside uden løbende redigering. Domæne ca. 150 kr, hosting ca. 0–600 kr om året og ingen fast aftale – rettelser betales, når der er brug for dem.
+- Ca. 150–750 kr om året
+### Frisør med WordPress og booking
+WordPress, så salonen selv kan skifte priser og billeder, plus et bookingsystem. Hosting ca. 100 kr/md, booking ca. 200 kr/md og vedligeholdelse 249 kr/md.
+- Ca. 6.500 kr om året
+### Lille webshop
+En webshop med 100 varer kræver mere: Shopify-abonnement eller kraftigere hosting, betalingsløsning og jævnlige opdateringer. Vedligeholdelse 449 kr/md.
+- Ca. 8.000–12.000 kr om året + transaktionsgebyrer
 
-## Hvad er inkluderet hos WebHjerte?
-Hos WebHjerte får du 30 dages support efter lancering. Derefter kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md ekskl. moms eller selv stå for driften. Domæne og kode tilhører dig, så du kan skifte, når du vil.
+## Hvad får du for vedligeholdelse?
+En hjemmeside er ikke en brochure, du trykker én gang. Software skal opdateres, sikkerhedshuller lukkes, og der skal tages backup. Især WordPress-sider, der ikke bliver opdateret, er et af de mest almindelige mål for hackere.
+Hos mig koster vedligeholdelse 249, 449 eller 799 kr om måneden. Det dækker opdateringer, overvågning, backup og små rettelser – og du skriver direkte til mig, ikke til en supportkø. Du kan opsige fra måned til måned.
+
+## Sådan undgår du at betale for meget
+- Gå dine kontoudtog igennem og find alle abonnementer, der har med hjemmesiden at gøre.
+- Tjek, at domæne og hosting står i dit eget navn, så du altid kan skifte leverandør.
+- Spørg, om din side overhovedet har brug for WordPress. Mange små sider gør ikke.
+- Vælg vedligeholdelse, der kan opsiges løbende – ikke en 36-måneders binding.
+- Fjern plugins og værktøjer, du ikke bruger. Det sparer penge og gør siden hurtigere.
+
+## Hvad med hjemmesidebyggere?
+Wix, Squarespace og lignende ser billige ud, fordi der ikke er nogen engangspris. Men du betaler typisk 100–400 kr om måneden, så længe siden findes – og du ejer den ikke. Stopper du betalingen, forsvinder hjemmesiden. Over tre år koster det ofte mere end en professionel side, du ejer selv.
 
 ## Ofte stillede spørgsmål
-Q: Skal jeg betale for en hjemmeside hvert år?
-A: Du skal som minimum forny domænet hvert år og dække hosting. Selve udviklingen er normalt en engangsudgift.
+Q: Hvad koster det at have en hjemmeside om året?
+A: For en lille virksomhed typisk 2.500–6.000 kr om året inkl. domæne, hosting og vedligeholdelse. En simpel kodet side uden fast aftale kan koste under 1.000 kr om året.
 
-Q: Hvad sker der, hvis jeg stopper med at betale hosting?
-A: Siden bliver utilgængelig. Derfor er det vigtigt at have domæne og hosting i dit eget navn.
+Q: Hvad koster et .dk-domæne?
+A: Typisk 100–200 kr om året inkl. moms, afhængigt af udbyder.
 
-Q: Er vedligeholdelse nødvendig?
-A: Anbefalet. Opdateringer og sikkerhed er afgørende, især for WordPress.
+Q: Skal jeg have en vedligeholdelsesaftale?
+A: Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 249–799 kr om måneden uden binding.
+
+Q: Hvad sker der, hvis jeg stopper med at betale for hosting?
+A: Hjemmesiden går offline. Derfor er det vigtigt, at du ejer domænet og har en kopi af siden, så den kan flyttes til en anden udbyder.
 
 
 ---
 
-# SEO-tjekliste for lokale virksomheder: 25 punkter du kan tjekke i dag
+# SEO-tjekliste for lokale virksomheder: 25 punkter, du kan tjekke i dag
 URL: https://www.webhjerte.dk/blog/seo-tjekliste-lokale-virksomheder
-Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
-Brug listen som et hurtigt webtjek af din egen hjemmeside. Du behøver ingen særlige værktøjer ud over Google Search Console og en mobil.
+Det samme webtjek, jeg selv laver, når en ny kunde spørger, hvorfor de ikke kan findes på Google. Du skal bare bruge en mobil, en kop kaffe og en time.
 
-Kort svar: Lokal SEO handler om at have en hurtig, mobilvenlig hjemmeside med klare ydelses- og lokalitetsoplysninger, en opdateret Google Virksomhedsprofil, konsistente kontaktoplysninger og indhold, der svarer på kundernes spørgsmål. Listen herunder samler 25 konkrete punkter inden for teknik, indhold og lokale signaler.
+Kort svar: Lokal SEO er mindre mystisk, end det lyder. Google vil vise den virksomhed, der tydeligst svarer på kundens søgning, ligger tæt på og ser troværdig ud. I praksis betyder det: en hurtig, mobilvenlig hjemmeside, én side pr. ydelse, en opdateret Google Virksomhedsprofil, ens kontaktoplysninger overalt og anmeldelser. Her er de 25 punkter, jeg går igennem.
 
-## Teknik
-- Siden bruger https og har gyldigt SSL-certifikat.
-- Den indlæses hurtigt på mobil (test med PageSpeed Insights).
-- Der er kun én version af hjemmesiden (www eller uden www – med omdirigering).
-- Der findes et sitemap, og det er indsendt til Google Search Console.
-- robots.txt blokerer ikke vigtige sider eller scripts.
-- Hver side har en canonical-tag.
-- Der er ingen døde links eller mange 404-sider.
-- Siden virker uden fejl i Chrome, Safari og på både iPhone og Android.
+## Før du starter: søg på dig selv
+Tag din mobil, åbn et privat vindue og søg på det, dine kunder ville søge på. Ikke dit firmanavn – det finder du altid. Søg på “tømrer Horsens”, “frisør Hedensted” eller “VVS Brædstrup”. Hvor ligger du? Ligger du i kortet? Hvad står der under dit navn?
+Skriv resultatet ned. Det er dit udgangspunkt, og det gør det meget nemmere at se, om dine ændringer virker om to måneder.
 
-## Indhold
-- Hver ydelse har sin egen side med en klar overskrift (H1).
-- Titel (ca. 50–60 tegn) og beskrivelse (ca. 140–160 tegn) er unikke og indeholder ydelse + sted.
-- Overskrifterne følger en logisk rækkefølge (H1 → H2 → H3).
-- Siden svarer på de spørgsmål, kunderne faktisk stiller.
-- Der er en FAQ-sektion med 5–10 spørgsmål.
-- Billeder har beskrivende filnavne og alt-tekst.
-- Der er interne links mellem relaterede sider.
-- Priser eller prisintervaller er tydelige (øger tillid og klik).
+## 1. Teknik – fundamentet
+Teknikken er ikke det sjoveste, men hvis den ikke er i orden, hjælper resten ikke. Det gode er, at det meste kun skal ordnes én gang.
+- Siden bruger https og har et gyldigt SSL-certifikat (hængelåsen i browseren).
+- Den indlæses på under 2–3 sekunder på mobil. Test den gratis på PageSpeed Insights.
+- Der findes kun én version af siden – www eller uden www – og den anden omdirigerer.
+- Der er et sitemap, og det er indsendt i Google Search Console.
+- robots.txt blokerer ikke vigtige sider, CSS eller scripts.
+- Hver side har en canonical-tag, så Google ved, hvilken adresse der er den rigtige.
+- Der er ingen døde links eller sider, der viser fejl 404.
+- Siden virker på både iPhone og Android og i Safari og Chrome.
 
-## Lokale signaler
-- Din Google Virksomhedsprofil er oprettet, verificeret og opdateret.
-- Kategori, åbningstider, telefon og adresse er korrekte.
-- Navn, adresse og telefon (NAP) er ens på hjemmesiden, i Google, Facebook og kataloger.
-- Du har fået anmeldelser og svarer på dem.
-- Siden nævner by, bydele og opland naturligt i teksterne.
-- Der er struktureret data for LocalBusiness og Organization.
-- Du er opført i relevante lokale kataloger og brancheforeninger.
+## 2. Indhold – det, Google faktisk læser
+Den mest almindelige fejl, jeg ser, er én side, der hedder “Ydelser”, med ti ydelser i en liste. Google kan ikke se, at du laver tagrenovering i Horsens, hvis det kun står som ét ord i en punktopstilling. Hver vigtig ydelse fortjener sin egen side.
+- Hver ydelse har sin egen side med en tydelig overskrift (H1), fx “Tagrenovering i Horsens”.
+- Sidens titel er ca. 50–60 tegn og indeholder ydelse + by.
+- Meta-beskrivelsen er ca. 140–160 tegn og giver en grund til at klikke (pris, garanti, hurtig levering).
+- Overskrifterne følger en logisk rækkefølge: H1 → H2 → H3.
+- Teksten svarer på de spørgsmål, kunderne stiller dig i telefonen.
+- Der er en FAQ med 5–10 rigtige spørgsmål.
+- Billeder har beskrivende filnavne og alt-tekst – ikke “IMG_4021.jpg”.
+- Siderne linker til hinanden, hvor det giver mening.
+- Priser eller prisintervaller står tydeligt. Det giver flere klik og bedre henvendelser.
 
-## Måling og AI-synlighed
-- Google Search Console er sat op, og du følger søgninger og klik.
-- Google Analytics (eller tilsvarende) måler henvendelser, ikke kun besøg.
-- robots.txt tillader seriøse AI-crawlere, hvis du vil findes i AI-svar.
-- Vigtige sider har et kort svar øverst og en FAQ med struktureret data.
+## 3. Lokale signaler – det, der får dig i kortet
+Kortet øverst i Google (“local pack”) er der, hvor de fleste lokale kunder klikker. Her betyder din Google Virksomhedsprofil mere end selve hjemmesiden.
+- Din Google Virksomhedsprofil er oprettet, verificeret og udfyldt 100 %.
+- Den rigtige hovedkategori er valgt – og relevante underkategorier.
+- Navn, adresse og telefon (NAP) er skrevet præcis ens på hjemmesiden, i Google, på Facebook og i kataloger.
+- Du beder aktivt om anmeldelser – og svarer på dem alle, også de dårlige.
+- Hjemmesiden nævner naturligt de byer og områder, du arbejder i.
+- Der er struktureret data (LocalBusiness) med adresse, telefon og åbningstider.
+- Du er nævnt i relevante lokale kataloger og brancheforeninger.
+
+## 4. Måling og AI-synlighed
+- Google Search Console er sat op, og du kigger på søgninger og klik en gang om måneden.
+- Du måler henvendelser (opkald, formularer) – ikke kun besøg.
+- robots.txt tillader AI-crawlere, hvis du vil kunne nævnes i ChatGPT og Google AI.
+- Dine vigtigste sider har et kort, klart svar øverst og en FAQ.
 
 ## Sådan prioriterer du
-Start med teknikken (hastighed, mobil, https), fordi den påvirker alt andet. Derefter Google Virksomhedsprofil og dine tre vigtigste ydelsessider. Når fundamentet er på plads, kan du arbejde videre med indhold og AI-synlighed. Mangler du tid, tilbyder jeg et gratis SEO- og webtjek, hvor jeg gennemgår listen for dig.
+Du behøver ikke gøre det hele på én gang. Hvis jeg skulle vælge rækkefølgen for en lille virksomhed, ville det være sådan her:
+1. Google Virksomhedsprofil: Udfyld den helt, tilføj billeder og bed dine fem seneste kunder om en anmeldelse. Det er gratis og giver ofte den hurtigste effekt.
+2. Teknikken: Https, hastighed og mobil. Kan du ikke selv rette det, er det her, en udvikler er pengene værd.
+3. Dine tre vigtigste ydelser: Giv dem hver sin side med by i titlen og svar på kundernes spørgsmål.
+4. Mål og justér: Efter 6–8 uger: kig i Search Console og se, hvilke søgninger der begynder at komme.
+
+## Vil du hellere have, at jeg gør det?
+Har du ikke tid, gennemgår jeg gerne listen for dig. Du får et gratis SEO-tjek af din hjemmeside med de tre ting, der vil gøre størst forskel – skrevet på almindeligt dansk, ikke en 40-siders rapport.
 
 ## Ofte stillede spørgsmål
 Q: Hvor lang tid tager det at se effekt af SEO?
-A: Tekniske rettelser kan have effekt på uger. Placeringer på konkurrenceprægede søgninger opbygges typisk over 2–6 måneder.
+A: Tekniske rettelser og en opdateret Google-profil kan give effekt på få uger. Gode placeringer på konkurrenceprægede søgninger tager typisk 2–6 måneder.
 
-Q: Hvad er vigtigst i lokal SEO?
-A: Google Virksomhedsprofil, konsistente oplysninger, anmeldelser og en hurtig hjemmeside med tydelige ydelsessider.
+Q: Hvad er det vigtigste i lokal SEO?
+A: En udfyldt Google Virksomhedsprofil, anmeldelser, ens kontaktoplysninger overalt og en hurtig hjemmeside med én side pr. ydelse.
 
 Q: Kan jeg lave SEO selv?
-A: Ja, de fleste punkter kan du selv tage fat på. Mangler du tid eller viden, kan jeg hjælpe.
+A: Ja. De fleste punkter på listen kræver ingen teknisk viden. Teknikken og hastigheden er dér, hvor mange har brug for hjælp.
+
+Q: Hvad koster SEO hos WebHjerte?
+A: SEO-grundlaget er bygget ind i alle nye hjemmesider fra 2.500 kr. Et SEO-tjek af din nuværende side er gratis.
 
 
 ---
 
 # Sådan vælger du webbureau: 10 spørgsmål, du bør stille
 URL: https://www.webhjerte.dk/blog/vaelg-webbureau-10-spoergsmaal
-Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
-Det er svært at sammenligne tilbud, hvis du ikke ved, hvad du skal spørge om. Brug disse ti spørgsmål, så du får svar, der betyder noget.
+Ja, jeg ved godt, at jeg selv er en af dem, du vælger imellem. Derfor er her de spørgsmål, jeg selv ville stille – også selvom svarene ikke altid peger på mig.
 
-Kort svar: Når du vælger webbureau, så spørg ind til fast pris, leveringstid, ejerskab af domæne og kode, SEO, mobilvenlighed, support efter lancering, referencer og hvem du reelt taler med. Gode bureauer svarer klart og skriftligt – og siger fra, hvis en opgave ikke passer dem.
+Kort svar: Den rigtige leverandør er ikke nødvendigvis den største eller den billigste. Det er den, der giver dig en fast pris, lader dig eje din hjemmeside, kan vise lignende projekter og svarer, når du skriver. Stil de ti spørgsmål herunder til alle, du får tilbud fra, og sammenlign svarene side om side.
+
+## Hvorfor det er svært at sammenligne
+Et tilbud på 8.000 kr og et på 45.000 kr kan begge hedde “ny hjemmeside”. Det ene er måske fem sider på et standardtema, det andet inkluderer tekster, SEO og et års support. Det er derfor, jeg altid anbefaler at stille de samme spørgsmål til alle – så sammenligner du æbler med æbler.
 
 ## De 10 spørgsmål
-### 1. Er prisen fast, og hvad er inkluderet?
-Få et skriftligt tilbud med antal sider, funktioner, antal rettelsesrunder og evt. løbende udgifter. Timeprisbaserede løsninger kan blive dyre uden forvarsel.
-### 2. Hvornår er hjemmesiden klar?
-Få en konkret tidsplan, og spørg, hvad der kan forsinke projektet (fx tekster og billeder fra dig).
-### 3. Hvem ejer domæne, kode og indhold?
-Svaret skal være: dig. Undgå aftaler, hvor du ikke kan tage siden med dig, hvis du skifter leverandør.
-### 4. Hvem arbejder konkret på min hjemmeside?
-Spørg, om du taler med udvikleren eller et salgsled. Mange mellemled betyder længere svartid og højere pris.
-### 5. Hvordan håndterer I SEO og hastighed?
-Basis-SEO bør være en del af leverancen: titler, struktur, mobil, hastighed og struktureret data. Spørg efter konkrete mål (fx PageSpeed).
-### 6. Er hjemmesiden redigerbar for mig?
-Vil du selv ændre indhold? Så skal der bygges i et CMS som WordPress. Hvis ikke, kan skræddersyet kode give højere hastighed.
-### 7. Hvad sker der efter lancering?
-Spørg om support, vedligeholdelse og pris på rettelser. Få det på skrift.
-### 8. Kan jeg se referencer og eksempler?
-Se på porteføljen, tal med tidligere kunder, og tjek, om projekterne ligner dit.
-### 9. Hvad hvis jeg ikke bryder mig om designet?
-Spørg om designgodkendelse og hvad det koster, hvis designet ikke rammer rigtigt. Hos WebHjerte er det 0 kr for designet, hvis du ikke er tilfreds.
-### 10. Hvad kan I ikke hjælpe med?
-Et godt bureau kender sine grænser og siger fra. Hvis svaret altid er “alt”, så vær på vagt.
+### Er prisen fast?
+Og hvad sker der, hvis du ønsker en ekstra side midt i projektet? En fast pris med et klart omfang beskytter dig mod overraskelser.
+### Hvem ejer domæne, kode og indhold?
+Svaret skal være: dig. Ellers er du bundet til leverandøren, hvis I en dag går hver til sit.
+### Hvem taler jeg med undervejs?
+En sælger, en projektleder eller den, der faktisk bygger siden? Jo færre led, jo mindre går tabt.
+### Hvornår er siden færdig?
+Bed om en konkret tidsplan med datoer – ikke “4–12 uger”. Og spørg, hvad der typisk forsinker projekter.
+### Hvad er inkluderet i SEO?
+“SEO-venlig” betyder ingenting. Spørg konkret: titler, beskrivelser, sitemap, struktureret data, hastighed og Search Console?
+### Hvem skriver teksterne?
+Tekster er ofte det, der forsinker et projekt mest. Find ud af, om de er med i prisen, eller om du selv skal levere dem.
+### Kan jeg selv rette i siden?
+Hvis du gerne vil skifte priser og billeder selv, skal du have WordPress eller et andet redigeringssystem.
+### Hvad koster det efter lancering?
+Hosting, vedligeholdelse og rettelser. Og kan aftalen opsiges fra måned til måned?
+### Kan jeg se lignende projekter?
+Bed om eksempler fra din branche eller af samme størrelse – og gerne en kunde, du kan ringe til.
+### Hvad hvis jeg ikke kan lide designet?
+Hos mig får du et designudkast på 48 timer, og passer det ikke, betaler du 0 kr. Spørg andre, hvad deres svar er.
 
 ## Røde flag
-- Garanti for placering nr. 1 på Google.
-- Uklar pris eller “vi vender tilbage med en pris efter projektstart”.
-- Domæne eller hosting registreret i bureauets navn uden din accept.
-- Ingen skriftlig aftale om rettigheder og vilkår.
-- Presset til at beslutte hurtigt uden tid til at sammenligne.
+Ser du et af disse, ville jeg tænke mig om en ekstra gang:
+- Domænet bliver registreret i bureauets navn.
+- Binding på 24–36 måneder for hosting eller “abonnementshjemmeside”.
+- Ingen skriftlig beskrivelse af, hvad der er med i prisen.
+- Garantier om “nummer 1 på Google”. Det kan ingen love.
+- Du kan ikke få at vide, hvem der faktisk laver arbejdet.
+- Lang svartid allerede i salgsfasen. Det bliver sjældent bedre bagefter.
 
-## Hvornår kan det betale sig med et bureau frem for en freelancer?
-Et bureau er typisk bedre, hvis du har brug for flere kompetencer (design, udvikling, tekst, SEO) og en stabil leverandør over tid. En freelancer er ofte hurtigere og billigere til afgrænsede opgaver. Et lille bureau som WebHjerte kombinerer det bedste fra begge verdener: direkte kontakt med udvikleren og en struktureret proces.
+## Bureau, freelancer eller én udvikler?
+Et stort bureau giver mening, når du har mange interessenter, et stort budget og brug for flere specialister på én gang – fx en virksomhed med marketingafdeling, flere sprog og integrationer til ERP. Her betaler du for koordinering, og det er fair nok.
+For de fleste små og mellemstore virksomheder er det overkill. Du betaler for projektledere, kontorer og møder, du ikke har brug for. En erfaren freelancer eller et lille bureau som mit giver dig direkte kontakt og en lavere pris – så længe du sikrer dig, at der er en plan, hvis personen bliver syg eller stopper. Spørg om det.
+
+## Mine egne svar
+For at være fair: Hos WebHjerte er prisen fast (fra 2.500 kr), du ejer domæne og kode, du taler med mig hele vejen, de fleste projekter er klar på 2–10 dage, SEO-grundlaget er med, og vedligeholdelse kan opsiges fra måned til måned. Du kan se mine projekter i porteføljen – og du betaler 0 kr for designet, hvis det ikke passer.
 
 ## Ofte stillede spørgsmål
-Q: Hvad bør et tilbud indeholde?
-A: Pris, omfang, tidsplan, ejerskab af kode og domæne, support efter lancering samt løbende udgifter.
+Q: Hvornår kan det betale sig at bruge et bureau?
+A: Når projektet er stort, kræver flere specialister samtidig og har mange interessenter. Til en typisk hjemmeside for en lille virksomhed er en erfaren freelancer eller et lille bureau ofte billigere og hurtigere.
 
-Q: Er et stort bureau bedre end et lille?
-A: Ikke nødvendigvis. Store bureauer er gode til komplekse projekter, mens små bureauer ofte er hurtigere og billigere for mindre virksomheder.
+Q: Hvad koster et webbureau?
+A: Hos større bureauer koster en hjemmeside typisk 25.000–150.000 kr. Hos WebHjerte starter faste priser fra 2.500 kr.
 
-Q: Hvordan ser jeg, om et bureau er seriøst?
-A: Se efter klare priser, referencer, skriftlige aftaler og ærlige svar – også om, hvad de ikke kan.
+Q: Hvad skal et tilbud på en hjemmeside indeholde?
+A: Fast pris, præcist omfang (sider og funktioner), tidsplan, hvem der ejer domæne og kode, og hvad det koster efter lancering.
 
 
 ---
 
 # WordPress eller skræddersyet hjemmeside? Sådan vælger du
 URL: https://www.webhjerte.dk/blog/wordpress-eller-skraeddersyet
-Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
-Begge løsninger kan give en god hjemmeside. Forskellen ligger i, hvem der skal redigere den, hvor vigtig hastighed er, og hvad du vil bruge den til.
+Jeg bygger begge dele, så jeg har ikke noget at sælge dig her. Spørgsmålet er bare: hvad passer til din virksomhed og den måde, du arbejder på?
 
-Kort svar: Vælg WordPress, hvis du vil redigere indhold selv, vil have en blog eller en simpel webshop. Vælg skræddersyet kode (fx Next.js), hvis du prioriterer maksimal hastighed, unik funktionalitet og lav vedligeholdelse. Prisen starter hos WebHjerte fra 2.500 kr for en landingside og 4.500 kr for en Basis-hjemmeside.
+Kort svar: Vælg WordPress, hvis du selv vil opdatere indhold ofte – nyheder, priser, menukort, produkter. Vælg en skræddersyet, kodet hjemmeside, hvis du vil have den hurtigste og mest sikre løsning med lave driftsudgifter, og indholdet ikke ændrer sig hver uge. Prisen hos WebHjerte er den samme: fra 4.500 kr for en flersidet hjemmeside.
+
+## Den korte forklaring
+WordPress er et redigeringssystem. Du logger ind, retter en tekst og trykker “Opdater”. Det driver en stor del af alle hjemmesider i verden, og der findes tusindvis af udvidelser (plugins) til alt fra booking til webshop.
+En skræddersyet hjemmeside er kodet fra bunden – hos mig typisk i Next.js. Der er ingen plugins, ingen database, der kan hackes, og ingen opdateringer, du skal huske. Til gengæld er det mig (eller en anden udvikler), der retter i den, medmindre vi kobler et redigeringssystem på.
 
 ## Sammenligning
- | WordPress | Skræddersyet kode
-Redigering | Nem for ikke-tekniske brugere | Kræver udvikler eller et tilkoblet CMS
-Hastighed | God, hvis optimeret – kan blive langsom med mange plugins | Meget høj, fordi der kun indlæses det nødvendige
-Sikkerhed | Kræver løbende opdatering af kerne og plugins | Mindre angrebsflade, især ved statiske sider
-Fleksibilitet | Stort plugin-økosystem | Ubegrænset, men hver funktion skal bygges
-Startpris | Fra 4.500 kr (Basis) | Fra 2.500 kr (landingside)
-Vedligeholdelse | Jævnlige opdateringer | Få opdateringer
-SEO | God med korrekt opsætning | God med korrekt opsætning
+ | WordPress | Skræddersyet (kode)
+Redigering | Du retter selv tekst, billeder og priser | Udvikleren retter – eller vi kobler et CMS på
+Hastighed | God, hvis den er sat rigtigt op | Typisk den hurtigste løsning
+Sikkerhed | Kræver løbende opdateringer | Meget lille angrebsflade
+Drift | Hosting og vedligeholdelse anbefales | Kan hostes meget billigt
+Udvidelser | Tusindvis af plugins | Bygges præcist efter behov
+Pris hos WebHjerte | Fra 4.500 kr | Fra 2.500 kr (landingside) / 4.500 kr
 
 ## Vælg WordPress, hvis…
-- du selv vil rette tekster, billeder og priser uden udvikler.
-- du vil have en blog eller nyhedssektion, der opdateres ofte.
-- flere i teamet skal kunne redigere indhold.
-- du vil bygge en enkel webshop med WooCommerce.
+- Du vil skrive nyheder, blogindlæg eller opdatere priser hver måned.
+- Du har en restaurant med menukort, der skifter.
+- Du skal have en webshop med WooCommerce og selv oprette produkter.
+- Flere i virksomheden skal kunne redigere.
+- Du gerne vil kunne skifte udvikler nemt senere.
 
 ## Vælg skræddersyet, hvis…
-- hastighed og Core Web Vitals er afgørende for din forretning.
-- du har specielle funktioner (beregnere, kundeportal, integrationer).
-- du ikke har brug for selv at ændre indhold ofte.
-- du vil have færrest mulige vedligeholdelsesopgaver.
+- Hastighed og Google-placeringer er det vigtigste for dig.
+- Indholdet ændrer sig sjældent – det er dine ydelser, priser og kontaktinfo.
+- Du ikke vil bruge tid på opdateringer og plugins.
+- Du har brug for en særlig funktion, som et plugin ikke kan løse ordentligt.
+- Du vil have de laveste driftsudgifter på lang sigt.
+
+## Et eksempel fra Horsens
+Da jeg byggede hjemmesiden til en pizzeria i Horsens, var målet klart: kunderne skulle bestille direkte i stedet for via Wolt og JustEat, der tog op mod 30 % i gebyr. Her var hastighed alt – en sulten kunde på mobilen venter ikke på en langsom side. Derfor blev den kodet i Next.js.
+En frisørsalon, der skifter priser, kampagner og billeder hver måned, ville jeg derimod bygge i WordPress, så de selv har kontrollen.
 
 ## Min anbefaling
-Start med spørgsmålet: Hvem skal opdatere siden, og hvor ofte? Svaret afgør som regel valget. Jeg bygger begge dele og fortæller ærligt, hvad der giver bedst værdi for dig – også selvom det betyder en billigere løsning.
+Er du i tvivl, så tænk over ét spørgsmål: hvor ofte vil du selv ændre noget på siden? Er svaret “hver uge”, er WordPress det rigtige. Er svaret “et par gange om året”, får du en hurtigere og billigere side at drive med kode.
+Og har du ikke et svar endnu, er det helt fint. Det finder vi ud af på en kort samtale – helt gratis.
 
 ## Ofte stillede spørgsmål
-Q: Er WordPress dårligt til SEO?
-A: Nej. Med ren opsætning, hurtig hosting og få plugins er WordPress en god platform for SEO.
+Q: Er WordPress dårligt for SEO?
+A: Nej. WordPress kan rangere rigtig godt, hvis siden er hurtig, sat rigtigt op og ikke fyldt med unødvendige plugins.
 
-Q: Kan jeg skifte fra WordPress til skræddersyet senere?
-A: Ja, men indhold og design skal migreres. Planlæg derfor valget fra start.
+Q: Kan jeg selv redigere en skræddersyet hjemmeside?
+A: Ja, hvis vi kobler et redigeringssystem (CMS) på. Ellers står jeg for rettelser via en vedligeholdelsesaftale fra 249 kr/md.
 
-Q: Hvad er billigst?
-A: En enkelt landingside i skræddersyet kode starter fra 2.500 kr. Flersidede WordPress-sites starter fra 4.500 kr.
+Q: Hvad er billigst på lang sigt?
+A: En kodet hjemmeside har typisk de laveste driftsudgifter, fordi den ikke kræver løbende opdateringer af plugins og WordPress.
+
+Q: Kan jeg skifte fra WordPress til kode senere?
+A: Ja. Indholdet kan flyttes, og med korrekte omdirigeringer beholder du dine placeringer på Google.
 
 
 ---
 
 # Hvor lang tid tager det at lave en hjemmeside?
 URL: https://www.webhjerte.dk/blog/hvor-lang-tid-tager-det-at-lave-en-hjemmeside
-Forfatter: Ivan Kohan. Opdateret: 2026-11-06
+Forfatter: Ivan Kohan. Opdateret: 2026-11-10
 
-Det korte svar: 2–10 dage hos WebHjerte, hvis indhold og billeder er klar. Her er tidsplanen trin for trin – og hvad der typisk skaber forsinkelser.
+Bureauer siger ofte 6–12 uger. Hos mig er de fleste hjemmesider klar på 2–10 dage. Her er forskellen – og hvad der i praksis bestemmer tempoet.
 
-Kort svar: En landingside tager typisk ca. 2 dage, en Basis-hjemmeside ca. 5 dage og en Standard-hjemmeside ca. 10 dage hos WebHjerte. Større løsninger som webshops tager 2–4 uger. Den største årsag til forsinkelser er manglende tekster og billeder fra kunden.
+Kort svar: En landingside kan være klar på ca. 2 dage, en firmahjemmeside med 3–8 sider på 5–10 dage, og en webshop eller skræddersyet løsning på 2–6 uger. Det, der oftest forsinker et projekt, er ikke udviklingen, men tekster, billeder og godkendelser. Har du dem klar, går det stærkt.
 
 ## Typisk tidsplan
-Tiderne regnes fra, at designet er godkendt, og indhold er afleveret.
-Pakke | Leveringstid | Hvad tager tid?
-Landingside | ca. 2 dage | Design og én side, tekst og formular
-Basis (3–5 sider) | ca. 5 dage | Design, bygning og test af flere sider
-Standard (op til 8 sider) | ca. 10 dage | SEO, analytics, booking og flere sider
-Webshop / skræddersyet | 2–4 uger | Produkter, betaling, integrationer og test
+Type | Hos WebHjerte | Typisk hos bureau
+Landingside (1 side) | ca. 2 dage | 1–3 uger
+Basis (3–5 sider) | ca. 5 dage | 3–6 uger
+Standard (op til 8 sider) | ca. 10 dage | 4–8 uger
+Webshop / skræddersyet | 2–6 uger | 2–6 måneder
+
+## Hvorfor går det hurtigere hos mig?
+Det handler ikke om at sjuske. Det handler om færre led. Hos et bureau skal projektet typisk igennem en sælger, en projektleder, en designer og en udvikler – og hver overlevering koster dage. Der er interne møder, kalendere, der skal passe, og opgaver, der venter i kø bag andre kunder.
+Hos mig er det den samme person, der taler med dig, designer og koder. Når du godkender designet om formiddagen, kan jeg begynde at bygge om eftermiddagen. Og fordi jeg arbejder med få, gennemprøvede byggesten, starter jeg ikke fra nul hver gang.
 
 ## Faserne i et projekt
-1. Første samtale (15–30 min.): Mål, målgruppe, ønsker og budget afklares.
-2. Design (inden for 48 timer): Du modtager et konkret designudkast. Intet bygges, før du har godkendt det.
-3. Indhold: Tekster, billeder og logo samles. Jeg hjælper med struktur og formuleringer.
-4. Udvikling: Siden bygges, SEO og analytics sættes op, og formularer testes.
-5. Test og rettelser: Mobil, tablet og desktop gennemgås, og dine rettelser indarbejdes.
-6. Lancering: Siden sættes live på dit domæne.
+1. Samtale (dag 1): Vi taler om din virksomhed, dine kunder og hvad siden skal kunne. Du får en fast pris.
+2. Design (inden for 48 timer): Du ser et konkret designudkast af forsiden. Passer det ikke, betaler du 0 kr.
+3. Udvikling (2–7 dage): Når designet er godkendt, bygger jeg resten af siderne og sætter SEO, formularer og tracking op.
+4. Test og rettelser (1–2 dage): Du får et link og kan klikke rundt. Vi retter det sidste sammen.
+5. Lancering: Siden går live på dit domæne. Du får 30 dages support i alle pakker.
 
 ## Hvad kan forsinke projektet?
-- Tekster og billeder, der leveres sent eller ændres undervejs.
-- Mange rettelsesrunder i designfasen.
-- Afhængighed af tredjepart (fx adgang til domæne eller eksisterende hosting).
-- Ønsker om ekstra funktioner midt i projektet.
-- Juridiske tekster, der skal vurderes af en jurist.
+I næsten alle projekter, der trækker ud, er det en af de her ting – og ingen af dem handler om koden:
+- Teksterne er ikke klar. Det er den største tidsrøver af dem alle.
+- Billeder mangler, eller de er taget med en gammel mobil i dårligt lys.
+- For mange beslutningstagere, der alle skal godkende hver ændring.
+- Adgang til domæne eller gammel hosting, som ingen kan finde koderne til.
+- Nye ønsker midt i projektet. Det er helt fint – men det rykker datoen.
 
-## Sådan får du hurtigst en hjemmeside
-- Saml logo, billeder og en kort tekst om dine ydelser inden første samtale.
-- Vælg en pakke, der passer til det mest nødvendige – du kan altid udvide senere.
-- Giv hurtig feedback på designet.
-- Udpeg én kontaktperson i din virksomhed.
+## Sådan får du din hjemmeside hurtigst
+Vil du have siden ude på en uge, er her de tre ting, der gør den største forskel:
+### Hav teksterne klar
+Det behøver ikke være perfekt. En liste over dine ydelser, priser og hvad der gør dig anderledes er nok – jeg hjælper med at skrive det færdigt.
+### Find 10–20 gode billeder
+Billeder af dig, dit team og dit arbejde slår altid stockfotos. Har du ingen, kan vi starte med få og tilføje flere senere.
+### Én beslutningstager
+Aftal internt, hvem der har det sidste ord. Det kan spare en hel uge.
+### Find dine logins
+Domæne (fx hos Punktum dk eller dit webhotel) og eventuel gammel hosting. Så kan vi flytte uden ventetid.
+
+## Kan det gå for hurtigt?
+Ja, hvis man springer test over eller lancerer uden at have tænkt over, hvad siden skal opnå. Derfor går jeg aldrig på kompromis med designgodkendelse og test på mobil. Men en firmahjemmeside med 5 sider behøver ikke tage to måneder. Det er ikke kvalitet – det er bare ventetid.
 
 ## Ofte stillede spørgsmål
-Q: Kan jeg få en hjemmeside på 2 dage?
-A: Ja, en landingside kan ofte leveres på ca. 2 dage, når indhold og billeder er klar.
+Q: Hvor lang tid tager det at lave en hjemmeside?
+A: Hos WebHjerte typisk 2–10 dage for en hjemmeside med 1–8 sider. Webshops og skræddersyede løsninger tager 2–6 uger.
 
-Q: Hvorfor tager andre bureauer flere uger?
-A: Mange bureauer har flere led og længere processer. Mindre omfang og direkte kontakt kan gøre forløbet kortere.
+Q: Kan jeg få en hjemmeside på en uge?
+A: Ja, en Basis-hjemmeside på 3–5 sider kan være klar på ca. 5 dage, hvis tekster og billeder er klar.
 
-Q: Kan siden gå live, før den er helt færdig?
-A: Ja. Vi kan lancere kernen først og udvide løbende.
+Q: Hvad forsinker typisk et hjemmesideprojekt?
+A: Manglende tekster og billeder, mange beslutningstagere og nye ønsker undervejs – sjældent selve udviklingen.
+
+Q: Hvornår ser jeg det første design?
+A: Inden for 48 timer efter vores samtale. Passer det ikke, betaler du 0 kr for designet.

@@ -4,7 +4,7 @@ import Questions from "../../components/Questions";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
-  title: "Kontakt WebHjerte – svar inden for 24 timer | Horsens",
+  title: "Kontakt – gratis tilbud inden for 24 timer | WebHjerte",
   description:
     "Kontakt WebHjerte i Horsens: ring +45 42 76 05 77 eller skriv. Få et gratis, uforpligtende tilbud på hjemmeside, SEO eller AI-løsning inden for 24 timer.",
   alternates: {

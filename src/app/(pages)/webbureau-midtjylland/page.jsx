@@ -5,7 +5,7 @@ const path = "/webbureau-midtjylland";
 export const metadata = {
   title: "Webbureau Midtjylland – hjemmesider & AI fra 2.500 kr | WebHjerte",
   description:
-    "Webbureau til virksomheder i Midtjylland: Aarhus, Silkeborg, Vejle og resten af regionen. Fast pris fra 2.500 kr, AI-løsninger og direkte kontakt med udvikleren.",
+    "Webbureau i Midtjylland: Aarhus, Silkeborg, Vejle og resten af regionen. Fast pris fra 2.500 kr inkl. moms, AI-løsninger og direkte kontakt.",
   keywords: [
     "webbureau Midtjylland",
     "webbureau Jylland",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Hvad koster en hjemmeside fra et webbureau i Midtjylland?",
-    a: "Hos WebHjerte starter priserne fra 2.500 kr for en landingside, 4.500 kr for Basis og 7.500 kr for Standard. Skræddersyede løsninger starter fra 14.000 kr. Alle priser er faste og aftales på forhånd.",
+    a: "Hos WebHjerte starter priserne fra 2.500 kr for en landingside, 4.500 kr for Basis og 8.500 kr for Standard. Skræddersyede løsninger starter fra 14.000 kr. Alle priser er faste og aftales på forhånd.",
   },
   {
     q: "Kan I møde mig fysisk, hvis jeg bor uden for Horsens?",

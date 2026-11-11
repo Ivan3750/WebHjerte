@@ -69,7 +69,7 @@ const Vikar = () => {
             </p>
             <h2>4. Priser og betaling</h2>
             <p>
-              4.1. Alle priser er angivet eksklusive moms, med mindre andet er
+              4.1. Alle priser er angivet inklusive moms, med mindre andet er
               oplyst.
             </p>
             <p>
@@ -103,94 +103,120 @@ const Vikar = () => {
               5.3. For digitale Ydelser anses leveringen for fuldført, når
               loginoplysninger eller færdigt materiale er stillet til rådighed.
             </p>
-            <h2>6. Fortrydelsesret</h2>
+            <h2>6. Vedligeholdelsesabonnement</h2>
             <p>
-              6.1. Forbrugerkunder har 14 dages fortrydelsesret på fysiske
+              6.1. Efter lancering er support inkluderet i 30 dage. Derefter
+              kan Kunden vælge et vedligeholdelsesabonnement: Basis (249 kr.
+              pr. måned), Standard (449 kr. pr. måned) eller Pro (799 kr. pr.
+              måned). Alle priser er inklusive moms.
+            </p>
+            <p>
+              6.2. Abonnementets indhold fremgår af www.webhjerte.dk/services.
+              Ændringer omfattet af abonnementet er begrænset til 30 minutter
+              (Standard) og 2 timer (Pro) pr. måned. Ubrugt tid overføres ikke
+              til næste måned.
+            </p>
+            <p>
+              6.3. Abonnementet løber fra måned til måned og kan opsiges af
+              begge parter med 30 dages varsel. Der er ingen bindingsperiode.
+            </p>
+            <p>
+              6.4. Abonnementet betales forud pr. måned. Opgaver uden for
+              abonnementet aftales skriftligt til fast pris, før arbejdet
+              påbegyndes.
+            </p>
+            <p>
+              6.5. Ved opsigelse udleverer WebHjerte på Kundens anmodning
+              hjemmesidens filer, og Kunden bevarer sit domæne.
+            </p>
+            <h2>7. Fortrydelsesret</h2>
+            <p>
+              7.1. Forbrugerkunder har 14 dages fortrydelsesret på fysiske
               Produkter. For at udøve fortrydelsesretten skal WebHjerte
               kontaktes skriftligt inden fristens udløb.
             </p>
             <p>
-              6.2. Fortrydelsesretten gælder ikke for digitalt leverede ydelser,
+              7.2. Fortrydelsesretten gælder ikke for digitalt leverede ydelser,
               hvis levering er påbegyndt med Kundens forudgående samtykke og
               erkendelse af tab af fortrydelsesret.
             </p>
             <p>
-              6.3. Returnerede og ubeskadigede Produkter ombyttes eller
+              7.3. Returnerede og ubeskadigede Produkter ombyttes eller
               refunderes efter modtagelse. Returfragt betales af Kunden,
               medmindre andet er aftalt.
             </p>
-            <h2>7. Reklamation og ansvar</h2>
+            <h2>8. Reklamation og ansvar</h2>
             <p>
-              7.1. Kunden skal reklamere over mangler ved Produkter senest 2
+              8.1. Kunden skal reklamere over mangler ved Produkter senest 2
               måneder efter manglens opdagelse.
             </p>
             <p>
-              7.2. For Ydelser gælder reklamation ved fejl eller mangler, som
+              8.2. For Ydelser gælder reklamation ved fejl eller mangler, som
               berettiget påpeges inden 30 dage efter leveringen.
             </p>
             <p>
-              7.3. WebHjertes ansvar for direkte tab er begrænset til det beløb,
+              8.3. WebHjertes ansvar for direkte tab er begrænset til det beløb,
               Kunden har betalt for den pågældende Ydelse eller Produkt.
             </p>
             <p>
-              7.4. WebHjerte er ikke ansvarlig for indirekte tab, driftstab,
+              8.4. WebHjerte er ikke ansvarlig for indirekte tab, driftstab,
               avancetab eller følgeskader.
             </p>
-            <h2>8. Force Majeure</h2>
+            <h2>9. Force Majeure</h2>
             <p>
-              8.1. WebHjerte fritages for ansvar, hvis opfyldelse af Aftalen
+              9.1. WebHjerte fritages for ansvar, hvis opfyldelse af Aftalen
               hindres eller forsinkes af omstændigheder uden for WebHjerte&apos;s
               kontrol.
             </p>
             <p>
-              8.2. Ved force majeure suspenderes parternes forpligtelser i den
+              9.2. Ved force majeure suspenderes parternes forpligtelser i den
               tid, force majeure-situationen varer.
             </p>
-            <h2>9. Fortrolighed</h2>
+            <h2>10. Fortrolighed</h2>
             <p>
-              9.1. Parterne forpligter sig til at behandle al information
+              10.1. Parterne forpligter sig til at behandle al information
               erhvervet i forbindelse med Aftalen som fortrolig og undlade at
               videregive denne til tredjemand.
             </p>
             <p>
-              9.2. Fortrolighedsforpligtelsen ophører ikke ved Aftalens ophør.
+              10.2. Fortrolighedsforpligtelsen ophører ikke ved Aftalens ophør.
             </p>
-            <h2>10. Persondata & GDPR</h2>
+            <h2>11. Persondata & GDPR</h2>
             <p>
-              10.1. Behandling af personoplysninger sker i overensstemmelse med
+              11.1. Behandling af personoplysninger sker i overensstemmelse med
               gældende databeskyttelseslovgivning og WebHjerte’s
               privatlivspolitik.
             </p>
             <p>
-              10.2. WebHjerte træffer passende tekniske og organisatoriske
+              11.2. WebHjerte træffer passende tekniske og organisatoriske
               foranstaltninger for at beskytte persondata mod uautoriseret
               adgang, tab eller ødelæggelse.
             </p>
-            <h2>11. Immaterielle rettigheder</h2>
+            <h2>12. Immaterielle rettigheder</h2>
             <p>
-              11.1. WebHjerte beholder alle ophavs- og ejendomsrettigheder til
+              12.1. WebHjerte beholder alle ophavs- og ejendomsrettigheder til
               udbudt software, dokumentation, designs og materiale, medmindre
               andet skriftligt aftales.
             </p>
             <p>
-              11.2. Kunden erhverver en ikke-eksklusiv, ikke-overdragelig ret
+              12.2. Kunden erhverver en ikke-eksklusiv, ikke-overdragelig ret
               til at benytte leverede Ydelser og Produktmaterialer til det
               aftalte formål.
             </p>
-            <h2>12. Ændringer af handelsbetingelser</h2>
+            <h2>13. Ændringer af handelsbetingelser</h2>
             <p>
-              12.1. WebHjerte forbeholder sig ret til løbende at opdatere disse
+              13.1. WebHjerte forbeholder sig ret til løbende at opdatere disse
               handelsbetingelser. Ændringer varsles ved offentliggørelse på
-              www.webhjerte.dk/vilkaar.
+              www.webhjerte.dk/terms.
             </p>
             <p>
-              12.2. Ændringer påvirker kun bestillinger foretaget efter
+              13.2. Ændringer påvirker kun bestillinger foretaget efter
               offentliggørelsen.
             </p>
-            <h2>13. Lovvalg og værneting</h2>
-            <p>13.1. Aftalen er underlagt dansk ret.</p>
+            <h2>14. Lovvalg og værneting</h2>
+            <p>14.1. Aftalen er underlagt dansk ret.</p>
             <p>
-              13.2. Enhver tvist, der udspringer af Aftalen, skal indbringes for
+              14.2. Enhver tvist, der udspringer af Aftalen, skal indbringes for
               de danske domstole med Københavns Byret som første instans.
             </p>
             <p>

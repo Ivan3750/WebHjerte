@@ -69,12 +69,12 @@ const comparison = {
 };
 
 const faqs = [
-  { q: "Hvad koster en professionel WordPress-hjemmeside?", a: "Hos WebHjerte koster en WordPress-hjemmeside med 3–5 sider 4.500 kr (Basis), og op til 8 sider med SEO, analytics og booking 7.500 kr (Standard). WooCommerce-webshops starter fra 14.000 kr. Alle priser er faste og ekskl. moms." },
+  { q: "Hvad koster en professionel WordPress-hjemmeside?", a: "Hos WebHjerte koster en WordPress-hjemmeside med 3–5 sider 4.500 kr (Basis), og op til 8 sider med SEO, analytics og booking 8.500 kr (Standard). WooCommerce-webshops starter fra 14.000 kr. Alle priser er faste og inkl. moms." },
   { q: "Kan jeg selv redigere min WordPress-hjemmeside?", a: "Ja. Du får adgang til WordPress og en kort videogennemgang, så du selv kan rette tekster, billeder, priser og åbningstider – uden at ringe til en udvikler." },
   { q: "Hvor lang tid tager det at lave en WordPress-hjemmeside?", a: "Typisk 5–10 dage. Du ser et første designudkast inden for 48 timer, og betaler 0 kr for designet, hvis det ikke passer." },
   { q: "Hvad gør en WordPress-hjemmeside professionel?", a: "Et unikt design, hurtig indlæsning, korrekt SEO-opsætning, tydelige kontaktveje, sikkerhed og backup – og så få, velvalgte plugins, så siden ikke bliver langsom eller sårbar." },
   { q: "Kan I flytte eller forbedre min nuværende WordPress-side?", a: "Ja. Jeg kan redesigne, gøre en langsom WordPress-side hurtigere, rydde op i plugins eller flytte siden til ny hosting – uden at du mister dine placeringer på Google." },
-  { q: "Hvad koster drift af en WordPress-hjemmeside?", a: "Domæne koster ca. 100–200 kr om året, og hosting typisk 50–300 kr om måneden. Vil du have opdateringer, backup og små rettelser, koster vedligeholdelse 195–395 kr om måneden. Det er frivilligt og kan opsiges løbende." },
+  { q: "Hvad koster drift af en WordPress-hjemmeside?", a: "Domæne koster ca. 100–200 kr om året, og hosting typisk 50–300 kr om måneden. Vil du have opdateringer, backup og små rettelser, koster vedligeholdelse 249–799 kr om måneden. Det er frivilligt og kan opsiges løbende." },
   { q: "Arbejder du kun i Horsens?", a: "Nej. Jeg sidder i Horsens, men bygger WordPress-hjemmesider til virksomheder i hele Danmark. Alt kan klares online." },
 ];
 
@@ -93,7 +93,8 @@ const jsonLd = {
         "@type": "Offer",
         priceCurrency: "DKK",
         price: "4500",
-        description: "Flersidet WordPress-hjemmeside fra 4.500 kr ekskl. moms",
+        priceSpecification: { "@type": "PriceSpecification", price: "4500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
+        description: "Flersidet WordPress-hjemmeside fra 4.500 kr inkl. moms",
       },
     },
     breadcrumbLd([

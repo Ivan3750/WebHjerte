@@ -100,7 +100,7 @@ export const aiPages = [
       {
         h2: "Pris og forløb",
         paragraphs: [
-          "AI-synlighed er indbygget i alle nye hjemmesider fra WebHjerte, fra 2.500 kr. Har du allerede en hjemmeside, kan jeg optimere den med en af AI SEO-pakkerne: Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (alle ekskl. moms). Første skridt er altid en gratis gennemgang, hvor du får at vide, hvad der mangler, og hvad det vil koste.",
+          "AI-synlighed er indbygget i alle nye hjemmesider fra WebHjerte, fra 2.500 kr. Har du allerede en hjemmeside, kan jeg optimere den med en af AI SEO-pakkerne: Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (alle inkl. moms). Første skridt er altid en gratis gennemgang, hvor du får at vide, hvad der mangler, og hvad det vil koste.",
         ],
         cta: { href: "/ai-seo", label: "Se AI SEO-pakkerne" },
       },

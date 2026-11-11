@@ -14,6 +14,8 @@ import SectionHead from "../../components/ui/SectionHead";
 import { FadeUp } from "../../components/home/fx/Reveal";
 import SpotlightCard from "../../components/home/fx/SpotlightCard";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
+import { supportPlans } from "../../data/supportPlans";
+import NichePackage from "../../components/ui/NichePackage";
 
 export const metadata = {
   title: "Hjemmesider, webshop, SEO & AI i Horsens – priser | WebHjerte",
@@ -23,7 +25,7 @@ export const metadata = {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Priser på webdesign – klare pakker uden skjulte gebyrer | WebHjerte",
     description:
-      "4 klare pakker til lokale virksomheder i Horsens og Midtjylland. Landingside 2.500 DKK · Basis 4.500 DKK · Standard 7.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 2–10 dage.",
+      "4 klare pakker til lokale virksomheder i Horsens og Midtjylland. Landingside 2.500 DKK · Basis 4.500 DKK · Standard 8.500 DKK · Skræddersyet fra 14.000 DKK. Levering på 2–10 dage.",
     url: "https://www.webhjerte.dk/services",
     siteName: "WebHjerte",
     locale: "da_DK",
@@ -34,7 +36,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Webdesign priser i Horsens – fra 2.500 DKK | WebHjerte",
     description:
-      "Klare pakker uden skjulte gebyrer. Landingside 2.500 · Basis 4.500 · Standard 7.500 · Skræddersyet fra 14.000 DKK.",
+      "Klare pakker uden skjulte gebyrer. Landingside 2.500 · Basis 4.500 · Standard 8.500 · Skræddersyet fra 14.000 DKK.",
   },
   alternates: {
     canonical: "https://www.webhjerte.dk/services",
@@ -44,7 +46,8 @@ export const metadata = {
 const packageLd = [
   { name: "Landingside", price: "2500", url: "/kontakt?pakke=landingside", description: "1 side, mobilvenlig, kontaktformular, basic SEO. Levering: 2 dage. Ændringer på sitet inkluderet i 30 dage." },
   { name: "Basis hjemmeside", price: "4500", url: "/kontakt?pakke=basis", description: "3–5 sider, mobilvenlig, kontaktformular, basic SEO. Levering: 5 dage. Ændringer på sitet inkluderet i 30 dage." },
-  { name: "Standard hjemmeside", price: "7500", url: "/kontakt?pakke=standard", description: "Op til 8 sider, SEO, Google Analytics, booking og formularer. Levering: 10 dage. Ændringer på sitet inkluderet i 30 dage." },
+  { name: "Standard hjemmeside", price: "8500", url: "/kontakt?pakke=standard", description: "Op til 8 sider, SEO, Google Analytics, booking og formularer. Levering: 10 dage. Ændringer på sitet inkluderet i 30 dage." },
+  { name: "Lokal synlighed", price: "9500", url: "/kontakt?pakke=lokal-synlighed", description: "Standard-hjemmeside + Google Business Profile, lokal SEO, anmeldelses-flow og 3 måneders vedligehold Standard. Til håndværkere og lokale servicevirksomheder." },
   { name: "Skræddersyet løsning", price: "14000", url: "/kontakt?pakke=skraeddersyet", description: "Fuld tilpasning, integrationer, e-commerce og AI-funktioner. Fra 14.000 kr." },
 ];
 
@@ -83,10 +86,35 @@ const jsonLd = {
             "@type": "PriceSpecification",
             price: p.price,
             priceCurrency: "DKK",
-            valueAddedTaxIncluded: false,
+            valueAddedTaxIncluded: true,
           },
           availability: "https://schema.org/InStock",
           itemOffered: { "@type": "Service", name: p.name, description: p.description },
+        })),
+      },
+    },
+    {
+      "@type": "Service",
+      "@id": `${SITE_URL}/services#vedligeholdelse`,
+      name: "Vedligeholdelse og hosting af hjemmeside",
+      serviceType: "Webvedligeholdelse",
+      provider: orgRef,
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Vedligeholdelsesabonnementer",
+        itemListElement: supportPlans.map((p) => ({
+          "@type": "Offer",
+          name: `Vedligehold ${p.name}`,
+          url: `${SITE_URL}/kontakt?pakke=vedligehold-${p.id}`,
+          priceCurrency: "DKK",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: String(p.price),
+            priceCurrency: "DKK",
+            unitCode: "MON",
+            valueAddedTaxIncluded: true,
+          },
+          itemOffered: { "@type": "Service", name: `Vedligehold ${p.name}`, description: p.features.join(", ") },
         })),
       },
     },
@@ -116,6 +144,7 @@ const Services = () => {
       <Whyusblock />
       <div id="priser" className="scroll-mt-[68px]">
         <PackagesBlock />
+        <NichePackage />
       </div>
       <Whatsincludedblock />
       <ProcessBlock />

@@ -6,7 +6,7 @@ import CtaSearchBlock from "../../components/ui/CTA";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
-  title: "Om Ivan – Webudvikleren bag WebHjerte i Horsens",
+  title: "Om mig – Ivan, webudvikleren bag WebHjerte | Horsens",
   description: "Jeg hedder Ivan og er webudvikleren bag WebHjerte. Jeg bygger hjemmesider til lokale virksomheder i Horsens med fokus på enkelhed, hastighed og resultater.",
   keywords: "webudvikler horsens, freelance webdesign horsens, lokal webdesigner midtjylland, ivan webhjerte",
   openGraph: {

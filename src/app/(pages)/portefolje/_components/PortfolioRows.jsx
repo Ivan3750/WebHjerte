@@ -34,7 +34,8 @@ export default function PortfolioRows({ projects }) {
                       alt={`${p.title} – ${p.subtitle}`}
                       fill
                       sizes="(min-width: 1024px) 560px, (min-width: 768px) 45vw, 100vw"
-                      loading={i < 2 ? "eager" : "lazy"}
+                      priority={i === 0}
+                      loading={i === 0 ? undefined : i < 2 ? "eager" : "lazy"}
                       className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05]"
                     />
                     <span className="absolute top-3 left-3 sm:top-4 sm:left-4 rounded-full bg-[#1c1e1e]/85 backdrop-blur px-3 py-1.5 text-[10.5px] uppercase tracking-[0.14em] text-white">

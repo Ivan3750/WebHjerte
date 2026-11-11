@@ -4,10 +4,14 @@ import { motion, useScroll, useReducedMotion, useInView } from "framer-motion";
 
 export const ease = [0.16, 1, 0.3, 1];
 
-/** Deterministisk "tilfældighed", så server og browser tegner det samme. */
+/**
+ * Deterministisk "tilfældighed", så server og browser tegner det samme.
+ * Math.sin kan afvige i de sidste decimaler mellem Node og browseren, så
+ * resultatet afrundes – ellers giver SVG-koordinaterne hydreringsfejl.
+ */
 export const rnd = (n) => {
   const v = Math.sin(n * 127.1 + 311.7) * 43758.5453;
-  return v - Math.floor(v);
+  return Math.round((v - Math.floor(v)) * 1e4) / 1e4;
 };
 
 /** Fælles bevægelse for en scene: reduceret bevægelse, om den er synlig, og scroll-fremgang til parallax. */

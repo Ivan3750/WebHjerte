@@ -6,10 +6,19 @@ import { useSearchParams } from "next/navigation";
 const packages = [
   { value: "", label: "Vælg pakke (valgfrit)" },
   { value: "Ved ikke endnu", label: "Ved ikke endnu" },
-  { value: "landingside", label: "Landingside – 2.500 DKK" },
-  { value: "basis", label: "Basis – 4.500 DKK" },
-  { value: "standard", label: "Standard – 7.500 DKK" },
-  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK" },
+  { value: "landingside", label: "Landingside – 2.500 DKK inkl. moms" },
+  { value: "basis", label: "Basis – 4.500 DKK inkl. moms" },
+  { value: "standard", label: "Standard – 8.500 DKK inkl. moms" },
+  { value: "lokal-synlighed", label: "Lokal synlighed – fra 9.500 DKK inkl. moms" },
+  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK inkl. moms" },
+  { value: "wordpress", label: "WordPress-hjemmeside – fra 4.500 DKK inkl. moms" },
+  { value: "ai-seo-basis", label: "AI SEO Basis – 3.500 DKK inkl. moms" },
+  { value: "ai-seo-standard", label: "AI SEO Standard – 6.500 DKK inkl. moms" },
+  { value: "ai-seo-skraeddersyet", label: "AI SEO Skræddersyet – fra 12.000 DKK inkl. moms" },
+  { value: "vedligehold-basis", label: "Vedligehold Basis – 249 DKK/md inkl. moms" },
+  { value: "vedligehold-standard", label: "Vedligehold Standard – 449 DKK/md inkl. moms" },
+  { value: "vedligehold-pro", label: "Vedligehold Pro – 799 DKK/md inkl. moms" },
+  { value: "partnerskab", label: "Partnerskab (bureau / revisor)" },
 ];
 
 const fieldClass =
@@ -21,9 +30,9 @@ const Label = ({ htmlFor, children }) => (
   </label>
 );
 
-const ContactForm = () => {
+const ContactForm = ({ defaultPakke = "" }) => {
   const searchParams = useSearchParams();
-  const [form, setForm] = useState({ name: "", email: "", phone: "", pakke: "", message: "", website: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", pakke: defaultPakke, message: "", website: "" });
   const [status, setStatus] = useState("idle");
 
   useEffect(() => {

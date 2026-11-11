@@ -105,7 +105,7 @@ const own = [
     intro:
       "Prisen på selve hjemmesiden er kun starten. Her er de løbende udgifter, du skal regne med – og hvor mange betaler alt for meget.",
     summary:
-      "For en lille virksomhed koster en hjemmeside typisk 2.500–6.000 kr om året at have kørende: ca. 100–200 kr for et .dk-domæne, 0–500 kr om måneden for hosting og 195–395 kr om måneden, hvis du vil have nogen til at holde den opdateret. Det dyreste er sjældent teknikken – det er de abonnementer, man har glemt, man betaler for.",
+      "For en lille virksomhed koster en hjemmeside typisk 2.500–6.000 kr om året at have kørende: ca. 100–200 kr for et .dk-domæne, 0–500 kr om måneden for hosting og 249–799 kr om måneden, hvis du vil have nogen til at holde den opdateret. Det dyreste er sjældent teknikken – det er de abonnementer, man har glemt, man betaler for.",
     readMinutes: 7,
     sections: [
       {
@@ -122,25 +122,25 @@ const own = [
           rows: [
             ["Domæne", "100–200 kr/år", ".dk er billigst. Sørg for, at domænet står i dit navn – ikke bureauets."],
             ["Hosting", "0–500 kr/md", "Kodede sider kan ligge meget billigt. WordPress og webshops kræver mere."],
-            ["Vedligeholdelse", "195–395 kr/md hos WebHjerte", "Opdateringer, sikkerhed, backup og små rettelser. Frivilligt."],
+            ["Vedligeholdelse", "249–799 kr/md hos WebHjerte", "Opdateringer, sikkerhed, backup og små rettelser. Frivilligt."],
             ["Værktøjer", "0–300 kr/md", "Booking, nyhedsbrev, betalingsløsning eller premium-plugins."],
           ],
         },
       },
       {
         h2: "Tre regneeksempler",
-        paragraphs: ["Her er tre typiske situationer, jeg ser hos små virksomheder. Alle beløb er ekskl. moms og vejledende."],
+        paragraphs: ["Her er tre typiske situationer, jeg ser hos små virksomheder. Alle beløb er inkl. moms og vejledende."],
         subs: [
           { h3: "Håndværker med 5 sider", paragraphs: ["En kodet hjemmeside uden løbende redigering. Domæne ca. 150 kr, hosting ca. 0–600 kr om året og ingen fast aftale – rettelser betales, når der er brug for dem."], bullets: ["Ca. 150–750 kr om året"] },
-          { h3: "Frisør med WordPress og booking", paragraphs: ["WordPress, så salonen selv kan skifte priser og billeder, plus et bookingsystem. Hosting ca. 100 kr/md, booking ca. 200 kr/md og vedligeholdelse 195 kr/md."], bullets: ["Ca. 6.000 kr om året"] },
-          { h3: "Lille webshop", paragraphs: ["En webshop med 100 varer kræver mere: Shopify-abonnement eller kraftigere hosting, betalingsløsning og jævnlige opdateringer. Vedligeholdelse 395 kr/md."], bullets: ["Ca. 8.000–12.000 kr om året + transaktionsgebyrer"] },
+          { h3: "Frisør med WordPress og booking", paragraphs: ["WordPress, så salonen selv kan skifte priser og billeder, plus et bookingsystem. Hosting ca. 100 kr/md, booking ca. 200 kr/md og vedligeholdelse 249 kr/md."], bullets: ["Ca. 6.500 kr om året"] },
+          { h3: "Lille webshop", paragraphs: ["En webshop med 100 varer kræver mere: Shopify-abonnement eller kraftigere hosting, betalingsløsning og jævnlige opdateringer. Vedligeholdelse 449 kr/md."], bullets: ["Ca. 8.000–12.000 kr om året + transaktionsgebyrer"] },
         ],
       },
       {
         h2: "Hvad får du for vedligeholdelse?",
         paragraphs: [
           "En hjemmeside er ikke en brochure, du trykker én gang. Software skal opdateres, sikkerhedshuller lukkes, og der skal tages backup. Især WordPress-sider, der ikke bliver opdateret, er et af de mest almindelige mål for hackere.",
-          "Hos mig koster vedligeholdelse 195 eller 395 kr om måneden. Det dækker opdateringer, overvågning, backup og små rettelser – og du skriver direkte til mig, ikke til en supportkø. Du kan opsige fra måned til måned.",
+          "Hos mig koster vedligeholdelse 249, 449 eller 799 kr om måneden. Det dækker opdateringer, overvågning, backup og små rettelser – og du skriver direkte til mig, ikke til en supportkø. Du kan opsige fra måned til måned.",
         ],
         cta: { href: "/hosting-og-vedligeholdelse", label: "Se hosting og vedligeholdelse" },
       },
@@ -164,13 +164,13 @@ const own = [
     ],
     faqs: [
       { q: "Hvad koster det at have en hjemmeside om året?", a: "For en lille virksomhed typisk 2.500–6.000 kr om året inkl. domæne, hosting og vedligeholdelse. En simpel kodet side uden fast aftale kan koste under 1.000 kr om året." },
-      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året ekskl. moms, afhængigt af udbyder." },
-      { q: "Skal jeg have en vedligeholdelsesaftale?", a: "Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 195–395 kr om måneden uden binding." },
+      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året inkl. moms, afhængigt af udbyder." },
+      { q: "Skal jeg have en vedligeholdelsesaftale?", a: "Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 249–799 kr om måneden uden binding." },
       { q: "Hvad sker der, hvis jeg stopper med at betale for hosting?", a: "Hjemmesiden går offline. Derfor er det vigtigt, at du ejer domænet og har en kopi af siden, så den kan flyttes til en anden udbyder." },
     ],
     related: [
       { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside i 2026?", desc: "Priser på selve hjemmesiden." },
-      { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Fra 195 kr/md uden binding." },
+      { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Fra 249 kr/md uden binding." },
       { href: "/hjemmeside-pris", title: "Hjemmeside priser", desc: "Faste pakker og prisberegner." },
     ],
   },
@@ -438,7 +438,7 @@ const own = [
     ],
     faqs: [
       { q: "Er WordPress dårligt for SEO?", a: "Nej. WordPress kan rangere rigtig godt, hvis siden er hurtig, sat rigtigt op og ikke fyldt med unødvendige plugins." },
-      { q: "Kan jeg selv redigere en skræddersyet hjemmeside?", a: "Ja, hvis vi kobler et redigeringssystem (CMS) på. Ellers står jeg for rettelser via en vedligeholdelsesaftale fra 195 kr/md." },
+      { q: "Kan jeg selv redigere en skræddersyet hjemmeside?", a: "Ja, hvis vi kobler et redigeringssystem (CMS) på. Ellers står jeg for rettelser via en vedligeholdelsesaftale fra 249 kr/md." },
       { q: "Hvad er billigst på lang sigt?", a: "En kodet hjemmeside har typisk de laveste driftsudgifter, fordi den ikke kræver løbende opdateringer af plugins og WordPress." },
       { q: "Kan jeg skifte fra WordPress til kode senere?", a: "Ja. Indholdet kan flyttes, og med korrekte omdirigeringer beholder du dine placeringer på Google." },
     ],

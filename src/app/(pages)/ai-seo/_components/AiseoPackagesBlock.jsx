@@ -1,23 +1,17 @@
-"use client";
-
 import Link from "next/link";
-import AnimatedInView from "../../../components/ui/AnimatedInView";
+import SectionHead from "../../../components/ui/SectionHead";
+import { FadeUp } from "../../../components/home/fx/Reveal";
 
-const CheckIcon = () => (
-  <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-    <path
-      d="M1.5 4l2 2 3-3"
-      stroke="#00a8e8"
-      strokeWidth="1.2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const Tick = () => (
-  <span className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 bg-[#1a2a30] border border-[#0a4a60]">
-    <CheckIcon />
+// Samme kortdesign som hjemmeside-pakkerne på /services, så priserne ser ens ud på hele sitet
+const Tick = ({ dark }) => (
+  <span
+    className={`w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 mt-[1px] ${
+      dark ? "bg-[#00a8e8]/15 border border-[#00a8e8]/40" : "bg-[#00a8e8]/10 border border-[#00a8e8]/30"
+    }`}
+  >
+    <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
+      <path d="M1.5 4l2 2 3-3" stroke="#00a8e8" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   </span>
 );
 
@@ -54,13 +48,14 @@ const packages = [
   },
   {
     name: "Skræddersyet",
-    price: "Fra 12.000",
+    price: "12.000",
+    prefix: "Fra",
     popular: false,
     cta: "Kontakt mig",
     href: "/kontakt?pakke=ai-seo-skraeddersyet",
     timing: "Aftales individuelt",
     features: [
-      "Komplett AI SEO-strategi",
+      "Komplet AI SEO-strategi",
       "Løbende indholdsproduktion",
       "Konverteringsoptimering",
       "Prioriteret support",
@@ -71,61 +66,66 @@ const packages = [
 
 const AiseoPackagesBlock = () => {
   return (
-    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
-      <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a9696] mb-3">
-          Priser
-        </AnimatedInView>
-        <AnimatedInView as="h2" className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-[20px]">
-          Fast pris — ingen overraskelser
-        </AnimatedInView>
-        <AnimatedInView as="p" className="text-[13px] text-[#777] max-w-xl !mb-10">
-          Priserne afhænger af din branche, konkurrencen og hvor meget indhold
-          der skal produceres. Vælg den pakke, der passer til dit behov.
-        </AnimatedInView>
+    <section className="scene bg-[#e4f0f7]">
+      <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+        <SectionHead
+          eyebrow="Priser"
+          lines={["Fast pris -", "ingen overraskelser"]}
+          lead="Priserne afhænger af din branche, konkurrencen og hvor meget indhold der skal produceres. Vælg den pakke, der passer til dit behov. Alle priser er inkl. moms."
+          className="mb-12"
+        />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 items-start">
-          {packages.map(({ name, price, popular, cta, href, timing, features }) => (
-            <AnimatedInView
-              key={name}
-              as="div"
-              className={`rounded-2xl p-6 flex flex-col gap-5 bg-[#262a2a] border ${
-                popular ? "border-[#0af]/40" : "border-[#2a2d2d]"
-              }`}
-            >
-              <div>
-                <div className="flex flex-row justify-between">
-                  <p className="text-[15px] font-medium text-[#e0e0e0]">{name}</p>
-                  {popular && (
-                    <span className="inline-block text-[10px] font-medium px-2.5 py-1 rounded-full bg-[#0af]/10 text-[#0af] mb-2">
-                      Mest valgt
-                    </span>
-                  )}
-                </div>
-                <div className="flex items-baseline gap-1.5 mt-3">
-                  <span className="text-[28px] font-medium leading-none text-white">{price}</span>
-                  <span className="text-[13px] text-[#8a9696]">DKK</span>
-                </div>
-              </div>
-              <hr className="border-[#2a2d2d]" />
-              <div className="flex flex-col gap-2.5">
-                {features.map((f) => (
-                  <div key={f} className="flex items-center gap-2.5">
-                    <Tick />
-                    <span className="text-[12px] text-[#777]">{f}</span>
-                  </div>
-                ))}
-              </div>
-              <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#8a9696]">
-                {timing}
-              </span>
-              <Link
-                href={href}
-                className="w-full py-2.5 rounded-xl text-[13px] font-medium text-center transition-opacity border border-[#2a2d2d] hover:bg-[#00a8e8] text-white hover:opacity-85"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+          {packages.map(({ name, price, prefix, popular, cta, href, timing, features }, i) => (
+            <FadeUp key={name} delay={i * 0.07} className="h-full">
+              <div
+                className={`relative h-full rounded-3xl p-6 sm:p-7 flex flex-col gap-6 border transition-transform duration-500 hover:-translate-y-1 ${
+                  popular ? "bg-[#1c1e1e] border-[#00a8e8]/50 text-white" : "bg-white border-[#e8e6e6]"
+                }`}
               >
-                {cta}
-              </Link>
-            </AnimatedInView>
+                <div>
+                  <div className="flex items-center justify-between gap-2 min-h-[26px]">
+                    <p className={`text-[15px] font-semibold ${popular ? "text-white" : "text-[#1c1e1e]"}`}>{name}</p>
+                    {popular && (
+                      <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-[#00a8e8] text-white">
+                        Mest valgt
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-baseline gap-1.5 mt-4">
+                    {prefix && <span className={`text-[13px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>{prefix}</span>}
+                    <span className={`text-[clamp(26px,2.4vw,32px)] font-semibold tracking-tight leading-none whitespace-nowrap ${popular ? "text-white" : "text-[#1c1e1e]"}`}>
+                      {price}
+                    </span>
+                    <span className={`text-[13px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>DKK</span>
+                  </div>
+                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>inkl. moms</p>
+                  <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md ${popular ? "bg-white/10 text-[#b4bebe]" : "bg-[#f3f2f2] text-[#6a6a6a]"}`}>
+                    {timing}
+                  </span>
+                </div>
+
+                <ul className="flex flex-col gap-3 flex-1">
+                  {features.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5">
+                      <Tick dark={popular} />
+                      <span className={`text-[13px] leading-snug ${popular ? "text-[#b4bebe]" : "text-[#5a5a5a]"}`}>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link
+                  href={href}
+                  className={`w-full py-3 rounded-full text-[13px] font-semibold text-center transition-colors ${
+                    popular
+                      ? "bg-[#00a8e8] text-white hover:bg-white hover:text-[#1c1e1e]"
+                      : "border border-[#dcdada] text-[#1c1e1e] hover:bg-[#1c1e1e] hover:text-white hover:border-[#1c1e1e]"
+                  }`}
+                >
+                  {cta}
+                </Link>
+              </div>
+            </FadeUp>
           ))}
         </div>
       </div>

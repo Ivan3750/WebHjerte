@@ -34,6 +34,7 @@ export default {
     '/404',
     '/500',
     '/api/*',
+    '/opengraph-image',
     '/ny-professionel-hjemmeside',
     '/gratis-analyse',
     '/privacy',
@@ -81,6 +82,7 @@ export default {
       '/kontakt': 0.8,
       '/ofte-stillede-spoergsmaal': 0.8,
       '/blog': 0.7,
+      '/partner': 0.6,
     };
 
     return {

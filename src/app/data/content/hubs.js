@@ -4,10 +4,10 @@ const faqGroups = [
   {
     h2: "Priser og betaling",
     items: [
-      ["Hvad koster en hjemmeside hos WebHjerte?", "Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 7.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er ekskl. moms."],
+      ["Hvad koster en hjemmeside hos WebHjerte?", "Priserne starter fra 2.500 kr for en landingside, 4.500 kr for Basis (3–5 sider), 8.500 kr for Standard (op til 8 sider med SEO, analytics og booking) og 14.000 kr for skræddersyede løsninger som webshop og kundeportal. Alle priser er inkl. moms."],
       ["Er priserne faste?", "Ja. Du får et fast tilbud inden for 24 timer, og prisen ændres kun, hvis vi aftaler at udvide opgaven."],
       ["Er der skjulte gebyrer?", "Nej. Eventuelle udgifter til domæne, hosting og tredjepartsværktøjer fremgår af tilbuddet, og betales typisk direkte til udbyderne."],
-      ["Hvad koster vedligeholdelse?", "Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md ekskl. moms."],
+      ["Hvad koster vedligeholdelse?", "Efter 30 dages gratis support kan du vælge et vedligeholdelsesabonnement fra 249 til 799 kr/md inkl. moms."],
       ["Betaler jeg, hvis jeg ikke kan lide designet?", "Nej. Er du ikke tilfreds med designudkastet, betaler du 0 kr for designet."],
     ],
   },
@@ -35,7 +35,7 @@ const faqGroups = [
     items: [
       ["Er SEO inkluderet i hjemmesiden?", "Ja. Basis-SEO (titler, beskrivelser, struktur, hastighed og struktureret data) er indbygget. Standard indeholder desuden SEO og analytics-opsætning."],
       ["Hvad er AI SEO / GEO?", "AI SEO eller GEO (Generative Engine Optimization) gør din hjemmeside nem at forstå og citere for AI-systemer som ChatGPT, Gemini, Perplexity og Google AI-oversigter."],
-      ["Hvor meget koster AI SEO?", "Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (ekskl. moms)."],
+      ["Hvor meget koster AI SEO?", "Basis fra 3.500 kr, Standard fra 6.500 kr og Skræddersyet fra 12.000 kr (inkl. moms)."],
       ["Hvor hurtigt kan jeg se resultater af SEO?", "Det afhænger af branche og konkurrence. Teknisk forbedring kan ses hurtigt, men synlighed i søgeresultater opbygges typisk over 2–3 måneder eller mere."],
       ["Tilbyder I et gratis SEO-tjek?", "Ja. Et gratis SEO- og web-tjek gennemgår hastighed, mobilvisning og SEO-grundlag og peger på de vigtigste forbedringer."],
     ],
@@ -68,7 +68,7 @@ export const hubPages = [
     intro:
       "Her finder du korte, ærlige svar på det, de fleste spørger om, før de får lavet en hjemmeside – samlet på ét sted.",
     summary:
-      "WebHjerte bygger hjemmesider fra 2.500 kr (ekskl. moms) med levering på 2–10 dage. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis du ikke er tilfreds, og ejer selv domæne og kode. WebHjerte er baseret i Horsens og arbejder i hele Danmark.",
+      "WebHjerte bygger hjemmesider fra 2.500 kr (inkl. moms) med levering på 2–10 dage. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis du ikke er tilfreds, og ejer selv domæne og kode. WebHjerte er baseret i Horsens og arbejder i hele Danmark.",
     withForm: false,
     sections: faqGroups.map((g) => ({
       h2: g.h2,
@@ -181,17 +181,17 @@ export const hubPages = [
           "SEO og lokal SEO i Horsens og Midtjylland.",
           "AI SEO og GEO – synlighed i ChatGPT, Gemini og Google AI (fra 3.500 kr).",
           "Gratis SEO- og web-tjek.",
-          "Vedligeholdelse og support (fra 195 kr/md).",
+          "Vedligeholdelse og support (fra 249 kr/md).",
         ],
       },
       {
-        h2: "Priser og pakker (ekskl. moms)",
+        h2: "Priser og pakker (inkl. moms)",
         table: {
           head: ["Pakke", "Pris fra", "Levering", "Indhold"],
           rows: [
             ["Landingside", "2.500 kr", "ca. 2 dage", "1 side til kampagner og annoncer"],
             ["Basis", "4.500 kr", "ca. 5 dage", "3–5 sider, kontaktformular, Google Maps, basis-SEO"],
-            ["Standard", "7.500 kr", "ca. 10 dage", "Op til 8 sider, SEO og analytics, booking, 30 dages support"],
+            ["Standard", "8.500 kr", "ca. 10 dage", "Op til 8 sider, SEO og analytics, booking, 30 dages support"],
             ["Skræddersyet", "14.000 kr", "Aftales", "Webshop, kundeportal og specialløsninger"],
           ],
         },
@@ -226,7 +226,7 @@ export const hubPages = [
     faqs: [
       { q: "Hvem står bag WebHjerte?", a: "WebHjerte drives af webudvikler Ivan Kohan fra Horsens (CVR 46485823)." },
       { q: "Hvor ligger WebHjerte?", a: "I Horsens (8700), Midtjylland. Kunder findes i hele Danmark." },
-      { q: "Hvad koster en hjemmeside hos WebHjerte?", a: "Fra 2.500 kr ekskl. moms for en landingside. Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyet fra 14.000 kr." },
+      { q: "Hvad koster en hjemmeside hos WebHjerte?", a: "Fra 2.500 kr inkl. moms for en landingside. Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyet fra 14.000 kr." },
     ],
     related: [
       { href: "/om-mig", title: "Om Ivan Kohan", desc: "Historien bag WebHjerte." },
