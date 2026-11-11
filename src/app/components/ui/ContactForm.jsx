@@ -3,23 +3,38 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
+// Kort liste som før: 4 hjemmesidepakker, "ved ikke" og AI.
 const packages = [
   { value: "", label: "Vælg pakke (valgfrit)" },
   { value: "Ved ikke endnu", label: "Ved ikke endnu" },
   { value: "landingside", label: "Landingside – 2.500 DKK inkl. moms" },
   { value: "basis", label: "Basis – 4.500 DKK inkl. moms" },
   { value: "standard", label: "Standard – 8.500 DKK inkl. moms" },
-  { value: "lokal-synlighed", label: "Lokal synlighed – fra 9.500 DKK inkl. moms" },
   { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK inkl. moms" },
-  { value: "wordpress", label: "WordPress-hjemmeside – fra 4.500 DKK inkl. moms" },
-  { value: "ai-seo-basis", label: "AI SEO Basis – 3.500 DKK inkl. moms" },
-  { value: "ai-seo-standard", label: "AI SEO Standard – 6.500 DKK inkl. moms" },
-  { value: "ai-seo-skraeddersyet", label: "AI SEO Skræddersyet – fra 12.000 DKK inkl. moms" },
-  { value: "vedligehold-basis", label: "Vedligehold Basis – 249 DKK/md inkl. moms" },
-  { value: "vedligehold-standard", label: "Vedligehold Standard – 449 DKK/md inkl. moms" },
-  { value: "vedligehold-pro", label: "Vedligehold Pro – 799 DKK/md inkl. moms" },
-  { value: "partnerskab", label: "Partnerskab (bureau / revisor)" },
+  { value: "ai", label: "AI (chatbot, automatisering eller AI SEO)" },
 ];
+
+// Links som /kontakt?pakke=ai-seo-basis peger på AI-valget.
+const aliases = { "ai-seo-basis": "ai", "ai-seo-standard": "ai", "ai-seo-skraeddersyet": "ai" };
+
+// Andre knapper på sitet sender en mere præcis pakke med. Den vises kun, når man kommer fra sådan en knap,
+// så listen er kort, men valget ikke går tabt.
+const extras = {
+  "lokal-synlighed": "Lokal synlighed – fra 9.500 DKK inkl. moms",
+  wordpress: "WordPress-hjemmeside – fra 4.500 DKK inkl. moms",
+  webshop: "Webshop – fra 14.000 DKK inkl. moms",
+  "vedligehold-basis": "Vedligehold Basis – 249 DKK/md inkl. moms",
+  "vedligehold-standard": "Vedligehold Standard – 449 DKK/md inkl. moms",
+  "vedligehold-pro": "Vedligehold Pro – 799 DKK/md inkl. moms",
+  partnerskab: "Partnerskab (bureau / revisor)",
+};
+
+const resolve = (raw) => {
+  const v = aliases[raw] || raw;
+  if (packages.some((p) => p.value === v)) return { value: v, extra: null };
+  if (extras[v]) return { value: v, extra: { value: v, label: extras[v] } };
+  return { value: "", extra: null };
+};
 
 const fieldClass =
   "w-full bg-[#1c1e1e] text-[14px] text-white placeholder:text-[#7a8787] border border-white/10 rounded-xl px-4 py-3.5 outline-none transition-colors focus:border-[#00a8e8] focus-visible:ring-2 focus-visible:ring-[#00a8e8]/30";
@@ -32,12 +47,18 @@ const Label = ({ htmlFor, children }) => (
 
 const ContactForm = ({ defaultPakke = "" }) => {
   const searchParams = useSearchParams();
-  const [form, setForm] = useState({ name: "", email: "", phone: "", pakke: defaultPakke, message: "", website: "" });
+  const initial = resolve(defaultPakke);
+  const [form, setForm] = useState({ name: "", email: "", phone: "", pakke: initial.value, message: "", website: "" });
+  const [extra, setExtra] = useState(initial.extra);
   const [status, setStatus] = useState("idle");
 
   useEffect(() => {
     const pakke = searchParams.get("pakke") ?? "";
-    if (pakke && packages.some((p) => p.value === pakke)) setForm((f) => ({ ...f, pakke }));
+    if (!pakke) return;
+    const r = resolve(pakke);
+    if (!r.value) return;
+    setExtra(r.extra);
+    setForm((f) => ({ ...f, pakke: r.value }));
   }, [searchParams]);
 
   const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
@@ -105,7 +126,7 @@ const ContactForm = ({ defaultPakke = "" }) => {
         <div>
           <Label htmlFor="cf-pakke">Pakke</Label>
           <select id="cf-pakke" name="pakke" value={form.pakke} onChange={set("pakke")} className={fieldClass}>
-            {packages.map(({ value, label }) => (
+            {(extra ? [...packages, extra] : packages).map(({ value, label }) => (
               <option key={value} value={value} className="bg-[#1c1e1e]">
                 {label}
               </option>
