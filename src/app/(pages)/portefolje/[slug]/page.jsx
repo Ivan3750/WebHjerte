@@ -20,7 +20,9 @@ export async function generateMetadata({ params }) {
   if (!project) return {};
 
   const url = `${SITE_URL}/portefolje/${project.slug}`;
-  const title = `${project.title} – case | WebHjerte`;
+  // Beskrivende titel, men under ~65 tegn, så Google ikke klipper den
+  const longTitle = `${project.title}: ${project.subtitle} | WebHjerte`;
+  const title = longTitle.length <= 65 ? longTitle : `${project.title} – webdesign case | WebHjerte`;
   const description = `${project.subtitle}. Se hvordan WebHjerte hjalp ${project.client} (${project.location}) med ny hjemmeside.`;
   const image = imageOf(project);
 

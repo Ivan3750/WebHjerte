@@ -57,6 +57,7 @@ const jsonLd = {
       {
         "@type": "Offer",
         price: "3500",
+        priceSpecification: { "@type": "PriceSpecification", price: "3500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         priceCurrency: "DKK",
         itemOffered: {
           "@type": "Service",
@@ -67,6 +68,7 @@ const jsonLd = {
       {
         "@type": "Offer",
         price: "6500",
+        priceSpecification: { "@type": "PriceSpecification", price: "6500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         priceCurrency: "DKK",
         itemOffered: {
           "@type": "Service",
@@ -77,6 +79,7 @@ const jsonLd = {
       {
         "@type": "Offer",
         price: "12000",
+        priceSpecification: { "@type": "PriceSpecification", price: "12000", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         priceCurrency: "DKK",
         itemOffered: {
           "@type": "Service",

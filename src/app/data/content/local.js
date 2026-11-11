@@ -21,7 +21,7 @@ export const localPages = [
     intro:
       "WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.",
     summary:
-      "WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr (ekskl. moms).",
+      "WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og skræddersyede løsninger fra 14.000 kr (inkl. moms).",
     city: "jylland",
     facts: [
       { num: "Hele Jylland", label: "Fra Skagen til Kolding" },
@@ -93,7 +93,7 @@ export const localPages = [
       {
         h2: "Priser på hjemmesider i Jylland",
         table: {
-          head: ["Pakke", "Fra pris (ekskl. moms)", "Levering", "Omfang"],
+          head: ["Pakke", "Fra pris (inkl. moms)", "Levering", "Omfang"],
           rows: [
             ["Landingside", "2.500 kr", "ca. 2 dage", "1 side til kampagne eller én ydelse"],
             ["Basis", "4.500 kr", "ca. 5 dage", "3–5 sider, kontaktformular, Google Maps, basis-SEO"],
@@ -133,7 +133,7 @@ export const localPages = [
       },
       {
         q: "Hvad koster en hjemmeside hos et webbureau i Jylland?",
-        a: "Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 7.500 kr for Standard og 14.000 kr for skræddersyede løsninger (ekskl. moms).",
+        a: "Hos WebHjerte fra 2.500 kr for en landingside, 4.500 kr for Basis, 7.500 kr for Standard og 14.000 kr for skræddersyede løsninger (inkl. moms).",
       },
       {
         q: "Kan I hjælpe med at blive fundet lokalt i min by?",
@@ -374,7 +374,7 @@ export const localPages = [
     intro:
       "En professionel WordPress-hjemmeside, hvor du selv kan rette tekster, priser og billeder – uden at ringe til en udvikler hver gang. Jeg bygger den hurtig, sikker og klar til Google.",
     summary:
-      "WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 7.500 kr (Standard), ekskl. moms, med levering på 5–10 dage.",
+      "WordPress er et redigeringssystem, der driver en stor del af internettet. Hos WebHjerte får du en professionelt opsat og hurtig WordPress-hjemmeside, du selv kan opdatere. Priser starter fra 4.500 kr (Basis) og 7.500 kr (Standard), inkl. moms, med levering på 5–10 dage.",
     sections: [
       {
         h2: "Hvorfor vælge WordPress?",
@@ -426,7 +426,7 @@ export const localPages = [
       },
     ],
     faqs: [
-      { q: "Hvad koster en WordPress-hjemmeside?", a: "En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 7.500 kr for Standard (ekskl. moms). Større løsninger aftales individuelt." },
+      { q: "Hvad koster en WordPress-hjemmeside?", a: "En WordPress-hjemmeside hos WebHjerte starter typisk ved 4.500 kr for Basis og 7.500 kr for Standard (inkl. moms). Større løsninger aftales individuelt." },
       { q: "Kan jeg selv redigere en WordPress-hjemmeside?", a: "Ja. Du kan rette tekst, billeder og indhold uden kode. Jeg giver dig en kort introduktion ved aflevering." },
       { q: "Er WordPress sikkert?", a: "Ja, når det holdes opdateret og sat korrekt op. Jeg kan stå for opdateringer og backup via en vedligeholdelsesaftale." },
       { q: "Er WordPress langsomt?", a: "Det kan være, hvis det belastes med mange plugins. Jeg bygger med få plugins og optimerer billeder og cache, så siden bliver hurtig." },

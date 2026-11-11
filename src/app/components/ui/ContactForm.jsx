@@ -6,10 +6,10 @@ import { useSearchParams } from "next/navigation";
 const packages = [
   { value: "", label: "Vælg pakke (valgfrit)" },
   { value: "Ved ikke endnu", label: "Ved ikke endnu" },
-  { value: "landingside", label: "Landingside – 2.500 DKK" },
-  { value: "basis", label: "Basis – 4.500 DKK" },
-  { value: "standard", label: "Standard – 7.500 DKK" },
-  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK" },
+  { value: "landingside", label: "Landingside – 2.500 DKK inkl. moms" },
+  { value: "basis", label: "Basis – 4.500 DKK inkl. moms" },
+  { value: "standard", label: "Standard – 7.500 DKK inkl. moms" },
+  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK inkl. moms" },
 ];
 
 const fieldClass =

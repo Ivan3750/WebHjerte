@@ -25,7 +25,7 @@ const SupportTariffsBlock = () => {
               <span className="text-[clamp(28px,4vw,34px)] font-semibold leading-none tracking-tight whitespace-nowrap">195–395</span>
               <span className="text-[13px] text-white/85">DKK pr. måned</span>
             </div>
-            <p className="text-[12px] text-white/80 mt-2">Priser ekskl. moms.</p>
+            <p className="text-[12px] text-white/80 mt-2">Priser inkl. moms.</p>
           </div>
         </FadeUp>
       </div>

@@ -129,7 +129,7 @@ const own = [
       },
       {
         h2: "Tre regneeksempler",
-        paragraphs: ["Her er tre typiske situationer, jeg ser hos små virksomheder. Alle beløb er ekskl. moms og vejledende."],
+        paragraphs: ["Her er tre typiske situationer, jeg ser hos små virksomheder. Alle beløb er inkl. moms og vejledende."],
         subs: [
           { h3: "Håndværker med 5 sider", paragraphs: ["En kodet hjemmeside uden løbende redigering. Domæne ca. 150 kr, hosting ca. 0–600 kr om året og ingen fast aftale – rettelser betales, når der er brug for dem."], bullets: ["Ca. 150–750 kr om året"] },
           { h3: "Frisør med WordPress og booking", paragraphs: ["WordPress, så salonen selv kan skifte priser og billeder, plus et bookingsystem. Hosting ca. 100 kr/md, booking ca. 200 kr/md og vedligeholdelse 195 kr/md."], bullets: ["Ca. 6.000 kr om året"] },
@@ -164,7 +164,7 @@ const own = [
     ],
     faqs: [
       { q: "Hvad koster det at have en hjemmeside om året?", a: "For en lille virksomhed typisk 2.500–6.000 kr om året inkl. domæne, hosting og vedligeholdelse. En simpel kodet side uden fast aftale kan koste under 1.000 kr om året." },
-      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året ekskl. moms, afhængigt af udbyder." },
+      { q: "Hvad koster et .dk-domæne?", a: "Typisk 100–200 kr om året inkl. moms, afhængigt af udbyder." },
       { q: "Skal jeg have en vedligeholdelsesaftale?", a: "Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte koster det 195–395 kr om måneden uden binding." },
       { q: "Hvad sker der, hvis jeg stopper med at betale for hosting?", a: "Hjemmesiden går offline. Derfor er det vigtigt, at du ejer domænet og har en kopi af siden, så den kan flyttes til en anden udbyder." },
     ],

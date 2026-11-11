@@ -1,6 +1,6 @@
-import Link from "next/link";
 "use client";
 
+import Link from "next/link";
 import AnimatedInView from "../../../components/ui/AnimatedInView";
 
 const CheckIcon = () => (
@@ -83,18 +83,20 @@ const HvadFaarDu = () => {
                 Fast pris
               </p>
               <div className="flex items-baseline gap-1.5">
+                <span className="text-[13px] text-[#8a9696]">Fra</span>
                 <span className="text-[34px] font-medium leading-none text-white">
-                  3.500
+                  4.500
                 </span>
                 <span className="text-[13px] text-[#8a9696]">DKK</span>
               </div>
+              <p className="text-[11px] text-[#8a9696] mt-1.5">inkl. moms</p>
               <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#8a9696] mt-3">
-                Levering: 7 dage
+                Levering: ca. 5 dage
               </span>
             </div>
             <Link
               href="/kontakt?pakke=wordpress"
-              className="w-full py-2.5 rounded-xl text-[13px] font-medium text-center transition-opacity border border-[#2a2d2d] hover:bg-[#00a8e8] hover:border-[#00a8e8] text-white hover:opacity-85"
+              className="w-full py-3 rounded-full text-[13px] font-semibold text-center transition-colors border border-white/15 hover:bg-[#00a8e8] hover:border-[#00a8e8] text-white"
             >
               Kom i gang
             </Link>
@@ -117,14 +119,14 @@ const HvadFaarDu = () => {
               {kodePakker.map((p) => (
                 <span key={p.name} className="text-[12px] text-[#777]">
                   <span className="text-[#c9c9c9]">{p.name}</span> fra{" "}
-                  <span className="text-white">{p.price} DKK</span>
+                  <span className="text-white">{p.price} DKK</span> inkl. moms
                 </span>
               ))}
             </div>
           </div>
           <Link
             href="/services"
-            className="flex-shrink-0 px-5 py-2.5 rounded-xl text-[13px] font-medium text-center transition-opacity border border-[#2a2d2d] hover:bg-[#00a8e8] hover:border-[#00a8e8] text-white hover:opacity-85"
+            className="flex-shrink-0 px-5 py-3 rounded-full text-[13px] font-semibold text-center transition-colors border border-white/15 hover:bg-[#00a8e8] hover:border-[#00a8e8] text-white"
           >
             Se andre løsninger
           </Link>

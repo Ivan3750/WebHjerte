@@ -5,7 +5,7 @@ const path = "/webbureau-midtjylland";
 export const metadata = {
   title: "Webbureau Midtjylland – hjemmesider & AI fra 2.500 kr | WebHjerte",
   description:
-    "Webbureau til virksomheder i Midtjylland: Aarhus, Silkeborg, Vejle og resten af regionen. Fast pris fra 2.500 kr, AI-løsninger og direkte kontakt med udvikleren.",
+    "Webbureau i Midtjylland: Aarhus, Silkeborg, Vejle og resten af regionen. Fast pris fra 2.500 kr inkl. moms, AI-løsninger og direkte kontakt.",
   keywords: [
     "webbureau Midtjylland",
     "webbureau Jylland",

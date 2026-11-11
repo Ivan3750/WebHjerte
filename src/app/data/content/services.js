@@ -63,7 +63,7 @@ export const servicePages = [
       {
         h2: "Hvad koster det?",
         paragraphs: [
-          "Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er ekskl. moms.",
+          "Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 7.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.",
         ],
         cta: { href: "/hjemmeside-pris", label: "Se alle priser" },
       },
@@ -141,7 +141,7 @@ export const servicePages = [
           "Standard: fra 7.500 kr (op til 8 sider, SEO og analytics, booking).",
           "Skræddersyet: fra 14.000 kr (webshop, kundeportal m.m.).",
         ],
-        paragraphs: ["Alle priser ekskl. moms. Efter lancering får du 30 dages support."],
+        paragraphs: ["Alle priser inkl. moms. Efter lancering får du 30 dages support."],
       },
       {
         h2: "Typiske fejl på virksomhedshjemmesider",
@@ -180,7 +180,7 @@ export const servicePages = [
     intro:
       "Jeg bygger webshops til små og mellemstore virksomheder: enkle at administrere, hurtige for kunderne og klar til søgemaskiner. Du får en fast pris og en løsning, du ejer selv.",
     summary:
-      "En webshop er en hjemmeside med produkter, kurv og betaling. Hos WebHjerte bygges webshops som skræddersyede løsninger fra 14.000 kr (ekskl. moms), typisk i WooCommerce eller som skræddersyet kode. Prisen afhænger af antal produkter, betalingsløsninger, integrationer og fragt.",
+      "En webshop er en hjemmeside med produkter, kurv og betaling. Hos WebHjerte bygges webshops som skræddersyede løsninger fra 14.000 kr (inkl. moms), typisk i WooCommerce eller som skræddersyet kode. Prisen afhænger af antal produkter, betalingsløsninger, integrationer og fragt.",
     sections: [
       {
         h2: "Hvilken webshop skal jeg vælge?",
@@ -216,13 +216,13 @@ export const servicePages = [
       {
         h2: "Pris og tid",
         paragraphs: [
-          "En enkel webshop starter fra 14.000 kr ekskl. moms og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.",
+          "En enkel webshop starter fra 14.000 kr inkl. moms og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.",
         ],
         cta: { href: "/kontakt", label: "Få et tilbud på din webshop" },
       },
     ],
     faqs: [
-      { q: "Hvad koster en webshop?", a: "Hos WebHjerte fra 14.000 kr ekskl. moms. Prisen afhænger af antal produkter, betalingsløsninger og integrationer." },
+      { q: "Hvad koster en webshop?", a: "Hos WebHjerte fra 14.000 kr inkl. moms. Prisen afhænger af antal produkter, betalingsløsninger og integrationer." },
       { q: "Hvilken platform er bedst?", a: "Det afhænger af dit behov. WooCommerce er fleksibelt og uden platformsafgifter, Shopify er hurtigt at komme i gang med, og skræddersyet kode giver størst frihed." },
       { q: "Kan jeg selv tilføje produkter?", a: "Ja. Jeg viser dig, hvordan du opretter og redigerer produkter, priser og lager." },
     ],
@@ -374,7 +374,7 @@ export const servicePages = [
     intro:
       "En hjemmeside er ikke et engangskøb. Domæne, hosting, sikkerhed og små rettelser skal løbende dækkes. Her er et ærligt overblik, og hvad jeg tilbyder fra 195 kr/md.",
     summary:
-      "Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md (ekskl. moms).",
+      "Løbende udgifter til en hjemmeside består af domæne (ca. 100–200 kr/år), hosting (typisk 0–500 kr/md afhængigt af løsning) og eventuelt vedligeholdelse. Hos WebHjerte får du 30 dages gratis support efter lancering og kan derefter vælge et vedligeholdelsesabonnement fra 195 til 395 kr/md (inkl. moms).",
     sections: [
       {
         h2: "De løbende omkostninger ved en hjemmeside",

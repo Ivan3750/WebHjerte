@@ -34,6 +34,7 @@ export default {
     '/404',
     '/500',
     '/api/*',
+    '/opengraph-image',
     '/ny-professionel-hjemmeside',
     '/gratis-analyse',
     '/privacy',

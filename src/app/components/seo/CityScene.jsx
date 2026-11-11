@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useReducedMotion, useAnimationFrame, u
 import { ArosScene } from "./scenes/Aarhus";
 import { FaengsletScene } from "./scenes/Horsens";
 import { SkagenScene } from "./scenes/Jylland";
+import { rnd } from "./scenes/shared";
 
 const ease = [0.16, 1, 0.3, 1];
 const inView = { once: true, margin: "-60px" };
@@ -372,11 +373,6 @@ const BUILDINGS = (() => {
 })();
 const wavePath = ({ x0, w, h }) =>
   `M${x0} ${BASE} L${x0 + 0.62 * w} ${BASE - 0.93 * h} C${x0 + 0.68 * w} ${BASE - 1.03 * h} ${x0 + 0.8 * w} ${BASE - 1.03 * h} ${x0 + 0.84 * w} ${BASE - 0.9 * h} C${x0 + 0.9 * w} ${BASE - 0.66 * h} ${x0 + 0.96 * w} ${BASE - 0.3 * h} ${x0 + w} ${BASE}`;
-// Deterministisk "tilfældighed", så server og browser tegner samme vinduer
-const rnd = (n) => {
-  const v = Math.sin(n * 127.1 + 311.7) * 43758.5453;
-  return v - Math.floor(v);
-};
 
 function Wave({ b, reflected, reduce, shown = true }) {
   const d = wavePath(b);

@@ -85,7 +85,7 @@ const PackagesBlock = () => {
         <SectionHead
           eyebrow="Priser"
           lines={["Fast projektpris -", "ingen overraskelser"]}
-          lead="Priserne er baseret på omfang — antal sider og funktioner. Alle priser er ekskl. moms. Hvilken teknologi vi bygger i (fx WordPress, hvis du selv vil redigere bagefter), afklarer vi ud fra dit behov, se noten nedenfor."
+          lead="Priserne er baseret på omfang — antal sider og funktioner. Alle priser er inkl. moms. Hvilken teknologi vi bygger i (fx WordPress, hvis du selv vil redigere bagefter), afklarer vi ud fra dit behov, se noten nedenfor."
           className="mb-12"
         />
 
@@ -113,6 +113,7 @@ const PackagesBlock = () => {
                     </span>
                     <span className={`text-[13px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>DKK</span>
                   </div>
+                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>inkl. moms</p>
                   <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md ${popular ? "bg-white/10 text-[#b4bebe]" : "bg-[#f3f2f2] text-[#6a6a6a]"}`}>
                     {timing}
                   </span>
@@ -172,7 +173,7 @@ const PackagesBlock = () => {
           <div>
             <p className="text-[11px] uppercase tracking-[0.14em] text-[#00a8e8] mb-1.5">Bagefter</p>
             <p className="text-[13px] text-[#5a5a5a] leading-relaxed">
-              Vedligeholdelsesabonnement fra <strong className="text-[#1c1e1e]">195 til 395 DKK pr. måned</strong> (ekskl. moms) til opdateringer, rettelser og mindre ændringer.
+              Vedligeholdelsesabonnement fra <strong className="text-[#1c1e1e]">195 til 395 DKK pr. måned</strong> (inkl. moms) til opdateringer, rettelser og mindre ændringer.
             </p>
           </div>
         </FadeUp>

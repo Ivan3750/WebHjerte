@@ -134,7 +134,7 @@ const sections = [
   {
     h2: "Priser på webdesign i Horsens",
     table: {
-      head: ["Pakke", "Fra pris (ekskl. moms)", "Levering"],
+      head: ["Pakke", "Fra pris (inkl. moms)", "Levering"],
       rows: [
         ["Landingside", "2.500 kr", "ca. 2 dage"],
         ["Basis (3–5 sider)", "4.500 kr", "ca. 5 dage"],

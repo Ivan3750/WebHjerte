@@ -9,7 +9,7 @@ const path = "/blog/hvad-koster-en-hjemmeside-2026";
 const article = {
   title: "Hvad koster en hjemmeside i 2026? | WebHjerte",
   description:
-    "Hvad koster en hjemmeside i 2026? Se priser hos hjemmesidebygger, freelancer og webbureau, priser på WordPress og webshop, årlige udgifter – og beregn din egen pris.",
+    "Hvad koster en hjemmeside i 2026? Priser hos hjemmesidebygger, freelancer og webbureau, WordPress og webshop, årlige udgifter – og beregn din egen pris.",
   keywords: [
     "hvad koster en hjemmeside",
     "hvad koster en hjemmeside 2026",
@@ -39,7 +39,7 @@ const sections = [
   {
     h2: "Priser på hjemmesider i Danmark – overblik",
     paragraphs: [
-      "Prisen spænder vidt, fordi “en hjemmeside” kan være alt fra én side, du selv klikker sammen, til en webshop med integrationer til lager og bogføring. Tabellen viser de typiske prisniveauer for en lille eller mellemstor virksomhed. Beløbene er vejledende og ekskl. moms.",
+      "Prisen spænder vidt, fordi “en hjemmeside” kan være alt fra én side, du selv klikker sammen, til en webshop med integrationer til lager og bogføring. Tabellen viser de typiske prisniveauer for en lille eller mellemstor virksomhed. Beløbene er vejledende og inkl. moms.",
     ],
     table: {
       head: ["Løsning", "Engangspris", "Løbende", "Passer til"],
@@ -162,7 +162,7 @@ const sections = [
   },
   {
     h2: "WebHjertes faste priser",
-    paragraphs: ["Alle priser er faste og ekskl. moms. Du får et skriftligt tilbud, før jeg går i gang."],
+    paragraphs: ["Alle priser er faste og inkl. moms. Du får et skriftligt tilbud, før jeg går i gang."],
     table: {
       head: ["Pakke", "Pris", "Indhold", "Levering"],
       rows: [
@@ -185,8 +185,8 @@ const sections = [
 ];
 
 const faqs = [
-  { q: "Hvad koster en hjemmeside til en lille virksomhed?", a: "En professionel hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr afhængigt af hvem der bygger den. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside (3–5 sider) 4.500 kr og en Standard-hjemmeside (op til 8 sider) 7.500 kr – alle ekskl. moms og til fast pris." },
-  { q: "Hvad koster det at få lavet en webshop?", a: "En webshop koster typisk 15.000–100.000+ kr plus løbende platformsgebyrer. Hos WebHjerte starter skræddersyede webshops i WooCommerce eller Shopify fra 14.000 kr ekskl. moms." },
+  { q: "Hvad koster en hjemmeside til en lille virksomhed?", a: "En professionel hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr afhængigt af hvem der bygger den. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside (3–5 sider) 4.500 kr og en Standard-hjemmeside (op til 8 sider) 7.500 kr – alle inkl. moms og til fast pris." },
+  { q: "Hvad koster det at få lavet en webshop?", a: "En webshop koster typisk 15.000–100.000+ kr plus løbende platformsgebyrer. Hos WebHjerte starter skræddersyede webshops i WooCommerce eller Shopify fra 14.000 kr inkl. moms." },
   { q: "Hvad koster en WordPress-hjemmeside?", a: "WordPress er gratis software, men design og opsætning koster typisk 8.000–50.000 kr. Hos WebHjerte starter flersidede WordPress-hjemmesider fra 4.500 kr, og du kan selv redigere indholdet." },
   { q: "Hvad koster en hjemmeside om året?", a: "Regn med ca. 100–200 kr om året for et .dk-domæne, 0–500 kr om måneden for hosting og 195–395 kr om måneden, hvis du vil have vedligeholdelse. For en lille virksomhed lander det typisk på 2.500–6.000 kr om året." },
   { q: "Er prisen fast, eller betaler jeg pr. time?", a: "Hos WebHjerte er prisen fast. Du får et skriftligt tilbud, før arbejdet starter, og betaler ikke mere, medmindre du selv ønsker flere sider eller funktioner." },
@@ -213,7 +213,7 @@ export default function HvadKosterEnHjemmesidePage() {
       eyebrow="Guide · Priser · 10 min. læsning"
       h1="Hvad koster en hjemmeside i 2026? Priser, eksempler og prisberegner"
       intro="Rigtige tal i stedet for “det kommer an på”. Hvad en hjemmeside koster hos en hjemmesidebygger, en freelancer og et bureau – og hvad den koster hos mig."
-      summary="En hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr hos en freelancer og 25.000–150.000 kr hos et webbureau. En webshop koster typisk 15.000–100.000+ kr. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside 4.500 kr, en Standard-hjemmeside 7.500 kr og webshops eller skræddersyede løsninger fra 14.000 kr – alle til fast pris ekskl. moms. Løbende udgifter er typisk 2.500–6.000 kr om året."
+      summary="En hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr hos en freelancer og 25.000–150.000 kr hos et webbureau. En webshop koster typisk 15.000–100.000+ kr. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside 4.500 kr, en Standard-hjemmeside 7.500 kr og webshops eller skræddersyede løsninger fra 14.000 kr – alle til fast pris inkl. moms. Løbende udgifter er typisk 2.500–6.000 kr om året."
       afterSummary={<PriceCalculator />}
       sections={sections}
       faqs={faqs}

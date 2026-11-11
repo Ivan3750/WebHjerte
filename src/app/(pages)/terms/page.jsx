@@ -69,7 +69,7 @@ const Vikar = () => {
             </p>
             <h2>4. Priser og betaling</h2>
             <p>
-              4.1. Alle priser er angivet eksklusive moms, med mindre andet er
+              4.1. Alle priser er angivet inklusive moms, med mindre andet er
               oplyst.
             </p>
             <p>

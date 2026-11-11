@@ -83,7 +83,7 @@ const jsonLd = {
             "@type": "PriceSpecification",
             price: p.price,
             priceCurrency: "DKK",
-            valueAddedTaxIncluded: false,
+            valueAddedTaxIncluded: true,
           },
           availability: "https://schema.org/InStock",
           itemOffered: { "@type": "Service", name: p.name, description: p.description },

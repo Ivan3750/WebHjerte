@@ -39,7 +39,7 @@ const facts = `# WebHjerte
 - AI: AI-chatbots, AI-automatisering, AI-booking, lead-kvalificering og AI-synlighed (GEO) i ChatGPT, Gemini og Google AI
 - Arbejdsområde: Horsens, Midtjylland, Jylland og hele Danmark (online)
 
-## Priser (DKK, ekskl. moms)
+## Priser (DKK, inkl. moms)
 
 - Landingside: fra 2.500 kr. Levering på ca. 2 dage. 1 side til kampagner og annoncer.
 - Basis: fra 4.500 kr. Levering på ca. 5 dage. 3–5 sider.

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-// Kun WebHjertes faste, offentliggjorte priser (ekskl. moms) – ingen opfundne tillæg
+// Kun WebHjertes faste, offentliggjorte priser (inkl. moms) – ingen opfundne tillæg
 const PACKAGES = [
   { id: "landing", name: "Landingside", price: 2500, from: false, desc: "1 side · klar på ca. 2 dage" },
   { id: "basis", name: "Basis", price: 4500, from: false, desc: "3–5 sider · klar på ca. 5 dage" },
@@ -41,7 +41,7 @@ export default function PriceCalculator({ dark = false }) {
 
   const estimate = `${p.name}${p.from ? " (fra)" : ""} ${fmt(p.price)} kr · Platform: ${pl.name} · ${s.name}${
     s.monthly ? ` ${s.monthly} kr/md` : ""
-  } · 1. år ca. ${fmt(firstYear)} kr ekskl. moms`;
+  } · 1. år ca. ${fmt(firstYear)} kr inkl. moms`;
 
   const track = (event, extra = {}) => {
     window.dataLayer = window.dataLayer || [];
@@ -147,7 +147,7 @@ export default function PriceCalculator({ dark = false }) {
           <p className="text-[24px] font-semibold mt-1 text-[#00a8e8]">{p.from ? "fra " : ""}{fmt(firstYear)} kr</p>
         </div>
         <p className="sm:col-span-3 text-[12.5px] text-[#8a9595] leading-relaxed">
-          Alle beløb ekskl. moms. 1. år inkluderer et typisk .dk-domæne (ca. {DOMAIN_PER_YEAR} kr). Første designudkast på 48 timer – 0 kr, hvis det ikke passer.
+          Alle beløb inkl. moms. 1. år inkluderer et typisk .dk-domæne (ca. {DOMAIN_PER_YEAR} kr). Første designudkast på 48 timer – 0 kr, hvis det ikke passer.
         </p>
       </div>
 
