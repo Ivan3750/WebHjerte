@@ -7,6 +7,13 @@ html {
   position: relative;
 }
 
+/* Dekorative glød-elementer må aldrig give vandret scroll på mobil.
+   "clip" (ikke "hidden"), så den klæbende header stadig virker. */
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   color: #ededed;
   background: #1c1e1e;

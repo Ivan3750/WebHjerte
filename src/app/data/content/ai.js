@@ -56,16 +56,16 @@ export const aiPages = [
             text: "Jeg samler de spørgsmål, dine kunder faktisk stiller – fra Google Search Console, telefonsamtaler, e-mails og AI-assistenterne selv. Spørgsmålene bliver rygraden i dit indhold.",
           },
           {
-            title: "2. Skriv svar-først-indhold",
-            text: "Hver vigtig side får et kort, præcist svar øverst efterfulgt af uddybning, eksempler, priser og en FAQ. Det er både godt for læsere og nemt for AI at citere.",
+            title: "2. Tekster, der svarer direkte",
+            text: "Hver vigtig side får et kort, præcist svar øverst efterfulgt af uddybning, eksempler, priser og en FAQ. Det er godt for dine kunder – og nemt for AI at gengive korrekt.",
           },
           {
-            title: "3. Struktureret data",
-            text: "Jeg markerer virksomhed, ydelser, priser, FAQ, forfatter og breadcrumbs med JSON-LD, så maskiner forstår indholdet uden at gætte.",
+            title: "3. Oplysninger, Google og AI kan læse",
+            text: "Jeg markerer navn, adresse, ydelser, priser og spørgsmål i sidens kode, så Google og AI forstår din virksomhed uden at gætte.",
           },
           {
             title: "4. Teknisk fundament",
-            text: "Hurtig hjemmeside, mobilvenlig, korrekt indeksering, sitemap, robots-regler der tillader AI-crawlere og en llms.txt-fil, der opsummerer virksomheden til sprogmodeller.",
+            text: "Hurtig hjemmeside, mobilvenlig, korrekt indeksering, sitemap, adgang for AI-tjenesterne og en kort opsummering af virksomheden, som de kan læse.",
           },
           {
             title: "5. Troværdighed og konsistens",
@@ -85,7 +85,7 @@ export const aiPages = [
           "FAQ-sektioner med reelle kundespørgsmål og markeret FAQPage-data.",
           "Organization-, LocalBusiness-, Service-, Offer-, Person- og BreadcrumbList-markup.",
           "Prisoversigter i tabeller, som både mennesker og maskiner nemt læser.",
-          "En llms.txt og en llms-full.txt, der giver sprogmodeller et ryddeligt overblik over sitet.",
+          "En kort opsummering af din virksomhed, som AI-tjenester kan læse.",
           "Robots-regler, der tillader seriøse AI-crawlere, så du ikke blokerer dig selv ude.",
           "Forfatterprofil og opdateringsdatoer, så indholdet viser ekspertise og aktualitet.",
         ],
@@ -112,7 +112,7 @@ export const aiPages = [
       },
       {
         q: "Er GEO det samme som SEO?",
-        a: "Nej, men de overlapper meget. God SEO (hurtig side, klart indhold, gode links) er fundamentet. GEO tilføjer svar-først-indhold, struktureret data, konsistente virksomhedsoplysninger og en llms.txt, så AI-systemer nemmere kan bruge dit indhold.",
+        a: "Nej, men de overlapper meget. God SEO (hurtig side, klart indhold, gode links) er fundamentet. GEO tilføjer tekster, der svarer direkte på kundernes spørgsmål, ensartede virksomhedsoplysninger og en teknisk opsætning, så AI-tjenester nemmere kan bruge dit indhold.",
       },
       {
         q: "Kan I garantere, at ChatGPT nævner min virksomhed?",
@@ -126,15 +126,11 @@ export const aiPages = [
         q: "Skal jeg have en ny hjemmeside for at blive synlig i AI?",
         a: "Ikke nødvendigvis. Mange eksisterende sider kan optimeres med bedre struktur, FAQ og struktureret data. Hvis siden er meget langsom eller teknisk problematisk, kan en ny side dog være billigere på sigt.",
       },
-      {
-        q: "Hvad er llms.txt?",
-        a: "llms.txt er en simpel tekstfil på roden af hjemmesiden, der giver sprogmodeller et ryddeligt overblik over virksomheden og de vigtigste sider. Den er et supplement til sitemap og robots.txt. WebHjerte har både en llms.txt og en udvidet llms-full.txt.",
-      },
     ],
     related: [
       { href: "/ai-seo", title: "AI SEO-pakker", desc: "Priser og indhold i AI SEO fra 3.500 kr." },
       { href: "/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai", title: "Guide: bliv nævnt af ChatGPT", desc: "Praktisk tjekliste, du selv kan gå i gang med." },
-      { href: "/ordliste", title: "Ordliste", desc: "GEO, AEO, schema.org, llms.txt og andre begreber forklaret." },
+      { href: "/kontakt", title: "Få et tilbud", desc: "Fortæl, hvad du har brug for – svar inden for 24 timer." },
     ],
   },
 ];

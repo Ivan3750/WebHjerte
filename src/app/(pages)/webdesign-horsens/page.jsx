@@ -110,7 +110,7 @@ const sections = [
     h2: "Hvad er godt webdesign i 2026?",
     paragraphs: [
       "Godt webdesign handler ikke om at have flest effekter, men om at gøre det nemt for den rigtige besøgende at forstå dit tilbud og tage kontakt. I 2026 betyder det en hurtig side på mobil, et klart budskab øverst, tydelige knapper og tillidssignaler som anmeldelser, referencer og CVR-nummer.",
-      "Designet skal også være gennemtænkt til søgemaskiner og AI-assistenter: logisk overskriftsstruktur, hurtig indlæsning og tekst, der besvarer spørgsmål. Et flot design, som ingen finder, er spild af penge.",
+      "Designet skal også hjælpe dig med at blive fundet på Google: klare overskrifter, hurtig indlæsning og tekster, der svarer på det, kunderne spørger om. Et flot design, som ingen finder, er spild af penge.",
     ],
   },
   {

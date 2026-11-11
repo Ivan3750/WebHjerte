@@ -138,7 +138,7 @@ export const platformPages = [
           "Opsætning af butik, produkter, kategorier og lager.",
           "Tilpasning af tema og design, så butikken matcher dit brand.",
           "Betaling (fx kort og MobilePay via betalingsudbydere), fragt og momsindstillinger.",
-          "SEO for produkter og kategorier, struktureret data og hastighedsoptimering.",
+          "SEO for produkter og kategorier, så pris og lagerstatus kan vises i Google, og hurtig indlæsning.",
           "Migrering fra WooCommerce, Wix eller andre platforme med omdirigeringer, så du bevarer SEO-værdi.",
           "Apps og integrationer (regnskab, lager, nyhedsbreve).",
           "Handelsbetingelser, privatlivspolitik og cookie-samtykke.",
@@ -249,7 +249,7 @@ export const platformPages = [
           {
             h3: "AI-synlighed (GEO / AI SEO)",
             paragraphs: [
-              "Gør din hjemmeside nem at citere for ChatGPT, Gemini, Perplexity og Google AI-oversigter med struktureret data, svar-først-indhold og llms.txt.",
+              "Gør din virksomhed let at finde og anbefale, når kunder spørger ChatGPT, Gemini eller Googles AI.",
             ],
           },
         ],

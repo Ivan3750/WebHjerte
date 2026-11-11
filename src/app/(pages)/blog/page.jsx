@@ -28,6 +28,24 @@ const legacy = [
     desc: "Forskellene på ansvar, pris og kommunikation, og hvad du bør spørge om.",
     category: "Guides",
   },
+  {
+    href: "/webstrategi",
+    title: "Webstrategi: en klar plan, før du bygger",
+    desc: "Sådan finder du ud af, hvad din hjemmeside skal kunne – før du bruger penge på den.",
+    category: "Guides",
+  },
+  {
+    href: "/baeredygtigt-webdesign",
+    title: "Bæredygtigt webdesign",
+    desc: "Lette, hurtige sider, der belaster mindre – og som kunderne har det bedre med.",
+    category: "Guides",
+  },
+  {
+    href: "/ofte-stillede-spoergsmaal",
+    title: "Ofte stillede spørgsmål",
+    desc: "Korte, ærlige svar om priser, tid, ejerskab og samarbejde.",
+    category: "FAQ",
+  },
 ];
 
 export default function BlogPage() {
@@ -81,11 +99,10 @@ export default function BlogPage() {
           <BlogList posts={posts} />
 
           <div className="mt-16 pt-8 border-t border-[#e4e2e2] flex flex-wrap items-center gap-3">
-            <span className="text-[12px] text-[#5a5a5a]">Slå begreber op:</span>
+            <span className="text-[12px] text-[#5a5a5a]">Mere fra WebHjerte:</span>
             {[
-              { href: "/ordliste", label: "Ordliste" },
               { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
-              { href: "/om-webhjerte", label: "Fakta om WebHjerte" },
+              { href: "/om-mig", label: "Om mig" },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-[12px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-2 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors">
                 {l.label}

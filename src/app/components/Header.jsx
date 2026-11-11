@@ -7,92 +7,31 @@ import { usePathname } from "next/navigation";
 import W from "../../../public/W.png";
 
 /**
- * Menustruktur. Et punkt er enten et direkte link ({ href }) eller en gruppe
- * med undermenu ({ columns }). Samme data bruges til desktop og mobil.
+ * Menustruktur – enkel, så en kunde uden teknisk viden kan finde rundt.
+ * Et punkt er enten et direkte link ({ href }) eller en gruppe med undermenu ({ columns }).
+ * Branche- og bysider ligger ikke i menuen; de findes på /services og i footeren.
  */
 const navItems = [
   {
-    label: "Services",
+    label: "Hjemmesider",
     columns: [
       {
-        title: "Hjemmesider",
+        title: "Hvad har du brug for?",
         links: [
-          { href: "/services", label: "Alle services" },
-          { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
-          { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
-          { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
-          { href: "/shopify-hjemmeside", label: "Shopify-hjemmeside" },
-          { href: "/webshop-hjemmeside", label: "Webshop" },
-          { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
-          { href: "/hosting-og-vedligeholdelse", label: "Hosting og vedligeholdelse" },
-        ],
-      },
-      {
-        title: "Lokalt",
-        links: [
-          { href: "/webdesign-horsens", label: "Webdesign Horsens" },
-          { href: "/seo-horsens", label: "SEO Horsens" },
-          { href: "/wordpress-horsens", label: "WordPress Horsens" },
-          { href: "/digitalt-bureau-horsens", label: "Digitalt bureau Horsens" },
-          { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
-          { href: "/webbureau-vejle", label: "Webbureau Vejle" },
-          { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
-          { href: "/webbureau-jylland", label: "Webbureau Jylland" },
+          { href: "/hjemmeside-til-virksomhed", label: "Ny hjemmeside", desc: "En professionel side til din virksomhed" },
+          { href: "/webshop-hjemmeside", label: "Webshop", desc: "Sælg dine varer online" },
+          { href: "/wordpress-hjemmeside", label: "WordPress", desc: "En side, du selv kan redigere" },
+          { href: "/hosting-og-vedligeholdelse", label: "Drift og vedligehold", desc: "Jeg passer siden for dig hver måned" },
+          { href: "/services", label: "Alle ydelser", desc: "Overblik, brancher og områder" },
         ],
       },
     ],
   },
-  {
-    label: "AI",
-    columns: [
-      {
-        title: "AI til din virksomhed",
-        links: [
-          { href: "/ai-loesninger", label: "AI-løsninger" },
-          { href: "/ai-seo", label: "AI SEO" },
-          { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
-          { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
-          { href: "/ai-automatisering-virksomhed", label: "AI-automatisering" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Brancher",
-    columns: [
-      {
-        title: "Hjemmeside til",
-        links: [
-          { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-          { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-          { href: "/hjemmeside-til-saloner", label: "Saloner" },
-          { href: "/hjemmeside-til-vvs", label: "VVS" },
-          { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-          { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
-        ],
-      },
-    ],
-  },
+  { href: "/ai-loesninger", label: "AI" },
   { href: "/hjemmeside-pris", label: "Priser" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/blog", label: "Blog" },
-  {
-    label: "Om",
-    columns: [
-      {
-        title: "Om WebHjerte",
-        links: [
-          { href: "/om-mig", label: "Om mig" },
-          { href: "/om-webhjerte", label: "Fakta om WebHjerte" },
-          { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
-          { href: "/ordliste", label: "Ordliste" },
-          { href: "/freelancer-vs-bureau", label: "Freelancer vs. bureau" },
-          { href: "/partner", label: "Partnerskab" },
-          { href: "/kontakt", label: "Kontakt" },
-        ],
-      },
-    ],
-  },
+  { href: "/om-mig", label: "Om mig" },
 ];
 
 const isActivePath = (pathname, href) =>
@@ -137,7 +76,7 @@ const DesktopDropdown = ({ item, pathname, open, onToggle, onClose }) => {
       <div
         id={id}
         className={`absolute top-full mt-3 p-2 bg-[#111414] border border-white/10 rounded-2xl shadow-2xl transition-all duration-200 z-50 ${
-          wide ? "left-0 w-[520px] grid grid-cols-2 gap-2" : "left-1/2 -translate-x-1/2 w-[260px]"
+          wide ? "left-0 w-[520px] grid grid-cols-2 gap-2" : "left-1/2 -translate-x-1/2 w-[320px]"
         } ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none invisible"}`}
       >
         {item.columns.map((col) => (
@@ -156,7 +95,8 @@ const DesktopDropdown = ({ item, pathname, open, onToggle, onClose }) => {
                         current ? "text-white bg-white/10" : "text-[#9aa5a5] hover:text-white hover:bg-white/5"
                       }`}
                     >
-                      {link.label}
+                      <span className="block">{link.label}</span>
+                      {link.desc && <span className="block text-[11.5px] text-[#6f7c7c] mt-0.5">{link.desc}</span>}
                     </Link>
                   </li>
                 );
@@ -362,18 +302,19 @@ const Header = () => {
                         {item.columns.length > 1 && (
                           <p className="text-[10.5px] uppercase tracking-[0.16em] text-[#7a8787] mb-2">{col.title}</p>
                         )}
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-col gap-2">
                           {col.links.map((link) => (
                             <Link
                               key={link.href}
                               href={link.href}
                               onClick={closeMobileMenu}
                               aria-current={pathname === link.href ? "page" : undefined}
-                              className={`text-[13px] rounded-full px-4 py-2.5 border ${
-                                pathname === link.href ? "border-[#00a8e8] text-[#00a8e8]" : "border-white/10 text-[#b4bebe]"
+                              className={`rounded-2xl px-4 py-3 border ${
+                                pathname === link.href ? "border-[#00a8e8] bg-[#00a8e8]/[0.06]" : "border-white/10"
                               }`}
                             >
-                              {link.label}
+                              <span className={`block text-[15px] font-semibold ${pathname === link.href ? "text-[#00a8e8]" : "text-white"}`}>{link.label}</span>
+                              {link.desc && <span className="block text-[12.5px] text-[#8795a0] mt-0.5">{link.desc}</span>}
                             </Link>
                           ))}
                         </div>
