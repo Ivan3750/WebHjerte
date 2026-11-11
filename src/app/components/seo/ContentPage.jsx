@@ -17,43 +17,8 @@ import NichePackage from "../ui/NichePackage";
 import GuaranteesBlock from "../home/GuaranteesBlock";
 import CasesCarousel from "../home/CasesCarousel";
 import ProcessBlock from "../home/ProcessBlock";
-import SupportTariffsBlock from "../../(pages)/services/_components/SupportTariffsBlock";
-import { AiChatDemo, AiSavings, AiDayCompare, AiByTrade, AiStart } from "../variants/AiBlocks";
-import { SiteAnatomy, SiteTree } from "../variants/SiteBlocks";
-import { ShopJourney, ShopPlatforms, ShopPrice } from "../variants/ShopBlocks";
-import { CareStatus, CareMonth, CareCosts } from "../variants/CareBlocks";
-
-/**
- * Hver hovedside i menuen har sin egen opbygning og sine egne illustrerede blokke,
- * så siderne ikke ligner hinanden. `aside` erstatter formularen i hero, `blocks` erstatter
- * de fælles blokke (pris, garantier, cases, proces), og `open` er antal åbne afsnit i "Godt at vide".
- */
-const VARIANTS = {
-  ai: {
-    aside: <AiChatDemo />,
-    blocks: [<AiSavings key="s" />, <AiDayCompare key="d" />, <AiByTrade key="t" />, <AiStart key="p" />],
-    open: 0,
-  },
-  site: {
-    blocks: [<SiteAnatomy key="a" />, <SiteTree key="t" />, <PriceStrip key="p" />, <CasesCarousel key="c" />],
-    open: 1,
-  },
-  shop: {
-    blocks: [<ShopJourney key="j" />, <ShopPlatforms key="p" />, <ShopPrice key="pr" />, <CasesCarousel key="c" />],
-    open: 0,
-  },
-  care: {
-    aside: <CareStatus />,
-    blocks: [
-      <CareMonth key="m" />,
-      <div key="t" className="bg-[#1c1e1e] pt-16 sm:pt-24">
-        <SupportTariffsBlock />
-      </div>,
-      <CareCosts key="c" />,
-    ],
-    open: 0,
-  },
-};
+import { VARIANTS } from "../variants/registry";
+import ThemedHero from "../variants/ThemedHero";
 
 const fmtDate = (iso) =>
   new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
@@ -101,7 +66,7 @@ export default function ContentPage({
   city,
   variant,
 }) {
-  const v = VARIANTS[variant];
+  const v = VARIANTS[variant] || VARIANTS[path?.slice(1)];
   const url = `${SITE_URL}${path}`;
   const trail = [{ name: "Forside", path: "/" }, ...breadcrumbs.map((b) => ({ name: b.label, path: b.href })), { name, path }];
 
@@ -223,22 +188,26 @@ export default function ContentPage({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {isArticle && <ScrollProgress />}
-      <PageHero
-        eyebrow={eyebrow}
-        titleLines={[h1]}
-        lead={intro}
-        size="md"
-        meta={heroMeta}
-        facts={type === "service" ? facts : null}
-        actions={
-          <>
-            <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
-            <GhostLink href={isArticle ? "/blog" : "/portefolje"}>{isArticle ? "Flere guides" : "Se eksempler"}</GhostLink>
-          </>
-        }
-        aside={aside}
-        below={city ? <CityScene city={city} /> : null}
-      />
+      {v?.hero ? (
+        <ThemedHero theme={v.hero.theme} layout={v.hero.layout} visual={v.hero.visual} eyebrow={eyebrow} h1={h1} lead={intro} facts={v.facts || facts} />
+      ) : (
+        <PageHero
+          eyebrow={eyebrow}
+          titleLines={[h1]}
+          lead={intro}
+          size="md"
+          meta={heroMeta}
+          facts={type === "service" ? facts : null}
+          actions={
+            <>
+              <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+              <GhostLink href={isArticle ? "/blog" : "/portefolje"}>{isArticle ? "Flere guides" : "Se eksempler"}</GhostLink>
+            </>
+          }
+          aside={aside}
+          below={city ? <CityScene city={city} /> : null}
+        />
+      )}
 
       {isArticle ? (
         <section className="scene bg-[#f7f6f6]">
@@ -301,7 +270,7 @@ export default function ContentPage({
         </section>
       ) : (
         <>
-          {v ? v.blocks : isService && (
+          {v ? v.blocks({ nichePackage }) : isService && (
             <>
               <PriceStrip />
               <GuaranteesBlock />
