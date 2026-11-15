@@ -15,6 +15,7 @@ import CasesCarousel from "../home/CasesCarousel";
 import ProcessBlock from "../home/ProcessBlock";
 import { VARIANTS } from "../variants/registry";
 import ThemedHero from "../variants/ThemedHero";
+import { cleanSection, visibleLinks } from "../../data/hidden";
 
 const fmtDate = (iso) =>
   new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
@@ -46,9 +47,9 @@ export default function ContentPage({
   intro,
   summary,
   summaryLabel = "Kort svar",
-  sections = [],
+  sections: sectionsProp = [],
   faqs = [],
-  related = [],
+  related: relatedProp = [],
   breadcrumbs = [],
   published,
   updated,
@@ -64,6 +65,9 @@ export default function ContentPage({
   omit = [], // blokke der ikke skal vises: "price" | "guarantees" | "cases" | "process" | "guide" | "readmore"
 }) {
   const skip = new Set(omit);
+  // Links til skjulte sider fjernes, men teksten bevares
+  const sections = sectionsProp.map(cleanSection);
+  const related = visibleLinks(relatedProp);
   const v = VARIANTS[variant] || VARIANTS[path?.slice(1)];
   const url = `${SITE_URL}${path}`;
   const trail = [{ name: "Forside", path: "/" }, ...breadcrumbs.map((b) => ({ name: b.label, path: b.href })), { name, path }];

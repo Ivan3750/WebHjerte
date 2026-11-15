@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+import { isHiddenHref } from "../../data/hidden";
 import HeroAiseo from "./_components/HeroAiseo";
 import WhatIsAiSeoBlock from "./_components/WhatIsAiSeoBlock";
 import HowItWorksBlock from "./_components/HowItWorksBlock";
@@ -133,4 +135,8 @@ const Aiseo = () => {
   );
 };
 
-export default Aiseo;
+// Skjult indtil siden er færdig (se data/hidden.js)
+export default function Page() {
+  if (isHiddenHref("/ai-seo")) notFound();
+  return <Aiseo />;
+}

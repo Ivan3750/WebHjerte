@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowIcon } from "../ui/ArrowIcon";
+import { isHiddenHref } from "../../data/hidden";
 import Link from "next/link";
 import { FadeUp, RevealLines } from "./fx/Reveal";
 import SpotlightCard from "./fx/SpotlightCard";
@@ -95,12 +96,14 @@ const TilbydeSection = () => {
                     <p className="text-[16px] font-semibold text-[#1c1e1e]">{name}</p>
                     <p className="text-[15px] text-[#6a6a6a] leading-[1.75]">{desc}</p>
                     <div className="mt-auto pt-3">
-                      <Link
+                      {!isHiddenHref(href) && (
+                        <Link
                         href={href}
                         className="btn-primary"
                       >
                         {cta}
                       </Link>
+                      )}
                     </div>
                   </div>
                 </div>

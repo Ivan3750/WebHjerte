@@ -20,6 +20,8 @@ const AI_CRAWLERS = [
   "MistralAI-User",
 ];
 
+import { HIDDEN_PATHS } from './src/app/data/hidden.js';
+
 export default {
   // Samme host som canonical-tags (www)
   siteUrl: 'https://www.webhjerte.dk',
@@ -31,6 +33,7 @@ export default {
   priority: 0.6,
 
   exclude: [
+    ...HIDDEN_PATHS,
     '/404',
     '/500',
     '/api/*',

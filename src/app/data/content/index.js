@@ -6,7 +6,11 @@ import { platformPages } from "./platforms.js";
 import { articles } from "./articles.js";
 import { nichePages } from "./niches.js";
 
-export const contentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages];
+import { isHiddenSlug } from "../hidden.js";
+
+// Skjulte sider (se data/hidden.js) er ikke med – så de hverken bygges, linkes eller kommer i sitemap
+export const allContentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages];
+export const contentPages = allContentPages.filter((p) => !isHiddenSlug(p.slug));
 export { articles };
 
 export const SITE_URL = "https://www.webhjerte.dk";

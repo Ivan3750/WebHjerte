@@ -5,6 +5,7 @@ import { IoMenu, IoClose, IoChevronDown } from "react-icons/io5";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import W from "../../../public/W.png";
+import { visibleLinks, isHiddenHref } from "../data/hidden";
 
 /**
  * Menustruktur: Services (hjemmesider + lokalt), AI, Brancher, Priser, Portefølje, Blog og Om.
@@ -12,7 +13,7 @@ import W from "../../../public/W.png";
  * Et punkt er enten et direkte link ({ href }) eller en gruppe med undermenu ({ columns }).
  * Branche-, by- og AI-sider ligger i hver sin undermenu.
  */
-const navItems = [
+const allNavItems = [
   {
     label: "Services",
     columns: [
@@ -67,6 +68,11 @@ const navItems = [
   { href: "/blog", label: "Blog" },
   { href: "/om-mig", label: "Om mig" },
 ];
+
+// Skjulte sider (se data/hidden.js) vises ikke i menuen; tomme grupper fjernes
+const navItems = allNavItems
+  .map((item) => (item.columns ? { ...item, columns: item.columns.map((c) => ({ ...c, links: visibleLinks(c.links) })).filter((c) => c.links.length) } : item))
+  .filter((item) => (item.columns ? item.columns.length : !isHiddenHref(item.href)));
 
 const isActivePath = (pathname, href) =>
   href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);

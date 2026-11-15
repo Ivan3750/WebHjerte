@@ -5,10 +5,9 @@ import ScrollStatement from "./components/home/ScrollStatement";
 import AboutBlock from "./components/home/AboutBlock";
 import QuickLeadForm from "./components/ui/QuickLeadForm";
 import ScrollProgress from "./components/ui/ScrollProgress";
-import AiFocus from "./components/home/AiFocus";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
-import { Panel, VisualDesign, VisualDashboard, VisualMapPin, VisualPrice } from "./components/illustrations/Visuals";
+import { Panel, VisualSite, VisualShop, VisualPrice } from "./components/illustrations/Visuals";
 
 // Sektioner under første skærm kodesplittes, så den første hydrering på mobil bliver kortere (lavere TBT)
 const BuildStory = dynamic(() => import("./components/home/BuildStory"));
@@ -70,22 +69,16 @@ const jsonLd = {
 
 const localLinks = [
   {
-    href: "/webdesign-horsens",
-    title: "Webdesign Horsens",
-    visual: <VisualDesign />,
-    desc: "Skræddersyet design, der bygger tillid og får besøgende til at handle.",
+    href: "/wordpress-hjemmeside",
+    title: "WordPress-hjemmeside",
+    visual: <VisualSite />,
+    desc: "Professionel side, du selv kan rette i – fra 4.500 kr og klar til Google.",
   },
   {
-    href: "/seo-horsens",
-    title: "SEO Horsens",
-    visual: <VisualDashboard />,
-    desc: "Bliv fundet af kunder, der søger efter dig lokalt på Google.",
-  },
-  {
-    href: "/webbureau-midtjylland",
-    title: "Webbureau Midtjylland",
-    visual: <VisualMapPin />,
-    desc: "Hjemmesider til virksomheder i Aarhus, Silkeborg, Vejle og hele regionen.",
+    href: "/webshop-hjemmeside",
+    title: "Webshop",
+    visual: <VisualShop />,
+    desc: "Sælg online døgnet rundt med en webshop, der er nem at drive.",
   },
   {
     href: "/hjemmeside-pris",
@@ -109,7 +102,6 @@ export default function Home() {
       <ScrollStatement />
       <BuildStory />
       <TilbydeSection />
-      <AiFocus />
       <GuaranteesBlock />
       <HomeCases />
       <AboutBlock />

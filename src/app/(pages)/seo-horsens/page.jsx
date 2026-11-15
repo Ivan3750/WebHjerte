@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+import { isHiddenHref } from "../../data/hidden";
 import LocalLandingPage from "../../components/seo/LocalLandingPage";
 
 const path = "/seo-horsens";
@@ -145,7 +147,7 @@ const related = [
   },
 ];
 
-export default function SeoHorsensPage() {
+function SeoHorsensPage() {
   return (
     <LocalLandingPage
       path={path}
@@ -160,4 +162,10 @@ export default function SeoHorsensPage() {
       related={related}
     />
   );
+}
+
+// Skjult indtil siden er færdig (se data/hidden.js)
+export default function Page() {
+  if (isHiddenHref("/seo-horsens")) notFound();
+  return <SeoHorsensPage />;
 }

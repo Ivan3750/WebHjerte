@@ -166,18 +166,6 @@ const Services = () => {
       <AfterLaunchBlock />
       <SupportTariffsBlock />
 
-      {/* Brancher og områder – ikke i menuen, men samlet her */}
-      <section id="brancher" className="scene bg-[#1c1e1e] border-t border-white/[0.06] scroll-mt-[68px]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-          <SectionHead dark lines={["Se hvad jeg kan lave", "for din virksomhed"]} className="mb-10 sm:mb-14" />
-          <BrancheCards />
-
-          <div id="omraader" className="scroll-mt-[90px] mt-16 sm:mt-24">
-            <SectionHead dark lines={["Lokal hjælp –", "uanset hvor du er"]} className="mb-10 sm:mb-14" />
-            <LinkCards items={areas} />
-          </div>
-        </div>
-      </section>
     </>
   );
 };
