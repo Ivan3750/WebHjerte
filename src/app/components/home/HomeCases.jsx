@@ -14,7 +14,7 @@ function Card({ p, i }) {
       href={`/portefolje/${p.slug}`}
       className="group relative block w-[78vw] sm:w-[52vw] md:w-[40vw] lg:w-[34vw] max-w-[560px] shrink-0 snap-center"
     >
-      <div className="relative aspect-[16/11] rounded-3xl overflow-hidden border border-white/10 bg-[#262a2a] shadow-[0_30px_60px_-30px_rgba(0,0,0,0.5)]">
+      <div className="relative aspect-[16/11] rounded-3xl overflow-hidden border border-white/10 bg-[#242828]">
         <Image
           src={p.heroImage}
           alt={p.title}
@@ -31,7 +31,7 @@ function Card({ p, i }) {
       </div>
       <div className="pt-4 px-1">
         <h3 className="text-[17px] font-semibold text-white leading-tight">{p.title}</h3>
-        <p className="text-[13px] text-[#93a0a0] mt-1 leading-snug">{p.subtitle}</p>
+        <p className="text-[13px] text-[#b4bdbd] mt-1 leading-snug">{p.subtitle}</p>
       </div>
     </Link>
   );
@@ -81,19 +81,18 @@ export default function HomeCases() {
           <div>
             <RevealLines
               lines={["Udvalgte cases"]}
-              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(26px,3.6vw,46px)] mb-3"
+              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(24px,2.6vw,34px)] mb-3"
             />
-            <FadeUp as="p" delay={0.15} className="text-[14px] text-[#93a0a0] leading-[1.8] max-w-xl">
+            <FadeUp as="p" delay={0.15} className="text-[15px] text-[#b4bdbd] leading-[1.8] max-w-xl">
               Fra lokale forretninger til større platforme – her er et udpluk af hjemmesider, vi har bygget fra bunden.
             </FadeUp>
           </div>
           <FadeUp delay={0.2}>
             <Link
               href="/portefolje"
-              className="group inline-flex items-center gap-2 text-sm text-white border border-white/15 rounded-full px-5 py-2.5 hover:border-[#00a8e8] hover:text-[#00a8e8]"
+              className="btn-ghost"
             >
               Se alle projekter
-              <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </FadeUp>
         </div>

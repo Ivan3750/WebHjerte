@@ -35,11 +35,11 @@ export function TradesThreeSeconds() {
           {Q3.map((q, i) => (
             <FadeUp key={q.q} delay={i * 0.9}>
               <div className="relative h-full rounded-3xl bg-white border border-[#e4e2e2] p-6 sm:p-7">
-                <span className="relative z-10 inline-flex items-center gap-2 rounded-full bg-[#00a8e8] text-[#1c1e1e] text-[12px] font-semibold px-3 py-1.5 mb-6">
+                <span className="relative z-10 inline-flex items-center gap-2 rounded-full bg-[#00a8e8] text-white text-[12px] font-semibold px-3 py-1.5 mb-6">
                   <Ico d={q.icon} className="w-3.5 h-3.5" /> {q.s}
                 </span>
                 <p className="text-[19px] font-semibold text-[#1c1e1e] mb-3">{q.q}</p>
-                <p className="text-[14.5px] text-[#5a5a5a] leading-[1.6]">{q.a}</p>
+                <p className="text-[15px] text-[#5a5a5a] leading-[1.6]">{q.a}</p>
               </div>
             </FadeUp>
           ))}
@@ -70,7 +70,7 @@ export function TradesGrid() {
                   <Ico d={t.icon} className="w-5 h-5" />
                 </span>
                 <p className="text-[16px] font-semibold text-white">{t.name}</p>
-                <p className="text-[12.5px] text-[#93a0a0] mt-1 mb-5">{t.note}</p>
+                <p className="text-[12.5px] text-[#b4bdbd] mt-1 mb-5">{t.note}</p>
                 <span className="mt-auto">
                   <ArrowBadge size="sm" tone="dark" />
                 </span>
@@ -172,12 +172,12 @@ export function ElTrust() {
                   whileInView={{ scale: 1, rotate: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + i * 0.15, type: "spring", stiffness: 260, damping: 14 }}
-                  className="w-11 h-11 rounded-2xl bg-[#00a8e8] text-[#1c1e1e] flex items-center justify-center mb-5"
+                  className="w-11 h-11 rounded-2xl bg-[#00a8e8] text-white flex items-center justify-center mb-5"
                 >
                   <Ico d={icon} className="w-5 h-5" />
                 </motion.span>
                 <p className="text-[16px] font-semibold text-white">{t}</p>
-                <p className="text-[13px] text-[#93a0a0] mt-1 leading-[1.6]">{d}</p>
+                <p className="text-[15px] text-[#b4bdbd] mt-1 leading-[1.6]">{d}</p>
               </div>
             </FadeUp>
           ))}
@@ -265,7 +265,7 @@ export function TomrerBeforeAfter() {
     setPos(Math.max(4, Math.min(96, ((clientX - r.left) / r.width) * 100)));
   };
   return (
-    <section className="scene bg-[#eeecec]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Før og efter" lines={["Kunden vil se,", "før de vælger"]} lead="Træk i skyderen. Sådan viser din side et projekt – det overbeviser mere end ti afsnit tekst." className="mb-10" />
         <div
@@ -282,7 +282,7 @@ export function TomrerBeforeAfter() {
             <OldDeck />
           </div>
           <div className="absolute inset-y-0 w-1 bg-white -ml-0.5" style={{ left: `${pos}%` }}>
-            <span className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 w-11 h-11 rounded-full bg-white shadow-lg flex items-center justify-center text-[#00a8e8] text-[14px] font-semibold">⇆</span>
+            <span className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 w-11 h-11 rounded-full bg-white flex items-center justify-center text-[#00a8e8] text-[14px] font-semibold">⇆</span>
           </div>
           <input
             type="range"
@@ -336,11 +336,11 @@ export function RestCommission() {
             <Row label="Gennemsnitlig ordre" value={avg} set={setAvg} min={100} max={600} step={10} unit="kr" />
             <Row label="Kommission" value={pct} set={setPct} min={10} max={30} step={1} unit="%" />
           </div>
-          <div className="rounded-3xl bg-[#f1f0ee] p-6 sm:p-8 flex flex-col">
+          <div className="rounded-3xl bg-[#f7f6f6] p-6 sm:p-8 flex flex-col">
             <p className="text-[11px] uppercase tracking-[0.16em] text-[#8a8a8a]">Kommission pr. år</p>
             <p className="text-[clamp(44px,6vw,72px)] font-semibold text-[#242828] tracking-tight leading-none mt-3 tabular-nums">{fmt(year)} kr</p>
             <p className="text-[14px] text-[#5a5a5a] mt-3">≈ {fmt(month)} kr hver måned, der går til mellemled.</p>
-            <p className="mt-auto pt-8 text-[13px] text-[#5a5a5a] leading-[1.7]">
+            <p className="mt-auto pt-8 text-[15px] text-[#5a5a5a] leading-[1.7]">
               Flytter du blot en del af de faste gæster til egen bestilling på hjemmesiden, beholder du marginen – og kontakten til gæsten.
             </p>
           </div>
@@ -379,7 +379,7 @@ export function SalonBuilder() {
                   type="button"
                   aria-pressed={on}
                   onClick={() => setPicked((s) => (on ? s.filter((x) => x !== n) : [...s, n]))}
-                  className={`rounded-full border px-4 py-2.5 text-[13.5px] transition-colors ${on ? "bg-[#00a8e8] border-[#00a8e8] text-white" : "bg-white border-[#e4e2e2] text-[#3a3a3a] hover:border-[#00a8e8]"}`}
+                  className={`rounded-full border px-4 py-2.5 text-[13.5px] transition-colors ${on ? "bg-[#00a8e8] border-transparent text-white" : "bg-white border-[#e4e2e2] text-[#3a3a3a]"}`}
                 >
                   {n} · {p} kr
                 </button>
@@ -408,7 +408,7 @@ export function SalonBuilder() {
                 <p className="text-[12px] text-[#8a8a8a]">I alt · {mins} min.</p>
                 <p className="text-[30px] font-semibold text-[#1c1e1e] tabular-nums leading-tight">{price.toLocaleString("da-DK")} kr</p>
               </div>
-              <span className={`rounded-full px-5 py-2.5 text-[13px] font-semibold ${sel.length ? "bg-[#00a8e8] text-white" : "bg-[#e8e6e6] text-[#a6b1b1]"}`}>Vælg tid →</span>
+              <span className={`rounded-full px-5 py-2.5 text-[13px] font-semibold ${sel.length ? "bg-[#00a8e8] text-white" : "bg-[#e8e6e6] text-[#b4bdbd]"}`}>Vælg tid →</span>
             </div>
           </div>
         </FadeUp>

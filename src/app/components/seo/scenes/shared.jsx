@@ -27,7 +27,7 @@ export function SceneFrame({ sceneRef, aspect = "aspect-[4/3] sm:aspect-[16/9] l
   return (
     <div
       ref={sceneRef}
-      className={`relative overflow-hidden rounded-3xl border border-white/10 ${aspect} shadow-[0_40px_100px_-40px_rgba(0,168,232,0.45)]`}
+      className={`relative overflow-hidden rounded-3xl border border-white/10 ${aspect}`}
     >
       {children}
     </div>
@@ -65,7 +65,7 @@ export function RouteChip({ from, to, time, shown = true, reduce = false }) {
             aria-hidden
             animate={{ left: ["0%", "100%"] }}
             transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -top-[4px] w-2 h-2 -ml-1 rounded-full bg-[#00a8e8] shadow-[0_0_10px_2px_rgba(0,168,232,0.7)]"
+            className="absolute -top-[4px] w-2 h-2 -ml-1 rounded-full bg-[#00a8e8]"
           />
         )}
       </span>

@@ -136,7 +136,7 @@ export function ShopifyVsWoo() {
         <div className="flex flex-col gap-2">
           {VS.map((row, k) => (
             <div key={row[0]} className="grid grid-cols-[1fr_1.4fr] gap-3 rounded-2xl bg-white/[0.04] border border-white/10 px-5 py-4">
-              <span className="text-[13.5px] text-[#a6b1b1]">{row[0]}</span>
+              <span className="text-[13.5px] text-[#b4bdbd]">{row[0]}</span>
               <AnimatePresence mode="wait">
                 <motion.span key={side} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.25, delay: k * 0.04 }} className="text-[15px] font-medium text-white">
                   {row[side + 1]}
@@ -172,10 +172,10 @@ export function GeoCompare() {
           </FadeUp>
           <FadeUp delay={0.15} className="rounded-3xl bg-[#1c1e1e] p-6 text-white">
             <p className="text-[11px] uppercase tracking-[0.16em] text-[#00a8e8] mb-4">AI nu</p>
-            <div className="rounded-2xl bg-white/[0.06] p-4 text-[14.5px] leading-[1.7] text-[#e4e2e2]">
+            <div className="rounded-2xl bg-white/[0.06] p-4 text-[15px] leading-[1.7] text-[#e4e2e2]">
               Jeg vil anbefale <mark className="bg-[#00a8e8]/30 text-white rounded px-1">én virksomhed</mark>, fordi de har klare priser, gode anmeldelser og svarer hurtigt.
             </div>
-            <p className="mt-5 text-[13.5px] text-[#b4bebe]">AI vælger for kunden. Er du ikke nævnt, findes du ikke.</p>
+            <p className="mt-5 text-[13.5px] text-[#b4bdbd]">AI vælger for kunden. Er du ikke nævnt, findes du ikke.</p>
           </FadeUp>
         </div>
       </div>
@@ -196,7 +196,7 @@ export function GeoSteps() {
           </div>
           {GEO_STEPS.map((s, i) => (
             <FadeUp key={s} delay={i * 0.12} className="relative flex flex-col items-center text-center">
-              <span className="w-14 h-14 rounded-2xl bg-[#00a8e8] text-[#1c1e1e] text-[18px] font-semibold flex items-center justify-center mb-4">{i + 1}</span>
+              <span className="w-14 h-14 rounded-2xl bg-[#00a8e8] text-white text-[18px] font-semibold flex items-center justify-center mb-4">{i + 1}</span>
               <p className="text-[13.5px] text-[#e4e2e2] leading-snug">{s}</p>
             </FadeUp>
           ))}

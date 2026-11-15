@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     extend: {
+      // Én fælles indholdsbredde på hele sitet (før 1152/1280 px) – header, hero og sektioner flugter nu
+      maxWidth: { "6xl": "1440px", "7xl": "1440px" },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

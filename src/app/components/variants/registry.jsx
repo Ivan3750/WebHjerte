@@ -42,7 +42,7 @@ import {
 const BG = { dark: "#1c1e1e", light: "#f7f6f6", sky: "#e4f0f7" };
 const theme = (kind, pattern) => ({ accent: "#00a8e8", ink: "#10181a", bg: BG[kind], light: kind !== "dark", pattern });
 
-const pkg = (p) => <NichePackage key="np" className="bg-[#f7f6f6] pt-16 sm:pt-24" trade={p.nichePackage} />;
+const pkg = (p) => <NichePackage key="np" className="bg-[#f7f6f6]" trade={p.nichePackage} />;
 
 export const VARIANTS = {
   /* ─── Hovedsider ─── */

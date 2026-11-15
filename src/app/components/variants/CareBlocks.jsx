@@ -26,7 +26,7 @@ export function CareStatus() {
           ["Binding", "Ingen"],
         ].map(([k, v]) => (
           <div key={k} className="rounded-xl bg-white/[0.04] px-3 py-2.5">
-            <p className="text-[10.5px] text-[#7f8c8c]">{k}</p>
+            <p className="text-[10.5px] text-[#8a9696]">{k}</p>
             <p className="text-[14px] font-semibold text-white">{v}</p>
           </div>
         ))}
@@ -111,16 +111,16 @@ export function CareMonth() {
                   onMouseEnter={() => setFocus(key)}
                   aria-pressed={on}
                   className={`text-left rounded-2xl border px-5 py-4 flex gap-4 transition-all duration-300 ${
-                    on ? "bg-white border-transparent shadow-[0_18px_40px_-28px_rgba(28,30,30,0.35)]" : "bg-transparent border-[#e4e2e2] hover:bg-white/60"
+                    on ? "border-transparent" : "bg-transparent border-[#e4e2e2] hover:bg-white/60"
                   }`}
-                  style={on ? { boxShadow: `inset 0 0 0 1.5px ${k.color}` } : undefined}
+                  style={on ? { backgroundColor: `${k.color}22` } : undefined}
                 >
                   <span className="w-9 h-9 shrink-0 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: k.color }}>
                     <Ico d={k.icon} />
                   </span>
                   <span>
                     <span className="block text-[15px] font-semibold text-[#1c1e1e]">{k.label}</span>
-                    <span className={`block text-[13.5px] text-[#5a5d5d] leading-[1.6] overflow-hidden transition-all duration-500 ${on ? "max-h-24 mt-1 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <span className={`block text-[15px] text-[#5a5d5d] leading-[1.6] overflow-hidden transition-all duration-500 ${on ? "max-h-24 mt-1 opacity-100" : "max-h-0 opacity-0"}`}>
                       {k.text}
                     </span>
                   </span>
@@ -165,7 +165,7 @@ export function CareCosts() {
           {COSTS.map((c) => (
             <FadeUp key={c.label}>
               <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-                <p className="flex items-center gap-2 text-[13px] text-[#a6b1b1] mb-2">
+                <p className="flex items-center gap-2 text-[13px] text-[#b4bdbd] mb-2">
                   <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: c.color }} />
                   {c.label}
                 </p>

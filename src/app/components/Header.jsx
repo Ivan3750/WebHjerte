@@ -19,19 +19,19 @@ const navItems = [
       {
         title: "Hjemmesider",
         links: [
-          { href: "/services", label: "Alle services" },
-          { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
-          { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
-          { href: "/webshop-hjemmeside", label: "Webshop" },
+          { href: "/services", label: "Alle services", desc: "Overblik og faste priser" },
+          { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside", desc: "Du redigerer selv" },
+          { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider", desc: "Hurtig kode, helt dit design" },
+          { href: "/webshop-hjemmeside", label: "Webshop", desc: "Sælg online, døgnet rundt" },
         ],
       },
       {
         title: "Lokalt",
         links: [
-          { href: "/webdesign-horsens", label: "Webdesign Horsens" },
-          { href: "/seo-horsens", label: "SEO Horsens" },
-          { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
-          { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
+          { href: "/webdesign-horsens", label: "Webdesign Horsens", desc: "Din webdesigner i byen" },
+          { href: "/seo-horsens", label: "SEO Horsens", desc: "Bliv fundet på Google" },
+          { href: "/webbureau-aarhus", label: "Webbureau Aarhus", desc: "Fast pris, online samarbejde" },
+          { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland", desc: "Hele regionen" },
         ],
       },
     ],
@@ -42,9 +42,9 @@ const navItems = [
       {
         title: "AI til din virksomhed",
         links: [
-          { href: "/ai-loesninger", label: "AI-løsninger" },
-          { href: "/ai-seo", label: "AI SEO" },
-          { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
+          { href: "/ai-loesninger", label: "AI-løsninger", desc: "Spar tid hver uge" },
+          { href: "/ai-seo", label: "AI SEO", desc: "Bliv nævnt af ChatGPT og Google AI" },
+          { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot", desc: "Svar kunder 24/7" },
         ],
       },
     ],
@@ -55,9 +55,9 @@ const navItems = [
       {
         title: "Hjemmeside til",
         links: [
-          { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-          { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-          { href: "/hjemmeside-til-saloner", label: "Saloner" },
+          { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere", desc: "Flere tilbudsforespørgsler" },
+          { href: "/hjemmeside-til-restauranter", label: "Restauranter", desc: "Menu og booking" },
+          { href: "/hjemmeside-til-saloner", label: "Saloner", desc: "Tidsbestilling og billeder" },
         ],
       },
     ],
@@ -71,9 +71,9 @@ const navItems = [
       {
         title: "Om WebHjerte",
         links: [
-          { href: "/om-mig", label: "Om mig" },
-          { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
-          { href: "/kontakt", label: "Kontakt" },
+          { href: "/om-mig", label: "Om mig", desc: "Ivan, webudvikler i Horsens" },
+          { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål", desc: "Korte, ærlige svar" },
+          { href: "/kontakt", label: "Kontakt", desc: "Ring eller skriv" },
         ],
       },
     ],
@@ -96,8 +96,8 @@ const Underline = ({ active }) => (
 );
 
 const itemClass = (active) =>
-  `relative text-[13px] px-3 xl:px-3.5 py-2 transition-colors whitespace-nowrap ${
-    active ? "text-white" : "text-[#8b9797] hover:text-white"
+  `relative text-[14px] font-medium px-3 xl:px-4 py-2 transition-colors whitespace-nowrap ${
+    active ? "text-white" : "text-[#b4bdbd] hover:text-white"
   }`;
 
 const DesktopDropdown = ({ item, pathname, open, onToggle, onClose }) => {
@@ -115,19 +115,19 @@ const DesktopDropdown = ({ item, pathname, open, onToggle, onClose }) => {
         aria-controls={id}
       >
         {item.label}
-        <IoChevronDown size={13} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+        <IoChevronDown size={14} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
         <Underline active={active} />
       </button>
 
       <div
         id={id}
-        className={`absolute top-full mt-3 p-2 bg-[#111414] border border-white/10 rounded-2xl shadow-2xl transition-all duration-200 z-50 ${
-          wide ? "left-0 w-[520px] grid grid-cols-2 gap-2" : "left-1/2 -translate-x-1/2 w-[320px]"
+        className={`absolute top-full mt-3 p-3 bg-[#242828] border border-white/10 rounded-2xl transition-all duration-200 z-50 ${
+          wide ? "left-0 w-[620px] grid grid-cols-2 gap-2" : "left-1/2 -translate-x-1/2 w-[340px]"
         } ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none invisible"}`}
       >
         {item.columns.map((col) => (
           <div key={col.title}>
-            <p className="px-3.5 pt-2.5 pb-1.5 text-[10.5px] uppercase tracking-[0.16em] text-[#5f6c6c]">{col.title}</p>
+            <p className="px-3.5 pt-2 pb-2 text-[13px] font-semibold text-white">{col.title}</p>
             <ul>
               {col.links.map((link) => {
                 const current = pathname === link.href;
@@ -137,12 +137,12 @@ const DesktopDropdown = ({ item, pathname, open, onToggle, onClose }) => {
                       href={link.href}
                       onClick={onClose}
                       aria-current={current ? "page" : undefined}
-                      className={`block px-3.5 py-2 rounded-xl text-[13px] transition-colors ${
-                        current ? "text-white bg-white/10" : "text-[#9aa5a5] hover:text-white hover:bg-white/5"
+                      className={`block px-3.5 py-2.5 rounded-xl text-[14px] font-medium transition-colors ${
+                        current ? "text-white bg-white/10" : "text-[#d6dcdc] hover:text-white hover:bg-white/5"
                       }`}
                     >
                       <span className="block">{link.label}</span>
-                      {link.desc && <span className="block text-[11.5px] text-[#6f7c7c] mt-0.5">{link.desc}</span>}
+                      {link.desc && <span className="block text-[12.5px] font-normal text-[#8a9696] mt-0.5">{link.desc}</span>}
                     </Link>
                   </li>
                 );
@@ -218,7 +218,8 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 left-0 z-50 h-[68px] flex items-center justify-between gap-4 px-4 md:px-6 lg:px-8 xl:px-10 bg-[#1c1e1e] border-b border-white/10">
+    <header className="sticky top-0 left-0 z-50 h-[68px] bg-[#1c1e1e] border-b border-white/10">
+      <div className="max-w-7xl mx-auto h-full flex items-center justify-between gap-6 px-5 sm:px-10 lg:px-16">
       <Link href="/" aria-label="WebHjerte – gå til forsiden" className="flex items-center gap-2.5 shrink-0">
         <Image src={W} width={36} height={36} alt="WebHjerte logo" priority />
         <span className="text-white text-[17px] font-semibold tracking-tight logo-web">
@@ -254,7 +255,7 @@ const Header = () => {
       <div className="hidden lg:flex items-center shrink-0">
         <Link
           href="/kontakt"
-          className="text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-5 py-2.5 transition-colors whitespace-nowrap"
+          className="btn-primary btn-sm whitespace-nowrap"
         >
           Få et gratis tilbud
         </Link>
@@ -340,13 +341,13 @@ const Header = () => {
                     }`}
                   >
                     {item.label}
-                    <IoChevronDown size={20} className={`text-[#7a8787] transition-transform duration-300 ${expanded ? "rotate-180" : ""}`} />
+                    <IoChevronDown size={20} className={`text-[#8a9696] transition-transform duration-300 ${expanded ? "rotate-180" : ""}`} />
                   </button>
                   <div id={panelId} hidden={!expanded} className="pb-4">
                     {item.columns.map((col) => (
                       <div key={col.title} className="mt-1 mb-3">
                         {item.columns.length > 1 && (
-                          <p className="text-[10.5px] uppercase tracking-[0.16em] text-[#7a8787] mb-2">{col.title}</p>
+                          <p className="text-[13px] font-semibold text-[#8a9696] mb-2">{col.title}</p>
                         )}
                         <div className="flex flex-col gap-2">
                           {col.links.map((link) => (
@@ -356,11 +357,11 @@ const Header = () => {
                               onClick={closeMobileMenu}
                               aria-current={pathname === link.href ? "page" : undefined}
                               className={`rounded-2xl px-4 py-3 border ${
-                                pathname === link.href ? "border-[#00a8e8] bg-[#00a8e8]/[0.06]" : "border-white/10"
+                                pathname === link.href ? "border-transparent bg-[#00a8e8]/15" : "border-white/10"
                               }`}
                             >
                               <span className={`block text-[15px] font-semibold ${pathname === link.href ? "text-[#00a8e8]" : "text-white"}`}>{link.label}</span>
-                              {link.desc && <span className="block text-[12.5px] text-[#8795a0] mt-0.5">{link.desc}</span>}
+                              {link.desc && <span className="block text-[12.5px] text-[#b4bdbd] mt-0.5">{link.desc}</span>}
                             </Link>
                           ))}
                         </div>
@@ -377,11 +378,12 @@ const Header = () => {
           <Link
             href="/kontakt"
             onClick={closeMobileMenu}
-            className="text-center text-[15px] font-semibold text-white bg-[#00a8e8] rounded-full py-3.5"
+            className="btn-primary w-full"
           >
             Få et gratis tilbud
           </Link>
         </div>
+      </div>
       </div>
     </header>
   );

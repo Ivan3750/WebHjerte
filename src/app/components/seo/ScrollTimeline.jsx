@@ -35,7 +35,7 @@ export default function ScrollTimeline({ items }) {
           <li key={step.title} className="relative flex gap-5 sm:gap-6 py-5">
             <span
               className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-[12px] tabular-nums font-medium border transition-all duration-500 ${
-                on ? "bg-[#00a8e8] border-[#00a8e8] text-[#10181a] scale-100 shadow-[0_0_24px_-4px_rgba(0,168,232,0.7)]" : "bg-[#1c1e1e] border-white/15 text-white/50 scale-95"
+                on ? "bg-[#00a8e8] border-transparent text-white scale-100" : "bg-[#1c1e1e] border-white/15 text-white/50 scale-95"
               }`}
             >
               {String(i + 1).padStart(2, "0")}

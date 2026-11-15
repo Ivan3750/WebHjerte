@@ -56,7 +56,7 @@ export default function WhyUsBlock() {
                     {r.n}
                   </span>
                   <h3 className="text-[17px] font-semibold text-white leading-snug">{r.title}</h3>
-                  <p className="text-[13.5px] text-[#8795a0] leading-[1.8]">{r.text}</p>
+                  <p className="text-[15px] text-[#b4bdbd] leading-[1.8]">{r.text}</p>
                   </div>
                 </div>
               </SpotlightCard>

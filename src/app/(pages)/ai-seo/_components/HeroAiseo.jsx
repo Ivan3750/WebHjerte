@@ -25,8 +25,8 @@ export default function HeroAiseo() {
         <AnimatedInView as="div" className="relative aspect-square w-full max-w-[400px] mx-auto">
           <div className="absolute inset-[16%] rounded-full border border-[#2a2d2d]" />
 
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[104px] h-[104px] rounded-full bg-[#262a2a] border border-[#2a2d2d]">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#00a8e8] shadow-[0_0_14px_3px_rgba(0,168,232,0.4)] mb-2" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[104px] h-[104px] rounded-full bg-[#242828] border border-[#2a2d2d]">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#00a8e8] mb-2" />
             <span className="text-[10px] text-[#a0a0a0] text-center leading-tight px-3">
               Din
               <br />
@@ -37,7 +37,7 @@ export default function HeroAiseo() {
           {nodes.map((n) => (
             <div
               key={n.label}
-              className={`absolute ${n.pos} flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#262a2a] border border-[#2a2d2d] shadow-[0_6px_18px_rgba(0,0,0,0.18)] animate-float`}
+              className={`absolute ${n.pos} flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#242828] border border-[#2a2d2d] animate-float`}
             >
               <span
                 className="w-1.5 h-1.5 rounded-full flex-shrink-0"

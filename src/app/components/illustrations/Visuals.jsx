@@ -36,7 +36,7 @@ export function VisualSite() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={inView}
         transition={{ duration: 0.9, ease }}
-        className={`w-full max-w-[360px] rounded-xl ${card} shadow-[0_14px_40px_-18px_rgba(0,0,0,0.3)] overflow-hidden`}
+        className={`w-full max-w-[360px] rounded-xl ${card} overflow-hidden`}
       >
         <div className="flex items-center gap-1.5 px-3 py-1.5 border-b border-[var(--v-line)]">
           <span className="w-1.5 h-1.5 rounded-full bg-[var(--v-bar)]" />
@@ -75,7 +75,7 @@ export function VisualShop() {
         whileInView={{ opacity: 1, y: 0, rotate: -3 }}
         viewport={inView}
         transition={{ duration: 0.8, ease }}
-        className={`w-[140px] rounded-xl p-2.5 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] ${card}`}
+        className={`w-[140px] rounded-xl p-2.5 ${card}`}
       >
         <div className="h-14 rounded-lg bg-[#00a8e8]/20 mb-2" />
         <div className="h-1.5 w-3/4 rounded bg-[var(--v-bar)] mb-1.5" />
@@ -285,7 +285,7 @@ export function VisualPrice() {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={inView}
         transition={{ duration: 0.8, ease }}
-        className={`rounded-2xl px-5 py-4 text-center shadow-[0_18px_40px_-20px_rgba(0,0,0,0.35)] ${card}`}
+        className={`rounded-2xl px-5 py-4 text-center ${card}`}
       >
         <p className="text-[10px] uppercase tracking-[0.14em] text-[var(--v-muted)] mb-1.5">Fast pris</p>
         <p className="text-[28px] leading-none font-semibold text-[var(--v-ink)] tracking-tight">
@@ -550,7 +550,7 @@ export function VisualFlow({ steps = [["mail", "Ny besked"], ["spark", "AI svare
           whileInView={{ left: ["16%", "84%"], opacity: [0, 1, 1, 0] }}
           viewport={inView}
           transition={{ duration: 2.2, repeat: Infinity, repeatDelay: 0.6, ease: "easeInOut" }}
-          className="absolute top-[18px] w-2 h-2 -ml-1 rounded-full bg-[#00a8e8] shadow-[0_0_12px_2px_rgba(0,168,232,0.6)]"
+          className="absolute top-[18px] w-2 h-2 -ml-1 rounded-full bg-[#00a8e8]"
         />
         {steps.map(([icon, label], i) => (
           <motion.div
@@ -698,7 +698,7 @@ export function VisualCheckout() {
 export function VisualEditor({ from = "Åbent 8–16", to = "Åbent 7–17" }) {
   return (
     <div className="absolute inset-0 flex items-center justify-center px-5">
-      <div className={`w-full max-w-[290px] rounded-xl overflow-hidden ${card} shadow-[0_14px_40px_-18px_rgba(0,0,0,0.3)]`}>
+      <div className={`w-full max-w-[290px] rounded-xl overflow-hidden ${card}`}>
         <div className="flex items-center gap-2 px-3 py-1.5 border-b border-[var(--v-line)]">
           <span className="text-[#00a8e8]">
             <Icon d={ICONS.pencil} className="w-3 h-3" />
@@ -716,7 +716,7 @@ export function VisualEditor({ from = "Åbent 8–16", to = "Åbent 7–17" }) {
         </div>
         <div className="p-3">
           <div className="h-2 w-3/5 rounded bg-[var(--v-ink)] mb-2.5" />
-          <div className="relative h-6 rounded-md border border-[#00a8e8] px-2 flex items-center overflow-hidden">
+          <div className="relative h-6 rounded-md border border-[#dcdada] px-2 flex items-center overflow-hidden">
             <motion.span
               initial={{ opacity: 1 }}
               whileInView={{ opacity: [1, 1, 0] }}

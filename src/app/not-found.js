@@ -21,7 +21,7 @@ export default function NotFound() {
         <h1 className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(26px,4vw,48px)] mb-5">
           Ups – den side findes ikke
         </h1>
-        <p className="text-[14px] text-[#93a0a0] leading-[1.8] max-w-[48ch] mx-auto mb-9">
+        <p className="text-[15px] text-[#b4bdbd] leading-[1.8] max-w-[48ch] mx-auto mb-9">
           Måske er linket gammelt, eller siden er flyttet. Prøv en af genvejene herunder, eller gå tilbage til forsiden.
         </p>
         <div className="flex flex-wrap justify-center gap-2 mb-9">
@@ -29,7 +29,7 @@ export default function NotFound() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-[12px] text-[#c7d0d0] border border-white/10 hover:border-[#00a8e8] hover:text-[#00a8e8] rounded-full px-4 py-2 transition-colors"
+              className="text-[12px] text-[#c7d0d0] border border-white/10 hover:text-[#00a8e8] rounded-full px-4 py-2 transition-colors"
             >
               {l.label}
             </Link>
@@ -37,7 +37,7 @@ export default function NotFound() {
         </div>
         <Link
           href="/"
-          className="inline-flex items-center text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-6 py-3 transition-colors"
+          className="inline-flex items-center text-[13px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-white rounded-full px-6 py-3 transition-colors"
         >
           Til forsiden
         </Link>

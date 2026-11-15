@@ -48,7 +48,7 @@ export default function QuickLeadForm() {
           </svg>
         </div>
         <p className="text-[15px] font-medium text-white">Tak for din besked!</p>
-        <p className="text-[14px] text-[#a6b1b1]">Jeg skriver til dig inden for 24 timer.</p>
+        <p className="text-[14px] text-[#b4bdbd]">Jeg skriver til dig inden for 24 timer.</p>
       </div>
     );
   }
@@ -100,7 +100,7 @@ export default function QuickLeadForm() {
           placeholder="Fortæl kort, hvad du har brug for (valgfrit)"
           value={form.comment}
           onChange={set("comment")}
-          className="w-full resize-none bg-white text-[13px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 pt-3 pb-7 outline-none transition-colors leading-[1.6]"
+          className="w-full resize-none bg-white text-[15px] text-[#5a5a5a] placeholder:text-[#8a8f8f] border border-[#e8e8e8] rounded-xl px-4 pt-3 pb-7 outline-none transition-colors leading-[1.6]"
         />
         <span
           id="quick-lead-count"
@@ -127,7 +127,7 @@ export default function QuickLeadForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-[#00a8e8] hover:opacity-85 disabled:opacity-50 transition-opacity text-white text-[13px] font-medium px-5 py-3 rounded-xl w-full"
+        className="btn-primary w-full"
       >
         {status === "loading" ? "Sender..." : "Få gratis tilbud"}
       </button>

@@ -57,7 +57,7 @@ export function WpEditDemo() {
                     <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[12px] font-semibold flex items-center justify-center">{i + 1}</span>
                     <span className="text-[16px] font-semibold text-[#1c1e1e]">{s.title}</span>
                   </p>
-                  <p className="text-[14px] text-[#5a5d5d] leading-[1.65]">{s.text}</p>
+                  <p className="text-[15px] text-[#5a5d5d] leading-[1.65]">{s.text}</p>
                 </div>
               </div>
             </FadeUp>

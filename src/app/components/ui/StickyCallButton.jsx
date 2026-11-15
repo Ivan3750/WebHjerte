@@ -18,7 +18,7 @@ export default function StickyCallButton() {
   return (
     <a
       href="tel:+4542760577"
-      className="fixed bottom-5 left-5 z-[998] md:hidden flex items-center gap-2 bg-[#00a8e8] hover:bg-[#0095d1] transition-colors text-white text-[13px] font-medium px-4 py-3 rounded-full shadow-lg shadow-[#00a8e8]/20"
+      className="btn-primary btn-sm fixed bottom-5 left-5 z-[998] md:hidden"
     >
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
         <path

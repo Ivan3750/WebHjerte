@@ -2,7 +2,6 @@ import Image from "next/image";
 import PageHero, { PrimaryLink } from "../../components/ui/PageHero";
 import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
 import BlogList from "./_components/BlogList";
-import CtaSearchBlock from "../../components/ui/CTA";
 import { articles } from "../../data/content";
 import Ivan from "../../assets/Ivan.jpg";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
@@ -84,7 +83,7 @@ export default function BlogPage() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-10 sm:mb-14">
             <RevealLines
               lines={["Skrevet til dig, der", "driver en lille virksomhed"]}
-              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.3vw,40px)]"
+              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] text-[clamp(24px,2.6vw,34px)]"
             />
 
             <FadeUp className="flex items-center gap-4 rounded-3xl bg-white border border-[#e8e6e6] pl-3 pr-6 py-3 w-fit">
@@ -101,7 +100,7 @@ export default function BlogPage() {
           <FadeUp className="mt-14 sm:mt-20 rounded-3xl bg-[#1c1e1e] p-7 sm:p-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
             <div>
               <p className="text-white font-semibold text-[clamp(18px,2vw,24px)] leading-snug mb-2">Savner du en guide om et bestemt emne?</p>
-              <p className="readable text-[14.5px] text-[#a6b1b1] leading-[1.7] max-w-[52ch]">
+              <p className="readable text-[15px] text-[#b4bdbd] leading-[1.7] max-w-[52ch]">
                 Skriv til mig, hvad du undrer dig over – så skriver jeg gerne en guide om det.
               </p>
             </div>
@@ -109,7 +108,6 @@ export default function BlogPage() {
           </FadeUp>
         </div>
       </section>
-      <CtaSearchBlock />
     </>
   );
 }

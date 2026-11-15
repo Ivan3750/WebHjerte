@@ -94,7 +94,7 @@ export default function BureauCompare({ showRace = false }) {
     <div className="flex flex-col gap-10 sm:gap-14">
       {showRace && (
         <div className="rounded-3xl border border-white/10 bg-[#242828] p-6 sm:p-9">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 text-[12.5px] text-[#93a0a0]">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 text-[12.5px] text-[#b4bdbd]">
             <span className="inline-flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-[#3a4040]" /> Typisk bureau
             </span>
@@ -113,7 +113,7 @@ export default function BureauCompare({ showRace = false }) {
               </div>
             ))}
           </div>
-          <p className="mt-8 text-[11.5px] text-[#7f8c8c] leading-relaxed">
+          <p className="mt-8 text-[11.5px] text-[#8a9696] leading-relaxed">
             Bureau-tal er vejledende markedspriser og -tider – ikke et tilbud fra et bestemt bureau.
           </p>
         </div>
@@ -139,11 +139,11 @@ export default function BureauCompare({ showRace = false }) {
               <h3 className="text-[15px] text-white font-semibold leading-snug md:self-center px-1 md:px-0">{r.topic}</h3>
               <div className="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <Cross />
-                <p className="text-[13.5px] text-[#8a9696] leading-[1.7]">{r.agency}</p>
+                <p className="text-[15px] text-[#8a9696] leading-[1.7]">{r.agency}</p>
               </div>
-              <div className="flex gap-3 rounded-2xl border border-[#00a8e8]/40 bg-[#00a8e8]/[0.09] px-5 py-4 shadow-[0_0_40px_-18px_rgba(0,168,232,0.7)]">
+              <div className="flex gap-3 rounded-2xl bg-[#00a8e8]/[0.09] px-5 py-4">
                 <Check delay={0.25 + i * 0.06} />
-                <p className="text-[14px] text-white leading-[1.7]">{r.me}</p>
+                <p className="text-[15px] text-white leading-[1.7]">{r.me}</p>
               </div>
             </motion.div>
           ))}

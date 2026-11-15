@@ -41,7 +41,7 @@ const GuaranteesBlock = () => {
         <div className="lg:sticky lg:top-28 self-start">
           <RevealLines
             lines={["Du løber ingen risiko,", "før du har sagt ja"]}
-            className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(24px,2.8vw,36px)] mb-6"
+            className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(24px,2.6vw,34px)] mb-6"
           />
           <FadeUp as="p" delay={0.1} className="readable text-[16px] text-[#b4bdbd] leading-[1.75] max-w-[44ch] mb-8">
             Først ser du designet. Først når du kan lide det, går vi videre – og siden er din fra første dag.
@@ -74,17 +74,17 @@ const GuaranteesBlock = () => {
             >
               <span
                 aria-hidden
-                className="absolute -left-12 sm:-left-14 top-5 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1c1e1e] border border-[#00a8e8]/60 flex items-center justify-center text-[13px] font-semibold text-[#00a8e8]"
+                className="absolute -left-12 sm:-left-14 top-5 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1c1e1e] border border-white/10 flex items-center justify-center text-[13px] font-semibold text-[#00a8e8]"
               >
                 {i + 1}
               </span>
               <div className="rounded-3xl glass p-5 sm:p-7 grid grid-cols-1 sm:grid-cols-[190px_1fr] gap-3 sm:gap-6 items-center">
-                <p className="text-[clamp(24px,2.4vw,32px)] whitespace-nowrap font-semibold tracking-tight text-gradient-blue leading-none">
+                <p className="text-[clamp(24px,2.6vw,34px)] whitespace-nowrap font-semibold tracking-tight text-gradient-blue leading-none">
                   {g.stat.text ?? <CountUp to={g.stat.to} suffix={g.stat.suffix} />}
                 </p>
                 <div>
                   <p className="text-[16px] font-semibold text-white mb-1.5">{g.title}</p>
-                  <p className="readable text-[14px] text-[#a6b1b1] leading-[1.7]">{g.text}</p>
+                  <p className="readable text-[15px] text-[#b4bdbd] leading-[1.7]">{g.text}</p>
                 </div>
               </div>
             </motion.li>

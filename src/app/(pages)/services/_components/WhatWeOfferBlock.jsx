@@ -75,7 +75,7 @@ export default function WhatWeOfferBlock() {
                   onClick={() => setActive(i)}
                   className={`snap-start shrink-0 lg:shrink lg:w-full flex items-center gap-3 rounded-2xl px-5 py-4 text-left border transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00a8e8] ${
                     on
-                      ? "bg-[#00a8e8] border-[#00a8e8] text-white shadow-[0_14px_30px_-16px_rgba(0,168,232,0.8)]"
+                      ? "bg-[#00a8e8] border-transparent text-white"
                       : "bg-[#f7f6f6] border-[#eeecec] text-[#4a4a4a] hover:border-[#d4d2d2]"
                   }`}
                 >
@@ -107,7 +107,7 @@ export default function WhatWeOfferBlock() {
 
                 <div className="grid grid-cols-1 xl:grid-cols-[1.25fr_1fr] gap-6 xl:gap-8 items-start">
                   <div className="flex flex-col gap-6">
-                <p className="text-[14px] text-[#5a5a5a] leading-[1.85] max-w-[62ch]">{s.desc}</p>
+                <p className="text-[15px] text-[#5a5a5a] leading-[1.85] max-w-[62ch]">{s.desc}</p>
 
                   </div>
                   <Panel className="xl:order-2 order-first xl:order-none"><s.Visual /></Panel>

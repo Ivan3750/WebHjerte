@@ -73,10 +73,10 @@ const punkter = [
 
 export default function HvadGoerProfessionel() {
   return (
-    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[0.9fr_1.4fr] gap-10 lg:gap-20">
         <div className="lg:sticky lg:top-28 self-start">
-          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-5">
+          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] mb-5">
             Det, der gør en hjemmeside professionel
           </AnimatedInView>
           <AnimatedInView as="p" className="text-[15px] text-[#6a6a6a] leading-[1.85] max-w-[40ch]">
@@ -89,7 +89,7 @@ export default function HvadGoerProfessionel() {
             </Link>
             <Link
               href="/portefolje"
-              className="text-[13px] text-[#4a4a4a] border-b border-[#bdbfbf] pb-px hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors"
+              className="text-[13px] text-[#4a4a4a] border-b border-[#bdbfbf] pb-px hover:text-[#00a8e8] transition-colors"
             >
               Se mine projekter
             </Link>
@@ -101,7 +101,7 @@ export default function HvadGoerProfessionel() {
             <AnimatedInView
               key={p.titel}
               as="li"
-              className="group grid grid-cols-[auto_1fr] gap-5 sm:gap-7 rounded-3xl bg-white border border-[#e4e2e2] p-5 sm:p-7 transition-all duration-500 hover:border-[#00a8e8]/50 hover:-translate-y-0.5 hover:shadow-[0_24px_50px_-30px_rgba(0,100,150,0.45)]"
+              className="group grid grid-cols-[auto_1fr] gap-5 sm:gap-7 rounded-3xl bg-white border border-[#e4e2e2] p-5 sm:p-7"
             >
               <div className="flex flex-col items-center gap-3">
                 <span className="w-12 h-12 rounded-2xl bg-[#00a8e8]/10 flex items-center justify-center">
@@ -119,7 +119,7 @@ export default function HvadGoerProfessionel() {
                     {p.metrik}
                   </span>
                 </div>
-                <p className="readable text-[14.5px] text-[#5a5a5a] leading-[1.75]">{p.tekst}</p>
+                <p className="readable text-[15px] text-[#5a5a5a] leading-[1.75]">{p.tekst}</p>
               </div>
             </AnimatedInView>
           ))}

@@ -19,12 +19,12 @@ const points = [
 
 export default function AiseoAfterBlock() {
   return (
-    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-4 max-w-[22ch]">
+        <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] !mb-4 max-w-[22ch]">
           Jeg stopper ikke, når siden er optimeret
         </AnimatedInView>
-        <AnimatedInView as="p" className="text-[13px] text-[#7a7a7a] leading-[1.85] max-w-[60ch] mb-14">
+        <AnimatedInView as="p" className="text-[15px] text-[#7a7a7a] leading-[1.85] max-w-[60ch] mb-14">
           SEO er en løbende proces. Jeg følger med, rapporterer og justerer — så
           du ved, at din investering fortsat giver resultater.
         </AnimatedInView>
@@ -38,7 +38,7 @@ export default function AiseoAfterBlock() {
             >
               <span className="w-2 h-2 rounded-full bg-[#00a8e8] flex-shrink-0" />
               <p className="text-[15px] font-medium text-[#5a5a5a]">{p.title}</p>
-              <p className="text-[13px] text-[#7a7a7a] leading-[1.75]">{p.text}</p>
+              <p className="text-[15px] text-[#7a7a7a] leading-[1.75]">{p.text}</p>
             </AnimatedInView>
           ))}
         </div>

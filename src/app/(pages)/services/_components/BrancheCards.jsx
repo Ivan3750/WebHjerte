@@ -31,7 +31,7 @@ export default function BrancheCards() {
         <FadeUp key={c.href} delay={(i % 3) * 0.08}>
           <Link
             href={c.href}
-            className="group block h-full rounded-3xl bg-[#242828] border border-white/10 p-3 sm:p-4 transition-all duration-500 hover:-translate-y-1 hover:border-[#00a8e8]/50 focus-visible:outline-2 focus-visible:outline-[#00a8e8]"
+            className="group block h-full rounded-3xl bg-[#242828] border border-white/10 p-3 sm:p-4 transition-all duration-500 hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-[#00a8e8]"
           >
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-[#1c1e1e]">
               <Image
@@ -47,7 +47,7 @@ export default function BrancheCards() {
             </div>
             <div className="px-3 sm:px-4 pt-6 pb-4 flex flex-col gap-3">
               <h3 className="text-[19px] font-semibold text-white leading-snug group-hover:text-[#00a8e8] transition-colors">{c.title}</h3>
-              <p className="readable text-[14.5px] text-[#a6b1b1] leading-[1.7]">{c.text}</p>
+              <p className="readable text-[15px] text-[#b4bdbd] leading-[1.7]">{c.text}</p>
               <div className="mt-3 flex items-center justify-between">
                 <span className="text-[12.5px] font-medium text-white/70 group-hover:text-white transition-colors">Se hjemmesider til {lower(c.title)}</span>
                 <ArrowBadge tone="dark" />

@@ -63,7 +63,7 @@ export default function ProjectShowcase({ project }) {
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 sm:mb-14">
-          <FadeUp as="h2" className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(24px,3.2vw,40px)] max-w-[20ch]">
+          <FadeUp as="h2" className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(24px,2.6vw,34px)] max-w-[20ch]">
             Mærk, hvordan siden føles i brug
           </FadeUp>
 
@@ -81,7 +81,7 @@ export default function ProjectShowcase({ project }) {
                     aria-selected={view === id}
                     onClick={() => setView(id)}
                     className={`px-5 py-2 rounded-full text-[13px] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#00a8e8] ${
-                      view === id ? "bg-[#00a8e8] text-white" : "text-[#b4bebe] hover:text-white"
+                      view === id ? "bg-[#00a8e8] text-white" : "text-[#b4bdbd] hover:text-white"
                     }`}
                   >
                     {label}
@@ -103,9 +103,9 @@ export default function ProjectShowcase({ project }) {
                 initial={{ opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                className="relative mx-auto max-w-5xl rounded-2xl overflow-hidden border border-white/15 bg-[#0e1111] shadow-[0_50px_100px_-40px_rgba(0,0,0,0.9)]"
+                className="relative mx-auto max-w-5xl rounded-2xl overflow-hidden border border-white/15 bg-[#1c1e1e]"
               >
-                <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#121616]">
+                <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#1c1e1e]">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]/80" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]/80" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]/80" />
@@ -134,9 +134,9 @@ export default function ProjectShowcase({ project }) {
                 initial={{ opacity: 0, scale: 0.94, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                className="relative mx-auto w-[min(300px,72vw)] rounded-[38px] border-[7px] border-[#2a2f2f] bg-[#0e1111] overflow-hidden shadow-[0_50px_100px_-40px_rgba(0,0,0,0.9)]"
+                className="relative mx-auto w-[min(300px,72vw)] rounded-[38px] border-[7px] border-[#2a2f2f] bg-[#1c1e1e] overflow-hidden"
               >
-                <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-20 h-5 rounded-full bg-[#2a2f2f]" aria-hidden />
+                <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-20 h-5 rounded-full bg-[#242828]" aria-hidden />
                 <div className="relative overflow-hidden" style={{ aspectRatio: `${phone.width} / ${phone.height * 0.78}` }}>
                   <motion.div style={reduce ? undefined : { y: phonePan }}>
                     <Image src={phone} alt={`${project.title} på mobil`} sizes="300px" className="w-full h-auto" />
@@ -168,7 +168,7 @@ export default function ProjectShowcase({ project }) {
               <div className="h-full rounded-3xl glass p-7 sm:p-9 flex flex-col gap-3">
                 <span className="text-[36px] font-light leading-none tabular-nums text-[#00a8e8]">{b.n}</span>
                 <h3 className="text-[20px] sm:text-[22px] font-semibold text-white leading-tight tracking-tight">{b.title}</h3>
-                <p className="readable text-[14.5px] text-[#a6b1b1] leading-[1.8]">{b.text}</p>
+                <p className="readable text-[15px] text-[#b4bdbd] leading-[1.8]">{b.text}</p>
               </div>
             </FadeUp>
           ))}

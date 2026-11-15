@@ -44,21 +44,27 @@ function Check({ tone = "good", dark }) {
   );
 }
 
+/** Punkter vises som kort i et gitter (ikke som en lang liste): kort tekst før kolon/tankestreg bliver overskrift. */
 export function Bullets({ items, dark = false, tone = "good" }) {
+  const cols = items.length <= 4 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3";
   return (
-    <ul className={`my-6 border-t ${dark ? "border-white/10" : "border-[#e6e4e4]"}`}>
-      {items.map((item) => (
-        <li
-          key={item}
-          className={`flex gap-3.5 py-4 border-b text-[16px] leading-[1.7] ${
-            dark ? "border-white/10 text-[#b7c4c4]" : "border-[#e6e4e4] text-[#3f4242]"
-          }`}
-        >
-          <Check tone={tone} dark={dark} />
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
+    <div className={`my-7 grid grid-cols-1 gap-3 ${cols}`}>
+      {items.map((item) => {
+        const m = item.match(/^(.{4,48}?)(?::| – | — )\s*(.+)$/);
+        const title = m ? m[1] : null;
+        const text = m ? m[2] : item;
+        return (
+          <div
+            key={item}
+            className={`rounded-2xl border p-5 flex flex-col gap-3 ${dark ? "bg-[#242828] border-white/10" : "bg-white border-[#e8e6e6]"}`}
+          >
+            <Check tone={tone} dark={dark} />
+            {title && <p className={`text-[16px] font-semibold leading-snug ${dark ? "text-white" : "text-[#1c1e1e]"}`}>{title}</p>}
+            <p className={`text-[15px] leading-[1.65] ${dark ? "text-[#b4bdbd]" : "text-[#4a4a4a]"}`}>{text}</p>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -66,16 +72,8 @@ export function Bullets({ items, dark = false, tone = "good" }) {
 export function MoreLink({ cta, dark = false }) {
   return (
     <p className="mt-7">
-      <Link
-        href={cta.href}
-        className={`group inline-flex items-center gap-4 rounded-full border pl-6 pr-2 py-2 text-[13px] font-medium transition-colors duration-300 ${
-          dark
-            ? "border-white/15 text-white hover:border-[#00a8e8]"
-            : "border-[#d9d7d7] bg-white text-[#1c1e1e] hover:border-[#00a8e8] hover:text-[#00a8e8]"
-        }`}
-      >
+      <Link href={cta.href} className={`btn-ghost ${dark ? "" : "btn-ghost-light"}`}>
         {cta.label}
-        <ArrowBadge size="sm" tone={dark ? "dark" : "light"} />
       </Link>
     </p>
   );
@@ -141,7 +139,7 @@ export function Stats({ items, dark = false }) {
               </p>
               <div className={`h-px w-full ${dark ? "bg-white/10" : "bg-[#ece9e9]"}`} />
               <p className={`text-[14px] font-medium ${dark ? "text-[#eef2f2]" : "text-[#1c1e1e]"}`}>{it.label}</p>
-              {it.note && <p className={`text-[12.5px] leading-[1.7] ${dark ? "text-[#8795a0]" : "text-[#6a6a6a]"}`}>{it.note}</p>}
+              {it.note && <p className={`text-[12.5px] leading-[1.7] ${dark ? "text-[#b4bdbd]" : "text-[#6a6a6a]"}`}>{it.note}</p>}
             </div>
           </SpotlightCard>
         </FadeUp>
@@ -202,7 +200,7 @@ export function Cards({ items }) {
       {items.map((c, i) => {
         const color = COLORS[i % COLORS.length];
         const inner = (
-          <SpotlightCard dark={false} className="h-full rounded-2xl bg-white border border-[#e8e6e6] group-hover:border-[#00a8e8]/50 transition-colors duration-500">
+          <SpotlightCard dark={false} className="h-full rounded-2xl bg-white border border-[#e8e6e6] transition-colors duration-500">
             <div className="p-6 flex flex-col gap-3 h-full">
               <div className="flex items-center justify-between">
                 <span
@@ -310,7 +308,7 @@ export function Subs({ items }) {
         const color = COLORS[i % COLORS.length];
         return (
           <FadeUp key={sub.h3} delay={(i % 2) * 0.07}>
-            <SpotlightCard dark={false} className="h-full rounded-2xl bg-white border border-[#e8e6e6] hover:border-[#cfe9f5] transition-colors duration-500">
+            <SpotlightCard dark={false} className="h-full rounded-2xl bg-white border border-[#e8e6e6]">
               <div className="p-6 sm:p-7 flex flex-col gap-4 h-full">
                 <div className="flex items-center gap-3">
                   <span

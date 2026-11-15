@@ -2,7 +2,6 @@ import IntroOmOs from "./_components/IntroOmOs";
 import HistorieBlock from "./_components/HistorieBlock";
 import WhyEasyToWorkWithMe from "./_components/WhyEasyToWorkWithMe";
 import Questions from "../../components/Questions";
-import CtaSearchBlock from "../../components/ui/CTA";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
@@ -77,7 +76,6 @@ const OmOs = () => {
       <HistorieBlock />
       <WhyEasyToWorkWithMe />
       <Questions />
-      <CtaSearchBlock />
     </>
   );
 };

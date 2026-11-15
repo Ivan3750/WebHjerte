@@ -117,17 +117,17 @@ export default function SEO() {
   return (
     <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-16 pt-4 pb-20">
       <div className="max-w-6xl mx-auto rounded-3xl glass p-6 sm:p-10">
-        <h2 className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-2">
+        <h2 className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] mb-2">
           Tjek din hjemmesides SEO-score
         </h2>
-        <p className="readable text-[16px] text-[#a6b1b1] leading-[1.7] mb-8 max-w-lg">
+        <p className="readable text-[16px] text-[#b4bdbd] leading-[1.7] mb-8 max-w-lg">
           Indtast din URL og få en analyse af ydeevne, tilgængelighed og SEO -
           på under 30 sekunder.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 max-w-2xl mb-4">
           <input
-            className="flex-1 bg-[#262a2a] border border-[#2a2d2d] focus:border-[#00a8e8] rounded-xl px-4 py-3 text-[13px] text-[#e0e0e0] placeholder-[#6c7777] outline-none transition-colors"
+            className="flex-1 bg-[#242828] border border-[#2a2d2d] focus:border-[#00a8e8] rounded-xl px-4 py-3 text-[13px] text-[#e0e0e0] placeholder-[#6c7777] outline-none transition-colors"
             placeholder="webhjerte.dk"
             value={url}
             disabled={loading}
@@ -137,7 +137,7 @@ export default function SEO() {
           <button
             onClick={checkSEO}
             disabled={loading}
-            className="bg-[#00a8e8] hover:opacity-85 disabled:opacity-50 transition-opacity text-white text-[13px] font-medium px-6 py-3 rounded-xl whitespace-nowrap"
+            className="btn-primary"
           >
             {loading ? "Analyserer..." : "Start tjek "}
           </button>
@@ -155,7 +155,7 @@ export default function SEO() {
         )}
 
         {!metrics && !loading && !error && (
-          <div className="mt-10 rounded-2xl border border-dashed border-[#2a2d2d] bg-[#161818] p-8 text-center">
+          <div className="mt-10 rounded-2xl border border-dashed border-[#2a2d2d] bg-[#1c1e1e] p-8 text-center">
             <p className="text-[13px] text-[#8a9696] mb-2">
               Indtast din URL ovenfor for at se din SEO-score
             </p>
@@ -167,7 +167,7 @@ export default function SEO() {
 
         {metrics && (
           <div className="mt-12 flex flex-col gap-6">
-            <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl p-8">
+            <div className="bg-[#242828] border border-[#2a2d2d] rounded-2xl p-8">
               <p className="text-[11px] uppercase tracking-[0.08em] text-[#8a9696] mb-8">
                 Scores
               </p>
@@ -179,7 +179,7 @@ export default function SEO() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl p-6">
+              <div className="bg-[#242828] border border-[#2a2d2d] rounded-2xl p-6">
                 <p className="text-[11px] uppercase tracking-[0.08em] text-[#8a9696] mb-2">
                   Tekniske målinger
                 </p>
@@ -214,7 +214,7 @@ export default function SEO() {
                 {!isGood && (
                   <Link
                     href="/kontakt"
-                    className="mt-6 bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] transition-colors text-white text-[13px] font-semibold px-5 py-3 rounded-full text-center"
+                    className="btn-primary mt-6"
                   >
                     Book gratis gennemgang 
                   </Link>

@@ -26,7 +26,7 @@ export default function PortfolioRows({ projects }) {
                 >
                   <span
                     aria-hidden
-                    className="absolute -inset-2 sm:-inset-3 rounded-[28px] sm:rounded-[34px] border border-[#dcdedf] transition-colors duration-500 group-hover:border-[#00a8e8]/60"
+                    className="absolute -inset-2 sm:-inset-3 rounded-[28px] sm:rounded-[34px] border border-[#dcdedf] transition-colors duration-500"
                   />
                   <div className="relative overflow-hidden rounded-[22px] sm:rounded-[28px] bg-[#1c1e1e] aspect-[16/11]">
                     <Image
@@ -58,25 +58,18 @@ export default function PortfolioRows({ projects }) {
                     <span className="h-px flex-1 bg-[#dcdedf]" />
                   </div>
 
-                  <div className="flex flex-wrap gap-2">
-                    {p.tags.map((tag) => (
-                      <span key={tag} className="text-[10.5px] uppercase tracking-[0.1em] text-[#4a4f4f] border border-[#d6d8d9] bg-white rounded-full px-3 py-1.5">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
 
-                  <h2 className="text-[clamp(22px,2.6vw,34px)] font-semibold text-[#1c1e1e] leading-[1.12] tracking-tight">
+                  <h2 className="text-[clamp(24px,2.6vw,34px)] font-semibold text-[#1c1e1e] leading-[1.12] tracking-tight">
                     {p.title}
                     <span className="block mt-2 text-[clamp(14px,1.4vw,17px)] font-normal leading-snug text-[#6a6f6f]">{p.subtitle}</span>
                   </h2>
 
-                  <p className="text-[14px] text-[#5a5f5f] leading-[1.8] line-clamp-4 max-w-[54ch]">{p.overview}</p>
+                  <p className="text-[15px] text-[#5a5f5f] leading-[1.8] line-clamp-4 max-w-[54ch]">{p.overview}</p>
 
                   <ul className="flex flex-wrap gap-x-5 gap-y-2 pt-1">
                     {p.services.slice(0, 4).map((s) => (
                       <li key={s} className="flex items-center gap-2 text-[12.5px] text-[#3a3f3f]">
-                        <span className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 bg-[#00a8e8]/12 border border-[#00a8e8]/30">
+                        <span className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 bg-[#00a8e8]/12">
                           <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden>
                             <path d="M1.5 4l2 2 3-3" stroke="#00a8e8" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
@@ -88,10 +81,9 @@ export default function PortfolioRows({ projects }) {
 
                   <Link
                     href={`/portefolje/${p.slug}`}
-                    className="group/l mt-2 inline-flex items-center gap-2 w-fit text-[13px] font-semibold text-white bg-[#1c1e1e] hover:bg-[#00a8e8] rounded-full px-6 py-3 transition-colors"
+                    className="btn-primary mt-2 w-fit"
                   >
                     Se projekt
-                    <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover/l:translate-x-1" />
                   </Link>
                 </div>
               </article>

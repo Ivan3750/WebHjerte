@@ -10,7 +10,7 @@ const orgs = [
 
 const MiljoeBlock = () => {
   return (
-    <section className="bg-[#f7f6f6]  px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#f7f6f6]  px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
         <div>
@@ -20,12 +20,12 @@ const MiljoeBlock = () => {
             <span className="text-[12px] text-[#2d7a36] font-medium">5% til miljøet</span>
           </AnimatedInView>
 
-          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-6">
+          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] mb-6">
             5% af omsætningen går til{" "}
             <span className="text-[#3a9e4a]">grønne projekter</span>
           </AnimatedInView>
 
-          <AnimatedInView as="div" className="flex flex-col gap-4 text-[14px] text-[#777] leading-[1.8]">
+          <AnimatedInView as="div" className="flex flex-col gap-4 text-[15px] text-[#777] leading-[1.8]">
             <p>
               For hvert projekt jeg leverer, går 5% af beløbet til
               miljøorganisationer i Danmark. Ikke fordi det er et smart
@@ -61,7 +61,7 @@ const MiljoeBlock = () => {
             ))}
           </div>
 
-          <div className="bg-[#262a2a] border border-[#2a2d2d] rounded-2xl px-5 py-3.5 flex items-center justify-between">
+          <div className="bg-[#242828] border border-[#2a2d2d] rounded-2xl px-5 py-3.5 flex items-center justify-between">
             <p className="text-[14px] font-medium text-white">
               Web<span className="text-[#00a8e8]">Hjerte</span>
             </p>

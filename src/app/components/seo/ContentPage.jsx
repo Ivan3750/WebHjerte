@@ -1,7 +1,6 @@
 import Link from "next/link";
 import PageHero, { PrimaryLink, GhostLink } from "../ui/PageHero";
 import Questions from "../Questions";
-import CtaSearchBlock from "../ui/CTA";
 import QuickLeadForm from "../ui/QuickLeadForm";
 import ScrollProgress from "../ui/ScrollProgress";
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
@@ -128,7 +127,7 @@ export default function ContentPage({
     <>
       <span>
         Af{" "}
-        <Link href="/om-mig" className="text-[#c9d3d3] border-b border-white/25 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors">
+        <Link href="/om-mig" className="text-[#c9d3d3] border-b border-white/25 hover:text-[#00a8e8] transition-colors">
           Ivan Kohan
         </Link>
       </span>
@@ -173,7 +172,7 @@ export default function ContentPage({
           <p className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(20px,2.4vw,28px)] mb-4 max-w-[22ch]">
             Vil du vide, hvad det koster for dig?
           </p>
-          <p className="readable text-[16px] text-[#a6b1b1] leading-[1.75] max-w-[50ch] mb-7">
+          <p className="readable text-[16px] text-[#b4bdbd] leading-[1.75] max-w-[50ch] mb-7">
             Skriv kort, hvad du har brug for. Du får en fast pris og et første designudkast inden for 48 timer. Passer det ikke, betaler du 0 kr.
           </p>
           <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
@@ -252,7 +251,7 @@ export default function ContentPage({
                           </p>
                           <RevealLines
                             lines={[section.h2]}
-                            className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(22px,2.6vw,30px)] max-w-[26ch] [overflow-wrap:break-word]"
+                            className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(24px,2.6vw,34px)] max-w-[26ch] [overflow-wrap:break-word]"
                           />
                         </div>
                       )}
@@ -271,7 +270,7 @@ export default function ContentPage({
             <>
               {!skip.has("price") && <PriceStrip />}
               {!skip.has("guarantees") && <GuaranteesBlock />}
-              {nichePackage && <NichePackage className="bg-[#f7f6f6] pt-16 sm:pt-24" trade={nichePackage} />}
+              {nichePackage && <NichePackage className="bg-[#f7f6f6]" trade={nichePackage} />}
               {!skip.has("cases") && <CasesCarousel />}
               {!skip.has("process") && <ProcessBlock />}
             </>
@@ -284,7 +283,6 @@ export default function ContentPage({
       {extra}
       <ReadMore items={skip.has("readmore") ? [] : related} eyebrow="Læs videre" lines={isArticle ? ["Flere guides,", "der kan hjælpe dig"] : ["Næste skridt", "for dig"]} />
       {faqs.length > 0 && <Questions faqs={faqs} />}
-      <CtaSearchBlock />
     </>
   );
 }

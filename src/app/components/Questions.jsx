@@ -35,7 +35,7 @@ const  faqs_default = [
 const PlusIcon = ({ open }) => (
   <span
     className={`w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 transition-colors ${
-      open ? "bg-[#00a8e8] border-[#00a8e8]" : "border-[#e0e0e0]"
+      open ? "bg-[#00a8e8] border-transparent" : "border-[#e0e0e0]"
     }`}
   >
     <svg
@@ -79,10 +79,10 @@ const Questions = ({faqs = faqs_default}) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <section className="sheet bg-[#f7f6f6] px-5 sm:px-10 lg:px-20 pt-24 pb-28">
+      <section className="sheet bg-[#f7f6f6] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,640px)] gap-10 lg:gap-20 items-start">
         <div>
-          <h2  className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)]">
+          <h2  className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)]">
             Har du{" "}
             <span className="text-[#00a8e8]">spørgsmål?</span>
           </h2>

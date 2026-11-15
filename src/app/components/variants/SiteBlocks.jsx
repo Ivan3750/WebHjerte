@@ -24,14 +24,14 @@ const SPOTS = [
 ];
 
 function Mock({ active }) {
-  const hi = (i) => (active === i ? "ring-2 ring-[#00a8e8] ring-offset-2 ring-offset-white" : "");
+  const hi = (i) => (active === i ? "bg-[#00a8e8]/10" : "");
   return (
-    <div className="relative rounded-2xl bg-white border border-[#e4e2e2] shadow-[0_30px_70px_-35px_rgba(28,30,30,0.35)] overflow-hidden">
+    <div className="relative rounded-2xl bg-white border border-[#e4e2e2] overflow-hidden">
       <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-[#eceaea]">
         <span className="w-2 h-2 rounded-full bg-[#e6e4e4]" />
         <span className="w-2 h-2 rounded-full bg-[#e6e4e4]" />
         <span className="w-2 h-2 rounded-full bg-[#e6e4e4]" />
-        <span className="ml-3 flex-1 max-w-[240px] h-5 rounded-md bg-[#f1f0ee] text-[10px] text-[#8a8f8f] flex items-center px-2">hansen-toemrer.dk</span>
+        <span className="ml-3 flex-1 max-w-[240px] h-5 rounded-md bg-[#f7f6f6] text-[10px] text-[#8a8f8f] flex items-center px-2">hansen-toemrer.dk</span>
       </div>
       <div className="p-4 sm:p-6 grid grid-cols-[1.3fr_1fr] gap-4">
         <div className={`rounded-xl p-3 transition-all duration-300 ${hi(0)}`}>
@@ -78,7 +78,7 @@ function Mock({ active }) {
           key={s.title}
           aria-hidden
           className={`absolute w-6 h-6 -ml-3 -mt-3 rounded-full text-[11px] font-semibold flex items-center justify-center transition-all duration-300 ${
-            active === i ? "bg-[#00a8e8] text-white scale-110 shadow-[0_0_0_6px_rgba(0,168,232,0.2)]" : "bg-[#1c1e1e] text-white"
+            active === i ? "bg-[#00a8e8] text-white scale-110" : "bg-[#1c1e1e] text-white"
           }`}
           style={{ left: s.x, top: s.y }}
         >
@@ -126,7 +126,7 @@ export function SiteAnatomy() {
                   }}
                   aria-pressed={active === i}
                   className={`w-full text-left rounded-2xl border px-5 py-4 flex gap-4 transition-all duration-300 ${
-                    active === i ? "bg-white border-[#00a8e8]/50 shadow-[0_18px_40px_-28px_rgba(0,168,232,0.4)]" : "bg-transparent border-transparent hover:bg-white/60"
+                    active === i ? "bg-white border-[#e4e2e2]" : "bg-transparent border-transparent hover:bg-white/60"
                   }`}
                 >
                   <span
@@ -139,7 +139,7 @@ export function SiteAnatomy() {
                   <span>
                     <span className="block text-[15.5px] font-semibold text-[#1c1e1e]">{s.title}</span>
                     <span
-                      className={`block text-[14px] text-[#5a5d5d] leading-[1.6] overflow-hidden transition-all duration-500 ${
+                      className={`block text-[15px] text-[#5a5d5d] leading-[1.6] overflow-hidden transition-all duration-500 ${
                         active === i ? "max-h-24 mt-1 opacity-100" : "max-h-0 opacity-0"
                       }`}
                     >
@@ -173,7 +173,7 @@ export function SiteTree() {
         <SectionHead dark eyebrow="Opbygning" lines={["De fleste klarer sig", "med 3–8 sider"]} lead="Få gode sider slår mange tynde. Her er den opbygning, jeg oftest anbefaler." className="mb-12 sm:mb-16" />
 
         <div className="flex flex-col items-center">
-          <FadeUp className="rounded-2xl bg-[#00a8e8] text-[#10181a] px-7 py-4 text-center">
+          <FadeUp className="rounded-2xl bg-[#00a8e8] text-white px-7 py-4 text-center">
             <p className="text-[16px] font-semibold">Forside</p>
             <p className="text-[12px] opacity-80">Hvem, hvad og hvor – på 3 sekunder</p>
           </FadeUp>
@@ -201,7 +201,7 @@ export function SiteTree() {
                     <Ico d={n.icon} />
                   </span>
                   <p className="text-[15px] font-semibold text-white mb-1">{n.name}</p>
-                  <p className="text-[12.5px] text-[#93a0a0] leading-[1.6]">{n.note}</p>
+                  <p className="text-[12.5px] text-[#b4bdbd] leading-[1.6]">{n.note}</p>
                 </div>
               </FadeUp>
             ))}

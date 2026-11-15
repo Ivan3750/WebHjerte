@@ -2,7 +2,7 @@ import React from 'react';
 
 const Input = () => {
   return (
-    <div className="flex items-center h-[45px] w-fit rounded-[20px] bg-[#292524] px-[5px]">
+    <div className="flex items-center h-[45px] w-fit rounded-[20px] bg-[#242828] px-[5px]">
       <svg className="w-[30px] fill-white ml-2 transition-all duration-300 peer-active:scale-110" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <g data-name="Layer 2">
           <g data-name="inbox">
@@ -14,7 +14,7 @@ const Input = () => {
       <input
         type="text"
         name="text"
-        className="bg-[#292524] text-white placeholder-white outline-none border-none max-w-[170px] h-full pl-4 text-base autofill:bg-[#292524]"
+        className="bg-[#242828] text-white placeholder-white outline-none border-none max-w-[170px] h-full pl-4 text-base autofill:bg-[#242828]"
         placeholder="info@gmail.com"
       />
       <button className="relative flex items-center justify-center h-full w-[95px] bg-white text-black font-medium rounded-[15px] overflow-hidden transition-all duration-300 hover:text-white active:scale-90 group">
