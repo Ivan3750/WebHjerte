@@ -1,7 +1,7 @@
 /**
  * Byer med egen, personlig side (se components/city/CityPage.jsx).
- * Alt indhold er skrevet til netop den by: bydele, søgninger, brancher, afstand og konkurrence.
- * Tal og steder er holdt til det, der er almindeligt kendt – ingen opdigtede kundetal.
+ * Fokus er virksomhedens resultat – kunder, Google, tillid og økonomi – ikke fakta om byen.
+ * Bynavn, bydele og eksempler gør siden personlig; alt andet handler om, hvad en hjemmeside skal kunne.
  */
 export const cities = {
   aarhus: {
@@ -9,117 +9,100 @@ export const cities = {
     name: "Aarhus",
     path: "/webbureau-aarhus",
     serviceName: "Webbureau Aarhus",
+    breadcrumb: "Webbureau Aarhus",
+
+    // 1. Hero
     h1: "Webbureau til virksomheder i Aarhus",
     lead:
-      "Aarhus er Danmarks næststørste by – og konkurrencen om Google-søgningen er derefter. Jeg bygger hjemmesider, der vinder de lokale søgninger fra Aarhus C til Brabrand, til fast pris og med en udvikler, der kun sidder 45 minutter væk.",
+      "Din hjemmeside skal ikke bare se godt ud – den skal få telefonen til at ringe. Jeg bygger sider til Aarhus-virksomheder, der bliver fundet på Google, overbeviser på mobilen og betaler sig hjem.",
     secondary: { href: "/portefolje", label: "Se mine projekter" },
-
-    // 1. Hero-kort: afstand og tempo
-    distance: {
-      title: "Din webudvikler, tæt på Aarhus",
+    aside: {
+      title: "Det får du som Aarhus-virksomhed",
       items: [
-        { num: "45 min", label: "fra Horsens til Aarhus C – i bil eller med toget" },
-        { num: "48 timer", label: "til du ser det første designudkast" },
-        { num: "Samme pris", label: "som i Horsens – uden bykontor i regningen" },
+        { num: "Fra 2.500 kr", label: "fast pris – du kender regningen, før vi går i gang" },
+        { num: "48 timer", label: "til du ser det første designudkast – 0 kr, hvis det ikke passer" },
+        { num: "45 min", label: "fra Horsens – jeg kommer gerne til Aarhus, når det giver værdi" },
       ],
     },
 
-    // 2. Byen i tal
-    stats: {
-      title: ["Aarhus i tal –", "og hvad de betyder for din side"],
-      lead: "En storby gør din hjemmeside både mere værd og sværere at blive set på. Det er de fire ting, jeg altid tænker ind.",
-      items: [
-        { text: "Nr. 2", label: "Danmarks næststørste by", meaning: "Mange virksomheder kæmper om de samme søgninger. Små detaljer afgør, hvem der får opkaldet." },
-        { to: 360000, suffix: "+", label: "indbyggere i Aarhus Kommune", meaning: "Flere mulige kunder lige ved siden af dig – hvis Google viser dig, og siden er let at forstå." },
-        { to: 35000, suffix: "+", label: "studerende på Aarhus Universitet", meaning: "Byens yngre kunder søger og sammenligner på mobilen. En langsom side bliver forladt på få sekunder." },
-        { text: "2017", label: "Europæisk kulturhovedstad", meaning: "Aarhus er vant til oplevelser og godt design. Din side skal føles gennemtænkt, ikke bare udfyldt." },
+    // 2. Editorial
+    editorial: {
+      title: ["I Aarhus bliver du ikke valgt", "på din adresse – men på Google"],
+      paragraphs: [
+        "Der er mange dygtige virksomheder i samme branche i Aarhus. Kunden kender dem ikke – så hun søger, sammenligner tre resultater på mobilen og ringer til den, der virker mest troværdig og er nemmest at få fat i.",
+        "Det gør din hjemmeside til din vigtigste sælger. Den arbejder, mens du arbejder: Den fortæller, hvad du laver, hvad det koster og hvordan man kontakter dig – på under fem sekunder.",
+        "Min opgave er at bygge den side. Ikke et pænt visitkort, men et værktøj, der hver uge flytter flere henvendelser til din indbakke.",
+      ],
+      punch: ["Tre resultater.", "Fem sekunder.", "Ét opkald."],
+    },
+
+    // 3. Google-simulator
+    serp: {
+      title: ["Sådan ryger du fra plads 6", "til plads 1 på Google"],
+      lead: "Vælg din branche og din bydel – og slå forbedringerne til én ad gangen. Se, hvad der flytter dig, når kunden søger i Aarhus.",
+      branches: ["frisør", "VVS", "restaurant", "tandlæge", "revisor"],
+      districts: ["Aarhus C", "Aarhus N", "Viby J", "Højbjerg", "Brabrand"],
+      improvements: [
+        { key: "district", title: "Bydel i overskrift og tekst", text: "Siden skriver tydeligt, hvor du holder til og hvilke kvarterer du dækker." },
+        { key: "reviews", title: "Google-profil med anmeldelser", text: "Din profil er udfyldt, har billeder og stjerner – og du svarer på anmeldelser." },
+        { key: "speed", title: "Hurtig og mobilvenlig side", text: "Siden åbner på et splitsekund, også på 4G i Letbanen." },
+        { key: "action", title: "Pris og klik-for-at-ringe", text: "Kunden kan se en pris og ringe med ét tryk – uden at lede efter et nummer." },
       ],
     },
 
-    // 3. Bydele
-    districts: {
-      title: ["Vælg din bydel –", "og se, hvad kunderne leder efter"],
-      lead: "I en storby søger folk på kvarter, ikke kun på by. Her er, hvordan jeg skriver til de enkelte dele af Aarhus.",
+    // 4. Tre ting en side skal gøre (skiftevis venstre/højre)
+    pillars: {
+      title: ["Tre ting, din side skal gøre", "for din virksomhed"],
       items: [
         {
-          name: "Aarhus C",
-          area: "Latinerkvarteret, Åboulevarden og Møllestien",
-          search: "frisør Aarhus C eller restaurant Åboulevarden",
-          who: "Studerende, turister og folk på arbejde i midtbyen. Mange søger fra mobilen, mens de går forbi.",
-          tip: "Gadenavn og 'midt i Latinerkvarteret' skal stå i første afsnit, og åbningstiderne helt øverst.",
+          n: "01",
+          title: "Få telefonen til at ringe",
+          text: "De fleste besøgende bestemmer sig på få sekunder. Derfor er der en tydelig knap til at ringe eller bede om et tilbud, hvor tommelfingeren er – ikke på en kontaktside, man skal lede efter.",
+          example: { label: "Eksempel · tømrer i Risskov", text: "“Ring nu”-knap øverst på mobilen og “få et tilbud på 1 minut” i stedet for en lang formular. Flere henvendelser fra de samme besøgende." },
         },
         {
-          name: "Aarhus Ø",
-          area: "Isbjerget, havnen og de nye kvarterer",
-          search: "brunch Aarhus Ø eller fysioterapeut Aarhus Ø",
-          who: "Nye beboere og virksomheder, der lige er flyttet ind. De kender ikke de lokale endnu og googler alt.",
-          tip: "Vær helt præcis med adresse og vej ind – nye kvarterer er svære at finde, og første indtryk betyder meget.",
+          n: "02",
+          title: "Vise, at man kan stole på dig",
+          text: "Kunden kender dig ikke. Rigtige billeder af dit arbejde, anmeldelser, tydelige priser og et ansigt gør, at de vælger dig frem for en, der ser billigere ud.",
+          example: { label: "Eksempel · klinik på Aarhus Ø", text: "Billeder af teamet, faste priser og Google-anmeldelser lige ved bookingknappen. Kunden behøver ikke tænke sig om." },
         },
         {
-          name: "Aarhus N",
-          area: "Risskov, Skejby, Trøjborg og Lystrup",
-          search: "VVS Risskov eller tømrer Lystrup",
-          who: "Familier og pendlere i villakvartererne. Håndværkere bliver spurgt på tværs af kvarterer, så anbefalinger tæller.",
-          tip: "Nævn de kvarterer, du kører til, og vis arbejde fra området – det får folk til at tænke 'han kender min gade'.",
-        },
-        {
-          name: "Viby J",
-          area: "Viby, Hasselager og Skæring",
-          search: "autoværksted Viby J eller frisør Hasselager",
-          who: "Folk, der vil have noget i nærheden og helst slippe for midtbyen. De vælger ofte den, der er nemmest at nå.",
-          tip: "Fortæl, hvor let man kommer til dig, og om der er parkering. Det afgør mere, end man skulle tro.",
-        },
-        {
-          name: "Højbjerg",
-          area: "Marselisborg, Moesgaard og Højbjerg",
-          search: "fysioterapeut Højbjerg eller maler Marselisborg",
-          who: "Boligejere med store huse og høje forventninger. De læser anmeldelser, før de ringer.",
-          tip: "Anmeldelser og referencer fra området er guld her. Vis dem tydeligt, ikke gemt nederst på siden.",
-        },
-        {
-          name: "Brabrand og Aarhus V",
-          area: "Brabrand, Åbyhøj, Gellerup og Tilst",
-          search: "mekaniker Brabrand eller revisor Aarhus V",
-          who: "En blandet del af byen med mange små erhverv og meget handel. Her kigger folk først på pris og åbningstid.",
-          tip: "Pris og åbningstid skal stå, før man scroller. Korte tekster og et telefonnummer, der kan trykkes på.",
+          n: "03",
+          title: "Blive fundet, når kunden søger",
+          text: "En side, ingen finder, er spildt. Jeg bygger siden, så Google forstår, hvad du laver, og hvor du hører til – på bydel, ikke kun på by.",
+          example: { label: "Eksempel · restaurant på Aarhus C", text: "Egen side til “brunch Aarhus C”, åbningstider direkte i Google og en profil, der svarer på anmeldelser." },
         },
       ],
     },
 
-    // 4. Det aarhusianerne tjekker
-    checks: {
-      title: ["Fire ting tjekker aarhusianerne,", "før de ringer til dig"],
-      lead: "Jeg bygger din side, så den består alle fire tests i løbet af de første sekunder.",
-      items: [
-        { title: "Ligger du i mit kvarter?", text: "Bydelen står i første linje. Ikke 'Aarhus' i det hele, men Risskov, Viby eller Aarhus C – præcis dér, hvor kunden søger." },
-        { title: "Kan jeg se prisen?", text: "I en by med mange valg dropper folk den, de ikke kan regne på. Priser eller 'fra'-priser står, hvor man leder efter dem." },
-        { title: "Hvad siger de andre?", text: "Anmeldelser og billeder af dit arbejde er din bedste sælger. De hentes ind på siden og holdes opdateret." },
-        { title: "Virker det på mobilen?", text: "Mange søger i Letbanen, på cyklen eller i bybussen. Siden skal indlæses hurtigt og kunne bruges med én hånd." },
-      ],
-    },
-
-    // 5. Brancher
+    // 5. Brancher (bento)
     industries: {
-      title: ["Aarhus-brancher,", "jeg bygger til"],
-      lead: "Samme by, helt forskellige kunder. Derfor får hver branche sin egen tilgang.",
-      items: [
-        { title: "Caféer og restauranter", text: "Latinerkvarteret og Aarhus Ø er fulde af spisesteder. Din side skal vise menu, stemning og booking med det samme – og give gæsterne en grund til at bestille direkte hos dig.", href: "/hjemmeside-til-restauranter", cta: "Se restaurantløsningen" },
-        { title: "Håndværkere", text: "Aarhus bygges og renoveres hele tiden. Kunderne googler 'tømrer' eller 'VVS' og vælger den, der svarer hurtigt og viser sit arbejde. Jeg bygger til opkald og tilbud.", href: "/hjemmeside-til-haandvaerkere", cta: "Se håndværkerløsningen" },
-        { title: "Klinikker og saloner", text: "Fysioterapeuter, frisører og kosmetologer lever af tillid og faste tider. Online booking, tydelige priser og rigtige billeder gør det let at vælge dig.", href: "/hjemmeside-til-saloner", cta: "Se salonløsningen" },
-        { title: "Kreative, IT og start-ups", text: "Katrinebjerg og Navitas er fulde af dygtige virksomheder. Din side skal vise, at I er seriøse – også over for dem, I gerne vil rekruttere.", href: "/skraeddersyede-hjemmesider", cta: "Se skræddersyede sider" },
+      title: ["Hvad siden skal gøre", "i din branche"],
+      lead: "Samme by, helt forskellige kunder. Derfor får hver branche sin egen opbygning.",
+      big: {
+        title: "Håndværkere",
+        text: "Aarhus bygges og renoveres hele tiden, og kunderne googler “tømrer”, “VVS” eller “elektriker” med det samme. Siden skal vise, hvad du kan, hvor du kører, og hvordan man får et tilbud – på mobilen, mens de står med problemet.",
+        goal: "Mål: flere tilbudsforespørgsler",
+        href: "/hjemmeside-til-haandvaerkere",
+        cta: "Se håndværkerløsningen",
+      },
+      small: [
+        { title: "Restauranter og caféer", text: "Menu, stemning og bordbestilling med det samme – og egen bestilling i stedet for gebyrer til platforme.", goal: "Mål: flere direkte bookinger", href: "/hjemmeside-til-restauranter", cta: "Se restaurantløsningen" },
+        { title: "Klinikker og saloner", text: "Online booking, faste priser og rigtige billeder. Tillid sælger, når det handler om krop og udseende.", goal: "Mål: fyldte kalendere", href: "/hjemmeside-til-saloner", cta: "Se salonløsningen" },
       ],
+      wide: {
+        title: "Kreative, IT og start-ups",
+        text: "Din side skal bevise, at I er seriøse – over for kunder, investorer og dem, I gerne vil ansætte. Skræddersyet design, hurtig kode og plads til at vokse.",
+        goal: "Mål: troværdighed og rekruttering",
+        href: "/skraeddersyede-hjemmesider",
+        cta: "Se skræddersyede sider",
+      },
     },
 
-    // 6. Samarbejde Horsens ↔ Aarhus
-    collab: {
-      title: ["Fra Horsens til Aarhus –", "sådan foregår samarbejdet"],
-      lead: "Jeg sidder i Horsens, men du mærker det ikke som afstand. Det meste klares på video, og ellers tager jeg gerne toget til Aarhus H.",
-      steps: [
-        { when: "Dag 0", title: "Første snak", text: "Video fra din stol – eller en kop kaffe i Aarhus C, hvis du hellere vil. Ingen forpligtelser." },
-        { when: "Dag 2", title: "Dit designudkast", text: "Du ser noget konkret efter 48 timer. Passer det ikke, betaler du 0 kr for designet." },
-        { when: "Dag 5–10", title: "Din side går live", text: "Tests på mobil og computer, lokal SEO sat op og klar til de første kunder." },
-        { when: "Bagefter", title: "Jeg er stadig tæt på", text: "30 dages support er med, og jeg er 45 minutter væk, hvis noget skal ses på stedet." },
-      ],
+    // 6. Hjemtjent-beregner
+    breakeven: {
+      title: ["Hvornår har siden", "betalt sig hjem?"],
+      lead: "Fortæl, hvad en ny kunde er værd for dig, og vælg en pakke. Så ser du, hvor få kunder der skal til.",
     },
 
     // 7. Sammenligning
@@ -131,27 +114,25 @@ export const cities = {
         { topic: "Hvor mødes vi?", agency: "På deres kontor – og du bruger tid på at komme derhen i myldretiden.", me: "På video fra din stol – eller jeg kommer til Aarhus C, når det giver værdi." },
         { topic: "Prisen", agency: "Husleje i Aarhus C og Aarhus Ø bliver en del af din regning.", me: "Fast pris fra 2.500 kr. Ingen bykontor i prisen." },
         { topic: "Første udkast", agency: "Efter uger – når projektlederen har fundet plads i kalenderen.", me: "Efter 48 timer. Passer det ikke, betaler du 0 kr for designet." },
-        { topic: "Lokal viden", agency: "Standardløsninger til mange kunder på samme tid.", me: "Tekster om dine bydele, dine søgninger og dine konkurrenter i Aarhus." },
+        { topic: "Fokus", agency: "Flotte løsninger til mange kunder på samme tid.", me: "Din side bygges til at give dig henvendelser – og måles på dem." },
         { topic: "Hvem svarer?", agency: "Sælger, projektleder og så udvikleren.", me: "Mig – den, der bygger din side. Svar samme dag." },
       ],
     },
 
-    // 8. Lokal SEO
-    seo: {
-      title: ["Sådan bliver du fundet", "i Aarhus"],
-      lead: "En flot side hjælper ikke, hvis ingen finder den. Det her gør jeg, så Google forstår, at du hører til i Aarhus.",
-      items: [
-        { n: "01", title: "Din bydel først", text: "Hver side fortæller, hvilke kvarterer du dækker – Aarhus C, N, V, Viby og Højbjerg – med egne ord, ikke kopieret tekst." },
-        { n: "02", title: "Google Virksomhedsprofil", text: "Rigtig kategori, serviceområder, billeder og svar på anmeldelser. Det er det første, mange aarhusianere ser." },
-        { n: "03", title: "Én side pr. ydelse og bydel", text: "Hvor det giver mening, får hver ydelse sin egen side med eget indhold. Det er sådan, du slår de store." },
-        { n: "04", title: "Omtaler og anmeldelser", text: "En enkel rutine, der giver dig nye anmeldelser løbende – de holder dig synlig i en by med hård konkurrence." },
+    // 8. Forløb (zig-zag)
+    collab: {
+      title: ["Fra første snak", "til din første nye kunde"],
+      lead: "Jeg sidder i Horsens, men du mærker det ikke som afstand. Det meste klares på video, og ellers tager jeg toget til Aarhus H.",
+      steps: [
+        { when: "Dag 0", title: "Første snak", text: "Vi tager en uforpligtende snak – på video eller over en kop kaffe i Aarhus C. Jeg spørger ind til dine kunder, ikke til farver." },
+        { when: "Dag 2", title: "Dit designudkast", text: "Du ser noget konkret efter 48 timer. Passer det ikke, betaler du 0 kr for designet." },
+        { when: "Dag 5–10", title: "Siden går live", text: "Alt er testet på mobil og computer, og lokal SEO er sat op, så Google kan finde dig fra dag ét." },
+        { when: "Bagefter", title: "Jeg er stadig tæt på", text: "30 dages support er med. Og skal noget ses på stedet, er jeg 45 minutter væk." },
       ],
-      cta: { href: "/seo-horsens", label: "Læs mere om lokal SEO" },
     },
 
-    formTitle: "Skal din virksomhed i Aarhus have en hjemmeside, der virker?",
-    formDescription: "Skriv til mig, så får du et fast tilbud inden for 24 timer – og et konkret bud på, hvordan du kan blive set i netop dit kvarter.",
-    breadcrumb: "Webbureau Aarhus",
+    formTitle: "Skal din virksomhed i Aarhus have flere kunder fra nettet?",
+    formDescription: "Skriv til mig, så får du et fast tilbud inden for 24 timer – og et konkret bud på, hvordan din side kan give flere henvendelser.",
   },
 };
 
