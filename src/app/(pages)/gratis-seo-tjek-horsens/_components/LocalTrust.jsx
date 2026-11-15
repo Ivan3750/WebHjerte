@@ -12,10 +12,6 @@ const LocalTrust = () => (
   <section className="scene relative overflow-hidden bg-[#1c1e1e]">
     <div aria-hidden className="grid-fade absolute inset-0 opacity-40" />
     <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-      <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-4 flex items-center gap-3">
-        <span className="w-8 h-px bg-[#00a8e8]" />
-        Lokalt i Horsens
-      </FadeUp>
       <RevealLines
         lines={["Dit lokale SEO-bureau", "i Horsens"]}
         className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-5"

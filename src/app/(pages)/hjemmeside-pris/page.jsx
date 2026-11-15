@@ -3,7 +3,6 @@ import PriceCalculator from "../../components/ui/PriceCalculator";
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import FormToLead from "../../components/ui/FormToLead";
 import PackagesBlock from "../services/_components/PackagesBlock";
-import Whatsincludedblock from "../services/_components/WhatsIncludedBlock";
 import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
@@ -128,7 +127,6 @@ const HjemmesidePris = () => {
       />
       <PageHero
         breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Hjemmeside pris" }]}
-        eyebrow="Priser"
         titleLines={["Hjemmeside priser –", "fast pris fra 2.500 kr"]}
         lead="Se faste priser fra 2.500 kr inkl. moms og find den pakke, der passer til din virksomhed – ingen skjulte gebyrer, ingen overraskelser."
         actions={
@@ -151,7 +149,6 @@ const HjemmesidePris = () => {
           </p>
         </div>
       </section>
-      <Whatsincludedblock />
       <CasesCarousel />
       <SocialProof />
       <FormToLead

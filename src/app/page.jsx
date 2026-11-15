@@ -97,28 +97,6 @@ const localLinks = [
   },
 ];
 
-const topicLinks = [
-  { href: "/webbureau-jylland", label: "Webbureau Jylland" },
-  { href: "/webbureau-aarhus", label: "Aarhus" },
-  { href: "/webbureau-vejle", label: "Vejle" },
-  { href: "/wordpress-hjemmeside", label: "Professionel WordPress hjemmeside" },
-  { href: "/wordpress-horsens", label: "WordPress Horsens" },
-  { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
-  { href: "/blog/hvad-koster-en-hjemmeside-2026", label: "Hvad koster en hjemmeside?" },
-  { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
-  { href: "/geo-ai-synlighed", label: "AI-synlighed" },
-  { href: "/ofte-stillede-spoergsmaal", label: "FAQ" },
-];
-
-const nicheLinks = [
-  { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-  { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-  { href: "/hjemmeside-til-saloner", label: "Saloner" },
-  { href: "/hjemmeside-til-vvs", label: "VVS" },
-  { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-  { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
-];
-
 export default function Home() {
   return (
     <>
@@ -144,10 +122,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
-                <span className="w-8 h-px bg-[#00a8e8]" />
-                Dit lokale webbureau
-              </FadeUp>
               <RevealLines
                 lines={["Webbureau i Horsens, der", "leverer kunder – ikke", "bare et design"]}
                 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.12] text-[clamp(24px,3.2vw,40px)] mb-6"
@@ -182,32 +156,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-
-          <FadeUp className="mt-12 pt-8 border-t border-[#e4e2e2] flex flex-wrap items-center gap-3">
-            <span className="text-[12px] text-[#5a5a5a]">Områder og emner:</span>
-            {topicLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="text-[12px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-1.5 hover:border-[#00a8e8] hover:text-[#00a8e8] hover:-translate-y-0.5 transition-all"
-              >
-                {l.label}
-              </Link>
-            ))}
-          </FadeUp>
-
-          <FadeUp className="mt-4 flex flex-wrap items-center gap-3">
-            <span className="text-[12px] text-[#5a5a5a]">Hjemmesider til din branche:</span>
-            {nicheLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="text-[12px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-1.5 hover:border-[#00a8e8] hover:text-[#00a8e8] hover:-translate-y-0.5 transition-all"
-              >
-                {l.label}
-              </Link>
-            ))}
-          </FadeUp>
         </div>
       </section>
 
@@ -215,10 +163,6 @@ export default function Home() {
       <section className="scene relative overflow-hidden bg-[#1c1e1e]">
         <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-14 lg:gap-20 items-start">
           <div>
-            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Kom i gang
-            </FadeUp>
             <RevealLines
               lines={["Få et gratis", "tilbud"]}
               className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(28px,3.6vw,48px)] mb-5"

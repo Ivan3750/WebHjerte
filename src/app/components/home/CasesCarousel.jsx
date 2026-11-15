@@ -26,9 +26,6 @@ export default function CasesCarousel() {
     <section className="bg-[#eceeee] px-4 sm:px-10 lg:px-20 py-12 sm:py-20">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-8 sm:mb-14">
-          <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3 sm:mb-4">
-            Portefølje
-          </p>
           <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] mb-3 sm:mb-4 text-[clamp(24px,3.3vw,40px)]">
             Udvalgte cases
           </h2>

@@ -19,9 +19,6 @@ export default function GratisAnalysePage() {
   return (
     <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-16 sm:py-24 min-h-[calc(100dvh-68px)] flex items-center">
       <div className="max-w-xl w-full mx-auto">
-        <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-4">
-          Gratis og uforpligtende
-        </p>
         <h1 className="maintitle text-white !leading-tight mb-4 text-balance !text-left">
           Få en gratis analyse af din hjemmeside
         </h1>

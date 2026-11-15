@@ -176,15 +176,11 @@ export default function WebdesignHorsensPage() {
   return (
     <LocalLandingPage
       path={path}
-      city="horsens"
-      facts={[
-        { num: "0 km", label: "Jeg sidder selv i Horsens" },
-        { num: "Direkte", label: "Kontakt med den, der bygger" },
-        { num: "48 timer", label: "Til første designudkast" },
-      ]}
+      facts={[]}
+      withForm={false}
+      omit={["price", "guarantees", "guide", "readmore"]}
       name="Webdesign Horsens"
       serviceType="Webdesign"
-      eyebrow="Webdesign i Horsens"
       h1="Webdesign i Horsens – professionelt design til fast pris"
       intro="Jeg designer og bygger moderne, hurtige hjemmesider til virksomheder i Horsens. Du får et første designudkast på 48 timer, fast pris fra 2.500 kr og direkte kontakt med mig – ingen mellemled."
       summary="WebHjerte er en webdesigner i Horsens, der designer og bygger hurtige, mobilvenlige hjemmesider til fast pris fra 2.500 kr. Du får første designudkast inden for 48 timer, betaler 0 kr for designet, hvis det ikke passer, og ejer selv domæne og kode."

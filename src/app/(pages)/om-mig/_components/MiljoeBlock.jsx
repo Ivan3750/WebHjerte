@@ -14,9 +14,6 @@ const MiljoeBlock = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
         <div>
-          <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#aaa] mb-4">
-            Vores initiativ
-          </AnimatedInView>
 
           <AnimatedInView as="div" className="inline-flex items-center gap-2 bg-[#edf7ed] border border-[#c5e8c5] rounded-full px-3.5 py-1.5 mb-5">
             <span className="w-2 h-2 rounded-full bg-[#3a9e4a] flex-shrink-0" />

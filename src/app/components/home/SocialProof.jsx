@@ -14,12 +14,6 @@ const SocialProof = () => {
   return (
     <section className="bg-[#1c1e1e] py-14 sm:py-20">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center px-4 sm:px-6">
-        <AnimatedInView
-          as="p"
-          className="text-[11px] uppercase tracking-[0.18em] text-[#8a9696] mb-6 sm:mb-8"
-        >
-          Hvad vores kunder siger
-        </AnimatedInView>
 
         <div className="flex flex-col gap-6 sm:gap-10 w-full">
           {quotes.map((quote) => (

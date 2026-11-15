@@ -23,7 +23,6 @@ const groups = [
       { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
       { href: "/wordpress-hjemmeside", label: "WordPress hjemmeside" },
       { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
-      { href: "/freelancer-vs-bureau", label: "Freelancer vs bureau" },
     ],
   },
   {

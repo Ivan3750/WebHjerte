@@ -711,6 +711,11 @@ button:active {
   50%      { transform: translateY(-10px); }
 }
 
+.marquee {
+  /* Kun en smal tone yderst – resten af teksten skal kunne læses */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
 .marquee-track { animation: marquee 38s linear infinite; width: max-content; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 @keyframes marquee {
@@ -753,6 +758,10 @@ section.scene { padding: 0; }
   .aurora-blob, .float-y, .float-y-2, .marquee-track, .pulse-ring::after, .shimmer {
     animation: none !important;
   }
+  /* Uden animation vises hele listen som en ombrudt række – ellers ville halvdelen af teksten være skjult */
+  .marquee { -webkit-mask-image: none; mask-image: none; padding-inline: 20px; }
+  .marquee-track { width: auto; flex-wrap: wrap; justify-content: center; row-gap: 14px; column-gap: 0; }
+  .marquee-track > [aria-hidden="true"] { display: none; }
 }
 
 .glass-solid {

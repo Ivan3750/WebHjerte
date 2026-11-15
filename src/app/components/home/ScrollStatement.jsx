@@ -37,10 +37,6 @@ export default function ScrollStatement() {
   return (
     <section ref={ref} className="scene bg-[#1c1e1e] relative">
       <div className="max-w-5xl mx-auto px-5 sm:px-10 lg:px-16 py-28 sm:py-40">
-        <p className="text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-8 flex items-center gap-3">
-          <span className="w-8 h-px bg-[#00a8e8]" />
-          Sådan tænker jeg
-        </p>
         <p className="text-[clamp(20px,3.1vw,38px)] font-medium leading-[1.3] tracking-tight">
           {words.map((w, i) => (
             <Word key={i} w={w} i={i} total={words.length} progress={scrollYProgress} reduce={reduce} />

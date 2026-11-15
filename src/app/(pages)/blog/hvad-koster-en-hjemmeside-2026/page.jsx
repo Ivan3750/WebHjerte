@@ -196,7 +196,6 @@ const faqs = [
 const related = [
   { href: "/hjemmeside-pris", title: "Alle priser og pakker", desc: "Se præcis hvad hver pakke indeholder." },
   { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", title: "Hvad koster en hjemmeside om året?", desc: "Domæne, hosting og vedligeholdelse." },
-  { href: "/freelancer-vs-bureau", title: "Freelancer eller bureau?", desc: "Hvad får du for pengene?" },
   { href: "/wordpress-hjemmeside", title: "Professionel WordPress-hjemmeside", desc: "Fra 4.500 kr – du redigerer selv." },
   { href: "/webshop-hjemmeside", title: "Webshop", desc: "Sælg online fra 14.000 kr." },
   { href: "/portefolje", title: "Portefølje", desc: "Se hjemmesider, jeg har bygget." },

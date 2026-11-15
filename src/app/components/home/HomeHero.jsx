@@ -156,10 +156,6 @@ export default function HomeHero() {
   const yB = useTransform(scrollYProgress, [0, 1], [0, -40]);
   const yD = useTransform(scrollYProgress, [0, 1], [0, -110]);
 
-  // Tekst glider op og toner ud
-  const textY = useTransform(scrollYProgress, [0, 1], [0, 90]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0.15]);
-
   const rm = (v) => (reduce ? 0 : v);
 
   return (
@@ -174,7 +170,6 @@ export default function HomeHero() {
       <div className="relative w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-12 md:py-16 grid md:grid-cols-[1.05fr_1fr] gap-12 lg:gap-20 items-center">
         {/* ─────────── Tekst ─────────── */}
         <motion.div
-          style={reduce ? undefined : { y: textY, opacity: textOpacity }}
           initial="hidden"
           animate="show"
           transition={{ staggerChildren: 0.11, delayChildren: 0.1 }}
@@ -182,7 +177,7 @@ export default function HomeHero() {
         >
           <motion.div
             variants={item}
-            className="glass inline-flex items-center gap-2.5 rounded-full pl-2.5 pr-4 py-1.5 text-[11px] text-[#c4cccc] w-fit mb-6"
+            className="glass inline-flex items-center gap-2.5 rounded-full pl-2.5 pr-4 py-1.5 text-[12.5px] text-[#c4cccc] w-fit mb-6"
           >
             <span className="relative flex w-2 h-2">
               <span className="pulse-ring absolute inset-0 rounded-full text-[#3ddc97]" />
@@ -191,19 +186,17 @@ export default function HomeHero() {
             Horsens &amp; Midtjylland · Tager nye projekter
           </motion.div>
 
-          <motion.h1
-            variants={item}
-            className="text-white font-semibold tracking-tight leading-[1.1] mb-5"
-          >
-            <span className="block text-[clamp(28px,3.6vw,50px)]">Webbureau i Horsens</span>
-            <span className="block mt-3 text-[clamp(15px,1.7vw,22px)] font-medium text-[#00a8e8] leading-snug text-balance">
-              – hjemmesider og AI-løsninger til fast pris, live på 2–10 dage
+          {/* Samme regler som på de andre sider: blå Unbounded-overskrift, rolig underlinje og læsevenlig brødtekst */}
+          <motion.h1 variants={item} className="mb-6">
+            <span className="maintitle block !text-left !leading-[1.15] !text-[clamp(30px,4vw,50px)]">Webbureau i Horsens</span>
+            <span className="block mt-3 max-w-[30ch] text-[clamp(18px,1.9vw,24px)] font-medium text-white leading-[1.4]">
+              Hjemmesider og AI-løsninger til fast pris – live på 2–10 dage
             </span>
           </motion.h1>
 
           <motion.p
             variants={item}
-            className="text-[#93a0a0] text-[14px] sm:text-[15px] leading-[1.75] max-w-md mb-8"
+            className="readable text-[#b4bdbd] text-[16px] sm:text-[17px] leading-[1.75] max-w-[54ch] mb-8"
           >
             Hjemmesider på WordPress, Shopify eller skræddersyet kode – og AI, der svarer kunder,
             booker tider og gør dig synlig i ChatGPT. Du taler direkte med mig, ikke et mellemled.
@@ -222,7 +215,7 @@ export default function HomeHero() {
             </Link>
           </motion.div>
 
-          <motion.p variants={item} className="flex items-start gap-2 text-[12px] text-[#7f8c8c] leading-snug">
+          <motion.p variants={item} className="flex items-start gap-2 text-[13px] text-[#9aa5a5] leading-snug">
             <span className="mt-0.5 shrink-0"><CheckIcon /></span>
             Første design i 48 timer – ikke tilfreds, betaler du 0 kr for det.
           </motion.p>

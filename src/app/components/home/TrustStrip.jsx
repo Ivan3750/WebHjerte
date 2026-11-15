@@ -18,11 +18,7 @@ const TrustStrip = () => {
     <section className="scene bg-[#1c1e1e] border-t border-white/[0.06] relative">
       {/* Marquee */}
       <div
-        className="marquee relative overflow-hidden py-6"
-        style={{
-          WebkitMaskImage: "linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)",
-          maskImage: "linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)",
-        }}
+        className="marquee relative overflow-hidden py-7"
         aria-label="Teknologier og metoder jeg bruger"
       >
         <div className="marquee-track flex items-center gap-10">
@@ -30,7 +26,7 @@ const TrustStrip = () => {
             <span
               key={i}
               aria-hidden={i >= stack.length}
-              className="flex items-center gap-10 text-[13px] uppercase tracking-[0.16em] text-[#7a8787] whitespace-nowrap"
+              className="flex items-center gap-10 text-[15px] font-medium text-[#b4bdbd] whitespace-nowrap"
             >
               {s}
               <span className="w-1 h-1 rounded-full bg-[#00a8e8]/60" />

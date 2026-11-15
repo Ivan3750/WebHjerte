@@ -69,7 +69,6 @@ const core = [
   ["Webbureau i Midtjylland", "/webbureau-midtjylland"],
   ["WordPress-hjemmeside", "/wordpress-hjemmeside"],
   ["Gratis SEO-tjek i Horsens", "/gratis-seo-tjek-horsens"],
-  ["Freelancer eller webbureau", "/freelancer-vs-bureau"],
   ["Hvad koster en hjemmeside i 2026", "/blog/hvad-koster-en-hjemmeside-2026"],
   ["Portefølje", "/portefolje"],
   ["Om Ivan Kohan", "/om-mig"],

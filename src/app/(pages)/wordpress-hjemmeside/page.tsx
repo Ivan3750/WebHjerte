@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import ProblemLoesning from "./_components/ProblemLoesning";
 import HvadGoerProfessionel from "./_components/HvadGoerProfessionel";
@@ -6,9 +5,7 @@ import FormToLead from "../../components/ui/FormToLead";
 import CasesCarousel from "../../components/home/CasesCarousel";
 import Questions from "../../components/Questions";
 import PackagesBlock from "../services/_components/PackagesBlock";
-import QuickLeadForm from "../../components/ui/QuickLeadForm";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
-import { DataTable } from "../../components/seo/ContentBlocks";
 import { WpEditDemo } from "../../components/variants/WpBlocks";
 
 const url = `${SITE_URL}/wordpress-hjemmeside`;
@@ -45,28 +42,6 @@ export const metadata = {
     description: "Unikt design, hurtig, SEO-klar og nem at redigere selv. Fast pris.",
   },
   alternates: { canonical: url },
-};
-
-const included = [
-  "Unikt design efter dit brand – ikke et standardtema med dit logo på",
-  "Responsiv på mobil, tablet og computer",
-  "Hurtig indlæsning: optimerede billeder, caching og få, gennemtestede plugins",
-  "SEO-opsætning: titler, beskrivelser, sitemap, struktureret data og Google Search Console",
-  "Kontaktformular, Google Maps og klik-for-at-ringe",
-  "Sikkerhed: SSL, backup, spambeskyttelse og opdateringer ved lancering",
-  "Kort videogennemgang, så du selv kan rette tekster, billeder og priser",
-  "Du ejer domæne, hjemmeside og indhold fra dag ét",
-];
-
-const comparison = {
-  head: ["", "WebHjerte", "Typisk bureau", "Gør det selv"],
-  rows: [
-    ["Pris", "Fra 4.500 kr (fast)", "20.000–60.000 kr", "Gratis tema + din tid"],
-    ["Levering", "5–10 dage", "4–12 uger", "Uvist"],
-    ["Design", "Skræddersyet", "Skræddersyet", "Standardtema"],
-    ["Kontakt", "Direkte med udvikleren", "Via projektleder", "Ingen"],
-    ["SEO og hastighed", "Inkluderet", "Ofte tillæg", "Op til dig"],
-  ],
 };
 
 const faqs = [
@@ -111,7 +86,6 @@ const WordpressHjemmeside = () => {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <PageHero
         breadcrumbs={[{ label: "Forside", href: "/" }, { label: "WordPress hjemmeside" }]}
-        eyebrow="WordPress · fast pris"
         titleLines={["Professionel WordPress hjemmeside", "til din virksomhed – fra 4.500 kr"]}
         lead="Unikt design, hurtig og klar til Google – og så nem, at du selv kan rette tekster og billeder. Første designudkast på 48 timer, 0 kr hvis det ikke passer."
         actions={
@@ -120,44 +94,10 @@ const WordpressHjemmeside = () => {
             <GhostLink href="/blog/hvad-koster-en-hjemmeside-2026#prisberegner">Beregn pris</GhostLink>
           </>
         }
-        aside={
-          <div className="rounded-3xl border border-white/10 bg-[#242828] p-6 sm:p-8">
-            <QuickLeadForm />
-          </div>
-        }
       />
       <ProblemLoesning />
       <WpEditDemo />
       <HvadGoerProfessionel />
-
-      <section className="bg-[#f7f6f6]">
-        <div className="max-w-5xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-[#1c1e1e] font-semibold tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-6">
-              Det får du i din WordPress-hjemmeside
-            </h2>
-            <ul className="flex flex-col gap-2.5">
-              {included.map((item) => (
-                <li key={item} className="flex gap-3 text-[14px] text-[#555] leading-[1.75]">
-                  <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-[#00a8e8] flex-shrink-0" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-[#1c1e1e] font-semibold tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-6">
-              WordPress-hjemmeside: pris og leveringstid
-            </h2>
-            <DataTable table={comparison} />
-            <p className="mt-4 text-[13px] text-[#666] leading-[1.8]">
-              Bureau-priser er vejledende markedspriser. Se{" "}
-              <Link href="/blog/hvad-koster-en-hjemmeside-2026" className="text-[#007aab] underline underline-offset-4">hvad en hjemmeside koster i 2026</Link>{" "}
-              eller læs om <Link href="/blog/wordpress-eller-skraeddersyet" className="text-[#007aab] underline underline-offset-4">WordPress eller skræddersyet kode</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <CasesCarousel />
       <PackagesBlock />

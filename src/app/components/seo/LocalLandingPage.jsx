@@ -4,7 +4,7 @@ import ContentPage from "./ContentPage";
  * Skabelon til lokale SEO-landingssider (Horsens / Midtjylland).
  * Tynd wrapper om den fælles ContentPage (som selv viser pris, garantier, cases og proces).
  */
-export default function LocalLandingPage({ path, name, serviceType, eyebrow, h1, intro, sections, faqs, related, summary, city, facts }) {
+export default function LocalLandingPage({ path, name, serviceType, eyebrow, h1, intro, sections, faqs, related, summary, city, facts, withForm, omit }) {
   return (
     <ContentPage
       path={path}
@@ -20,6 +20,8 @@ export default function LocalLandingPage({ path, name, serviceType, eyebrow, h1,
       related={related}
       city={city}
       facts={facts}
+      withForm={withForm}
+      omit={omit}
     />
   );
 }

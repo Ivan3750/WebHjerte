@@ -1,9 +1,10 @@
-import Link from "next/link";
-import PageHero from "../../components/ui/PageHero";
+import Image from "next/image";
+import PageHero, { PrimaryLink } from "../../components/ui/PageHero";
 import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
 import BlogList from "./_components/BlogList";
 import CtaSearchBlock from "../../components/ui/CTA";
 import { articles } from "../../data/content";
+import Ivan from "../../assets/Ivan.jpg";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
@@ -21,12 +22,6 @@ const legacy = [
     category: "Priser",
     readMinutes: 10,
     updated: "2026-11-10",
-  },
-  {
-    href: "/freelancer-vs-bureau",
-    title: "Freelancer eller webbureau?",
-    desc: "Forskellene på ansvar, pris og kommunikation, og hvad du bør spørge om.",
-    category: "Guides",
   },
   {
     href: "/webstrategi",
@@ -80,35 +75,38 @@ export default function BlogPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <PageHero
         breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Blog" }]}
-        eyebrow="Blog"
         titleLines={["Guides om hjemmesider,", "SEO og AI-synlighed"]}
         lead="Praktiske guides til dig, der skal have en hjemmeside til din virksomhed i Horsens eller Midtjylland – og blive fundet i både Google og AI-søgning."
         size="md"
       />
       <section className="scene bg-[#f7f6f6]">
-        <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-          <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
-            <span className="w-8 h-px bg-[#00a8e8]" />
-            Alle guides
-          </FadeUp>
-          <RevealLines
-            lines={["Skrevet til dig, der", "driver en lille virksomhed"]}
-            className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-10 sm:mb-14"
-          />
+        <div className="px-5 sm:px-10 lg:px-16 xl:px-20 py-16 sm:py-24">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-10 sm:mb-14">
+            <RevealLines
+              lines={["Skrevet til dig, der", "driver en lille virksomhed"]}
+              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.3vw,40px)]"
+            />
+
+            <FadeUp className="flex items-center gap-4 rounded-3xl bg-white border border-[#e8e6e6] pl-3 pr-6 py-3 w-fit">
+              <Image src={Ivan} alt="Ivan Kohan" width={52} height={52} className="w-[52px] h-[52px] rounded-full object-cover object-[50%_24%]" />
+              <div>
+                <p className="text-[14px] font-semibold text-[#1c1e1e] leading-tight">Ivan Kohan</p>
+                <p className="text-[12.5px] text-[#6a6a6a] mt-1">Webudvikler i Horsens · {posts.length} guides, opdateres løbende</p>
+              </div>
+            </FadeUp>
+          </div>
 
           <BlogList posts={posts} />
 
-          <div className="mt-16 pt-8 border-t border-[#e4e2e2] flex flex-wrap items-center gap-3">
-            <span className="text-[12px] text-[#5a5a5a]">Mere fra WebHjerte:</span>
-            {[
-              { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
-              { href: "/om-mig", label: "Om mig" },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-[12px] text-[#3a3a3a] bg-white border border-[#e4e2e2] rounded-full px-4 py-2 hover:border-[#00a8e8] hover:text-[#00a8e8] transition-colors">
-                {l.label}
-              </Link>
-            ))}
-          </div>
+          <FadeUp className="mt-14 sm:mt-20 rounded-3xl bg-[#1c1e1e] p-7 sm:p-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div>
+              <p className="text-white font-semibold text-[clamp(18px,2vw,24px)] leading-snug mb-2">Savner du en guide om et bestemt emne?</p>
+              <p className="readable text-[14.5px] text-[#a6b1b1] leading-[1.7] max-w-[52ch]">
+                Skriv til mig, hvad du undrer dig over – så skriver jeg gerne en guide om det.
+              </p>
+            </div>
+            <PrimaryLink href="/kontakt">Foreslå et emne</PrimaryLink>
+          </FadeUp>
         </div>
       </section>
       <CtaSearchBlock />

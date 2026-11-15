@@ -11,6 +11,7 @@ const defaultFacts = [
 ];
 
 export default function FormToLead({
+  // eslint-disable-next-line no-unused-vars
   eyebrow = "Kom i gang",
   titleLine = "Klar til en side, der ser proffesional ud?",
   description = "Har du allerede en hjemmeside, der trænger til et løft, eller starter du helt forfra? Skriv det i formularen - jeg svarer inden for 24 timer.",
@@ -21,12 +22,6 @@ export default function FormToLead({
     <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pt-20 pb-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div>
-          <AnimatedInView
-            as="p"
-            className="text-[11px] uppercase tracking-[0.1em] text-[#8a9696] mb-3"
-          >
-            {eyebrow}
-          </AnimatedInView>
           <AnimatedInView
             as="h2"
             className="maintitle text-white !leading-tight mb-4"

@@ -215,7 +215,7 @@ export function ShopPrice() {
             <p className="text-[14px] text-[#a6b1b1] mt-3">inkl. moms · typisk 2–4 uger</p>
             <Link
               href="/kontakt?pakke=webshop"
-              className="group mt-8 inline-flex items-center gap-3 rounded-full bg-[#00a8e8] pl-6 pr-2 py-2 text-[13px] font-semibold text-[#10181a] hover:bg-white transition-colors"
+              className="group mt-8 inline-flex items-center gap-3 rounded-full bg-[#00a8e8] pl-6 pr-2 py-2 text-[13px] font-semibold text-white hover:bg-white hover:text-[#1c1e1e] transition-colors"
             >
               Få et tilbud på din webshop
               <ArrowBadge size="sm" />

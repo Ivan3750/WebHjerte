@@ -8,6 +8,7 @@ import W from "../../../public/W.png";
 
 /**
  * Menustruktur: Services (hjemmesider + lokalt), AI, Brancher, Priser, Portefølje, Blog og Om.
+ * Menuen er holdt kort med vilje – resten findes på /services (brancher og områder) og i bunden af siden.
  * Et punkt er enten et direkte link ({ href }) eller en gruppe med undermenu ({ columns }).
  * Branche-, by- og AI-sider ligger i hver sin undermenu.
  */
@@ -19,13 +20,9 @@ const navItems = [
         title: "Hjemmesider",
         links: [
           { href: "/services", label: "Alle services" },
-          { href: "/hjemmeside-til-virksomhed", label: "Hjemmeside til virksomhed" },
-          { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
           { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
-          { href: "/shopify-hjemmeside", label: "Shopify-hjemmeside" },
+          { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
           { href: "/webshop-hjemmeside", label: "Webshop" },
-          { href: "/alle-typer-hjemmesider", label: "Alle platforme" },
-          { href: "/hosting-og-vedligeholdelse", label: "Hosting og vedligeholdelse" },
         ],
       },
       {
@@ -33,12 +30,8 @@ const navItems = [
         links: [
           { href: "/webdesign-horsens", label: "Webdesign Horsens" },
           { href: "/seo-horsens", label: "SEO Horsens" },
-          { href: "/wordpress-horsens", label: "WordPress Horsens" },
-          { href: "/digitalt-bureau-horsens", label: "Digitalt bureau Horsens" },
           { href: "/webbureau-aarhus", label: "Webbureau Aarhus" },
-          { href: "/webbureau-vejle", label: "Webbureau Vejle" },
           { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
-          { href: "/webbureau-jylland", label: "Webbureau Jylland" },
         ],
       },
     ],
@@ -51,9 +44,7 @@ const navItems = [
         links: [
           { href: "/ai-loesninger", label: "AI-løsninger" },
           { href: "/ai-seo", label: "AI SEO" },
-          { href: "/geo-ai-synlighed", label: "AI-synlighed (GEO)" },
           { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
-          { href: "/ai-automatisering-virksomhed", label: "AI-automatisering" },
         ],
       },
     ],
@@ -67,9 +58,6 @@ const navItems = [
           { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
           { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
           { href: "/hjemmeside-til-saloner", label: "Saloner" },
-          { href: "/hjemmeside-til-vvs", label: "VVS" },
-          { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-          { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
         ],
       },
     ],
@@ -85,8 +73,6 @@ const navItems = [
         links: [
           { href: "/om-mig", label: "Om mig" },
           { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
-          { href: "/freelancer-vs-bureau", label: "Freelancer vs. bureau" },
-          { href: "/partner", label: "Partnerskab" },
           { href: "/kontakt", label: "Kontakt" },
         ],
       },

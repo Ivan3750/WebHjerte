@@ -21,9 +21,6 @@ export default function WhatIsAiSeoBlock() {
   return (
     <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-3">
-          Hvad er AI SEO?
-        </AnimatedInView>
         <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-14 max-w-[26ch]">
           Når data og ekspertise mødes
         </AnimatedInView>

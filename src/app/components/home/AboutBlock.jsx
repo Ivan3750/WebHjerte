@@ -36,10 +36,6 @@ const AboutBlock = () => {
         </FadeUp>
 
         <div className="flex flex-col">
-          <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
-            <span className="w-8 h-px bg-[#00a8e8]" />
-            Personen bag
-          </FadeUp>
 
           <RevealLines
             lines={["Jeg hedder Ivan –", "manden bag WebHjerte"]}

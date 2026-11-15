@@ -1,19 +1,10 @@
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
 
+// eyebrow-prop bevares for bagudkompatibilitet, men vises ikke længere.
+// eslint-disable-next-line no-unused-vars
 export default function SectionHead({ eyebrow, lines, lead, dark = false, as = "h2", className = "mb-12 sm:mb-16", maxW = "max-w-[22ch]" }) {
   return (
     <div className={className}>
-      {eyebrow && (
-        <FadeUp
-          as="p"
-          className={`text-[11px] uppercase tracking-[0.18em] mb-4 flex items-center gap-3 ${
-            dark ? "text-[#7f8c8c]" : "text-[#8a8a8a]"
-          }`}
-        >
-          <span className="w-8 h-px bg-[#00a8e8]" />
-          {eyebrow}
-        </FadeUp>
-      )}
       <RevealLines
         as={as}
         lines={lines}

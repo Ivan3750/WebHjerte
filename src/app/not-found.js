@@ -18,11 +18,6 @@ export default function NotFound() {
     <section className="relative overflow-hidden bg-[#1c1e1e]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />
       <div className="relative max-w-3xl mx-auto px-5 sm:px-10 py-28 sm:py-40 text-center">
-        <p className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-5 inline-flex items-center gap-3">
-          <span className="w-8 h-px bg-[#00a8e8]" />
-          Fejl 404
-          <span className="w-8 h-px bg-[#00a8e8]" />
-        </p>
         <h1 className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(26px,4vw,48px)] mb-5">
           Ups – den side findes ikke
         </h1>

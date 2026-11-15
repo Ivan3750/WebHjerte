@@ -33,9 +33,6 @@ export default function HowItWorksBlock() {
   return (
     <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="p" className="text-[11px] uppercase tracking-[0.1em] text-[#8a9696] mb-3">
-          Sådan fungerer det
-        </AnimatedInView>
         <AnimatedInView as="h2" className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-14 max-w-[26ch]">
           Fra analyse til resultater i fire trin
         </AnimatedInView>
