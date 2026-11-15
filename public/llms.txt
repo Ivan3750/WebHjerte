@@ -81,7 +81,6 @@
 - [Hjemmeside til restauranter](https://www.webhjerte.dk/hjemmeside-til-restauranter): Hjemmeside til restauranter og caféer: menu, booking og egen bestilling. Få flere gæster direkte – uden kommission til platforme.
 - [Hjemmeside til saloner](https://www.webhjerte.dk/hjemmeside-til-saloner): Hjemmeside til frisørsaloner, skønhedssaloner og barbers: online booking, prisliste og billeder, der fylder kalenderen. Praktiske råd til saloner.
 - [AI-synlighed (GEO)](https://www.webhjerte.dk/geo-ai-synlighed): Sådan bliver din virksomhed nævnt i ChatGPT, Google AI Overviews, Gemini og Perplexity. Praktisk GEO til lokale virksomheder.
-- [Ofte stillede spørgsmål](https://www.webhjerte.dk/ofte-stillede-spoergsmaal): Svar på de mest stillede spørgsmål om hjemmesider hos WebHjerte: priser, tid, ejerskab, WordPress, SEO, AI-synlighed og samarbejde.
 
 ## Guides
 - [Sådan bliver din virksomhed nævnt af ChatGPT og Google AI](https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai): Praktisk guide til lokale virksomheder: 12 konkrete tiltag, der gør din hjemmeside nem at citere for ChatGPT, Google AI Overviews, Gemini og Perplexity.

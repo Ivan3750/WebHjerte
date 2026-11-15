@@ -28,7 +28,9 @@ const nextConfig = {
       },
       // Fjernede referencesider (skrevet til AI frem for kunder)
       { source: "/om-webhjerte", destination: "/om-mig", permanent: true },
-      { source: "/ordliste", destination: "/ofte-stillede-spoergsmaal", permanent: true },
+      { source: "/ordliste", destination: "/", permanent: true },
+      // FAQ-siden er fjernet
+      { source: "/ofte-stillede-spoergsmaal", destination: "/", permanent: true },
       // Siden "Freelancer eller webbureau?" er fjernet – sammenligningen ligger nu på Om mig
       { source: "/freelancer-vs-bureau", destination: "/om-mig", permanent: true },
     ];

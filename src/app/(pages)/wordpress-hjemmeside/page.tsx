@@ -3,7 +3,6 @@ import ProblemLoesning from "./_components/ProblemLoesning";
 import HvadGoerProfessionel from "./_components/HvadGoerProfessionel";
 import FormToLead from "../../components/ui/FormToLead";
 import CasesCarousel from "../../components/home/CasesCarousel";
-import Questions from "../../components/Questions";
 import PackagesBlock from "../services/_components/PackagesBlock";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
 import { WpEditDemo } from "../../components/variants/WpBlocks";
@@ -105,7 +104,6 @@ const WordpressHjemmeside = () => {
         titleLine="Klar til din WordPress-hjemmeside?"
         description="Skriv til mig, og få et uforpligtende tilbud på din nye WordPress-side inden for 24 timer."
       />
-      <Questions faqs={faqs} />
     </>
   );
 };

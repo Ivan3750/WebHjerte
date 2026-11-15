@@ -28,7 +28,6 @@ const BY_SLUG = [
   ["nevnt-af-chatgpt", () => <VisualAiAnswer q="Hvem laver hjemmesider i Horsens?" />],
   ["webstrategi", () => <VisualDashboard />],
   ["baeredygtigt", () => <VisualUptime />],
-  ["ofte-stillede", () => <VisualChat a="Hvem ejer min hjemmeside?" b="Det gør du – domæne, kode og indhold." />],
 ];
 
 const BY_CATEGORY = {

@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+import { isHiddenHref } from "../../data/hidden";
 import LocalLandingPage from "../../components/seo/LocalLandingPage";
 
 const path = "/webbureau-midtjylland";
@@ -129,7 +131,7 @@ const related = [
   },
 ];
 
-export default function WebbureauMidtjyllandPage() {
+function WebbureauMidtjyllandPage() {
   return (
     <LocalLandingPage
       path={path}
@@ -144,4 +146,10 @@ export default function WebbureauMidtjyllandPage() {
       related={related}
     />
   );
+}
+
+// Skjult indtil siden er færdig (se data/hidden.js)
+export default function Page() {
+  if (isHiddenHref("/webbureau-midtjylland")) notFound();
+  return <WebbureauMidtjyllandPage />;
 }

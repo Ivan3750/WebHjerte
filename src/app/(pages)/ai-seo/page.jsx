@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+import { isHiddenHref } from "../../data/hidden";
 import HeroAiseo from "./_components/HeroAiseo";
 import WhatIsAiSeoBlock from "./_components/WhatIsAiSeoBlock";
 import HowItWorksBlock from "./_components/HowItWorksBlock";
@@ -5,7 +7,6 @@ import WhyAiseoBlock from "./_components/WhyAiseoBlock";
 import AiseoPackagesBlock from "./_components/AiseoPackagesBlock";
 import WhatsIncludedAiseoBlock from "./_components/WhatsIncludedAiseoBlock";
 import AiseoAfterBlock from "./_components/AiseoAfterBlock";
-import Questions from "../../components/Questions";
 
 export const metadata = {
   title: "AI SEO fra 3.500 kr – bliv fundet i Google & ChatGPT | WebHjerte",
@@ -130,9 +131,12 @@ const Aiseo = () => {
       </div>
       <WhatsIncludedAiseoBlock />
       <AiseoAfterBlock />
-      <Questions faqs={faqs} />
     </>
   );
 };
 
-export default Aiseo;
+// Skjult indtil siden er færdig (se data/hidden.js)
+export default function Page() {
+  if (isHiddenHref("/ai-seo")) notFound();
+  return <Aiseo />;
+}

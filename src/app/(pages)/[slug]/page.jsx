@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import ContentPage from "../../components/seo/ContentPage";
+import CityPage from "../../components/city/CityPage";
+import { getCity } from "../../data/cities";
 import { contentPages, pageMetadata, pagePath } from "../../data/content";
 
 // Alle faste sider har egne mapper og går forud. Denne rute leverer de datadrevne indholdssider.
@@ -22,6 +24,8 @@ export default async function ContentRoute({ params }) {
   const { slug } = await params;
   const page = find(slug);
   if (!page) notFound();
+  const city = getCity(page.cityPage);
+  if (city) return <CityPage city={city} />;
   return (
     <ContentPage
       path={pagePath(page)}

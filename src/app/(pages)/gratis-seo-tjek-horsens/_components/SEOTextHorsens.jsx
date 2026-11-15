@@ -65,7 +65,6 @@ const sections = [
       "Små og mellemstore virksomheder i Horsens og omegn – håndværkere, klinikker, konsulenter, webshops og lokale servicevirksomheder, der ønsker flere kunder via Google.",
       "Uanset om din hjemmeside er ny eller har nogle år på bagen, giver en gennemgang et klart billede af, hvad der skal til for at blive mere synlig.",
     ],
-    cta: { href: "/seo-horsens", label: "Læs om SEO i Horsens" },
   },
 ];
 

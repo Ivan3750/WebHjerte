@@ -1,7 +1,6 @@
  import SEO from "./_components/SEO";
 import SEOTextHorsens from "./_components/SEOTextHorsens";
 import LocalTrust from "./_components/LocalTrust";
-import Questions from "../../components/Questions.jsx";
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 
 export const metadata = {
@@ -105,7 +104,6 @@ const GratisSeoTjekHorsens = () => {
       <SEO />
     <LocalTrust></LocalTrust>
        <SEOTextHorsens></SEOTextHorsens>
-      <Questions />
     </>
   );
 };

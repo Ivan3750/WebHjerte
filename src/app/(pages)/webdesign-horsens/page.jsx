@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+import { isHiddenHref } from "../../data/hidden";
 import LocalLandingPage from "../../components/seo/LocalLandingPage";
 
 const path = "/webdesign-horsens";
@@ -172,7 +174,7 @@ const related = [
   },
 ];
 
-export default function WebdesignHorsensPage() {
+function WebdesignHorsensPage() {
   return (
     <LocalLandingPage
       path={path}
@@ -189,4 +191,10 @@ export default function WebdesignHorsensPage() {
       related={related}
     />
   );
+}
+
+// Skjult indtil siden er færdig (se data/hidden.js)
+export default function Page() {
+  if (isHiddenHref("/webdesign-horsens")) notFound();
+  return <WebdesignHorsensPage />;
 }

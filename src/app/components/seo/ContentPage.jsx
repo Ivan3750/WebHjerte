@@ -1,12 +1,9 @@
 import Link from "next/link";
 import PageHero, { PrimaryLink, GhostLink } from "../ui/PageHero";
-import Questions from "../Questions";
-import QuickLeadForm from "../ui/QuickLeadForm";
 import ScrollProgress from "../ui/ScrollProgress";
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
 import SectionBody, { slugify, autoVisual } from "./ContentBlocks";
 import BlogCover from "./BlogCover";
-import CityScene from "./CityScene";
 import TocNav from "./TocNav";
 import { ReadMore } from "./RelatedCards";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
@@ -18,6 +15,7 @@ import CasesCarousel from "../home/CasesCarousel";
 import ProcessBlock from "../home/ProcessBlock";
 import { VARIANTS } from "../variants/registry";
 import ThemedHero from "../variants/ThemedHero";
+import { cleanSection, visibleLinks } from "../../data/hidden";
 
 const fmtDate = (iso) =>
   new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
@@ -49,9 +47,9 @@ export default function ContentPage({
   intro,
   summary,
   summaryLabel = "Kort svar",
-  sections = [],
+  sections: sectionsProp = [],
   faqs = [],
-  related = [],
+  related: relatedProp = [],
   breadcrumbs = [],
   published,
   updated,
@@ -67,6 +65,9 @@ export default function ContentPage({
   omit = [], // blokke der ikke skal vises: "price" | "guarantees" | "cases" | "process" | "guide" | "readmore"
 }) {
   const skip = new Set(omit);
+  // Links til skjulte sider fjernes, men teksten bevares
+  const sections = sectionsProp.map(cleanSection);
+  const related = visibleLinks(relatedProp);
   const v = VARIANTS[variant] || VARIANTS[path?.slice(1)];
   const url = `${SITE_URL}${path}`;
   const trail = [{ name: "Forside", path: "/" }, ...breadcrumbs.map((b) => ({ name: b.label, path: b.href })), { name, path }];
@@ -142,11 +143,7 @@ export default function ContentPage({
     </>
   ) : null;
 
-  const aside = v?.aside ? v.aside : withForm ? (
-    <div className="rounded-3xl glass p-6 sm:p-8">
-      <QuickLeadForm />
-    </div>
-  ) : null;
+  const aside = v?.aside || null;
 
   const midIdx = sections.length >= 4 ? Math.floor(sections.length / 2) : -1;
 
@@ -202,7 +199,6 @@ export default function ContentPage({
             </>
           }
           aside={aside}
-          below={city ? <CityScene city={city} /> : null}
         />
       )}
 
@@ -276,13 +272,12 @@ export default function ContentPage({
             </>
           )}
           {afterSummary}
-          {!skip.has("guide") && <GuideSection sections={sections} visuals={visuals} collapse={isService} open={v ? v.open : 2} />}
+          {!isService && !skip.has("guide") && <GuideSection sections={sections} visuals={visuals} collapse={false} open={v ? v.open : 2} />}
         </>
       )}
 
       {extra}
       <ReadMore items={skip.has("readmore") ? [] : related} eyebrow="Læs videre" lines={isArticle ? ["Flere guides,", "der kan hjælpe dig"] : ["Næste skridt", "for dig"]} />
-      {faqs.length > 0 && <Questions faqs={faqs} />}
     </>
   );
 }

@@ -1,7 +1,6 @@
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import SectionHead from "../../components/ui/SectionHead";
 import FormToLead from "../../components/ui/FormToLead";
-import Questions from "../../components/Questions";
 import { FadeUp } from "../../components/home/fx/Reveal";
 import SpotlightCard from "../../components/home/fx/SpotlightCard";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
@@ -163,8 +162,6 @@ export default function PartnerPage() {
           </div>
         </div>
       </section>
-
-      <Questions faqs={faqs} />
 
       <div id="kontakt" className="scroll-mt-[68px]">
         <FormToLead

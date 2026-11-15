@@ -2,6 +2,7 @@
 // så AI-assistenter altid får et opdateret og komplet overblik over sitet.
 import { writeFileSync } from "node:fs";
 import { contentPages, articles } from "../src/app/data/content/index.js";
+import { isHiddenHref } from "../src/app/data/hidden.js";
 
 const SITE = "https://www.webhjerte.dk";
 const section = (s) => {
@@ -87,10 +88,7 @@ const link = ([t, p], d) => `- [${t}](${SITE}${p})${d ? `: ${d}` : ""}`;
 const short = [
   facts,
   "## Kerneydelser",
-  ...core.map((c) => link(c)),
-  "",
-  "## Brancher",
-  ...niches.map((c) => link(c)),
+  ...core.filter((c) => !isHiddenHref(c[1])).map((c) => link(c)),
   "",
   "## Områder, emner og referencer",
   ...contentPages.map((p) => link([p.name, `/${p.slug}`], p.description)),

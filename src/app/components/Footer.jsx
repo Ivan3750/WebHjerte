@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
+import { visibleLinks } from "../data/hidden";
 
-const groups = [
+const allGroups = [
   {
     title: "Services",
     links: [
@@ -31,12 +32,14 @@ const groups = [
       { href: "/om-mig", label: "Om mig" },
       { href: "/portefolje", label: "Portefølje" },
       { href: "/blog", label: "Blog og guides" },
-      { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
       { href: "/partner", label: "Partnerskab" },
       { href: "/kontakt", label: "Kontakt" },
     ],
   },
 ];
+
+// Skjulte sider (se data/hidden.js) vises ikke; tomme kolonner fjernes
+const groups = allGroups.map((g) => ({ ...g, links: visibleLinks(g.links) })).filter((g) => g.links.length);
 
 const legalLinks = [
   { href: "/privacy", label: "Privatlivspolitik" },
