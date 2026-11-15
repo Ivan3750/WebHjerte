@@ -5,7 +5,6 @@ import ScrollStatement from "./components/home/ScrollStatement";
 import AboutBlock from "./components/home/AboutBlock";
 import QuickLeadForm from "./components/ui/QuickLeadForm";
 import ScrollProgress from "./components/ui/ScrollProgress";
-import TrustStrip from "./components/home/TrustStrip";
 import AiFocus from "./components/home/AiFocus";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
@@ -108,7 +107,6 @@ export default function Home() {
       <ScrollProgress />
 
       <HomeHero />
-      <TrustStrip />
       <ScrollStatement />
       <BuildStory />
       <TilbydeSection />
@@ -124,14 +122,14 @@ export default function Home() {
             <div>
               <RevealLines
                 lines={["Webbureau i Horsens, der", "leverer kunder – ikke", "bare et design"]}
-                className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.12] text-[clamp(24px,3.2vw,40px)] mb-6"
+                className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.12] text-[clamp(24px,2.6vw,34px)] mb-6"
               />
-              <FadeUp as="p" data-speakable delay={0.1} className="text-[14px] text-[#5f5f5f] leading-[1.85] mb-4">
+              <FadeUp as="p" data-speakable delay={0.1} className="text-[15px] text-[#5f5f5f] leading-[1.85] mb-4">
                 WebHjerte er et webbureau i Horsens, der bygger hjemmesider fra 2.500 kr (inkl. moms) med levering på 2–10 dage. Som webbureau i Horsens hjælper jeg lokale virksomheder med at blive fundet på Google og omsætte
                 besøgende til henvendelser. Du får en hurtig, mobilvenlig hjemmeside med SEO bygget ind fra første dag –
                 til en fast pris, så du ved præcis, hvad det koster.
               </FadeUp>
-              <FadeUp as="p" delay={0.15} className="text-[14px] text-[#5f5f5f] leading-[1.85]">
+              <FadeUp as="p" delay={0.15} className="text-[15px] text-[#5f5f5f] leading-[1.85]">
                 Jeg er baseret i Horsens og arbejder med virksomheder i hele Midtjylland og Danmark. Du har én
                 kontaktperson fra første samtale til lancering – ingen mellemled, ingen overraskelser.
               </FadeUp>
@@ -142,7 +140,7 @@ export default function Home() {
                 <FadeUp key={item.href} delay={i * 0.07} className="h-full">
                   <Link
                     href={item.href}
-                    className="group h-full flex flex-col rounded-3xl bg-white border border-[#e8e6e6] hover:border-[#00a8e8]/50 hover:-translate-y-1 hover:shadow-[0_24px_50px_-30px_rgba(0,100,150,0.35)] transition-all duration-500"
+                    className="group h-full flex flex-col rounded-3xl bg-white border border-[#e8e6e6] hover:-translate-y-1 transition-all duration-500"
                   >
                     <div className="m-2">
                       <Panel h="h-[130px]">{item.visual}</Panel>
@@ -165,24 +163,24 @@ export default function Home() {
           <div>
             <RevealLines
               lines={["Få et gratis", "tilbud"]}
-              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(28px,3.6vw,48px)] mb-5"
+              className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(24px,2.6vw,34px)] mb-5"
             />
-            <FadeUp as="p" delay={0.1} className="text-[14px] text-[#8795a0] leading-[1.8] max-w-md mb-10">
+            <FadeUp as="p" delay={0.1} className="text-[15px] text-[#b4bdbd] leading-[1.8] max-w-md mb-10">
               Har du allerede en hjemmeside, der trænger til et løft, eller starter du helt forfra? Skriv det i
               formularen — jeg svarer inden for 24 timer.
             </FadeUp>
 
-            <FadeUp delay={0.15} className="glass rounded-2xl overflow-hidden divide-y divide-white/10">
+            <FadeUp delay={0.15} className="grid grid-cols-2 gap-3">
               {[
                 { label: "Svartid", value: "Inden for 24 timer" },
                 { label: "Første samtale", value: "Gratis & uforpligtende" },
                 { label: "Arbejdsområde", value: "Hele Danmark" },
                 { label: "Baseret i", value: "Horsens, Midtjylland" },
               ].map(({ label, value }) => (
-                <div key={label} className="flex items-center justify-between px-5 py-4">
-                  <span className="text-[12px] text-[#6f7c7c]">{label}</span>
-                  <span className="text-[12px] font-medium text-[#e8ecec]">{value}</span>
-                </div>
+                <div key={label} className="rounded-2xl bg-[#242828] border border-white/10 p-4 sm:p-5">
+                <p className="text-[13px] text-[#8a9696] mb-1.5">{label}</p>
+                <p className="text-[15px] font-semibold text-white leading-snug">{value}</p>
+              </div>
               ))}
             </FadeUp>
           </div>

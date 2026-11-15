@@ -73,7 +73,7 @@ function ScenePay() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={inView}
           transition={{ delay: 0.15 + i * 0.12, duration: 0.5, ease }}
-          className={`w-full max-w-[190px] flex items-center gap-2 rounded-lg px-3 py-2 ${card} ${i === 0 ? "!border-[#00a8e8]" : ""}`}
+          className={`w-full max-w-[190px] flex items-center gap-2 rounded-lg px-3 py-2 ${card} ${i === 0 ? "!bg-[#00a8e8]/10" : ""}`}
         >
           <span className="w-3 h-3 rounded-full border-2" style={{ borderColor: c, background: i === 0 ? c : "transparent" }} />
           <span className="text-[10.5px] text-[var(--v-ink)]">{m}</span>
@@ -90,7 +90,7 @@ function SceneOrder() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={inView}
         transition={{ delay: 0.3, type: "spring", stiffness: 200, damping: 16 }}
-        className={`w-full max-w-[220px] rounded-2xl p-3 flex gap-2.5 items-start shadow-[0_18px_40px_-20px_rgba(28,30,30,0.35)] ${card}`}
+        className={`w-full max-w-[220px] rounded-2xl p-3 flex gap-2.5 items-start ${card}`}
       >
         <span className="w-8 h-8 rounded-lg bg-[#00a8e8] text-white flex items-center justify-center shrink-0">
           <Ico d={ICONS.box} />
@@ -131,7 +131,7 @@ export function ShopJourney() {
                 <div className="px-5 pt-2 pb-6">
                   <p className="text-[11px] tabular-nums text-[#00a8e8] mb-2">Trin {i + 1}</p>
                   <p className="text-[16px] font-semibold text-[#1c1e1e] mb-1.5">{j.title}</p>
-                  <p className="text-[13.5px] text-[#5a5d5d] leading-[1.65]">{j.text}</p>
+                  <p className="text-[15px] text-[#5a5d5d] leading-[1.65]">{j.text}</p>
                 </div>
               </div>
             </FadeUp>
@@ -161,11 +161,11 @@ export function ShopPlatforms() {
             <FadeUp key={p.name} delay={i * 0.08} className="h-full">
               <div className="h-full rounded-3xl border border-white/10 bg-white/[0.04] p-6 sm:p-7 flex flex-col">
                 <p className="text-[19px] font-semibold text-white">{p.name}</p>
-                <p className="text-[13px] text-[#93a0a0] mt-1 mb-6">{p.fit}</p>
+                <p className="text-[13px] text-[#b4bdbd] mt-1 mb-6">{p.fit}</p>
                 <div className="flex flex-col gap-4 mb-6">
                   {p.meters.map(([label, v]) => (
                     <div key={label}>
-                      <p className="flex justify-between text-[12px] text-[#a6b1b1] mb-1.5">{label}</p>
+                      <p className="flex justify-between text-[12px] text-[#b4bdbd] mb-1.5">{label}</p>
                       <div className="flex gap-1">
                         {[1, 2, 3, 4, 5].map((n) => (
                           <motion.span
@@ -181,7 +181,7 @@ export function ShopPlatforms() {
                     </div>
                   ))}
                 </div>
-                <p className="mt-auto text-[12.5px] text-[#7f8c8c] leading-[1.6]">{p.note}</p>
+                <p className="mt-auto text-[12.5px] text-[#8a9696] leading-[1.6]">{p.note}</p>
               </div>
             </FadeUp>
           ))}
@@ -208,17 +208,16 @@ export function ShopPrice() {
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-16 items-center">
         <FadeUp>
           <div className="rounded-3xl bg-[#1c1e1e] p-7 sm:p-10">
-            <p className="text-[11px] uppercase tracking-[0.16em] text-[#7f8c8c] mb-4">Webshop · fast pris</p>
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[#8a9696] mb-4">Webshop · fast pris</p>
             <p className="text-white font-semibold tracking-tight leading-none text-[clamp(44px,5vw,64px)]">
               <span className="text-[16px] font-normal text-[#8a9696] mr-2">fra</span>14.000<span className="text-[16px] font-normal text-[#8a9696]"> kr</span>
             </p>
-            <p className="text-[14px] text-[#a6b1b1] mt-3">inkl. moms · typisk 2–4 uger</p>
+            <p className="text-[14px] text-[#b4bdbd] mt-3">inkl. moms · typisk 2–4 uger</p>
             <Link
               href="/kontakt?pakke=webshop"
-              className="group mt-8 inline-flex items-center gap-3 rounded-full bg-[#00a8e8] pl-6 pr-2 py-2 text-[13px] font-semibold text-white hover:bg-white hover:text-[#1c1e1e] transition-colors"
+              className="btn-primary mt-8"
             >
               Få et tilbud på din webshop
-              <ArrowBadge size="sm" />
             </Link>
           </div>
         </FadeUp>

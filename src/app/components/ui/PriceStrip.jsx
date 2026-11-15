@@ -20,7 +20,7 @@ export default function PriceStrip({ title = ["Faste priser –", "ingen overras
               <Link
                 href={href}
                 className={`group h-full rounded-3xl p-5 sm:p-6 flex flex-col gap-3 border transition-transform duration-500 hover:-translate-y-1 ${
-                  popular ? "bg-[#1c1e1e] border-[#00a8e8]/50 text-white" : "bg-white border-[#e8e6e6] text-[#1c1e1e]"
+                  popular ? "bg-[#1c1e1e] border-white/10 text-white" : "bg-white border-[#e8e6e6] text-[#1c1e1e]"
                 }`}
               >
                 <div className="flex items-center justify-between gap-2">
@@ -28,18 +28,18 @@ export default function PriceStrip({ title = ["Faste priser –", "ingen overras
                   {popular && <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#00a8e8] text-white">Mest valgt</span>}
                 </div>
                 <p className="flex items-baseline gap-1.5">
-                  {prefix && <span className={`text-[12px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>{prefix}</span>}
+                  {prefix && <span className={`text-[12px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>{prefix}</span>}
                   <span className="text-[clamp(22px,2.2vw,28px)] font-semibold tracking-tight leading-none">{price}</span>
-                  <span className={`text-[12px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>kr</span>
+                  <span className={`text-[12px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>kr</span>
                 </p>
-                <p className={`text-[12.5px] leading-snug ${popular ? "text-[#b4bebe]" : "text-[#5a5a5a]"}`}>{features[0]}</p>
-                <p className={`mt-auto text-[11px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>{timing} · inkl. moms</p>
+                <p className={`text-[12.5px] leading-snug ${popular ? "text-[#b4bdbd]" : "text-[#5a5a5a]"}`}>{features[0]}</p>
+                <p className={`mt-auto text-[11px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>{timing} · inkl. moms</p>
               </Link>
             </FadeUp>
           ))}
         </div>
         <FadeUp className="mt-6">
-          <Link href="/hjemmeside-pris" className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#1c1e1e] border-b border-[#1c1e1e]/30 hover:border-[#00a8e8] hover:text-[#007aab] transition-colors">
+          <Link href="/hjemmeside-pris" className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#1c1e1e] border-b border-[#1c1e1e]/30 hover:text-[#007aab] transition-colors">
             Se alle pakker og beregn din pris →
           </Link>
         </FadeUp>

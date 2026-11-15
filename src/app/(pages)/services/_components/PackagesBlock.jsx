@@ -6,7 +6,7 @@ import { packages } from "../../../data/packages";
 const Tick = ({ dark }) => (
   <span
     className={`w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 mt-[1px] ${
-      dark ? "bg-[#00a8e8]/15 border border-[#00a8e8]/40" : "bg-[#00a8e8]/10 border border-[#00a8e8]/30"
+      dark ? "bg-[#00a8e8]/15" : "bg-[#00a8e8]/10"
     }`}
   >
     <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
@@ -32,7 +32,7 @@ const PackagesBlock = () => {
             <FadeUp key={name} delay={i * 0.07} className="h-full">
               <div
                 className={`relative h-full rounded-3xl p-6 sm:p-7 flex flex-col gap-6 border transition-transform duration-500 hover:-translate-y-1 ${
-                  popular ? "bg-[#1c1e1e] border-[#00a8e8]/50 text-white" : "bg-white border-[#e8e6e6]"
+                  popular ? "bg-[#1c1e1e] border-white/10 text-white" : "bg-white border-[#e8e6e6]"
                 }`}
               >
                 <div>
@@ -45,14 +45,14 @@ const PackagesBlock = () => {
                     )}
                   </div>
                   <div className="flex items-baseline gap-1.5 mt-4">
-                    {prefix && <span className={`text-[13px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>{prefix}</span>}
-                    <span className={`text-[clamp(26px,2.4vw,32px)] font-semibold tracking-tight leading-none whitespace-nowrap ${popular ? "text-white" : "text-[#1c1e1e]"}`}>
+                    {prefix && <span className={`text-[13px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>{prefix}</span>}
+                    <span className={`text-[clamp(24px,2.6vw,34px)] font-semibold tracking-tight leading-none whitespace-nowrap ${popular ? "text-white" : "text-[#1c1e1e]"}`}>
                       {price}
                     </span>
-                    <span className={`text-[13px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>DKK</span>
+                    <span className={`text-[13px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>DKK</span>
                   </div>
-                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>inkl. moms</p>
-                  <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md ${popular ? "bg-white/10 text-[#b4bebe]" : "bg-[#f3f2f2] text-[#6a6a6a]"}`}>
+                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>inkl. moms</p>
+                  <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md ${popular ? "bg-white/10 text-[#b4bdbd]" : "bg-[#f3f2f2] text-[#6a6a6a]"}`}>
                     {timing}
                   </span>
                 </div>
@@ -61,13 +61,13 @@ const PackagesBlock = () => {
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5">
                       <Tick dark={popular} />
-                      <span className={`text-[13px] leading-snug ${popular ? "text-[#b4bebe]" : "text-[#5a5a5a]"}`}>{f}</span>
+                      <span className={`text-[13px] leading-snug ${popular ? "text-[#b4bdbd]" : "text-[#5a5a5a]"}`}>{f}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className={`rounded-2xl px-4 py-3 ${popular ? "bg-white/[0.07]" : "bg-[#00a8e8]/[0.08]"}`}>
-                  <p className={`flex items-center gap-2 text-[10.5px] uppercase tracking-[0.1em] ${popular ? "text-[#7f8c8c]" : "text-[#6a6a6a]"}`}>
+                  <p className={`flex items-center gap-2 text-[10.5px] uppercase tracking-[0.1em] ${popular ? "text-[#8a9696]" : "text-[#6a6a6a]"}`}>
                     <svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden>
                       <path d="M4 16l1-4L14 3l3 3-9 9-4 1z" stroke="#00a8e8" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -80,11 +80,7 @@ const PackagesBlock = () => {
 
                 <Link
                   href={href}
-                  className={`w-full py-3 rounded-full text-[13px] font-semibold text-center transition-colors ${
-                    popular
-                      ? "bg-[#00a8e8] text-white hover:bg-white hover:text-[#1c1e1e]"
-                      : "border border-[#dcdada] text-[#1c1e1e] hover:bg-[#1c1e1e] hover:text-white hover:border-[#1c1e1e]"
-                  }`}
+                  className={`w-full ${popular ? "btn-primary" : "btn-ghost btn-ghost-light"}`}
                 >
                   {cta}
                 </Link>
@@ -104,13 +100,13 @@ const PackagesBlock = () => {
           </div>
           <div>
             <p className="text-[11px] uppercase tracking-[0.14em] text-[#00a8e8] mb-1.5">I supportperioden</p>
-            <p className="text-[13px] text-[#5a5a5a] leading-relaxed">
+            <p className="text-[15px] text-[#5a5a5a] leading-relaxed">
               Mindre rettelser og justeringer af tekster, billeder og indhold er med i prisen, så længe supporten løber.
             </p>
           </div>
           <div>
             <p className="text-[11px] uppercase tracking-[0.14em] text-[#00a8e8] mb-1.5">Bagefter</p>
-            <p className="text-[13px] text-[#5a5a5a] leading-relaxed">
+            <p className="text-[15px] text-[#5a5a5a] leading-relaxed">
               Vedligeholdelsesabonnement fra <strong className="text-[#1c1e1e]">249 til 799 DKK pr. måned</strong> (inkl. moms) til opdateringer, rettelser og mindre ændringer.
             </p>
           </div>
@@ -121,19 +117,19 @@ const PackagesBlock = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div>
               <p className="text-[13px] font-semibold text-[#1c1e1e] mb-1.5">Standard</p>
-              <p className="text-[13px] text-[#6a6a6a] leading-relaxed">
+              <p className="text-[15px] text-[#6a6a6a] leading-relaxed">
                 Skræddersyet kode. Bedst hastighed og sikkerhed. Dette får du, medmindre du vælger andet.
               </p>
             </div>
             <div>
               <p className="text-[13px] font-semibold text-[#1c1e1e] mb-1.5">Vil du selv redigere siden?</p>
-              <p className="text-[13px] text-[#6a6a6a] leading-relaxed">
+              <p className="text-[15px] text-[#6a6a6a] leading-relaxed">
                 Så bygger vi i WordPress i stedet — til samme pris. Skriv det i beskeden.
               </p>
             </div>
             <div>
               <p className="text-[13px] font-semibold text-[#1c1e1e] mb-1.5">Andet ønske eller i tvivl?</p>
-              <p className="text-[13px] text-[#6a6a6a] leading-relaxed">
+              <p className="text-[15px] text-[#6a6a6a] leading-relaxed">
                 Arbejder du med Shopify, Webflow m.fl., eller ved du ikke hvad der passer? Skriv det i beskeden — vi rådgiver gratis.
               </p>
             </div>

@@ -42,11 +42,11 @@ const kodePakker = [
 
 const HvadFaarDu = () => {
   return (
-    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
           as="h2"
-          className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-[16px]"
+          className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] !mb-[16px]"
         >
           Det får du med
         </AnimatedInView>
@@ -60,7 +60,7 @@ const HvadFaarDu = () => {
 
         <AnimatedInView
           as="div"
-          className="rounded-2xl p-7 sm:p-8 bg-[#262a2a] border border-[#2a2d2d] mb-10 flex flex-col lg:flex-row gap-8 lg:gap-10"
+          className="rounded-2xl p-7 sm:p-8 bg-[#242828] border border-[#2a2d2d] mb-10 flex flex-col lg:flex-row gap-8 lg:gap-10"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 flex-1">
             {inkluderet.map((f) => (
@@ -84,13 +84,13 @@ const HvadFaarDu = () => {
                 <span className="text-[13px] text-[#8a9696]">DKK</span>
               </div>
               <p className="text-[11px] text-[#8a9696] mt-1.5">inkl. moms</p>
-              <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1a1d1d] text-[#8a9696] mt-3">
+              <span className="text-[11px] px-2.5 py-1 rounded-md inline-block w-fit bg-[#1c1e1e] text-[#8a9696] mt-3">
                 Levering: ca. 5 dage
               </span>
             </div>
             <Link
               href="/kontakt?pakke=wordpress"
-              className="w-full py-3 rounded-full text-[13px] font-semibold text-center transition-colors border border-white/15 hover:bg-[#00a8e8] hover:border-[#00a8e8] text-white"
+              className="btn-ghost w-full"
             >
               Kom i gang
             </Link>
@@ -99,7 +99,7 @@ const HvadFaarDu = () => {
 
         <AnimatedInView
           as="div"
-          className="rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8 bg-[#161818] border border-dashed border-[#2a2d2d]"
+          className="rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8 bg-[#1c1e1e] border border-dashed border-[#2a2d2d]"
         >
           <div className="flex-1">
             <p className="text-[14px] font-medium text-[#e0e0e0] mb-1.5">
@@ -120,7 +120,7 @@ const HvadFaarDu = () => {
           </div>
           <Link
             href="/services"
-            className="flex-shrink-0 px-5 py-3 rounded-full text-[13px] font-semibold text-center transition-colors border border-white/15 hover:bg-[#00a8e8] hover:border-[#00a8e8] text-white"
+            className="btn-ghost flex-shrink-0"
           >
             Se andre løsninger
           </Link>

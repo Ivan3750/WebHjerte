@@ -121,15 +121,15 @@ export default function PartnerPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {tracks.map((t, i) => (
               <FadeUp key={t.title} delay={i * 0.08} className="h-full">
-                <div className={`h-full rounded-3xl p-7 sm:p-9 border ${i === 0 ? "bg-white border-[#e8e6e6]" : "bg-[#1c1e1e] border-[#00a8e8]/40 text-white"}`}>
+                <div className={`h-full rounded-3xl p-7 sm:p-9 border ${i === 0 ? "bg-white border-[#e8e6e6]" : "bg-[#1c1e1e] border-white/10 text-white"}`}>
                   <h2 className={`text-[clamp(20px,2.2vw,28px)] font-semibold tracking-tight leading-tight mb-4 ${i === 0 ? "text-[#1c1e1e]" : "text-white"}`}>
                     {t.title}
                   </h2>
-                  <p className={`text-[14px] leading-[1.8] mb-6 ${i === 0 ? "text-[#5f5f5f]" : "text-[#93a0a0]"}`}>{t.text}</p>
+                  <p className={`text-[15px] leading-[1.8] mb-6 ${i === 0 ? "text-[#5f5f5f]" : "text-[#b4bdbd]"}`}>{t.text}</p>
                   <ul className="flex flex-col gap-3">
                     {t.points.map((p) => (
                       <li key={p} className="flex items-start gap-2.5">
-                        <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 mt-[1px] bg-[#00a8e8]/15 border border-[#00a8e8]/40">
+                        <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 mt-[1px] bg-[#00a8e8]/15">
                           <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
                             <path d="M1.5 4l2 2 3-3" stroke="#00a8e8" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
@@ -155,7 +155,7 @@ export default function PartnerPage() {
                   <div className="p-7 flex flex-col gap-3">
                     <span className="text-[12px] tabular-nums text-[#00a8e8]">{s.n}</span>
                     <p className="text-[17px] font-semibold text-white">{s.title}</p>
-                    <p className="text-[13.5px] text-[#8795a0] leading-[1.75]">{s.text}</p>
+                    <p className="text-[15px] text-[#b4bdbd] leading-[1.75]">{s.text}</p>
                   </div>
                 </SpotlightCard>
               </FadeUp>

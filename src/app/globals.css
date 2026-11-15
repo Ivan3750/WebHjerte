@@ -29,9 +29,6 @@ input::placeholder {
 a{
   transition: 0.3s;
 }
-a:hover{
-  scale: 0.998;
-}
 .btn {
   background-color: #00a8e8;
   color: rgb(255, 255, 255);
@@ -692,12 +689,10 @@ button:active {
           mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
 }
 
+/* Flade på mørk baggrund: samme gråsorte overalt, ingen skygger */
 .glass {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.10);
-  -webkit-backdrop-filter: blur(14px);
-          backdrop-filter: blur(14px);
-  box-shadow: 0 20px 50px -24px rgba(0,0,0,0.7);
+  background: #242828;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .text-gradient-blue {
@@ -765,7 +760,7 @@ section.scene { padding: 0; }
 }
 
 .glass-solid {
-  background: rgba(36,40,40,0.95);
+  background: #242828;
 }
 
 /* ───────────── Indre sider ───────────── */
@@ -840,3 +835,34 @@ body:not(:has(.is-home)) main :is(p, li, dd, td, th, blockquote, label, input, t
 body:not(:has(.is-home)) main :is(h1, h2, h3, h4, dt, .font-display) {
   font-family: Unbounded, var(--font-unbounded), sans-serif;
 }
+
+
+/* ───────────── Knapper: ét udtryk overalt ─────────────
+   Primær: blå med hvid tekst. Sekundær: kun kontur. Ingen skygger, ingen ikoner i knappen. */
+.btn-primary,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 26px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.btn-primary { background: #00a8e8; color: #fff; }
+.btn-primary:hover { background: #0092cb; }
+.btn-sm { padding: 10px 20px; font-size: 13px; }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.25); }
+.btn-ghost:hover { border-color: rgba(255,255,255,0.6); }
+.btn-ghost-light { color: #1c1e1e; border-color: rgba(28,30,30,0.25); }
+.btn-ghost-light:hover { border-color: #1c1e1e; }
+
+/* Kun det, der kan klikkes på, får "klik-markør" */
+[role="button"], a[href], button:not(:disabled), summary, label[for], select { cursor: pointer; }

@@ -52,7 +52,7 @@ export function AiChatDemo() {
   return (
     <div className="rounded-3xl border border-white/10 bg-[#242828] overflow-hidden">
       <div className="flex items-center gap-3 px-5 py-4 border-b border-white/10">
-        <span className="relative w-9 h-9 rounded-full bg-[#00a8e8] text-[#10181a] flex items-center justify-center">
+        <span className="relative w-9 h-9 rounded-full bg-[#00a8e8] text-white flex items-center justify-center">
           <Ico d={ICONS.spark} />
           <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-[#00a8e8] border-2 border-[#242828]" />
         </span>
@@ -60,7 +60,7 @@ export function AiChatDemo() {
           <p className="text-[13px] font-semibold text-white">AI-assistent</p>
           <p className="text-[11px] text-[#8a9696]">Svarer med det samme · også kl. 22</p>
         </div>
-        <span className="ml-auto text-[10px] uppercase tracking-[0.14em] text-[#00a8e8] border border-[#00a8e8]/30 rounded-full px-2.5 py-1">Prøv selv</span>
+        <span className="ml-auto text-[10px] uppercase tracking-[0.14em] text-[#00a8e8] bg-[#00a8e8]/10 rounded-full px-2.5 py-1">Prøv selv</span>
       </div>
 
       <div ref={box} className="h-[260px] overflow-y-auto px-5 py-4 flex flex-col gap-2.5" aria-live="polite">
@@ -71,7 +71,7 @@ export function AiChatDemo() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease }}
             className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-[13px] leading-[1.55] ${
-              m.from === "bot" ? "self-start rounded-bl-sm bg-white/[0.07] text-[#dfe6e6]" : "self-end rounded-br-sm bg-[#00a8e8] text-[#10181a]"
+              m.from === "bot" ? "self-start rounded-bl-sm bg-white/[0.07] text-[#dfe6e6]" : "self-end rounded-br-sm bg-[#00a8e8] text-white"
             }`}
           >
             {m.text}
@@ -94,18 +94,18 @@ export function AiChatDemo() {
               type="button"
               onClick={() => ask(d)}
               disabled={typing}
-              className="text-[12px] text-white border border-white/15 hover:border-[#00a8e8] hover:text-[#00a8e8] disabled:opacity-50 rounded-full px-3.5 py-2 transition-colors"
+              className="text-[12px] text-white border border-white/15 hover:text-[#00a8e8] disabled:opacity-50 rounded-full px-3.5 py-2 transition-colors"
             >
               {d.q}
             </button>
           ))
         ) : (
-          <Link href="/kontakt" className="text-[12px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-4 py-2 transition-colors">
+          <Link href="/kontakt" className="btn-primary btn-sm">
             Vil du have sådan en? Få et tilbud
           </Link>
         )}
       </div>
-      <p className="px-5 pb-4 text-[11px] text-[#6c7a7a]">Eksempel. Din egen assistent lærer dine priser, tider og område.</p>
+      <p className="px-5 pb-4 text-[11px] text-[#8a9696]">Eksempel. Din egen assistent lærer dine priser, tider og område.</p>
     </div>
   );
 }
@@ -162,12 +162,12 @@ export function AiSavings() {
           <FadeUp delay={0.1} className="relative overflow-hidden rounded-3xl bg-[#1c1e1e] p-6 sm:p-9 flex flex-col">
             <div aria-hidden className="grid-fade absolute inset-0 opacity-40" />
             <div className="relative">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-[#7f8c8c] mb-3">Du sparer ca.</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-[#8a9696] mb-3">Du sparer ca.</p>
               <p className="text-white font-semibold tracking-tight leading-none text-[clamp(56px,7vw,88px)] tabular-nums">
                 {hours}
                 <span className="text-[20px] font-normal text-[#8a9696]"> timer/md.</span>
               </p>
-              <p className="mt-3 text-[15px] text-[#a6b1b1]">Det svarer til ca. {days} arbejdsdage hver måned.</p>
+              <p className="mt-3 text-[15px] text-[#b4bdbd]">Det svarer til ca. {days} arbejdsdage hver måned.</p>
               <div className="mt-8 h-3 rounded-full bg-white/10 overflow-hidden">
                 <motion.div
                   className="h-full rounded-full bg-[#00a8e8]"
@@ -175,15 +175,14 @@ export function AiSavings() {
                   transition={{ duration: 0.5, ease }}
                 />
               </div>
-              <p className="mt-8 text-[12px] text-[#6c7a7a] leading-[1.7]">
+              <p className="mt-8 text-[12px] text-[#8a9696] leading-[1.7]">
                 Et groft estimat med 21 arbejdsdage pr. måned. Den rigtige gevinst afhænger af dine spørgsmål – det finder vi ud af ved en gratis snak.
               </p>
               <Link
                 href="/kontakt"
-                className="group mt-6 inline-flex items-center gap-3 rounded-full bg-[#00a8e8] pl-6 pr-2 py-2 text-[13px] font-semibold text-white hover:bg-white hover:text-[#1c1e1e] transition-colors"
+                className="btn-primary mt-6"
               >
                 Få et konkret forslag
-                <ArrowBadge size="sm" />
               </Link>
             </div>
           </FadeUp>
@@ -221,7 +220,7 @@ export function AiDayCompare() {
                 role="tab"
                 aria-selected={mode === k}
                 onClick={() => setMode(k)}
-                className={`relative rounded-full px-5 py-2.5 text-[13px] font-medium transition-colors ${mode === k ? "text-[#10181a]" : "text-[#a6b1b1] hover:text-white"}`}
+                className={`relative rounded-full px-5 py-2.5 text-[13px] font-medium transition-colors ${mode === k ? "text-[#10181a]" : "text-[#b4bdbd] hover:text-white"}`}
               >
                 {mode === k && (
                   <motion.span layoutId="day-pill" className={`absolute inset-0 rounded-full ${k === "with" ? "bg-[#00a8e8]" : "bg-[#00a8e8]"}`} transition={{ duration: 0.4, ease }} />
@@ -240,7 +239,7 @@ export function AiDayCompare() {
                 <div className="relative flex items-center gap-4 sm:gap-6">
                   <span
                     className={`relative z-10 w-14 h-14 sm:w-[70px] sm:h-[70px] shrink-0 rounded-2xl flex flex-col items-center justify-center transition-colors duration-500 ${
-                      on ? "bg-[#00a8e8] text-[#10181a]" : "bg-[#2a2d2d] text-[#00a8e8] border border-white/10"
+                      on ? "bg-[#00a8e8] text-white" : "bg-[#242828] text-[#00a8e8] border border-white/10"
                     }`}
                   >
                     <Ico d={ICONS[d.icon]} className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -254,7 +253,7 @@ export function AiDayCompare() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3, delay: i * 0.04 }}
-                        className={`text-[15px] sm:text-[17px] leading-[1.5] ${on ? "text-white" : "text-[#a6b1b1]"}`}
+                        className={`text-[15px] sm:text-[17px] leading-[1.5] ${on ? "text-white" : "text-[#b4bdbd]"}`}
                       >
                         {on ? d.with : d.without}
                       </motion.p>
@@ -318,7 +317,7 @@ export function AiByTrade() {
               aria-selected={x.key === active}
               onClick={() => setActive(x.key)}
               className={`rounded-full border px-4 py-2.5 text-[13px] font-medium transition-colors ${
-                x.key === active ? "bg-[#1c1e1e] border-[#1c1e1e] text-white" : "bg-white border-[#e4e2e2] text-[#3a3d3d] hover:border-[#00a8e8] hover:text-[#00a8e8]"
+                x.key === active ? "bg-[#1c1e1e] border-[#1c1e1e] text-white" : "bg-white border-[#e4e2e2] text-[#3a3d3d] hover:text-[#00a8e8]"
               }`}
             >
               {x.label}
@@ -401,7 +400,7 @@ export function AiStart() {
               <Link
                 href={s.href}
                 className={`group h-full flex flex-col rounded-3xl border transition-all duration-500 hover:-translate-y-1 ${
-                  s.popular ? "bg-[#1c1e1e] border-[#00a8e8]/50" : "bg-white border-[#e8e6e6] hover:border-[#00a8e8]/50"
+                  s.popular ? "bg-[#1c1e1e] border-white/10" : "bg-white border-[#e8e6e6]"
                 }`}
               >
                 <div className="m-2.5">
@@ -412,7 +411,7 @@ export function AiStart() {
                 <div className="px-5 sm:px-6 pt-3 pb-6 flex flex-col gap-2 flex-1">
                   <span className={`text-[10.5px] uppercase tracking-[0.14em] ${s.popular ? "text-[#00a8e8]" : "text-[#8a8a8a]"}`}>{s.tag}</span>
                   <p className={`text-[17px] font-semibold leading-snug ${s.popular ? "text-white" : "text-[#1c1e1e]"}`}>{s.title}</p>
-                  <p className={`text-[13.5px] leading-[1.7] ${s.popular ? "text-[#a6b1b1]" : "text-[#5a5d5d]"}`}>{s.text}</p>
+                  <p className={`text-[15px] leading-[1.7] ${s.popular ? "text-[#b4bdbd]" : "text-[#5a5d5d]"}`}>{s.text}</p>
                   <div className="mt-auto pt-5 flex items-center justify-between">
                     <span className={`text-[15px] font-semibold ${s.popular ? "text-white" : "text-[#1c1e1e]"}`}>{s.price}</span>
                     <ArrowBadge size="sm" tone={s.popular ? "dark" : "light"} />

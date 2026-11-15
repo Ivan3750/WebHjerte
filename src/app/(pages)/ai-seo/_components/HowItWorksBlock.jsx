@@ -31,9 +31,9 @@ const steps = [
 
 export default function HowItWorksBlock() {
   return (
-    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="h2" className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-14 max-w-[26ch]">
+        <AnimatedInView as="h2" className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] !mb-14 max-w-[26ch]">
           Fra analyse til resultater i fire trin
         </AnimatedInView>
 
@@ -42,7 +42,7 @@ export default function HowItWorksBlock() {
             <AnimatedInView
               key={s.n}
               as="div"
-              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#262a2a] border border-[#2a2d2d]"
+              className="rounded-2xl p-7 flex flex-col gap-4 bg-[#242828] border border-[#2a2d2d]"
             >
               <div className="flex items-center gap-3">
                 <span
@@ -56,7 +56,7 @@ export default function HowItWorksBlock() {
                 </span>
                 <h3 className="text-[14.5px] font-medium text-[#e0e0e0]">{s.title}</h3>
               </div>
-              <p className="text-[13px] text-[#7a7a7a] leading-[1.75]">{s.text}</p>
+              <p className="text-[15px] text-[#7a7a7a] leading-[1.75]">{s.text}</p>
             </AnimatedInView>
           ))}
         </div>

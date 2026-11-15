@@ -12,7 +12,7 @@ const quotes = [
 
 const SocialProof = () => {
   return (
-    <section className="bg-[#1c1e1e] py-14 sm:py-20">
+    <section className="bg-[#1c1e1e] py-16 sm:py-24">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center px-4 sm:px-6">
 
         <div className="flex flex-col gap-6 sm:gap-10 w-full">

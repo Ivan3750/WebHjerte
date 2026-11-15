@@ -42,16 +42,15 @@ export default function AiFocus() {
           <div>
             <RevealLines
               lines={["Ikke bare en hjemmeside –", "AI, der arbejder for dig"]}
-              className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3.8vw,48px)]"
+              className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,2.6vw,34px)]"
             />
           </div>
           <FadeUp delay={0.15}>
             <Link
               href="/ai-loesninger"
-              className="group inline-flex items-center gap-3 rounded-full bg-[#00a8e8] pl-6 pr-2 py-2 text-[13px] font-semibold text-[#10181a] hover:bg-white transition-colors"
+              className="btn-primary"
             >
               Se hvad AI kan for dig
-              <ArrowBadge size="sm" />
             </Link>
           </FadeUp>
         </div>
@@ -61,7 +60,7 @@ export default function AiFocus() {
             <FadeUp key={c.href} delay={i * 0.07} className="h-full">
               <Link
                 href={c.href}
-                className="group h-full flex flex-col rounded-3xl border border-white/10 bg-white/[0.03] hover:border-[#00a8e8]/50 hover:-translate-y-1 transition-all duration-500"
+                className="group h-full flex flex-col rounded-3xl border border-white/10 bg-white/[0.03] hover:-translate-y-1 transition-all duration-500"
               >
                 <div className="m-2.5">
                   <Panel dark h="h-[170px]">
@@ -70,7 +69,7 @@ export default function AiFocus() {
                 </div>
                 <div className="px-5 pt-3 pb-6 flex flex-col gap-2 flex-1">
                   <p className="text-[16px] font-semibold text-white leading-snug group-hover:text-[#00a8e8] transition-colors">{c.title}</p>
-                  <p className="text-[13px] text-[#93a0a0] leading-[1.7]">{c.text}</p>
+                  <p className="text-[15px] text-[#b4bdbd] leading-[1.7]">{c.text}</p>
                 </div>
               </Link>
             </FadeUp>

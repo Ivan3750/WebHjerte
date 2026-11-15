@@ -23,13 +23,13 @@ export default function CasesCarousel() {
   const next = () => setCurrent((p) => (p + 1) % projects.length);
 
   return (
-    <section className="bg-[#eceeee] px-4 sm:px-10 lg:px-20 py-12 sm:py-20">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-8 sm:mb-14">
-          <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] mb-3 sm:mb-4 text-[clamp(24px,3.3vw,40px)]">
+          <h2 className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.1] mb-3 sm:mb-4 text-[clamp(24px,2.6vw,34px)]">
             Udvalgte cases
           </h2>
-          <p className="text-[13px] sm:text-[14px] text-[#7a7a7a] leading-[1.7] sm:leading-[1.85]">
+          <p className="text-[15px] sm:text-[15px] text-[#7a7a7a] leading-[1.7] sm:leading-[1.85]">
             Fra lokale forretninger til større platforme – her er et udpluk af
             hjemmesider, vi har bygget fra bunden.
           </p>
@@ -63,14 +63,14 @@ export default function CasesCarousel() {
                   <button
                     onClick={prev}
                     aria-label="Forrige case"
-                    className="w-9 h-9 rounded-full bg-white/90 backdrop-blur border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] shadow-sm transition hover:bg-[#00a8e8] hover:border-[#00a8e8] hover:text-white"
+                    className="w-9 h-9 rounded-full bg-white/90 backdrop-blur border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] transition hover:bg-[#00a8e8] hover:text-white"
                   >
                     <ChevronLeft size={16} />
                   </button>
                   <button
                     onClick={next}
                     aria-label="Næste case"
-                    className="w-9 h-9 rounded-full bg-white/90 backdrop-blur border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] shadow-sm transition hover:bg-[#00a8e8] hover:border-[#00a8e8] hover:text-white"
+                    className="w-9 h-9 rounded-full bg-white/90 backdrop-blur border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] transition hover:bg-[#00a8e8] hover:text-white"
                   >
                     <ChevronRight size={16} />
                   </button>
@@ -79,9 +79,6 @@ export default function CasesCarousel() {
 
               {/* Text */}
               <div className="flex flex-col gap-3 sm:gap-5 max-w-xl">
-                <span className="inline-flex w-fit items-center rounded-full border border-[#00a8e8]/30 px-2.5 sm:px-3 py-1 text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#00a8e8]">
-                  Live projekt
-                </span>
 
                 <h3 className="text-[22px] sm:text-[26px] md:text-[30px] text-[#1a1a1a] leading-tight">
                   {projects[current].title}
@@ -91,7 +88,7 @@ export default function CasesCarousel() {
                   </span>
                 </h3>
 
-                <p className="text-[13px] sm:text-[14px] text-[#5a5a5a] leading-[1.7] sm:leading-[1.85]">
+                <p className="text-[15px] sm:text-[15px] text-[#5a5a5a] leading-[1.7] sm:leading-[1.85]">
                   {projects[current].overview}
                 </p>
               </div>
@@ -103,14 +100,14 @@ export default function CasesCarousel() {
             <button
               onClick={prev}
               aria-label="Forrige case"
-              className="pointer-events-auto w-10 h-10 rounded-full bg-white border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] shadow-sm transition hover:bg-[#00a8e8] hover:border-[#00a8e8] hover:text-white"
+              className="pointer-events-auto w-10 h-10 rounded-full bg-white border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] transition hover:bg-[#00a8e8] hover:text-white"
             >
               <ChevronLeft size={18} />
             </button>
             <button
               onClick={next}
               aria-label="Næste case"
-              className="pointer-events-auto w-10 h-10 rounded-full bg-white border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] shadow-sm transition hover:bg-[#00a8e8] hover:border-[#00a8e8] hover:text-white"
+              className="pointer-events-auto w-10 h-10 rounded-full bg-white border border-[#2a2d2d] flex items-center justify-center text-[#1a1a1a] transition hover:bg-[#00a8e8] hover:text-white"
             >
               <ChevronRight size={18} />
             </button>

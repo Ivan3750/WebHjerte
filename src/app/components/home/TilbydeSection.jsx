@@ -67,16 +67,15 @@ const TilbydeSection = () => {
           <div>
             <RevealLines
               lines={["Hvad kan jeg", "hjælpe med?"]}
-              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.08] text-[clamp(26px,3.6vw,46px)]"
+              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.08] text-[clamp(24px,2.6vw,34px)]"
             />
           </div>
           <FadeUp delay={0.2}>
             <Link
               href="/services"
-              className="group inline-flex items-center gap-2 text-sm text-[#1c1e1e] border border-[#dcdada] bg-white rounded-full px-5 py-2.5 hover:border-[#00a8e8] hover:text-[#00a8e8]"
+              className="btn-ghost btn-ghost-light"
             >
               Se alle priser
-              <ArrowIcon className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </FadeUp>
         </div>
@@ -86,7 +85,7 @@ const TilbydeSection = () => {
             <FadeUp key={name} delay={(idx % 3) * 0.08} className={span}>
               <SpotlightCard
                 dark={false}
-                className="h-full rounded-3xl bg-white border border-[#e8e6e6] hover:border-[#cfe9f5] transition-colors duration-500"
+                className="h-full rounded-3xl bg-white border border-[#e8e6e6]"
               >
                 <div className={`flex flex-col h-full ${wide ? "md:flex-row md:items-center" : ""}`}>
                   <div className={`m-2.5 ${wide ? "md:w-[44%] md:shrink-0" : ""}`}>
@@ -94,16 +93,13 @@ const TilbydeSection = () => {
                   </div>
                   <div className="p-5 sm:p-6 flex flex-col gap-2 flex-1">
                     <p className="text-[16px] font-semibold text-[#1c1e1e]">{name}</p>
-                    <p className="text-[13px] text-[#6a6a6a] leading-[1.75]">{desc}</p>
+                    <p className="text-[15px] text-[#6a6a6a] leading-[1.75]">{desc}</p>
                     <div className="mt-auto pt-3">
                       <Link
                         href={href}
-                        className="group/btn inline-flex w-fit items-center gap-2 rounded-full bg-[#00a8e8] pl-5 pr-1.5 py-1.5 text-[12.5px] font-medium text-white hover:bg-[#1c1e1e] transition-colors"
+                        className="btn-primary"
                       >
                         {cta}
-                        <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
-                          <ArrowIcon className="w-3 h-3 transition-transform duration-300 group-hover/btn:translate-x-0.5" />
-                        </span>
                       </Link>
                     </div>
                   </div>

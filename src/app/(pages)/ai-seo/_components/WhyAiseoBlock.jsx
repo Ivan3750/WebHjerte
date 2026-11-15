@@ -31,9 +31,9 @@ const reasons = [
 
 export default function WhyAiseoBlock() {
   return (
-    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-14 max-w-[26ch]">
+        <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] !mb-14 max-w-[26ch]">
           Fordelene ved at kombinere AI med menneskelig ekspertise
         </AnimatedInView>
 
@@ -56,7 +56,7 @@ export default function WhyAiseoBlock() {
                 </span>
                 <h3 className="text-[14.5px] font-medium text-[#5a5a5a]">{r.title}</h3>
               </div>
-              <p className="text-[13px] text-[#5a5a5a] leading-[1.75]">{r.text}</p>
+              <p className="text-[15px] text-[#5a5a5a] leading-[1.75]">{r.text}</p>
             </AnimatedInView>
           ))}
         </div>

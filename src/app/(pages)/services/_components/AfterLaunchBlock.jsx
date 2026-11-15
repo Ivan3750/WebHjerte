@@ -41,7 +41,7 @@ export default function AfterLaunchBlock() {
                   <Panel dark h="h-[170px]">{p.visual}</Panel>
                   <div className="px-2 sm:px-3 pb-3 flex flex-col gap-2.5">
                     <p className="text-[16px] font-semibold text-white">{p.title}</p>
-                    <p className="text-[13.5px] text-[#8795a0] leading-[1.75]">{p.text}</p>
+                    <p className="text-[15px] text-[#b4bdbd] leading-[1.75]">{p.text}</p>
                   </div>
                 </div>
               </SpotlightCard>

@@ -189,8 +189,8 @@ function Mockup({ progress, reduce }) {
         style={reduce ? undefined : { rotateY: rotY, rotateX: rotX }}
         className="relative mx-auto w-full max-w-[560px]"
       >
-        <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#0e1111] shadow-[0_50px_120px_-40px_rgba(0,168,232,0.5)]">
-          <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#121616]">
+        <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#1c1e1e]">
+          <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#1c1e1e]">
             <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]/80" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]/80" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]/80" />
@@ -288,7 +288,7 @@ export default function BuildStory() {
 
           {/* Tekst */}
           <div className="md:order-1 flex flex-col justify-center min-h-0">
-            <h2 className="text-white font-semibold tracking-tight leading-[1.12] text-[clamp(18px,3vw,40px)] mb-3 md:mb-9 max-w-[22ch]">
+            <h2 className="text-white font-semibold tracking-tight leading-[1.12] text-[clamp(22px,2.6vw,34px)] mb-3 md:mb-9 max-w-[22ch]">
               Fra første besked til live hjemmeside
             </h2>
 
@@ -309,7 +309,6 @@ export default function BuildStory() {
                         className="absolute -left-[28.5px] top-[9px] w-[7px] h-[7px] rounded-full transition-all duration-500"
                         style={{
                           background: i <= active ? s.color : "#2a3030",
-                          boxShadow: on ? `0 0 0 5px ${s.color}33` : "none",
                         }}
                       />
                       <div className="flex items-baseline gap-3 py-1.5">
@@ -333,7 +332,7 @@ export default function BuildStory() {
                         }`}
                       >
                         <div className="overflow-hidden">
-                          <p className="text-[13px] sm:text-[14px] text-[#93a0a0] leading-[1.75] max-w-md pb-3 pl-8">
+                          <p className="text-[15px] sm:text-[15px] text-[#b4bdbd] leading-[1.75] max-w-md pb-3 pl-8">
                             {s.text}
                           </p>
                         </div>
@@ -359,7 +358,7 @@ export default function BuildStory() {
                 {steps[active].n} / 05
               </p>
               <p className="text-[22px] font-semibold text-white leading-tight mb-2">{steps[active].title}</p>
-              <p className="text-[13px] text-[#93a0a0] leading-[1.7]">{steps[active].text}</p>
+              <p className="text-[15px] text-[#b4bdbd] leading-[1.7]">{steps[active].text}</p>
             </div>
           </div>
         </div>

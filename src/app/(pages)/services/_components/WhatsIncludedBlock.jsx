@@ -30,7 +30,7 @@ export default function WhatsIncludedBlock() {
             <ul className="flex flex-col gap-3.5">
               {included.map((item) => (
                 <li key={item} className="flex items-center gap-3">
-                  <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 bg-[#00a8e8]/10 border border-[#00a8e8]/30">
+                  <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 bg-[#00a8e8]/10">
                     <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
                       <path d="M1.5 4l2 2 3-3" stroke="#00a8e8" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>

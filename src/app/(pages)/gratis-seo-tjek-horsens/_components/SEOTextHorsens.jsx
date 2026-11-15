@@ -82,7 +82,7 @@ const SEOTextHorsens = () => (
             <RevealLines
               as="h2"
               lines={[s.h2]}
-              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(22px,2.6vw,30px)] max-w-[26ch]"
+              className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(24px,2.6vw,34px)] max-w-[26ch]"
             />
           </div>
           <div className="min-w-0 max-w-[760px]">

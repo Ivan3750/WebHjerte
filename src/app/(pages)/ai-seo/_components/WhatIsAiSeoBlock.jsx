@@ -19,9 +19,9 @@ const points = [
 
 export default function WhatIsAiSeoBlock() {
   return (
-    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
-        <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] !mb-14 max-w-[26ch]">
+        <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] !mb-14 max-w-[26ch]">
           Når data og ekspertise mødes
         </AnimatedInView>
 
@@ -34,7 +34,7 @@ export default function WhatIsAiSeoBlock() {
             >
               <span className="w-2 h-2 rounded-full bg-[#00a8e8] flex-shrink-0" />
               <h3 className="text-[15px] font-medium text-[#5a5a5a]">{p.title}</h3>
-              <p className="text-[13px] text-[#5a5a5a] leading-[1.85]">{p.text}</p>
+              <p className="text-[15px] text-[#5a5a5a] leading-[1.85]">{p.text}</p>
             </AnimatedInView>
           ))}
         </div>

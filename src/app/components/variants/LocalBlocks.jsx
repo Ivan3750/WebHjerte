@@ -45,7 +45,7 @@ export function JyllandRegions() {
   const [i, setI] = useState(0);
   const r = REGIONS[i];
   return (
-    <section className="scene bg-[#f1f0ee]">
+    <section className="scene bg-[#f7f6f6]">
       <div className="max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead eyebrow="Fra Skagen til Kolding" lines={["Vælg din del", "af Jylland"]} className="mb-8" />
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6">
@@ -55,7 +55,7 @@ export function JyllandRegions() {
               type="button"
               aria-pressed={k === i}
               onClick={() => setI(k)}
-              className={`rounded-2xl px-4 py-3.5 text-left text-[14px] font-semibold transition-colors ${k === i ? "bg-[#00a8e8] text-white" : "bg-white text-[#3a3a3a] border border-[#e4e2e2] hover:border-[#00a8e8]"}`}
+              className={`rounded-2xl px-4 py-3.5 text-left text-[14px] font-semibold transition-colors ${k === i ? "bg-[#00a8e8] text-white" : "bg-white text-[#3a3a3a] border border-[#e4e2e2]"}`}
             >
               {x.name}
               <span className={`block text-[11.5px] font-normal mt-0.5 ${k === i ? "text-white/75" : "text-[#8a8a8a]"}`}>{x.cities.length} byer</span>
@@ -126,7 +126,7 @@ export function AarhusRank() {
             {list.map((n, k) =>
               n === "you" ? (
                 <motion.div layout key="you" transition={{ duration: 0.5, ease }} className="rounded-2xl bg-[#1c1e1e] text-white px-4 py-3 flex items-center gap-3">
-                  <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-[#10181a] text-[12px] font-semibold flex items-center justify-center">{k + 1}</span>
+                  <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[12px] font-semibold flex items-center justify-center">{k + 1}</span>
                   <span className="text-[14px] font-semibold">Din virksomhed</span>
                   <span className="ml-auto text-[11px] text-[#00a8e8]">★★★★★</span>
                 </motion.div>

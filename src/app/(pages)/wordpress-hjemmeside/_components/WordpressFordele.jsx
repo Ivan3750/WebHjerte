@@ -16,7 +16,7 @@ const FloatBadge = ({ children, className, delay = 0 }) => (
   <motion.span
     animate={{ y: [0, -6, 0] }}
     transition={{ duration: 3.4, repeat: Infinity, ease: "easeInOut", delay }}
-    className={`absolute w-11 h-11 rounded-full bg-[#1c1e1e] border border-[#2a2d2d] flex items-center justify-center text-[#00a8e8] shadow-lg ${className}`}
+    className={`absolute w-11 h-11 rounded-full bg-[#1c1e1e] border border-[#2a2d2d] flex items-center justify-center text-[#00a8e8] ${className}`}
   >
     {children}
   </motion.span>
@@ -50,11 +50,11 @@ export default function WordpressFordele() {
   const yDown2 = useTransform(scrollYProgress2, [0, 1], [-40, 40]);
 
   return (
-    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20 overflow-hidden">
+    <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-16 py-16 sm:py-24 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
           as="h2"
-          className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-16 max-w-2xl"
+          className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,2.6vw,34px)] mb-16 max-w-2xl"
         >
           Det du bør vide om en WordPress-hjemmeside
         </AnimatedInView>
@@ -67,12 +67,12 @@ export default function WordpressFordele() {
             <h3 className="text-[24px] sm:text-[28px] text-[#1a1a1a] leading-tight mb-4">
               Din hjemmeside – din ejendom
             </h3>
-            <p className="text-[14px] text-[#7a7a7a] leading-[1.85] mb-4">
+            <p className="text-[15px] text-[#7a7a7a] leading-[1.85] mb-4">
               Modsat lukkede side-byggere ejer du selv koden, indholdet og
               databasen. Siden kan til enhver tid flyttes til en anden
               hosting, uden at du er bundet til os eller en bestemt platform.
             </p>
-            <p className="text-[14px] text-[#7a7a7a] leading-[1.85]">
+            <p className="text-[15px] text-[#7a7a7a] leading-[1.85]">
               Ingen skjulte månedlige platformsgebyrer – kun den hosting, du
               selv vælger.
             </p>
@@ -123,7 +123,7 @@ export default function WordpressFordele() {
             <h3 className="text-[24px] sm:text-[28px] text-[#1a1a1a] leading-tight mb-4">
               Åben kildekode, uendelige muligheder
             </h3>
-            <p className="text-[14px] text-[#7a7a7a] leading-[1.85] mb-4">
+            <p className="text-[15px] text-[#7a7a7a] leading-[1.85] mb-4">
               WordPress driver godt og vel 4 ud af 10 hjemmesider på nettet. Det
               betyder et enormt økosystem af plugins, som gør det muligt at
               tilføje webshop, booking eller medlemsområde senere hen – uden

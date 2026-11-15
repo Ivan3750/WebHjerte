@@ -37,7 +37,7 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
         <div className="mb-10 sm:mb-14">
           <RevealLines
             lines={lines}
-            className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.2vw,40px)]"
+            className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,2.6vw,34px)]"
           />
         </div>
 
@@ -49,7 +49,7 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
                 <Link href={item.href} className="group block h-full rounded-3xl focus-visible:outline-2 focus-visible:outline-[#00a8e8]">
                   <SpotlightCard
                     color="0,168,232"
-                    className="h-full rounded-3xl glass transition-all duration-500 group-hover:border-[#00a8e8]/50 group-hover:-translate-y-1"
+                    className="h-full rounded-3xl glass transition-all duration-500 group-hover:-translate-y-1"
                   >
                     <div className="p-6 sm:p-8 flex flex-col h-full min-h-[240px]">
                       <div className="flex items-center justify-between mb-8">
@@ -65,7 +65,7 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
                       <p className="text-[18px] sm:text-[19px] font-semibold text-white leading-[1.3] mb-3 group-hover:text-[#00a8e8] transition-colors duration-300">
                         {item.title}
                       </p>
-                      <p className="readable text-[15px] text-[#a6b1b1] leading-[1.7] mb-8">{item.desc}</p>
+                      <p className="readable text-[15px] text-[#b4bdbd] leading-[1.7] mb-8">{item.desc}</p>
                       <div className="mt-auto flex items-center justify-between">
                         <span className="text-[12px] font-medium text-white/60 group-hover:text-white transition-colors">
                           {item.cta || "Læs mere"}
@@ -97,16 +97,16 @@ export function PostCard({ href, title, desc, tag, index = 0, meta }) {
   );
   return (
     <Link href={href} className="group block h-full rounded-3xl">
-      <div className="h-full rounded-3xl bg-white border border-[#e8e6e6] group-hover:border-[#00a8e8]/50 group-hover:-translate-y-1 transition-all duration-500 group-hover:shadow-[0_24px_50px_-28px_rgba(0,100,150,0.35)] flex flex-col">
+      <div className="h-full rounded-3xl bg-white border border-[#e8e6e6] group-hover:-translate-y-1 transition-all duration-500 flex flex-col">
         <div className="m-2.5">
           <BlogCover href={href} category={tag} />
         </div>
         <div className="px-5 sm:px-6 pt-3 pb-6 flex flex-col flex-1">
           <div className="mb-3">{chip}</div>
           <p className="text-[16.5px] font-semibold text-[#1c1e1e] leading-[1.35] mb-2 group-hover:text-[#00a8e8] transition-colors duration-300">{title}</p>
-          <p className="readable text-[14px] text-[#5a5d5d] leading-[1.65] mb-5 line-clamp-2">{desc}</p>
+          <p className="readable text-[15px] text-[#5a5d5d] leading-[1.65] mb-5 line-clamp-2">{desc}</p>
           <div className="mt-auto flex items-center justify-between">
-            {meta ? <span className="text-[11.5px] text-[#8a8d8d]">{meta.split(" · ")[0]}</span> : <span className="text-[12px] font-medium text-[#5a5d5d]">Læs guiden</span>}
+            {meta ? <span className="text-[11.5px] text-[#8a9696]">{meta.split(" · ")[0]}</span> : <span className="text-[12px] font-medium text-[#5a5d5d]">Læs guiden</span>}
             <ArrowBadge size="sm" />
           </div>
         </div>

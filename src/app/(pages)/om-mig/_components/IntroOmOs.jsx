@@ -13,7 +13,7 @@ const paragraphs = [
 function Portrait() {
   return (
     <div className="relative w-full max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
-      <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-[#141818] border border-white/10">
+      <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-[#1c1e1e] border border-white/10">
         <Image
           src={Ivan}
           alt="Ivan Kohan – webudvikler bag WebHjerte i Horsens"
@@ -27,7 +27,7 @@ function Portrait() {
             <span className="pulse-ring absolute inset-0 rounded-full text-[#3ddc97]" />
             <span className="relative w-2.5 h-2.5 rounded-full bg-[#3ddc97]" />
           </span>
-          <span className="text-[12px] text-[#9aa5a5]">
+          <span className="text-[12px] text-[#b4bdbd]">
             <span className="text-white font-medium">Ivan Kohan</span> · Horsens, DK
           </span>
         </div>
@@ -57,10 +57,10 @@ export default function IntroOmOs() {
       <section className="scene bg-[#eceeee]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
           <div className="lg:sticky lg:top-28 self-start">
-            <FadeUp as="h2" delay={0.05} className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(22px,2.6vw,32px)] max-w-[18ch]">
+            <FadeUp as="h2" delay={0.05} className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(24px,2.6vw,34px)] max-w-[18ch]">
               Jeg starter med <span className="text-[#00a8e8]">spørgsmål</span> – ikke med skabeloner
             </FadeUp>
-            <FadeUp delay={0.1} as="p" className="mt-6 text-[14px] text-[#6a6a6a] leading-[1.8] max-w-[34ch]">
+            <FadeUp delay={0.1} as="p" className="mt-6 text-[15px] text-[#6a6a6a] leading-[1.8] max-w-[34ch]">
               Hvem er dine kunder? Hvad skal siden få dem til at gøre? Svarene former hele projektet.
             </FadeUp>
           </div>
@@ -78,7 +78,7 @@ export default function IntroOmOs() {
               <p className="text-[16px] sm:text-[18px] text-white leading-[1.6]">
                 Jeg tager ikke ti projekter ind på en gang. Jeg tager de projekter, jeg reelt kan give min fulde opmærksomhed.
               </p>
-              <p className="mt-5 text-[12px] text-[#7f8c8c]">— Ivan, WebHjerte</p>
+              <p className="mt-5 text-[12px] text-[#8a9696]">— Ivan, WebHjerte</p>
             </FadeUp>
           </div>
         </div>

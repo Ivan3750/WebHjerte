@@ -43,11 +43,11 @@ const ExtraIcon = () => (
 
 export default function WhatsIncludedAiseoBlock() {
   return (
-    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-20 pb-20 -mt-4">
+    <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-16 pb-16 sm:pb-24 -mt-4">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
           as="div"
-          className="rounded-2xl border border-[#2a2d2d] bg-[#262a2a] overflow-hidden grid grid-cols-1 sm:grid-cols-2"
+          className="rounded-2xl border border-[#2a2d2d] bg-[#242828] overflow-hidden grid grid-cols-1 sm:grid-cols-2"
         >
           {/* Included */}
           <div className="p-8 sm:p-9 flex flex-col gap-5 sm:border-r border-[#2a2d2d]">
@@ -70,7 +70,7 @@ export default function WhatsIncludedAiseoBlock() {
           </div>
 
           {/* Extra costs */}
-          <div className="p-8 sm:p-9 flex flex-col gap-5 bg-[#1a1c1c]">
+          <div className="p-8 sm:p-9 flex flex-col gap-5 bg-[#1c1e1e]">
             <div className="flex items-center gap-2.5">
               <span className="w-2 h-2 rounded-full bg-[#6a6a4a] flex-shrink-0" />
               <p className="text-[13px] font-medium text-[#e0e0e0]">

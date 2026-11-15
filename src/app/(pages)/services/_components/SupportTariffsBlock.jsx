@@ -6,7 +6,7 @@ import { supportPlans, supportTerms } from "../../../data/supportPlans";
 const Tick = ({ dark }) => (
   <span
     className={`w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 mt-[1px] ${
-      dark ? "bg-[#00a8e8]/15 border border-[#00a8e8]/40" : "bg-[#00a8e8]/10 border border-[#00a8e8]/30"
+      dark ? "bg-[#00a8e8]/15" : "bg-[#00a8e8]/10"
     }`}
   >
     <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
@@ -45,21 +45,21 @@ const SupportTariffsBlock = () => {
                       </span>
                     )}
                   </div>
-                  <p className={`mt-1 text-[12.5px] ${popular ? "text-[#6a6a6a]" : "text-[#8795a0]"}`}>{tagline}</p>
+                  <p className={`mt-1 text-[12.5px] ${popular ? "text-[#6a6a6a]" : "text-[#b4bdbd]"}`}>{tagline}</p>
                   <div className="flex items-baseline gap-1.5 mt-4">
-                    <span className="text-[clamp(26px,2.4vw,32px)] font-semibold tracking-tight leading-none whitespace-nowrap">
+                    <span className="text-[clamp(24px,2.6vw,34px)] font-semibold tracking-tight leading-none whitespace-nowrap">
                       {price}
                     </span>
-                    <span className={`text-[13px] ${popular ? "text-[#8a8a8a]" : "text-[#7f8c8c]"}`}>DKK / md</span>
+                    <span className={`text-[13px] ${popular ? "text-[#8a8a8a]" : "text-[#8a9696]"}`}>DKK / md</span>
                   </div>
-                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#8a8a8a]" : "text-[#7f8c8c]"}`}>inkl. moms</p>
+                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#8a8a8a]" : "text-[#8a9696]"}`}>inkl. moms</p>
                 </div>
 
                 <ul className="flex flex-col gap-3 flex-1">
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5">
                       <Tick dark={!popular} />
-                      <span className={`text-[13px] leading-snug ${popular ? "text-[#5a5a5a]" : "text-[#b4bebe]"}`}>{f}</span>
+                      <span className={`text-[13px] leading-snug ${popular ? "text-[#5a5a5a]" : "text-[#b4bdbd]"}`}>{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -69,7 +69,7 @@ const SupportTariffsBlock = () => {
                   className={`w-full py-3 rounded-full text-[13px] font-semibold text-center transition-colors ${
                     popular
                       ? "bg-[#00a8e8] text-white hover:bg-[#1c1e1e]"
-                      : "border border-white/15 text-white hover:bg-[#00a8e8] hover:border-[#00a8e8]"
+                      : "border border-white/15 text-white hover:bg-[#00a8e8]"
                   }`}
                 >
                   Vælg {name}
@@ -83,7 +83,7 @@ const SupportTariffsBlock = () => {
           <p className="text-[11px] uppercase tracking-[0.14em] text-[#00a8e8] mb-4">Vilkår</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2.5">
             {supportTerms.map((t) => (
-              <li key={t} className="text-[13px] text-[#93a0a0] leading-relaxed flex gap-2.5">
+              <li key={t} className="text-[15px] text-[#b4bdbd] leading-relaxed flex gap-2.5">
                 <span aria-hidden className="text-[#00a8e8]">·</span>
                 {t}
               </li>

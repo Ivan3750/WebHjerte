@@ -53,7 +53,7 @@ export default function AfterMessageBlock() {
                     <p className={`text-[13px] font-semibold mb-0.5 ${m.from === "you" ? "text-white" : "text-[#1c1e1e]"}`}>
                       {m.n} · {m.title}
                     </p>
-                    <p className={`text-[13px] leading-[1.6] ${m.from === "you" ? "text-white/90" : "text-[#5a5a5a]"}`}>{m.text}</p>
+                    <p className={`text-[15px] leading-[1.6] ${m.from === "you" ? "text-white/90" : "text-[#5a5a5a]"}`}>{m.text}</p>
                   </div>
                   <span className="text-[10.5px] text-[#9a9a9a] px-1">{m.meta}</span>
                 </div>

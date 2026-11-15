@@ -16,7 +16,7 @@ function Orbit() {
       <div className="absolute inset-[8%] z-20 orbit-spin">
         {nodes.map((n) => (
           <div key={n.label} className={`absolute z-20 ${n.pos}`}>
-            <div className="orbit-counter flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#141818] border border-white/10 whitespace-nowrap">
+            <div className="orbit-counter flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#1c1e1e] border border-white/10 whitespace-nowrap">
               <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: n.color }} />
               <span className="text-[11.5px] text-[#e6eaea] font-medium">{n.label}</span>
             </div>
@@ -24,12 +24,12 @@ function Orbit() {
         ))}
       </div>
 
-      <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[110px] h-[110px] rounded-full bg-[#141818] border border-white/10">
+      <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[110px] h-[110px] rounded-full bg-[#1c1e1e] border border-white/10">
         <span className="relative flex w-2.5 h-2.5 mb-2">
           <span className="pulse-ring absolute inset-0 rounded-full text-[#00a8e8]" />
           <span className="relative w-2.5 h-2.5 rounded-full bg-[#00a8e8]" />
         </span>
-        <span className="text-[10px] text-[#9aa5a5] text-center leading-tight">
+        <span className="text-[10px] text-[#b4bdbd] text-center leading-tight">
           Din
           <br />
           virksomhed

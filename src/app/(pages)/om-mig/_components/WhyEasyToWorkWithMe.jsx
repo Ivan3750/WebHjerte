@@ -19,11 +19,11 @@ export default function WhyEasyToWorkWithMe() {
         <FadeUp className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mt-14 sm:mt-20 pt-10 border-t border-white/10">
           <div>
             <p className="text-[16px] text-white font-medium mb-1">Klar til at se, hvor let det kan være?</p>
-            <p className="text-[13px] text-[#7f8c8c]">Første samtale er gratis og uforpligtende.</p>
+            <p className="text-[13px] text-[#8a9696]">Første samtale er gratis og uforpligtende.</p>
           </div>
           <Link
             href="/kontakt"
-            className="inline-flex justify-center text-[14px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-8 py-3.5 transition-colors"
+            className="btn-primary"
           >
             Book gratis samtale
           </Link>

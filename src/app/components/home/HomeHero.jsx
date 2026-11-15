@@ -28,7 +28,7 @@ function MiniSite() {
     transition: { delay: 0.9 + i * 0.12, duration: 0.7, ease },
   });
   return (
-    <div className="p-4 sm:p-5 flex flex-col gap-3 bg-[#0e1111]">
+    <div className="p-4 sm:p-5 flex flex-col gap-3 bg-[#1c1e1e]">
       <motion.div {...pop(0)} className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="w-4 h-4 rounded-md bg-[#00a8e8]" />
@@ -43,7 +43,7 @@ function MiniSite() {
 
       <motion.div
         {...pop(1)}
-        className="relative rounded-xl overflow-hidden border border-white/10 p-4 sm:p-5 border-l-2 border-l-[#00a8e8]"
+        className="relative rounded-xl overflow-hidden border border-white/10 p-4 sm:p-5"
         style={{ background: "#12181a" }}
       >
         <div className="h-3 w-3/4 rounded bg-white/85 mb-2" />
@@ -177,7 +177,7 @@ export default function HomeHero() {
         >
           <motion.div
             variants={item}
-            className="glass inline-flex items-center gap-2.5 rounded-full pl-2.5 pr-4 py-1.5 text-[12.5px] text-[#c4cccc] w-fit mb-6"
+            className="glass inline-flex items-center gap-2.5 rounded-full pl-2.5 pr-4 py-1.5 text-[12.5px] text-[#b4bdbd] w-fit mb-6"
           >
             <span className="relative flex w-2 h-2">
               <span className="pulse-ring absolute inset-0 rounded-full text-[#3ddc97]" />
@@ -188,7 +188,7 @@ export default function HomeHero() {
 
           {/* Samme regler som på de andre sider: blå Unbounded-overskrift, rolig underlinje og læsevenlig brødtekst */}
           <motion.h1 variants={item} className="mb-6">
-            <span className="maintitle block !text-left !leading-[1.15] !text-[clamp(30px,4vw,50px)]">Webbureau i Horsens</span>
+            <span className="maintitle block !text-left !leading-[1.15] !text-[clamp(28px,3.4vw,44px)]">Webbureau i Horsens</span>
             <span className="block mt-3 max-w-[30ch] text-[clamp(18px,1.9vw,24px)] font-medium text-white leading-[1.4]">
               Hjemmesider og AI-løsninger til fast pris – live på 2–10 dage
             </span>
@@ -215,7 +215,7 @@ export default function HomeHero() {
             </Link>
           </motion.div>
 
-          <motion.p variants={item} className="flex items-start gap-2 text-[13px] text-[#9aa5a5] leading-snug">
+          <motion.p variants={item} className="flex items-start gap-2 text-[13px] text-[#b4bdbd] leading-snug">
             <span className="mt-0.5 shrink-0"><CheckIcon /></span>
             Første design i 48 timer – ikke tilfreds, betaler du 0 kr for det.
           </motion.p>
@@ -230,8 +230,8 @@ export default function HomeHero() {
             transition={{ duration: 1.2, delay: 0.35, ease }}
             className="relative mx-auto w-full max-w-[480px] [transform-style:preserve-3d]"
           >
-            <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#0e1111] shadow-[0_40px_80px_-40px_rgba(0,0,0,0.8)]">
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#121616]">
+            <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-[#1c1e1e]">
+              <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#1c1e1e]">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]/80" />
                 <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]/80" />
                 <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]/80" />
@@ -252,7 +252,7 @@ export default function HomeHero() {
               className="absolute -left-10 top-[22%] z-10 hidden lg:block"
             >
               <div className="float-y glass glass-solid rounded-2xl px-4 py-3 flex items-center gap-3">
-                <span className="w-9 h-9 rounded-xl bg-[#00a8e8]/15 border border-[#00a8e8]/30 flex items-center justify-center shrink-0">
+                <span className="w-9 h-9 rounded-xl bg-[#00a8e8]/15 flex items-center justify-center shrink-0">
                   <CheckIcon />
                 </span>
                 <div className="whitespace-nowrap">

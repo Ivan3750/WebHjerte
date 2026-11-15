@@ -134,13 +134,13 @@ const LinkCards = ({ items }) => (
     {items.map((item, i) => (
       <FadeUp key={item.href} delay={(i % 3) * 0.07}>
         <Link href={item.href} className="block h-full">
-          <SpotlightCard className="group h-full rounded-3xl bg-[#242828] border border-white/10 hover:border-[#00a8e8]/50 transition-colors">
+          <SpotlightCard className="group h-full rounded-3xl bg-[#242828] border border-white/10 transition-colors">
             <div className="p-6 sm:p-7 flex flex-col gap-3 h-full">
               <div className="flex items-center justify-between">
                 <p className="text-[16px] font-semibold text-white group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
                 <ArrowIcon className="w-4 h-4 text-white/40 group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" />
               </div>
-              <p className="text-[13.5px] text-[#a6b1b1] leading-relaxed">{item.desc}</p>
+              <p className="text-[15px] text-[#b4bdbd] leading-relaxed">{item.desc}</p>
             </div>
           </SpotlightCard>
         </Link>

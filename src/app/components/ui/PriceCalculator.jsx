@@ -91,12 +91,12 @@ export default function PriceCalculator({ dark = false }) {
   };
 
   const c = dark
-    ? { wrap: "bg-[#242828] border-white/10", text: "text-white", muted: "text-[#9aa5a5]", card: "border-white/10 bg-[#1c1e1e]", input: "bg-[#1c1e1e] border-white/10 text-white placeholder:text-[#6a7575]" }
+    ? { wrap: "bg-[#242828] border-white/10", text: "text-white", muted: "text-[#b4bdbd]", card: "border-white/10 bg-[#1c1e1e]", input: "bg-[#1c1e1e] border-white/10 text-white placeholder:text-[#8a9696]" }
     : { wrap: "bg-white border-[#e8e6e6]", text: "text-[#1c1e1e]", muted: "text-[#666]", card: "border-[#e8e6e6] bg-[#fbfafa]", input: "bg-white border-[#e0dede] text-[#1c1e1e] placeholder:text-[#8a8a8a]" };
 
   const option = (active) =>
     `text-left rounded-2xl border px-4 py-3.5 transition-all duration-300 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#00a8e8] ${
-      active ? "border-[#00a8e8] ring-1 ring-[#00a8e8] bg-[#00a8e8]/[0.07] -translate-y-0.5" : c.card + " hover:border-[#00a8e8]/50"
+      active ? "border-transparent bg-[#00a8e8]/[0.12]" : c.card + ""
     }`;
 
   // Hvor går pengene hen første år? (til søjlen)
@@ -108,10 +108,10 @@ export default function PriceCalculator({ dark = false }) {
 
   return (
     <div id="prisberegner" className={`scroll-mt-24 rounded-3xl border ${c.wrap} p-5 sm:p-8`}>
-      <h2 className={`${dark ? "text-white" : "text-[#1c1e1e]"} font-semibold tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-3`}>
+      <h2 className={`${dark ? "text-white" : "text-[#1c1e1e]"} font-semibold tracking-tight text-[clamp(24px,2.6vw,34px)] leading-[1.2] mb-3`}>
         Beregn prisen på din hjemmeside
       </h2>
-      <p className={`text-[14px] ${c.muted} leading-[1.75] mb-8 max-w-[56ch]`}>
+      <p className={`text-[15px] ${c.muted} leading-[1.75] mb-8 max-w-[56ch]`}>
         Tre trin – og du ser med det samme, hvad du betaler, og hvad pengene går til.
       </p>
 
@@ -157,10 +157,10 @@ export default function PriceCalculator({ dark = false }) {
       </div>
 
       <div aria-live="polite" className="rounded-3xl bg-[#1c1e1e] text-white p-5 sm:p-8 mb-6">
-        <p className="text-[13px] text-[#93a0a0]">Første år i alt, ca.</p>
+        <p className="text-[13px] text-[#b4bdbd]">Første år i alt, ca.</p>
         <p className="text-[clamp(34px,5vw,52px)] font-semibold leading-none tracking-tight mt-2 text-white">
-          {p.from ? <span className="text-[16px] font-normal text-[#93a0a0] mr-2">fra</span> : null}
-          {fmt(firstYear)} <span className="text-[20px] font-normal text-[#93a0a0]">kr</span>
+          {p.from ? <span className="text-[16px] font-normal text-[#b4bdbd] mr-2">fra</span> : null}
+          {fmt(firstYear)} <span className="text-[20px] font-normal text-[#b4bdbd]">kr</span>
         </p>
 
         {/* Søjle: hvor pengene går hen */}
@@ -180,7 +180,7 @@ export default function PriceCalculator({ dark = false }) {
           {parts.map((x) => (
             <li key={x.key} className="flex items-start gap-2.5">
               <span className="mt-1.5 w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: x.color }} />
-              <span className="text-[12.5px] text-[#93a0a0] leading-snug">
+              <span className="text-[12.5px] text-[#b4bdbd] leading-snug">
                 {x.label}
                 <span className="block text-[15px] font-semibold text-white mt-0.5">{fmt(x.value)} kr</span>
               </span>
@@ -188,7 +188,7 @@ export default function PriceCalculator({ dark = false }) {
           ))}
         </ul>
 
-        <p className="mt-6 pt-5 border-t border-white/10 text-[13.5px] text-[#b4bdbd] leading-[1.7]">
+        <p className="mt-6 pt-5 border-t border-white/10 text-[15px] text-[#b4bdbd] leading-[1.7]">
           Du betaler <strong className="text-white font-semibold">{p.from ? "fra " : ""}{fmt(p.price)} kr én gang</strong> for hjemmesiden
           {s.monthly ? <> – og derefter <strong className="text-white font-semibold">{s.monthly} kr om måneden</strong>, så længe du vil have hjælp.</> : <>. Uden vedligeholdelse betaler du kun for domænet, og kan altid tilkøbe hjælp senere.</>}
           {" "}Alle beløb er inkl. moms, og første designudkast kommer på 48 timer – 0 kr, hvis det ikke passer.
@@ -196,7 +196,7 @@ export default function PriceCalculator({ dark = false }) {
       </div>
 
       {status === "success" ? (
-        <p className={`text-[14px] ${c.text} rounded-2xl border border-[#00a8e8]/40 bg-[#00a8e8]/[0.06] px-5 py-4`}>
+        <p className={`text-[14px] ${c.text} rounded-2xl bg-[#00a8e8]/[0.06] px-5 py-4`}>
           Tak! Jeg vender tilbage med et fast tilbud inden for 24 timer.
         </p>
       ) : (
@@ -223,7 +223,7 @@ export default function PriceCalculator({ dark = false }) {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="bg-[#00a8e8] hover:opacity-90 disabled:opacity-50 transition-opacity text-white text-[13px] font-semibold px-6 py-3 rounded-xl whitespace-nowrap"
+            className="btn-primary"
           >
             {status === "loading" ? "Sender..." : "Få fast tilbud"}
           </button>

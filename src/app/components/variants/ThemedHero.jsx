@@ -27,37 +27,22 @@ const PATTERNS = {
   none: () => ({}),
 };
 
-function Btn({ href, children, theme }) {
+function Btn({ href, children }) {
   return (
-    <Link
-      href={href}
-      style={{ backgroundColor: theme.accent, color: "#ffffff" }}
-      className="inline-flex items-center gap-2 text-[13px] font-semibold rounded-full pl-6 pr-2 py-2 hover:opacity-90 transition-opacity"
-    >
+    <Link href={href} className="btn-primary">
       {children}
-      <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: theme.light ? "rgba(255,255,255,0.25)" : "rgba(28,30,30,0.18)" }}>
-        <svg viewBox="0 0 16 16" className="w-3.5 h-3.5" fill="none" aria-hidden>
-          <path d="M2.5 8h10.2M8.6 3.9L12.7 8l-4.1 4.1" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </span>
     </Link>
   );
 }
 
 function Ghost({ href, children, theme }) {
   return (
-    <Link
-      href={href}
-      className={`inline-flex items-center text-[13px] font-medium rounded-full px-6 py-[13px] border transition-colors ${
-        theme.light ? "text-[#1c1e1e] border-black/15 hover:border-black/40" : "text-white border-white/20 hover:border-white/50"
-      }`}
-    >
+    <Link href={href} className={`btn-ghost ${theme.light ? "btn-ghost-light" : ""}`}>
       {children}
     </Link>
   );
 }
 
-// eslint-disable-next-line no-unused-vars
 export default function ThemedHero({ theme, layout = "split", eyebrow, h1, lead, facts, visual, cta = "Få et gratis tilbud", ghost = { href: "/portefolje", label: "Se eksempler" } }) {
   const light = theme.light;
   const ink = light ? "#1c1e1e" : "#ffffff";
@@ -72,7 +57,7 @@ export default function ThemedHero({ theme, layout = "split", eyebrow, h1, lead,
         <RevealLines
           as="h1"
           lines={[h1]}
-          className={`maintitle !leading-[1.1] !text-[clamp(28px,3.6vw,48px)] mb-6 ${center ? "!text-center max-w-[24ch] mx-auto" : "!text-left max-w-[20ch]"}`}
+          className={`maintitle !leading-[1.1] !text-[clamp(28px,3.4vw,44px)] mb-6 ${center ? "!text-center max-w-[30ch] mx-auto" : "!text-left max-w-[28ch]"}`}
         />
       </div>
       {lead && (
@@ -81,7 +66,7 @@ export default function ThemedHero({ theme, layout = "split", eyebrow, h1, lead,
         </FadeUp>
       )}
       <FadeUp delay={0.25} className={`flex flex-wrap items-center gap-3 ${center ? "justify-center" : ""}`}>
-        <Btn href="/kontakt" theme={theme}>
+        <Btn href="/kontakt">
           {cta}
         </Btn>
         {ghost && (

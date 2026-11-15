@@ -6,7 +6,7 @@ import { FadeUp } from "../../../components/home/fx/Reveal";
 const Tick = ({ dark }) => (
   <span
     className={`w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 mt-[1px] ${
-      dark ? "bg-[#00a8e8]/15 border border-[#00a8e8]/40" : "bg-[#00a8e8]/10 border border-[#00a8e8]/30"
+      dark ? "bg-[#00a8e8]/15" : "bg-[#00a8e8]/10"
     }`}
   >
     <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
@@ -80,7 +80,7 @@ const AiseoPackagesBlock = () => {
             <FadeUp key={name} delay={i * 0.07} className="h-full">
               <div
                 className={`relative h-full rounded-3xl p-6 sm:p-7 flex flex-col gap-6 border transition-transform duration-500 hover:-translate-y-1 ${
-                  popular ? "bg-[#1c1e1e] border-[#00a8e8]/50 text-white" : "bg-white border-[#e8e6e6]"
+                  popular ? "bg-[#1c1e1e] border-white/10 text-white" : "bg-white border-[#e8e6e6]"
                 }`}
               >
                 <div>
@@ -93,14 +93,14 @@ const AiseoPackagesBlock = () => {
                     )}
                   </div>
                   <div className="flex items-baseline gap-1.5 mt-4">
-                    {prefix && <span className={`text-[13px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>{prefix}</span>}
-                    <span className={`text-[clamp(26px,2.4vw,32px)] font-semibold tracking-tight leading-none whitespace-nowrap ${popular ? "text-white" : "text-[#1c1e1e]"}`}>
+                    {prefix && <span className={`text-[13px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>{prefix}</span>}
+                    <span className={`text-[clamp(24px,2.6vw,34px)] font-semibold tracking-tight leading-none whitespace-nowrap ${popular ? "text-white" : "text-[#1c1e1e]"}`}>
                       {price}
                     </span>
-                    <span className={`text-[13px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>DKK</span>
+                    <span className={`text-[13px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>DKK</span>
                   </div>
-                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#7f8c8c]" : "text-[#8a8a8a]"}`}>inkl. moms</p>
-                  <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md ${popular ? "bg-white/10 text-[#b4bebe]" : "bg-[#f3f2f2] text-[#6a6a6a]"}`}>
+                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>inkl. moms</p>
+                  <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md ${popular ? "bg-white/10 text-[#b4bdbd]" : "bg-[#f3f2f2] text-[#6a6a6a]"}`}>
                     {timing}
                   </span>
                 </div>
@@ -109,18 +109,14 @@ const AiseoPackagesBlock = () => {
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5">
                       <Tick dark={popular} />
-                      <span className={`text-[13px] leading-snug ${popular ? "text-[#b4bebe]" : "text-[#5a5a5a]"}`}>{f}</span>
+                      <span className={`text-[13px] leading-snug ${popular ? "text-[#b4bdbd]" : "text-[#5a5a5a]"}`}>{f}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Link
                   href={href}
-                  className={`w-full py-3 rounded-full text-[13px] font-semibold text-center transition-colors ${
-                    popular
-                      ? "bg-[#00a8e8] text-white hover:bg-white hover:text-[#1c1e1e]"
-                      : "border border-[#dcdada] text-[#1c1e1e] hover:bg-[#1c1e1e] hover:text-white hover:border-[#1c1e1e]"
-                  }`}
+                  className={`w-full ${popular ? "btn-primary" : "btn-ghost btn-ghost-light"}`}
                 >
                   {cta}
                 </Link>

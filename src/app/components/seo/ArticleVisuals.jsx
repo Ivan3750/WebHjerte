@@ -46,7 +46,7 @@ function VFunnel() {
           whileInView={reduce ? { opacity: 1 } : { left: ["8%", "92%"], opacity: [0, 1, 1, 0] }}
           viewport={inView}
           transition={{ duration: 2.6, repeat: reduce ? 0 : Infinity, repeatDelay: 0.8, ease: "easeInOut" }}
-          className="absolute top-[26px] w-2.5 h-2.5 -ml-1 rounded-full bg-[#00a8e8] shadow-[0_0_14px_3px_rgba(0,168,232,0.6)]"
+          className="absolute top-[26px] w-2.5 h-2.5 -ml-1 rounded-full bg-[#00a8e8]"
         />
         {nodes.map((n, i) => (
           <motion.div
@@ -57,7 +57,7 @@ function VFunnel() {
             transition={{ delay: 0.15 + i * 0.18, duration: 0.8, ease }}
             className="relative flex flex-col items-center text-center w-[30%]"
           >
-            <span className={`w-[60px] h-[60px] rounded-2xl flex items-center justify-center ${card} ${i === 2 ? "!bg-[#00a8e8] !border-[#00a8e8] text-[#10181a]" : "text-[var(--v-ink)]"}`}>
+            <span className={`w-[60px] h-[60px] rounded-2xl flex items-center justify-center ${card} ${i === 2 ? "!bg-[#00a8e8] !border-transparent text-white" : "text-[var(--v-ink)]"}`}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                 {n.icon}
               </svg>
@@ -99,7 +99,7 @@ function VLocalPack() {
           transition={{ delay: 0.4, type: "spring", stiffness: 180, damping: 12 }}
           className="absolute left-[46%] top-[34%]"
         >
-          <span className="block w-6 h-6 rounded-full rounded-bl-none -rotate-45 bg-[#00a8e8] shadow-[0_8px_18px_-4px_rgba(0,168,232,0.8)]" />
+          <span className="block w-6 h-6 rounded-full rounded-bl-none -rotate-45 bg-[#00a8e8]" />
         </motion.span>
         <span className="absolute left-[34%] top-[62%] w-3 h-3 rounded-full bg-[var(--v-bar)]" />
         <span className="absolute left-[68%] top-[58%] w-3 h-3 rounded-full bg-[var(--v-bar)]" />
@@ -112,7 +112,7 @@ function VLocalPack() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={inView}
             transition={{ delay: 0.15 + i * 0.14, duration: 0.7, ease }}
-            className={`rounded-xl px-3 py-2.5 flex items-center justify-between ${card} ${r.me ? "!border-[#00a8e8]" : ""}`}
+            className={`rounded-xl px-3 py-2.5 flex items-center justify-between ${card} ${r.me ? "!bg-[#00a8e8]/10" : ""}`}
           >
             <span>
               <span className={`block text-[11.5px] font-semibold ${r.me ? "text-[#00a8e8]" : "text-[var(--v-ink)]"}`}>{r.n}</span>
@@ -152,7 +152,7 @@ export function VSearchTyping({ queries = ["webbureau", "hjemmeside pris", "hjem
   return (
     <div className="absolute inset-0 flex items-center justify-center px-5">
       <div className="w-full max-w-[460px]">
-        <div className={`rounded-full ${card} px-4 py-3 flex items-center gap-3 shadow-[0_14px_40px_-18px_rgba(0,0,0,0.4)]`}>
+        <div className={`rounded-full ${card} px-4 py-3 flex items-center gap-3`}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--v-muted)" strokeWidth="2" strokeLinecap="round" aria-hidden>
             <path d="M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM16 16l5 5" />
           </svg>

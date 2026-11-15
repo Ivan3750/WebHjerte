@@ -37,10 +37,10 @@ const resolve = (raw) => {
 };
 
 const fieldClass =
-  "w-full bg-[#1c1e1e] text-[14px] text-white placeholder:text-[#7a8787] border border-white/10 rounded-xl px-4 py-3.5 outline-none transition-colors focus:border-[#00a8e8] focus-visible:ring-2 focus-visible:ring-[#00a8e8]/30";
+  "w-full bg-[#1c1e1e] text-[14px] text-white placeholder:text-[#8a9696] border border-white/10 rounded-xl px-4 py-3.5 outline-none transition-colors focus:border-[#00a8e8] focus-visible:ring-2 focus-visible:ring-[#00a8e8]/30";
 
 const Label = ({ htmlFor, children }) => (
-  <label htmlFor={htmlFor} className="block text-[12px] text-[#8795a0] mb-1.5">
+  <label htmlFor={htmlFor} className="block text-[12px] text-[#b4bdbd] mb-1.5">
     {children}
   </label>
 );
@@ -89,13 +89,13 @@ const ContactForm = ({ defaultPakke = "" }) => {
   if (status === "success") {
     return (
       <div role="status" className="flex flex-col items-center justify-center text-center py-14 gap-4">
-        <div className="w-14 h-14 rounded-full bg-[#00a8e8]/10 border border-[#00a8e8]/40 flex items-center justify-center">
+        <div className="w-14 h-14 rounded-full bg-[#00a8e8]/10 flex items-center justify-center">
           <svg width="22" height="22" viewBox="0 0 18 18" fill="none" aria-hidden>
             <path d="M4 9l3.5 3.5 6.5-7" stroke="#00a8e8" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
         <p className="text-[20px] font-semibold text-white">Tak for din besked</p>
-        <p className="text-[14px] text-[#93a0a0] max-w-[32ch]">Jeg vender tilbage inden for 24 timer.</p>
+        <p className="text-[14px] text-[#b4bdbd] max-w-[32ch]">Jeg vender tilbage inden for 24 timer.</p>
       </div>
     );
   }
@@ -137,7 +137,7 @@ const ContactForm = ({ defaultPakke = "" }) => {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] disabled:opacity-50 transition-colors text-white text-[14px] font-semibold px-5 py-4 rounded-full w-full"
+        className="btn-primary w-full"
       >
         {status === "loading" ? "Sender..." : "Send besked"}
       </button>
@@ -151,7 +151,7 @@ const ContactForm = ({ defaultPakke = "" }) => {
         </p>
       )}
 
-      <p className="text-[11.5px] text-[#6f7c7c] text-center">
+      <p className="text-[11.5px] text-[#8a9696] text-center">
         Ingen spam. Ingen binding. <span className="text-[#00a8e8]">Svar inden for 24 timer.</span>
       </p>
     </form>
