@@ -10,6 +10,7 @@ import { ShopJourney, ShopPlatforms, ShopPrice } from "./ShopBlocks";
 import { CareStatus, CareMonth, CareCosts } from "./CareBlocks";
 import { WpEditDemo } from "./WpBlocks";
 import { TradesThreeSeconds, TradesGrid, VvsTwoPaths, ElTrust, ElCharger, TomrerBeforeAfter, RestCommission, SalonBuilder } from "./NicheBlocks";
+import { ClinicBooking, DriveRoadmap, FitnessWeek, CleanQuote, CarSymptoms, AdvisorSegments } from "./NicheBlocks2";
 import { JyllandRegions } from "./LocalBlocks";
 import { PlatformQuiz, ShopifyTasks, ShopifyVsWoo, GeoCompare, GeoSteps, ChatbotLead } from "./TopicBlocks";
 import {
@@ -27,6 +28,7 @@ import {
   HeroGeo,
   HeroChatbot,
 } from "./HeroVisuals";
+import { HeroClinic, HeroDrive, HeroFitness, HeroClean, HeroGarage, HeroAdvisor } from "./HeroVisuals2";
 
 /**
  * Hver side har sin egen hero (tema, opbygning, illustration) og sine egne blokke.
@@ -99,6 +101,38 @@ export const VARIANTS = {
   "hjemmeside-til-saloner": {
     hero: { theme: theme("sky", "dots"), layout: "split-rev", visual: <HeroSalon /> },
     blocks: (p) => [<SalonBuilder key="s" />, <CasesCarousel key="c" />, pkg(p)],
+    open: 0,
+  },
+
+  /* ─── Flere brancher ─── */
+  "hjemmeside-til-klinik": {
+    hero: { theme: theme("light", "dots"), layout: "split-rev", visual: <HeroClinic /> },
+    blocks: (p) => [<ClinicBooking key="b" />, <CasesCarousel key="c" />, pkg(p)],
+    open: 0,
+  },
+  "hjemmeside-til-koereskole": {
+    hero: { theme: theme("dark", "blueprint"), layout: "split", visual: <HeroDrive /> },
+    blocks: () => [<DriveRoadmap key="r" />, <PriceStrip key="p" />, <CasesCarousel key="c" />],
+    open: 0,
+  },
+  "hjemmeside-til-fitness": {
+    hero: { theme: theme("dark", "lines"), layout: "split-rev", visual: <HeroFitness /> },
+    blocks: () => [<FitnessWeek key="w" />, <CasesCarousel key="c" />, <PriceStrip key="p" />],
+    open: 0,
+  },
+  "hjemmeside-til-rengoering": {
+    hero: { theme: theme("sky", "lines"), layout: "split", visual: <HeroClean /> },
+    blocks: (p) => [<CleanQuote key="q" />, pkg(p), <GuaranteesBlock key="g" />],
+    open: 0,
+  },
+  "hjemmeside-til-vaerksted": {
+    hero: { theme: theme("dark", "grid"), layout: "split", visual: <HeroGarage /> },
+    blocks: (p) => [<CarSymptoms key="s" />, pkg(p), <ProcessBlock key="pr" />],
+    open: 0,
+  },
+  "hjemmeside-til-raadgivere": {
+    hero: { theme: theme("light", "grid"), layout: "split-rev", visual: <HeroAdvisor /> },
+    blocks: () => [<AdvisorSegments key="a" />, <PriceStrip key="p" />, <CasesCarousel key="c" />],
     open: 0,
   },
 

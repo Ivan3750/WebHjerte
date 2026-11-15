@@ -6,6 +6,12 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import W from "../../../public/W.png";
 import { visibleLinks, isHiddenHref } from "../data/hidden";
+import { BRANCHES, branchHref } from "../data/branches";
+
+const menuLink = (key) => {
+  const b = BRANCHES.find((x) => x.slug === `hjemmeside-til-${key}`);
+  return { href: branchHref(b), label: b.short };
+};
 
 /**
  * Menustruktur: Services (hjemmesider + lokalt), AI, Brancher, Priser, Portefølje, Blog og Om.
@@ -54,11 +60,14 @@ const allNavItems = [
     label: "Brancher",
     columns: [
       {
-        title: "Hjemmeside til",
+        title: "Håndværk og lokal service",
+        links: ["haandvaerkere", "vvs", "elektriker", "tomrer", "rengoering", "vaerksted"].map((k) => menuLink(k)),
+      },
+      {
+        title: "Sundhed, mad og rådgivning",
         links: [
-          { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere", desc: "Flere tilbudsforespørgsler" },
-          { href: "/hjemmeside-til-restauranter", label: "Restauranter", desc: "Menu og booking" },
-          { href: "/hjemmeside-til-saloner", label: "Saloner", desc: "Tidsbestilling og billeder" },
+          ...["restauranter", "saloner", "klinik", "fitness", "koereskole", "raadgivere"].map((k) => menuLink(k)),
+          { href: "/brancher", label: "Se alle brancher →" },
         ],
       },
     ],

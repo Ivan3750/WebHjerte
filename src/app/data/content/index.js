@@ -5,11 +5,12 @@ import { hubPages } from "./hubs.js";
 import { platformPages } from "./platforms.js";
 import { articles } from "./articles.js";
 import { nichePages } from "./niches.js";
+import { nichePagesMore } from "./niches-more.js";
 
 import { isHiddenSlug } from "../hidden.js";
 
 // Skjulte sider (se data/hidden.js) er ikke med – så de hverken bygges, linkes eller kommer i sitemap
-export const allContentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages];
+export const allContentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...nichePagesMore, ...aiPages, ...hubPages];
 export const contentPages = allContentPages.filter((p) => !isHiddenSlug(p.slug));
 export { articles };
 

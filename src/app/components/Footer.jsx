@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
 import { visibleLinks } from "../data/hidden";
+import { BRANCHES, branchHref } from "../data/branches";
 
 const allGroups = [
   {
@@ -18,12 +19,8 @@ const allGroups = [
   {
     title: "Brancher",
     links: [
-      { href: "/hjemmeside-til-haandvaerkere", label: "Håndværkere" },
-      { href: "/hjemmeside-til-restauranter", label: "Restauranter" },
-      { href: "/hjemmeside-til-saloner", label: "Saloner" },
-      { href: "/hjemmeside-til-vvs", label: "VVS" },
-      { href: "/hjemmeside-til-elektriker", label: "Elektrikere" },
-      { href: "/hjemmeside-til-tomrer", label: "Tømrere" },
+      ...BRANCHES.slice(0, 7).map((b) => ({ href: branchHref(b), label: b.short })),
+      { href: "/brancher", label: "Alle brancher" },
     ],
   },
   {

@@ -1,6 +1,6 @@
 # Sider på webhjerte.dk
 
-Opdateret: 15. november 2026. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
+Opdateret: 15. november 2026 (brancher gjort synlige). Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
 de returnerer bare 404, er fjernet fra menu, footer, interne links, sitemap og `llms.txt`.
 
 ## Sådan skjuler / viser du sider
@@ -12,6 +12,7 @@ Alt styres ét sted: `src/app/data/hidden.js`.
 | Vise alle skjulte sider på en preview | Sæt miljøvariablen `NEXT_PUBLIC_SHOW_HIDDEN_PAGES=1` i Vercel (Preview) og deploy igen |
 | Vise én side for altid | Fjern dens slug fra listen i `hidden.js` |
 | Skjule en ny side | Tilføj dens slug i den rigtige liste (`ai`, `local` eller `business`) |
+| Tilføje en ny branche | 1) Indhold i `data/content/niches-more.js` 2) Hero + interaktiv blok i `components/variants/` og registrér i `registry.jsx` 3) Opret den i `data/branches.js` – så kommer den automatisk i menu, footer og på `/brancher` |
 
 Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten bevares).
 
@@ -43,6 +44,25 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Webstrategi | `/webstrategi` |
 | Bæredygtigt webdesign | `/baeredygtigt-webdesign` |
 | Ny professionel hjemmeside (ikke i sitemap) | `/ny-professionel-hjemmeside` |
+
+### Brancher (12 + oversigt)
+| Side | URL |
+| --- | --- |
+| Oversigt – find din branche (søgning + grupper) | `/brancher` |
+| Håndværkere | `/hjemmeside-til-haandvaerkere` |
+| VVS | `/hjemmeside-til-vvs` |
+| Elektrikere | `/hjemmeside-til-elektriker` |
+| Tømrere | `/hjemmeside-til-tomrer` |
+| Restauranter | `/hjemmeside-til-restauranter` |
+| Saloner | `/hjemmeside-til-saloner` |
+| Klinikker og behandlere (ny) | `/hjemmeside-til-klinik` |
+| Fitness og træning (ny) | `/hjemmeside-til-fitness` |
+| Køreskoler (ny) | `/hjemmeside-til-koereskole` |
+| Rengøring og service (ny) | `/hjemmeside-til-rengoering` |
+| Værksteder (ny) | `/hjemmeside-til-vaerksted` |
+| Rådgivere og konsulenter (ny) | `/hjemmeside-til-raadgivere` |
+
+Hver branche har sin egen hero-illustration og en interaktiv blok (fx booking-demo, holdplan, prisberegner).
 
 ### Gratis værktøjer
 | Side | URL |
@@ -95,16 +115,6 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Digitalt bureau Horsens | `/digitalt-bureau-horsens` |
 | Webdesign Horsens | `/webdesign-horsens` |
 | SEO Horsens | `/seo-horsens` |
-
-### Brancher (6)
-| Side | URL |
-| --- | --- |
-| Håndværkere | `/hjemmeside-til-haandvaerkere` |
-| VVS | `/hjemmeside-til-vvs` |
-| Elektrikere | `/hjemmeside-til-elektriker` |
-| Tømrere | `/hjemmeside-til-tomrer` |
-| Restauranter | `/hjemmeside-til-restauranter` |
-| Saloner | `/hjemmeside-til-saloner` |
 
 ---
 

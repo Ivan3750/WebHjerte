@@ -25,15 +25,8 @@ export const HIDDEN = {
     "webdesign-horsens",
     "seo-horsens",
   ],
-  // Sider til forskellige brancher
-  business: [
-    "hjemmeside-til-haandvaerkere",
-    "hjemmeside-til-vvs",
-    "hjemmeside-til-elektriker",
-    "hjemmeside-til-tomrer",
-    "hjemmeside-til-restauranter",
-    "hjemmeside-til-saloner",
-  ],
+  // Sider til forskellige brancher – nu live (alle brancher er synlige)
+  business: [],
 };
 
 export const SHOW_HIDDEN = process.env.NEXT_PUBLIC_SHOW_HIDDEN_PAGES === "1";

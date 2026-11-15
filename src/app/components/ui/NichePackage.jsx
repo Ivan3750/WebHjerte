@@ -28,7 +28,7 @@ export default function NichePackage({ className = "bg-[#e4f0f7]", trade = "hån
               Lokal synlighed – <span className="text-[#00a8e8]">flere opkald fra dit område</span>
             </h2>
             <p className="mt-5 text-[15px] sm:text-[15px] leading-[1.8] text-[#b4bdbd] max-w-[52ch]">
-              Kunderne vælger den håndværker, de finder først på Google og kan stole på. Derfor får du ikke bare en
+              Kunderne vælger den virksomhed, de finder først på Google og kan stole på. Derfor får du ikke bare en
               hjemmeside, men det hele: Google-profil, lokale sider og et system, der samler anmeldelser ind.
             </p>
             <div className="mt-7 flex items-baseline gap-1.5">

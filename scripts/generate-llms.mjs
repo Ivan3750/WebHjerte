@@ -64,6 +64,7 @@ const core = [
   ["AI-løsninger til virksomheder", "/ai-loesninger"],
   ["Alle typer hjemmesider og platforme", "/alle-typer-hjemmesider"],
   ["Hjemmeside pris", "/hjemmeside-pris"],
+  ["Hjemmesider til din branche", "/brancher"],
   ["Webdesign i Horsens", "/webdesign-horsens"],
   ["SEO i Horsens", "/seo-horsens"],
   ["AI SEO", "/ai-seo"],

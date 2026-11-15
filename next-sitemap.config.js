@@ -73,6 +73,7 @@ export default {
       '/webbureau-midtjylland': 0.9,
       '/webbureau-jylland': 0.9,
       '/services': 0.9,
+      '/brancher': 0.8,
       '/ai-seo': 0.9,
       '/geo-ai-synlighed': 0.9,
       '/ai-loesninger': 0.9,
