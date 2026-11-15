@@ -65,19 +65,7 @@ const navItems = [
   { href: "/hjemmeside-pris", label: "Priser" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/blog", label: "Blog" },
-  {
-    label: "Om",
-    columns: [
-      {
-        title: "Om WebHjerte",
-        links: [
-          { href: "/om-mig", label: "Om mig", desc: "Ivan, webudvikler i Horsens" },
-          { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål", desc: "Korte, ærlige svar" },
-          { href: "/kontakt", label: "Kontakt", desc: "Ring eller skriv" },
-        ],
-      },
-    ],
-  },
+  { href: "/om-mig", label: "Om mig" },
 ];
 
 const isActivePath = (pathname, href) =>

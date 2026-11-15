@@ -1,6 +1,5 @@
 import KontaktClient from "./_components/KontaktClient";
 import AfterMessageBlock from "./_components/AfterMessageBlock";
-import Questions from "../../components/Questions";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
 
 export const metadata = {
@@ -79,7 +78,6 @@ export default function Page() {
 
       <KontaktClient />
       <AfterMessageBlock />
-      <Questions />
     </>
   );
 }

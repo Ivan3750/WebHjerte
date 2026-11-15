@@ -4,14 +4,13 @@ import GuaranteesBlock from "../home/GuaranteesBlock";
 import CasesCarousel from "../home/CasesCarousel";
 import ProcessBlock from "../home/ProcessBlock";
 import SupportTariffsBlock from "../../(pages)/services/_components/SupportTariffsBlock";
-import { ArosScene } from "../seo/scenes/Aarhus";
 import { AiChatDemo, AiSavings, AiDayCompare, AiByTrade, AiStart } from "./AiBlocks";
 import { SiteAnatomy, SiteTree } from "./SiteBlocks";
 import { ShopJourney, ShopPlatforms, ShopPrice } from "./ShopBlocks";
 import { CareStatus, CareMonth, CareCosts } from "./CareBlocks";
 import { WpEditDemo } from "./WpBlocks";
 import { TradesThreeSeconds, TradesGrid, VvsTwoPaths, ElTrust, ElCharger, TomrerBeforeAfter, RestCommission, SalonBuilder } from "./NicheBlocks";
-import { JyllandRegions, JyllandScenes, AarhusRank, AarhusScene, VejleScene, HorsensScene } from "./LocalBlocks";
+import { JyllandRegions } from "./LocalBlocks";
 import { PlatformQuiz, ShopifyTasks, ShopifyVsWoo, GeoCompare, GeoSteps, ChatbotLead } from "./TopicBlocks";
 import {
   HeroTrades,
@@ -106,23 +105,18 @@ export const VARIANTS = {
   /* ─── Områder ─── */
   "webbureau-jylland": {
     hero: { theme: theme("dark", "lines"), layout: "split-rev", visual: <HeroJylland /> },
-    blocks: () => [<JyllandRegions key="r" />, <JyllandScenes key="s" />, <PriceStrip key="p" />],
-    open: 0,
-  },
-  "webbureau-aarhus": {
-    hero: { theme: theme("dark", "none"), layout: "stack", visual: <ArosScene /> },
-    blocks: () => [<AarhusRank key="r" />, <AarhusScene key="s" />, <GuaranteesBlock key="g" />, <CasesCarousel key="c" />],
+    blocks: () => [<JyllandRegions key="r" />, <PriceStrip key="p" />],
     open: 0,
   },
   "webbureau-vejle": {
     hero: { theme: theme("light", "grid"), layout: "split", visual: <HeroVejle /> },
-    blocks: () => [<VejleScene key="s" />, <PriceStrip key="p" />, <ProcessBlock key="pr" />],
+    blocks: () => [<PriceStrip key="p" />, <ProcessBlock key="pr" />],
     open: 0,
   },
   "wordpress-horsens": {
     facts: [{ num: "Selv", label: "Ret tekster og priser uden udvikler" }, { num: "4.500 kr", label: "WordPress fra (inkl. moms)" }, { num: "Horsens", label: "Vi kan mødes lokalt" }],
     hero: { theme: theme("sky", "grid"), layout: "split", visual: <HeroWpHorsens /> },
-    blocks: () => [<WpEditDemo key="w" />, <HorsensScene key="h" />, <PriceStrip key="p" />],
+    blocks: () => [<WpEditDemo key="w" />, <PriceStrip key="p" />],
     open: 0,
   },
 

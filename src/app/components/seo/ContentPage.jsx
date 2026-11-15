@@ -1,12 +1,9 @@
 import Link from "next/link";
 import PageHero, { PrimaryLink, GhostLink } from "../ui/PageHero";
-import Questions from "../Questions";
-import QuickLeadForm from "../ui/QuickLeadForm";
 import ScrollProgress from "../ui/ScrollProgress";
 import { FadeUp, RevealLines } from "../home/fx/Reveal";
 import SectionBody, { slugify, autoVisual } from "./ContentBlocks";
 import BlogCover from "./BlogCover";
-import CityScene from "./CityScene";
 import TocNav from "./TocNav";
 import { ReadMore } from "./RelatedCards";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
@@ -142,11 +139,7 @@ export default function ContentPage({
     </>
   ) : null;
 
-  const aside = v?.aside ? v.aside : withForm ? (
-    <div className="rounded-3xl glass p-6 sm:p-8">
-      <QuickLeadForm />
-    </div>
-  ) : null;
+  const aside = v?.aside || null;
 
   const midIdx = sections.length >= 4 ? Math.floor(sections.length / 2) : -1;
 
@@ -202,7 +195,6 @@ export default function ContentPage({
             </>
           }
           aside={aside}
-          below={city ? <CityScene city={city} /> : null}
         />
       )}
 
@@ -276,13 +268,12 @@ export default function ContentPage({
             </>
           )}
           {afterSummary}
-          {!skip.has("guide") && <GuideSection sections={sections} visuals={visuals} collapse={isService} open={v ? v.open : 2} />}
+          {!isService && !skip.has("guide") && <GuideSection sections={sections} visuals={visuals} collapse={false} open={v ? v.open : 2} />}
         </>
       )}
 
       {extra}
       <ReadMore items={skip.has("readmore") ? [] : related} eyebrow="Læs videre" lines={isArticle ? ["Flere guides,", "der kan hjælpe dig"] : ["Næste skridt", "for dig"]} />
-      {faqs.length > 0 && <Questions faqs={faqs} />}
     </>
   );
 }

@@ -5,7 +5,6 @@ import WhyAiseoBlock from "./_components/WhyAiseoBlock";
 import AiseoPackagesBlock from "./_components/AiseoPackagesBlock";
 import WhatsIncludedAiseoBlock from "./_components/WhatsIncludedAiseoBlock";
 import AiseoAfterBlock from "./_components/AiseoAfterBlock";
-import Questions from "../../components/Questions";
 
 export const metadata = {
   title: "AI SEO fra 3.500 kr – bliv fundet i Google & ChatGPT | WebHjerte",
@@ -130,7 +129,6 @@ const Aiseo = () => {
       </div>
       <WhatsIncludedAiseoBlock />
       <AiseoAfterBlock />
-      <Questions faqs={faqs} />
     </>
   );
 };

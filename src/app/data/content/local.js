@@ -22,7 +22,6 @@ export const localPages = [
       "WebHjerte er et lille webbureau med base i Horsens. Jeg bygger hurtige, søgemaskineoptimerede hjemmesider til virksomheder over hele Jylland – til fast pris og med direkte kontakt til den, der bygger siden.",
     summary:
       "WebHjerte er et webbureau i Horsens, som arbejder for virksomheder i hele Jylland. Samarbejdet foregår online (video, telefon, e-mail), så afstanden ingen rolle spiller. Priserne er faste: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger fra 14.000 kr (inkl. moms).",
-    city: "jylland",
     facts: [
       { num: "Hele Jylland", label: "Fra Skagen til Kolding" },
       { num: "Online", label: "Video, telefon og mail" },
@@ -160,7 +159,7 @@ export const localPages = [
       "Du behøver ikke et dyrt bureau midt i Aarhus for at få en god hjemmeside. Jeg sidder i Horsens, kender Østjylland og leverer professionelle hjemmesider til fast pris – ofte klar på 2–10 dage.",
     summary:
       "WebHjerte hjælper virksomheder i Aarhus med hjemmesider, SEO og AI-synlighed til fast pris fra 2.500 kr. Jeg er baseret i Horsens, cirka 45 minutter fra Aarhus, og arbejder online eller ved fysiske møder, når det giver mening.",
-    city: "aarhus",
+    cityPage: "aarhus",
     facts: [
       { num: "ca. 45 min", label: "Fra Horsens til Aarhus" },
       { num: "Direkte", label: "Kontakt med den, der bygger" },
@@ -263,7 +262,6 @@ export const localPages = [
       "Vejle ligger 25 minutter fra Horsens, og mange af mine kunder findes i hele trekantsområdet. Jeg bygger hurtige hjemmesider til fast pris, med lokal SEO og direkte kontakt til udvikleren.",
     summary:
       "WebHjerte er et webbureau med base i Horsens, ca. 25–30 minutter fra Vejle. Jeg bygger hjemmesider til virksomheder i Vejle, Fredericia, Kolding og omegn fra 2.500 kr, med levering på 2–10 dage. Et eksempel i porteføljen er Lønbæks Køreskole i Vejle.",
-    city: "vejle",
     facts: [
       { num: "25–30 min", label: "Fra Horsens til Vejle" },
       { num: "Trekanten", label: "Vejle, Fredericia og Kolding" },

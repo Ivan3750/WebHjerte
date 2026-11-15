@@ -8,7 +8,6 @@ import BrancheCards from "./_components/BrancheCards";
 import ProcessBlock from "../../components/home/ProcessBlock";
 import AfterLaunchBlock from "./_components/AfterLaunchBlock";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
-import Questions from "../../components/Questions";
 import SectionHead from "../../components/ui/SectionHead";
 import { FadeUp } from "../../components/home/fx/Reveal";
 import SpotlightCard from "../../components/home/fx/SpotlightCard";
@@ -179,8 +178,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-
-      <Questions />
     </>
   );
 };

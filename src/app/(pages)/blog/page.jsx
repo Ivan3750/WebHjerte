@@ -34,12 +34,6 @@ const legacy = [
     desc: "Lette, hurtige sider, der belaster mindre – og som kunderne har det bedre med.",
     category: "Guides",
   },
-  {
-    href: "/ofte-stillede-spoergsmaal",
-    title: "Ofte stillede spørgsmål",
-    desc: "Korte, ærlige svar om priser, tid, ejerskab og samarbejde.",
-    category: "FAQ",
-  },
 ];
 
 export default function BlogPage() {

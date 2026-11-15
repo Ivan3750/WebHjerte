@@ -31,7 +31,6 @@ const groups = [
       { href: "/om-mig", label: "Om mig" },
       { href: "/portefolje", label: "Portefølje" },
       { href: "/blog", label: "Blog og guides" },
-      { href: "/ofte-stillede-spoergsmaal", label: "Ofte stillede spørgsmål" },
       { href: "/partner", label: "Partnerskab" },
       { href: "/kontakt", label: "Kontakt" },
     ],

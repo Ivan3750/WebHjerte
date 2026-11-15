@@ -89,7 +89,8 @@ function Bar({ w, text, tone, delay }) {
   );
 }
 
-export default function BureauCompare({ showRace = false }) {
+export default function BureauCompare({ showRace = false, rows: rowsProp, agencyLabel = "Typisk bureau", meLabel = "WebHjerte – Ivan" }) {
+  const list = rowsProp || rows;
   return (
     <div className="flex flex-col gap-10 sm:gap-14">
       {showRace && (
@@ -122,12 +123,12 @@ export default function BureauCompare({ showRace = false }) {
       <div>
         <div className="hidden md:grid grid-cols-[0.8fr_1fr_1.15fr] gap-4 mb-3 px-1">
           <span />
-          <span className="text-[13px] text-[#8a9696] px-5">Typisk bureau</span>
-          <span className="text-[13px] text-[#00a8e8] font-medium px-5">WebHjerte – Ivan</span>
+          <span className="text-[13px] text-[#8a9696] px-5">{agencyLabel}</span>
+          <span className="text-[13px] text-[#00a8e8] font-medium px-5">{meLabel}</span>
         </div>
 
         <div className="flex flex-col gap-3">
-          {rows.map((r, i) => (
+          {list.map((r, i) => (
             <motion.div
               key={r.topic}
               className="grid grid-cols-1 md:grid-cols-[0.8fr_1fr_1.15fr] gap-3 md:gap-4 items-stretch"

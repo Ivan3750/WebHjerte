@@ -14,7 +14,6 @@ import { Panel, VisualDesign, VisualDashboard, VisualMapPin, VisualPrice } from 
 const BuildStory = dynamic(() => import("./components/home/BuildStory"));
 const TilbydeSection = dynamic(() => import("./components/home/TilbydeSection"));
 const HomeCases = dynamic(() => import("./components/home/HomeCases"));
-const Questions = dynamic(() => import("./components/Questions"));
 const StickyCallButton = dynamic(() => import("./components/ui/StickyCallButton"));
 
 export const metadata = {
@@ -194,8 +193,6 @@ export default function Home() {
           </FadeUp>
         </div>
       </section>
-
-      <Questions />
 
       <StickyCallButton />
     </>
