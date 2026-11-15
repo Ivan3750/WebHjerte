@@ -1,6 +1,9 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
 import CountUp from "./fx/CountUp";
 import { FadeUp, RevealLines } from "./fx/Reveal";
-import SpotlightCard from "./fx/SpotlightCard";
+import { PrimaryLink } from "../ui/PageHero";
 
 const guarantees = [
   {
@@ -25,35 +28,68 @@ const guarantees = [
   },
 ];
 
+/**
+ * Garantierne som en rejse: fire trin på en linje, der tegner sig selv, når man scroller.
+ * Man kan se, hvornår man først skal betale – og at alt før det er uden risiko.
+ */
 const GuaranteesBlock = () => {
+  const reduce = useReducedMotion();
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e]">
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-        <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-4 flex items-center gap-3">
-          <span className="w-8 h-px bg-[#00a8e8]" />
-          Dine garantier
-        </FadeUp>
-        <RevealLines
-          lines={["Du løber ingen risiko,", "før du har sagt ja"]}
-          className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.4vw,42px)] mb-14 sm:mb-20"
-        />
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {guarantees.map((g, i) => (
-            <FadeUp key={g.title} delay={i * 0.09}>
-              <SpotlightCard className="h-full rounded-3xl glass">
-                <div className="p-6 sm:p-7 flex flex-col gap-5 h-full">
-                  <p className="text-[clamp(28px,3vw,40px)] whitespace-nowrap font-semibold tracking-tight text-gradient-blue leading-none">
-                    {g.stat.text ?? <CountUp to={g.stat.to} suffix={g.stat.suffix} />}
-                  </p>
-                  <div className="h-px w-full bg-white/10" />
-                  <p className="text-[15px] font-medium text-[#eef2f2]">{g.title}</p>
-                  <p className="text-[13px] text-[#8795a0] leading-[1.75]">{g.text}</p>
-                </div>
-              </SpotlightCard>
-            </FadeUp>
-          ))}
+      <div aria-hidden className="pointer-events-none absolute -bottom-40 -left-24 w-[520px] h-[520px] rounded-full bg-[#00a8e8]/[0.08] blur-[120px]" />
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-12 lg:gap-16">
+        <div className="lg:sticky lg:top-28 self-start">
+          <RevealLines
+            lines={["Du løber ingen risiko,", "før du har sagt ja"]}
+            className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(24px,2.8vw,36px)] mb-6"
+          />
+          <FadeUp as="p" delay={0.1} className="readable text-[16px] text-[#b4bdbd] leading-[1.75] max-w-[44ch] mb-8">
+            Først ser du designet. Først når du kan lide det, går vi videre – og siden er din fra første dag.
+          </FadeUp>
+          <FadeUp delay={0.18}>
+            <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+          </FadeUp>
         </div>
+
+        <ol className="relative flex flex-col gap-5 pl-12 sm:pl-14">
+          {/* Linjen */}
+          <span aria-hidden className="absolute left-[19px] sm:left-[23px] top-3 bottom-3 w-px bg-white/10" />
+          <motion.span
+            aria-hidden
+            className="absolute left-[19px] sm:left-[23px] top-3 bottom-3 w-px origin-top bg-[#00a8e8]"
+            initial={reduce ? false : { scaleY: 0 }}
+            whileInView={{ scaleY: 1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
+          />
+
+          {guarantees.map((g, i) => (
+            <motion.li
+              key={g.title}
+              className="relative"
+              initial={reduce ? false : { opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.7, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <span
+                aria-hidden
+                className="absolute -left-12 sm:-left-14 top-5 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1c1e1e] border border-[#00a8e8]/60 flex items-center justify-center text-[13px] font-semibold text-[#00a8e8]"
+              >
+                {i + 1}
+              </span>
+              <div className="rounded-3xl glass p-5 sm:p-7 grid grid-cols-1 sm:grid-cols-[190px_1fr] gap-3 sm:gap-6 items-center">
+                <p className="text-[clamp(24px,2.4vw,32px)] whitespace-nowrap font-semibold tracking-tight text-gradient-blue leading-none">
+                  {g.stat.text ?? <CountUp to={g.stat.to} suffix={g.stat.suffix} />}
+                </p>
+                <div>
+                  <p className="text-[16px] font-semibold text-white mb-1.5">{g.title}</p>
+                  <p className="readable text-[14px] text-[#a6b1b1] leading-[1.7]">{g.text}</p>
+                </div>
+              </div>
+            </motion.li>
+          ))}
+        </ol>
       </div>
     </section>
   );

@@ -71,10 +71,10 @@ const sections = [
 
 const SEOTextHorsens = () => (
   <section className="scene bg-[#f7f6f6]">
-    <div className="readable max-w-[760px] mx-auto px-5 sm:px-10 py-16 sm:py-24 flex flex-col gap-16 sm:gap-20">
+    <div className="readable max-w-[1200px] mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 flex flex-col gap-16 sm:gap-24">
       {sections.map((s, idx) => (
-        <article key={s.h2} id={slugify(s.h2)} className="scroll-mt-28">
-          <div className="mb-6">
+        <article key={s.h2} id={slugify(s.h2)} className="scroll-mt-28 grid grid-cols-1 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.6fr)] gap-6 lg:gap-16">
+          <div className="lg:sticky lg:top-28 self-start">
             <p className="text-[12px] tabular-nums text-[#00a8e8] mb-3 flex items-center gap-3">
               {String(idx + 1).padStart(2, "0")}
               <span className="w-10 h-px bg-[#00a8e8]/40" />
@@ -85,7 +85,9 @@ const SEOTextHorsens = () => (
               className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(22px,2.6vw,30px)] max-w-[26ch]"
             />
           </div>
-          <SectionBody section={s} idx={idx} visual={s.visual || null} />
+          <div className="min-w-0 max-w-[760px]">
+            <SectionBody section={s} idx={idx} visual={s.visual || null} />
+          </div>
         </article>
       ))}
     </div>

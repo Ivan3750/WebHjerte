@@ -109,7 +109,6 @@ export const localPages = [
           "Store bureauer er gode til store organisationer med komplekse behov. Men for en lokal virksomhed med 1–30 ansatte betyder lagene af projektledere, account managers og møder ofte en højere pris og længere svartid. Hos WebHjerte taler du direkte med den, der designer og bygger – og beslutninger tages på minutter, ikke uger.",
           "Til gengæld er jeg ikke det rette valg til meget store enterprise-projekter med flere teams og lange procesforløb. Det siger jeg ærligt fra start.",
         ],
-        cta: { href: "/freelancer-vs-bureau", label: "Freelancer eller webbureau?" },
       },
       {
         h2: "Sådan kommer vi i gang",

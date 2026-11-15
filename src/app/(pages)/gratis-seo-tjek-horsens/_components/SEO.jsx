@@ -117,10 +117,6 @@ export default function SEO() {
   return (
     <section className="bg-[#1c1e1e] px-5 sm:px-10 lg:px-16 pt-4 pb-20">
       <div className="max-w-6xl mx-auto rounded-3xl glass p-6 sm:p-10">
-        <p className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-4 flex items-center gap-3">
-          <span className="w-8 h-px bg-[#00a8e8]" />
-          Gratis værktøj
-        </p>
         <h2 className="text-white font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-2">
           Tjek din hjemmesides SEO-score
         </h2>

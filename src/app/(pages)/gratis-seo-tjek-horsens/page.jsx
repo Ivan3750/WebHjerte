@@ -90,7 +90,6 @@ const GratisSeoTjekHorsens = () => {
       />
       <PageHero
         breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Gratis SEO-tjek Horsens" }]}
-        eyebrow="Gratis analyse"
         titleLines={["Gratis SEO- og web-tjek", "i Horsens"]}
         lead="Få en professionel gennemgang af din hjemmeside og se, hvordan du kan få flere kunder fra Google – helt gratis og uden binding."
         actions={

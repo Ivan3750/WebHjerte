@@ -23,6 +23,7 @@ export const tagFor = (href = "") => {
  * Mørk, tydelig sektion med store kort til næste side/artikel.
  * Hele kortet er klikbart, har spotlight ved hover og en rund knap, der fyldes blå.
  */
+// eslint-disable-next-line no-unused-vars
 export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skridt", "for dig"] }) {
   if (!items?.length) return null;
   return (
@@ -34,10 +35,6 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
       />
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <div className="mb-10 sm:mb-14">
-          <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-4 flex items-center gap-3">
-            <span className="w-8 h-px bg-[#00a8e8]" />
-            {eyebrow}
-          </FadeUp>
           <RevealLines
             lines={lines}
             className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3.2vw,40px)]"
@@ -87,8 +84,8 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
   );
 }
 
-/** Kort til blog-oversigten: illustration øverst, kort tekst. `featured` giver et stort, mørkt hovedkort. */
-export function PostCard({ href, title, desc, tag, index = 0, featured = false, meta }) {
+/** Kort til blog-oversigten: illustration øverst, kort tekst. */
+export function PostCard({ href, title, desc, tag, index = 0, meta }) {
   const accent = ACCENTS[index % ACCENTS.length];
   const chip = (
     <span
@@ -98,33 +95,6 @@ export function PostCard({ href, title, desc, tag, index = 0, featured = false, 
       {tag}
     </span>
   );
-  if (featured) {
-    return (
-      <Link href={href} className="group block rounded-3xl overflow-hidden">
-        <SpotlightCard className="rounded-3xl bg-[#1c1e1e] border border-white/10 group-hover:border-[#00a8e8]/50 transition-colors duration-500">
-          <div className="relative p-2.5 grid md:grid-cols-[1fr_1.05fr] gap-2 items-center">
-            <div className="relative p-5 sm:p-9 order-2 md:order-1">
-              <p className="flex items-center gap-2 mb-5">
-                <span className="text-[10.5px] uppercase tracking-[0.12em] text-[#00a8e8]">Udvalgt</span>
-                {chip}
-              </p>
-              <p className="text-[clamp(22px,2.8vw,34px)] font-semibold text-white leading-[1.2] tracking-tight max-w-[22ch] mb-4 group-hover:text-[#00a8e8] transition-colors duration-300">
-                {title}
-              </p>
-              <p className="readable text-[15px] text-[#a6b1b1] leading-[1.7] max-w-[46ch] line-clamp-2">{desc}</p>
-              <div className="mt-7 flex items-center gap-4">
-                <ArrowBadge tone="dark" />
-                {meta && <span className="text-[12px] text-[#6c7a7a]">{meta}</span>}
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <BlogCover href={href} category={tag} dark h="h-[220px] sm:h-[300px]" />
-            </div>
-          </div>
-        </SpotlightCard>
-      </Link>
-    );
-  }
   return (
     <Link href={href} className="group block h-full rounded-3xl">
       <div className="h-full rounded-3xl bg-white border border-[#e8e6e6] group-hover:border-[#00a8e8]/50 group-hover:-translate-y-1 transition-all duration-500 group-hover:shadow-[0_24px_50px_-28px_rgba(0,100,150,0.35)] flex flex-col">

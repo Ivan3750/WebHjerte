@@ -7,10 +7,10 @@ import { useSearchParams } from "next/navigation";
 const packages = [
   { value: "", label: "Vælg pakke (valgfrit)" },
   { value: "Ved ikke endnu", label: "Ved ikke endnu" },
-  { value: "landingside", label: "Landingside – 2.500 DKK inkl. moms" },
-  { value: "basis", label: "Basis – 4.500 DKK inkl. moms" },
-  { value: "standard", label: "Standard – 8.500 DKK inkl. moms" },
-  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK inkl. moms" },
+  { value: "landingside", label: "Landingside – 2.500 DKK" },
+  { value: "basis", label: "Basis – 4.500 DKK" },
+  { value: "standard", label: "Standard – 8.500 DKK" },
+  { value: "skraeddersyet", label: "Skræddersyet – fra 14.000 DKK" },
   { value: "ai", label: "AI (chatbot, automatisering eller AI SEO)" },
 ];
 
@@ -20,12 +20,12 @@ const aliases = { "ai-seo-basis": "ai", "ai-seo-standard": "ai", "ai-seo-skraedd
 // Andre knapper på sitet sender en mere præcis pakke med. Den vises kun, når man kommer fra sådan en knap,
 // så listen er kort, men valget ikke går tabt.
 const extras = {
-  "lokal-synlighed": "Lokal synlighed – fra 9.500 DKK inkl. moms",
-  wordpress: "WordPress-hjemmeside – fra 4.500 DKK inkl. moms",
-  webshop: "Webshop – fra 14.000 DKK inkl. moms",
-  "vedligehold-basis": "Vedligehold Basis – 249 DKK/md inkl. moms",
-  "vedligehold-standard": "Vedligehold Standard – 449 DKK/md inkl. moms",
-  "vedligehold-pro": "Vedligehold Pro – 799 DKK/md inkl. moms",
+  "lokal-synlighed": "Lokal synlighed – fra 9.500 DKK",
+  wordpress: "WordPress-hjemmeside – fra 4.500 DKK",
+  webshop: "Webshop – fra 14.000 DKK",
+  "vedligehold-basis": "Vedligehold Basis – 249 DKK/md",
+  "vedligehold-standard": "Vedligehold Standard – 449 DKK/md",
+  "vedligehold-pro": "Vedligehold Pro – 799 DKK/md",
   partnerskab: "Partnerskab (bureau / revisor)",
 };
 
@@ -48,7 +48,7 @@ const Label = ({ htmlFor, children }) => (
 const ContactForm = ({ defaultPakke = "" }) => {
   const searchParams = useSearchParams();
   const initial = resolve(defaultPakke);
-  const [form, setForm] = useState({ name: "", email: "", phone: "", pakke: initial.value, message: "", website: "" });
+  const [form, setForm] = useState({ name: "", email: "", pakke: initial.value, message: "", website: "" });
   const [extra, setExtra] = useState(initial.extra);
   const [status, setStatus] = useState("idle");
 
@@ -102,10 +102,7 @@ const ContactForm = ({ defaultPakke = "" }) => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate={false}>
-      <div>
-        <p className="text-[18px] font-semibold text-white tracking-tight">Send en besked</p>
-        <p className="text-[12px] text-[#7f8c8c] mt-1">Felter med * skal udfyldes.</p>
-      </div>
+      <p className="text-[clamp(22px,2.4vw,28px)] font-semibold text-white tracking-tight leading-tight">Send en besked</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
@@ -118,21 +115,15 @@ const ContactForm = ({ defaultPakke = "" }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <Label htmlFor="cf-phone">Telefon (valgfrit)</Label>
-          <input id="cf-phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" placeholder="+45 12 34 56 78" value={form.phone} onChange={set("phone")} className={fieldClass} />
-        </div>
-        <div>
-          <Label htmlFor="cf-pakke">Pakke</Label>
-          <select id="cf-pakke" name="pakke" value={form.pakke} onChange={set("pakke")} className={fieldClass}>
-            {(extra ? [...packages, extra] : packages).map(({ value, label }) => (
-              <option key={value} value={value} className="bg-[#1c1e1e]">
-                {label}
-              </option>
-            ))}
-          </select>
-        </div>
+      <div>
+        <Label htmlFor="cf-pakke">Pakke</Label>
+        <select id="cf-pakke" name="pakke" value={form.pakke} onChange={set("pakke")} className={fieldClass}>
+          {(extra ? [...packages, extra] : packages).map(({ value, label }) => (
+            <option key={value} value={value} className="bg-[#1c1e1e]">
+              {label}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>

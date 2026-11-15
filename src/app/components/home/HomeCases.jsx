@@ -77,12 +77,8 @@ export default function HomeCases() {
       <div
         className={pinned ? "sticky top-[68px] h-[calc(100dvh-68px)] flex flex-col justify-center overflow-hidden" : "py-16 sm:py-24"}
       >
-        <div className="w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 mb-8 sm:mb-12 flex flex-col md:flex-row md:items-end justify-between gap-5">
+        <div className="w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pt-10 sm:pt-14 mb-8 sm:mb-12 flex flex-col md:flex-row md:items-end justify-between gap-5">
           <div>
-            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Portefølje
-            </FadeUp>
             <RevealLines
               lines={["Udvalgte cases"]}
               className="text-white font-semibold tracking-tight leading-[1.08] text-[clamp(26px,3.6vw,46px)] mb-3"

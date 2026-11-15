@@ -31,7 +31,7 @@ function Btn({ href, children, theme }) {
   return (
     <Link
       href={href}
-      style={{ backgroundColor: theme.accent, color: theme.ink || "#10181a" }}
+      style={{ backgroundColor: theme.accent, color: "#ffffff" }}
       className="inline-flex items-center gap-2 text-[13px] font-semibold rounded-full pl-6 pr-2 py-2 hover:opacity-90 transition-opacity"
     >
       {children}
@@ -57,6 +57,7 @@ function Ghost({ href, children, theme }) {
   );
 }
 
+// eslint-disable-next-line no-unused-vars
 export default function ThemedHero({ theme, layout = "split", eyebrow, h1, lead, facts, visual, cta = "Få et gratis tilbud", ghost = { href: "/portefolje", label: "Se eksempler" } }) {
   const light = theme.light;
   const ink = light ? "#1c1e1e" : "#ffffff";
@@ -67,13 +68,6 @@ export default function ThemedHero({ theme, layout = "split", eyebrow, h1, lead,
 
   const text = (
     <div className={`flex flex-col ${center ? "items-center text-center" : "items-start"}`}>
-      {eyebrow && (
-        <FadeUp as="p" className="text-[11.5px] uppercase tracking-[0.16em] mb-5 flex items-center gap-3" style={{ color: light ? "#8a8a8a" : "#8a9696" }}>
-          <span className="w-8 h-px" style={{ backgroundColor: theme.accent }} />
-          {eyebrow}
-          {center && <span className="w-8 h-px" style={{ backgroundColor: theme.accent }} />}
-        </FadeUp>
-      )}
       <div style={{ "--ac": theme.title || theme.accent }} className="[&_h1]:![color:var(--ac)]">
         <RevealLines
           as="h1"

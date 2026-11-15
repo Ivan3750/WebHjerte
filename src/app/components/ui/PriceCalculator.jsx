@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { supportPlans } from "../../data/supportPlans";
 
 // Kun WebHjertes faste, offentliggjorte priser (inkl. moms) – ingen opfundne tillæg
@@ -12,13 +13,6 @@ const PACKAGES = [
   { id: "custom", name: "Webshop / skræddersyet", price: 14000, from: true, desc: "Webshop, kundeportal, AI-chatbot m.m." },
 ];
 
-const PLATFORMS = [
-  { id: "kode", name: "Kodet (Next.js)", desc: "Hurtigst og billigst at drive" },
-  { id: "wordpress", name: "WordPress", desc: "Du redigerer selv" },
-  { id: "shopify", name: "Shopify", desc: "Til webshops" },
-  { id: "ved-ikke", name: "Ved ikke", desc: "Jeg anbefaler det rigtige" },
-];
-
 const SUPPORT = [
   { id: "none", name: "Ingen aftale", monthly: 0 },
   ...supportPlans.map((x) => ({ id: x.id, name: `Vedligehold ${x.name}`, monthly: x.price })),
@@ -28,19 +22,39 @@ const DOMAIN_PER_YEAR = 150; // typisk .dk-domæne
 
 const fmt = (n) => n.toLocaleString("da-DK");
 
+/** Lille tegning af, hvor stor siden er – så man kan se forskellen uden at læse. */
+function PackageArt({ id, active }) {
+  const pages = { landing: 1, basis: 3, standard: 5, lokal: 5, custom: 6 }[id] || 1;
+  const stroke = active ? "#00a8e8" : "#9aa5a5";
+  return (
+    <svg viewBox="0 0 64 40" width="64" height="40" fill="none" aria-hidden className="shrink-0">
+      {Array.from({ length: pages }).map((_, i) => {
+        const w = pages === 1 ? 20 : pages <= 3 ? 14 : 10;
+        const x = pages === 1 ? 22 : 4 + (i * (46 - w)) / Math.max(pages - 1, 1);
+        return (
+          <g key={i}>
+            <rect x={x} y={pages === 1 ? 4 : 8 - (i % 2) * 4} width={w} height={pages === 1 ? 32 : 26} rx="3" fill={active ? "rgba(0,168,232,0.10)" : "rgba(154,165,165,0.10)"} stroke={stroke} strokeWidth="1.4" />
+            <path d={`M${x + 3} ${pages === 1 ? 11 : 15 - (i % 2) * 4}h${w - 6}M${x + 3} ${pages === 1 ? 16 : 20 - (i % 2) * 4}h${w - 10}`} stroke={stroke} strokeWidth="1.2" strokeLinecap="round" />
+          </g>
+        );
+      })}
+      {id === "lokal" && <path d="M54 6a5 5 0 0 1 5 5c0 4-5 9-5 9s-5-5-5-9a5 5 0 0 1 5-5z" fill="#00a8e8" />}
+      {id === "custom" && <path d="M48 28h4l1.5 6h8l1.5-9H51" stroke="#00a8e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />}
+    </svg>
+  );
+}
+
 export default function PriceCalculator({ dark = false }) {
   const [pkg, setPkg] = useState("basis");
-  const [platform, setPlatform] = useState("ved-ikke");
-  const [support, setSupport] = useState("standard");
+    const [support, setSupport] = useState("standard");
   const [form, setForm] = useState({ name: "", contact: "", website: "" });
   const [status, setStatus] = useState("idle");
 
   const p = PACKAGES.find((x) => x.id === pkg);
   const s = SUPPORT.find((x) => x.id === support);
-  const pl = PLATFORMS.find((x) => x.id === platform);
   const firstYear = p.price + s.monthly * 12 + DOMAIN_PER_YEAR;
 
-  const estimate = `${p.name}${p.from ? " (fra)" : ""} ${fmt(p.price)} kr · Platform: ${pl.name} · ${s.name}${
+  const estimate = `${p.name}${p.from ? " (fra)" : ""} ${fmt(p.price)} kr · ${s.name}${
     s.monthly ? ` ${s.monthly} kr/md` : ""
   } · 1. år ca. ${fmt(firstYear)} kr inkl. moms`;
 
@@ -81,74 +95,103 @@ export default function PriceCalculator({ dark = false }) {
     : { wrap: "bg-white border-[#e8e6e6]", text: "text-[#1c1e1e]", muted: "text-[#666]", card: "border-[#e8e6e6] bg-[#fbfafa]", input: "bg-white border-[#e0dede] text-[#1c1e1e] placeholder:text-[#8a8a8a]" };
 
   const option = (active) =>
-    `text-left rounded-xl border px-4 py-3 transition-colors cursor-pointer ${
-      active ? "border-[#00a8e8] ring-1 ring-[#00a8e8] bg-[#00a8e8]/[0.06]" : c.card + " hover:border-[#00a8e8]/50"
+    `text-left rounded-2xl border px-4 py-3.5 transition-all duration-300 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#00a8e8] ${
+      active ? "border-[#00a8e8] ring-1 ring-[#00a8e8] bg-[#00a8e8]/[0.07] -translate-y-0.5" : c.card + " hover:border-[#00a8e8]/50"
     }`;
 
+  // Hvor går pengene hen første år? (til søjlen)
+  const parts = [
+    { key: "site", label: "Hjemmesiden (én gang)", value: p.price, color: "#00a8e8" },
+    { key: "care", label: "Vedligeholdelse (12 mdr.)", value: s.monthly * 12, color: "#3ddc97" },
+    { key: "domain", label: "Domæne (pr. år)", value: DOMAIN_PER_YEAR, color: "#f0a63a" },
+  ].filter((x) => x.value > 0);
+
   return (
-    <div id="prisberegner" className={`scroll-mt-24 rounded-2xl border ${c.wrap} p-5 sm:p-8`}>
-      <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a8a8a] mb-3">Prisberegner</p>
+    <div id="prisberegner" className={`scroll-mt-24 rounded-3xl border ${c.wrap} p-5 sm:p-8`}>
       <h2 className={`${dark ? "text-white" : "text-[#1c1e1e]"} font-semibold tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-3`}>
         Beregn prisen på din hjemmeside
       </h2>
-      <p className={`text-[13px] ${c.muted} leading-[1.8] mb-7`}>
-        Vælg det, der passer bedst. Du ser prisen med det samme – og kan få et præcist, fast tilbud inden for 24 timer.
+      <p className={`text-[14px] ${c.muted} leading-[1.75] mb-8 max-w-[56ch]`}>
+        Tre trin – og du ser med det samme, hvad du betaler, og hvad pengene går til.
       </p>
 
-      <fieldset className="mb-6">
-        <legend className={`text-[13px] font-medium ${c.text} mb-3`}>1. Hvor stor skal siden være?</legend>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+      <fieldset className="mb-8">
+        <legend className={`flex items-center gap-3 text-[15px] font-semibold ${c.text} mb-4`}>
+          <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[13px] flex items-center justify-center">1</span>
+          Hvor stor skal siden være?
+        </legend>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {PACKAGES.map((x) => (
             <button type="button" key={x.id} aria-pressed={pkg === x.id} onClick={() => { setPkg(x.id); track("price_calculator_change", { field: "pakke", value: x.id }); }} className={option(pkg === x.id)}>
-              <span className={`flex justify-between gap-3 text-[14px] font-medium ${c.text}`}>
-                {x.name}
-                <span className="whitespace-nowrap">{x.from ? "fra " : ""}{fmt(x.price)} kr</span>
+              <span className="flex items-center gap-3">
+                <PackageArt id={x.id} active={pkg === x.id} />
+                <span className="min-w-0">
+                  <span className={`block text-[14px] font-semibold ${c.text}`}>{x.name}</span>
+                  <span className={`block text-[13px] font-medium ${pkg === x.id ? "text-[#00a8e8]" : c.muted}`}>{x.from ? "fra " : ""}{fmt(x.price)} kr</span>
+                </span>
               </span>
-              <span className={`block text-[12px] ${c.muted} mt-1`}>{x.desc}</span>
+              <span className={`block text-[12.5px] ${c.muted} mt-2.5 leading-snug`}>{x.desc}</span>
             </button>
           ))}
         </div>
       </fieldset>
 
-      <fieldset className="mb-6">
-        <legend className={`text-[13px] font-medium ${c.text} mb-3`}>2. Hvilken platform?</legend>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">
-          {PLATFORMS.map((x) => (
-            <button type="button" key={x.id} aria-pressed={platform === x.id} onClick={() => setPlatform(x.id)} className={option(platform === x.id)}>
-              <span className={`block text-[13px] font-medium ${c.text}`}>{x.name}</span>
-              <span className={`block text-[12px] ${c.muted} mt-1 leading-snug`}>{x.desc}</span>
-            </button>
-          ))}
-        </div>
-      </fieldset>
-
-      <fieldset className="mb-7">
-        <legend className={`text-[13px] font-medium ${c.text} mb-3`}>3. Hjælp efter lancering?</legend>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">
+      <fieldset className="mb-8">
+        <legend className={`flex items-center gap-3 text-[15px] font-semibold ${c.text} mb-4`}>
+          <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[13px] flex items-center justify-center">2</span>
+          Vil du have hjælp, når siden er live?
+        </legend>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {SUPPORT.map((x) => (
             <button type="button" key={x.id} aria-pressed={support === x.id} onClick={() => setSupport(x.id)} className={option(support === x.id)}>
-              <span className={`block text-[13px] font-medium ${c.text}`}>{x.name}</span>
-              <span className={`block text-[12px] ${c.muted} mt-1`}>{x.monthly ? `${x.monthly} kr/md` : "Betal kun ved behov"}</span>
+              <span className={`block text-[13.5px] font-semibold ${c.text}`}>{x.name.replace("Vedligehold ", "")}</span>
+              <span className={`block text-[12.5px] ${support === x.id ? "text-[#00a8e8]" : c.muted} mt-1`}>{x.monthly ? `${x.monthly} kr/md` : "Kun ved behov"}</span>
             </button>
           ))}
         </div>
       </fieldset>
 
-      <div aria-live="polite" className="rounded-2xl bg-[#1c1e1e] text-white p-5 sm:p-6 grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-        <div>
-          <p className="text-[11px] uppercase tracking-[0.12em] text-[#8a9595]">Engangspris</p>
-          <p className="text-[24px] font-semibold mt-1">{p.from ? "fra " : ""}{fmt(p.price)} kr</p>
+      <div className={`flex items-center gap-3 text-[15px] font-semibold ${c.text} mb-4`}>
+        <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[13px] flex items-center justify-center">3</span>
+        Din pris
+      </div>
+
+      <div aria-live="polite" className="rounded-3xl bg-[#1c1e1e] text-white p-5 sm:p-8 mb-6">
+        <p className="text-[13px] text-[#93a0a0]">Første år i alt, ca.</p>
+        <p className="text-[clamp(34px,5vw,52px)] font-semibold leading-none tracking-tight mt-2 text-white">
+          {p.from ? <span className="text-[16px] font-normal text-[#93a0a0] mr-2">fra</span> : null}
+          {fmt(firstYear)} <span className="text-[20px] font-normal text-[#93a0a0]">kr</span>
+        </p>
+
+        {/* Søjle: hvor pengene går hen */}
+        <div className="mt-7 flex h-4 w-full overflow-hidden rounded-full bg-white/[0.06]" role="img" aria-label={`Fordeling af prisen: ${parts.map((x) => `${x.label} ${fmt(x.value)} kr`).join(", ")}`}>
+          {parts.map((x) => (
+            <motion.div
+              key={x.key}
+              className="h-full"
+              style={{ backgroundColor: x.color }}
+              initial={false}
+              animate={{ width: `${(x.value / firstYear) * 100}%` }}
+              transition={{ type: "spring", stiffness: 140, damping: 22 }}
+            />
+          ))}
         </div>
-        <div>
-          <p className="text-[11px] uppercase tracking-[0.12em] text-[#8a9595]">Løbende</p>
-          <p className="text-[24px] font-semibold mt-1">{s.monthly ? `${s.monthly} kr/md` : "0 kr/md"}</p>
-        </div>
-        <div>
-          <p className="text-[11px] uppercase tracking-[0.12em] text-[#8a9595]">1. år i alt ca.</p>
-          <p className="text-[24px] font-semibold mt-1 text-[#00a8e8]">{p.from ? "fra " : ""}{fmt(firstYear)} kr</p>
-        </div>
-        <p className="sm:col-span-3 text-[12.5px] text-[#8a9595] leading-relaxed">
-          Alle beløb inkl. moms. 1. år inkluderer et typisk .dk-domæne (ca. {DOMAIN_PER_YEAR} kr). Første designudkast på 48 timer – 0 kr, hvis det ikke passer.
+        <ul className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-3">
+          {parts.map((x) => (
+            <li key={x.key} className="flex items-start gap-2.5">
+              <span className="mt-1.5 w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: x.color }} />
+              <span className="text-[12.5px] text-[#93a0a0] leading-snug">
+                {x.label}
+                <span className="block text-[15px] font-semibold text-white mt-0.5">{fmt(x.value)} kr</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        <p className="mt-6 pt-5 border-t border-white/10 text-[13.5px] text-[#b4bdbd] leading-[1.7]">
+          Du betaler <strong className="text-white font-semibold">{p.from ? "fra " : ""}{fmt(p.price)} kr én gang</strong> for hjemmesiden
+          {s.monthly ? <> – og derefter <strong className="text-white font-semibold">{s.monthly} kr om måneden</strong>, så længe du vil have hjælp.</> : <>. Uden vedligeholdelse betaler du kun for domænet, og kan altid tilkøbe hjælp senere.</>}
+          {" "}Alle beløb er inkl. moms, og første designudkast kommer på 48 timer – 0 kr, hvis det ikke passer.
         </p>
       </div>
 
@@ -180,7 +223,7 @@ export default function PriceCalculator({ dark = false }) {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="bg-[#00a8e8] hover:opacity-90 disabled:opacity-50 transition-opacity text-[#1c1e1e] text-[13px] font-semibold px-6 py-3 rounded-xl whitespace-nowrap"
+            className="bg-[#00a8e8] hover:opacity-90 disabled:opacity-50 transition-opacity text-white text-[13px] font-semibold px-6 py-3 rounded-xl whitespace-nowrap"
           >
             {status === "loading" ? "Sender..." : "Få fast tilbud"}
           </button>

@@ -34,10 +34,6 @@ export default function KontaktClient() {
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.05fr] gap-12 lg:gap-20 items-start">
           <div>
-            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-5 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Kontakt
-            </FadeUp>
             <RevealLines
               as="h1"
               lines={["Lad os tage en", <span key="s" className="text-[#00a8e8]">snak</span>]}

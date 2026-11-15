@@ -3,12 +3,13 @@ import { FadeUp, RevealLines } from "../home/fx/Reveal";
 
 /**
  * Fælles hero til indre sider i WebHjertes egen stil: mørk baggrund, blå Unbounded-overskrift,
- * grå eyebrow og (valgfrit) nøgletal nederst ligesom på forsiden.
+ * og (valgfrit) nøgletal nederst ligesom på forsiden. Små eyebrow-labels over overskrifter bruges ikke længere.
  * Brødkrummer vises ikke visuelt – de ligger som struktureret data på siderne.
  */
 export default function PageHero({
   // eslint-disable-next-line no-unused-vars
   breadcrumbs = [],
+  // eslint-disable-next-line no-unused-vars
   eyebrow = null,
   titleLines,
   lead = null,
@@ -19,8 +20,9 @@ export default function PageHero({
   below = null,
   size = "lg",
 }) {
+  // Overskriften skal kunne læses i ét blik: moderat størrelse og luft mellem linjerne
   const titleSize =
-    size === "lg" ? "!text-[clamp(30px,4vw,52px)]" : "!text-[clamp(28px,3.4vw,44px)]";
+    size === "lg" ? "!text-[clamp(26px,3.2vw,42px)]" : "!text-[clamp(24px,2.8vw,36px)]";
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />
@@ -31,19 +33,13 @@ export default function PageHero({
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 pt-20 sm:pt-24 pb-24 sm:pb-28">
         <div className={aside ? "grid lg:grid-cols-[1.15fr_1fr] gap-14 lg:gap-16 items-center" : ""}>
           <div className="flex flex-col items-start">
-            {eyebrow && (
-              <FadeUp as="p" className="text-[11.5px] uppercase tracking-[0.14em] text-[#8a9696] mb-5 flex items-center gap-3">
-                <span className="w-8 h-px bg-[#00a8e8]" />
-                {eyebrow}
-              </FadeUp>
-            )}
             <RevealLines
               as="h1"
               lines={titleLines}
-              className={`maintitle !text-left !leading-[1.12] ${titleSize} mb-6 max-w-[22ch]`}
+              className={`maintitle !text-left !leading-[1.2] ${titleSize} mb-6 ${aside ? "max-w-[24ch]" : "max-w-[36ch]"}`}
             />
             {lead && (
-              <FadeUp as="p" delay={0.15} className="readable text-[16px] sm:text-[17px] text-[#b4bdbd] leading-[1.75] max-w-[54ch] mb-8">
+              <FadeUp as="p" delay={0.15} className="readable text-[16px] sm:text-[17px] text-[#b4bdbd] leading-[1.75] max-w-[58ch] mb-8">
                 {lead}
               </FadeUp>
             )}
@@ -84,7 +80,7 @@ export function PrimaryLink({ href, children, className = "" }) {
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center gap-2 text-[13px] font-medium text-[#111313] bg-[#00a8e8] hover:opacity-90 rounded-full pl-6 pr-2 py-2 transition-opacity ${className}`}
+      className={`inline-flex items-center justify-center gap-2 text-[13px] font-medium text-white bg-[#00a8e8] hover:opacity-90 rounded-full pl-6 pr-2 py-2 transition-opacity ${className}`}
     >
       {children}
       <svg fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7" aria-hidden>

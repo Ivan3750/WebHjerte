@@ -288,10 +288,6 @@ export default function BuildStory() {
 
           {/* Tekst */}
           <div className="md:order-1 flex flex-col justify-center min-h-0">
-            <p className="hidden md:flex text-[11px] uppercase tracking-[0.18em] text-[#7a8787] mb-3 items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Sådan foregår det
-            </p>
             <h2 className="text-white font-semibold tracking-tight leading-[1.12] text-[clamp(18px,3vw,40px)] mb-3 md:mb-9 max-w-[22ch]">
               Fra første besked til live hjemmeside
             </h2>

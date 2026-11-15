@@ -53,12 +53,6 @@ export default function WordpressFordele() {
     <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <AnimatedInView
-          as="p"
-          className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4"
-        >
-          Godt at vide
-        </AnimatedInView>
-        <AnimatedInView
           as="h2"
           className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-16 max-w-2xl"
         >

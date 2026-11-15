@@ -40,10 +40,6 @@ export default function AiFocus() {
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              AI i fokus
-            </FadeUp>
             <RevealLines
               lines={["Ikke bare en hjemmeside –", "AI, der arbejder for dig"]}
               className="text-white font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3.8vw,48px)]"

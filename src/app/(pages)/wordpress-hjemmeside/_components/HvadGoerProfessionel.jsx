@@ -74,60 +74,56 @@ const punkter = [
 export default function HvadGoerProfessionel() {
   return (
     <section className="bg-[#eceeee] px-5 sm:px-10 lg:px-20 py-20">
-      <div className="max-w-6xl mx-auto">
-        <div className="max-w-2xl mb-14">
-          <AnimatedInView
-            as="p"
-            className="text-[11px] uppercase tracking-[0.1em] text-[#5a5a5a] mb-4"
-          >
-            Hvad du får
-          </AnimatedInView>
-          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-4">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[0.9fr_1.4fr] gap-10 lg:gap-20">
+        <div className="lg:sticky lg:top-28 self-start">
+          <AnimatedInView as="h2" className="text-[#1c1e1e] font-semibold tracking-tight !leading-[1.1] text-[clamp(24px,3.3vw,40px)] mb-5">
             Det, der gør en hjemmeside professionel
           </AnimatedInView>
-          <AnimatedInView as="p" className="text-[14px] text-[#7a7a7a] leading-[1.85]">
+          <AnimatedInView as="p" className="text-[15px] text-[#6a6a6a] leading-[1.85] max-w-[40ch]">
             Et flot design er kun halvdelen af historien. Det, der afgør om en
             side reelt virker for din forretning, foregår under overfladen.
           </AnimatedInView>
+          <AnimatedInView as="div" className="flex items-center gap-5 flex-wrap mt-9">
+            <Link href="/kontakt">
+              <Button name="Få en gratis vurdering" />
+            </Link>
+            <Link
+              href="/portefolje"
+              className="text-[13px] text-[#4a4a4a] border-b border-[#bdbfbf] pb-px hover:text-[#00a8e8] hover:border-[#00a8e8] transition-colors"
+            >
+              Se mine projekter
+            </Link>
+          </AnimatedInView>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-          {punkter.map((p) => (
+        <ol className="flex flex-col gap-4">
+          {punkter.map((p, i) => (
             <AnimatedInView
               key={p.titel}
-              as="div"
-              className="group bg-[#f7f6f6] border-2 border-[#f7f6f6]/10 rounded-2xl p-6 flex flex-col gap-4 transition-colors"
+              as="li"
+              className="group grid grid-cols-[auto_1fr] gap-5 sm:gap-7 rounded-3xl bg-white border border-[#e4e2e2] p-5 sm:p-7 transition-all duration-500 hover:border-[#00a8e8]/50 hover:-translate-y-0.5 hover:shadow-[0_24px_50px_-30px_rgba(0,100,150,0.45)]"
             >
-              <div className="w-10 h-10 bg-[#5e5f5f]/10 rounded-xl flex items-center justify-center shrink-0">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  {p.icon}
-                </svg>
+              <div className="flex flex-col items-center gap-3">
+                <span className="w-12 h-12 rounded-2xl bg-[#00a8e8]/10 flex items-center justify-center">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    {p.icon}
+                  </svg>
+                </span>
+                <span className="text-[12px] tabular-nums text-[#a0a3a3]">0{i + 1}</span>
               </div>
-              <div className="flex flex-col gap-2 flex-1">
-                <p className="text-[15px] font-medium text-[#5a5a5a]">{p.titel}</p>
-                <p className="text-[13px] text-[#6a6a6a] leading-relaxed">
-                  {p.tekst}
-                </p>
-              </div>
-              <div className="flex items-center gap-2.5 pt-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#00a8e8] flex-shrink-0" />
-                <span className="text-[12px] text-[#5a5a5a]">{p.metrik}</span>
+              <div className="flex flex-col gap-2">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                  <h3 className="text-[17px] sm:text-[18px] font-semibold text-[#1c1e1e]">{p.titel}</h3>
+                  <span className="inline-flex items-center gap-2 rounded-full bg-[#1c1e1e] text-white text-[11.5px] px-3 py-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#00a8e8]" />
+                    {p.metrik}
+                  </span>
+                </div>
+                <p className="readable text-[14.5px] text-[#5a5a5a] leading-[1.75]">{p.tekst}</p>
               </div>
             </AnimatedInView>
           ))}
-        </div>
-
-        <AnimatedInView as="div" className="flex items-center gap-5 flex-wrap mt-14">
-          <Link href="/kontakt">
-            <Button name="Få en gratis vurdering" />
-          </Link>
-          <Link
-            href="/portefolje"
-            className="text-[13px] text-[#5a5a5a] border-b border-[#2a2d2d] pb-px hover:text-[#9a9a9a] hover:border-[#404040] transition-colors"
-          >
-            Se mine projekter
-          </Link>
-        </AnimatedInView>
+        </ol>
       </div>
     </section>
   );

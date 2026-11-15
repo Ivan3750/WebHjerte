@@ -340,7 +340,6 @@ const own = [
           "Et stort bureau giver mening, når du har mange interessenter, et stort budget og brug for flere specialister på én gang – fx en virksomhed med marketingafdeling, flere sprog og integrationer til ERP. Her betaler du for koordinering, og det er fair nok.",
           "For de fleste små og mellemstore virksomheder er det overkill. Du betaler for projektledere, kontorer og møder, du ikke har brug for. En erfaren freelancer eller et lille bureau som mit giver dig direkte kontakt og en lavere pris – så længe du sikrer dig, at der er en plan, hvis personen bliver syg eller stopper. Spørg om det.",
         ],
-        cta: { href: "/freelancer-vs-bureau", label: "Læs: freelancer eller bureau?" },
       },
       {
         h2: "Mine egne svar",
@@ -356,7 +355,6 @@ const own = [
       { q: "Hvad skal et tilbud på en hjemmeside indeholde?", a: "Fast pris, præcist omfang (sider og funktioner), tidsplan, hvem der ejer domæne og kode, og hvad det koster efter lancering." },
     ],
     related: [
-      { href: "/freelancer-vs-bureau", title: "Freelancer eller bureau?", desc: "Fordele og ulemper." },
       { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside?", desc: "Priser og prisberegner." },
       { href: "/om-mig", title: "Om mig", desc: "Hvem står bag WebHjerte?" },
     ],

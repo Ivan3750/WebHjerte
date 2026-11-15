@@ -24,10 +24,6 @@ export default function NichePackage({ className = "bg-[#e4f0f7]", trade = "hån
             className="pointer-events-none absolute -top-32 -right-32 w-[380px] h-[380px] rounded-full bg-[#00a8e8]/20 blur-[90px]"
           />
           <div className="relative">
-            <p className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Pakke til {trade}
-            </p>
             <h2 className="font-semibold tracking-tight leading-[1.1] text-[clamp(24px,3vw,36px)] max-w-[20ch]">
               Lokal synlighed – <span className="text-[#00a8e8]">flere opkald fra dit område</span>
             </h2>
@@ -43,7 +39,7 @@ export default function NichePackage({ className = "bg-[#e4f0f7]", trade = "hån
             <p className="mt-1.5 text-[11px] text-[#7f8c8c]">inkl. moms · levering ca. 10 dage</p>
             <Link
               href="/kontakt?pakke=lokal-synlighed"
-              className="mt-7 inline-flex items-center justify-center rounded-full bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] transition-colors px-6 py-3 text-[13px] font-semibold"
+              className="mt-7 inline-flex items-center justify-center rounded-full bg-[#00a8e8] text-white hover:bg-white hover:text-[#1c1e1e] transition-colors px-6 py-3 text-[13px] font-semibold"
             >
               Få et tilbud på Lokal synlighed
             </Link>

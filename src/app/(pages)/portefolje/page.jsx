@@ -1,5 +1,4 @@
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
-import CtaSearchBlock from "../../components/ui/CTA";
 import PortfolioRows from "./_components/PortfolioRows";
 import { projects } from "../../data/projects";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
@@ -66,9 +65,8 @@ export default function Portefolje() {
 
       <PageHero
         breadcrumbs={[{ href: "/", label: "Forside" }, { label: "Portefølje" }]}
-        eyebrow={`${projects.length} udvalgte projekter`}
         titleLines={["Portefølje –", <span key="s" className="text-[#00a8e8]">hjemmesider der virker</span>]}
-        lead="Hjemmesider leveret til lokale virksomheder i Horsens og resten af Danmark - til aftalt tid og pris."
+        lead="Se, hvordan jeg har hjulpet virksomheder med en hjemmeside, der er nem at bruge – og som får kunderne til at tage fat i dem."
         actions={
           <>
             <PrimaryLink href="/kontakt">Book gratis samtale</PrimaryLink>
@@ -79,7 +77,6 @@ export default function Portefolje() {
       />
 
       <PortfolioRows projects={projects} />
-      <CtaSearchBlock />
     </>
   );
 }

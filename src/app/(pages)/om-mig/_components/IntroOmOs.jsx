@@ -3,8 +3,6 @@ import PageHero, { PrimaryLink, GhostLink } from "../../../components/ui/PageHer
 import { FadeUp } from "../../../components/home/fx/Reveal";
 import Ivan from "../../../assets/Ivan.jpg";
 
-const chips = ["Next.js · React", "Tailwind CSS", "SEO", "Horsens-baseret", "Siden 2026"];
-
 const paragraphs = [
   "Jeg har altid været den, der skulle skille tingene ad for at forstå, hvordan de virker - og web har fanget mig, fordi det er en blanding af logik og kreativitet. Jeg kan lide, at et projekt starter som en ide på et stykke papir og ender som noget, rigtige mennesker bruger hver dag.",
   "Min baggrund er i webudvikling, hvor jeg har arbejdet med alt fra design til den tekniske opbygning bag kulisserne. Det betyder, at jeg ikke bare kan lave en flot forside - jeg forstår også, hvad der skal til, for at siden er hurtig, sikker og fungerer i mange år fremover.",
@@ -59,19 +57,11 @@ export default function IntroOmOs() {
       <section className="scene bg-[#eceeee]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20">
           <div className="lg:sticky lg:top-28 self-start">
-            <FadeUp as="p" className="text-[11px] uppercase tracking-[0.18em] text-[#8a8a8a] mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#00a8e8]" />
-              Min tilgang
+            <FadeUp as="h2" delay={0.05} className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.2] text-[clamp(22px,2.6vw,32px)] max-w-[18ch]">
+              Jeg starter med <span className="text-[#00a8e8]">spørgsmål</span> – ikke med skabeloner
             </FadeUp>
-            <FadeUp as="h2" delay={0.05} className="text-[#1c1e1e] font-semibold tracking-tight leading-[1.15] text-[clamp(24px,3.2vw,40px)] mb-7 max-w-[16ch]">
-              Spørgsmål først – skabeloner bagefter
-            </FadeUp>
-            <FadeUp delay={0.1} className="flex flex-wrap gap-2">
-              {chips.map((chip) => (
-                <span key={chip} className="text-[12px] text-[#4a4a4a] border border-[#e4e2e2] bg-[#f7f6f6] rounded-full px-3.5 py-1.5">
-                  {chip}
-                </span>
-              ))}
+            <FadeUp delay={0.1} as="p" className="mt-6 text-[14px] text-[#6a6a6a] leading-[1.8] max-w-[34ch]">
+              Hvem er dine kunder? Hvad skal siden få dem til at gøre? Svarene former hele projektet.
             </FadeUp>
           </div>
 

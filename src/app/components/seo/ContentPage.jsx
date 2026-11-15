@@ -65,7 +65,9 @@ export default function ContentPage({
   readMinutes,
   city,
   variant,
+  omit = [], // blokke der ikke skal vises: "price" | "guarantees" | "cases" | "process" | "guide" | "readmore"
 }) {
+  const skip = new Set(omit);
   const v = VARIANTS[variant] || VARIANTS[path?.slice(1)];
   const url = `${SITE_URL}${path}`;
   const trail = [{ name: "Forside", path: "/" }, ...breadcrumbs.map((b) => ({ name: b.label, path: b.href })), { name, path }];
@@ -168,10 +170,6 @@ export default function ContentPage({
         <div aria-hidden className="grid-fade absolute inset-0 opacity-40" />
         <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 w-72 h-72 rounded-full bg-[#00a8e8]/10 blur-[90px]" />
         <div className="relative">
-          <p className="text-[11px] uppercase tracking-[0.18em] text-[#7f8c8c] mb-4 flex items-center gap-3">
-            <span className="w-8 h-px bg-[#00a8e8]" />
-            Fast pris · svar inden for 24 timer
-          </p>
           <p className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(20px,2.4vw,28px)] mb-4 max-w-[22ch]">
             Vil du vide, hvad det koster for dig?
           </p>
@@ -246,7 +244,6 @@ export default function ContentPage({
                   <div key={section.h2 || section.paragraphs?.[0]} className="contents">
                     {idx === midIdx && midCta}
                     <article id={section.id || (section.h2 ? slugify(section.h2) : undefined)} className="scroll-mt-28">
-                      {section.eyebrow && <p className="text-[11px] uppercase tracking-[0.14em] text-[#8a8a8a] mb-3">{section.eyebrow}</p>}
                       {section.h2 && (
                         <div className="mb-6">
                           <p className="text-[12px] tabular-nums text-[#00a8e8] mb-3 flex items-center gap-3">
@@ -272,20 +269,20 @@ export default function ContentPage({
         <>
           {v ? v.blocks({ nichePackage }) : isService && (
             <>
-              <PriceStrip />
-              <GuaranteesBlock />
+              {!skip.has("price") && <PriceStrip />}
+              {!skip.has("guarantees") && <GuaranteesBlock />}
               {nichePackage && <NichePackage className="bg-[#f7f6f6] pt-16 sm:pt-24" trade={nichePackage} />}
-              <CasesCarousel />
-              <ProcessBlock />
+              {!skip.has("cases") && <CasesCarousel />}
+              {!skip.has("process") && <ProcessBlock />}
             </>
           )}
           {afterSummary}
-          <GuideSection sections={sections} visuals={visuals} collapse={isService} open={v ? v.open : 2} />
+          {!skip.has("guide") && <GuideSection sections={sections} visuals={visuals} collapse={isService} open={v ? v.open : 2} />}
         </>
       )}
 
       {extra}
-      <ReadMore items={related} eyebrow="Læs videre" lines={isArticle ? ["Flere guides,", "der kan hjælpe dig"] : ["Næste skridt", "for dig"]} />
+      <ReadMore items={skip.has("readmore") ? [] : related} eyebrow="Læs videre" lines={isArticle ? ["Flere guides,", "der kan hjælpe dig"] : ["Næste skridt", "for dig"]} />
       {faqs.length > 0 && <Questions faqs={faqs} />}
       <CtaSearchBlock />
     </>

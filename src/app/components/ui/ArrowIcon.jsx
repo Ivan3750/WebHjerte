@@ -18,7 +18,7 @@ export function ArrowBadge({ size = "md", tone = "light", className = "" }) {
   const dims = size === "lg" ? "w-12 h-12" : size === "sm" ? "w-8 h-8" : "w-10 h-10";
   const toneCls =
     tone === "dark"
-      ? "border-white/15 text-white/70 group-hover:bg-[#00a8e8] group-hover:border-[#00a8e8] group-hover:text-[#10181a]"
+      ? "border-white/15 text-white/70 group-hover:bg-[#00a8e8] group-hover:border-[#00a8e8] group-hover:text-white"
       : "border-[#dcdada] text-[#6a6a6a] bg-white group-hover:bg-[#00a8e8] group-hover:border-[#00a8e8] group-hover:text-white";
   return (
     <span

@@ -122,7 +122,6 @@ export default function PartnerPage() {
             {tracks.map((t, i) => (
               <FadeUp key={t.title} delay={i * 0.08} className="h-full">
                 <div className={`h-full rounded-3xl p-7 sm:p-9 border ${i === 0 ? "bg-white border-[#e8e6e6]" : "bg-[#1c1e1e] border-[#00a8e8]/40 text-white"}`}>
-                  <p className="text-[11px] uppercase tracking-[0.14em] text-[#00a8e8] mb-3">{t.eyebrow}</p>
                   <h2 className={`text-[clamp(20px,2.2vw,28px)] font-semibold tracking-tight leading-tight mb-4 ${i === 0 ? "text-[#1c1e1e]" : "text-white"}`}>
                     {t.title}
                   </h2>

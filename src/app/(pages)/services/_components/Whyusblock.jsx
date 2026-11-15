@@ -1,6 +1,7 @@
 import SectionHead from "../../../components/ui/SectionHead";
 import { FadeUp } from "../../../components/home/fx/Reveal";
 import SpotlightCard from "../../../components/home/fx/SpotlightCard";
+import BureauCompare from "../../../components/ui/BureauCompare";
 import { Panel, VisualDirectChat, VisualPrice, VisualClock, VisualPhone } from "../../../components/illustrations/Visuals";
 
 const reasons = [
@@ -34,32 +35,12 @@ const reasons = [
   },
 ];
 
-const paragraphs = [
-  {
-    lead: "Hvorfor vælge en lokal webudvikler i Horsens frem for et stort bureau?",
-    text: "Et stort bureau kan lyde tryggere på papiret — men i praksis betyder det ofte flere led, længere svartider og en pris, der også dækker deres overhead. Hos WebHjerte betaler du for arbejdet, ikke for administration.",
-  },
-  {
-    lead: "Lille betyder ikke uerfaren.",
-    text: "Jeg har bevidst valgt at arbejde alene, fordi det giver mig fuld kontrol over kvaliteten. Hvert projekt får min fulde opmærksomhed fra start til slut — ikke delt mellem ti andre kunder på samme tid.",
-  },
-  {
-    lead: "Din succes er min bedste markedsføring.",
-    text: "Jeg har ikke et stort marketingbudget til at tiltrække kunder — jeg er afhængig af, at du bliver tilfreds og anbefaler mig videre. Det betyder, at jeg lægger endnu mere i hvert eneste projekt.",
-  },
-  {
-    lead: "Du får fleksibilitet, du ikke får andre steder.",
-    text: "Ingen lange kontrakter, ingen bureaukrati. Har du brug for en hurtig ændring eller et akut spørgsmål, får du et svar direkte fra mig — ikke en supportkø, du skal vente på.",
-  },
-];
-
 export default function WhyUsBlock() {
   return (
     <section className="scene bg-[#1c1e1e] relative">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead
           dark
-          eyebrow="Hvorfor WebHjerte?"
           lines={["Ikke det største bureau —", "men det bedste valg for", "din virksomhed"]}
           maxW="max-w-[26ch]"
         />
@@ -83,13 +64,11 @@ export default function WhyUsBlock() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-10 border-t border-white/10 pt-12">
-          {paragraphs.map((p, i) => (
-            <FadeUp key={p.lead} delay={(i % 2) * 0.08} className="flex flex-col gap-2.5">
-              <h3 className="text-[15px] text-white font-medium leading-[1.5]">{p.lead}</h3>
-              <p className="text-[13.5px] text-[#8795a0] leading-[1.85]">{p.text}</p>
-            </FadeUp>
-          ))}
+        <div className="border-t border-white/10 pt-12 sm:pt-16">
+          <h3 className="text-white font-semibold tracking-tight leading-[1.2] text-[clamp(20px,2.4vw,28px)] mb-8 sm:mb-10 max-w-[28ch]">
+            Stort bureau eller lokal udvikler? Sådan er forskellen i praksis
+          </h3>
+          <BureauCompare />
         </div>
       </div>
     </section>

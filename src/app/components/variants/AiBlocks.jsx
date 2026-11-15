@@ -100,7 +100,7 @@ export function AiChatDemo() {
             </button>
           ))
         ) : (
-          <Link href="/kontakt" className="text-[12px] font-semibold text-[#10181a] bg-[#00a8e8] hover:bg-white rounded-full px-4 py-2 transition-colors">
+          <Link href="/kontakt" className="text-[12px] font-semibold text-white bg-[#00a8e8] hover:bg-white hover:text-[#1c1e1e] rounded-full px-4 py-2 transition-colors">
             Vil du have sådan en? Få et tilbud
           </Link>
         )}
@@ -180,7 +180,7 @@ export function AiSavings() {
               </p>
               <Link
                 href="/kontakt"
-                className="group mt-6 inline-flex items-center gap-3 rounded-full bg-[#00a8e8] pl-6 pr-2 py-2 text-[13px] font-semibold text-[#10181a] hover:bg-white transition-colors"
+                className="group mt-6 inline-flex items-center gap-3 rounded-full bg-[#00a8e8] pl-6 pr-2 py-2 text-[13px] font-semibold text-white hover:bg-white hover:text-[#1c1e1e] transition-colors"
               >
                 Få et konkret forslag
                 <ArrowBadge size="sm" />
