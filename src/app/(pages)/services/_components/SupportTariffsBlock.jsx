@@ -19,7 +19,7 @@ const Tick = ({ dark }) => (
 const SupportTariffsBlock = () => {
   return (
     <section id="vedligeholdelse" className="scene bg-[#1c1e1e] scroll-mt-[80px]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pb-16 sm:pb-24">
         <SectionHead
           dark
           eyebrow="Vedligeholdelse efter lancering"

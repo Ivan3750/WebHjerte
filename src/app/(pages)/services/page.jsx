@@ -11,7 +11,6 @@ import { promise } from "../../data/content/offer";
 import { photoFor } from "../../data/photos";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
 import SectionHead from "../../components/ui/SectionHead";
-import { Panel, VisualChat } from "../../components/illustrations/Visuals";
 import { FadeUp } from "../../components/home/fx/Reveal";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 import { supportPlans } from "../../data/supportPlans";
@@ -132,7 +131,7 @@ const trades = visibleLinks([
 ]);
 
 const aiLinks = visibleLinks([
-  { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot til hjemmesiden" },
+  { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot" },
   { href: "/ai-seo", label: "AI SEO" },
 ]);
 
@@ -189,29 +188,42 @@ const Services = () => {
         <PackagesBlock />
       </div>
 
-      {/* AI – kort intro med to knapper videre til AI-siderne */}
+      {/* AI – kompakt banner med to knapper videre til AI-siderne */}
       {aiLinks.length > 0 && (
-        <section className="scene bg-[#e4f0f7]">
-          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center">
-            <FadeUp>
-              <SectionHead
-                eyebrow="AI"
-                lines={["AI, der arbejder for dig", "– også når du holder fri"]}
-                lead="En AI-chatbot svarer kunderne med det samme og booker tider døgnet rundt. Med AI SEO bliver din virksomhed nævnt, når kunder spørger ChatGPT og Google AI."
-                className="mb-8"
-              />
-              <div className="flex flex-wrap gap-3">
+        <section className="scene bg-[#1c1e1e]">
+          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 pb-16 sm:pb-24">
+            <FadeUp className="relative overflow-hidden rounded-3xl bg-[#00a8e8] p-7 sm:p-10 grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-6 lg:gap-10 items-center">
+              <span aria-hidden className="pointer-events-none absolute -right-16 -top-20 w-64 h-64 rounded-full bg-white/10" />
+              <span aria-hidden className="pointer-events-none absolute right-40 -bottom-24 w-48 h-48 rounded-full bg-white/[0.07]" />
+              <span className="relative w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center shrink-0">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path d="M12 3l1.8 4.6L18.5 9l-4.7 1.6L12 15l-1.8-4.4L5.5 9l4.7-1.4L12 3z" stroke="#fff" strokeWidth="1.6" strokeLinejoin="round" />
+                  <path d="M18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round" />
+                </svg>
+              </span>
+              <div className="relative">
+                <h2 className="text-[clamp(20px,2.2vw,28px)] font-semibold text-white tracking-tight leading-tight">
+                  Vil du også have AI på siden?
+                </h2>
+                <p className="mt-2 text-[15px] text-white/85 leading-relaxed max-w-[60ch]">
+                  En chatbot, der svarer kunderne døgnet rundt – og AI SEO, så ChatGPT og Google AI nævner din virksomhed.
+                </p>
+              </div>
+              <div className="relative flex flex-wrap gap-3">
                 {aiLinks.map((l, i) => (
-                  <Link key={l.href} href={l.href} className={i === 0 ? "btn-primary" : "btn-ghost btn-ghost-light"}>
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className={
+                      i === 0
+                        ? "btn-primary !bg-white !text-[#1c1e1e] hover:!bg-[#1c1e1e] hover:!text-white"
+                        : "btn-ghost !border-white/60 hover:!border-white"
+                    }
+                  >
                     {l.label}
                   </Link>
                 ))}
               </div>
-            </FadeUp>
-            <FadeUp delay={0.1}>
-              <Panel h="h-[240px] sm:h-[280px]">
-                <VisualChat />
-              </Panel>
             </FadeUp>
           </div>
         </section>

@@ -41,7 +41,7 @@ const PackagesBlock = () => {
             <FadeUp key={name} delay={i * 0.07} className="h-full">
               <div
                 className={`relative h-full rounded-3xl p-6 sm:p-7 flex flex-col gap-6 border transition-transform duration-500 hover:-translate-y-1 ${
-                  popular ? "bg-white border-white text-[#1c1e1e]" : "bg-white/[0.03] border-white/10 text-white"
+                  popular ? "bg-[#242828] border-[#00a8e8]/60 text-white" : "bg-white/[0.03] border-white/10 text-white"
                 }`}
               >
                 <div>
@@ -54,14 +54,14 @@ const PackagesBlock = () => {
                     )}
                   </div>
                   <div className="flex items-baseline gap-1.5 mt-4">
-                    {prefix && <span className={`text-[13px] ${popular ? "text-[#8a8a8a]" : "text-[#8a9696]"}`}>{prefix}</span>}
+                    {prefix && <span className={`text-[13px] text-[#8a9696]`}>{prefix}</span>}
                     <span className={`text-[clamp(24px,2.6vw,34px)] font-semibold tracking-tight leading-none whitespace-nowrap`}>
                       {price}
                     </span>
-                    <span className={`text-[13px] ${popular ? "text-[#8a8a8a]" : "text-[#8a9696]"}`}>DKK</span>
+                    <span className={`text-[13px] text-[#8a9696]`}>DKK</span>
                   </div>
-                  <p className={`mt-1.5 text-[11px] ${popular ? "text-[#8a8a8a]" : "text-[#8a9696]"}`}>inkl. moms</p>
-                  <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md ${popular ? "bg-[#f3f2f2] text-[#6a6a6a]" : "bg-white/10 text-[#b4bdbd]"}`}>
+                  <p className={`mt-1.5 text-[11px] text-[#8a9696]`}>inkl. moms</p>
+                  <span className={`mt-4 inline-block text-[11px] px-2.5 py-1 rounded-md bg-white/10 text-[#b4bdbd]`}>
                     {timing}
                   </span>
                 </div>
@@ -69,14 +69,14 @@ const PackagesBlock = () => {
                 <ul className="flex flex-col gap-3 flex-1">
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5">
-                      <Tick dark={!popular} />
-                      <span className={`text-[13px] leading-snug ${popular ? "text-[#5a5a5a]" : "text-[#b4bdbd]"}`}>{f}</span>
+                      <Tick dark />
+                      <span className={`text-[13px] leading-snug text-[#b4bdbd]`}>{f}</span>
                     </li>
                   ))}
                 </ul>
 
-                <div className={`rounded-2xl px-4 py-3 ${popular ? "bg-[#00a8e8]/[0.08]" : "bg-white/[0.07]"}`}>
-                  <p className={`flex items-center gap-2 text-[10.5px] uppercase tracking-[0.1em] ${popular ? "text-[#6a6a6a]" : "text-[#8a9696]"}`}>
+                <div className={`rounded-2xl px-4 py-3 bg-white/[0.07]`}>
+                  <p className={`flex items-center gap-2 text-[10.5px] uppercase tracking-[0.1em] text-[#8a9696]`}>
                     <svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden>
                       <path d="M4 16l1-4L14 3l3 3-9 9-4 1z" stroke="#00a8e8" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
