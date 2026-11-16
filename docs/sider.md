@@ -68,7 +68,7 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Gratis SEO-tjek | `/gratis-seo-tjek-horsens` |
 | Gratis analyse (ikke i sitemap) | `/gratis-analyse` |
 
-### Blog (alle bevaret)
+### Blog (alle bevaret – udvidet 16. november til ca. 8–10 min. læsning, se data/content/articleExtra.js og articleDeep.js)
 | Side | URL |
 | --- | --- |
 | Blog – oversigt | `/blog` |

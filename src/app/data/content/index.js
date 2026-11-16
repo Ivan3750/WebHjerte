@@ -3,14 +3,19 @@ import { localPages } from "./local.js";
 import { servicePages } from "./services.js";
 import { hubPages } from "./hubs.js";
 import { platformPages } from "./platforms.js";
-import { articles } from "./articles.js";
+import { articles as rawArticles } from "./articles.js";
 import { nichePages } from "./niches.js";
 
 import { isHiddenSlug } from "../hidden.js";
 import { enrich } from "./extra.js";
+import { enrichArticle } from "./articleExtra.js";
+
+const articles = rawArticles.map(enrichArticle);
 
 // Skjulte sider (se data/hidden.js) er ikke med – så de hverken bygges, linkes eller kommer i sitemap
-export const allContentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages].map(enrich);
+export const allContentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages]
+  .map(enrich)
+  .map((p) => (p.type === "article" ? enrichArticle(p) : p));
 export const contentPages = allContentPages.filter((p) => !isHiddenSlug(p.slug));
 export { articles };
 

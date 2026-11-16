@@ -430,6 +430,69 @@ Hurtige sider rangerer bedre og konverterer bedre. Derfor er bæredygtigt webdes
 ## Ærlighed om grønne claims
 Jeg lover ikke, at din hjemmeside er “klimaneutral”. Det er en påstand, der er svær at dokumentere. Jeg lover til gengæld at bygge så let og effektivt som muligt, være transparent om valg af hosting og værktøjer og måle sidens vægt og hastighed, så du kan se forskellen.
 
+## Hvor kommer energiforbruget fra?
+En hjemmeside bruger strøm tre steder: i datacentret, hvor den ligger, i netværket, der sender den til brugeren, og på brugerens egen telefon eller computer. Jo flere data siden sender, og jo mere arbejde telefonen skal gøre for at vise den, jo mere strøm bruges der.
+Det betyder, at den mest effektive måde at gøre en hjemmeside grønnere på er den samme som at gøre den hurtigere: send mindre, og lad telefonen arbejde mindre.
+
+## Sådan måler du din hjemmesides vægt
+Du kan selv se, hvor tung din hjemmeside er. Det tager fem minutter og giver et godt udgangspunkt.
+1. PageSpeed Insights: Indtast din adresse på Googles gratis værktøj. Se især forslagene om billeder og ubrugt kode.
+2. Browserens værktøjer: Åbn udviklerværktøjerne, vælg fanen Netværk, og genindlæs siden. Nederst står, hvor mange data der blev hentet.
+3. CO₂-beregnere: Værktøjer som Website Carbon Calculator giver et estimat. Brug tallet til at sammenligne – ikke som en eksakt måling.
+
+## Billeder: den største gevinst
+På de fleste hjemmesider er billederne langt den største del af det, der sendes. Et enkelt foto taget med en ny telefon kan fylde flere megabyte, mens det på skærmen kun behøver at fylde en brøkdel.
+Moderne billedformater som AVIF og WebP kan gøre billederne markant mindre uden synligt kvalitetstab. På de sider, jeg bygger, sker det automatisk: billedet laves i den rigtige størrelse til den skærm, det vises på, og billeder længere nede på siden hentes først, når man scroller hen til dem.
+- Brug AVIF eller WebP i stedet for store JPG- og PNG-filer
+- Vis billedet i den størrelse, det faktisk har brug for
+- Hent billeder længere nede på siden først, når de skal bruges
+- Spørg dig selv, om billedet tilføjer noget – ellers fjern det
+
+## Video, skrifttyper og scripts
+Video, der starter automatisk i toppen af siden, er en af de tungeste ting, en hjemmeside kan indeholde. Ofte ser brugeren den slet ikke. Vis i stedet et billede, og lad brugeren starte videoen selv.
+Skrifttyper og tredjeparts-scripts – fx chatwidgets, sporingskoder og indlejrede sociale medier – er de næste store poster. Hver enkelt virker måske lille, men tilsammen kan de fordoble sidens vægt.
+- Ingen autoplay-video øverst på siden
+- Brug få skrifttyper og få vægte (fx normal og fed)
+- Fjern sporingskoder, du ikke bruger
+- Indlæs chat og sociale medier først, når brugeren skal bruge dem
+
+## Grøn hosting – hvad betyder det?
+Mange hostingudbydere kalder sig grønne. Det kan betyde, at datacentret bruger strøm fra vedvarende energi, at udbyderen køber certifikater, der svarer til forbruget, eller at der kompenseres på anden vis. Det er ikke det samme.
+Spørg din udbyder, hvad de konkret gør, og om de kan dokumentere det. Green Web Foundation har en offentlig oversigt over udbydere, der har dokumenteret deres brug af grøn strøm. Husk samtidig, at en let hjemmeside på almindelig hosting ofte gør mere for miljøet end en tung side på grøn hosting.
+
+## Tjekliste til en lettere hjemmeside
+- Billeder i moderne formater og den rigtige størrelse
+- Ingen automatisk video øverst
+- Få skrifttyper og få scripts
+- Ingen sider, ingen besøger eller har brug for
+- Enkel navigation, så brugerne finder det hurtigt – færre sidevisninger på vejen
+- Hosting med dokumenteret grøn strøm, hvor det er muligt
+- Mål sidens vægt før og efter ændringer
+
+## Et gennemgået eksempel: samme side, en tiendedel af vægten
+En typisk forside på en ældre virksomhedshjemmeside kan nemt veje flere megabyte: en stor video i toppen, fem billeder i fuld opløsning, tre skrifttyper i mange vægte og en håndfuld sporingskoder.
+Uden at ændre budskabet kan videoen erstattes af ét billede, billederne konverteres til moderne formater i den rigtige størrelse, skrifttyperne reduceres til én familie i to vægte, og sporingskoder, ingen bruger, fjernes. Siden ser næsten ens ud – men vejer en brøkdel og indlæses langt hurtigere på en mobil.
+
+## Bæredygtighed handler også om levetid
+Den grønneste hjemmeside er den, der ikke skal bygges om hvert andet år. En enkel, velstruktureret side med få afhængigheder kan holde i mange år og opdateres løbende i stedet for at blive smidt ud og bygget forfra.
+Det gælder også for indholdet. Sider, ingen besøger, og gamle kampagner, der ligger og fylder, kan fjernes eller samles. Det gør siden lettere at vedligeholde og lettere for kunderne at finde rundt i.
+
+## Spørgsmål, du kan stille dit bureau
+- Hvor meget vejer forsiden, og hvor hurtigt indlæses den på mobil?
+- Hvilke billedformater bruger I, og laves billederne i den rigtige størrelse?
+- Hvor mange tredjeparts-scripts kommer siden til at indlæse?
+- Hvor ligger siden, og hvilken strøm bruger datacentret?
+- Hvor længe kan siden holde, før den skal bygges om?
+
+## Det kan du gøre selv i dag
+Du behøver ikke en ny hjemmeside for at gøre din nuværende lettere. Mange af forbedringerne kan laves på en eftermiddag – og de gør siden hurtigere på samme tid.
+Start med billederne på forsiden: Gem dem i en mindre størrelse (sjældent bredere end 2000 pixels) og i et moderne format, før du lægger dem op igen. Gennemgå derefter dine plugins eller integrationer og fjern dem, du ikke bruger. Til sidst: Slet gamle kampagnesider og PDF'er, som ingen længere har brug for, og sørg for, at de gamle adresser sender videre til en relevant side.
+Mål sidens vægt før og efter med PageSpeed Insights. Det er motiverende at se forskellen – og det giver dig et tal, du kan følge over tid.
+1. Billeder: Gør forsidens billeder mindre og gem dem som WebP eller AVIF.
+2. Plugins og scripts: Fjern det, du ikke har brugt det seneste halve år.
+3. Gammelt indhold: Slet eller saml sider, ingen besøger, og omdiriger adresserne.
+4. Mål: Kør PageSpeed Insights før og efter, og skriv tallene ned.
+
 ## Ofte stillede spørgsmål
 Q: Hvad er bæredygtigt webdesign?
 A: Webdesign, der minimerer dataforbrug, kode og energiforbrug – ofte ved lette sider, optimerede billeder og effektiv hosting.
@@ -439,6 +502,18 @@ A: Nej, og det påstår jeg ikke. Jeg bygger lette og hurtige sider, men en komp
 
 Q: Koster det mere?
 A: Nej. Lette sider er ofte billigere at drifte og hurtigere at bygge, fordi jeg undgår unødvendige funktioner.
+
+Q: Er mørk tilstand mere bæredygtig?
+A: Kun en smule – og kun på skærme med OLED-teknologi, hvor sorte pixels bruger mindre strøm. Det er ikke dér, den store gevinst ligger. Lettere billeder og færre scripts betyder langt mere.
+
+Q: Bliver min hjemmeside hurtigere af at blive grønnere?
+A: Ja, næsten altid. Det meste af det, der gør en side lettere, gør den også hurtigere – og hastighed er godt for både brugerne og Google.
+
+Q: Hvad vejer en god hjemmeside?
+A: Der er ingen fast grænse, men en forside på under 1 MB er et godt mål for de fleste små virksomheder. Mange sider vejer langt mere, især på grund af billeder og video.
+
+Q: Skal jeg skifte hosting for at blive grønnere?
+A: Det kan være en god idé, hvis din udbyder ikke kan dokumentere grøn strøm. Men start med at gøre selve siden lettere – det giver ofte en større effekt og gør samtidig siden hurtigere.
 
 
 ---
@@ -468,6 +543,80 @@ Den behøver ikke være et tykt dokument. For små og mellemstore virksomheder e
 - Bedre grundlag for at vælge pakke og budget.
 - En plan for synlighed i både Google og AI-svar.
 
+## Start med målet – ikke med designet
+Det første spørgsmål er ikke, hvilken farve hjemmesiden skal have. Det er: Hvad skal den få besøgende til at gøre? For de fleste små virksomheder er svaret ét af fire: ringe, skrive, booke eller købe.
+Når målet er på plads, bliver resten lettere. Hver side og hver knap kan vurderes ud fra ét spørgsmål: Hjælper det kunden tættere på at ringe, skrive, booke eller købe?
+
+## Kend dine kunder med tre spørgsmål
+Du behøver ikke en stor analyse. Svar på tre spørgsmål – og find svarene ved at spørge dine seneste fem kunder, læse dine anmeldelser og kigge i Google Search Console.
+### Hvem er de?
+Privatpersoner eller virksomheder? Lokale eller i hele landet? Unge eller ældre? Det afgør tone, billeder og hvilke oplysninger der skal stå først.
+### Hvilket problem har de?
+Kunder køber ikke en ydelse – de køber en løsning. Skriv om problemet med deres ord, ikke med jeres fagudtryk.
+### Hvorfor vælger de jer?
+Pris, hurtighed, kvalitet, at de kender jer? Det, kunderne nævner, skal stå tydeligt på forsiden.
+
+## Hvilke sider skal du have?
+En god struktur er enkel. Kunden skal kunne finde det, de leder efter, med ét klik fra forsiden, og Google skal kunne se, hvad hver side handler om.
+Side | Formål
+Forside | Hvad I laver, for hvem og hvor – og den vigtigste handling
+En side pr. ydelse | Svar på kundens spørgsmål om netop den ydelse – og bliv fundet på den søgning
+Priser | Fjern den største tvivl, før kunden kontakter jer
+Cases / referencer | Bevis på, at I kan det, I lover
+Om os | Hvem står bag – tillid og personlighed
+Kontakt | Telefon, mail, adresse og en kort formular
+
+## Budskabet på fem sekunder
+En ny besøgende beslutter sig hurtigt for, om de er havnet det rigtige sted. Overskriften øverst på forsiden skal derfor svare på tre ting: hvad laver I, for hvem, og hvor. Undertitlen fortæller, hvorfor de skal vælge jer, og knappen fortæller, hvad de skal gøre nu.
+Uklart | Tydeligt (eksempel)
+Velkommen til vores hjemmeside | Tømrer i Horsens – nye terrasser, tagvinduer og tilbygninger
+Kvalitet og service siden 1998 | Fast pris efter besigtigelse. Svar inden for én arbejdsdag.
+Læs mere | Få et tilbud
+
+## Kanaler: Google, sociale medier og AI
+Hjemmesiden er centrum, men kunderne kommer fra forskellige steder. For de fleste lokale virksomheder er Google den vigtigste kilde – både de almindelige resultater og kortet. Sociale medier er gode til at holde kontakten med eksisterende kunder, og flere og flere spørger i dag også en AI-assistent om råd.
+Prioritér ud fra, hvor jeres kunder faktisk er. Det er bedre at gøre én kanal ordentligt end fem halvt.
+
+## Mål det, der betyder noget
+Antal besøgende er rart at kende, men det betaler ikke regningerne. Mål i stedet de handlinger, der giver forretning – og kig på tallene én gang om måneden.
+- Henvendelser via formularen
+- Klik på telefonnummer og mail
+- Bookinger eller køb
+- Søgninger, I vises på, og jeres placering (Google Search Console)
+- Hvilke sider kunderne besøger, før de tager kontakt
+
+## En webstrategi på én side
+En strategi behøver ikke være et langt dokument. For de fleste små virksomheder kan den stå på én side – og netop derfor bliver den brugt. Udfyld de seks punkter, og hæng den op, hvor du kan se den.
+### 1. Mål
+Hvad skal hjemmesiden få kunderne til at gøre? Fx “få 10 tilbudsforespørgsler om måneden”.
+### 2. Kunder
+Hvem er de vigtigste kunder, og hvilket problem løser du for dem?
+### 3. Budskab
+Én sætning: hvad du laver, for hvem og hvor – og hvorfor man skal vælge dig.
+### 4. Sider
+Forside, en side pr. ydelse, priser, cases, om og kontakt.
+### 5. Kanaler
+Hvor kommer kunderne fra – og hvilken kanal prioriterer du først?
+### 6. Måling
+Hvilke tal kigger du på hver måned, og hvornår er du tilfreds?
+
+## Et gennemgået eksempel: en fysioterapeut
+En nystartet klinik vil have flere bookinger fra nye patienter. Målet bliver derfor “online bookinger fra nye patienter”, ikke “flere besøgende”. Kunderne er især sportsaktive og folk med rygproblemer i lokalområdet, og de vælger klinik efter, hvor hurtigt de kan komme til, og om behandleren virker kompetent.
+Derfor står den næste ledige tid og knappen “Book tid” øverst på forsiden, hver behandlingsform får sin egen side, og behandlerne præsenteres med uddannelse og erfaring. Google-profilen prioriteres, fordi de fleste søger “fysioterapeut + by”. Hver måned kigges der på antal online bookinger og på, hvilke søgninger klinikken vises på.
+
+## Typiske fejl i en webstrategi
+- Målet er “flere besøgende” i stedet for henvendelser eller salg
+- Forsiden forsøger at fortælle alt på én gang
+- Ydelserne står i én lang liste i stedet for på hver sin side
+- Prisen er skjult, selvom det er det første, kunderne spørger om
+- Der er ingen, der kigger på tallene efter lanceringen
+- Strategien bliver lavet én gang og aldrig set på igen
+
+## Fra strategi til færdig hjemmeside
+Strategien er ikke et mål i sig selv – den skal gøre det lettere at bygge en hjemmeside, der virker. Når de seks punkter er på plads, bliver de næste beslutninger næsten selvfølgelige: Hvilke sider skal laves først? Hvad skal stå øverst på forsiden? Hvilken knap skal være tydeligst?
+I praksis bruger jeg strategien som tjekliste gennem hele projektet. Designet vurderes ud fra, om budskabet står klart på fem sekunder. Teksterne vurderes ud fra, om de svarer på kundernes spørgsmål. Og efter lanceringen vurderes siden ud fra de tal, vi valgte i starten – ikke ud fra, om den er pæn.
+Har du allerede en hjemmeside, er strategien også det bedste udgangspunkt for at forbedre den. Ofte viser det sig, at der ikke skal bygges noget nyt – bare skrives tydeligere, flyttes rundt og fjernes noget.
+
 ## Webtjek: første skridt
 Hvis du allerede har en hjemmeside, er det mest effektive første skridt et webtjek. Det er en gratis gennemgang af hastighed, mobilvisning, SEO-grundlag og indhold, som peger på de vigtigste forbedringer. Mange virksomheder opdager her, at en række små rettelser giver mere end en helt ny side.
 
@@ -480,6 +629,15 @@ A: Du behøver ikke et stort dokument, men en klar plan for mål, målgruppe og 
 
 Q: Hvad er forskellen på webstrategi og SEO?
 A: Strategien afklarer mål og prioriteringer. SEO er en del af udførelsen, som får siden til at rangere.
+
+Q: Hvor ofte skal strategien opdateres?
+A: Gennemgå den en gang om året, eller når der sker noget stort – nye ydelser, et nyt område eller et fald i henvendelser. Små justeringer kan du lave løbende ud fra tallene.
+
+Q: Kan jeg lave strategien selv?
+A: Ja. De seks punkter i denne guide er nok til de fleste små virksomheder. Hjælp udefra er mest værdifuld, når du er i tvivl om prioriteringen, eller når du vil have et blik på det, du selv er blevet blind for.
+
+Q: Hvad hvis jeg har flere typer kunder?
+A: Vælg den vigtigste som udgangspunkt for forsiden, og lav særskilte sider til de andre. En forside, der prøver at tale til alle, taler ofte ikke til nogen.
 
 
 ---
@@ -865,7 +1023,7 @@ A: Ved at vise de opgaver, du vil have flere af, og ved at gøre det let at besk
 
 # Sådan bliver din virksomhed nævnt af ChatGPT og Google AI
 URL: https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai
-Forfatter: Ivan Kohan. Opdateret: 2026-11-10
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
 
 Flere og flere kunder spørger ChatGPT i stedet for at google. Her er de 12 ting, jeg selv gør på mine kunders hjemmesider – og på min egen – for at blive nævnt i svaret.
 
@@ -909,6 +1067,61 @@ Vis, hvornår en side sidst er opdateret, og gennemgå dine priser og fakta mind
 Stil dine kunders spørgsmål i ChatGPT, Gemini, Perplexity og Google, og notér, hvilke virksomheder der bliver nævnt og hvilke kilder der vises. Gentag hver måned med de samme spørgsmål, så du kan sammenligne. Brug samtidig Google Search Console til at se, hvilke sider der vises, og hvilke søgninger der giver klik.
 Husk, at AI-svar varierer fra gang til gang. Se på tendensen over tid frem for på enkelte svar.
 
+## Sådan finder AI-assistenter deres svar
+Det hjælper at forstå, hvor svarene kommer fra. En AI-assistent har to kilder: det, den lærte, da modellen blev trænet, og det, den slår op på nettet, mens du venter. Den første kilde ændrer sig langsomt – måske en gang om året. Den anden ændrer sig hele tiden.
+Når en kunde spørger om noget lokalt og aktuelt – “hvem laver badeværelser i Horsens?” – bruger de fleste assistenter i dag den anden kilde. De søger, læser et udvalg af sider og skriver et svar med henvisninger. Google gør det samme i sine AI-oversigter, bare med sit eget søgeindeks.
+Konsekvensen er enkel: Hvis din side ikke kan findes og læses af en søgemaskine, kan den heller ikke blive citeret af en AI. AI-synlighed er derfor ikke en erstatning for almindelig SEO – det er en forlængelse af den.
+
+## Skriv sider, der kan citeres
+En AI-assistent leder efter korte, præcise svar, den kan løfte direkte ind i sin tekst. Marketingsprog som “vi brænder for kvalitet” giver den intet at arbejde med. Konkrete oplysninger gør.
+Den bedste opskrift er at stille spørgsmålet i overskriften og svare i første sætning. Uddybningen kommer bagefter. Det er også sådan, mennesker læser på nettet: de skimmer overskrifterne og stopper, når de har fået svar.
+Svært at citere | Let at citere
+Vi tilbyder professionelle løsninger til konkurrencedygtige priser. | Et nyt badeværelse koster typisk fra 85.000 kr inkl. moms (eksempel). Du får en fast pris efter besigtigelse.
+Vi dækker et stort område. | Vi arbejder i Horsens, Hedensted, Brædstrup og Gedved.
+Kontakt os for mere information. | Ring på 12 34 56 78 hverdage kl. 7–16, eller skriv – vi svarer samme dag.
+
+## Din virksomhed som én tydelig “enhed”
+Søgemaskiner og AI forsøger at forstå din virksomhed som én ting med ét navn, én adresse og én beskrivelse. Hvis navnet staves forskelligt tre steder, eller telefonnummeret er gammelt på et af dem, bliver billedet uklart – og en uklar kilde bliver sjældent anbefalet.
+Gå derfor de steder igennem, hvor din virksomhed er nævnt: hjemmesiden, Google Virksomhedsprofil, Facebook, LinkedIn og danske kataloger som Krak og De Gule Sider. Sørg for, at navn, adresse, telefon og den korte beskrivelse er ens overalt.
+- Samme virksomhedsnavn overalt – også med eller uden “ApS”
+- Samme adresse og telefonnummer på hjemmesiden og i Google
+- En “Om”-side, der fortæller, hvem der står bag, og hvor længe I har eksisteret
+- Anmeldelser på Google, som du svarer på
+- Omtale andre steder: lokale foreninger, leverandører og lokalmedier
+
+## Struktureret data i praksis
+Struktureret data er en lille blok kode på siden, som fortæller maskiner præcis, hvad der står: dette er en virksomhed, den ligger her, den tilbyder disse ydelser, og her er svarene på de mest stillede spørgsmål. Den bruges af Google og læses også af mange andre systemer.
+Du behøver ikke kunne kode for at forstå princippet. Det vigtige er, at de oplysninger, der står i koden, også står synligt på siden – ellers kan Google se bort fra dem.
+### LocalBusiness / Organization
+Navn, adresse, telefon, åbningstider og links til dine profiler. Grundlaget for, at du bliver forstået som en rigtig virksomhed.
+### Service
+Hvad du tilbyder, hvor, og gerne fra hvilken pris. Gør det lettere at matche dig med konkrete spørgsmål.
+### FAQPage
+Spørgsmål og svar, der også står synligt på siden. Et af de formater, AI-assistenter har lettest ved at bruge.
+### BreadcrumbList
+Viser, hvor siden ligger i strukturen. Lille ting, men det hjælper søgemaskiner med at forstå sammenhængen.
+
+## Fejl, der gør dig usynlig
+Nogle af de mest almindelige problemer har intet med indhold at gøre. De handler om, at maskinerne slet ikke kan komme til.
+- AI-crawlere er blokeret i robots.txt – ofte uden at ejeren ved det
+- Vigtige oplysninger står kun i billeder eller PDF-filer
+- Siden viser først indhold, når JavaScript er kørt færdigt, og nogle crawlere ser en tom side
+- Priser og åbningstider er forskellige på hjemmesiden og i Google
+- Der er ingen side om, hvem der står bag virksomheden
+- Hundredvis af næsten ens sider med skiftende bynavne
+
+## En plan for de næste 30 dage
+Du behøver ikke gøre det hele på én gang. Her er en rækkefølge, der giver mest for indsatsen.
+1. Uge 1: Kan du findes?: Tjek robots.txt, opret Google Search Console, og søg på dit eget firmanavn i Google, ChatGPT og Perplexity. Skriv ned, hvad der står.
+2. Uge 2: Ens oplysninger: Ret navn, adresse, telefon og beskrivelse på hjemmesiden, i Google Virksomhedsprofil og i de vigtigste kataloger.
+3. Uge 3: Svar på spørgsmålene: Skriv de ti spørgsmål, kunderne oftest stiller, og svar på dem kort og konkret – på de sider, de hører til.
+4. Uge 4: Struktur og måling: Tilføj struktureret data, bed fem kunder om en anmeldelse, og gentag søgningerne fra uge 1 for at se forskellen.
+
+## Et gennemgået eksempel: et lille malerfirma
+Forestil dig en maler i Hedensted med en hjemmeside på tre sider: forside, “om os” og kontakt. Forsiden siger “Kvalitet til tiden”, priserne står ingen steder, og området nævnes kun i adressen i bunden. Når nogen spørger en AI-assistent om en maler i Hedensted, har den intet konkret at citere.
+Efter en eftermiddags arbejde har siden fået en ydelsesside for indvendig og udvendig maling, en sætning om hvilke byer der dækkes, et prisniveau pr. kvadratmeter og svar på fem spørgsmål om tidsplan og forberedelse. Google-profilen er rettet, så navn og telefon er de samme som på siden, og fem tidligere kunder har skrevet en anmeldelse.
+Ingen kan love, at assistenten nu nævner maleren. Men forskellen er, at der nu findes en kilde, den kan bruge – og det er præcis de samme ændringer, der gør, at kunderne ringer, når de lander på siden.
+
 ## Brug for hjælp?
 Jeg gennemgår gerne din hjemmeside og siger ærligt, hvad der mangler. Det er gratis og uden binding. Vil du have det hele bygget ind fra start, indeholder alle nye hjemmesider fra WebHjerte de tekniske elementer fra listen ovenfor.
 
@@ -922,12 +1135,18 @@ A: Det er et valg. Vil du have trafik og omtale fra AI-søgning, skal crawlerne 
 Q: Hvad er det vigtigste enkelte tiltag?
 A: At besvare kundernes spørgsmål klart og tidligt på siden og at have korrekte, ens virksomhedsoplysninger overalt.
 
+Q: Hvad er llms.txt, og skal jeg have den?
+A: llms.txt er en foreslået fil, der giver AI-systemer en kort oversigt over dit indhold. Det er ikke en officiel standard, og ingen kan love, at den bliver brugt. Den er billig at lave, så jeg tilføjer den, men den erstatter ikke god tekst og en sund hjemmeside.
+
+Q: Hvor hurtigt ændrer AI-svarene sig, når jeg forbedrer siden?
+A: Svar, der bygger på søgning, kan ændre sig inden for dage eller uger, når siden er blevet læst igen. Det, modellen har lært under træningen, ændrer sig langsomt. Tjek derfor flere assistenter og gentag søgningen jævnligt.
+
 
 ---
 
 # AI i små virksomheder: 10 konkrete eksempler, der virker
 URL: https://www.webhjerte.dk/blog/ai-i-smaa-virksomheder-10-eksempler
-Forfatter: Ivan Kohan. Opdateret: 2026-11-10
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
 
 Ingen buzzwords, ingen robotter, der overtager firmaet. Bare ti måder, hvorpå en lokal virksomhed kan spare tid og vinde flere kunder med AI allerede i dag.
 
@@ -977,6 +1196,57 @@ AI er et værktøj, ikke en medarbejder, du kan glemme. De fire ting, jeg altid 
 - Vær ærlig: skriv, at kunden taler med en AI-assistent, og gør det nemt at få fat i dig.
 - Hold oplysningerne opdaterede. En chatbot med sidste års priser gør mere skade end gavn.
 
+## Sådan vælger du det første AI-projekt
+Det mest almindelige fejltrin er at starte for stort. “Vi skal have AI i hele forretningen” ender som regel med et halvt projekt, ingen bruger. Start i stedet med én opgave, der gentager sig ofte, følger faste regler og ikke koster dyrt, hvis den en dag går galt.
+Skriv tre kandidater ned og giv dem point fra 1 til 3 på fire spørgsmål. Den med flest point er dit første projekt.
+Spørgsmål | Hvorfor det betyder noget
+Hvor ofte sker opgaven? | Dagligt giver mere effekt end en gang om måneden.
+Følger den faste regler? | Jo mere fast, jo bedre kan AI hjælpe.
+Hvad sker der, hvis den går galt? | Lav risiko først – fx et udkast, du selv læser igennem.
+Kan du måle effekten? | Minutter sparet eller flere henvendelser gør det let at se, om det virker.
+
+## Regn på det, før du starter
+AI er kun interessant, hvis den sparer tid eller giver flere kunder. Det kan du regne på med et enkelt stykke papir. Skriv, hvor mange minutter opgaven tager om dagen, og gang med antal arbejdsdage.
+Et eksempel: Bruger du 20 minutter om dagen på at svare på de samme spørgsmål i telefonen og på mail, er det over et år med ca. 220 arbejdsdage omkring 73 timer. Kan en chatbot tage halvdelen, har du fået mere end en arbejdsuge tilbage.
+Sammenlign det med, hvad løsningen koster at sætte op og drive. Er gevinsten ikke tydelig på papiret, bliver den det sjældent i virkeligheden.
+
+## Værktøjer – uden at binde dig
+Du behøver ikke købe en stor platform. De fleste små virksomheder kan komme langt med værktøjer i fire kategorier – og mange har allerede noget af det i de programmer, de bruger.
+### AI-assistenter
+ChatGPT, Claude og Gemini kan skrive udkast, opsummere og omformulere. Brug en erhvervsversion, hvis du arbejder med kundedata.
+### Automatisering
+Zapier, Make og n8n forbinder dine systemer: en ny henvendelse kan fx automatisk lande i kalenderen og udløse en bekræftelse.
+### AI i det, du allerede har
+Microsoft 365 og Google Workspace har AI-funktioner til mail, dokumenter og møder. Tjek, hvad du allerede betaler for.
+### Chatbot på hjemmesiden
+En chatbot, der kun svarer ud fra dine egne oplysninger, og som sender henvendelserne videre til dig.
+
+## GDPR og AI – det korte overblik
+Den vigtigste regel er enkel: Kopiér ikke personoplysninger om kunder ind i et gratis AI-værktøj, medmindre du ved, hvordan data behandles. Erhvervsversioner har typisk bedre vilkår og en databehandleraftale – læs dem.
+Har du en chatbot på hjemmesiden, skal besøgende kunne se, at de taler med en AI, og din privatlivspolitik skal beskrive, hvilke oplysninger der gemmes. EU's AI-forordning stiller netop krav om, at folk får at vide, når de taler med en AI.
+- Brug erhvervsversioner med databehandleraftale til kundedata
+- Fortæl tydeligt, når kunden taler med en AI
+- Opdatér privatlivspolitikken, før du går live
+- Gem ikke mere, end du har brug for
+- Lad et menneske tage beslutninger, der har betydning for kunden
+
+## Når AI ikke er svaret
+Nogle gange er det rigtige svar en bedre hjemmeside, en enklere proces eller en telefon, der bliver taget. Hvis kunderne ringer, fordi prisen ikke står nogen steder, er løsningen at skrive prisen – ikke at bygge en chatbot, der fortæller den.
+Det samme gælder opgaver, hvor tillid og personlig kontakt er hele pointen: et svært kundeforløb, en klage eller en stor ordre. Her er AI bedst som hjælper i baggrunden, fx til at skrive et første udkast, du selv gør færdigt.
+
+## Et gennemgået eksempel: en frisørsalon
+En salon med tre stole får mange af de samme spørgsmål: Hvad koster en farve? Har I tid lørdag? Kan jeg aflyse? Ejeren svarer mellem kunderne, ofte med våde hænder, og mange beskeder bliver først besvaret om aftenen.
+Første skridt er ikke en chatbot, men en prisliste og online booking på hjemmesiden – så forsvinder halvdelen af spørgsmålene. Næste skridt er en chatbot, der svarer ud fra prislisten og åbningstiderne og sender alt andet videre. Tredje skridt er en automatisk påmindelse dagen før, så færre glemmer deres tid.
+Rækkefølgen er pointen: Først fjernes årsagen til spørgsmålene, så automatiseres svarene, og til sidst bruges AI til opfølgningen. Hvert skridt kan måles for sig, og man kan stoppe, når gevinsten er hentet.
+
+## Tre myter om AI i små virksomheder
+### “Det er kun for store firmaer”
+De fleste værktøjer koster få hundrede kroner om måneden, og de største gevinster findes ofte i de små, gentagne opgaver, som netop små virksomheder har mange af.
+### “AI erstatter kundekontakten”
+Godt brugt gør AI det modsatte: den tager de gentagne spørgsmål, så du har mere tid til de samtaler, der kræver dig.
+### “Man skal være teknisk”
+At bruge en AI-assistent kræver ikke mere end at skrive en mail. Det tekniske – integrationer og opsætning – kan du få hjælp til én gang.
+
 ## Vil du have hjælp?
 Jeg bygger AI-chatbots, booking, lead-kvalificering og små automatiseringer til virksomheder i Horsens og resten af Danmark. Fortæl mig, hvad der stjæler mest af din tid, så siger jeg ærligt, om AI kan hjælpe – og hvad det koster.
 
@@ -993,12 +1263,18 @@ A: Nej, hvis løsningen er sat rigtigt op. Du bestemmer, hvad AI må svare på, 
 Q: Kan AI erstatte en medarbejder?
 A: Sjældent helt. Men den kan fjerne de gentagne opgaver, så du og dine medarbejdere får tid til det arbejde, kunderne betaler for.
 
+Q: Skal jeg betale for ChatGPT til min virksomhed?
+A: Du kan sagtens teste med en gratis version. Men arbejder du med kundeoplysninger, bør du bruge en erhvervsversion med klare vilkår for, hvordan data behandles.
+
+Q: Kan AI skrive teksterne til min hjemmeside?
+A: AI kan skrive et godt første udkast, men du bør altid rette det til, så det lyder som dig og indeholder dine egne fakta. Google vurderer, om teksten er nyttig for læseren – ikke hvem der har skrevet den.
+
 
 ---
 
 # Hvad koster en hjemmeside om året?
 URL: https://www.webhjerte.dk/blog/hvad-koster-en-hjemmeside-om-aaret
-Forfatter: Ivan Kohan. Opdateret: 2026-11-10
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
 
 Prisen på selve hjemmesiden er kun starten. Her er de løbende udgifter, du skal regne med – og hvor mange betaler alt for meget.
 
@@ -1038,6 +1314,69 @@ Hos mig koster vedligeholdelse 249, 449 eller 799 kr om måneden. Det dækker op
 - Vælg vedligeholdelse, der kan opsiges løbende – ikke en 36-måneders binding.
 - Fjern plugins og værktøjer, du ikke bruger. Det sparer penge og gør siden hurtigere.
 
+## Domænet: lille udgift, stor betydning
+Et .dk-domæne koster ca. 100–200 kr om året. Det er den billigste post på listen, men den vigtigste at have styr på. Domænet er din adresse på nettet – og din mail, hvis du bruger navn@dinvirksomhed.dk.
+Sørg for, at domænet står i dit eget eller virksomhedens navn, og at fornyelsen sker automatisk. Udløber et domæne, holder hjemmesiden og mailen op med at virke, og i værste fald kan andre registrere det.
+
+## Hosting forklaret uden fagsprog
+Hosting er den computer, hjemmesiden ligger på. Prisen afhænger mest af, hvilken slags side du har. En enkel, kodet side kan ligge næsten gratis, mens en WordPress-side med mange plugins kræver mere – og en webshop endnu mere.
+Type | Passer til | Typisk pris
+Statisk / kodet side (fx Vercel eller Netlify) | Hurtige sider uden login og webshop | 0–200 kr/md
+Delt webhotel | Mindre WordPress-sider | 30–150 kr/md
+Administreret WordPress-hosting | WordPress med daglig backup og hastighed | 150–500 kr/md
+Shopify | Webshop – hosting er med i abonnementet | Afhænger af plan
+
+## Udgifter, mange glemmer
+Det er sjældent domæne og hosting, der overrasker. Det er de små abonnementer, der kommer til undervejs.
+- Mail på eget domæne: betales typisk pr. bruger pr. måned (fx Microsoft 365 eller Google Workspace)
+- Premium-plugins og temaer til WordPress: licenser fornyes ofte hvert år
+- Bookingsystem eller nyhedsbrev: månedligt abonnement
+- Cookie-banner: nogle løsninger koster pr. måned
+- Billeder: købte billeder kan have licensvilkår
+- Betalingsløsning i en webshop: gebyr pr. transaktion
+
+## Tre års regnestykke: byg selv eller få bygget
+Den rigtige måde at sammenligne på er over flere år, ikke kun det første. En hjemmesidebygger ser billig ud, fordi du betaler lidt hver måned. En hjemmeside, du får bygget, koster mere den første dag, men så ejer du den.
+Over 3 år (vejledende) | Hjemmesidebygger | Basis-hjemmeside hos WebHjerte
+Start | 0 kr | 4.500 kr (én gang)
+Abonnement / hosting | ca. 3.600–14.400 kr | ca. 0–5.400 kr
+Domæne | ofte med i abonnement | ca. 300–600 kr
+Vedligeholdelse | du gør det selv | valgfrit, fra 249 kr/md
+Du ejer siden | nej | ja
+
+## Sådan læser du et tilbud på drift
+Når du får et tilbud på hosting eller vedligeholdelse, så stil disse spørgsmål. Svarene fortæller dig, om prisen er fair.
+1. Hvad er med?: Hosting, SSL, backup, opdateringer, overvågning – og hvor mange minutters rettelser?
+2. Hvor hurtigt svarer de?: Inden for en hverdag er rimeligt. “Hurtigst muligt” er ikke et svar.
+3. Hvad koster ekstra?: Spørg efter timeprisen for opgaver uden for aftalen.
+4. Kan du opsige?: Løbende måned og kort opsigelse er bedst. Lange bindinger er et rødt flag.
+5. Får du dine data med?: Domæne, filer og logins skal kunne flyttes, hvis du vil skifte.
+
+## Hvornår kan det betale sig at have en vedligeholdelsesaftale?
+En vedligeholdelsesaftale er ikke nødvendig for alle. Har du en enkel, kodet hjemmeside, der sjældent ændres, kan du klare dig uden og betale for rettelser, når der er brug for dem. Har du en WordPress-side eller en webshop, er det anderledes: systemet skal opdateres jævnligt, og en glemt opdatering kan i værste fald betyde, at siden bliver hacket eller holder op med at virke.
+Tommelfingerreglen er enkel: Hvis du ikke selv vil – eller kan – holde øje med opdateringer, backup og sikkerhed, så er en aftale billigere end at rydde op efter et nedbrud. Hos mig koster Basis 249 kr/md, Standard 449 kr/md og Pro 799 kr/md. Alle kan opsiges med 30 dages varsel.
+Din situation | Mit råd
+Kodet side, sjældne ændringer | Ingen aftale – betal for rettelser, når du har brug for dem
+WordPress, du selv retter i | Basis: opdateringer, backup og overvågning
+Du vil have rettelser lavet for dig hver måned | Standard: op til 30 minutters ændringer om måneden
+Webshop eller forretningskritisk side | Standard eller Pro
+
+## Sådan skærer du i de løbende udgifter
+Mange betaler for mere, end de bruger. Det skyldes sjældent, at nogen har snydt dem – men at abonnementer bliver tilføjet over tid og aldrig fjernet igen. En årlig oprydning tager en time og kan spare flere tusinde kroner.
+1. Lav en liste: Gennemgå kontoudtog og kreditkort for alt, der har med hjemmesiden at gøre: domæne, hosting, mail, plugins, booking, nyhedsbrev.
+2. Find dubletter: Betaler du for backup både hos hostingudbyderen og i et plugin? Har du to mailløsninger?
+3. Fjern det, du ikke bruger: Plugins og værktøjer, du ikke har åbnet i et halvt år, kan som regel opsiges.
+4. Saml årsbetalinger: Mange udbydere giver rabat ved årlig betaling. Brug det for de ting, du er sikker på at beholde.
+
+## Et gennemgået eksempel: fra 9.000 til 3.000 kr om året
+En lille konsulentvirksomhed betalte for en hjemmesidebygger med premium-tema, en separat bookingløsning, to mailkonti og et nyhedsbrevsværktøj, de ikke havde brugt i et år. Tilsammen omkring 9.000 kr om året.
+Efter en gennemgang blev nyhedsbrevet opsagt, den ene mailkonto lukket, og hjemmesiden flyttet til en enkel, kodet side med booking indbygget. De løbende udgifter faldt til omkring 3.000 kr om året – og siden blev hurtigere.
+
+## Hvad sker der, hvis du ikke betaler?
+Det er værd at vide, hvad der stopper, hvis en betaling glipper – for konsekvenserne er meget forskellige. Udløber domænet, holder både hjemmesiden og mailen op med at virke, og efter en periode kan andre registrere navnet. Stopper hostingen, forsvinder siden, men domænet er stadig dit, og siden kan sættes op igen, hvis du har en backup.
+Opsiger du en vedligeholdelsesaftale, kører siden videre, men ingen holder øje med opdateringer og backup. For en kodet side betyder det sjældent noget på kort sigt. For WordPress og webshops kan det over tid blive en sikkerhedsrisiko.
+Sørg derfor for, at domænet fornyes automatisk med et kort, der ikke udløber, at du selv har adgang til hostingen, og at du ved, hvor den seneste backup ligger. Så er du aldrig afhængig af én person eller ét firma.
+
 ## Hvad med hjemmesidebyggere?
 Wix, Squarespace og lignende ser billige ud, fordi der ikke er nogen engangspris. Men du betaler typisk 100–400 kr om måneden, så længe siden findes – og du ejer den ikke. Stopper du betalingen, forsvinder hjemmesiden. Over tre år koster det ofte mere end en professionel side, du ejer selv.
 
@@ -1054,12 +1393,18 @@ A: Det er ikke et krav, men anbefales til WordPress og webshops. Hos WebHjerte k
 Q: Hvad sker der, hvis jeg stopper med at betale for hosting?
 A: Hjemmesiden går offline. Derfor er det vigtigt, at du ejer domænet og har en kopi af siden, så den kan flyttes til en anden udbyder.
 
+Q: Er SSL-certifikatet en ekstra udgift?
+A: Sjældent i dag. De fleste moderne hostingudbydere giver et gratis certifikat, der fornyes automatisk. Betaler du ekstra for SSL, er det værd at spørge hvorfor.
+
+Q: Kan jeg flytte min hjemmeside til billigere hosting?
+A: Ofte ja. Det kræver adgang til domænet og hjemmesidens filer og database. Planlæg flytningen, så siden og mailen ikke er nede, og tjek bagefter i Google Search Console, at alt virker.
+
 
 ---
 
 # SEO-tjekliste for lokale virksomheder: 25 punkter, du kan tjekke i dag
 URL: https://www.webhjerte.dk/blog/seo-tjekliste-lokale-virksomheder
-Forfatter: Ivan Kohan. Opdateret: 2026-11-10
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
 
 Det samme webtjek, jeg selv laver, når en ny kunde spørger, hvorfor de ikke kan findes på Google. Du skal bare bruge en mobil, en kop kaffe og en time.
 
@@ -1115,6 +1460,65 @@ Du behøver ikke gøre det hele på én gang. Hvis jeg skulle vælge rækkefølg
 3. Dine tre vigtigste ydelser: Giv dem hver sin side med by i titlen og svar på kundernes spørgsmål.
 4. Mål og justér: Efter 6–8 uger: kig i Search Console og se, hvilke søgninger der begynder at komme.
 
+## Søgeordsanalyse på 30 minutter
+Du behøver ikke dyre værktøjer for at finde de vigtigste søgninger. Kunderne søger næsten altid efter en ydelse kombineret med et sted, og det kan du finde ud af på en halv time.
+1. Lav en liste: Skriv dine ydelser i én kolonne og de byer, du arbejder i, i en anden. Kombinationerne er dine første søgeord.
+2. Spørg Google: Skriv begyndelsen af en søgning og se forslagene. Kig også på “Andre søger også efter” nederst i resultaterne.
+3. Brug dine egne data: Har du Google Search Console, så se under “Effektivitet”, hvilke søgninger du allerede vises på.
+4. Vælg én pr. side: Giv hver side ét hovedsøgeord. To sider, der kæmper om samme søgning, svækker hinanden.
+
+## Sådan skriver du en ydelsesside, der rangerer
+En god ydelsesside besvarer kundens spørgsmål i den rækkefølge, de opstår: Hvad er det? Gør I det her? Hvad koster det? Hvordan kommer jeg videre? Det er samtidig den rækkefølge, Google belønner.
+- Titel: ydelse + by + en konkret fordel, fx “Nyt badeværelse i Horsens – fast pris efter besigtigelse”
+- Én overskrift (H1), der siger det samme med andre ord
+- Første afsnit: hvad du laver, for hvem og hvor
+- Pris eller prisniveau – også selvom det er “fra”
+- Billeder af rigtigt udført arbejde
+- Svar på de 3–5 spørgsmål, kunderne oftest stiller
+- Én tydelig handling: ring, skriv eller book
+
+## Google Virksomhedsprofil: felterne, folk springer over
+De fleste har udfyldt navn og adresse. Færre har brugt tid på resten – og det er dér, du kan komme foran.
+### Primær kategori
+Den vigtigste enkeltindstilling. Vælg den, der præcist beskriver din hovedydelse, og tilføj sekundære kategorier.
+### Ydelser med beskrivelse
+Skriv hver ydelse ind med et par sætninger. Det hjælper Google med at matche dig med konkrete søgninger.
+### Særlige åbningstider
+Helligdage og ferier. Forkerte åbningstider giver dårlige anmeldelser.
+### Billeder
+Rigtige billeder af jer, bilerne, butikken og arbejdet. Tilføj nye løbende.
+
+## Anmeldelser – sådan får du flere
+Anmeldelser er både et signal til Google og den første ting, en ny kunde læser. Den bedste metode er kedelig, men den virker: spørg hver gang, på det rigtige tidspunkt, og gør det let.
+Det rigtige tidspunkt er, når kunden er tilfreds – lige efter opgaven er færdig. Send en kort besked med et direkte link til din profil. Giv aldrig rabat eller gaver for en anmeldelse; det er imod Googles regler.
+
+## Lokale links og omtale
+Links fra andre hjemmesider fortæller Google, at du er en rigtig og kendt virksomhed. For en lokal virksomhed er de bedste links lokale: sportsklubben, du sponsorerer, leverandøren, der nævner dig som samarbejdspartner, eller lokalavisen, der skrev om dit nye værksted.
+- Sponsorater i lokale foreninger med link til din side
+- Leverandører og samarbejdspartnere, der viser deres forhandlere
+- Brancheforeninger og autorisationsregistre
+- Lokale kataloger som Krak og De Gule Sider
+- Lokale medier, når du har en historie at fortælle
+
+## Det kan du roligt ignorere
+Der findes mange gamle SEO-råd, som enten ikke virker længere eller kan skade dig.
+- At gentage søgeordet et bestemt antal gange
+- Meta-keywords – Google bruger dem ikke
+- Købte links og linkpakker
+- Hundredvis af næsten ens sider, hvor kun bynavnet skifter
+- At ændre titlerne hver uge for at “teste”
+
+## Et gennemgået eksempel: en tømrer i Horsens
+En tømrer med én side, der hedder “Forside”, og en liste over alle ydelser i ét afsnit. I Google Search Console kan man se, at siden vises på “tømrer horsens” på side tre – men på intet andet.
+Første måned: titlen ændres til “Tømrer i Horsens – terrasser, tagvinduer og tilbygninger”, Google-profilen udfyldes helt, og der bedes om anmeldelser fra de seneste ti kunder. Anden måned: tre ydelsessider for terrasser, tagvinduer og tilbygninger med billeder, prisniveau og svar på spørgsmål. Tredje måned: links fra den lokale fodboldklub og trælasten, der viser deres håndværkere.
+Resultatet kan ikke garanteres, men mønstret er typisk: siden begynder at blive vist på flere og mere præcise søgninger, før den stiger på de store. Det er dem, der giver de bedste henvendelser.
+
+## Din månedlige SEO-rutine på 30 minutter
+1. Search Console: Se, hvilke søgninger der er kommet til, og hvilke sider der er faldet. Notér tre ting.
+2. Google-profil: Svar på nye anmeldelser og spørgsmål, og tilføj et par nye billeder.
+3. Én forbedring: Vælg én side, der næsten er på første side, og gør den bedre: mere konkret tekst, et billede, et svar på et spørgsmål.
+4. Bed om anmeldelser: Send beskeden til de kunder, du har afsluttet opgaver for i måneden.
+
 ## Vil du hellere have, at jeg gør det?
 Har du ikke tid, gennemgår jeg gerne listen for dig. Du får et gratis SEO-tjek af din hjemmeside med de tre ting, der vil gøre størst forskel – skrevet på almindeligt dansk, ikke en 40-siders rapport.
 
@@ -1131,12 +1535,18 @@ A: Ja. De fleste punkter på listen kræver ingen teknisk viden. Teknikken og ha
 Q: Hvad koster SEO hos WebHjerte?
 A: SEO-grundlaget er bygget ind i alle nye hjemmesider fra 2.500 kr. Et SEO-tjek af din nuværende side er gratis.
 
+Q: Skal jeg lave en side for hver by?
+A: Kun for de byer, hvor du reelt arbejder og kan skrive noget unikt – fx om opgaver, du har lavet dér, eller særlige forhold. Mange næsten ens sider med skiftende bynavne kan gøre mere skade end gavn.
+
+Q: Hvor ofte skal jeg opdatere min hjemmeside for SEO?
+A: Der er ingen fast regel. Opdatér, når noget ændrer sig – priser, ydelser, nye cases – og gennemgå de vigtigste sider et par gange om året. Rigtige ændringer betyder mere end hyppige.
+
 
 ---
 
 # Sådan vælger du webbureau: 10 spørgsmål, du bør stille
 URL: https://www.webhjerte.dk/blog/vaelg-webbureau-10-spoergsmaal
-Forfatter: Ivan Kohan. Opdateret: 2026-11-10
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
 
 Ja, jeg ved godt, at jeg selv er en af dem, du vælger imellem. Derfor er her de spørgsmål, jeg selv ville stille – også selvom svarene ikke altid peger på mig.
 
@@ -1180,6 +1590,62 @@ Ser du et af disse, ville jeg tænke mig om en ekstra gang:
 Et stort bureau giver mening, når du har mange interessenter, et stort budget og brug for flere specialister på én gang – fx en virksomhed med marketingafdeling, flere sprog og integrationer til ERP. Her betaler du for koordinering, og det er fair nok.
 For de fleste små og mellemstore virksomheder er det overkill. Du betaler for projektledere, kontorer og møder, du ikke har brug for. En erfaren freelancer eller et lille bureau som mit giver dig direkte kontakt og en lavere pris – så længe du sikrer dig, at der er en plan, hvis personen bliver syg eller stopper. Spørg om det.
 
+## Sådan sammenligner du tre tilbud
+Tre tilbud på “en ny hjemmeside” kan dække over tre helt forskellige ting. Det ene er en skabelon med dit logo, det andet et unikt design med tekster, og det tredje indeholder måske både SEO og et års drift. Derfor er prisen alene næsten umulig at sammenligne.
+Læg tilbuddene ved siden af hinanden i et skema som det her, og udfyld de felter, der mangler, ved at spørge. Et tilbud, der ikke kan svare klart, siger også noget.
+Sammenlign | Det skal du spørge om
+Antal sider | Hvor mange sider er med, og hvad koster en ekstra?
+Design | Unikt design eller tilpasset tema? Hvor mange rettelsesrunder?
+Tekster og billeder | Skriver de teksterne, eller skal du levere dem?
+SEO | Hvad betyder “SEO” helt konkret i tilbuddet?
+Tidsplan | Hvornår ser du første udkast, og hvornår er siden live?
+Drift | Hvad koster hosting og vedligeholdelse om måneden – og kan det opsiges?
+Ejerskab | Står domæne og kode i dit navn?
+
+## Det skal stå i aftalen
+Mange uenigheder opstår, fordi noget aldrig blev skrevet ned. Du behøver ikke en lang kontrakt, men de vigtigste punkter skal stå sort på hvidt – også i en mail.
+- Hvad der leveres: sider, funktioner og hvem der skaffer tekster og billeder
+- Pris og betalingsplan – og hvad der koster ekstra
+- Antal rettelsesrunder i design og indhold
+- Leveringstid og hvad der sker, hvis den skrider
+- Support efter lancering: hvor længe og hvad er med
+- Ejerskab af domæne, kode, tekster og billeder
+- Overdragelse af logins, hvis samarbejdet stopper
+
+## Referencer – sådan spørger du rigtigt
+Et flot porteføljebillede fortæller, hvordan siden ser ud. Det fortæller ikke, hvordan samarbejdet var. Bed om én eller to kunder, du må ringe til, og stil de spørgsmål, der ikke står på hjemmesiden.
+1. Holdt de tidsplanen?: Og hvis ikke – hvordan fortalte de det?
+2. Var prisen den aftalte?: Kom der ekstraregninger undervejs?
+3. Hvordan var kommunikationen?: Hvem talte de med, og hvor hurtigt fik de svar?
+4. Hvad skete der efter lanceringen?: Fik de hjælp, når noget skulle rettes?
+5. Ville de vælge dem igen?: Det enkleste spørgsmål giver ofte det ærligste svar.
+
+## Ejerskab: domæne, kode og logins
+Det er det punkt, der oftest giver problemer år senere. Står domænet i bureauets navn, eller ligger siden på en platform, kun bureauet har adgang til, kan det blive dyrt og besværligt at skifte – også selvom du har betalt for det hele.
+Spørg derfor direkte: Står domænet i mit navn? Får jeg adgang til hosting og administration? Kan jeg tage koden med, hvis jeg skifter? Svaret bør være ja til alle tre.
+
+## Pris eller værdi?
+Den billigste hjemmeside er ikke nødvendigvis den billigste løsning. Hvis en side til 4.500 kr giver to nye kunder om måneden, og en til 1.500 kr ingen giver, er det let at regne ud, hvilken der var dyrest.
+Spørg dig selv: Hvad er én ny kunde værd for mig? Hvor mange skal hjemmesiden give, før den har betalt sig hjem? Det gør det lettere at vurdere, om et tilbud er for dyrt – eller for billigt til at kunne levere det, du har brug for.
+
+## Et gennemgået eksempel: tre tilbud på samme opgave
+En klinik bad om tilbud på en ny hjemmeside med fem sider og online booking. Tilbud A lød på 6.000 kr, B på 18.000 kr og C på 45.000 kr. Ved første øjekast var A det oplagte valg.
+Da tilbuddene blev lagt ved siden af hinanden, viste det sig, at A var en skabelon uden booking, hvor klinikken selv skulle skrive alle tekster og betale for hosting gennem bureauet med 12 måneders binding. B indeholdt design, booking og tekstrådgivning. C indeholdt det samme som B plus fotografering og et års SEO-arbejde.
+Pludselig handlede valget ikke om pris, men om behov: Havde klinikken brug for fotograf og løbende SEO, eller kunne de selv tage billederne og vente med SEO? Det er netop den samtale, et godt tilbud skal gøre mulig.
+
+## Samarbejdet efter lanceringen
+En hjemmeside er ikke færdig, når den går live. Der kommer rettelser, nye ydelser, ændrede priser og spørgsmål fra Google Search Console. Derfor er det lige så vigtigt at vide, hvordan samarbejdet ser ud efter lanceringen, som før.
+- Hvem kontakter du, når noget skal rettes – og hvor hurtigt får du svar?
+- Hvad koster små rettelser uden for en aftale?
+- Kan du selv rette tekster og billeder, eller skal alt gennem bureauet?
+- Får du en oversigt over logins og adgange?
+- Hvad sker der, hvis bureauet lukker eller du vil skifte?
+
+## Hvis samarbejdet ikke fungerer
+Selv med gode forberedelser kan et samarbejde gå skævt. Det vigtigste er at opdage det tidligt. Hvis første designudkast er langt fra det aftalte, deadlines skrider uden besked, eller du ikke kan få svar, så tag det op med det samme – skriftligt og konkret.
+Henvis til aftalen: hvad var lovet, hvad er leveret, og hvad forventer du nu? De fleste problemer kan løses, når forventningerne bliver tydelige. Kan de ikke, er det her, det betaler sig, at domænet står i dit navn, og at du har adgang til koden og hostingen – så kan du skifte uden at starte forfra.
+Og husk, at et godt samarbejde også kræver noget af dig: hurtige svar, samlet feedback og én person, der træffer beslutningerne. Det gør projektet både hurtigere og billigere.
+
 ## Mine egne svar
 For at være fair: Hos WebHjerte er prisen fast (fra 2.500 kr), du ejer domæne og kode, du taler med mig hele vejen, de fleste projekter er klar på 2–10 dage, SEO-grundlaget er med, og vedligeholdelse kan opsiges fra måned til måned. Du kan se mine projekter i porteføljen – og du betaler 0 kr for designet, hvis det ikke passer.
 
@@ -1193,12 +1659,24 @@ A: Hos større bureauer koster en hjemmeside typisk 25.000–150.000 kr. Hos Web
 Q: Hvad skal et tilbud på en hjemmeside indeholde?
 A: Fast pris, præcist omfang (sider og funktioner), tidsplan, hvem der ejer domæne og kode, og hvad det koster efter lancering.
 
+Q: Skal jeg betale alt på forhånd?
+A: Det er almindeligt at dele betalingen op, fx en del ved start og resten ved lancering. Vær forsigtig, hvis hele beløbet skal betales, før du har set et design.
+
+Q: Hvad hvis jeg ikke er tilfreds med designet?
+A: Aftal på forhånd, hvor mange rettelsesrunder der er med, og hvad der sker, hvis designet slet ikke rammer. Hos mig betaler du 0 kr for designet, hvis det ikke passer.
+
+Q: Hvor mange tilbud bør jeg indhente?
+A: Tre er som regel nok. Færre gør det svært at sammenligne, og flere giver mest forvirring. Send den samme beskrivelse til alle tre, så tilbuddene kan sammenlignes på lige fod.
+
+Q: Er en freelancer mere risikabel end et bureau?
+A: Ikke nødvendigvis. Risikoen handler mest om aftalen: Står domæne og kode i dit navn, har du adgang til hostingen, og er der en plan, hvis personen bliver syg? Med de ting på plads er en freelancer ofte både hurtigere og billigere.
+
 
 ---
 
 # WordPress eller skræddersyet hjemmeside? Sådan vælger du
 URL: https://www.webhjerte.dk/blog/wordpress-eller-skraeddersyet
-Forfatter: Ivan Kohan. Opdateret: 2026-11-10
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
 
 Jeg bygger begge dele, så jeg har ikke noget at sælge dig her. Spørgsmålet er bare: hvad passer til din virksomhed og den måde, du arbejder på?
 
@@ -1235,6 +1713,68 @@ Pris hos WebHjerte | Fra 4.500 kr | Fra 2.500 kr (landingside) / 4.500 kr
 Da jeg byggede hjemmesiden til en pizzeria i Horsens, var målet klart: kunderne skulle bestille direkte i stedet for via Wolt og JustEat, der tog op mod 30 % i gebyr. Her var hastighed alt – en sulten kunde på mobilen venter ikke på en langsom side. Derfor blev den kodet i Next.js.
 En frisørsalon, der skifter priser, kampagner og billeder hver måned, ville jeg derimod bygge i WordPress, så de selv har kontrollen.
 
+## Hvad WordPress egentlig er
+WordPress er et system til at lave og redigere hjemmesider. Selve programmet er gratis, og det bruges af en stor del af alle hjemmesider i verden. Udseendet styres af et tema, og ekstra funktioner – fx kontaktformular, booking eller webshop – kommer fra plugins.
+Styrken er, at du selv kan rette tekster, billeder og priser i en administration, der minder om et tekstbehandlingsprogram. Svagheden er, at hvert plugin er et stykke kode, der skal opdateres, og som kan gøre siden langsommere eller mere sårbar, hvis der er for mange af dem.
+
+## Hvad “skræddersyet” betyder hos mig
+En skræddersyet hjemmeside er bygget fra bunden i kode – hos mig i Next.js og React, de samme teknologier, som denne hjemmeside er lavet i. Der er ingen tema og ingen plugins; siden indeholder kun det, den skal bruge.
+Det giver høj hastighed og stor frihed i designet. Til gengæld retter du ikke selv i koden. Små ændringer klarer jeg, fx via en vedligeholdelsesaftale, og har du brug for selv at redigere meget, kan en skræddersyet side kobles på et redigeringssystem (et såkaldt headless CMS).
+
+## Hastighed og Core Web Vitals
+Google måler, hvordan en side opleves af rigtige brugere. Målingerne kaldes Core Web Vitals og handler om tre ting: hvor hurtigt det vigtigste indhold vises, hvor hurtigt siden reagerer på et klik, og om tingene hopper rundt, mens siden indlæses.
+En skræddersyet side har som udgangspunkt en fordel, fordi der ikke er ubrugt kode. Men en WordPress-side kan også være hurtig, hvis den er bygget med omtanke: et let tema, få plugins, optimerede billeder og god hosting. Det dårligste udgangspunkt er en tung sidebygger med mange plugins på billig hosting.
+Målepunkt | Hvad det betyder | Typisk fælde
+Indlæsning (LCP) | Hvor hurtigt det største element vises | Store billeder og video øverst
+Reaktion (INP) | Hvor hurtigt siden svarer på et klik | Mange scripts og plugins
+Stabilitet (CLS) | Om indholdet hopper, mens siden indlæses | Billeder uden fast størrelse og sene bannere
+
+## Sikkerhed og vedligeholdelse
+Fordi WordPress er så udbredt, er det også et populært mål for automatiske angreb. Det er ikke farligt i sig selv, men det betyder, at WordPress, tema og plugins skal opdateres jævnligt, og at der skal tages backup.
+En kodet side har færre steder, der kan angribes, og kræver færre opdateringer. Backup og overvågning er dog stadig en god idé – uanset hvad siden er bygget i.
+- WordPress: opdatér kerne, tema og plugins, og fjern plugins, du ikke bruger
+- Begge: daglig backup, der ligger et andet sted end selve siden
+- Begge: stærke adgangskoder og to-trins-login, hvor det er muligt
+
+## Fem spørgsmål, der afgør det
+Svar ærligt på de fem spørgsmål. Svarer du mest “ja” i venstre side, er WordPress det rigtige. Mest i højre side peger på skræddersyet.
+### Skal du selv rette hver uge?
+Ja → WordPress. Kun et par gange om året → skræddersyet er fint.
+### Skal du have en stor webshop?
+Mange produkter, du selv lægger ind → WooCommerce eller Shopify. Særlige krav → skræddersyet.
+### Hvor vigtig er hastighed?
+Meget vigtig, fx fordi du konkurrerer hårdt på Google → skræddersyet har en fordel.
+### Har du brug for særlige funktioner?
+Booking med egne regler, kundelogin eller integrationer → skræddersyet giver mest frihed.
+### Hvad er dit budget på sigt?
+Tænk både start og drift. Se regnestykket i guiden om løbende udgifter.
+
+## Et gennemgået eksempel: samme opgave, to løsninger
+En el-installatør vil have en hjemmeside med seks sider, en side om elbil-ladere og en kontaktformular, hvor kunden kan vedhæfte et billede. Priserne ændres et par gange om året, og nye cases kommer måske en gang i kvartalet.
+Med WordPress får installatøren en side, han selv kan opdatere, men som skal holdes opdateret og har lidt flere plugins. Med en skræddersyet side får han en hurtigere side med færre løbende opgaver, men rettelserne går gennem mig – fx via en aftale med 30 minutters ændringer om måneden.
+Her ville jeg anbefale skræddersyet: rettelserne er få, hastigheden betyder noget i en konkurrencepræget branche, og formularen med billedupload er enkel at bygge rigtigt. Havde installatøren skrevet nye artikler hver uge, havde svaret været WordPress.
+
+## Hvad koster de to løsninger over tre år?
+Startprisen er sjældent det, der gør forskellen. Det er driften. Her er et vejledende regnestykke for en side med 3–5 sider.
+Over 3 år (vejledende) | WordPress | Skræddersyet
+Start (Basis) | 4.500 kr | 4.500 kr
+Hosting | ca. 1.800–18.000 kr | ca. 0–7.200 kr
+Opdateringer og sikkerhed | nødvendigt – selv eller med aftale fra 249 kr/md | få – backup og overvågning anbefales
+Rettelser | du kan selv | via aftale eller efter behov
+
+## Kan man skifte senere?
+Ja, begge veje. Mange starter på WordPress og skifter til en kodet side, når hastighed og design bliver vigtigere. Andre går den modsatte vej, fordi de vil redigere mere selv. Det vigtigste er, at du ejer domænet og indholdet, og at gamle adresser sender videre til de nye, så du ikke mister dine placeringer i Google.
+
+## Myter om WordPress og kode
+### “WordPress er gratis”
+Selve systemet er gratis, men design, opsætning, hosting, premium-plugins og vedligeholdelse er det ikke. Sammenlign altid den samlede pris.
+### “Kodede sider kan ikke redigeres”
+De kan sagtens – enten via en udvikler eller ved at koble et redigeringssystem på. Spørgsmålet er bare, hvor ofte du har brug for det.
+### “WordPress er langsomt”
+Det er ikke systemet, men måden det er bygget på. Et let tema, få plugins og god hosting kan give en hurtig WordPress-side.
+### “Skræddersyet er altid dyrt”
+Ikke nødvendigvis. Hos mig starter kodede sider på samme pris som WordPress-sider, og driften er ofte billigere.
+
 ## Min anbefaling
 Er du i tvivl, så tænk over ét spørgsmål: hvor ofte vil du selv ændre noget på siden? Er svaret “hver uge”, er WordPress det rigtige. Er svaret “et par gange om året”, får du en hurtigere og billigere side at drive med kode.
 Og har du ikke et svar endnu, er det helt fint. Det finder vi ud af på en kort samtale – helt gratis.
@@ -1252,12 +1792,24 @@ A: En kodet hjemmeside har typisk de laveste driftsudgifter, fordi den ikke kræ
 Q: Kan jeg skifte fra WordPress til kode senere?
 A: Ja. Indholdet kan flyttes, og med korrekte omdirigeringer beholder du dine placeringer på Google.
 
+Q: Kan en skræddersyet side få et redigeringssystem?
+A: Ja. En kodet side kan kobles på et headless CMS, så du selv kan rette tekster og billeder, mens resten af siden forbliver hurtig og let.
+
+Q: Er WordPress for gammeldags?
+A: Nej. WordPress er stadig et godt valg til mange virksomheder, især hvis du selv vil redigere meget. Det afgørende er, hvordan siden er bygget – ikke systemet i sig selv.
+
+Q: Hvad med Wix og Squarespace?
+A: De er gode til at komme hurtigt i gang selv, men du betaler hver måned, så længe siden findes, og du ejer sjældent siden. Til en virksomhed, der vil findes lokalt på Google, er en professionelt bygget side ofte billigere på sigt.
+
+Q: Hvilken løsning er bedst til SEO?
+A: Begge kan rangere godt. Det afgørende er indhold, struktur og hastighed – ikke systemet. En kodet side har en lille fordel på hastighed, mens WordPress har mange færdige værktøjer til SEO.
+
 
 ---
 
 # Hvor lang tid tager det at lave en hjemmeside?
 URL: https://www.webhjerte.dk/blog/hvor-lang-tid-tager-det-at-lave-en-hjemmeside
-Forfatter: Ivan Kohan. Opdateret: 2026-11-10
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
 
 Bureauer siger ofte 6–12 uger. Hos mig er de fleste hjemmesider klar på 2–10 dage. Her er forskellen – og hvad der i praksis bestemmer tempoet.
 
@@ -1300,6 +1852,75 @@ Aftal internt, hvem der har det sidste ord. Det kan spare en hel uge.
 ### Find dine logins
 Domæne (fx hos Punktum dk eller dit webhotel) og eventuel gammel hosting. Så kan vi flytte uden ventetid.
 
+## Det skal du have klar, før vi starter
+Den største faktor for, hvor hurtigt en hjemmeside bliver færdig, er ikke udvikleren – det er materialet. Har du det her klar, kan de fleste projekter køre uden pauser.
+- Logo i god kvalitet (gerne som vektorfil, fx SVG eller PDF)
+- En liste over dine ydelser og gerne priser eller prisniveauer
+- Tekster – eller stikord, jeg kan skrive ud fra
+- Billeder af dig, dine medarbejdere og dit arbejde
+- Adgang til domænet (eller oplysninger om, hvor det er købt)
+- Tre hjemmesider, du kan lide – og gerne én, du ikke kan lide
+
+## Tekster: den største tidsrøver
+I de fleste projekter er det teksterne, der får tidsplanen til at skride. Det er forståeligt: det er svært at skrive om sig selv, og det bliver let til “det tager jeg i weekenden”.
+Det hjælper at bruge den samme skabelon til hver ydelse. Så skal du kun svare på fem spørgsmål ad gangen – og det kan du gøre i stikord.
+1. Hvad er det?: Beskriv ydelsen med dine egne ord, som du ville forklare den i telefonen.
+2. Hvem er det til?: Privatkunder, virksomheder – eller begge?
+3. Hvad koster det?: En fast pris, et prisniveau eller hvad der påvirker prisen.
+4. Hvor arbejder du?: Byer og område, så kunderne ved, om du kommer til dem.
+5. Hvordan bestiller man?: Ring, skriv, book – og hvad der sker bagefter.
+
+## Billeder uden fotograf
+En professionel fotograf er altid godt, men mange gode hjemmesider er lavet med billeder fra en mobiltelefon. Rigtige billeder af dit arbejde er næsten altid bedre end flotte stockfotos, fordi kunderne kan se, at det er dig.
+- Fotografér i dagslys, og sluk blitzen
+- Tag billederne vandret – de passer bedst på en hjemmeside
+- Ryd op i baggrunden, før du tager billedet
+- Tag før- og efterbilleder fra samme vinkel
+- Tag mange – det er let at vælge de bedste bagefter
+
+## De sidste 48 timer før lancering
+Lige før siden går live, gennemgår jeg en fast tjekliste. Det er de små ting, der ellers bliver opdaget af en kunde – og det er de ting, Google lægger mærke til fra første dag.
+- Kontaktformularen er testet, og beskederne lander det rigtige sted
+- Telefonnumre og mails kan klikkes på mobilen
+- Gamle adresser sender videre til de nye (301-omdirigeringer)
+- Titler og beskrivelser er skrevet til hver side
+- Google Search Console er sat op, og sitemap er indsendt
+- Siden er testet på mobil, tablet og computer
+
+## De første 30 dage efter lancering
+En ny hjemmeside skal først findes af Google. Det tager typisk fra nogle dage til et par uger, før siderne er indekseret, og længere, før de har fundet deres plads i søgeresultaterne. Det er normalt, at placeringerne svinger i starten.
+I den første måned holder jeg øje med Search Console, retter de fejl, der dukker op, og justerer titler og tekster, hvis siden vises på andre søgninger end forventet.
+
+## En realistisk plan, dag for dag
+Her er, hvordan et Basis-projekt på 3–5 sider typisk forløber hos mig, når tekster og billeder er klar. Et Standard-projekt følger samme rytme, men over ca. 10 dage, og en webshop over 2–4 uger.
+Dag | Hvad sker der | Hvad du gør
+0 | Samtale om mål, kunder og indhold | Fortæller om virksomheden og sender materiale
+1–2 | Første designudkast | Giver feedback – passer det ikke, betaler du 0 kr
+2–4 | Siden bygges med tekster, billeder og SEO | Svarer på spørgsmål undervejs
+4–5 | Test, rettelser og lancering | Godkender og får adgang
+
+## Hvorfor nogle projekter tager måneder
+Det er ikke usædvanligt, at hjemmesideprojekter hos større bureauer tager to–tre måneder. Det skyldes sjældent, at selve arbejdet tager så lang tid. Det er ventetiden mellem trinene: møder, der skal planlægges, godkendelser, der skal igennem flere personer, og projekter, der står i kø.
+Det er ikke nødvendigvis dårligt – store projekter med mange interessenter har brug for den struktur. Men for en lille virksomhed med én beslutningstager er det spildtid. Jo færre led, jo kortere tid.
+
+## Tjekliste: klar til at starte i morgen
+- Jeg ved, hvad hjemmesiden skal få kunderne til at gøre (ringe, skrive, booke, købe)
+- Jeg har en liste over mine ydelser og priser
+- Jeg har logo og mindst 10 billeder af mit arbejde
+- Jeg ved, hvor domænet er købt, og kan logge ind
+- Jeg har sat tid af til at give feedback inden for et døgn
+- Én person træffer beslutningerne
+
+## Feedback, der gør projektet hurtigere
+Den måde, du giver feedback på, kan spare dage. Den mest tidskrævende feedback er den, der kommer i mange små portioner fra flere personer – eller den, der beskriver en følelse uden at sige, hvad der skal ændres.
+Saml dine kommentarer i én besked, gerne med skærmbilleder, og vær konkret: “Overskriften skal sige, at vi også laver erhverv”, ikke “den føles lidt kedelig”. Er I flere i virksomheden, så aftal internt, før I svarer, så udvikleren ikke får modstridende ønsker.
+Og vær ærlig tidligt. Hvis designet ikke rammer, er det langt billigere at sige det efter første udkast end efter, at hele siden er bygget. Det er netop derfor, du hos mig ser et design efter 48 timer, før noget bliver bygget.
+- Saml al feedback i én besked
+- Brug skærmbilleder og pil på det, du mener
+- Skriv, hvad der skal ændres – ikke kun hvad du føler
+- Lad én person træffe den endelige beslutning
+- Svar inden for et døgn, hvis du kan
+
 ## Kan det gå for hurtigt?
 Ja, hvis man springer test over eller lancerer uden at have tænkt over, hvad siden skal opnå. Derfor går jeg aldrig på kompromis med designgodkendelse og test på mobil. Men en firmahjemmeside med 5 sider behøver ikke tage to måneder. Det er ikke kvalitet – det er bare ventetid.
 
@@ -1315,3 +1936,15 @@ A: Manglende tekster og billeder, mange beslutningstagere og nye ønsker underve
 
 Q: Hvornår ser jeg det første design?
 A: Inden for 48 timer efter vores samtale. Passer det ikke, betaler du 0 kr for designet.
+
+Q: Hvornår kan jeg ses på Google efter lanceringen?
+A: Siderne bliver typisk indekseret inden for dage til et par uger. Gode placeringer tager længere – ofte 2–6 måneder, afhængigt af konkurrencen.
+
+Q: Kan du skrive teksterne for mig?
+A: Ja. Vi tager en samtale, hvor jeg stiller spørgsmålene, og jeg skriver teksterne bagefter. Du godkender alt, før det går live.
+
+Q: Kan siden gå live, før alle tekster er færdige?
+A: Ja. Det er ofte en god idé at lancere med de vigtigste sider og tilføje resten bagefter. En færdig side med fem gode sider er bedre end en perfekt side, der aldrig bliver færdig.
+
+Q: Hvad hvis jeg ikke har tid til projektet lige nu?
+A: Så vent hellere til du har. Et projekt, der står stille i ugevis, bliver dyrere og dårligere for begge parter. Sæt én til to timer af i den uge, projektet kører, så går det hurtigt.
