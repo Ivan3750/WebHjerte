@@ -4,7 +4,6 @@ import FormToLead from "../../components/ui/FormToLead";
 import { LandingLd, FaqSplit } from "../../components/landing/shared";
 import { OfferBlock, PromiseBlock } from "../../components/seo/ServiceLayout";
 import { offer, promise } from "../../data/content/offer";
-import { photoFor } from "../../data/photos";
 import RegionRadar from "./_components/RegionRadar";
 import { faqsWithoutPrices } from "../../lib/prices";
 import SiteTree from "./_components/SiteTree";
@@ -76,7 +75,7 @@ export default function WebbureauMidtjyllandPage() {
       />
 
       <OfferBlock offer={offer["webbureau-midtjylland"]} />
-      <PromiseBlock photo={photoFor("webbureau-midtjylland", "work")} promise={promise} />
+      <PromiseBlock promise={promise} />
 
       <CityServices city="Midtjylland" dark />
 

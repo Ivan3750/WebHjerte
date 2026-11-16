@@ -6,6 +6,7 @@ import CasesCarousel from "../home/CasesCarousel";
 import { FadeUp } from "../home/fx/Reveal";
 import { SerpSimulator } from "./CityBlocks";
 import CityServices from "./CityServices";
+import { PromiseBlock } from "../seo/ServiceLayout";
 import { offer as OFFER, promise as PROMISE } from "../../data/content/offer";
 import { photos as PHOTOS } from "../../data/photos";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
@@ -22,7 +23,6 @@ export default function CityPage({ city }) {
   const url = `${SITE_URL}${city.path}`;
   const slug = city.path.slice(1);
   const hero = PHOTOS[slug]?.hero;
-  const work = PHOTOS[slug]?.work;
   const offer = OFFER[slug];
   const jsonLd = {
     "@context": "https://schema.org",
@@ -153,24 +153,8 @@ export default function CityPage({ city }) {
         </section>
       )}
 
-      {/* Foto + løfter */}
-      <section className="scene bg-[#f7f6f6]">
-        <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-center`}>
-          {work && (
-            <FadeUp className={`relative overflow-hidden rounded-3xl bg-[#2a2e2e] ${work.portrait ? "aspect-[4/5]" : "aspect-[4/3]"} max-w-[460px] w-full`}>
-              <Image src={work.src} alt={work.alt} fill sizes="(min-width: 1024px) 460px, 92vw" className={`object-cover ${work.portrait ? "object-top" : ""}`} />
-            </FadeUp>
-          )}
-          <div>
-            <SectionHead lines={["Sådan arbejder jeg"]} />
-            <div className="flex flex-col gap-4">
-              {PROMISE.map((t) => (
-                <p key={t.slice(0, 30)} className="readable text-[17px] leading-[1.75] text-[#3f4446] max-w-[58ch]">{t}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Løfter */}
+      <PromiseBlock promise={PROMISE} />
 
       <CasesCarousel />
       <FormToLead titleLine={city.formTitle} description={city.formDescription} />
