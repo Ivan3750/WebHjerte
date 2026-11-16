@@ -639,7 +639,7 @@ export const nichePages = [
           "Egen bestilling på hjemmesiden betyder, at du beholder marginen og kunderne. Det kræver, at gæsterne ved, du findes – derfor bør du bruge begge dele: platforme til at blive opdaget og egen side til de gæster, der kender dig.",
         ],
         stats: [
-          { value: "Op til ca. 30 %", label: "Kommission hos mange platforme", note: "Afhænger af aftalen med platformen." },
+          { value: "30 %", label: "Op til ca. så meget i kommission hos mange platforme", note: "Afhænger af aftalen med platformen." },
           { value: "Din relation", label: "Du beholder gæsten", note: "Navn, historik og mulighed for at kontakte dem igen." },
           { value: "Din margin", label: "Prisen er din egen", note: "Ingen mellemled på hver ordre." },
         ],

@@ -61,6 +61,8 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | VVS | `/hjemmeside-til-vvs` |
 | Elektrikere | `/hjemmeside-til-elektriker` |
 | Tømrere | `/hjemmeside-til-tomrer` |
+| Restauranter og caféer | `/hjemmeside-til-restauranter` |
+| Saloner | `/hjemmeside-til-saloner` |
 
 ### Gratis værktøjer
 | Side | URL |
@@ -103,9 +105,7 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | --- | --- |
 | Webdesign Horsens | `/webdesign-horsens` |
 
-### Brancher (2)
-| Side | URL |
-| --- | --- |
+--- | --- |
 | Restauranter | `/hjemmeside-til-restauranter` |
 | Saloner | `/hjemmeside-til-saloner` |
 

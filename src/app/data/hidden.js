@@ -21,8 +21,6 @@ export const HIDDEN = {
   ],
   // Sider til forskellige brancher
   business: [
-    "hjemmeside-til-restauranter",
-    "hjemmeside-til-saloner",
   ],
 };
 

@@ -97,7 +97,8 @@ export const VARIANTS = {
   },
   "hjemmeside-til-saloner": {
     hero: { theme: theme("sky", "dots"), layout: "split-rev", visual: <HeroSalon /> },
-    blocks: (p) => [<SalonBuilder key="s" />, <CasesCarousel key="c" />, pkg(p)],
+    // Pakken "Lokal synlighed" er skrevet til håndværkere – saloner får de almindelige faste priser
+    blocks: () => [<SalonBuilder key="s" />, <CasesCarousel key="c" />, <PriceStrip key="p" />],
     open: 0,
   },
 

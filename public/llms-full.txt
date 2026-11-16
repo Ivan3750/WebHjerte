@@ -1021,6 +1021,116 @@ A: Ved at vise de opgaver, du vil have flere af, og ved at gøre det let at besk
 
 ---
 
+# Hjemmeside til restauranter og caféer i Horsens
+URL: https://www.webhjerte.dk/hjemmeside-til-restauranter
+
+Dine gæster skal kunne se menuen, finde åbningstiderne og booke bord eller bestille mad – uden at skulle leje sig ind hos en platform. En god restaurantside gør det på få sekunder, og giver dig kunderelationen tilbage.
+
+Kort svar: En restaurantside skal besvare gæstens tre spørgsmål hurtigt: Hvad serverer I? Hvornår har I åbent, og hvor ligger I? Hvordan booker eller bestiller jeg? Med menu som tekst (ikke kun PDF), en synlig bookingknap og egen bestilling beholder du både gæsten og marginen.
+
+## Hvad gæster tjekker, før de vælger dig
+De fleste vælger restaurant på mobilen, ofte samme dag. De kigger på billeder, læser menuen, tjekker åbningstider og kigger på anmeldelser – og beslutter på få minutter. Er menuen en tung PDF, åbningstiderne forkerte eller bookingen svær at finde, tager de det næste sted.
+
+## Det skal være på forsiden
+
+## Egen bestilling vs. platforme
+Platforme som Wolt og Just Eat giver synlighed, men tager en kommission, som kan være op til omkring 30 %, afhængigt af aftalen. Samtidig ejer platformen kundeforholdet: du ser sjældent kundens navn eller kontaktinfo, og kan ikke bygge relationen selv.
+Egen bestilling på hjemmesiden betyder, at du beholder marginen og kunderne. Det kræver, at gæsterne ved, du findes – derfor bør du bruge begge dele: platforme til at blive opdaget og egen side til de gæster, der kender dig.
+
+## Siden bygget til gæster på mobilen
+1. Øverst: stemning, åbningstid og booking: Et godt billede, hvad du serverer, og to knapper: book bord og se menuen.
+2. Menuen som tekst: Opdelt i forretter, hovedretter og desserter, med allergener og vegetarretter tydeligt markeret.
+3. Din historie og dit sted: Kort om, hvem I er, og hvad der gør jer særlige. Fortæl, hvad gæsten kan forvente.
+4. Booking og bestilling: En enkel booking-formular eller link til dit system. Valgfrit: bestilling af take away og udlevering.
+5. Anmeldelser og billeder: Rigtige citater, galleri og link til Google. Det er det, der får nye gæster til at tage chancen.
+6. Find os og kontakt: Kort, parkering, åbningstider og telefon. Gør det nemt at finde vej og kontakte jer.
+
+## Lokal synlighed for restauranter
+
+## Gør – og undgå
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Café eller restaurant med fast menu | Landingside eller Basis | Menu, billeder, booking og kontakt på en samlet, hurtig side.
+Flere menuer, selskaber og begivenheder | Basis eller Standard | Egne sider til selskaber, brunch og arrangementer.
+Take away og online bestilling | Standard eller skræddersyet | Bestillingsfunktion, betaling og integration til dit køkken.
+
+## Ofte stillede spørgsmål
+Q: Skal menuen være som tekst eller PDF?
+A: Som tekst. Den kan læses på mobilen, findes af Google og er nem at opdatere. Du kan altid tilbyde en PDF til print ved siden af.
+
+Q: Kan gæster bestille mad direkte på hjemmesiden?
+A: Ja, jeg kan bygge en bestillingsfunktion, så gæster kan bestille take away uden at ringe. Du undgår kommission til platforme og beholder kundekontakten.
+
+Q: Kan jeg selv opdatere menuen?
+A: Ja, hvis siden bygges i WordPress, kan du selv redigere menu, priser og åbningstider. Ellers kan jeg gøre det for dig via en aftale.
+
+Q: Hvordan kobler jeg booking til siden?
+A: Enten ved at linke til dit eksisterende bookingsystem eller ved at bygge en enkel formular, der sender forespørgsler til dig. Begge dele virker godt på mobil.
+
+Q: Hvordan bliver jeg fundet på Google?
+A: Med en opdateret Google Virksomhedsprofil, menu som tekst, lokale tekster og anmeldelser. Det er de tre ting, der betyder mest for restauranter.
+
+
+---
+
+# Hjemmeside til salon i Horsens – fyld kalenderen
+URL: https://www.webhjerte.dk/hjemmeside-til-saloner
+
+Dine kunder vil se resultaterne, finde en tid og booke uden at ringe. En god salonside gør det på under et minut – og får nye kunder til at vælge dig frem for salonen på den anden side af gaden.
+
+Kort svar: En salonside vinder på billeder, tydelige priser og nem booking. Vis dit arbejde, forklar ydelserne og hvad de koster, og lad kunden booke direkte. Så sparer du telefontid, får flere nye kunder og bliver fundet, når folk søger på din type behandling i området.
+
+## Hvad kunder tjekker, før de booker
+Nye kunder vælger salon ud fra billeder, anmeldelser og tillid. De kigger på dit arbejde, tjekker priser, og vil kunne booke med det samme. Hvis de skal ringe eller vente på svar, mister du dem ofte til en salon, hvor det er nemmere.
+
+## Det skal være på forsiden
+
+## Siden bygget til at fylde kalenderen
+1. Øverst: stemning, booking og ydelser: Et godt billede af salonen eller et resultat, hvad du tilbyder, og en tydelig 'Book tid'-knap.
+2. Ydelser og priser: Gruppér efter behandling og vis varighed og pris. Forklar kort, hvad der er med.
+3. Galleri med resultater: Før/efter og stilarter, gerne opdelt efter behandling. Opdater løbende – det viser, at I er aktive.
+4. Dit team: Billeder og en kort tekst om hver stylist, deres speciale og hvem man booker hos.
+5. Anmeldelser: Rigtige citater med fornavn og link til Google. Placér dem tæt på booking-knappen.
+6. Find os og kontakt: Adresse, parkering, åbningstider og kontaktmuligheder. Hold dem opdaterede.
+
+## Online booking: sådan bruger du det klogt
+Online booking sparer telefontid og giver kunden frihed til at vælge tid, når de har lyst – ofte om aftenen. Det kan enten være dit eksisterende bookingsystem, som jeg linker til eller indlejrer på siden, eller en enkel forespørgselsformular, hvor du bekræfter tiden.
+- Gør bookingknappen synlig på alle sider, især på mobilen
+- Vis behandlingens varighed og pris, før kunden booker
+- Send en bekræftelse og eventuelt en påmindelse, så færre udebliver
+- Lad nye kunder booke uden at oprette en konto
+- Giv mulighed for at skrive en note, fx til farvebehandlinger
+
+## Gør – og undgå
+
+## Lokal synlighed for saloner
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Mindre salon med få behandlinger | Landingside eller Basis | Ydelser, priser, billeder og booking på en hurtig side.
+Flere behandlinger og stylister | Basis eller Standard | Egne sider til behandlinger og team, galleri og booking.
+Salon med særlige behandlinger og kurser | Standard | Booking, formularer og måling af, hvilke sider der giver bookinger.
+
+## Ofte stillede spørgsmål
+Q: Kan kunder booke tider direkte på hjemmesiden?
+A: Ja. Jeg kan bygge en bookingfunktion eller koble siden til dit eksisterende bookingsystem, så kunder kan booke uden at ringe.
+
+Q: Skal prislisten stå på siden?
+A: Ja, helst. Kunder vil vide, hvad en behandling koster, før de booker. En ærlig prisliste filtrerer de forkerte henvendelser fra og skaber tillid.
+
+Q: Kan jeg selv opdatere galleriet?
+A: Ja, hvis siden bygges i WordPress, kan du selv tilføje billeder og tekster. Ellers kan jeg opdatere det for dig via en aftale.
+
+Q: Kan jeg beholde mit nuværende bookingsystem?
+A: Ja. Jeg bygger siden, så den fungerer sammen med det system, du bruger – du behøver ikke skifte.
+
+Q: Hvordan får jeg flere nye kunder?
+A: Med en opdateret Google Virksomhedsprofil, billeder af dit arbejde, anmeldelser og en side, der er nem at booke fra. Det er de tre ting, der får nye kunder til at vælge dig.
+
+
+---
+
 # Sådan bliver din virksomhed nævnt af ChatGPT og Google AI
 URL: https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai
 Forfatter: Ivan Kohan. Opdateret: 2026-11-16

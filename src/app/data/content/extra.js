@@ -9,6 +9,16 @@
  */
 
 export const seo = {
+  "hjemmeside-til-restauranter": {
+    title: "Hjemmeside til restaurant og café – menu, booking, bestilling",
+    description:
+      "Hjemmeside til restauranter og caféer: menu som tekst, bordbooking og egen onlinebestilling uden kommission til platforme. Fast pris og design på 48 timer.",
+  },
+  "hjemmeside-til-saloner": {
+    title: "Hjemmeside til frisør og salon – online booking og prisliste",
+    description:
+      "Hjemmeside til frisører, skønhedssaloner og barbers: online booking, tydelig prisliste og billeder, der fylder kalenderen. Fast pris og design på 48 timer.",
+  },
   "webshop-hjemmeside": {
     title: "Hjemmeside med webshop fra 14.000 kr – fast pris | WebHjerte",
     description:
@@ -69,6 +79,20 @@ export const seo = {
 const PRICE_NOTE = "Alle priser er inkl. moms. Du får et skriftligt tilbud med fast pris, før jeg går i gang.";
 
 export const more = {
+  "hjemmeside-til-restauranter": {
+    related: [
+      { href: "/portefolje/pizzaria", title: "Case: pizzeria i Horsens", desc: "Fra afhængighed af Wolt til egne kunder." },
+      { href: "/ai-chatbot-til-hjemmeside", title: "AI-chatbot", desc: "Svar på åbningstider og allergener – også om aftenen." },
+      { href: "/seo-horsens", title: "SEO Horsens", desc: "Bliv fundet, når gæsterne søger lokalt." },
+    ],
+  },
+  "hjemmeside-til-saloner": {
+    related: [
+      { href: "/hjemmeside-til-restauranter", title: "Hjemmeside til restaurant", desc: "Menu, booking og egen bestilling." },
+      { href: "/ai-chatbot-til-hjemmeside", title: "AI-chatbot", desc: "Svar på priser og ledige tider døgnet rundt." },
+      { href: "/seo-horsens", title: "SEO Horsens", desc: "Bliv fundet, når kunderne søger lokalt." },
+    ],
+  },
   "webshop-hjemmeside": {
     sections: [
       {
