@@ -33,6 +33,12 @@ const nextConfig = {
       { source: "/ofte-stillede-spoergsmaal", destination: "/", permanent: true },
       // Siden "Freelancer eller webbureau?" er fjernet – sammenligningen ligger nu på Om mig
       { source: "/freelancer-vs-bureau", destination: "/om-mig", permanent: true },
+      // Sider der konkurrerede med stærkere sider er slået sammen (301 bevarer evt. placeringer)
+      { source: "/webbureau-jylland", destination: "/webbureau-midtjylland", permanent: true },
+      { source: "/wordpress-horsens", destination: "/wordpress-hjemmeside", permanent: true },
+      { source: "/digitalt-bureau-horsens", destination: "/", permanent: true },
+      { source: "/geo-ai-synlighed", destination: "/ai-seo", permanent: true },
+      { source: "/ai-loesninger", destination: "/ai-seo", permanent: true },
     ];
   },
   async headers() {

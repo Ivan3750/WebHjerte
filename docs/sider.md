@@ -84,20 +84,15 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 
 ## Skjulte sider (404 indtil de er færdige)
 
-### AI-sider (3)
+### AI-sider (1)
 | Side | URL |
 | --- | --- |
-| AI-løsninger | `/ai-loesninger` |
 | AI-automatisering | `/ai-automatisering-virksomhed` |
-| AI-synlighed (GEO) | `/geo-ai-synlighed` |
 
-### Lokale sider (5)
+### Lokale sider (2)
 | Side | URL |
 | --- | --- |
 | Webbureau Vejle | `/webbureau-vejle` |
-| Webbureau Jylland | `/webbureau-jylland` |
-| WordPress Horsens | `/wordpress-horsens` |
-| Digitalt bureau Horsens | `/digitalt-bureau-horsens` |
 | Webdesign Horsens | `/webdesign-horsens` |
 
 ### Brancher (6)
@@ -115,3 +110,7 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 ## Fjernet helt
 - `/freelancer-vs-bureau` → omdirigerer til `/om-mig`
 - `/ofte-stillede-spoergsmaal` (FAQ) → omdirigerer til `/`
+- `/webbureau-jylland` → 301 til `/webbureau-midtjylland`
+- `/wordpress-horsens` → 301 til `/wordpress-hjemmeside`
+- `/digitalt-bureau-horsens` → 301 til `/`
+- `/geo-ai-synlighed` og `/ai-loesninger` → 301 til `/ai-seo`
