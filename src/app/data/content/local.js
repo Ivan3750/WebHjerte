@@ -496,7 +496,7 @@ export const localPages = [
     ],
     related: [
       { href: "/seo-horsens", title: "SEO Horsens", desc: "Bliv fundet af lokale kunder." },
-      { href: "/webstrategi", title: "Webstrategi", desc: "Plan for din digitale tilstedeværelse." },
+      { href: "/blog/webstrategi", title: "Webstrategi", desc: "Plan for din digitale tilstedeværelse." },
       { href: "/geo-ai-synlighed", title: "AI-synlighed", desc: "Bliv nævnt i AI-svar." },
     ],
   },

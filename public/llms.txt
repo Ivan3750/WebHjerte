@@ -54,8 +54,6 @@
 - [Skræddersyede hjemmesider](https://www.webhjerte.dk/skraeddersyede-hjemmesider): Hjemmeside bygget til din virksomhed – ikke en skabelon. Hurtig, SEO-klar og din egen kode. Se forskellen på skræddersyet og skabelon, og hvad det koster.
 - [Hjemmeside til virksomhed](https://www.webhjerte.dk/hjemmeside-til-virksomhed): Hvilke sider skal din virksomhed have, og hvad koster det? Professionel hjemmeside til fast pris fra 2.500 kr – første design på 48 timer.
 - [Hjemmeside med webshop](https://www.webhjerte.dk/webshop-hjemmeside): Få lavet en hjemmeside med webshop i WooCommerce, Shopify eller kode. MobilePay, fragt og SEO er med. Fast pris fra 14.000 kr inkl. moms.
-- [Bæredygtigt webdesign](https://www.webhjerte.dk/baeredygtigt-webdesign): Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug – hurtigere for brugerne, bedre for miljøet.
-- [Webstrategi](https://www.webhjerte.dk/webstrategi): Webstrategi for små virksomheder: mål, målgruppe, indhold, SEO og AI-synlighed samlet i en klar plan, du kan handle på. Start med en gratis samtale.
 - [Hosting og vedligeholdelse](https://www.webhjerte.dk/hosting-og-vedligeholdelse): Hvad koster det at have en hjemmeside kørende? Hosting, domæne, backup og opdateringer forklaret – og vedligeholdelse fra 249 kr/md uden binding.
 - [Webbureau Aarhus](https://www.webhjerte.dk/webbureau-aarhus): Webbureau til virksomheder i Aarhus: hjemmesider fra 2.500 kr, lokal SEO og direkte kontakt. Baseret i Horsens, ca. 45 minutter væk.
 - [Webbureau Vejle](https://www.webhjerte.dk/webbureau-vejle): Hjemmesider til virksomheder i Vejle og trekantsområdet: fast pris fra 2.500 kr, første design på 48 timer og direkte kontakt med udvikleren.
@@ -74,6 +72,8 @@
 - [Sådan vælger du webbureau: 10 spørgsmål, du bør stille](https://www.webhjerte.dk/blog/vaelg-webbureau-10-spoergsmaal): De 10 spørgsmål, der afslører, om et webbureau eller en freelancer passer til dig: pris, ejerskab, tidsplan, SEO, support – og røde flag.
 - [WordPress eller skræddersyet hjemmeside? Sådan vælger du](https://www.webhjerte.dk/blog/wordpress-eller-skraeddersyet): WordPress eller en kodet, skræddersyet hjemmeside? Ærlig sammenligning af pris, hastighed, sikkerhed, redigering og SEO – og hvornår jeg anbefaler hvad.
 - [Hvor lang tid tager det at lave en hjemmeside?](https://www.webhjerte.dk/blog/hvor-lang-tid-tager-det-at-lave-en-hjemmeside): Realistiske tidsplaner for landingside, firmahjemmeside og webshop – hvad der forsinker et projekt, og hvordan du får siden hurtigst.
+- [Bæredygtigt webdesign: lette sider, der belaster mindre](https://www.webhjerte.dk/blog/baeredygtigt-webdesign): Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug – hurtigere for brugerne, bedre for miljøet.
+- [Webstrategi: en klar plan, før du bygger eller betaler for mere trafik](https://www.webhjerte.dk/blog/webstrategi): Webstrategi for små virksomheder: mål, målgruppe, indhold, SEO og AI-synlighed samlet i en klar plan, du kan handle på. Start med en gratis samtale.
 
 ## Udvidet version
 - [llms-full.txt](https://www.webhjerte.dk/llms-full.txt): Hele indholdet af de vigtigste informationssider i ren tekst.

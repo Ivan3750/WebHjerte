@@ -401,247 +401,6 @@ A: Ja. Jeg flytter produkter, kunder og ordrer og sætter omdirigeringer op, så
 
 ---
 
-# Bæredygtigt webdesign: lette sider, der belaster mindre
-URL: https://www.webhjerte.dk/baeredygtigt-webdesign
-
-Hver gang en side indlæses, bruges der strøm – hos serveren, i netværket og på besøgendes enhed. Jeg bygger lette, hurtige hjemmesider, så dataforbrug og energiforbrug holdes nede uden at gå på kompromis med designet.
-
-Kort svar: Bæredygtigt webdesign handler om at bygge hjemmesider, der overfører mindre data, bruger mindre kode og kører på effektiv (gerne grøn) hosting. Det giver samtidig hurtigere indlæsning, bedre brugeroplevelse og bedre SEO. WebHjerte bygger efter disse principper i alle projekter, men er ikke certificeret som miljøvirksomhed.
-
-## Hvorfor har websider en miljøpåvirkning?
-Internettet kører på datacentre, kabler og enheder, som alle bruger energi. En tung hjemmeside med store billeder, unødvendige scripts og mange eksterne tjenester kræver mere dataoverførsel og mere processorarbejde end en let side. Hver enkelt side betyder lidt – men over tusindvis af besøg bliver det til noget.
-Det er svært at give et præcist tal for én hjemmesides CO₂-aftryk, fordi det afhænger af energimix, enheder og forbindelse. Retningen er til gengæld klar: Mindre data og mindre kode giver lavere forbrug.
-
-## Mine principper for lette hjemmesider
-- Billeder i moderne formater (AVIF og WebP) i den rigtige størrelse og med lazy loading.
-- Minimal JavaScript – kun det, der giver værdi for besøgende.
-- Systemskrifttyper eller få, optimerede webfonts.
-- Ingen auto-afspillende video og tunge animationer uden grund.
-- Få eksterne scripts og tredjepartstjenester, og indlæs dem først, når de er nødvendige.
-- Statisk generering og caching, så siden ikke genopbygges ved hvert besøg.
-- Enkelt og tydeligt design, der gør det nemt at finde frem og kræver færre sidevisninger.
-
-## Hosting: hvad kan du vælge?
-Hosting-udbydere kan have vidt forskellige energiprofiler. Nogle oplyser, at de bruger vedvarende energi eller køber garantier for oprindelse. Jeg anbefaler at vælge udbydere med dokumenteret grøn energi og kort afstand til dine kunder, og jeg hjælper med at vurdere mulighederne. Se mere om drift og hosting på siden om hosting og vedligeholdelse.
-
-## Bæredygtighed og SEO hænger sammen
-Hurtige sider rangerer bedre og konverterer bedre. Derfor er bæredygtigt webdesign sjældent et offer – det er en gevinst på flere fronter: lavere dataforbrug, bedre Core Web Vitals, glade besøgende og bedre synlighed i Google og AI-søgning.
-
-## Ærlighed om grønne claims
-Jeg lover ikke, at din hjemmeside er “klimaneutral”. Det er en påstand, der er svær at dokumentere. Jeg lover til gengæld at bygge så let og effektivt som muligt, være transparent om valg af hosting og værktøjer og måle sidens vægt og hastighed, så du kan se forskellen.
-
-## Hvor kommer energiforbruget fra?
-En hjemmeside bruger strøm tre steder: i datacentret, hvor den ligger, i netværket, der sender den til brugeren, og på brugerens egen telefon eller computer. Jo flere data siden sender, og jo mere arbejde telefonen skal gøre for at vise den, jo mere strøm bruges der.
-Det betyder, at den mest effektive måde at gøre en hjemmeside grønnere på er den samme som at gøre den hurtigere: send mindre, og lad telefonen arbejde mindre.
-
-## Sådan måler du din hjemmesides vægt
-Du kan selv se, hvor tung din hjemmeside er. Det tager fem minutter og giver et godt udgangspunkt.
-1. PageSpeed Insights: Indtast din adresse på Googles gratis værktøj. Se især forslagene om billeder og ubrugt kode.
-2. Browserens værktøjer: Åbn udviklerværktøjerne, vælg fanen Netværk, og genindlæs siden. Nederst står, hvor mange data der blev hentet.
-3. CO₂-beregnere: Værktøjer som Website Carbon Calculator giver et estimat. Brug tallet til at sammenligne – ikke som en eksakt måling.
-
-## Billeder: den største gevinst
-På de fleste hjemmesider er billederne langt den største del af det, der sendes. Et enkelt foto taget med en ny telefon kan fylde flere megabyte, mens det på skærmen kun behøver at fylde en brøkdel.
-Moderne billedformater som AVIF og WebP kan gøre billederne markant mindre uden synligt kvalitetstab. På de sider, jeg bygger, sker det automatisk: billedet laves i den rigtige størrelse til den skærm, det vises på, og billeder længere nede på siden hentes først, når man scroller hen til dem.
-- Brug AVIF eller WebP i stedet for store JPG- og PNG-filer
-- Vis billedet i den størrelse, det faktisk har brug for
-- Hent billeder længere nede på siden først, når de skal bruges
-- Spørg dig selv, om billedet tilføjer noget – ellers fjern det
-
-## Video, skrifttyper og scripts
-Video, der starter automatisk i toppen af siden, er en af de tungeste ting, en hjemmeside kan indeholde. Ofte ser brugeren den slet ikke. Vis i stedet et billede, og lad brugeren starte videoen selv.
-Skrifttyper og tredjeparts-scripts – fx chatwidgets, sporingskoder og indlejrede sociale medier – er de næste store poster. Hver enkelt virker måske lille, men tilsammen kan de fordoble sidens vægt.
-- Ingen autoplay-video øverst på siden
-- Brug få skrifttyper og få vægte (fx normal og fed)
-- Fjern sporingskoder, du ikke bruger
-- Indlæs chat og sociale medier først, når brugeren skal bruge dem
-
-## Grøn hosting – hvad betyder det?
-Mange hostingudbydere kalder sig grønne. Det kan betyde, at datacentret bruger strøm fra vedvarende energi, at udbyderen køber certifikater, der svarer til forbruget, eller at der kompenseres på anden vis. Det er ikke det samme.
-Spørg din udbyder, hvad de konkret gør, og om de kan dokumentere det. Green Web Foundation har en offentlig oversigt over udbydere, der har dokumenteret deres brug af grøn strøm. Husk samtidig, at en let hjemmeside på almindelig hosting ofte gør mere for miljøet end en tung side på grøn hosting.
-
-## Tjekliste til en lettere hjemmeside
-- Billeder i moderne formater og den rigtige størrelse
-- Ingen automatisk video øverst
-- Få skrifttyper og få scripts
-- Ingen sider, ingen besøger eller har brug for
-- Enkel navigation, så brugerne finder det hurtigt – færre sidevisninger på vejen
-- Hosting med dokumenteret grøn strøm, hvor det er muligt
-- Mål sidens vægt før og efter ændringer
-
-## Et gennemgået eksempel: samme side, en tiendedel af vægten
-En typisk forside på en ældre virksomhedshjemmeside kan nemt veje flere megabyte: en stor video i toppen, fem billeder i fuld opløsning, tre skrifttyper i mange vægte og en håndfuld sporingskoder.
-Uden at ændre budskabet kan videoen erstattes af ét billede, billederne konverteres til moderne formater i den rigtige størrelse, skrifttyperne reduceres til én familie i to vægte, og sporingskoder, ingen bruger, fjernes. Siden ser næsten ens ud – men vejer en brøkdel og indlæses langt hurtigere på en mobil.
-
-## Bæredygtighed handler også om levetid
-Den grønneste hjemmeside er den, der ikke skal bygges om hvert andet år. En enkel, velstruktureret side med få afhængigheder kan holde i mange år og opdateres løbende i stedet for at blive smidt ud og bygget forfra.
-Det gælder også for indholdet. Sider, ingen besøger, og gamle kampagner, der ligger og fylder, kan fjernes eller samles. Det gør siden lettere at vedligeholde og lettere for kunderne at finde rundt i.
-
-## Spørgsmål, du kan stille dit bureau
-- Hvor meget vejer forsiden, og hvor hurtigt indlæses den på mobil?
-- Hvilke billedformater bruger I, og laves billederne i den rigtige størrelse?
-- Hvor mange tredjeparts-scripts kommer siden til at indlæse?
-- Hvor ligger siden, og hvilken strøm bruger datacentret?
-- Hvor længe kan siden holde, før den skal bygges om?
-
-## Det kan du gøre selv i dag
-Du behøver ikke en ny hjemmeside for at gøre din nuværende lettere. Mange af forbedringerne kan laves på en eftermiddag – og de gør siden hurtigere på samme tid.
-Start med billederne på forsiden: Gem dem i en mindre størrelse (sjældent bredere end 2000 pixels) og i et moderne format, før du lægger dem op igen. Gennemgå derefter dine plugins eller integrationer og fjern dem, du ikke bruger. Til sidst: Slet gamle kampagnesider og PDF'er, som ingen længere har brug for, og sørg for, at de gamle adresser sender videre til en relevant side.
-Mål sidens vægt før og efter med PageSpeed Insights. Det er motiverende at se forskellen – og det giver dig et tal, du kan følge over tid.
-1. Billeder: Gør forsidens billeder mindre og gem dem som WebP eller AVIF.
-2. Plugins og scripts: Fjern det, du ikke har brugt det seneste halve år.
-3. Gammelt indhold: Slet eller saml sider, ingen besøger, og omdiriger adresserne.
-4. Mål: Kør PageSpeed Insights før og efter, og skriv tallene ned.
-
-## Ofte stillede spørgsmål
-Q: Hvad er bæredygtigt webdesign?
-A: Webdesign, der minimerer dataforbrug, kode og energiforbrug – ofte ved lette sider, optimerede billeder og effektiv hosting.
-
-Q: Er jeres hjemmesider klimaneutrale?
-A: Nej, og det påstår jeg ikke. Jeg bygger lette og hurtige sider, men en komplet klimaneutralitet er svær at dokumentere.
-
-Q: Koster det mere?
-A: Nej. Lette sider er ofte billigere at drifte og hurtigere at bygge, fordi jeg undgår unødvendige funktioner.
-
-Q: Er mørk tilstand mere bæredygtig?
-A: Kun en smule – og kun på skærme med OLED-teknologi, hvor sorte pixels bruger mindre strøm. Det er ikke dér, den store gevinst ligger. Lettere billeder og færre scripts betyder langt mere.
-
-Q: Bliver min hjemmeside hurtigere af at blive grønnere?
-A: Ja, næsten altid. Det meste af det, der gør en side lettere, gør den også hurtigere – og hastighed er godt for både brugerne og Google.
-
-Q: Hvad vejer en god hjemmeside?
-A: Der er ingen fast grænse, men en forside på under 1 MB er et godt mål for de fleste små virksomheder. Mange sider vejer langt mere, især på grund af billeder og video.
-
-Q: Skal jeg skifte hosting for at blive grønnere?
-A: Det kan være en god idé, hvis din udbyder ikke kan dokumentere grøn strøm. Men start med at gøre selve siden lettere – det giver ofte en større effekt og gør samtidig siden hurtigere.
-
-
----
-
-# Webstrategi: en klar plan, før du bygger eller betaler for mere trafik
-URL: https://www.webhjerte.dk/webstrategi
-
-En hjemmeside uden strategi er en brochure. Jeg hjælper dig med at afklare mål, målgruppe, budskab og prioriteringer, så hver krone og hver time på nettet bliver brugt, hvor det betyder mest.
-
-Kort svar: En webstrategi er en kort, konkret plan for, hvordan din hjemmeside skal skabe resultater: hvem du taler til, hvad du vil have dem til at gøre, hvilket indhold der skal bygges, og hvordan du måler succes. For små virksomheder kan den skrives på få dage og danne grundlag for en ny hjemmeside eller en optimering af den eksisterende.
-
-## Hvad er en webstrategi?
-En webstrategi besvarer fem spørgsmål: Hvem er dine bedste kunder? Hvad søger de efter? Hvad skal hjemmesiden få dem til at gøre? Hvilket indhold og hvilke sider skal der til? Og hvordan ved du, om det virker?
-Den behøver ikke være et tykt dokument. For små og mellemstore virksomheder er en klar plan på nogle få sider ofte mere værdifuld – fordi den bliver brugt.
-
-## Sådan arbejder jeg med strategien
-1. Status: Jeg gennemgår din nuværende hjemmeside, Search Console og analytics, hvis du har det. Er siden ny, starter vi med dine mål.
-2. Målgruppe og søgemønstre: Hvem er kunderne, og hvilke spørgsmål og søgninger bruger de i Google og AI-assistenter?
-3. Konkurrenter: Hvem dukker op, når dine kunder søger, og hvad gør de godt – og dårligt?
-4. Struktur og indhold: Hvilke sider skal der til, og hvad skal hver side besvare? Hvor kan du slå konkurrenterne?
-5. Prioritering: En køreplan i rækkefølge efter effekt og indsats, med forslag til måling.
-
-## Hvad får du ud af det?
-- Et klart overblik over, hvad din hjemmeside skal opnå.
-- En prioriteret liste over sider, tekster og tekniske forbedringer.
-- Forslag til søgeord og spørgsmål, der passer til din branche og dit område.
-- Bedre grundlag for at vælge pakke og budget.
-- En plan for synlighed i både Google og AI-svar.
-
-## Start med målet – ikke med designet
-Det første spørgsmål er ikke, hvilken farve hjemmesiden skal have. Det er: Hvad skal den få besøgende til at gøre? For de fleste små virksomheder er svaret ét af fire: ringe, skrive, booke eller købe.
-Når målet er på plads, bliver resten lettere. Hver side og hver knap kan vurderes ud fra ét spørgsmål: Hjælper det kunden tættere på at ringe, skrive, booke eller købe?
-
-## Kend dine kunder med tre spørgsmål
-Du behøver ikke en stor analyse. Svar på tre spørgsmål – og find svarene ved at spørge dine seneste fem kunder, læse dine anmeldelser og kigge i Google Search Console.
-### Hvem er de?
-Privatpersoner eller virksomheder? Lokale eller i hele landet? Unge eller ældre? Det afgør tone, billeder og hvilke oplysninger der skal stå først.
-### Hvilket problem har de?
-Kunder køber ikke en ydelse – de køber en løsning. Skriv om problemet med deres ord, ikke med jeres fagudtryk.
-### Hvorfor vælger de jer?
-Pris, hurtighed, kvalitet, at de kender jer? Det, kunderne nævner, skal stå tydeligt på forsiden.
-
-## Hvilke sider skal du have?
-En god struktur er enkel. Kunden skal kunne finde det, de leder efter, med ét klik fra forsiden, og Google skal kunne se, hvad hver side handler om.
-Side | Formål
-Forside | Hvad I laver, for hvem og hvor – og den vigtigste handling
-En side pr. ydelse | Svar på kundens spørgsmål om netop den ydelse – og bliv fundet på den søgning
-Priser | Fjern den største tvivl, før kunden kontakter jer
-Cases / referencer | Bevis på, at I kan det, I lover
-Om os | Hvem står bag – tillid og personlighed
-Kontakt | Telefon, mail, adresse og en kort formular
-
-## Budskabet på fem sekunder
-En ny besøgende beslutter sig hurtigt for, om de er havnet det rigtige sted. Overskriften øverst på forsiden skal derfor svare på tre ting: hvad laver I, for hvem, og hvor. Undertitlen fortæller, hvorfor de skal vælge jer, og knappen fortæller, hvad de skal gøre nu.
-Uklart | Tydeligt (eksempel)
-Velkommen til vores hjemmeside | Tømrer i Horsens – nye terrasser, tagvinduer og tilbygninger
-Kvalitet og service siden 1998 | Fast pris efter besigtigelse. Svar inden for én arbejdsdag.
-Læs mere | Få et tilbud
-
-## Kanaler: Google, sociale medier og AI
-Hjemmesiden er centrum, men kunderne kommer fra forskellige steder. For de fleste lokale virksomheder er Google den vigtigste kilde – både de almindelige resultater og kortet. Sociale medier er gode til at holde kontakten med eksisterende kunder, og flere og flere spørger i dag også en AI-assistent om råd.
-Prioritér ud fra, hvor jeres kunder faktisk er. Det er bedre at gøre én kanal ordentligt end fem halvt.
-
-## Mål det, der betyder noget
-Antal besøgende er rart at kende, men det betaler ikke regningerne. Mål i stedet de handlinger, der giver forretning – og kig på tallene én gang om måneden.
-- Henvendelser via formularen
-- Klik på telefonnummer og mail
-- Bookinger eller køb
-- Søgninger, I vises på, og jeres placering (Google Search Console)
-- Hvilke sider kunderne besøger, før de tager kontakt
-
-## En webstrategi på én side
-En strategi behøver ikke være et langt dokument. For de fleste små virksomheder kan den stå på én side – og netop derfor bliver den brugt. Udfyld de seks punkter, og hæng den op, hvor du kan se den.
-### 1. Mål
-Hvad skal hjemmesiden få kunderne til at gøre? Fx “få 10 tilbudsforespørgsler om måneden”.
-### 2. Kunder
-Hvem er de vigtigste kunder, og hvilket problem løser du for dem?
-### 3. Budskab
-Én sætning: hvad du laver, for hvem og hvor – og hvorfor man skal vælge dig.
-### 4. Sider
-Forside, en side pr. ydelse, priser, cases, om og kontakt.
-### 5. Kanaler
-Hvor kommer kunderne fra – og hvilken kanal prioriterer du først?
-### 6. Måling
-Hvilke tal kigger du på hver måned, og hvornår er du tilfreds?
-
-## Et gennemgået eksempel: en fysioterapeut
-En nystartet klinik vil have flere bookinger fra nye patienter. Målet bliver derfor “online bookinger fra nye patienter”, ikke “flere besøgende”. Kunderne er især sportsaktive og folk med rygproblemer i lokalområdet, og de vælger klinik efter, hvor hurtigt de kan komme til, og om behandleren virker kompetent.
-Derfor står den næste ledige tid og knappen “Book tid” øverst på forsiden, hver behandlingsform får sin egen side, og behandlerne præsenteres med uddannelse og erfaring. Google-profilen prioriteres, fordi de fleste søger “fysioterapeut + by”. Hver måned kigges der på antal online bookinger og på, hvilke søgninger klinikken vises på.
-
-## Typiske fejl i en webstrategi
-- Målet er “flere besøgende” i stedet for henvendelser eller salg
-- Forsiden forsøger at fortælle alt på én gang
-- Ydelserne står i én lang liste i stedet for på hver sin side
-- Prisen er skjult, selvom det er det første, kunderne spørger om
-- Der er ingen, der kigger på tallene efter lanceringen
-- Strategien bliver lavet én gang og aldrig set på igen
-
-## Fra strategi til færdig hjemmeside
-Strategien er ikke et mål i sig selv – den skal gøre det lettere at bygge en hjemmeside, der virker. Når de seks punkter er på plads, bliver de næste beslutninger næsten selvfølgelige: Hvilke sider skal laves først? Hvad skal stå øverst på forsiden? Hvilken knap skal være tydeligst?
-I praksis bruger jeg strategien som tjekliste gennem hele projektet. Designet vurderes ud fra, om budskabet står klart på fem sekunder. Teksterne vurderes ud fra, om de svarer på kundernes spørgsmål. Og efter lanceringen vurderes siden ud fra de tal, vi valgte i starten – ikke ud fra, om den er pæn.
-Har du allerede en hjemmeside, er strategien også det bedste udgangspunkt for at forbedre den. Ofte viser det sig, at der ikke skal bygges noget nyt – bare skrives tydeligere, flyttes rundt og fjernes noget.
-
-## Webtjek: første skridt
-Hvis du allerede har en hjemmeside, er det mest effektive første skridt et webtjek. Det er en gratis gennemgang af hastighed, mobilvisning, SEO-grundlag og indhold, som peger på de vigtigste forbedringer. Mange virksomheder opdager her, at en række små rettelser giver mere end en helt ny side.
-
-## Ofte stillede spørgsmål
-Q: Hvad koster en webstrategi?
-A: Den indgår i en samtale og et tilbud, når jeg bygger din hjemmeside. Vil du have strategien alene, aftaler vi en fast pris efter en kort samtale.
-
-Q: Er en webstrategi nødvendig for en lille virksomhed?
-A: Du behøver ikke et stort dokument, men en klar plan for mål, målgruppe og indhold sparer tid og penge.
-
-Q: Hvad er forskellen på webstrategi og SEO?
-A: Strategien afklarer mål og prioriteringer. SEO er en del af udførelsen, som får siden til at rangere.
-
-Q: Hvor ofte skal strategien opdateres?
-A: Gennemgå den en gang om året, eller når der sker noget stort – nye ydelser, et nyt område eller et fald i henvendelser. Små justeringer kan du lave løbende ud fra tallene.
-
-Q: Kan jeg lave strategien selv?
-A: Ja. De seks punkter i denne guide er nok til de fleste små virksomheder. Hjælp udefra er mest værdifuld, når du er i tvivl om prioriteringen, eller når du vil have et blik på det, du selv er blevet blind for.
-
-Q: Hvad hvis jeg har flere typer kunder?
-A: Vælg den vigtigste som udgangspunkt for forsiden, og lav særskilte sider til de andre. En forside, der prøver at tale til alle, taler ofte ikke til nogen.
-
-
----
-
 # Hosting og vedligeholdelse: hvad koster det at holde en hjemmeside kørende?
 URL: https://www.webhjerte.dk/hosting-og-vedligeholdelse
 
@@ -2058,3 +1817,246 @@ A: Ja. Det er ofte en god idé at lancere med de vigtigste sider og tilføje res
 
 Q: Hvad hvis jeg ikke har tid til projektet lige nu?
 A: Så vent hellere til du har. Et projekt, der står stille i ugevis, bliver dyrere og dårligere for begge parter. Sæt én til to timer af i den uge, projektet kører, så går det hurtigt.
+
+
+---
+
+# Bæredygtigt webdesign: lette sider, der belaster mindre
+URL: https://www.webhjerte.dk/blog/baeredygtigt-webdesign
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
+
+Hver gang en side indlæses, bruges der strøm – hos serveren, i netværket og på besøgendes enhed. Jeg bygger lette, hurtige hjemmesider, så dataforbrug og energiforbrug holdes nede uden at gå på kompromis med designet.
+
+Kort svar: Bæredygtigt webdesign handler om at bygge hjemmesider, der overfører mindre data, bruger mindre kode og kører på effektiv (gerne grøn) hosting. Det giver samtidig hurtigere indlæsning, bedre brugeroplevelse og bedre SEO. WebHjerte bygger efter disse principper i alle projekter, men er ikke certificeret som miljøvirksomhed.
+
+## Hvorfor har websider en miljøpåvirkning?
+Internettet kører på datacentre, kabler og enheder, som alle bruger energi. En tung hjemmeside med store billeder, unødvendige scripts og mange eksterne tjenester kræver mere dataoverførsel og mere processorarbejde end en let side. Hver enkelt side betyder lidt – men over tusindvis af besøg bliver det til noget.
+Det er svært at give et præcist tal for én hjemmesides CO₂-aftryk, fordi det afhænger af energimix, enheder og forbindelse. Retningen er til gengæld klar: Mindre data og mindre kode giver lavere forbrug.
+
+## Mine principper for lette hjemmesider
+- Billeder i moderne formater (AVIF og WebP) i den rigtige størrelse og med lazy loading.
+- Minimal JavaScript – kun det, der giver værdi for besøgende.
+- Systemskrifttyper eller få, optimerede webfonts.
+- Ingen auto-afspillende video og tunge animationer uden grund.
+- Få eksterne scripts og tredjepartstjenester, og indlæs dem først, når de er nødvendige.
+- Statisk generering og caching, så siden ikke genopbygges ved hvert besøg.
+- Enkelt og tydeligt design, der gør det nemt at finde frem og kræver færre sidevisninger.
+
+## Hosting: hvad kan du vælge?
+Hosting-udbydere kan have vidt forskellige energiprofiler. Nogle oplyser, at de bruger vedvarende energi eller køber garantier for oprindelse. Jeg anbefaler at vælge udbydere med dokumenteret grøn energi og kort afstand til dine kunder, og jeg hjælper med at vurdere mulighederne. Se mere om drift og hosting på siden om hosting og vedligeholdelse.
+
+## Bæredygtighed og SEO hænger sammen
+Hurtige sider rangerer bedre og konverterer bedre. Derfor er bæredygtigt webdesign sjældent et offer – det er en gevinst på flere fronter: lavere dataforbrug, bedre Core Web Vitals, glade besøgende og bedre synlighed i Google og AI-søgning.
+
+## Ærlighed om grønne claims
+Jeg lover ikke, at din hjemmeside er “klimaneutral”. Det er en påstand, der er svær at dokumentere. Jeg lover til gengæld at bygge så let og effektivt som muligt, være transparent om valg af hosting og værktøjer og måle sidens vægt og hastighed, så du kan se forskellen.
+
+## Hvor kommer energiforbruget fra?
+En hjemmeside bruger strøm tre steder: i datacentret, hvor den ligger, i netværket, der sender den til brugeren, og på brugerens egen telefon eller computer. Jo flere data siden sender, og jo mere arbejde telefonen skal gøre for at vise den, jo mere strøm bruges der.
+Det betyder, at den mest effektive måde at gøre en hjemmeside grønnere på er den samme som at gøre den hurtigere: send mindre, og lad telefonen arbejde mindre.
+
+## Sådan måler du din hjemmesides vægt
+Du kan selv se, hvor tung din hjemmeside er. Det tager fem minutter og giver et godt udgangspunkt.
+1. PageSpeed Insights: Indtast din adresse på Googles gratis værktøj. Se især forslagene om billeder og ubrugt kode.
+2. Browserens værktøjer: Åbn udviklerværktøjerne, vælg fanen Netværk, og genindlæs siden. Nederst står, hvor mange data der blev hentet.
+3. CO₂-beregnere: Værktøjer som Website Carbon Calculator giver et estimat. Brug tallet til at sammenligne – ikke som en eksakt måling.
+
+## Billeder: den største gevinst
+På de fleste hjemmesider er billederne langt den største del af det, der sendes. Et enkelt foto taget med en ny telefon kan fylde flere megabyte, mens det på skærmen kun behøver at fylde en brøkdel.
+Moderne billedformater som AVIF og WebP kan gøre billederne markant mindre uden synligt kvalitetstab. På de sider, jeg bygger, sker det automatisk: billedet laves i den rigtige størrelse til den skærm, det vises på, og billeder længere nede på siden hentes først, når man scroller hen til dem.
+- Brug AVIF eller WebP i stedet for store JPG- og PNG-filer
+- Vis billedet i den størrelse, det faktisk har brug for
+- Hent billeder længere nede på siden først, når de skal bruges
+- Spørg dig selv, om billedet tilføjer noget – ellers fjern det
+
+## Video, skrifttyper og scripts
+Video, der starter automatisk i toppen af siden, er en af de tungeste ting, en hjemmeside kan indeholde. Ofte ser brugeren den slet ikke. Vis i stedet et billede, og lad brugeren starte videoen selv.
+Skrifttyper og tredjeparts-scripts – fx chatwidgets, sporingskoder og indlejrede sociale medier – er de næste store poster. Hver enkelt virker måske lille, men tilsammen kan de fordoble sidens vægt.
+- Ingen autoplay-video øverst på siden
+- Brug få skrifttyper og få vægte (fx normal og fed)
+- Fjern sporingskoder, du ikke bruger
+- Indlæs chat og sociale medier først, når brugeren skal bruge dem
+
+## Grøn hosting – hvad betyder det?
+Mange hostingudbydere kalder sig grønne. Det kan betyde, at datacentret bruger strøm fra vedvarende energi, at udbyderen køber certifikater, der svarer til forbruget, eller at der kompenseres på anden vis. Det er ikke det samme.
+Spørg din udbyder, hvad de konkret gør, og om de kan dokumentere det. Green Web Foundation har en offentlig oversigt over udbydere, der har dokumenteret deres brug af grøn strøm. Husk samtidig, at en let hjemmeside på almindelig hosting ofte gør mere for miljøet end en tung side på grøn hosting.
+
+## Tjekliste til en lettere hjemmeside
+- Billeder i moderne formater og den rigtige størrelse
+- Ingen automatisk video øverst
+- Få skrifttyper og få scripts
+- Ingen sider, ingen besøger eller har brug for
+- Enkel navigation, så brugerne finder det hurtigt – færre sidevisninger på vejen
+- Hosting med dokumenteret grøn strøm, hvor det er muligt
+- Mål sidens vægt før og efter ændringer
+
+## Et gennemgået eksempel: samme side, en tiendedel af vægten
+En typisk forside på en ældre virksomhedshjemmeside kan nemt veje flere megabyte: en stor video i toppen, fem billeder i fuld opløsning, tre skrifttyper i mange vægte og en håndfuld sporingskoder.
+Uden at ændre budskabet kan videoen erstattes af ét billede, billederne konverteres til moderne formater i den rigtige størrelse, skrifttyperne reduceres til én familie i to vægte, og sporingskoder, ingen bruger, fjernes. Siden ser næsten ens ud – men vejer en brøkdel og indlæses langt hurtigere på en mobil.
+
+## Bæredygtighed handler også om levetid
+Den grønneste hjemmeside er den, der ikke skal bygges om hvert andet år. En enkel, velstruktureret side med få afhængigheder kan holde i mange år og opdateres løbende i stedet for at blive smidt ud og bygget forfra.
+Det gælder også for indholdet. Sider, ingen besøger, og gamle kampagner, der ligger og fylder, kan fjernes eller samles. Det gør siden lettere at vedligeholde og lettere for kunderne at finde rundt i.
+
+## Spørgsmål, du kan stille dit bureau
+- Hvor meget vejer forsiden, og hvor hurtigt indlæses den på mobil?
+- Hvilke billedformater bruger I, og laves billederne i den rigtige størrelse?
+- Hvor mange tredjeparts-scripts kommer siden til at indlæse?
+- Hvor ligger siden, og hvilken strøm bruger datacentret?
+- Hvor længe kan siden holde, før den skal bygges om?
+
+## Det kan du gøre selv i dag
+Du behøver ikke en ny hjemmeside for at gøre din nuværende lettere. Mange af forbedringerne kan laves på en eftermiddag – og de gør siden hurtigere på samme tid.
+Start med billederne på forsiden: Gem dem i en mindre størrelse (sjældent bredere end 2000 pixels) og i et moderne format, før du lægger dem op igen. Gennemgå derefter dine plugins eller integrationer og fjern dem, du ikke bruger. Til sidst: Slet gamle kampagnesider og PDF'er, som ingen længere har brug for, og sørg for, at de gamle adresser sender videre til en relevant side.
+Mål sidens vægt før og efter med PageSpeed Insights. Det er motiverende at se forskellen – og det giver dig et tal, du kan følge over tid.
+1. Billeder: Gør forsidens billeder mindre og gem dem som WebP eller AVIF.
+2. Plugins og scripts: Fjern det, du ikke har brugt det seneste halve år.
+3. Gammelt indhold: Slet eller saml sider, ingen besøger, og omdiriger adresserne.
+4. Mål: Kør PageSpeed Insights før og efter, og skriv tallene ned.
+
+## Ofte stillede spørgsmål
+Q: Hvad er bæredygtigt webdesign?
+A: Webdesign, der minimerer dataforbrug, kode og energiforbrug – ofte ved lette sider, optimerede billeder og effektiv hosting.
+
+Q: Er jeres hjemmesider klimaneutrale?
+A: Nej, og det påstår jeg ikke. Jeg bygger lette og hurtige sider, men en komplet klimaneutralitet er svær at dokumentere.
+
+Q: Koster det mere?
+A: Nej. Lette sider er ofte billigere at drifte og hurtigere at bygge, fordi jeg undgår unødvendige funktioner.
+
+Q: Er mørk tilstand mere bæredygtig?
+A: Kun en smule – og kun på skærme med OLED-teknologi, hvor sorte pixels bruger mindre strøm. Det er ikke dér, den store gevinst ligger. Lettere billeder og færre scripts betyder langt mere.
+
+Q: Bliver min hjemmeside hurtigere af at blive grønnere?
+A: Ja, næsten altid. Det meste af det, der gør en side lettere, gør den også hurtigere – og hastighed er godt for både brugerne og Google.
+
+Q: Hvad vejer en god hjemmeside?
+A: Der er ingen fast grænse, men en forside på under 1 MB er et godt mål for de fleste små virksomheder. Mange sider vejer langt mere, især på grund af billeder og video.
+
+Q: Skal jeg skifte hosting for at blive grønnere?
+A: Det kan være en god idé, hvis din udbyder ikke kan dokumentere grøn strøm. Men start med at gøre selve siden lettere – det giver ofte en større effekt og gør samtidig siden hurtigere.
+
+
+---
+
+# Webstrategi: en klar plan, før du bygger eller betaler for mere trafik
+URL: https://www.webhjerte.dk/blog/webstrategi
+Forfatter: Ivan Kohan. Opdateret: 2026-11-16
+
+En hjemmeside uden strategi er en brochure. Jeg hjælper dig med at afklare mål, målgruppe, budskab og prioriteringer, så hver krone og hver time på nettet bliver brugt, hvor det betyder mest.
+
+Kort svar: En webstrategi er en kort, konkret plan for, hvordan din hjemmeside skal skabe resultater: hvem du taler til, hvad du vil have dem til at gøre, hvilket indhold der skal bygges, og hvordan du måler succes. For små virksomheder kan den skrives på få dage og danne grundlag for en ny hjemmeside eller en optimering af den eksisterende.
+
+## Hvad er en webstrategi?
+En webstrategi besvarer fem spørgsmål: Hvem er dine bedste kunder? Hvad søger de efter? Hvad skal hjemmesiden få dem til at gøre? Hvilket indhold og hvilke sider skal der til? Og hvordan ved du, om det virker?
+Den behøver ikke være et tykt dokument. For små og mellemstore virksomheder er en klar plan på nogle få sider ofte mere værdifuld – fordi den bliver brugt.
+
+## Sådan arbejder jeg med strategien
+1. Status: Jeg gennemgår din nuværende hjemmeside, Search Console og analytics, hvis du har det. Er siden ny, starter vi med dine mål.
+2. Målgruppe og søgemønstre: Hvem er kunderne, og hvilke spørgsmål og søgninger bruger de i Google og AI-assistenter?
+3. Konkurrenter: Hvem dukker op, når dine kunder søger, og hvad gør de godt – og dårligt?
+4. Struktur og indhold: Hvilke sider skal der til, og hvad skal hver side besvare? Hvor kan du slå konkurrenterne?
+5. Prioritering: En køreplan i rækkefølge efter effekt og indsats, med forslag til måling.
+
+## Hvad får du ud af det?
+- Et klart overblik over, hvad din hjemmeside skal opnå.
+- En prioriteret liste over sider, tekster og tekniske forbedringer.
+- Forslag til søgeord og spørgsmål, der passer til din branche og dit område.
+- Bedre grundlag for at vælge pakke og budget.
+- En plan for synlighed i både Google og AI-svar.
+
+## Start med målet – ikke med designet
+Det første spørgsmål er ikke, hvilken farve hjemmesiden skal have. Det er: Hvad skal den få besøgende til at gøre? For de fleste små virksomheder er svaret ét af fire: ringe, skrive, booke eller købe.
+Når målet er på plads, bliver resten lettere. Hver side og hver knap kan vurderes ud fra ét spørgsmål: Hjælper det kunden tættere på at ringe, skrive, booke eller købe?
+
+## Kend dine kunder med tre spørgsmål
+Du behøver ikke en stor analyse. Svar på tre spørgsmål – og find svarene ved at spørge dine seneste fem kunder, læse dine anmeldelser og kigge i Google Search Console.
+### Hvem er de?
+Privatpersoner eller virksomheder? Lokale eller i hele landet? Unge eller ældre? Det afgør tone, billeder og hvilke oplysninger der skal stå først.
+### Hvilket problem har de?
+Kunder køber ikke en ydelse – de køber en løsning. Skriv om problemet med deres ord, ikke med jeres fagudtryk.
+### Hvorfor vælger de jer?
+Pris, hurtighed, kvalitet, at de kender jer? Det, kunderne nævner, skal stå tydeligt på forsiden.
+
+## Hvilke sider skal du have?
+En god struktur er enkel. Kunden skal kunne finde det, de leder efter, med ét klik fra forsiden, og Google skal kunne se, hvad hver side handler om.
+Side | Formål
+Forside | Hvad I laver, for hvem og hvor – og den vigtigste handling
+En side pr. ydelse | Svar på kundens spørgsmål om netop den ydelse – og bliv fundet på den søgning
+Priser | Fjern den største tvivl, før kunden kontakter jer
+Cases / referencer | Bevis på, at I kan det, I lover
+Om os | Hvem står bag – tillid og personlighed
+Kontakt | Telefon, mail, adresse og en kort formular
+
+## Budskabet på fem sekunder
+En ny besøgende beslutter sig hurtigt for, om de er havnet det rigtige sted. Overskriften øverst på forsiden skal derfor svare på tre ting: hvad laver I, for hvem, og hvor. Undertitlen fortæller, hvorfor de skal vælge jer, og knappen fortæller, hvad de skal gøre nu.
+Uklart | Tydeligt (eksempel)
+Velkommen til vores hjemmeside | Tømrer i Horsens – nye terrasser, tagvinduer og tilbygninger
+Kvalitet og service siden 1998 | Fast pris efter besigtigelse. Svar inden for én arbejdsdag.
+Læs mere | Få et tilbud
+
+## Kanaler: Google, sociale medier og AI
+Hjemmesiden er centrum, men kunderne kommer fra forskellige steder. For de fleste lokale virksomheder er Google den vigtigste kilde – både de almindelige resultater og kortet. Sociale medier er gode til at holde kontakten med eksisterende kunder, og flere og flere spørger i dag også en AI-assistent om råd.
+Prioritér ud fra, hvor jeres kunder faktisk er. Det er bedre at gøre én kanal ordentligt end fem halvt.
+
+## Mål det, der betyder noget
+Antal besøgende er rart at kende, men det betaler ikke regningerne. Mål i stedet de handlinger, der giver forretning – og kig på tallene én gang om måneden.
+- Henvendelser via formularen
+- Klik på telefonnummer og mail
+- Bookinger eller køb
+- Søgninger, I vises på, og jeres placering (Google Search Console)
+- Hvilke sider kunderne besøger, før de tager kontakt
+
+## En webstrategi på én side
+En strategi behøver ikke være et langt dokument. For de fleste små virksomheder kan den stå på én side – og netop derfor bliver den brugt. Udfyld de seks punkter, og hæng den op, hvor du kan se den.
+### 1. Mål
+Hvad skal hjemmesiden få kunderne til at gøre? Fx “få 10 tilbudsforespørgsler om måneden”.
+### 2. Kunder
+Hvem er de vigtigste kunder, og hvilket problem løser du for dem?
+### 3. Budskab
+Én sætning: hvad du laver, for hvem og hvor – og hvorfor man skal vælge dig.
+### 4. Sider
+Forside, en side pr. ydelse, priser, cases, om og kontakt.
+### 5. Kanaler
+Hvor kommer kunderne fra – og hvilken kanal prioriterer du først?
+### 6. Måling
+Hvilke tal kigger du på hver måned, og hvornår er du tilfreds?
+
+## Et gennemgået eksempel: en fysioterapeut
+En nystartet klinik vil have flere bookinger fra nye patienter. Målet bliver derfor “online bookinger fra nye patienter”, ikke “flere besøgende”. Kunderne er især sportsaktive og folk med rygproblemer i lokalområdet, og de vælger klinik efter, hvor hurtigt de kan komme til, og om behandleren virker kompetent.
+Derfor står den næste ledige tid og knappen “Book tid” øverst på forsiden, hver behandlingsform får sin egen side, og behandlerne præsenteres med uddannelse og erfaring. Google-profilen prioriteres, fordi de fleste søger “fysioterapeut + by”. Hver måned kigges der på antal online bookinger og på, hvilke søgninger klinikken vises på.
+
+## Typiske fejl i en webstrategi
+- Målet er “flere besøgende” i stedet for henvendelser eller salg
+- Forsiden forsøger at fortælle alt på én gang
+- Ydelserne står i én lang liste i stedet for på hver sin side
+- Prisen er skjult, selvom det er det første, kunderne spørger om
+- Der er ingen, der kigger på tallene efter lanceringen
+- Strategien bliver lavet én gang og aldrig set på igen
+
+## Fra strategi til færdig hjemmeside
+Strategien er ikke et mål i sig selv – den skal gøre det lettere at bygge en hjemmeside, der virker. Når de seks punkter er på plads, bliver de næste beslutninger næsten selvfølgelige: Hvilke sider skal laves først? Hvad skal stå øverst på forsiden? Hvilken knap skal være tydeligst?
+I praksis bruger jeg strategien som tjekliste gennem hele projektet. Designet vurderes ud fra, om budskabet står klart på fem sekunder. Teksterne vurderes ud fra, om de svarer på kundernes spørgsmål. Og efter lanceringen vurderes siden ud fra de tal, vi valgte i starten – ikke ud fra, om den er pæn.
+Har du allerede en hjemmeside, er strategien også det bedste udgangspunkt for at forbedre den. Ofte viser det sig, at der ikke skal bygges noget nyt – bare skrives tydeligere, flyttes rundt og fjernes noget.
+
+## Webtjek: første skridt
+Hvis du allerede har en hjemmeside, er det mest effektive første skridt et webtjek. Det er en gratis gennemgang af hastighed, mobilvisning, SEO-grundlag og indhold, som peger på de vigtigste forbedringer. Mange virksomheder opdager her, at en række små rettelser giver mere end en helt ny side.
+
+## Ofte stillede spørgsmål
+Q: Hvad koster en webstrategi?
+A: Den indgår i en samtale og et tilbud, når jeg bygger din hjemmeside. Vil du have strategien alene, aftaler vi en fast pris efter en kort samtale.
+
+Q: Er en webstrategi nødvendig for en lille virksomhed?
+A: Du behøver ikke et stort dokument, men en klar plan for mål, målgruppe og indhold sparer tid og penge.
+
+Q: Hvad er forskellen på webstrategi og SEO?
+A: Strategien afklarer mål og prioriteringer. SEO er en del af udførelsen, som får siden til at rangere.
+
+Q: Hvor ofte skal strategien opdateres?
+A: Gennemgå den en gang om året, eller når der sker noget stort – nye ydelser, et nyt område eller et fald i henvendelser. Små justeringer kan du lave løbende ud fra tallene.
+
+Q: Kan jeg lave strategien selv?
+A: Ja. De seks punkter i denne guide er nok til de fleste små virksomheder. Hjælp udefra er mest værdifuld, når du er i tvivl om prioriteringen, eller når du vil have et blik på det, du selv er blevet blind for.
+
+Q: Hvad hvis jeg har flere typer kunder?
+A: Vælg den vigtigste som udgangspunkt for forsiden, og lav særskilte sider til de andre. En forside, der prøver at tale til alle, taler ofte ikke til nogen.

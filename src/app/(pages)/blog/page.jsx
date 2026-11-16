@@ -2,7 +2,7 @@ import Image from "next/image";
 import PageHero, { PrimaryLink } from "../../components/ui/PageHero";
 import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
 import BlogList from "./_components/BlogList";
-import { articles, contentPages } from "../../data/content";
+import { articles } from "../../data/content";
 import Ivan from "../../assets/Ivan.jpg";
 import { breadcrumbLd, SITE_URL } from "../../lib/seo";
 
@@ -22,18 +22,6 @@ const legacy = [
     readMinutes: 10,
     updated: "2026-11-10",
   },
-  {
-    href: "/webstrategi",
-    title: "Webstrategi: en klar plan, før du bygger",
-    desc: "Sådan finder du ud af, hvad din hjemmeside skal kunne – før du bruger penge på den.",
-    category: "Guides",
-  },
-  {
-    href: "/baeredygtigt-webdesign",
-    title: "Bæredygtigt webdesign",
-    desc: "Lette, hurtige sider, der belaster mindre – og som kunderne har det bedre med.",
-    category: "Guides",
-  },
 ];
 
 export default function BlogPage() {
@@ -42,11 +30,7 @@ export default function BlogPage() {
     legacy[0],
     ...articles.map((a) => ({ href: `/blog/${a.slug}`, title: a.h1, desc: a.intro, category: a.category, readMinutes: a.readMinutes, updated: a.updated })),
     ...legacy.slice(1),
-  ].map((p) => {
-    // Guides, der ligger som indholdssider (fx /webstrategi), får læsetid og dato fra deres data
-    const page = contentPages.find((c) => `/${c.slug}` === p.href);
-    return page ? { readMinutes: page.readMinutes, updated: page.updated, ...p } : p;
-  }).map((p) => ({
+  ].map((p) => ({
     ...p,
     category: p.category === "Guides" ? "Guides" : p.category,
     meta: [p.readMinutes ? `${p.readMinutes} min. læsning` : null, p.updated ? `Opdateret ${fmt(p.updated)}` : null].filter(Boolean).join(" · ") || undefined,

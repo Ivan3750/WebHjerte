@@ -40,8 +40,6 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Alle typer hjemmesider (platforme) | `/alle-typer-hjemmesider` |
 | Hjemmeside til virksomhed | `/hjemmeside-til-virksomhed` |
 | Hosting og vedligeholdelse | `/hosting-og-vedligeholdelse` |
-| Webstrategi | `/webstrategi` |
-| Bæredygtigt webdesign | `/baeredygtigt-webdesign` |
 | Ny professionel hjemmeside (ikke i sitemap) | `/ny-professionel-hjemmeside` |
 
 ### SEO, AI og region (nyligt genåbnet, hver side med eget design)
@@ -82,6 +80,8 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | SEO-tjekliste for lokale virksomheder | `/blog/seo-tjekliste-lokale-virksomheder` |
 | AI i små virksomheder: 10 eksempler | `/blog/ai-i-smaa-virksomheder-10-eksempler` |
 | Sådan bliver du nævnt af ChatGPT og Google AI | `/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai` |
+| Webstrategi | `/blog/webstrategi` |
+| Bæredygtigt webdesign | `/blog/baeredygtigt-webdesign` |
 
 ### Portefølje – cases
 `/portefolje/improve-physio`, `/portefolje/pizzaria`, `/portefolje/loenbaeks-koereskole`,
@@ -114,3 +114,4 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 - `/wordpress-horsens` → 301 til `/wordpress-hjemmeside`
 - `/digitalt-bureau-horsens` → 301 til `/`
 - `/geo-ai-synlighed` og `/ai-loesninger` → 301 til `/ai-seo`
+- `/webstrategi` og `/baeredygtigt-webdesign` → 301 til `/blog/webstrategi` og `/blog/baeredygtigt-webdesign`

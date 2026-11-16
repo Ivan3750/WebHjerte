@@ -452,7 +452,7 @@ export const servicePages = [
     related: [
       { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", title: "Hvad koster en hjemmeside om året?", desc: "Guide til de løbende udgifter." },
       { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Pakker og priser." },
-      { href: "/baeredygtigt-webdesign", title: "Bæredygtigt webdesign", desc: "Lette sider og grønnere hosting." },
+      { href: "/blog/baeredygtigt-webdesign", title: "Bæredygtigt webdesign", desc: "Lette sider og grønnere hosting." },
     ],
   },
 ];

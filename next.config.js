@@ -39,6 +39,9 @@ const nextConfig = {
       { source: "/digitalt-bureau-horsens", destination: "/", permanent: true },
       { source: "/geo-ai-synlighed", destination: "/ai-seo", permanent: true },
       { source: "/ai-loesninger", destination: "/ai-seo", permanent: true },
+      // Guides ligger under /blog/
+      { source: "/webstrategi", destination: "/blog/webstrategi", permanent: true },
+      { source: "/baeredygtigt-webdesign", destination: "/blog/baeredygtigt-webdesign", permanent: true },
     ];
   },
   async headers() {

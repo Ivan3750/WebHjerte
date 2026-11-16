@@ -10,12 +10,13 @@ import { isHiddenSlug } from "../hidden.js";
 import { enrich } from "./extra.js";
 import { enrichArticle } from "./articleExtra.js";
 
-const articles = rawArticles.map(enrichArticle);
 
 // Skjulte sider (se data/hidden.js) er ikke med – så de hverken bygges, linkes eller kommer i sitemap
-export const allContentPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages]
-  .map(enrich)
-  .map((p) => (p.type === "article" ? enrichArticle(p) : p));
+const allPages = [...platformPages, ...servicePages, ...localPages, ...nichePages, ...aiPages, ...hubPages].map(enrich);
+export const allContentPages = allPages.filter((p) => p.type !== "article");
+
+// Guides, der står som "article" i indholdsdata (fx webstrategi), hører til bloggen og ligger under /blog/
+const articles = [...rawArticles, ...allPages.filter((p) => p.type === "article")].map(enrichArticle);
 export const contentPages = allContentPages.filter((p) => !isHiddenSlug(p.slug));
 export { articles };
 
