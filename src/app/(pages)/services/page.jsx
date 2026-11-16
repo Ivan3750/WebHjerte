@@ -11,6 +11,7 @@ import { promise } from "../../data/content/offer";
 import { photoFor } from "../../data/photos";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
 import SectionHead from "../../components/ui/SectionHead";
+import { Panel, VisualChat } from "../../components/illustrations/Visuals";
 import { FadeUp } from "../../components/home/fx/Reveal";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 import { supportPlans } from "../../data/supportPlans";
@@ -131,20 +132,8 @@ const trades = visibleLinks([
 ]);
 
 const aiLinks = visibleLinks([
-  {
-    href: "/ai-chatbot-til-hjemmeside",
-    eyebrow: "Kundeservice 24/7",
-    title: "AI-chatbot til hjemmesiden",
-    desc: "Svarer på de samme spørgsmål igen og igen, booker tider og samler henvendelser – også uden for åbningstid.",
-    cta: "Se AI-chatbotten",
-  },
-  {
-    href: "/ai-seo",
-    eyebrow: "Synlighed i AI-søgning",
-    title: "AI SEO",
-    desc: "Bliv nævnt, når kunder spørger ChatGPT, Perplexity og Google AI om det, du tilbyder.",
-    cta: "Se AI SEO",
-  },
+  { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot til hjemmesiden" },
+  { href: "/ai-seo", label: "AI SEO" },
 ]);
 
 const areas = visibleLinks([
@@ -200,34 +189,30 @@ const Services = () => {
         <PackagesBlock />
       </div>
 
-      {/* AI – kort videre til de to AI-sider */}
+      {/* AI – kort intro med to knapper videre til AI-siderne */}
       {aiLinks.length > 0 && (
-        <section className="scene bg-[#1c1e1e]">
-          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-            <SectionHead
-              dark
-              eyebrow="AI til din hjemmeside"
-              lines={["Lad AI tage de gentagne opgaver", "– og gøre dig synlig i ChatGPT"]}
-              className="mb-10"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {aiLinks.map((item, i) => (
-                <FadeUp key={item.href} delay={i * 0.07} className="h-full">
-                  <Link
-                    href={item.href}
-                    className="group h-full rounded-3xl p-6 sm:p-8 flex flex-col gap-4 border border-white/10 bg-white/[0.03] hover:border-[#00a8e8]/60 transition-colors"
-                  >
-                    <span className="text-[11px] uppercase tracking-[0.14em] text-[#8fd8f6]">{item.eyebrow}</span>
-                    <span className="text-[clamp(20px,2vw,26px)] font-semibold text-white tracking-tight">{item.title}</span>
-                    <span className="text-[15px] text-[#b4bdbd] leading-relaxed flex-1">{item.desc}</span>
-                    <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#00a8e8]">
-                      {item.cta}
-                      <ArrowIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                    </span>
+        <section className="scene bg-[#e4f0f7]">
+          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center">
+            <FadeUp>
+              <SectionHead
+                eyebrow="AI"
+                lines={["AI, der arbejder for dig", "– også når du holder fri"]}
+                lead="En AI-chatbot svarer kunderne med det samme og booker tider døgnet rundt. Med AI SEO bliver din virksomhed nævnt, når kunder spørger ChatGPT og Google AI."
+                className="mb-8"
+              />
+              <div className="flex flex-wrap gap-3">
+                {aiLinks.map((l, i) => (
+                  <Link key={l.href} href={l.href} className={i === 0 ? "btn-primary" : "btn-ghost btn-ghost-light"}>
+                    {l.label}
                   </Link>
-                </FadeUp>
-              ))}
-            </div>
+                ))}
+              </div>
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <Panel h="h-[240px] sm:h-[280px]">
+                <VisualChat />
+              </Panel>
+            </FadeUp>
           </div>
         </section>
       )}
