@@ -92,7 +92,7 @@ const localLinks = [
     href: "/services#priser",
     title: "Hjemmeside priser",
     visual: <VisualPrice />,
-    desc: "Faste priser fra 2.500 kr inkl. moms og prisberegner – ingen skjulte gebyrer.",
+    desc: "Faste priser fra 2.500 kr inkl. moms – ingen skjulte gebyrer.",
   },
 ].filter((l) => !isHiddenHref(l.href));
 

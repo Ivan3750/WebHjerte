@@ -1,15 +1,14 @@
 import ContentPage from "../../../components/seo/ContentPage";
-import PriceCalculator from "../../../components/ui/PriceCalculator";
 import { pageMetadata } from "../../../data/content";
 
 const path = "/blog/hvad-koster-en-hjemmeside-2026";
 
 // Search Console: siden får flest visninger på hele sitet (pris-søgninger), men lå på side 5.
-// Derfor en komplet prisguide med markedspriser, typer, årlige udgifter, tilbudstjekliste og prisberegner.
+// Derfor en komplet prisguide med markedspriser, typer, årlige udgifter, tilbudstjekliste.
 const article = {
-  title: "Hvad koster en hjemmeside i 2026? Priser og prisberegner",
+  title: "Hvad koster en hjemmeside i 2026? Priser og eksempler",
   description:
-    "Fra 0 kr med en hjemmesidebygger til 25.000–150.000 kr hos et bureau: se hvad en hjemmeside koster i 2026, de årlige udgifter – og beregn din egen pris.",
+    "Fra 0 kr med en hjemmesidebygger til 25.000–150.000 kr hos et bureau: se hvad en hjemmeside koster i 2026, de årlige udgifter – og hvad den koster til fast pris.",
   keywords: [
     "hvad koster en hjemmeside",
     "hvad koster en hjemmeside 2026",
@@ -21,8 +20,6 @@ const article = {
     "hvad koster en professionel hjemmeside",
     "wordpress hjemmeside pris",
     "hvad koster det at lave en webshop",
-    "beregn hjemmeside pris",
-    "prisberegner hjemmeside",
   ],
   published: "2026-10-28",
   updated: "2026-11-10",
@@ -51,7 +48,7 @@ const sections = [
         ["WebHjerte", "2.500–14.000+ kr (fast pris)", "0, 249, 449 eller 799 kr/md", "Små og mellemstore virksomheder, der vil have bureau-kvalitet til fast pris"],
       ],
     },
-    cta: { href: "#prisberegner", label: "Beregn din egen pris" },
+    cta: { href: "/services#priser", label: "Se alle faste priser" },
   },
   {
     h2: "Hvad koster de forskellige typer hjemmesider?",
@@ -210,10 +207,9 @@ export default function HvadKosterEnHjemmesidePage() {
       type="article"
       name="Hvad koster en hjemmeside i 2026?"
       eyebrow="Guide · Priser · 10 min. læsning"
-      h1="Hvad koster en hjemmeside i 2026? Priser, eksempler og prisberegner"
+      h1="Hvad koster en hjemmeside i 2026? Priser og eksempler"
       intro="Rigtige tal i stedet for “det kommer an på”. Hvad en hjemmeside koster hos en hjemmesidebygger, en freelancer og et bureau – og hvad den koster hos mig."
       summary="En hjemmeside til en lille virksomhed koster typisk 5.000–40.000 kr hos en freelancer og 25.000–150.000 kr hos et webbureau. En webshop koster typisk 15.000–100.000+ kr. Hos WebHjerte koster en landingside 2.500 kr, en Basis-hjemmeside 4.500 kr, en Standard-hjemmeside 8.500 kr og webshops eller skræddersyede løsninger fra 14.000 kr – alle til fast pris inkl. moms. Løbende udgifter er typisk 2.500–6.000 kr om året."
-      afterSummary={<PriceCalculator />}
       sections={sections}
       faqs={faqs}
       related={related}

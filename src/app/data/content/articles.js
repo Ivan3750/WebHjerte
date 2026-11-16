@@ -171,7 +171,7 @@ const own = [
     related: [
       { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside i 2026?", desc: "Priser på selve hjemmesiden." },
       { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Fra 249 kr/md uden binding." },
-      { href: "/services#priser", title: "Hjemmeside priser", desc: "Faste pakker og prisberegner." },
+      { href: "/services#priser", title: "Hjemmeside priser", desc: "Faste pakker inkl. moms." },
     ],
   },
   {
@@ -355,7 +355,7 @@ const own = [
       { q: "Hvad skal et tilbud på en hjemmeside indeholde?", a: "Fast pris, præcist omfang (sider og funktioner), tidsplan, hvem der ejer domæne og kode, og hvad det koster efter lancering." },
     ],
     related: [
-      { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside?", desc: "Priser og prisberegner." },
+      { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside?", desc: "Priser og eksempler." },
       { href: "/om-mig", title: "Om mig", desc: "Hvem står bag WebHjerte?" },
     ],
   },
@@ -443,7 +443,7 @@ const own = [
     related: [
       { href: "/wordpress-hjemmeside", title: "Professionel WordPress-hjemmeside", desc: "Fra 4.500 kr." },
       { href: "/skraeddersyede-hjemmesider", title: "Skræddersyede hjemmesider", desc: "Unikt design og hurtig kode." },
-      { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside?", desc: "Priser og prisberegner." },
+      { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside?", desc: "Priser og eksempler." },
     ],
   },
   {

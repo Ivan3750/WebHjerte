@@ -50,6 +50,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="da">
       <head>
+        {/* Google Translate og lignende udvidelser pakker tekst ind i <font>, så React ikke kan finde
+            sine noder igen og siden går ned ("Application error"). Kendt React-problem (#11538):
+            ignorér fjernelse/indsættelse af noder, der allerede er flyttet. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){if(typeof Node!=="function"||!Node.prototype)return;var r=Node.prototype.removeChild;Node.prototype.removeChild=function(c){if(c.parentNode!==this){return c;}return r.apply(this,arguments);};var i=Node.prototype.insertBefore;Node.prototype.insertBefore=function(n,ref){if(ref&&ref.parentNode!==this){return n;}return i.apply(this,arguments);};})();`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

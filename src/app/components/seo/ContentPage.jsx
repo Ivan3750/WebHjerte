@@ -14,6 +14,10 @@ import GuaranteesBlock from "../home/GuaranteesBlock";
 import CasesCarousel from "../home/CasesCarousel";
 import ProcessBlock from "../home/ProcessBlock";
 import { VARIANTS } from "../variants/registry";
+import CityServices from "../city/CityServices";
+
+// Områdesider, der får blokken "Det kan jeg lave til din virksomhed i …"
+const LOCAL_CITY = { "webbureau-vejle": "Vejle", "webbureau-jylland": "Jylland", "digitalt-bureau-horsens": "Horsens" };
 import ThemedHero from "../variants/ThemedHero";
 import { cleanSection, visibleLinks } from "../../data/hidden";
 import { faqsWithoutPrices } from "../../lib/prices";
@@ -159,7 +163,9 @@ export default function ContentPage({
         formTitle={formTitle}
         // Priser kun på /services, /ai-seo og her
         allowPrices={slug === "hosting-og-vedligeholdelse"}
-        extra={slug === "hosting-og-vedligeholdelse" ? <SupportTariffsBlock /> : null}
+        extra={
+          slug === "hosting-og-vedligeholdelse" ? <SupportTariffsBlock /> : LOCAL_CITY[slug] ? <CityServices city={LOCAL_CITY[slug]} dark /> : null
+        }
       />
     );
   }

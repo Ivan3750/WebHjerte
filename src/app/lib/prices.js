@@ -13,7 +13,7 @@ export const withoutPrices = (text = "") =>
     .filter((x) => !hasPrice(x))
     .join(" ");
 
-const POINTER = "Du får altid en fast pris, før vi går i gang – se pakker og beregn din pris under Services.";
+const POINTER = "Du får altid en fast pris, før vi går i gang – se alle pakker under Services.";
 
 /** FAQ uden kronebeløb: spørgsmål med beløb fjernes, svar renses og får en henvisning til Services. */
 export const faqsWithoutPrices = (faqs = []) =>

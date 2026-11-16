@@ -94,7 +94,7 @@ const WordpressHjemmeside = () => {
         actions={
           <>
             <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
-            <GhostLink href="/blog/hvad-koster-en-hjemmeside-2026#prisberegner">Beregn pris</GhostLink>
+            <GhostLink href="/services#priser">Se priser</GhostLink>
           </>
         }
       />

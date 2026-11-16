@@ -17,7 +17,7 @@ const legacy = [
   {
     href: "/blog/hvad-koster-en-hjemmeside-2026",
     title: "Hvad koster en hjemmeside i 2026?",
-    desc: "Rigtige tal: hjemmesidebygger, freelancer og bureau sammenlignet – plus prisberegner.",
+    desc: "Rigtige tal: hjemmesidebygger, freelancer og bureau sammenlignet – plus faste priser.",
     category: "Priser",
     readMinutes: 10,
     updated: "2026-11-10",
