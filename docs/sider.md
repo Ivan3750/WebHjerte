@@ -105,10 +105,6 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | --- | --- |
 | Webdesign Horsens | `/webdesign-horsens` |
 
---- | --- |
-| Restauranter | `/hjemmeside-til-restauranter` |
-| Saloner | `/hjemmeside-til-saloner` |
-
 ---
 
 ## Fjernet helt
