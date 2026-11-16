@@ -8,7 +8,6 @@ import FormToLead from "../../components/ui/FormToLead";
 import { FaqSplit, FaqLd } from "../../components/landing/shared";
 import { PromiseBlock } from "../../components/seo/ServiceLayout";
 import { promise } from "../../data/content/offer";
-import { photoFor } from "../../data/photos";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
 import SectionHead from "../../components/ui/SectionHead";
 import { FadeUp } from "../../components/home/fx/Reveal";
@@ -183,7 +182,7 @@ const Services = () => {
 
       <HeroService />
       <WhatWeOfferBlock />
-      <PromiseBlock photo={photoFor("services", "work")} promise={promise} />
+      <PromiseBlock promise={promise} />
       <div id="priser" className="scroll-mt-[68px]">
         <PackagesBlock />
       </div>

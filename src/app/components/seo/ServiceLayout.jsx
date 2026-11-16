@@ -105,12 +105,16 @@ export function OfferBlock({ offer, dark = false }) {
 export function PromiseBlock({ photo, summary, promise }) {
   return (
     <section className="scene bg-[#eceeee]">
-      <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-center`}>
-        <FadeUp>
-          <Photo photo={photo} className="max-w-[460px]" />
-        </FadeUp>
+      <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 ${photo ? "items-center" : "items-start"}`}>
+        {photo ? (
+          <FadeUp>
+            <Photo photo={photo} className="max-w-[460px]" />
+          </FadeUp>
+        ) : (
+          <RevealLines lines={["Sådan arbejder jeg"]} className="font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3vw,40px)] text-[#1c1e1e] lg:sticky lg:top-28" />
+        )}
         <div>
-          <RevealLines lines={["Sådan arbejder jeg"]} className="font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3vw,40px)] text-[#1c1e1e] mb-8" />
+          {photo && <RevealLines lines={["Sådan arbejder jeg"]} className="font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3vw,40px)] text-[#1c1e1e] mb-8" />}
           {summary && (
             <FadeUp as="p" className="readable text-[19px] leading-[1.7] text-[#1c1e1e] font-medium mb-6 max-w-[58ch]">
               {summary}

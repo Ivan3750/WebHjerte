@@ -1,3 +1,4 @@
+import CityServices from "../../components/city/CityServices";
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import SectionHead from "../../components/ui/SectionHead";
 import FormToLead from "../../components/ui/FormToLead";
@@ -125,6 +126,9 @@ export default function SeoHorsensPage() {
           <SnippetDiff />
         </div>
       </section>
+
+      {/* Ydelser – mere end SEO */}
+      <CityServices city="Horsens" skip={["/seo-horsens"]} />
 
       {/* 5. Gratis tjek */}
       <CtaBand

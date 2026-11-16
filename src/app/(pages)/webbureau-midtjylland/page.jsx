@@ -8,6 +8,7 @@ import { photoFor } from "../../data/photos";
 import RegionRadar from "./_components/RegionRadar";
 import { faqsWithoutPrices } from "../../lib/prices";
 import SiteTree from "./_components/SiteTree";
+import CityServices from "../../components/city/CityServices";
 
 const path = "/webbureau-midtjylland";
 const wrap = "max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24";
@@ -76,6 +77,8 @@ export default function WebbureauMidtjyllandPage() {
 
       <OfferBlock offer={offer["webbureau-midtjylland"]} />
       <PromiseBlock photo={photoFor("webbureau-midtjylland", "work")} promise={promise} />
+
+      <CityServices city="Midtjylland" dark />
 
       {/* 4. SEO i regionen */}
       <section className="scene bg-[#f7f6f6]">

@@ -5,6 +5,7 @@ import FormToLead from "../ui/FormToLead";
 import CasesCarousel from "../home/CasesCarousel";
 import { FadeUp } from "../home/fx/Reveal";
 import { SerpSimulator } from "./CityBlocks";
+import CityServices from "./CityServices";
 import { offer as OFFER, promise as PROMISE } from "../../data/content/offer";
 import { photos as PHOTOS } from "../../data/photos";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
@@ -131,6 +132,9 @@ export default function CityPage({ city }) {
           </div>
         </div>
       </section>
+
+      {/* Ydelser – det, jeg kan sælge kunden */}
+      <CityServices city={city.name} />
 
       {/* Det får du */}
       {offer && (
