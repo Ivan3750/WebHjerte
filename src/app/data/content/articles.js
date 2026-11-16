@@ -171,7 +171,7 @@ const own = [
     related: [
       { href: "/blog/hvad-koster-en-hjemmeside-2026", title: "Hvad koster en hjemmeside i 2026?", desc: "Priser på selve hjemmesiden." },
       { href: "/hosting-og-vedligeholdelse", title: "Hosting og vedligeholdelse", desc: "Fra 249 kr/md uden binding." },
-      { href: "/hjemmeside-pris", title: "Hjemmeside priser", desc: "Faste pakker og prisberegner." },
+      { href: "/services#priser", title: "Hjemmeside priser", desc: "Faste pakker og prisberegner." },
     ],
   },
   {
@@ -530,7 +530,7 @@ const own = [
       { q: "Hvornår ser jeg det første design?", a: "Inden for 48 timer efter vores samtale. Passer det ikke, betaler du 0 kr for designet." },
     ],
     related: [
-      { href: "/hjemmeside-pris", title: "Hjemmeside priser", desc: "Se pakker og leveringstider." },
+      { href: "/services#priser", title: "Hjemmeside priser", desc: "Se pakker og leveringstider." },
       { href: "/hjemmeside-til-virksomhed", title: "Hjemmeside til virksomhed", desc: "Hvad en erhvervshjemmeside skal kunne." },
       { href: "/kontakt", title: "Kontakt", desc: "Få et tilbud inden for 24 timer." },
     ],

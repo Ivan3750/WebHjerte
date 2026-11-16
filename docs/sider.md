@@ -1,6 +1,6 @@
 # Sider på webhjerte.dk
 
-Opdateret: 16. november 2026. Indholdssider viser nu hele deres tekst og FAQ (se `components/seo/ServiceStory.jsx`), og SEO-titler/ekstra afsnit ligger i `data/content/extra.js`. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
+Opdateret: 16. november 2026 (aften). Branchesider, 'hjemmeside til virksomhed' og /hjemmeside-pris er fjernet med 301 til /services. Indholdssider viser nu hele deres tekst og FAQ (se `components/seo/ServiceLayout.jsx`), og SEO-titler/ekstra afsnit ligger i `data/content/extra.js`. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
 de returnerer bare 404, er fjernet fra menu, footer, interne links, sitemap og `llms.txt`.
 
 ## Sådan skjuler / viser du sider
@@ -24,7 +24,6 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | --- | --- |
 | Forside | `/` |
 | Services | `/services` |
-| Hjemmeside pris | `/hjemmeside-pris` |
 | Portefølje | `/portefolje` |
 | Om mig | `/om-mig` |
 | Kontakt | `/kontakt` |
@@ -38,7 +37,6 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Webshop | `/webshop-hjemmeside` |
 | Shopify | `/shopify-hjemmeside` |
 | Alle typer hjemmesider (platforme) | `/alle-typer-hjemmesider` |
-| Hjemmeside til virksomhed | `/hjemmeside-til-virksomhed` |
 | Hosting og vedligeholdelse | `/hosting-og-vedligeholdelse` |
 | Ny professionel hjemmeside (ikke i sitemap) | `/ny-professionel-hjemmeside` |
 
@@ -51,16 +49,6 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | AI SEO | `/ai-seo` |
 | AI-chatbot til hjemmeside | `/ai-chatbot-til-hjemmeside` |
 | Webbureau Vejle | `/webbureau-vejle` |
-
-### Brancher (genåbnet 16. november)
-| Side | URL |
-| --- | --- |
-| Håndværkere (overblik) | `/hjemmeside-til-haandvaerkere` |
-| VVS | `/hjemmeside-til-vvs` |
-| Elektrikere | `/hjemmeside-til-elektriker` |
-| Tømrere | `/hjemmeside-til-tomrer` |
-| Restauranter og caféer | `/hjemmeside-til-restauranter` |
-| Saloner | `/hjemmeside-til-saloner` |
 
 ### Gratis værktøjer
 | Side | URL |
@@ -108,6 +96,8 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 ---
 
 ## Fjernet helt
+- `/hjemmeside-til-haandvaerkere`, `-vvs`, `-elektriker`, `-tomrer`, `-restauranter`, `-saloner` og `/hjemmeside-til-virksomhed` → 301 til `/services`
+- `/hjemmeside-pris` → 301 til `/services#priser` (priser og prisberegner står nu på /services)
 - `/freelancer-vs-bureau` → omdirigerer til `/om-mig`
 - `/ofte-stillede-spoergsmaal` (FAQ) → omdirigerer til `/`
 - `/webbureau-jylland` → 301 til `/webbureau-midtjylland`

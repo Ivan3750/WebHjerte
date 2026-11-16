@@ -39,6 +39,14 @@ const nextConfig = {
       { source: "/digitalt-bureau-horsens", destination: "/", permanent: true },
       { source: "/geo-ai-synlighed", destination: "/ai-seo", permanent: true },
       { source: "/ai-loesninger", destination: "/ai-seo", permanent: true },
+      // Branchesider og "hjemmeside til virksomhed" er fjernet – ydelserne står samlet på /services
+      ...["haandvaerkere", "vvs", "elektriker", "tomrer", "restauranter", "saloner", "virksomhed"].map((s) => ({
+        source: `/hjemmeside-til-${s}`,
+        destination: "/services",
+        permanent: true,
+      })),
+      // Priser og prisberegner står nu på /services
+      { source: "/hjemmeside-pris", destination: "/services#priser", permanent: true },
       // Guides ligger under /blog/
       { source: "/webstrategi", destination: "/blog/webstrategi", permanent: true },
       { source: "/baeredygtigt-webdesign", destination: "/blog/baeredygtigt-webdesign", permanent: true },

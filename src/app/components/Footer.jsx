@@ -7,7 +7,7 @@ const allGroups = [
     title: "Services",
     links: [
       { href: "/services", label: "Alle services" },
-      { href: "/hjemmeside-pris", label: "Priser" },
+      { href: "/services#priser", label: "Priser" },
       { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
       { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
       { href: "/webshop-hjemmeside", label: "Webshop" },

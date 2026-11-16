@@ -18,6 +18,13 @@ const SUPPORT = [
   ...supportPlans.map((x) => ({ id: x.id, name: `Vedligehold ${x.name}`, monthly: x.price })),
 ];
 
+// AI SEO-pakker (samme priser som på /ai-seo), engangsbeløb
+const ADDONS = [
+  { id: "none", name: "Ingen", price: 0, desc: "Basic SEO er med i alle pakker" },
+  { id: "aiseo-basis", name: "AI SEO Basis", price: 3500, desc: "Søgeord, 10 indholdselementer, Google-profil" },
+  { id: "aiseo-standard", name: "AI SEO Standard", price: 6500, desc: "Alt i Basis + konkurrentanalyse og rapport" },
+];
+
 const DOMAIN_PER_YEAR = 150; // typisk .dk-domæne
 
 const fmt = (n) => n.toLocaleString("da-DK");
@@ -50,11 +57,13 @@ export default function PriceCalculator({ dark = false }) {
   const [form, setForm] = useState({ name: "", contact: "", website: "" });
   const [status, setStatus] = useState("idle");
 
+  const [addon, setAddon] = useState("none");
   const p = PACKAGES.find((x) => x.id === pkg);
   const s = SUPPORT.find((x) => x.id === support);
-  const firstYear = p.price + s.monthly * 12 + DOMAIN_PER_YEAR;
+  const a = ADDONS.find((x) => x.id === addon);
+  const firstYear = p.price + a.price + s.monthly * 12 + DOMAIN_PER_YEAR;
 
-  const estimate = `${p.name}${p.from ? " (fra)" : ""} ${fmt(p.price)} kr · ${s.name}${
+  const estimate = `${p.name}${p.from ? " (fra)" : ""} ${fmt(p.price)} kr${a.price ? ` · ${a.name} ${fmt(a.price)} kr` : ""} · ${s.name}${
     s.monthly ? ` ${s.monthly} kr/md` : ""
   } · 1. år ca. ${fmt(firstYear)} kr inkl. moms`;
 
@@ -102,60 +111,68 @@ export default function PriceCalculator({ dark = false }) {
   // Hvor går pengene hen første år? (til søjlen)
   const parts = [
     { key: "site", label: "Hjemmesiden (én gang)", value: p.price, color: "#00a8e8" },
+    { key: "addon", label: "AI SEO (én gang)", value: a.price, color: "#8a8ff0" },
     { key: "care", label: "Vedligeholdelse (12 mdr.)", value: s.monthly * 12, color: "#3ddc97" },
     { key: "domain", label: "Domæne (pr. år)", value: DOMAIN_PER_YEAR, color: "#f0a63a" },
   ].filter((x) => x.value > 0);
 
+  const legend = `text-[16px] font-semibold ${c.text} mb-4`;
   return (
-    <div id="prisberegner" className={`scroll-mt-24 rounded-3xl border ${c.wrap} p-5 sm:p-8`}>
-      <h2 className={`${dark ? "text-white" : "text-[#1c1e1e]"} font-semibold tracking-tight text-[clamp(24px,2.6vw,34px)] leading-[1.2] mb-3`}>
+    <div id="prisberegner" className={`scroll-mt-24 rounded-3xl border ${c.wrap} p-5 sm:p-8 lg:p-10`}>
+      <h2 className={`${dark ? "text-white" : "text-[#1c1e1e]"} font-semibold tracking-tight text-[clamp(26px,3vw,40px)] leading-[1.15] mb-3`}>
         Beregn prisen på din hjemmeside
       </h2>
-      <p className={`text-[15px] ${c.muted} leading-[1.75] mb-8 max-w-[56ch]`}>
-        Tre trin – og du ser med det samme, hvad du betaler, og hvad pengene går til.
+      <p className={`text-[16px] ${c.muted} leading-[1.75] mb-10 max-w-[60ch]`}>
+        Vælg pakke, tilvalg og hjælp efter lancering – så ser du med det samme, hvad første år koster. Alle priser er inkl. moms.
       </p>
 
-      <fieldset className="mb-8">
-        <legend className={`flex items-center gap-3 text-[15px] font-semibold ${c.text} mb-4`}>
-          <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[13px] flex items-center justify-center">1</span>
-          Hvor stor skal siden være?
-        </legend>
+      <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 lg:gap-12 items-start">
+      <div>
+      <fieldset className="mb-9">
+        <legend className={legend}>Hvor stor skal siden være?</legend>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {PACKAGES.map((x) => (
             <button type="button" key={x.id} aria-pressed={pkg === x.id} onClick={() => { setPkg(x.id); track("price_calculator_change", { field: "pakke", value: x.id }); }} className={option(pkg === x.id)}>
               <span className="flex items-center gap-3">
                 <PackageArt id={x.id} active={pkg === x.id} />
                 <span className="min-w-0">
-                  <span className={`block text-[14px] font-semibold ${c.text}`}>{x.name}</span>
-                  <span className={`block text-[13px] font-medium ${pkg === x.id ? "text-[#00a8e8]" : c.muted}`}>{x.from ? "fra " : ""}{fmt(x.price)} kr</span>
+                  <span className={`block text-[15px] font-semibold ${c.text}`}>{x.name}</span>
+                  <span className={`block text-[14px] font-medium ${pkg === x.id ? "text-[#00a8e8]" : c.muted}`}>{x.from ? "fra " : ""}{fmt(x.price)} kr</span>
                 </span>
               </span>
-              <span className={`block text-[12.5px] ${c.muted} mt-2.5 leading-snug`}>{x.desc}</span>
+              <span className={`block text-[13px] ${c.muted} mt-2.5 leading-snug`}>{x.desc}</span>
             </button>
           ))}
         </div>
       </fieldset>
 
-      <fieldset className="mb-8">
-        <legend className={`flex items-center gap-3 text-[15px] font-semibold ${c.text} mb-4`}>
-          <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[13px] flex items-center justify-center">2</span>
-          Vil du have hjælp, når siden er live?
-        </legend>
+      <fieldset className="mb-9">
+        <legend className={legend}>Vil du også findes bedre på Google og i AI?</legend>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {ADDONS.map((x) => (
+            <button type="button" key={x.id} aria-pressed={addon === x.id} onClick={() => { setAddon(x.id); track("price_calculator_change", { field: "tilvalg", value: x.id }); }} className={option(addon === x.id)}>
+              <span className={`block text-[14.5px] font-semibold ${c.text}`}>{x.name}</span>
+              <span className={`block text-[13.5px] ${addon === x.id ? "text-[#00a8e8]" : c.muted} mt-1`}>{x.price ? `${fmt(x.price)} kr` : "0 kr"}</span>
+              <span className={`block text-[12.5px] ${c.muted} mt-2 leading-snug`}>{x.desc}</span>
+            </button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="mb-2">
+        <legend className={legend}>Vil du have hjælp, når siden er live?</legend>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {SUPPORT.map((x) => (
             <button type="button" key={x.id} aria-pressed={support === x.id} onClick={() => setSupport(x.id)} className={option(support === x.id)}>
-              <span className={`block text-[13.5px] font-semibold ${c.text}`}>{x.name.replace("Vedligehold ", "")}</span>
-              <span className={`block text-[12.5px] ${support === x.id ? "text-[#00a8e8]" : c.muted} mt-1`}>{x.monthly ? `${x.monthly} kr/md` : "Kun ved behov"}</span>
+              <span className={`block text-[14px] font-semibold ${c.text}`}>{x.name.replace("Vedligehold ", "")}</span>
+              <span className={`block text-[13px] ${support === x.id ? "text-[#00a8e8]" : c.muted} mt-1`}>{x.monthly ? `${x.monthly} kr/md` : "Kun ved behov"}</span>
             </button>
           ))}
         </div>
       </fieldset>
-
-      <div className={`flex items-center gap-3 text-[15px] font-semibold ${c.text} mb-4`}>
-        <span className="w-7 h-7 rounded-full bg-[#00a8e8] text-white text-[13px] flex items-center justify-center">3</span>
-        Din pris
       </div>
 
+      <div className="lg:sticky lg:top-28">
       <div aria-live="polite" className="rounded-3xl bg-[#1c1e1e] text-white p-5 sm:p-8 mb-6">
         <p className="text-[13px] text-[#b4bdbd]">Første år i alt, ca.</p>
         <p className="text-[clamp(34px,5vw,52px)] font-semibold leading-none tracking-tight mt-2 text-white">
@@ -176,7 +193,7 @@ export default function PriceCalculator({ dark = false }) {
             />
           ))}
         </div>
-        <ul className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-3">
+        <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
           {parts.map((x) => (
             <li key={x.key} className="flex items-start gap-2.5">
               <span className="mt-1.5 w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: x.color }} />
@@ -189,7 +206,7 @@ export default function PriceCalculator({ dark = false }) {
         </ul>
 
         <p className="mt-6 pt-5 border-t border-white/10 text-[15px] text-[#b4bdbd] leading-[1.7]">
-          Du betaler <strong className="text-white font-semibold">{p.from ? "fra " : ""}{fmt(p.price)} kr én gang</strong> for hjemmesiden
+          Du betaler <strong className="text-white font-semibold">{p.from ? "fra " : ""}{fmt(p.price + a.price)} kr én gang</strong> for hjemmesiden{a.price ? ` og ${a.name}` : ""}
           {s.monthly ? <> – og derefter <strong className="text-white font-semibold">{s.monthly} kr om måneden</strong>, så længe du vil have hjælp.</> : <>. Uden vedligeholdelse betaler du kun for domænet, og kan altid tilkøbe hjælp senere.</>}
           {" "}Alle beløb er inkl. moms, og første designudkast kommer på 48 timer – 0 kr, hvis det ikke passer.
         </p>
@@ -200,7 +217,7 @@ export default function PriceCalculator({ dark = false }) {
           Tak! Jeg vender tilbage med et fast tilbud inden for 24 timer.
         </p>
       ) : (
-        <form onSubmit={submit} className="grid grid-cols-1 sm:grid-cols-[1fr_1fr_auto] gap-2.5">
+        <form onSubmit={submit} className="grid grid-cols-1 gap-2.5">
           <input
             name="name"
             autoComplete="name"
@@ -228,11 +245,13 @@ export default function PriceCalculator({ dark = false }) {
             {status === "loading" ? "Sender..." : "Få fast tilbud"}
           </button>
           {status === "error" && (
-            <p className="sm:col-span-3 text-[12px] text-red-500">Noget gik galt. Prøv igen eller ring på +45 42 76 05 77.</p>
+            <p className="text-[12px] text-red-500">Noget gik galt. Prøv igen eller ring på +45 42 76 05 77.</p>
           )}
-          <p className={`sm:col-span-3 text-[12.5px] ${c.muted}`}>Gratis og uforpligtende. Ingen spam – kun dit tilbud.</p>
+          <p className={`text-[12.5px] ${c.muted}`}>Gratis og uforpligtende. Ingen spam – kun dit tilbud.</p>
         </form>
       )}
+      </div>
+      </div>
     </div>
   );
 }

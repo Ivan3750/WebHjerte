@@ -29,10 +29,6 @@ export function ReadMore({ items, eyebrow = "Læs videre", lines = ["Næste skri
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-40" />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-40 -left-24 w-[520px] h-[520px] rounded-full bg-[#00a8e8]/[0.08] blur-[120px]"
-      />
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <div className="mb-10 sm:mb-14">
           <RevealLines

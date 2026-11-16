@@ -63,7 +63,7 @@ const core = [
   ["Services og pakker", "/services"],
   ["AI-løsninger til virksomheder", "/ai-loesninger"],
   ["Alle typer hjemmesider og platforme", "/alle-typer-hjemmesider"],
-  ["Hjemmeside pris", "/hjemmeside-pris"],
+  ["Hjemmeside pris", "/services#priser"],
   ["Webdesign i Horsens", "/webdesign-horsens"],
   ["SEO i Horsens", "/seo-horsens"],
   ["AI SEO", "/ai-seo"],

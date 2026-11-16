@@ -36,7 +36,6 @@ const GuaranteesBlock = () => {
   const reduce = useReducedMotion();
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e]">
-      <div aria-hidden className="pointer-events-none absolute -bottom-40 -left-24 w-[520px] h-[520px] rounded-full bg-[#00a8e8]/[0.08] blur-[120px]" />
       <div className="relative max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-12 lg:gap-16">
         <div className="lg:sticky lg:top-28 self-start">
           <RevealLines

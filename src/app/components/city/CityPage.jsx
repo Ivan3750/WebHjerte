@@ -1,25 +1,28 @@
-import Link from "next/link";
 import PageHero, { PrimaryLink, GhostLink } from "../ui/PageHero";
 import SectionHead from "../ui/SectionHead";
-import BureauCompare from "../ui/BureauCompare";
-import PriceStrip from "../ui/PriceStrip";
+import Image from "next/image";
 import FormToLead from "../ui/FormToLead";
 import CasesCarousel from "../home/CasesCarousel";
 import { FadeUp } from "../home/fx/Reveal";
-import { SerpSimulator, BreakEven, ZigZag } from "./CityBlocks";
+import { SerpSimulator } from "./CityBlocks";
+import { offer as OFFER, promise as PROMISE } from "../../data/content/offer";
+import { photos as PHOTOS } from "../../data/photos";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
-import { isHiddenHref } from "../../data/hidden";
 
 /**
- * Personlig byside med fokus på virksomhedens resultat. Hver sektion har sin egen opbygning:
- *  1 Hero  2 Redaktionel tekst  3 Google-simulator  4 Tre søjler (skiftevis)  5 Brancher (bento)
- *  6 Hjemtjent-beregner  7 Sammenligning  8 Forløb (zig-zag)  9 Priser  10 Cases  11 Kontakt
+ * Personlig byside med fokus på virksomhedens resultat:
+ *  hero med foto, redaktionel tekst, Google-simulator, tre søjler, "Det får du", foto + løfter, cases og kontakt.
+ * Ingen priser, trin eller tabeller her (se docs/design-regler.md).
  * Ingen tegninger af byen – bynavn, bydele og eksempler gør siden personlig.
  */
 const wrap = "max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24";
 
 export default function CityPage({ city }) {
   const url = `${SITE_URL}${city.path}`;
+  const slug = city.path.slice(1);
+  const hero = PHOTOS[slug]?.hero;
+  const work = PHOTOS[slug]?.work;
+  const offer = OFFER[slug];
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -69,17 +72,11 @@ export default function CityPage({ city }) {
           </>
         }
         aside={
-          <div className="rounded-3xl bg-[#242828] border border-white/10 p-6 sm:p-8">
-            <p className="text-[16px] font-semibold text-white mb-6">{city.aside.title}</p>
-            <div className="flex flex-col gap-5">
-              {city.aside.items.map((d, i) => (
-                <div key={d.num} className={i ? "pt-5 border-t border-white/10" : ""}>
-                  <p className="text-[clamp(26px,2.8vw,34px)] font-semibold leading-none tracking-tight text-white">{d.num}</p>
-                  <p className="text-[15px] text-[#b4bdbd] mt-2 leading-snug">{d.label}</p>
-                </div>
-              ))}
+          hero ? (
+            <div className={`relative overflow-hidden rounded-3xl bg-[#2a2e2e] ${hero.portrait ? "aspect-[4/5] max-w-[420px] lg:ml-auto" : "aspect-[4/3]"}`}>
+              <Image src={hero.src} alt={hero.alt} fill priority sizes="(min-width: 1024px) 480px, 92vw" className={`object-cover ${hero.portrait ? "object-top" : ""}`} />
             </div>
-          </div>
+          ) : null
         }
       />
 
@@ -122,7 +119,6 @@ export default function CityPage({ city }) {
             {city.pillars.items.map((p, i) => (
               <FadeUp key={p.n} className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-center">
                 <div className={i % 2 ? "lg:order-2" : ""}>
-                  <p className="text-[clamp(44px,5vw,64px)] font-light leading-none tabular-nums text-[#00a8e8] mb-4">{p.n}</p>
                   <h3 className="text-[clamp(22px,2.4vw,30px)] font-semibold text-[#1c1e1e] leading-snug tracking-tight mb-4">{p.title}</h3>
                   <p className="text-[16px] text-[#4a4a4a] leading-[1.75] max-w-[52ch]">{p.text}</p>
                 </div>
@@ -136,76 +132,42 @@ export default function CityPage({ city }) {
         </div>
       </section>
 
-      {/* 5. Brancher – ujævnt gitter (bento) */}
-      <section className="scene bg-[#1c1e1e]">
-        <div className={wrap}>
-          <SectionHead dark lines={city.industries.title} lead={city.industries.lead} />
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <FadeUp className="lg:col-span-2 lg:row-span-2">
-              <Link href={city.industries.big.href} className="group h-full rounded-3xl bg-[#00a8e8] p-8 sm:p-12 flex flex-col justify-between gap-10 min-h-[340px] hover:bg-[#0092cb] transition-colors">
-                <div>
-                  <p className="text-[14px] font-semibold text-white/90 mb-4">{city.industries.big.goal}</p>
-                  <h3 className="text-[clamp(28px,3.4vw,44px)] font-semibold text-white leading-[1.1] tracking-tight mb-5">{city.industries.big.title}</h3>
-                  <p className="text-[17px] text-white/95 leading-[1.7] max-w-[46ch]">{city.industries.big.text}</p>
-                </div>
-                <span className="text-[15px] font-semibold text-white">{city.industries.big.cta} →</span>
-              </Link>
-            </FadeUp>
-            {city.industries.small.map((x, i) => {
-              // Skjulte sider (se data/hidden.js): kortet bliver stående, men uden link
-              const linked = x.href && !isHiddenHref(x.href);
-              const Tag = linked ? Link : "div";
-              return (
-                <FadeUp key={x.title} delay={0.08 * (i + 1)}>
-                  <Tag {...(linked ? { href: x.href } : {})} className={`group h-full rounded-3xl bg-[#242828] border border-white/10 p-7 flex flex-col gap-3 ${linked ? "hover:bg-[#2a2e2e] transition-colors" : ""}`}>
-                    <p className="text-[13px] font-semibold text-[#00a8e8]">{x.goal}</p>
-                    <p className="text-[21px] font-semibold text-white leading-snug">{x.title}</p>
-                    <p className="text-[15px] text-[#b4bdbd] leading-[1.7] flex-1">{x.text}</p>
-                    {linked && <span className="text-[14px] font-semibold text-white mt-2">{x.cta} →</span>}
-                  </Tag>
+      {/* Det får du */}
+      {offer && (
+        <section className="scene bg-[#1c1e1e]">
+          <div className={wrap}>
+            <SectionHead dark lines={[offer.title]} maxW="max-w-[24ch]" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
+              {offer.items.map((it, i) => (
+                <FadeUp key={it.title} delay={(i % 2) * 0.06} className="py-8 border-t border-white/15">
+                  <h3 className="text-[clamp(20px,1.9vw,24px)] font-semibold text-white leading-snug mb-3">{it.title}</h3>
+                  <p className="readable text-[17px] text-[#c4cccc] leading-[1.75] max-w-[52ch]">{it.text}</p>
                 </FadeUp>
-              );
-            })}
-            <FadeUp className="lg:col-span-3" delay={0.24}>
-              <Link href={city.industries.wide.href} className="group rounded-3xl bg-[#242828] border border-white/10 p-7 sm:p-9 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-[#2a2e2e] transition-colors">
-                <div className="max-w-[62ch]">
-                  <p className="text-[13px] font-semibold text-[#00a8e8] mb-2">{city.industries.wide.goal}</p>
-                  <p className="text-[22px] font-semibold text-white leading-snug mb-2">{city.industries.wide.title}</p>
-                  <p className="text-[15px] text-[#b4bdbd] leading-[1.7]">{city.industries.wide.text}</p>
-                </div>
-                <span className="btn-ghost shrink-0">{city.industries.wide.cta}</span>
-              </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Foto + løfter */}
+      <section className="scene bg-[#f7f6f6]">
+        <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-center`}>
+          {work && (
+            <FadeUp className={`relative overflow-hidden rounded-3xl bg-[#2a2e2e] ${work.portrait ? "aspect-[4/5]" : "aspect-[4/3]"} max-w-[460px] w-full`}>
+              <Image src={work.src} alt={work.alt} fill sizes="(min-width: 1024px) 460px, 92vw" className={`object-cover ${work.portrait ? "object-top" : ""}`} />
             </FadeUp>
+          )}
+          <div>
+            <SectionHead lines={["Sådan arbejder jeg"]} />
+            <div className="flex flex-col gap-4">
+              {PROMISE.map((t) => (
+                <p key={t.slice(0, 30)} className="readable text-[17px] leading-[1.75] text-[#3f4446] max-w-[58ch]">{t}</p>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 6. Hjemtjent-beregner (interaktiv) */}
-      <section className="scene bg-[#f7f6f6]">
-        <div className={wrap}>
-          <SectionHead lines={city.breakeven.title} lead={city.breakeven.lead} />
-          <BreakEven />
-        </div>
-      </section>
-
-      {/* 7. Sammenligning */}
-      <section className="scene bg-[#1c1e1e]">
-        <div className={wrap}>
-          <SectionHead dark lines={city.compare.title} lead={city.compare.lead} />
-          <BureauCompare rows={city.compare.rows} agencyLabel={city.compare.agencyLabel} meLabel="WebHjerte – Horsens" />
-        </div>
-      </section>
-
-      {/* 8. Forløb som zig-zag */}
-      <section className="scene bg-[#eceeee]">
-        <div className={wrap}>
-          <SectionHead lines={city.collab.title} lead={city.collab.lead} maxW="max-w-[30ch]" />
-          <ZigZag steps={city.collab.steps} />
-        </div>
-      </section>
-
-      {/* 9–11. Priser, cases og kontakt */}
-      <PriceStrip />
       <CasesCarousel />
       <FormToLead titleLine={city.formTitle} description={city.formDescription} />
     </>

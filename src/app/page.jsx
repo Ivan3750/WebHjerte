@@ -89,7 +89,7 @@ const localLinks = [
     desc: "Professionel side, du selv kan rette i – fra 4.500 kr og klar til Google.",
   },
   {
-    href: "/hjemmeside-pris",
+    href: "/services#priser",
     title: "Hjemmeside priser",
     visual: <VisualPrice />,
     desc: "Faste priser fra 2.500 kr inkl. moms og prisberegner – ingen skjulte gebyrer.",

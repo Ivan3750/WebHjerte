@@ -2,8 +2,7 @@ import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import SectionHead from "../../components/ui/SectionHead";
 import FormToLead from "../../components/ui/FormToLead";
 import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
-import { LandingLd, FaqSplit, CtaBand, MoreLinks } from "../../components/landing/shared";
-import { visibleLinks } from "../../data/hidden";
+import { LandingLd, FaqSplit, CtaBand } from "../../components/landing/shared";
 import LocalPack from "./_components/LocalPack";
 import SeoWorkbench from "./_components/SeoWorkbench";
 import SnippetDiff from "./_components/SnippetDiff";
@@ -60,12 +59,6 @@ const principles = [
   { k: "Prominens", t: "Hvor kendt og anmeldt er du? Anmeldelser, en komplet Google-profil og konsistente oplysninger bygger tilliden." },
 ];
 
-const more = visibleLinks([
-  { href: "/gratis-seo-tjek-horsens", title: "Gratis SEO-tjek", desc: "Få en gennemgang af din hjemmeside." },
-  { href: "/ai-seo", title: "AI SEO", desc: "Bliv nævnt i ChatGPT og Googles AI-svar." },
-  { href: "/blog/seo-tjekliste-lokale-virksomheder", title: "SEO-tjekliste", desc: "Trin for trin: det, der betyder mest lokalt." },
-  { href: "/webbureau-midtjylland", title: "Webbureau Midtjylland", desc: "Hjemmesider til hele regionen." },
-]);
 
 export default function SeoHorsensPage() {
   return (
@@ -120,7 +113,7 @@ export default function SeoHorsensPage() {
       {/* 3. Værkstedet – faner */}
       <section id="vaerksted" className="scene bg-[#1c1e1e] scroll-mt-20">
         <div className={wrap}>
-          <SectionHead dark lines={["Fire ting, der flytter", "din placering"]} lead="Klik dig igennem. Hver fane viser, hvad jeg faktisk gør – og hvordan det ser ud i praksis." />
+          <SectionHead dark lines={["Fire ting, der flytter", "din placering"]} />
           <SeoWorkbench />
         </div>
       </section>
@@ -128,7 +121,7 @@ export default function SeoHorsensPage() {
       {/* 4. Før/efter i Google */}
       <section className="scene bg-[#eceeee]">
         <div className={wrap}>
-          <SectionHead lines={["De typiske fejl –", "og hvordan de ser ud i Google"]} lead="Mange lokale virksomheder taber kunder på fejl, der kan rettes på en eftermiddag." maxW="max-w-[26ch]" />
+          <SectionHead lines={["De typiske fejl –", "og hvordan de ser ud i Google"]} maxW="max-w-[26ch]" />
           <SnippetDiff />
         </div>
       </section>
@@ -162,9 +155,8 @@ export default function SeoHorsensPage() {
       </section>
 
       {/* 7. FAQ */}
-      <FaqSplit dark title={["Det, folk spørger om", "før de starter"]} lead="Kort og ærligt – også om det, SEO ikke kan." faqs={faqs} />
+      <FaqSplit dark title={["Det, folk spørger om", "før de starter"]} faqs={faqs} />
 
-      <MoreLinks links={more} />
 
       <FormToLead
         titleLine="Vil du ses af flere lokale kunder?"

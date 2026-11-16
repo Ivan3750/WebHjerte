@@ -141,7 +141,7 @@ export const nichePages = [
           ],
         },
         after: ["Priserne ligger fast og står i prisguiden. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit firma."],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [
@@ -269,7 +269,7 @@ export const nichePages = [
           ],
         },
         after: ["Alle priser og hvad der er med står i prisguiden. Du får et fast tilbud inden for 24 timer."],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [
@@ -417,7 +417,7 @@ export const nichePages = [
           ],
         },
         after: ["Se prisguiden for faste priser og hvad der er med. Du får et konkret tilbud inden for 24 timer."],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [
@@ -560,7 +560,7 @@ export const nichePages = [
           ],
         },
         after: ["Se prisguiden for faste priser. Du får et konkret tilbud inden for 24 timer."],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [
@@ -706,7 +706,7 @@ export const nichePages = [
           ],
         },
         after: ["Se prisguiden for faste priser. Du får et konkret tilbud inden for 24 timer."],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [
@@ -853,7 +853,7 @@ export const nichePages = [
           ],
         },
         after: ["Se prisguiden for faste priser. Du får et konkret tilbud inden for 24 timer."],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [

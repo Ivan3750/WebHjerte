@@ -158,7 +158,7 @@ const sections = [
 
 const related = [
   {
-    href: "/hjemmeside-pris",
+    href: "/services#priser",
     title: "Hjemmeside pris",
     desc: "Se de faste priser og hvad hver pakke indeholder.",
   },

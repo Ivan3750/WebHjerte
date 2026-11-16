@@ -2,11 +2,14 @@ import { ArrowIcon } from "../../components/ui/ArrowIcon";
 import Link from "next/link";
 import HeroService from "./_components/HeroService";
 import WhatWeOfferBlock from "./_components/WhatWeOfferBlock";
-import Whyusblock from "./_components/Whyusblock";
 import PackagesBlock from "./_components/PackagesBlock";
 import { visibleLinks } from "../../data/hidden";
-import ProcessBlock from "../../components/home/ProcessBlock";
-import AfterLaunchBlock from "./_components/AfterLaunchBlock";
+import PriceCalculator from "../../components/ui/PriceCalculator";
+import FormToLead from "../../components/ui/FormToLead";
+import { FaqSplit, FaqLd } from "../../components/landing/shared";
+import { PromiseBlock } from "../../components/seo/ServiceLayout";
+import { promise } from "../../data/content/offer";
+import { photoFor } from "../../data/photos";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
 import SectionHead from "../../components/ui/SectionHead";
 import { FadeUp } from "../../components/home/fx/Reveal";
@@ -157,6 +160,15 @@ function LinkList({ title, items }) {
   );
 }
 
+const faqs = [
+  { q: "Er priserne inkl. moms?", a: "Ja. Alle priser på siden er inkl. moms, og du får et skriftligt tilbud med fast pris, før jeg går i gang." },
+  { q: "Hvad er forskellen på Basis og Standard?", a: "Basis (4.500 kr) er 3–5 sider med kontaktformular, Google Maps og basic SEO – klar på ca. 5 dage. Standard (8.500 kr) er op til 8 sider med SEO, analytics, booking og formularer – klar på ca. 10 dage." },
+  { q: "Er der løbende udgifter?", a: "Du betaler for domæne og hosting. Vedligeholdelse er valgfri: 249, 449 eller 799 kr/md uden binding, alt efter hvor meget hjælp du vil have." },
+  { q: "Hvad hvis jeg ikke kan lide designet?", a: "Du ser første designudkast efter 48 timer. Passer det ikke, betaler du 0 kr for designet." },
+  { q: "Hvad koster en webshop?", a: "Webshops er skræddersyede løsninger fra 14.000 kr inkl. moms. Prisen afhænger af antal produkter, betaling, fragt og integrationer." },
+  { q: "Kan jeg få en hjemmeside billigere end 2.500 kr?", a: "Med en hjemmesidebygger kan du starte gratis, men så betaler du hver måned og bygger selv. Landingsiden til 2.500 kr er den billigste løsning, hvor jeg bygger siden for dig." },
+];
+
 const Services = () => {
   return (
     <>
@@ -167,19 +179,25 @@ const Services = () => {
 
       <HeroService />
       <WhatWeOfferBlock />
-      <Whyusblock />
+      <PromiseBlock photo={photoFor("services", "work")} promise={promise} />
       <div id="priser" className="scroll-mt-[68px]">
         <PackagesBlock />
       </div>
-      <ProcessBlock />
-      <AfterLaunchBlock />
+
+      {/* Prisberegner – den eneste side med beregner (plus AI SEO og vedligeholdelse) */}
+      <section className="scene bg-[#1c1e1e]">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+          <PriceCalculator dark />
+        </div>
+      </section>
+
       <SupportTariffsBlock />
 
       {/* Brancher og områder – samlet her, så alle sider kan findes og linkes */}
       {(trades.length > 0 || areas.length > 0) && (
         <section id="brancher" className="scene bg-[#1c1e1e] scroll-mt-[68px]">
           <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-            <SectionHead dark lines={["Hjemmesider til din branche", "– og dit område"]} lead="Hver branche og hvert område har sin egen side med det, der virker netop dér." />
+            <SectionHead dark lines={["Hjemmesider til din branche", "– og dit område"]} />
             <div id="omraader" className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 scroll-mt-[90px]">
               {trades.length > 0 && <LinkList title="Brancher" items={trades} />}
               {areas.length > 0 && <LinkList title="Områder" items={areas} />}
@@ -187,6 +205,13 @@ const Services = () => {
           </div>
         </section>
       )}
+
+      <FaqLd faqs={faqs} />
+      <FaqSplit title={["Spørgsmål om", "priser og ydelser"]} faqs={faqs} />
+      <FormToLead
+        titleLine="Få en fast pris på din hjemmeside"
+        description="Skriv kort, hvad du har brug for. Du får en fast pris inden for 24 timer – helt uforpligtende."
+      />
     </>
   );
 };

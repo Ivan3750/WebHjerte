@@ -1,9 +1,7 @@
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import SectionHead from "../../components/ui/SectionHead";
 import FormToLead from "../../components/ui/FormToLead";
-import { FadeUp } from "../../components/home/fx/Reveal";
-import { LandingLd, FaqSplit, CtaBand, MoreLinks } from "../../components/landing/shared";
-import { visibleLinks } from "../../data/hidden";
+import { LandingLd, FaqSplit, CtaBand } from "../../components/landing/shared";
 import AiAnswerDemo from "./_components/AiAnswerDemo";
 import SearchShift from "./_components/SearchShift";
 import SignalMeter from "./_components/SignalMeter";
@@ -62,19 +60,7 @@ const faqs = [
   },
 ];
 
-const steps = [
-  { n: "01", t: "Analyse", d: "Jeg finder ud af, hvad dine kunder spørger Google og AI om – og hvor du står lige nu." },
-  { n: "02", t: "Indhold", d: "Dine ydelsessider og svar omskrives, så de besvarer spørgsmålene klart. Alt gennemgås af et menneske." },
-  { n: "03", t: "Struktur", d: "Struktureret data, FAQ og ens virksomhedsoplysninger gør det nemt for maskiner at forstå dig." },
-  { n: "04", t: "Måling", d: "Du får tal på placeringer, trafik og henvendelser, og jeg justerer løbende." },
-];
 
-const more = visibleLinks([
-  { href: "/seo-horsens", title: "SEO Horsens", desc: "Lokal SEO og teknisk optimering." },
-  { href: "/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai", title: "Guide: nævnt af ChatGPT", desc: "Sådan gør du det trin for trin." },
-  { href: "/ai-chatbot-til-hjemmeside", title: "AI-chatbot", desc: "Svar kunderne, mens du arbejder." },
-  { href: "/gratis-seo-tjek-horsens", title: "Gratis SEO-tjek", desc: "Få en gennemgang af din side." },
-]);
 
 export default function AiSeoPage() {
   return (
@@ -107,7 +93,6 @@ export default function AiSeoPage() {
         <div className={wrap}>
           <SectionHead
             lines={["Kunden får ét svar –", "ikke ti links"]}
-            lead="Traditionel SEO handler om at ligge højt på listen. AI-synlighed handler om at blive en del af selve svaret. Er du ikke blandt de kilder, AI stoler på, eksisterer du ikke i det svar – uanset hvor flot din hjemmeside er."
             maxW="max-w-[22ch]"
           />
           <SearchShift />
@@ -120,34 +105,15 @@ export default function AiSeoPage() {
           <SectionHead
             dark
             lines={["Hvad AI kigger efter", "– slå signalerne til"]}
-            lead="AI læser dit indhold som tekst og relationer, ikke kun som søgeord. Derfor belønner den klarhed, konsistens og dokumenterede fakta. Prøv selv."
           />
           <SignalMeter />
-        </div>
-      </section>
-
-      {/* 4. Forløb */}
-      <section className="scene bg-[#eceeee]">
-        <div className={wrap}>
-          <SectionHead lines={["Fra analyse til målbare", "tal i fire trin"]} maxW="max-w-[24ch]" />
-          <ol className="grid grid-cols-1 md:grid-cols-4 relative">
-            <span aria-hidden className="hidden md:block absolute left-0 right-0 top-[7px] h-px bg-[#1c1e1e]/20" />
-            {steps.map((s, i) => (
-              <FadeUp as="li" key={s.n} delay={i * 0.08} className="relative pt-0 md:pt-10 pb-10 md:pb-0 md:pr-8 pl-8 md:pl-0 border-l md:border-l-0 border-[#1c1e1e]/20">
-                <span aria-hidden className="absolute -left-[7px] md:left-0 top-0 w-3.5 h-3.5 rounded-full bg-[#00a8e8] ring-4 ring-[#eceeee]" />
-                <p className="text-[13px] font-semibold text-[#007aab] tabular-nums mb-2">{s.n}</p>
-                <p className="text-[22px] font-semibold tracking-tight text-[#1c1e1e] mb-3">{s.t}</p>
-                <p className="text-[15px] text-[#4a4a4a] leading-[1.75] max-w-[30ch]">{s.d}</p>
-              </FadeUp>
-            ))}
-          </ol>
         </div>
       </section>
 
       {/* 5. Priser som tabel */}
       <section id="priser" className="scene bg-[#e4f0f7] scroll-mt-20">
         <div className={wrap}>
-          <SectionHead lines={["Tre pakker –", "fast pris, ingen binding"]} lead="Det første SEO- og web-tjek er gratis. Alle priser er inkl. moms." />
+          <SectionHead lines={["Tre pakker –", "fast pris, ingen binding"]} />
           <PricingMatrix />
         </div>
       </section>
@@ -159,8 +125,7 @@ export default function AiSeoPage() {
         label="Få et gratis tjek"
       />
 
-      <FaqSplit dark title={["Ærlige svar om", "AI SEO"]} lead="Også om det, jeg ikke kan love." faqs={faqs} />
-      <MoreLinks links={more} />
+      <FaqSplit dark title={["Ærlige svar om", "AI SEO"]} faqs={faqs} />
       <FormToLead
         titleLine="Klar til at blive fundet af AI?"
         description="Skriv kort om din virksomhed og din hjemmeside. Jeg svarer inden for 24 timer – gratis og uforpligtende."

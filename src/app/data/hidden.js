@@ -19,8 +19,15 @@ export const HIDDEN = {
     "digitalt-bureau-horsens",
     "webdesign-horsens",
   ],
-  // Sider til forskellige brancher
-  business: [
+  // Fjernet fra sitet (16. nov. 2026) – 301 til /services i next.config.js. Holdes her, så alle links filtreres væk.
+  removed: [
+    "hjemmeside-til-haandvaerkere",
+    "hjemmeside-til-vvs",
+    "hjemmeside-til-elektriker",
+    "hjemmeside-til-tomrer",
+    "hjemmeside-til-restauranter",
+    "hjemmeside-til-saloner",
+    "hjemmeside-til-virksomhed",
   ],
 };
 

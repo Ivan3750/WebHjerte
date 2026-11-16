@@ -1,7 +1,7 @@
 // Lokale og regionale landingssider (baseret på Search Console-søgninger)
 
 const relatedCore = [
-  { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Faste pakker fra 2.500 kr uden skjulte gebyrer." },
+  { href: "/services#priser", title: "Hjemmeside pris", desc: "Faste pakker fra 2.500 kr uden skjulte gebyrer." },
   { href: "/portefolje", title: "Portefølje", desc: "Se eksempler på færdige hjemmesider." },
   { href: "/gratis-seo-tjek-horsens", title: "Gratis SEO-tjek", desc: "Få en gennemgang af din nuværende hjemmeside." },
 ];
@@ -233,7 +233,7 @@ export const localPages = [
         paragraphs: [
           "Priserne ligger fast og er de samme, uanset om du sidder i Aarhus eller Horsens. Du får et konkret, fast tilbud inden for 24 timer, når jeg har hørt om dit projekt.",
         ],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [
@@ -343,7 +343,7 @@ export const localPages = [
         after: [
           "Jeg prissætter efter omfang – ikke efter timer – og du får et fast tilbud, før vi går i gang. Alle priser står i prisguiden.",
         ],
-        cta: { href: "/hjemmeside-pris", label: "Se prisguiden" },
+        cta: { href: "/services#priser", label: "Se prisguiden" },
       },
     ],
     faqs: [

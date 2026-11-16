@@ -185,7 +185,6 @@ export function Steps({ items }) {
     <FadeUp className="my-9">
       <div className="relative overflow-hidden rounded-3xl bg-[#1c1e1e] px-5 sm:px-9 py-7 sm:py-10">
         <div aria-hidden className="grid-fade absolute inset-0 opacity-30" />
-        <div aria-hidden className="pointer-events-none absolute -top-24 -right-16 w-72 h-72 rounded-full bg-[#00a8e8]/[0.10] blur-[90px]" />
         <div className="relative">
           <ScrollTimeline items={items} />
         </div>

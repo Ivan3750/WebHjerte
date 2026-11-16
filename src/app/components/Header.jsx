@@ -63,7 +63,7 @@ const allNavItems = [
       },
     ],
   },
-  { href: "/hjemmeside-pris", label: "Priser" },
+  { href: "/services#priser", label: "Priser" },
   { href: "/portefolje", label: "Portefølje" },
   { href: "/blog", label: "Blog" },
   { href: "/om-mig", label: "Om mig" },

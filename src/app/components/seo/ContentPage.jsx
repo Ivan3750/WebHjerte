@@ -16,9 +16,13 @@ import ProcessBlock from "../home/ProcessBlock";
 import { VARIANTS } from "../variants/registry";
 import ThemedHero from "../variants/ThemedHero";
 import { cleanSection, visibleLinks } from "../../data/hidden";
-import ServiceStory, { ShortAnswer } from "./ServiceStory";
+import { faqsWithoutPrices } from "../../lib/prices";
 import { FaqSplit } from "../landing/shared";
 import FormToLead from "../ui/FormToLead";
+import ServiceLayout from "./ServiceLayout";
+import SupportTariffsBlock from "../../(pages)/services/_components/SupportTariffsBlock";
+import { offer as OFFER, promise as PROMISE } from "../../data/content/offer";
+import { photos as PHOTOS } from "../../data/photos";
 
 const fmtDate = (iso) =>
   new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
@@ -51,7 +55,7 @@ export default function ContentPage({
   summary,
   summaryLabel = "Kort svar",
   sections: sectionsProp = [],
-  faqs = [],
+  faqs: faqsProp = [],
   related: relatedProp = [],
   breadcrumbs = [],
   published,
@@ -71,6 +75,8 @@ export default function ContentPage({
   const skip = new Set(omit);
   // Links til skjulte sider fjernes, men teksten bevares
   const sections = sectionsProp.map(cleanSection);
+  // Tjenestesider (undtagen vedligeholdelse) viser ingen kronebeløb – heller ikke i FAQ
+  const faqs = type === "service" && path !== "/hosting-og-vedligeholdelse" ? faqsWithoutPrices(faqsProp) : faqsProp;
   const related = visibleLinks(relatedProp);
   const v = VARIANTS[variant] || VARIANTS[path?.slice(1)];
   const url = `${SITE_URL}${path}`;
@@ -134,6 +140,29 @@ export default function ContentPage({
 
   const isArticle = type === "article";
   const isService = type === "service";
+
+  // Ydelsessider: enkel opbygning med fotos og "Det får du" (se ServiceLayout)
+  if (isService) {
+    const slug = path?.slice(1);
+    return (
+      <ServiceLayout
+        jsonLd={jsonLd}
+        h1={h1}
+        intro={intro}
+        summary={summary}
+        sections={sections}
+        faqs={faqs}
+        related={related}
+        offer={OFFER[slug]}
+        promise={PROMISE}
+        photos={PHOTOS[slug]}
+        formTitle={formTitle}
+        // Priser kun på /services, /ai-seo og her
+        allowPrices={slug === "hosting-og-vedligeholdelse"}
+        extra={slug === "hosting-og-vedligeholdelse" ? <SupportTariffsBlock /> : null}
+      />
+    );
+  }
   const toc = sections.filter((s) => s.h2).map((s) => ({ id: s.id || slugify(s.h2), label: s.h2 }));
 
   const heroMeta = isArticle ? (
@@ -176,7 +205,6 @@ export default function ContentPage({
     <FadeUp className="my-4">
       <div className="relative overflow-hidden rounded-3xl bg-[#1c1e1e] p-7 sm:p-10">
         <div aria-hidden className="grid-fade absolute inset-0 opacity-40" />
-        <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 w-72 h-72 rounded-full bg-[#00a8e8]/10 blur-[90px]" />
         <div className="relative">
           <p className="text-white font-semibold tracking-tight leading-[1.15] text-[clamp(20px,2.4vw,28px)] mb-4 max-w-[22ch]">
             Vil du vide, hvad det koster for dig?
@@ -274,7 +302,6 @@ export default function ContentPage({
         </section>
       ) : (
         <>
-          {isService && <ShortAnswer text={summary} />}
           {v ? v.blocks({ nichePackage }) : isService && (
             <>
               {!skip.has("price") && <PriceStrip />}
@@ -285,7 +312,6 @@ export default function ContentPage({
             </>
           )}
           {afterSummary}
-          {isService && !skip.has("guide") && <ServiceStory sections={sections} />}
           {!isService && !skip.has("guide") && <GuideSection sections={sections} visuals={visuals} collapse={false} open={v ? v.open : 2} />}
         </>
       )}

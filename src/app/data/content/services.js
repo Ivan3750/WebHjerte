@@ -65,7 +65,7 @@ export const servicePages = [
         paragraphs: [
           "Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.",
         ],
-        cta: { href: "/hjemmeside-pris", label: "Se alle priser" },
+        cta: { href: "/services#priser", label: "Se alle priser" },
       },
     ],
     faqs: [
@@ -164,7 +164,7 @@ export const servicePages = [
     related: [
       { href: "/skraeddersyede-hjemmesider", title: "Skræddersyede hjemmesider", desc: "Unikt design, hurtig kode." },
       { href: "/blog/hvor-lang-tid-tager-det-at-lave-en-hjemmeside", title: "Hvor lang tid tager det?", desc: "Realistisk tidsplan." },
-      { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Fast pris fra 2.500 kr." },
+      { href: "/services#priser", title: "Hjemmeside pris", desc: "Fast pris fra 2.500 kr." },
     ],
   },
   {
@@ -236,7 +236,7 @@ export const servicePages = [
     related: [
       { href: "/services", title: "Services", desc: "Alle pakker og ydelser." },
       { href: "/wordpress-horsens", title: "WordPress", desc: "Hjemmeside, du selv kan redigere." },
-      { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Pakker og priser." },
+      { href: "/services#priser", title: "Hjemmeside pris", desc: "Pakker og priser." },
     ],
   },
   {
@@ -451,7 +451,7 @@ export const servicePages = [
     ],
     related: [
       { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", title: "Hvad koster en hjemmeside om året?", desc: "Guide til de løbende udgifter." },
-      { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Pakker og priser." },
+      { href: "/services#priser", title: "Hjemmeside pris", desc: "Pakker og priser." },
       { href: "/blog/baeredygtigt-webdesign", title: "Bæredygtigt webdesign", desc: "Lette sider og grønnere hosting." },
     ],
   },

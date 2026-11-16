@@ -1,14 +1,12 @@
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import SectionHead from "../../components/ui/SectionHead";
-import BureauCompare from "../../components/ui/BureauCompare";
-import PriceStrip from "../../components/ui/PriceStrip";
 import FormToLead from "../../components/ui/FormToLead";
-import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
-import { LandingLd, FaqSplit, MoreLinks } from "../../components/landing/shared";
-import { visibleLinks } from "../../data/hidden";
+import { LandingLd, FaqSplit } from "../../components/landing/shared";
+import { OfferBlock, PromiseBlock } from "../../components/seo/ServiceLayout";
+import { offer, promise } from "../../data/content/offer";
+import { photoFor } from "../../data/photos";
 import RegionRadar from "./_components/RegionRadar";
-import Receipt from "./_components/Receipt";
-import DayStrip from "./_components/DayStrip";
+import { faqsWithoutPrices } from "../../lib/prices";
 import SiteTree from "./_components/SiteTree";
 
 const path = "/webbureau-midtjylland";
@@ -29,7 +27,7 @@ export const metadata = {
   },
 };
 
-const faqs = [
+const faqsAll = [
   {
     q: "Arbejder I kun med virksomheder i Horsens?",
     a: "Nej. Jeg er baseret i Horsens, men arbejder med virksomheder i hele Midtjylland og resten af Danmark. Samarbejdet foregår online via video, telefon og mail, så afstand er ikke en hindring.",
@@ -47,21 +45,10 @@ const faqs = [
     a: "Du får direkte kontakt med den, der bygger din hjemmeside, hurtigere svar og lavere priser, fordi du ikke betaler for projektledere og overhead. Til gengæld er jeg ikke det rette valg til meget store enterprise-projekter.",
   },
 ];
+// Ingen kronebeløb på denne side (priser står under Services)
+const faqs = faqsWithoutPrices(faqsAll);
 
-const compareRows = [
-  { topic: "Kontakt", agency: "Via projektleder eller account manager.", me: "Direkte med udvikleren." },
-  { topic: "Pris", agency: "Ofte timebaseret, højere startpris.", me: "Fast pris fra 2.500 kr." },
-  { topic: "Svartid", agency: "Varierer.", me: "Inden for 24 timer." },
-  { topic: "Tidsplan", agency: "Uger til måneder.", me: "2–10 dage." },
-  { topic: "Bedst til", agency: "Store organisationer og komplekse projekter.", me: "Små og mellemstore virksomheder." },
-];
 
-const more = visibleLinks([
-  { href: "/seo-horsens", title: "SEO Horsens", desc: "Lokal SEO og teknisk optimering." },
-  { href: "/webbureau-aarhus", title: "Webbureau Aarhus", desc: "Hjemmesider til Aarhus-virksomheder." },
-  { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Pakker og priser uden skjulte gebyrer." },
-  { href: "/portefolje", title: "Portefølje", desc: "Se eksempler på færdige hjemmesider." },
-]);
 
 export default function WebbureauMidtjyllandPage() {
   return (
@@ -81,63 +68,27 @@ export default function WebbureauMidtjyllandPage() {
         actions={
           <>
             <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
-            <GhostLink href="/hjemmeside-pris">Se priserne</GhostLink>
+            <GhostLink href="/portefolje">Se eksempler</GhostLink>
           </>
         }
         below={<RegionRadar />}
       />
 
-      {/* 2. Kvittering */}
-      <section className="scene bg-[#f7f6f6]">
-        <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[1fr_0.9fr] gap-14 lg:gap-24 items-center`}>
-          <div>
-            <RevealLines
-              lines={["Du ved, hvad det koster,", "før vi går i gang"]}
-              className="font-semibold tracking-tight leading-[1.1] text-[clamp(24px,2.6vw,34px)] text-[#1c1e1e] mb-6 max-w-[22ch]"
-            />
-            <FadeUp as="p" delay={0.1} className="text-[16px] text-[#4a4a4a] leading-[1.8] mb-4 max-w-[48ch]">
-              Mange større bureauer er bygget til store budgetter og lange forløb. Jeg har valgt det modsatte: enkle processer, klare priser og hurtig levering.
-            </FadeUp>
-            <FadeUp as="p" delay={0.16} className="text-[16px] text-[#4a4a4a] leading-[1.8] max-w-[48ch]">
-              Du ved, hvad det koster, hvornår det er klar, og hvem du skal ringe til, hvis du har et spørgsmål.
-            </FadeUp>
-          </div>
-          <Receipt />
-        </div>
-      </section>
-
-      {/* 3. Sammenligning */}
-      <section className="scene bg-[#1c1e1e]">
-        <div className={wrap}>
-          <SectionHead dark lines={["Lokalt og lille –", "eller stort bureau?"]} lead="Begge dele har deres plads. Her er forskellen, så du kan vælge det, der passer til dit projekt." />
-          <BureauCompare rows={compareRows} agencyLabel="Stort bureau" meLabel="WebHjerte (lokalt, lille)" />
-        </div>
-      </section>
+      <OfferBlock offer={offer["webbureau-midtjylland"]} />
+      <PromiseBlock photo={photoFor("webbureau-midtjylland", "work")} promise={promise} />
 
       {/* 4. SEO i regionen */}
       <section className="scene bg-[#f7f6f6]">
         <div className={wrap}>
           <SectionHead
             lines={["SEO i Midtjylland:", "en side pr. ydelse og område"]}
-            lead="Mange virksomheder betjener kunder i flere byer. Derfor bygger jeg med både et lokalt og et regionalt perspektiv. Det giver bedre synlighed end én enkelt generel forside."
             maxW="max-w-[26ch]"
           />
           <SiteTree />
         </div>
       </section>
 
-      {/* 5. Dagsstribe */}
-      <section className="scene bg-[#1c1e1e]">
-        <div className={wrap}>
-          <SectionHead dark lines={["Fra første samtale", "til live på 2–10 dage"]} lead="Første designudkast er klar efter 48 timer. Intet bygges, før du har godkendt det." />
-          <DayStrip />
-        </div>
-      </section>
-
-      <PriceStrip />
-
       <FaqSplit dark title={["Spørgsmål fra virksomheder", "uden for Horsens"]} faqs={faqs} />
-      <MoreLinks links={more} />
       <FormToLead
         titleLine="Driver du virksomhed i Midtjylland?"
         description="Skriv kort, hvad du har brug for. Du får en fast pris og et første designudkast inden for 48 timer – passer det ikke, betaler du 0 kr."

@@ -94,7 +94,7 @@ const GratisSeoTjekHorsens = () => {
         actions={
           <>
             <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
-            <GhostLink href="/hjemmeside-pris">Se priser</GhostLink>
+            <GhostLink href="/services#priser">Se priser</GhostLink>
           </>
         }
       />

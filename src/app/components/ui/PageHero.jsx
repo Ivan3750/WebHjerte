@@ -25,10 +25,6 @@ export default function PageHero({
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-60" />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-48 right-[-8%] w-[560px] h-[560px] rounded-full bg-[#00a8e8]/[0.09] blur-[120px]"
-      />
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 pt-16 sm:pt-24 pb-16 sm:pb-24">
         <div className={aside ? "grid lg:grid-cols-[1.15fr_1fr] gap-14 lg:gap-16 items-center" : ""}>
           <div className="flex flex-col items-start">

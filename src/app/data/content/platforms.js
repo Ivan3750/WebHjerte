@@ -88,7 +88,7 @@ export const platformPages = [
         paragraphs: [
           "Priserne er faste og afhænger af omfang, ikke af platform: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og skræddersyede løsninger (webshop, kundeportal, AI-funktioner) fra 14.000 kr. Alle priser inkl. moms. Abonnementer og gebyrer til platforme som Shopify og Webflow betales direkte til udbyderen.",
         ],
-        cta: { href: "/hjemmeside-pris", label: "Se alle priser" },
+        cta: { href: "/services#priser", label: "Se alle priser" },
       },
     ],
     faqs: [

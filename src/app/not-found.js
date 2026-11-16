@@ -7,7 +7,7 @@ export const metadata = {
 
 const links = [
   { href: "/services", label: "Services og pakker" },
-  { href: "/hjemmeside-pris", label: "Hjemmeside pris" },
+  { href: "/services#priser", label: "Hjemmeside pris" },
   { href: "/blog", label: "Guides og blog" },
   { href: "/kontakt", label: "Kontakt" },
 ];

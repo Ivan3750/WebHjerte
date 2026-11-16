@@ -172,7 +172,7 @@ const sections = [
         ["Skræddersyet", "fra 14.000 kr", "Webshop, kundeportal, AI-chatbot eller specialfunktioner", "Aftales"],
       ],
     },
-    cta: { href: "/hjemmeside-pris", label: "Se alt, hvad pakkerne indeholder" },
+    cta: { href: "/services#priser", label: "Se alt, hvad pakkerne indeholder" },
   },
   {
     h2: "Sådan kommer du i gang",
@@ -194,7 +194,7 @@ const faqs = [
 ];
 
 const related = [
-  { href: "/hjemmeside-pris", title: "Alle priser og pakker", desc: "Se præcis hvad hver pakke indeholder." },
+  { href: "/services#priser", title: "Alle priser og pakker", desc: "Se præcis hvad hver pakke indeholder." },
   { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", title: "Hvad koster en hjemmeside om året?", desc: "Domæne, hosting og vedligeholdelse." },
   { href: "/wordpress-hjemmeside", title: "Professionel WordPress-hjemmeside", desc: "Fra 4.500 kr – du redigerer selv." },
   { href: "/webshop-hjemmeside", title: "Webshop", desc: "Sælg online fra 14.000 kr." },
