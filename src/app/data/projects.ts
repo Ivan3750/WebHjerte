@@ -7,7 +7,7 @@ import WorkOut from "../assets/cases/WorkOutM.png";
 import RenServ from "../assets/cases/renserv.jpg";
 import Lønbæks from "../assets/cases/lønbæks.jpg";
 import VEKA from "../assets/cases/VEKA.png";
-import ImprovePhysio from "../assets/cases/improve.png";
+import ImprovePhysio from "../assets/cases/Improve.png";
 import ImprovePhysioMobile from "../assets/cases/improvephysio-mobile.jpg";
 import { StaticImageData } from "next/image";
 
