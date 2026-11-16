@@ -1,26 +1,27 @@
-import { notFound } from "next/navigation";
-import { isHiddenHref } from "../../data/hidden";
-import LocalLandingPage from "../../components/seo/LocalLandingPage";
+import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
+import SectionHead from "../../components/ui/SectionHead";
+import FormToLead from "../../components/ui/FormToLead";
+import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
+import { LandingLd, FaqSplit, CtaBand, MoreLinks } from "../../components/landing/shared";
+import { visibleLinks } from "../../data/hidden";
+import LocalPack from "./_components/LocalPack";
+import SeoWorkbench from "./_components/SeoWorkbench";
+import SnippetDiff from "./_components/SnippetDiff";
+import GrowthCurve from "./_components/GrowthCurve";
 
 const path = "/seo-horsens";
+const wrap = "max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24";
 
 export const metadata = {
   title: "SEO Horsens – flere lokale kunder fra Google & AI | WebHjerte",
   description:
     "SEO i Horsens: lokal SEO, teknisk optimering og AI-synlighed, så kunder finder dig i Google og ChatGPT. Start med et gratis SEO-tjek.",
-  keywords: [
-    "SEO Horsens",
-    "SEO bureau Horsens",
-    "lokal SEO Horsens",
-    "horsens SEO",
-    "søgemaskineoptimering Horsens",
-  ],
+  keywords: ["SEO Horsens", "SEO bureau Horsens", "lokal SEO Horsens", "horsens SEO", "søgemaskineoptimering Horsens"],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "SEO i Horsens – bliv fundet af lokale kunder | WebHjerte",
-    description:
-      "Lokal SEO og teknisk optimering til virksomheder i Horsens. Start med et gratis SEO-tjek.",
+    description: "Lokal SEO og teknisk optimering til virksomheder i Horsens. Start med et gratis SEO-tjek.",
     url: `https://www.webhjerte.dk${path}`,
     type: "website",
   },
@@ -47,125 +48,128 @@ const faqs = [
     q: "Skal jeg have en ny hjemmeside for at få gavn af SEO?",
     a: "Ikke nødvendigvis. Mange hjemmesider kan forbedres markant med de rigtige tekniske rettelser og nyt indhold. Er hjemmesiden derimod meget langsom eller forældet, kan en ny hjemmeside med SEO bygget ind være den hurtigste vej.",
   },
-];
-
-const sections = [
   {
-    h2: "SEO, der giver lokale kunder – ikke bare trafik",
-    paragraphs: [
-      "De fleste kunder til en lokal virksomhed starter med en søgning på Google. Er du ikke synlig, når de søger, vælger de en konkurrent. Med SEO sørger jeg for, at din hjemmeside bliver fundet af de personer i Horsens og omegn, der aktivt leder efter det, du tilbyder.",
-      "Jeg fokuserer på søgninger, der faktisk fører til henvendelser, frem for tomme besøgstal. En hjemmeside med få, men relevante besøgende, der ringer eller skriver, er mere værd end tusind tilfældige klik.",
-    ],
-  },
-  {
-    h2: "Det indeholder min SEO-indsats",
-    bullets: [
-      "Gratis SEO- og web-tjek, der afdækker de vigtigste problemer og muligheder",
-      "Søgeordsanalyse tilpasset din branche og dit lokalområde",
-      "Teknisk SEO: hastighed, mobilvisning, sitemap og at Google kan finde alle dine sider",
-      "On-page SEO: titler, beskrivelser, overskrifter og interne links",
-      "Lokal SEO: Google Virksomhedsprofil, lokale oplysninger og konsistente kontaktdata",
-      "Indhold, der besvarer dine kunders spørgsmål og styrker din troværdighed",
-      "Opfølgning på data fra Google Search Console, så vi ser, hvad der virker",
-    ],
-  },
-  {
-    h2: "Start med et gratis SEO-tjek",
-    paragraphs: [
-      "Er du i tvivl om, hvor din hjemmeside står, er det bedste første skridt et gratis SEO-tjek. Du får en gennemgang af hastighed, mobilvenlighed, tekniske fejl og synlighed – og et konkret billede af, hvad der bør prioriteres først.",
-    ],
-  },
-  {
-    h2: "SEO og AI-søgning",
-    paragraphs: [
-      "Flere og flere finder svar via AI-assistenter og AI-oversigter i søgeresultaterne. Derfor bygger jeg også hjemmesider, så de er lette for både Google og AI at forstå: tydelig struktur, klare svar og korrekte oplysninger om din virksomhed. Læs mere om AI SEO nedenfor.",
-    ],
-  },
-  {
-    h2: "Hvad er lokal SEO?",
-    paragraphs: [
-      "Lokal SEO er søgemaskineoptimering med fokus på søgninger, hvor kunden leder efter noget i nærheden – “VVS Horsens”, “frisør Horsens”, “webbureau Horsens”. Google viser typisk et kort med tre virksomheder og derefter de almindelige resultater. For at komme med skal Google forstå, hvad du tilbyder, hvor du holder til, og at du er troværdig.",
-      "De vigtigste faktorer er relevans (passer din side til søgningen?), afstand (hvor tæt er du på kunden?) og prominens (hvor kendt og anmeldt er du?). Du kan påvirke relevans og prominens markant – og det er dér, jeg hjælper.",
-    ],
-  },
-  {
-    h2: "Fire trin i min SEO-proces",
-    steps: [
-      { title: "Gratis SEO-tjek", text: "Jeg gennemgår hastighed, mobilvisning, indeksering og indhold og fortæller ærligt, hvad der skal ordnes først." },
-      { title: "Søgeordsanalyse", text: "Jeg finder de søgninger, dine kunder bruger, og vurderer, hvor realistisk det er at ranke på dem." },
-      { title: "Optimering og indhold", text: "Titler, overskrifter, ydelsessider, FAQ og lokale oplysninger sættes op, så siden matcher søgningerne." },
-      { title: "Måling og justering", text: "Jeg følger Google Search Console og analytics og justerer løbende, så du ser, hvad der virker." },
-    ],
-  },
-  {
-    h2: "Google Virksomhedsprofil og lokale signaler",
-    paragraphs: [
-      "Din Google Virksomhedsprofil er ofte det første, en lokal kunde ser. Den skal være verificeret og komplet, med rigtige kategorier, åbningstider, billeder og svar på anmeldelser. Samtidig skal navn, adresse og telefonnummer være identiske på hjemmesiden og i kataloger.",
-    ],
-    bullets: [
-      "Vælg primær og sekundære kategorier med omhu.",
-      "Bed tilfredse kunder om anmeldelser og besvar dem alle.",
-      "Brug samme navn og kontaktoplysninger overalt.",
-      "Opret ydelsessider for hver hovedydelse og omtal dit serviceområde.",
-    ],
-  },
-  {
-    h2: "Typiske SEO-fejl hos lokale virksomheder",
-    bullets: [
-      "Kun én side, der forsøger at ranke på alle ydelser.",
-      "Titler som “Forside” eller kun firmanavnet.",
-      "Langsom mobilside med tunge billeder.",
-      "Manglende eller forkert Google Virksomhedsprofil.",
-      "Ingen interne links mellem siderne.",
-      "Ingen måling – man ved ikke, hvad der virker.",
-    ],
-    cta: { href: "/blog/seo-tjekliste-lokale-virksomheder", label: "Gå SEO-tjeklisten igennem" },
-  },
-  {
-    h2: "Realistiske forventninger",
-    paragraphs: [
-      "SEO er ikke en knap, man trykker på. Ingen kan love en bestemt placering på en bestemt dato. Til gengæld kan du forvente, at en teknisk sund hjemmeside med klare ydelsessider og en opdateret Google Virksomhedsprofil bliver mere synlig over 2–6 måneder. Jeg fortæller dig ærligt, hvilke søgninger der er realistiske, og hvilke der kræver mere tid og indsats.",
-    ],
+    q: "Hvad er lokal SEO?",
+    a: "Lokal SEO er søgemaskineoptimering til søgninger, hvor kunden leder efter noget i nærheden – “VVS Horsens”, “frisør Horsens”. Google viser typisk et kort med tre virksomheder og derefter de almindelige resultater. De vigtigste faktorer er relevans, afstand og prominens (hvor kendt og anmeldt du er).",
   },
 ];
 
-const related = [
-  {
-    href: "/gratis-seo-tjek-horsens",
-    title: "Gratis SEO-tjek",
-    desc: "Få en gratis gennemgang af din hjemmeside.",
-  },
-  {
-    href: "/ai-seo",
-    title: "AI SEO",
-    desc: "Bliv fundet i AI-søgning og AI-oversigter.",
-  },
-  {
-    href: "/webdesign-horsens",
-    title: "Webdesign Horsens",
-    desc: "Hjemmesider med SEO bygget ind fra start.",
-  },
+const principles = [
+  { k: "Relevans", t: "Passer din side til det, kunden søger? Det afgøres af dine ydelsessider, titler og tekst – og det kan jeg ændre." },
+  { k: "Afstand", t: "Hvor tæt er du på kunden? Det kan ingen ændre, men en korrekt adresse og serviceområde sikrer, at Google forstår det." },
+  { k: "Prominens", t: "Hvor kendt og anmeldt er du? Anmeldelser, en komplet Google-profil og konsistente oplysninger bygger tilliden." },
 ];
 
-function SeoHorsensPage() {
+const more = visibleLinks([
+  { href: "/gratis-seo-tjek-horsens", title: "Gratis SEO-tjek", desc: "Få en gennemgang af din hjemmeside." },
+  { href: "/ai-seo", title: "AI SEO", desc: "Bliv nævnt i ChatGPT og Googles AI-svar." },
+  { href: "/blog/seo-tjekliste-lokale-virksomheder", title: "SEO-tjekliste", desc: "Trin for trin: det, der betyder mest lokalt." },
+  { href: "/webbureau-midtjylland", title: "Webbureau Midtjylland", desc: "Hjemmesider til hele regionen." },
+]);
+
+export default function SeoHorsensPage() {
   return (
-    <LocalLandingPage
-      path={path}
-      name="SEO Horsens"
-      serviceType="Søgemaskineoptimering"
-      eyebrow="SEO i Horsens"
-      h1="SEO i Horsens – bliv fundet af kunder, der søger efter dig"
-      intro="Lokal SEO og teknisk optimering til små og mellemstore virksomheder i Horsens. Jeg sørger for, at din hjemmeside er hurtig, korrekt opsat og relevant for de søgninger, dine kunder foretager."
-      summary="SEO i Horsens handler om at blive fundet af lokale kunder, når de søger på Google og i AI-assistenter. WebHjerte hjælper med teknisk SEO, lokal SEO, indhold og AI-synlighed – og starter altid med et gratis SEO-tjek. AI SEO-pakker starter fra 3.500 kr."
-      sections={sections}
-      faqs={faqs}
-      related={related}
-    />
-  );
-}
+    <>
+      <LandingLd
+        path={path}
+        name="SEO Horsens"
+        serviceType="Søgemaskineoptimering"
+        description="Lokal SEO, teknisk optimering og AI-synlighed til virksomheder i Horsens. Start med et gratis SEO-tjek."
+        faqs={faqs}
+      />
 
-// Skjult indtil siden er færdig (se data/hidden.js)
-export default function Page() {
-  if (isHiddenHref("/seo-horsens")) notFound();
-  return <SeoHorsensPage />;
+      {/* 1. Hero med Googles lokale resultat */}
+      <PageHero
+        titleLines={["SEO i Horsens –", "bliv fundet af kunder,", "der søger efter dig"]}
+        lead="Lokal SEO og teknisk optimering til virksomheder i Horsens. Jeg gør din side hurtig, korrekt opsat og relevant for de søgninger, dine kunder faktisk foretager – og starter med et gratis SEO-tjek."
+        actions={
+          <>
+            <PrimaryLink href="/gratis-seo-tjek-horsens">Få et gratis SEO-tjek</PrimaryLink>
+            <GhostLink href="#vaerksted">Se hvordan jeg arbejder</GhostLink>
+          </>
+        }
+        aside={<LocalPack />}
+      />
+
+      {/* 2. Redaktionel: tallet 3 og de tre faktorer */}
+      <section className="scene bg-[#f7f6f6]">
+        <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-24 items-center`}>
+          <FadeUp>
+            <p className="text-[clamp(120px,22vw,260px)] font-semibold leading-[0.85] tracking-tighter text-[#00a8e8]">3</p>
+            <p className="mt-6 text-[clamp(22px,2.6vw,32px)] font-semibold leading-[1.2] tracking-tight text-[#1c1e1e] max-w-[18ch]">
+              virksomheder får kortet. Resten ser kunden aldrig.
+            </p>
+            <p className="mt-5 text-[15px] text-[#5f5f5f] leading-[1.8] max-w-[44ch]">
+              De fleste kunder til en lokal virksomhed starter med en søgning. Er du ikke blandt de første, vælger de en anden. Jeg fokuserer på søgninger, der fører til henvendelser – ikke på tomme besøgstal.
+            </p>
+          </FadeUp>
+          <div className="border-t border-[#1c1e1e]/15">
+            {principles.map((p, i) => (
+              <FadeUp key={p.k} delay={i * 0.08} className="grid grid-cols-[auto_1fr] gap-x-6 sm:gap-x-10 py-7 border-b border-[#1c1e1e]/15">
+                <span className="text-[13px] font-semibold text-[#00a8e8] tabular-nums pt-1.5">0{i + 1}</span>
+                <div>
+                  <p className="text-[clamp(22px,2.4vw,30px)] font-semibold text-[#1c1e1e] tracking-tight leading-none mb-3">{p.k}</p>
+                  <p className="text-[15.5px] text-[#4a4a4a] leading-[1.75] max-w-[48ch]">{p.t}</p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Værkstedet – faner */}
+      <section id="vaerksted" className="scene bg-[#1c1e1e] scroll-mt-20">
+        <div className={wrap}>
+          <SectionHead dark lines={["Fire ting, der flytter", "din placering"]} lead="Klik dig igennem. Hver fane viser, hvad jeg faktisk gør – og hvordan det ser ud i praksis." />
+          <SeoWorkbench />
+        </div>
+      </section>
+
+      {/* 4. Før/efter i Google */}
+      <section className="scene bg-[#eceeee]">
+        <div className={wrap}>
+          <SectionHead lines={["De typiske fejl –", "og hvordan de ser ud i Google"]} lead="Mange lokale virksomheder taber kunder på fejl, der kan rettes på en eftermiddag." maxW="max-w-[26ch]" />
+          <SnippetDiff />
+        </div>
+      </section>
+
+      {/* 5. Gratis tjek */}
+      <CtaBand
+        title={["Ikke sikker på, hvor", "du står i dag?"]}
+        text="Du får en gratis gennemgang af hastighed, mobilvenlighed, tekniske fejl og synlighed – og et konkret billede af, hvad der bør prioriteres først."
+        href="/gratis-seo-tjek-horsens"
+        label="Start det gratis SEO-tjek"
+        secondary={{ href: "/blog/seo-tjekliste-lokale-virksomheder", label: "Gå tjeklisten igennem" }}
+      />
+
+      {/* 6. Realistiske forventninger */}
+      <section className="scene bg-[#e4f0f7]">
+        <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-20 items-center`}>
+          <div>
+            <RevealLines lines={["Realistiske", "forventninger"]} className="font-semibold tracking-tight leading-[1.1] text-[clamp(24px,2.6vw,34px)] text-[#1c1e1e] mb-6" />
+            <FadeUp as="p" delay={0.1} className="text-[16px] text-[#3a3a3a] leading-[1.8] mb-4 max-w-[46ch]">
+              SEO er ikke en knap, man trykker på. Ingen kan love en bestemt placering på en bestemt dato.
+            </FadeUp>
+            <FadeUp as="p" delay={0.16} className="text-[16px] text-[#3a3a3a] leading-[1.8] max-w-[46ch]">
+              Til gengæld kan en teknisk sund side med klare ydelsessider og en opdateret Google-profil typisk blive mere synlig over 2–6 måneder. Jeg fortæller dig ærligt, hvilke søgninger der er realistiske, og hvilke der kræver mere tid.
+            </FadeUp>
+          </div>
+          <FadeUp className="rounded-3xl bg-white border border-[#d6e4ec] p-6 sm:p-9">
+            <GrowthCurve />
+            <p className="text-[12.5px] text-[#7a7a7a] mt-5">Illustration af et typisk forløb – ikke en garanti.</p>
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* 7. FAQ */}
+      <FaqSplit dark title={["Det, folk spørger om", "før de starter"]} lead="Kort og ærligt – også om det, SEO ikke kan." faqs={faqs} />
+
+      <MoreLinks links={more} />
+
+      <FormToLead
+        titleLine="Vil du ses af flere lokale kunder?"
+        description="Skriv kort om din virksomhed og din nuværende hjemmeside – jeg svarer inden for 24 timer med en ærlig vurdering."
+      />
+    </>
+  );
 }

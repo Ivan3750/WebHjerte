@@ -11,7 +11,7 @@ import { CareStatus, CareMonth, CareCosts } from "./CareBlocks";
 import { WpEditDemo } from "./WpBlocks";
 import { TradesThreeSeconds, TradesGrid, VvsTwoPaths, ElTrust, ElCharger, TomrerBeforeAfter, RestCommission, SalonBuilder } from "./NicheBlocks";
 import { JyllandRegions } from "./LocalBlocks";
-import { PlatformQuiz, ShopifyTasks, ShopifyVsWoo, GeoCompare, GeoSteps, ChatbotLead } from "./TopicBlocks";
+import { PlatformQuiz, ShopifyTasks, ShopifyVsWoo, GeoCompare, GeoSteps } from "./TopicBlocks";
 import {
   HeroTrades,
   HeroVvs,
@@ -25,7 +25,6 @@ import {
   HeroOrbit,
   HeroShopify,
   HeroGeo,
-  HeroChatbot,
 } from "./HeroVisuals";
 
 /**
@@ -137,12 +136,6 @@ export const VARIANTS = {
     facts: [{ num: "6 trin", label: "Fra spørgsmål til måling" }, { num: "4 AI'er", label: "ChatGPT, Gemini, Perplexity, Google" }, { num: "3.500 kr", label: "AI SEO-pakker fra" }],
     hero: { theme: theme("dark", "dots"), layout: "center", visual: <HeroGeo /> },
     blocks: () => [<GeoCompare key="c" />, <GeoSteps key="s" />, <AiStart key="a" />],
-    open: 0,
-  },
-  "ai-chatbot-til-hjemmeside": {
-    facts: [{ num: "24/7", label: "Svar uden for åbningstid" }, { num: "Leads", label: "Sendt direkte til din mail" }, { num: "24 timer", label: "Til fast tilbud" }],
-    hero: { theme: theme("dark", "lines"), layout: "split-rev", visual: <HeroChatbot /> },
-    blocks: () => [<ChatbotLead key="l" />, <AiSavings key="s" />, <AiByTrade key="t" />],
     open: 0,
   },
 };

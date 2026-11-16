@@ -1,6 +1,6 @@
 # Sider på webhjerte.dk
 
-Opdateret: 15. november 2026. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
+Opdateret: 16. november 2026. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
 de returnerer bare 404, er fjernet fra menu, footer, interne links, sitemap og `llms.txt`.
 
 ## Sådan skjuler / viser du sider
@@ -44,6 +44,15 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Bæredygtigt webdesign | `/baeredygtigt-webdesign` |
 | Ny professionel hjemmeside (ikke i sitemap) | `/ny-professionel-hjemmeside` |
 
+### SEO, AI og region (nyligt genåbnet, hver side med eget design)
+| Side | URL |
+| --- | --- |
+| SEO Horsens | `/seo-horsens` |
+| Webbureau Midtjylland | `/webbureau-midtjylland` |
+| Webbureau Aarhus (personlig side) | `/webbureau-aarhus` |
+| AI SEO | `/ai-seo` |
+| AI-chatbot til hjemmeside | `/ai-chatbot-til-hjemmeside` |
+
 ### Gratis værktøjer
 | Side | URL |
 | --- | --- |
@@ -75,26 +84,21 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 
 ## Skjulte sider (404 indtil de er færdige)
 
-### AI-sider (5)
+### AI-sider (3)
 | Side | URL |
 | --- | --- |
-| AI SEO | `/ai-seo` |
 | AI-løsninger | `/ai-loesninger` |
-| AI-chatbot til hjemmeside | `/ai-chatbot-til-hjemmeside` |
 | AI-automatisering | `/ai-automatisering-virksomhed` |
 | AI-synlighed (GEO) | `/geo-ai-synlighed` |
 
-### Lokale sider (8)
+### Lokale sider (5)
 | Side | URL |
 | --- | --- |
-| Webbureau Aarhus (ny personlig side) | `/webbureau-aarhus` |
 | Webbureau Vejle | `/webbureau-vejle` |
 | Webbureau Jylland | `/webbureau-jylland` |
-| Webbureau Midtjylland | `/webbureau-midtjylland` |
 | WordPress Horsens | `/wordpress-horsens` |
 | Digitalt bureau Horsens | `/digitalt-bureau-horsens` |
 | Webdesign Horsens | `/webdesign-horsens` |
-| SEO Horsens | `/seo-horsens` |
 
 ### Brancher (6)
 | Side | URL |

@@ -4,9 +4,10 @@ import Link from "next/link";
 import { FadeUp, RevealLines } from "./fx/Reveal";
 import { ArrowBadge } from "../ui/ArrowIcon";
 import { Panel, VisualChat, VisualFlow, VisualAiAnswer, VisualSeo } from "../illustrations/Visuals";
+import { isHiddenHref } from "../../data/hidden";
 
 // Illustrerede kort i samme stil som "Hvad kan jeg hjælpe med?" – billedet fortæller, teksten er kort.
-const cards = [
+const allCards = [
   {
     href: "/ai-chatbot-til-hjemmeside",
     title: "AI-chatbot, der svarer 24/7",
@@ -33,7 +34,11 @@ const cards = [
   },
 ];
 
+// Skjulte sider (se data/hidden.js) vises ikke
+const cards = allCards.filter((c) => !isHiddenHref(c.href));
+
 export default function AiFocus() {
+  if (!cards.length) return null;
   return (
     <section className="scene relative overflow-hidden bg-[#1c1e1e]">
       <div aria-hidden className="grid-fade absolute inset-0 opacity-50" />
@@ -47,15 +52,15 @@ export default function AiFocus() {
           </div>
           <FadeUp delay={0.15}>
             <Link
-              href="/ai-loesninger"
+              href="/ai-seo"
               className="btn-primary"
             >
-              Se hvad AI kan for dig
+              Se AI SEO
             </Link>
           </FadeUp>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${cards.length > 2 ? "lg:grid-cols-4" : "lg:max-w-4xl"}`}>
           {cards.map((c, i) => (
             <FadeUp key={c.href} delay={i * 0.07} className="h-full">
               <Link

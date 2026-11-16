@@ -67,6 +67,7 @@ const core = [
   ["Webdesign i Horsens", "/webdesign-horsens"],
   ["SEO i Horsens", "/seo-horsens"],
   ["AI SEO", "/ai-seo"],
+  ["AI-chatbot til hjemmeside", "/ai-chatbot-til-hjemmeside"],
   ["Webbureau i Midtjylland", "/webbureau-midtjylland"],
   ["WordPress-hjemmeside", "/wordpress-hjemmeside"],
   ["Gratis SEO-tjek i Horsens", "/gratis-seo-tjek-horsens"],

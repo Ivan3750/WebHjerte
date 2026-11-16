@@ -8,22 +8,17 @@
 export const HIDDEN = {
   // AI-sider
   ai: [
-    "ai-seo",
     "ai-loesninger",
-    "ai-chatbot-til-hjemmeside",
     "ai-automatisering-virksomhed",
     "geo-ai-synlighed",
   ],
   // Lokale sider (by/område)
   local: [
-    "webbureau-aarhus",
     "webbureau-vejle",
     "webbureau-jylland",
-    "webbureau-midtjylland",
     "wordpress-horsens",
     "digitalt-bureau-horsens",
     "webdesign-horsens",
-    "seo-horsens",
   ],
   // Sider til forskellige brancher
   business: [

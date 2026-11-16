@@ -1,26 +1,29 @@
-import { notFound } from "next/navigation";
-import { isHiddenHref } from "../../data/hidden";
-import LocalLandingPage from "../../components/seo/LocalLandingPage";
+import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
+import SectionHead from "../../components/ui/SectionHead";
+import BureauCompare from "../../components/ui/BureauCompare";
+import PriceStrip from "../../components/ui/PriceStrip";
+import FormToLead from "../../components/ui/FormToLead";
+import { FadeUp, RevealLines } from "../../components/home/fx/Reveal";
+import { LandingLd, FaqSplit, MoreLinks } from "../../components/landing/shared";
+import { visibleLinks } from "../../data/hidden";
+import RegionRadar from "./_components/RegionRadar";
+import Receipt from "./_components/Receipt";
+import DayStrip from "./_components/DayStrip";
+import SiteTree from "./_components/SiteTree";
 
 const path = "/webbureau-midtjylland";
+const wrap = "max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24";
 
 export const metadata = {
   title: "Webbureau Midtjylland – hjemmesider & AI fra 2.500 kr | WebHjerte",
   description:
     "Webbureau i Midtjylland: Aarhus, Silkeborg, Vejle og resten af regionen. Fast pris fra 2.500 kr inkl. moms, AI-løsninger og direkte kontakt.",
-  keywords: [
-    "webbureau Midtjylland",
-    "webbureau Jylland",
-    "webbureau i Jylland",
-    "webbureau Østjylland",
-    "hjemmeside Midtjylland",
-  ],
+  keywords: ["webbureau Midtjylland", "webbureau Jylland", "webbureau i Jylland", "webbureau Østjylland", "hjemmeside Midtjylland"],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Webbureau i Midtjylland | WebHjerte",
-    description:
-      "Hjemmesider og SEO til virksomheder i hele Midtjylland. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.",
+    description: "Hjemmesider og SEO til virksomheder i hele Midtjylland. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.",
     url: `https://www.webhjerte.dk${path}`,
     type: "website",
   },
@@ -45,111 +48,100 @@ const faqs = [
   },
 ];
 
-const sections = [
-  {
-    h2: "Et webbureau for hele Midtjylland",
-    paragraphs: [
-      "WebHjerte er et lille, lokalt webbureau med base i Horsens – midt i Midtjylland. Jeg hjælper håndværkere, restauranter, saloner og andre små og mellemstore virksomheder med at få en hjemmeside, der er hurtig, flot og synlig på Google.",
-      "Fordi samarbejdet foregår digitalt, kan jeg hjælpe virksomheder i hele regionen – og er du i nærheden, mødes jeg gerne ansigt til ansigt.",
-    ],
-  },
-  {
-    h2: "Områder jeg arbejder i",
-    bullets: [
-      "Horsens og omegn",
-      "Aarhus og Østjylland",
-      "Silkeborg, Skanderborg og Ry",
-      "Vejle, Fredericia og Kolding",
-      "Randers, Viborg og Herning",
-      "Resten af Jylland og hele Danmark – online",
-    ],
-  },
-  {
-    h2: "Hvad får du som kunde?",
-    bullets: [
-      "Professionel hjemmeside til fast pris fra 2.500 kr",
-      "Første designudkast inden for 48 timer",
-      "Levering typisk på 2–10 dage",
-      "SEO og mobiloptimering bygget ind fra start",
-      "Direkte kontakt med udvikleren – ingen mellemled",
-      "30 dages gratis support efter lancering",
-    ],
-  },
-  {
-    h2: "Hvorfor små virksomheder vælger WebHjerte",
-    paragraphs: [
-      "Mange større bureauer er bygget til store budgetter og lange forløb. Jeg har valgt det modsatte: enkle processer, klare priser og hurtig levering. Du ved, hvad det koster, hvornår det er klar, og hvem du skal ringe til, hvis du har et spørgsmål.",
-    ],
-  },
-  {
-    h2: "Hvad er forskellen på et lokalt og et stort webbureau?",
-    table: {
-      head: ["", "WebHjerte (lokalt, lille)", "Stort bureau"],
-      rows: [
-        ["Kontakt", "Direkte med udvikleren", "Via projektleder eller account manager"],
-        ["Pris", "Fast pris fra 2.500 kr", "Ofte timebaseret, højere startpris"],
-        ["Svartid", "Inden for 24 timer", "Varierer"],
-        ["Tidsplan", "2–10 dage", "Uger til måneder"],
-        ["Bedst til", "Små og mellemstore virksomheder", "Store organisationer og komplekse projekter"],
-      ],
-    },
-  },
-  {
-    h2: "SEO i Midtjylland",
-    paragraphs: [
-      "Mange virksomheder i Midtjylland betjener kunder i flere byer. Derfor bygger jeg SEO med både et lokalt og et regionalt perspektiv: ydelsessider, serviceområder og indhold, der svarer på det, kunderne spørger om. Det giver bedre synlighed end én enkelt generel forside.",
-    ],
-    cta: { href: "/seo-horsens", label: "Læs om lokal SEO" },
-  },
-  {
-    h2: "Find dit område",
-    bullets: [
-      "Hele Jylland – Skagen til Kolding",
-      "Aarhus og Østjylland",
-      "Vejle og trekantsområdet",
-      "Horsens – mit hjemmemarked",
-    ],
-    cta: { href: "/webbureau-jylland", label: "Se webbureau Jylland" },
-  },
+const compareRows = [
+  { topic: "Kontakt", agency: "Via projektleder eller account manager.", me: "Direkte med udvikleren." },
+  { topic: "Pris", agency: "Ofte timebaseret, højere startpris.", me: "Fast pris fra 2.500 kr." },
+  { topic: "Svartid", agency: "Varierer.", me: "Inden for 24 timer." },
+  { topic: "Tidsplan", agency: "Uger til måneder.", me: "2–10 dage." },
+  { topic: "Bedst til", agency: "Store organisationer og komplekse projekter.", me: "Små og mellemstore virksomheder." },
 ];
 
-const related = [
-  {
-    href: "/webdesign-horsens",
-    title: "Webdesign Horsens",
-    desc: "Professionelt webdesign til fast pris.",
-  },
-  {
-    href: "/hjemmeside-pris",
-    title: "Hjemmeside pris",
-    desc: "Se pakker og priser uden skjulte gebyrer.",
-  },
-  {
-    href: "/portefolje",
-    title: "Portefølje",
-    desc: "Se eksempler på færdige hjemmesider.",
-  },
-];
+const more = visibleLinks([
+  { href: "/seo-horsens", title: "SEO Horsens", desc: "Lokal SEO og teknisk optimering." },
+  { href: "/webbureau-aarhus", title: "Webbureau Aarhus", desc: "Hjemmesider til Aarhus-virksomheder." },
+  { href: "/hjemmeside-pris", title: "Hjemmeside pris", desc: "Pakker og priser uden skjulte gebyrer." },
+  { href: "/portefolje", title: "Portefølje", desc: "Se eksempler på færdige hjemmesider." },
+]);
 
-function WebbureauMidtjyllandPage() {
+export default function WebbureauMidtjyllandPage() {
   return (
-    <LocalLandingPage
-      path={path}
-      name="Webbureau Midtjylland"
-      serviceType="Webbureau"
-      eyebrow="Webbureau i Midtjylland"
-      h1="Webbureau i Midtjylland – hjemmesider til fast pris"
-      intro="WebHjerte er et lokalt webbureau fra Horsens, der bygger hurtige og professionelle hjemmesider til virksomheder i hele Midtjylland. Direkte kontakt med udvikleren og levering på 2–10 dage."
-      summary="WebHjerte er et webbureau i Horsens, der bygger hjemmesider til virksomheder i hele Midtjylland: Aarhus, Silkeborg, Vejle, Skanderborg, Randers, Viborg og Herning. Priser fra 2.500 kr, levering på 2–10 dage og direkte kontakt med udvikleren."
-      sections={sections}
-      faqs={faqs}
-      related={related}
-    />
-  );
-}
+    <>
+      <LandingLd
+        path={path}
+        name="Webbureau Midtjylland"
+        serviceType="Webbureau"
+        description="Hjemmesider og SEO til virksomheder i hele Midtjylland: Aarhus, Silkeborg, Vejle, Skanderborg, Randers, Viborg og Herning."
+        faqs={faqs}
+      />
 
-// Skjult indtil siden er færdig (se data/hidden.js)
-export default function Page() {
-  if (isHiddenHref("/webbureau-midtjylland")) notFound();
-  return <WebbureauMidtjyllandPage />;
+      {/* 1. Hero – kort med radar lige under overskriften */}
+      <PageHero
+        titleLines={["Webbureau i Midtjylland –", "hjemmesider til fast pris"]}
+        lead="WebHjerte er et lille webbureau fra Horsens. Jeg bygger hurtige hjemmesider til virksomheder i hele Midtjylland – med direkte kontakt til den, der bygger siden, og levering på 2–10 dage."
+        actions={
+          <>
+            <PrimaryLink href="/kontakt">Få et gratis tilbud</PrimaryLink>
+            <GhostLink href="/hjemmeside-pris">Se priserne</GhostLink>
+          </>
+        }
+        below={<RegionRadar />}
+      />
+
+      {/* 2. Kvittering */}
+      <section className="scene bg-[#f7f6f6]">
+        <div className={`${wrap} grid grid-cols-1 lg:grid-cols-[1fr_0.9fr] gap-14 lg:gap-24 items-center`}>
+          <div>
+            <RevealLines
+              lines={["Du ved, hvad det koster,", "før vi går i gang"]}
+              className="font-semibold tracking-tight leading-[1.1] text-[clamp(24px,2.6vw,34px)] text-[#1c1e1e] mb-6 max-w-[22ch]"
+            />
+            <FadeUp as="p" delay={0.1} className="text-[16px] text-[#4a4a4a] leading-[1.8] mb-4 max-w-[48ch]">
+              Mange større bureauer er bygget til store budgetter og lange forløb. Jeg har valgt det modsatte: enkle processer, klare priser og hurtig levering.
+            </FadeUp>
+            <FadeUp as="p" delay={0.16} className="text-[16px] text-[#4a4a4a] leading-[1.8] max-w-[48ch]">
+              Du ved, hvad det koster, hvornår det er klar, og hvem du skal ringe til, hvis du har et spørgsmål.
+            </FadeUp>
+          </div>
+          <Receipt />
+        </div>
+      </section>
+
+      {/* 3. Sammenligning */}
+      <section className="scene bg-[#1c1e1e]">
+        <div className={wrap}>
+          <SectionHead dark lines={["Lokalt og lille –", "eller stort bureau?"]} lead="Begge dele har deres plads. Her er forskellen, så du kan vælge det, der passer til dit projekt." />
+          <BureauCompare rows={compareRows} agencyLabel="Stort bureau" meLabel="WebHjerte (lokalt, lille)" />
+        </div>
+      </section>
+
+      {/* 4. SEO i regionen */}
+      <section className="scene bg-[#f7f6f6]">
+        <div className={wrap}>
+          <SectionHead
+            lines={["SEO i Midtjylland:", "en side pr. ydelse og område"]}
+            lead="Mange virksomheder betjener kunder i flere byer. Derfor bygger jeg med både et lokalt og et regionalt perspektiv. Det giver bedre synlighed end én enkelt generel forside."
+            maxW="max-w-[26ch]"
+          />
+          <SiteTree />
+        </div>
+      </section>
+
+      {/* 5. Dagsstribe */}
+      <section className="scene bg-[#1c1e1e]">
+        <div className={wrap}>
+          <SectionHead dark lines={["Fra første samtale", "til live på 2–10 dage"]} lead="Første designudkast er klar efter 48 timer. Intet bygges, før du har godkendt det." />
+          <DayStrip />
+        </div>
+      </section>
+
+      <PriceStrip />
+
+      <FaqSplit dark title={["Spørgsmål fra virksomheder", "uden for Horsens"]} faqs={faqs} />
+      <MoreLinks links={more} />
+      <FormToLead
+        titleLine="Driver du virksomhed i Midtjylland?"
+        description="Skriv kort, hvad du har brug for. Du får en fast pris og et første designudkast inden for 48 timer – passer det ikke, betaler du 0 kr."
+      />
+    </>
+  );
 }
