@@ -18,9 +18,9 @@ const HomeCases = dynamic(() => import("./components/home/HomeCases"));
 const StickyCallButton = dynamic(() => import("./components/ui/StickyCallButton"));
 
 export const metadata = {
-  title: "Webbureau Horsens – hjemmesider, SEO & AI | WebHjerte",
+  title: "Webbureau i Horsens – hjemmeside fra 2.500 kr | WebHjerte",
   description:
-    "Webbureau i Horsens: hjemmesider i WordPress, Shopify eller kode fra 2.500 kr – plus AI-chatbot og SEO. Design på 48 timer, 0 kr hvis det ikke passer.",
+    "Lokalt webbureau i Horsens: hjemmesider i WordPress, Shopify eller kode til fast pris fra 2.500 kr. Se første design på 48 timer – 0 kr, hvis det ikke passer.",
   keywords: [
     "webbureau Horsens",
     "webdesign Horsens",

@@ -4,9 +4,9 @@ import LocalTrust from "./_components/LocalTrust";
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 
 export const metadata = {
-  title: "Gratis SEO- og web-tjek i Horsens | WebHjerte",
+  title: "Gratis SEO-tjek og web-tjek af din hjemmeside | WebHjerte",
   description:
-    "Få et gratis SEO- og web-tjek i Horsens. Vi analyserer din hjemmeside for synlighed, hastighed og konvertering – uden binding.",
+    "Gratis web-tjek af din hjemmeside: hastighed, mobil, SEO og synlighed i Google. Du får et ærligt billede af, hvad der bør rettes først – uden binding.",
   keywords:
     "gratis seo tjek horsens, web tjek horsens, seo analyse horsens, hjemmeside analyse horsens, seo horsens, seo midtjylland",
   robots: "index, follow",

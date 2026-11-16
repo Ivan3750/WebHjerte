@@ -1,6 +1,7 @@
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
 import ProblemLoesning from "./_components/ProblemLoesning";
 import HvadGoerProfessionel from "./_components/HvadGoerProfessionel";
+import { FaqSplit, FaqLd } from "../../components/landing/shared";
 import FormToLead from "../../components/ui/FormToLead";
 import CasesCarousel from "../../components/home/CasesCarousel";
 import PackagesBlock from "../services/_components/PackagesBlock";
@@ -11,9 +12,9 @@ const url = `${SITE_URL}/wordpress-hjemmeside`;
 
 // Search Console: "professionel wordpress hjemmeside" (+ varianter) er sitets største søgeord, men siden lå på side 2–3.
 export const metadata = {
-  title: "WordPress-hjemmeside fra 4.500 kr – fast pris | WebHjerte",
+  title: "Professionel WordPress-hjemmeside – fast pris fra 4.500 kr",
   description:
-    "Få en professionel WordPress-hjemmeside til din virksomhed: unikt design, hurtig, SEO-klar og nem at redigere selv. Fast pris fra 4.500 kr, design på 48 timer.",
+    "WordPress-hjemmeside til din virksomhed: unikt design, hurtig og SEO-klar – og du retter selv tekster og billeder. Fast pris fra 4.500 kr, design på 48 timer.",
   keywords: [
     "professionel wordpress hjemmeside",
     "professionel hjemmeside wordpress",
@@ -79,6 +80,7 @@ const jsonLd = {
   ],
 };
 
+
 const WordpressHjemmeside = () => {
   return (
     <>
@@ -100,6 +102,8 @@ const WordpressHjemmeside = () => {
 
       <CasesCarousel />
       <PackagesBlock />
+      <FaqLd faqs={faqs} />
+      <FaqSplit title={["Spørgsmål om", "WordPress-hjemmesider"]} lead="Korte, ærlige svar – også om de løbende udgifter." faqs={faqs} />
       <FormToLead
         titleLine="Klar til din WordPress-hjemmeside?"
         description="Skriv til mig, og få et uforpligtende tilbud på din nye WordPress-side inden for 24 timer."

@@ -1,6 +1,6 @@
 # Sider på webhjerte.dk
 
-Opdateret: 16. november 2026. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
+Opdateret: 16. november 2026. Indholdssider viser nu hele deres tekst og FAQ (se `components/seo/ServiceStory.jsx`), og SEO-titler/ekstra afsnit ligger i `data/content/extra.js`. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
 de returnerer bare 404, er fjernet fra menu, footer, interne links, sitemap og `llms.txt`.
 
 ## Sådan skjuler / viser du sider
@@ -52,6 +52,15 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Webbureau Aarhus (personlig side) | `/webbureau-aarhus` |
 | AI SEO | `/ai-seo` |
 | AI-chatbot til hjemmeside | `/ai-chatbot-til-hjemmeside` |
+| Webbureau Vejle | `/webbureau-vejle` |
+
+### Brancher (genåbnet 16. november)
+| Side | URL |
+| --- | --- |
+| Håndværkere (overblik) | `/hjemmeside-til-haandvaerkere` |
+| VVS | `/hjemmeside-til-vvs` |
+| Elektrikere | `/hjemmeside-til-elektriker` |
+| Tømrere | `/hjemmeside-til-tomrer` |
 
 ### Gratis værktøjer
 | Side | URL |
@@ -89,19 +98,14 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | --- | --- |
 | AI-automatisering | `/ai-automatisering-virksomhed` |
 
-### Lokale sider (2)
+### Lokale sider (1)
 | Side | URL |
 | --- | --- |
-| Webbureau Vejle | `/webbureau-vejle` |
 | Webdesign Horsens | `/webdesign-horsens` |
 
-### Brancher (6)
+### Brancher (2)
 | Side | URL |
 | --- | --- |
-| Håndværkere | `/hjemmeside-til-haandvaerkere` |
-| VVS | `/hjemmeside-til-vvs` |
-| Elektrikere | `/hjemmeside-til-elektriker` |
-| Tømrere | `/hjemmeside-til-tomrer` |
 | Restauranter | `/hjemmeside-til-restauranter` |
 | Saloner | `/hjemmeside-til-saloner` |
 

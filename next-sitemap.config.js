@@ -26,6 +26,8 @@ export default {
   // Samme host som canonical-tags (www)
   siteUrl: 'https://www.webhjerte.dk',
   generateRobotsTxt: true,
+  // Ingen automatisk lastmod: en dato, der altid er "i dag", lærer Google at ignorere feltet
+  autoLastmod: false,
 
   sitemapSize: 5000,
 
@@ -68,22 +70,22 @@ export default {
   transform: async (config, path) => {
     const priorities = {
       '/': 1.0,
-      '/webdesign-horsens': 0.9,
       '/seo-horsens': 0.9,
       '/webbureau-midtjylland': 0.9,
-      '/webbureau-jylland': 0.9,
+      '/webbureau-aarhus': 0.8,
+      '/webbureau-vejle': 0.8,
+      '/hjemmeside-til-haandvaerkere': 0.8,
       '/services': 0.9,
       '/ai-seo': 0.9,
-      '/geo-ai-synlighed': 0.9,
-      '/ai-loesninger': 0.9,
       '/alle-typer-hjemmesider': 0.8,
       '/shopify-hjemmeside': 0.8,
       '/ai-chatbot-til-hjemmeside': 0.8,
+      '/webshop-hjemmeside': 0.8,
+      '/wordpress-hjemmeside': 0.8,
       '/hjemmeside-pris': 0.8,
       '/om-mig': 0.8,
       '/portefolje': 0.8,
       '/kontakt': 0.8,
-      '/ofte-stillede-spoergsmaal': 0.8,
       '/blog': 0.7,
       '/partner': 0.6,
     };
@@ -92,7 +94,6 @@ export default {
       loc: path,
       changefreq: path === '/' ? 'weekly' : 'monthly',
       priority: priorities[path] ?? 0.6,
-      lastmod: new Date().toISOString(),
     };
   },
 };

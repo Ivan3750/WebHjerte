@@ -47,6 +47,7 @@ export default async function ContentRoute({ params }) {
       updated={page.updated}
       nichePackage={page.nichePackage}
       variant={page.variant}
+      formTitle={page.formTitle}
     />
   );
 }

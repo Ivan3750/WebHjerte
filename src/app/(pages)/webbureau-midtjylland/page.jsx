@@ -15,9 +15,9 @@ const path = "/webbureau-midtjylland";
 const wrap = "max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24";
 
 export const metadata = {
-  title: "Webbureau Midtjylland – hjemmesider & AI fra 2.500 kr | WebHjerte",
+  title: "Webbureau i Midtjylland – hjemmeside fra 2.500 kr",
   description:
-    "Webbureau i Midtjylland: Aarhus, Silkeborg, Vejle og resten af regionen. Fast pris fra 2.500 kr inkl. moms, AI-løsninger og direkte kontakt.",
+    "Hjemmesider i WordPress eller kode til virksomheder i Aarhus, Silkeborg, Vejle og hele Midtjylland. Fast pris fra 2.500 kr og direkte kontakt med udvikleren.",
   keywords: ["webbureau Midtjylland", "webbureau Jylland", "webbureau i Jylland", "webbureau Østjylland", "hjemmeside Midtjylland"],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {

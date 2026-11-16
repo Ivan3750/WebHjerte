@@ -13,7 +13,7 @@ const path = "/ai-seo";
 const wrap = "max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24";
 
 export const metadata = {
-  title: "AI SEO fra 3.500 kr – bliv fundet i Google & ChatGPT | WebHjerte",
+  title: "AI SEO – bliv fundet i Google og ChatGPT, fra 3.500 kr",
   description:
     "AI SEO til lokale virksomheder: analyse, indhold og struktureret data, så du rangerer i Google og nævnes i ChatGPT og Google AI. Pakker fra 3.500 kr.",
   keywords: ["AI SEO", "AI synlighed", "GEO", "ChatGPT synlighed", "Google AI Overviews", "AI SEO Horsens"],

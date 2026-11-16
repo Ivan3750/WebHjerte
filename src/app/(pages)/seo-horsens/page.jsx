@@ -13,9 +13,9 @@ const path = "/seo-horsens";
 const wrap = "max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24";
 
 export const metadata = {
-  title: "SEO Horsens – flere lokale kunder fra Google & AI | WebHjerte",
+  title: "SEO i Horsens – lokal SEO og gratis SEO-tjek | WebHjerte",
   description:
-    "SEO i Horsens: lokal SEO, teknisk optimering og AI-synlighed, så kunder finder dig i Google og ChatGPT. Start med et gratis SEO-tjek.",
+    "Bliv fundet af kunder i Horsens: lokal SEO, Google Virksomhedsprofil, teknisk optimering og AI-synlighed. Start med et gratis SEO-tjek af din hjemmeside.",
   keywords: ["SEO Horsens", "SEO bureau Horsens", "lokal SEO Horsens", "horsens SEO", "søgemaskineoptimering Horsens"],
   alternates: { canonical: `https://www.webhjerte.dk${path}` },
   openGraph: {

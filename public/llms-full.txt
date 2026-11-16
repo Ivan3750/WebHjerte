@@ -135,6 +135,21 @@ En moderne webshop kan bruge AI til at hjælpe kunderne: en chatbot, der svarer 
 ## Pris
 Shopify-butikker prissættes efter omfang og starter som skræddersyede løsninger fra 14.000 kr inkl. moms. Abonnement, apps og gebyrer betaler du direkte til udbyderne. Du får et fast tilbud, før vi starter.
 
+## Flyt til Shopify uden at miste placeringer
+Den største risiko ved at skifte webshop er ikke designet – det er Google. Ændrer produkt- og kategoriadresserne sig, uden at de gamle sender videre, mister du de placeringer, du har brugt år på at opbygge.
+Derfor laver jeg en liste over alle vigtige adresser før flytningen, sætter 301-omdirigeringer op og tjekker i Google Search Console bagefter. Produkter, kunder og ordrehistorik flyttes med, så du kan fortsætte, hvor du slap.
+1. Kortlægning: Alle sider, der giver trafik eller salg, bliver noteret.
+2. Flytning: Produkter, kunder og ordrer importeres og kontrolleres.
+3. Omdirigeringer: Gamle adresser sender videre til de nye.
+4. Opfølgning: Jeg følger med i Search Console de første uger og retter fejl.
+
+## Shopify på dansk – det glemmer mange
+- Danske tekster i kurv, kasse og mails – ikke halvt engelsk
+- MobilePay og danske fragtløsninger i kassen
+- Priser vist inkl. moms og korrekte handelsbetingelser
+- Produkt- og kategoritekster skrevet til danske søgninger
+- Cookie-samtykke, der følger reglerne
+
 ## Ofte stillede spørgsmål
 Q: Hvad koster en Shopify webshop?
 A: Hos WebHjerte starter webshops fra 14.000 kr inkl. moms. Shopifys abonnement og apps kommer oveni og betales til Shopify.
@@ -147,6 +162,9 @@ A: Ja, via betalingsudbydere, der understøtter MobilePay. Jeg hjælper med ops�
 
 Q: Kan en Shopify-butik få en AI-chatbot?
 A: Ja. Jeg kan integrere en chatbot, der besvarer kundespørgsmål og hjælper med bestillinger.
+
+Q: Hvad koster Shopify om måneden?
+A: Shopify har et månedligt abonnement og transaktionsgebyrer, som afhænger af den plan, du vælger. Dem betaler du direkte til Shopify. Jeg gennemgår planerne med dig, før du vælger.
 
 
 ---
@@ -189,6 +207,18 @@ Ejerskab | Kode og domæne tilhører dig | Varierer – ofte bundet til platform
 
 ## Hvad koster det?
 Priserne er faste og afhænger af omfang: Landingside fra 2.500 kr, Basis fra 4.500 kr, Standard fra 8.500 kr og komplekse løsninger (webshop, kundeportal, specialfunktioner) fra 14.000 kr. Alle priser er inkl. moms.
+
+## Hvornår giver skræddersyet mening?
+Ikke altid. Har du brug for en enkel side med få sider, du selv vil redigere, er WordPress ofte det fornuftige valg. Skræddersyet kode giver mest værdi, når hastighed, et helt eget udtryk eller særlige funktioner betyder noget for din forretning.
+ | Skabelon | Skræddersyet
+Udtryk | Ligner mange andre sider | Dit eget design
+Hastighed | Ofte tung af ubrugt kode | Kun den kode, siden skal bruge
+Funktioner | Det, temaet kan | Booking, login og integrationer efter behov
+Passer, når | Du selv vil bygge og rette alt | Siden skal skille sig ud og være hurtig
+
+## Hurtig side = bedre for Google og kunderne
+En skræddersyet side indeholder kun den kode, den har brug for. Det gør den hurtig – også på en mobil med dårlig forbindelse. Hastighed er en del af det, Google vurderer, og en langsom side mister besøgende, før den overhovedet er vist.
+Kodede sider kræver heller ikke de mange plugins og opdateringer, som en tung WordPress-side gør, og kan ofte hostes billigt.
 
 ## Ofte stillede spørgsmål
 Q: Hvad er en skræddersyet hjemmeside?
@@ -251,6 +281,20 @@ Alle priser inkl. moms. Efter lancering får du 30 dages support.
 - Forældede priser, åbningstider eller billeder.
 - Manglende tilpasning til mobil.
 
+## Hvad er en professionel hjemmeside?
+En professionel hjemmeside er ikke den med flest animationer. Det er den, hvor en ny kunde på få sekunder forstår, hvad du laver, hvor du arbejder, og hvordan man kontakter dig – og som Google kan finde og forstå.
+I praksis betyder det tre ting: et tydeligt budskab øverst, sider der svarer på kundernes spørgsmål, og en teknisk sund side, der er hurtig på mobilen. Alt andet er pynt, der kun giver mening, når det fundamentale er på plads.
+
+## Fra første samtale til færdig hjemmeside
+1. Samtale: Vi taler om din virksomhed, dine kunder og hvad siden skal kunne. Det er gratis.
+2. Design på 48 timer: Du ser første designudkast efter 48 timer. Passer det ikke, betaler du 0 kr.
+3. Bygning: Siden bygges med tekster, billeder, SEO og kontaktformular.
+4. Live: Typisk på 2–10 dage. Domæne og kode er dine fra start.
+
+## Hvad koster en hjemmeside til en virksomhed?
+Det afhænger af, hvor mange sider du har brug for. En landingside til én ydelse koster 2.500 kr, en Basis-hjemmeside med 3–5 sider 4.500 kr og Standard med op til 8 sider, SEO og booking 8.500 kr. Har du særlige behov – webshop, kundelogin eller integrationer – starter skræddersyede løsninger fra 14.000 kr.
+Alle priser er inkl. moms. Du får et skriftligt tilbud med fast pris, før jeg går i gang.
+
 ## Ofte stillede spørgsmål
 Q: Hvor mange sider skal en virksomhedshjemmeside have?
 A: For de fleste små virksomheder er 3–8 sider nok: forside, ydelser, om os, kontakt og evt. cases og blog.
@@ -260,6 +304,12 @@ A: Du leverer logo, billeder og gerne en kort beskrivelse. Jeg kan hjælpe med a
 
 Q: Hvor lang tid tager det?
 A: Typisk 2–10 dage afhængigt af pakke og hvor hurtigt indhold er klart.
+
+Q: Skal jeg have en hjemmeside, når jeg har Facebook?
+A: Facebook er godt til at holde kontakt, men du ejer ikke siden, og den bliver sjældent fundet, når nye kunder søger på Google. En hjemmeside er din egen adresse, som du styrer.
+
+Q: Kan jeg selv rette tekster og billeder bagefter?
+A: Ja. Vælger du WordPress, kan du selv rette alt. På kodede sider kan små rettelser være med i en vedligeholdelsesaftale fra 449 kr/md.
 
 
 ---
@@ -294,6 +344,41 @@ En webshop har lovkrav, som en almindelig hjemmeside ikke har: fortrydelsesret, 
 ## Pris og tid
 En enkel webshop starter fra 14.000 kr inkl. moms og tager typisk 2–4 uger afhængigt af antallet af produkter og integrationer. Transaktionsgebyrer til betalingsudbydere og eventuelle abonnementer betaler du direkte til dem.
 
+## Hjemmeside med webshop – eller en ren webshop?
+Mange virksomheder har brug for begge dele: en hjemmeside, der fortæller, hvem I er, og en webshop, der sælger. Det behøver ikke være to systemer. I WooCommerce og Shopify kan forside, om os, blog og kontakt ligge i samme løsning som produkterne – med ét login, ét design og én adresse, der samler alle signaler i Google.
+Sælger du kun få produkter ved siden af en ydelse (fx gavekort, en bog eller et kursus), er en fuld webshop ofte for meget. Så kan en enkel betalingsknap på en almindelig hjemmeside være nok – og billigere at drive. Jeg siger det, hvis det er tilfældet.
+ | Ren webshop | Hjemmeside med webshop
+Fokus | Produkter, kurv og kasse | Både hvem I er, og hvad I sælger
+Passer til | Butikker med mange varer | Virksomheder med både ydelser og varer
+I hverdagen | Løbende arbejde med produkter | Ét system, ét login og ét design
+
+## Hvad koster en hjemmeside med webshop?
+Hos mig starter en hjemmeside med webshop fra 14.000 kr inkl. moms. Prisen afhænger især af tre ting: hvor mange produkter der skal lægges ind, hvilke betalings- og fragtløsninger du vil have, og om webshoppen skal tale sammen med andre systemer (fx lager eller regnskab).
+Derudover er der løbende udgifter, som du betaler direkte til udbyderne: gebyrer til betalingsløsningen, eventuelt et Shopify-abonnement og hosting. Dem gennemgår jeg med dig, før du vælger platform, så der ikke kommer overraskelser.
+Det påvirker prisen | Billigere | Dyrere
+Produkter | Under 30 produkter, du selv lægger ind | Hundredvis af produkter med varianter
+Betaling og fragt | MobilePay, kort og én fragtform | Flere fragtfirmaer, afhentning og fri fragt-regler
+Integrationer | Ingen | Lager, regnskab eller ERP
+Design | Tilpasset tema | Helt eget design
+
+## Sådan får du lavet din webshop
+1. Kort samtale: Du fortæller, hvad du sælger, til hvem, og hvordan du leverer. Jeg anbefaler en platform – ærligt.
+2. Fast pris og design: Du får en fast pris og et første designudkast inden for 48 timer. Intet bygges, før du har sagt ja.
+3. Opsætning: Produkter, betaling, fragt, handelsbetingelser og SEO sættes op. Du ser webshoppen undervejs.
+4. Test og lancering: Vi tester køb, betaling og mails, før webshoppen åbner. Du lærer at oprette produkter og ordrer.
+
+## Det skal du selv have klar
+En webshop bliver hurtigere færdig, når de her ting er på plads. Jeg hjælper gerne med resten.
+- Produktliste: navne, priser, varianter og gerne et regneark
+- Produktbilleder: lyse, ens billeder sælger bedre end flotte, men forskellige
+- Fragt: hvem leverer, hvad koster det, og hvornår er der fri fragt
+- Betaling: aftale med betalingsudbyder (jeg hjælper med opsætningen)
+- Handelsbetingelser: returret, levering og reklamation
+- CVR-nummer og kontaktoplysninger, der skal stå på siden
+
+## Efter lanceringen
+En webshop skal holdes opdateret: platform, plugins og sikkerhed. Med en vedligeholdelsesaftale fra 249 kr/md sørger jeg for opdateringer, backup og overvågning, så du kan bruge tiden på at sælge. Der er ingen binding – du kan opsige med 30 dages varsel.
+
 ## Ofte stillede spørgsmål
 Q: Hvad koster en webshop?
 A: Hos WebHjerte fra 14.000 kr inkl. moms. Prisen afhænger af antal produkter, betalingsløsninger og integrationer.
@@ -303,6 +388,15 @@ A: Det afhænger af dit behov. WooCommerce er fleksibelt og uden platformsafgift
 
 Q: Kan jeg selv tilføje produkter?
 A: Ja. Jeg viser dig, hvordan du opretter og redigerer produkter, priser og lager.
+
+Q: Kan jeg få en hjemmeside med webshop billigere end 14.000 kr?
+A: Sælger du kun få varer, kan en enkel betalingsknap på en almindelig hjemmeside være nok – og billigere. Skriv, hvad du vil sælge, så får du et ærligt svar og en fast pris.
+
+Q: Hvor lang tid tager det at få lavet en webshop?
+A: Typisk 2–4 uger. Det afhænger mest af, hvor hurtigt produkter, billeder og tekster er klar.
+
+Q: Kan I flytte min eksisterende webshop?
+A: Ja. Jeg flytter produkter, kunder og ordrer og sætter omdirigeringer op, så du ikke mister dine placeringer i Google.
 
 
 ---
@@ -484,6 +578,287 @@ A: Ofte ja, fordi jeg ikke har dyre kontorer eller lange led af projektledere. D
 
 Q: Kan I lave en hjemmeside til min Aarhus-virksomhed på under en uge?
 A: Ja, en landingside tager typisk ca. 2 dage og en Basis-hjemmeside ca. 5 dage, når tekst og billeder er klar.
+
+
+---
+
+# Webbureau i Vejle og trekantsområdet
+URL: https://www.webhjerte.dk/webbureau-vejle
+
+Vejle ligger 25 minutter fra Horsens, og mange af mine kunder findes i hele trekantsområdet. Jeg bygger hurtige hjemmesider til fast pris, med lokal SEO og direkte kontakt til udvikleren.
+
+Kort svar: WebHjerte er et webbureau med base i Horsens, ca. 25–30 minutter fra Vejle. Jeg bygger hjemmesider til virksomheder i Vejle, Fredericia, Kolding og omegn fra 2.500 kr, med levering på 2–10 dage. Et eksempel i porteføljen er Lønbæks Køreskole i Vejle.
+
+## Fra Horsens til Vejle: 25 minutter og en fjord
+Jeg sidder i Horsens, og Vejle er min nærmeste store nabo mod syd. Fra Horsens følger du E45 sydpå, over Vejlefjordbroen, og er i Vejle på cirka 25–30 minutter. Det betyder, at jeg både kan arbejde med dig online og – hvis det giver mening – mødes med dig ansigt til ansigt.
+Vejle er en by i vækst med et stærkt erhvervsliv, en travl havn og et tæt samspil med resten af trekantsområdet. Kunderne søger lokalt, og de forventer at kunne se ydelser, priser og kontaktoplysninger på få sekunder. Min opgave er at gøre din virksomhed nem at finde og nem at vælge.
+
+## Sådan søger virksomheder og kunder i Vejle
+Lokale søgninger følger et fast mønster: en ydelse plus et stednavn. Eksemplerne herunder er typiske formuleringer – og det er dem, din hjemmeside skal kunne svare på, hvis du vil findes af kunder i Vejle.
+
+## Brancher, jeg bygger til i og omkring Vejle
+Jeg arbejder med små og mellemstore virksomheder på tværs af brancher. I min portefølje finder du blandt andet Lønbæks Køreskole i Vejle. Her er de brancher, jeg oftest bygger til – med egne sider med konkrete råd:
+
+## Lokal synlighed i Vejle: tre ting, der flytter mest
+Når kunder i Vejle søger efter dig, ser de ofte først Googles kortresultater. Derfor starter jeg med det, der giver mest effekt for en lokal virksomhed:
+1. Google Virksomhedsprofil i orden: Rigtig kategori, ydelser, åbningstider, billeder og Vejle som serviceområde. Svar på alle anmeldelser.
+2. En side pr. ydelse – med Vejle i teksten: Hver ydelse får sin egen side med egne ord, så du findes på de konkrete søgninger i stedet for én samlet 'ydelser'-side.
+3. Anmeldelser fra kunder i området: Bed om en anmeldelse, når en opgave er færdig. Lokale anmeldelser betyder meget for placeringen i kortet.
+
+## Trekantsområdet: Vejle, Fredericia og Kolding
+Mange virksomheder i området betjener kunder på tværs af de tre byer. Derfor bygger jeg sider med serviceområde, ikke kun én adresse: du kan omtale alle de byer, du dækker, uden at ende med tynde duplikatsider. Det styrker din lokale synlighed og giver kunderne et klart billede af, hvor du kommer.
+- Vejle og omegn: Børkop, Give, Egtved, Jelling og Bredsten.
+- Fredericia og Middelfart.
+- Kolding og Christiansfeld.
+- Horsens og Hedensted – mit hjemmemarked.
+
+## Hvad får du som kunde i Vejle?
+- Fast pris og aftalt tidsplan.
+- Responsivt design, der virker på mobil, tablet og desktop.
+- Basis-SEO i alle pakker, så Google forstår din side.
+- Kontaktformularer, Google Maps og klik-for-at-ringe.
+- 30 dages support efter lancering.
+- Mulighed for WordPress, hvis du selv vil redigere indholdet.
+
+## Ofte stillede spørgsmål
+Q: Arbejder I med virksomheder i Vejle?
+A: Ja. Jeg arbejder med virksomheder i Vejle, Fredericia, Kolding og hele Jylland. Alt kan foregå online.
+
+Q: Hvor hurtigt kan en hjemmeside være klar?
+A: En landingside ca. 2 dage, Basis ca. 5 dage og Standard ca. 10 dage – når indhold og billeder er klar.
+
+Q: Kan jeg få en hjemmeside, jeg selv kan redigere?
+A: Ja. Jeg bygger i WordPress, hvis du vil kunne rette tekster og billeder selv.
+
+
+---
+
+# Hjemmeside til håndværkere, der får telefonen til at ringe
+URL: https://www.webhjerte.dk/hjemmeside-til-haandvaerkere
+
+Dine kunder finder dig ikke på reklamer – de finder dig, når vandet løber, lyset går, eller terrassen skal bygges. En hjemmeside til en håndværker skal derfor ikke være pæn først og fremmest. Den skal gøre det let at vælge dig og endnu lettere at kontakte dig.
+
+Kort svar: En god håndværkerside besvarer tre spørgsmål på få sekunder: Hvad laver du? Arbejder du hos mig? Hvordan kommer jeg i kontakt med dig? Resten – billeder, anmeldelser, autorisation og pris – er det, der får kunden til at vælge dig frem for de to andre, vedkommende har åbnet i andre faner.
+
+## Sådan vælger kunderne en håndværker
+Når nogen skal have en håndværker, åbner de sjældent kun én side. De søger, åbner tre-fire resultater og vælger hurtigt – ofte på mobilen, ofte mens de har et problem, der skal løses. Den side, der først gør det klart, at du kan det, de har brug for, og arbejder i deres område, vinder samtalen.
+Det betyder, at en håndværkerside fungerer bedst, når den er bygget om kundens spørgsmål og ikke om firmaets historie. Kunden spørger sig selv: Kan de hjælpe mig? Er de til at stole på? Hvor hurtigt kan jeg få fat i dem? Kan jeg se, hvad de har lavet før?
+
+## Det leder dine kunder efter
+
+## Opbygningen, der virker på de fleste håndværkersider
+1. Øverst: ydelse, område og handling: En overskrift, der siger, hvad du laver og hvor, og en tydelig knap til at ringe eller skrive. Ingen slideshow, ingen velkomsttekst.
+2. Dine ydelser i korte afsnit: Hver ydelse får sin egen kort beskrivelse – og gerne sin egen side, når du vil findes på de specifikke søgninger.
+3. Dit arbejde – med billeder: Tre til seks projekter, hver med et før/efter-billede, hvad opgaven gik ud på, og hvor lang tid den tog.
+4. Tillid: anmeldelser, autorisation og garanti: Rigtige citater fra kunder med fornavn og by. Skriv, hvilken autorisation og forsikring du har.
+5. Sådan foregår det: Tre-fire korte trin fra første kontakt til færdigt arbejde. Det fjerner det, der gør kunder nervøse.
+6. Kontakt, der er nem: Telefonnummer, der kan trykkes, og en kort formular, hvor kunden kan beskrive opgaven og vedhæfte et billede.
+
+## Gør – og undgå
+
+## Fundet lokalt: Google, kort og anmeldelser
+Håndværkere bliver især fundet på tre måder: i Googles kortresultater (Google Virksomhedsprofil), i almindelige søgeresultater og via anbefalinger. Hjemmesiden er det, der binder det sammen: den bekræfter, hvem du er, og giver Google noget at forstå dit område ud fra.
+
+## Find din branche
+Håndværkerfirmaer har forskellige kunder og forskellige søgninger. Her er de brancher, jeg har skrevet særskilt om – med konkrete råd til netop dem.
+
+## Hvilken løsning passer til dig?
+Den rigtige størrelse afhænger af, hvor mange ydelser og områder du vil findes på – ikke af, hvor stort dit firma er. Det er min typiske anbefaling:
+Situation | Typisk løsning | Hvorfor
+Enkeltmandsfirma med få ydelser | Landingside eller Basis | Én samlet side med ydelser, billeder og kontakt er nok til at komme i gang.
+Flere ydelser og flere byer | Basis eller Standard | Egne sider pr. ydelse giver flere måder at blive fundet på.
+Mange projekter og behov for booking/tilbud | Standard | Galleri, formularer og måling af, hvilke sider der giver henvendelser.
+
+## Ofte stillede spørgsmål
+Q: Skal en håndværker overhovedet have en hjemmeside – er Facebook ikke nok?
+A: Facebook er godt til at vise dit arbejde, men kunder, der søger på Google efter en håndværker, ender oftest på hjemmesider og i Googles kort. En hjemmeside giver dig også din egen, stabile placering uden at være afhængig af, hvad en platform viser.
+
+Q: Hvad skal der stå på en håndværkers hjemmeside?
+A: Dine ydelser, dit arbejdsområde, billeder af udført arbejde, anmeldelser, autorisation og en nem måde at kontakte dig på. Resten er bonus.
+
+Q: Kan jeg selv opdatere billeder og tekster?
+A: Ja, hvis siden bygges i WordPress. Ellers kan jeg opdatere for dig via en aftale. Det vigtigste er, at billederne bliver ved med at komme til – det er dem, der overbeviser kunderne.
+
+Q: Hvor hurtigt kan jeg få flere henvendelser?
+A: Det afhænger af, hvor godt dit lokale marked er dækket. En ny, hurtig side med klare ydelser kan give flere kontakter fra de første uger, men placeringer på Google bygges typisk op over 2–3 måneder.
+
+Q: Hvad er forskellen på dig og de landsdækkende håndværkerportaler?
+A: Portaler tager ofte betaling pr. lead og deler dem med dine konkurrenter. Din egen hjemmeside og Google-profil giver kunder, der selv har valgt dig – og du ejer relationen.
+
+
+---
+
+# Hjemmeside til VVS-firma i Horsens – akutte opkald og gode projekter
+URL: https://www.webhjerte.dk/hjemmeside-til-vvs
+
+Et VVS-firma har to meget forskellige kunder: den, der har vand på gulvet lige nu, og den, der planlægger et nyt badeværelse om tre måneder. Din hjemmeside skal tale til begge – og gøre det klart, hvilken vej hver af dem skal gå.
+
+Kort svar: VVS-kunder søger ofte under pres. Siden skal derfor have et synligt akut-nummer øverst, en rolig tilbudsvej til de planlagte projekter og tydelige bevis for, at du er autoriseret og arbejder i kundens område. Resten er detaljer, der gør forskellen mellem et opkald og et tilbagetryk.
+
+## To kunder – to veje igennem siden
+Den akutte kunde har hast, er ofte stresset og kigger på mobilen. De leder efter ét sted: et telefonnummer og en bekræftelse på, at du kommer ud i deres område. Hver ekstra sætning eller menu er en grund til at trykke tilbage og prøve det næste firma.
+Den planlagte kunde har tid og vil sammenligne. De læser om dine ydelser, kigger på billeder af tidligere badeværelser og varmepumper og skriver, når de føler sig trygge. Her vinder du på detaljer, tillid og et let tilbudsflow.
+
+## De ydelser, kunderne søger på
+VVS dækker mange ting, men kunderne søger på meget konkrete problemer. Hver ydelse, du tilbyder, bør have sin egen overskrift – og helst sin egen side, hvis du vil findes på specifikke søgninger.
+
+## Siden bygget som en vej til opkaldet
+1. Øverst: akut-knap og tilbudsknap: Telefonnummeret er til at trykke på, og der står, hvilke områder og tider du dækker. Formularen er kort: navn, telefon, hvad det drejer sig om.
+2. Dine ydelser med egne overskrifter: Brug kundens ord: 'stoppet afløb', 'ny varmepumpe', 'nyt badeværelse'. Hver får et kort afsnit og en handling.
+3. Bevis: autorisation, forsikring og anmeldelser: Skriv, at du er autoriseret VVS-installatør, hvis du er det, og vis rigtige anmeldelser fra kunder i området.
+4. Projekter og billeder: Tre til seks gennemarbejdede cases med før/efter, hvad der blev lavet, og hvor lang tid det tog.
+5. Område og åbningstid: Nævn byerne med navn og skriv, hvornår man kan få fat i dig, og hvad der gælder for akutte henvendelser uden for normal tid.
+6. Spørgsmål og svar: Hvad koster et opkald? Hvor hurtigt kan I komme? Svar åbent på det, kunderne alligevel spørger om i telefonen.
+
+## Det, der får VVS-sider til at give opkald
+- Telefonnummer og tilbudsknap synlige uden at scrolle, især på mobil
+- Ydelser beskrevet som kunden ville søge dem – ikke som branchens fagsprog
+- Områder og byer skrevet ud, så kunden ved, at du kommer til dem
+- Autorisation, forsikring og garanti nævnt tydeligt og tidligt
+- Billeder fra rigtige opgaver – gerne fra køkken, badeværelse og teknikrum
+- Et svar på 'hvad koster det cirka?' – også hvis det kun er en ramme
+- En formular, hvor man kan vedhæfte et billede af problemet
+
+## Lokal SEO: bliv fundet, når det brænder på
+VVS er en af de brancher, hvor lokale søgninger afgør meget. Folk skriver 'VVS Horsens', 'vvs akut' eller 'stoppet afløb Horsens' – og vælger et af de første resultater, ofte i Googles kortvisning.
+
+## Hvilken løsning passer til et VVS-firma?
+Situation | Typisk løsning | Hvorfor
+Mest akut og service, få ydelser | Landingside eller Basis | Hurtig side med nummer, ydelser og område – klar på få dage.
+Både service og større projekter | Basis eller Standard | Egne sider til badeværelser og varmepumper med billeder og tilbudsformular.
+Flere byer og mange ydelser | Standard | Plads til lokale sider, galleri og måling af, hvilke sider der giver opkald.
+
+## Ofte stillede spørgsmål
+Q: Hvad skal et VVS-firma have på sin hjemmeside?
+A: Et tydeligt telefonnummer til akutte opkald, dine ydelser, dit område, autorisation og forsikring, billeder af udført arbejde, anmeldelser og en kort formular til tilbud.
+
+Q: Hvordan får et VVS-firma flere akutte opkald fra Google?
+A: Ved at have en hurtig side med et synligt telefonnummer, en optimeret Google Virksomhedsprofil med korrekte oplysninger og mange nylige anmeldelser, samt tekster, der nævner de byer, du dækker.
+
+Q: Bør akutte opkald og tilbud have hver sin vej på siden?
+A: Ja. Den akutte kunde vil ringe nu, den planlagte kunde vil læse og skrive. To tydelige knapper øverst gør, at begge får, hvad de leder efter, uden at lede.
+
+Q: Kan siden vise et galleri af badeværelser og varmepumper?
+A: Ja. Billeder fra rigtige opgaver er det stærkeste bevis på kvalitet. Jeg sætter galleriet op, så du nemt kan tilføje nye projekter bagefter.
+
+Q: Hvad hvis jeg også arbejder uden for Horsens?
+A: Så får hvert område sin egen lokale side eller sektion, så du kan blive fundet i flere byer uden at kopiere tekster.
+
+
+---
+
+# Hjemmeside til elektriker i Horsens – tillid først, så opkaldet
+URL: https://www.webhjerte.dk/hjemmeside-til-elektriker
+
+Kunder lader en elektriker gå ind i deres hjem og røre ved noget, der kan være farligt. Derfor handler en elektrikersides vigtigste opgave om tillid: at vise, at du er autoriseret, hvad du laver, og at der er et rigtigt menneske bag.
+
+Kort svar: En elektrikers hjemmeside vinder på tillid og tydelighed. Skriv, hvad du er autoriseret til, vis rigtige opgaver, forklar forløbet fra henvendelse til færdigt arbejde, og gør det nemt at beskrive opgaven med et billede. Elbil-ladere, tavler og fejlfinding er de emner, flest kunder leder efter.
+
+## Hvorfor tillid er alt for en elektriker
+Elarbejde handler om sikkerhed. Kunden ved, at fejl kan give brand eller stød, og vil derfor ikke bare have den billigste – men en, de kan stole på. Det gør hjemmesiden til en tillidsmaskine: den skal vise, at du er professionel, autoriseret og til at få fat i.
+Det er også derfor, de bedste elektrikersider ikke er de mest flotte, men de mest tydelige: de siger direkte, hvad de laver, hvor, og hvad kunden kan forvente.
+
+## Det søger kunderne efter
+
+## Siden bygget til at skabe tillid
+1. Øverst: hvem, hvad og hvor: En klar overskrift, dit område og to knapper: ring eller beskriv opgaven. Autorisation vises som et lille, tydeligt mærke.
+2. Ydelser med forklaring: Hver ydelse får et afsnit, der forklarer, hvad den indebærer, og hvornår kunden skal ringe i stedet for at vente.
+3. Rigtige opgaver: Fotos af færdige installationer, tavler og ladere, med kort tekst om opgaven. Det viser dit håndværk og din ryddelighed.
+4. Anmeldelser og referencer: Citater med fornavn og by, links til Google-anmeldelser og eventuelle erhvervskunder, du må nævne.
+5. Sådan foregår et forløb: Henvendelse → besigtigelse → tilbud → udførelse → dokumentation. Kunder bliver trygge, når de kan se forløbet.
+6. Nem kontakt med billede: Formularen lader kunden beskrive opgaven og vedhæfte et billede af tavlen eller stedet – så du kan give et mere præcist svar.
+
+## Gør – og undgå
+
+## Elbil-lader: den side, der kan give flest projekter
+Efterspørgslen på elbil-ladere vokser, og kunderne har mange spørgsmål, før de ringer: hvad koster det, hvor lang tid tager det, passer lederen til min bil, og skal der nyt i tavlen? En side, der besvarer dem ærligt, får henvendelser fra kunder, der allerede er langt i processen.
+- Forklar, hvad en installation typisk indebærer, og hvad kunden selv skal gøre først
+- Skriv, hvilke ladere og mærker du arbejder med – og hvad der afgør valget
+- Vis et eksempel på et færdigt projekt med billede
+- Fortæl, hvad der afgør prisen, så kunden forstår et tilbud
+- Giv mulighed for at sende et billede af tavlen og placeringen
+
+## Lokal synlighed for elektrikere
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Enkeltmand med service og fejlfinding | Landingside eller Basis | Tydelig side med ydelser, tillid og kontakt.
+Du vil have projekter som elbil-ladere og tavler | Basis eller Standard | Egne sider til de store projekter og galleri.
+Flere medarbejdere og flere områder | Standard | Lokale sider, formularer og måling af henvendelser.
+
+## Ofte stillede spørgsmål
+Q: Hvad skal en elektrikers hjemmeside indeholde?
+A: Dine ydelser, dit område, autorisation og forsikring, billeder af udført arbejde, anmeldelser, forløbet fra henvendelse til færdigt arbejde og en nem måde at kontakte dig på – gerne med mulighed for at vedhæfte billeder.
+
+Q: Skal jeg skrive priser på siden?
+A: Du behøver ikke lægge dig fast, men en forklaring på, hvad der afgør prisen – eller en vejledende ramme – filtrerer uforpligtende henvendelser fra og skaber tillid.
+
+Q: Er en side om elbil-ladere en god idé?
+A: Ja, hvis du installerer dem. Kunderne søger konkret på emnet og har mange spørgsmål. En selvstændig side kan fange søgninger, som en generel side ikke dækker.
+
+Q: Hvordan viser jeg, at jeg er autoriseret?
+A: Skriv tydeligt, hvad din autorisation dækker, og vis den som et synligt mærke øverst og på kontaktsiden. Nævn også brancheforeninger og forsikringer.
+
+Q: Hvor hurtigt er siden klar?
+A: Efter den første samtale får du et designudkast inden for 48 timer. Når du har godkendt det, er siden typisk live på 2–10 dage, afhængigt af omfang.
+
+
+---
+
+# Hjemmeside til tømrer i Horsens – vis projekterne, få de gode opgaver
+URL: https://www.webhjerte.dk/hjemmeside-til-tomrer
+
+Tømrerarbejde er store beslutninger. Kunden vil bygge en terrasse, en tilbygning eller et nyt køkken og vil se, hvad du har bygget, før de ringer. Din hjemmeside er dit portfolio – og din første besigtigelse.
+
+Kort svar: En tømrerside vinder på billeder, forløb og tillid. Vis færdige projekter med kort tekst om opgaven, forklar processen fra første samtale til afleveret arbejde, og gør det nemt at beskrive et projekt. Så filtrerer du de uforpligtende fra og får de opgaver, du helst vil have.
+
+## Kunden vil se, før de vælger
+Til store opgaver vælger kunden ud fra tillid og kvalitet. De spørger vennerne, søger på Google og kigger billeder. En hjemmeside, der viser dine projekter tydeligt – med de rigtige billeder og kort tekst – flytter dig fra 'et firma blandt mange' til 'den vi har lyst til at ringe til'.
+Det betyder også, at tømrersider ikke skal være lange og fyldt med tekst. De skal være visuelle, rolige og fortælle, hvad du bygger, hvordan du arbejder, og hvem man skriver til.
+
+## De opgaver, kunderne søger på
+
+## Siden bygget som et portfolio
+1. Øverst: et stærkt billede og en klar linje: Ét godt projektbillede, hvad du laver og hvor, og en tydelig knap til at beskrive opgaven.
+2. Ydelser i få, klare grupper: Terrasser, tilbygninger, køkkener, tag og vinduer. Hver gruppe med et eksempel og et link til flere billeder.
+3. Udvalgte projekter: Tre til seks cases med billeder, kort beskrivelse, materialer og tidsforbrug. Én side pr. projekt, hvis du vil findes på specifikke søgninger.
+4. Sådan arbejder jeg: Fra første samtale over besigtigelse og tilbud til aflevering. Kunden bliver tryg, når de kan se forløbet.
+5. Anmeldelser og tillid: Citater fra kunder, eventuel mesterbrev eller medlemskab, og referencer, du må nævne.
+6. Nem kontakt: En formular, hvor kunden kan beskrive projektet, vedhæfte skitser eller billeder og skrive ønsket tidsramme.
+
+## Gør – og undgå
+
+## Billeder, der sælger – uden at ødelægge hastigheden
+Billeder er tømrerens vigtigste redskab, men tunge billeder gør siden langsom. Jeg komprimerer og indlæser dem, så de fylder minimalt, men ser skarpe ud. Siden åbner hurtigt – også på mobilen på byggepladsen.
+For at få mest ud af det kan du tage billeder under og efter projektet: før, undervejs, færdigt, og en detalje. Selv telefonbilleder i godt lys duer, så længe de er rene og viser, hvad opgaven gik ud på.
+- Tag billeder i dagslys og med ryddet område
+- Tag både overblik og detaljer (samlinger, afslutninger)
+- Skriv kort, hvad opgaven var, og hvad der var særligt
+- Bed om lov, før du bruger billeder af kundens bolig
+
+## Lokal SEO for tømrere
+
+## Hvilken løsning passer?
+Situation | Typisk løsning | Hvorfor
+Få ydelser og begrænset billedmateriale | Landingside eller Basis | En samlet side med projekter og kontakt kommer hurtigt i gang.
+Du vil vise mange projekter | Basis eller Standard | Galleri og egne projektsider med billeder og tekst.
+Flere medarbejdere og store opgaver | Standard | Lokale sider, formularer og måling af, hvilke sider der giver opgaver.
+
+## Ofte stillede spørgsmål
+Q: Hvad skal en tømrers hjemmeside indeholde?
+A: Dine ydelser, udvalgte projekter med billeder og kort tekst, en forklaring på forløbet, anmeldelser, dit område og en nem måde at beskrive et projekt på.
+
+Q: Hvor mange billeder har jeg brug for?
+A: Start med tre til seks gode projekter, hver med fire-otte billeder. Det er bedre end mange tilfældige billeder. Du kan altid tilføje flere.
+
+Q: Kan jeg selv tilføje nye projekter?
+A: Ja, hvis siden bygges i WordPress, kan du selv tilføje projekter med billeder og tekst. Ellers kan jeg gøre det for dig via en aftale.
+
+Q: Bliver siden langsom af mange billeder?
+A: Ikke hvis den er bygget rigtigt. Jeg komprimerer og indlæser billederne, så siden åbner hurtigt, også på mobil.
+
+Q: Hvordan får jeg flere store opgaver?
+A: Ved at vise de opgaver, du vil have flere af, og ved at gøre det let at beskrive et projekt. Lokale sider og Google-anmeldelser hjælper de rigtige kunder med at finde dig.
 
 
 ---

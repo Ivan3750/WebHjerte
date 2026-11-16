@@ -49,15 +49,20 @@
 - [Kontakt](https://www.webhjerte.dk/kontakt)
 
 ## Områder, emner og referencer
-- [Alle typer hjemmesider](https://www.webhjerte.dk/alle-typer-hjemmesider): WordPress, WooCommerce, Shopify, Webflow, Wix eller skræddersyet kode: jeg bygger og optimerer på alle platforme – og vælger efter dit behov.
-- [Shopify webshop](https://www.webhjerte.dk/shopify-hjemmeside): Shopify-webshop til danske virksomheder: opsætning, design, betaling, fragt og SEO – for nye og eksisterende butikker.
-- [Skræddersyede hjemmesider](https://www.webhjerte.dk/skraeddersyede-hjemmesider): Skræddersyede hjemmesider og websider til virksomheder: unikt design, hurtig kode og SEO bygget ind. Fast pris, direkte kontakt og levering på 2–10 dage.
-- [Hjemmeside til virksomhed](https://www.webhjerte.dk/hjemmeside-til-virksomhed): Få en professionel hjemmeside til din virksomhed: struktur, indhold, SEO og kontaktveje, der skaber henvendelser. Fra 2.500 kr og klar på 2–10 dage.
-- [Hjemmeside med webshop](https://www.webhjerte.dk/webshop-hjemmeside): Hjemmeside med webshop til små virksomheder: WooCommerce, Shopify eller skræddersyet løsning. Betaling, lager og SEO. Fra 14.000 kr til fast pris.
+- [Alle typer hjemmesider](https://www.webhjerte.dk/alle-typer-hjemmesider): Hvilken platform passer til din hjemmeside? Ærlig sammenligning af WordPress, Shopify, Webflow, Wix og kode – og hjælp til den side, du har.
+- [Shopify webshop](https://www.webhjerte.dk/shopify-hjemmeside): Shopify-webshop sat op til danske kunder: tema, MobilePay, fragt, SEO og flytning uden at miste placeringer. Ærlig vurdering af Shopify vs. WooCommerce.
+- [Skræddersyede hjemmesider](https://www.webhjerte.dk/skraeddersyede-hjemmesider): Hjemmeside bygget til din virksomhed – ikke en skabelon. Hurtig, SEO-klar og din egen kode. Se forskellen på skræddersyet og skabelon, og hvad det koster.
+- [Hjemmeside til virksomhed](https://www.webhjerte.dk/hjemmeside-til-virksomhed): Hvilke sider skal din virksomhed have, og hvad koster det? Professionel hjemmeside til fast pris fra 2.500 kr – første design på 48 timer.
+- [Hjemmeside med webshop](https://www.webhjerte.dk/webshop-hjemmeside): Få lavet en hjemmeside med webshop i WooCommerce, Shopify eller kode. MobilePay, fragt og SEO er med. Fast pris fra 14.000 kr inkl. moms.
 - [Bæredygtigt webdesign](https://www.webhjerte.dk/baeredygtigt-webdesign): Bæredygtigt webdesign: lette sider, optimerede billeder, grønnere hosting og mindre dataforbrug – hurtigere for brugerne, bedre for miljøet.
 - [Webstrategi](https://www.webhjerte.dk/webstrategi): Webstrategi for små virksomheder: mål, målgruppe, indhold, SEO og AI-synlighed samlet i en klar plan, du kan handle på. Start med en gratis samtale.
-- [Hosting og vedligeholdelse](https://www.webhjerte.dk/hosting-og-vedligeholdelse): Hvad koster hosting og vedligeholdelse? Se, hvad der er inkluderet i abonnementet fra 249 kr/md, og hvad domæne og hosting koster.
+- [Hosting og vedligeholdelse](https://www.webhjerte.dk/hosting-og-vedligeholdelse): Hvad koster det at have en hjemmeside kørende? Hosting, domæne, backup og opdateringer forklaret – og vedligeholdelse fra 249 kr/md uden binding.
 - [Webbureau Aarhus](https://www.webhjerte.dk/webbureau-aarhus): Webbureau til virksomheder i Aarhus: hjemmesider fra 2.500 kr, lokal SEO og direkte kontakt. Baseret i Horsens, ca. 45 minutter væk.
+- [Webbureau Vejle](https://www.webhjerte.dk/webbureau-vejle): Hjemmesider til virksomheder i Vejle og trekantsområdet: fast pris fra 2.500 kr, første design på 48 timer og direkte kontakt med udvikleren.
+- [Hjemmeside til håndværkere](https://www.webhjerte.dk/hjemmeside-til-haandvaerkere): Hvad kunderne leder efter, opbygningen der giver opkald, og fejlene der koster henvendelser. Hjemmeside til håndværkere – Lokal synlighed fra 9.500 kr.
+- [Hjemmeside til VVS-firma](https://www.webhjerte.dk/hjemmeside-til-vvs): Hjemmeside til VVS: én vej til den akutte kunde og én til badeværelsesprojektet. Lokal SEO i Horsens og omegn og fast pris.
+- [Hjemmeside til elektriker](https://www.webhjerte.dk/hjemmeside-til-elektriker): Hjemmeside til elektrikere: vis autorisation, priser og elbil-ladere, så kunden vælger dig. Lokal SEO, fast pris og første design på 48 timer.
+- [Hjemmeside til tømrer](https://www.webhjerte.dk/hjemmeside-til-tomrer): Hjemmeside til tømrere: projektgalleri, før/efter og en enkel tilbudsformular, der giver bedre opgaver. Lokal SEO og fast pris.
 
 ## Guides
 - [Sådan bliver din virksomhed nævnt af ChatGPT og Google AI](https://www.webhjerte.dk/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai): Praktisk guide til lokale virksomheder: 12 konkrete tiltag, der gør din hjemmeside nem at citere for ChatGPT, Google AI Overviews, Gemini og Perplexity.

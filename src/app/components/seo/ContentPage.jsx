@@ -16,6 +16,9 @@ import ProcessBlock from "../home/ProcessBlock";
 import { VARIANTS } from "../variants/registry";
 import ThemedHero from "../variants/ThemedHero";
 import { cleanSection, visibleLinks } from "../../data/hidden";
+import ServiceStory, { ShortAnswer } from "./ServiceStory";
+import { FaqSplit } from "../landing/shared";
+import FormToLead from "../ui/FormToLead";
 
 const fmtDate = (iso) =>
   new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
@@ -62,6 +65,7 @@ export default function ContentPage({
   readMinutes,
   city,
   variant,
+  formTitle,
   omit = [], // blokke der ikke skal vises: "price" | "guarantees" | "cases" | "process" | "guide" | "readmore"
 }) {
   const skip = new Set(omit);
@@ -115,6 +119,14 @@ export default function ContentPage({
         priceSpecification: { "@type": "PriceSpecification", price: "2500", priceCurrency: "DKK", valueAddedTaxIncluded: true },
         description: "Priser starter fra 2.500 kr (inkl. moms) for en landingside",
       },
+    });
+  }
+
+  // FAQ vises nu på siden igen, så den må også stå i de strukturerede data
+  if (faqs.length) {
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
     });
   }
 
@@ -262,6 +274,7 @@ export default function ContentPage({
         </section>
       ) : (
         <>
+          {isService && <ShortAnswer text={summary} />}
           {v ? v.blocks({ nichePackage }) : isService && (
             <>
               {!skip.has("price") && <PriceStrip />}
@@ -272,12 +285,26 @@ export default function ContentPage({
             </>
           )}
           {afterSummary}
+          {isService && !skip.has("guide") && <ServiceStory sections={sections} />}
           {!isService && !skip.has("guide") && <GuideSection sections={sections} visuals={visuals} collapse={false} open={v ? v.open : 2} />}
         </>
       )}
 
       {extra}
+      {faqs.length > 0 && (
+        <FaqSplit
+          title={isArticle ? ["Ofte stillede", "spørgsmål"] : ["Det, kunder spørger om", "før de går i gang"]}
+          lead={isArticle ? null : "Korte, ærlige svar. Mangler du et svar, så skriv – jeg svarer inden for 24 timer."}
+          faqs={faqs}
+        />
+      )}
       <ReadMore items={skip.has("readmore") ? [] : related} eyebrow="Læs videre" lines={isArticle ? ["Flere guides,", "der kan hjælpe dig"] : ["Næste skridt", "for dig"]} />
+      {isService && withForm !== false && (
+        <FormToLead
+          titleLine={formTitle || "Klar til en hjemmeside, der giver kunder?"}
+          description="Skriv kort, hvad du har brug for. Du får en fast pris og et første designudkast inden for 48 timer – passer det ikke, betaler du 0 kr."
+        />
+      )}
     </>
   );
 }

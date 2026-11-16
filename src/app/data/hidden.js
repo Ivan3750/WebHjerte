@@ -14,7 +14,6 @@ export const HIDDEN = {
   ],
   // Lokale sider (by/område)
   local: [
-    "webbureau-vejle",
     "webbureau-jylland",
     "wordpress-horsens",
     "digitalt-bureau-horsens",
@@ -22,10 +21,6 @@ export const HIDDEN = {
   ],
   // Sider til forskellige brancher
   business: [
-    "hjemmeside-til-haandvaerkere",
-    "hjemmeside-til-vvs",
-    "hjemmeside-til-elektriker",
-    "hjemmeside-til-tomrer",
     "hjemmeside-til-restauranter",
     "hjemmeside-til-saloner",
   ],

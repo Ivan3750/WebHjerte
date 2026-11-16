@@ -1,15 +1,16 @@
 import Link from "next/link";
 import PriceCalculator from "../../components/ui/PriceCalculator";
 import PageHero, { PrimaryLink, GhostLink } from "../../components/ui/PageHero";
+import { FaqSplit, FaqLd } from "../../components/landing/shared";
 import FormToLead from "../../components/ui/FormToLead";
 import PackagesBlock from "../services/_components/PackagesBlock";
 import SocialProof from "../../components/home/SocialProof";
 import CasesCarousel from "../../components/home/CasesCarousel";
 
 export const metadata = {
-  title: "Hjemmeside pris 2026 – fast pris fra 2.500 kr | WebHjerte",
+  title: "Hjemmeside pris 2026 – fra 2.500 kr og prisberegner",
   description:
-    "Hjemmeside priser inkl. moms: Landingside 2.500 kr, Basis 4.500 kr, Standard 8.500 kr, webshop fra 14.000 kr. Beregn din pris og få et fast tilbud.",
+    "Hvad koster en hjemmeside? Faste priser inkl. moms: landingside 2.500 kr, Basis 4.500 kr og Standard 8.500 kr. Beregn din pris og få et tilbud på 24 timer.",
   keywords:
     "hjemmeside pris, hjemmeside priser, hjemmesidepriser, priser hjemmeside, hjemmeside tilbud, hjemmeside fast pris, beregn hjemmeside pris, webdesign pris",
   robots: "index, follow",
@@ -34,6 +35,16 @@ export const metadata = {
     canonical: "https://www.webhjerte.dk/hjemmeside-pris",
   },
 };
+
+const faqs = [
+  { q: "Er priserne inkl. moms?", a: "Ja. Alle priser på siden er inkl. moms, og du får et skriftligt tilbud med fast pris, før jeg går i gang." },
+  { q: "Hvad er forskellen på Basis og Standard?", a: "Basis (4.500 kr) er 3–5 sider med kontaktformular, Google Maps og basic SEO – klar på ca. 5 dage. Standard (8.500 kr) er op til 8 sider med SEO, analytics, booking og formularer – klar på ca. 10 dage." },
+  { q: "Er der løbende udgifter?", a: "Du betaler for domæne og hosting. Vedligeholdelse er valgfri: 249, 449 eller 799 kr/md uden binding, alt efter hvor meget hjælp du vil have." },
+  { q: "Hvad hvis jeg ikke kan lide designet?", a: "Du ser første designudkast efter 48 timer. Passer det ikke, betaler du 0 kr for designet." },
+  { q: "Hvad koster en webshop?", a: "Webshops er skræddersyede løsninger fra 14.000 kr inkl. moms. Prisen afhænger af antal produkter, betaling, fragt og integrationer." },
+  { q: "Kan jeg få en hjemmeside billigere end 2.500 kr?", a: "Med en hjemmesidebygger kan du starte gratis, men så betaler du hver måned og bygger selv. Landingsiden til 2.500 kr er den billigste løsning, hvor jeg bygger siden for dig." },
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -151,6 +162,8 @@ const HjemmesidePris = () => {
       </section>
       <CasesCarousel />
       <SocialProof />
+      <FaqLd faqs={faqs} />
+      <FaqSplit title={["Spørgsmål om", "priser"]} lead="Det, folk oftest spørger om, før de vælger pakke." faqs={faqs} />
       <FormToLead
         titleLine="Få et konkret tilbud på din hjemmeside"
         description="Fortæl os kort om dit projekt, og få en fast pris inden for 24 timer – helt uforpligtende."

@@ -59,7 +59,7 @@ export function LandingLd({ path, name, serviceType, description, faqs = [], pri
 }
 
 /** FAQ i to kolonner: overskrift der følger med til venstre, rene <details> til højre (al tekst står i HTML'en). */
-export function FaqSplit({ title, lead, faqs, dark = false, id }) {
+export function FaqSplit({ title, lead = null, faqs, dark = false, id = undefined }) {
   return (
     <section id={id} className={`scene ${dark ? "bg-[#1c1e1e]" : "bg-[#f7f6f6]"}`}>
       <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-10 lg:gap-24">
@@ -155,4 +155,15 @@ export function MoreLinks({ links, title = "Læs videre" }) {
       </div>
     </section>
   );
+}
+
+/** Kun FAQPage-skema – til sider, der har deres egne strukturerede data i forvejen. */
+export function FaqLd({ faqs }) {
+  if (!faqs?.length) return null;
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }

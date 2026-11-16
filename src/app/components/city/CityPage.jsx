@@ -8,6 +8,7 @@ import CasesCarousel from "../home/CasesCarousel";
 import { FadeUp } from "../home/fx/Reveal";
 import { SerpSimulator, BreakEven, ZigZag } from "./CityBlocks";
 import { SITE_URL, breadcrumbLd } from "../../lib/seo";
+import { isHiddenHref } from "../../data/hidden";
 
 /**
  * Personlig byside med fokus på virksomhedens resultat. Hver sektion har sin egen opbygning:
@@ -150,16 +151,21 @@ export default function CityPage({ city }) {
                 <span className="text-[15px] font-semibold text-white">{city.industries.big.cta} →</span>
               </Link>
             </FadeUp>
-            {city.industries.small.map((x, i) => (
-              <FadeUp key={x.title} delay={0.08 * (i + 1)}>
-                <Link href={x.href} className="group h-full rounded-3xl bg-[#242828] border border-white/10 p-7 flex flex-col gap-3 hover:bg-[#2a2e2e] transition-colors">
-                  <p className="text-[13px] font-semibold text-[#00a8e8]">{x.goal}</p>
-                  <p className="text-[21px] font-semibold text-white leading-snug">{x.title}</p>
-                  <p className="text-[15px] text-[#b4bdbd] leading-[1.7] flex-1">{x.text}</p>
-                  <span className="text-[14px] font-semibold text-white mt-2">{x.cta} →</span>
-                </Link>
-              </FadeUp>
-            ))}
+            {city.industries.small.map((x, i) => {
+              // Skjulte sider (se data/hidden.js): kortet bliver stående, men uden link
+              const linked = x.href && !isHiddenHref(x.href);
+              const Tag = linked ? Link : "div";
+              return (
+                <FadeUp key={x.title} delay={0.08 * (i + 1)}>
+                  <Tag {...(linked ? { href: x.href } : {})} className={`group h-full rounded-3xl bg-[#242828] border border-white/10 p-7 flex flex-col gap-3 ${linked ? "hover:bg-[#2a2e2e] transition-colors" : ""}`}>
+                    <p className="text-[13px] font-semibold text-[#00a8e8]">{x.goal}</p>
+                    <p className="text-[21px] font-semibold text-white leading-snug">{x.title}</p>
+                    <p className="text-[15px] text-[#b4bdbd] leading-[1.7] flex-1">{x.text}</p>
+                    {linked && <span className="text-[14px] font-semibold text-white mt-2">{x.cta} →</span>}
+                  </Tag>
+                </FadeUp>
+              );
+            })}
             <FadeUp className="lg:col-span-3" delay={0.24}>
               <Link href={city.industries.wide.href} className="group rounded-3xl bg-[#242828] border border-white/10 p-7 sm:p-9 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-[#2a2e2e] transition-colors">
                 <div className="max-w-[62ch]">

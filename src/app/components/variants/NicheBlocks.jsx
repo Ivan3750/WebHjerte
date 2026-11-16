@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { isHiddenHref } from "../../data/hidden";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import SectionHead from "../ui/SectionHead";
@@ -63,7 +64,7 @@ export function TradesGrid() {
       <div className="relative max-w-6xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
         <SectionHead dark eyebrow="Find din branche" lines={["Hver branche har", "sin egen side"]} className="mb-10 sm:mb-14" />
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
-          {TRADES.map((t, i) => (
+          {TRADES.filter((t) => !isHiddenHref(t.href)).map((t, i) => (
             <FadeUp key={t.href} delay={i * 0.06} className="h-full">
               <Link href={t.href} className="group h-full flex flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-5 hover:-translate-y-1 transition-all duration-500" style={{ "--c": t.color }}>
                 <span className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 text-[#10181a] transition-transform duration-500 group-hover:rotate-[-8deg] group-hover:scale-110" style={{ backgroundColor: t.color }}>

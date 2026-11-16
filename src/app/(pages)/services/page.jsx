@@ -4,18 +4,17 @@ import HeroService from "./_components/HeroService";
 import WhatWeOfferBlock from "./_components/WhatWeOfferBlock";
 import Whyusblock from "./_components/Whyusblock";
 import PackagesBlock from "./_components/PackagesBlock";
-import BrancheCards from "./_components/BrancheCards";
+import { visibleLinks } from "../../data/hidden";
 import ProcessBlock from "../../components/home/ProcessBlock";
 import AfterLaunchBlock from "./_components/AfterLaunchBlock";
 import SupportTariffsBlock from "./_components/SupportTariffsBlock";
 import SectionHead from "../../components/ui/SectionHead";
 import { FadeUp } from "../../components/home/fx/Reveal";
-import SpotlightCard from "../../components/home/fx/SpotlightCard";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 import { supportPlans } from "../../data/supportPlans";
 
 export const metadata = {
-  title: "Hjemmesider, webshop, SEO & AI i Horsens – priser | WebHjerte",
+  title: "Priser og ydelser: hjemmeside, webshop, SEO og AI | WebHjerte",
   description:
     "Alle ydelser og faste priser: hjemmesider i WordPress, Shopify og kode, webshops, SEO og AI-integration (chatbot, automatisering). Fra 2.500 kr.",
   openGraph: {
@@ -119,34 +118,44 @@ const jsonLd = {
   ],
 };
 
-const areas = [
-  { href: "/webdesign-horsens", title: "Horsens", desc: "Webdesign og hjemmesider til virksomheder i Horsens." },
-  { href: "/seo-horsens", title: "SEO i Horsens", desc: "Bliv fundet, når kunder i Horsens søger efter dig." },
-  { href: "/webbureau-aarhus", title: "Aarhus", desc: "Hjemmesider til fast pris til virksomheder i Aarhus." },
-  { href: "/webbureau-vejle", title: "Vejle", desc: "Hjemmesider til virksomheder i Vejle og omegn." },
-  { href: "/webbureau-midtjylland", title: "Midtjylland", desc: "Silkeborg, Skanderborg, Hedensted og resten af regionen." },
-  { href: "/webbureau-jylland", title: "Hele Jylland", desc: "Fra Skagen til Kolding – alt foregår online." },
-];
+// Brancher og områder: kun synlige sider (se data/hidden.js). Ingen billeder – kun ærlige links.
+const trades = visibleLinks([
+  { href: "/hjemmeside-til-haandvaerkere", title: "Håndværkere", desc: "Overblikket: det, alle håndværkersider skal have." },
+  { href: "/hjemmeside-til-vvs", title: "VVS", desc: "Akutte opkald og badeværelsesprojekter." },
+  { href: "/hjemmeside-til-elektriker", title: "Elektrikere", desc: "Autorisation, tillid og elbil-ladere." },
+  { href: "/hjemmeside-til-tomrer", title: "Tømrere", desc: "Vis projekterne, og få bedre opgaver." },
+  { href: "/hjemmeside-til-restauranter", title: "Restauranter", desc: "Menu, booking og bestilling uden mellemled." },
+  { href: "/hjemmeside-til-saloner", title: "Saloner", desc: "Booking, prisliste og billeder." },
+]);
 
-const LinkCards = ({ items }) => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    {items.map((item, i) => (
-      <FadeUp key={item.href} delay={(i % 3) * 0.07}>
-        <Link href={item.href} className="block h-full">
-          <SpotlightCard className="group h-full rounded-3xl bg-[#242828] border border-white/10 transition-colors">
-            <div className="p-6 sm:p-7 flex flex-col gap-3 h-full">
-              <div className="flex items-center justify-between">
-                <p className="text-[16px] font-semibold text-white group-hover:text-[#00a8e8] transition-colors">{item.title}</p>
-                <ArrowIcon className="w-4 h-4 text-white/40 group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" />
-              </div>
-              <p className="text-[15px] text-[#b4bdbd] leading-relaxed">{item.desc}</p>
-            </div>
-          </SpotlightCard>
-        </Link>
-      </FadeUp>
-    ))}
-  </div>
-);
+const areas = visibleLinks([
+  { href: "/seo-horsens", title: "Horsens", desc: "Lokal SEO og hjemmesider i mit hjemmemarked." },
+  { href: "/webbureau-aarhus", title: "Aarhus", desc: "Hjemmesider til fast pris til Aarhus-virksomheder." },
+  { href: "/webbureau-vejle", title: "Vejle", desc: "Vejle og trekantsområdet – 25 min fra Horsens." },
+  { href: "/webbureau-midtjylland", title: "Midtjylland", desc: "Silkeborg, Skanderborg, Randers og resten af regionen." },
+]);
+
+function LinkList({ title, items }) {
+  return (
+    <div>
+      <p className="text-[13px] font-semibold text-[#8fd8f6] mb-4">{title}</p>
+      <ul className="border-t border-white/10">
+        {items.map((item, i) => (
+          <FadeUp as="li" key={item.href} delay={i * 0.05}>
+            <Link href={item.href} className="group grid grid-cols-[auto_1fr_auto] items-center gap-5 py-5 border-b border-white/10">
+              <span className="text-[12px] tabular-nums text-[#8a9696] w-6">{String(i + 1).padStart(2, "0")}</span>
+              <span>
+                <span className="block text-[clamp(18px,1.8vw,22px)] font-semibold text-white group-hover:text-[#00a8e8] transition-colors">{item.title}</span>
+                <span className="block text-[14.5px] text-[#b4bdbd] mt-1 leading-snug">{item.desc}</span>
+              </span>
+              <ArrowIcon className="w-4 h-4 text-white/40 group-hover:text-[#00a8e8] group-hover:translate-x-1 transition-all" />
+            </Link>
+          </FadeUp>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 const Services = () => {
   return (
@@ -166,6 +175,18 @@ const Services = () => {
       <AfterLaunchBlock />
       <SupportTariffsBlock />
 
+      {/* Brancher og områder – samlet her, så alle sider kan findes og linkes */}
+      {(trades.length > 0 || areas.length > 0) && (
+        <section id="brancher" className="scene bg-[#1c1e1e] scroll-mt-[68px]">
+          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+            <SectionHead dark lines={["Hjemmesider til din branche", "– og dit område"]} lead="Hver branche og hvert område har sin egen side med det, der virker netop dér." />
+            <div id="omraader" className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 scroll-mt-[90px]">
+              {trades.length > 0 && <LinkList title="Brancher" items={trades} />}
+              {areas.length > 0 && <LinkList title="Områder" items={areas} />}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 };
