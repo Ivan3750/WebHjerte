@@ -164,7 +164,7 @@ export const more = {
     related: [
       { href: "/shopify-hjemmeside", title: "Shopify webshop", desc: "Hurtig start og mange apps." },
       { href: "/wordpress-hjemmeside", title: "WordPress og WooCommerce", desc: "Fleksibelt og uden platformsafgift." },
-      { href: "/services#priser", title: "Hjemmeside pris", desc: "Alle pakker og prisberegner." },
+      { href: "/services#priser", title: "Hjemmeside pris", desc: "Alle pakker til fast pris." },
     ],
   },
 
@@ -224,7 +224,7 @@ export const more = {
           "Det afhænger af, hvor mange sider du har brug for. En landingside til én ydelse koster 2.500 kr, en Basis-hjemmeside med 3–5 sider 4.500 kr og Standard med op til 8 sider, SEO og booking 8.500 kr. Har du særlige behov – webshop, kundelogin eller integrationer – starter skræddersyede løsninger fra 14.000 kr.",
           PRICE_NOTE,
         ],
-        cta: { href: "/services#priser", label: "Beregn din pris" },
+        cta: { href: "/services#priser", label: "Se priserne" },
       },
     ],
     faqs: [
@@ -234,7 +234,7 @@ export const more = {
     related: [
       { href: "/wordpress-hjemmeside", title: "WordPress-hjemmeside", desc: "Professionel side, du selv kan rette i." },
       { href: "/skraeddersyede-hjemmesider", title: "Skræddersyede hjemmesider", desc: "Unikt design og din egen kode." },
-      { href: "/services#priser", title: "Hjemmeside pris", desc: "Pakker og prisberegner." },
+      { href: "/services#priser", title: "Hjemmeside pris", desc: "Pakker til fast pris." },
     ],
   },
 

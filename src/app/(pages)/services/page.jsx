@@ -4,7 +4,6 @@ import HeroService from "./_components/HeroService";
 import WhatWeOfferBlock from "./_components/WhatWeOfferBlock";
 import PackagesBlock from "./_components/PackagesBlock";
 import { visibleLinks } from "../../data/hidden";
-import PriceCalculator from "../../components/ui/PriceCalculator";
 import FormToLead from "../../components/ui/FormToLead";
 import { FaqSplit, FaqLd } from "../../components/landing/shared";
 import { PromiseBlock } from "../../components/seo/ServiceLayout";
@@ -131,6 +130,23 @@ const trades = visibleLinks([
   { href: "/hjemmeside-til-saloner", title: "Saloner", desc: "Booking, prisliste og billeder." },
 ]);
 
+const aiLinks = visibleLinks([
+  {
+    href: "/ai-chatbot-til-hjemmeside",
+    eyebrow: "Kundeservice 24/7",
+    title: "AI-chatbot til hjemmesiden",
+    desc: "Svarer på de samme spørgsmål igen og igen, booker tider og samler henvendelser – også uden for åbningstid.",
+    cta: "Se AI-chatbotten",
+  },
+  {
+    href: "/ai-seo",
+    eyebrow: "Synlighed i AI-søgning",
+    title: "AI SEO",
+    desc: "Bliv nævnt, når kunder spørger ChatGPT, Perplexity og Google AI om det, du tilbyder.",
+    cta: "Se AI SEO",
+  },
+]);
+
 const areas = visibleLinks([
   { href: "/seo-horsens", title: "Horsens", desc: "Lokal SEO og hjemmesider i mit hjemmemarked." },
   { href: "/webbureau-aarhus", title: "Aarhus", desc: "Hjemmesider til fast pris til Aarhus-virksomheder." },
@@ -184,12 +200,37 @@ const Services = () => {
         <PackagesBlock />
       </div>
 
-      {/* Prisberegner – den eneste side med beregner (plus AI SEO og vedligeholdelse) */}
-      <section className="scene bg-[#1c1e1e]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-          <PriceCalculator dark />
-        </div>
-      </section>
+      {/* AI – kort videre til de to AI-sider */}
+      {aiLinks.length > 0 && (
+        <section className="scene bg-[#1c1e1e]">
+          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+            <SectionHead
+              dark
+              eyebrow="AI til din hjemmeside"
+              lines={["Lad AI tage de gentagne opgaver", "– og gøre dig synlig i ChatGPT"]}
+              className="mb-10"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {aiLinks.map((item, i) => (
+                <FadeUp key={item.href} delay={i * 0.07} className="h-full">
+                  <Link
+                    href={item.href}
+                    className="group h-full rounded-3xl p-6 sm:p-8 flex flex-col gap-4 border border-white/10 bg-white/[0.03] hover:border-[#00a8e8]/60 transition-colors"
+                  >
+                    <span className="text-[11px] uppercase tracking-[0.14em] text-[#8fd8f6]">{item.eyebrow}</span>
+                    <span className="text-[clamp(20px,2vw,26px)] font-semibold text-white tracking-tight">{item.title}</span>
+                    <span className="text-[15px] text-[#b4bdbd] leading-relaxed flex-1">{item.desc}</span>
+                    <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#00a8e8]">
+                      {item.cta}
+                      <ArrowIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </Link>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <SupportTariffsBlock />
 

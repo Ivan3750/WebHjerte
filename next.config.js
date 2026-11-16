@@ -45,7 +45,7 @@ const nextConfig = {
         destination: "/services",
         permanent: true,
       })),
-      // Priser og prisberegner står nu på /services
+      // Priserne står nu på /services
       { source: "/hjemmeside-pris", destination: "/services#priser", permanent: true },
       // Guides ligger under /blog/
       { source: "/webstrategi", destination: "/blog/webstrategi", permanent: true },

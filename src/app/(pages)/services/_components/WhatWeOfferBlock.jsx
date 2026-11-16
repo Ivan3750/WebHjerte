@@ -1,42 +1,59 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { visibleLinks } from "../../../data/hidden";
 import SectionHead from "../../../components/ui/SectionHead";
 import { Panel, VisualSite, VisualShop, VisualChat, VisualSeo, VisualTickets, VisualDesign } from "../../../components/illustrations/Visuals";
 
 const services = [
   {
     name: "Hjemmeside",
+    links: [
+      { href: "/skraeddersyede-hjemmesider", label: "Skræddersyet hjemmeside" },
+      { href: "/wordpress-hjemmeside", label: "WordPress – du redigerer selv" },
+    ],
     Visual: VisualSite,
     color: "#00a8e8",
     desc: "En hjemmeside er ofte det første møde en potentiel kunde har med din virksomhed - og du har kun få sekunder til at gøre indtryk. Som webudvikler i Horsens bygger jeg sider, der ikke bare ser professionelle ud, men er strategisk opbygget til at guide besøgende mod handling. Fra struktur og tekst til farver og billeder - alt er tilpasset din branche og målgruppe, så siden føles som en naturlig forlængelse af din virksomhed, ikke en skabelon fra internettet.",
   },
   {
     name: "Webshop",
+    links: [{ href: "/webshop-hjemmeside", label: "Mere om webshops" }],
     Visual: VisualShop,
     color: "#3ddc97",
     desc: "En webshop skal kunne sælge, selv når du sover, er på ferie, eller har travlt med andre ting. Jeg sætter hele salgsflowet op fra bunden - produktvisning, kurv, betaling, ordrebekræftelse og kvittering - så det hele føles gnidningsfrit for kunden og overskueligt for dig. Du får et system, hvor du selv nemt kan tilføje produkter, opdatere priser og følge med i ordrer, uden at skulle kontakte en udvikler for hver lille ændring.",
   },
   {
     name: "AI-integration",
+    links: [
+      { href: "/ai-chatbot-til-hjemmeside", label: "AI-chatbot til hjemmesiden" },
+      { href: "/ai-seo", label: "AI SEO: bliv nævnt af ChatGPT" },
+    ],
     Visual: VisualChat,
     color: "#f0a63a",
     desc: "AI kan overtage de opgaver, der stjæler din tid hver eneste dag - besvare de samme spørgsmål igen og igen, booke tider, eller guide kunder til det rigtige produkt eller den rigtige service. Det bygges direkte ind på din side, trænes på information om din virksomhed, og føles naturligt for dine kunder at bruge. Resultatet er færre timer brugt på gentagne opgaver, og kunder der får svar med det samme - også uden for åbningstid.",
   },
   {
     name: "SEO-optimering",
+    links: [
+      { href: "/seo-horsens", label: "Lokal SEO i Horsens" },
+      { href: "/gratis-seo-tjek-horsens", label: "Gratis SEO-tjek" },
+    ],
     Visual: VisualSeo,
     color: "#8a8ff0",
     desc: "En hjemmeside gør ingen nytte, hvis ingen finder den. Jeg sørger for, at din side er teknisk optimeret helt fra bunden - hurtig indlæsning, korrekt struktur og mobilvenlighed - kombineret med indhold bygget op omkring de søgeord, dine kunder faktisk skriver på Google. Målet er, at du dukker op, når nogen i Horsens og omegn søger efter det, du tilbyder - uden at du skal betale for annoncer hver måned.",
   },
   {
     name: "Vedligeholdelse & support",
+    links: [{ href: "#vedligeholdelse", label: "Se abonnementerne" }],
     Visual: VisualTickets,
     color: "#e0678a",
     desc: "En hjemmeside er ikke 'færdig', bare fordi den er lanceret - software skal opdateres, sikkerhed skal overvåges, og fejl kan opstå uden varsel. Jeg holder løbende øje med din side, så du slipper for at bekymre dig om nedbrud, forældede systemer eller sikkerhedshuller. Får du brug for en ændring, en ny side eller bare et spørgsmål - så er jeg let at få fat i, ikke en anonym supportkø.",
   },
   {
     name: "Design & branding",
+    links: [{ href: "/portefolje", label: "Se tidligere projekter" }],
     Visual: VisualDesign,
     color: "#00c2a8",
     desc: "Dit visuelle udtryk er det, kunderne husker dig på - længe efter de har forladt din side. Jeg skaber en sammenhængende identitet med farver, typografi og stil, der matcher din virksomheds personlighed og målgruppe. Uanset om en kunde møder dig online, på et visitkort eller i en annonce, skal det føles genkendeligt og professionelt - det skaber tillid, før kunden overhovedet har talt med dig.",
@@ -108,6 +125,19 @@ export default function WhatWeOfferBlock() {
                 <div className="grid grid-cols-1 xl:grid-cols-[1.25fr_1fr] gap-6 xl:gap-8 items-start">
                   <div className="flex flex-col gap-6">
                 <p className="text-[15px] text-[#5a5a5a] leading-[1.85] max-w-[62ch]">{s.desc}</p>
+                {visibleLinks(s.links).length > 0 && (
+                  <div className="flex flex-wrap gap-3">
+                    {visibleLinks(s.links).map((l, j) => (
+                      <Link
+                        key={l.href}
+                        href={l.href}
+                        className={j === 0 ? "btn-primary" : "btn-ghost btn-ghost-light"}
+                      >
+                        {l.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
 
                   </div>
                   <Panel className="xl:order-2 order-first xl:order-none"><s.Visual /></Panel>

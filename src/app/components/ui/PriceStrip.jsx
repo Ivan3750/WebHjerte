@@ -40,7 +40,7 @@ export default function PriceStrip({ title = ["Faste priser –", "ingen overras
         </div>
         <FadeUp className="mt-6">
           <Link href="/services#priser" className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#1c1e1e] border-b border-[#1c1e1e]/30 hover:text-[#007aab] transition-colors">
-            Se alle pakker og beregn din pris →
+            Se alle pakker og priser →
           </Link>
         </FadeUp>
       </div>

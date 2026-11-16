@@ -2,6 +2,14 @@ import Link from "next/link";
 import SectionHead from "../../../components/ui/SectionHead";
 import { FadeUp } from "../../../components/home/fx/Reveal";
 import { packages } from "../../../data/packages";
+import { ArrowIcon } from "../../../components/ui/ArrowIcon";
+
+const TechLink = ({ href, children }) => (
+  <Link href={href} className="group mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-[#00a8e8] hover:text-[#0092cb]">
+    {children}
+    <ArrowIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+  </Link>
+);
 
 const Tick = ({ dark }) => (
   <span
@@ -120,18 +128,21 @@ const PackagesBlock = () => {
               <p className="text-[15px] text-[#6a6a6a] leading-relaxed">
                 Skræddersyet kode. Bedst hastighed og sikkerhed. Dette får du, medmindre du vælger andet.
               </p>
+              <TechLink href="/skraeddersyede-hjemmesider">Om skræddersyede hjemmesider</TechLink>
             </div>
             <div>
               <p className="text-[13px] font-semibold text-[#1c1e1e] mb-1.5">Vil du selv redigere siden?</p>
               <p className="text-[15px] text-[#6a6a6a] leading-relaxed">
                 Så bygger vi i WordPress i stedet — til samme pris. Skriv det i beskeden.
               </p>
+              <TechLink href="/wordpress-hjemmeside">Om WordPress-hjemmesider</TechLink>
             </div>
             <div>
               <p className="text-[13px] font-semibold text-[#1c1e1e] mb-1.5">Andet ønske eller i tvivl?</p>
               <p className="text-[15px] text-[#6a6a6a] leading-relaxed">
                 Arbejder du med Shopify, Webflow m.fl., eller ved du ikke hvad der passer? Skriv det i beskeden — vi rådgiver gratis.
               </p>
+              <TechLink href="/kontakt">Spørg uforpligtende</TechLink>
             </div>
           </div>
         </FadeUp>

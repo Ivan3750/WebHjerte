@@ -97,7 +97,7 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 
 ## Fjernet helt
 - `/hjemmeside-til-haandvaerkere`, `-vvs`, `-elektriker`, `-tomrer`, `-restauranter`, `-saloner` og `/hjemmeside-til-virksomhed` → 301 til `/services`
-- `/hjemmeside-pris` → 301 til `/services#priser` (priser og prisberegner står nu på /services)
+- `/hjemmeside-pris` → 301 til `/services#priser` (priserne står nu på /services)
 - `/freelancer-vs-bureau` → omdirigerer til `/om-mig`
 - `/ofte-stillede-spoergsmaal` (FAQ) → omdirigerer til `/`
 - `/webbureau-jylland` → 301 til `/webbureau-midtjylland`
