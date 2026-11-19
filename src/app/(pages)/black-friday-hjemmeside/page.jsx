@@ -3,7 +3,10 @@ import SectionHead from "../../components/ui/SectionHead";
 import FormToLead from "../../components/ui/FormToLead";
 import { FadeUp } from "../../components/home/fx/Reveal";
 import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
-import { BLACK_FRIDAY, BF_PACKAGES, bfPrice, kr, isBlackFridayLive } from "../../data/campaign";
+import Countdown from "../../components/ui/Countdown";
+import { BLACK_FRIDAY, BF_PACKAGES, BF_AI_PACKAGES, bfPrice, kr, isBlackFridayLive } from "../../data/campaign";
+
+const ALL_PACKAGES = [...BF_PACKAGES, ...BF_AI_PACKAGES];
 
 // Siden gen-genereres hver time, så tilbuddet forsvinder fra HTML og skema, når kampagnen er slut
 export const revalidate = 3600;
@@ -75,7 +78,7 @@ function buildJsonLd(live) {
       "@type": "OfferCatalog",
       "@id": `${url}#offers`,
       name: `Black Friday-tilbud ${d}% rabat`,
-      itemListElement: BF_PACKAGES.map((p) => ({
+      itemListElement: ALL_PACKAGES.map((p) => ({
         "@type": "Offer",
         name: p.name,
         description: p.desc,
@@ -91,6 +94,73 @@ function buildJsonLd(live) {
   return { "@context": "https://schema.org", "@graph": graph };
 }
 
+function HeroAside() {
+  const max = Math.max(...ALL_PACKAGES.map((p) => p.price - bfPrice(p.price)));
+  return (
+    <FadeUp delay={0.2} className="rounded-3xl bg-white/[0.04] border border-white/10 p-6 sm:p-8">
+      <Countdown />
+      <div className="mt-7 pt-6 border-t border-white/10">
+        <p className="text-[13px] text-[#8a9696]">Du kan spare op til</p>
+        <p className="text-[clamp(30px,3.4vw,42px)] font-semibold text-white leading-tight">{kr(max)}</p>
+        <p className="text-[13px] text-[#8a9696] mt-1">Skriv senest {BLACK_FRIDAY.endLabel}, så er prisen låst.</p>
+      </div>
+    </FadeUp>
+  );
+}
+
+function PackageCard({ p, live, i, className = "" }) {
+  const sale = bfPrice(p.price);
+  return (
+    <FadeUp delay={i * 0.06} className={`h-full ${className}`}>
+      <div className={`relative h-full rounded-3xl p-7 sm:p-8 flex flex-col border ${p.popular ? "bg-[#1c1e1e] border-[#00a8e8]/50 text-white" : "bg-white border-[#e8e6e6] text-[#1c1e1e]"}`}>
+        {p.popular && (
+          <span className="absolute -top-3 left-7 text-[11px] font-semibold px-3 py-1 rounded-full bg-[#00a8e8] text-white">Mest valgt</span>
+        )}
+        <h3 className="text-[19px] font-semibold tracking-tight">{p.name}</h3>
+        <p className={`mt-2 text-[14px] leading-[1.7] ${p.popular ? "text-[#b4bdbd]" : "text-[#5f5f5f]"}`}>{p.tagline}</p>
+
+        <div className="mt-6">
+          {live ? (
+            <>
+              <p className={`text-[13px] line-through ${p.popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>
+                {p.prefix ? `${p.prefix} ` : ""}{kr(p.price)}
+              </p>
+              <p className="text-[clamp(28px,3vw,36px)] font-semibold tracking-tight leading-tight text-[#00a8e8]">
+                {p.prefix ? `${p.prefix} ` : ""}{kr(sale)}
+              </p>
+              <p className="mt-2 inline-block text-[12.5px] font-semibold px-2.5 py-1 rounded-full bg-[#00a8e8]/15 text-[#00a8e8]">
+                Du sparer {kr(p.price - sale)}
+              </p>
+            </>
+          ) : (
+            <p className="text-[clamp(28px,3vw,36px)] font-semibold tracking-tight leading-tight">
+              {p.prefix ? `${p.prefix} ` : "Fra "}{kr(p.price)}
+            </p>
+          )}
+          <p className={`mt-2 text-[12.5px] ${p.popular ? "text-[#8a9696]" : "text-[#8a8a8a]"}`}>inkl. moms · levering {p.delivery}</p>
+        </div>
+
+        <ul className={`mt-6 flex flex-col gap-3 ${p.features.length > 5 ? "sm:grid sm:grid-cols-2 sm:gap-x-6" : ""}`}>
+          {p.features.map((f) => (
+            <li key={f} className="flex items-start gap-2.5">
+              <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center shrink-0 mt-[1px] bg-[#00a8e8]/15">
+                <svg width="9" height="9" viewBox="0 0 8 8" fill="none" aria-hidden>
+                  <path d="M1.5 4l2 2 3-3" stroke="#00a8e8" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+              <span className={`text-[14px] leading-snug ${p.popular ? "text-[#c9d3d3]" : "text-[#4a4a4a]"}`}>{f}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <PrimaryLink href="#kontakt">{live ? `Lås ${d}% rabat` : "Få et tilbud"}</PrimaryLink>
+        </div>
+      </div>
+    </FadeUp>
+  );
+}
+
 export default function BlackFridayPage() {
   const live = isBlackFridayLive();
   return (
@@ -98,12 +168,13 @@ export default function BlackFridayPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd(live)) }} />
       <PageHero
         breadcrumbs={[{ label: "Forside", href: "/" }, { label: "Black Friday" }]}
-        titleLines={live ? [`Black Friday: ${d}% rabat`, "på din nye hjemmeside"] : ["Black Friday-tilbuddet", "er slut for i år"]}
+        titleLines={live ? ["Black Friday:", `${d}% rabat på din`, "nye hjemmeside"] : ["Black Friday-tilbuddet", "er slut for i år"]}
         lead={
           live
             ? `Hjemmesider, webshops og SEO til fast pris fra WebHjerte i Horsens – nu med ${d}% rabat til og med ${BLACK_FRIDAY.endLabel}. Du ser første design på 48 timer og betaler 0 kr, hvis det ikke passer.`
             : "Tilbuddet er udløbet, men du kan stadig få en hjemmeside til fast pris, og første design er klar på 48 timer. Se priserne eller skriv til mig for et uforpligtende tilbud."
         }
+        aside={live ? <HeroAside /> : null}
         actions={
           <>
             <PrimaryLink href="#kontakt">{live ? "Få tilbud med rabat" : "Få et gratis tilbud"}</PrimaryLink>
@@ -120,29 +191,28 @@ export default function BlackFridayPage() {
       <section className="scene bg-[#f7f6f6]" id="priser">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
           <SectionHead
-            lines={live ? ["Priser med Black Friday-rabat"] : ["Priser på hjemmesider og SEO"]}
-            lead="Alle priser er i danske kroner inkl. moms. Den endelige pris aftales skriftligt, før vi går i gang."
+            lines={live ? ["Hjemmesider med", `${d}% Black Friday-rabat`] : ["Priser på hjemmesider"]}
+            lead="Alle priser er i danske kroner inkl. moms og er faste: Du ved præcis, hvad det koster, før vi går i gang. Valgte du den forkerte pakke? Vi finder den rigtige sammen på første samtale."
             maxW="max-w-[34ch]"
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
             {BF_PACKAGES.map((p, i) => (
-              <FadeUp key={p.name} delay={i * 0.05} className="h-full">
-                <div className="h-full rounded-3xl bg-white border border-[#e8e6e6] p-7 flex flex-col gap-3">
-                  <h3 className="text-[17px] font-semibold text-[#1c1e1e]">{p.name}</h3>
-                  <p className="text-[14px] text-[#5f5f5f] leading-[1.7]">{p.desc}</p>
-                  <div className="mt-auto pt-4">
-                    {live ? (
-                      <>
-                        <p className="text-[13px] text-[#8a8a8a] line-through">Fra {kr(p.price)}</p>
-                        <p className="text-[26px] font-semibold text-[#00a8e8] leading-tight">Fra {kr(bfPrice(p.price))}</p>
-                      </>
-                    ) : (
-                      <p className="text-[26px] font-semibold text-[#1c1e1e] leading-tight">Fra {kr(p.price)}</p>
-                    )}
-                    <p className="text-[12.5px] text-[#8a8a8a] mt-1">Levering {p.days}</p>
-                  </div>
-                </div>
-              </FadeUp>
+              <PackageCard key={p.id} p={p} live={live} i={i} className={i < 3 ? "lg:col-span-2" : "lg:col-span-3"} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="scene bg-[#e4f0f7]" id="ai-seo">
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+          <SectionHead
+            lines={live ? ["AI SEO – bliv fundet i Google", `og ChatGPT, nu med ${d}% rabat`] : ["AI SEO – bliv fundet i Google og ChatGPT"]}
+            lead="Når dine kunder spørger Google eller ChatGPT om en leverandør som dig, skal det være dit navn, der kommer frem. Alle priser er inkl. moms."
+            maxW="max-w-[34ch]"
+          />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            {BF_AI_PACKAGES.map((p, i) => (
+              <PackageCard key={p.id} p={p} live={live} i={i} />
             ))}
           </div>
         </div>
@@ -150,7 +220,7 @@ export default function BlackFridayPage() {
 
       <section className="scene bg-[#1c1e1e]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
-          <SectionHead dark lines={["Derfor er Black Friday", "uden risiko hos WebHjerte"]} />
+          <SectionHead dark lines={["Du løber ingen risiko –", "det gælder også på Black Friday"]} />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               ["Design først", "Du ser første udkast inden for 48 timer. Intet bygges, før du har godkendt det."],
@@ -168,6 +238,29 @@ export default function BlackFridayPage() {
         </div>
       </section>
 
+      {live && (
+        <section className="scene bg-[#f7f6f6]">
+          <div className="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
+            <SectionHead lines={["Sådan låser du rabatten", "i tre skridt"]} />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {[
+                ["01", `Skriv inden ${BLACK_FRIDAY.endLabel}`, "Udfyld formularen nedenfor og skriv, hvilken pakke du er interesseret i. Det tager to minutter."],
+                ["02", "Vi tager en uforpligtende snak", "Jeg svarer inden for 24 timer og finder sammen med dig den pakke, der passer. Du får en fast pris på skrift – med rabatten."],
+                ["03", "Du ser designet, før du betaler", "Første udkast kommer inden for 48 timer. Passer det ikke, betaler du 0 kr for det."],
+              ].map(([n, t, x], i) => (
+                <FadeUp key={n} delay={i * 0.08} className="h-full">
+                  <div className="h-full rounded-3xl bg-white border border-[#e8e6e6] p-7 flex flex-col gap-3">
+                    <span className="text-[12px] tabular-nums text-[#00a8e8]">{n}</span>
+                    <p className="text-[17px] font-semibold text-[#1c1e1e]">{t}</p>
+                    <p className="text-[15px] text-[#5f5f5f] leading-[1.75]">{x}</p>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="scene bg-[#f7f6f6]">
         <div className="max-w-4xl mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-24">
           <SectionHead lines={["Ofte stillede spørgsmål", "om Black Friday-tilbuddet"]} />
@@ -184,6 +277,14 @@ export default function BlackFridayPage() {
           </div>
         </div>
       </section>
+
+      {live && (
+        <section className="bg-[#1c1e1e] border-t border-white/10 px-5 sm:px-10 lg:px-16 pt-14">
+          <div className="max-w-6xl mx-auto">
+            <Countdown />
+          </div>
+        </section>
+      )}
 
       <div id="kontakt" className="scroll-mt-[68px]">
         <FormToLead
