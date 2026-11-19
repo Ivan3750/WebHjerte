@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { FadeUp, RevealLines } from "./fx/Reveal";
-import { PrimaryLink } from "../ui/PageHero";
+import { PrimaryLink, GhostLink } from "../ui/PageHero";
 import { BLACK_FRIDAY, isBlackFridayLive } from "../../data/campaign";
 
 export default function BlackFridaySection() {
@@ -25,8 +25,9 @@ export default function BlackFridaySection() {
             Hjemmesider, webshops, SEO og vedligeholdelse – få {BLACK_FRIDAY.discount}% rabat, hvis du siger ja til og med{" "}
             {BLACK_FRIDAY.endLabel}. Du ser stadig første design på 48 timer og betaler 0 kr, hvis det ikke passer.
           </FadeUp>
-          <FadeUp delay={0.18}>
+          <FadeUp delay={0.18} className="flex flex-wrap items-center gap-3">
             <PrimaryLink href={BLACK_FRIDAY.href}>Få dit tilbud med rabat</PrimaryLink>
+            <GhostLink href={BLACK_FRIDAY.pageHref} light>Se priser med rabat</GhostLink>
           </FadeUp>
         </div>
       </div>

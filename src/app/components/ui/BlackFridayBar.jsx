@@ -11,7 +11,7 @@ export default function BlackFridayBar() {
 
   return (
     <div className="bg-[#00a8e8] text-[#0b1213] text-center text-[13px] sm:text-[14px] font-semibold px-4 py-2.5">
-      <Link href={BLACK_FRIDAY.href} className="hover:underline underline-offset-2">
+      <Link href={BLACK_FRIDAY.pageHref} className="hover:underline underline-offset-2">
         Black Friday: {BLACK_FRIDAY.discount}% rabat på alle ydelser til og med {BLACK_FRIDAY.endLabel}
         <span aria-hidden> →</span>
       </Link>
