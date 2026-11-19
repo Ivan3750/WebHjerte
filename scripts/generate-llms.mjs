@@ -3,6 +3,7 @@
 import { writeFileSync } from "node:fs";
 import { contentPages, articles } from "../src/app/data/content/index.js";
 import { isHiddenHref } from "../src/app/data/hidden.js";
+import { BLACK_FRIDAY, isBlackFridayLive } from "../src/app/data/campaign.js";
 
 const SITE = "https://www.webhjerte.dk";
 const section = (s) => {
@@ -75,6 +76,7 @@ const core = [
   ["Portefølje", "/portefolje"],
   ["Om Ivan Kohan", "/om-mig"],
   ["Kontakt", "/kontakt"],
+  ...(isBlackFridayLive() ? [[`Black Friday: ${BLACK_FRIDAY.discount}% rabat til og med ${BLACK_FRIDAY.endLabel}`, BLACK_FRIDAY.pageHref]] : []),
 ];
 const niches = [
   ["Håndværkere", "/hjemmeside-til-haandvaerkere"],

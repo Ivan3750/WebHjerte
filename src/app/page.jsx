@@ -5,6 +5,7 @@ import ScrollStatement from "./components/home/ScrollStatement";
 import AboutBlock from "./components/home/AboutBlock";
 import QuickLeadForm from "./components/ui/QuickLeadForm";
 import ScrollProgress from "./components/ui/ScrollProgress";
+import BlackFridaySection from "./components/home/BlackFridaySection";
 import AiFocus from "./components/home/AiFocus";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
@@ -107,6 +108,7 @@ export default function Home() {
       <ScrollProgress />
 
       <HomeHero />
+      <BlackFridaySection />
       <ScrollStatement />
       <BuildStory />
       <TilbydeSection />

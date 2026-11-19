@@ -87,6 +87,7 @@ export default {
       '/portefolje': 0.8,
       '/kontakt': 0.8,
       '/blog': 0.7,
+      '/black-friday-hjemmeside': 0.8,
       '/partner': 0.6,
     };
 

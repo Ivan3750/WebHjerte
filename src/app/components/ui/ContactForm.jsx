@@ -27,6 +27,7 @@ const extras = {
   "vedligehold-standard": "Vedligehold Standard – 449 DKK/md",
   "vedligehold-pro": "Vedligehold Pro – 799 DKK/md",
   partnerskab: "Partnerskab (bureau / revisor)",
+  "black-friday": "Black Friday-tilbud (15% rabat)",
 };
 
 const resolve = (raw) => {

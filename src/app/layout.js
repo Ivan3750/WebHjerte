@@ -2,6 +2,7 @@ import { Unbounded, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import BlackFridayBar from "./components/ui/BlackFridayBar";
 import Script from "next/script";
 
 const unbounded = Unbounded({
@@ -195,6 +196,7 @@ export default function RootLayout({ children }) {
         >
           Spring til indhold
         </a>
+        <BlackFridayBar />
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
