@@ -47,6 +47,7 @@
 - [Portefølje](https://www.webhjerte.dk/portefolje)
 - [Om Ivan Kohan](https://www.webhjerte.dk/om-mig)
 - [Kontakt](https://www.webhjerte.dk/kontakt)
+- [Black Friday: 15% rabat til og med 30. november](https://www.webhjerte.dk/black-friday-hjemmeside)
 
 ## Områder, emner og referencer
 - [Alle typer hjemmesider](https://www.webhjerte.dk/alle-typer-hjemmesider): Hvilken platform passer til din hjemmeside? Ærlig sammenligning af WordPress, Shopify, Webflow, Wix og kode – og hjælp til den side, du har.
