@@ -8,6 +8,7 @@ import ScrollProgress from "./components/ui/ScrollProgress";
 import BlackFridaySection from "./components/home/BlackFridaySection";
 import AiFocus from "./components/home/AiFocus";
 import GuaranteesBlock from "./components/home/GuaranteesBlock";
+import HomeAnswers, { homeFaqs } from "./components/home/HomeAnswers";
 import { FadeUp, RevealLines } from "./components/home/fx/Reveal";
 import { Panel, VisualSite, VisualDashboard, VisualMapPin, VisualPrice } from "./components/illustrations/Visuals";
 import { isHiddenHref } from "./data/hidden";
@@ -70,6 +71,18 @@ const jsonLd = {
   speakable: { "@type": "SpeakableSpecification", cssSelector: ["[data-speakable]"] },
 };
 
+// FAQ-data = den synlige tekst i HomeAnswers (må ikke afvige fra siden)
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.webhjerte.dk/#faq",
+  mainEntity: homeFaqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a.join(" ") },
+  })),
+};
+
 const localLinks = [
   {
     href: "/seo-horsens",
@@ -104,6 +117,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <ScrollProgress />
 
@@ -173,6 +190,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Svar på de søgninger, siden vises på (hjemmeside pris, WordPress, webshop, webtjek m.fl.) */}
+      <HomeAnswers />
 
       {/* Quick lead form */}
       <section className="scene relative overflow-hidden bg-[#1c1e1e]">
