@@ -73,7 +73,7 @@ const sections = [
       { title: "Horsens by", tag: "Midtbyen", text: "Butikker, restauranter og klinikker, hvor åbningstider, adresse og booking skal stå klart." },
       { title: "Oplandet", tag: "Omegn", text: "Brædstrup, Gedved, Østbirk, Hovedgård – og Hedensted og Juelsminde lige ved siden af. Nævn de byer, du dækker." },
       { title: "Håndværk og service", tag: "Ude hos kunden", text: "Når du kører ud til kunden, er dit område vigtigere end din adresse. Skriv det tydeligt på siden." },
-      { title: "Brancher med egne råd", tag: "Læs mere", text: "Se de konkrete råd til håndværkere, saloner og restauranter.", href: "/hjemmeside-til-haandvaerkere", cta: "Se branchesiderne" },
+      { title: "Hjemmeside til din branche", tag: "Se pakkerne", text: "Håndværkere, saloner og restauranter har hver deres behov. Se, hvad der er med i pakkerne.", href: "/services", cta: "Se services" },
     ],
   },
   {
@@ -131,28 +131,21 @@ const sections = [
     paragraphs: [
       "En håndværker har brug for at vise ydelser, områder og referencer og gøre det nemt at ringe. En restaurant skal vise menu, åbningstider og booking. En salon har brug for tidsbestilling og billeder, der sælger. Jeg tilpasser designet til din branche og din målgruppe i stedet for at bruge samme skabelon til alle.",
     ],
-    cta: { href: "/hjemmeside-til-haandvaerkere", label: "Se hjemmesider til brancher" },
+    cta: { href: "/portefolje", label: "Se eksempler fra portefølje" },
   },
   {
-    h2: "Priser på webdesign i Horsens",
-    table: {
-      head: ["Pakke", "Fra pris (inkl. moms)", "Levering"],
-      rows: [
-        ["Landingside", "2.500 kr", "ca. 2 dage"],
-        ["Basis (3–5 sider)", "4.500 kr", "ca. 5 dage"],
-        ["Standard (op til 8 sider)", "8.500 kr", "ca. 10 dage"],
-        ["Skræddersyet", "14.000 kr", "Aftales"],
-      ],
-    },
-    paragraphs: ["Du får en fast pris, før vi går i gang. Se også guiden til, hvad en hjemmeside koster om året, hvis du vil have overblik over de løbende udgifter."],
-    cta: { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", label: "Hvad koster en hjemmeside om året?" },
+    h2: "Hvad koster webdesign i Horsens?",
+    paragraphs: [
+      "Du får en fast pris, før vi går i gang – fra en enkel landingside til en hjemmeside med flere sider, SEO og booking. Se pakkerne og beregn din pris under Services, eller læs guiden til, hvad en hjemmeside koster i 2026.",
+    ],
+    cta: { href: "/blog/hvad-koster-en-hjemmeside-2026", label: "Hvad koster en hjemmeside i 2026?" },
   },
   {
     h2: "Webdesign i Horsens og resten af Jylland",
     paragraphs: [
-      "Jeg sidder i Horsens og arbejder med virksomheder i hele Jylland. Se siderne om webbureau i Midtjylland, Jylland, Aarhus og Vejle, hvis du vil se, hvordan jeg arbejder i dit område.",
+      "Jeg sidder i Horsens og arbejder med virksomheder i hele Jylland. Se siderne om webbureau i Midtjylland, Aarhus og Vejle, hvis du vil se, hvordan jeg arbejder i dit område.",
     ],
-    cta: { href: "/webbureau-jylland", label: "Webbureau Jylland" },
+    cta: { href: "/webbureau-midtjylland", label: "Webbureau i Midtjylland" },
   },
 ];
 
@@ -193,8 +186,8 @@ function WebdesignHorsensPage() {
   );
 }
 
-// Skjult indtil siden er færdig (se data/hidden.js)
 export default function Page() {
+  // Kan skjules igen via data/hidden.js
   if (isHiddenHref("/webdesign-horsens")) notFound();
   return <WebdesignHorsensPage />;
 }

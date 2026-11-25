@@ -112,7 +112,7 @@ export function PromiseBlock({ photo, summary, promise }) {
         <div>
           <RevealLines lines={["Sådan arbejder jeg"]} className="font-semibold tracking-tight leading-[1.1] text-[clamp(26px,3vw,40px)] text-[#1c1e1e] mb-8" />
           {summary && (
-            <FadeUp as="p" className="readable text-[19px] leading-[1.7] text-[#1c1e1e] font-medium mb-6 max-w-[58ch]">
+            <FadeUp as="p" data-speakable className="readable text-[19px] leading-[1.7] text-[#1c1e1e] font-medium mb-6 max-w-[58ch]">
               {summary}
             </FadeUp>
           )}

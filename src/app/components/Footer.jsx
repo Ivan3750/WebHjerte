@@ -11,8 +11,23 @@ const allGroups = [
       { href: "/wordpress-hjemmeside", label: "WordPress-hjemmeside" },
       { href: "/skraeddersyede-hjemmesider", label: "Skræddersyede hjemmesider" },
       { href: "/webshop-hjemmeside", label: "Webshop" },
+      { href: "/shopify-hjemmeside", label: "Shopify webshop" },
       { href: "/ai-loesninger", label: "AI-løsninger" },
+      { href: "/ai-seo", label: "AI SEO" },
       { href: "/seo-horsens", label: "SEO Horsens" },
+    ],
+  },
+  {
+    title: "Guides og områder",
+    links: [
+      { href: "/blog/hvad-koster-en-hjemmeside-2026", label: "Hvad koster en hjemmeside?" },
+      { href: "/blog/hvad-koster-en-hjemmeside-om-aaret", label: "Hvad koster den om året?" },
+      { href: "/blog/hvor-lang-tid-tager-det-at-lave-en-hjemmeside", label: "Hvor lang tid tager det?" },
+      { href: "/blog/wordpress-eller-skraeddersyet", label: "WordPress eller skræddersyet?" },
+      { href: "/alle-typer-hjemmesider", label: "Vælg platform" },
+      { href: "/webdesign-horsens", label: "Webdesign Horsens" },
+      { href: "/webbureau-midtjylland", label: "Webbureau Midtjylland" },
+      { href: "/gratis-seo-tjek-horsens", label: "Gratis SEO-tjek" },
     ],
   },
   {

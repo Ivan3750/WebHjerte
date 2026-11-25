@@ -7,9 +7,9 @@ const path = "/blog/hvad-koster-en-hjemmeside-2026";
 // Search Console: siden får flest visninger på hele sitet (pris-søgninger), men lå på side 5.
 // Derfor en komplet prisguide med markedspriser, typer, årlige udgifter, tilbudstjekliste og prisberegner.
 const article = {
-  title: "Hvad koster en hjemmeside i 2026? Priser og prisberegner",
+  title: "Hvad koster en hjemmeside i 2026? Fra 2.500 kr + beregner",
   description:
-    "Fra 0 kr med en hjemmesidebygger til 25.000–150.000 kr hos et bureau: se hvad en hjemmeside koster i 2026, de årlige udgifter – og beregn din egen pris.",
+    "Hvad koster en hjemmeside i 2026? Fra 2.500 kr til fast pris – og 25.000–150.000 kr hos et bureau. Se priser pr. type, årlige udgifter og beregn din egen pris.",
   keywords: [
     "hvad koster en hjemmeside",
     "hvad koster en hjemmeside 2026",

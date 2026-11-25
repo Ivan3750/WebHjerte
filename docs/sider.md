@@ -1,6 +1,7 @@
 # Sider på webhjerte.dk
 
-Opdateret: 16. november 2026 (aften). Branchesider, 'hjemmeside til virksomhed' og /hjemmeside-pris er fjernet med 301 til /services. Indholdssider viser nu hele deres tekst og FAQ (se `components/seo/ServiceLayout.jsx`), og SEO-titler/ekstra afsnit ligger i `data/content/extra.js`. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
+Opdateret: 25. november 2026 (SEO-gennemgang ud fra Search Console: /webdesign-horsens genåbnet, nye titler, flere interne links).
+Tidligere opdatering: 16. november 2026 (aften). Branchesider, 'hjemmeside til virksomhed' og /hjemmeside-pris er fjernet med 301 til /services. Indholdssider viser nu hele deres tekst og FAQ (se `components/seo/ServiceLayout.jsx`), og SEO-titler/ekstra afsnit ligger i `data/content/extra.js`. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
 de returnerer bare 404, er fjernet fra menu, footer, interne links, sitemap og `llms.txt`.
 
 ## Sådan skjuler / viser du sider
@@ -49,6 +50,7 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | AI SEO | `/ai-seo` |
 | AI-chatbot til hjemmeside | `/ai-chatbot-til-hjemmeside` |
 | Webbureau Vejle | `/webbureau-vejle` |
+| Webdesign Horsens (genåbnet 25. nov. – søgningen "webdesign horsens" lå på position ~6–10) | `/webdesign-horsens` |
 
 ### Gratis værktøjer
 | Side | URL |
@@ -88,10 +90,8 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | --- | --- |
 | AI-automatisering | `/ai-automatisering-virksomhed` |
 
-### Lokale sider (1)
-| Side | URL |
-| --- | --- |
-| Webdesign Horsens | `/webdesign-horsens` |
+### Lokale sider
+Ingen – `/webdesign-horsens` er åbnet igen.
 
 ---
 

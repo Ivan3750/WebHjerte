@@ -101,6 +101,23 @@ export default function RootLayout({ children }) {
                     availableLanguage: ["da", "en"],
                   },
                   priceRange: "2.500 - 14.000 DKK",
+                  hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "Hjemmesider og SEO til fast pris",
+                    itemListElement: [
+                      ["Landingside", "2500", "1 side til kampagner og annoncer. Levering på ca. 2 dage."],
+                      ["Basis-hjemmeside", "4500", "3–5 sider med basis-SEO. Levering på ca. 5 dage."],
+                      ["Standard-hjemmeside", "8500", "Op til 8 sider med SEO, analytics og booking. Levering på ca. 10 dage."],
+                      ["Lokal synlighed", "9500", "Standard-hjemmeside, Google Business Profile, lokal SEO og 3 måneders vedligehold."],
+                      ["Skræddersyet løsning / webshop", "14000", "Webshop, kundeportal og specialløsninger. Pris aftales."],
+                      ["AI SEO", "3500", "Synlighed i Google og AI-assistenter som ChatGPT."],
+                    ].map(([name, price, description]) => ({
+                      "@type": "Offer",
+                      priceCurrency: "DKK",
+                      priceSpecification: { "@type": "PriceSpecification", minPrice: price, priceCurrency: "DKK", valueAddedTaxIncluded: true },
+                      itemOffered: { "@type": "Service", name, description, provider: { "@id": `${SITE_URL}/#organization` } },
+                    })),
+                  },
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Horsens",

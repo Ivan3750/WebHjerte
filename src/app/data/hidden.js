@@ -17,7 +17,6 @@ export const HIDDEN = {
     "webbureau-jylland",
     "wordpress-horsens",
     "digitalt-bureau-horsens",
-    "webdesign-horsens",
   ],
   // Fjernet fra sitet (16. nov. 2026) – 301 til /services i next.config.js. Holdes her, så alle links filtreres væk.
   removed: [

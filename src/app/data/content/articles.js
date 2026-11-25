@@ -95,9 +95,9 @@ const own = [
   {
     ...base,
     slug: "hvad-koster-en-hjemmeside-om-aaret",
-    title: "Hvad koster en hjemmeside om året? | WebHjerte",
+    title: "Hvad koster en hjemmeside om året? Fra 150 kr | WebHjerte",
     description:
-      "Ærligt overblik over de årlige udgifter: domæne, hosting, vedligeholdelse og værktøjer – med tre regneeksempler og tips til at spare.",
+      "Hvad koster en hjemmeside om året? Fra ca. 150 kr for en kodet side til 8.000–12.000 kr for en webshop. Domæne, hosting og vedligeholdelse med tre regneeksempler.",
     keywords: ["hvad koster en hjemmeside om året", "hosting pris", "domæne pris", "hjemmeside abonnement", "hvad koster det at have en hjemmeside", "vedligeholdelse af hjemmeside"],
     name: "Hvad koster en hjemmeside om året?",
     category: "Priser",
@@ -362,9 +362,9 @@ const own = [
   {
     ...base,
     slug: "wordpress-eller-skraeddersyet",
-    title: "WordPress eller skræddersyet hjemmeside? | WebHjerte",
+    title: "WordPress eller skræddersyet? Pris og forskel | WebHjerte",
     description:
-      "WordPress eller en kodet, skræddersyet hjemmeside? Ærlig sammenligning af pris, hastighed, sikkerhed, redigering og SEO – og hvornår jeg anbefaler hvad.",
+      "WordPress eller en kodet, skræddersyet hjemmeside? Sammenlign pris, hastighed, sikkerhed og redigering – og få svar på, hvornår jeg anbefaler hvad.",
     keywords: ["wordpress eller skræddersyet", "wordpress eller kodet hjemmeside", "skræddersyet hjemmeside", "wordpress fordele ulemper", "next.js hjemmeside"],
     name: "WordPress eller skræddersyet?",
     category: "Guides",
@@ -449,9 +449,9 @@ const own = [
   {
     ...base,
     slug: "hvor-lang-tid-tager-det-at-lave-en-hjemmeside",
-    title: "Hvor lang tid tager det at lave en hjemmeside? | WebHjerte",
+    title: "Hvor lang tid tager en hjemmeside? Fra 2 dage | WebHjerte",
     description:
-      "Realistiske tidsplaner for landingside, firmahjemmeside og webshop – hvad der forsinker et projekt, og hvordan du får siden hurtigst.",
+      "En landingside tager ca. 2 dage, en firmahjemmeside 5–10 dage og en webshop 2–6 uger. Se tidsplanen, og hvad der forsinker projektet mest.",
     keywords: ["hvor lang tid tager det at lave en hjemmeside", "hvor lang tid tager en hjemmeside", "hjemmeside hurtigt", "hjemmeside på en uge"],
     name: "Hvor lang tid tager en hjemmeside?",
     category: "Guides",

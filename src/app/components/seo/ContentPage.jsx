@@ -96,6 +96,12 @@ export default function ContentPage({
       author: type === "article" ? { "@id": `${SITE_URL}/#ivan` } : undefined,
       publisher: { "@id": `${SITE_URL}/#organization` },
       mainEntityOfPage: type === "article" ? url : undefined,
+      // Billede (kræves til artikel-resultater) og "kort svar" markeret til oplæsning og AI-citater
+      image: `${SITE_URL}/opengraph-image`,
+      primaryImageOfPage: type === "article" ? undefined : { "@type": "ImageObject", url: `${SITE_URL}/opengraph-image` },
+      isAccessibleForFree: true,
+      timeRequired: type === "article" && readMinutes ? `PT${readMinutes}M` : undefined,
+      speakable: summary ? { "@type": "SpeakableSpecification", cssSelector: ["[data-speakable]"] } : undefined,
       datePublished: published,
       dateModified: updated || published,
     },
@@ -268,7 +274,7 @@ export default function ContentPage({
                 {summary && (
                   <aside className="mt-5 rounded-3xl bg-white border border-[#e8e6e6] p-6 sm:p-8">
                     <p className="text-[11px] uppercase tracking-[0.16em] text-[#00a8e8] font-semibold mb-3">{summaryLabel}</p>
-                    <p className="text-[16.5px] leading-[1.75] text-[#2a2f30]">{summary}</p>
+                    <p data-speakable className="text-[16.5px] leading-[1.75] text-[#2a2f30]">{summary}</p>
                   </aside>
                 )}
               </FadeUp>

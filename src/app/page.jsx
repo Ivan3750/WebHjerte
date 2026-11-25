@@ -135,6 +135,21 @@ export default function Home() {
                 Jeg er baseret i Horsens og arbejder med virksomheder i hele Midtjylland og Danmark. Du har én
                 kontaktperson fra første samtale til lancering – ingen mellemled, ingen overraskelser.
               </FadeUp>
+              <FadeUp as="p" delay={0.2} className="text-[15px] text-[#5f5f5f] leading-[1.85] mt-4">
+                Skal du først finde ud af, hvad det hele koster, så start med guiden{" "}
+                <Link href="/blog/hvad-koster-en-hjemmeside-2026" className="text-[#1c1e1e] font-medium underline underline-offset-4 decoration-[#00a8e8] hover:text-[#00a8e8]">
+                  Hvad koster en hjemmeside i 2026?
+                </Link>
+                {" "}eller se{" "}
+                <Link href="/blog/hvor-lang-tid-tager-det-at-lave-en-hjemmeside" className="text-[#1c1e1e] font-medium underline underline-offset-4 decoration-[#00a8e8] hover:text-[#00a8e8]">
+                  hvor lang tid en hjemmeside tager
+                </Link>
+                {" "}og{" "}
+                <Link href="/blog/wordpress-eller-skraeddersyet" className="text-[#1c1e1e] font-medium underline underline-offset-4 decoration-[#00a8e8] hover:text-[#00a8e8]">
+                  om WordPress eller skræddersyet passer bedst
+                </Link>
+                .
+              </FadeUp>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 content-start">

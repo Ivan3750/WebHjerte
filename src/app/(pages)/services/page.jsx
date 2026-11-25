@@ -17,9 +17,9 @@ import { breadcrumbLd, orgRef, SITE_URL } from "../../lib/seo";
 import { supportPlans } from "../../data/supportPlans";
 
 export const metadata = {
-  title: "Priser og ydelser: hjemmeside, webshop, SEO og AI | WebHjerte",
+  title: "Hjemmeside pris: fra 2.500 kr – faste priser | WebHjerte",
   description:
-    "Alle ydelser og faste priser: hjemmesider i WordPress, Shopify og kode, webshops, SEO og AI-integration (chatbot, automatisering). Fra 2.500 kr.",
+    "Hvad koster en hjemmeside? Landingside 2.500 kr, Basis 4.500 kr, Standard 8.500 kr og webshop fra 14.000 kr – fast pris inkl. moms. Se pakker og prisberegner.",
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "WebHjerte – webbureau i Horsens" }],
     title: "Priser på webdesign – klare pakker uden skjulte gebyrer | WebHjerte",
