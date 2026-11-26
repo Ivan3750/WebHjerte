@@ -57,10 +57,9 @@ const DISPOSABLE = new Set([
   "tempmail.com", "temp-mail.org", "yopmail.com", "trashmail.com", "getnada.com", "throwawaymail.com",
   "maildrop.cc", "dispostable.com", "fakeinbox.com", "mailnesia.com", "mintemail.com", "mohmal.com",
 ]);
-const MAILER_LABELS = new Set([
-  "mg", "mailgun", "bounce", "bounces", "smtp", "em", "send", "sendgrid", "mta", "mailer", "mailers",
-  "e", "email", "emails", "notify", "notifications", "noreply", "no-reply",
-]);
+// Kun entydige afsender-præfikser. Almindelige som "mail." og "email." (fx mail.firma.dk) er tilladt,
+// fordi rigtige virksomheder bruger dem.
+const MAILER_LABELS = new Set(["mg", "mailgun", "bounce", "bounces", "smtp", "mta", "sendgrid"]);
 
 export function checkEmail(email) {
   if (!email) return null;
