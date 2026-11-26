@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { supportPlans } from "../../data/supportPlans";
+import useFormToken from "./useFormToken";
 
 // Kun WebHjertes faste, offentliggjorte priser (inkl. moms) – ingen opfundne tillæg
 const PACKAGES = [
@@ -52,6 +53,7 @@ function PackageArt({ id, active }) {
 }
 
 export default function PriceCalculator({ dark = false }) {
+  const loadToken = useFormToken();
   const [pkg, setPkg] = useState("basis");
     const [support, setSupport] = useState("standard");
   const [form, setForm] = useState({ name: "", contact: "", website: "" });
@@ -78,10 +80,12 @@ export default function PriceCalculator({ dark = false }) {
     const isEmail = contact.includes("@");
     setStatus("loading");
     try {
+      const token = await loadToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          token,
           name: form.name,
           email: isEmail ? contact : "",
           phone: isEmail ? "" : contact,
@@ -217,7 +221,7 @@ export default function PriceCalculator({ dark = false }) {
           Tak! Jeg vender tilbage med et fast tilbud inden for 24 timer.
         </p>
       ) : (
-        <form onSubmit={submit} className="grid grid-cols-1 gap-2.5">
+        <form onSubmit={submit} onFocus={loadToken} className="grid grid-cols-1 gap-2.5">
           <input
             name="name"
             autoComplete="name"
