@@ -11,7 +11,6 @@
 import Ivan from "../assets/Ivan.jpg";
 import Improve from "../assets/cases/Improve.png";
 import Pizzle from "../assets/cases/PizzleM.png";
-import Veka from "../assets/cases/VEKA.png";
 import Workout from "../assets/cases/WorkOutM.png";
 import Hesteklub from "../assets/cases/ClubHorseM.png";
 import Hireon from "../assets/cases/HireonM.png";
@@ -25,7 +24,6 @@ export const photos = {
     work: ivan,
   },
   "shopify-hjemmeside": {
-    hero: { src: Veka, alt: "Webshop og produktkatalog bygget af WebHjerte, vist på computer" },
     work: ivan,
   },
   "skraeddersyede-hjemmesider": {

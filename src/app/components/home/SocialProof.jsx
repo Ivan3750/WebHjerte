@@ -4,8 +4,6 @@ const quotes = [
   {
     text: "Vi kan varmt anbefale Ivan! Han arbejder professionelt og hurtigt, kommer med nyttige anbefalinger og har tålmodighed med vores kaotiske ideer. Nem og behagelig kommunikation.",
     name: "Vasyl",
-    company: "VEKA Company",
-    website: "veka.center",
     city: null,
   },
 ];
@@ -38,8 +36,6 @@ const SocialProof = () => {
                 className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11px] sm:text-xs text-[#888]"
               >
                 <span className="text-white/70 font-medium">{quote.name}</span>
-                <span className="w-1 h-1 rounded-full bg-[#444]" />
-                <span>{quote.company}</span>
                 {quote.city && (
                   <>
                     <span className="w-1 h-1 rounded-full bg-[#444]" />

@@ -7,7 +7,6 @@ import { FadeUp, RevealLines } from "./fx/Reveal";
 const quote = {
   text: "Vi kan varmt anbefale Ivan! Han arbejder professionelt og hurtigt, kommer med nyttige anbefalinger og har tålmodighed med vores kaotiske ideer. Nem og behagelig kommunikation.",
   name: "Vasyl",
-  company: "VEKA Company",
 };
 
 const AboutBlock = () => {
@@ -60,7 +59,7 @@ const AboutBlock = () => {
                   {quote.name[0]}
                 </span>
                 <span>
-                  <span className="text-white/90 font-medium">{quote.name}</span> · {quote.company}
+                  <span className="text-white/90 font-medium">{quote.name}</span>
                 </span>
               </figcaption>
             </figure>
