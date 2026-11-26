@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BlackFridayBar from "./components/ui/BlackFridayBar";
 import Script from "next/script";
+import OwnerModeBadge from "./components/ui/OwnerModeBadge";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -139,16 +140,23 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+        {/* Ejer-tilstand: /?owner=on slår al analytics fra i denne browser (localStorage "wh_owner"), /?owner=off slår den til igen */}
         <script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="dQ/aslmLQa//XoyDENgNAQ"
-          async
-        ></script>
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var k="wh_owner",p=new URLSearchParams(location.search).get("owner");if(p==="on")localStorage.setItem(k,"1");else if(p==="off")localStorage.removeItem(k);if(localStorage.getItem(k)==="1"){window.__WH_OWNER=true;window["ga-disable-G-QFGJWT1F24"]=true;}}catch(e){}})();`,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if(!window.__WH_OWNER){var ah=document.createElement("script");ah.src="https://analytics.ahrefs.com/analytics.js";ah.async=true;ah.setAttribute("data-key","dQ/aslmLQa//XoyDENgNAQ");document.head.appendChild(ah);}`,
+          }}
+        />
         <Script
           id="plerdy-script"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
+          if(!window.__WH_OWNER){
           var _protocol="https:"==location.protocol?"https://":"http://";
           _site_hash_code="e54642b7017f6579741beb660c932b9d";
           _suid=72309;
@@ -157,6 +165,7 @@ export default function RootLayout({ children }) {
           plerdyScript.dataset.plerdymainscript="plerdymainscript";
           plerdyScript.src="https://a.plerdy.com/public/js/click/main.js?v="+Math.random();
           document.head.appendChild(plerdyScript);
+          }
         `,
           }}
         />
@@ -165,26 +174,30 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
+              if(!window.__WH_OWNER){
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','GTM-TJH4S29Q');
+              }
             `,
           }}
         />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24"
-        />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-QFGJWT1F24');
+          if(!window.__WH_OWNER){
+            var gs=document.createElement('script');
+            gs.async=true;
+            gs.src='https://www.googletagmanager.com/gtag/js?id=G-QFGJWT1F24';
+            document.head.appendChild(gs);
+            gtag('js', new Date());
+            gtag('config', 'G-QFGJWT1F24');
+          }
         `}
         </Script>
         <Script
@@ -213,6 +226,7 @@ export default function RootLayout({ children }) {
         >
           Spring til indhold
         </a>
+        <OwnerModeBadge />
         <BlackFridayBar />
         <Header />
         <main id="main-content">{children}</main>
