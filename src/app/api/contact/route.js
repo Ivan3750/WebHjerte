@@ -1,8 +1,23 @@
+import { issueToken, checkToken, checkOrigin, checkEmail, checkContent, isDuplicate } from "./guard";
+
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), {
     status,
     headers: { "Content-Type": "application/json" },
   });
+
+// Formularen henter et signeret tidsstempel her, første gang den bruges (anti-bot).
+export async function GET() {
+  return new Response(JSON.stringify({ token: issueToken() }), {
+    headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
+  });
+}
+
+// Afvist af anti-bot-tjek: logges uden persondata, og brugeren får en generisk fejl.
+const blocked = (reason, status = 400) => {
+  console.warn(`Contact form blocked: ${reason}`);
+  return json({ success: false, message: "Kunne ikke sende. Prøv igen eller skriv til hej@webhjerte.dk" }, status);
+};
 
 // Simpel in-memory rate limit (pr. server-instans) mod spam på formularen
 const WINDOW_MS = 10 * 60 * 1000;
@@ -34,12 +49,23 @@ export async function POST(req) {
       return json({ success: false, message: "For mange forsøg. Prøv igen senere." }, 429);
     }
 
+    // Kun kald fra vores eget site
+    const originProblem = checkOrigin(req);
+    if (originProblem) return blocked(originProblem, 403);
+
+    if (!(req.headers.get("content-type") || "").includes("application/json")) {
+      return blocked("content_type", 415);
+    }
     const body = await req.json();
 
-    // Honeypot: rigtige brugere efterlader feltet tomt
+    // Honeypot: rigtige brugere efterlader feltet tomt. Botten får et falsk "succes".
     if (body?.website) {
       return json({ success: true, message: "Form sent successfully!" });
     }
+
+    // Signeret tidsstempel: kræver at formularen er hentet og udfyldt i en rigtig browser
+    const tokenProblem = checkToken(body?.token);
+    if (tokenProblem) return blocked(tokenProblem);
 
     const name = clean(body?.name, 120);
     const email = clean(body?.email, 160);
@@ -53,6 +79,17 @@ export async function POST(req) {
     }
     if (email && !EMAIL_RE.test(email)) {
       return json({ success: false, message: "Ugyldig e-mailadresse" }, 400);
+    }
+
+    const emailProblem = checkEmail(email);
+    if (emailProblem) return blocked(emailProblem);
+
+    const contentProblem = checkContent({ name, message });
+    if (contentProblem) return blocked(contentProblem);
+
+    // Dobbelt-indsendelse: svar OK, men send ikke igen
+    if (isDuplicate(email || phone, message)) {
+      return json({ success: true, message: "Form sent successfully!" });
     }
 
     const telegramMessage = [

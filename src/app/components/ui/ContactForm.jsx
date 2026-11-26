@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import useFormToken from "./useFormToken";
 
 // Kort liste som før: 4 hjemmesidepakker, "ved ikke" og AI.
 const packages = [
@@ -47,6 +48,7 @@ const Label = ({ htmlFor, children }) => (
 );
 
 const ContactForm = ({ defaultPakke = "" }) => {
+  const loadToken = useFormToken();
   const searchParams = useSearchParams();
   const initial = resolve(defaultPakke);
   const [form, setForm] = useState({ name: "", email: "", pakke: initial.value, message: "", website: "" });
@@ -69,10 +71,11 @@ const ContactForm = ({ defaultPakke = "" }) => {
     setStatus("loading");
 
     try {
+      const token = await loadToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, token }),
       });
 
       if (res.ok) {
@@ -102,7 +105,7 @@ const ContactForm = ({ defaultPakke = "" }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate={false}>
+    <form onSubmit={handleSubmit} onFocus={loadToken} className="flex flex-col gap-4" noValidate={false}>
       <p className="text-[clamp(22px,2.4vw,28px)] font-semibold text-white tracking-tight leading-tight">Send en besked</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

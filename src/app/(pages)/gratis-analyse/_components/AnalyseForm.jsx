@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import useFormToken from "../../../components/ui/useFormToken";
 
 const fieldClass =
   "w-full bg-white text-[14px] text-[#3a3a3a] placeholder:text-[#777] border border-[#e8e8e8] rounded-xl px-4 py-3.5 outline-none focus:border-[#00a8e8] transition-colors";
 
 export default function AnalyseForm() {
+  const loadToken = useFormToken();
   const [form, setForm] = useState({ url: "", email: "", website: "" });
   const [status, setStatus] = useState("idle");
 
@@ -16,10 +18,12 @@ export default function AnalyseForm() {
     setStatus("loading");
 
     try {
+      const token = await loadToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          token,
           email: form.email,
           website: form.website, // honeypot
           pakke: "Gratis analyse",
@@ -56,7 +60,7 @@ export default function AnalyseForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3" aria-live="polite">
+    <form onSubmit={handleSubmit} onFocus={loadToken} className="flex flex-col gap-3" aria-live="polite">
       <input
         name="url"
         type="text"

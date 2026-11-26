@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import useFormToken from "./useFormToken";
 
 const MAX_COMMENT = 500;
 
 export default function QuickLeadForm() {
+  const loadToken = useFormToken();
   const [form, setForm] = useState({ name: "", email: "", url: "", comment: "", website: "" });
   const [status, setStatus] = useState("idle");
 
@@ -15,10 +17,12 @@ export default function QuickLeadForm() {
     setStatus("loading");
 
     try {
+      const token = await loadToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          token,
           name: form.name,
           email: form.email,
           website: form.website,
@@ -54,7 +58,7 @@ export default function QuickLeadForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3" aria-live="polite">
+    <form onSubmit={handleSubmit} onFocus={loadToken} className="flex flex-col gap-3" aria-live="polite">
       <p className="text-[15px] font-semibold text-white mb-1">Få et gratis tilbud</p>
 
       <input
