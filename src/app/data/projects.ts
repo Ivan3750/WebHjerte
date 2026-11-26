@@ -6,7 +6,6 @@ import Monolit from "../assets/cases/Vzlom.png";
 import WorkOut from "../assets/cases/WorkOutM.png";
 import RenServ from "../assets/cases/renserv.jpg";
 import Lønbæks from "../assets/cases/lønbæks.jpg";
-import VEKA from "../assets/cases/VEKA.png";
 import ImprovePhysio from "../assets/cases/Improve.png";
 import ImprovePhysioMobile from "../assets/cases/improvephysio-mobile.jpg";
 import { StaticImageData } from "next/image";
@@ -120,57 +119,6 @@ export const projects: Project[] = [
     developmentDescription:
       "En fuldstack-løsning bygget til at skalere, med en databasearkitektur der holder svartiderne lave, selv når trafikken stiger. Server-side rendering sikrer, at både brugere og søgemaskiner får siderne serveret hurtigt.",
   },
-  {
-    id: 7,
-    slug: "veka-center",
-    noindex: true,
-    title: "VEKA Center",
-    subtitle: "Fra fabrik til færdigt vindue – uden mellemled",
-    heroImage: VEKA, // TODO: erstat med rigtige billeder
-    gallery: [
-      "/images/cases/veka-placeholder.jpg",
-      "/images/cases/veka-placeholder.jpg",
-      "/images/cases/veka-placeholder.jpg",
-    ],
-    tags: ["Produktkatalog", "Webudvikling", "Leadgenerering"],
-    client: "VEKA",
-    location: "Kyiv, Ukraine",
-    services: ["Website design", "Webudvikling", "Konfigurator", "SEO"],
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-    overview:
-      "VEKA producerer selv sine vinduer og døre, men det budskab druknede i et katalog med mange tekniske profilsystemer – Softline 82, Softline 76, WHS 72, VEKAMOTION og flere til. Besøgende, der ikke selv er fagfolk, havde svært ved at finde ud af, hvilken løsning der passede til netop deres bolig.",
-    overviewExtra:
-      "Vi byggede en side, der taler til både private kunder og erhvervskunder på én gang: et simpelt trin-for-trin-værktøj hjælper besøgende med at finde det rette vindue ud fra deres behov – støjdæmpning, indbrudssikring, energieffektivitet eller børneværelse – i stedet for at overvælde dem med tekniske specifikationer med det samme.",
-    designDescription:
-      "Et rent, tillidsvækkende design, der understreger at kunden køber direkte fra fabrikken – ingen mellemled, ingen skjulte tillæg. Produktsystemerne er visuelt adskilt, så både lægmand og fagperson hurtigt finder frem til det relevante.",
-    developmentDescription:
-      "Bygget i Next.js med fokus på hurtig indlæsning af produktbilleder og et interaktivt vejledningsværktøj, der guider besøgende til det rette valg. Strukturerede produktdata og teknisk SEO sikrer synlighed på søgninger som 'metalplastvinduer' og specifikke profilsystemer.",
-  },
-  /* {
-    id: 8,
-    slug: "vitrazh",
-    title: "VitraZH",
-    subtitle: "Vinduer, døre og altaner – bestilt uden besvær",
-    heroImage: "/images/cases/vitrazh-placeholder.jpg", // TODO: erstat med rigtige billeder
-    gallery: [
-      "/images/cases/vitrazh-placeholder.jpg",
-      "/images/cases/vitrazh-placeholder.jpg",
-      "/images/cases/vitrazh-placeholder.jpg",
-    ],
-    tags: ["Website design", "Webudvikling", "Kalkulator"],
-    client: "VitraZH",
-    location: "Kyiv, Ukraine",
-    services: ["Website design", "Webudvikling", "Pris­kalkulator", "SEO"],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    overview:
-      "VitraZH sælger og monterer vinduer, døre og altaner i hele Kyiv-området, men uden en ordentlig hjemmeside skulle hver eneste pris forhandles over telefonen, og potentielle kunder faldt fra, før de nåede at bede om et tilbud.",
-    overviewExtra:
-      "Vi byggede en overskuelig hjemmeside med en indbygget priskalkulator, så kunder selv kan få en fornemmelse af prisen, før de tager kontakt – og en klar firetrins-proces, der viser præcis hvad der sker fra første henvendelse til færdig montering. Det sænker tærsklen for at tage det første skridt markant.",
-    designDescription:
-      "Et moderne og overskueligt design opdelt i tydelige kategorier – vinduer, vitrage-vinduer, altanpartier, ruller og gitre – så kunden hurtigt lander på det, de faktisk leder efter, uden at skulle bladre gennem irrelevante produkter.",
-    developmentDescription:
-      "En performanceoptimeret Next.js-løsning med en interaktiv kalkulator og et katalog, der er let at udvide efterhånden som produktsortimentet vokser. Strukturen er bygget til at skalere sammen med virksomheden.",
-  }, */
   {
     id: 3,
     slug: "workout",

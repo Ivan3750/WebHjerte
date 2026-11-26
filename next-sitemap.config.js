@@ -47,7 +47,6 @@ export default {
     // Kunde-cases: holdes ude af Google, så kundernes brandnavne ikke giver WebHjerte-hits
     '/portefolje/loenbaeks-koereskole',
     '/portefolje/hireon',
-    '/portefolje/veka-center',
     '/portefolje/monolit',
     '/portefolje/renserv',
     '/portefolje/improve-physio',

@@ -47,6 +47,9 @@ const nextConfig = {
       })),
       // Priser og prisberegner står nu på /services
       { source: "/hjemmeside-pris", destination: "/services#priser", permanent: true },
+      // Fjernede kunde-cases (VEKA Center, VitraZH): 301 til porteføljen
+      { source: "/portefolje/veka-center", destination: "/portefolje", permanent: true },
+      { source: "/portefolje/vitrazh", destination: "/portefolje", permanent: true },
       // Guides ligger under /blog/
       { source: "/webstrategi", destination: "/blog/webstrategi", permanent: true },
       { source: "/baeredygtigt-webdesign", destination: "/blog/baeredygtigt-webdesign", permanent: true },

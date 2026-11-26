@@ -75,7 +75,7 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 
 ### Portefølje – cases
 `/portefolje/improve-physio`, `/portefolje/pizzaria`, `/portefolje/loenbaeks-koereskole`,
-`/portefolje/hireon`, `/portefolje/veka-center`, `/portefolje/vitrazh`, `/portefolje/workout`,
+`/portefolje/hireon`, `/portefolje/workout`,
 `/portefolje/hesteklub`, `/portefolje/monolit`, `/portefolje/renserv`, `/portefolje/ukraine-hjaelpeprojekt`
 
 ### Juridisk
