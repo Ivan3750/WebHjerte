@@ -1,6 +1,6 @@
 # Sider på webhjerte.dk
 
-Opdateret: 25. november 2026 (SEO-gennemgang ud fra Search Console: /webdesign-horsens genåbnet, nye titler, flere interne links).
+Opdateret: 27. november 2026 (7 nye sæson-guides om jul, nytår og 2027 i bloggen). Tidligere: 25. november 2026 (SEO-gennemgang ud fra Search Console: /webdesign-horsens genåbnet, nye titler, flere interne links).
 Tidligere opdatering: 16. november 2026 (aften). Branchesider, 'hjemmeside til virksomhed' og /hjemmeside-pris er fjernet med 301 til /services. Indholdssider viser nu hele deres tekst og FAQ (se `components/seo/ServiceLayout.jsx`), og SEO-titler/ekstra afsnit ligger i `data/content/extra.js`. Alle sider findes stadig i koden. De skjulte sider er **ikke** slettet –
 de returnerer bare 404, er fjernet fra menu, footer, interne links, sitemap og `llms.txt`.
 
@@ -72,6 +72,18 @@ Links til skjulte sider fjernes automatisk fra menu, footer og indhold (teksten 
 | Sådan bliver du nævnt af ChatGPT og Google AI | `/blog/saadan-bliver-du-nevnt-af-chatgpt-og-google-ai` |
 | Webstrategi | `/blog/webstrategi` |
 | Bæredygtigt webdesign | `/blog/baeredygtigt-webdesign` |
+
+Sæson: jul, nytår og 2027 (tilføjet 27. november 2026, data i `data/content/articlesSeason.js`, ingen kronebeløb i teksterne):
+
+| Side | URL |
+| --- | --- |
+| Hjemmeside klar til jul: tjekliste | `/blog/hjemmeside-klar-til-jul-tjekliste` |
+| Gavekort og juletilbud | `/blog/gavekort-juletilbud-lokal-virksomhed` |
+| Åbningstider i julen (Google, hjemmeside, Facebook) | `/blog/aabningstider-i-julen-google-hjemmeside-facebook` |
+| Nytårstjek af hjemmesiden 2027 | `/blog/nytaarstjek-hjemmeside-2027` |
+| Hjemmesideplan 2027, kvartal for kvartal | `/blog/hjemmesideplan-2027-kvartal-for-kvartal` |
+| Ny hjemmeside i 2027? | `/blog/ny-hjemmeside-i-det-nye-aar` |
+| Hjemmeside-trends 2027 for små virksomheder | `/blog/hjemmeside-trends-2027-smaa-virksomheder` |
 
 ### Portefølje – cases
 `/portefolje/improve-physio`, `/portefolje/pizzaria`, `/portefolje/loenbaeks-koereskole`,

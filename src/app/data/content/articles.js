@@ -1,4 +1,5 @@
 import { aiArticles } from "./ai.js";
+import { seasonArticles } from "./articlesSeason.js";
 
 // Blogartikler og guides. Hver artikel bliver til /blog/<slug>.
 // Skrevet i første person (Ivan), med konkrete eksempler og tal – ikke generiske punktlister.
@@ -537,4 +538,4 @@ const own = [
   },
 ];
 
-export const articles = [...aiArticles.map((a) => ({ ...a })), ...own];
+export const articles = [...seasonArticles.map((a) => ({ ...a })), ...aiArticles.map((a) => ({ ...a })), ...own];

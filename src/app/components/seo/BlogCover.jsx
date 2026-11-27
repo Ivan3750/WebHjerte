@@ -18,6 +18,12 @@ import {
 
 // Hver guide har sin egen illustration, så oversigten ikke er en væg af tekst.
 const BY_SLUG = [
+  ["klar-til-jul", () => <VisualUptime />],
+  ["gavekort-juletilbud", () => <VisualFlow />],
+  ["aabningstider-i-julen", () => <VisualClock />],
+  ["nytaarstjek", () => <VisualReport />],
+  ["hjemmesideplan-2027", () => <VisualDashboard />],
+  ["trends-2027", () => <VisualAiAnswer q="Hvilken hjemmeside skal jeg vælge?" />],
   ["hvad-koster-en-hjemmeside-2026", () => <VisualPrice />],
   ["hvad-koster-en-hjemmeside-om-aaret", () => <VisualReport />],
   ["seo-tjekliste", () => <VisualSeo />],

@@ -7,6 +7,7 @@
 | [partner-mails.md](partner-mails.md) | Листи й повідомлення в LinkedIn для агентств, дизайнерів і бухгалтерів (данською), плюс follow-up |
 | [lead-svar.md](lead-svar.md) | Письмові відповіді на ліди: перша відповідь, пропозиція, нагадування, «задорого» (данською) |
 | [vedligeholdelsesaftale.md](vedligeholdelsesaftale.md) | Текст договору на план підтримки Basis/Standard/Pro (данською) |
+| [markedsanalyse-jul-nytaar-2027.md](markedsanalyse-jul-nytaar-2027.md) | Аналіз ринку для різдвяно-новорічної теми: що відомо, чого ні, контент-план, календар публікацій і що міряти |
 | [tracker.csv](tracker.csv) | Місячний трекер: виручка, плани, ліди, відгуки, ціль. Відкривається в Excel / Google Sheets / Numbers |
 
 ## Ціни (усі з moms, як на сайті)
